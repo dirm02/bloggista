@@ -65,11 +65,16 @@ jobs:
       - name: Deploy to VM
         if: github.event_name != 'pull_request'
         run: |
+          # Remove old site and create directory with correct ownership/permissions
           ssh -i ~/.ssh/deploy_key \
             -o StrictHostKeyChecking=no \
             ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "mkdir -p ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
+            "rm -rf ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
+             mkdir -p ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
+             chown -R ${{ secrets.GCP_VM_USER }}:${{ secrets.GCP_VM_USER }} ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
+             chmod -R 775 ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
           
+          # Deploy using rsync
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
             _site/ \
@@ -81,7 +86,8 @@ jobs:
           ssh -i ~/.ssh/deploy_key \
             -o StrictHostKeyChecking=no \
             ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "chmod -R 755 ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
+            "chmod -R 755 ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
+             chown -R ${{ secrets.GCP_VM_USER }}:${{ secrets.GCP_VM_USER }} ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
       
       - name: Verify deployment
         if: github.event_name != 'pull_request'
