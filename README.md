@@ -24,23 +24,72 @@ My personal site that uses the same theme: https://andrewhwanpark.github.io/
 
 ![tables](https://user-images.githubusercontent.com/13270895/126393680-7b7fae57-abd0-4843-a9a1-c4f334b5eaa4.png)
 
+## Prerequisites
+
+Before installing, you need to have Ruby installed on your system.
+
+### Windows
+
+1. **Install Ruby** using one of these methods:
+   - **Chocolatey** (recommended): Open PowerShell as Administrator and run:
+     ```
+     choco install ruby
+     ```
+   - **RubyInstaller**: Download and install from https://rubyinstaller.org/
+
+2. **Restart PowerShell** or refresh environment variables after Ruby installation.
+
+3. **Install MSYS2** (required for compiling native extensions):
+   - **Chocolatey**: `choco install msys2`
+   - **Manual**: Download from https://www.msys2.org/
+
+4. **Install development tools**: Run `ridk install` and select option **3** (MSYS2 and MINGW development toolchain).
+
+### macOS / Linux
+
+Install Ruby using your system's package manager:
+- **macOS**: `brew install ruby` (requires Homebrew)
+- **Linux**: Use your distribution's package manager (e.g., `sudo apt-get install ruby-full` for Ubuntu/Debian)
+
 ## Installation
 
 Clone this repo:
 
     $ git clone https://github.com/andrewhwanpark/brutalist-blog.git
 
-If you haven't already, install bundler:
+### Windows
 
-    $ gem install bundler
+1. **Install bundler**:
+   ```
+   gem install bundler
+   ```
 
-And then execute:
+2. **Install dependencies**:
+   ```
+   bundle install
+   ```
 
-    $ bundle install
+3. **Serve the site**:
+   ```
+   bundle exec jekyll serve
+   ```
 
-Serve the site:
+### macOS / Linux
 
-    $ bundle exec jekyll serve
+1. **Install bundler** (if you haven't already):
+   ```
+   $ gem install bundler
+   ```
+
+2. **Install dependencies**:
+   ```
+   $ bundle install
+   ```
+
+3. **Serve the site**:
+   ```
+   $ bundle exec jekyll serve
+   ```
 
 # Installation with Github Pages
 
