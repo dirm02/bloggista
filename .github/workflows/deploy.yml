@@ -1,4 +1,7 @@
-name: Deploy Jekyll Blog to GCP VM
+# CI/CD for bloggista - Netlify deployment
+# Netlify auto-deploys when you connect this repo at app.netlify.com
+# This workflow validates the Jekyll build (runs in parallel with Netlify)
+name: Build and Validate
 
 on:
   push:
@@ -9,30 +12,26 @@ on:
     branches:
       - main
       - master
-  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.2'
           bundler-cache: true
-      
+
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-      
+        run: bundle install
+
       - name: Build Jekyll site
         run: bundle exec jekyll build
-      
+
       - name: Validate build output
         run: |
           if [ ! -d "_site" ]; then
@@ -41,84 +40,3 @@ jobs:
           fi
           echo "Build successful. Site size:"
           du -sh _site
-      
-      - name: Setup SSH
-        if: github.event_name != 'pull_request'
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.GCP_SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.GCP_VM_HOST }} >> ~/.ssh/known_hosts
-      
-      - name: Create backup on VM
-        if: github.event_name != 'pull_request'
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=no \
-            ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "mkdir -p ${{ secrets.GCP_VM_DEPLOY_PATH }}/backups && \
-             if [ -d '${{ secrets.GCP_VM_DEPLOY_PATH }}/_site' ]; then \
-               tar -czf ${{ secrets.GCP_VM_DEPLOY_PATH }}/backups/backup-$(date +%Y%m%d-%H%M%S).tar.gz \
-               -C ${{ secrets.GCP_VM_DEPLOY_PATH }} _site; \
-             fi"
-      
-      - name: Deploy to VM
-        if: github.event_name != 'pull_request'
-        run: |
-          # Remove old site and create directory with correct ownership/permissions
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=no \
-            ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "rm -rf ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
-             mkdir -p ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
-             chown -R ${{ secrets.GCP_VM_USER }}:${{ secrets.GCP_VM_USER }} ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
-             chmod -R 775 ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
-          
-          # Deploy using rsync
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
-            _site/ \
-            ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }}:${{ secrets.GCP_VM_DEPLOY_PATH }}/_site/
-      
-      - name: Set correct permissions
-        if: github.event_name != 'pull_request'
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=no \
-            ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "chmod -R 755 ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site && \
-             chown -R ${{ secrets.GCP_VM_USER }}:${{ secrets.GCP_VM_USER }} ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site"
-      
-      - name: Verify deployment
-        if: github.event_name != 'pull_request'
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=no \
-            ${{ secrets.GCP_VM_USER }}@${{ secrets.GCP_VM_HOST }} \
-            "ls -la ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site | head -10"
-      
-      - name: Health check
-        if: github.event_name != 'pull_request'
-        run: |
-          echo "Waiting 5 seconds for Nginx to pick up changes..."
-          sleep 5
-          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://${{ secrets.GCP_VM_HOST }}:4000 || echo "000")
-          if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "301" ] || [ "$HTTP_CODE" = "302" ]; then
-            echo "✅ Health check passed! Site is accessible (HTTP $HTTP_CODE)"
-          else
-            echo "⚠️ Health check returned HTTP $HTTP_CODE"
-            echo "Site may still be deploying or Nginx may need to be reloaded"
-          fi
-      
-      - name: Deployment summary
-        if: github.event_name != 'pull_request'
-        run: |
-          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ✅ Successfully deployed" >> $GITHUB_STEP_SUMMARY
-          echo "- **Branch**: ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Deployed to**: ${{ secrets.GCP_VM_HOST }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Deployment path**: ${{ secrets.GCP_VM_DEPLOY_PATH }}/_site" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Your blog should be live at: http://${{ secrets.GCP_VM_HOST }}:4000" >> $GITHUB_STEP_SUMMARY

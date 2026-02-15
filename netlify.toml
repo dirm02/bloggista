@@ -1,0 +1,14 @@
+# Netlify configuration for Jekyll blog
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+# Environment variables for consistent builds
+[build.environment]
+  RUBY_VERSION = "3.2"
+  JEKYLL_ENV = "production"
+
+# Optional: Speed up builds with caching (Netlify caches .bundle by default)
+# No additional config needed - Netlify auto-detects Jekyll
