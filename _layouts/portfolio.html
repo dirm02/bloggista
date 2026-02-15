@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if content and content.strip != '' %}
+  <div class="portfolio-intro mb-4">{{ content }}</div>
+  {% endif %}
+
+  {% assign projects = site.data.portfolio_projects %}
+  {% if projects and projects.size > 0 %}
+  <div id="portfolio-grid" class="portfolio-grid row">
+    {% for project in projects %}
+    <div class="portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4" data-index="{{ forloop.index0 }}">
+      <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer" class="portfolio-card text-decoration-none">
+        <div class="portfolio-card-image">
+          <img src="{% if project.image contains 'http' %}{{ project.image }}{% else %}{{ project.image | relative_url }}{% endif %}" alt="{{ project.name }}" loading="lazy" onerror="this.src='{{ '/assets/images/portfolio-placeholder.svg' | relative_url }}'"/>
+        </div>
+        <div class="portfolio-card-body">
+          <h5 class="portfolio-card-title">{{ project.name }}</h5>
+          {% if project.description != '' %}
+          <p class="portfolio-card-desc">{{ project.description }}</p>
+          {% endif %}
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div id="pagination-controls" class="pagination-controls mt-4"></div>
+
+  <script>
+    window.PORTFOLIO_PROJECTS = {{ projects | jsonify }};
+  </script>
+  <script src="{{ '/assets/js/portfolio-pagination.js' | relative_url }}" defer></script>
+  {% else %}
+  <p class="text-muted">No projects to display yet. The sync runs every 10 minutes.</p>
+  {% endif %}
+</div>
