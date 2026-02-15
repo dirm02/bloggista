@@ -13,15 +13,10 @@ layout: default
   <div id="portfolio-grid" class="portfolio-grid row">
     {% for project in projects %}
     <div class="portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4" data-index="{{ forloop.index0 }}">
-      <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer" class="portfolio-card text-decoration-none">
+      <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer" class="portfolio-card text-decoration-none" title="{{ project.name }}">
         <div class="portfolio-card-image">
           <img src="{% if project.image contains 'http' %}{{ project.image }}{% else %}{{ project.image | relative_url }}{% endif %}" alt="{{ project.name }}" loading="lazy" onerror="this.src='{{ '/assets/images/portfolio-placeholder.svg' | relative_url }}'"/>
-        </div>
-        <div class="portfolio-card-body">
-          <h5 class="portfolio-card-title">{{ project.name }}</h5>
-          {% if project.description != '' %}
-          <p class="portfolio-card-desc">{{ project.description }}</p>
-          {% endif %}
+          <span class="portfolio-card-title">{{ project.name }}</span>
         </div>
       </a>
     </div>
