@@ -6,8 +6,8 @@ gem "jekyll"
 gem "webrick", "~> 1.7"
 gem "logger"  # Fixes Ruby 4.0 deprecation warning
 
-# Windows file watching (improves performance)
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+# Windows file watching (improves performance) - excluded on Linux/Netlify
+gem 'wdm', '>= 0.1.0', :platforms => [:windows]
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
