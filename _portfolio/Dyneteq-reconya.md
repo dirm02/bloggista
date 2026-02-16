@@ -2,8 +2,69 @@
 layout: project
 name: Dyneteq Reconya
 slug: Dyneteq-reconya
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Dyneteq-reconya/screenshots/dashboard.png
 repo_url: https://github.com/Dyneteq/reconya.git
+indexed_content: "# Reconya Network reconnaissance and asset discovery tool built
+  with Go and HTMX. ## Overview Reconya discovers and monitors devices on your network
+  with real-time updates. Suitable for network administrators, security professionals,
+  and home users. ### Features - **IPv4 Network Scanning** - Comprehensive device
+  discovery with nmap integration - **IPv6 Passive Monitoring** - Detects IPv6 devices
+  through neighbor discovery and interface monitoring - **Device Identification**
+  - MAC addresses, vendor detection, hostnames, and device types - **Dual-Stack Support**
+  - Full IPv4 and IPv6 address display and management - **Real-time Monitoring** -
+  Live device status updates and event logging - **Web-based Dashboard** - Modern
+  HTMX-powered interface with dark theme - **Device Fingerprinting** - Automatic OS
+  and device type detection - **Network Management** - Multi-network support with
+  CIDR configuration ## Community Join our community for support, discussions, and
+  updates: [](https://discord.gg/JW7VtBnNXp) [](https://www.reddit.com/r/reconya/)
+  ## Important Notice: Docker Implementation Status ⚠️ **Docker networking has been
+  moved to experimental status due to fundamental limitations.** The fundamental limitation
+  is Docker's network architecture. Even with comprehensive MAC discovery methods,
+  privileged mode, and enhanced capabilities, Docker containers cannot reliably access
+  Layer 2 (MAC address) information across different network segments. **For full
+  functionality, including complete MAC address discovery, please use the local installation
+  method below.** Docker files have been moved to the `experimental/` directory for
+  those who want to experiment with containerized deployment, but local installation
+  is the recommended approach. ## Prerequisites Before installing reconYa, ensure
+  you have the following installed on your system: - **Go 1.21 or later** - [Download
+  Go](https://golang.org/dl/) - **nmap** - Network scanning tool (instructions below)
+  - **make** - Build tool (pre-installed on most Unix systems) ## Local Installation
+  (Recommended) ### One-Command Installation ```bash git clone https://github.com/Dyneteq/reconya.git
+  cd reconya make install ``` This will: - Download Go dependencies - Create default
+  `.env` configuration file **After installation, use these commands:** ```bash make
+  start # Start reconYa as daemon make start-dev # Start in foreground (dev mode)
+  make stop # Stop reconYa make status # Check service status make logs # View logs
+  make help # Show all commands ``` Then open your browser to: `http://localhost:3008`
+  Default login: `admin` / `password` ### Manual Installation If you prefer to install
+  manually: #### Prerequisites 1. **Install Go** (1.21 or later): https://golang.org/dl/
+  2. **Install nmap**: ```bash # macOS brew install nmap # Ubuntu/Debian sudo apt-get
+  install nmap # RHEL/CentOS/Fedora sudo yum install nmap # or dnf install nmap ```
+  3. **Grant nmap privileges** (for MAC address detection): ```bash sudo chown root:admin
+  $(which nmap) sudo chmod u+s $(which nmap) ``` #### Setup & Run 1. **Clone the repository:**
+  ```bash git clone https://github.com/Dyneteq/reconya.git cd reconya ``` 2. **Setup
+  backend:** ```bash cd backend cp .env.example .env # Edit .env file to set your
+  credentials go mod download ``` 3. **Start the application:** ```bash cd backend
+  go run ./cmd ``` **Windows users:** If you encounter SQLite CGO errors, use: ```bash
+  cd backend CGO_ENABLED=1 go run ./cmd ``` 4. **Access the application:** - Open
+  your browser to: `http://localhost:3008` - Default login: `admin` / `password` (check
+  your `.env` file for custom credentials) ## How to Use 1. Login with your credentials
+  (default: `admin` / `password`) 2. Set up a new network 3. Choose the network from
+  the dropdown and start scan 4. Devices will automatically appear as they're discovered
+  on your network 5. Click on devices to see details including: - MAC addresses and
+  vendor information - Open ports and running services - Operating system fingerprints
+  - Device screenshots (for web services) 6. Use the network map to visualize device
+  locations 7. Monitor the event log for network activity ## IPv6 Passive Monitoring
+  reconYa includes advanced IPv6 passive monitoring capabilities that activate automatically
+  during network scans: ### How It Works - **Neighbor Discovery Protocol (NDP)** -
+  Monitors IPv6 neighbor cache for active devices - **Interface Monitoring** - Detects
+  IPv6 addresses on network interfaces - **Automatic Classification** - Identifies
+  Link-Local, Unique Local, and Global addresses - **Dual-Stack Integration** - Links
+  IPv6 addresses to existing IPv4 devices via MAC addresses ### IPv6 Address Types
+  - **Link-Local** (`fe80::/10`) - Local network segment addresses - **Unique Local**
+  (`fc00::/7`) - Private network addresses - **Global** (`2000::/3`) - Internet-routable
+  addresses ### Features - **Passive Detection** - No network traffic generated, only
+  monitors existing traffic - **Real-time Updates** - IPv6 addresses ap"
 ---
 {% raw %}
 # Reconya

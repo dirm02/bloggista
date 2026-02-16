@@ -2,8 +2,63 @@
 layout: project
 name: Trimstray Nginx Admins Handbook
 slug: trimstray-nginx-admins-handbook
+category: ServerTools-ProxMox-CICD
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/trimstray-nginx-admins-handbook/static/img/priorities/high.png
 repo_url: https://github.com/trimstray/nginx-admins-handbook
+indexed_content: 'Nginx Admin''s Handbook My notes on NGINX administration basics,
+  tips & tricks, caveats, and gotchas. Hi-diddle-diddle, he played on his fiddle and
+  danced with lady pigs. Number three said, "Nicks on tricks! I''ll build my house
+  with EN-jin-EKS !". The Three Little Pigs: Who''s Afraid of the Big Bad Wolf? ****
+  # Table of Contents - **[Introduction](#introduction)** * [Prologue](#prologue)
+  * [Why I created this handbook](#why-i-created-this-handbook) * [Who this handbook
+  is for](#who-this-handbook-is-for) * [Before you start](#before-you-start) * [Contributing
+  & Support](#contributing--support) * [RSS Feed & Updates](#rss-feed--updates) *
+  [Checklist to rule them all](#checklist-to-rule-them-all) - **[Bonus Stuff](#bonus-stuff)**
+  * [Configuration reports](#configuration-reports) * [SSL Labs](#ssl-labs) * [Mozilla
+  Observatory](#mozilla-observatory) * [Printable hardening cheatsheets](#printable-hardening-cheatsheets)
+  * [Fully automatic installation](#fully-automatic-installation) * [Static error
+  pages generator](#static-error-pages-generator) * [Server names parser](#server-names-parser)
+  - **[Books](#books)** * [Nginx Essentials](#nginx-essentials) * [Nginx Cookbook](#nginx-cookbook)
+  * [Nginx HTTP Server](#nginx-http-server) * [Nginx High Performance](#nginx-high-performance)
+  * [Mastering Nginx](#mastering-nginx) * [ModSecurity 3.0 and NGINX: Quick Start
+  Guide](#modsecurity-30-and-nginx-quick-start-guide) * [Cisco ACE to NGINX: Migration
+  Guide](#cisco-ace-to-nginx-migration-guide) - **[External Resources](#external-resources)**
+  * [Nginx official](#nginx-official) * [Nginx distributions](#nginx-distributions)
+  * [Comparison reviews](#comparison-reviews) * [Cheatsheets & References](#cheatsheets--references)
+  * [Performance & Hardening](#performance--hardening) * [Presentations & Videos](#presentations--videos)
+  * [Playgrounds](#playgrounds) * [Config generators](#config-generators) * [Config
+  parsers](#config-parsers) * [Config managers](#config-managers) * [Static analyzers](#static-analyzers)
+  * [Log analyzers](#log-analyzers) * [Performance analyzers](#performance-analyzers)
+  * [Builder tools](#builder-tools) * [Benchmarking tools](#benchmarking-tools) *
+  [Debugging tools](#debugging-tools) * [Security & Web testing tools](#security--web-testing-tools)
+  * [Development](#development) * [Online & Web tools](#online--web-tools) * [Other
+  stuff](#other-stuff) - **[What''s next?](#whats-next)** Other chapters - **[HTTP
+  Basics](doc/HTTP_BASICS.md#http-basics)** * [Introduction](doc/HTTP_BASICS.md#introduction-1)
+  * [Features and architecture](doc/HTTP_BASICS.md#features-and-architecture) * [HTTP/2](doc/HTTP_BASICS.md#http2)
+  * [How to debug HTTP/2?](doc/HTTP_BASICS.md#how-to-debug-http2) * [HTTP/3](doc/HTTP_BASICS.md#http3)
+  * [URI vs URL](doc/HTTP_BASICS.md#uri-vs-url) * [Connection vs request](doc/HTTP_BASICS.md#connection-vs-request)
+  * [HTTP Headers](doc/HTTP_BASICS.md#http-headers) * [Header compression](#header-compression)
+  * [HTTP Methods](doc/HTTP_BASICS.md#http-methods) * [Request](doc/HTTP_BASICS.md#request)
+  * [Request line](doc/HTTP_BASICS.md#request-line) * [Methods](doc/HTTP_BASICS.md#methods)
+  * [Request URI](doc/HTTP_BASICS.md#request-uri) * [HTTP version](doc/HTTP_BASICS.md#http-version)
+  * [Request header fields](doc/HTTP_BASICS.md#request-header-fields) * [Message body](doc/HTTP_BASICS.md#message-body)
+  * [Generate requests](doc/HTTP_BASICS.md#generate-requests) * [Response](doc/HTTP_BASICS.md#response)
+  * [Status line](doc/HTTP_BASICS.md#status-line) * [HTTP version](doc/HTTP_BASICS.md#http-version-1)
+  * [Status codes and reason phrase](doc/HTTP_BASICS.md#status-codes-and-reason-phrase)
+  * [Response header fields](doc/HTTP_BASICS.md#response-header-fields) * [Message
+  body](doc/HTTP_BASICS.md#message-body-1) * [HTTP client](doc/HTTP_BASICS.md#http-client)
+  * [IP address shortcuts](doc/HTTP_BASICS.md#ip-address-shortcuts) * [Back-End web
+  architecture](doc/HTTP_BASICS.md#back-end-web-architecture) * [Useful video resources](doc/HTTP_BASICS.md#useful-video-resources)
+  - **[SSL/TLS Basics](doc/SSL_TLS_BASICS.md#ssltls-basics)** * [Introduction](doc/SSL_TLS_BASICS.md#introduction-2)
+  * [TLS versions](doc/SSL_TLS_BASICS.md#tls-versions) * [TLS handshake](doc/SSL_TLS_BASICS.md#tls-handshake)
+  * [In which layer is TLS situated within the TCP/IP stack?](doc/SSL_TLS_BASICS.md#in-which-layer-is-tls-situated-within-the-tcpip-stack)
+  * [RSA and ECC keys/certificates](doc/SSL_TLS_BASICS.md#rsa-and-ecc-keyscertificates)
+  * [Cipher suites](doc/SSL_TLS_BASICS.md#cipher-suites) * [Authenticated encryption
+  (AEAD) cipher suites](doc/SSL_TLS_BASICS.md#authenticated-encryption-aead-cipher-suites)
+  * [Why cipher suites are important?](doc/SSL_TLS_BASICS.md#why-cipher-suites-are-important)
+  * [What does insecure, weak, secure and recommended mean?](doc/SSL_TLS_BASICS.md#what-does-insecure-weak-secure-and-recommended-mean)
+  * [NGINX and TLS 1.3 Cipher Suites](doc/SSL_TLS_BASICS.md#nginx-and-tls-13-cipher-suites)
+  * [Diffie-Hellman key exchange](doc/SSL_'
 ---
 {% raw %}
 <div align="center">

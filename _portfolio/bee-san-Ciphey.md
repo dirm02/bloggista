@@ -2,8 +2,70 @@
 layout: project
 name: Bee San Ciphey
 slug: bee-san-Ciphey
+category: Uncategorized
 image: https://img.shields.io/github/workflow/status/ciphey/ciphey/Python%20application?label=Linux
 repo_url: https://github.com/Ciphey/Ciphey
+indexed_content: "Translations \U0001F1E9\U0001F1EA DE \U0001F1EB\U0001F1F7 FR \U0001F1ED\U0001F1FA
+  HU \U0001F1EE\U0001F1E9 ID \U0001F1EE\U0001F1F9 IT \U0001F1F3\U0001F1F1 NL \U0001F1E7\U0001F1F7
+  PT-BR \U0001F1F7\U0001F1FA RU \U0001F1E8\U0001F1F3 ZH \U0001F1F9\U0001F1ED TH ➡️
+  Documentation | Discord | Installation Guide ⬅️ Fully automated decryption/decoding/cracking
+  tool using natural language processing & artificial intelligence, along with some
+  common sense. ## [Installation Guide](https://github.com/Ciphey/Ciphey/wiki/Installation)
+  | \U0001F40D Python | \U0001F40B Docker (Universal) | \U0001F34E MacPorts (macOS)
+  | \U0001F37A Homebrew (macOS/Linux) | | ---------------------------------------------------------------------
+  | ---------------------------------------------------------------------------------
+  | ---------------------------------------------------------------------------------
+  |---------------------------------------------------------------------------------
+  | | | | | | | `python3 -m pip install ciphey --upgrade` | `docker run -it --rm remnux/ciphey`
+  | `sudo port install ciphey` | `brew install ciphey` | | Linux | Mac OS | Windows
+  | | -----------------------------------------------------------------------------------------------------------------------
+  | --------------------------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------------------------
+  | | | | | # \U0001F914 What is this? Input encrypted text, get the decrypted text
+  back. > \"What type of encryption?\" That's the point. You don't know, you just
+  know it's possibly encrypted. Ciphey will figure it out for you. Ciphey can solve
+  most things in 3 seconds or less. Ciphey aims to be a tool to automate a lot of
+  decryptions & decodings such as multiple base encodings, classical ciphers, hashes
+  or more advanced cryptography. If you don't know much about cryptography, or you
+  want to quickly check the ciphertext before working on it yourself, Ciphey is for
+  you. **The technical part.** Ciphey uses a custom built artificial intelligence
+  module (_AuSearch_) with a _Cipher Detection Interface_ to approximate what something
+  is encrypted with. And then a custom-built, customisable natural language processing
+  _Language Checker Interface_, which can detect when the given text becomes plaintext.
+  No neural networks or bloated AI here. We only use what is fast and minimal. And
+  that's just the tip of the iceberg. For the full technical explanation, check out
+  our [documentation](https://github.com/Ciphey/Ciphey/wiki). # ✨ Features - **50+
+  encryptions/encodings supported** such as binary, Morse code and Base64. Classical
+  ciphers like the Caesar cipher, Affine cipher and the Vigenere cipher. Along with
+  modern encryption like repeating-key XOR and more. **[For the full list, click here](https://github.com/Ciphey/Ciphey/wiki/Supported-Ciphers)**
+  - **Custom Built Artificial Intelligence with Augmented Search (AuSearch) for answering
+  the question \"what encryption was used?\"** Resulting in decryptions taking less
+  than 3 seconds. - **Custom built natural language processing module** Ciphey can
+  determine whether something is plaintext or not. Whether that plaintext is JSON,
+  a CTF flag, or English, Ciphey can get it in a couple of milliseconds. - **Multi
+  Language Support** at present, only German & English (with AU, UK, CAN, USA variants).
+  - **Supports encryptions and hashes** Which the alternatives such as CyberChef Magic
+  do not. - **[C++ core](https://github.com/Ciphey/CipheyCore)** Blazingly fast. #
+  \U0001F52D Ciphey vs CyberChef ## \U0001F501 Base64 Encoded 42 times Name ⚡ Ciphey
+  ⚡ \U0001F422 CyberChef \U0001F422 Gif Time 2 seconds 6 seconds Setup Run ciphey
+  on the file Set the regex param to \"{\" You need to know how many times to recurse
+  You need to know it's Base64 all the way down You need to load CyberChef (it's a
+  bloated JS app) Know enough about CyberChef to create this pipeline Invert the match
+  Note The gifs may load at different times, so one may appear significantly faster
+  than another. A note on magic CyberChef's most similar feature to Ciphey is Magic.
+  Magic fails instantly on this input and crashes. The only way we could force CyberChef
+  to compete was to manually define it. We also tested CyberChef and Ciphey with a
+  **6gb file**. Ciphey cracked it in **5 minutes and 54 seconds**. CyberChef crashed
+  before it even started. ## \U0001F4CA Ciphey vs Katana vs CyberChef Magic | **Name**
+  | ⚡ Ciphey ⚡ | \U0001F5E1️ Katana \U0001F5E1️ | \U0001F422 CyberChef Magic \U0001F422
+  | | ------------------------------------------ | ------------ | ------------ | ---------------------
+  | | Advanced Language Checker | ✅ | ❌ | ✅ | | Supports Encryptions | ✅ | ✅ | ❌ |
+  | Releases named after Dystopian themes \U0001F303 | ✅ | ❌ | ❌ | | Supports hashes
+  | ✅ | ✅ | ❌ | | Easy to set up | ✅ | ❌ | ✅ | | Can guess what something is encrypted
+  with | ✅ | ❌ | ❌ | | Created for hackers by hackers | ✅ | ✅ | ❌ | # \U0001F3AC Getting
+  Started If you're having trouble with installing Ciphey, [read this.](https://github.com/Ciphey/Ciphey/wiki/Common-Issues-&-Their-Solutions)
+  ## ‼️ Important Links (Docs, Installation guide, Discord Support) | Installation
+  Guide | Documentation | Disco"
 ---
 {% raw %}
 <p align="center">

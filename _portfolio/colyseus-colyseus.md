@@ -2,8 +2,47 @@
 layout: project
 name: Colyseus Colyseus
 slug: colyseus-colyseus
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/colyseus-colyseus/media/logo.svg?raw=true
 repo_url: https://github.com/colyseus/colyseus
+indexed_content: "Multiplayer Framework for Node.js. View documentation Colyseus is
+  an Authoritative Multiplayer Framework for Node.js, with SDKs available for the
+  Web, Unity, Defold, Haxe, Cocos and Construct3. ([See official SDKs](https://docs.colyseus.io/getting-started))
+  The project focuses on providing synchronizable data structures for realtime and
+  turn-based games, matchmaking, and ease of usage both on the server-side and client-side.
+  The mission of the framework is to be a standard netcode & matchmaking solution
+  for any kind of project you can think of! ## Why developers choose Colyseus: - ⚡️
+  **Real-time state sync that just works** → Define your state on the server and it
+  automatically synchronizes to all clients, delta-compressed and binary-encoded.
+  - ⚔️ **Built-in matchmaking** → Room-based architecture with filtering, queuing,
+  and reconnection support out of the box. - \U0001F4C8 **Scalable** → Go from 10
+  to 10,000+ CCU by scaling vertically or horizontally with Redis and load balancers.
+  - \U0001F6E1️ **Cheat-proof by design** → Authoritative server model ensures game
+  logic runs on the server, not the client. - \U0001F6E0️ **Use the tools you already
+  know** → Built on Node.js and TypeScript with a simple, familiar API on both server
+  and client. - \U0001F499 **Free forever** → MIT licensed, even for commercial games.
+  See [public roadmap](https://docs.colyseus.io/roadmap) for version 1.0. # \U0001F680
+  Quickstart Set up your own Colyseus server project for your game using `npm create
+  colyseus-app@latest`: ``` npm create colyseus-app@latest ./my-server cd my-server
+  npm start ``` # Sponsors The sustainability of the project relies on **Colyseus
+  Cloud** subscriptions and sponsorships. If you are not using Colyseus Cloud, please
+  consider [sponsoring the project](https://github.com/sponsors/endel) \U0001F496
+  # Contributors ✨ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+  Aymeric Chauvin \U0001F4AC \U0001F4A1 Brian Hay \U0001F58B Damian A. Pastorini \U0001F4AC
+  \U0001F4D6 \U0001F41B Darek Greenly \U0001F4AC \U0001F41B \U0001F4BB David Rydwanski
+  \U0001F4AC \U0001F4BB Dr. Burton \U0001F9D1‍\U0001F3EB Endel Dreyer \U0001F4BB \U0001F4D6
+  \U0001F4A1 Enriqueto \U0001F4BC Fazri Zubair \U0001F4BC Federico \U0001F41B \U0001F4BB
+  James Jacoby \U0001F4AC \U0001F4A1 \U0001F58B Jonas Voland \U0001F4AC \U0001F41B
+  \U0001F4BB \U0001F914 \U0001F4A1 Kyle J. Kemp \U0001F4AC \U0001F41B \U0001F4BB \U0001F914
+  Luke Wood \U0001F4AC \U0001F41B \U0001F4BB Milad Doorbash \U0001F41B \U0001F4BB
+  Nikita Borisov \U0001F41B \U0001F4BB \U0001F4BC \U0001F914 Phil Harvey \U0001F4D6
+  Sergey \U0001F41B \U0001F4BB Sophie \U0001F4AC \U0001F41B \U0001F914 Tommy Leung
+  \U0001F9D1‍\U0001F3EB digimbyte \U0001F4D6 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors)
+  specification. Contributions of any kind are welcome! # Contributing We encourage
+  you to contribute to Colyseus! Please check out the [Contributing guide](.github/CONTRIBUTING.md)
+  for guidelines about how to proceed. Join us! Everyone interacting in Colyseus and
+  its sub-projects' codebases, issue trackers and chat rooms is expected to follow
+  the [code of conduct](CODE_OF_CONDUCT.md). # License MIT"
 ---
 {% raw %}
 <div align="center">

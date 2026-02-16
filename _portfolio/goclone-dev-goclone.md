@@ -2,8 +2,31 @@
 layout: project
 name: Goclone Dev Goclone
 slug: goclone-dev-goclone
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/goclone-dev-goclone/docs/media/bitski.gif
 repo_url: https://github.com/goclone-dev/goclone
+indexed_content: "Copy websites to your computer! Goclone is a utility that allows
+  you to download a website from the Internet to a local directory. Get html, css,
+  js, images, and other files from the server to your computer. Goclone arranges the
+  original site's relative link-structure. Simply open a page of the \"mirrored\"
+  website in your browser, and you can browse the site from link to link as if you
+  were viewing it online. Official Website ## Table of Contents - [Installation](#installation)
+  - [Brew](#brew) - [Manual](#manual) - [Examples](#examples) - [Contributors](#contributors)
+  ## \U0001F680 Installation ### Brew ```bash # tap brew tap goclone-dev/goclone #
+  install tool brew install goclone ``` ### Manual ```bash # Go version >= 1.20 go
+  install github.com/goclone-dev/goclone/cmd/goclone@latest ``` #### Or ```bash #
+  Clone the repository git clone https://github.com/goclone-dev/goclone.git cd goclone
+  # Build and run go build -o goclone cmd/goclone/main.go # Move binary to a directory
+  in your PATH (optional) mv goclone /usr/local/bin/ ``` ## Examples ```bash # goclone
+  goclone https://configtree.co ``` ## Usage ``` Usage: goclone [flags] Flags: -C,
+  --cookie strings Pre-set these cookies -h, --help help for goclone -o, --open Automatically
+  open project in default browser -p, --proxy_string string Proxy connection string.
+  Support http and socks5 https://pkg.go.dev/github.com/gocolly/colly#Collector.SetProxy
+  -s, --serve Serve the generated files using Echo. -P, --servePort int Serve port
+  number. (default 5000) -u, --user_agent string Custom User Agent ``` ## Contributors
+  Contributions are welcome! Please see [Contributing Guide](https://github.com/goclone-dev/goclone/blob/master/docs/CONTRIBUTING.md)
+  for more details. Tha Ghost \U0001F4BB Juan Mesaglio \U0001F4BB Ben Lafferty \U0001F4BB
+  Omar Sagoo \U0001F4BB"
 ---
 {% raw %}
 <p align="center">

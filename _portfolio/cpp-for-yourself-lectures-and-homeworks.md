@@ -2,8 +2,65 @@
 layout: project
 name: Cpp For Yourself Lectures And Homeworks
 slug: cpp-for-yourself-lectures-and-homeworks
+category: Uncategorized
 image: https://img.shields.io/github/actions/workflow/status/cpp-for-yourself/supplementary-materials/action.yml?branch=main&label=Link%20and%20code%20validation&style=for-the-badge
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Lectures and projects for the [C++ for yourself](https://youtube.com/playlist?list=PLwhKb0RIaIS1sJkejUmWj-0lk7v_xgCuT)
+  course [](https://www.youtube.com/code-for-yourself) This repository is a collection
+  of Markdown scripts used for all the videos in the [C++ for yourself](https://youtube.com/playlist?list=PLwhKb0RIaIS1sJkejUmWj-0lk7v_xgCuT)
+  course. These can be used to follow-along the video or as a standalone learning
+  material. ## \U0001F64F Support this work [](https://github.com/sponsors/niosus)
+  [](https://www.audibletrial.com/CodeForYourself) [](https://github.com/cpp-for-yourself/sponsor/blob/main/amazon.md)
+  Please remember that there is a human behind all of this work. I write scripts,
+  create animations, record and edit videos at night after a full-time work day. It
+  is at times hard. But _you_ can make it easier. Here is what you can do: - \U0001F4B6
+  Become a [**sponsor on GitHub**](https://github.com/sponsors/niosus)! - \U0001F4B8
+  Can't support monetarily? + \U0001F44D **Like** the videos and **watch them to the
+  end**! + \U0001F4AC **Leave comments** on YouTube! + \U0001F4E2 **Spread the word**
+  among your friends! - \U0001F92C Don't like something? \U0001F5E3️ **Talk to me
+  about it!** I am always eager to improve. ## :bulb: How to follow this course The
+  course is designed to be consumed from top to bottom, so start at the beginning
+  and you will always have enough knowledge for the next video. That being said, I
+  aim to leave links in the videos so that one could watch them out of order without
+  much hassle. Enjoy! \U0001F60E ## \U0001F4D5 C++ for yourself lectures Hello world
+  program dissection ---------------------------------------------------------- [](https://youtu.be/t2h1geGSww4)
+  [Lecture script](lectures/hello_world_dissection.md) - First keywords - What brackets
+  mean - What do different signs mean - Intro to \"scopes\" - Intro to functions -
+  Intro to includes ---------------------------------------------------------- Project
+  : hello world program ----------------------------------------------------------
+  [Homework script](homeworks/homework_1/homework.md) - Write a simple program that
+  prints `Hello World!` - Learn to compile and run simple programs ----------------------------------------------------------
+  Variables of fundamental types ----------------------------------------------------------
+  [](https://youtu.be/0z0gvv_Tb_U) [Lecture script](lectures/cpp_basic_types_and_variables.md)
+  - How to create variables of fundamental types - Naming variables - Using `const`,
+  `constexpr` with variables - References to variables ----------------------------------------------------------
+  Namespaces for variables -----------------------------------------------------------
+  [](https://youtu.be/cP2IDg4_BRk) [Lecture script](lectures/namespaces_using.md)
+  - Namespaces with variables - The word `using` with variables ----------------------------------------------------------
+  Input/output streams ----------------------------------------------------------
+  [](https://youtu.be/hy3eOpZmxbY) [Lecture script](lectures/more_useful_types.md)
+  - `std::cout`, `std::cerr`, `std::cin` ----------------------------------------------------------
+  Sequence and utility containers ----------------------------------------------------------
+  [](https://youtu.be/dwkSVkGsvFk) [Lecture script](lectures/more_useful_types.md)
+  - Sequence containers: `std::array`, `std::vector`, their usage and some caveats
+  - Pair container: `std::pair` - Strings from STL: `std::string` - Conversion to/from
+  strings: `to_string`, `stoi`, `stod`, `stof`, etc. - Aggregate initialization ----------------------------------------------------------
+  Associative containers ----------------------------------------------------------
+  [](https://youtu.be/TCu76SYmVCg) [Lecture script](lectures/associative_containers.md)
+  - `std::map` and `std::unordered_map` - Touch up on `std::set` and `std::unordered_set`
+  ---------------------------------------------------------- Project : fortune teller
+  program ---------------------------------------------------------- [Homework script](homeworks/homework_2/homework.md)
+  - Write a program that tells your C++ fortune - It reads and writes data from and
+  to terminal - Stores and accesses these data in containers ----------------------------------------------------------
+  Control structures ---------------------------------------------------------- [](https://youtu.be/jzgTxosgGIA)
+  [Lecture script](lectures/control_structures.md) - `if`, `switch` and ternary operator
+  - `for`, `while` and `do ... while` ----------------------------------------------------------
+  Random number generation ----------------------------------------------------------
+  [](https://youtu.be/IUoqMTGGo6k) [Lecture script](lectures/random_numbers.md) -
+  What are random numbers - How to generate them in modern C++ - Why not to use `rand()`
+  ---------------------------------------------------------- Project : the guessing
+  game ---------------------------------------------------------- [](https://youtu.be/TYs_xwihCNc)
+  [Homework script](homeworks/homework_3/homework.md)"
 ---
 {% raw %}
 # Lectures and projects for the [C++ for yourself](https://youtube.com/playlist?list=PLwhKb0RIaIS1sJkejUmWj-0lk7v_xgCuT) course

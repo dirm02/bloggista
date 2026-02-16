@@ -2,8 +2,65 @@
 layout: project
 name: Patrickjs Awesome Cursorrules
 slug: PatrickJS-awesome-cursorrules
+category: Uncategorized
 image: https://awesome.re/badge-flat.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Awesome Cursor Rules [](https://awesome.re) Configuration files
+  that enhance Cursor AI editor experience with custom rules and behaviors [Cursor
+  AI](https://cursor.sh/) is an AI-powered code editor. `.cursorrules` files define
+  custom rules for Cursor AI to follow when generating code, allowing you to tailor
+  its behavior to your specific needs and preferences. ## Sponsorships Warp - Built
+  for coding with multiple AI agents coderabbit.ai - Cut Code Review Time & Bugs in
+  Half. Instantly. Unblocked MCP- Supercharge Cursor with your team’s knowledge ##
+  Why .cursorrules? `.cursorrules` is a powerful feature in Cursor AI that allows
+  developers to define project-specific instructions for the AI. Here's why you might
+  want to use it: 1. **Customized AI Behavior**: `.cursorrules` files help tailor
+  the AI's responses to your project's specific needs, ensuring more relevant and
+  accurate code suggestions. 2. **Consistency**: By defining coding standards and
+  best practices in your `.cursorrules` file, you can ensure that the AI generates
+  code that aligns with your project's style guidelines. 3. **Context Awareness**:
+  You can provide the AI with important context about your project, such as commonly
+  used methods, architectural decisions, or specific libraries, leading to more informed
+  code generation. 4. **Improved Productivity**: With well-defined rules, the AI can
+  generate code that requires less manual editing, speeding up your development process.
+  5. **Team Alignment**: For team projects, a shared `.cursorrules` file ensures that
+  all team members receive consistent AI assistance, promoting cohesion in coding
+  practices. 6. **Project-Specific Knowledge**: You can include information about
+  your project's structure, dependencies, or unique requirements, helping the AI to
+  provide more accurate and relevant suggestions. By creating a `.cursorrules` file
+  in your project's root directory, you can leverage these benefits and enhance your
+  coding experience with Cursor AI. ## Contents - [Awesome Cursor Rules ](#awesome-cursor-rules-)
+  - [Sponsorships](#sponsorships) - [Why .cursorrules?](#why-cursorrules) - [Contents](#contents)
+  - [Rules](#rules) - [Frontend Frameworks and Libraries](#frontend-frameworks-and-libraries)
+  - [Backend and Full-Stack](#backend-and-full-stack) - [Mobile Development](#mobile-development)
+  - [CSS and Styling](#css-and-styling) - [State Management](#state-management) -
+  [Database and API](#database-and-api) - [Testing](#testing) - [Hosting and Deployments](#hosting-and-deployments)
+  - [Build Tools and Development](#build-tools-and-development) - [Language-Specific](#language-specific)
+  - [Other](#other) - [Documentation](#documentation) - [Utilities](#utilities) -
+  [Directories](#directories) - [How to Use](#how-to-use) - [Method One](#method-one)
+  - [Method Two](#method-two) - [Contributing](#contributing) - [Sponsorships](#sponsorships-1)
+  - [License](#license) ## Rules ### Frontend Frameworks and Libraries - [Angular
+  (Novo Elements)](./rules/angular-novo-elements-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Angular development with Novo Elements UI library. - [Angular
+  (TypeScript)](./rules/angular-typescript-cursorrules-prompt-file/.cursorrules) -
+  Cursor rules for Angular development with TypeScript integration. - [Astro (TypeScript)](./rules/astro-typescript-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Astro development with TypeScript integration. - [Beefree SDK
+  (TypeScript, JavaScript, CSS, HTML, React, Angular, Vue)](./rules/beefreeSDK-nocode-content-editor-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for embedding Beefree SDK's no-code content editors (for emails,
+  pages, and popups) into a web application. - [Cursor AI (React, TypeScript, shadcn/ui)](./rules/cursor-ai-react-typescript-shadcn-ui-cursorrules-p/.cursorrules)
+  - Cursor rules for Cursor AI development with React, TypeScript, and shadcn/ui integration.
+  - [Next.js 15 (React 19, Vercel AI, Tailwind)](./rules/nextjs15-react19-vercelai-tailwind-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Next.js development with React 19, Vercel AI, and Tailwind CSS
+  integration. - [Next.js 14 (Tailwind, SEO)](./rules/cursorrules-cursor-ai-nextjs-14-tailwind-seo-setup/.cursorrules)
+  - Cursor rules for Next.js development with Tailwind CSS and SEO optimization. -
+  [Next.js (React, Tailwind)](./rules/nextjs-react-tailwind-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Next.js development with React and Tailwind CSS integration.
+  - [Next.js (React, TypeScript)](./rules/nextjs-react-typescript-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Next.js development with React and TypeScript integration. -
+  [Next.js (SEO Development)](./rules/nextjs-seo-dev-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Next.js development with SEO optimization. - [Next.js (Supabase
+  Todo App)](./rules/nextjs-supabase-todo-app-cursorrules-prompt-file/.cursorrules)
+  - Cursor rules for Next.js development with Supabase integrat"
 ---
 {% raw %}
 # Awesome Cursor Rules [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)

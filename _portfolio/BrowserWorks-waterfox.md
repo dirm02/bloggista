@@ -2,8 +2,32 @@
 layout: project
 name: Browserworks Waterfox
 slug: BrowserWorks-waterfox
+category: Let's try this- Personal prefere
 image: https://img.shields.io/website?url=https://www.waterfox.com
 repo_url: https://github.com/BrowserWorks/Waterfox
+indexed_content: "# Waterfox A privacy-focused, performance-oriented browser based
+  on Firefox. ## About Waterfox Waterfox is an open-source, privacy-focused browser
+  based on the popular open source browser with a red panda as a mascot. It is designed
+  to be a drop-in replacement for said browser that offers enhanced privacy features,
+  performance improvements, and customizability while maintaining compatibility with
+  existing extensions. ### Key Features - **Privacy-focused**: Removal of telemetry
+  and tracking, with bare minimum of data collection for operation. - **Performance-oriented**:
+  Optimized for modern systems - **Customizable**: Support for classic and modern
+  extensions - **Cross-platform**: Available for Windows, macOS, Linux and Android
+  - **Modern**: Regular updates to stay current with web standards ## Getting Started
+  ### Download You can download the latest stable version of Waterfox from our [official
+  website](https://www.waterfox.com/download/). ### Building from Source For instructions
+  on how to build Waterfox from source, please see our [Build Guide](BUILDING.md).
+  ## Contributing We welcome contributions from the community! Please see our [Contributing
+  Guide](CONTRIBUTING.md) for details on how to get started. ## Documentation - [Source
+  Directory Structure](https://firefox-source-docs.mozilla.org/contributing/directory_structure.html)
+  - [Quick Reference for Contributors](https://firefox-source-docs.mozilla.org/contributing/contribution_quickref.html)
+  - [Build Documentation](BUILDING.md) ## Community - [Official Website](https://www.waterfox.com)
+  - [Reddit](https://www.reddit.com/r/waterfox/) ## Developer Information The core
+  development team is typically available 9:00 \U0001F558 → 17:00 \U0001F554, Monday
+  → Friday (UK time). This does not include [UK bank holidays](https://www.gov.uk/bank-holidays)
+  or annual leave. ## License Waterfox is licensed under the [Mozilla Public License
+  2.0](LICENSE)."
 ---
 {% raw %}
 # Waterfox

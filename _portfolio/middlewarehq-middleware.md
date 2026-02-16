@@ -2,8 +2,69 @@
 layout: project
 name: Middlewarehq Middleware
 slug: middlewarehq-middleware
+category: Management- Engineering- SocialM
 image: https://github.com/middlewarehq/middleware/blob/main/media_files/banner.gif
 repo_url: https://github.com/middlewarehq/middleware
+indexed_content: "Open-source engineering management that unlocks developer potential
+  Join our Open Source Community ## Introduction **Middleware** is an open-source
+  tool designed to help engineering leaders measure and analyze the effectiveness
+  of their teams using the [DORA metrics](https://dora.dev). The DORA metrics are
+  a set of [four key values](https://dora.dev/guides/dora-metrics-four-keys/) that
+  provide insights into software delivery performance and operational efficiency.
+  They are: - **Deployment Frequency**: The frequency of code deployments to production
+  or an operational environment. - **Lead Time for Changes**: The time it takes for
+  a commit to make it into production. - **Mean Time to Restore**: The time it takes
+  to restore service after an incident or failure. - **Change Failure Rate**: The
+  percentage of deployments that result in failures or require remediation. **Table
+  of Contents** - [Middleware - Open Source](#introduction) - [Features](#-features)
+  - [Quick Start](#-quick-start) - [Installing Middleware](#-installing-middleware)
+  - [Troubleshooting](#%EF%B8%8F-troubleshooting) - [Developer Setup](#-developer-setup)
+  - [Using Gitpod](#%EF%B8%8F-using-gitpod) - [Using Docker](#-using-docker) - [Manual
+  Setup](#%EF%B8%8F-manual-setup) - [Usage](#-usage) - [How we Calculate DORA](#-how-we-calculate-dora-metrics)
+  - [Roadmap](#%EF%B8%8F-roadmap) - [Contributing guidelines](#%EF%B8%8F-contributing-guidelines)
+  - [Developer Automations](#-developer-automations) - [Security guidelines](#%EF%B8%8F-security-guidelines)
+  - [License](#license) ## \U0001F680 Features - Integration with various CI/CD tools
+  - Automated collection and analysis of DORA metrics - Visualization of key performance
+  indicators - Customizable reports and dashboards - Integration with popular project
+  management platforms ## ✨ Quick Start ### ⭐ Installing Middleware * Ensure that
+  you have [docker](https://www.docker.com/products/docker-desktop/) installed and
+  running. * Open the terminal and run the following command: ```bash docker volume
+  create middleware_postgres_data docker volume create middleware_keys docker run
+  --name middleware \\ -p 3333:3333 \\ -p 9696:9696 \\ -p 9697:9697 \\ -v middleware_postgres_data:/var/lib/postgresql/data
+  \\ -v middleware_keys:/app/keys \\ -d middlewareeng/middleware:latest docker logs
+  -f middleware ``` - Wait for sometime for the services to be up. - The app shall
+  be available on your host at http://localhost:3333. ## \U0001F6E0️ Troubleshooting
+  1. In case you want to stop the container, run the following command: ```bash docker
+  stop middleware ``` 2. In order to fetch latest version from remote and then starting
+  the system, use following command: ```bash docker pull middlewareeng/middleware:latest
+  docker rm -f middleware || true docker run --name middleware \\ -p 3333:3333 \\
+  -v middleware_postgres_data:/var/lib/postgresql/data \\ -v middleware_keys:/app/keys
+  \\ -d middlewareeng/middleware:latest docker logs -f middleware ``` 3. If you see
+  an error like: `Conflict. The container name \"/middleware\" is already in use by
+  container`. \\ Then run following command before running the container again: ```bash
+  docker rm -f middleware ``` 4. If you wish to delete all the data saved in the container,
+  you can delete the volumes created by running the following command: ```bash docker
+  volume rm middleware_postgres_data middleware_keys ``` ## \U0001F469‍\U0001F4BB
+  Developer Setup ### ☁️ Using GitPod Gitpod enables development on remote machines
+  and helps you get started with Middleware if your machine does not support running
+  the project locally. If you want to run the project locally you can [setup using
+  docker](#-using-docker) or [setup everything manually](#-manual-setup). 1. Click
+  the button below to open this project in Gitpod. 2. This will open a fully configured
+  workspace in your browser with all the necessary dependencies already installed.
+  [](https://gitpod.io/#https://github.com/middlewarehq/middleware) After initialization,
+  you can access the server at port 3333 of the gitpod instance. ### \U0001F433 Using
+  Docker > [!IMPORTANT] > We recommend minimum 16GB RAM when developing locally. If
+  you don't have docker installed, please install docker [over here](https://docs.docker.com/get-docker/).
+  Make sure docker is running. 1. **Clone the Repository**: ```bash git clone https://github.com/middlewarehq/middleware
+  ``` 2. **Navigate to the Project Directory**: ```bash cd middleware ``` 3. **Run
+  `dev.sh` script in the project root \U0001FA84**\\ `./dev.sh` creates a `.env` file
+  with required development environments and runs a CLI with does all the heavy lifting
+  from tracking the container with `docker compose watch` to providing you with logs
+  from different services.\\ The usage is as follows: ```bash ./local-setup.sh # Optional;
+  See note ./dev.sh ``` You may update the `env.example` and set `ENVIRONMENT=prod`
+  to run it in production setup.\\ Further if any changes are required to be made
+  to ports, you may update the `docker-compose.yml` file, accordingly. **Note** about
+  `local-setup.sh`: While "
 ---
 {% raw %}
 <br /><br />

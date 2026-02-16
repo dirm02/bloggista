@@ -2,8 +2,67 @@
 layout: project
 name: Gpustack Gpustack
 slug: gpustack-gpustack
+category: AI-automation-web2-3SmartC-Agent
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/gpustack-gpustack/docs/assets/a100-throughput-comparison.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/gpustack-gpustack
+indexed_content: 'English | 简体中文 | 日本語 ## Overview GPUStack is an open-source GPU
+  cluster manager designed for efficient AI model deployment. It lets you run models
+  efficiently on your own GPU hardware by choosing the best inference engines, scheduling
+  GPU resources, analyzing model architectures, and automatically configuring deployment
+  parameters. The following figure shows how GPUStack delivers improved inference
+  throughput over the unoptimized vLLM baseline: For detailed benchmarking methods
+  and results, visit our [Inference Performance Lab](https://docs.gpustack.ai/latest/performance-lab/overview/).
+  ## Tested Inference Engines, GPUs, and Models GPUStack uses a plug-in architecture
+  that makes it easy to add new AI models, inference engines, and GPU hardware. We
+  work closely with partners and the open-source community to test and optimize emerging
+  models across different inference engines and GPUs. Below is the current list of
+  supported inference engines, GPUs, and models, which will continue to expand over
+  time. **Tested Inference Engines:** - vLLM - SGLang - TensorRT-LLM - MindIE **Tested
+  GPUs:** - NVIDIA A100 - NVIDIA H100/H200 - Ascend 910B **Tuned Models:** - Qwen3
+  - gpt-oss - GLM-4.5-Air - GLM-4.x - DeepSeek-R1 - DeepSeek-V3.2 ## Architecture
+  GPUStack enables development teams, IT organizations, and service providers to deliver
+  Model-as-a-Service at scale. It supports industry-standard APIs for LLM, voice,
+  image, and video models. The platform includes built-in user authentication and
+  access control, real-time monitoring of GPU performance and utilization, and detailed
+  metering of token usage and API request rates. The figure below illustrates how
+  a single GPUStack server can manage multiple GPU clusters across both on-premises
+  and cloud environments. The GPUStack scheduler allocates GPUs to maximize resource
+  utilization and selects the appropriate inference engines for optimal performance.
+  Administrators also gain full visibility into system health and metrics through
+  integrated Grafana and Prometheus dashboards. GPUStack provides a powerful framework
+  for deploying AI models. Its core features include: - **Multi-Cluster GPU Management.**
+  Manages GPU clusters across multiple environments. This includes on-premises servers,
+  Kubernetes clusters, and cloud providers. - **Pluggable Inference Engines.** Automatically
+  configures high-performance inference engines such as vLLM, SGLang, and TensorRT-LLM.
+  You can also add custom inference engines as needed. - **Performance-Optimized Configurations.**
+  Offers pre-tuned modes for low latency or high throughput. GPUStack supports extended
+  KV cache systems like LMCache and HiCache to reduce TTFT. It also includes built-in
+  support for speculative decoding methods such as EAGLE3, MTP, and N-grams. - **Enterprise-Grade
+  Operations.** Offers support for automated failure recovery, load balancing, monitoring,
+  authentication, and access control. ## Quick Start ### Prerequisites 1. A node with
+  at least one NVIDIA GPU. For other GPU types, please check the guidelines in the
+  GPUStack UI when adding a worker, or refer to the [Installation documentation](https://docs.gpustack.ai/latest/installation/requirements/)
+  for more details. 2. Ensure the NVIDIA driver, [Docker](https://docs.docker.com/engine/install/)
+  and [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
+  are installed on the worker node. 3. (Optional) A CPU node for hosting the GPUStack
+  server. The GPUStack server does not require a GPU and can run on a CPU-only machine.
+  [Docker](https://docs.docker.com/engine/install/) must be installed. Docker Desktop
+  (for Windows and macOS) is also supported. If no dedicated CPU node is available,
+  the GPUStack server can be installed on the same machine as a GPU worker node. 4.
+  Only Linux is supported for GPUStack worker nodes. If you use Windows, consider
+  using WSL2 and avoid using Docker Desktop. macOS is not supported for GPUStack worker
+  nodes. ### Install GPUStack Run the following command to install and start the GPUStack
+  server using Docker: ```bash sudo docker run -d --name gpustack \ --restart unless-stopped
+  \ -p 80:80 \ --volume gpustack-data:/var/lib/gpustack \ gpustack/gpustack ``` Alternative:
+  Use Quay Container Registry Mirror If you cannot pull images from `Docker Hub` or
+  the download is very slow, you can use our `Quay.io` mirror by pointing your registry
+  to `quay.io`: ```bash sudo docker run -d --name gpustack \ --restart unless-stopped
+  \ -p 80:80 \ --volume gpustack-data:/var/lib/gpustack \ quay.io/gpustack/gpustack
+  \ --system-default-container-registry quay.io ``` Check the GPUStack startup logs:
+  ```bash sudo docker logs -f gpustack ``` After GPUStack starts, run the following
+  command to get the default admin password: ```bash sudo docker exec gpustack cat
+  /var/lib/gpustack/initial_admin_password ``` Open your browser and navigate to `http://your_host_ip`
+  to access the GPUStack UI. Use the default username `admin` and '
 ---
 {% raw %}
 <br>

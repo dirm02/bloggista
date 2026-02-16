@@ -2,8 +2,70 @@
 layout: project
 name: Bessouat40 Raglight
 slug: Bessouat40-RAGLight
+category: Future RAG ressources
 image: https://img.shields.io/github/license/Bessouat40/RAGLight
 repo_url: https://github.com/Bessouat40/RAGLight
+indexed_content: "# RAGLight [](https://pepy.tech/projects/raglight) [](https://github.com/Bessouat40/RAGLight/actions/workflows/test.yml)
+  **RAGLight** is a lightweight and modular Python library for implementing **Retrieval-Augmented
+  Generation (RAG)**. It enhances the capabilities of Large Language Models (LLMs)
+  by combining document retrieval with natural language inference. Designed for simplicity
+  and flexibility, RAGLight provides modular components to easily integrate various
+  LLMs, embeddings, and vector stores, making it an ideal tool for building context-aware
+  AI solutions. --- ## \U0001F4DA Table of Contents - [Requirements](#⚠️-requirements)
+  - [Features](#features) - [Import library](#import-library-\U0001F6E0️) - [Chat
+  with Your Documents Instantly With CLI](#chat-with-your-documents-instantly-with-cli-\U0001F4AC)
+  - [Ignore Folders Feature](#ignore-folders-feature-\U0001F6AB) - [Ignore Folders
+  in Configuration Classes](#ignore-folders-in-configuration-classes-\U0001F6AB) -
+  [Environment Variables](#environment-variables) - [Providers and Databases](#providers-and-databases)
+  - [LLM](#llm) - [Embeddings](#embeddings) - [Vector Store](#vector-store) - [Quick
+  Start](#quick-start-\U0001F680) - [Knowledge Base](#knowledge-base) - [RAG](#rag)
+  - [Agentic RAG](#agentic-rag) - [MCP Integration](#mcp-integration) - [Use Custom
+  Pipeline](#use-custom-pipeline) - [Override Default Processors](#override-default-processors)
+  - [Use RAGLight with Docker](#use-raglight-with-docker) - [Build your image](#build-your-image)
+  - [Run your image](#run-your-image) --- > ## ⚠️ Requirements > > Actually RAGLight
+  supports : > > - Ollama > - Google > - LMStudio > - vLLM > - OpenAI API > - Mistral
+  API > > If you use LMStudio, you need to have the model you want to use loaded in
+  LMStudio. ## Features - **Embeddings Model Integration**: Plug in your preferred
+  embedding models (e.g., HuggingFace **all-MiniLM-L6-v2**) for compact and efficient
+  vector embeddings. - **LLM Agnostic**: Seamlessly integrates with different LLMs
+  from different providers (Ollama and LMStudio supported). - **RAG Pipeline**: Combines
+  document retrieval and language generation in a unified workflow. - **Agentic RAG
+  Pipeline**: Use Agent to improve your RAG performances. - \U0001F50C **MCP Integration**:
+  Add external tool capabilities (e.g. code execution, database access) via MCP servers.
+  - **Flexible Document Support**: Ingest and index various document types (e.g.,
+  PDF, TXT, DOCX, Python, Javascript, ...). - **Extensible Architecture**: Easily
+  swap vector stores, embedding models, or LLMs to suit your needs. --- ## Import
+  library \U0001F6E0️ To install the library, run: ```bash pip install raglight ```
+  --- ## Chat with Your Documents Instantly With CLI \U0001F4AC For the quickest and
+  easiest way to get started, RAGLight provides an interactive command-line wizard.
+  It will guide you through every step, from selecting your documents to chatting
+  with them, without writing a single line of Python. Prerequisite: Ensure you have
+  a local LLM service like Ollama running. Just run this one command in your terminal:
+  ```bash raglight chat ``` You can also launch the Agentic RAG wizard with: ```bash
+  raglight agentic-chat ``` The wizard will guide you through the setup process. Here
+  is what it looks like: The wizard will ask you for: - \U0001F4C2 Data Source: The
+  path to your local folder containing the documents. - \U0001F6AB Ignore Folders:
+  Configure which folders to exclude during indexing (e.g., `.venv`, `node_modules`,
+  `__pycache__`). - \U0001F4BE Vector Database: Where to store the indexed data and
+  what to name it. - \U0001F9E0 Embeddings Model: Which model to use for understanding
+  your documents. - \U0001F916 Language Model (LLM): Which LLM to use for generating
+  answers. After configuration, it will automatically index your documents and start
+  a chat session. ### Ignore Folders Feature \U0001F6AB RAGLight automatically excludes
+  common directories that shouldn't be indexed, such as: - Virtual environments (`.venv`,
+  `venv`, `env`) - Node.js dependencies (`node_modules`) - Python cache files (`__pycache__`)
+  - Build artifacts (`build`, `dist`, `target`) - IDE files (`.vscode`, `.idea`) -
+  And many more... You can customize this list during the CLI setup or use the default
+  configuration. This ensures that only relevant code and documentation are indexed,
+  improving performance and reducing noise in your search results. ### Ignore Folders
+  in Configuration Classes \U0001F6AB The ignore folders feature is also available
+  in all configuration classes, allowing you to specify which directories to exclude
+  during indexing: - **RAGConfig**: Use `ignore_folders` parameter to exclude folders
+  during RAG pipeline indexing - **AgenticRAGConfig**: Use `ignore_folders` parameter
+  to exclude folders during AgenticRAG pipeline indexing - **VectorStoreConfig**:
+  Use `ignore_folders` parameter to exclude folders during vector store operations
+  All configuration classes use `Settings.DEFAULT_IGNORE_FOLDERS` as the default value,
+  but you can override this with your custom list: ```python # Example: Custom ignore
+  folders for any configuration custom_igno"
 ---
 {% raw %}
 # RAGLight

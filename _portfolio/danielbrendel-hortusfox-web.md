@@ -2,8 +2,70 @@
 layout: project
 name: Danielbrendel Hortusfox Web
 slug: danielbrendel-hortusfox-web
+category: Management- Engineering- SocialM
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/danielbrendel-hortusfox-web/public/logo.png
 repo_url: https://github.com/sponsors/danielbrendel
+indexed_content: "HortusFox A self-hosted collaborative plant management system (C)
+  2023 - 2025 by Daniel Brendel www.hortusfox.com &nbsp; ## Table of Contents - [Description](#description)
+  - [Features](#features) - [Resources](#resources) - [Installation](#installation)
+  - [Docker](#docker) - [Installer](#installer) - [Manual](#manual) - [AquaShell](#aquashell)
+  - [Cronjobs](#cronjobs) - [Application testing](#application-testing) - [System
+  requirements](#system-requirements) - [External services](#external-services) -
+  [App icons](#app-icons) - [Weather forecast](#weather-forecast) - [Plant identification](#plant-identification)
+  - [Plant information](#plant-information) - [Maintenance scripts](#maintenance-scripts)
+  - [Contributing](#contributing) - [Security](#security) ## Description HortusFox
+  is a self-hosted collaborative plant management system which you can use in your
+  own environment to manage all your plants. You can add your plants with various
+  details and photos and assign them to a location of your environment. There is a
+  dashboard available that shows all important overview information. The system does
+  also feature a warning system in order to indicate which plants need special care,
+  user authentication, tasks, inventory management, calendar, search, collaborative
+  chat and a history log of what actions users have taken. The system features collaborative
+  management, so you can manage your plants with multiple users. There are many more
+  features. You can see a list of features below. ## Features - \U0001FAB4 Plant management
+  - \U0001F3E0 Custom locations - \U0001F4DC Tasks system - \U0001F4D6 Inventory system
+  - \U0001F4C6 Calendar system - \U0001F50D Search feature - \U0001F570️ History feature
+  - \U0001F326️ Weather feature - \U0001F4AC Group chat - ⚙️ Profile management -
+  \U0001F98B Themes - \U0001F511 Admin dashboard - \U0001F4E2 Reminders - \U0001F4BE
+  Backups - \U0001F4BB REST API - \U0001F52C Plant identification ## Resources - [Official
+  Homepage](https://www.hortusfox.com/) - [Documentation](https://hortusfox.github.io/)
+  ## Installation ### Docker You can use Docker and Docker Compose to simplify the
+  setup process and ensure consistency across different environments. Prerequisites
+  - Docker installed on your system - Docker Compose installed on your system Follow
+  these steps: 1. Clone the repository: ```shell git clone https://github.com/danielbrendel/hortusfox-web.git
+  cd hortusfox-web ``` 2. Set environment variables in the `docker-compose.yml`. Set
+  your admin user e-mail and password in order to login ```yaml # Admin login credentials
+  # services.app.environment APP_ADMIN_EMAIL: \"admin@example.com\" APP_ADMIN_PASSWORD:
+  \"password\" ``` Set your preferred timezone. Default is UTC. ```yaml # Timezone
+  setting # services.app.environment APP_TIMEZONE: \"UTC\" ``` If you want composer
+  dependencies to be updated when the app container starts, set the following setting
+  ```yaml # Update composer dependencies during start if set to true # services.app.environment
+  APP_UPDATEDEPS: \"true\" ``` Set database settings if required. It is recommended
+  to set custom passwords due to security reasons. All other settings can be left
+  unaltered. ```yaml # Settings used to establish connections to the database # services.app.environment
+  DB_HOST: db DB_PORT: 3306 DB_DATABASE: hortusfox DB_USERNAME: user DB_PASSWORD:
+  password DB_CHARSET: \"utf8mb4\" # Settings of the database container # services.db.environment
+  MARIADB_ROOT_PASSWORD: my-secret-pw MARIADB_DATABASE: hortusfox MARIADB_USER: user
+  MARIADB_PASSWORD: password ``` You can optionally specify proxy authentication settings
+  for your app ```yaml # services.app.environment PROXY_ENABLE: \"true\" PROXY_HEADER_EMAIL:
+  \"Your e-mail header identifier here\" PROXY_HEADER_USERNAME: \"Your username header
+  identifier here\" PROXY_AUTO_SIGNUP: \"true\" PROXY_WHITELIST: \"\" PROXY_HIDE_LOGOUT:
+  \"true\" PROXY_OVERWRITE_VALUES: \"true\" ``` Note: Setting `PROXY_OVERWRITE_VALUES`
+  to `true` is mandatory if you want to update your proxy authentication settings
+  upon container launch. 3. Pull the image and run the application: ```shell docker
+  compose pull docker compose up -d ``` 4. The application should now be running on
+  http://localhost:8080. 5. You can now go to the admin dashboard in order to adjust
+  your workspace settings and also go to your profile page in order to adjust your
+  user preferences. ### Installer You can also use the integrated installer in order
+  to install the product. In order for that to do, be sure that you are not running
+  the system via the internal asatru development server. Instead you might want to,
+  for instance, run the system from the context of a webserver environment like XAMPP.
+  If you do that, just create a file named do_install (no file extension) in the root
+  directory of the project and browse to the installer and the system will guide you
+  through the installation process. ``` http://localhost/install ``` Be sure that
+  PHP is installed and both your webserver and mariadb server are running. If there
+  is no vendor folder already created then the system will try to run Composer in
+  order to install all required dependencies. Fo"
 ---
 {% raw %}
 <h1 align="center">

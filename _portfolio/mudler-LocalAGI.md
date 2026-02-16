@@ -2,8 +2,70 @@
 layout: project
 name: Mudler Localagi
 slug: mudler-LocalAGI
+category: AI-automation-web2-3SmartC-Agent
 image: https://goreportcard.com/badge/github.com/mudler/LocalAGI
 repo_url: https://github.com/mudler/LocalAGI
+indexed_content: "Your AI. Your Hardware. Your Rules [](https://goreportcard.com/report/github.com/mudler/LocalAGI)
+  [](https://opensource.org/licenses/MIT) [](https://github.com/mudler/LocalAGI/stargazers)
+  [](https://github.com/mudler/LocalAGI/issues) Try on [](https://t.me/LocalAGI_bot)
+  Create customizable AI assistants, automations, chat bots and agents that run 100%
+  locally. No need for agentic Python libraries or cloud service keys, just bring
+  your GPU (or even just CPU) and a web browser. **LocalAGI** is a powerful, self-hostable
+  AI Agent platform that allows you to design AI automations without writing code.
+  Create Agents with a couple of clicks, connect via MCP and give it skills with [skillserver](https://github.com/mudler/skillserver).
+  Every agent exposes a complete drop-in replacement for OpenAI's Responses APIs with
+  advanced agentic capabilities. No clouds. No data leaks. Just pure local AI that
+  works on consumer-grade hardware (CPU and GPU). ## \U0001F6E1️ Take Back Your Privacy
+  Are you tired of AI wrappers calling out to cloud APIs, risking your privacy? So
+  were we. LocalAGI ensures your data stays exactly where you want it—on your hardware.
+  No API keys, no cloud subscriptions, no compromise. ## \U0001F31F Key Features -
+  \U0001F39B **No-Code Agents**: Easy-to-configure multiple agents via Web UI. - \U0001F5A5
+  **Web-Based Interface**: Simple and intuitive agent management. - \U0001F916 **Advanced
+  Agent Teaming**: Instantly create cooperative agent teams from a single prompt.
+  - \U0001F4E1 **Connectors**: Built-in integrations with Discord, Slack, Telegram,
+  GitHub Issues, and IRC. - \U0001F6E0 **Comprehensive REST API**: Seamless integration
+  into your workflows. Every agent created will support OpenAI Responses API out of
+  the box. - \U0001F4DA **Short & Long-Term Memory**: Powered by [LocalRecall](https://github.com/mudler/LocalRecall).
+  - \U0001F9E0 **Planning & Reasoning**: Agents intelligently plan, reason, and adapt.
+  - \U0001F504 **Periodic Tasks**: Schedule tasks with cron-like syntax. - \U0001F4BE
+  **Memory Management**: Control memory usage with options for long-term and summary
+  memory. - \U0001F5BC **Multimodal Support**: Ready for vision, text, and more. -
+  \U0001F527 **Extensible Custom Actions**: Easily script dynamic agent behaviors
+  in Go (interpreted, no compilation!). - \U0001F6E0 **Fully Customizable Models**:
+  Use your own models or integrate seamlessly with [LocalAI](https://github.com/mudler/LocalAI).
+  - \U0001F4CA **Observability**: Monitor agent status and view detailed observable
+  updates in real-time. ## \U0001F6E0️ Quickstart ```bash # Clone the repository git
+  clone https://github.com/mudler/LocalAGI cd LocalAGI # CPU setup (default) docker
+  compose up # NVIDIA GPU setup docker compose -f docker-compose.nvidia.yaml up #
+  Intel GPU setup (for Intel Arc and integrated GPUs) docker compose -f docker-compose.intel.yaml
+  up # AMD GPU setup docker compose -f docker-compose.amd.yaml up # Start with a specific
+  model (see available models in models.localai.io, or localai.io to use any model
+  in huggingface) MODEL_NAME=gemma-3-12b-it docker compose up # NVIDIA GPU setup with
+  custom multimodal and image models MODEL_NAME=gemma-3-12b-it \\ MULTIMODAL_MODEL=moondream2-20250414
+  \\ IMAGE_MODEL=flux.1-dev-ggml \\ docker compose -f docker-compose.nvidia.yaml up
+  ``` Now you can access and manage your agents at [http://localhost:8080](http://localhost:8080)
+  Still having issues? see this Youtube video: https://youtu.be/HtVwIxW3ePg ## Videos
+  [](https://youtu.be/HtVwIxW3ePg) [](https://youtu.be/v82rswGJt_M) [](https://youtu.be/d_we-AYksSw)
+  [](https://youtu.be/2Xvx78i5oBs) ## \U0001F4DA\U0001F195 Local Stack Family \U0001F195
+  LocalAI is now part of a comprehensive suite of AI tools designed to work together:
+  LocalAI LocalAI is the free, Open Source OpenAI alternative. LocalAI act as a drop-in
+  replacement REST API that's compatible with OpenAI API specifications for local
+  AI inferencing. Does not require GPU. LocalRecall A REST-ful API and knowledge base
+  management system that provides persistent memory and storage capabilities for AI
+  agents. ## \U0001F5A5️ Hardware Configurations LocalAGI supports multiple hardware
+  configurations through Docker Compose profiles: ### CPU (Default) - No special configuration
+  needed - Runs on any system with Docker - Best for testing and development - Supports
+  text models only ### NVIDIA GPU - Requires NVIDIA GPU and drivers - Uses CUDA for
+  acceleration - Best for high-performance inference - Supports text, multimodal,
+  and image generation models - Run with: `docker compose -f docker-compose.nvidia.yaml
+  up` - Default models: - Text: `gemma-3-4b-it-qat` - Multimodal: `moondream2-20250414`
+  - Image: `sd-1.5-ggml` - Environment variables: - `MODEL_NAME`: Text model to use
+  - `MULTIMODAL_MODEL`: Multimodal model to use - `IMAGE_MODEL`: Image generation
+  model to use - `LOCALAI_SINGLE_ACTIVE_BACKEND`: Set to `true` to enable single active
+  backend mode ### Intel GPU - Supports Intel Arc and integrated GPUs - Uses SYCL
+  for acceleration - Best for Intel-based systems - Supports text, multimodal, and
+  image generation models - Run with: `docker compose -f docker-compose.intel.yaml
+  up` -"
 ---
 {% raw %}
 <p align="center">

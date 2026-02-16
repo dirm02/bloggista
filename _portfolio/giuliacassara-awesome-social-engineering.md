@@ -2,8 +2,42 @@
 layout: project
 name: Giuliacassara Awesome Social Engineering
 slug: giuliacassara-awesome-social-engineering
+category: GreyHate-Cyber&Security
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: 'Awesome Social Engineering =============== [](https://github.com/sindresorhus/awesome)
+  A curated list of awesome social engineering resources, inspired by the awesome-*
+  trend on GitHub. Those resources and tools are intended only for cybersecurity professional,
+  penetration testers and educational use in a controlled environment. **No humans
+  were manipulated to make this list!** Table of Contents ================= 1. [Online
+  Courses](#online-courses) 2. [Capture the Flag](#capture-the-flag) 3. [Psychology
+  Books](#psychology-books) 4. [Books](#social-engineering-books) 5. [Documentation](#documentation)
+  6. [Tools](#tools) 7. [Miscellaneus](#miscellaneous) 8. [OSINT](#osint) 9. [Contribution](#contribution)
+  10. [License](#license) Online Courses ================= - [Udemy - Learn Social
+  Engineering from Scratch](https://www.udemy.com/learn-social-engineering-from-scratch)
+  - [PacktPub - Learn Social Engineering From Scratch by Zaid Sabih](https://www.packtpub.com/application-development/learn-social-engineering-scratch-video)
+  - [Cybrary - Social Engineering and Manipulation](https://www.cybrary.it/course/social-engineering/)
+  - Free Course Capture the Flag ================= #### Social-Engineer.com - The
+  SECTF, DEFCON - [Social-Engineer.com - DEFCON SECTF](https://www.social-engineer.org/sevillage-def-con/the-sectf/)
+  Psychology Books ================= Most of these books covers the basics of psychology
+  useful for a social engineer. - [Artful Persuasion – How to command attention, Change
+  minds and influence People – Harry Mills](https://www.amazon.com/Artful-Persuasion-Command-Attention-Influence/dp/0814470637)
+  - [What is every BODY saying – Joe Navarro](https://www.amazon.com/What-Every-BODY-Saying-Speed-Reading-ebook/dp/B0010SKSTO/ref=sr_1_1?dchild=1&keywords=what+is+everybody+saying+%E2%80%93+joe+navarro&qid=1614256945&s=books&sr=1-1)
+  - [Conflict, power and persuasion – Ben Hoffman](https://www.amazon.com/Conflict-Power-Persuasion-Negotiating-Effectively/dp/B0015E4JMK/ref=sr_1_1?dchild=1&keywords=Conflict%2C+power+and+persuasion+%E2%80%93+Ben+Hoffman&qid=1614256960&s=books&sr=1-1)
+  - [Dealing with difficult people – McGraw Hill](https://www.amazon.com/Dealing-Difficult-People-McGraw-Hill-Professional-ebook/dp/B000P2A3R8/ref=sr_1_4?dchild=1&keywords=Dealing+with+difficult+people+%E2%80%93+McGraw+Hill&qid=1614256977&s=books&sr=1-4)
+  - [Get anyone to do anything – David J Lieberman](https://www.amazon.com/Get-Anyone-Anything-Again-Psychological/dp/B01NH07LGD/ref=sr_1_2?dchild=1&keywords=Get+anyone+to+do+anything+%E2%80%93+David+J+Lieberman&qid=1614257001&s=books&sr=1-2)
+  - [How to start a conversation and make friends - Don Gabor](https://www.amazon.com/How-Start-Conversation-Make-Friends/dp/1451610998/ref=sr_1_1?dchild=1&keywords=How+to+start+a+conversation+and+make+friends+-+Don+Gabor%5D&qid=1614257018&s=books&sr=1-1)
+  - [The art of Psychological Warfare – Michael T Stevens](https://www.amazon.com/Art-Psychological-Warfare-Skillfully-Undetected/dp/1530719151/ref=sr_1_1?dchild=1&keywords=The+art+of+Psychological+Warfare+%E2%80%93+Michael+T+Stevens&qid=1614257033&s=books&sr=1-1)
+  - [How to Win Friends and Influence People - Dale Carnegie](https://www.amazon.co.uk/d/Books/How-Win-Friends-Influence-People-Dale-Carnegie/0091906814/ref=sr_1_1?ie=UTF8&qid=1494621059&sr=8-1&keywords=how+to+win+friends+and+influence+people)
+  - [The 48 Laws of Power - Robert Greene](https://www.amazon.co.uk/d/Books/48-Laws-Power-Robert-Greene-Collection/1861972784/ref=sr_1_1?ie=UTF8&qid=1494621512&sr=8-1&keywords=the+48+laws+of+power)
+  - [The Psychology Book](https://www.amazon.co.uk/d/Books/Psychology-Book-Nigel-Benson/1405391243/ref=sr_1_1?ie=UTF8&qid=1494621589&sr=8-1&keywords=psychology)
+  - [The Power of Habit: Why We Do What We Do, and How to Change - Charles Duhigg](https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240/ref=sr_1_1?ie=UTF8&qid=1494621842&sr=8-1&keywords=the+power+of+habit)
+  - [Influence: The Psychology of Persuasion Paperback – Robert B., PhD Cialdini](https://www.amazon.co.uk/d/cka/Influence-Psychology-Persuasion-Robert-B-PhD-Cialdini/006124189X/ref=sr_1_1?ie=UTF8&qid=1494621912&sr=8-1&keywords=influence)
+  - [Emotions Revealed: Understanding Faces and Feelings - Prof Paul Ekman](https://www.amazon.co.uk/Emotions-Revealed-Understanding-Faces-Feelings/dp/0753817659/ref=sr_1_1?ie=UTF8&qid=1494622003&sr=8-1&keywords=paul+ekman)
+  - [The Psychology of Interrogations and Confessions: A Handbook - Gisli H. Gudjonsson](https://www.amazon.co.uk/Psychology-Interrogations-Confessions-Handbook-Policing-x/dp/0470844612/ref=sr_1_1?s=books&ie=UTF8&qid=1494624501&sr=1-1&keywords=psychology+of+interrogation)
+  - [Mindfucking: A Critique of Mental Manipulation - Colin McGinn](https://www.goodreads.com/book/show/4049997-mindfucking)
+  Social Engineering Books ================= - [Human Hacking – Chris Hadnagy](https://humanhackingbook.com/)
+  - [Learn Social Engineering – Dr. Erdal Ozkaya](https://www.amazon.com/Learn-Social-Engineering-in'
 ---
 {% raw %}
 Awesome Social Engineering

@@ -2,8 +2,68 @@
 layout: project
 name: Calmke Lipmap
 slug: calmke-LiPMAP
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/calmke-LiPMAP/assets/teaser.png
 repo_url: https://github.com/ant-research/LiPMAP.git
+indexed_content: "# LiP-Map: Interacted Planes Reveal 3D Line Mapping &ensp; [Zeran
+  Ke](https://calmke.github.io/) 1,2* , [Bin Tan](https://icetttb.github.io/) 2* ,
+  [Gui-Song Xia](http://www.captain-whu.com/zh/person/xiaguisong.html) 1 , [Yujun
+  Shen](https://shenyujun.github.io/) 2 , [Nan Xue](https://xuenan.net/) 2† 1 Wuhan
+  University &ensp;&ensp; 2 Ant Group --> ## \U0001F4D6 Overview 3D line mapping from
+  multi-view RGB images provides a compact and structured visual representation of
+  scenes. We study the problem from a physical and topological perspective: **a 3D
+  line most naturally emerges as the edge of a finite 3D planar patch.** We present
+  LiP-Map, a line–plane joint optimization framework that explicitly models learnable
+  line and planar primitives. This coupling enables accurate and detailed 3D line
+  mapping while maintaining strong efficiency (typically completing a reconstruction
+  in 3 to 5 minutes per scene). LiP-Map pioneers the integration of planar topology
+  into 3D line mapping, not by imposing pairwise coplanarity constraints but by explicitly
+  constructing interactions between plane and line primitives, thus offering a principled
+  route toward structured reconstruction in man-made environments. ## ⚙️ Installtion
+  ### 1.Clone repo ``` git clone https://github.com/ant-research/LiPMAP.git --recursive
+  ``` ### 2.Create the enviroment ``` conda create -n lipmap python=3.10 conda activate
+  lipmap pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url
+  https://download.pytorch.org/whl/cu121 pip install -r requirements.txt pip install
+  submodules/diff-rect-rasterization pip install submodules/quaternion-utils pip install
+  \"git+https://github.com/facebookresearch/pytorch3d.git@stable\" pip install \"git+https://github.com/cherubicXN/hawp.git\"
+  pip install \"git+https://github.com/cherubicXN/easylsd.git\" pip install \"git+https://github.com/microsoft/MoGe.git\"
+  pip install \"git+https://github.com/facebookresearch/vggt.git\" ``` ## \U0001F4CA
+  Data Preparation We provide all scripts for pre-processing on ScanNetV2, ScanNet++,
+  Hypersim, and your own multi-view images. Please download and place all datasets
+  in the `./data` folder. ### 1. ScanNetV2 1.Please follow instructions reported in
+  [SimpleRecon](https://github.com/nianticlabs/simplerecon) to download and extract
+  ScanNetV2 scenes. The extacted data format should be like: ``` data/ScanNetV2 scans/
+  scene0084_00/ scene0000_00_vh_clean_2.ply (gt mesh) sensor_data/ frame-000000.color.jpg
+  frame-000000.depth.jpg frame-000000.pose.txt scene0000.txt (scan metadata and image
+  sizes) intrinsic/ intrinsic_depth.txt intrinsic_color.txt scene0000_01/ .... ```
+  2.Run scripts as follow: ``` bash data_process/scannetv2/1.metadata_process.sh bash
+  data_process/scannetv2/2.export_geometry.sh bash data_process/scannetv2/3.line_detection.sh
+  ``` ### 2. ScanNet++ 1.Please follow instructions reported in [ScanNet++](https://kaldir.vc.in.tum.de/scannetpp/)
+  to download and extract ScanNet++ scenes. The extacted data format should be like:
+  ``` data/ScanNet++ 45b0dac5e3/ iphone/ scans/ 16c9bd2e1e/ .... ``` 2.Run scripts
+  as follow: ``` bash data_process/scannetpp/1.metadata_process.sh bash data_process/scannetpp/2.export_geometry.sh
+  bash data_process/scannetpp/3.line_detection.sh ``` ### 3. Hypersim 1.Please download
+  Hypersim use the following scrpit: ``` bash data_process/hypersim/0.download.sh
+  ``` The extracted data format should be like: ``` data/Hypersim ai_001_001/ images/
+  scene_cam_00_final_hdf5/ scene_cam_00_final_preview/ scene_cam_00_geometry_hdf5/
+  scene_cam_00_geometry_preview/ ai_001_002/ .... ai_001_010/ ... ``` 2.Run scripts
+  as follow: ``` bash data_process/hypersim/1.metadata_process.sh bash data_process/hypersim/2.line_detection.sh
+  ``` - After the above preprocessing, data from different sources are stored in **the
+  same unified format**. The final data format should be like: ``` data/general_data/{dataset_name}/
+  {scene_id}/ images/ 000000.png .... {depth_type}_depth/ 000000_depth.png 000000_depth.npy
+  .... {normal_type}_normal/ 000000_normal.png 000000_normal.npy .... poses/ 000000.txt
+  .... {line_detector}/ 000000.json 000000.png .... intrinsics.txt ``` - `dataset_name:
+  [ScanNetV2, ScanNetPP, Hypersim]` - `depth_type: [gt/sensor, metric3d_large, moge2]`
+  - `normal_type: [metric3d_large, moge2, omnidata]` - `line_detector: [lsd, hawpv3,
+  deeplsd, scalelsd]` ### 4. General data with only images We use VGGT to obtain camera
+  intrinsics, poses, normal/depth maps. Set the `image_path` in the script and run
+  the script: ``` bash data_process/vggt_data/export_vggt_data.sh ``` The final data
+  format should be like: ``` data/general_data/general_data/ images/ 000000.png ....
+  vggt/ images/ 000000.png .... vggt_depth/ 000000_depth.png 000000_depth.npy ....
+  vggt_normal/ 000000_normal.png 000000_normal.npy .... poses/ 000000.txt .... {line_detector}/
+  000000.json 000000.png .... intrinsics.txt ``` ## \U0001F697\U0001F525Reconstruction
+  Set the ***scene_id*** in the scripts and run scripts as follow: ### ScanNetV2 ```
+  bash scripts/run_sca"
 ---
 {% raw %}
 # LiP-Map: Interacted Planes Reveal 3D Line Mapping

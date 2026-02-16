@@ -2,8 +2,50 @@
 layout: project
 name: Future Scholars Paperlib
 slug: Future-Scholars-paperlib
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Future-Scholars-paperlib/assets/ui.png
 repo_url: https://github.com/Future-Scholars/paperlib
+indexed_content: "Paperlib An open-source academic paper management tool. Join our
+  Discord community ! English | 中文 Webpage | Download | Quick Start | Roadmap ---
+  \U0001F4E3 **I'm looking for someone to work with me on developing Paperlib.** \U0001F4E3
+  If you are interested please contact me. ## Introduction I'm a computer science
+  PhD student. Conference papers are in major in my research community, which is different
+  from other disciplines. Without DOI, ISBN, metadata of a lot of conference papers
+  are hard to look up (e.g., NIPS, ICLR etc.). When I cite a publication in a draft
+  paper, I need to manually search the publication information of it in Google Scholar
+  or DBLP over and over again. **Why not Zotero, Mendely?** - A good metadata scraping
+  capability is one of the core functions of a paper management tool. Unfortunately,
+  no software in this world does this well, not even commercial software. - A modern
+  UI. No extra useless features. What we need may be to: import a paper, scrape the
+  metadata of it as accurately as possible, simply organise the library, and export
+  it when we are writing our papers. That is Paperlib. ## Highlights - Scrape paper’s
+  metadata with many scrapers. Support writing your metadata scrapers. Tailored for
+  many disciplines. - Fulltext and advanced search. - Smart filter. - Rating, flag,
+  tag, folder and markdown/plain text note. - RSS feed subscription to follow the
+  newest publications on your research topic. - Locate and download PDF files from
+  the web. - macOS spotlight-like plugin to copy-paste references easily when writing
+  a draft paper. Also supports MS Word. - Cloud sync, supports macOS, Linux, and Windows.
+  - Beautiful and clean UI. - Extensible. You can write your own extensions. ### With
+  Extensions, you have: - Show citation counts. - Summarize papers by LLMs. - Automatically
+  tag papers by LLMs. - Semantically search your library with natural language, such
+  as: 'papers written by Geoffrey in 2024'. - Chat with LLMs about your papers. -
+  and more... ## Download and Install » Download Here « ### Windows ⚠️ You may notice
+  that a warning shows when you install Paperlib on Windows. The reason is that there
+  is no code signing in Paperlib because it is so expensive. The source code of Paperlib
+  can be found here. It won't hurt your PC and will never collect any personal information.
+  Please make sure you are using HTTPS and our official webpage or Github to download
+  the installer. When you install `latest.exe`, in the \"Windows protected your PC\"
+  window, please click `More info` and `Run anyway`. ### macOS ⚠️ You may need to
+  click the `preference` - `Security & Privacy` - `run anyway`. ### Linux See [here](https://paperlib.app/en/download-linux.html).
+  ## Quick Start [Introduction (EN)](https://paperlib.app/en/doc/getting-started.html)
+  [Introduction (CN)](https://paperlib.app/cn/doc/getting-started.html) ## Donate
+  ## Usage Demos ### Scrape metadata for conference papers such as ICLR, ICML, NeurIPS
+  ### Smooth paper writing integration with any editors. ### Summarize your papers
+  by LLM. Tag your papers by LLM ### Organize your library with tags, folders and
+  smart filters ### Three view mode ## Sponsors ## Contribute to Paperlib ### Extensions
+  Please refer to [link](https://paperlib.app/en/extension-doc/) for the development
+  document. ### New Features I'm open to any new feature request, we can discuss it
+  in the issue. ## License [GPL-3.0 License](./LICENSE)"
 ---
 {% raw %}
 <div align="center">

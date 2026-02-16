@@ -2,8 +2,61 @@
 layout: project
 name: Josephmisiti Awesome Machine Learning
 slug: josephmisiti-awesome-machine-learning
+category: Future RAG ressources
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: '# Awesome Machine Learning [](https://github.com/sindresorhus/awesome)
+  [](https://www.trackawesomelist.com/josephmisiti/awesome-machine-learning/) A curated
+  list of awesome machine learning frameworks, libraries and software (by language).
+  Inspired by `awesome-php`. _If you want to contribute to this list (please do),
+  send me a pull request or contact me [@josephmisiti](https://twitter.com/josephmisiti)._
+  Also, a listed repository should be deprecated if: * Repository''s owner explicitly
+  says that "this library is not maintained". * Not committed for a long time (2~3
+  years). Further resources: * For a list of free machine learning books available
+  for download, go [here](https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md).
+  * For a list of professional machine learning events, go [here](https://github.com/josephmisiti/awesome-machine-learning/blob/master/events.md).
+  * For a list of (mostly) free machine learning courses available online, go [here](https://github.com/josephmisiti/awesome-machine-learning/blob/master/courses.md).
+  * For a list of blogs and newsletters on data science and machine learning, go [here](https://github.com/josephmisiti/awesome-machine-learning/blob/master/blogs.md).
+  * For a list of free-to-attend meetups and local events, go [here](https://github.com/josephmisiti/awesome-machine-learning/blob/master/meetups.md).
+  ## Table of Contents ### Frameworks and Libraries - [Awesome Machine Learning ](#awesome-machine-learning-)
+  - [Table of Contents](#table-of-contents) - [Frameworks and Libraries](#frameworks-and-libraries)
+  - [Tools](#tools) - [APL](#apl) - [General-Purpose Machine Learning](#apl-general-purpose-machine-learning)
+  - [C](#c) - [General-Purpose Machine Learning](#c-general-purpose-machine-learning)
+  - [Computer Vision](#c-computer-vision) - [C++](#cpp) - [Computer Vision](#cpp-computer-vision)
+  - [General-Purpose Machine Learning](#cpp-general-purpose-machine-learning) - [Natural
+  Language Processing](#cpp-natural-language-processing) - [Speech Recognition](#cpp-speech-recognition)
+  - [Sequence Analysis](#cpp-sequence-analysis) - [Gesture Detection](#cpp-gesture-detection)
+  - [Reinforcement Learning](#cpp-reinforcement-learning) - [Common Lisp](#common-lisp)
+  - [General-Purpose Machine Learning](#common-lisp-general-purpose-machine-learning)
+  - [Clojure](#clojure) - [Natural Language Processing](#clojure-natural-language-processing)
+  - [General-Purpose Machine Learning](#clojure-general-purpose-machine-learning)
+  - [Deep Learning](#clojure-deep-learning) - [Data Analysis](#clojure-data-analysis--data-visualization)
+  - [Data Visualization](#clojure-data-visualization) - [Interop](#clojure-interop)
+  - [Misc](#clojure-misc) - [Extra](#clojure-extra) - [Crystal](#crystal) - [General-Purpose
+  Machine Learning](#crystal-general-purpose-machine-learning) - [CUDA PTX](#cuda-ptx)
+  - [Neurosymbolic AI](#cuda-ptx-neurosymbolic-ai) - [Elixir](#elixir) - [General-Purpose
+  Machine Learning](#elixir-general-purpose-machine-learning) - [Natural Language
+  Processing](#elixir-natural-language-processing) - [Erlang](#erlang) - [General-Purpose
+  Machine Learning](#erlang-general-purpose-machine-learning) - [Fortran](#fortran)
+  - [General-Purpose Machine Learning](#fortran-general-purpose-machine-learning)
+  - [Data Analysis / Data Visualization](#fortran-data-analysis--data-visualization)
+  - [Go](#go) - [Natural Language Processing](#go-natural-language-processing) - [General-Purpose
+  Machine Learning](#go-general-purpose-machine-learning) - [Spatial analysis and
+  geometry](#go-spatial-analysis-and-geometry) - [Data Analysis / Data Visualization](#go-data-analysis--data-visualization)
+  - [Computer vision](#go-computer-vision) - [Reinforcement learning](#go-reinforcement-learning)
+  - [Haskell](#haskell) - [General-Purpose Machine Learning](#haskell-general-purpose-machine-learning)
+  - [Java](#java) - [Natural Language Processing](#java-natural-language-processing)
+  - [General-Purpose Machine Learning](#java-general-purpose-machine-learning) - [Speech
+  Recognition](#java-speech-recognition) - [Data Analysis / Data Visualization](#java-data-analysis--data-visualization)
+  - [Deep Learning](#java-deep-learning) - [Javascript](#javascript) - [Natural Language
+  Processing](#javascript-natural-language-processing) - [Data Analysis / Data Visualization](#javascript-data-analysis--data-visualization)
+  - [General-Purpose Machine Learning](#javascript-general-purpose-machine-learning)
+  - [Misc](#javascript-misc) - [Demos and Scripts](#javascript-demos-and-scripts)
+  - [Julia](#julia) - [General-Purpose Machine Learning](#julia-general-purpose-machine-learning)
+  - [Natural Language Processing](#julia-natural-language-processing) - [Data Analysis
+  / Data Visualization](#julia-data-analysis--data-visualization) - [Misc Stuff /
+  Presentations](#julia-misc-stuff--presentations) - [Kotlin](#kotlin) - [Deep Learning](#kotlin-deep-learning)
+  - [Lua](#lua) - [General-Purpose Machine Learning](#lua-general-purpose-machine-learning) '
 ---
 {% raw %}
 # Awesome Machine Learning [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/josephmisiti/awesome-machine-learning/)

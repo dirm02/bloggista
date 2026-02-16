@@ -2,8 +2,67 @@
 layout: project
 name: 1j01 Ooplie
 slug: 1j01-ooplie
+category: Frontend Framework
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/1j01-ooplie/images/execution-underlines.gif
 repo_url: https://github.com/witheve/Eve)
+indexed_content: '# [ ][console] Ooplie is a programming system where you write in
+  English. It runs in [Node.js][] and in the browser. There''s [a nice little console][console]
+  where you can try it out so far. It has a Parts menu where you can see the available
+  commands and expressions. Each command has multiple synonyms, often many. Everything
+  is organized into libraries, including things like conditionals. To access libraries
+  for File System manipulation etc. you need to install the console as a desktop app.
+  To do so, [clone the repository][clone a repo], open a terminal/command prompt in
+  `console/` and enter `npm install`. Then to run the app, enter `npm start`. So far
+  Ooplie is completely [imperative][], and you can''t do much with it. You can output
+  text, evaluate JS, and evaluate Ooplie code (from Ooplie code), write mathematical
+  expressions with worded operators ("2 to the power of 4"), Unicode operators, or
+  ASCII operators, write trivial conditionals which are useless because there are
+  no variables yet, and read and write text files. ## Inspiration At the risk of citing
+  an article where the author calls out a programming system citing the author''s
+  work as inspiration as terrible as inspiration, Brett Victor''s [Learnable Programming][]
+  expresses some great ideas about the future of programming. If you''re not excited
+  by the prospect of programming in English, then at least check out some of [Brett
+  Victor''s work][] or maybe [Toward a better programming][], and get excited about
+  the future of programming in general. There''s a project called [EVE][] that looks
+  interesting. I''ll have to try [it](https://github.com/witheve/Eve) out and see
+  what it''s like. Also, check out [Apparatus](http://aprt.us/)! I think the next
+  big step in terms of removing incidental complexity in code will come from automatically
+  managing time. The implications of which would be tremendous for our ability to
+  cleanly express intent. ([Toward a better programming][]) Ooplie will have an expressive
+  and rather comprehensive time module. > At its deepest, interface design means developing
+  the fundamental primitives human beings think and create with... It is one of the
+  hardest, most important and most fundamental problems humanity grapples with. >
+  "In summary, I think Parsey McParseface is a very nice milestone on a larger trend.
+  The thing that''s really significant is how quickly the speed and accuracy of natural
+  language processing technologies is advancing. I think there are lots of ideas that
+  didn''t work yesterday, that are suddenly becoming very viable." > "I think there
+  are lots of ideas that didn''t work yesterday, that are suddenly becoming very viable."
+  > To paraphrase Will Wright, your software doesn''t just run on the computer --
+  it also runs in each of your users'' heads. And to paraphrase Clay Shirky, social
+  software also runs on the "hivemind" of the group as a whole. All together, that''s
+  an extraordinarily powerful hardware platform. Take advantage of it! http://blog.wolfram.com/2010/11/16/programming-with-natural-language-is-actually-going-to-work/
+  https://multikulti.wordpress.com/2013/01/09/english-as-a-programming-language/ https://repository.cmu.edu/cgi/viewcontent.cgi?article=1165&context=hcii
+  https://stackoverflow.com/questions/3067377/what-programming-language-is-the-most-english-like
+  https://stackoverflow.com/questions/19262597/why-no-programming-in-english-what-is-the-difference-between-natural-languages?rq=1
+  --> ## Motivation I want see what it would be like to program in English. I don''t
+  think this is the be-all and end-all of programming paradigms. Unless a future of
+  realtime cross-translated collaborative structured document editing is realized,
+  it''s probably not going to be better than a more syntactical programming language
+  for international collaboration on software projects. High expectations of lingual
+  [disambiguation][] and common sense mean it ~~will~~ may never feel smart enough
+  without machine learning and huge amounts of data. That would make it harder to
+  distribute programs, so [a compiler would][Programming with Natural Language Is
+  Actually Going to Work] probably work better. Although then you miss certain possibilities
+  afforded by a dynamic interpreter / runtime. But anyways, I think Ooplie might be
+  a good tool for learning and getting into programming, as an alternative to drag-and-drop-based
+  systems, and for automating lots of things that might be too trivial to automate
+  considering you''d have to write a program for it. It also could be great option
+  for programming if you''re blind, as long as it''s designed with that in mind. Also,
+  I think radical ideas like this need to be explored. Because even if Ooplie fails
+  as a whole / as a project, there still might be ideas in there that, if people try
+  programming in this new way, might expand people''s minds and end up being applied
+  to other programming languages or systems. It might raise expectations for clarity
+  in code, expressitivity, richness of authoring environments, et'
 ---
 {% raw %}
 

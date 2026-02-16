@@ -2,8 +2,69 @@
 layout: project
 name: I Am Shodan Usbarmyknife
 slug: i-am-shodan-USBArmyKnife
+category: Uncategorized
 image: https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/main.yml/badge.svg
 repo_url: https://github.com/i-am-shodan/USBArmyKnife
+indexed_content: '[](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/main.yml)
+  [](https://github.com/i-am-shodan/USBArmyKnife/actions/workflows/dotnet.yml) [](https://ko-fi.com/O5O8145AVW)
+  # USB Army Knife Introducing the USB Army Knife – the ultimate tool for penetration
+  testers and red teamers. Compact and versatile, this device packs a punch with its
+  extensive capabilities, including USB HID attacks, mass storage emulation, network
+  device impersonation and WiFi/Bluetooth exploits (thanks to our forked version of
+  ESP32 Marauder). Complete control over how and when your payloads are run. Plug
+  in and execute, leave behind and trigger over WiFi, run on a timer or build a Hollywood-esq
+  UI. Manage and deploy your attacks effortlessly using just a phone using a user-friendly
+  Bootstrap web interface. Want more? Deploy the agent and execute commands even when
+  the machine is locked. Working over the serial interface egress is incredibly hard
+  to detect. You can even view the victims screen over the devices'' dedicated WiFi
+  connection. Equip yourself with the USB Army Knife and elevate your local access
+  toolkit to the next level. ## Testimonials *"Your device is evil. You are doing
+  evil."* - Mr. Peoples via X ## Intro There is a problem with physical access/USB
+  attacks today. On their own, each attack doesn''t provide enough of a solution to
+  meet most objectives. * USB keyboard attacks (Ducky, HID&Run) require a logged on
+  machine and even the best tools don’t provide a solution to this. * Networking attacks
+  (poison tap and alike) might get you a password hash but often require something
+  complex hanging out of an Ethernet port to get this back for offline cracking. *
+  When you get on a box, what options do you still have for exfiltrating data when
+  anything that opens a socket is getting sent to VT. What was needed is a physical
+  access platform that enables a suitable rogue to take the best bits of each attack
+  and workaround their respective problems with another attack. Ideally this platform
+  would be so cheap and covert that losing one wouldn''t be an issue. This is why
+  I decided to create the USB Army Knife. * Want to become a USB Ethernet adapter
+  PCAP the interface and egress it over WiFI? USB Army Knife. * Want to wrap your
+  attacks in custom UI or just show a Hollywood interface when your attack has worked?
+  USB Army Knife * Want a covert storage device? USB Army Knife * Want to deauth everyone
+  on the WiFi, PCAP the renegotiation and email this to yourself when the machine
+  has been left unlocked for offline cracking? USB Army Knife * Want your attack to
+  destroy itself when it’s been found? USB Army Knife * What to connect to other bits
+  of hardware, motion sensors and alike? USB Army Knife. * Want to view what’s on
+  the victim''s screen over WiFi? USB Army Knife. * Want to record what your victim
+  is saying? USB Army Knife. ## Video [This video shows how the ultimate rick roll
+  works](./examples/rickroll/) https://github.com/user-attachments/assets/f373e18e-5cad-4871-9f2a-17523fa33398
+  [This video shows how the USB PCAP functionality and has a brief peak at the web
+  interface](./examples/usb_ethernet_pcap/) https://github.com/user-attachments/assets/0d5b1485-b808-46c6-aaf7-7cf016088b8f
+  [This video shows how to pull the victims machine once the agent has been installed](./examples/vnc/)
+  https://github.com/user-attachments/assets/3c866d29-ef26-4eaf-943b-1206b8c40101
+  ## Features This project implements a variety of attacks based around an easily
+  concealable USB/WiFi/BT dongle. The attacks include sending BadUSB (USB HID commands
+  using DuckyScript), appearing as mass storage devices, appearing as USB network
+  devices, and performing WiFi and Bluetooth attacks with ESP32 Marauder. Attacks
+  are deployed using a Ducky-like language you probably already know and love. This
+  language has been agumented with a raft of custom commands and even the entire ESP32
+  Marauder capability (improved). Attacks include: - **USB HID Attacks**: Send custom
+  HID commands using DuckyScript, supports BadUSB & USB HID and run style attacks.
+  Supports multiple keyboard layouts/languages. - **Mass Storage Device**: Emulate
+  a USB mass storage device (USB drive and CDROM). - **USB Network Device**: Appear
+  as a USB network device. - **WiFi and Bluetooth Attacks**: Utilize ESP32 Marauder
+  for WiFi and Bluetooth attacks. Include EvilAP, Deauth and pcap. - **Hot Mic**:
+  Plug in a USB device and stream audio over WiFi ## Examples | Name | Description
+  | | ------------- | ------------- | | [Covert Storage](./examples/covertstorage/)
+  | Example showing how to masquerade as two different USB mass storage devices. The
+  first time the device is plugged in the devices appears with the full contents of
+  the micro SD card. In all subsequence attempts a different ''benign'' drive appears.
+  | | [Progress Bar](./examples/progressbar/) | Images are displayed on the devices
+  LCD screen showing a progress bar. Great for those Hollywood style attacks or if
+  you want a visual indicator to show an a'
 ---
 {% raw %}
 <a href="https://github.com/i-am-shodan/USBArmyKnife/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>

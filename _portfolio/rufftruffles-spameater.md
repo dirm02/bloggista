@@ -2,8 +2,69 @@
 layout: project
 name: Rufftruffles Spameater
 slug: rufftruffles-spameater
+category: Mail services -server-chat apps
 image: https://img.shields.io/github/v/release/rufftruffles/spameater
 repo_url: https://github.com/rufftruffles/spameater.git
+indexed_content: "# SpamEater [](https://opensource.org/licenses/MIT) [](docker/)
+  [](deploy/) **Privacy-focused disposable email service with automatic 24-hour deletion.**
+  SpamEater is a self-hosted, open-source disposable email server that prioritizes
+  privacy and security. Perfect for testing, sign-ups, and protecting your real email
+  from spam. All emails are automatically deleted after 24 hours with no recovery
+  option. ## What's New in v3 **Cyber Neon UI** - Complete visual redesign with a
+  modern dark theme featuring vibrant orange and cyan accents, smooth animations,
+  and enhanced visual feedback. **Mobile-First Design** - Fully responsive interface
+  optimized for all screen sizes, from small phones to large desktop monitors. ##
+  Screenshots Create disposable email addresses instantly Real-time email reception
+  with clean interface View email details with one-click deletion ## Features **Privacy
+  First** - No tracking, analytics, or external dependencies - No user registration
+  required - All emails auto-deleted after 24 hours - Email body encryption at rest
+  (AES-256-GCM) - No content logging **Security** - ModSecurity WAF with OWASP Core
+  Rule Set - fail2ban intrusion prevention - CSRF and XSS protection - Rate limiting
+  per IP and per inbox - SQL injection prevention - Automatic SSL with Let's Encrypt
+  - Security headers (CSP, HSTS, X-Frame-Options) **Technical** - High-performance
+  Haraka SMTP server - Lightweight SQLite database - Vanilla JavaScript frontend (no
+  frameworks) - Mobile-friendly responsive design - Real-time email updates via polling
+  - RESTful API - Docker support with prebuilt images ## Quick Start ### Prerequisites
+  1. **Domain Name** - You must own a domain (e.g., `example.com`) 2. **DNS Configuration**
+  - Configure these records BEFORE installation: **For private/personal use (recommended
+  - better security):** ``` MX example.com 10 mail.example.com A mail.example.com
+  YOUR_SERVER_IP A app.example.com YOUR_SERVER_IP (web interface) ``` Using a subdomain
+  like `app.example.com` for the web interface provides better security isolation
+  when running a private instance for personal use. **For public use (simpler, but
+  less secure):** ``` MX example.com 10 mail.example.com A mail.example.com YOUR_SERVER_IP
+  A example.com YOUR_SERVER_IP (web + email on same domain) ``` Using the root domain
+  `example.com` for the web interface is simpler for public instances, but provides
+  less security isolation. 3. **Verify DNS** is working before proceeding: ```bash
+  dig MX example.com dig A mail.example.com ``` DNS propagation can take up to 48
+  hours. SSL certificate generation will fail without proper DNS. 4. **Server Requirements**:
+  - Ports 25, 80, 443 open and accessible - Static public IP address --- Docker Deployment
+  (Recommended) ### Requirements - Docker Engine 20.10+ - Docker Compose v2+ - Any
+  modern Linux distribution (AlmaLinux, Ubuntu, Debian, etc.) ### Installation ```bash
+  # Download configuration wget https://raw.githubusercontent.com/rufftruffles/spameater/main/docker-compose.yml
+  # Edit your domain (lines 18 and 45) nano docker-compose.yml # Deploy docker compose
+  up -d ``` **Important Security Recommendation:** For private/personal use, use a
+  subdomain for the web interface (e.g., `app.example.com`) for better security isolation
+  between the email service and web application. For public instances open to everyone,
+  you can use the root domain (`example.com`) for simplicity, though it provides less
+  security isolation. Edit these lines in `docker-compose.yml`: ```yaml hostname:
+  example.com # Email domain environment: EMAIL_DOMAIN: example.com # Emails received
+  at *@example.com WEB_DOMAIN: app.example.com # Web interface at https://app.example.com
+  ``` **Access:** Web interface at `https://app.example.com` (or your WEB_DOMAIN)
+  All security secrets are auto-generated on first run. SSL certificates are obtained
+  automatically from Let's Encrypt. ### Management ```bash # View logs docker compose
+  logs -f # Restart services docker compose restart # Stop services docker compose
+  down # Update to latest version docker compose pull docker compose up -d # Check
+  service status docker compose ps docker exec -it spameater supervisorctl status
+  # Backup data docker run --rm -v spameater_data:/data -v $(pwd):/backup alpine \\
+  tar czf /backup/spameater-backup-$(date +%Y%m%d).tar.gz -C /data . ``` ### Troubleshooting
+  **Container Won't Start** ```bash docker compose logs spameater docker compose config
+  netstat -tulpn | grep -E ':(25|80|443)' ``` **Emails Not Receiving** ```bash # Verify
+  DNS dig MX your-domain.com dig A mail.your-domain.com # Check SMTP service docker
+  exec -it spameater supervisorctl status haraka docker exec -it spameater tail -f
+  /opt/spameater/logs/haraka.log # Test SMTP port telnet your-domain.com 25 ``` **SSL
+  Certificate Failed** ```bash # Manual certificate generation docker exec -it spameater
+  certbot --nginx -d your-domain.com docker exec -it spameater nginx -s reload ```
+  Common causes: DNS not propagated, ports 80/443 blocked, dom"
 ---
 {% raw %}
 # SpamEater

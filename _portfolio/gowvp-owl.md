@@ -2,8 +2,64 @@
 layout: project
 name: Gowvp Owl
 slug: gowvp-owl
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/gowvp-owl/docs/demo/play.gif
 repo_url: https://github.com/gowvp/owl
+indexed_content: '**English** | [中文](./README_CN.md) | | | |-|-| # Out-of-the-Box
+  Video Surveillance Platform GoWVP is an open-source GB28181 solution implemented
+  in Go, a network video platform based on the GB28181-2022 standard that also supports
+  2016/2011 versions, with ONVIF/RTMP/RTSP protocol support. ## Live Demo + [Online
+  Demo Platform :)](http://gowvp.golang.space:15123/) ||||| |-|-|-|-| ## Use Cases
+  + Browser-based camera video playback without plugins + Support for GB28181-compliant
+  devices (IP cameras, platforms, NVRs, etc.) + Support for non-GB28181 devices (RTSP,
+  RTMP, streaming devices, etc.) - maximize your existing equipment + Cross-network
+  video preview + Deployment via Docker, Docker Compose, or Kubernetes ## Open Source
+  Libraries Thanks to @panjjo for the open-source library [panjjo/gosip](https://github.com/panjjo/gosip).
+  GoWVP''s SIP signaling is based on this library. Due to underlying encapsulation
+  requirements, it''s not a direct dependency but rather included in the pkg package.
+  Two streaming media servers are supported: + @夏楚 [ZLMediaKit](https://github.com/ZLMediaKit/ZLMediaKit)
+  + **lalmax-pro** - For Go streaming media needs, contact email xx@golang.space -
+  No environment requirements, no static library installation needed, cross-platform
+  compilation support - Custom feature development available - G711 (G711A/G711U)
+  to AAC transcoding support Player uses @dexter''s [jessibuca](https://github.com/langhuihui/jessibuca/tree/v3)
+  Project framework based on @ixugo''s [goddd](https://github.com/ixugo/goddd) ##
+  FAQ > Where are the frontend resources? How to load the web interface? [Click to
+  download www.zip package](https://github.com/gowvp/gb28181_web/releases/latest)
+  Download (packaged) frontend resources and place them in the project root directory,
+  named `www` to load properly. > Any learning materials about the code? [GB/T28181
+  Open Source Diary[1]: Complete Practice from 0 to Implementing GB28181 Protocol](https://juejin.cn/post/7456722441395568651)
+  [GB/T28181 Open Source Diary[2]: Setting Up Server, Solving CORS, API Integration](https://juejin.cn/post/7456796962120417314)
+  [GB/T28181 Open Source Diary[3]: Building Monitoring Dashboard with React Components](https://juejin.cn/post/7457228085826764834)
+  [GB/T28181 Open Source Diary[4]: Using ESLint for Development](https://juejin.cn/post/7461539078111789108)
+  [GB/T28181 Open Source Diary[5]: Completing Forms with react-hook-form](https://juejin.cn/post/7461899974198181922)
+  [GB/T28181 Open Source Diary[6]: Quick Integration of jessibuca.js Player in React](https://juejin.cn/post/7462229773982351410)
+  [GB/T28181 Open Source Diary[7]: Implementing RTMP Authentication and Playback](https://juejin.cn/post/7463504223177261119)
+  [GB/T28181 Open Source Diary[8]: Quick Guide to GB28181 Development](https://juejin.cn/post/7468626309699338294)
+  > Any usage documentation? **RTMP** [RTMP Push/Pull Stream Rules](https://juejin.cn/post/7463124448540934194)
+  [How to Use OBS RTMP Push Stream to GB/T28181 Platform](https://juejin.cn/post/7463350947100786739)
+  [Hikvision Camera RTMP Push Stream to Open Source GB/T28181 Platform](https://juejin.cn/post/7468191617020313652)
+  [Dahua Camera RTMP Push Stream to Open Source GB/T28181 Platform](https://juejin.cn/spost/7468194672773021731)
+  **GB/T28181** [7 Ways to Register GB28181 Devices](https://juejin.cn/post/7465274924899532838)
+  > Black screen when playing Check "Quick Desktop" - "ZLM settings button (top right)"
+  - "GB28181 stream receiving default address" Ensure this address is accessible by
+  the surveillance device. Check "Quick Desktop" - "ZLM settings button (top right)"
+  - "Hook IP" Can ZLM access GoWVP? For Docker combined version, use 127.0.0.1. For
+  separate deployment, use explicit IP address. > Channel list shows fewer channels
+  than actual count By design. More than 4 channels should be viewed in the management
+  page, or click "View More" on the right. > Using nginx reverse proxy, returned playback
+  addresses don''t work or snapshots don''t load Configure the following parameters
+  in reverse proxy (replace domain with your actual one): proxy_set_header X-Forwarded-Host
+  $host; proxy_set_header X-Forwarded-Prefix "https://gowvp.com"; proxy_set_header
+  Upgrade $http_upgrade; proxy_set_header Connection "upgrade"; > How to use other
+  databases? In the `configs/config.toml` configuration file, modify `database.dsn`
+  [Recommended] SQLite should be a local disk path, default is `configs/data.db` [Recommended]
+  PostgreSQL format: `postgres://postgres:123456@127.0.0.1:5432/gb28181?sslmode=disable`
+  MySQL format: `mysql://root:123456@127.0.0.1:5432/gb28181?sslmode=disable` PostgreSQL
+  and MySQL format pattern: ` :// : @ : / ?sslmode=disable` > How to disable AI? AI
+  detection is enabled by default, detecting 5 frames per second. You can disable
+  AI detection by setting `disabledAI = true` in `configs/config.toml` ## Documentation
+  GoWVP [Online API Documentation](https://apifox.com/apidoc/shared-7b67c918-5f72-4f64-b71d-0593d7427b93)
+  ZLM Documentatio'
 ---
 {% raw %}
 

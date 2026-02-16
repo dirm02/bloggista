@@ -2,8 +2,67 @@
 layout: project
 name: Digitalphonetics Ims Toucan
 slug: DigitalPhonetics-IMS-Toucan
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/DigitalPhonetics-IMS-Toucan/Utility/toucan.png
 repo_url: https://github.com/sponsors/Flux9665).
+indexed_content: ".svg\"> --- # Text-to-Speech for over 7000 Languages IMS Toucan
+  is a toolkit for training, using, and teaching state-of-the-art Text-to-Speech Synthesis,
+  developed at the **Institute for Natural Language Processing (IMS), University of
+  Stuttgart, Germany**, official home of the massively multilingual ToucanTTS system.
+  Our system is fast, controllable, and doesn't require a ton of compute. If you find
+  this repo useful, consider giving it a star. ⭐ Large numbers make me happy, and
+  they are very motivating. If you want to motivate me even more, you can even consider
+  [sponsoring this toolkit](https://github.com/sponsors/Flux9665). We only use GitHub
+  Sponsors for this, there are scammers on other platforms that pretend to be the
+  creator. Don't let them fool you. The code and the models are absolutely free, and
+  thanks to the generous support of Hugging Face\U0001F917, we even have an [instance
+  of the model running on GPU](https://huggingface.co/spaces/Flux9665/MassivelyMultilingualTTS)
+  free for anyone to use. --- ## Links \U0001F99A ### Interactive Demo [Check out
+  our interactive massively-multi-lingual demo on Hugging Face\U0001F917](https://huggingface.co/spaces/Flux9665/MassivelyMultilingualTTS)
+  ### Dataset [We have also published a massively multilingual TTS dataset on Hugging
+  Face\U0001F917](https://huggingface.co/datasets/Flux9665/BibleMMS) ### Languages
+  [A list of supported languages can be found here](https://github.com/DigitalPhonetics/IMS-Toucan/blob/MassiveScaleToucan/Utility/language_list.md)
+  --- ## Installation \U0001F989 #### Basic Requirements Python 3.10 is the recommended
+  version. To install this toolkit, clone it onto the machine you want to use it on
+  (should have at least one cuda enabled GPU if you intend to train models on that
+  machine. For inference, you don't need a GPU). If you're using Linux, you should
+  have the following packages installed, or install them with apt-get if you haven't
+  (on most distributions they come pre-installed): ``` libsndfile1 espeak-ng ffmpeg
+  libasound-dev libportaudio2 libsqlite3-dev ``` Navigate to the directory you have
+  cloned. We recommend creating and activating a [virtual environment](https://docs.python.org/3/library/venv.html)
+  to install the basic requirements into. The commands below summarize everything
+  you need to do under Linux. If you are running Windows, the second line needs to
+  be changed, please have a look at the [venv documentation](https://docs.python.org/3/library/venv.html).
+  ``` python -m venv source /bin/activate pip install --no-cache-dir -r requirements.txt
+  ``` Run the second line everytime you start using the tool again to activate the
+  virtual environment again, if you e.g. logged out in the meantime. To make use of
+  a GPU, you don't need to do anything else on a Linux machine. On a Windows machine,
+  have a look at [the official PyTorch website](https://pytorch.org/) for the install-command
+  that enables GPU support. #### Storage configuration If you don't want the pretrained
+  and trained models as well as the cache files resulting from preprocessing your
+  datasets to be stored in the default subfolders, you can set corresponding directories
+  globally by editing `Utility/storage_config.py` to suit your needs (the path can
+  be relative to the repository root directory or absolute). #### Pretrained Models
+  You don't need to use pretrained models, but it can speed things up tremendously.
+  They will be downloaded on the fly automatically when they are needed, thanks to
+  Hugging Face\U0001F917 and [VB](https://github.com/Vaibhavs10) in particular. ####
+  \\[optional] eSpeak-NG eSpeak-NG is an optional requirement, that handles lots of
+  special cases in many languages, so it's good to have. On most **Linux** environments
+  it will be installed already, and if it is not, and you have the sufficient rights,
+  you can install it by simply running ``` apt-get install espeak-ng ``` For **Windows**,
+  they provide a convenient .msi installer file [on their GitHub release page](https://github.com/espeak-ng/espeak-ng/releases).
+  After installation on non-linux systems, you'll also need to tell the phonemizer
+  library where to find your espeak installation by setting the `PHONEMIZER_ESPEAK_LIBRARY`
+  environment variable, which is discussed in [this issue](https://github.com/bootphon/phonemizer/issues/44#issuecomment-1008449718).
+  For **Mac** it's unfortunately a lot more complicated. Thanks to Sang Hyun Park,
+  here is a guide for installing it on Mac: For M1 Macs, the most convenient method
+  to install espeak-ng onto your system is via a [MacPorts port of espeak-ng](https://ports.macports.org/port/espeak-ng/).
+  MacPorts itself can be installed from the [MacPorts website](https://www.macports.org/install.php),
+  which also requires Apple's [XCode](https://developer.apple.com/xcode/). Once XCode
+  and MacPorts have been installed, you can install the port of espeak-ng via ```
+  sudo port install espeak-ng ``` As stated in the Windows install instructions, the
+  espeak-ng installation will need to be set as a variable for the phonemizer library.
+  T"
 ---
 {% raw %}
 <p align="right">

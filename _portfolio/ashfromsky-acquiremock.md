@@ -2,8 +2,67 @@
 layout: project
 name: Ashfromsky Acquiremock
 slug: ashfromsky-acquiremock
+category: Very important!!!!
 image: https://img.shields.io/badge/python-3.11+-blue.svg
 repo_url: https://github.com/illusiOxd/acquiremock.git
+indexed_content: '# AcquireMock **Mock payment gateway for testing payment integrations
+  without real money.** Stop using real payment providers in development. AcquireMock
+  simulates complete payment flows including OTP verification, webhooks, and card
+  storage. [](https://www.python.org/downloads/) [](https://fastapi.tiangolo.com)
+  [](https://opensource.org/licenses/Apache-2.0) --- ## Quick Start ### Option 1:
+  Docker (Recommended) ```bash # Clone and start git clone https://github.com/illusiOxd/acquiremock.git
+  cd acquiremock docker-compose up ``` Visit `http://localhost:8000` ### Option 2:
+  Manual Setup ```bash # Clone repository git clone https://github.com/illusiOxd/acquiremock.git
+  cd acquiremock # Create virtual environment python -m venv venv source venv/bin/activate
+  # Linux/Mac # or venv\Scripts\activate # Windows # Install dependencies pip install
+  -r requirements.txt # Copy configuration cp .env.example .env # Edit configuration
+  nano .env # Start application uvicorn main:app --port 8000 --reload ``` --- ## How
+  It Works AcquireMock simulates a real payment gateway with complete payment lifecycle:
+  **Basic Flow:** ```bash # 1. Create payment curl -X POST http://localhost:8000/api/create-invoice
+  \ -H "Content-Type: application/json" \ -d ''{ "amount": 25000, "reference": "ORDER-123",
+  "webhookUrl": "https://your-site.com/webhook" }'' # 2. User completes checkout (UI)
+  # 3. OTP verification via email # 4. Webhook sent to your server # 5. Payment confirmed
+  ``` **Test Card:** ``` Card: 4444 4444 4444 4444 CVV: any 3 digits Expiry: any future
+  date (MM/YY) ``` --- ## Features - **Complete Payment Flow** - From invoice creation
+  to webhook delivery - **OTP Verification** - Email-based payment confirmation -
+  **Webhook Delivery** - HMAC-SHA256 signed callbacks with retry logic - **Card Storage**
+  - Save cards for returning customers - **Transaction History** - Track all operations
+  per user - **Auto-Expiry** - Payments automatically expire after 15 minutes - **Idempotency**
+  - Prevent duplicate payment processing - **Multi-Language UI** - Support for UK/EN/DE/RU
+  with dark mode - **Interactive Test Page** - Built-in testing interface --- ## Configuration
+  ### Environment Variables Create `.env` file with these settings: ```env # Database
+  (Required) DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/payment_db
+  # For development: sqlite+aiosqlite:///./payment.db # Security (Required) WEBHOOK_SECRET=your-secret-key-min-32-chars
+  BASE_URL=http://localhost:8000 # Email (Optional - logs to console if not configured)
+  SMTP_HOST=smtp.gmail.com SMTP_PORT=587 SMTP_USER=your-email@gmail.com SMTP_PASS=your-app-password
+  ``` ### Database Options **Production (PostgreSQL):** ```env DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/payment_db
+  ``` **Development (SQLite):** ```env DATABASE_URL=sqlite+aiosqlite:///./payment.db
+  ``` ### Email Configuration Email is optional. If not configured, OTP codes will
+  be logged to console for testing. For Gmail, generate an app-specific password at:
+  https://myaccount.google.com/apppasswords --- ## Usage Examples ### Create Payment
+  Invoice ```bash curl -X POST http://localhost:8000/api/create-invoice \ -H "Content-Type:
+  application/json" \ -d ''{ "amount": 25000, "reference": "ORDER-123", "webhookUrl":
+  "https://your-site.com/webhook", "redirectUrl": "https://your-site.com/success"
+  }'' ``` **Response:** ```json { "pageUrl": "http://localhost:8000/checkout/{payment_id}"
+  } ``` ### Handle Webhook ```python import hmac import hashlib import json from fastapi
+  import Request, HTTPException def verify_webhook(payload: dict, signature: str,
+  secret: str) -> bool: """Verify HMAC-SHA256 signature""" message = json.dumps(payload,
+  sort_keys=True) expected = hmac.new( secret.encode(), message.encode(), hashlib.sha256
+  ).hexdigest() return hmac.compare_digest(expected, signature) @app.post("/webhook")
+  async def payment_webhook(request: Request): signature = request.headers.get("X-Signature")
+  payload = await request.json() if not verify_webhook(payload, signature, WEBHOOK_SECRET):
+  raise HTTPException(status_code=403, detail="Invalid signature") # Process payment
+  if payload["status"] == "paid": order = await Order.get(payment_id=payload["payment_id"])
+  order.status = "paid" await order.save() return {"status": "ok"} ``` ### Webhook
+  Payload ```json { "payment_id": "pay_abc123", "reference": "ORDER-123", "amount":
+  25000, "status": "paid", "timestamp": "2024-12-20T10:30:00Z" } ``` --- ## Advanced
+  Features ### Card Storage Users can save cards for future payments: ```bash # Payment
+  with card storage POST /api/create-invoice { "amount": 10000, "reference": "ORDER-456",
+  "email": "user@example.com", "saveCard": true } ``` Saved cards are hashed using
+  bcrypt and never stored in plain text. ### Transaction History View all transactions
+  for a user: ```bash GET /api/transactions?email=user@example.com ``` ### Interactive
+  Testing Visit `http://localhost:8000/test` for built-in test interface with: - Payment
+  creation form - Webhook URL '
 ---
 {% raw %}
 # AcquireMock

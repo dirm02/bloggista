@@ -2,8 +2,68 @@
 layout: project
 name: Coelacant1 Proxmoxscripts
 slug: coelacant1-ProxmoxScripts
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/version-2.1.6-blue.svg
 repo_url: https://github.com/coelacant1/ProxmoxScripts
+indexed_content: '# Proxmox VE Management Scripts [](https://github.com/coelacant1/ProxmoxScripts/releases)
+  [](https://github.com/coelacant1/ProxmoxScripts/actions/workflows/checks.yml) [](https://github.com/coelacant1/ProxmoxScripts/actions/workflows/static.yml)
+  [](https://github.com/coelacant1/ProxmoxScripts/actions/workflows/release.yml) This
+  repository provides automation scripts for managing Proxmox VE (Virtual Environment)
+  systems efficiently. The scripts are designed for system administrators and DevOps
+  professionals who need to streamline their Proxmox operations. ### **Key Features:**
+  - **Cross-Platform GUI**: Run on any Linux distribution (Debian, Ubuntu, Fedora,
+  RHEL, Arch, openSUSE, etc.) to manage Proxmox clusters - **Remote Execution**: Control
+  single or multiple Proxmox nodes from a central workstation - **Branch Management**:
+  Switch between stable (main) and testing branches with built-in updates - **Interactive
+  Interface**: Text-based GUI with comprehensive help system and settings Explore
+  the scripts for Proxmox VE management on the website: [Visit the Proxmox VE One-Click
+  Scripts Website](https://coelacant1.github.io/ProxmoxScripts/) > [!WARNING] > ###
+  **Read and Understand Before Executing:** > These scripts perform administrative
+  operations on Proxmox infrastructure. Before running ANY script: > - **Read and
+  understand** what the script does > - **Maintain a local copy** of the repository
+  for review and version control > - **Manually validate** each script before execution
+  on production systems > - **Test in a non-production environment** first whenever
+  possible > - **You are responsible for any changes made to your infrastructure**
+  ## Version 2.0 Update Version 2.0 represents a major refactor focused on extending
+  backend utilities, improving remote cluster management, and establishing comprehensive
+  testing and quality assurance frameworks. **Major Changes:** - **Remote Cluster
+  Management** - Execute scripts on single or multiple Proxmox nodes without re-downloading
+  the repository, with support for temporary multi-remote mode using IP/VMID ranges
+  - **Unified Utility Framework** - New ArgumentParser, BulkOperations, and Operations
+  utilities standardize script behavior and error handling across the entire codebase
+  - **Structured Logging System** - Dual log output with separate .log and .debug.log
+  files, debug flag support (-d), and configurable log levels (INFO, DEBUG, ERROR)
+  for both local and remote execution - **Comprehensive Testing System** - TestFramework
+  with automated test suites for all utility libraries, plus RunAllTests.sh for continuous
+  integration - **Enhanced Bulk Operations** - Improved VM/LXC bulk operations with
+  progress tracking, detailed statistics, and automatic success/failure reporting
+  - **Script Compliance Standards** - All scripts now follow consistent patterns with
+  standardized headers, argument parsing, logging, and error handling - **Quality
+  Assurance Tools** - Repository checks including line ending conversion, function
+  indexing, source verification, code formatting, security analysis, and dead code
+  detection - **Cross-Platform GUI Improvements** - Auto-detects package managers
+  across all major Linux distributions with branch management and settings accessible
+  from any menu - **Script Validation** - Scripts validated against Proxmox VE 9.1.1
+  documentation with standardized notes tracking validation status, changes, and known
+  issues ## Getting Started These instructions will guide you on how to start using
+  the scripts for managing your Proxmox infrastructure. ### Prerequisites **For Local
+  Execution on Proxmox:** - Proxmox VE 8.x or newer installed and running - SSH access
+  with appropriate privileges - Basic knowledge of Proxmox operations and Linux **For
+  Remote Execution from Any Linux System:** - Any major Linux distribution (Debian,
+  Ubuntu, Fedora, RHEL, CentOS, Arch, openSUSE, etc.) - `wget` and `unzip` (for updating
+  scripts from GitHub) - `jq` (for parsing node configuration files) - `sshpass` (for
+  password-based SSH authentication, not needed if using SSH keys) - Network access
+  to target Proxmox nodes ### Single Line Usage > [!NOTE] > **Works on any Linux distribution**
+  - automatically detects and uses the appropriate package manager (apt, dnf, yum,
+  zypper, or pacman). To execute the single line call to navigate all scripts use:
+  ```bash bash -c "$(wget -qLO - https://github.com/coelacant1/ProxmoxScripts/raw/main/CCPVE.sh)"
+  ``` Or an even shorter single line call: ```bash bash [!TIP] > **Best Practices:**
+  > - Use `--list` first if unsure of the correct relative path > - The repository
+  is downloaded fresh each invocation (ephemeral mode) > - For repeated usage, clone
+  the repo and call `GUI.sh` directly > - `UTILITYPATH` is exported automatically
+  so scripts can source shared helpers ### Installation > [!IMPORTANT] > **For Production
+  Use:** Clone and maintain a local copy of the repository. Review and validate all
+  scripts before execution on production infrastructure. Requires g'
 ---
 {% raw %}
 # Proxmox VE Management Scripts

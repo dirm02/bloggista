@@ -2,8 +2,63 @@
 layout: project
 name: Dailenson One Dm
 slug: dailenson-One-DM
+category: AI-automation-web2-3SmartC-Agent
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dailenson-One-DM/assets/One-DM_result.png
 repo_url: https://github.com/dailenson/One-DM
+indexed_content: "One-DM:One-Shot Diffusion Mimicker for Handwritten Text Generation
+  ArXiv | Poster | Video --> --> --> ## \U0001F31F Introduction - We propose a One-shot
+  Diffusion Mimicker (One-DM) for stylized handwritten text generation, which only
+  requires a single reference sample as style input, and imitates its writing style
+  to generate handwritten text with arbitrary content. - Previous state-of-the-art
+  methods struggle to accurately extract a user's handwriting style from a single
+  sample due to their limited ability to learn styles. To address this issue, we introduce
+  the high-frequency components of the reference sample to enhance the extraction
+  of handwriting style. The proposed style-enhanced module can effectively capture
+  the writing style patterns and suppress the interference of background noise. -
+  Extensive experiments on handwriting datasets in English, Chinese, and Japanese
+  demonstrate that our approach with a single style reference even outperforms previous
+  methods with 15x-more references. Overview of the proposed One-DM ## \U0001F320
+  News - [2025/06/26] \U0001F525\U0001F525\U0001F525 [DiffBrush](https://github.com/dailenson/DiffBrush),
+  a novel state-of-the-art approach for full-line text generation, is accepted to
+  ICCV 2025. - [2024/10/24] We have provided a well-trained One-DM checkpoint on Google
+  Drive and Baidu Drive :) - [2024/09/16] This work is reported by [Synced](https://mp.weixin.qq.com/s/1JdBsjf0hru7iSS7jln02Q)
+  (机器之心). - [2024/09/07]\U0001F525\U0001F525\U0001F525 We open-source the first version
+  of One-DM that can generate handwritten words. (Later versions supporting Chinese
+  and Japanese will be released soon.) ## \U0001F528 Requirements ``` conda create
+  -n One-DM python=3.8 -y conda activate One-DM # install all dependencies conda env
+  create -f environment.yml ``` ## ☀️ Datasets We provide English datasets in [Google
+  Drive](https://drive.google.com/drive/folders/108TB-z2ytAZSIEzND94dyufybjpqVyn6)
+  | [Baidu Netdisk](https://pan.baidu.com/s/14ESFRk0RaTr98eeLzcr_xw?pwd=4vsv) | [ShiZhi
+  AI](https://wisemodel.cn/models/SCUT-MMPR/One-DM/blob/main/English_data.zip). Please
+  download these datasets, uzip them and move the extracted files to /data. ## \U0001F433
+  Model Zoo | Model|Google Drive|Baidu Netdisk|ShiZhi AI| |---------------|---------|-----------------------------------------|--------------|
+  |Pretrained One-DM|[Google Drive](https://drive.google.com/drive/folders/10KOQ05HeN2kaR2_OCZNl9D_Kh1p8BDaa)|[Baidu
+  Netdisk](https://pan.baidu.com/s/1VwckEw9TN734CirfWvZgiw?pwd=pfl8)|[ShiZhi AI](https://wisemodel.cn/models/SCUT-MMPR/One-DM/blob/main/One-DM-ckpt.pt)
+  |Pretrained OCR model|[Google Drive](https://drive.google.com/drive/folders/10KOQ05HeN2kaR2_OCZNl9D_Kh1p8BDaa)|[Baidu
+  Netdisk](https://pan.baidu.com/s/1VwckEw9TN734CirfWvZgiw?pwd=pfl8)|[ShiZhi AI](https://wisemodel.cn/models/SCUT-MMPR/One-DM/blob/main/vae_HTR138.pth)
+  |Pretrained Resnet18|[Google Drive](https://drive.google.com/drive/folders/10KOQ05HeN2kaR2_OCZNl9D_Kh1p8BDaa)|[Baidu
+  Netdisk](https://pan.baidu.com/s/1VwckEw9TN734CirfWvZgiw?pwd=pfl8)|[ShiZhi AI](https://wisemodel.cn/models/SCUT-MMPR/One-DM/blob/main/RN18_class_10400.pth)
+  **Note**: Please download these weights, and move them to /model_zoo. (If you cannot
+  access the pre-trained VAE model available on Hugging Face, please refer to the
+  pinned issue for guidance.) ## \U0001F3CB️ Training & Test - **training on English
+  dataset** ```Shell CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 train.py
+  \\ --feat_model model_zoo/RN18_class_10400.pth \\ --log English ``` - **finetune
+  on English dataset** ```Shell CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4
+  train_finetune.py \\ --one_dm ./Saved/IAM64_scratch/English-timestamp/model/epoch-ckpt.pt
+  \\ --ocr_model ./model_zoo/vae_HTR138.pth --log English ``` **Note**: Please modify
+  ``timestamp`` and ``epoch`` according to your own path. - **test on English dataset**
+  ```Shell CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 test.py \\ --one_dm
+  ./Saved/IAM64_finetune/English-timestamp/model/epoch-ckpt.pt \\ --generate_type
+  oov_u --dir ./Generated/English ``` **Note**: Please modify ``timestamp`` and ``epoch``
+  according to your own path. ## \U0001F4FA Exhibition - **Comparisons with industrial
+  image generation methods on handwritten text generation** - **Comparisons with industrial
+  image generation methods on Chinese handwriting generation** - **English handwritten
+  text generation** - **Chinese and Japanese handwriting generation** ## ❤️ Citation
+  If you find our work inspiring or use our codebase in your research, please cite
+  our work: ``` @inproceedings{one-dm2024, title={One-Shot Diffusion Mimicker for
+  Handwritten Text Generation}, author={Dai, Gang and Zhang, Yifan and Ke, Quhui and
+  Guo, Qiangya and Huang, Shuangping}, booktitle={European Conference on Computer
+  Vision}, year={2024} } ``` ## ⭐ StarGraph [](https://star-history.com/#dailenson/One-DM&Timeline)"
 ---
 {% raw %}
 <a href=""><img src="https://img.shields.io/badge/Pytorch-1.13-green"></a>

@@ -2,8 +2,68 @@
 layout: project
 name: Aizenvoltprime Claude Setup
 slug: AizenvoltPrime-claude-setup
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/Claude%20Code-Compatible-blue.svg
 repo_url: https://github.com/mikefarah/yq
+indexed_content: '# Claude Code Setup > A comprehensive configuration setup for Claude
+  Code with Model Context Protocol (MCP) servers, custom commands, and quality-focused
+  workflows. [](https://claude.ai/code) [](https://modelcontextprotocol.io/) [](https://python.org)
+  ## Table of Contents - [Overview](#overview) - [Quick Start](#quick-start) - [Prerequisites](#prerequisites)
+  - [Installation](#installation) - [Features](#features) - [Commands](#commands)
+  - [Configuration](#configuration) - [Troubleshooting](#troubleshooting) - [Contributing](#contributing)
+  - [License](#license) ## Overview This project provides a pre-configured environment
+  for Claude Code with enhanced capabilities through: - **MCP Servers**: Context7
+  for library documentation and code context - **Custom Commands**: Intelligent workflows
+  for commits, tasks, code review, and prompt optimization - **Code Quality Tools**:
+  Modern CLI tool enforcement and validation hooks - **Structured Workflows**: Organized
+  task management with best practices ## Quick Start ```bash # 1. Install dependencies
+  pip install uv # 2. Clone this configuration git clone claude-setup cd claude-setup
+  # 3. Start using commands /task implement user authentication ``` ## Prerequisites
+  Before using this setup, ensure you have: - **Claude Code**: Installed and configured
+  - **Python 3.8+**: For hook script execution - **uv**: Package manager for Python
+  script execution - **Node.js**: For MCP server functionality (npx) ### Installation
+  #### 1. Install uv (if not already installed) ```bash # macOS/Linux curl -LsSf https://astral.sh/uv/install.sh
+  | sh # Windows powershell -c "irm https://astral.sh/uv/install.ps1 | iex" # After
+  installation, open a new terminal and verify: uv --version ``` #### 2. Setup Configuration
+  ```bash # Copy configuration files to your project cp -r .claude/ /your/project/
+  cp .mcp.json /your/project/ ``` ## Modern CLI Tools Installation Guide ### Linux
+  Installation Commands #### Ubuntu/Debian (Complete Single Command) **Prerequisites
+  - Install Rust (for xsv and sd):** ```bash curl --proto ''=https'' --tlsv1.2 -sSf
+  https://sh.rustup.rs | sh source "$HOME/.cargo/env" ``` **Complete installation
+  (core tools only):** ```bash sudo apt update && sudo apt install -y ripgrep bat
+  fd-find && mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat && ln
+  -sf /usr/bin/fdfind ~/.local/bin/fd && cargo install sd xsv ``` **Complete installation
+  (core + optional tools):** ```bash sudo apt update && sudo apt install -y ripgrep
+  bat fd-find jq && mkdir -p ~/.local/bin && ln -sf /usr/bin/batcat ~/.local/bin/bat
+  && ln -sf /usr/bin/fdfind ~/.local/bin/fd && cargo install sd xsv && sudo wget -qO
+  /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+  && sudo chmod +x /usr/local/bin/yq ``` **What this does:** - Updates package lists
+  - Installs `ripgrep`, `bat`, `fd-find`, `jq` from apt - Creates `~/.local/bin` directory
+  - Symlinks `batcat` → `bat` and `fdfind` → `fd` (fixes naming conflicts) - Installs
+  `sd`, `xsv` via Cargo (Rust package manager) - Downloads and installs `yq` binary
+  #### Arch Linux (Simplest Single Command) ```bash sudo pacman -S ripgrep bat fd
+  sd jq yq ``` **Optional AUR tools:** ```bash yay -S xsv mdq ``` #### Fedora/RHEL/CentOS
+  ```bash sudo dnf install -y ripgrep bat fd-find jq && cargo install sd xsv && sudo
+  wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+  && sudo chmod +x /usr/local/bin/yq ``` #### Alpine Linux ```bash apk add ripgrep
+  bat fd jq yq && cargo install sd xsv ``` ### Windows Installation Commands ####
+  Using winget (Recommended) **Core tools - Required (single command):** ```powershell
+  winget install BurntSushi.ripgrep.MSVC && winget install sharkdp.bat && winget install
+  sharkdp.fd && winget install chmln.sd && winget install BurntSushi.xsv.MSVC ```
+  **Optional tools (for specialized operations):** ```powershell winget install jqlang.jq
+  && winget install MikeFarah.yq ``` **Individual installations:** ```powershell #
+  Core tools (required) winget install BurntSushi.ripgrep.MSVC winget install sharkdp.bat
+  winget install sharkdp.fd winget install chmln.sd winget install BurntSushi.xsv.MSVC
+  # Optional tools winget install jqlang.jq winget install MikeFarah.yq ``` #### Using
+  Scoop ```powershell scoop install ripgrep bat fd sd jq yq ``` #### Using Chocolatey
+  ```powershell choco install ripgrep bat fd-find sd jq yq ``` ### macOS Installation
+  #### Using Homebrew ```bash brew install ripgrep bat fd sd jq yq xsv mdq ``` ###
+  Tool Mappings Reference | Legacy Tool | Modern Replacement | Package Name | Enforcement
+  | | ----------- | ------------------ | ------------------ | ----------- | | `grep`
+  | `rg` | ripgrep | **Blocked** | | `cat` | `bat` | bat | **Blocked** | | `find`
+  | `fd` | fd / fd-find | **Blocked** | | `awk/perl` | `sd` | sd | **Blocked** | |
+  `cut` | `xsv` | xsv (winget/cargo) | **Blocked** | | JSON ops | `jq` | jq | Suggested
+  | | YAML ops | `yq` | yq | Suggested | | Markdown | `mdq'
 ---
 {% raw %}
 # Claude Code Setup

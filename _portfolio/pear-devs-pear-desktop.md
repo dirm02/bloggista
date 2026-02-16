@@ -2,8 +2,66 @@
 layout: project
 name: Pear Devs Pear Desktop
 slug: pear-devs-pear-desktop
+category: Uncategorized
 image: https://img.shields.io/github/release/pear-devs/pear-desktop.svg?style=for-the-badge
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Special thanks to: ### [Warp, built for coding with multiple AI
+  agents](https://go.warp.dev/pear-desktop) [Available for macOS, Linux, & Windows](https://go.warp.dev/pear-desktop)
+  # :pear: Pear Desktop [](https://github.com/pear-devs/pear-desktop/releases/) [](https://github.com/pear-devs/pear-desktop/blob/master/license)
+  [](https://github.com/pear-devs/pear-desktop/blob/master/eslint.config.mjs) [](https://GitHub.com/pear-devs/pear-desktop/releases/)
+  [](https://GitHub.com/pear-devs/pear-desktop/releases/) [](https://snyk.io/test/github/pear-devs/pear-desktop)
+  - Native look & feel extension > [!IMPORTANT] > ⚠️ Disclaimer > > **No Affiliation**
+  > > This project, and its contributors, are not affiliated with, authorized by,
+  endorsed by, or in any way officially connected with Google LLC, YouTube, or any
+  of their subsidiaries or affiliates. **This is an independent, non-profit, and unofficial
+  extension developed by a team of volunteers with the goal of providing a desktop
+  experience.** > > **Trademarks** > > The names "Google" and "YouTube Music", as
+  well as related names, marks, emblems, and images, are registered trademarks of
+  their respective owners. Any use of these trademarks is for identification and reference
+  purposes only and does not imply any association with the trademark holder. We have
+  no intention of infringing upon these trademarks or causing harm to the trademark
+  holders. > > **Limitation of Liability** > > This application (extension) is provided
+  "AS IS", and you use it at your own risk. In no event shall the developers or contributors
+  be liable for any claim, damages, or other liability, including any legal consequences,
+  arising from, out of, or in connection with the software or the use or other dealings
+  in the software. The responsibility for any and all outcomes of using this software
+  rests entirely with the user. ## Content - [Features](#features) - [Translation](#translation)
+  - [Download](#download) - [Arch Linux](#arch-linux) - [MacOS](#macos) - [Windows](#windows)
+  - [How to install without a network connection? (in Windows)](#how-to-install-without-a-network-connection-in-windows)
+  - [Themes](#themes) - [Dev](#dev) - [Build your own plugins](#build-your-own-plugins)
+  - [Creating a plugin](#creating-a-plugin) - [Common use cases](#common-use-cases)
+  - [Build](#build) - [Production Preview](#production-preview) - [Tests](#tests)
+  - [License](#license) - [FAQ](#faq) ## Translation You can help with translation
+  on [Hosted Weblate](https://bit.ly/48n5YF7). ## Download You can check out the [latest
+  release](https://github.com/pear-devs/pear-desktop/releases/latest) to quickly find
+  the latest version. ### Arch Linux Install the [`pear-desktop`](https://aur.archlinux.org/packages/pear-desktop)
+  package from the AUR. For AUR installation instructions, take a look at this [wiki
+  page](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages).
+  ### macOS You can install the app using Homebrew (see the [cask definition](https://github.com/pear-devs/homebrew-pear)):
+  ```bash brew install pear-devs/pear/pear-desktop ``` If you install the app manually
+  and get an error "is damaged and can’t be opened." when launching the app, run the
+  following in the Terminal: ```bash /usr/bin/xattr -cr /Applications/Pear\ Desktop.app
+  ``` ### Windows You can use the [Scoop package manager](https://scoop.sh) to install
+  the `pear-desktop` package from the [`extras` bucket](https://github.com/ScoopInstaller/Extras).
+  ```bash scoop bucket add extras scoop install extras/pear-desktop ``` Alternately
+  you can use [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/),
+  Windows 11s official CLI package manager to install the `pear-devs.pear-desktop`
+  package. *Note: Microsoft Defender SmartScreen might block the installation since
+  it is from an "unknown publisher". This is also true for the manual installation
+  when trying to run the executable(.exe) after a manual download here on github (same
+  file).* ```bash winget install pear-devs.pear-desktop ``` #### How to install without
+  a network connection? (in Windows) - Download the `*.nsis.7z` file for _your device
+  architecture_ in [release page](https://github.com/pear-devs/pear-desktop/releases/latest).
+  - `x64` for 64-bit Windows - `ia32` for 32-bit Windows - `arm64` for ARM64 Windows
+  - Download installer in release page. (`*-Setup.exe`) - Place them in the **same
+  directory**. - Run the installer. ## Themes You can load CSS files to change the
+  look of the application (Options > Visual Tweaks > Themes). Some predefined themes
+  are available in https://github.com/kerichdev/themes-for-ytmdesktop-player. ## Dev
+  ```bash git clone https://github.com/pear-devs/pear-desktop cd pear-desktop pnpm
+  install --frozen-lockfile pnpm dev ``` Instead of installing pnpm on your system,
+  you can also use [devcontainers](https://containers.dev/). You can use devcontainers
+  either as a development environment in VS Code, or as a way to easily build the
+  project without ins'
 ---
 {% raw %}
 <div align="center" markdown="1">

@@ -2,8 +2,50 @@
 layout: project
 name: Bastienwirtz Homer
 slug: bastienwirtz-homer
+category: ServerTools-ProxMox-CICD
 image: https://raw.githubusercontent.com//bastienwirtz/homer/main/public/logo.png
 repo_url: https://github.com/bastienwirtz/homer
+indexed_content: "Homer A dead simple static HOM epage for your serv ER to keep your
+  services on hand, from a simple yaml configuration file. Demo • Docker Hub • Get
+  started ## Highlights - ⚡️ Lightweight & Fast - \U0001F971 Low / No maintenance
+  - \U0001F4C4 Simple [yaml](http://yaml.org/) file configuration - ➕ Installable
+  (pwa) - \U0001F9E0 Smart cards - \U0001F50D️ Fuzzy search - \U0001F4C2 Multi pages
+  & item grouping - \U0001F3A8 Theme customization - ⌨️ keyboard shortcuts: - / Start
+  searching. - Escape Stop searching. - Enter Open the first matching result (respects
+  the bookmark's `_target` property). - Alt (or Option ) + Enter Open the first matching
+  result in a new tab. ## Table of Contents - [Getting started](#get-started) - [Kubernetes
+  Installation](docs/kubernetes.md) - [Configuration](docs/configuration.md) - [Theming](docs/theming.md)
+  - [Smart cards](docs/customservices.md) - [Tips & tricks](docs/tips-and-tricks.md)
+  - [Development](docs/development.md) - [Troubleshooting](docs/troubleshooting.md)
+  ## Get started Homer is a full static html/js dashboard, based on a simple yaml
+  configuration file. See [documentation](docs/configuration.md) for information about
+  the configuration (`assets/config.yml`) options. It's meant to be served by an HTTP
+  server, **it will not work if you open the index.html directly over file:// protocol**.
+  ### Using docker The configuration directory is bind mounted to make your dashboard
+  easy to maintain. **Start the container with `docker run`** ```sh # Make sure your
+  local config directory exists docker run -d \\ --name homer \\ -p 8080:8080 \\ --mount
+  type=bind,source=\"/path/to/config/dir\",target=/www/assets \\ --restart=unless-stopped
+  \\ b4bz/homer:latest ``` > [!NOTE] > The container will run using a user uid and
+  gid 1000 by default, add `--user : ` to the docker command to adjust it if necessary.
+  Make sure this match the permissions of your assets directory. **or `docker-compose`**
+  ```yaml services: homer: image: b4bz/homer container_name: homer volumes: - /path/to/config/dir:/www/assets
+  # Make sure your local config directory exists ports: - 8080:8080 user: 1000:1000
+  # default environment: - INIT_ASSETS=1 # default, requires the config directory
+  to be writable for the container user (see user option) restart: unless-stopped
+  ``` **Environment variables:** - **`INIT_ASSETS`** (default: `1`) Install example
+  configuration file & assets (favicons, ...) to help you get started. - **`SUBFOLDER`**
+  (default: `null`) If you would like to host Homer in a subfolder, (ex: * *), set
+  this to the subfolder path (ex `/homer`). - **`PORT`** (default: `8080`) If you
+  would like to change internal port of Homer from default `8080` to your port choice.
+  - **`IPV6_DISABLE`** (default: 0) Set to `1` to disable listening on IPv6. ### Using
+  the release tarball (prebuilt, ready to use) Download and extract the latest release
+  (`homer.zip`) from the [release page](https://github.com/bastienwirtz/homer/releases),
+  rename the `assets/config.yml.dist` file to `assets/config.yml`, and put it behind
+  a web server. ```sh wget https://github.com/bastienwirtz/homer/releases/latest/download/homer.zip
+  unzip homer.zip -d homer cd homer cp assets/config.yml.dist assets/config.yml pnpx
+  http-server # or python -m http.server 8010 or any web server. ``` ### Build manually
+  ```sh pnpm install pnpm build ``` Then your dashboard is ready to use in the `/dist`
+  directory."
 ---
 {% raw %}
 <h1 align="center">

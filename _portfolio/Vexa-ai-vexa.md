@@ -2,8 +2,67 @@
 layout: project
 name: Vexa Ai Vexa
 slug: Vexa-ai-vexa
+category: Uncategorized
 image: https://img.shields.io/badge/LinkedIn-Dmitry_Grankin-0A66C2?style=flat-square&logo=linkedin&logoColor=white
 repo_url: https://github.com/Vexa-ai/vexa
+indexed_content: "Vexa Self-hosted meeting intelligence platform bots • real-time
+  transcription • storage • API • user interface Google Meet &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+  Microsoft Teams &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; Zoom (soon) &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp; What’s new • Quickstart • API • Roadmap • Discord --- ## What
+  is Vexa? **Vexa** is an open-source, self-hostable API for real-time meeting transcription.
+  It automatically joins Google Meet and Microsoft Teams meetings, captures audio,
+  and provides real-time transcriptions via REST API and WebSocket. ### At a glance
+  | Capability | What it means | |---|---| | **Meeting bots** | Automatically joins
+  Google Meet + Microsoft Teams meetings | | **Real-time transcription** | Sub-second
+  transcript delivery during the call | | **Multilingual** | 100+ languages via Whisper
+  (transcription + translation) | | **API-first** | REST API + WebSocket streaming
+  for integrations | | **Storage** | Persist transcripts + meeting metadata in your
+  database | | **Multi-user** | Team-ready: users, API keys/tokens, admin operations
+  | | **Self-hostable** | Run on your infra for complete data sovereignty | | **User
+  interfaces** | Open-source frontends (currently: **[Vexa Dashboard](https://github.com/Vexa-ai/Vexa-Dashboard)**)
+  | ### How it works ### Who it's for | You are... | You want... | |---|---| | **Enterprises**
+  | Self-hosted transcription with strict privacy requirements | | **Small & medium
+  teams** | Simple deployment (Vexa Lite) with an open-source UI | | **Developers**
+  | Build meeting products (assistants, automations, analytics) on top of the API
+  | | **Automation builders** | Integrate with tools like n8n via webhooks / APIs
+  | --- ## Build on Top. In Hours, Not Months **Build powerful meeting assistants
+  (like Otter.ai, Fireflies.ai, Fathom) for your startup, internal use, or custom
+  integrations.** The Vexa API provides powerful abstractions and a clear separation
+  of concerns, enabling you to build sophisticated applications on top with a safe
+  and enjoyable coding experience. ## \U0001F6E1️ Built for Data Sovereignty Vexa
+  is open-source and self-hostable — ideal for regulated industries and teams that
+  cannot compromise on privacy. Modular architecture scales from edge devices to millions
+  of users. You choose what to self-host and what to use as a service. **You control
+  everything:** **1. Full self-hosting** Run Vexa, database, and transcription service
+  entirely on your infrastructure * For regulated industries like fintech, medical,
+  etc. * **2. GPU-free self-hosting** Self-host Vexa, but plug into external transcription
+  service * Perfect privacy with minimal DevOps * **3. Fully hosted service** At [vexa.ai](https://vexa.ai)
+  — just grab API key * Ready to integrate * ## \U0001F389 What's new in v0.7 (pre-release)
+  - **Vexa Lite:** run Vexa as a **single Docker container** (`vexaai/vexa-lite:latest`)
+  - **Optional external transcription:** point Lite to an external service to avoid
+  GPU requirements - **Stateless by design:** all state lives in your DB → easy redeploy/scale
+  - **Serverless-friendly:** minimal footprint, fewer moving parts, faster deployments
+  --- > See full release notes: https://github.com/Vexa-ai/vexa/releases --- ## Quickstart
+  ### Option 1: Hosted (Fastest) Just grab your API key at [https://vexa.ai/dashboard/api-keys](https://vexa.ai/dashboard/api-keys)
+  and start using the service immediately. ### Option 2: Vexa Lite - For Users (Recommended
+  for Production) **Self-hosted, multiuser service for teams. Run as a single Docker
+  container for easy deployment.** Vexa Lite is a single-container deployment perfect
+  for teams who want: - **Self-hosted multiuser service** - Multiple users, API tokens,
+  and team management - **Quick deployment** on any platform - Single container, easy
+  to deploy - **No GPU required** - Transcription runs externally - **Choose your
+  frontend** - Pick from open-source user interfaces like [Vexa Dashboard](https://github.com/Vexa-ai/Vexa-Dashboard)
+  - **Production-ready** - Stateless, scalable, serverless-friendly **Quick start:**
+  ```bash docker run -d \\ --name vexa \\ -p 8056:8056 \\ -e DATABASE_URL=\"postgresql://user:pass@host/vexa\"
+  \\ -e ADMIN_API_TOKEN=\"your-admin-token\" \\ -e TRANSCRIBER_URL=\"https://transcription.service\"
+  \\ -e TRANSCRIBER_API_KEY=\"transcriber-token\" \\ vexaai/vexa-lite:latest ``` **Deployment
+  options:** - \U0001F680 **One-click platform deployments**: [vexa-lite-deploy repository](https://github.com/Vexa-ai/vexa-lite-deploy)
+  - ✅ **Fly.io** - Implemented - \U0001F6A7 **Railway, Render, etc.** - To be added
+  (contribute by adding your platform of choice!) - \U0001F4D6 **Complete setup guide**:
+  [Vexa Lite Deployment Guide](docs/vexa-lite-deployment.md) - All 4 configurations
+  (local/remote database, local/remote transcription) - \U0001F3A8 **Frontend options**:
+  Choose from open-source user interfaces like [Vexa Dashboard](https://github.com/Vexa-ai/Vexa-Dashboard)
+  ### Option 3: Docker Compose - For Development **Full stack deployment with all
+  services. Per"
 ---
 {% raw %}
 <p align="center" style="margin-bottom: 0.75em;">

@@ -2,8 +2,64 @@
 layout: project
 name: Senaykt Cloud Security Resources
 slug: senaykt-cloud-security-resources
+category: ServerTools-ProxMox-CICD
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/aquasecurity/cloudsploit)
+indexed_content: "# ☁️\U0001F512 Welcome to the Cloud Security Resources ☁️\U0001F512
+  # \U0001F50D In this repository, you'll find a collection of my recommended links
+  and resources for staying updated on the latest trends, best practices, and tools
+  in cloud security. Feel free to explore and utilize these resources to enhance your
+  knowledge and practices. \U0001F50D My main goal for selecting these links is collecting
+  tools that get updates regularly, we do not want to use old ones. As you know, we
+  need to follow the latest best practices and trends in cloud security. ### \U0001F9E0
+  Cloud Security Posture Management (CSPM) | Resource Name | Description | | --- |
+  --- | | [CloudSploit](https://github.com/aquasecurity/cloudsploit) | CloudSploit
+  by Aqua is an open-source project designed to allow detection of security risks
+  in cloud infrastructure accounts, including: AWS, Microsoft Azure, GCP, OCI, and
+  GitHub. | | [cartography](https://github.com/lyft/cartography) | Python tool that
+  consolidates infrastructure assets and the relationships between them in an intuitive
+  graph view | | [cloud-custodian](https://github.com/cloud-custodian/cloud-custodian/)
+  | Rules engine for cloud security, cost optimization, and governance, DSL in yaml
+  for policies to query, filter, and take actions on resources | | [Cloudquery](https://github.com/cloudquery/cloudquery)
+  | Use as an open source CSPM solution to monitor and enforce security policies across
+  your cloud infrastructure for AWS, GCP, Azure and many more | | [ElectricEye](https://github.com/jonrau1/ElectricEye)
+  | ElectricEye is a multi-cloud, multi-SaaS Python CLI tool for Asset Management,
+  Security Posture Management & Attack Surface Monitoring | | [Magpie](https://github.com/openraven/magpie)
+  | A Cloud Security Posture Manager or CSPM with a focus on security analysis for
+  the modern cloud stack and a focus on the emerging threat landscape such as cloud
+  ransomware and supply chain attacks | | [Prowler](https://github.com/prowler-cloud/prowler)
+  | Prowler is an Open Source Security tool for AWS, Azure, GCP and Kubernetes to
+  do security assessments, audits, incident response, compliance, continuous monitoring,
+  hardening and forensics readiness| | [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
+  | Multi-Cloud Security Auditing Tool | | [steampipe-mod-aws-compliance](https://github.com/turbot/steampipe-mod-aws-compliance)
+  | Individual controls or full compliance benchmarks for CIS, PCI, NIST, HIPAA and
+  more across all of your AWS accounts | | [Komiser](https://github.com/tailwarden/komiser)
+  | Open-source cloud-environment inspector | | [ZeusCloud](https://github.com/Zeus-Labs/ZeusCloud)
+  | Discover, prioritize, and remediate your risks in the cloud | | [Azure Resource
+  Configuration Scanner](https://github.com/mertyeter/az-resource-config-scanner)
+  | PowerShell script designed to scan and retrieve security related configurations
+  for various Azure resources | | [YES3 Scanner](https://github.com/FogSecurity/yes3-scanner)
+  | YES3 Scanner: S3 Security Scanner for Access and Ransomware Protection | | [finders-keypers](https://github.com/FogSecurity/finders-keypers)
+  | Finders Keypers: AWS KMS Encryption Key Usage and Blast Radius Finder | ### \U0001F575️‍♀️
+  Cloud Pentesting Tools | Resource Name | Description | | --- | --- | | [Cloudfox](https://github.com/BishopFox/cloudfox)|
+  Automating situational awareness for cloud penetration tests | | [hackingthe.cloud](https://github.com/Hacking-the-Cloud/hackingthe.cloud)
+  | An encyclopedia for offensive and defensive security knowledge in cloud native
+  technologies | | [cloud_enum](https://github.com/initstring/cloud_enum) | Multi-cloud
+  OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud | | [pacu](https://github.com/RhinoSecurityLabs/pacu)
+  | The AWS exploitation framework, designed for testing the security of Amazon Web
+  Services environments| | [CloudBrute](https://github.com/0xsha/cloudbrute) | Awesome
+  cloud enumerator | | [aws-whoami-golang](https://github.com/benkehoe/aws-whoami-golang)|
+  A tool to show what AWS account and identity you're using | | [cognito-scanner](https://github.com/padok-team/cognito-scanner)
+  | A simple script which implements different Cognito attacks such as Account Oracle
+  or Privilege Escalation | | [EscalateGPT](https://github.com/padok-team/cognito-scanner)
+  | An AI-powered tool for discovering privilege escalation opportunities in AWS IAM
+  configurations | | [surf](https://github.com/assetnote/surf) | Escalate your SSRF
+  vulnerabilities on Modern Cloud Environments | | [Halberd : Multi-Cloud Attack Tool](https://github.com/vectra-ai-research/Halberd)
+  | Halberd enables you to proactively assess your cloud defenses by executing a comprehensive
+  array of attack techniques across Entra ID, M365, Azure, and AWS | | [CloudShovel](https://github.com/saw-your-packet/CloudShovel)
+  | A tool for scanning public or private AMIs for sensitive files and secrets. |
+  | [Stratus Red Team](https://github.com/DataDog/stratus-red-team/) | Stratus Red
+  Team is \"Atomic Red Team™\" for the clo"
 ---
 {% raw %}
 # ☁️🔒  Welcome to the Cloud Security Resources  ☁️🔒 #

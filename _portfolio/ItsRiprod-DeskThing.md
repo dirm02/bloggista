@@ -2,8 +2,69 @@
 layout: project
 name: Itsriprod Deskthing
 slug: ItsRiprod-DeskThing
+category: Entertainment tools
 image: https://github.com/user-attachments/assets/78aa432b-e86e-4945-9b57-931a7ae5c5cb
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "*Quick Links* > ❔[Reddit Link](https://reddit.com/r/DeskThing) >
+  \U0001F4C3[Trello Board](https://trello.com/b/6v0paxqV/deskthing) > \U0001F4AC[Deskthing
+  Discord](https://discord.gg/uNS3dhj46D) > \U0001F310[Official Deskthing Website](https://deskthing.app)
+  > \U0001F4FA [Deskthing Youtube Channel](https://www.youtube.com/@DeskThing) > \U0001F4AC
+  [Car Thing Hax Community Discord](https://discord.carth.ing/) --- # ‼️DeskThing
+  is completely free to use but [donations](https://deskthing.app/support) are greatly
+  appreciated ☕ --- # The DeskThing ✔️ *Let's begin, shall we?* This is the DeskThing
+  project. Using Spotify's existing Car Thing, the DeskThing makes the perfect desk
+  assistant. In short, the DeskThing serves as an alternative OS for the Spotify Car
+  Thing. It allows you to load up community-made apps to it to do anything from control
+  your local audio to seeing who is in your discord call! If you want to help contribute
+  to this endeavor and attempt to revive the car thing, you can do so through my buymeacoffee
+  link or through Github Sponsors. Cheers! *Dammit Jeff posted a video covering the
+  DeskThing! Check it out [here](https://youtu.be/vQVuGeoqyUc?si=80bZQEFqH__qxppf&t=416)*
+  **⚠️DO NOT PULL MAIN BRANCH TO INSTALL ⚠️** Instead, go to [The Official Website](https://deskthing.app/)
+  and download the installer for your OS For a video walkthrough of v0.6.0, go to
+  [this video](https://www.youtube.com/watch?v=iW2biAnq0n8) --- > All instructions
+  are up-to-date as late of v0.9.0-beta. Later versions may differ in functionality
+  and setup ✨ Features The DeskThing is a simple CarThing Chromium-based website that
+  can communicate with a Desktop APP on your computer. The CarThing can: Note: Not
+  all of these are updated and are pending a revision. This is new as of v0.7.0 ##
+  Features - ### All In One Package \U0001F4E6 - [X] Download apps directly from the
+  Desktop App - [X] Manage and update the Car Thing's display - [X] Probably more
+  - just check it out already - ### Configurable Controls ⚙️ - [X] Make any button
+  do any function! - [X] Control audio with the top buttons, front buttons, back buttons,
+  really whatever you want! - [X] Modify them from the Desktop UI - [X] Add more directly
+  from apps! (Basically, you can do anything) *The deskthing mappings page - will
+  be updated in v0.12* ## App Highlights (View the rest on the [deskthing website](https://deskthing.app/apps)
+  or in the app store in deskthing) - ### Spotify Integration \U0001F3A7 - [X] Show
+  currently listening (Album, Artist, Song name, album art) - [X] Control Spotify
+  (Skip, pause, play, rewind, shuffle, repeat) - [X] Supports Podcasts too! - [X]
+  Set Audio Output Source *[LyrThing](https://github.com/espeon/LyrThing/) community
+  app showing spotify lyrics by Espeon* - ### Local Audio Control \U0001F3A7 - [X]
+  Show currently listening (Album, Artist, Song name, album art) - [X] Control Any
+  Playing Media (Skip, pause, play, rewind, shuffle, repeat) - ### Custom Apps *Gif
+  uploaded via the Image Viewer app* --- ▶️ Setting Up ### Detailed Setup Instructions
+  Updating this ReadMe with the updated flashing / installation instructions was tedious
+  and led to confusion So now, it is contained inside an easy youtube video You can
+  also check out the Additional Resources for further tutorials if you'd rather look
+  there. https://www.youtube.com/watch?v=iW2biAnq0n8 While older versions may work,
+  this is recommended. --- \U0001F528 Local Development ### Local Development / Contribution
+  Node Version: >=v25.0.0 NPM Version: >=11.6.2 **Note:** These steps are for developers
+  contributing to the project. For end-users installing DeskThing, do not pull the
+  main branch—use the installer from [The Official Website](https://deskthing.app/)
+  instead. 1. Clone the repo ```sh git clone https://github.com/itsriprod/deskthing
+  ``` 2. cd into the directory ```sh cd ./deskthing/DeskThingServer ``` 3. Install
+  packages ```sh npm install ``` 4. Run the development build ```sh npm run dev ```
+  That's it, you should be off to the races! A few aspects of the app are different
+  while in development, but nothing monumental. The architecture is ``` src/ main/
+  // all of the server-end code preload/ // types and definitions for the IPC communication
+  layer renderer/ // the GUI of the application shared/ // shared types between the
+  frontend and backend that are local to the server (global types are in @deskthing/types)
+  ``` If you notice a lot of types issues, this may be due to the @deskthing/types
+  being unpublished. To solve, you'll need to clone the Types package and link it
+  locally *in a new, unrelated directory:* ```sh git clone https://github.com/itsriprod/deskthing-types
+  cd deskthing-types npm install # On linux you may have to run this as sudo due to
+  symlinks npm link ``` *in the deskthingserver directory* ```sh npm link @deskthing/types
+  ``` There, now you'll be using the development form of the types package! --- \U0001F91D
+  Contributing Welcome contributions! Here's how to get started: - **Reporting Issues:**
+  Use GitHub Issues to report bugs or suggest features. Include details like OS, De"
 ---
 {% raw %}
 ![Youtube Banner](https://github.com/user-attachments/assets/78aa432b-e86e-4945-9b57-931a7ae5c5cb)

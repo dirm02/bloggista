@@ -2,8 +2,66 @@
 layout: project
 name: Memodb Io Acontext
 slug: memodb-io-Acontext
+category: Uncategorized
 image: https://img.shields.io/pypi/v/acontext.svg
 repo_url: https://github.com/memodb-io/acontext
+indexed_content: "\U0001F310 Website | \U0001F4DA Document Acontext is a context data
+  platform for production AI agents. Think of it as Supabase, but purpose-built for
+  agent context. We help agents scale from local demos to production without rebuilding
+  context infrastructure — giving you unified storage, built-in context engineering,
+  and context observability out of the box. # ❓ Why use Acontext #### Challenges in
+  Building Agents - Context data like **llm messages, files, and skills are scattered**
+  across different storages - **Long-running agents need context management**, and
+  you have to build it yourself - **Tracking states from multi-modal, multi-llm Agents
+  is a nightmare**, how you know your agent is great? #### How Acontext Solves It
+  - **One unified storage** for messages, files, skills, and more. Integrated with
+  Claude Agent SDK, AI-SDK, OpenAI SDK... - **Built-in context management** methods
+  — just one argument, zero code - **Replay** agent trajectory in Dashboard - **Observe**
+  agent with background monitor to estimate success rate # \U0001F4A1 Core Features
+  - **Context Storage** - [Session](https://docs.acontext.io/store/messages/multi-provider):
+  save agent history from any llm, any modal. - [Context Editing](https://docs.acontext.io/engineering/editing)
+  - edit context window in one api. - [Disk](https://docs.acontext.io/store/disk):
+  virtual, persistent filesystem, - [Agent Skills](https://docs.acontext.io/store/skill)
+  - manage skills in server-side. - [Sandbox](https://docs.acontext.io/store/sandbox)
+  - run code, analyze data, export artifacts. - **Context Observability** - [Session
+  Summary](https://docs.acontext.io/observe/agent_tasks): asynchronously summarize
+  agent's progress and user feedback. - [State Tracking](https://docs.acontext.io/observe/agent_tasks):
+  collect agent's working status in near real-time. - **View everything in one [dashboard](https://docs.acontext.io/observe/dashboard)**
+  Dashboard of Agent Success Rate and Other Metrics # \U0001F680 Step-by-step Quickstart
+  ### Connect to Acontext 1. Go to [Acontext.io](https://acontext.io), claim your
+  free credits. 2. Go through a one-click onboarding to get your API Key (starts with
+  `sk-ac`) \U0001F4BB Self-host Acontext We have an `acontext-cli` to help you do
+  quick proof-of-concept. Download it first in your terminal: ```bash curl -fsSL https://install.acontext.io
+  | sh ``` You should have [docker](https://www.docker.com/get-started/) installed
+  and an OpenAI API Key to start an Acontext backend on your computer: ```bash mkdir
+  acontext_server && cd acontext_server acontext server up ``` > Make sure your LLM
+  has the ability to [call tools](https://platform.openai.com/docs/guides/function-calling).
+  By default, Acontext will use `gpt-4.1`. `acontext server up` will create/use `.env`
+  and `config.yaml` for Acontext, and create a `db` folder to persist data. Once it's
+  done, you can access the following endpoints: - Acontext API Base URL: http://localhost:8029/api/v1
+  - Acontext Dashboard: http://localhost:3000/ ### Install SDKs We're maintaining
+  Python [](https://pypi.org/project/acontext/) and Typescript [](https://www.npmjs.com/package/@acontext/acontext)
+  SDKs. The snippets below are using Python. > Click the doc link to see TS SDK Quickstart.
+  ```bash pip install acontext ``` ### Initialize Client ```python import os from
+  acontext import AcontextClient # For cloud: client = AcontextClient( api_key=os.getenv(\"ACONTEXT_API_KEY\"),
+  ) # For self-hosted: client = AcontextClient( base_url=\"http://localhost:8029/api/v1\",
+  api_key=\"sk-ac-your-root-api-bearer-token\", ) ``` ### Store & Get Messages > [Docs](https://docs.acontext.io/store/messages/multi-provider)
+  Store messages in OpenAI, Anthropic, or Gemini format. Auto-converts on retrieval.
+  ```python # Create session and store messages session = client.sessions.create()
+  # Store text, image, file, etc. client.sessions.store_message( session_id=session.id,
+  blob={\"role\": \"user\", \"content\": \"Hello!\"}, format=\"openai\" ) # Retrieve
+  in any format (auto-converts) result = client.sessions.get_messages(session_id=session.id,
+  format=\"anthropic\") ``` ### Context Engineering > [Session Summary](https://docs.acontext.io/engineering/session_summary)
+  | [Context Editing](https://docs.acontext.io/engineering/editing) Compress context
+  with summaries and edit strategies. Original messages unchanged. ```python # Session
+  summary for prompt injection summary = client.sessions.get_session_summary(session_id)
+  system_prompt = f\"Previous tasks:\\n{summary}\\n\\nContinue helping.\" # Context
+  editing - limit tokens on retrieval result = client.sessions.get_messages( session_id=session_id,
+  edit_strategies=[ {\"type\": \"remove_tool_result\", \"params\": {\"keep_recent_n_tool_results\":
+  3}}, {\"type\": \"token_limit\", \"params\": {\"limit_tokens\": 30000}} ] ) ```
+  ### Agent Storage Tools Disk Tool > [Tool Docs](https://docs.acontext.io/tool/disk_tools)
+  | [SDK Docs](https://docs.acontext.io/store/disk) > Persistent file storage for
+  agents. Supports read, write, grep, glob. ```python from acontext.agent.disk import "
 ---
 {% raw %}
 <div align="center">

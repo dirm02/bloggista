@@ -2,8 +2,69 @@
 layout: project
 name: Samuraigpt Ai Youtube Shorts Generator
 slug: SamurAIGPT-AI-Youtube-Shorts-Generator
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/user-attachments/assets/3f5d1abf-bf3b-475f-8abf-5e253003453a
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# AI YouTube Shorts Generator AI-powered tool to automatically generate
+  engaging YouTube Shorts from long-form videos. Uses GPT-4o-mini and Whisper to extract
+  highlights, add subtitles, and crop videos vertically for social media. ## Features
+  - **\U0001F3AC Flexible Input**: Supports both YouTube URLs and local video files
+  - **\U0001F3A4 GPU-Accelerated Transcription**: CUDA-enabled Whisper for fast speech-to-text
+  - **\U0001F916 AI Highlight Selection**: GPT-4o-mini automatically finds the most
+  engaging 2-minute segments - **✅ Interactive Approval**: Review and approve/regenerate
+  selections with 15-second auto-approve timeout - **\U0001F4DD Auto Subtitles**:
+  Stylized captions with Franklin Gothic font burned into video - **\U0001F3AF Smart
+  Cropping**: - **Face videos**: Static face-centered crop (no jerky movement) - **Screen
+  recordings**: Half-width display with smooth motion tracking (1 shift/second max)
+  - **\U0001F4F1 Vertical Format**: Perfect 9:16 aspect ratio for TikTok/YouTube Shorts/Instagram
+  Reels - **⚙️ Automation Ready**: CLI arguments, auto-quality selection, timeout-based
+  approvals - **\U0001F504 Concurrent Execution**: Unique session IDs allow multiple
+  instances to run simultaneously - **\U0001F4E6 Clean Output**: Slugified filenames
+  (e.g., `my-video-title_short.mp4`) and automatic temp file cleanup ## Quick Start
+  (No Setup) Want better results without the setup? The [AI Clipping API](https://muapi.ai/playground/ai-clipping)
+  offers improved clip selection, faster processing, and no dependencies to manage.
+  --- ## Installation (Self-Hosted) ### Prerequisites - Python 3.10+ - FFmpeg with
+  development headers - NVIDIA GPU with CUDA support (optional, but recommended for
+  faster transcription) - ImageMagick (for subtitle rendering) - OpenAI API key ###
+  Steps 1. **Clone the repository:** ```bash git clone https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator.git
+  cd AI-Youtube-Shorts-Generator ``` 2. **Install system dependencies:** **Ubuntu/Debian:**
+  ```bash sudo apt install -y ffmpeg libavdevice-dev libavfilter-dev libopus-dev \\
+  libvpx-dev pkg-config libsrtp2-dev imagemagick ``` **macOS:** ```bash brew install
+  ffmpeg imagemagick ``` **Windows:** - Install [FFmpeg](https://ffmpeg.org/download.html)
+  and add to PATH - Install [ImageMagick](https://imagemagick.org/script/download.php#windows)
+  3. **Fix ImageMagick security policy** (Linux only, required for subtitles): ```bash
+  sudo sed -i 's/rights=\"none\" pattern=\"@\\*\"/rights=\"read|write\" pattern=\"@*\"/'
+  /etc/ImageMagick-6/policy.xml ``` 4. **Create and activate virtual environment:**
+  ```bash python3.10 -m venv venv source venv/bin/activate ``` 5. **Install Python
+  dependencies:** ```bash pip install -r requirements.txt ``` 6. **Set up environment
+  variables:** Create a `.env` file in the project root: ```bash OPENAI_API=your_openai_api_key_here
+  ``` ### CPU-Only Installation If you don't have an NVIDIA GPU, see [INSTALL_CPU.md](INSTALL_CPU.md)
+  for CPU-only setup instructions. ### Docker Installation ```bash # Build and run
+  with Docker Compose docker-compose up --build # Or build manually docker build -t
+  ai-shorts-generator . docker run -v $(pwd)/.env:/app/.env -v $(pwd)/videos:/app/videos
+  ai-shorts-generator ``` ## Usage ### With YouTube URL (Interactive) ```bash ./run.sh
+  # Then enter YouTube URL when prompted # You'll be able to select video resolution
+  (5s timeout, auto-selects highest) ``` ### With YouTube URL (Command-Line) ```bash
+  ./run.sh \"https://youtu.be/VIDEO_ID\" ``` ### With Local Video File ```bash ./run.sh
+  \"/path/to/your/video.mp4\" ``` ### Batch Processing Multiple URLs Create a `urls.txt`
+  file with one URL per line, then: ```bash # Process all URLs sequentially with auto-approve
+  xargs -a urls.txt -I{} ./run.sh --auto-approve {} ``` Or without auto-approve (will
+  prompt for each): ```bash xargs -a urls.txt -I{} ./run.sh {} ``` ## Resolution Selection
+  When downloading from YouTube, you'll see: ``` Available video streams: 0. Resolution:
+  1080p, Size: 45.2 MB, Type: Adaptive 1. Resolution: 720p, Size: 28.1 MB, Type: Adaptive
+  2. Resolution: 480p, Size: 15.3 MB, Type: Adaptive Select resolution number (0-2)
+  or wait 5s for auto-select... Auto-selecting highest quality in 5 seconds... ```
+  - **Enter a number** to select that resolution immediately - **Wait 5 seconds**
+  to auto-select highest quality (1080p) - **Invalid input** falls back to highest
+  quality ## How It Works 1. **Download/Load**: Fetches from YouTube or loads local
+  file 2. **Resolution Selection**: Choose video quality (5s timeout, auto-selects
+  highest) 3. **Extract Audio**: Converts to WAV format 4. **Transcribe**: GPU-accelerated
+  Whisper transcription (~30s for 5min video) 5. **AI Analysis**: GPT-4o-mini selects
+  most engaging 2-minute segment 6. **Interactive Approval**: Review selection, regenerate
+  if needed, or auto-approve in 15s 7. **Extract Clip**: Crops selected timeframe
+  8. **Smart Crop**: - Detects faces → static face-centered vertical crop - No faces
+  → half-width screen recording with motion tracking 9. **Add Subtitles**: Burns Franklin
+  Gothic capti"
 ---
 {% raw %}
 # AI YouTube Shorts Generator

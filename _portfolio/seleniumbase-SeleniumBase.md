@@ -2,8 +2,73 @@
 layout: project
 name: Seleniumbase Seleniumbase
 slug: seleniumbase-SeleniumBase
+category: Management- Engineering- SocialM
 image: https://seleniumbase.github.io/cdn/img/super_logo_sb3.png
 repo_url: https://github.com/seleniumbase/SeleniumBase
+indexed_content: "SeleniumBase Automate, test, and scrape the web — on your own terms.
+  \U0001F680 Start | \U0001F3F0 Features | \U0001F39B️ Options | \U0001F4DA Examples
+  | \U0001FA84 Scripts | \U0001F4F1 Mobile \U0001F4D8 The API | \U0001F520 SyntaxFormats
+  | \U0001F534 Recorder | \U0001F4CA Dashboard | \U0001F5FE Locale \U0001F396️ GUI
+  | \U0001F4F0 TestPage | \U0001F464 UC Mode | \U0001F419 CDP Mode | \U0001F4F6 Charts
+  | \U0001F5A5️ Farm \U0001F441️ How | \U0001F69D Migration | \U0001F3AD Stealthy
+  Playwright | \U0001F6C2 MasterQA | \U0001F68E Tours \U0001F916 CI/CD | ❇️ JSMgr
+  | \U0001F30F Translator | \U0001F39E️ Presenter | \U0001F5BC️ Visual | \U0001F5C2️
+  CPlans SeleniumBase is a browser automation framework that empowers software teams
+  to innovate faster and handle modern web challenges with ease. With stealth options
+  like CDP Mode, you'll avoid the usual restrictions imposed by websites deploying
+  bot-detection services. -------- \U0001F4DA Learn from [**over 200 examples** in
+  the **SeleniumBase/examples/** folder](https://github.com/seleniumbase/SeleniumBase/tree/master/examples).
+  \U0001F419 Stealth modes: UC Mode and CDP Mode can bypass bot-detection, solve CAPTCHAs,
+  and call advanced methods from the Chrome Devtools Protocol . ℹ️ Many examples run
+  with raw python , although some use Syntax Formats that expect pytest (a Python
+  unit-testing framework included with SeleniumBase that can discover, collect, and
+  run tests automatically). -------- \U0001F4D7 This script performs a Google Search
+  using SeleniumBase UC Mode + CDP Mode: SeleniumBase/examples/raw_google.py (Results
+  are saved as PDF, HTML, and PNG) ```python from seleniumbase import SB with SB(uc=True,
+  test=True) as sb: url = \"https://google.com/ncr\" sb.activate_cdp_mode(url) sb.type('[title=\"Search\"]',
+  \"SeleniumBase GitHub page\") sb.click(\"div:not([jsname]) > * > input\") sb.sleep(2)
+  print(sb.get_page_title()) sb.sleep(1) # Wait for the \"AI Overview\" result if
+  sb.is_text_visible(\"Generating\"): sb.wait_for_text(\"AI Overview\") sb.save_as_pdf_to_logs()
+  # Saved to ./latest_logs/ sb.save_page_source_to_logs() sb.save_screenshot_to_logs()
+  ``` > `python raw_google.py` -------- \U0001F4D7 Here's a script that bypasses Cloudflare's
+  challenge page with UC Mode + CDP Mode: SeleniumBase/examples/cdp_mode/raw_gitlab.py
+  ```python from seleniumbase import SB with SB(uc=True, test=True, locale=\"en\")
+  as sb: url = \"https://gitlab.com/users/sign_in\" sb.activate_cdp_mode(url) sb.sleep(2)
+  sb.solve_captcha() # (The rest is for testing and demo purposes) sb.assert_text(\"Username\",
+  '[for=\"user_login\"]', timeout=3) sb.assert_element('label[for=\"user_login\"]')
+  sb.highlight('button:contains(\"Sign in\")') sb.highlight('h1:contains(\"GitLab\")')
+  sb.post_message(\"SeleniumBase wasn't detected\", duration=4) ``` \U0001F4D9 There's
+  also SeleniumBase's \"Pure CDP Mode\", which doesn't use WebDriver or Selenium at
+  all: SeleniumBase/examples/cdp_mode/raw_cdp_gitlab.py ```python from seleniumbase
+  import sb_cdp url = \"https://gitlab.com/users/sign_in\" sb = sb_cdp.Chrome(url,
+  incognito=True) sb.sleep(2) sb.solve_captcha() sb.highlight('h1:contains(\"GitLab\")')
+  sb.highlight('button:contains(\"Sign in\")') sb.driver.stop() ``` -------- \U0001F4D7
+  Here's SeleniumBase/examples/test_get_swag.py , which tests an e-commerce site:
+  ```python from seleniumbase import BaseCase BaseCase.main(__name__, __file__) #
+  Call pytest class MyTestClass(BaseCase): def test_swag_labs(self): self.open(\"https://www.saucedemo.com\")
+  self.type(\"#user-name\", \"standard_user\") self.type(\"#password\", \"secret_sauce\\n\")
+  self.assert_element(\"div.inventory_list\") self.click('button[name*=\"backpack\"]')
+  self.click(\"#shopping_cart_container a\") self.assert_text(\"Backpack\", \"div.cart_item\")
+  self.click(\"button#checkout\") self.type(\"input#first-name\", \"SeleniumBase\")
+  self.type(\"input#last-name\", \"Automation\") self.type(\"input#postal-code\",
+  \"77123\") self.click(\"input#continue\") self.click(\"button#finish\") self.assert_text(\"Thank
+  you for your order!\") ``` > `pytest test_get_swag.py` > (The default browser is
+  `--chrome` if not set.) -------- \U0001F4D7 Here's SeleniumBase/examples/test_coffee_cart.py
+  , which verifies an e-commerce site: ```zsh pytest test_coffee_cart.py --demo ```
+  > ( --demo mode slows down tests and highlights actions) -------- \U0001F4D7 Here's
+  SeleniumBase/examples/test_demo_site.py , which covers several actions: ```zsh pytest
+  test_demo_site.py ``` > Easy to type, click, select, toggle, drag & drop, and more.
+  (For more examples, see the SeleniumBase/examples/ folder.) -------- Explore the
+  README: Get Started / Installation Basic Example / Usage Common Test Methods Fun
+  Facts / Learn More Demo Mode / Debugging Command-line Options Directory Configuration
+  SeleniumBase Dashboard Generating Test Reports -------- ▶️ How is SeleniumBase different
+  from raw Selenium? ( click to expand ) \U0001F4A1 SeleniumBase is a Python framework
+  for browser automation and testing. SeleniumBase uses Selenium/WebDriver APIs and
+  incorporates test-runners such as pytest , pynose , and behave to provide organized
+  structure, test discovery, test execution, test state ( eg. passed, failed, or skipped
+  ), and command-line options for changing default settings ( eg. browser selection
+  ). With raw Selenium, you would need to set up your own options-parser for configuring
+  tests from the co"
 ---
 {% raw %}
 <!-- SeleniumBase Docs -->

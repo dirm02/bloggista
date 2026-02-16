@@ -2,8 +2,67 @@
 layout: project
 name: Henestrosadev Audiotext
 slug: HenestrosaDev-audiotext
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/HenestrosaDev-audiotext/docs/main-system.png
 repo_url: https://github.com/HenestrosaDev/audiotext
+indexed_content: 'Audiotext A desktop application that transcribes audio from files,
+  microphone input or YouTube videos with the option to translate the content and
+  create subtitles. Report Bug · Request Feature · Ask Question ## Table of Contents
+  - [About the Project](#about-the-project) - [Supported Languages](#supported-languages)
+  - [Supported File Types](#supported-file-types) - [Project Structure](#project-structure)
+  - [Built With](#built-with) - [Getting Started](#getting-started) - [Installation](#installation)
+  - [Setting Up the Project Locally](#setting-up-the-project-locally) - [Notes](#notes)
+  - [Usage](#usage) - [Transcription Language](#transcription-language) - [Transcription
+  Method](#transcription-method) - [Audio Source](#audio-source) - [Save Transcription](#save-transcription)
+  - [Autosave](#autosave) - [Overwrite Existing Files](#overwrite-existing-files)
+  - [Google Speech-To-Text API Options](#google-speech-to-text-api-options) - [Google
+  API Key](#google-api-key) - [Whisper API Options](#whisper-api-options) - [Whisper
+  API Key](#whisper-api-key) - [Response Format](#response-format) - [Temperature](#temperature)
+  - [Timestamp Granularities](#timestamp-granularities) - [WhisperX Options](#whisperx-options)
+  - [Output File Types](#output-file-types) - [Translate to English](#translate-to-english)
+  - [Subtitle Options](#subtitle-options) - [Highlight Words](#highlight-words) -
+  [Max. Line Width](#max-line-width) - [Max. Line Count](#max-line-count) - [Advanced
+  Options](#advanced-options) - [Model Size](#model-size) - [Compute Type](#compute-type)
+  - [Batch Size](#batch-size) - [Use CPU](#use-cpu) - [Troubleshooting](#troubleshooting)
+  - [Roadmap](#roadmap) - [Authors](#authors) - [Contributing](#contributing) - [Acknowledgments](#acknowledgments)
+  - [License](#license) - [Support](#support) ## About the Project **Audiotext** transcribes
+  the audio from an audio file, video file, microphone input, directory, or YouTube
+  video into any of the 99 different languages it supports. You can transcribe using
+  the [**Google Speech-to-Text API**](https://cloud.google.com/speech-to-text), the
+  [**Whisper API**](https://platform.openai.com/docs/guides/speech-to-text), or [**WhisperX**](https://github.com/m-bain/whisperX).
+  The last two methods can even translate the transcription or generate subtitles!
+  You can also choose the theme you like best. It can be dark, light, or the one configured
+  in the system. Dark Light ### Supported Languages Click here to display - Afrikaans
+  - Albanian - Amharic - Arabic - Armenian - Assamese - Azerbaijan - Bashkir - Basque
+  - Belarusian - Bengali - Bosnian - Breton - Bulgarian - Burmese - Catalan - Chinese
+  - Chinese (Yue) - Croatian - Czech - Danish - Dutch - English - Estonian - Faroese
+  - Farsi - Finnish - French - Galician - Georgian - German - Greek - Gujarati - Haitian
+  - Hausa - Hawaiian - Hebrew - Hindi - Hungarian - Icelandic - Indonesian - Italian
+  - Japanese - Javanese - Kannada - Kazakh - Khmer - Korean - Lao - Latin - Latvian
+  - Lingala - Lithuanian - Luxembourgish - Macedonian - Malagasy - Malay - Malayalam
+  - Maltese - Maori - Marathi - Mongolian - Nepali - Norwegian - Norwegian Nynorsk
+  - Occitan - Pashto - Polish - Português - Punjabi - Romanian - Russian - Sanskrit
+  - Serbian - Shona - Sindhi - Sinhala - Slovak - Slovenian - Somali - Spanish - Sundanese
+  - Swahili - Swedish - Tagalog - Tajik - Tamil - Tatar - Telugu - Thai - Tibetan
+  - Turkish - Turkmen - Ukrainian - Urdu - Uzbek - Vietnamese - Welsh - Yiddish -
+  Yoruba ### Supported File Types Audio file formats - `.aac` - `.flac` - `.mp3` -
+  `.mpeg` - `.oga` - `.ogg` - `.opus` - `.wav` - `.wma` Video file formats - `.3g2`
+  - `.3gp2` - `.3gp` - `.3gpp2` - `.3gpp` - `.asf` - `.avi` - `.f4a` - `.f4b` - `.f4v`
+  - `.flv` - `.m4a` - `.m4b` - `.m4r` - `.m4v` - `.mkv` - `.mov` - `.mp4` - `.ogv`
+  - `.ogx` - `.webm` - `.wmv` ### Project Structure ASCII folder structure ``` │ .gitignore
+  │ audiotext.spec │ LICENSE │ README.md │ requirements.txt │ ├───.github │ │ CONTRIBUTING.md
+  │ │ FUNDING.yml │ │ │ ├───ISSUE_TEMPLATE │ │ bug_report_template.md │ │ feature_request_template.md
+  │ │ │ └───PULL_REQUEST_TEMPLATE │ pull_request_template.md │ ├───docs/ │ ├───res
+  │ ├───img │ │ icon.ico │ │ │ └───locales │ │ main_controller.pot │ │ main_window.pot
+  │ │ │ ├───en │ │ └───LC_MESSAGES │ │ app.mo │ │ app.po │ │ main_controller.po │
+  │ main_window.po │ │ │ └───es │ └───LC_MESSAGES │ app.mo │ app.po │ main_controller.po
+  │ main_window.po │ └───src │ app.py │ ├───controllers │ __init__.py │ main_controller.py
+  │ ├───handlers │ file_handler.py │ google_api_handler.py │ openai_api_handler.py
+  │ whisperx_handler.py │ youtube_handler.py │ ├───interfaces │ transcribable.py │
+  ├───models │ │ __init__.py │ │ transcription.py │ │ │ └───config │ __init__.py │
+  config_subtitles.py │ config_system.py │ config_transcription.py │ config_whisper_api.py
+  │ config_whisperx.py │ ├───utils │ __init__.py │ audio_utils.py │ config_manager.py
+  │ constants.py │ dict_utils.py │ enums.py │ env_keys.py │ path_h'
 ---
 {% raw %}
 <div id="top"></div>

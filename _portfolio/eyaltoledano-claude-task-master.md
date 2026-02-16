@@ -2,8 +2,60 @@
 layout: project
 name: Eyaltoledano Claude Task Master
 slug: eyaltoledano-claude-task-master
+category: Very important!!!!
 image: https://img.shields.io/twitter/follow/eyaltoledano
 repo_url: https://github.com/eyaltoledano/claude-task-master
+indexed_content: "Taskmaster : A task management system for AI-driven development,
+  designed to work seamlessly with any AI chat. | Docs ## By [@eyaltoledano](https://x.com/eyaltoledano)
+  & [@RalphEcom](https://x.com/RalphEcom) [](https://x.com/eyaltoledano) [](https://x.com/RalphEcom)
+  A task management system for AI-driven development with Claude, designed to work
+  seamlessly with Cursor AI. ## Documentation \U0001F4DA **[View Full Documentation](https://docs.task-master.dev)**
+  For detailed guides, API references, and comprehensive examples, visit our documentation
+  site. ### Quick Reference The following documentation is also available in the `docs`
+  directory: - [Configuration Guide](docs/configuration.md) - Set up environment variables
+  and customize Task Master - [Tutorial](docs/tutorial.md) - Step-by-step guide to
+  getting started with Task Master - [Command Reference](docs/command-reference.md)
+  - Complete list of all available commands - [Task Structure](docs/task-structure.md)
+  - Understanding the task format and features - [Example Interactions](docs/examples.md)
+  - Common Cursor AI interaction examples - [Migration Guide](docs/migration-guide.md)
+  - Guide to migrating to the new project structure #### Quick Install for Cursor
+  1.0+ (One-Click) [](https://cursor.com/en/install-mcp?name=task-master-ai&config=eyJjb21tYW5kIjoibnB4IC15IC0tcGFja2FnZT10YXNrLW1hc3Rlci1haSB0YXNrLW1hc3Rlci1haSIsImVudiI6eyJBTlRIUk9QSUNfQVBJX0tFWSI6IllPVVJfQU5USFJPUElDX0FQSV9LRVlfSEVSRSIsIlBFUlBMRVhJVFlfQVBJX0tFWSI6IllPVVJfUEVSUExFWElUWV9BUElfS0VZX0hFUkUiLCJPUEVOQUlfQVBJX0tFWSI6IllPVVJfT1BFTkFJX0tFWV9IRVJFIiwiR09PR0xFX0FQSV9LRVkiOiJZT1VSX0dPT0dMRV9LRVlfSEVSRSIsIk1JU1RSQUxfQVBJX0tFWSI6IllPVVJfTUlTVFJBTF9LRVlfSEVSRSIsIkdST1FfQVBJX0tFWSI6IllPVVJfR1JPUV9LRVlfSEVSRSIsIk9QRU5ST1VURVJfQVBJX0tFWSI6IllPVVJfT1BFTlJPVVRFUl9LRVlfSEVSRSIsIlhBSV9BUElfS0VZIjoiWU9VUl9YQUlfS0VZX0hFUkUiLCJBWlVSRV9PUEVOQUlfQVBJX0tFWSI6IllPVVJfQVpVUkVfS0VZX0hFUkUiLCJPTExBTUFfQVBJX0tFWSI6IllPVVJfT0xMQU1BX0FQSV9LRVlfSEVSRSJ9fQ%3D%3D)
+  > **Note:** After clicking the link, you'll still need to add your API keys to the
+  configuration. The link installs the MCP server with placeholder keys that you'll
+  need to replace with your actual API keys. #### Claude Code Quick Install For Claude
+  Code users: ```bash claude mcp add taskmaster-ai -- npx -y task-master-ai ``` Don't
+  forget to add your API keys to the configuration: - in the root .env of your Project
+  - in the \"env\" section of your mcp config for taskmaster-ai ## Requirements Taskmaster
+  utilizes AI across several commands, and those require a separate API key. You can
+  use a variety of models from different AI providers provided you add your API keys.
+  For example, if you want to use Claude 3.7, you'll need an Anthropic API key. You
+  can define 3 types of models to be used: the main model, the research model, and
+  the fallback model (in case either the main or research fail). Whatever model you
+  use, its provider API key must be present in either mcp.json or .env. At least one
+  (1) of the following is required: - Anthropic API key (Claude API) - OpenAI API
+  key - Google Gemini API key - Perplexity API key (for research model) - xAI API
+  Key (for research or main model) - OpenRouter API Key (for research or main model)
+  - Claude Code (no API key required - requires Claude Code CLI) - Codex CLI (OAuth
+  via ChatGPT subscription - requires Codex CLI) Using the research model is optional
+  but highly recommended. You will need at least ONE API key (unless using Claude
+  Code or Codex CLI with OAuth). Adding all API keys enables you to seamlessly switch
+  between model providers at will. ## Quick Start ### Option 1: MCP (Recommended)
+  MCP (Model Control Protocol) lets you run Task Master directly from your editor.
+  #### 1. Add your MCP config at the following path depending on your editor | Editor
+  | Scope | Linux/macOS Path | Windows Path | Key | | ------------ | ------- | -------------------------------------
+  | ------------------------------------------------- | ------------ | | **Cursor**
+  | Global | `~/.cursor/mcp.json` | `%USERPROFILE%\\.cursor\\mcp.json` | `mcpServers`
+  | | | Project | ` /.cursor/mcp.json` | ` \\.cursor\\mcp.json` | `mcpServers` | |
+  **Windsurf** | Global | `~/.codeium/windsurf/mcp_config.json` | `%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json`
+  | `mcpServers` | | **VS Code** | Project | ` /.vscode/mcp.json` | ` \\.vscode\\mcp.json`
+  | `servers` | | **Q CLI** | Global | `~/.aws/amazonq/mcp.json` | | `mcpServers`
+  | ##### Manual Configuration ###### Cursor & Windsurf & Q Developer CLI (`mcpServers`)
+  ```json { \"mcpServers\": { \"task-master-ai\": { \"command\": \"npx\", \"args\":
+  [\"-y\", \"task-master-ai\"], \"env\": { // \"TASK_MASTER_TOOLS\": \"all\", // Options:
+  \"all\", \"standard\", \"core\", or comma-separated list of tools \"ANTHROPIC_API_KEY\":
+  \"YOUR_ANTHROPIC_API_KEY_HERE\", \"PERPLEXITY_API_KEY\": \"YOUR_PERPLEXITY_API_KEY_HERE\",
+  \"OPENAI_API_KEY\": \"YOUR_OPENAI_KEY_HERE\", \"GOOGLE_API_KEY\": \"YOUR_GOOGLE_KEY_HERE\",
+  \"MISTRAL_API_KEY\": \"YOUR_MISTRAL_KEY_HERE\", \"GROQ_API_KEY\": \"YOUR_GROQ_KEY_HERE\","
 ---
 {% raw %}
 <a name="readme-top"></a>

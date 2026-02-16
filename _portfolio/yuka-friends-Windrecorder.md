@@ -2,8 +2,66 @@
 layout: project
 name: Yuka Friends Windrecorder
 slug: yuka-friends-Windrecorder
+category: Uncategorized
 image: https://github.com/yuka-friends/Windrecorder/blob/main/__assets__/product-header-en.jpg
 repo_url: https://github.com/yuka-friends/Windrecorder
+indexed_content: "\U0001F99D Windrecorder | Personal Memory Search Engine An Open
+  Source Mac App Rewind / Copilot Recall alternative tool on Windows to help you retrieve
+  memory cues. English | 简体中文 --- Windrecorder is a memory search app by records everything
+  on your screen in small size, to let you rewind what you have seen, query through
+  OCR text or image description, and get activity statistics. All its capabilities
+  run completely locally, without the need for an Internet connection or uploading
+  any data, you should own all your data. **Windrecorder currently does:** - Record
+  multiple or single screens, or just the active window, with smaller file sizes and
+  lower system resources, ensuring stable, continuous capture and the ability to rewind
+  live footage; - Only index the changed scenes and update the OCR text, page title,
+  browser url and other information to the database; Custom skip conditions (by window
+  title, process name, included text, or screen still time); Automatically maintain
+  the database, clean and compress the video when no one is using the computer; -
+  Complete webui interface, which can review the screen, conduct OCR/image semantics
+  and other queries; - Provide data summaries such as activity statistics, word clouds,
+  timelines, light boxes, scatter plots, etc.; Supports tags summarization using AI
+  (LLM). - Supports multiple languages. Currently built-in: Simplified Chinese, English,
+  and Japanese. Welcome to contribute multilingual translations and help us improve
+  copywriting quality; - In addition to Windows' built-in recognition capabilities,
+  it also supports other third-party OCR engines ([performance test reference](https://github.com/yuka-friends/Windrecorder/blob/main/__assets__/third_party_ocr_engine_benchmark_reference.md)),
+  currently including: - [Rapid OCR](https://github.com/RapidAI/RapidOCR), based onnxruntime
+  version of Paddle OCR; - [WeChat OCR](https://github.com/kanadeblisst00/wechat_ocr),
+  with extremely high Chinese and English recognition accuracy; - [Tesseract OCR](https://github.com/tesseract-ocr/tessdoc),
+  supports more than 100 languages ​​and can recognize multiple languages ​​at the
+  same time; - [Contribute custom OCR](https://github.com/yuka-friends/Windrecorder/blob/main/extension/how_to_contribute_third_party_ocr_support.md)
+  - _coming soon... pay attention to our PR :)_ --- > [!WARNING] > This project is
+  still in the early stages of development, and you may encounter some minor problems
+  in experience and use, feel free to submit issue feedback, follow updates, and initiate
+  discussions or roadmap in [Discussions](https://github.com/yuka-friends/Windrecorder/discussions).
+  You are also welcome to help us optimize and build the project, submit PR / code
+  review. # \U0001F99D Installation - Download [ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases)
+  (the download file name is: `ffmpeg-master-latest-win64-gpl-shared.zip`), extract
+  all files in `bin` directory(excluding the bin directory itself) to `C:\\Windows\\System32`
+  (or other directories located in PATH) - Install [Git](https://git-scm.com/download/win),
+  just keep clicking next step. - Install [Python](https://www.python.org/ftp/python/3.11.7/python-3.11.7-amd64.exe),
+  make sure to check `Add python.exe to PATH` when installing. - **Currently, Python
+  3.12 is not supported**. It is recommended to use python 3.11, which is the version
+  pointed to by the link above. - In file explorer, navigate to the directory where
+  you want to install Windrecorder (it is recommended to place it in a partition with
+  sufficient space), and download the app through the terminal command `git clone
+  https://github.com/yuka-friends/Windrecorder` - You can open the folder you want
+  to install, enter `cmd` in the path bar and press Enter, and you will be located
+  into current directory in terminal, then paste the above command and press Enter
+  to execute; - Open `install_update.bat` in the directory to install dependencies
+  and configure the app. If everything goes well, you can start using it! # \U0001F99D
+  How to use - Open `start_app.bat` in the directory, the tool will run on the system
+  tray and be used through the right-click menu; - All data (video, database, statistical
+  information) will be stored in `userdata` directory under Windrecorder. If you want
+  to copy or move the app location (for example, if you change the computer), you
+  can delete `.venv` in the directory and moved, then re-run `install_update.bat`
+  to install the virtual environment to use it; > [!TIP] > Best practice: Set `Run
+  on system startup` in webui to record everything without any fuss. > > **Recording
+  will be automatically paused when there is no change in the picture or the screen
+  is sleeping. When the computer is idle and no one is using it, the tool will automatically
+  maintain the database, compress, and clean up expired videos.** > > _Just set it
+  and forget it!_ > [!NOTE] > If the command line window flashes after opening `start_app.bat`
+  and **Windrecorder still does not appear in the system tray after a while**,"
 ---
 {% raw %}
 ![Windrecorder](https://github.com/yuka-friends/Windrecorder/blob/main/__assets__/product-header-en.jpg)

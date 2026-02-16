@@ -2,8 +2,69 @@
 layout: project
 name: Apparence Io Camerawesome
 slug: Apparence-io-CamerAwesome
+category: Uncategorized
 image: https://img.shields.io/badge/language-english-cyan.svg
 repo_url: https://github.com/Solido/awesome-flutter
+indexed_content: "This plugin is also available as a template in [ApparenceKit](https://apparencekit.dev).
+  # CamerAwesome [](https://github.com/Apparence-io/CamerAwesome/blob/master/README.md)
+  [](https://github.com/Apparence-io/CamerAwesome/blob/master/README.zh.md) \U0001F4F8
+  Embedding a camera experience within your own app shouldn't be that hard. A flutter
+  plugin to integrate awesome Android / iOS camera experience. This package provides
+  you with a fully customizable camera experience that you can use within your app.
+  Use our awesome built-in interface or customize it as you want. --- ## Migration
+  guide If you are migrating from version 1.x.x to 2.x.x, please read the [migration
+  guide](https://docs.page/Apparence-io/camera_awesome/migration_guides/from_1_to_2).
+  ## Native features Here's all native features that cameraAwesome provides to the
+  flutter side. | Features | Android | iOS | | :---------------------------------------
+  | :-----: | :-: | | \U0001F516 Ask permissions | ✅ | ✅ | | \U0001F3A5 Record video
+  | ✅ | ✅ | | \U0001F4F9 Multi camera (\U0001F6A7 BETA) | ✅ | ✅ | | \U0001F508 Enable/disable
+  audio | ✅ | ✅ | | \U0001F39E Take photos | ✅ | ✅ | | \U0001F306 Photo live filters
+  | ✅ | ✅ | | \U0001F324 Exposure level | ✅ | ✅ | | \U0001F4E1 Broadcast live image
+  stream | ✅ | ✅ | | \U0001F9EA Image analysis (barcode scan & more.) | ✅ | ✅ | |
+  \U0001F441 Zoom | ✅ | ✅ | | \U0001F4F8 Device flash support | ✅ | ✅ | | ⌛️ Auto
+  focus | ✅ | ✅ | | \U0001F4F2 Live switching camera | ✅ | ✅ | | \U0001F635‍\U0001F4AB
+  Camera rotation stream | ✅ | ✅ | | \U0001F910 Background auto stop | ✅ | ✅ | | \U0001F500
+  Sensor type switching | ⛔️ | ✅ | | \U0001FA9E Enable/disable front camera mirroring
+  | ✅ | ✅ | --- ## \U0001F4D6&nbsp; Installation and usage ### Add the package in
+  your `pubspec.yaml` ```yaml dependencies: camerawesome: ^2.0.0-dev.1 ... ``` ###
+  Platform specific setup - **iOS** Add these on `ios/Runner/Info.plist`: ```xml NSCameraUsageDescription
+  Your own description NSMicrophoneUsageDescription To enable microphone access when
+  recording video NSLocationWhenInUseUsageDescription To enable GPS location access
+  for Exif data ``` - **Android** Change the minimum SDK version to 21 (or higher)
+  in `android/app/build.gradle`: ``` minSdkVersion 21 ``` In order to be able to take
+  pictures or record videos, you may need additional permissions depending on the
+  Android version and where you want to save them. Read more about it in the [official
+  documentation](https://developer.android.com/training/data-storage). > `WRITE_EXTERNAL_STORAGE`
+  is not included in the plugin starting with version > 1.4.0. If you want to record
+  videos with audio, add this permission to your `AndroidManifest.xml`: ```xml ```
+  You may also want to save location of your pictures in exif metadata. In this case,
+  add below permissions: ```xml ``` ⚠️ Overriding Android dependencies Some of the
+  dependencies used by CamerAwesome can be overriden if you have a conflict. Change
+  these variables to define which version you want to use: ```gradle buildscript {
+  ext.kotlin_version = '1.7.10' ext { // You can override these variables compileSdkVersion
+  = 33 minSdkVersion = 24 // 21 minimum playServicesLocationVersion = \"20.0.0\" exifInterfaceVersion
+  = \"1.3.4\" } // ... } ``` Only change these variables if you are sure of what you
+  are doing. For example, setting the Play Services Location version might help you
+  when you have conflicts with other plugins. The below line shows an example of these
+  conflicts: ``` java.lang.IncompatibleClassChangeError: Found interface com.google.android.gms.location.ActivityRecognitionClient,
+  but class was expected ``` ### Import the package in your Flutter app ```dart import
+  'package:camerawesome/camerawesome_plugin.dart'; ``` --- ## \U0001F44C Awesome built-in
+  interface Just use our builder. That's all you need to create a complete camera
+  experience within your app. ```dart CameraAwesomeBuilder.awesome( saveConfig: SaveConfig.photoAndVideo(),
+  onMediaTap: (mediaCapture) { OpenFile.open(mediaCapture.filePath); }, ), ``` This
+  builder can be customized with various settings: - A theme. - Builders for each
+  part of the screen. - Initial camera setup. - Preview positioning. - Additional
+  preview decoration. - And much more! Here is an example: Check the [full documentation](https://docs.page/Apparence-io/camera_awesome/getting_started/awesome-ui)
+  to learn more. --- ## \U0001F3A8 Creating a custom interface If the `awesome()`
+  factory is not enough, you can use `custom()` instead. It provides a `builder` property
+  that lets you create your own camera experience. The camera preview will be visible
+  behind what you will provide to the builder. ```dart CameraAwesomeBuilder.custom(
+  saveConfig: SaveConfig.photo(), builder: (state, previewSize, previewRect) { //
+  create your interface here }, ) ``` > See more in > [documentation](https://docs.page/Apparence-io/camera_awesome/getting_started/custom-ui)
+  ### Working with the custom builder Here is the definition of our builder method.
+  ```dart typedef CameraLayoutBuilder = Widget Function(CameraState cameraState, PreviewSize
+  previewSize, Rect previewRect); ``` The only thing you have access to manage the
+  camera is the cameraState. De"
 ---
 {% raw %}
 <a href="https://apparence.io">

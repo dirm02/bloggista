@@ -2,8 +2,69 @@
 layout: project
 name: D4vinci Scrapling
 slug: D4Vinci-Scrapling
+category: Let's try this- Personal prefere
 image: https://asciinema.org/a/736339.svg
 repo_url: https://github.com/D4Vinci/Scrapling
+indexed_content: "Automated translations: [العربيه](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_AR.md)
+  | [Español](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_ES.md) |
+  [Deutsch](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_DE.md) | [简体中文](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_CN.md)
+  | [日本語](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_JP.md) | [Русский](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_RU.md)
+  Easy, effortless Web Scraping as it should be! Selection methods · Choosing a fetcher
+  · CLI · MCP mode · Migrating from Beautifulsoup **Stop fighting anti-bot systems.
+  Stop rewriting selectors after every website update.** Scrapling isn't just another
+  Web Scraping library. It's the first **adaptive** scraping library that learns from
+  website changes and evolves with them. While other libraries break when websites
+  update their structure, Scrapling automatically relocates your elements and keeps
+  your scrapers running. Built for the modern Web, Scrapling features **its own rapid
+  parsing engine** and fetchers to handle all Web Scraping challenges you face or
+  will face. Built by Web Scrapers for Web Scrapers and regular users, there's something
+  for everyone. ```python >> from scrapling.fetchers import Fetcher, AsyncFetcher,
+  StealthyFetcher, DynamicFetcher >> StealthyFetcher.adaptive = True # Fetch websites'
+  source under the radar! >> page = StealthyFetcher.fetch('https://example.com', headless=True,
+  network_idle=True) >> print(page.status) 200 >> products = page.css('.product',
+  auto_save=True) # Scrape data that survives website design changes! >> # Later,
+  if the website structure changes, pass `adaptive=True` >> products = page.css('.product',
+  adaptive=True) # and Scrapling still finds them! ``` # Sponsors Do you want to show
+  your ad here? Click [here](https://github.com/sponsors/D4Vinci) and choose the tier
+  that suites you! --- ## Key Features ### Advanced Websites Fetching with Session
+  Support - **HTTP Requests**: Fast and stealthy HTTP requests with the `Fetcher`
+  class. Can impersonate browsers' TLS fingerprint, headers, and use HTTP3. - **Dynamic
+  Loading**: Fetch dynamic websites with full browser automation through the `DynamicFetcher`
+  class supporting Playwright's Chromium and Google's Chrome. - **Anti-bot Bypass**:
+  Advanced stealth capabilities with `StealthyFetcher` and fingerprint spoofing. Can
+  easily bypass all types of Cloudflare's Turnstile/Interstitial with automation.
+  - **Session Management**: Persistent session support with `FetcherSession`, `StealthySession`,
+  and `DynamicSession` classes for cookie and state management across requests. -
+  **Async Support**: Complete async support across all fetchers and dedicated async
+  session classes. ### Adaptive Scraping & AI Integration - \U0001F504 **Smart Element
+  Tracking**: Relocate elements after website changes using intelligent similarity
+  algorithms. - \U0001F3AF **Smart Flexible Selection**: CSS selectors, XPath selectors,
+  filter-based search, text search, regex search, and more. - \U0001F50D **Find Similar
+  Elements**: Automatically locate elements similar to found elements. - \U0001F916
+  **MCP Server to be used with AI**: Built-in MCP server for AI-assisted Web Scraping
+  and data extraction. The MCP server features powerful, custom capabilities that
+  leverage Scrapling to extract targeted content before passing it to the AI (Claude/Cursor/etc),
+  thereby speeding up operations and reducing costs by minimizing token usage. ([demo
+  video](https://www.youtube.com/watch?v=qyFk3ZNwOxE)) ### High-Performance & battle-tested
+  Architecture - \U0001F680 **Lightning Fast**: Optimized performance outperforming
+  most Python scraping libraries. - \U0001F50B **Memory Efficient**: Optimized data
+  structures and lazy loading for a minimal memory footprint. - ⚡ **Fast JSON Serialization**:
+  10x faster than the standard library. - \U0001F3D7️ **Battle tested**: Not only
+  does Scrapling have 92% test coverage and full type hints coverage, but it has been
+  used daily by hundreds of Web Scrapers over the past year. ### Developer/Web Scraper
+  Friendly Experience - \U0001F3AF **Interactive Web Scraping Shell**: Optional built-in
+  IPython shell with Scrapling integration, shortcuts, and new tools to speed up Web
+  Scraping scripts development, like converting curl requests to Scrapling requests
+  and viewing requests results in your browser. - \U0001F680 **Use it directly from
+  the Terminal**: Optionally, you can use Scrapling to scrape a URL without writing
+  a single code! - \U0001F6E0️ **Rich Navigation API**: Advanced DOM traversal with
+  parent, sibling, and child navigation methods. - \U0001F9EC **Enhanced Text Processing**:
+  Built-in regex, cleaning methods, and optimized string operations. - \U0001F4DD
+  **Auto Selector Generation**: Generate robust CSS/XPath selectors for any element.
+  - \U0001F50C **Familiar API**: Similar to Scrapy/BeautifulSoup with the same pseudo-elements
+  used in Scrapy/Parsel. - \U0001F4D8 **Complete Type Coverage**: Full type hints
+  for excellent IDE support and code completion. - \U0001F50B **Ready Docker image**:
+  With each rel"
 ---
 {% raw %}
 Automated translations: [العربيه](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_AR.md) | [Español](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_ES.md) | [Deutsch](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_DE.md) | [简体中文](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_CN.md) | [日本語](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_JP.md) | [Русский](https://github.com/D4Vinci/Scrapling/blob/main/docs/README_RU.md)

@@ -2,8 +2,64 @@
 layout: project
 name: Nixtla Nixtla
 slug: Nixtla-nixtla
+category: Science -math-physics-chemistry
 image: https://img.shields.io/twitter/url/http/shields.io.svg?style=social
 repo_url: https://github.com/Nixtla/neuralforecast&via=nixtlainc&hashtags=StatisticalModels,TimeSeries,Forecasting)
+indexed_content: "# Nixtla &nbsp; [](https://twitter.com/intent/tweet?text=Statistical%20Forecasting%20Algorithms%20by%20Nixtla%20&url=https://github.com/Nixtla/neuralforecast&via=nixtlainc&hashtags=StatisticalModels,TimeSeries,Forecasting)
+  &nbsp;[](https://join.slack.com/t/nixtlacommunity/shared_invite/zt-1pmhan9j5-F54XR20edHk0UtYAPcW4KQ)
+  TimeGPT-1 The first foundation model for forecasting and anomaly detection [](https://github.com/Nixtla/nixtla/actions/workflows/ci.yaml)
+  [](https://pypi.org/project/nixtla/) [](https://github.com/Nixtla/nixtla/blob/main/LICENSE)
+  [](https://docs.nixtla.io) [](https://pepy.tech/project/nixtla) [](https://pepy.tech/project/nixtla)
+  [](https://pepy.tech/project/nixtla) **TimeGPT** is a production ready, generative
+  pretrained transformer for time series. It's capable of accurately predicting various
+  domains such as retail, electricity, finance, and IoT with just a few lines of code
+  \U0001F680. ## \U0001F680 Quick Start https://github.com/Nixtla/nixtla/assets/4086186/163ad9e6-7a16-44e1-b2e9-dab8a0b7b6b6
+  ### Install nixtla's SDK ```python pip install nixtla>=0.7.0 ``` ### Import libraries
+  and load data ```python import pandas as pd from nixtla import NixtlaClient ```
+  ### Forecast using TimeGPT in 3 easy steps ```python # Get your API Key at dashboard.nixtla.io
+  # 1. Instantiate the NixtlaClient nixtla_client = NixtlaClient(api_key = 'YOUR API
+  KEY HERE') # 2. Read historic electricity demand data df = pd.read_csv('https://raw.githubusercontent.com/Nixtla/transfer-learning-time-series/main/datasets/electricity-short.csv')
+  # 3. Forecast the next 24 hours fcst_df = nixtla_client.forecast(df, h=24, level=[80,
+  90]) # 4. Plot your results (optional) nixtla_client.plot(df, fcst_df, level=[80,
+  90]) ``` ### Anomaly detection using TimeGPT in 3 easy steps ```python # Get your
+  API Key at dashboard.nixtla.io # 1. Instantiate the NixtlaClient nixtla_client =
+  NixtlaClient(api_key = 'YOUR API KEY HERE') # 2. Read Data # Wikipedia visits of
+  NFL Star ( df = pd.read_csv('https://datasets-nixtla.s3.amazonaws.com/peyton-manning.csv')
+  # 3. Detect Anomalies anomalies_df = nixtla_client.detect_anomalies(df, time_col='timestamp',
+  target_col='value', freq='D') # 4. Plot your results (optional) nixtla_client.plot(df,
+  anomalies_df,time_col='timestamp', target_col='value') ``` ## \U0001F913 API support
+  for other languages Explore our [API Reference](https://docs.nixtla.io) to discover
+  how to leverage TimeGPT across various programming languages including JavaScript,
+  Go, and more. ## ❄️ Snowflake Deployment Run TimeGPT directly within your Snowflake
+  environment. The deployment script creates stored procedures and UDTFs that enable
+  forecasting and anomaly detection on your Snowflake data without moving it outside
+  your infrastructure. ```bash pip install nixtla[snowflake] python -m nixtla.scripts.snowflake_install_nixtla
+  ``` The script will guide you through setting up external access integrations, configuring
+  your API key, and deploying the forecasting components to your specified database
+  and schema. ## \U0001F525 Features and Capabilities - **Zero-shot Inference**: TimeGPT
+  can generate forecasts and detect anomalies straight out of the box, requiring no
+  prior training data. This allows for immediate deployment and quick insights from
+  any time series data. - **Fine-tuning**: Enhance TimeGPT's capabilities by fine-tuning
+  the model on your specific datasets, enabling the model to adapt to the nuances
+  of your unique time series data and improving performance on tailored tasks. - **API
+  Access**: Integrate TimeGPT seamlessly into your applications via our robust API.
+  Upcoming support for Azure Studio will provide even more flexible integration options.
+  Alternatively, deploy TimeGPT on your own infrastructure to maintain full control
+  over your data and workflows. - **Add Exogenous Variables**: Incorporate additional
+  variables that might influence your predictions to enhance forecast accuracy. (E.g.
+  Special Dates, events or prices) - **Multiple Series Forecasting**: Simultaneously
+  forecast multiple time series data, optimizing workflows and resources. - **Custom
+  Loss Function**: Tailor the fine-tuning process with a custom loss function to meet
+  specific performance metrics. - **Cross Validation**: Implement out of the box cross-validation
+  techniques to ensure model robustness and generalizability. - **Prediction Intervals**:
+  Provide intervals in your predictions to quantify uncertainty effectively. - **Irregular
+  Timestamps**: Handle data with irregular timestamps, accommodating non-uniform interval
+  series without preprocessing. ## \U0001F4DA Documentation with examples and use
+  cases Dive into our [comprehensive documentation](https://docs.nixtla.io/docs/getting-started-timegpt_quickstart)
+  to discover examples and practical use cases for TimeGPT. Our documentation covers
+  a wide range of topics, including: - **Getting Started**: Begin with our user-friendly
+  [Quickstart Guide](https://docs.nixtla.io/docs/getting-started-timegpt_quickstart)
+  and learn how to [set up your API key](ht"
 ---
 {% raw %}
 # Nixtla &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Statistical%20Forecasting%20Algorithms%20by%20Nixtla%20&url=https://github.com/Nixtla/neuralforecast&via=nixtlainc&hashtags=StatisticalModels,TimeSeries,Forecasting) &nbsp;[![Slack](https://img.shields.io/badge/Slack-4A154B?&logo=slack&logoColor=white)](https://join.slack.com/t/nixtlacommunity/shared_invite/zt-1pmhan9j5-F54XR20edHk0UtYAPcW4KQ)

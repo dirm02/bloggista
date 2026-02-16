@@ -2,8 +2,71 @@
 layout: project
 name: Dockur Windows
 slug: dockur-windows
+category: EE-kicad-3D-Robotic
 image: https://img.youtube.com/vi/xhGYobuG508/0.jpg
 repo_url: https://github.com/dockur/windows
+indexed_content: "Windows [![Build]][build_url] [![Version]][tag_url] [![Size]][tag_url]
+  [![Package]][pkg_url] [![Pulls]][hub_url] Windows inside a Docker container. ##
+  Features ✨ - ISO downloader - KVM acceleration - Web-based viewer ## Video \U0001F4FA
+  [](https://www.youtube.com/watch?v=xhGYobuG508) ## Usage \U0001F433 ##### Via Docker
+  Compose: ```yaml services: windows: image: dockurr/windows container_name: windows
+  environment: VERSION: \"11\" devices: - /dev/kvm - /dev/net/tun cap_add: - NET_ADMIN
+  ports: - 8006:8006 - 3389:3389/tcp - 3389:3389/udp volumes: - ./windows:/storage
+  restart: always stop_grace_period: 2m ``` ##### Via Docker CLI: ```bash docker run
+  -it --rm --name windows -e \"VERSION=11\" -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun
+  --cap-add NET_ADMIN -v \"${PWD:-.}/windows:/storage\" --stop-timeout 120 docker.io/dockurr/windows
+  ``` ##### Via Kubernetes: ```shell kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/master/kubernetes.yml
+  ``` ##### Via Github Codespaces: [](https://codespaces.new/dockur/windows) #####
+  Via a graphical installer: [](https://winboat.app) ## FAQ \U0001F4AC ### How do
+  I use it? Very simple! These are the steps: - Start the container and connect to
+  [port 8006](http://127.0.0.1:8006/) using your web browser. - Sit back and relax
+  while the magic happens, the whole installation will be performed fully automatic.
+  - Once you see the desktop, your Windows installation is ready for use. Enjoy your
+  brand new machine, and don't forget to star this repo! ### How do I select the Windows
+  version? By default, Windows 11 Pro will be installed. But you can add the `VERSION`
+  environment variable to your compose file, in order to specify an alternative Windows
+  version to be downloaded: ```yaml environment: VERSION: \"11\" ``` Select from the
+  values below: | **Value** | **Version** | **Size** | |---|---|---| | `11` | Windows
+  11 Pro | 7.2 GB | | `11l` | Windows 11 LTSC | 4.7 GB | | `11e` | Windows 11 Enterprise
+  | 6.6 GB | |||| | `10` | Windows 10 Pro | 5.7 GB | | `10l` | Windows 10 LTSC | 4.6
+  GB | | `10e` | Windows 10 Enterprise | 5.2 GB | |||| | `8e` | Windows 8.1 Enterprise
+  | 3.7 GB | | `7u` | Windows 7 Ultimate | 3.1 GB | | `vu` | Windows Vista Ultimate
+  | 3.0 GB | | `xp` | Windows XP Professional | 0.6 GB | | `2k` | Windows 2000 Professional
+  | 0.4 GB | |||| | `2025` | Windows Server 2025 | 6.7 GB | | `2022` | Windows Server
+  2022 | 6.0 GB | | `2019` | Windows Server 2019 | 5.3 GB | | `2016` | Windows Server
+  2016 | 6.5 GB | | `2012` | Windows Server 2012 | 4.3 GB | | `2008` | Windows Server
+  2008 | 3.0 GB | | `2003` | Windows Server 2003 | 0.6 GB | > [!TIP] > To install
+  ARM64 versions of Windows use [dockur/windows-arm](https://github.com/dockur/windows-arm/).
+  ### How do I change the storage location? To change the storage location, include
+  the following bind mount in your compose file: ```yaml volumes: - ./windows:/storage
+  ``` Replace the example path `./windows` with the desired storage folder or named
+  volume. ### How do I change the size of the disk? To expand the default size of
+  64 GB, add the `DISK_SIZE` setting to your compose file and set it to your preferred
+  capacity: ```yaml environment: DISK_SIZE: \"256G\" ``` > [!TIP] > This can also
+  be used to resize the existing disk to a larger capacity without any data loss.
+  However you will need to [manually extend the disk partition](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/extend-a-basic-volume?tabs=disk-management)
+  since the added disk space will appear as unallocated. ### How do I share files
+  with the host? After installation there will be a folder called `Shared` on your
+  desktop, which can be used to exchange files with the host machine. To select a
+  folder on the host for this purpose, include the following bind mount in your compose
+  file: ```yaml volumes: - ./example:/shared ``` Replace the example path `./example`
+  with your desired shared folder, which then will become visible as `Shared`. ###
+  How do I change the amount of CPU or RAM? By default, Windows will be allowed to
+  use 2 CPU cores and 4 GB of RAM. If you want to adjust this, you can specify the
+  desired amount using the following environment variables: ```yaml environment: RAM_SIZE:
+  \"8G\" CPU_CORES: \"4\" ``` ### How do I configure the username and password? By
+  default, a user called `Docker` is created and its password is `admin`. If you want
+  to use different credentials during installation, you can configure them in your
+  compose file: ```yaml environment: USERNAME: \"bill\" PASSWORD: \"gates\" ``` ###
+  How do I select the Windows language? By default, the English version of Windows
+  will be downloaded. But you can add the `LANGUAGE` environment variable to your
+  compose file, in order to specify an alternative language to be downloaded: ```yaml
+  environment: LANGUAGE: \"French\" ``` You can choose between: \U0001F1E6\U0001F1EA
+  Arabic, \U0001F1E7\U0001F1EC Bulgarian, \U0001F1E8\U0001F1F3 Chinese, \U0001F1ED\U0001F1F7
+  Croatian, \U0001F1E8\U0001F1FF Czech, \U0001F1E9\U0001F1F0 Danish, \U0001F1F3\U0001F1F1
+  Dutch, \U0001F1EC\U0001F1E7 English, \U0001F1EA\U0001F1EA Estonian, \U0001F1EB\U0001F1EE
+  Finnish, \U0001F1EB\U0001F1F7 French, \U0001F1E9\U0001F1EA German, \U0001F1EC\U0001F1F7
+  Greek, \U0001F1EE\U0001F1F1 Hebrew, \U0001F1ED\U0001F1FA Hunga"
 ---
 {% raw %}
 <h1 align="center">Windows<br />

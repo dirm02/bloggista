@@ -2,8 +2,27 @@
 layout: project
 name: Casdoor Casdoor
 slug: casdoor-casdoor
+category: Uncategorized
 image: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 repo_url: https://github.com/casdoor/casdoor
+indexed_content: "\U0001F4E6⚡️ Casdoor An open-source UI-first Identity and Access
+  Management (IAM) / Single-Sign-On (SSO) platform with web UI supporting OAuth 2.0,
+  OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA and RADIUS ## Online demo - Read-only
+  site: https://door.casdoor.com (any modification operation will fail) - Writable
+  site: https://demo.casdoor.com (original data will be restored for every 5 minutes)
+  ## Documentation https://casdoor.org ## Install - By source code: https://casdoor.org/docs/basic/server-installation
+  - By Docker: https://casdoor.org/docs/basic/try-with-docker - By Kubernetes Helm:
+  https://casdoor.org/docs/basic/try-with-helm ## How to connect to Casdoor? https://casdoor.org/docs/how-to-connect/overview
+  ## Casdoor Public API - Docs: https://casdoor.org/docs/basic/public-api - Swagger:
+  https://door.casdoor.com/swagger ## Integrations https://casdoor.org/docs/category/integrations
+  ## How to contact? - Discord: https://discord.gg/5rPsrAzK7S - Contact: https://casdoor.org/help
+  ## Contribute For casdoor, if you have any questions, you can give Issues, or you
+  can also directly start Pull Requests(but we recommend giving issues first to communicate
+  with the community). ### I18n translation If you are contributing to casdoor, please
+  note that we use [Crowdin](https://crowdin.com/project/casdoor-site) as translating
+  platform and i18next as translating tool. When you add some words using i18next
+  in the `web/` directory, please remember to add what you have added to the `web/src/locales/en/data.json`
+  file. ## License [Apache-2.0](https://github.com/casdoor/casdoor/blob/master/LICENSE)"
 ---
 {% raw %}
 <h1 align="center" style="border-bottom: none;">📦⚡️ Casdoor</h1>

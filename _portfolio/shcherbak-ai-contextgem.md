@@ -2,8 +2,70 @@
 layout: project
 name: Shcherbak Ai Contextgem
 slug: shcherbak-ai-contextgem
+category: Uncategorized
 image: https://img.shields.io/pypi/v/contextgem?logo=pypi&label=PyPi&logoColor=gold
 repo_url: https://github.com/shcherbak-ai/contextgem
+indexed_content: "# ContextGem: Effortless LLM extraction from documents | | | |----------|--------|
+  | **Package** | [](https://pypi.org/project/contextgem/) [](https://pepy.tech/projects/contextgem)
+  [](https://www.python.org/downloads/) [](https://opensource.org/licenses/Apache-2.0)
+  | | **Quality** | [](https://github.com/shcherbak-ai/contextgem/actions/workflows/ci-tests.yml)
+  [](https://github.com/shcherbak-ai/contextgem/actions) [](https://github.com/shcherbak-ai/contextgem/actions/workflows/codeql.yml)
+  [](https://github.com/shcherbak-ai/contextgem/actions/workflows/bandit-security.yml)
+  [](https://www.bestpractices.dev/projects/10489) | | **Tools** | [](https://github.com/astral-sh/uv)
+  [](https://github.com/astral-sh/ruff) [](https://pydantic.dev) [](https://github.com/microsoft/pyright)
+  [](https://github.com/pre-commit/pre-commit) [](https://github.com/fpgmaas/deptry)
+  [](https://github.com/pypa/hatch) | | **Docs** | [](https://github.com/shcherbak-ai/contextgem/actions/workflows/docs.yml)
+  [](https://shcherbak-ai.github.io/contextgem/) [](https://deepwiki.com/shcherbak-ai/contextgem)
+  | | **Community** | [](CODE_OF_CONDUCT.md) [](https://github.com/shcherbak-ai/contextgem/issues?q=is%3Aissue+is%3Aclosed)
+  [](https://github.com/shcherbak-ai/contextgem/commits/main) | ContextGem is a free,
+  open-source LLM framework that makes it radically easier to extract structured data
+  and insights from documents — with minimal code. --- ## \U0001F48E Why ContextGem?
+  Most popular LLM frameworks for extracting structured data from documents require
+  extensive boilerplate code to extract even basic information. This significantly
+  increases development time and complexity. ContextGem addresses this challenge by
+  providing a flexible, intuitive framework that extracts structured data and insights
+  from documents with minimal effort. The complex, most time-consuming parts are handled
+  with **powerful abstractions**, eliminating boilerplate code and reducing development
+  overhead. \U0001F4D6 Read more on the project [motivation](https://contextgem.dev/motivation/)
+  in the documentation. ## ⭐ Key features Built-in abstractions ContextGem Other LLM
+  frameworks* Automated dynamic prompts \U0001F7E2 ◯ Automated data modelling and
+  validators \U0001F7E2 ◯ Precise granular reference mapping (paragraphs & sentences)
+  \U0001F7E2 ◯ Justifications (reasoning backing the extraction) \U0001F7E2 ◯ Neural
+  segmentation (using wtpsplit's SaT models) \U0001F7E2 ◯ Multilingual support (I/O
+  without prompting) \U0001F7E2 ◯ Single, unified extraction pipeline (declarative,
+  reusable, fully serializable) \U0001F7E2 \U0001F7E1 Grouped LLMs with role-specific
+  tasks \U0001F7E2 \U0001F7E1 Nested context extraction \U0001F7E2 \U0001F7E1 Unified,
+  fully serializable results storage model (document) \U0001F7E2 \U0001F7E1 Extraction
+  task calibration with examples \U0001F7E2 \U0001F7E1 Built-in concurrent I/O processing
+  \U0001F7E2 \U0001F7E1 Automated usage & costs tracking \U0001F7E2 \U0001F7E1 Fallback
+  and retry logic \U0001F7E2 \U0001F7E2 Multiple LLM providers \U0001F7E2 \U0001F7E2
+  \U0001F7E2 - fully supported - no additional setup required \U0001F7E1 - partially
+  supported - requires additional setup ◯ - not supported - requires custom logic
+  \\* See [descriptions](https://contextgem.dev/motivation/#the-contextgem-solution)
+  of ContextGem abstractions and [comparisons](https://contextgem.dev/vs_other_frameworks/)
+  of specific implementation examples using ContextGem and other popular open-source
+  LLM frameworks. ## \U0001F4A1 What you can build With **minimal code**, you can:
+  - **Extract structured data** from documents (text, images) - **Identify and analyze
+  key aspects** (topics, themes, categories) within documents ([learn more](https://contextgem.dev/aspects/aspects/))
+  - **Extract specific concepts** (entities, facts, conclusions, assessments) from
+  documents ([learn more](https://contextgem.dev/concepts/supported_concepts/)) -
+  **Build complex extraction workflows** through a simple, intuitive API - **Create
+  multi-level extraction pipelines** (aspects containing concepts, hierarchical aspects)
+  ## \U0001F4E6 Installation ```bash pip install -U contextgem ``` ## \U0001F680 Quick
+  start The following example demonstrates how to use ContextGem to extract **anomalies**
+  from a legal document - a complex concept that requires contextual understanding.
+  Unlike traditional RAG approaches that might miss subtle inconsistencies, ContextGem
+  analyzes the entire document context to identify content that doesn't belong, complete
+  with source references and justifications. ```python # Quick Start Example - Extracting
+  anomalies from a document, with source references and justifications import os from
+  contextgem import Document, DocumentLLM, StringConcept # Sample document text (shortened
+  for brevity) doc = Document( raw_text=( \"Consultancy Agreement\\n\" \"This agreement
+  between Company A (Supplier) and Company B (Customer)...\\n\" \"The term of the
+  agreement is 1 year from the Effective Date...\\n\" \"The Supplier shall provide
+  consultancy services as described in Annex 2...\\n\" \"The Customer shall pay the
+  Supplier within 30 calendar days of receiving an invoice...\\n\" \"The purple elephant
+  danced gracefully on the moon while eating ice cream.\\n\" # \U0001F48E anomaly
+  \"Time-traveling dinosaurs will"
 ---
 {% raw %}
 ![ContextGem](https://contextgem.dev/_static/contextgem_readme_header.png "ContextGem - Effortless LLM extraction from documents")

@@ -2,8 +2,68 @@
 layout: project
 name: Yuliskov Smarttube
 slug: yuliskov-SmartTube
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/yuliskov-SmartTube/images/browse_home.png
 repo_url: https://github.com/yuliskov/SmartTube
+indexed_content: "# Important announcement about the app My development environment
+  was infected by unknown malicious software, as a result of which a few builds may
+  have been affected. Once the issue was detected, I secured everything with a full
+  disk wipe, restored a clean setup, and now all builds are scanned with VirusTotal.
+  The F-Droid version will also be verified before release. Public keys may have been
+  compromised, which is why I am sharing this issue. You can download the new version
+  and the new public key below, and instructions for restoring backups are provided.
+  No extra actions are required since the app uses **one-time connection codes**.
+  These codes have very limited permissions (for example, they cannot change your
+  password). Still, you can revoke them if you want full peace of mind. # How to revoke
+  access: 1. Open [myaccount.google.com/security](https://myaccount.google.com/security)
+  2. Find **“Your connections to third-party apps & services”** 3. Tap **“See all
+  connection”** and locate **YouTube TV** or **Google Drive** 4. Select the app →
+  **“Remove access”** Please keep built-in security features enabled to stay protected.
+  # SmartTube --> SmartTube is a free and open-source advanced media player for Android
+  TVs and TV boxes. It allows you to play content from various public sources. ###
+  ✅ Features - No ads - SponsorBlock integration - Adjustable playback speed - 8K
+  resolution support - 60fps playback - HDR compatibility - View live chat - Customizable
+  buttons - Does not require Google Services - Helpful international community ###
+  ❌ Limitations - Not supported on phones and tablets - Comment functionality is unstable
+  - Voice search and casting performance may be inferior to official apps, depending
+  on your device Give it a try! **Do you have any question?** Ctrl+F or ⌘F this readme
+  first! [**Installation**](#installation) | [**Official Site**](https://smarttubeapp.github.io)
+  | [**Donation**](#donation) | [**FAQ**](#faq) | [Support / Chat](#support) | [Build](#build)
+  | [Translate the app](https://jtbrinkmann.de/tools/android-strings.xml-translator.html)
+  | [Changelog](https://t.me/s/SmartTubeNewsEN) | [Liability](#liability) ## Device
+  support * **Supported:** all Android TVs and TV boxes (incl. FireTV, NVIDIA Shield
+  & Google Chromecast with Google TV), even older ones with Android 4.3 (Kitkat).
+  * **Not supported:** Smartphones, non-Android platforms like Samsung Tizen, LG webOS,
+  iOS, etc. ## Installation > [video of the installation](images/new/zPV0imF.mp4)
+  (note: download url changed to `kutt.it/stn_beta` or `kutt.it/stn_stable`) **Do
+  not** download SmartTube from any **app store**, APK websites or blogs; these were
+  uploaded by other people and may contain malware or ads. SmartTube is not officially
+  published on any app store. Sadly, the Google PlayStore does not allow ad-free Youtube
+  apps using unofficial APIs. There is a **beta release** (recommended) and a **stable
+  release**. Beta gets new features and bugfixes faster than the stable release. You
+  can use either of the following methods to install the app: - (**Easiest**) Install
+  [Downloader by AFTVnews](https://www.aftvnews.com/downloader/) on your Android TV,
+  open it and enter `kutt.it/stn_beta` or `kutt.it/stn_stable`, then read, understand
+  and confirm the security prompts. ( You can also enter [**79015**](https://aftv.news/79015)
+  (for beta) or [**28544**](https://aftv.news/28544) (for stable), but this requires
+  an extra step to install the AFTVnews Downloader browser addon if you haven't already.
+  ) - Install a file transfer app on your Android TV, download the APK on your phone
+  or computer and transfer it to your TV (e.g. [_Send Files to TV_](https://sendfilestotv.app/)
+  from the Google Play Store / Amazon AppStore) - Download the APK onto a USB stick,
+  put the USB stick into your TV and use a file manager app from the Google Play Store
+  / Amazon AppStore (e.g. [_FX File Explorer_](https://play.google.com/store/apps/details?id=nextapp.fx)
+  or [_X-plore_](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore)).
+  Android's preinstalled file manager does not work! Do **not** get the ad-infested
+  _FileCommander_. - If you are an advanced user, you can install it using ADB. [guide](https://fossbytes.com/side-load-apps-android-tv/#h-how-to-sideload-apps-on-your-android-tv-using-adb)
+  | [alternative guide](https://www.aftvnews.com/sideload/) **Troubleshooting:** See
+  device specific notes below. If installation fails, either your **disk space is
+  full** or the APK file didn't download correctly; clear up space and try downloading
+  again. If the app installed, but crashes when opening, make sure to install it to
+  internal memory, not to an SD card / external storage. **The app has a built-in
+  updater** with changelog. You can also find all releases and the **changelog** on
+  the [Telegram channel @SmartTubeNewsEN](https://t.me/s/SmartTubeNewsEN) (readable
+  without account) or on [Github](https://github.com/yuliskov/SmartTube/releases/).
+  > latest [**beta d"
 ---
 {% raw %}
 # Important announcement about the app

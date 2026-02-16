@@ -2,8 +2,69 @@
 layout: project
 name: Wasp Lang Wasp
 slug: wasp-lang-wasp
+category: Uncategorized
 image: https://user-images.githubusercontent.com/1536647/77317442-78625700-6d0b-11ea-9822-0fb21e557e87.png
 repo_url: https://github.com/wasp-lang/wasp
+indexed_content: "The fastest way to develop full-stack web apps with React & Node.js.
+  Website | Docs Discord | Twitter | Youtube Deployed? Get swag! \U0001F455 --- ##
+  What is Wasp? Wasp (**W**eb **A**pplication **Sp**ecification) is a Rails-like framework
+  for React, Node.js, and Prisma. Build your app in a day and deploy it with a single
+  CLI command! ### Why is Wasp awesome - \U0001F680 **Quick start**: Due to its expressiveness,
+  you can create and deploy a production-ready web app from scratch with very few
+  lines of concise, consistent, declarative code. - \U0001F60C **No boilerplate**:
+  By abstracting away complex full-stack features, there is less boilerplate code.
+  That means less code to maintain and understand! It also means easier upgrades.
+  - \U0001F513 **No lock-in**: You can deploy the Wasp app anywhere you like. There
+  is no lock-in into specific providers; you have complete control over the code (and
+  can actually check it out in `.wasp/` directory if you are interested ). ### Features
+  - [\U0001F512 Full-stack Auth](https://wasp.sh/docs/auth/overview) - [\U0001F587️
+  RPC (Client Server)](https://wasp.sh/docs/data-model/operations/overview) - [\U0001F680
+  Simple Deployment](https://wasp.sh/docs/deployment/deployment-methods/overview)
+  - [⚙ ️Jobs](https://wasp.sh/docs/advanced/jobs) - [✉️ Email Sending](https://wasp.sh/docs/advanced/email)
+  - [\U0001F6DF Full-stack Type Safety](https://wasp.sh/docs/general/typescript) -
+  ... ### Code example Simple Wasp config file in which you describe the high-level
+  details of your web app: ```js // file: main.wasp app TodoApp { title: \"TODO App\",
+  // visible in the browser tab wasp: { version: \"^0.18.1\" }, auth: { // full-stack
+  auth out-of-the-box userEntity: User, methods: { email: {...}, google: {...}, }
+  } } route RootRoute { path: \"/\", to: MainPage } page MainPage { authRequired:
+  true, // Limit access to logged-in users. component: import MainPage from \"@src/MainPage\"
+  // Your React code. } query getTasks { fn: import { getTasks } from \"@src/queries\",
+  // Your Node.js code. entities: [Task] // Automatic cache invalidation. } ``` And
+  a Prisma schema for the database: ```prisma // file: schema.prisma model Task {
+  // Your Prisma data model. id Int @id @default(autoincrement()) description String
+  isDone Boolean @default(false) } ``` The rest of the code you write in React / Node.js
+  and reference it from the `.wasp` file. \U0001F449 Check out [TodoApp example](/examples/tutorials/TodoApp)
+  for a complete code example. \U0001F448 ### How it works Given a simple `.wasp`
+  configuration file that describes the high-level details of your web app, and `.ts(x)`/`.css`/...,
+  source files with your unique logic, Wasp compiler generates the whole source of
+  your web app in the target stack: front-end, back-end and deployment. This unique
+  approach is what makes Wasp \"smart\" and gives it its superpowers! For more information
+  about Wasp, check [**docs**](https://wasp.sh/docs). ## Get started Run to install
+  Wasp on OSX/Linux/WSL(Win): ```sh npm i -g @wasp.sh/wasp-cli@latest ``` From there,
+  follow the instructions to run your first app in less than a minute! For a quick
+  start, check out [this docs page](https://wasp.sh/docs/quick-start). ## Have a Wasp
+  app deployed? - we will send you swag! If you have a Wasp application running in
+  production, we'd love to send some swag your way! Fill out [this form](https://e44cy1h4s0q.typeform.com/to/EPJCwsMi),
+  and we'll make it happen. ## Wasp AI / Mage Wasp comes with experimental AI code
+  generator to help you kickstart your next Wasp project. You can use it via `wasp
+  new` in the CLI (select the `ai-generated` option) if you provide your OpenAI keys.
+  Alternatively, you can use our [Mage web app](https://usemage.ai), in which case
+  our OpenAI keys are used in the background. ## Project status Currently, Wasp is
+  in beta, with most features fully developed and functioning well. However, we still
+  have many improvements and additions in mind for the future, and we are continually
+  working on them. As a result, you can expect numerous changes and improvements in
+  the future. Keep up with Wasp by following [our development roadmap](https://github.com/orgs/wasp-lang/projects/5).
+  While the idea is to support multiple web tech stacks in the future, we are currently
+  focusing on a specific stack: React + TanStack Query, Node.js + Express.js, and
+  Prisma. ## Contributing Any way you want to contribute is a good way :)! The best
+  place to start is to check out [`waspc/`](waspc/), where you can find detailed steps
+  for first-time contributors + technical details about the Wasp compiler. The core
+  of Wasp is built in Haskell, but there are also a lot of non-Haskell parts of Wasp,
+  so you will certainly be able to find something for you! Even if you don't plan
+  to submit any code, just joining the discussion on [Discord](https://discord.gg/rzdnErX)
+  and giving your feedback is already great and helps a lot (motivates us and helps
+  us figure out how to shape Wasp)! You can also: - ⭐️ Star this repo to show your
+  interest/support. - \U0001F4EB Stay updated by subscribing to our [email list](https://w"
 ---
 {% raw %}
 <div>

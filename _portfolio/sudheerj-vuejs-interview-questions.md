@@ -2,8 +2,57 @@
 layout: project
 name: Sudheerj Vuejs Interview Questions
 slug: sudheerj-vuejs-interview-questions
+category: Educational-map
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sudheerj-vuejs-interview-questions/images/custom-directives.svg
 repo_url: https://github.com/sudheerj/vuejs-interview-questions
+indexed_content: "# vuejs-interview-questions List of 300 VueJS Interview Questions
+  > Click :star:if you like the project. Pull Requests are highly appreciated. Follow
+  me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates. ---
+  > I recommend this [Vue.js course](https://zerotomastery.io/courses/learn-vue-js/?utm_source=github&utm_medium=sponsor&utm_campaign=vue-interview-questions)
+  to become top 10% at Vue and [this coding interview bootcamp](https://zerotomastery.io/courses/learn-data-structures-and-algorithms/?utm_source=github&utm_medium=sponsor&utm_campaign=vue-interview-questions)
+  to ace your coding interview and actually get hired. --- ### Table of Contents -------------------------------------------------------------------
+  | No. | Questions | |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | 1 | [What is VueJS](#what-is-vuejs) | | 2 | [What are the major features of VueJS](#what-are-the-major-features-of-vuejs)
+  | | 3 | [What are the lifecycle methods of VueJS](#what-are-the-lifecycle-methods-of-vuejs)
+  | | 4 | [What are the different API styles available](#what-are-the-different-api-styles-available)
+  | | 5 | [What are the conditional directives](#what-are-the-conditional-directives)
+  | | 6 | [What is the difference between v-show and v-if directives](#what-is-the-difference-between-v-show-and-v-if-directives)
+  | | 7 | [What is the purpose of v-for directive?](#what-is-the-purpose-of-v-for-directive)
+  | | 8 | [What is a vue instance?](#what-is-vue-instance) | | 9 | [How do you achieve
+  a conditional group of elements?](#how-do-you-achieve-conditional-group-of-elements)
+  | | 10 | [How do you reuse elements with a key attribute?](#how-do-you-reuse-elements-with-key-attribute)
+  | | 11 | [Why should you not use if and for directives together on the same element?](#why-should-not-use-if-and-for-directives-together-on-the-same-element)
+  | | 12 | [Why do you need to use a key attribute on for directive?](#why-do-you-need-to-use-key-attribute-on-for-directive)
+  | | 13 | [What are the array detection mutation methods?](#what-are-the-array-detection-mutation-methods)
+  | | 14 | [What are the array detection non mutation methods?](#what-are-the-array-detection-non-mutation-methods)
+  | | 15 | [What are the caveats of array changes detection?](#what-are-the-caveats-of-array-changes-detection)
+  | | 16 | [What are the caveats of object changes detection?](#what-are-the-caveats-of-object-changes-detection)
+  | | 17 | [How do you use for directive with a range?](#how-do-you-use-v-for-directive-with-a-range)
+  | | 18 | [How do you use for directive on template?](#how-do-you-use-v-for-directive-on-template)
+  | | 19 | [How do you use event handlers?](#how-do-you-use-event-handlers) | | 20
+  | [What are the event modifiers provided by vue?](#what-are-the-event-modifiers-provided-by-vue)
+  | | 21 | [What are key modifiers?](#what-are-key-modifiers) | | 22 | [How do you
+  define custom key modifier aliases?](#how-do-you-define-custom-key-modifier-aliases)
+  | | 23 | [What are the supported System Modifier Keys?](#what-are-the-supported-system-modifier-keys)
+  | | 24 | [What are the supported Mouse Button Modifiers?](#what-are-the-supported-mouse-button-modifiers)
+  | | 25 | [How do you implement two way binding?](#how-do-you-implement-two-way-binding)
+  | | 26 | [What are the supported modifiers on model?](#what-are-the-supported-modifiers-on-model)
+  | | 27 | [What are components and give an example?](#what-are-components-and-give-an-example)
+  | | 28 | [What are props?](#what-are-props) | | 29 | [When component needs a single
+  root element?](#when-component-needs-a-single-root-element) | | 30 | [How do you
+  communicate from child to parent using events?](#how-do-you-communicate-from-child-to-parent-using-events)
+  | | 31 | [How do you implement model on custom input components?](#how-do-you-implement-model-on-custom-input-components)
+  | | 32 | [What are slots?](#what-are-slots) | | 33 | [What is global registration
+  in components?](#what-is-global-registration-in-components) | | 34 | [Why do you
+  need local registration?](#why-do-you-need-local-registration) | | 35 | [What is
+  the difference between local and global registration in module system?](#what-is-the-difference-between-local-and-global-registration-in-module-system)
+  | | 36 | [What are possible prop types?](#what-are-possible-prop-types) | | 37 |
+  [What is the data flow followed by props?](#what-is-the-data-flow-followed-by-props)
+  | | 38 | [What are non prop attributes?](#what-are-non-prop-attributes) | | 39 |
+  [Describe about validations available for props?](#describe-about-validations-available-for-props)
+  | | 40 | [How do you customize model directive for a component?](#how-do-you-customize-model-directive-for-a-component)
+  | | 41 | [What are the possible ways to provide transitions?](#What-are-the-possible-ways-to-provide-transitions)
+  | | 42 | [What is vue router and their features?]("
 ---
 {% raw %}
 # vuejs-interview-questions

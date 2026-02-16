@@ -2,8 +2,27 @@
 layout: project
 name: Anduin2017 Anduinos
 slug: Anduin2017-AnduinOS
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/license-GPL-blue.svg
 repo_url: https://github.com/Anduin2017/AnduinOS
+indexed_content: "# AnduinOS [](https://gitlab.aiursoft.com/anduin/anduinos/-/blob/1.5/LICENSE)
+  [](https://github.com/Anduin2017/AnduinOS/discussions) [](https://rvlt.gg/dPwPs8e6)
+  [](https://www.anduinos.com/) [](https://gitlab.aiursoft.com/anduin/anduinos/-/commits/1.1?ref_type=heads)
+  AnduinOS is a custom Ubuntu-based Linux distribution that offers a familiar and
+  easy-to-use experience for anyone moving to Linux. [Download AnduinOS](https://www.anduinos.com/)
+  AnduinOS is funded by user donations. We are grateful for your support. ## How to
+  build It is suggested to use AnduinOS to build AnduinOS. To build the OS, run the
+  following command: ```bash make ``` To edit the build parameters, modify the `./src/args.sh`
+  file. That's it. The built file will be an ISO file in the `./src/dist` directory.
+  Simply mount the built ISO file to an virtual machine, and you can start testing
+  it. ## Document [Read the document](https://docs.anduinos.com/) ## License This
+  project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE)
+  file for details The open-source software included in AnduinOS is distributed in
+  the hope that it will be useful, but WITHOUT ANY WARRANTY. [List of open-source
+  software included in AnduinOS](OSS.md) ## Support For community support and discussion,
+  please join our [AnduinOS Discussions](https://github.com/Anduin2017/AnduinOS/discussions).
+  For bug reports and feature requests, please use the [Issues](https://github.com/Anduin2017/AnduinOS/issues)
+  page."
 ---
 {% raw %}
 # AnduinOS

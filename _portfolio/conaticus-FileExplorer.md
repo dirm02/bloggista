@@ -2,8 +2,69 @@
 layout: project
 name: Conaticus Fileexplorer
 slug: conaticus-FileExplorer
+category: File manager -Network-nmap
 image: https://img.shields.io/badge/License-GPLv3-blue.svg
 repo_url: https://github.com/CodeMarco05/FileExplorer).
+indexed_content: "# \U0001F680 Fast File Explorer [](https://www.gnu.org/licenses/gpl-3.0)
+  **A fast file explorer built with Rust and Tauri** ## ✨ Features - **\U0001F680
+  Blazing Fast Search**: Multiple search algorithms with ~15ms response time vs 3min
+  45sec for Windows Explorer - **\U0001F50D Advanced Search Engine**: - Fast fuzzy
+  search with ART (Adaptive Radix Tree) implementation - LRU caching for optimal performance
+  - Multiple search algorithms for different use cases - **\U0001F4C1 Comprehensive
+  File Operations**: Copy, move, delete, rename with robust error handling - **\U0001F310
+  SFTP Support**: Full remote file system operations including browsing, uploading,
+  and downloading - **\U0001F510 Advanced Permissions**: File and directory permission
+  management - **\U0001F4CA File Metadata**: Comprehensive metadata viewing and management
+  - **\U0001F528 File Hashing**: MD5, SHA2, and CRC32 hash generation for file integrity
+  - **\U0001F4C4 File Templates**: Template system for creating new files - **\U0001F441️
+  File Preview**: Built-in preview system for various file types (spotlight-like)
+  - **\U0001F4BE Volume Operations**: Drive management and volume operations - **⚙️
+  Customizable Settings**: Extensive configuration options - **\U0001F3A8 Modern UI**:
+  React-based interface with context menus and responsive design ## \U0001F50D Current
+  Status Cross platform compatibility is given and it supports all common Linux distros,
+  macOS, and Windows which are supported by Tauri. If there is an interest in contributing
+  feel free to join the [discord channel](https://discord.com/invite/dnVJQtNXjr) from
+  Connaticus or message me or my team. ## \U0001F3D7️ Architecture This is a Tauri-based
+  application with a **Rust backend** and **React frontend**: ### Backend (Rust) -
+  **Search Engine**: Multiple algorithms with LRU caching - **File System Operations**:
+  Local and SFTP file operations - **Command System**: Modular command handlers for
+  different operations - **Error Handling**: Centralized error management with standardized
+  codes (401-500) - **Feature Flags**: Extensive Cargo features for different build
+  configurations ### Frontend (React) - **Provider Pattern**: Hierarchical context
+  providers for state management - **Modern UI**: Component-based architecture with
+  custom hooks - **Responsive Design**: Adaptive layouts for different screen sizes
+  ## Coming Soon - Real-time file watching with caching service - Search/caching progress
+  indicators - Enhanced terminal integration # \U0001F6E0️ Installation Our plan is
+  to provide installers for the supported operating systems or common package installers.
+  Unfortunately we have serious Problems with Tauri and creating installers. There
+  are some installers for linux under `dist-builds`. In the future there will be ready
+  to go packages for macOS, Linux and Windows until then please refer to the compilation
+  from source for your computer. ## Installation from source ### Prerequisites for
+  installing from source - [NodeJS](https://nodejs.org/) (stable version) - [Rust](https://www.rust-lang.org/)
+  (stable version) - [Tauri CLI](https://tauri.app/v1/guides/getting-started/prerequisites/)
+  (version >2.4.0) - [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+  (comes with Rust) - [Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+  (comes with Tauri CLI) Other required dependencies are installed automatically by
+  the Tauri CLI. If they are not please contact us. ### Install with compiling from
+  source Note that on macOS you need XCode installed with the build tools. ```bash
+  # Install Tauri CLI cargo install tauri-cli # The version should be >2.4.0 if not
+  already installed # Build for production cargo tauri build ``` Go into the build
+  directory and run the created binary. The binary is located in `FileExplorer/src-tauri/target/release/bundle/`.
+  The name of the binary is `file-explorer` or ### \U0001F427 Linux Under Linux the
+  given command generates an `.deb`, `.rpm`, `AppImage` in the `FileExplorer/src-tauri/target/release/bundle`
+  folder. Select the one which fits your distribution. Either run the AppImage, Binary
+  or install the `.deb` or `.rpm` package. #### For the `AppImage` ```bash #Make sure
+  the image is runnable chmod +x yourapp-x.y.z.AppImage #Run the image. After that
+  it should behaving like a native application ./yourapp-x.y.z.AppImage ``` Recommended
+  is to use the binary created in `FileExplorer/src-tauri/target/release/src-tauri`.
+  Give it executable permissions and then run it from the terminal. You can also put
+  it into your user binaries folder, e.g. `~/bin`, and add it to your PATH variable.
+  ### \U0001F34E macOS ```bash # Install Tauri CLI cargo install tauri-cli # The version
+  should be >2.4.0 if not already installed # Build for production cargo tauri build
+  ``` Tauri creates an `.dmg` or `.app` bundle under the folder `FileExplorer/src-tauri/target/release/bundle/macos/`.
+  Recommended is to use the binary created in `FileExplorer/src-tauri/target/release/src-tauri`.
+  Give it executable permissions and then run it from the terminal. You can also put
+  it into your user binaries folder, e.g. `~/bin`, and add it to "
 ---
 {% raw %}
 <div align="center">

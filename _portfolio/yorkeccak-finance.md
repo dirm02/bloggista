@@ -2,8 +2,67 @@
 layout: project
 name: Yorkeccak Finance
 slug: yorkeccak-finance
+category: Finance-selfapp-healthapp-Improv
 image: https://4ealzrotsszllxtz.public.blob.vercel-storage.com/intfaceone
 repo_url: https://github.com/yorkeccak/finance.git
+indexed_content: "# Finance. > **We put bloomberg-grade data behind a chat interface
+  and open-sourced it** - Access institutional-grade financial data, run complex code
+  analyses, and create stunning visualizations through natural language. The backend?
+  1 search API. **[Try the live demo at finance.valyu.ai](https://finance.valyu.ai)**
+  ## Why Finance? **Your AI's search is only as good as the data it's searching over.**
+  Traditional financial research is fragmented across dozens of expensive platforms.
+  Finance changes everything by being powered by **[Valyu](https://platform.valyu.ai)**
+  - the world's most powerful search API for AI agents. This isn't just another chatbot;
+  it's a Bloomberg terminal powered by AI with access to: - **Live Global Market Data**
+  - Real-time prices, volumes, and technical indicators across 50+ global exchanges
+  - **SEC Filings Index** - Specialized search across 10-Ks, 10-Qs, 8-Ks, proxy statements,
+  and insider trading reports - **Patent Database** - Search and analyze patents across
+  jurisdictions - **Academic Research** - arXiv papers, Wiley finance journals, and
+  academic publications - **The World's Most Powerful Web Search** - Real-time news,
+  social sentiment, and market analysis [See how Valyu compares to other search APIs](https://www.valyu.ai/blogs/benchmarking-search-apis-for-ai-agents)
+  - Independent benchmarks show why Valyu delivers superior results for AI agents.
+  Finance makes all this data accessible through natural language: - **Institutional-Grade
+  Data** - SEC filings, real-time market data, financial statements, insider trading,
+  and more - **One Unified Search** - Powered by Valyu's comprehensive data API -
+  **Advanced Analytics** - Execute Python code in secure Daytona sandboxes for ML
+  models, backtesting, and custom analysis - **Interactive Visualizations** - Beautiful
+  charts and dashboards that bring data to life - **Real-Time Intelligence** - Web
+  search integration for breaking news and market updates - **Local AI Models** -
+  Run with Ollama or LM Studio for unlimited, private queries - **Natural Language**
+  - Just ask questions like you would to a colleague ## Key Features ### Powerful
+  Financial Tools - **SEC Filings Analysis** - Deep dive into 10-Ks, 10-Qs, 8-Ks,
+  and more - **Market Data** - Real-time and historical stock prices, volumes, and
+  technical indicators - **Financial Statements** - Income statements, balance sheets,
+  cash flows with automatic calculations - **Insider Trading** - Track institutional
+  and insider transactions - **Academic Research** - Access to arXiv papers and financial
+  research - **News & Sentiment** - Real-time news analysis with market impact assessment
+  ### Advanced Tool Calling - **Python Code Execution** - Run complex financial models,
+  ML algorithms, and custom analyses - **Interactive Charts** - Create publication-ready
+  visualizations - **Multi-Source Research** - Automatically aggregates data from
+  multiple sources - **Export & Share** - Download results, share analyses, and collaborate
+  ## Quick Start (Self-Hosted Mode) Self-hosted mode is the recommended way to run
+  Finance. It's easy to set up and requires no external authentication or Supabase.
+  ### Prerequisites - Node.js 18+ - npm or yarn - Valyu API key (get one at [platform.valyu.ai](https://platform.valyu.ai))
+  - Daytona API key (for code execution) - [Ollama](https://ollama.com) or [LM Studio](https://lmstudio.ai)
+  installed (optional but recommended) ### Installation 1. **Clone the repository**
+  ```bash git clone https://github.com/yorkeccak/finance.git cd finance ``` 2. **Install
+  dependencies** ```bash npm install ``` 3. **Set up environment variables** Create
+  a `.env.local` file in the root directory: ```env # Enable Self-Hosted Mode (No
+  Supabase, No Auth, No Billing) NEXT_PUBLIC_APP_MODE=self-hosted # Valyu API Configuration
+  (Required) VALYU_API_KEY=your-valyu-api-key # Daytona Configuration (Required for
+  Python execution) DAYTONA_API_KEY=your-daytona-api-key DAYTONA_API_URL=https://api.daytona.io
+  # Optional DAYTONA_TARGET=latest # Optional # Local LLM Configuration (Optional
+  - for unlimited, private queries) OLLAMA_BASE_URL=http://localhost:11434 # Default
+  Ollama URL LMSTUDIO_BASE_URL=http://localhost:1234 # Default LM Studio URL # OpenAI
+  Configuration (Optional - fallback if local models unavailable) OPENAI_API_KEY=your-openai-api-key
+  ``` 4. **Run the development server** ```bash npm run dev ``` 5. **Open your browser**
+  Navigate to [http://localhost:3000](http://localhost:3000) You'll be automatically
+  logged in as `dev@localhost` - no sign-up required! ## Self-Hosted Mode Guide ###
+  What is Self-Hosted Mode? Self-hosted mode provides a complete local development
+  environment without any external dependencies beyond the core APIs (Valyu, Daytona).
+  It's perfect for: - **Local Development** - No Supabase setup required - **Offline
+  Work** - All data stored locally in SQLite - **Testing Features** - Unlimited queries
+  without billing - **Privacy** - Use local Ollama models, no cloud LLM needed - **Quick"
 ---
 {% raw %}
 # Finance.

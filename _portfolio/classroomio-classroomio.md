@@ -2,8 +2,67 @@
 layout: project
 name: Classroomio Classroomio
 slug: classroomio-classroomio
+category: Platform -eCommerce
 image: https://api.codacy.com/project/badge/Grade/629e2bb8994345729513c4d69ccbe3d5
 repo_url: https://github.com/supabase/cli)
+indexed_content: "ClassroomIO.com The Open Source Learning Management System for Companies
+  Website | Join Discord community [](https://app.codacy.com/gh/classroomio/classroomio?utm_source=github.com&utm_medium=referral&utm_content=classroomio/classroomio&utm_campaign=Badge_Grade)
+  ## ✨ About ClassroomIO.com Streamline training for everyone with ClassroomIO.com.
+  Our all-in-one platform empowers bootcamps, educators, and businesses to manage
+  training programs easily. With our platform, anyone can run multiple classes and
+  cohorts all from one UI. The application is mobile-first, which means that students
+  can access your lesson materials from any device. ### Mission: Provide Students
+  with the Best Learning Experience At ClassroomIO, our mission is to provide students
+  with the best possible learning experience. We believe in empowering educators with
+  the tools they need to deliver high-quality education that is accessible, engaging,
+  and effective. ### Key Features 1. **\U0001F4DA Advanced Course Management:** You
+  can create unlimited courses, create lessons, invite students, add assignments,
+  grade their assignments, and even generate certificates. 2. **\U0001F468‍\U0001F469‍\U0001F466
+  Multi-Teacher Management:** You can invite other teachers into your organization
+  and assign them individual courses. 3. **\U0001F916 AI Integration:** We've got
+  OpenAI integration for quick course creation where you can generate course content,
+  lesson outlines, and even generate assignments right from your lesson notes. 4.
+  **\U0001F4AC Forum:** Students can ask questions in your dedicated community and
+  get answers from either you or other students. 5. **\U0001F4BB Dedicated Student
+  Dashboard:** Once you create an account, you get a dedicated dashboard where your
+  students can access all their courses, assignments, and more. 6. **\U0001F512 Fully
+  open source:** You can self-host the entire stack on your servers. ### Roadmap Features
+  1. **Forms:** Instead of using Google Forms to collect vital information from your
+  students, you will be able to create forms directly within the dashboard. 2. **Course
+  Templates:** You can clone a full course or share templates with other people. 3.
+  **Analytics:** You can track data about your students across multiple courses. 4.
+  **Run Courses on Messengers:** Students can just join a channel on slack/discord/telegram
+  and a bot automatically sends daily lesson content to your students without you
+  doing anything. Please reach out to me on [twitter](https://x.com/rotimi_best) if
+  you have any feature request. ## Built With - [SvelteKit](https://kit.svelte.dev/?ref=classroomio.com)
+  - [Supabase](https://supabase.com/?ref=classroomio.com) - [TailwindCSS](https://tailwindcss.com/?ref=classroomio.com)
+  ## Get a Demo You can book a quick 15 min demo to see if ClassroomIO is a good fit
+  for you ## Getting Started To get a local copy up and running, please follow these
+  simple steps. ### Prerequisites Here is what you need to be able to run ClassroomIO.com
+  - [Node.js](https://nodejs.org/) (Version: >=22.x) - [Supabase CLI](https://github.com/supabase/cli)
+  - [Docker](https://docs.docker.com/engine/install/) - [NPM](https://www.npmjs.com/)
+  ### Project Structure This repo is a mono repo that consists of 3 projects: 1. `classroomio-com`:
+  The landing page of ClassroomIO hosted [here](https://classroomio.com) 2. `api`:
+  The api service that handles PDF, video processing, Emailing and Notifications.
+  3. `dashboard`: The web application that runs the learning management system hosted
+  [here](https://app.classroomio.com). 4. `docs`: Official documentation of ClassroomIO
+  hosted [here](https://classroomio.com/docs) ## Development ### Gitpod Setup 1. Click
+  the button below to open this project in Gitpod. 2. This will open a fully configured
+  workspace in your browser with all the necessary dependencies already installed.
+  [](https://gitpod.io/#https://github.com/classroomio/classroomio) ### Local Setup
+  1. Fork the repo, then clone it using the following command (remember to replace
+  the url with the url from your forked repo) ```bash git clone https://github.com/classroomio/classroomio.git
+  ``` 2. Go to project folder ```bash cd classroomio ``` 3. Set up Node if your Node
+  version does not meet the project's requirements, as instructed by the documentation.,
+  \"nvm\" (Node Version Manager) allows using Node at the version required by the
+  project: ```bash nvm use ``` You first might need to install the specific version
+  and then use it: ```bash nvm install && nvm use ``` You can install nvm from [here](https://github.com/nvm-sh/nvm).
+  You also need to have pnpm installed, you can find the installation guide [here](https://pnpm.io/installation#using-npm)
+  4. Set up your `.env` file - Go to `apps/dashboard` and `apps/api`. - Duplicate
+  the `.env.example` file and rename it to `.env` - Populate your .env files with
+  the neccessary variables To get the environmental variables for supabase continue
+  to step(5) 1. Install all dependencies ```bash pnpm i ``` 2. Setup Supabase. - Install
+  and Start [docker](https://docs.docker.com/engine/install"
 ---
 {% raw %}
 <a href="https://classroomio.com/">

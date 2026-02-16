@@ -2,8 +2,62 @@
 layout: project
 name: Netlas Io Netlas Cookbook
 slug: netlas-io-netlas-cookbook
+category: Uncategorized
 image: https://raw.githubusercontent.com/netlas-io/netlas-cookbook/main/images/domain_information_gathering.png
 repo_url: https://github.com/elastic/elasticsearch),
+indexed_content: "# Netlas CookBook The **goal** of this guide is to teach anyone
+  interested in cybersecurity, regardless of their knowledge level, how to make the
+  most of Netlas Search Tools. This is a long read. We have collected as many simple
+  use cases as possible and demonstrated how to automate them. ⭐️ Give us a star to
+  show your appreciation \U0001F441️ Subscribe for updates **Netlas** is a search
+  engine designed to find and analyze information about all IP addresses and domains
+  available on the Internet. Netlas has some attack surface management features, but
+  this guide focuses mostly on Netlas Search Tools and how to use them in automations.
+  ## Table of Contents - [Simple Usage Examples](#simple-usage-examples) - [Getting
+  Information About IP or Domain](#getting-information-about-ip-or-domain) - [Search
+  for Non-Latin Domains](#search-for-non-latin-domains) - [Looking for Websites That
+  Contain a Certain Word in Their Title](#looking-for-websites-that-contain-a-certain-word-in-their-title)
+  - [Search Query Syntax](#search-query-syntax) - [Filters (Fields)](#filters-fields)
+  - [Logical Operators](#logical-operators) - [Ranges](#ranges) - [Wildcards](#wildcards)
+  - [Fuzziness](#fuzziness) - [Regular Expressions](#regular-expressions) - [Other
+  Netlas.io Search Features](#other-netlasio-search-features) - [API Requests](#api-requests)
+  - [How to Find the API-key?](#how-to-find-the-api-key) - [Tools for Debugging API
+  Requests](#tools-for-debugging-api-requests) - [Structure of Netlas API JSON Response](#structure-of-netlas-api-json-response)
+  - [Tools for Working with Data in JSON Format](#tools-for-working-with-data-in-json-format)
+  - [Netlas Python Library](#netlas-python-library) - [Examples of Response Keys for
+  Getting Useful Data](#examples-of-response-keys-for-getting-useful-data) - [Netlas
+  Python Response Datatypes](#netlas-python-response-datatypes) - [Netlas CLI Tools](#netlas-cli-tools)
+  - [Search vs Download vs Host Methods](#search-vs-download-vs-host-methods) - [Additional
+  Request Parameters](#additional-request-parameters) - [Make Requests with Python
+  (without Netlas Python Library)](#make-requests-with-python-without-netlas-python-library)
+  - [Examples for Other Programming Languages](#examples-for-other-programming-languages)
+  - [JQ Utility](#jq-utility) - [AI Tools for Writing Code](#ai-tools-for-writing-code)
+  - [Code Checkers](#code-checkers) - [Using Netlas.io for OSINT (Open Source Intelligence)](#using-netlasio-for-osint-open-source-intelligence)
+  - [Search Person's Nickname or Email in WHOIS Contacts](#search-persons-nickname-or-email-in-whois-contacts)
+  - [Search for Person's Nickname or Email in Title and Body of Web Page](#search-for-persons-nickname-or-email-in-title-and-body-of-web-page)
+  - [Search for \"Juicy Info Files\" on Subdomains of the Company's Website](#search-for-juicy-info-files-on-subdomains-of-the-companys-website)
+  - [Phone Number Mentions Search](#phone-number-mentions-search) - [Search File Mentions
+  (Looking for Content That May be Infringing on Copyrights)](#search-file-mentions-looking-for-content-that-may-be-infringing-on-copyrights)
+  - [Domain WHOIS Information Gathering](#domain-whois-information-gathering) - [Search
+  Location in \\ Tag](#search-location-in-address-tag) - [Search Author Name in Meta
+  Tags](#search-author-name-in-meta-tags) - [What Other Interesting Things Can Be
+  Found in the Meta Tags of HTML Document?](#what-other-interesting-things-can-be-found-in-the-meta-tags-of-html-document)
+  - [Search by FTP Server's Banners Text](#search-by-ftp-servers-banners-text) - [Search
+  for Contact Information in SSL Certificates](#search-for-contact-information-in-ssl-certificates)
+  - [Using Netlas as an Alternative to the WayBack Machine](#using-netlas-as-an-alternative-to-the-wayback-machine)
+  - [9 Ways to Search Related Websites](#9-ways-to-search-related-websites) - [Scraping
+  (Extract Data from Web Page Body)](#scraping-extract-data-from-web-page-body) -
+  [Beatifulsoup Package](#beatifulsoup-package) - [Re Package](#re-package) - [Other
+  Python Packages for Scraping](#other-python-packages-for-scraping) - [Using Netlas.io
+  for Crypto Investigations](#using-netlasio-for-crypto-investigations) - [Search
+  Mining Farms](#search-mining-farms) - [Search for Websites Infected with Cryptominers](#search-for-websites-infected-with-cryptominers)
+  - [Search Vulnerable Bitcoin Nodes](#search-vulnerable-bitcoin-nodes) - [Using Neltas
+  for Pentest](#using-neltas-for-pentest) - [Subdomain Search](#subdomain-search)
+  - [Search for Sites with Specific Vulnerabilities](#search-for-sites-with-specific-vulnerabilities)
+  - [Search for Sites with Vulnerabilities That Contain a Certain Word in Their Descriptions](#search-for-sites-with-vulnerabilities-that-contain-a-certain-word-in-their-descriptions)
+  - [Search by Server HTTP Header](#search-by-server-http-header) - [Search for Vulnerable
+  Servers by Favicon Hash](#search-for-vulnerable-servers-by-favicon-hash) - [Search
+  for Vulnerable Servers by Tag Name](#search-for-vulnerable-serv"
 ---
 {% raw %}
 

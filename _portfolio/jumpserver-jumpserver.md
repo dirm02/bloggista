@@ -2,8 +2,58 @@
 layout: project
 name: Jumpserver Jumpserver
 slug: jumpserver-jumpserver
+category: ServerTools-ProxMox-CICD
 image: https://github.com/user-attachments/assets/0f32f52b-9935-485e-8534-336c63389612
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '## An open-source PAM platform (Bastion Host) [![][license-shield]][license-link]
+  [![][docs-shield]][docs-link] [![][deepwiki-shield]][deepwiki-link] [![][discord-shield]][discord-link]
+  [![][docker-shield]][docker-link] [![][github-release-shield]][github-release-link]
+  [![][github-stars-shield]][github-stars-link] [English](/README.md) · [中文(简体)](/readmes/README.zh-hans.md)
+  · [中文(繁體)](/readmes/README.zh-hant.md) · [日本語](/readmes/README.ja.md) · [Português
+  (Brasil)](/readmes/README.pt-br.md) · [Español](/readmes/README.es.md) · [Русский](/readmes/README.ru.md)
+  · [한국어](/readmes/README.ko.md) ## What is JumpServer? JumpServer is an open-source
+  Privileged Access Management (PAM) platform that provides DevOps and IT teams with
+  on-demand and secure access to SSH, RDP, Kubernetes, Database and RemoteApp endpoints
+  through a web browser. ## Quickstart Prepare a clean Linux Server ( 64 bit, >= 4c8g
+  ) ```sh curl -sSL https://github.com/jumpserver/jumpserver/releases/latest/download/quick_start.sh
+  | bash ``` Access JumpServer in your browser at `http://your-jumpserver-ip/` - Username:
+  `admin` - Password: `ChangeMe` [](https://www.youtube.com/watch?v=UlGYRbKrpgY "JumpServer
+  Quickstart") ## Screenshots            ## Components JumpServer consists of multiple
+  key components, which collectively form the functional framework of JumpServer,
+  providing users with comprehensive capabilities for operations management and security
+  control. | Project | Status | Description | |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+  | [Lina](https://github.com/jumpserver/lina) | | JumpServer Web UI | | [Luna](https://github.com/jumpserver/luna)
+  | | JumpServer Web Terminal | | [KoKo](https://github.com/jumpserver/koko) | | JumpServer
+  Character Protocol Connector | | [Lion](https://github.com/jumpserver/lion) | |
+  JumpServer Graphical Protocol Connector | | [Chen](https://github.com/jumpserver/chen)
+  | | JumpServer Web DB | [Client](https://github.com/jumpserver/clients) | | JumpServer
+  Client | | [Tinker](https://github.com/jumpserver/tinker) | | JumpServer Remote
+  Application Connector (Windows) | | [Panda](https://github.com/jumpserver/Panda)
+  | | JumpServer EE Remote Application Connector (Linux) | | [Razor](https://github.com/jumpserver/razor)
+  | | JumpServer EE RDP Proxy Connector | | [Magnus](https://github.com/jumpserver/magnus)
+  | | JumpServer EE Database Proxy Connector | | [Nec](https://github.com/jumpserver/nec)
+  | | JumpServer EE VNC Proxy Connector | | [Facelive](https://github.com/jumpserver/facelive)
+  | | JumpServer EE Facial Recognition | ## Third-party projects - [jumpserver-grafana-dashboard](https://github.com/acerrah/jumpserver-grafana-dashboard)
+  JumpServer with grafana dashboard ## Contributing Welcome to submit PR to contribute.
+  Please refer to [CONTRIBUTING.md][contributing-link] for guidelines. ## License
+  Copyright (c) 2014-2026 FIT2CLOUD, All rights reserved. Licensed under The GNU General
+  Public License version 3 (GPLv3) (the "License"); you may not use this file except
+  in compliance with the License. You may obtain a copy of the License at https://www.gnu.org/licenses/gpl-3.0.html
+  Unless required by applicable law or agreed to in writing, software distributed
+  under the License is distributed on an " AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+  OF ANY KIND, either express or implied. See the License for the specific language
+  governing permissions and limitations under the License. [docs-link]: https://jumpserver.com/docs
+  [discord-link]: https://discord.com/invite/W6vYXmAQG2 [deepwiki-link]: https://deepwiki.com/jumpserver/jumpserver/
+  [contributing-link]: https://github.com/jumpserver/jumpserver/blob/dev/CONTRIBUTING.md
+  [license-link]: https://www.gnu.org/licenses/gpl-3.0.html [docker-link]: https://hub.docker.com/u/jumpserver
+  [github-release-link]: https://github.com/jumpserver/jumpserver/releases/latest
+  [github-stars-link]: https://github.com/jumpserver/jumpserver [github-issues-link]:
+  https://github.com/jumpserver/jumpserver/issues [docs-shield]: https://img.shields.io/badge/documentation-148F76
+  [github-release-shield]: https://img.shields.io/github/v/release/jumpserver/jumpserver
+  [github-stars-shield]: https://img.shields.io/github/stars/jumpserver/jumpserver?color=%231890FF&style=flat-square   
+  [docker-shield]: https://img.shields.io/docker/pulls/jumpserver/jms_all.svg [license-shield]:
+  https://img.shields.io/github/license/jumpserver/jumpserver [deepwiki-shield]: https://img.shields.io/badge/deepwiki-devin?color=blue
+  [discord-shield]: https://img.shields.io/discord/1194233267294052363?style=flat&logo=discord&logoColor=%23f5f5f5&labelColor=%235462eb&color=%235462eb'
 ---
 {% raw %}
 <div align="center">

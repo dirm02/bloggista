@@ -2,8 +2,70 @@
 layout: project
 name: Alibaba Quark Liveavatar
 slug: Alibaba-Quark-LiveAvatar
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Alibaba-Quark-LiveAvatar/assets/demo.png
 repo_url: https://github.com/Alibaba-Quark/LiveAvatar
+indexed_content: "\U0001F3AC Live Avatar: Streaming Real-time Audio-Driven Avatar
+  Generation with Infinite Length The code will be open source in early December .
+  --> Yubo Huang 1,2 · Hailong Guo 2,3 · Fangtai Wu 2,4 · Shifeng Zhang 2 · Shijie
+  Huang 2 · Qijun Gan 4 · Lin Liu 1 · Sirui Zhao 1,* · Enhong Chen 1,* · Jiaming Liu
+  2,‡ · Steven Hoi 2 1 University of Science and Technology of China &nbsp;&nbsp;
+  2 Alibaba Group &nbsp;&nbsp; 3 Beijing University of Posts and Telecommunications
+  &nbsp;&nbsp; 4 Zhejiang University * Corresponding authors. &nbsp;&nbsp; ‡ Project
+  leader. > **TL;DR:** **Live Avatar** is an algorithm–system co-designed framework
+  that enables real-time, streaming, infinite-length interactive avatar video generation.
+  Powered by a **14B-parameter** diffusion model, it achieves **45 FPS** on multi-card
+  **H800** GPUs with **4-step** sampling and supports **Block-wise Autoregressive**
+  processing for **10,000+** second streaming videos. [](https://www.youtube.com/watch?v=srbsGlLNpAc)
+  \U0001F440 More Demos: \U0001F916 Human-AI Conversation &nbsp;|&nbsp; ♾️ Infinite
+  Video &nbsp;|&nbsp; \U0001F3AD Diverse Characters &nbsp;|&nbsp; \U0001F3AC Animated
+  Tech Explanation \U0001F449 Click Here to Visit Project Page! \U0001F310 --- ##
+  ✨ Highlights > - ⚡ **​​Real-time Streaming Interaction**​​ - Achieve **45** FPS
+  real-time streaming with low latency > - ♾️ ​​**​​Infinite-length Autoregressive
+  Generation**​​​​ - Support **10,000+** second continuous video generation > - \U0001F3A8
+  ​​**​​Generalization Performances**​​​​ - Strong generalization across cartoon characters,
+  singing, and diverse scenarios --- ## \U0001F4F0 News - **[2026.1.20]** \U0001F680
+  Major performance breakthrough (**v1.1**)! **FP8 quantization** enables inference
+  on **48GB GPUs**, while advanced **compilation** and **cuDNN** attention boost speed
+  to **~2.5x** peak and **3x** average FPS. Achieving stable **45+ FPS** on multi-H800
+  — share your results on different GPUs! Inference fixes also bring noticeable **quality
+  improvements**, significantly surpassing the teacher model on qualitative metrics.
+  - **[2025.12.16]** \U0001F389 LiveAvatar has reached **1,000+** stars on GitHub!
+  Thank you to the community for the incredible support! ⭐ - **[2025.12.12]** \U0001F680
+  We released **single-gpu** inference [Code](infinite_inference_single_gpu.sh) —
+  no need for 5×H800 (house-priced server), a single 80GB VRAM GPU is enough to enjoy.
+  - **[2025.12.08]** \U0001F680 We released **real-time** inference [Code](infinite_inference_multi_gpu.sh)
+  and the model [Weight](https://huggingface.co/Quark-Vision/Live-Avatar). - **[2025.12.08]**
+  \U0001F389 LiveAvatar won the Hugging Face [#1 Paper of the day](https://huggingface.co/papers/date/2025-12-05)!
+  - **[2025.12.04]** \U0001F3C3‍♂️ We committed to open-sourcing the code in **early
+  December**. - **[2025.12.04]** \U0001F525 We released [Paper](https://arxiv.org/abs/2512.04677)
+  and [demo page](https://liveavatar.github.io/) Website. --- ## \U0001F4D1 Todo List
+  ### \U0001F31F **Early December** (core code release) - ✅ Release the paper - ✅
+  Release the demo website - ✅ Release checkpoints on Hugging Face - ✅ Release Gradio
+  Web UI - ✅ Experimental real-time streaming inference on at least H800 GPUs - ✅
+  Distribution-matching distillation to 4 steps - ✅ Timestep-forcing pipeline parallelism
+  ### ⚙️ **Later updates** - ✅ Inference code supporting single GPU (offline generation)
+  - ✅ Multi-character support - ✅ Inference Acceleration Stage1 (RoPE optimization,
+  compilation, LoRA merge) - ✅ Streaming-VAE intergration - ✅ Inference Acceleration
+  Stage2 (further compilation, fp8, cudnn attn) - ⬜ UI integration for easily streaming
+  interaction - ⬜ TTS integration - ⬜ Training code - ⬜ LiveAvatar v1.2 ## \U0001F6E0️
+  Installation Please follow the steps below to set up the environment. ### 1. Create
+  Environment ```bash conda create -n liveavatar python=3.10 -y conda activate liveavatar
+  ``` ### 2. Install CUDA Dependencies (optional) ```bash conda install nvidia/label/cuda-12.4.1::cuda
+  -y conda install -c nvidia/label/cuda-12.4.1 cudatoolkit -y ``` ### 3. Install PyTorch
+  & Flash Attention ```bash pip install torch==2.8.0 torchvision==0.23.0 --index-url
+  https://download.pytorch.org/whl/cu128 # If you are using NVIDIA Hopper architecture
+  (H800/H200, etc.), FlashAttention 3 is recommended for a significant speedup: pip
+  install flash_attn_3 --find-links https://windreamer.github.io/flash-attention3-wheels/cu128_torch280
+  --extra-index-url https://download.pytorch.org/whl/cu128 # Otherwise, use FlashAttention
+  2: pip install flash-attn==2.8.3 --no-build-isolation ``` ### 4. Install Python
+  Requirements ```bash pip install -r requirements.txt ``` ### 5. Install FFMPEG ```bash
+  apt-get update && apt-get install -y ffmpeg ``` --- ## \U0001F4E5 Download Models
+  Please download the pretrained checkpoints from links below and place them in the
+  `./ckpt/` directory. | Model Component | Description | Link | | :--- | :--- | :---:
+  | | `WanS2V-14B` | base model| \U0001F917 [Huggingface](https://huggingface.co/Wan-AI/Wan2.2-S2V-14B)
+  | | `liveAvatar` | our lora model| \U0001F917 [Huggingface](https://huggingface.co/Quark-Vision/Live-Avatar)
+  | ```bash # If you are in"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,70 @@
 layout: project
 name: Axorax Awesome Free Apps
 slug: Axorax-awesome-free-apps
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Axorax-awesome-free-apps/.github/afa.png
 repo_url: https://github.com/Axorax/awesome-free-apps
+indexed_content: "Windows Only — macOS Only — Linux Only — Open-source Only — Recommended
+  Only Mobile version — Android Only — iOS Only | Icon | Meaning | Icon | Meaning
+  | |------|----------------------|------|-------------------------------| | \U0001FA9F
+  | Available on Windows | \U0001F7E2 | Open-source (Repository Link) | | \U0001F34E
+  | Available on macOS | ⭐ | Recommended by us | | \U0001F427 | Available on Linux
+  | | | > [!IMPORTANT] > Maintaining this project requires a lot of time. [Donate
+  to support me!](https://patreon.com/axorax) ❤️ > > [Discord server](https://discord.gg/nKUFghjXQu)
+  — [Patreon](https://patreon.com/axorax) > > Want to add something to the list? Check
+  -> [contributing.md](contributing.md) > > If you want to become a maintainer, check
+  this -> https://github.com/Axorax/awesome-free-apps/issues/28 > [!IMPORTANT] > **Looking
+  for the mobile version of this list?** -> [MOBILE.md](MOBILE.md) ## Contents - [Audio](#audio)
+  - [Audio Players](#audio-players) - [Audio Recording](#audio-recording) - [DJ Software](#dj-software)
+  - [Music Notation](#music-notation) - [Music Production](#music-production) - [Browsers](#browsers)
+  - [Communication](#communication) - [Messaging](#messaging) - [Email Clients](#email-clients)
+  - [Compression and Archiving](#compression-and-archiving) - [Customize](#customize)
+  - [System Customization](#system-customization) - [Wallpaper Tools](#wallpaper-tools)
+  - [Data Management](#data-management) - [Copy and Move](#copy-and-move) - [Sync
+  and Clone](#sync-and-clone) - [Developer Tools](#developer-tools) - [API Development](#api-development)
+  - [Database](#database) - [Network Analysis](#network-analysis) - [Game Engines](#game-engines)
+  - [Virtualization](#virtualization) - [Documents](#documents) - [Office Suites](#office-suites)
+  - [E-book](#e-book) - [PDF Tools](#pdf-tools) - [Note Taking](#note-taking) - [Text
+  Editors](#text-editors) - [Download Managers](#download-managers) - [Games](#games)
+  - [Cloud Gaming](#cloud-gaming) - [Mobile Emulators](#mobile-emulators) - [Other
+  Emulators](#other-emulators) - [Graphics Tools](#graphics-tools) - [3D Modeling
+  and Animation](#3d-modeling-and-animation) - [Security](#security) - [Antivirus](#antivirus)
+  - [Password Managers](#password-managers) - [Image Viewers](#image-viewers) - [Remote
+  Access](#remote-access) - [Video](#video) - [Video Editors](#video-editors) - [Video
+  Players](#video-players) - [Video Streaming and Recording](#video-streaming-and-recording)
+  - [Video Converters and Compressors](#video-converters-and-compressors) - [VPN and
+  Proxy Tools](#vpn-and-proxy-tools) - [Utility](#utility) - [Clipboard Management](#clipboard-management)
+  - [Metadata](#metadata) - [Window Management](#window-management) - [File Management](#file-management)
+  - [Application Management](#application-management) - [Screenshot](#screenshot)
+  - [Space Visualizer](#space-visualizer) ## Audio - [FXSound](https://fxsound.com)
+  - Boost sound quality, volume, and bass. Has a beautiful modern UI. \U0001FA9F \U0001F7E2
+  ⭐ - [JACK Audio](https://jackaudio.org) - Audio server for routing and mixing sound
+  between programs. \U0001FA9F \U0001F34E \U0001F427 - [EarTrumpet](https://eartrumpet.app)
+  - Advanced volume control for Windows, offering app-specific audio management. \U0001FA9F
+  - [Ambie](https://github.com/jenius-apps/ambie) - Use white noise, nature sounds,
+  & more to boost your productivity. \U0001FA9F \U0001F7E2 ### Audio Players - [Foobar2000](https://foobar2000.org)
+  - Lightweight and highly customizable audio player with support for many formats.
+  \U0001FA9F \U0001F34E ⭐ - [AIMP](https://aimp.ru) - Music player with a clean interface
+  and powerful features. \U0001FA9F - [Audacious](https://github.com/audacious-media-player/audacious)
+  - Lightweight audio player for simple music playback. \U0001FA9F \U0001F427 \U0001F7E2
+  - [Karafun](https://karafun.com) - Collection of karaoke songs across multiple genres.
+  Play your own CDG files or use downloads from YouTube. \U0001FA9F - [MusicBee](https://getmusicbee.com)
+  - Feature-rich music player and manager. \U0001FA9F - [Strawberry Music Player](https://strawberrymusicplayer.org)
+  - Music player for organizing and playing your audio collection. \U0001FA9F \U0001F34E
+  \U0001F427 ### Audio Recording - [Audacity](https://audacityteam.org/download) -
+  Audio editor for recording and editing sounds. \U0001FA9F \U0001F34E \U0001F427
+  \U0001F7E2 ⭐ - [Ocenaudio](https://ocenaudio.com) - Easy-to-use audio editor for
+  recording and analyzing sounds. \U0001FA9F \U0001F34E \U0001F427 - [Wavosaur](https://www.wavosaur.com)
+  - Simple audio editor for recording, editing, and processing sound. \U0001FA9F ###
+  DJ Software - [DJ ProDecks](https://djprodecks.com) - DJ software for mixing music
+  and adding effects. \U0001FA9F - [Mixxx](https://mixxx.org) - DJ software for live
+  mixing and beatmatching with controller support. \U0001FA9F \U0001F34E \U0001F427
+  - [Serato DJ Lite](https://serato.com/dj/lite) - DJ software for beginners to mix
+  music with ease. \U0001FA9F \U0001F34E - [Rekordbox](https://rekordbox.com/en) -
+  Software that enables a comfortable DJ workflow with AI, cloud, and automation tech.
+  \U0001FA9F \U0001F34E - [VirtualDJ](https://virtualdj.com) - DJ platform for mixing
+  music, beatmatching, and live performance. \U0001FA9F \U0001F34E ### Music Notation
+  - [ABCjs](https://abcjs.net) - Tool for writing and playing A"
 ---
 {% raw %}
 <p align="center">

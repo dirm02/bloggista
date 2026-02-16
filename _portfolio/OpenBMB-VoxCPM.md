@@ -2,8 +2,67 @@
 layout: project
 name: Openbmb Voxcpm
 slug: OpenBMB-VoxCPM
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/badge/Project%20Page-GitHub-blue
 repo_url: https://github.com/OpenBMB/VoxCPM
+indexed_content: "## \U0001F399️ VoxCPM: Tokenizer-Free TTS for Context-Aware Speech
+  Generation and True-to-Life Voice Cloning [](https://github.com/OpenBMB/VoxCPM/)
+  [](https://arxiv.org/abs/2509.24650)[](https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo)
+  [](https://openbmb.github.io/VoxCPM-demopage) #### VoxCPM1.5 Model Weights [](https://huggingface.co/openbmb/VoxCPM1.5)
+  [](https://modelscope.cn/models/OpenBMB/VoxCPM1.5) \U0001F44B Contact us on [WeChat](assets/wechat.png)
+  ## News * [2025.12.05] \U0001F389 \U0001F389 \U0001F389 We Open Source the VoxCPM1.5
+  [weights](https://huggingface.co/openbmb/VoxCPM1.5)! The model now supports both
+  full-parameter fine-tuning and efficient LoRA fine-tuning, empowering you to create
+  your own tailored version. See [Release Notes](docs/release_note.md) for details.
+  * [2025.09.30] \U0001F525 \U0001F525 \U0001F525 We Release VoxCPM [Technical Report](https://arxiv.org/abs/2509.24650)!
+  * [2025.09.16] \U0001F525 \U0001F525 \U0001F525 We Open Source the VoxCPM-0.5B [weights](https://huggingface.co/openbmb/VoxCPM-0.5B)!
+  * [2025.09.16] \U0001F389 \U0001F389 \U0001F389 We Provide the [Gradio PlayGround](https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo)
+  for VoxCPM-0.5B, try it now! ## Overview VoxCPM is a novel tokenizer-free Text-to-Speech
+  (TTS) system that redefines realism in speech synthesis. By modeling speech in a
+  continuous space, it overcomes the limitations of discrete tokenization and enables
+  two flagship capabilities: context-aware speech generation and true-to-life zero-shot
+  voice cloning. Unlike mainstream approaches that convert speech to discrete tokens,
+  VoxCPM uses an end-to-end diffusion autoregressive architecture that directly generates
+  continuous speech representations from text. Built on [MiniCPM-4](https://huggingface.co/openbmb/MiniCPM4-0.5B)
+  backbone, it achieves implicit semantic-acoustic decoupling through hierachical
+  language modeling and FSQ constraints, greatly enhancing both expressiveness and
+  generation stability. ### \U0001F680 Key Features - **Context-Aware, Expressive
+  Speech Generation** - VoxCPM comprehends text to infer and generate appropriate
+  prosody, delivering speech with remarkable expressiveness and natural flow. It spontaneously
+  adapts speaking style based on content, producing highly fitting vocal expression
+  trained on a massive 1.8 million-hour bilingual corpus. - **True-to-Life Voice Cloning**
+  - With only a short reference audio clip, VoxCPM performs accurate zero-shot voice
+  cloning, capturing not only the speaker's timbre but also fine-grained characteristics
+  such as accent, emotional tone, rhythm, and pacing to create a faithful and natural
+  replica. - **High-Efficiency Synthesis** - VoxCPM supports streaming synthesis with
+  a Real-Time Factor (RTF) as low as 0.17 on a consumer-grade NVIDIA RTX 4090 GPU,
+  making it possible for real-time applications. ### \U0001F4E6 Model Versions See
+  [Release Notes](docs/release_note.md) for details - **VoxCPM1.5** (Latest): - Model
+  Params: 800M - Sampling rate of AudioVAE: 44100 - Token rate in LM Backbone: 6.25Hz
+  (patch-size=4) - RTF in a single NVIDIA-RTX 4090 GPU: ~0.15 - **VoxCPM-0.5B** (Original):
+  - Model Params: 640M - Sampling rate of AudioVAE: 16000 - Token rate in LM Backbone:
+  12.5Hz (patch-size=2) - RTF in a single NVIDIA-RTX 4090 GPU: 0.17 ## Quick Start
+  ### \U0001F527 Install from PyPI ``` sh pip install voxcpm ``` ### 1. Model Download
+  (Optional) By default, when you first run the script, the model will be downloaded
+  automatically, but you can also download the model in advance. - Download VoxCPM1.5
+  ``` from huggingface_hub import snapshot_download snapshot_download(\"openbmb/VoxCPM1.5\")
+  ``` - Or Download VoxCPM-0.5B ``` from huggingface_hub import snapshot_download
+  snapshot_download(\"openbmb/VoxCPM-0.5B\") ``` - Download ZipEnhancer and SenseVoice-Small.
+  We use ZipEnhancer to enhance speech prompts and SenseVoice-Small for speech prompt
+  ASR in the web demo. ``` from modelscope import snapshot_download snapshot_download('iic/speech_zipenhancer_ans_multiloss_16k_base')
+  snapshot_download('iic/SenseVoiceSmall') ``` ### 2. Basic Usage ```python import
+  soundfile as sf import numpy as np from voxcpm import VoxCPM model = VoxCPM.from_pretrained(\"openbmb/VoxCPM1.5\")
+  # Non-streaming wav = model.generate( text=\"VoxCPM is an innovative end-to-end
+  TTS model from ModelBest, designed to generate highly expressive speech.\", prompt_wav_path=None,
+  # optional: path to a prompt speech for voice cloning prompt_text=None, # optional:
+  reference text cfg_value=2.0, # LM guidance on LocDiT, higher for better adherence
+  to the prompt, but maybe worse inference_timesteps=10, # LocDiT inference timesteps,
+  higher for better result, lower for fast speed normalize=False, # enable external
+  TN tool, but will disable native raw text support denoise=False, # enable external
+  Denoise tool, but it may cause some distortion and restrict the sampling rate to
+  16kHz retry_badcase=True, # enable retrying mode for some bad cases (unstoppable)
+  retry_badcase_max_times=3, # maximum retrying times retry_badcase_ratio_threshold=6.0,
+  # maximum length restriction for bad case detection (simple but effective"
 ---
 {% raw %}
 ## 🎙️ VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning

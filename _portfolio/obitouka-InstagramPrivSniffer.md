@@ -2,8 +2,39 @@
 layout: project
 name: Obitouka Instagramprivsniffer
 slug: obitouka-InstagramPrivSniffer
+category: GreyHate-Cyber&Security
 image: https://github.com/obitouka/InstagramPrivSniffer/blob/main/assets/POC/MetaResponce.png
 repo_url: https://github.com/obitouka/InstagramPrivSniffer
+indexed_content: '--> ## DISCLAIMER > [!IMPORTANT] > Date reported: 29/06/2025 > Meta
+  replied: 01/07/2025 > > Discovered an endpoint that allowed viewing posts from a
+  private Instagram account revealed via collaborating with public accounts. It was
+  reported to Meta BBP related to privacy issue but after few days Meta confirmed
+  that this is **intended behavior** depending upon [Collaboration feature](https://help.instagram.com/3526836317546926).
+  Therefore, this is **not a vulnerability** > > ## **POC** > > [!CAUTION] > **Created
+  for educational purposes only, so please use it ethically. The developer is not
+  responsible for any misuse.** ## FEATURE : - **`Access private account posts` revealed
+  via collaborating with public account** - **Download & view media** ## INSTALLATION
+  : 1. **Clone the tool** - Click [here](https://github.com/obitouka/InstagramPrivSniffer/archive/refs/heads/main.zip)
+  to download the ZIP file - *Or* clone the repository via command line: ```bash git
+  clone https://github.com/obitouka/InstagramPrivSniffer.git ``` 2. **Install dependencies**
+  - Navigate to the repository root folder (where requirements.txt is located) in
+  command line and run: ```bash python -m pip install -r requirements.txt ``` ## USAGE
+  : ### View available commands > [!TIP] > Navigate to the `InstagramPrivSniffer`
+  root folder in a command line and run: > ```bash > python main.py -h > ``` ### How
+  to use those commands > [!NOTE] > You have **my permission** to test this command
+  on **my** experimental private Insta account [@keyloggerluvr](https://www.instagram.com/keyloggerluvr)
+  as a proof that tool works. > > Use this to access private account post links >
+  ```bash > python main.py -n keyloggerluvr > ``` > Or use this to download and view
+  post > ```bash > python main.py -d https://www.instagram.com/keyloggerluvr/p/DL47hX4olz8wRQXBQ4HAaEmba9x7nC9HCSm4M80
+  > ``` ## FAQ - **Why “No posts found” even when the account has posts?** Please
+  refer [issues14](https://github.com/obitouka/InstagramPrivSniffer/issues/14) ##
+  CONTRIBUTING : If you have questions, wish to contribute, report a bug or report
+  a security issue, please read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file
+  for guidelines. **For any legal concerns regarding this project, please contact
+  me directly before taking any action (read "Issues Guide" of [CONTRIBUTING.md](https://github.com/obitouka/InstagramPrivSniffer/blob/main/.github/CONTRIBUTING.md#issues-guide)).**
+  ## LICENSE : Licensed under the [MIT License](LICENSE) © 2025 [obitouka](https://github.com/obitouka).
+  You are free to use, modify, and distribute this project, provided that you **give
+  credit, include the original copyright and license notice**.'
 ---
 {% raw %}
 <div align="center">

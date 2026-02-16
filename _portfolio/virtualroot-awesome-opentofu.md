@@ -2,8 +2,60 @@
 layout: project
 name: Virtualroot Awesome Opentofu
 slug: virtualroot-awesome-opentofu
+category: ServerTools-ProxMox-CICD
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/opentofu/opentofu)
+indexed_content: "# Awesome OpenTofu [](https://awesome.re) > A curated and collaborative
+  list of awesome OpenTofu resources and tools. [OpenTofu](https://opentofu.org/)
+  allows you to declaratively manage your infrastructure. It's an open-source, community-driven
+  alternative to Terraform. ## Contents - [Official](#official) - [Community](#community)
+  - [Features](#features) - [Tools](#tools) - [Environment managers](#environment-managers)
+  - [Wrappers](#wrappers) - [CI](#ci) - [Tests](#tests) - [State](#state) - [Providers](#providers)
+  - [Platforms](#platforms) - [Registry](#registry) - [Helpers](#helpers) - [Learning](#learning)
+  - [Media](#media) - [Podcasts](#podcasts) ## Official - [OpenTofu repository](https://github.com/opentofu/opentofu)
+  \U0001F389 - [Fork announcement](https://opentofu.org/announcement) - [Registry](https://github.com/opentofu/registry)
+  - [Registry MCP Server](https://github.com/opentofu/opentofu-mcp-server#opentofu-mcp-server)
+  - [Weekly updates](https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDATES.md)
+  - [Office hours](https://www.youtube.com/watch?v=aEoMzUza6Ok&list=PLnVotLM2QsyhCc1_8PA7fbVF-ixt4_XAY)
+  - [Technical Steering Committee updates](https://github.com/opentofu/org/tree/main/TSC)
+  ## Community *Communication channels, meetups, newsletters, and forums.* - [OpenTofu
+  GitHub Discussion](https://github.com/orgs/opentofu/discussions) - [OpenTofu LinkedIn](https://www.linkedin.com/company/opentofuorg/)
+  - [OpenTofu Slack](https://opentofu.org/slack) - [OpenTofu Twitter](https://twitter.com/opentofuorg)
+  ## Features - [1.10 - Enhanced moved and removed blocks](https://opentofu.org/docs/intro/whats-new/#enhanced-moved-and-removed-blocks)
+  - [1.10 - External key providers](https://opentofu.org/docs/intro/whats-new/#external-key-providers)
+  - [1.10 - OCI registry support](https://opentofu.org/docs/cli/oci_registries/) -
+  [1.10 - S3 native state locking](https://opentofu.org/docs/intro/whats-new/#native-s3-state-locking)
+  - [1.10 - Target and exclude files](https://opentofu.org/docs/intro/whats-new/#target-and-exclude-files)
+  - [1.9 - Provider iteration with for_each](https://opentofu.org/docs/v1.9/intro/whats-new/#provider-iteration-for_each)
+  - [1.9 - The -exclude flag](https://opentofu.org/docs/v1.9/intro/whats-new/#the--exclude-flag)
+  - [1.8 - Early variable and locals evaluation](https://opentofu.org/docs/v1.8/intro/whats-new/#early-variablelocals-evaluation)
+  - [1.8 - Override files for OpenTofu (.tofu)](https://opentofu.org/docs/v1.8/intro/whats-new/#override-files-for-opentofu-keeping-compatibility)
+  - [1.7 - End-to-end encryption for state files](https://opentofu.org/docs/v1.7/intro/whats-new/#state-encryption)
+  - [1.7 - Loopable import blocks](https://opentofu.org/docs/v1.7/intro/whats-new/#loopable-import-blocks)
+  - [1.7 - Provider-defined functions](https://opentofu.org/docs/v1.7/intro/whats-new/#provider-defined-functions)
+  - [1.7 - Removed block](https://opentofu.org/docs/v1.7/intro/whats-new/#removed-block)
+  - [CanI.TF - Feature parity between Terraform and OpenTofu](https://cani.tf/) ##
+  Tools ### Environment managers - [arkade](https://github.com/alexellis/arkade) -
+  CLI and Kubernetes app installer. - [asdf-opentofu](https://github.com/virtualroot/asdf-opentofu)
+  - OpenTofu plugin for asdf version manager. - [tenv](https://github.com/tofuutils/tenv)
+  - Terraform and OpenTofu version manager written in Go. - [tfswitcher](https://github.com/ASleepyCat/tfswitcher)
+  - Terraform and OpenTofu version switcher written in Rust. - [tofuenv](https://github.com/tofuutils/tofuenv)
+  - OpenTofu version manager inspired by tfenv. ### Wrappers *Simplify your OpenTofu
+  workflows with a thin wrapper.* - [Atmos](https://github.com/cloudposse/atmos) -
+  Orchestration tool that keeps environment configuration DRY. - [Terragrunt](https://github.com/gruntwork-io/terragrunt)
+  - Keep your configurations DRY, work with multiple modules, and manage remote state.
+  - [Terramate](https://github.com/terramate-io/terramate) - Automation, orchestration,
+  and code generation for OpenTofu, Terraform, Kubernetes, and others. - [easy_infra](https://github.com/SeisoLLC/easy_infra)
+  - Docker container to simplify and secure the use of infrastructure as code. - [pug](https://github.com/leg100/pug)
+  - A terminal user interface for power users. - [tf](https://github.com/dex4er/tf)
+  - Less verbose and more friendly command outputs. - [tfam](https://github.com/Ant0wan/tfam)
+  - Rust-powered wrapper for concurrent Terraform/OpenTofu apply, enabling multi-deployment
+  support. - [tfexe](https://github.com/Ant0wan/tfexe) - Rust-powered wrapper for
+  seamless execution of tfswitch and Terraform/OpenTofu with version control. - [tfwrapper](https://github.com/claranet/tfwrapper)
+  - Python wrapper that simplifies OpenTofu usage and enforces best practices. ###
+  CI - [Atlantis](https://www.runatlantis.io/) - Automating workflows via pull requests.
+  - [Burrito](https://docs.burrito.tf/latest/overview/) - A TACoS (Terraform Automation
+  and Collaboration Software) that works inside "
 ---
 {% raw %}
 # Awesome OpenTofu [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <!-- omit in toc -->

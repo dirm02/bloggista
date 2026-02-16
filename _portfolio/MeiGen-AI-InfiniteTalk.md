@@ -2,8 +2,65 @@
 layout: project
 name: Meigen Ai Infinitetalk
 slug: MeiGen-AI-InfiniteTalk
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/MeiGen-AI-InfiniteTalk/assets/logo2.jpg
 repo_url: https://github.com/MeiGen-AI/LongCat-Video-Avatar)**,
+indexed_content: "InfiniteTalk: Audio-driven Video Generation for Sparse-Frame Video
+  Dubbing [Shaoshu Yang*](https://scholar.google.com/citations?user=JrdZbTsAAAAJ&hl=en)
+  · [Zhe Kong*](https://scholar.google.com/citations?user=4X3yLwsAAAAJ&hl=zh-CN) ·
+  [Feng Gao*](https://scholar.google.com/citations?user=lFkCeoYAAAAJ) · [Meng Cheng*]()
+  · [Xiangyu Liu*]() · [Yong Zhang](https://yzhang2016.github.io/) &#9993; · [Zhuoliang
+  Kang](https://scholar.google.com/citations?user=W1ZXjMkAAAAJ&hl=en) [Wenhan Luo](https://whluo.github.io/)
+  · [Xunliang Cai](https://openreview.net/profile?id=~Xunliang_Cai1) · [Ran He](https://scholar.google.com/citations?user=ayrg9AUAAAAJ&hl=en)·
+  [Xiaoming Wei](https://scholar.google.com/citations?user=JXV5yrZxj5MC&hl=zh-CN)
+  * Equal Contribution &#9993; Corresponding Authors > **TL; DR:** InfiniteTalk is
+  an unlimited-length talking video generation​​ model that supports both audio-driven
+  video-to-video and image-to-video generation ## \U0001F525 Latest News * Dec 16,
+  2025: \U0001F680 We are excited to announce the release of **[LongCat-Video-Avatar](https://github.com/MeiGen-AI/LongCat-Video-Avatar)**,
+  a unified model that delivers expressive and highly dynamic audio-driven character
+  animation, supporting native tasks including Audio-Text-to-Video, Audio-Text-Image-to-Video,
+  and Video Continuation with seamless compatibility for both single-stream and multi-stream
+  audio inputs. The release includes our Technical Report, [code](https://github.com/meituan-longcat/LongCat-Video),
+  [model weights](https://huggingface.co/meituan-longcat/LongCat-Video-Avatar), and
+  [project page](https://meigen-ai.github.io/LongCat-Video-Avatar/). * August 19,
+  2025: We release the [Technique-Report](https://arxiv.org/abs/2508.14033) , weights,
+  and code of **InfiniteTalk**. The Gradio and the [ComfyUI](https://github.com/MeiGen-AI/InfiniteTalk/tree/comfyui)
+  branch have been released. * August 19, 2025: We release the [project page](https://meigen-ai.github.io/InfiniteTalk/)
+  of **InfiniteTalk** ## ✨ Key Features We propose **InfiniteTalk**​​, a novel sparse-frame
+  video dubbing framework. Given an input video and audio track, InfiniteTalk synthesizes
+  a new video with ​​accurate lip synchronization​​ while ​​simultaneously aligning
+  head movements, body posture, and facial expressions​​ with the audio. Unlike traditional
+  dubbing methods that focus solely on lips, InfiniteTalk enables ​​infinite-length
+  video generation​​ with accurate lip synchronization and consistent identity preservation.
+  Beside, InfiniteTalk can also be used as an image-audio-to-video model with an image
+  and an audio as input. - \U0001F4AC ​​Sparse-frame Video Dubbing​​ – Synchronizes
+  not only lips, but aslo head, body, and expressions - ⏱️ ​​Infinite-Length Generation​​
+  – Supports unlimited video duration - ✨ ​​Stability​​ – Reduces hand/body distortions
+  compared to MultiTalk - \U0001F680 ​​Lip Accuracy​​ – Achieves superior lip synchronization
+  to MultiTalk ## \U0001F310 Community Works - [Wan2GP](https://github.com/deepbeepmeep/Wan2GP/):
+  Thanks [deepbeepmeep](https://github.com/deepbeepmeep) for integrating InfiniteTalk
+  in Wan2GP that is optimized for low VRAM and offers many video edtiting option and
+  other models (MMaudio support, Qwen Image Edit, ...). - [ComfyUI](https://github.com/kijai/ComfyUI-WanVideoWrapper):
+  Thanks for the comfyui support of [kijai](https://github.com/kijai). ## \U0001F4D1
+  Todo List - [x] Release the technical report - [x] Inference - [x] Checkpoints -
+  [x] Multi-GPU Inference - [ ] Inference acceleration - [x] TeaCache - [x] int8 quantization
+  - [ ] LCM distillation - [ ] Sparse Attention - [x] Run with very low VRAM - [x]
+  Gradio demo - [x] ComfyUI ## Video Demos ### Video-to-video (HQ videos can be found
+  on [Google Drive](https://drive.google.com/drive/folders/1BNrH6GJZ2Wt5gBuNLmfXZ6kpqb9xFPjU?usp=sharing)
+  ) ### Image-to-video ## Quick Start ### \U0001F6E0️Installation #### 1. Create a
+  conda environment and install pytorch, xformers ``` conda create -n multitalk python=3.10
+  conda activate multitalk pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1
+  --index-url https://download.pytorch.org/whl/cu121 pip install -U xformers==0.0.28
+  --index-url https://download.pytorch.org/whl/cu121 ``` #### 2. Flash-attn installation:
+  ``` pip install misaki[en] pip install ninja pip install psutil pip install packaging
+  pip install wheel pip install flash_attn==2.7.4.post1 ``` #### 3. Other dependencies
+  ``` pip install -r requirements.txt conda install -c conda-forge librosa ``` ####
+  4. FFmeg installation ``` conda install -c conda-forge ffmpeg ``` or ``` sudo yum
+  install ffmpeg ffmpeg-devel ``` ### \U0001F9F1Model Preparation #### 1. Model Download
+  | Models | Download Link | Notes | | --------------|-------------------------------------------------------------------------------|-------------------------------|
+  | Wan2.1-I2V-14B-480P | \U0001F917 [Huggingface](https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P)
+  | Base model | chinese-wav2vec2-base | \U0001F917 [Huggingface](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base)
+  | Au"
 ---
 {% raw %}
 <div align="center">

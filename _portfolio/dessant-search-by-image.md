@@ -2,8 +2,38 @@
 layout: project
 name: Dessant Search By Image
 slug: dessant-search-by-image
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://i.imgur.com/9JOpViL.png
 repo_url: https://github.com/dessant/search-by-image
+indexed_content: 'Search by Image Sponsors Lenso.ai - Explore billions of images from
+  all around the web. Search for places, people, duplicates, and more. ## Supporting
+  the Project The continued development of Search by Image is made possible thanks
+  to the support of awesome backers. If you''d like to join them, please consider
+  contributing with [Patreon](https://armin.dev/go/patreon?pr=search-by-image&src=repo),
+  [PayPal](https://armin.dev/go/paypal?pr=search-by-image&src=repo) or [Coinbase](https://armin.dev/go/coinbase?pr=search-by-image&src=repo).
+  ## Description Search by Image is a browser extension that makes effortless reverse
+  image searches possible, and comes with support for more than 30 search engines.
+  The extension helps journalists and researchers verify the authenticity of images,
+  and assists in the identification of false information on social media. Search by
+  Image is also popular among photographers, helping artists explore how their work
+  is shared on the web, while shoppers find it valuable for discovering similar products
+  at discounted prices. #### Search Engines A diverse set of reverse image search
+  engines are supported, which can be toggled and reordered from the extension''s
+  options. Visit the wiki for the full list of supported search engines. https://github.com/dessant/search-by-image/wiki/Search-engines
+  #### Search Modes Images positioned at the selected area are detected regardless
+  of how they were embedded in the page. The extension also supports searching with
+  images from your device, images from private sites, and captured areas of the page.
+  A handful of search modes are offered that serve different use cases. The search
+  mode can be set independently for the context menu and the browser toolbar from
+  the extension''s options. - **Select URL**: select an image on the page and search
+  with the image URL. This is the default search mode. - **Select image**: select
+  an image on the page and search with the image file. This search mode is preferred
+  for sites which do not allow the direct linking of images, such as private sites.
+  - **Capture**: search with a captured area of the page. - **Browse**: search with
+  an image from your device. Pasting images from the clipboard is also supported.
+  - **URL**: search with an image URL. ## Screenshots ## License Copyright (c) 2017-2026
+  Armin Sebastian This software is released under the terms of the GNU General Public
+  License v3.0. See the [LICENSE](LICENSE) file for further information.'
 ---
 {% raw %}
 <p align="center"><img width="128" height="128" src="https://i.imgur.com/9JOpViL.png"></p>

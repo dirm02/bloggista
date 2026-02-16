@@ -2,8 +2,61 @@
 layout: project
 name: Troxler Awesome Css Frameworks
 slug: troxler-awesome-css-frameworks
+category: Uncategorized
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/troxler/awesome-css-frameworks
+indexed_content: "# Awesome CSS Frameworks [](https://awesome.re) List of awesome
+  CSS frameworks. Feel free to [contribute](https://github.com/troxler/awesome-css-frameworks/blob/master/.github/CONTRIBUTING.md).
+  **Are you looking for React/Vue/Angular [UI Component Libraries](https://frontaid.ch/web/ui/libraries.html)
+  instead?** ## Contents - [Base / Reset / Normalize](#base--reset--normalize) - [Class-less](#class-less)
+  - [Very Lightweight](#very-lightweight) - [General Purpose](#general-purpose) -
+  [Material Design](#material-design) - [Utility-based](#utility-based) - [Specialized](#specialized)
+  - [Stalled Development](#stalled-development) ## Base / Reset / Normalize - [**modern-normalize**](https://github.com/sindresorhus/modern-normalize)
+  - Normalize browsers' default style. [Repo](https://github.com/sindresorhus/modern-normalize)
+  | #CSS - [**ress**](https://github.com/filipelinhares/ress) - Modern CSS reset.
+  [Repo](https://github.com/filipelinhares/ress) | #CSS - [**Natural Selection**](https://github.com/frontaid/natural-selection)
+  - Collection of best-practice CSS selectors. | #CSS ## Class-less Frameworks that
+  use semantic HTML and do not rely on classes. - [**Pico.css**](https://picocss.com/)
+  - Elegant styles for all native HTML elements, dark mode automatically enabled.
+  [Demo](https://picocss.com/#examples), [Docs](https://picocss.com/docs/), [Repo](https://github.com/picocss/pico)
+  | #SCSS - [**MVP.css**](https://andybrewer.github.io/mvp/) - Minimalist stylesheet
+  for HTML elements. [Docs](https://andybrewer.github.io/mvp/#docs), [Repo](https://github.com/andybrewer/mvp/)
+  | #CSS - [**sakura**](https://oxal.org/projects/sakura/) - Minimal classless CSS
+  framework/theme. [Demo](https://oxal.org/projects/sakura/demo/), [Repo](https://github.com/oxalorg/sakura)
+  | #SCSS - [**Simple.css**](https://simplecss.org/) - Lightweight, classless CSS
+  framework. [Demo](https://simplecss.org/demo), [Docs](https://github.com/kevquirk/simple.css/wiki),
+  [Repo](https://github.com/kevquirk/simple.css/) | #CSS - [**Tacit**](https://yegor256.github.io/tacit/)
+  - CSS framework for dummies, without classes. [Repo](https://github.com/yegor256/tacit/)
+  | #SCSS ## Very Lightweight Frameworks that are smaller than ~10KB. - [**Pure**](https://purecss.io)
+  - Set of small, responsive CSS modules that you can use in every web project. [Demo](https://purecss.io/layouts/),
+  [Docs](https://purecss.io/start/), [Repo](https://github.com/pure-css/pure) | #CSS
+  - [**Picnic CSS**](https://picnicss.com) - Lightweight and beautiful library. [Demo](https://picnicss.com/tests),
+  [Docs](https://picnicss.com/documentation), [Repo](https://github.com/franciscop/picnic)
+  | #SCSS - [**Chota**](https://jenil.github.io/chota/) - Really small CSS framework.
+  [Demo](https://raw.githack.com/jenil/chota/master/test/index.html), [Docs](https://jenil.github.io/chota/#docs),
+  [Repo](https://github.com/jenil/chota) | #CSS ## General Purpose - [**Bootstrap**](https://getbootstrap.com)
+  - The most popular HTML, CSS, and JavaScript framework for developing responsive,
+  mobile first projects on the web. [Demo](https://getbootstrap.com/docs/4.0/examples/),
+  [Docs](https://getbootstrap.com/docs/4.0/), [Repo](https://github.com/twbs/bootstrap)
+  | #SCSS - [**Bulma**](https://bulma.io) - Modern CSS framework based on Flexbox.
+  [Demo](https://bulma.io/expo/), [Docs](https://bulma.io/documentation/overview/start/),
+  [Repo](https://github.com/jgthms/bulma) | #Sass - [**Foundation**](https://get.foundation/)
+  - The most advanced responsive front-end framework in the world. [Demo](https://get.foundation/templates.html),
+  [Docs](https://get.foundation/sites/docs/), [Repo](https://github.com/foundation/foundation-sites)
+  | #SCSS - [**UIkit**](https://getuikit.com) - Lightweight and modular front-end
+  framework for developing fast and powerful web interfaces. [Demo](https://getuikit.com/v2/showcase/index.html),
+  [Docs](https://getuikit.com/docs/introduction), [Repo](https://github.com/uikit/uikit)
+  | #LESS #SCSS - [**Primer**](https://primer.style/) - CSS framework that powers
+  GitHub's front-end design. [Docs](https://primer.style/css/), [Repo](https://github.com/primer/css)
+  | #SCSS - [**Carbon Components**](https://www.carbondesignsystem.com/) - Component
+  library behind IBM's Carbon Design System. [Docs](https://www.carbondesignsystem.com/components/overview/),
+  [Repo](https://github.com/carbon-design-system/carbon) | #SCSS - [**U.S. Web Design
+  System**](https://designsystem.digital.gov/) - Components used by U.S. federal government
+  websites. [Docs](https://designsystem.digital.gov/components/overview/), [Repo](https://github.com/uswds/uswds)
+  | #SCSS - [**Fomantic-UI**](https://fomantic-ui.com/) - Build beautiful websites
+  fast, with concise HTML, intuitive javascript, and simplified debugging. [Docs](https://fomantic-ui.com/introduction/getting-started.html),
+  [Repo](https://github.com/fomantic/fomantic-ui/) | #LESS - [**Blaze UI**](https://www.blazeui.com)
+  - Open source modular toolkit providing great structure f"
 ---
 {% raw %}
 # Awesome CSS Frameworks [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

@@ -2,8 +2,68 @@
 layout: project
 name: Gamosoft Notediscovery
 slug: gamosoft-NoteDiscovery
+category: Uncategorized
 image: https://img.shields.io/github/stars/gamosoft/notediscovery?style=flat
 repo_url: https://github.com/gamosoft/notediscovery.git
+indexed_content: "# \U0001F4DD NoteDiscovery > Your Self-Hosted Knowledge Base ##
+  What is NoteDiscovery? NoteDiscovery is a **lightweight, self-hosted note-taking
+  application** that puts you in complete control of your knowledge base. Write, organize,
+  and discover your notes with a beautiful, modern interface—all running on your own
+  server. ## \U0001F3AF Who is it for? - **Privacy-conscious users** who want complete
+  control over their data - **Developers** who prefer markdown and local file storage
+  - **Knowledge workers** building a personal wiki or second brain - **Teams** looking
+  for a self-hosted alternative to commercial apps - **Anyone** who values simplicity,
+  speed, and ownership --- &nbsp;&nbsp; &nbsp;&nbsp; --- ## ✨ Why NoteDiscovery? ###
+  vs. Commercial Apps (Notion, Evernote, Obsidian Sync) | Feature | NoteDiscovery
+  | Commercial Apps | |---------|---------------|-----------------| | **Cost** | 100%
+  Free | $xxx/month/year | | **Privacy** | Your server, your data | Their servers,
+  their terms | | **Speed** | Lightning fast | Depends on internet | | **Offline**
+  | Always works | Limited or requires sync | | **Customization** | Full control |
+  Limited options | | **No Lock-in** | Plain markdown files | Proprietary formats
+  | ### Key Benefits - \U0001F512 **Total Privacy** - Your notes never leave your
+  server - \U0001F510 **Optional Authentication** - Simple password protection for
+  self-hosted deployments - \U0001F4B0 **Zero Cost** - No subscriptions, no hidden
+  fees - \U0001F680 **Fast & Lightweight** - Instant search and navigation - \U0001F3A8
+  **Beautiful Themes** - Multiple themes, easy to customize - \U0001F50C **Extensible**
+  - Plugin system for custom features - \U0001F4F1 **Responsive** - Works on desktop,
+  tablet, and mobile - \U0001F4C2 **Simple Storage** - Plain markdown files in folders
+  - \U0001F9EE **Math Support** - LaTeX/MathJax for beautiful equations - \U0001F4C4
+  **HTML Export** - Share notes as standalone HTML files - \U0001F578️ **Graph View**
+  - Interactive visualization of connected notes - ⭐ **Favorites** - Star your most-used
+  notes for instant access - \U0001F4D1 **Outline Panel** - Navigate headings with
+  click-to-jump TOC ## \U0001F680 Quick Start ### Quick Setup **Linux/macOS:** ```bash
+  mkdir -p notediscovery/data && cd notediscovery docker run -d --name notediscovery
+  -p 8000:8000 \\ -v $(pwd)/data:/app/data \\ ghcr.io/gamosoft/notediscovery:latest
+  ``` **Windows (PowerShell):** ```powershell mkdir notediscovery\\data; cd notediscovery
+  docker run -d --name notediscovery -p 8000:8000 ` -v ${PWD}/data:/app/data ` ghcr.io/gamosoft/notediscovery:latest
+  ``` Open **http://localhost:8000** — done! \U0001F389 > \U0001F4A1 Your notes are
+  saved in `./data/`. Themes, plugins, locales and default configuration values are
+  included in the image. ### Using Docker Compose Two docker-compose files are provided:
+  | File | Use Case | |------|----------| | `docker-compose.ghcr.yml` | **Recommended**
+  - Uses pre-built image from GitHub Container Registry | | `docker-compose.yml` |
+  For development - Builds from local source | **Option 1: Pre-built image (fastest)**
+  Linux/macOS: ```bash mkdir -p notediscovery/data && cd notediscovery curl -O https://raw.githubusercontent.com/gamosoft/notediscovery/main/docker-compose.ghcr.yml
+  docker-compose -f docker-compose.ghcr.yml up -d ``` Windows (PowerShell): ```powershell
+  mkdir notediscovery\\data; cd notediscovery Invoke-WebRequest -Uri https://raw.githubusercontent.com/gamosoft/notediscovery/main/docker-compose.ghcr.yml
+  -OutFile docker-compose.ghcr.yml docker-compose -f docker-compose.ghcr.yml up -d
+  ``` **Option 2: Build from source (for development)** ```bash git clone https://github.com/gamosoft/notediscovery.git
+  cd notediscovery docker-compose up -d ``` See [Advanced Docker Setup](#advanced-docker-setup)
+  for volume details. ### Running Locally (Without Docker) For development or if you
+  prefer running directly: ```bash # Clone the repository git clone https://github.com/gamosoft/notediscovery.git
+  cd notediscovery # Install dependencies pip install -r requirements.txt # Run the
+  application python run.py # Access at http://localhost:8000 ``` **Requirements:**
+  - Python 3.8 or higher - pip (Python package manager) #### Using Virtual Environments
+  (Recommended for Arch/Fedora/Ubuntu 23.04+) Modern Linux distributions enforce [PEP
+  668](https://peps.python.org/pep-0668/), which prevents system-wide pip installs.
+  Use a virtual environment instead: ```bash # Clone the repository git clone https://github.com/gamosoft/notediscovery.git
+  cd notediscovery # Create a virtual environment python -m venv venv # Activate it
+  (choose your shell): source venv/bin/activate # Bash/Zsh (most Linux distros) source
+  venv/bin/activate.fish # Fish (CachyOS, etc.) source venv/bin/activate.csh # Csh/Tcsh
+  .\\venv\\Scripts\\activate # Windows PowerShell # Install dependencies and run pip
+  install -r requirements.txt python run.py ``` > ⚠️ **Warning** > > *You'll need
+  to activate the virtual environment (source venv/bin/activate) each time you open
+  a new terminal before running the app* ### Advanced Docker Setup The image includes
+  bundled config, themes, plugins, and locales. To"
 ---
 {% raw %}
 # 📝 NoteDiscovery

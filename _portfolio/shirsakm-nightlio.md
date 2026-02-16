@@ -2,8 +2,68 @@
 layout: project
 name: Shirsakm Nightlio
 slug: shirsakm-nightlio
+category: Serv&Prod-Tools
 image: https://img.shields.io/github/license/shirsakm/nightlio?style=flat-square
 repo_url: https://github.com/shirsakm/nightlio
+indexed_content: "Nightlio [](https://github.com/shirsakm/nightlio/blob/main/LICENSE)
+  [](https://github.com/shirsakm/nightlio/stargazers) [](https://github.com/shirsakm/nightlio/actions)
+  **Privacy-first mood tracker and daily journal, designed for effortless self-hosting.**
+  **Your data, your server, your rules.** --> ## Why Nightlio? Nightlio was inspired
+  by awesome mood-tracking apps like Daylio, but born out of frustration with aggressive
+  subscription models, paywalls, and a lack of cross-platform access. I wanted a beautiful,
+  effective tool to log my mood and journal my thoughts without compromising on privacy
+  or being locked into a single device. Nightlio is the result: a feature-complete,
+  open-source alternative that you can run anywhere. It's fully web-based and responsive
+  for use on both desktop and mobile. No ads, no subscriptions, and absolutely no
+  data mining. Just you and your data. ### Key Features * **Rich Journaling with Markdown:**
+  Write detailed notes for every entry using Markdown for formatting, lists, and links.
+  * **Track Your Mood & Find Patterns:** Log your daily mood on a simple 5-point scale
+  and use customizable tags (e.g., 'Sleep', 'Productivity') to discover what influences
+  your state of mind. * **Insightful Analytics:** View your mood history on a calendar,
+  see your average mood over time, and track your journaling streak to stay motivated.
+  * **Privacy First, Always:** Built from the ground up to be self-hosted. Your sensitive
+  data is stored in a simple SQLite database file on *your* server. No third-party
+  trackers or analytics. * **Simple Self-Hosting with Docker:** Get up and running
+  in minutes with a single `docker compose up` command. * **Gamified Achievements:**
+  Stay consistent with built-in achievements that unlock as you build your journaling
+  habit. \U0001F319 ## Usage ### Docker Quickstart (Recommended) > [!NOTE] > By default,
+  Nightlio runs in **single-user mode**. Enable Google OAuth for multi-user support.
+  Get your own Nightlio instance running in under 5 minutes. ```bash # 1. Clone the
+  repository git clone https://github.com/shirsakm/nightlio.git cd nightlio # 2. Create
+  your configuration file cp .env.docker .env # 3. Set your secrets # IMPORTANT: Open
+  the .env file and set unique, random values for # at least SECRET_KEY and JWT_SECRET.
+  nano .env # 4. Launch the application (uses published images by default) docker
+  compose up -d ``` Alternatively, give it a try without cloning! ```bash docker network
+  create nightlio-test || true docker run -d --name nightlio-api \\ --network nightlio-test
+  --network-alias api \\ -e SECRET_KEY=$(openssl rand -hex 32) \\ -e JWT_SECRET=$(openssl
+  rand -hex 32) \\ -e CORS_ORIGINS=http://localhost:5173 \\ -e ENABLE_GOOGLE_OAUTH=0
+  \\ -e DEFAULT_SELF_HOST_ID=selfhost_default_user \\ -e DATABASE_PATH=/app/data/nightlio.db
+  \\ -e PORT=5000 \\ -v nightlio_data:/app/data \\ ghcr.io/shirsakm/nightlio-api:latest
+  docker run -d --name nightlio-frontend \\ --network nightlio-test \\ -p 5173:80
+  \\ ghcr.io/shirsakm/nightlio-frontend:latest ``` Your instance is now live at http://localhost:5173/.
+  ### Self-hosting Here are two easy paths for self-hosting using the published GHCR
+  images. #### Use the repo’s production compose (nginx + TLS) 1) Clone and configure
+  ```bash git clone https://github.com/shirsakm/nightlio.git cd nightlio cp .env.docker
+  .env # Edit .env: set strong SECRET_KEY and JWT_SECRET, and set CORS_ORIGINS to
+  your domain ``` 2) Pin images (recommended) and mount data for backups ```bash export
+  API_IMAGE=ghcr.io/shirsakm/nightlio-api:latest export WEB_IMAGE=ghcr.io/shirsakm/nightlio-frontend:latest
+  mkdir -p data # Add a bind mount for your DB by editing docker-compose.prod.yml
+  (api service): # volumes: # - ./data:/app/data ``` 3) Bring up the stack (nginx
+  is the only public service) ```bash docker compose -f docker-compose.prod.yml up
+  -d ``` TLS: put your certs in `./ssl` (`fullchain.pem`, `privkey.pem`). The provided
+  nginx config will serve `80/443`. Upgrade later: ```bash docker compose -f docker-compose.prod.yml
+  pull docker compose -f docker-compose.prod.yml up -d ``` #### Minimal compose Create
+  docker-compose.yml in an empty folder with: ```yaml services: api: image: ghcr.io/shirsakm/nightlio-api:latest
+  restart: unless-stopped environment: - SECRET_KEY=change-me - JWT_SECRET=change-me-too
+  - CORS_ORIGINS=https://your.domain - ENABLE_GOOGLE_OAUTH=0 - DEFAULT_SELF_HOST_ID=selfhost_default_user
+  - DATABASE_PATH=/app/data/nightlio.db - PORT=5000 volumes: - ./data:/app/data expose:
+  - \"5000\" networks: { nightlio: { aliases: [api] } } web: image: ghcr.io/shirsakm/nightlio-frontend:latest
+  restart: unless-stopped depends_on: [api] ports: - \"80:80\" # or put behind your
+  own reverse proxy with TLS networks: [nightlio] networks: { nightlio: {} } ``` Run
+  it: ```bash docker compose up -d ``` > [!NOTE] > 1. Persistent data lives in `./data/nightlio.db`
+  — include it in backups. > 2. Pin to a version for predictable upgrades; switch
+  to newer tags when ready. \U0001F319 ### \U0001F527 Configuration (`.env`) You can
+  cust"
 ---
 {% raw %}
 <div align="center">

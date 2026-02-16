@@ -2,8 +2,69 @@
 layout: project
 name: Adrianhajdin Banking
 slug: adrianhajdin-banking
+category: Uncategorized
 image: https://github.com/adrianhajdin/banking/assets/151519281/3c03519c-7ebd-4539-b598-49e63d1770b4
 repo_url: https://github.com/adrianhajdin/banking
+indexed_content: "A Fintech Bank Application Build this project step by step with
+  our detailed tutorial on JavaScript Mastery YouTube. Join the JSM family! ## \U0001F4CB
+  Table of Contents 1. \U0001F916 [Introduction](#introduction) 2. ⚙️ [Tech Stack](#tech-stack)
+  3. \U0001F50B [Features](#features) 4. \U0001F938 [Quick Start](#quick-start) 5.
+  \U0001F578️ [Code Snippets to Copy](#snippets) 6. \U0001F517 [Assets](#links) 7.
+  \U0001F680 [More](#more) ## \U0001F6A8 Tutorial This repository contains the code
+  corresponding to an in-depth tutorial available on our YouTube channel, JavaScript
+  Mastery . If you prefer visual learning, this is the perfect resource for you. Follow
+  our tutorial to learn how to build projects like these step-by-step in a beginner-friendly
+  manner! ## \U0001F916 Introduction Built with Next.js, Horizon is a financial SaaS
+  platform that connects to multiple bank accounts, displays transactions in real-time,
+  allows users to transfer money to other platform users, and manages their finances
+  altogether. If you're getting started and need assistance or face any bugs, join
+  our active Discord community with over **34k+** members. It's a place where people
+  help each other out. ## ⚙️ Tech Stack - Next.js - TypeScript - Appwrite - Plaid
+  - Dwolla - React Hook Form - Zod - TailwindCSS - Chart.js - ShadCN ## \U0001F50B
+  Features \U0001F449 **Authentication**: An ultra-secure SSR authentication with
+  proper validations and authorization \U0001F449 **Connect Banks**: Integrates with
+  Plaid for multiple bank account linking \U0001F449 **Home Page**: Shows general
+  overview of user account with total balance from all connected banks, recent transactions,
+  money spent on different categories, etc \U0001F449 **My Banks**: Check the complete
+  list of all connected banks with respective balances, account details \U0001F449
+  **Transaction History**: Includes pagination and filtering options for viewing transaction
+  history of different banks \U0001F449 **Real-time Updates**: Reflects changes across
+  all relevant pages upon connecting new bank accounts. \U0001F449 **Funds Transfer**:
+  Allows users to transfer funds using Dwolla to other accounts with required fields
+  and recipient bank ID. \U0001F449 **Responsiveness**: Ensures the application adapts
+  seamlessly to various screen sizes and devices, providing a consistent user experience
+  across desktop, tablet, and mobile platforms. and many more, including code architecture
+  and reusability. ## \U0001F938 Quick Start Follow these steps to set up the project
+  locally on your machine. **Prerequisites** Make sure you have the following installed
+  on your machine: - [Git](https://git-scm.com/) - [Node.js](https://nodejs.org/en)
+  - [npm](https://www.npmjs.com/) (Node Package Manager) **Cloning the Repository**
+  ```bash git clone https://github.com/adrianhajdin/banking.git cd banking ``` **Installation**
+  Install the project dependencies using npm: ```bash npm install ``` **Set Up Environment
+  Variables** Create a new file named `.env` in the root of your project and add the
+  following content: ```env #NEXT NEXT_PUBLIC_SITE_URL= #APPWRITE NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+  NEXT_PUBLIC_APPWRITE_PROJECT= APPWRITE_DATABASE_ID= APPWRITE_USER_COLLECTION_ID=
+  APPWRITE_BANK_COLLECTION_ID= APPWRITE_TRANSACTION_COLLECTION_ID= APPWRITE_SECRET=
+  #PLAID PLAID_CLIENT_ID= PLAID_SECRET= PLAID_ENV= PLAID_PRODUCTS= PLAID_COUNTRY_CODES=
+  #DWOLLA DWOLLA_KEY= DWOLLA_SECRET= DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+  DWOLLA_ENV=sandbox ``` Replace the placeholder values with your actual respective
+  account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io/?utm_source=youtube&utm_content=reactnative&ref=JSmastery),
+  [Plaid](https://plaid.com/) and [Dwolla](https://www.dwolla.com/) **Running the
+  Project** ```bash npm run dev ``` Open [http://localhost:3000](http://localhost:3000)
+  in your browser to view the project. ## \U0001F578️ Snippets .env.example ```env
+  #NEXT NEXT_PUBLIC_SITE_URL= #APPWRITE NEXT_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+  NEXT_PUBLIC_APPWRITE_PROJECT= APPWRITE_DATABASE_ID= APPWRITE_USER_COLLECTION_ID=
+  APPWRITE_BANK_COLLECTION_ID= APPWRITE_TRANSACTION_COLLECTION_ID= APPWRITE_SECRET=
+  #PLAID PLAID_CLIENT_ID= PLAID_SECRET= PLAID_ENV=sandbox PLAID_PRODUCTS=auth,transactions,identity
+  PLAID_COUNTRY_CODES=US,CA #DWOLLA DWOLLA_KEY= DWOLLA_SECRET= DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+  DWOLLA_ENV=sandbox ``` exchangePublicToken ```typescript // This function exchanges
+  a public token for an access token and item ID export const exchangePublicToken
+  = async ({ publicToken, user, }: exchangePublicTokenProps) => { try { // Exchange
+  public token for access token and item ID const response = await plaidClient.itemPublicTokenExchange({
+  public_token: publicToken, }); const accessToken = response.data.access_token; const
+  itemId = response.data.item_id; // Get account information from Plaid using the
+  access token const accountsResponse = await plaidClient.accountsGet({ access_token:
+  accessToken, }); const accountData = accountsResponse.data.accounts[0]; // Create
+  a processor token for Dwolla using the access token a"
 ---
 {% raw %}
 <div align="center">

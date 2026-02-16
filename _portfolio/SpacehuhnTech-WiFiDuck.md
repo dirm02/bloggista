@@ -2,8 +2,67 @@
 layout: project
 name: Spacehuhntech Wifiduck
 slug: SpacehuhnTech-WiFiDuck
+category: GreyHate-Cyber&Security
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/SpacehuhnTech-WiFiDuck/img/diy_example.jpg
 repo_url: https://github.com/spacehuhn/WiFiDuck
+indexed_content: "# WiFi Duck ### \U0001F449 Visit [wifiduck.com](https://wifiduck.com)
+  for an improved documentation. Want to learn more about BadUSBs? Check out our online
+  course: [learnbadusb.com](https://learnbadusb.com) --- * [About](#about) * [Usage](#usage)
+  * [Support us](#support-us) * [Buy Hardware](#buy-hardware) + [Malduino W](#malduino-w)
+  + [DSTIKE WiFi Duck](#dstike-wifi-duck) * [DIY Hardware](#diy-hardware) + [Atmega32u4
+  Development Boards](#atmega32u4-development-boards) + [ESP8266 Development Boards](#esp8266-development-boards)
+  + [Connections](#connections) + [PCB](#pcb) * [Flash Software](#flash-software)
+  + [Flash Atmega32u4](#flash-atmega32u4) + [Flash ESP8266](#flash-esp8266) + [Unbrick
+  Atmega32u4](#unbrick-atmega32u4) * [Scripting](#scripting) + [Basics](#basics) +
+  [Functions](#functions) + [Standard Keys](#standard-keys) + [Modifier Keys](#modifier-keys)
+  + [Other Keys](#other-keys) + [Numpad Keys](#numpad-keys) + [Examples](#examples)
+  * [CLI Commands](#cli-commands) + [General](#general) + [SPIFFS File Management](#spiffs-file-management)
+  * [How to Debug](#how-to-debug) * [Development](#development) + [Edit Web Files](#edit-web-files)
+  + [Translate Keyboard Layout](#translate-keyboard-layout) * [Disclaimer](#disclaimer)
+  * [License](#license) * [Credits](#credits) ## About This open-source project aims
+  to provide a user-friendly tool to learn about keystroke injection attacks and 'BadUSBs'.
+  By emulating a USB keyboard, tools like this can gain full access to any computer
+  with a USB port in a matter of seconds! This is made possible by the fact that keyboards
+  are trusted by computers. You can have full control over a computer with just a
+  keyboard. A BadUSB pretends to be a keyboard to the computer to send keystrokes.
+  But unlike a human, it can type hundreds of characters per second. By using a simple
+  scripting language, it's easy to make BadUSBs type whatever you want. With the WiFi
+  Duck, you can simply connect via WiFi to manage all scripts from within a web interface.
+  This means that, unlike other BadUSBs, you don't need to install an app, log in,
+  compile or copy scripts to an SD card. ## Usage Watch the full video 1. Plug in
+  your WiFi Duck 2. Connect to the WiFi network `wifiduck` with the password `wifiduck`
+  3. Open a browser and visit `192.168.4.1` 4. Write, save and run your first Ducky
+  Script 5. [Recommended] Open `Settings` (top right corner) and update SSID and password
+  **Help I forgot the password:** [Flash the ESP8266](#flash-esp8266), but make sure
+  that you select `Erase Flash: Sketch + WiFi Settings` under Tools in the Arduino
+  IDE. If you have further questions, check out the [issue section](https://github.com/spacehuhn/WiFiDuck/issues).
+  ## Support us Hey, do you like this kind of project? It took a huge amount of effort
+  to create! To make sure we can keep working on free and open-source projects like
+  this, **please consider becoming a [:heart: Sponsor](https://github.com/sponsors/spacehuhntech)
+  or support us via [:coffee: Ko-fi](https://ko-fi.com/spacehuhn).** Visit [spacehuhn.com](https://spacehuhn.com)
+  to learn more about us. :chicken: ## Buy Hardware ### Malduino W Go to Maltronics.com
+  A nicely encased, inconspicuous looking BadUSB by Maltronics. Having USB-A and USB-C
+  makes it compatible with all kind of devices. It comes flashed with the WiFi Duck
+  firmware and works plug and play. ℹ️ **[Documentation can be found here](http://docs.maltronics.com/malduino-w/)**
+  ### DSTIKE WiFi Duck Got to DSTIKE.com A custom designed development board which
+  comes preflashed with this software by Travis Lin. You can update the ESP8266 over
+  the air and flash the Atmega32u4 via Arduino, all while enclosed in its neat little
+  case. \U0001F4FA **[Watch the How to Update Tutorial here](https://youtu.be/e3-nsOjclsY)**.
+  If you wish to develop your own software or help improve this one, the 8-bit DIP-switch
+  makes it easy for you to access the Atmega32u4 or ESP8266 independently. For more
+  info see [Flash Software](#flash-software). | Mode | Atmega32u4 | ESP8266 | DIP-switch
+  | Image | | --- | --- | --- | --- | --- | | Default Operating Mode | USB | On |
+  10101101 | | | Atmega32u4 Flash Mode | USB | Off |10101010 | | | ESP8266 Flash Mode
+  | Off | USB | 01011101 | | ## DIY Hardware Watch the video tutorial To build a WiFi
+  Duck yourself, you need the following hardware: * An Atmega32u4 development board
+  (see the list below) * An ESP8266 or ESP8285 development board (see the list below)
+  * Optional: A single Neopixel (WS2812b) or Dotstar (APA102) LED To flash the microcontrollers
+  you need a computer and USB cable. If you're a beginner, it's recommended you wire
+  everything together on a breadboard first! In this case, you'd also need a breadboard
+  with a couple of jumper wires. If you wish to solder everything together into a
+  small gadget, you also need soldering equipment. You can use any Atmega32u4 or ESP8266
+  based development board, but if you have no idea where to start, here's a list.
+  :warning: **Keep in mind that you will need both micro"
 ---
 {% raw %}
 # WiFi Duck

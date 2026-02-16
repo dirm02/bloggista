@@ -2,8 +2,69 @@
 layout: project
 name: Rcourtman Pulse
 slug: rcourtman-Pulse
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/github/stars/rcourtman/Pulse?style=flat&logo=github
 repo_url: https://github.com/rcourtman/Pulse)
+indexed_content: "# Pulse Real-time monitoring for Proxmox, Docker, and Kubernetes
+  infrastructure. [](https://github.com/rcourtman/Pulse) [](https://github.com/rcourtman/Pulse/releases/latest)
+  [](https://hub.docker.com/r/rcourtman/pulse) [](LICENSE) [Live Demo](https://demo.pulserelay.pro)
+  • [Pulse Pro](https://pulserelay.pro) • [Documentation](docs/README.md) • [Report
+  Bug](https://github.com/rcourtman/Pulse/issues) --- ## \U0001F680 Overview Pulse
+  is a modern, unified dashboard for monitoring your **infrastructure** across Proxmox,
+  Docker, and Kubernetes. It consolidates metrics, alerts, and AI-powered insights
+  from all your systems into a single, beautiful interface. Designed for homelabs,
+  sysadmins, and MSPs who need a \"single pane of glass\" without the complexity of
+  enterprise monitoring stacks. ## \U0001F9ED Unified Navigation Pulse now groups
+  everything by task instead of data source: - **Infrastructure** for hosts and nodes
+  - **Workloads** for VMs and containers - **Storage** and **Backups** as top-level
+  views - **Services** for PMG instances (when connected) Power-user shortcuts: -
+  `g i` → Infrastructure, `g w` → Workloads, `?` → shortcuts help - `/` or `Cmd/Ctrl+K`
+  → global search ## ✨ Features ### Core Monitoring - **Unified Monitoring**: View
+  health and metrics for PVE, PBS, PMG, Docker, and Kubernetes in one place - **Smart
+  Alerts**: Get notified via Discord, Slack, Telegram, Email, and more - **Auto-Discovery**:
+  Automatically finds Proxmox nodes on your network - **Metrics History**: Persistent
+  storage with configurable retention - **Backup Explorer**: Visualize backup jobs
+  and storage usage ### AI-Powered - **Chat Assistant (BYOK)**: Ask questions about
+  your infrastructure in natural language - **Patrol (BYOK)**: Background health checks
+  that generate findings on a schedule - **Alert Analysis (Pro)**: Optional AI analysis
+  when alerts fire - **Cost Tracking**: Track usage and costs per provider/model ###
+  Multi-Platform - **Proxmox VE/PBS/PMG**: Full monitoring and management - **Kubernetes**:
+  Complete K8s cluster monitoring via agents - **Docker/Podman**: Container and Swarm
+  service monitoring - **OCI Containers**: Proxmox 9.1+ native container support ###
+  Security & Operations - **Secure by Design**: Credentials encrypted at rest, strict
+  API scoping - **One-Click Updates**: Easy upgrades for supported deployments - **OIDC/SSO**:
+  Single sign-on authentication - **Privacy Focused**: No telemetry, all data stays
+  on your server ## ⚡ Quick Start ### Option 1: Proxmox LXC (Recommended) Run this
+  one-liner on your Proxmox host to create a lightweight LXC container: ```bash curl
+  -fsSL https://github.com/rcourtman/Pulse/releases/latest/download/install.sh | bash
+  ``` Note: this installs the Pulse **server**. Agent installs use the command generated
+  in **Settings → Agents → Installation commands** (served from `/install.sh` on your
+  Pulse server). ### Option 2: Docker ```bash docker run -d \\ --name pulse \\ -p
+  7655:7655 \\ -v pulse_data:/data \\ --restart unless-stopped \\ rcourtman/pulse:latest
+  ``` Access the dashboard at `http:// :7655`. ## \U0001F4DA Documentation - **[Installation
+  Guide](docs/INSTALL.md)**: Detailed instructions for Docker, Kubernetes, and bare
+  metal. - **[Configuration](docs/CONFIGURATION.md)**: Setup authentication, notifications,
+  and advanced settings. - **[Security](SECURITY.md)**: Learn about Pulse's security
+  model and best practices. - **[API Reference](docs/API.md)**: Integrate Pulse with
+  your own tools. - **[Architecture](ARCHITECTURE.md)**: High-level system design
+  and data flow. - **[Troubleshooting](docs/TROUBLESHOOTING.md)**: Solutions to common
+  issues. - **[Agent Security](docs/AGENT_SECURITY.md)**: Details on checksum-verified
+  updates and verification. - **[Docker Monitoring](docs/DOCKER.md)**: Setup and management
+  of Docker agents. ## \U0001F310 Community Integrations Community-maintained integrations
+  and addons: - **[Home Assistant Addons](https://github.com/Kosztyk/homeassistant-addons)**
+  - Run Pulse Agent and Pulse Server as Home Assistant addons. ## \U0001F680 Pulse
+  Pro **[Pulse Pro](https://pulserelay.pro)** unlocks **Auto-Fix and advanced AI analysis**
+  — **Pulse Patrol is available to everyone with BYOK**. | Feature | Free | Pro |
+  |---------|------|-----| | Real-time dashboard | ✅ | ✅ | | Threshold alerts | ✅
+  | ✅ | | AI Chat (BYOK) | ✅ | ✅ | | **Pulse Patrol (BYOK)** | ✅ | ✅ | | Alert-triggered
+  AI analysis | — | ✅ | | Kubernetes AI analysis | — | ✅ | | Auto-fix + autonomous
+  mode | — | ✅ | | Centralized agent profiles | — | ✅ | | **Advanced Reporting (PDF/CSV)**
+  | — | ✅ | | **Audit Webhooks (SIEM integration)** | — | ✅ | | Priority support |
+  — | ✅ | Pulse Patrol runs on your schedule (every 10 minutes to every 7 days, default
+  6 hours) and finds: - ZFS pools approaching capacity - Backup jobs that silently
+  failed - VMs stuck in restart loops - Clock drift across cluster nodes - Container
+  health check failures Pulse Patrol uses your configured provider (BYOK) and runs
+  entirely on your server. Technical highlights: - Cross-system con"
 ---
 {% raw %}
 # Pulse

@@ -2,8 +2,68 @@
 layout: project
 name: Suitenumerique Docs
 slug: suitenumerique-docs
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/suitenumerique-docs/docs/assets/banner-docs.png
 repo_url: https://github.com/suitenumerique/docs
+indexed_content: "Chat on Matrix - Documentation - Getting started - Reach out # La
+  Suite Docs : Collaborative Text Editing Docs, where your notes can become knowledge
+  through live collaboration. ## Why use Docs ❓ Docs is a collaborative text editor
+  designed to address common challenges in knowledge building and sharing. ### Write
+  * \U0001F60C Get simple, accessible online editing for your team. * \U0001F485 Create
+  clean documents with beautiful formatting options. * \U0001F58C️ Focus on your content
+  using either the in-line editor, or [the Markdown syntax](https://www.markdownguide.org/basic-syntax/).
+  * \U0001F9F1 Quickly design your page thanks to the many block types, accessible
+  from the `/` slash commands, as well as keyboard shortcuts. * \U0001F50C Write offline!
+  Your edits will be synced once you're back online. * ✨ Save time thanks to our AI
+  actions, such as rephrasing, summarizing, fixing typos, translating, etc. You can
+  even turn your selected text into a prompt! ### Work together * \U0001F91D Enjoy
+  live editing! See your team collaborate in real time. * \U0001F512 Keep your information
+  secure thanks to granular access control. Only share with the right people. * \U0001F4D1
+  Export your content in multiple formats (`.odt`, `.docx`, `.pdf`) with customizable
+  templates. * \U0001F4DA Turn your team's collaborative work into organized knowledge
+  with Subpages. ### Self-host #### \U0001F680 Docs is easy to install on your own
+  servers We use Kubernetes for our [production instance](https://docs.numerique.gouv.fr/)
+  but also support Docker Compose. The community contributed a couple other methods
+  (Nix, YunoHost etc.) check out the [docs](/docs/installation/README.md) to get detailed
+  instructions and examples. #### \U0001F30D Known instances We hope to see many more,
+  here is an incomplete list of public Docs instances. Feel free to make a PR to add
+  ones that are not listed below\U0001F64F | Url | Org | Public | | --- | --- | -------
+  | | [docs.numerique.gouv.fr](https://docs.numerique.gouv.fr/) | DINUM | French public
+  agents working for the central administration and the extended public sphere. ProConnect
+  is required to login in or sign up| | [docs.suite.anct.gouv.fr](https://docs.suite.anct.gouv.fr/)
+  | ANCT | French public agents working for the territorial administration and the
+  extended public sphere. ProConnect is required to login in or sign up| | [notes.demo.opendesk.eu](https://notes.demo.opendesk.eu)
+  | ZenDiS | Demo instance of OpenDesk. Request access to get credentials | | [notes.liiib.re](https://notes.liiib.re/)
+  | lasuite.coop | Free and open demo to all. Content and accounts are reset after
+  one month | | [docs.federated.nexus](https://docs.federated.nexus/) | federated.nexus
+  | Public instance, but you have to [sign up for a Federated Nexus account](https://federated.nexus/register/).
+  | | [docs.demo.mosacloud.eu](https://docs.demo.mosacloud.eu/) | mosa.cloud | Demo
+  instance of mosa.cloud, a dutch company providing services around La Suite apps.
+  | #### ⚠️ Advanced features For some advanced features (ex: Export as PDF) Docs
+  relies on XL packages from BlockNote. These are licenced under GPL and are not MIT
+  compatible. You can perfectly use Docs without these packages by setting the environment
+  variable `PUBLISH_AS_MIT` to true. That way you'll build an image of the application
+  without the features that are not MIT compatible. Read the [environment variables
+  documentation](/docs/env.md) for more information. ## Getting started \U0001F527
+  ### Test it You can test Docs on your browser by visiting this [demo document](https://docs.la-suite.eu/docs/9137bbb5-3e8a-4ff7-8a36-fcc4e8bd57f4/)
+  ### Run Docs locally > ⚠️ The methods described below for running Docs locally is
+  **for testing purposes only**. It is based on building Docs using [Minio](https://min.io/)
+  as an S3-compatible storage solution. Of course you can choose any S3-compatible
+  storage solution. **Prerequisite** Make sure you have a recent version of Docker
+  and [Docker Compose](https://docs.docker.com/compose/install) installed on your
+  laptop, then type: ```shellscript $ docker -v Docker version 20.10.2, build 2291f61
+  $ docker compose version Docker Compose version v2.32.4 ``` > ⚠️ You may need to
+  run the following commands with `sudo`, but this can be avoided by adding your user
+  to the local `docker` group. **Project bootstrap** The easiest way to start working
+  on the project is to use [GNU Make](https://www.gnu.org/software/make/): ```shellscript
+  $ make bootstrap FLUSH_ARGS='--no-input' ``` This command builds the `app-dev` and
+  `frontend-dev` containers, installs dependencies, performs database migrations and
+  compiles translations. It's a good idea to use this command each time you are pulling
+  code from the project repository to avoid dependency-related or migration-related
+  issues. Your Docker services should now be up and running \U0001F389 You can access
+  the project by going to . You will be prompted to log in. The default credentials
+  are: ``` username: impress password: impress ``` \U0001F4DD Note that if you need
+  to run them afterwards, you can use the eponymous Make rule: ```shellscript $ m"
 ---
 {% raw %}
 <p align="center">

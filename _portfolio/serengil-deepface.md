@@ -2,8 +2,61 @@
 layout: project
 name: Serengil Deepface
 slug: serengil-deepface
+category: Uncategorized
 image: https://static.pepy.tech/personalized-badge/deepface?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads
 repo_url: https://github.com/serengil/deepface
+indexed_content: '# deepface [](https://pepy.tech/project/deepface) [](https://github.com/serengil/deepface/stargazers)
+  [](https://hub.docker.com/r/serengil/deepface) [](https://github.com/serengil/deepface/blob/master/LICENSE)
+  [](https://github.com/serengil/deepface/actions/workflows/tests.yml) [](https://doi.org/10.35378/gujs.1794891)
+  [](https://sefiks.com) [](https://www.youtube.com/@sefiks?sub_confirmation=1) [](https://twitter.com/intent/user?screen_name=serengil)
+  [](https://www.patreon.com/serengil?repo=deepface) [](https://github.com/sponsors/serengil)
+  [](https://buymeacoffee.com/serengil) DeepFace is a lightweight [face recognition](https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/)
+  and facial attribute analysis ([age](https://sefiks.com/2019/02/13/apparent-age-and-gender-prediction-in-keras/),
+  [gender](https://sefiks.com/2019/02/13/apparent-age-and-gender-prediction-in-keras/),
+  [emotion](https://sefiks.com/2018/01/01/facial-expression-recognition-with-keras/)
+  and [race](https://sefiks.com/2019/11/11/race-and-ethnicity-prediction-in-keras/))
+  framework for python. It is a hybrid face recognition framework wrapping **state-of-the-art**
+  models: [`VGG-Face`](https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/),
+  [`FaceNet`](https://sefiks.com/2018/09/03/face-recognition-with-facenet-in-keras/),
+  [`OpenFace`](https://sefiks.com/2019/07/21/face-recognition-with-openface-in-keras/),
+  [`DeepFace`](https://sefiks.com/2020/02/17/face-recognition-with-facebook-deepface-in-keras/),
+  [`DeepID`](https://sefiks.com/2020/06/16/face-recognition-with-deepid-in-keras/),
+  [`ArcFace`](https://sefiks.com/2020/12/14/deep-face-recognition-with-arcface-in-keras-and-python/),
+  [`Dlib`](https://sefiks.com/2020/07/11/face-recognition-with-dlib-in-python/), `SFace`,
+  `GhostFaceNet`, `Buffalo_L`. [A modern face recognition pipeline](https://sefiks.com/2020/05/01/a-gentle-introduction-to-face-recognition-in-deep-learning/)
+  consists of 5 common stages: [detect](https://sefiks.com/2020/08/25/deep-face-detection-with-opencv-in-python/),
+  [align](https://sefiks.com/2020/02/23/face-alignment-for-face-recognition-in-python-within-opencv/),
+  [normalize](https://sefiks.com/2020/11/20/facial-landmarks-for-face-recognition-with-dlib/),
+  [represent](https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/) and
+  [verify](https://sefiks.com/2020/05/22/fine-tuning-the-threshold-in-face-recognition/).
+  While DeepFace handles all these common stages in the background, you don’t need
+  to acquire in-depth knowledge about all the processes behind it. You can just call
+  its verification, find or analysis function with a single line of code. [`Experiments`](https://github.com/serengil/deepface/tree/master/benchmarks)
+  show that **human beings have 97.53% accuracy** on facial recognition tasks whereas
+  those models already reached and passed that accuracy level. ## Installation [](https://pypi.org/project/deepface/)
+  The easiest way to install deepface is to download it from [`PyPI`](https://pypi.org/project/deepface/).
+  It''s going to install the library itself and its prerequisites as well. ```shell
+  $ pip install deepface ``` Alternatively, you can also install deepface from its
+  source code. Source code may have new features not published in pip release yet.
+  ```shell $ git clone https://github.com/serengil/deepface.git $ cd deepface $ pip
+  install -e . ``` Once you installed the library, then you will be able to import
+  it and use its functionalities. ```python from deepface import DeepFace ``` **Face
+  Verification** - [`Demo`](https://youtu.be/KRCvkNCOphE) This function determines
+  whether two facial images belong to the same person or to different individuals.
+  The function returns a dictionary, where the key of interest is `verified`: True
+  indicates the images are of the same person, while False means they are of different
+  people. ```python result: dict = DeepFace.verify(img1_path = "img1.jpg", img2_path
+  = "img2.jpg") ``` **Face recognition** - [`Tutorial`](https://sefiks.com/2026/01/01/introducing-brand-new-face-recognition-in-deepface/),
+  [`Demo`](https://youtu.be/Hrjp-EStM_s) [Face recognition](https://sefiks.com/2020/05/25/large-scale-face-recognition-for-deep-learning/)
+  requires applying face verification many times. DeepFace provides an out-of-the-box
+  `find` function that searches for the identity of an input image within a specified
+  database path. ```python dfs: List[pd.DataFrame] = DeepFace.find(img_path = "img1.jpg",
+  db_path = "C:/my_db") ``` Here, the `find` function relies on a directory-based
+  face datastore and stores embeddings on disk. Alternatively, DeepFace provides a
+  database-backed [`search`](https://sefiks.com/2026/01/01/introducing-brand-new-face-recognition-in-deepface/)
+  functionality where embeddings are explicitly registered and queried. Currently,
+  [postgres](https://sefiks.com/2023/06/22/vector-similarity-search-in-postgresql/),
+  [mongo](https://sefiks.com/2021/01/22/deep-face-recognition-with-mongodb/), [neo4j](https://sefiks.com/20'
 ---
 {% raw %}
 # deepface

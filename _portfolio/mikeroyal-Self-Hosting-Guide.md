@@ -2,8 +2,61 @@
 layout: project
 name: Mikeroyal Self Hosting Guide
 slug: mikeroyal-Self-Hosting-Guide
+category: Very important!!!!
 image: https://img.shields.io/maintenance/yes/2024?style=for-the-badge
 repo_url: https://github.com/mikeroyal/Self-Hosting-Guide
+indexed_content: 'Self Hosting Guide #### A guide for getting started with Self Hosting
+  devices including software and hardware that will make you a better and more efficient
+  Self Hosting. **Note: You can easily convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/)
+  using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
+  **Note 2: This guide will constantly be updated with new info as becomes available
+  and please feel to make an [issue](https://github.com/mikeroyal/Self-Hosting-Guide/issues)
+  if you think something should be added.** # Table of Contents 1. [Getting Started
+  with Self-Hosting](https://github.com/mikeroyal/Self-Hosting-Guide#getting-started-with-self-hosting)
+  - [Tools for Self-Hosting](https://github.com/mikeroyal/Self-Hosting-Guide#tools-for-self-hosting)
+  * [Containers](https://github.com/mikeroyal/Self-Hosting-Guide#containers) * [CI/CD](https://github.com/mikeroyal/Self-Hosting-Guide#cicd)
+  * [Development](https://github.com/mikeroyal/Self-Hosting-Guide#development) * [Web
+  servers](#web-servers) * [Large language models (LLMs)](#llms) * [ChatGPT Chatbots](#chatgpt)
+  * [Automation](#automation) * [Configuration Management](#Configuration-Management)
+  * [Cloud Storage](#cloud-storage) * [Cloud](https://github.com/mikeroyal/Self-Hosting-Guide#Cloud)
+  * [Linode](#Linode) * [Nextcloud](#Nextcloud) * [DigitalOcean](#DigitalOcean) *
+  [Back4app Web Deployment](#back4app-web-deployment) * [MinIO Object Storage](#MinIO-Object-Storage)
+  * [Databases](#Databases) - [SQL](#SQL) - [NoSQL](#NoSQL) * [Remote Access](https://github.com/mikeroyal/Self-Hosting-Guide#Remote-Access)
+  * [Virtualization](https://github.com/mikeroyal/Self-Hosting-Guide#Virtualization)
+  * [Password Management](https://github.com/mikeroyal/Self-Hosting-Guide#password-management)
+  * [SSH](#ssh) * [VPN](#vpn) * [LDAP(Lightweight Directory Access Protocol)](#ldap)
+  * [Log Management](#log-management) * [DNS](#dns) * [Network Tools](https://github.com/mikeroyal/Self-Hosting-Guide#network-tools)
+  * [Service Discovery](#service-discovery) * [Security](#security) * [Troubleshooting](#troubleshooting)
+  * [Monitoring](https://github.com/mikeroyal/Self-Hosting-Guide#monitoring) * [Dashboards](#Dashboards)
+  * [Analytics](#Analytics) * [Search](#Search) * [Notifications](#Notifications)
+  * [RSS](#RSS) * [Websites/Blogs](#WebsitesBlogs) * [Social](#Social) * [Nostr](#nostr)
+  * [iMessage](#imessage) * [Communications](https://github.com/mikeroyal/Self-Hosting-Guide#communications)
+  * [Business Management](https://github.com/mikeroyal/Self-Hosting-Guide#business-management)
+  * [Collaboration & Synchronization](https://github.com/mikeroyal/Self-Hosting-Guide#Collaboration--Synchronization)
+  * [Encryption](#Encryption) * [Backups](https://github.com/mikeroyal/Self-Hosting-Guide#backups)
+  * [Snapshots Management/System Recovery](snapshots-managementsystem-recovery) *
+  [Archiving](#archiving) * [Home Server](https://github.com/mikeroyal/Self-Hosting-Guide#home-server)
+  * [Media Server](https://github.com/mikeroyal/Self-Hosting-Guide#media-server) *
+  [Smart Home Automation](#Smart-Home-Automation) * [Voice Assistants](#Voice-Assistants)
+  * [Video Surveillance](#Video-Surveillance) * [Text-To-Speech Synthesis (TTS)](#Text-To-Speech-Synthesis-TTS)
+  * [Video and Audio Processing](#Video-and-Audio-Processing) * [Podcasting](#Podcasting)
+  * [Audiobooks](#Audiobooks) * [Health](#Health) * [Gardening](#gardening) * [Maps](https://github.com/mikeroyal/Self-Hosting-Guide#maps)
+  * [Bookmarks](#Bookmarks) * [Photos](https://github.com/mikeroyal/Self-Hosting-Guide#photos)
+  * [Pastebins](#pastebins) * [Note-Taking](#Note-Taking) * [Time Monitoring](#time-monitoring)
+  * [Wikis](#wikis) * [Gaming](https://github.com/mikeroyal/Self-Hosting-Guide#gaming)
+  * [Foundations/Projects](https://github.com/mikeroyal/Self-Hosting-Guide#foundationsprojects)
+  - [System Hardware](#System-Hardware) - [Operating Systems](#Operating-Systems)
+  - [Storage](https://github.com/mikeroyal/Self-Hosting-Guide#storage) - [File systems](https://github.com/mikeroyal/Self-Hosting-Guide#file-systems)
+  - [Books](https://github.com/mikeroyal/Self-Hosting-Guide#books) - [Podcasts](https://github.com/mikeroyal/Self-Hosting-Guide#podcasts)
+  - [YouTube Channels](https://github.com/mikeroyal/Self-Hosting-Guide#youtube-channels)
+  - [Tutorials & Resources](https://github.com/mikeroyal/Self-Hosting-Guide#tutorials--resources)
+  - [Useful Subreddits to Follow](https://github.com/mikeroyal/Self-Hosting-Guide#subreddits)
+  2. [WireGuard](https://github.com/mikeroyal/Self-Hosting-Guide#wireguard) * [What
+  is WireGuard?](#what-is-wireguard) * [What is Tailscale?](#what-is-tailscale) *
+  [What is Netmaker?](#what-is-netmaker) * [WireGuard Tools](#wireguard-tools) * [Setting
+  up WireGuard with PiVPN](#setting-up-wireguard-with-pivpn) * [Setting up WireGuard
+  on Unraid](#setting-up-wireguard-on-unraid) * [Setting up WireGuard on pfSense](#setting-up-wireguard-on-pfsense)
+  * [Setting up WireG'
 ---
 {% raw %}
 <h1 align="center">

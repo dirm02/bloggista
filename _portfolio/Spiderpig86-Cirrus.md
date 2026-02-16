@@ -2,8 +2,66 @@
 layout: project
 name: Spiderpig86 Cirrus
 slug: Spiderpig86-Cirrus
+category: Uncategorized
 image: https://img.shields.io/badge/cirrus-0.8.0-blue.svg
 repo_url: https://github.com/Spiderpig86/Cirrus)
+indexed_content: "Cirrus [](https://github.com/Spiderpig86/Cirrus) [](https://opensource.org/licenses/MIT)
+  [](https://github.com/Spiderpig86/Cirrus/actions) [](https://snyk.io/test/github/Spiderpig86/Cirrus?targetFile=package.json)
+  [](https://www.npmjs.com/package/cirrus-ui) [](https://houndci.com) [](https://www.jsdelivr.com/package/npm/cirrus-ui)
+  A component-and-utility-centric SCSS framework designed for rapid prototyping. Use
+  beautiful pre-built components to bootstrap your next project and utility classes
+  to polish your final design. Check out the docs » Request Feature / Report a Bug
+  / Examples ## :sparkles: Features * :art: **Beautiful Components** - Beautifully
+  designed components come right out of the box for rapid prototyping. * :balloon:
+  **Sass First** - Forget bundling tons of JavaScript with each component. All styles
+  require no JS for interactions/functionality (see Modals, Dropdowns, etc.). * :rainbow:
+  **Configuration at its Core** - Add additional components, remove utility classes,
+  disable features, etc. Cirrus takes a generative approach to building your stylesheets.
+  * :zap: **Lightweight** - A large amount of features with a minimal footprint. *
+  :iphone: **Responsive** - Fully responsive by design. * :computer: **Vscode Extension
+  Support** - Install it [here](https://marketplace.visualstudio.com/items?itemName=Spiderpig86.cirrus-intellisense).
+  * \U0001F939‍♂️ **Playground** - Try out whatever experiment you want with Cirrus
+  [here](https://www.cirrus-ui.com/playground). ## :dart: Supported Browsers Cirrus
+  relies on [What CSS to prefix?](http://shouldiprefix.com/) to determine which selectors
+  need prefixes. | [ ](http://godban.github.io/browsers-support-badges/) IE / Edge
+  | [ ](http://godban.github.io/browsers-support-badges/) Firefox | [ ](http://godban.github.io/browsers-support-badges/)
+  Chrome | [ ](http://godban.github.io/browsers-support-badges/) Safari | [ ](http://godban.github.io/browsers-support-badges/)
+  Opera | [ ](http://godban.github.io/browsers-support-badges/) Electron | | --- |
+  --- | --- | --- | --- | --- | | IE11, Edge | last 3 versions, ESR | last 3 versions
+  | last 3 versions | last 3 versions | last 3 versions | ## \U0001F4E6 Install ####
+  Npm ```sh npm install cirrus-ui ``` #### Yarn ```sh yarn add cirrus-ui ``` ####
+  CDN For CDNs, it is recommended to attach a specific versions to the URLs to avoid
+  unexpected updates to maintain consistency in your project. **Please do not reference
+  the `dist` folder artifacts directly as these are subject to change at any time.**
+  ##### Unpkg ```html ``` ##### JsDelivr ```html ``` Check out the [Setup](https://www.cirrus-ui.com/getting-started/setup)
+  guide for more information. ## :hammer: Usage #### Basic Page ```html Hello World
+  \U0001F44BHello World ``` #### React ```jsx import { StrictMode } from \"react\";
+  import ReactDOM from \"react-dom\"; import App from \"./App\"; import 'cirrus-ui';
+  // You can import it here if you want const rootElement = document.getElementById(\"root\");
+  ReactDOM.render( , rootElement ); ``` #### Vue ```js import Vue from 'vue'; import
+  App from './App.vue'; import 'cirrus-ui'; Vue.config.productionTip = false; new
+  Vue({ render: (h) => h(App), }).$mount('#app'); ``` #### Svelte ```js import App
+  from \"./App.svelte\"; import \"cirrus-ui\"; const app = new App({ target: document.body
+  }); export default app; ``` #### Sass/Scss ```scss @use \"node_modules/cirrus-ui/src/cirrus-ext\"
+  as * with ( $config: ( excludes: ( ABSOLUTES, ), opacity: null, // Disable default
+  opacity classes extend: ( // Add your own opacity: ( 25: .25, 50: .5, 75: .75, )
+  ) ), ); ``` Check out the [Setup](https://www.cirrus-ui.com/getting-started/setup)
+  guide for more information. ## :computer: Development Use Gitpod, a free online
+  dev environment for GitHub. [](https://gitpod.io/#https://github.com/Spiderpig86/Cirrus)
+  Or clone locally: ```bash $ git clone git@github.com:Spiderpig86/Cirrus.git $ cd
+  cirrus $ yarn install $ yarn watch ``` ## :crystal_ball: What's Included - **Base**
+  - base styles. - Animations - Default - Font - Grid - Layout - Media - Modifiers
+  - Spacing - **Builds** - build files for `core` and `ext`. - **Components** - framework
+  components. - Accordion - Avatar - Breadcrumb - Button - Card - Code - Footer -
+  Forms - Frames - Header - Links - Lists - Modal - Pagination - Placeholder - Progress
+  - Table - Tabs - Tags - Tiles - Toast - Tooltips - **Internal** - internal APIs,
+  functions, constants, etc. - **Utils** - utility classes. - Absolute - Blur - Border
+  - Clearfix - Display - Flex - Misc - Opacity - Overflow - Position - Shadow - Transitions
+  - Z-Index ## :clap: Related Projects | Project | Description | | ---------------------------------------------------------
+  | -------------------------------------------------------------------------------------
+  | | [vue-cirrus](https://github.com/FlorianWoelki/vue-cirrus) | Cirrus components
+  for Vue.js with straightforward syntax | | cirrus-blocks | A collection of beautiful
+  components built with Cirrus ready to be copied and pasted. | | [cirrus-"
 ---
 {% raw %}
 <p align="center"><img src="https://raw.githubusercontent.com/Spiderpig86/Cirrus/master/img/CirrusLogo.png" width="200"></p>

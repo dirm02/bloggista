@@ -2,8 +2,11 @@
 layout: project
 name: Timqian Bambot
 slug: timqian-bambot
+category: EE-kicad-3D-Robotic
 image: https://github.com/user-attachments/assets/bcf347d7-5d76-4021-8a99-bb4515323fe0
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# [Bambot](https://bambot.org) Play with open-source, low-cost AI
+  robots \U0001F916 ## Demo Video"
 ---
 {% raw %}
 <a href="https://bambot.org">

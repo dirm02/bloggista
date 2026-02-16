@@ -2,8 +2,44 @@
 layout: project
 name: Rstudio Blastula
 slug: rstudio-blastula
+category: Mail services -server-chat apps
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/rstudio-blastula/man/figures/logo.svg
 repo_url: https://github.com/rstudio/blastula
+indexed_content: "The **blastula** package makes it easy to produce and send HTML
+  email from **R**. The message can have three content areas (the body, the header,
+  and the footer) and we can insert **Markdown** text, block-based components, and
+  even HTML fragments. The underlying HTML/CSS is meant to display properly across
+  a wide range of email clients and webmail services. The resulting email message
+  is responsive so it’ll look great on both large displays and mobile devices. ###
+  Composing an Email Message When you compose an email, you can use objects from the
+  global workspace and work them into the message content. Let’s create a nicely formatted
+  date/time string (`date_time`) with the `add_readable_time()` function, and, transform
+  an image on disk to an HTML string object (`img_string`). ```r # Get a nicely formatted
+  date/time string date_time ### Sending an Email Message via SMTP We can store SMTP
+  email credentials in a file using the `create_smtp_creds_file()` function. There
+  are also other ways to set up SMTP access credentials (like using system-wide key-value
+  store through the `create_smtp_creds_key()` function). Having generated a credentials
+  file, we can use the `smtp_send()` function (along with the `creds_file()` credentials
+  helper function) to send the email through an SMTP server. ```r # Sending email
+  by SMTP using a credentials file email |> smtp_send( to = \"jane_doe@example.com\",
+  from = \"joe_public@example.net\", subject = \"Testing the `smtp_send()` function\",
+  credentials = creds_file(\"email_creds\") ) ``` ### Sending Email Messages through
+  Posit Connect We can also send email based on **R Markdown** files through **Posit
+  Connect**. The `prepare_rsc_example_files()` function provides .Rmd files that facilitate
+  a main report + email report workflow. The key components are the `blastula::blastula_email`
+  output type for the email report, and the use of `render_connect_email()` and `attach_connect_email()`
+  in the main report. ### Installation Want to try this out? The **blastula** package
+  is available on **CRAN**: ```r install.packages(\"blastula\") ``` You can also install
+  the development version of **blastula** from **GitHub**: ```r devtools::install_github(\"rstudio/blastula\")
+  ``` If you encounter a bug, have usage questions, or want to share ideas to make
+  this package better, feel free to file an [issue](https://github.com/rstudio/blastula/issues).
+  #### Code of Conduct Please note that the `rstudio/blastula` project is released
+  with a [contributor code of conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+  By participating in this project you agree to abide by its terms. #### \U0001F4C4
+  License **blastula** is licensed under the MIT license. See the [`LICENSE.md`](LICENSE.md)
+  file for more details. © Posit Software, PBC. #### \U0001F3DB️ Governance This project
+  is primarily maintained by **Richard Iannone**. Should there also be other authors,
+  they might occasionally assist with some of these duties."
 ---
 {% raw %}
 <div align="center">

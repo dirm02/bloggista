@@ -2,8 +2,43 @@
 layout: project
 name: Codeforreal1 Compresso
 slug: codeforreal1-compressO
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/codeforreal1-compressO/assets/image.png
 repo_url: https://github.com/codeforreal1/compressO
+indexed_content: "CompressO Compress any video into a tiny size. CompressO (\U0001F509
+  pronounced like \"Espresso\" ) is a free and open-sourced cross-platform video compression
+  app powered by FFmpeg. Available for Linux , Windows & MacOS . Download \U0001F4E6
+  ### Tech ⌨ This app is created using [Tauri](https://tauri.app/), a Rust\U0001F980
+  framework for building a cross-platform desktop app. It uses [Vite](https://vite.dev/)
+  as a frontend layer. The compression is done entirely by [FFmpeg](https://ffmpeg.org/)
+  using platform specific standalone binaries. The app works completely offline and
+  no any network requests is made to/from the app. ### Downloads ⬇️ Download installers
+  for the specific platform can be accessed from the [releases](https://github.com/codeforreal1/compressO/releases)
+  page. Installer Info: - `CompressO_amd64.deb`: Debian derivative of Linux like Ubuntu
+  - `CompressO_amd64.AppImage`: Universal package for all Linux distros - `CompressO_aarch64.dmg`
+  : For Macbooks with Apple Silicon Chips - `CompressO_x64.dmg` : For Macbooks with
+  Intel Chip - `CompressO_x64.msi`: Windows 64 bit - `CompressO_x86.msi`: Windows
+  32 bit ### Roadmap \U0001F3C1 - [x] Cancel during compression - [x] Drag & Drop
+  video - [x] Mute video - [ ] Batch compression ... ### FAQs ❓ 1. MacOS: \"CompressO\"
+  is damaged and can't be opened. You should move it to trash. This error is shown
+  by Apple to gatekeep app developers from using their apps unless it's signed by
+  Apple after paying $100/year fee. The message is completely misleading since the
+  app is not damaged at all. Since this is a free app, I'm not going to go Apple's
+  route just to appease them to make people trust my app. Here's a simple solution
+  for this issue. Open your terminal and run the command: ``` xattr -cr /Applications/CompressO.app
+  ``` If you don't feel comfortable applying the above solution, you can simply move
+  the app to trash (which also means you cannot use CompressO on your Mac). 2. MacOS:
+  \"CompressO\" cannot be opened because developer cannot be verified. This error
+  is same as the one above on FAQ 1. It's just, Apple made the message different to
+  scare the end user. Please have a look at the solution above. 3. Windows: Microsoft
+  Defender SmartScreen prevented an unrecognized app from starting. Running this app
+  might put your PC at risk. This is because you downloaded the windows installer
+  from outside source and Windows Defender is warning you before installation. You
+  can simply click on \"More Info\" and proceed with the installation. 4. App not
+  working on Debian 13 & Ubuntu 24 Tauri seems to be missing some packages that was
+  removed in Debian 13 and it's derivatives like Ubuntu 24. Tauri team is investigating
+  the issue. No solution atm, unfortunately. ### License \U0001F6A8 AGPL 3.0 License
+  This software uses libraries from the FFmpeg project under the LGPLv2.1."
 ---
 {% raw %}
 <div align="center">

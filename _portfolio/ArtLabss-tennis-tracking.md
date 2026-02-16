@@ -2,8 +2,64 @@
 layout: project
 name: Artlabss Tennis Tracking
 slug: ArtLabss-tennis-tracking
+category: Very important!!!!
 image: https://img.shields.io/github/forks/ArtLabss/tennis-tracking.svg
 repo_url: https://github.com/ArtLabss/tennis-tracking
+indexed_content: "Tennis Tracking \U0001F3BE With ❤️ by ArtLabs Objectives Track the
+  ball Detect court lines Detect the players To track the ball we used TrackNet -
+  deep learning network for tracking high-speed objects. For players detection ResNet50
+  was used. See ArtLabs/projects for more or similar projects. Example using sample
+  videos Input | Output :-------------------------:|:-------------------------: .gif)
+  | .gif) | .gif) | How to run This project requires compatible GPU to install tensorflow,
+  you can run it on your local machine in case you have one or use Google Colaboratory
+  with Runtime Type changed to GPU . - [ ] Input videos have to be rallies of the
+  game and shouldn't contain any commercials, breaks or spectators . Clone this repository
+  ```git git clone https://github.com/ArtLabss/tennis-tracking.git ``` Download yolov3
+  weights (237 MB) from here and add it to your Yolov3 folder . Install the requirements
+  using pip ```python pip install -r requirements.txt ``` Run the following command
+  in the command line ```python python3 predict_video.py --input_video_path=VideoInput/video_input3.mp4
+  --output_video_path=VideoOutput/video_output.mp4 --minimap=0 --bounce=0 ``` If you
+  are using Google Colab upload all the files to Google Drive, including yolov3 weights
+  from step 2. Create a Google Colaboratory Notebook in the same directory as predict_video.py
+  , change Runtime Type to GPU and connect it to Google drive ```python from google.colab
+  import drive drive.mount('/content/drive') ``` Change the working directory to the
+  one where the Colab Notebook and predict_video.py are. In my case, ```python import
+  os os.chdir('drive/MyDrive/Colab Notebooks/tennis-tracking') ``` Install only 2
+  requirements, because Colab already has the rest ```python !pip install filterpy
+  sktime ``` Inside the notebook run predict_video.py ``` !python3 predict_video.py
+  --input_video_path=VideoInput/video_input3.mp4 --output_video_path=VideoOutput/video_output.mp4
+  --minimap=0 --bounce=0 ``` After the compilation is completed, a new video will
+  be created in VideoOutput folder if --minimap was set 0 , if --minimap=1 three videos
+  will be created: video of the game, video of minimap and a combined video of both
+  P.S. If you stumble upon an error or have any questions feel free to open a new
+  Issue What's new? Court line detection improved Player detection improved The algorithm
+  now works practically with any court colors Faster algorithm Dynamic Mini-Map with
+  players and ball added, to activate use argument --minimap `--minimap=0` | `--minimap=1`
+  :-------------------------:|:-------------------------: | To predict bounce points
+  machine learning library for time series sktime was used. Specifically, TimeSeriesForestClassifier
+  was trained on 3 variables: x , y coordinates of the ball and V for velocity ( V2-V1/t2-t1
+  ). Data for training the model - df.csv By specifiying --bounce=1 bounce points
+  can be detected and displayed The model predicts true negatives (not bounce) with
+  accuracy of 98% and true positives (bounce) with 83% . Further Developments Improve
+  line detection of the court and remove overlapping lines Algorithm fails to detect
+  players when the court colors aren't similar to the sample video Don't detect the
+  ballboys/ballgirls Don't contour the banners Find the coordinates of the ball touching
+  the court and display them Code Optimization Dynamic court mini-map with players
+  and the ball Current Drawbacks Slow algorithms (to process 15 seconds video (6.1
+  Mb) it takes 28 minutes 16 minutes) Instead of writing a new video, a faster way
+  would be to show the frame right after it has been processed Algorithm works only
+  on official match videos Helpful Repositories Tennis Tracking @MaximeBataille Tennis
+  Project @avivcaspi TrackNet Contribution Help us by contributing, check out the
+  CONTRIBUTING.md . Contributing is easy! References - Yu-Chuan Huang, \"TrackNet:
+  Tennis Ball Tracking from Broadcast Video by Deep Learning Networks,\" Master Thesis,
+  advised by Tsì-Uí İk and Guan-Hua Huang, National Chiao Tung University, Taiwan,
+  April 2018. - Yu-Chuan Huang, I-No Liao, Ching-Hsuan Chen, Tsì-Uí İk, and Wen-Chih
+  Peng, \"TrackNet: A Deep Learning Network for Tracking High-speed and Tiny Objects
+  in Sports Applications,\" in the IEEE International Workshop of Content-Aware Video
+  Analysis (CAVA 2019) in conjunction with the 16th IEEE International Conference
+  on Advanced Video and Signal-based Surveillance (AVSS 2019), 18-21 September 2019,
+  Taipei, Taiwan. - Joseph Redmon, Ali Farhadi, \"YOLOv3: An Incremental Improvement\",
+  University of Washington, https://arxiv.org/pdf/1804.02767.pdf"
 ---
 {% raw %}
 <p align='center'>

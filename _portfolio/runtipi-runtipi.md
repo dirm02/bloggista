@@ -2,8 +2,74 @@
 layout: project
 name: Runtipi Runtipi
 slug: runtipi-runtipi
+category: Uncategorized
 image: https://img.shields.io/badge/all_contributors-56-orange.svg?style=flat-square
 repo_url: https://github.com/runtipi/runtipi
+indexed_content: "# Runtipi — A personal homeserver for everyone [](#contributors-)
+  [](https://github.com/runtipi/runtipi/blob/master/LICENSE) [](https://github.com/runtipi/runtipi/releases)
+  [](https://crowdin.com/project/runtipi) [](https://gurubase.io/g/tipi) > [!NOTE]
+  > Runtipi is built with TypeScript, NestJS and React! If you want to collaborate
+  on a cool project, join the discussion in the forums or on Discord! #### Join the
+  community [](https://forums.runtipi.io/) [](https://discord.gg/Bu9qEPnHsc) > [!WARNING]
+  > Runtipi is built and maintained by volunteers. There is no guarantee of support
+  or security when you use Runtipi. While the system is considered stable, it is still
+  in active development and may contain bugs. Runtipi is a personal homeserver orchestrator
+  that makes it easy to manage and run multiple services on a single server. It is
+  based on Docker and comes with a simple web interface to manage your services. Runtipi
+  is designed to be easy to use, so you don't have to worry about manual configuration
+  or networking. Simply install Runtipi on your server and use the web interface to
+  add and manage services. You can see a list of available services in the [App Store
+  repo](https://github.com/runtipi/runtipi-appstore) and if you can't find what you're
+  looking for, there are many community app stores to choose from and you can even
+  create your own. To get started with Runtipi, follow the installation instructions
+  below. ## Sponsors Thanks to our generous sponsors for supporting the development
+  of Runtipi: | CodeRabbit | TestMu AI | |------------------| ------------------|
+  | | | [coderabbit.ai](https://coderabbit.ai?utm_source=runtipi&utm_campaign=readme)
+  | Browser testing via [testmu.ai](https://www.testmu.ai/?utm_source=runtipi&utm_medium=sponsor)
+  ## Getting started Visit our website [runtipi.io](https://www.runtipi.io/docs/getting-started/installation?utm_source=github&utm_campaign=readme)
+  for installation instructions, documentation and guides. If you need more personalized
+  help, visit our [Forums](https://forums.runtipi.io/) to get help from the community.
+  ## Demo You can try out a demo of Runtipi at [demo.runtipi.io](https://demo.runtipi.io)
+  using the following credentials: username: user@runtipi.io password: password ##
+  \U0001F4DA Documentation You can find more documentation and tutorials / FAQ on
+  [runtipi.io](https://www.runtipi.io/docs/introduction?utm_source=github&utm_campaign=readme)
+  ## ❤ Contributing Runtipi is made to be very easy to plug in new apps. We welcome
+  and appreciate new contributions. If you want to add a new app or feature, you can
+  follow the [Contribution guide](https://www.runtipi.io/docs/contributing/adding-a-new-app)
+  for instructions on how to do so. We are looking for contributions of all kinds.
+  If you know design, development, or have ideas for new features, please get in touch.
+  ## \U0001F4DC License [](https://github.com/runtipi/runtipi/blob/master/LICENSE)
+  Runtipi is licensed under the GNU General Public License v3.0. TL;DR — You may copy,
+  distribute and modify the software as long as you track changes/dates in source
+  files. Any modifications to or software including (via compiler) GPL-licensed code
+  must also be made available under the GPL along with build & install instructions.
+  ## \U0001F5E3 Community - [Discord](https://discord.gg/Bu9qEPnHsc) ## \U0001F64F
+  Acknowledgements - [GitHub](https://github.com) - Thanks for generously giving us
+  access to your full product suite - [Freepik](https://www.flaticon.com/free-icons/tipi?utm_source=runtipi&utm_campaign=readme)
+  - Thanks for providing a free logo for the project - [Sentry](https://sentry.io?utm_source=runtipi&utm_campaign=readme)
+  - Thanks for providing error tracking for the project - [Crowdin](https://crowdin.com?utm_source=runtipi&utm_campaign=readme)
+  - Thanks for providing localization management for the project - [CodeRabbit](https://coderabbit.ai?utm_source=runtipi&utm_campaign=readme)
+  - Thanks for providing free AI code reviews in our Pull Requests ## ✨ Contributors
+  Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+  Nicolas Meienberger \U0001F4BB \U0001F687 ⚠️ \U0001F4D6 ArneNaessens \U0001F4BB
+  \U0001F914 ⚠️ DrMxrcy \U0001F4BB \U0001F914 ⚠️ \U0001F58B \U0001F4E3 \U0001F4AC
+  \U0001F440 Cooper \U0001F4BB JTruj1ll0923 \U0001F4BB Stetsed \U0001F4BB Jones_Town
+  \U0001F4BB Rushi Chaudhari \U0001F4BB Robert Blaine \U0001F4BB Seth For Privacy
+  \U0001F4BB Prajna \U0001F4BB Justin Moy \U0001F4BB dextreem \U0001F4BB Brahim Hadriche
+  \U0001F4BB Andrew Brereton \U0001F58B Freddie Sackur \U0001F4BB \U0001F4D6 Innocentius
+  \U0001F30D Alex \U0001F4BB Ryan Wang \U0001F4BB simonandr \U0001F58B iepure \U0001F30D
+  Sergey Kodolov \U0001F30D \U0001F4BB sclaren \U0001F4BB mcmeel \U0001F4AC \U0001F914
+  \U0001F4BB \U0001F4D6 NoisyFridge \U0001F30D Bvoxl \U0001F30D m-lab-0 \U0001F30D
+  dannkunt \U0001F30D Schmanko \U0001F30D Nghia Lele \U0001F30D amusingimpala75 \U0001F4BB
+  David \U0001F30D Stavros \U0001F30D \U0001F4BB ⚠️ \U0001F4D6 loxiry \U0001F30D JigSaw
+  \U0001F4BB DireMunchkin \U0001F4BB Fabio Cingottini \U0001F30D him \U0001F4BB CHALOPIN
+  Clément \U0001F4BB Geetansh Jindal \U0001F4BB Olivier Garcia \U0001F4BB qcoudeyr
+  \U0001F4BB Armand Gillot \U0001F4BB Jaffo73 ⚠️ \U0001F4BB Jorge Montejo \U0001F4BB
+  Frédéric Cilia \U0001F4BB Agustín Carrasco \U0001F4BB Thibault Claude \U0001F4BB
+  Joshua Banks \U0001F4BB \U0001F4D6 hex-developer \U0001F4BB Gabriel Farias Nunes
+  \U0001F30D Boogie Cigdemoglu \U0001F4D6 Lancelot \U0001F4BB skajmer \U0001F30D AlphaRyze
+  \U0001F30D Jonathan Virga \U0001F4BB Did you contribute and want to see your name
+  listed in the README? Write a comment [here](http"
 ---
 {% raw %}
 # Runtipi — A personal homeserver for everyone

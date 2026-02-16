@@ -2,8 +2,69 @@
 layout: project
 name: Jtesta Ssh Mitm
 slug: jtesta-ssh-mitm
+category: GreyHate-Cyber&Security
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/jtesta-ssh-mitm
+indexed_content: "# SSH MITM v2.3-dev Author: [Joe Testa](https://www.positronsecurity.com/company/)
+  ([@therealjoetesta](https://twitter.com/therealjoetesta)) ## Overview This penetration
+  testing tool allows an auditor to intercept SSH connections. A patch applied to
+  the OpenSSH v7.5p1 source code causes it to act as a proxy between the victim and
+  their intended SSH server; all plaintext passwords and sessions are logged to disk.
+  Of course, the victim's SSH client will complain that the server's key has changed.
+  But because 99.99999% of the time this is caused by a legitimate action (OS re-install,
+  configuration change, etc), many/most users will disregard the warning and continue
+  on. **NOTE:** Only run the modified *sshd_mitm* in a VM or container! Ad-hoc edits
+  were made to the OpenSSH sources in critical regions, with no regard to their security
+  implications. Its not hard to imagine these edits introduce serious vulnerabilities.
+  ## Change Log * v2.3: ???: Added support for Linux Mint 20 & Ubuntu 20. * v2.2:
+  September 16, 2019: Fixed installation on Kali & Linux Mint 19. Fixed a double-password
+  prompt that occured under certain conditions. Improved error logging. * v2.1: January
+  4, 2018: Enabled non-interactive command execution, connections to old servers with
+  weak algorithms can now be intercepted, fixed two major bugs which caused AppArmor
+  to kill some connections, and improved error logging. * v2.0: September 12, 2017:
+  Added full SFTP support(!) and AppArmor confinement. * v1.1: July 6, 2017: Removed
+  root privilege dependencies, added automatic installer, added Kali Linux support,
+  added *JoesAwesomeSSHMITMVictimFinder.py* script to find potential targets on a
+  LAN. * v1.0: May 16, 2017: Initial revision. ## Running The Docker Image The quickest
+  & easiest way to get started is to use the Docker image with SSH MITM pre-built.
+  1.) Obtain the image from Dockerhub with: $ docker pull positronsecurity/ssh-mitm
+  2.) Next, run the container with: $ mkdir -p ${PWD}/ssh_mitm_logs && docker run
+  --network=host -it --rm -v ${PWD}/ssh_mitm_logs:/home/ssh-mitm/log positronsecurity/ssh-mitm
+  3.) Enable IP forwarding and NATing routes on your host machine: # echo 1 > /proc/sys/net/ipv4/ip_forward
+  # iptables -P FORWARD ACCEPT # iptables -A INPUT -p tcp --dport 2222 -j ACCEPT #
+  iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 2222 4.)
+  Find targets on the LAN, and ARP spoof them (see below). 5.) Shell and SFTP sessions
+  will be logged in the `ssh_mitm_logs` directory. ## Initial Setup As root, run the
+  *install.sh* script. This will install prerequisites from the repositories, download
+  the OpenSSH archive, verify its signature, compile it, and initialize a non-privileged
+  environment to execute within. ## Finding Targets The *JoesAwesomeSSHMITMVictimFinder.py*
+  script makes finding targets on a LAN very easy. It will ARP spoof a block of IPs
+  and sniff for SSH traffic for a short period of time before moving on to the next
+  block. Any ongoing SSH connections originating from devices on the LAN are reported.
+  By default, *JoesAwesomeSSHMITMVictimFinder.py* will ARP spoof and sniff only 5
+  IPs at a time for 20 seconds before moving onto the next block of 5. These parameters
+  can be tuned, though a trade-off exists: the more IPs that are spoofed at a time,
+  the greater the chance you will catch an ongoing SSH connection, but also the greater
+  the strain you will put on your puny network interface. Under too high of a load,
+  your interface will start dropping frames, causing a denial-of-service and greatly
+  raising suspicions (this is bad). The defaults shouldn't cause problems in most
+  cases, though it'll take longer to find targets. The block size can be safely raised
+  on low-utilization networks. Example: # ./JoesAwesomeSSHMITMVictimFinder.py --interface
+  enp0s3 --ignore-ips 10.11.12.50,10.11.12.53 Found local address 10.11.12.141 and
+  adding to ignore list. Using network CIDR 10.11.12.141/24. Found default gateway:
+  10.11.12.1 IP blocks of size 5 will be spoofed for 20 seconds each. The following
+  IPs will be skipped: 10.11.12.50 10.11.12.53 10.11.12.141 Local clients: * 10.11.12.70
+  -> 174.129.77.155:22 * 10.11.12.43 -> 10.11.99.2:22 The above output shows that
+  two devices on the LAN have created SSH connections (10.11.12.43 and 10.11.12.70);
+  these can be targeted for a man-in-the-middle attack. Note, however, that in order
+  to potentially intercept credentials, you'll have to wait for them to initiate new
+  connections. Impatient pentesters may opt to forcefully close existing SSH sessions
+  (using the *tcpkill* tool), prompting clients to create new ones immediately...
+  ## Running The Attack 1.) Once you've completed the initial setup and found a list
+  of potential victims (see above), execute *start.sh* as root. This will start *sshd_mitm*,
+  enable IP forwarding, and set up SSH packet interception through *iptables*. 2.)
+  ARP spoof the target(s) (**Protip:** do NOT spoof all the things! Your puny network
+  interface won't likely be able to handle "
 ---
 {% raw %}
 # SSH MITM v2.3-dev

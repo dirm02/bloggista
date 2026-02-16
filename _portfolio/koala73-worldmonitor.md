@@ -2,8 +2,68 @@
 layout: project
 name: Koala73 Worldmonitor
 slug: koala73-worldmonitor
+category: Uncategorized
 image: https://img.shields.io/github/stars/koala73/worldmonitor?style=social
 repo_url: https://github.com/koala73/worldmonitor
+indexed_content: "# World Monitor **Real-time global intelligence dashboard** — AI-powered
+  news aggregation, geopolitical monitoring, and infrastructure tracking in a unified
+  situational awareness interface. [](https://github.com/koala73/worldmonitor/stargazers)
+  [](https://github.com/koala73/worldmonitor/network/members) [](https://opensource.org/licenses/MIT)
+  [](https://www.typescriptlang.org/) [](https://github.com/koala73/worldmonitor/commits/main)
+  [](https://github.com/koala73/worldmonitor/releases/latest) Live Demo &nbsp;·&nbsp;
+  Tech Variant &nbsp;·&nbsp; Full Documentation --- ## Why World Monitor? | Problem
+  | Solution | |---------|----------| | News scattered across 100+ sources | **Single
+  unified dashboard** with 100+ curated feeds | | No geospatial context for events
+  | **Interactive map** with 25+ toggleable data layers | | Information overload |
+  **AI-synthesized briefs** with focal point detection | | Crypto/macro signal noise
+  | **7-signal market radar** with composite BUY/CASH verdict | | Expensive OSINT
+  tools ($$$) | **100% free & open source** | | Static news feeds | **Real-time updates**
+  with live video streams | | Web-only dashboards | **Native desktop app** (Tauri)
+  + installable PWA with offline map support | | Flat 2D maps | **3D WebGL globe**
+  with deck.gl rendering and 29+ toggleable data layers | --- ## Live Demos | Variant
+  | URL | Focus | |---------|-----|-------| | **World Monitor** | [worldmonitor.app](https://worldmonitor.app)
+  | Geopolitics, military, conflicts, infrastructure | | **Tech Monitor** | [tech.worldmonitor.app](https://tech.worldmonitor.app)
+  | Startups, AI/ML, cloud, cybersecurity | Both variants run from a single codebase
+  — switch between them with one click. --- ## Key Features ### Interactive 3D Globe
+  - **WebGL-accelerated rendering** — deck.gl + MapLibre GL JS for smooth 60fps performance
+  with thousands of concurrent markers. Switchable between **3D globe** (with pitch/rotation)
+  and **flat map** mode via `VITE_MAP_INTERACTION_MODE` - **29+ data layers** — conflicts,
+  military bases, nuclear facilities, undersea cables, pipelines, satellite fire detection,
+  protests, natural disasters, datacenters, displacement flows, climate anomalies,
+  and more - **Smart clustering** — Supercluster groups markers at low zoom, expands
+  on zoom in. Cluster thresholds adapt to zoom level - **Progressive disclosure**
+  — detail layers (bases, nuclear, datacenters) appear only when zoomed in; zoom-adaptive
+  opacity fades markers from 0.2 at world view to 1.0 at street level - **Label deconfliction**
+  — overlapping labels (e.g., multiple BREAKING badges) are automatically suppressed
+  by priority, highest-severity first - **8 regional presets** — Global, Americas,
+  Europe, MENA, Asia, Africa, Oceania, Latin America - **Time filtering** — 1h, 6h,
+  24h, 48h, 7d event windows - **URL state sharing** — map center, zoom, active layers,
+  and time range are encoded in the URL for shareable views (`?view=mena&zoom=4&layers=conflicts,bases`)
+  ### AI-Powered Intelligence - **World Brief** — LLM-synthesized summary of top global
+  developments (Groq Llama 3.1, Redis-cached) - **Hybrid Threat Classification** —
+  instant keyword classifier with async LLM override for higher-confidence results
+  - **Focal Point Detection** — correlates entities across news, military activity,
+  protests, outages, and markets to identify convergence - **Country Instability Index**
+  — real-time stability scores for 20 monitored nations using weighted multi-signal
+  blend - **Strategic Posture Assessment** — composite risk score combining all intelligence
+  modules with trend detection ### Real-Time Data Layers Geopolitical - Active conflict
+  zones with escalation tracking (UCDP + ACLED) - Intelligence hotspots with news
+  correlation - Social unrest events (dual-source: ACLED protests + GDELT geo-events,
+  Haversine-deduplicated) - Natural disasters from 3 sources (USGS earthquakes M4.5+,
+  GDACS alerts, NASA EONET events) - Sanctions regimes - Weather alerts and severe
+  conditions Military & Strategic - 220+ military bases from 9 operators - Live military
+  flight tracking (ADS-B) - Naval vessel monitoring (AIS) - Nuclear facilities & gamma
+  irradiators - APT cyber threat actor attribution - Spaceports & launch facilities
+  Infrastructure - Undersea cables with landing points - Oil & gas pipelines - AI
+  datacenters (111 major clusters) - Internet outages (Cloudflare Radar) - Critical
+  mineral deposits - NASA FIRMS satellite fire detection (VIIRS thermal hotspots)
+  Market & Crypto Intelligence - 7-signal macro radar with composite BUY/CASH verdict
+  - BTC spot ETF flow tracker (IBIT, FBTC, GBTC, and 7 more) - Stablecoin peg health
+  monitor (USDT, USDC, DAI, FDUSD, USDe) - Fear & Greed Index with 30-day history
+  - Bitcoin technical trend (SMA50, SMA200, VWAP, Mayer Multiple) - JPY liquidity
+  signal, QQQ/XLP macro regime, BTC hash rate - Inline SVG sparklines and donut gauges
+  for visual trends Tech Ecosystem (Tech variant) - Tech company HQs (Big Tech, unicorns,
+  public) - Startup hubs wit"
 ---
 {% raw %}
 # World Monitor

@@ -2,8 +2,41 @@
 layout: project
 name: Jiisanda Docflow
 slug: jiisanda-docflow
+category: API - Documentation
 image: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 repo_url: https://github.com/jiisanda/docflow
+indexed_content: "# DocFlow - Document Management API DocFlow is a powerful Document
+  Management API designed to streamline document handling, including seamless uploading,
+  downloading, organization, versioning, sharing, and more. ## \U0001F60E Upcoming
+  Updates - \U0001F7E8 Document Interactions - Adding Comments and Tags - \U0001F7E8
+  Import documents from unread emails - \U0001F7E8 Video Preview - \U0001F7E8 Adding
+  custom metadata fields to document - \U0001F7E8 2-factor authentication - \U0001F7E8
+  Storage quota per user? (Maybe to enable limit storage per user) - \U0001F7E8 Bulk
+  file importer ## \U0001F680 Key Features - \U0001F4A1 Document Upload and Download
+  - \U0001F4A1 Organization and Searching - \U0001F4A1 Versioning - \U0001F4A1 Sharing
+  - \U0001F4A1 Authentication and Authorization - \U0001F4A1 Access Control List -
+  \U0001F4A1 Deletion and Archiving - \U0001F4A1 Document Preview - \U0001F4A1 Send
+  file via Email - \U0001F4A1 Minio Support—for on-premise object storage ## \U0001F4D6
+  API Documentation and Image Explore the [API Documentation](https://documenter.getpostman.com/view/20984268/2s9YRGxUcp)
+  for detailed information on how to use DocFlow's features. Details about features
+  and commands can be found [here](app/docs). Download docker image from [docker-hub](https://hub.docker.com/r/jiisanda/docflow).
+  Or just run ```commandline docker pull jiisanda/docflow:1 ``` ## \U0001F538 Setup
+  Docflow Follow the steps outlined in the [setup.md](app/docs/setup.md) file. ##
+  \U0001F9E9 Implementation Detail | Features | Implementation Detail | |----------------------------------|------------------------------------------------------------------|
+  | Upload | [Detail](https://github.com/jiisanda/docflow#-document-upload) | | Download
+  | [Detail](https://github.com/jiisanda/docflow#-document-download) | | Sharing |
+  [Detail](https://github.com/jiisanda/docflow#-document-sharing) | | Document Preview
+  | [Detail](https://github.com/jiisanda/docflow#-document-preview) | ### \U0001F4E4
+  Document Upload Here's how documents are uploaded in DocFlow: For a detailed explanation,
+  visit the [Document Upload Documentation](app/docs/features/upload.md). ### \U0001F4E5
+  Document Download Here's how a user can download a file in DocFlow. For detailed
+  explanation, visit the [Document Download Documentation](). ### \U0001F4E8 Document
+  Sharing Learn how to share documents in DocFlow: For detailed instructions, visit
+  the [Document Sharing Documentation](app/docs/features/sharing.md). ### \U0001F440
+  Document Preview Here's how the preview of docs works in DocFlow. For detailed instructions,
+  visit the [Document Preview Documentation](app/docs/features/preview.md) ## \U0001F4DC
+  License [](./LICENSE) ## \U0001F4E7 Contact Us For any questions or support, please
+  [contact](mailto:harshjaiswal2307@gmail.com). Test DocFlow to manage documents seamlessly!"
 ---
 {% raw %}
 # DocFlow - Document Management API

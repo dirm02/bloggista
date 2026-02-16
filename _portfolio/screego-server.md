@@ -2,8 +2,21 @@
 layout: project
 name: Screego Server
 slug: screego-server
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/screego-server/docs/logo.png
 repo_url: https://github.com/screego/server
+indexed_content: 'screego/server screen sharing for developers ## Intro In the past
+  I''ve had some problems sharing my screen with coworkers using corporate chatting
+  solutions like Microsoft Teams. I wanted to show them some of my code, but either
+  the stream lagged several seconds behind or the quality was so poor that my colleagues
+  couldn''t read the code. Or both. That''s why I created screego. It allows you to
+  share your screen with good quality and low latency. Screego is an addition to existing
+  software and only helps to share your screen. Nothing else (:. ## Features * Multi
+  User Screenshare * Secure transfer via WebRTC * Low latency / High resolution *
+  Simple Install via Docker / single binary * Integrated TURN Server see [NAT Traversal](https://screego.net/#/nat-traversal)
+  [Demo / Public Instance](https://app.screego.net/) ᛫ [Installation](https://screego.net/#/install)
+  ᛫ [Configuration](https://screego.net/#/config) ## Versioning We use [SemVer](http://semver.org/)
+  for versioning. For the versions available, see the [tags on this repository](https://github.com/screego/server/tags).'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,69 @@
 layout: project
 name: Canberkdurmus Microlab 2
 slug: canberkdurmus-microlab-2
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/canberkdurmus-microlab-2/image/0.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/canberkdurmus-microlab-2
+indexed_content: '# Microlab 2 A minilab solution that is fully modular, 3D printable
+  and open source. # Why not 10" rack? 10" racks are beautiful, I built several for
+  different use cases and I love them. But I needed something different: * Something
+  considerably smaller than common 10" racks and while it can support almost all devices
+  supported by 10" format. * Something square, so any panel/tray can be placed any
+  side. To provide flexibility for cooling, cabling, HMI. * Something fully 3D printable.
+  Couple of PLA rolls are much cheaper than most 10" rack solutions. M3 screws are
+  also much cheaper than M6 rack screws while looking more proportional and being
+  able to support the weight of any equipment listed below. * Something fun to design
+  and build. # Components ### Qucik Guide - *Col:* The vertical columns with holes
+  that holds M3 nuts and/or 8x3 magnets. - *Cap:* The parts on top and botton that
+  holds 4-columns together. - *Tray:* The parts that hold various devices horizontally.
+  - *Panel:* To cover rack slots vertically with various small tweaks like fans, screens,
+  buttons, knobs or nothing. - *Mini-Tray:* System to keep small devices like Raspberry
+  Pi or 2.5" SATA drives. Has 7 mini slots in 3.5U of space while allowing air flow
+  vertically or from behind. | File Name | Status | Description/Notes | |-|-|-| |
+  Structure-Col-6U-dual-magnet | OK | Print 4 of these to get started | | Structure-Cap-v2
+  | OK | Print 2 of these to get started | | Structure-Col-Guard-6U | OK | [Optional]
+  To keep the hex nuts from falling behind the columns| | Structure-Feet-Round-10mm
+  | NOT TESTED | [Optional] To raise the setup for bottom air intake configuration
+  | | Structure-Feet-Round-15mm | NOT TESTED | [Optional] 15mm version of feet.| |
+  Structure-Mid-Extender | OK | [Optional] For the ones who ran out of space fast.
+  Holds two sets of columns together vertically. | | Mini-Frame-3.5U | OK | Part-1
+  of the frame to use with the mini trays. | | Mini-Frame-3.5U-2 | OK | Part-2 of
+  the frame to use with the mini trays. | | Mini-Tray-0.5-Blank | OK | Blank panel
+  for unused mini-frame slots.| | Mini-Tray-0.5-RPi4 | OK | Mini tray for Raspberry
+  Pi 4| | Mini-Tray-0.5-RPi5 | NOT TESTED | Mini tray for Raspberry Pi 5| | Mini-Tray-0.5-SATA2.5-Closed
+  | OK | Mini tray to mount a SATA 2.5" drive facing SATA port backwards. | | Mini-Tray-0.5-SATA2.5
+  | OK | Mini tray to mount a SATA 2.5" drive exposing the SATA port. | | Panel-0.5U-7x-Power-Switch
+  | OK | Panel for 7 rectangular power switches. Most switch models fit tightly with
+  no problems.| | Panel-0.5U-Keystone8 | OK | Somehow managed to fit Keystone type
+  patch prts in a 0.5U footprint. | | Panel-0.5U-Solid | OK | Print this perforated
+  please. | | Panel-1U-8xKeystone | OK | The standard 1U version of the Keystone panel
+  | | Panel-1U-Button12mm | NOT TESTED | Connect a 12mm push button for any purpose
+  | | Panel-1U-fan-40x3 | NOT TESTED | 3x40mm fans for an active cooling solution
+  even for 1U | | Panel-1U-fan-40x2 | NOT TESTED | 2-fan version of the 1U 40mm fan
+  panel | | Panel-1U-fan-40x1 | NOT TESTED | Single fan version of the 1U 40mm fan
+  panel | | Panel-1U-Knob-7mm | NOT TESTED | To use with a rotary encoder or a potentiometer
+  for more HMI options | | Panel-1U-Mag-Button12mm | NOT TESTED | Magnetic version
+  of the button panel | | Panel-1U-Mag-fan-40x1 | NOT TESTED | Magnetic version of
+  the 40mm single-fan panel | | Panel-1U-Mag-fan-40x2 | NOT TESTED | Magnetic version
+  of the 40mm dual-fan panel | | Panel-1U-Mag-fan-40x3 | NOT TESTED | Magnetic version
+  of the 40mm triple-fan panel | | Panel-1U-Mag-Knob-7mm | NOT TESTED | Magnetic version
+  of the rotary encoder/potentimeter panel | | Panel-1U-Mag-Passthrough | OK | To
+  feed various cables into the system while looking good and having easy access. |
+  | Panel-1U-Mag | OK | Magnetic 1U plain panel| | Panel-1U-Solid-1xKeystone | OK
+  | Single Keystone panel, mostly for feeding the WAN port from back/sides to inside.
+  | | Panel-1U-Mag-1xKeystone | OK | Magnetic single Keystone panel, mostly for feeding
+  the WAN port from back/sides to inside. | | Panel-1U-Solid | OK | Simple 1U panel,
+  please print this perforated. | | Panel-2U-fan-60x2 | NOT TESTED | Dual 60mm fans
+  on 2U panel | | Panel-2U-fan-60 | NOT TESTED | Single 60mm fan on 2U panel | | Panel-2U-fan-80
+  | NOT TESTED | Single 80mm fan on 2U panel | | Panel-2U-Mag-fan-60 | NOT TESTED
+  | Magnetic version of the single 60mm fans on 2U panel | | Panel-2U-Mag-fan-60x2
+  | NOT TESTED | Magnetic version of the dual 60mm fans on 2U panel | | Panel-2U-Mag-fan-80
+  | NOT TESTED | Magnetic version of the single 80mm fans on 2U panel | | Panel-2U-Mag
+  | OK | Magnetic 2U panel, please print this perforated. | | Panel-2U-Solid | OK
+  | 2U panel, please print this perforated. | | Panel-3U-Disp7-Top | OK | Compatible
+  with 7" touch screen (like Waveshare or similar from AliExpress). The screen sticiks
+  out a bit because can''t fit in between the columns. | | Panel-3U-Disp7-Bottom |
+  OK | The other half of the 7" touch screen panel | | Panel-3'
 ---
 {% raw %}
 # Microlab 2

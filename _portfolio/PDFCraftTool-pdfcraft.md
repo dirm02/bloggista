@@ -2,8 +2,71 @@
 layout: project
 name: Pdfcrafttool Pdfcraft
 slug: PDFCraftTool-pdfcraft
+category: Very important!!!!
 image: https://img.shields.io/website?url=https%3A%2F%2Fpdfcraft.devtoolcafe.com%2Fen%2F
 repo_url: https://github.com/mozilla/pdf.js)
+indexed_content: "# PDFCraft Professional PDF Tools Free, Private & Browser-Based
+  Merge, split, compress, convert, and edit PDF files online without uploading to
+  servers. [](https://pdfcraft.devtoolcafe.com/en/) ## \U0001F4D6 About **PDFCraft**
+  is a comprehensive suite of PDF tools designed for privacy and performance. Unlike
+  many online converters, PDFCraft processes your files entirely within your browser
+  using WebAssembly technology. Your documents **never** leave your device, ensuring
+  maximum security for your sensitive data. This project is built with modern web
+  technologies to provide a slick, app-like experience directly in the browser. ##
+  ✨ Key Features - **\U0001F512 100% Private**: All processing happens client-side.
+  No file uploads to external servers. - **\U0001F680 Fast & Responsive**: Powered
+  by Next.js and WebAssembly for near-native performance. - **\U0001F6E0️ Comprehensive
+  Toolset**: Over 80+ tools to handle any PDF task. - **\U0001F3A8 Modern UI**: Clean,
+  accessible, and responsive design built with Tailwind CSS. - **\U0001F310 Multi-language**:
+  Supports English, Spanish, French, German, Portuguese, Japanese, Korean, and Chinese.
+  ## \U0001F504 Workflow Editor (Beta) > ⚠️ **Early Development Notice**: This feature
+  is currently in early development stage. You may encounter bugs or incomplete functionality.
+  We appreciate your feedback and patience! PDFCraft includes a powerful **visual
+  workflow editor** that allows you to chain multiple PDF operations together, creating
+  automated processing pipelines. Visual workflow editor with drag-and-drop interface
+  ### Key Capabilities - **\U0001F517 Visual Node-Based Editor**: Drag and drop tools
+  onto a canvas and connect them to create processing pipelines - **\U0001F4CB 23+
+  Pre-built Templates**: Common workflows like \"Merge & Compress\", \"Secure PDF\",
+  \"Document Preparation\", etc. - **\U0001F4BE Save & Reuse**: Save your custom workflows
+  for future use - **\U0001F3AF Real-time Validation**: Automatic format compatibility
+  checking between connected tools - **\U0001F4C1 Batch Processing**: Process multiple
+  files through the same workflow - **↔️ Collapsible Panels**: Maximize canvas workspace
+  with collapsible tool and library sidebars ### Available Templates | Category |
+  Templates | |----------|-----------| | **Common** | Merge & Compress, Document Preparation,
+  Split & Watermark, Batch Watermark, Report Assembly, Invoice Processing | | **Conversion**
+  | Images to PDF, PDF to Images, Office to PDF, eBook to PDF, Photo Album Creator
+  | | **Optimization** | Optimize for Web, Full Optimization, Grayscale & Compress,
+  Archive Preparation | | **Security** | Create Secure PDF, Confidential Document,
+  Unlock & Edit | ### How to Access Navigate to `/workflow` or click on \"Workflow
+  Editor\" in the navigation menu. ## \U0001F9F0 Complete Tool List (90+ Tools) ###
+  \U0001F4C1 Organize & Manage (27 tools) | Tool | Description | |------|-------------|
+  | **PDF Multi Tool** | All-in-one PDF editor for merge, split, organize, delete,
+  rotate, and extract | | **Merge PDF** | Combine multiple PDFs into one document
+  | | **Split PDF** | Separate specific pages or divide by page ranges | | **Extract
+  Pages** | Extract specific pages to a new file | | **Organize PDF** | Reorder, duplicate,
+  and delete pages with drag-and-drop | | **Delete Pages** | Remove unwanted pages
+  from PDF files | | **Rotate PDF** | Rotate pages by 90°, 180°, or 270° | | **Rotate
+  by Custom Degrees** | Rotate pages by any angle for straightening scans | | **Reverse
+  Pages** | Reverse the page order of a PDF | | **Add Blank Page** | Insert blank
+  pages at any position | | **Divide Pages** | Split pages horizontally or vertically
+  | | **N-up PDF** | Combine multiple pages on a single sheet (2-up, 4-up, etc.) |
+  | **Combine to Single Page** | Stitch all pages into one continuous page | | **Alternate
+  Merge** | Interleave pages from multiple PDFs | | **OCR PDF** | Make scanned PDFs
+  searchable with text recognition | | **Add Attachments** | Embed files into PDF
+  documents | | **Extract Attachments** | Download embedded files from PDFs | | **Edit
+  Attachments** | View, rename, or remove embedded files | | **View Metadata** | View
+  PDF properties, author, dates, and keywords | | **Edit Metadata** | Modify PDF title,
+  author, subject, and keywords | | **PDF to ZIP** | Package multiple PDFs into a
+  ZIP archive | | **Compare PDFs** | Compare two PDFs side-by-side with difference
+  highlighting | | **Posterize PDF** | Split large pages into multiple printable sheets
+  | | **Grid Combine** | Combine multiple PDFs into a grid layout with custom spacing
+  | | **PDF Booklet** | Arrange pages for booklet printing (saddle stitch) | | **PDF
+  Reader** | Read and view PDF documents in a clean interface | ### ✏️ Edit & Annotate
+  (19 tools) | Tool | Description | |------|-------------| | **Edit PDF** | Add text,
+  images, annotations, highlights, and shapes | | **Sign PDF** | Draw, type, or upload
+  electronic signatures | | **Crop PDF** | Trim margins and remove unwanted areas
+  | | **Edit Bookmarks** | Add, edit, and manage PDF navigation bookmarks | | **Table
+  of Contents** | Generate clickable tabl"
 ---
 {% raw %}
 # PDFCraft

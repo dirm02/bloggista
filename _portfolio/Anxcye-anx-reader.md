@@ -2,8 +2,64 @@
 layout: project
 name: Anxcye Anx Reader
 slug: Anxcye-anx-reader
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Anxcye-anx-reader/docs/images/main.jpg
 repo_url: https://github.com/Anxcye/anx-reader
+indexed_content: "**English** | [简体中文](README_zh.md) | [Türkçe](README_tr.md) | [Русский](README_RU.md)
+  Anx Reader Anx Reader, a thoughtfully crafted e-book reader for book lovers. Featuring
+  powerful AI capabilities and supporting various e-book formats, it makes reading
+  smarter and more focused. With its modern interface design, we're committed to delivering
+  pure reading pleasure. | Feature | Details | Status | | --- | --- | --- | | Format
+  Support | EPUB/MOBI/AZW3/FB2/TXT/PDF fully supported | ✅ | | Cross-Platform Sync
+  | Android/iOS/macOS/Windows coverage Sync books, notes, and reading progress via
+  WebDAV | ✅ | | AI Assistant | Organizes shelves by progress and tone Generates mind
+  maps for deeper understanding On-demand AI dictionary and translation Delivers perspective
+  analysis and summaries | ✅ | | Custom Reading Experience | Tune letter, line, paragraph,
+  and margin spacing Adjust font size, style, and weight Customize themes, backgrounds,
+  alignment, and styles | ✅ | | Notes Workspace | Multiple color/style presets Sort
+  by time or chapter with color filters Export to TXT/Markdown/CSV Create shareable,
+  well-designed cards | ✅ | | Reading Insights | Track reading time View daily/weekly/monthly/yearly
+  stats Visual heatmap reveals reading habits | ✅ | | Advanced Extras | TTS with multi-voice,
+  speed, tone, and sleep timer controls Full-book translation with side-by-side view
+  Store books in the cloud and download on demand One-tap simplified/traditional Chinese
+  conversion | ✅ | | OPDS Catalogs | Built-in OPDS support with custom catalog management
+  | \U0001F6E0️ In progress | OS Source iOS macOS Windows Android ## Community Projects
+  The following projects are maintained by the community and not officially supported.
+  For issues or feedback related to these projects, please contact the respective
+  project maintainers. **Calibre Plugin** [anx-reader-calibre-plugin](https://github.com/ptbsare/anx-reader-calibre-plugin)
+  A Calibre plugin that enables direct management of your ANX Reader ebook library
+  from Calibre. Particularly useful for NAS users looking to centralize their ebook
+  collection. **Web Library Manager** [anx-calibre-manager](https://github.com/ptbsare/anx-calibre-manager)
+  A modern web application for managing your ebook library with Calibre integration
+  and WebDAV server functionality for ANX Reader devices. ## I Encountered a Problem,
+  What Should I Do? Check [Troubleshooting](./docs/troubleshooting.md#English) Submit
+  an [issue](https://github.com/Anxcye/anx-reader/issues/new/choose), and we will
+  respond as soon as possible. Telegram Group: [https://t.me/AnxReader](https://t.me/AnxReader)
+  QQ Group：1042905699 ### Screenshots | | | | :------------------------------: | :----------------------------:
+  | | | | | | | | | | | | | | | :----------------------------: | :----------------------------:
+  | :----------------------------: | | | | | | | | | ## Donations If you like Anx
+  Reader, please consider supporting the project by donating. Your donation will help
+  me maintain and improve the project. ❤️ [Donate](https://anxcye.com/home/7) ## Building
+  Want to build Anx Reader from source? Please follow these steps: - Install [Flutter](https://flutter.dev).
+  - Clone and enter the project directory. - Run `flutter pub get`. - Run `flutter
+  gen-l10n` to generate multi-language files. - Run `dart run build_runner build --delete-conflicting-outputs`
+  to generate the Riverpod code. - Run `flutter run` to launch the application. You
+  may encounter Flutter version incompatibility issues. Please refer to the [Flutter
+  documentation](https://flutter.dev/docs/get-started/install). ## Code signing policy
+  - Committers and reviewers: [Members team](https://github.com/anxcye/anx-reader/graphs/contributors)
+  - Approvers: [Owners](https://github.com/anxcye) - [Privacy Policy](https://anx.anxcye.com/privacy.html)
+  - [Terms of Service](https://anx.anxcye.com/terms.html) ### Sponsors | | Free code
+  signing on Windows provided by [SignPath.io](https://about.signpath.io/),certficate
+  by [SignPath Foundation](https://signpath.org/) | |------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+  ## License This project is licensed under the [MIT License](./LICENSE). Starting
+  from version 1.1.4, the open source license for the Anx Reader project has been
+  changed from the MIT License to the GNU General Public License version 3 (GPLv3).
+  After version 1.2.6, the selection and highlight feature has been rewritten, and
+  the open source license has been changed from the GPL-3.0 License to the MIT License.
+  All contributors agree to this change(#116). ## Thanks [foliate-js](https://github.com/johnfactotum/foliate-js),
+  which is MIT licensed, it used as the ebook renderer. Thanks to the author for providing
+  such a great project. [foliate](https://github.com/johnfactotum/foliate), which
+  is GPL-3.0 licensed, selection and highlight feature is inspired "
 ---
 {% raw %}
 **English** | [简体中文](README_zh.md) | [Türkçe](README_tr.md) | [Русский](README_RU.md)

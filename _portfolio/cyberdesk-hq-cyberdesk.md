@@ -2,8 +2,57 @@
 layout: project
 name: Cyberdesk Hq Cyberdesk
 slug: cyberdesk-hq-cyberdesk
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/cyberdesk-hq-cyberdesk/assets/cyberdesk-logo-with-text.png
 repo_url: https://github.com/cyberdesk-hq/cyberdesk
+indexed_content: "The open source infra for virtual desktop orchestration, tailored
+  for computer agents A computer agent operating a Cyberdesk virtual desktop from
+  a user prompt --- ## \U0001F680 Quick Start ### TypeScript ```bash npm install cyberdesk@0.2.1
+  ``` ```typescript import { createCyberdeskClient } from 'cyberdesk'; const cyberdesk
+  = createCyberdeskClient({ apiKey: 'YOUR_API_KEY' }); const launchResult = await
+  cyberdesk.launchDesktop({ body: { timeout_ms: 10000 } }); const desktopId = launchResult.id;
+  // Take a screenshot const screenshot = await cyberdesk.executeComputerAction({
+  path: { id: desktopId }, body: { type: 'screenshot' } }); // Left click at (100,
+  150) await cyberdesk.executeComputerAction({ path: { id: desktopId }, body: { type:
+  'click_mouse', x: 100, y: 150, button: 'left' } }); ``` ### Python ```bash pip install
+  cyberdesk==0.2.7 ``` ```python from cyberdesk import CyberdeskClient from cyberdesk.actions
+  import click_mouse, screenshot, ClickMouseButton client = CyberdeskClient(api_key=\"YOUR_API_KEY\")
+  result = client.launch_desktop(timeout_ms=10000) desktop_id = result.id # Take a
+  screenshot screenshot_action = screenshot() screenshot_result = client.execute_computer_action(desktop_id,
+  screenshot_action) # Left click at (100, 150) click_action = click_mouse(x=100,
+  y=150, button=ClickMouseButton.LEFT) client.execute_computer_action(desktop_id,
+  click_action) ``` \U0001F449 For more details and advanced usage, see the [Quickstart
+  Guide](https://docs.cyberdesk.io/docs/quickstart) and [Official Documentation](#-official-documentation).
+  --- ## ✨ Features \U0001F680 Fast Launch Spin up virtual desktops in seconds, ready
+  for automation or remote use. \U0001F5B1️ Full Automation Control mouse, keyboard,
+  and more—perfect for computer agents. \U0001F5A5️ Cloud Native Runs on AKS, or self-hosted
+  on your own infrastructure. \U0001F512 Secure & Auditable Session logs, API keys,
+  and enterprise-grade security. \U0001F9E9 Type-Safe SDKs Official Python & TypeScript
+  SDKs with full type hints. \U0001F916 AI-Ready Tailor built for the next generation
+  of computer use agents --- ## \U0001F4DA Official Documentation - [Quickstart Guide](https://docs.cyberdesk.io/docs/quickstart)
+  - [API Reference](https://docs.cyberdesk.io/docs/api-reference) - [TypeScript SDK](sdks/ts-sdk/README.md)
+  - [Python SDK](sdks/py-sdk/README.md) --- ## \U0001F6E0️ Project Structure ### /apps
+  - **web**: Landing page and dashboard ([README](apps/web/README.md)) - **api**:
+  Developer-facing API ([README](apps/api/README.md)) - **docs**: Documentation site
+  ([README](apps/docs/README.md)) ### /services - **cyberdesk-operator**: Kubernetes
+  operator for managing Cyberdesk Custom Resources, and starting/stopping Kubevirt
+  virtual machines ([README](services/cyberdesk-operator/README.md)) - **gateway**:
+  HTTP service that proxies requests to the Kubevirt API, and routes them to the correct
+  virtual machine ([README](services/gateway/README.md)) ### /sdks - **ts-sdk**: TypeScript
+  SDK ([README](sdks/ts-sdk/README.md)) - **py-sdk**: Python SDK ([README](sdks/py-sdk/README.md))
+  ### /infrastructure - **terraform**: AKS Cluster Setup (Terraform) ([README](infrastructure/README.md))
+  - **kubernetes**: Kubernetes resources for the Cyberdesk operator --- ## \U0001F91D
+  Contributing We welcome contributions! - Join the [Discord](https://discord.gg/ws5ddx5yZ8)
+  for discussion and support - Get a personal 1-1 walkthrough of how to self host
+  the project by contacting us on [Discord](https://discord.gg/ws5ddx5yZ8) --- ##
+  \U0001F4E3 Community & Support - [Discord](https://discord.gg/ws5ddx5yZ8) for help
+  and chat - [Good First Issues](https://github.com/cyberdesk-hq/cyberdesk/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+  - [Open an Issue](https://github.com/cyberdesk-hq/cyberdesk/issues) --- ## \U0001F4A1
+  Philosophy > At **Cyberdesk** our mission is to make building computer agents as
+  easy as playing with legos. We believe in open, simple, and extensible tools for
+  the new generation of developers: *computer agent developers*. --- ## \U0001F4C4
+  License Apache License 2.0. See [LICENSE](LICENSE). --- Made with ❤️ by the Cyberdesk
+  Team"
 ---
 {% raw %}
 <p align="center">

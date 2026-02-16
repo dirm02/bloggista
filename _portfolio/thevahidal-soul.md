@@ -2,8 +2,68 @@
 layout: project
 name: Thevahidal Soul
 slug: thevahidal-soul
+category: API - Documentation
 image: https://img.shields.io/badge/justforfunnoreally-dev-9ff
 repo_url: https://github.com/WiseLibs/better-sqlite3)
+indexed_content: 'A SQLite REST and Realtime server [](https://justforfunnoreally.dev)
+  [](#contributors) ## Usage ### Docker > This is the preferred method as the dependency
+  [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) is making of lot of
+  assumptions about the system it will be installed and running on which in most cases
+  will lead to errors when installing soul. Using the following Dockerfile: Dockerfile
+  ```nginx # node:19-alpine amd64 FROM node@sha256:d0ba7111bc031323ce2706f8e424afc868db289ba40ff55b05561cf59c123be1
+  AS node WORKDIR /app ENV NODE_ENV="production" COPY package-lock.json package.json
+  ./ RUN apk update && apk add python3=3.11.10-r1 build-base=0.5-r3 && npm ci COPY
+  . . CMD [ "npm", "start" ] ``` You can proceed [to building the application](https://docs.docker.com/get-started/workshop/02_our_app/#build-the-apps-image).
+  ### npm ```bash npm install -g soul-cli ``` ### 1. Running Soul Soul is command
+  line tool, after installing it, Run `soul -d sqlite.db -p 8000` and it''ll start
+  a REST API on [http://localhost:8000](http://localhost:8000) and a Websocket server
+  on [ws://localhost:8000](ws://localhost:8000). ```bash Usage: soul [options] Options:
+  --version Show version number [boolean] -d, --database SQLite database file or :memory:
+  [string] [required] -p, --port Port to listen on [number] -r, --rate-limit-enabled
+  Enable rate limiting [boolean] -c, --cors CORS whitelist origins [string] --env,
+  --envpath Path to load .env file [string] -a, --auth Enable authentication and authorization
+  [boolean] --iuu, --initialuserusername Initial user username [string] --iup, --initialuserpassword
+  Initial user password [string] --ts, --tokensecret Token Secret [string] --atet,
+  --accesstokenexpirationtime Access Token Expiration Time (Default: 5H) [string]
+  --rtet, --refreshtokenexpirationtime Refresh Token Expiration Time (Default: 1D)
+  [string] -S, --studio Start Soul Studio in parallel --help Show help ``` Then to
+  test Soul is working run the following command ```bash curl http://localhost:8000/api/tables
+  ``` It should return a list of the tables inside `sqlite.db` database. ### 2. Running
+  Soul in Auth mode To run Soul in auth mode, allowing login and signup features with
+  authorization capabilities in your database tables, follow these steps: Run the
+  Soul command with the necessary parameters: ``` soul -d foobar.db -a --ts= --atet=4H
+  --rtet=3D --iuu=john --iup= ``` > Note: When configuring your JWT Secret, it is
+  recommended to use a long string value for enhanced security. It is advisable to
+  use a secret that is at least 10 characters in length. In this example: - The `-a`
+  flag instructs Soul to run in auth mode. - The `--ts` flag allows you to pass a
+  JWT secret value for the `access and refresh tokens` generation and verification.
+  Replace with your desired secret value. - The `--atet` flag sets the JWT expiration
+  time for the access token. In this case, it is set to four hours (4H), meaning the
+  token will expire after 4 hours. - The `--rtet` flag sets the JWT expiration time
+  for the refresh token. In this case, it is set to three days (3D), meaning the token
+  will expire after 3 days. - The `--iuu` flag is used to pass a username for the
+  initial user - The `--iup` flag is used to pass a password for the initial user
+  Here are some example values for the `atet` and `rtet` flags - 60M: Represents a
+  duration of 60 minutes. - 5H: Represents a duration of 5 hours. - 1D: Represents
+  a duration of 1 day. NOTE: It is crucial to securely store a copy of the `--ts`(`Token
+  Secret`) value used in Soul. Once you pass this values, make sure to keep a backup
+  because you will need it every time you restart Soul. Losing this secret values
+  can result in a situation where all of your users are blocked from accessing Soul.
+  ### 3. Updating Super Users To modify a superuser information in a database, you
+  can utilize the `updatesuperuser` command. This command allows you to change a superuser''s
+  `password` or upgrade/downgrade a normal user to a `superuser`. Below is an example
+  of how to use it: ``` soul -d foobar.db updatesuperuser --id=1 password= // Update
+  the password for the superuser with ID 1 soul -d foobar.db updatesuperuser --id=1
+  --is_superuser=true // Upgrade the user with ID 1 to a superuser soul -d foobar.db
+  updatesuperuser --id=1 --is_superuser=false // Revoke the superuser role from the
+  superuser with ID 1 ``` ### Passing Custom Path for .env File There might be cases
+  where you want to pass a custom path for your `.env` file. For this, you can use
+  the `--env` flag when running the `soul` command, providing the absolute file path
+  of your `.env` file. ```shell soul -d foobar.db --env=/absolute/path/of/your/.env/file
+  ``` NOTE: - You should pass an absolute file path of the .env file. - Relative paths
+  are not allowed. - Don''t forget to include the .env file in the specified path.
+  ## Documentation API documentation is available while the project is running at
+  [http://localhost:8000/api/docs](http://localhost:8000/api/docs) There''s '
 ---
 {% raw %}
 <p align="center">

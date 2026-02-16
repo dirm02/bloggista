@@ -2,8 +2,64 @@
 layout: project
 name: Spartanj Ecode
 slug: SpartanJ-ecode
+category: Very important!!!!
 image: https://github.com/user-attachments/assets/fa995b21-a612-4565-b08e-bb6c72799ef1
 repo_url: https://github.com/SpartanJ/eepp
+indexed_content: 'ecode *ecode* is a lightweight multi-platform code editor designed
+  for modern hardware with a focus on responsiveness and performance. It has been
+  developed with the hardware-accelerated [eepp GUI](https://github.com/SpartanJ/eepp/),
+  which provides the core technology for the editor. The project comes as the first
+  serious project using the [eepp GUI](https://github.com/SpartanJ/eepp/), and it''s
+  currently being developed to improve the eepp GUI library as part of one of its
+  main objectives. ## Screenshots For more screenshots checkout [running on macOS](https://github.com/SpartanJ/ecode/assets/650416/9e8e00a7-fbcc-479b-8588-0023d8f86a9a),
+  [running on Windows](https://user-images.githubusercontent.com/650416/172760308-30d5335c-d5f7-4dbe-94ce-2e556d858909.png),
+  [running on Haiku](https://user-images.githubusercontent.com/650416/172760331-799b7d16-104b-4cac-ba34-c0cf60ba4374.png),
+  [low dpi](https://user-images.githubusercontent.com/650416/172519582-1aab1e94-8d69-4c2c-b4ba-de9f2d8729cf.png),
+  [code completion](https://user-images.githubusercontent.com/650416/172521557-f68aa855-0534-49c9-b33e-8f9f8b47b9d2.png),
+  [terminal](https://user-images.githubusercontent.com/650416/180109676-a1f9dbc6-d170-4e67-a19c-611cff9f04dd.png),
+  [file locator](https://user-images.githubusercontent.com/650416/172521593-bb8fde13-2600-44e5-87d2-3fc41370fc77.png),
+  [file formats](https://user-images.githubusercontent.com/650416/172521619-ac1aeb82-80e5-49fd-894e-afc780d4c0fd.png),
+  [global find](https://user-images.githubusercontent.com/650416/172523164-2ca9b988-7d2d-4b8c-b6d2-10e593d7fc14.png),
+  [global replace](https://user-images.githubusercontent.com/650416/172523195-00451552-2a56-4595-8b3a-cf8071b36dc6.png),
+  [linter](https://user-images.githubusercontent.com/650416/172523272-45c267af-2585-4c54-86e0-739b5202569e.png).
+  ## Notable Features * Lightweight * Portable * Uncluttered GUI * Syntax Highlighting
+  (including nested syntax highlighting, supporting over 100 languages and LSP semantic
+  highlighting) * Multi-cursor support * [LSP](https://microsoft.github.io/language-server-protocol/)
+  support * Debugger support via [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol)
+  * [Git](https://git-scm.com/) integration * Terminal support * Command Palette *
+  Auto-Completion * Customizable Linter support * Customizable Formatter support *
+  Customizable Color-Schemes * Customizable keyboard bindings * Configurable build
+  pipelines * Fast global search (and replace) * AI Assistant plugin * Minimap * Unlimited
+  editor splitting * Easily extendable language support * Customizable and scalable
+  (non-integer) GUI (thanks to [eepp GUI](https://github.com/SpartanJ/eepp/)) * Dark
+  & Light Mode * File system Tree View (with real-time file system changes) * Smart
+  hot-reload of files * Folders as Projects with `.gitignore` support \* * Per Project
+  Settings * Smart and fast project file locator * Multiline search and replace *
+  Project/Folder state persist between sessions * Soft-wrap * Code-folding * Session
+  Snapshot & Periodic Backup * Perl Regular Expressions and [Lua pattern searches](https://www.lua.org/manual/5.4/manual.html#6.4.1)
+  support * Plugins support (linter, spell checker, LSP, DAP, Git, and more). ###
+  Folder / Project Settings (\*) In *ecode*, folders are treated as projects, similar
+  to other code editors. However, *ecode* distinguishes itself by using the repository''s
+  `.gitignore` file as a project configuration to streamline file management. ####
+  Automatic File Filtering *ecode* automatically excludes files listed in the `.gitignore`
+  file when indexing project files. This ensures that only relevant files are considered
+  for project-wide searches and navigation, resulting in faster and more accurate
+  search outcomes. #### Customizing File Inclusion To override `.gitignore` filtering,
+  *ecode* supports two configuration files in the `.ecode/` subfolder: - **`.prjallowed`**:
+  Add glob patterns to include files ignored by `.gitignore`, making them available
+  for indexing and searching. - **`.prjdisallowed`**: Add glob patterns to exclude
+  files that are not ignored by `.gitignore`, providing precise control over file
+  visibility. #### Supported File Types By default, *ecode* indexes only file types
+  it officially supports. Unsupported files are excluded unless their patterns are
+  explicitly added to the `.ecode/.prjallowed` file. This approach ensures an efficient
+  and tailored project management experience with flexible customization options.
+  ## Philosophy Some points to illustrate the project philosophy: * Extendable functionality
+  but in a controlled environment. New features and new plugins are accepted, but
+  the author will supervise any new content that might affect the application quality
+  and performance. * Load as few files and resources as possible and load asynchronously
+  as many resources as possible. Startup time of the application is considered critical.
+  * Use the machine resources but not abuse them. * The editor implementation will
+  try'
 ---
 {% raw %}
 <h1 align="center">

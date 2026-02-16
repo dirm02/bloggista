@@ -2,8 +2,56 @@
 layout: project
 name: Correlatedsecurity Awesome Soar
 slug: correlatedsecurity-Awesome-SOAR
+category: GreyHate-Cyber&Security
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/correlatedsecurity/Awesome-SOAR
+indexed_content: '# Awesome-SOAR List [](https://awesome.re) > A curated Cyber "Security
+  Orchestration, Automation and Response (SOAR)" resources list. >"SOAR refers to
+  technologies that enable organizations to collect inputs monitored by the security
+  operations team. For example, alerts from the SIEM system and other security technologies
+  — where incident analysis and triage can be performed by leveraging a combination
+  of human and machine power — help define, prioritize and drive standardized incident
+  response activities. SOAR tools allow an organization to define incident analysis
+  and response procedures in a digital workflow format." - [Gartner](https://www.gartner.com/en/information-technology/glossary/security-orchestration-automation-response-soar)
+  ## Contents - [Global-Standards](#Global-Standards) - [Incident-Categories](#Incident-Categories)
+  - [Process-Resources](#Process-Resources) - [Playbooks-Resources](#Playbooks-Resources)
+  - [Workflow-Resources](#Workflow-Resources) - [Automation-Resources](#Automation-Resources)
+  - [User-Communities](#User-Communities) - [Articles](#Articles) - [Presentations](#Presentations)
+  - [Training](#Training) - [SOAR-Solutions](#SOAR-Solutions) - [Commercial](#Commercial)
+  - [SIEM-with-SOAR-Included](#SIEM-with-SOAR-Included) - [Open-Source](#Open-Source)
+  ## Global-Standards - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+  - [NIST Computer Security Incident Handling Guide](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)
+  - [Collaborative Open Playbook Standard (COPS)](https://github.com/demisto/COPS)
+  - by Demisto - [RE&CT Framework](https://github.com/atc-project/atc-react) - a MITRE
+  ATT&CK inspired framework specifically for actionable Incident Response techniques.
+  - [Integrated Adaptive Cyber Defense (IACD) Automate Framework](https://www.iacdautomate.org/)
+  - [OASIS Collaborative Automated Course of Action Operations (CACAO) for Cyber Security](https://www.oasis-open.org/committees/cacao)
+  - a standards effort to define a common language for course of action playbooks
+  ## Incident-Categories - [ServiceNow Incident Categories and Subcategories](https://docs.servicenow.com/bundle/orlando-it-service-management/page/product/incident-management/reference/r_CategorizingIncidents.html)
+  - [Incident Classification/Incident Taxonomy according to eCSIRT.net](https://www.trusted-introducer.org/Incident-Classification-Taxonomy.pdf)
+  ## Process-Resources - [Information Security Incident Management Process Document
+  Template](http://g3ctoolkit.net.s3-website-us-west-2.amazonaws.com/ia/SecPol/wmspDownloads/Information_Security_Incident_Management_Policy.doc)
+  - [Incident Response Flowchart](http://www.asu.edu/courses/oasis/Security/Incident_Response_Flowchart.pdf)
+  - [Critical Infrastructure Cyber Incident Management Process](https://www.publicpower.org/system/files/documents/Public-Power-Cyber-Incident-Response-Playbook.pdf)
+  - [SANS Incident Handler''s Handbook](https://www.sans.org/reading-room/whitepapers/incident/paper/33901)
+  ## Playbooks-Resources - [Playbooks in Visio and PDF](https://www.incidentresponse.com/playbooks/)
+  - [Top 5 Playbooks by Ayehu](https://ayehu.com/cyber-security-incident-response-automation/top-5-cyber-security-incident-response-playbooks/)
+  - [Playbooks by Societe Generale](https://github.com/certsocietegenerale/IRM/tree/master/EN)
+  - [Playbooks by guardsight](https://github.com/guardsight/gsvsoc_cirt-playbook-battle-cards)
+  - [Playbooks (cloud) by AWS](https://github.com/aws-samples/aws-incident-response-runbooks/tree/master/playbooks)
+  ## Automation-Resources - [Playbooks Automation components by Phantom](https://github.com/phantomcyber/playbooks)
+  - [Playbooks Automation components part 2 by Phantom](https://github.com/phantomcyber/phantom-apps/tree/next/Apps)
+  - [Playbooks Automation components by DTonomy](https://doc.dtonomy.com/playbooks.html)
+  - [Playbooks Automation components by ThreatConnect](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/playbooks)
+  - [Playbooks Automation components part 2 by ThreatConnect](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/apps)
+  - [Playbooks Automation components by Rapid7](https://github.com/rapid7/insightconnect-workflows/tree/master/workflows)
+  - [Playbooks Automation components by Microsoft Azure Sentinel](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks)
+  - [Playbooks Automation components by Ayehu](https://github.com/Ayehu/custom-activities)
+  - [Playbooks Automation components part 2 by Ayehu](https://github.com/Ayehu/custom-workflows)
+  - [Playbooks Automation components part 3 by Ayehu](https://github.com/Ayehu/workflow-templates)
+  - [Playbooks Automation components by ThreatConnect](https://github.com/ThreatConnect-Inc/threatconnect-playbooks/tree/master/components)
+  - [Playbooks Automation components by Shuffle](https://github.com/frikky/shuffle-workflows)
+  - [Playbooks Automation components part 2 by Shuffle](https://github.com/frikky'
 ---
 {% raw %}
 # Awesome-SOAR List [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

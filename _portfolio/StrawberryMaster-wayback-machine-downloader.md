@@ -2,8 +2,66 @@
 layout: project
 name: Strawberrymaster Wayback Machine Downloader
 slug: StrawberryMaster-wayback-machine-downloader
+category: Very important!!!!
 image: https://badge.fury.io/rb/wayback_machine_downloader_straw.svg
 repo_url: https://github.com/hartator/wayback-machine-downloader).
+indexed_content: '# wmd-straw [](https://rubygems.org/gems/wayback_machine_downloader_straw)
+  [](https://opensource.org/licenses/MIT) This is **wmd-straw** (or wayback-machine-downloader-straw),
+  a fork of the [Wayback Machine Downloader](https://github.com/hartator/wayback-machine-downloader).
+  With this, you can download a website from the Internet Archive Wayback Machine.
+  Included here is partial content from other forks, namely those from [ShiftaDeband](https://github.com/ShiftaDeband/wayback-machine-downloader)
+  and [matthid](https://github.com/matthid/wayback-machine-downloader) — attributions
+  are in the code and go to the original authors — as well as a few additional features.
+  ## Quick start Download a website''s latest snapshot: ```bash wayback_machine_downloader
+  https://example.com ``` Your files will be saved to `./websites/example.com/` with
+  their original structure preserved. ## Installation ### Requirements - Ruby 2.3+
+  ([download Ruby here](https://www.ruby-lang.org/en/downloads/)) - Bundler gem (`gem
+  install bundler`) ### Quick install It took a while, but we have a gem for this!
+  Install it with: ```bash gem install wayback_machine_downloader_straw ``` To run
+  most commands, just like in the original WMD, you can use: ```bash wayback_machine_downloader
+  https://example.com ``` Note that you can also manually download this repository
+  and run commands locally by appending `ruby` before a command (e.g., `ruby wayback_machine_downloader
+  https://example.com`). **Conflict warning**: This gem may conflict with hartator''s
+  original `wayback_machine_downloader` gem. You might need to uninstall the original
+  for this fork to work. A good way to tell is if a command fails and lists the gem
+  version as 2.3.1 or earlier; this WMD fork uses 2.3.2 or above. ### Step-by-step
+  setup 1. **Install Ruby**: ```bash ruby -v ``` This will verify your installation.
+  If it''s not installed, [download Ruby](https://www.ruby-lang.org/en/downloads/)
+  for your OS. 2. **Install dependencies**: ```bash bundle install ``` If you encounter
+  an error like `cannot load such file -- concurrent-ruby`, manually install the missing
+  gem: ```bash gem install concurrent-ruby ``` 3. **Run it**: ```bash cd path/to/wayback-machine-downloader/bin
+  ruby wayback_machine_downloader https://example.com ``` For example, if you extracted
+  the contents to a folder named "wayback-machine-downloader" in your Downloads directory,
+  you''d type `cd Downloads\wayback-machine-downloader\bin`. *Windows tip*: In File
+  Explorer, Shift + Right Click your `bin` folder → "Open Terminal here". ## Docker
+  users We have a Docker image! See [Packages](https://github.com/StrawberryMaster/wayback-machine-downloader/pkgs/container/wayback-machine-downloader)
+  for the latest version. You can also build it yourself: ```bash docker build -t
+  wayback_machine_downloader . docker run -it --rm wayback_machine_downloader [options]
+  URL ``` As an example of how this works without cloning this repo, this command
+  fetches smallrockets.com until the year 2013: ```bash docker run -v .:/build/websites
+  ghcr.io/strawberrymaster/wayback-machine-downloader:master wayback_machine_downloader
+  --to 20130101 smallrockets.com ``` ### Using Docker Compose You can also use Docker
+  Compose, which makes it easier to extend functionality (such as implementing a database
+  to store previous downloads): ```yaml # docker-compose.yml services: wayback_machine_downloader:
+  build: context: . tty: true image: wayback_machine_downloader:latest container_name:
+  wayback_machine_downloader volumes: - .:/build:rw - ./websites:/build/websites:rw
+  ``` #### Usage Create the image named "wayback_machine_downloader": ```bash docker
+  compose up -d --build ``` Run the container: ```bash docker compose run --rm wayback_machine_downloader
+  https://example.com [options] ``` ## Configuration There are a few constants in
+  `wayback_machine_downloader.rb` that can be edited for your convenience. The default
+  values may be conservative, so you can adjust them to your needs: ```ruby DEFAULT_TIMEOUT
+  = 30 # HTTP timeout (in seconds) MAX_RETRIES = 3 # Number of times to retry failed
+  requests RETRY_DELAY = 2 # Wait time between retries (seconds) RATE_LIMIT = 0.25
+  # Throttle between requests (seconds) CONNECTION_POOL_SIZE = 10 # Maximum simultaneous
+  connections MEMORY_BUFFER_SIZE = 16384 # Download buffer size (bytes) STATE_CDX_FILENAME
+  = ''.cdx.json'' # Stores snapshot listing STATE_DB_FILENAME = ''.downloaded.txt''
+  # Tracks completed downloads ``` ## Advanced usage ### Basic options | Option |
+  Description | |--------|-------------| | `-d DIR`, `--directory DIR` | Custom output
+  directory | | `-s`, `--all-timestamps` | Download all historical versions | | `-f
+  TS`, `--from TS` | Start from timestamp (e.g., 20060121) | | `-t TS`, `--to TS`
+  | Stop at timestamp | | `-e`, `--exact-url` | Download exact URL only | | `-r`,
+  `--rewritten` | Download rewritten Wayback Archive files only | | `--rt`, `--retry
+  NUM` | Number of tries in case a download fails (default: 1) | | `--recursive-subdom'
 ---
 {% raw %}
 # wmd-straw

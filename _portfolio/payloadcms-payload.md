@@ -2,8 +2,66 @@
 layout: project
 name: Payloadcms Payload
 slug: payloadcms-payload
+category: Uncategorized
 image: https://deploy.workers.cloudflare.com/button
 repo_url: https://github.com/payloadcms/payload
+indexed_content: "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Explore the Docs &nbsp;·&nbsp;
+  Community Help &nbsp;·&nbsp; Roadmap &nbsp;·&nbsp; View G2 Reviews > [!IMPORTANT]
+  > Star this repo or keep an eye on it to follow along. Payload is the first-ever
+  Next.js native CMS that can install directly in your existing `/app` folder. It's
+  the start of a new era for headless CMS. Benefits over a regular CMS It's both an
+  app framework & headless CMS Deploy anywhere, including serverless on Vercel for
+  free Combine your front+backend in the same /app folder if you want Don't sign up
+  for yet another SaaS - Payload is open source Query your database in React Server
+  Components Both admin and backend are 100% extensible No vendor lock-in Never touch
+  ancient WP code again Build faster, never hit a roadblock ## Quickstart Before beginning
+  to work with Payload, make sure you have all of the [required software](https://payloadcms.com/docs/getting-started/installation).
+  ```text pnpx create-payload-app@latest ``` **If you're new to Payload, you should
+  start with the website template** (`pnpx create-payload-app@latest -t website`).
+  It shows how to do _everything_ - including custom Rich Text blocks, on-demand revalidation,
+  live preview, and more. It comes with a frontend built with Tailwind all in one
+  `/app` folder. ## One-click deployment options You can deploy Payload serverlessly
+  in one-click via Vercel and Cloudflare—giving everything you need without the hassle
+  of the plumbing. ### Deploy on Cloudflare Fully self-contained — one click to deploy
+  Payload with **Workers**, **R2** for uploads, and **D1** for a globally replicated
+  database. [](https://dub.sh/payload-cloudflare) ### Deploy on Vercel All-in-one
+  on Vercel — one click to deploy Payload with a **Next.js** front end, **Neon** database,
+  and **Vercel Blob** for media storage. [](https://dub.sh/payload-vercel) ## One-click
+  templates Jumpstart your next project with a ready-to-go template. These are **production-ready,
+  end-to-end solutions** designed to get you to market fast. Build any kind of **website**,
+  **ecommerce store**, **blog**, or **portfolio** — complete with a modern front end
+  built using **React Server Components** and **Tailwind**. #### \U0001F310 [Website](https://github.com/payloadcms/payload/tree/main/templates/website)
+  #### \U0001F6CD️ [Ecommerce](https://github.com/payloadcms/payload/tree/main/templates/ecommerce)
+  \U0001F389 _**NEW**_ \U0001F389 We're constantly adding more templates to our [**Templates
+  Directory**](https://github.com/payloadcms/payload/tree/main/templates). If you
+  maintain your own, add the `payload-template` topic to your GitHub repo so others
+  can discover it. **\U0001F517 Explore more:** - [Official Templates](https://github.com/payloadcms/payload/tree/main/templates)
+  - [Community Templates](https://github.com/topics/payload-template) ## ✨ Payload
+  Features - Completely free and open-source - Next.js native, built to run inside
+  _your_ `/app` folder - Use server components to extend Payload UI - Query your database
+  directly in server components, no need for REST / GraphQL - Fully TypeScript with
+  automatic types for your data - [Auth out of the box](https://payloadcms.com/docs/authentication/overview)
+  - [Versions and drafts](https://payloadcms.com/docs/versions/overview) - [Localization](https://payloadcms.com/docs/configuration/localization)
+  - [Block-based layout builder](https://payloadcms.com/docs/fields/blocks) - [Customizable
+  React admin](https://payloadcms.com/docs/admin/overview) - [Lexical rich text editor](https://payloadcms.com/docs/fields/rich-text)
+  - [Conditional field logic](https://payloadcms.com/docs/fields/overview#conditional-logic)
+  - Extremely granular [Access Control](https://payloadcms.com/docs/access-control/overview)
+  - [Document and field-level hooks](https://payloadcms.com/docs/hooks/overview) for
+  every action Payload provides - Intensely fast API - Highly secure thanks to HTTP-only
+  cookies, CSRF protection, and more Request Feature ## \U0001F5D2️ Documentation
+  Check out the [Payload website](https://payloadcms.com/docs/getting-started/what-is-payload)
+  to find in-depth documentation for everything that Payload offers. Migrating from
+  v2 to v3? Check out the [3.0 Migration Guide](https://github.com/payloadcms/payload/blob/main/docs/migration-guide/overview.mdx)
+  on how to do it. ## \U0001F64B Contributing If you want to add contributions to
+  this repository, please follow the instructions in [contributing.md](./CONTRIBUTING.md).
+  ## \U0001F4DA Examples The [Examples Directory](./examples) is a great resource
+  for learning how to setup Payload in a variety of different ways, but you can also
+  find great examples in our blog and throughout our social media. If you'd like to
+  run the examples, you can use `create-payload-app` to create a project from one:
+  ```sh npx create-payload-app --example example_name ``` You can see more examples
+  at: - [Examples Directory](./examples) - [Payload Blog](https://payloadcms.com/blog)
+  - [Payload YouTube](https://www.youtube.com/@payloadcms) ## \U0001F50C Plugins Payload
+  is highly extensible a"
 ---
 {% raw %}
 <a href="https://payloadcms.com"><img width="100%" src="https://l4wlsi8vxy8hre4v.public.blob.vercel-storage.com/github-banner-new-logo.jpg" alt="Payload headless CMS Admin panel built with React" /></a>

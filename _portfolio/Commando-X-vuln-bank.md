@@ -2,8 +2,70 @@
 layout: project
 name: Commando X Vuln Bank
 slug: Commando-X-vuln-bank
+category: Uncategorized
 image: https://github.com/user-attachments/assets/7fda0106-b083-48d6-8629-f7ee3c8eb73d
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Vulnerable Bank Application \U0001F3E6 A deliberately vulnerable
+  web application for practicing application security testing of Web, APIs and LLMs,
+  secure code review and implementing security in CI/CD pipelines. ⚠️ **WARNING: This
+  application is intentionally vulnerable and should only be used for educational
+  purposes in isolated environments.** ## Overview This project is a simple banking
+  application with multiple security vulnerabilities built in. It's designed to help
+  security engineers, developers, interns, QA analyst and DevSecOps practitioners
+  learn about: - Common web application and API vulnerabilities - AI/LLM Vulnerabilities
+  - Secure coding practices - Security testing automation - DevSecOps implementation
+  ## Features & Vulnerabilities ### Core Banking Features - \U0001F510 User Authentication
+  & Authorization - \U0001F4B0 Account Balance Management - \U0001F4B8 Money Transfers
+  - \U0001F4DD Loan Requests - \U0001F464 Profile Picture Upload - \U0001F4CA Transaction
+  History - \U0001F511 Password Reset System (3-digit PIN) - \U0001F4B3 Virtual Cards
+  Management - \U0001F4F1 Bill Payments System - \U0001F916 AI Customer Support Agent
+  (Real LLM with DeepSeek API / Mock Mode) ### Implemented Vulnerabilities 1. **Authentication
+  & Authorization** - SQL Injection in login - Weak JWT implementation - Broken object
+  level authorization (BOLA) - Broken object property level authorization (BOPLA)
+  - Mass Assignment & Excessive Data Exposure - Weak password reset mechanism (3-digit
+  PIN) - Token stored in localStorage - No server-side token invalidation - No session
+  expiration 2. **Data Security** - Information disclosure - Sensitive data exposure
+  - Plaintext password storage - SQL injection points - Debug information exposure
+  - Detailed error messages exposed 3. **Transaction Vulnerabilities** - No amount
+  validation - Negative amount transfers possible - No transaction limits - Race conditions
+  in transfers and balance updates - Transaction history information disclosure -
+  No validation on recipient accounts 4. **File Operations** - Unrestricted file upload
+  - Path traversal vulnerabilities - No file type validation - Directory traversal
+  - No file size limits - Unsafe file naming - Server-Side Request Forgery (SSRF)
+  via URL-based profile image import 5. **Session Management** - Token vulnerabilities
+  - No session expiration - Weak secret keys - Token exposure in URLs 6. **Client
+  and Server-Side Flaws** - Cross Site Scripting (XSS) - Cross Site Request Forgery
+  (CSRF) - Insecure direct object references - No rate limiting 7. **Virtual Card
+  Vulnerabilities** - Mass Assignment in card limit updates - Predictable card number
+  generation - Plaintext storage of card details - No validation on card limits -
+  BOLA in card operations - Race conditions in balance updates - Card detail information
+  disclosure - No transaction verification - Lack of card activity monitoring 8. **Bill
+  Payment Vulnerabilities** - No validation on payment amounts - SQL injection in
+  biller queries - Information disclosure in payment history - Predictable reference
+  numbers - Transaction history exposure - No validation on biller accounts - Race
+  conditions in payment processing - BOLA in payment history access - Missing payment
+  limits 9. **AI Customer Support Vulnerabilities** - Prompt Injection (CWE-77) -
+  AI-based Information Disclosure (CWE-200) - Broken Authorization in AI context (CWE-862)
+  - AI System Information Exposure (CWE-209) - Insufficient Input Validation for AI
+  prompts (CWE-20) - Direct Database Access through AI manipulation - AI Role Override
+  attacks - Context Injection vulnerabilities - AI-assisted unauthorized data access
+  - Exposed AI system prompts and configurations ## Installation & Setup \U0001F680
+  ### Prerequisites - Docker and Docker Compose (for containerized setup) - PostgreSQL
+  (if running locally) - Python 3.9 or higher (for local setup) - Git ### Option 1:
+  Using Docker (Recommended) #### Using Docker Compose (Easiest) 1. Clone the repository:
+  ```bash git clone https://github.com/Commando-X/vuln-bank.git cd vuln-bank ``` 2.
+  Start the application: ```bash docker-compose up --build ``` The application will
+  be available at `http://localhost:5000` #### Using Docker Only 1. Clone the repository:
+  ```bash git clone https://github.com/Commando-X/vuln-bank.git cd vuln-bank ``` 2.
+  Build the Docker image: ```bash docker build -t vuln-bank . ``` 3. Run the container:
+  ```bash docker run -p 5000:5000 vuln-bank ``` ### Option 2: Local Installation ####
+  Prerequisites - Python 3.9 or higher - PostgreSQL installed and running - pip (Python
+  package manager) - Git #### Steps 1. Clone the repository: ```bash git clone https://github.com/Commando-X/vuln-bank.git
+  cd vuln-bank ``` 2. Create and activate a virtual environment (recommended): ```bash
+  # On Windows python -m venv venv venv\\Scripts\\activate # On Linux/Mac python3
+  -m venv venv source venv/bin/activate ``` 3. Install required packages: ```bash
+  pip install -r requirements.txt ``` 4. Create necessary directories: ```bash # On
+  Windows mkdir static\\uploads # On Linux/Mac mkdir -p static/uploads ``` 5. "
 ---
 {% raw %}
 # Vulnerable Bank Application 🏦

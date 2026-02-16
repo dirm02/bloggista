@@ -2,8 +2,65 @@
 layout: project
 name: Serial Studio Serial Studio
 slug: Serial-Studio-Serial-Studio
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Serial-Studio-Serial-Studio/doc/brand/logo.svg
 repo_url: https://github.com/Serial-Studio/Serial-Studio
+indexed_content: "# Serial Studio [](https://github.com/Serial-Studio/Serial-Studio/releases/)
+  [](https://deepwiki.com/Serial-Studio/Serial-Studio) [](https://instagram.com/serialstudio.app)
+  [](https://www.paypal.com/donate?hosted_button_id=XN68J47QJKYDE) [](https://store.serial-studio.com/buy/ba46c099-0d51-4d98-9154-6be5c35bc1ec)
+  [](https://app.codacy.com/gh/Serial-Studio/Serial-Studio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+  **Serial Studio** is an open-source tool that helps you see data from **Arduino**,
+  **ESP32**, **Raspberry Pi**, and other devices in real-time. It works with **serial
+  ports (UART)**, **Bluetooth Low Energy (BLE)**, **MQTT**, **Modbus TCP/RTU**, **CAN
+  Bus**, **TCP/UDP networks**, and **audio devices**. You can create dashboards to
+  monitor sensors and debug hardware without writing code. Serial Studio runs on **Windows**,
+  **macOS**, and **Linux** (including ARM64 for Raspberry Pi). It's perfect for robotics
+  teams, IoT developers, makers, educators, and researchers who need dashboards and
+  CSV data logging. **Good for:** Arduino data, ESP32 dashboards, IoT sensors, robot
+  debugging, drone data, environmental sensors, real-time plots, hardware testing,
+  lab experiments, car diagnostics (CAN Bus), industrial equipment (Modbus), and STEM
+  education. \U0001F4DA **New users?** Check out the [FAQ](FAQ.md), [use cases](USE-CASES.md),
+  and [comparison with alternatives](COMPARISON.md). ## Download Serial Studio is
+  available as source code and official precompiled binaries for Windows, macOS, and
+  Linux. - [Latest Stable Release](https://github.com/Serial-Studio/Serial-Studio/releases/latest)
+  - [Pre-release Builds](https://github.com/Serial-Studio/Serial-Studio/releases/continuous)
+  #### Microsoft Windows: Requires the [Microsoft Visual C++ Redistributable (x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version).
+  On first launch, Windows may show a warning about an unknown developer, click _\"More
+  Info → Run Anyway\"_ to continue. #### macOS: Distributed as a universal DMG. Open
+  the DMG file and drag **Serial Studio** into the **Applications** folder. Alternatively,
+  you can try installing via Homebrew: ```bash brew install --cask serial-studio ```
+  **Note:** The Homebrew cask is community-maintained. It’s available, but not officially
+  developed or tested by me. #### Linux: The recommended way to install Serial Studio
+  on Linux is via the official pre-built [AppImage](https://appimage.org/). Make it
+  executable and run it: ```bash chmod +x SerialStudio-Pro-3.2.3-Linux-x64.AppImage
+  ./SerialStudio-Pro-3.2.3-Linux-x64.AppImage ``` If the AppImage fails to launch,
+  your system may be missing `libfuse2`: ```bash sudo apt install libfuse2 ``` **Tip:**
+  For better desktop integration (menu entries, updates, icons), use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher).
+  ##### Flatpak (via Flathub) Serial Studio is also available on [Flathub](https://flathub.org/apps/com.serial_studio.Serial-Studio).
+  This version receives regular updates and may offer better support for ARM64 systems.
+  However, minor graphical glitches may occur on some desktop environments—especially
+  under Wayland (e.g., missing window shadows). ##### Raspberry Pi / ARM64: An ARM64
+  AppImage is available for Raspberry Pi and similar devices. Performance varies based
+  on hardware and GPU drivers, since the UI depends on GPU acceleration. The ARM64
+  AppImage requires: - A 64-bit Linux OS equivalent to or newer than **Ubuntu 24.04**
+  (due to a `glibc 2.38` dependency) - `libfuse2` installed Make sure your system
+  meets these requirements before running the AppImage. ## Features #### How It Works:
+  - **Project File Mode (recommended):** Create custom dashboards using the **Project
+  Editor** with drag-and-drop widgets. No coding needed. - **Quick Plot Mode:** Show
+  comma-separated values from Arduino instantly. No setup needed. - **Device-defined
+  Mode:** Let your device send its own dashboard layout via JSON. #### What It Can
+  Do: - **No Coding Needed:** Build dashboards using a simple visual interface - **Many
+  Protocols:** Serial/UART, Bluetooth LE, MQTT, Modbus TCP/RTU, CAN Bus, TCP/UDP,
+  and audio input - **15+ Widgets:** Line plots, gauges, bar charts, GPS maps, FFT
+  spectrum, accelerometers, gyroscopes, compass, data grids - **Save to CSV:** Automatically
+  save all data for later analysis in Excel, Python, MATLAB, or R - **MDF4 Playback
+  & Export:** Play and export MDF4/MF4 files for CAN Bus, LIN, FlexRay, and analog
+  channels (Pro) - **Works Everywhere:** Windows 10/11, macOS 11+ (Intel + Apple Silicon),
+  Linux x64, and Raspberry Pi ARM64 - **Works with Arduino/ESP32:** Compatible with
+  any device that sends data via serial, BLE, or network - **Fast Updates:** 60 FPS
+  dashboard with low delay (<50ms) - **Custom Parsing:** Use JavaScript to decode
+  binary data, checksums, and complex formats - **Modbus TCP/RTU:** Connect to industrial
+  PLCs and equipmen"
 ---
 {% raw %}
 # ![Application Icon for Serial Studio](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Serial-Studio-Serial-Studio/doc/brand/logo.svg) Serial Studio

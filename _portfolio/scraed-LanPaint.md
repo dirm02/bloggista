@@ -2,8 +2,64 @@
 layout: project
 name: Scraed Lanpaint
 slug: scraed-LanPaint
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/badge/TMLR-PDF-8A2BE2?logo=openreview&logoColor=white
 repo_url: https://github.com/scraed/LanPaintBench)
+indexed_content: "# LanPaint: Universal Inpainting Sampler with \"Think Mode\" [](https://openreview.net/pdf?id=JPC8JyOUSW)
+  [](https://github.com/scraed/LanPaintBench) [](https://github.com/comfyanonymous/ComfyUI)
+  [](https://huggingface.co/charrywhite/LanPaint) [](https://scraed.github.io/scraedBlog/)
+  [](https://github.com/scraed/LanPaint/stargazers) [](https://discord.gg/yN5wYDE6W4)
+  Universally applicable inpainting ability for every model. LanPaint sampler lets
+  the model \"think\" through multiple iterations before denoising, enabling you to
+  invest more computation time for superior inpainting quality. This is the official
+  implementation of [\"LanPaint: Training-Free Diffusion Inpainting with Asymptotically
+  Exact and Fast Conditional Sampling\"](https://arxiv.org/abs/2502.03491), accepted
+  by TMLR. The repository is for ComfyUI extension. Local Python benchmark code is
+  published here: [LanPaintBench](https://github.com/scraed/LanPaintBench). ## Citation
+  ``` @article{ zheng2025lanpaint, title={LanPaint: Training-Free Diffusion Inpainting
+  with Asymptotically Exact and Fast Conditional Sampling}, author={Candi Zheng and
+  Yuan Lan and Yang Wang}, journal={Transactions on Machine Learning Research}, issn={2835-8856},
+  year={2025}, url={https://openreview.net/forum?id=JPC8JyOUSW}, note={} } ``` **\U0001F389
+  NEW 2026: Join our discord!** [Join our Discord](https://discord.gg/yN5wYDE6W4)
+  to share experiences, discuss features, and explore future development. **\U0001F3AC
+  NEW: LanPaint now supports inpainting and outpainting based on Z-Image!** | Original
+  | Masked | Inpainted | |:--------:|:------:|:---------:| | | | | **\U0001F3AC NEW:
+  LanPaint now supports Z-Image-Base too!** | Original | Masked | Inpainted | |:--------:|:------:|:---------:|
+  | | | | **\U0001F3AC NEW: LanPaint now supports video inpainting and outpainting
+  based on Wan 2.2!** | Original Video | Mask (edit T-shirt text) | Inpainted Result
+  | |:--------------:|:----:|:----------------:| | | | | *Video Inpainting Example:
+  81 frames with temporal consistency* Check our latest [Wan 2.2 Video Examples](#video-examples-beta),
+  [Wan 2.2 Image Examples](#example-wan22-inpaintlanpaint-k-sampler-5-steps-of-thinking),
+  and [Qwen Image Edit 2509](#example-qwen-edit-2509-inpaint) support. ## Table of
+  Contents - [Features](#features) - [Quickstart](#quickstart) - [How to Use Examples](#how-to-use-examples)
+  - [Video Examples (Beta)](#video-examples-beta) - [Wan 2.2 Video Inpainting](#wan-22-video-inpainting)
+  - [Wan 2.2 5B Video Inpainting](#wan-22-5b-video-inpainting) - [Wan 2.2 Video Outpainting](#wan-22-video-outpainting)
+  - [Resource Consumption](#resource-consumption) - [Image Examples](#image-examples)
+  - [Flux.2.Dev](#example-flux2dev-inpaintlanpaint-k-sampler-5-steps-of-thinking)
+  - [Flux 2 klein](#example-flux-2-klein-inpaintlanpaint-k-sampler-2-steps-of-thinking)
+  - [Z-image](#example-z-image-inpaintlanpaint-k-sampler-5-steps-of-thinking) - [Z-image-base](#example-z-image-base-inpaintlanpaint-k-sampler-3-steps-of-thinking)
+  - [Hunyuan T2I](#example-hunyuan-t2i-inpaintlanpaint-k-sampler-5-steps-of-thinking)
+  - [Wan 2.2 T2I](#example-wan22-inpaintlanpaint-k-sampler-5-steps-of-thinking) -
+  [Wan 2.2 T2I with reference](#example-wan22-partial-inpaintlanpaint-k-sampler-5-steps-of-thinking)
+  - [Qwen Image Edit 2511 2509](#example-qwen-edit-2509-inpaint) - [Qwen Image Edit
+  2508](#example-qwen-edit-2508-inpaint) - [Qwen Image](#example-qwen-image-inpaintlanpaint-k-sampler-5-steps-of-thinking)
+  - [HiDream](#example-hidream-inpaint-lanpaint-k-sampler-5-steps-of-thinking) - [SD
+  3.5](#example-sd-35-inpaintlanpaint-k-sampler-5-steps-of-thinking) - [Flux](#example-flux-inpaintlanpaint-k-sampler-5-steps-of-thinking)
+  - [SDXL](#example-sdxl-0-character-consistency-side-view-generation-lanpaint-k-sampler-5-steps-of-thinking)
+  - [Usage](#usage) - [Basic Sampler](#basic-sampler) - [Advanced Sampler](#lanpaint-ksampler-advanced)
+  - [Tuning Guide](#lanpaint-ksampler-advanced-tuning-guide) - [Community Showcase](#community-showcase-)
+  - [FAQ](#faq) - [Updates](#updates) - [ToDo](#todo) - [Citation](#citation) ## Features
+  - **Universal Compatibility** – Works instantly with almost any model (**Z-image,
+  Z-image-base, Hunyuan, Wan 2.2, Qwen Image/Edit, HiDream, SD 3.5, Flux-series, SDXL,
+  SD 1.5 or custom LoRAs**) and ControlNet. - **No Training Needed** – Works out of
+  the box with your existing model. - **Easy to Use** – Same workflow as standard
+  ComfyUI KSampler. - **Flexible Masking** – Supports any mask shape, size, or position
+  for inpainting/outpainting. - **No Workarounds** – Generates 100% new content (no
+  blending or smoothing) without relying on partial denoising. - **Beyond Inpainting**
+  – You can even use it as a simple way to generate consistent characters. **Warning**:
+  LanPaint has degraded performance on distillation models, such as Flux.dev, due
+  to a similar [issue with LORA training](https://medium.com/@zhiwangshi28/why-flux-lora-so-hard-to-train-and-how-to-overcome-it-a0c70bc59eaf).
+  Please use low flux guidance (1.0-2.0) to mitigate this [iss"
 ---
 {% raw %}
 <div align="center">

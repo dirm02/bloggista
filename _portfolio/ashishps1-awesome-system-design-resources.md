@@ -2,8 +2,60 @@
 layout: project
 name: Ashishps1 Awesome System Design Resources
 slug: ashishps1-awesome-system-design-resources
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ashishps1-awesome-system-design-resources/diagrams/system-design-github-logo.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/ashishps1-awesome-system-design-resources
+indexed_content: "This repository contains free resources to learn System Design concepts
+  and prepare for interviews. \U0001F449 Subscribe to my [AlgoMaster Newsletter](https://bit.ly/amghsd)
+  and get a **FREE System Design Interview Handbook** in your inbox. ✅ If you are
+  new to System Design, start here: [System Design was HARD until I Learned these
+  30 Concepts](https://blog.algomaster.io/p/30-system-design-concepts) ## ⚙️ Core
+  Concepts - [Scalability](https://algomaster.io/learn/system-design/scalability)
+  - [Availability](https://algomaster.io/learn/system-design/availability) - [Reliability](https://algomaster.io/learn/system-design/reliability)
+  - [SPOF](https://algomaster.io/learn/system-design/single-point-of-failure-spof)
+  - [Latency vs Throughput vs Bandwidth](https://algomaster.io/learn/system-design/latency-vs-throughput)
+  - [Consistent Hashing](https://algomaster.io/learn/system-design/consistent-hashing)
+  - [CAP Theorem](https://algomaster.io/learn/system-design/cap-theorem) - [Failover](https://www.druva.com/glossary/what-is-a-failover-definition-and-related-faqs)
+  - [Fault Tolerance](https://www.cockroachlabs.com/blog/what-is-fault-tolerance/)
+  ## \U0001F310 Networking Fundamentals - [OSI Model](https://algomaster.io/learn/system-design/osi)
+  - [IP Addresses](https://algomaster.io/learn/system-design/ip-address) - [Domain
+  Name System (DNS)](https://blog.algomaster.io/p/how-dns-actually-works) - [Proxy
+  vs Reverse Proxy](https://blog.algomaster.io/p/proxy-vs-reverse-proxy-explained)
+  - [HTTP/HTTPS](https://algomaster.io/learn/system-design/http-https) - [TCP vs UDP](https://algomaster.io/learn/system-design/tcp-vs-udp)
+  - [Load Balancing](https://blog.algomaster.io/p/load-balancing-algorithms-explained-with-code)
+  - [Checksums](https://algomaster.io/learn/system-design/checksums) ## \U0001F50C
+  API Fundamentals - [APIs](https://algomaster.io/learn/system-design/what-is-an-api)
+  - [API Gateway](https://blog.algomaster.io/p/what-is-an-api-gateway) - [REST vs
+  GraphQL](https://blog.algomaster.io/p/rest-vs-graphql) - [WebSockets](https://blog.algomaster.io/p/websockets)
+  - [Webhooks](https://algomaster.io/learn/system-design/webhooks) - [Idempotency](https://algomaster.io/learn/system-design/idempotency)
+  - [Rate limiting](https://blog.algomaster.io/p/rate-limiting-algorithms-explained-with-code)
+  - [API Design](https://abdulrwahab.medium.com/api-architecture-best-practices-for-designing-rest-apis-bf907025f5f)
+  ## \U0001F5C4️ Database Fundamentals - [ACID Transactions](https://algomaster.io/learn/system-design/acid-transactions)
+  - [SQL vs NoSQL](https://algomaster.io/learn/system-design/sql-vs-nosql) - [Database
+  Indexes](https://algomaster.io/learn/system-design/indexing) - [Database Sharding](https://algomaster.io/learn/system-design/sharding)
+  - [Data Replication](https://redis.com/blog/what-is-data-replication/) - [Database
+  Scaling](https://blog.algomaster.io/p/system-design-how-to-scale-a-database) - [Databases
+  Types](https://blog.algomaster.io/p/15-types-of-databases) - [Bloom Filters](https://algomaster.io/learn/system-design/bloom-filters)
+  - [Database Architectures](https://www.mongodb.com/developer/products/mongodb/active-active-application-architectures/)
+  ## ⚡ Caching Fundamentals - [Caching 101](https://algomaster.io/learn/system-design/what-is-caching)
+  - [Caching Strategies](https://algomaster.io/learn/system-design/caching-strategies)
+  - [Cache Eviction Policies](https://blog.algomaster.io/p/7-cache-eviction-strategies)
+  - [Distributed Caching](https://blog.algomaster.io/p/distributed-caching) - [Content
+  Delivery Network (CDN)](https://algomaster.io/learn/system-design/content-delivery-network-cdn)
+  ## \U0001F504 Asynchronous Communication - [Pub/Sub](https://algomaster.io/learn/system-design/pub-sub)
+  - [Message Queues](https://algomaster.io/learn/system-design/message-queues) - [Change
+  Data Capture (CDC)](https://algomaster.io/learn/system-design/change-data-capture-cdc)
+  ## \U0001F9E9 Distributed System and Microservices - [HeartBeats](https://blog.algomaster.io/p/heartbeats-in-distributed-systems)
+  - [Service Discovery](https://blog.algomaster.io/p/service-discovery-in-distributed-systems)
+  - [Consensus Algorithms](https://medium.com/@sourabhatta1819/consensus-in-distributed-system-ac79f8ba2b8c)
+  - [Distributed Locking](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
+  - [Gossip Protocol](http://highscalability.com/blog/2023/7/16/gossip-protocol-explained.html)
+  - [Circuit Breaker](https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33)
+  - [Disaster Recovery](https://cloud.google.com/learn/what-is-disaster-recovery)
+  - [Distributed Tracing](https://www.dynatrace.com/news/blog/what-is-distributed-tracing/)
+  ## \U0001F587️ Architectural Patterns - [Client-Server Architecture](https://algomaster.io/learn/system-design/client-server-architecture)
+  - [Microservices Architecture](https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9)
+  - [Serverless Architecture](https://blog.algomaster.io"
 ---
 {% raw %}
 <p align="center">

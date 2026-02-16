@@ -2,8 +2,63 @@
 layout: project
 name: Withoutbg Withoutbg
 slug: withoutbg-withoutbg
+category: API - Documentation
 image: https://img.shields.io/pypi/v/withoutbg.svg
 repo_url: https://github.com/withoutbg/withoutbg
+indexed_content: "# withoutbg **AI-powered background removal with local and cloud
+  options** [](https://pypi.org/project/withoutbg/) [](https://opensource.org/licenses/Apache-2.0)
+  [](https://github.com/withoutbg/withoutbg/stargazers) Remove backgrounds from images
+  instantly with AI. Choose between local processing (free) or withoutBG Pro (best
+  quality). ## ⚡ Try It in 30 Seconds ```bash # Install and run in one go pip install
+  withoutbg # Remove background from your first image python -c \"from withoutbg import
+  WithoutBG; WithoutBG.opensource().remove_background('your-photo.jpg').save('result.png')\"
+  ``` That's it! Your photo now has a transparent background. ✨ ## \U0001F914 Which
+  Option Should I Use? ``` Processing 1-10 images occasionally? → withoutBG Pro (zero
+  setup, best quality) Processing 100+ images? → Local model (free, reusable) Need
+  offline processing? → Local model Want best possible quality? → withoutBG Pro Building
+  commercial product? → withoutBG Pro (scalable) Need fastest processing? → withoutBG
+  Pro (optimized infrastructure) ``` **[Compare Focus vs Pro →](https://withoutbg.com/resources/compare/focus-vs-pro?utm_source=github&utm_medium=withoutbg-readme&utm_campaign=main-readme)**
+  ## \U0001F680 Quick Start ### Docker (Web Interface) **[View Complete Dockerized
+  Web App Documentation →](https://withoutbg.com/documentation/integrations/dockerized-web-app?utm_source=github&utm_medium=withoutbg-readme&utm_campaign=main-readme)**
+  ```bash docker run -p 80:80 withoutbg/app:latest # Open in browser open http://localhost
+  ``` ✅ **Multi-platform support**: Works on Intel/AMD (amd64) and ARM (arm64) architectures
+  ### Python SDK **[View Complete Python SDK Documentation →](https://withoutbg.com/documentation/integrations/python-sdk?utm_source=github&utm_medium=withoutbg-readme&utm_campaign=main-readme)**
+  ```bash # Install (using uv - recommended) uv add withoutbg # Or with pip pip install
+  withoutbg ``` **Local Processing (Free):** ```python from withoutbg import WithoutBG
+  # Initialize model once, reuse for multiple images (efficient!) model = WithoutBG.opensource()
+  result = model.remove_background(\"input.jpg\") # Returns PIL Image.Image result.save(\"output.png\")
+  # Standard PIL operations work! result.show() # View instantly result.resize((500,
+  500)) # Resize result.save(\"output.webp\", quality=95) # Different format ``` **withoutBG
+  Pro (Best Quality):** **[See Pro API Results →](https://withoutbg.com/resources/background-removal-results/model-pro-api?utm_source=github&utm_medium=withoutbg-readme&utm_campaign=main-readme)**
+  ```python from withoutbg import WithoutBG # Get your API key from withoutbg.com
+  model = WithoutBG.api(api_key=\"sk_your_key\") result = model.remove_background(\"input.jpg\")
+  result.save(\"output.png\") # Or set environment variable (recommended) # export
+  WITHOUTBG_API_KEY=sk_your_key model = WithoutBG.api(api_key=\"sk_your_key\") ```
+  **CLI:** ```bash # Process single image withoutbg photo.jpg # Process entire photo
+  album withoutbg ~/Photos/vacation/ --batch --output-dir ~/Photos/vacation-no-bg/
+  # Convert to JPEG with white background (for printing) withoutbg portrait.jpg --format
+  jpg --quality 95 # Use withoutBG Pro for best quality export WITHOUTBG_API_KEY=sk_your_key
+  withoutbg wedding-photo.jpg --use-api # Process and watch progress withoutbg photo.jpg
+  --verbose ``` > **Don't have `uv` yet?** It's a fast, modern Python package installer
+  - get it at [astral.sh/uv](https://astral.sh/uv) ### Example Outputs from the Open
+  Source Model **[See More Focus Model Results →](https://withoutbg.com/resources/background-removal-results/model-focus-open-source?utm_source=github&utm_medium=withoutbg-readme&utm_campaign=main-readme)**
+  ## withoutBG Zoom is coming! We are finalizing a new architecture designed to deliver
+  superior accuracy and finer detail. Star the repo to bookmark this upgrade for your
+  future toolkit ⭐. ## \U0001F4E6 Repository Structure This is a **monorepo** containing
+  multiple components: ``` withoutbg/ ├── packages/ # Reusable packages │ └── python/
+  # Core Python SDK (published to PyPI) │ ├── apps/ # End-user applications │ └──
+  web/ # Web application (React + FastAPI) │ ├── integrations/ # Third-party tool
+  integrations │ └── (future: GIMP, Photoshop, Figma plugins) │ ├── models/ # Shared
+  ML model files │ └── checkpoints/ # ONNX model files │ ├── docs/ # Documentation
+  └── scripts/ # Development scripts ``` ### Components #### \U0001F4DA [Python SDK](packages/python/)
+  Core library for background removal. Published to PyPI. - **Install**: `uv add withoutbg`
+  (or `pip install withoutbg`) - **Use**: Python API + CLI - **Models**: Focus v1.0.0
+  (local), withoutBG Pro #### \U0001F310 [Web Application](apps/web/) Modern web interface
+  with drag-and-drop UI. - **Stack**: React 18 + FastAPI + Nginx - **Deploy**: Docker
+  Compose - **Features**: Batch processing, live preview #### \U0001F50C Integrations
+  (Coming Soon) Plugins for popular creative tools. - GIMP plugin - Photoshop extension
+  - Figma plugin - Blender addon ## \U0001F3AF Features - ✨ **Local Processing**:
+  Free, private, offlin"
 ---
 {% raw %}
 # withoutbg

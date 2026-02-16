@@ -2,8 +2,53 @@
 layout: project
 name: Manic Emu Manicemu
 slug: Manic-EMU-ManicEMU
+category: Uncategorized
 image: https://img.shields.io/badge/License-AGPL%20v3-blue.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/Manic-EMU-ManicEMU
+indexed_content: "# Manic-EMU [](https://www.gnu.org/licenses/agpl-3.0) Manic EMU
+  is an all-in-one retro game emulator for iOS. It packs powerful features while keeping
+  a clean, sleek UI and delivering buttery-smooth gameplay. [ ](https://itunes.apple.com/us/app/id6743335790)
+  Manic EMU is now available on the AppStore [ ](https://ko-fi.com/maftymanicemu)
+  Your support keeps this app going ## Features ### [Supported Platforms] #### Nintendo
+  - Nintendo 3DS (3DS) - Nintendo 64 (N64) - Nintendo DS (NDS) *supports online play
+  via WFC - Game Boy Advance (GBA) - Game Boy Color (GBC) - Game Boy (GB) - Nintendo
+  Entertainment System (NES) - Famicom Disk System (FDS) - Super Nintendo Entertainment
+  System (SNES) - Virtual Boy (VB) - Pokémon Mini (PM) #### SONY - PlayStation (PS1)
+  - PlayStation Portable (PSP) #### SEGA - Sega Dreamcast (DC) *supports online play
+  - Sega Saturn (SS) - Sega Master System (MS) - Sega Game Gear (GG) - Sega SG-1000
+  (SG) - Sega Genesis 32X/Super 32X (32X) - Sega CD/Mega-CD (MCD) - Sega Genesis/MegaDrive
+  (MD) #### Atari - Atari Jaguar (Jaguar) - Atari Lynx (LYNX) - Atari 7800 (7800)
+  - Atari 5200 (5200) - Atari 2600 (2600) #### Arcade - Arcade (MAME) - Arcade (FBneo)
+  More platforms coming soon! ### [Key Features] - Unlimited Saves: Manual & 50 auto-save
+  slots - 5x Speed: Control the game’s pace - Cheat Codes: Unlimited library for perfect
+  playthroughs - Retro Filters: Immersive visual effects - Custom Skins: Authentic
+  feel, third-party compatible - Screenshot Tool: Share your epic moments - Landscape
+  Mode: Enhanced gameplay experience - Custom Shortcuts: Redefine your controls ###
+  [RetroAchievements Integration • Challenge Yourself] - Hardcore Mode Verified by
+  RetroAchievements - Track and Share your Achievements with ease - RetroAchievements
+  Account required ### [iCloud Sync • Your Gaming Universe] - Cross-device sync for
+  games, saves, and settings - Encrypted storage • Cloud backups • No progress loss
+  - Switch between phone and tablet seamlessly - Play anywhere—your journey never
+  pauses! ### [Cloud Integration • One-Click Import] - Google Drive, Dropbox, OneDrive,
+  Baidu Cloud, Aliyun - WebDAV/SMB protocol support—access the entire web! ### [Controller
+  Freedom • Play Your Way] - Native Joy-Con/DUALSHOCK/Xbox support - Bluetooth controllers/keyboards
+  • Mac compatible - Multi-controller connectivity - Switch between solo play and
+  multiplayer battles ### [Cross-Screen Play • Conquer the Big Screen] - AirPlay mirroring
+  for lag-free streaming - Phone-to-TV switching for parties or couch gaming - Big
+  screen + controller = Ultimate immersion ## Development Notes **Build Environment**:
+  Requires Xcode 16+, iOS SDK 15+, and Swift 5.9+ **Build Step** 1. Install VulkanSDK
+  2. Install C++ Boost 3. cd Manic-EMU/ManicEmu 4. pod install 5. Open Manic-EMU/ManicEmu/ManicEmu.xcworkspace
+  6. Change the developer team info and Bundle Identifier in ManicEmu Target - Signing
+  & Capabilities 7. Wait for SPM to finish loading. Press CMD+R to run Manic EMU **PS.**
+  - Some Apple services require a Developer Program account to work properly—like
+  App Groups, In-App Purchases, and iCloud. You’ll need to set these up yourself.
+  If you don’t have a Developer Program account, you can remove these services before
+  compiling. - Some third-party services also need your own API keys to function correctly.
+  You can configure these in the `Cipher` section of `Constant.swift`. ## Acknowledgements
+  This project is made possible by the contributions of many outstanding open-source
+  projects: - Open source emulator cores - Architectural design of DeltaCore - Toolchain
+  support from the Libretro community - Additional dependencies (see `SPM` and `Podfile`
+  listings) ## Links [ ](https://manicemu.site) [ ](https://discord.gg/qsaTHzknAZ)"
 ---
 {% raw %}
 # Manic-EMU [![AGPLv3 License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)

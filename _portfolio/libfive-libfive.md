@@ -2,8 +2,65 @@
 layout: project
 name: Libfive Libfive
 slug: libfive-libfive
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: 'https://github.com/JMC-design/tovero):'
+indexed_content: "# libfive *Infrastructure for solid modeling.* [Homepage](https://libfive.com)
+  | [API Examples](https://libfive.com/examples) | [Downloads](https://libfive.com/download)
+  `libfive` is a framework for solid modeling using [functional representations](https://en.wikipedia.org/wiki/Function_representation).
+  It includes several layers, ranging from infrastructure to GUI: - The `libfive`
+  shared library contains functions to build, manipulate, and render f-reps. A great
+  deal of work has gone into the meshing algorithm, which produces watertight, manifold,
+  hierarchical, feature-preserving triangle meshes. The library is written in C++
+  and exposes a C API in `libfive.h`. - The `libfive` standard library is a library
+  of common shapes, transforms, and CSG operations. It is implemented in C++ and exposes
+  a C API in `libfive/stdlib/stdlib.h` - The standard library is parsed and used to
+  generate bindings for both [Guile Scheme](https://www.gnu.org/software/guile/) and
+  [Python](https://python.org), for use in the REPL or as part of larger applications.
+  - **Studio** is a GUI application in the style of [OpenSCAD](http://www.openscad.org/).
+  It uses the Python and Guile bindings and allows for live-coding of solid models.
+  The interface also includes direct modeling, where the user can push and pull on
+  the model's surface to change variables in the script. ## Other projects using `libfive`
+  ### Language bindings - [Tovero](https://github.com/JMC-design/tovero): A 3D modeling
+  system for Common Lisp - [`libfivepy`](https://gitlab.com/rcmz0/libfivepy): A Python
+  CAD library (work in progress) - [Bindings for Unity](https://github.com/zalo/libfive-unity)
+  - High level [Rust bindings](https://crates.io/crates/libfive) - Unpublished [Stanza](http://lbstanza.org/)
+  bindings (email for details) ### Viewers - [Inspekt3D](https://git.sr.ht/~morgansmith/inspekt3d):
+  Lightweight pure-Guile viewer - [PyFive3D](https://gitlab.com/kavalogic-inc/pyfive3d):
+  Lightweight pure-Python viewer (work in progress) - [C5H12 (Pentane)](https://gitlab.com/kavalogic-inc/C5H12):
+  Lightweight C viewer ### Research - [Massively Parallel Rendering of Complex Closed-Form
+  Implicit Surfaces](https://www.mattkeeter.com/research/mpr/): a technical paper
+  extending `libfive` to render on the GPU ([reference implementation](https://github.com/mkeeter/mpr/))
+  ## Community For `libfive`-specific discussions, consider opening a topic in the
+  [Github Discussions tab](https://github.com/libfive/libfive/discussions). There's
+  also a `libfive` subforum in the [SDF User Group Discourse](https://sdfug.discourse.group/),
+  which is a good place for general discussion of modeling with signed distance fields.
+  ## License (c) 2015-2021 Matthew Keeter Different layers of this project are released
+  under different licenses: - The `libfive` library, `libfive-stdlib` library, and
+  Python bindings are released under the [Mozilla Public License, version 2](https://www.mozilla.org/en-US/MPL/2.0/).
+  - `libfive-guile` and `Studio` are released under the [GNU General Public License,
+  version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html) [or
+  later](https://www.gnu.org/licenses/gpl-3.0-standalone.html). [Contact the author](matt.j.keeter@gmail.com)
+  to discuss custom development, integration, or commercial support. ## Compiling
+  from source `libfive` and Studio are compatible with macOS, Linux, and Windows.
+  ### Dependencies #### libfive - [`cmake 1.65 or later`](https://cmake.org/) - [`pkg-config`](https://www.freedesktop.org/wiki/Software/pkg-config/)
+  - [Eigen 3.3.x](http://eigen.tuxfamily.org/index.php?title=Main_Page) - [`libpng`](http://www.libpng.org/pub/png/libpng.html)
+  - [Boost 1.65 or later](https://www.boost.org) #### Guile bindings (optional, macOS
+  and Linux only) - [Guile 2.2.1 or later](https://www.gnu.org/software/guile/) ####
+  Python bindings (optional) - [Python 3.7 or later](https://www.python.org/) ####
+  Studio (optional, requires Guile or Python bindings) - [Qt 5.12 or later](https://www.qt.io)
+  When `cmake` is first run, it will check for all dependencies and print details
+  of what will be build, e.g. ``` Checking dependencies: libfive: ✓ Guile bindings:
+  ✓ Python bindings: ✓ Studio: ✓ (Python + Guile) ``` ### Mac With `homebrew` installed,
+  run ``` brew install cmake pkg-config eigen libpng boost guile python3 qt ``` Omit
+  `guile`, `python3`, or `qt` to avoid building bindings and/or the UI. Then, from
+  the `libfive` folder, run something like: ``` mkdir build cd build cmake -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.12.0
+  .. make ``` (adjust based on your Qt installation, and consider using [`ninja`](https://ninja-build.org/)
+  for faster builds. ### Ubuntu `libfive` should build out of the box on the latest
+  Ubuntu LTS (currently 20.04). If you find that's not the case, please open an issue!
+  Start by installing dependencies through the package manager: ``` sudo apt-get install
+  g++ cmake pkg-config libeigen3-dev libpng-dev libboost-all-dev guile-3.0-dev qtbase5-dev
+  python3 `"
 ---
 {% raw %}
 # libfive

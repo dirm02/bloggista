@@ -2,8 +2,37 @@
 layout: project
 name: Kyantech Palmr
 slug: kyantech-Palmr
+category: Serv&Prod-Tools
 image: https://res.cloudinary.com/technical-intelligence/image/upload/v1749825361/Group_47_1_bcx8gw.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/kyantech-Palmr
+indexed_content: "# \U0001F334 Palmr. - Open-Source File Transfer **Palmr.** is a
+  **flexible** and **open-source** alternative to file transfer services like **WeTransfer**,
+  **SendGB**, **Send Anywhere**, and **Files.fm**. ⚠️ BETA VERSION This project is
+  currently in beta phase. Not recommended for production environments. \U0001F517
+  **For detailed documentation visit:** [Palmr. - Documentation](https://palmr.kyantech.com.br)
+  ## \U0001F4CC Why Choose Palmr.? - **Self-hosted** – Deploy on your own server or
+  VPS. - **Full control** – No third-party dependencies, ensuring privacy and security.
+  - **No artificial limits** – Share files without hidden restrictions or fees. -
+  **Folder organization** – Create folders to organize and share files. - **Simple
+  deployment** – SQLite database and filesystem storage for easy setup. - **Scalable
+  storage** – Optional S3-compatible object storage for enterprise needs. ## \U0001F680
+  Technologies Used ### **Palmr.** is built with a focus on **performance**, **scalability**,
+  and **security**. ### **Backend & API** - **Fastify (Node.js)** – High-performance
+  API framework with built-in schema validation. - **SQLite** – Lightweight, reliable
+  database with zero-configuration setup. - **Filesystem Storage** – Direct file storage
+  with optional S3-compatible object storage. ### **Frontend** - **NextJS 15 + TypeScript
+  + Shadcn/ui** – Modern and fast web interface. ## \U0001F6E0️ How It Works 1. **Web
+  Interface** → Built with Next, React and TypeScript for a seamless user experience.
+  2. **Backend API** → Fastify handles requests and manages file operations. 3. **Database**
+  → SQLite stores metadata and transactional data with zero configuration. 4. **Storage**
+  → Filesystem storage ensures reliable file storage with optional S3-compatible object
+  storage for scalability. ## \U0001F4F8 Screenshots Login Page Home Page Dashboard
+  Profile Page Files List View Files Card View Shares Management Receive Files Reverse
+  Share Settings Panel User Management Forgot Password Reverse Share (WeTransfer Style)
+  ## \U0001F468‍\U0001F4BB Core Maintainers | [**Daniel Luiz Alves**](https://github.com/danielalves96)
+  | |------------------| | | ## \U0001F91D Supporters [ ](https://www.repoflow.io/)
+  ## ⭐ Star History ## \U0001F6E0️ Contributing For contribution guidelines, please
+  refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file."
 ---
 {% raw %}
 # 🌴 Palmr. - Open-Source File Transfer

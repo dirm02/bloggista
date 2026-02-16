@@ -2,8 +2,61 @@
 layout: project
 name: Seaweedfs Seaweedfs
 slug: seaweedfs-seaweedfs
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/slack-purple
 repo_url: https://github.com/seaweedfs/seaweedfs
+indexed_content: '# SeaweedFS [](https://join.slack.com/t/seaweedfs/shared_invite/enQtMzI4MTMwMjU2MzA3LTEyYzZmZWYzOGQ3MDJlZWMzYmI0OTE4OTJiZjJjODBmMzUxNmYwODg0YjY3MTNlMjBmZDQ1NzQ5NDJhZWI2ZmY)
+  [](https://twitter.com/intent/follow?screen_name=seaweedfs) [](https://github.com/seaweedfs/seaweedfs/actions/workflows/go.yml)
+  [](https://godoc.org/github.com/seaweedfs/seaweedfs/weed) [](https://github.com/seaweedfs/seaweedfs/wiki)
+  [](https://hub.docker.com/r/chrislusf/seaweedfs/) [](https://search.maven.org/search?q=g:com.github.chrislusf)
+  [](https://artifacthub.io/packages/search?repo=seaweedfs) Sponsor SeaweedFS via
+  Patreon SeaweedFS is an independent Apache-licensed open source project with its
+  ongoing development made possible entirely thanks to the support of these awesome
+  [backers](https://github.com/seaweedfs/seaweedfs/blob/master/backers.md). If you''d
+  like to grow SeaweedFS even stronger, please consider joining our sponsors on Patreon
+  . Your support will be really appreciated by me and other supporters! Platinum Add
+  your name or icon here --> ### Gold Sponsors [](https://www.nodion.com) [](https://www.piknik.com)
+  [](https://www.keepsec.ca) --- - [Download Binaries for different platforms](https://github.com/seaweedfs/seaweedfs/releases/latest)
+  - [SeaweedFS on Slack](https://join.slack.com/t/seaweedfs/shared_invite/enQtMzI4MTMwMjU2MzA3LTEyYzZmZWYzOGQ3MDJlZWMzYmI0OTE4OTJiZjJjODBmMzUxNmYwODg0YjY3MTNlMjBmZDQ1NzQ5NDJhZWI2ZmY)
+  - [SeaweedFS on Twitter](https://twitter.com/SeaweedFS) - [SeaweedFS on Telegram](https://t.me/Seaweedfs)
+  - [SeaweedFS on Reddit](https://www.reddit.com/r/SeaweedFS/) - [SeaweedFS Mailing
+  List](https://groups.google.com/d/forum/seaweedfs) - [Wiki Documentation](https://github.com/seaweedfs/seaweedfs/wiki)
+  - [SeaweedFS White Paper](https://github.com/seaweedfs/seaweedfs/wiki/SeaweedFS_Architecture.pdf)
+  - [SeaweedFS Introduction Slides 2025.5](https://docs.google.com/presentation/d/1tdkp45J01oRV68dIm4yoTXKJDof-EhainlA0LMXexQE/edit?usp=sharing)
+  - [SeaweedFS Introduction Slides 2021.5](https://docs.google.com/presentation/d/1DcxKWlINc-HNCjhYeERkpGXXm6nTCES8mi2W5G0Z4Ts/edit?usp=sharing)
+  - [SeaweedFS Introduction Slides 2019.3](https://www.slideshare.net/chrislusf/seaweedfs-introduction)
+  Table of Contents ================= * [Quick Start](#quick-start) * [Quick Start
+  with weed mini](#quick-start-with-weed-mini) * [Quick Start for S3 API on Docker](#quick-start-for-s3-api-on-docker)
+  * [Quick Start with Single Binary](#quick-start-with-single-binary) * [Introduction](#introduction)
+  * [Features](#features) * [Additional Features](#additional-features) * [Filer Features](#filer-features)
+  * [Example: Using Seaweed Object Store](#example-using-seaweed-object-store) * [Architecture](#object-store-architecture)
+  * [Compared to Other File Systems](#compared-to-other-file-systems) * [Compared
+  to HDFS](#compared-to-hdfs) * [Compared to GlusterFS, Ceph](#compared-to-glusterfs-ceph)
+  * [Compared to GlusterFS](#compared-to-glusterfs) * [Compared to Ceph](#compared-to-ceph)
+  * [Compared to Minio](#compared-to-minio) * [Dev Plan](#dev-plan) * [Installation
+  Guide](#installation-guide) * [Disk Related Topics](#disk-related-topics) * [Benchmark](#benchmark)
+  * [Enterprise](#enterprise) * [License](#license) # Quick Start # ## Quick Start
+  with weed mini ## The easiest way to get started with SeaweedFS for development
+  and testing: * Download the latest binary from https://github.com/seaweedfs/seaweedfs/releases
+  and unzip a single binary file `weed` or `weed.exe`. Example: ```bash # remove quarantine
+  on macOS # xattr -d com.apple.quarantine ./weed ./weed mini -dir=/data ``` This
+  single command starts a complete SeaweedFS setup with: - **Master UI**: http://localhost:9333
+  - **Volume Server**: http://localhost:9340 - **Filer UI**: http://localhost:8888
+  - **S3 Endpoint**: http://localhost:8333 - **WebDAV**: http://localhost:7333 - **Admin
+  UI**: http://localhost:23646 Perfect for development, testing, learning SeaweedFS,
+  and single node deployments! ## Quick Start for S3 API on Docker ## `docker run
+  -p 8333:8333 chrislusf/seaweedfs server -s3` ## Quick Start with Single Binary ##
+  * Download the latest binary from https://github.com/seaweedfs/seaweedfs/releases
+  and unzip a single binary file `weed` or `weed.exe`. Or run `go install github.com/seaweedfs/seaweedfs/weed@latest`.
+  * `export AWS_ACCESS_KEY_ID=admin ; export AWS_SECRET_ACCESS_KEY=key` as the admin
+  credentials to access the object store. * Run `weed server -dir=/some/data/dir -s3`
+  to start one master, one volume server, one filer, and one S3 gateway. The difference
+  with `weed mini` is that `weed mini` can auto configure based on the single host
+  environment, while `weed server` requires manual configuration and are designed
+  for production use. Also, to increase capacity, just add more volume servers by
+  running `weed volume -dir="/some/data/dir2" -master=" :9333" -port=8081` locally,
+  or on a different machine, or on thousands of machines. That is it! # Introduction
+  # SeaweedFS is a simple'
 ---
 {% raw %}
 # SeaweedFS

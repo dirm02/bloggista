@@ -2,8 +2,67 @@
 layout: project
 name: Denysdovhan Vacuum Card
 slug: denysdovhan-vacuum-card
+category: Home automation-IoT
 image: https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg
 repo_url: https://github.com/bbbenji/synthwave-hass
+indexed_content: "[](https://stand-with-ukraine.pp.ua/) # Vacuum Card [![npm version][npm-image]][npm-url]
+  [![hacs][hacs-image]][hacs-url] [![GitHub Sponsors][gh-sponsors-image]][gh-sponsors-url]
+  [![Patreon][patreon-image]][patreon-url] [![Buy Me A Coffee][buymeacoffee-image]][buymeacoffee-url]
+  [![Twitter][twitter-image]][twitter-url] > Vacuum cleaner card for [Home Assistant][home-assistant]
+  Lovelace UI By default, Home Assistant does not provide any card for controlling
+  vacuum cleaners. This card displays the state and allows to control your robot.
+  ![Preview of vacuum-card][preview-image] ## Installing **\U0001F4A1 Tip:** If you
+  like this project, consider giving me a tip for the time I spent building this project:
+  ### HACS This card is available in [HACS][hacs] (Home Assistant Community Store).
+  Just search for `Vacuum Card` in plugins tab. ### Manual 1. Download `vacuum-card.js`
+  file from the [latest-release]. 2. Put `vacuum-card.js` file into your `config/www`
+  folder. 3. Add reference to `vacuum-card.js` in Lovelace. There's two way to do
+  that: 1. **Using UI:** _Configuration_ → _Lovelace Dashboards_ → _Resources Tab_
+  → Click Plus button → Set _Url_ as `/local/vacuum-card.js` → Set _Resource type_
+  as `JavaScript Module`. **Note:** If you do not see the Resources Tab, you will
+  need to enable _Advanced Mode_ in your _User Profile_ 2. **Using YAML:** Add following
+  code to `lovelace` section. ```yaml resources: - url: /local/vacuum-card.js type:
+  module ``` 4. Add `custom:vacuum-card` to Lovelace UI as any other card (using either
+  editor or YAML configuration). ## Usage This card can be configured using Lovelace
+  UI editor. 1. In Lovelace UI, click 3 dots in top left corner. 2. Click _Configure
+  UI_. 3. Click Plus button to add a new card. 4. Find _Custom: Vacuum Card_ in the
+  list. 5. Choose `entity`. 6. Now you should see the preview of the card! _Sorry,
+  no support for `actions`, `shortcuts` and `stats` in visual config yet._ Typical
+  example of using this card in YAML config would look like this: ```yaml type: 'custom:vacuum-card'
+  entity: vacuum.vacuum_cleaner actions: start: service: xiaomi_miio.vacuum_clean_segment
+  service_data: entity_id: vacuum.vacuum_cleaner segments: [16, 20] stats: default:
+  - attribute: filter_left unit: hours subtitle: Filter - attribute: side_brush_left
+  unit: hours subtitle: Side brush - attribute: main_brush_left unit: hours subtitle:
+  Main brush - attribute: sensor_dirty_left unit: hours subtitle: Sensors cleaning:
+  - entity_id: sensor.vacuum_main_brush_left value_template: '{{ (value | float(0)
+  / 3600) | round(1) }}' subtitle: Main brush unit: hours - attribute: cleaning_time
+  unit: minutes subtitle: Cleaning time shortcuts: - name: Clean living room service:
+  script.clean_living_room icon: 'mdi:sofa' - name: Clean bedroom service: script.clean_bedroom
+  icon: 'mdi:bed-empty' - name: Clean kitchen service: script.clean_kitchen icon:
+  'mdi:silverware-fork-knife' ``` Here is what every option means: | Name | Type |
+  Default | Description | | ---------------- | :-------: | ------------ | ---------------------------------------------------------------------------------------------------------
+  | | `type` | `string` | **Required** | `custom:vacuum-card` | | `entity` | `string`
+  | **Required** | An entity_id within the `vacuum` domain. | | `battery_entity` |
+  `string` | Optional | An entity_id within the `sensor` domain to display battery
+  state and icon. | | `map` | `string` | Optional | An entity_id within the `camera`
+  domain, for streaming live vacuum map. | | `map_refresh` | `integer` | `5` | Update
+  interval for map camera in seconds | | `image` | `string` | `default` | Path to
+  image of your vacuum cleaner. Better to have `png` or `svg`. | | `show_name` | `boolean`
+  | `true` | Show friendly name of the vacuum. | | `show_status` | `boolean` | `true`
+  | Show status of the vacuum. | | `show_toolbar` | `boolean` | `true` | Show toolbar
+  with actions. | | `compact_view` | `boolean` | `false` | Compact view without image.
+  | | `stats` | `object` | Optional | Custom per state stats for your vacuum cleaner
+  | | `actions` | `object` | Optional | Override default actions behavior with service
+  invocations. | | `shortcuts` | `array` | Optional | List of shortcuts shown at the
+  right bottom part of the card with custom actions for your vacuum cleaner. | ###
+  `stats` object You can use any attribute of vacuum or even any entity by `entity_id`
+  to display by stats section. You can also combine `attribute` with `entity_id` to
+  extract an attribute value of specific entity: | Name | Type | Default | Description
+  | | ---------------- | :------: | -------- | ----------------------------------------------------------------------------------------------------
+  | | `entity_id` | `string` | Optional | An entity_id with state, i.e. `sensor.vacuum`.
+  | | `attribute` | `string` | Optional | Attribute name of the stat, i.e. `filter_left`.
+  | | `value_template` | `string` | Optional | Jinja2 template returning a value.
+  `value` variable represents the `entity_id"
 ---
 {% raw %}
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua/)

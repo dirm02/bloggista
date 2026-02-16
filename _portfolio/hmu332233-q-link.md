@@ -2,8 +2,26 @@
 layout: project
 name: Hmu332233 Q Link
 slug: hmu332233-q-link
+category: Frontend Framework
 image: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 repo_url: https://github.com/hmu332233/q-link
+indexed_content: "Hide your link behind a simple quiz Site » Demo » ## What's Q.Link?
+  \"Hide your link behind a simple quiz\" is the best expression for Q.Link. It is
+  a simple service that adds a quiz ahead the link so that users can access the link
+  only when the answer is correct. You can use it in many situations, including events,
+  job offers, and mobile invitations. ## How to use? On Page Create Q.Link, type the
+  link you want to move, the quiz content, and the correct answer to create a Q.Link.
+  Only those who have answered correctly will be able to go to the link. ## When to
+  use? You can use it in many situations, focusing on fun rather than security. -
+  Allow only those who have taken simple quizzes to enter the company' jobs page -
+  Allow only those who know your birthday to see your mobile invitation ## Contributing
+  Contributing is always welcome! Thank you for Star, Issue, Pull Request, and more.
+  [](https://www.buymeacoffee.com/minungHan) ## Contributors ✨ Thanks goes to these
+  wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)): Minung
+  Han \U0001F6A7 \U0001F4BB \U0001F30D Leo Voon \U0001F30D Erol Bicer \U0001F30D Kim
+  Hyun Woo \U0001F4BB \U0001F41B Bhuwan Acharya Upadhyaya \U0001F4BB 繁星_逐梦 \U0001F30D
+  This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+  specification. Contributions of any kind welcome!"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,28 @@
 layout: project
 name: Files Community Files
 slug: files-community-Files
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/files-community-Files/assets/FilesScreenshot.png
 repo_url: https://github.com/files-community/Files
+indexed_content: 'Files is a modern file manager that helps users organize their files
+  and folders. Our mission with Files is to build the best file manager for Windows,
+  and we’re proud to be building it out in the open so everyone can participate. User
+  feedback helps shape the features we work on, & the bug reports on GitHub help to
+  make Files more reliable. Built and maintained by the open-source community, Files
+  features robust multitasking experiences, file tags, deep integrations, and an intuitive
+  design. ## Installing and running Files Files is a community-driven project that
+  depends on your support to grow and improve. Please consider purchasing Files through
+  the Microsoft Store or supporting us on GitHub if you use the classic installer.
+  You can also use the preview version alongside the stable release to get early access
+  to new features and improvements. &ensp; ## Building from source Instructions for
+  building the source code can be found on our [documentation site](https://files.community/docs/contributing/building-from-source).
+  ## Contributing to Files Want to contribute to this project? Let us know with an
+  [issue](https://github.com/files-community/Files/issues) that communicates your
+  intent to create a [pull request](https://github.com/files-community/Files/pulls).
+  Also, view our [contributing guidelines](https://github.com/files-community/Files/blob/main/.github/CONTRIBUTING.md)
+  to make sure you''re up to date on the coding conventions. Looking for a place to
+  start? Check out the [task board](https://github.com/orgs/files-community/projects/3/views/2),
+  where you can sort tasks by size and priority. ## Screenshots'
 ---
 {% raw %}
 <p align="center">

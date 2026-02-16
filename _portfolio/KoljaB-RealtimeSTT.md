@@ -2,8 +2,66 @@
 layout: project
 name: Koljab Realtimestt
 slug: KoljaB-RealtimeSTT
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/pypi/v/RealtimeSTT
 repo_url: https://github.com/KoljaB/Linguflex)
+indexed_content: '# RealtimeSTT [](https://pypi.org/project/RealtimeSTT/) [](https://www.pepy.tech/projects/realtimestt)
+  [](https://GitHub.com/KoljaB/RealtimeSTT/releases/) [](https://GitHub.com/Naereen/KoljaB/RealtimeSTT/commit/)
+  [](https://GitHub.com/KoljaB/RealtimeSTT/network/) [](https://GitHub.com/KoljaB/RealtimeSTT/stargazers/)
+  *Easy-to-use, low-latency speech-to-text library for realtime applications* > ❗
+  **Project Status: Community-Driven** > > This project is no longer being actively
+  maintained by me due to time constraints. I''ve taken on too many projects and I
+  have to step back. I will no longer be implementing new features or providing user
+  support. > > I will continue to review and merge high-quality, well-written Pull
+  Requests from the community from time to time. Your contributions are welcome and
+  appreciated! ## New - AudioToTextRecorderClient class, which automatically starts
+  a server if none is running and connects to it. The class shares the same interface
+  as AudioToTextRecorder, making it easy to upgrade or switch between the two. (Work
+  in progress, most parameters and callbacks of AudioToTextRecorder are already implemented
+  into AudioToTextRecorderClient, but not all. Also the server can not handle concurrent
+  (parallel) requests yet.) - reworked CLI interface ("stt-server" to start the server,
+  "stt" to start the client, look at "server" folder for more info) ## About the Project
+  RealtimeSTT listens to the microphone and transcribes voice into text. > **Hint:**
+  * Check out [Linguflex](https://github.com/KoljaB/Linguflex) , the original project
+  from which RealtimeSTT is spun off. It lets you control your environment by speaking
+  and is one of the most capable and sophisticated open-source assistants currently
+  available.* It''s ideal for: - **Voice Assistants** - Applications requiring **fast
+  and precise** speech-to-text conversion https://github.com/user-attachments/assets/797e6552-27cd-41b1-a7f3-e5cbc72094f5
+  [CLI demo code (reproduces the video above)](tests/realtimestt_test.py) ### Updates
+  Latest Version: v0.3.104 See [release history](https://github.com/KoljaB/RealtimeSTT/releases).
+  > **Hint:** *Since we use the `multiprocessing` module now, ensure to include the
+  `if __name__ == ''__main__'':` protection in your code to prevent unexpected behavior,
+  especially on platforms like Windows. For a detailed explanation on why this is
+  important, visit the [official Python documentation on `multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#multiprocessing-programming).*
+  ## Quick Examples ### Print everything being said: ```python from RealtimeSTT import
+  AudioToTextRecorder def process_text(text): print(text) if __name__ == ''__main__'':
+  print("Wait until it says ''speak now''") recorder = AudioToTextRecorder() while
+  True: recorder.text(process_text) ``` ### Type everything being said: ```python
+  from RealtimeSTT import AudioToTextRecorder import pyautogui def process_text(text):
+  pyautogui.typewrite(text + " ") if __name__ == ''__main__'': print("Wait until it
+  says ''speak now''") recorder = AudioToTextRecorder() while True: recorder.text(process_text)
+  ``` *Will type everything being said into your selected text box* ### Features -
+  **Voice Activity Detection**: Automatically detects when you start and stop speaking.
+  - **Realtime Transcription**: Transforms speech to text in real-time. - **Wake Word
+  Activation**: Can activate upon detecting a designated wake word. > **Hint**: *Check
+  out [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS), the output counterpart
+  of this library, for text-to-voice capabilities. Together, they form a powerful
+  realtime audio wrapper around large language models.* ## Tech Stack This library
+  uses: - **Voice Activity Detection** - [WebRTCVAD](https://github.com/wiseman/py-webrtcvad)
+  for initial voice activity detection. - [SileroVAD](https://github.com/snakers4/silero-vad)
+  for more accurate verification. - **Speech-To-Text** - [Faster_Whisper](https://github.com/guillaumekln/faster-whisper)
+  for instant (GPU-accelerated) transcription. - **Wake Word Detection** - [Porcupine](https://github.com/Picovoice/porcupine)
+  or [OpenWakeWord](https://github.com/dscripka/openWakeWord) for wake word detection.
+  *These components represent the "industry standard" for cutting-edge applications,
+  providing the most modern and effective foundation for building high-end solutions.*
+  ## Installation ```bash pip install RealtimeSTT ``` This will install all the necessary
+  dependencies, including a **CPU support only** version of PyTorch. Although it is
+  possible to run RealtimeSTT with a CPU installation only (use a small model like
+  "tiny" or "base" in this case) you will get way better experience using CUDA (please
+  scroll down). ### Linux Installation Before installing RealtimeSTT please execute:
+  ```bash sudo apt-get update sudo apt-get install python3-dev sudo apt-get install
+  portaudio19-dev ``` ### MacOS Installation Before installing RealtimeSTT please
+  execute: ```bash brew install portaudio ``` ##'
 ---
 {% raw %}
 # RealtimeSTT

@@ -2,8 +2,67 @@
 layout: project
 name: Onlook Dev Onlook
 slug: onlook-dev-onlook
+category: Uncategorized
 image: https://github.com/user-attachments/assets/642de37a-72cc-4056-8eb7-8eb42714cdc4
 repo_url: https://github.com/othneildrew/Best-README-Template
+indexed_content: "Onlook Cursor for Designers Explore the docs » \U0001F468‍\U0001F4BB\U0001F469‍\U0001F4BB\U0001F468‍\U0001F4BB
+  We're hiring engineers in SF! \U0001F469‍\U0001F4BB\U0001F468‍\U0001F4BB\U0001F469‍\U0001F4BB
+  View Demo · Report Bug · Request Feature [![Discord][discord-shield]][discord-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url] [![Twitter][twitter-shield]][twitter-url]
+  [中文](https://www.readme-i18n.com/onlook-dev/onlook?lang=zh) | [Español](https://www.readme-i18n.com/onlook-dev/onlook?lang=es)
+  | [Deutsch](https://www.readme-i18n.com/onlook-dev/onlook?lang=de) | [français](https://www.readme-i18n.com/onlook-dev/onlook?lang=fr)
+  | [Português](https://www.readme-i18n.com/onlook-dev/onlook?lang=pt) | [Русский](https://www.readme-i18n.com/onlook-dev/onlook?lang=ru)
+  | [日本語](https://www.readme-i18n.com/onlook-dev/onlook?lang=ja) | [한국어](https://www.readme-i18n.com/onlook-dev/onlook?lang=ko)
+  # An Open-Source, Visual-First Code Editor Craft websites, prototypes, and designs
+  with AI in Next.js + TailwindCSS. Make edits directly in the browser DOM with a
+  visual editor. Design in realtime with code. An open-source alternative to Bolt.new,
+  Lovable, V0, Replit Agent, Figma Make, Webflow, etc. ### \U0001F6A7 \U0001F6A7 \U0001F6A7
+  Onlook is still under development \U0001F6A7 \U0001F6A7 \U0001F6A7 We're actively
+  looking for contributors to help make Onlook for Web an incredible prompt-to-build
+  experience. Check the [open issues](https://github.com/onlook-dev/onlook/issues)
+  for a full list of proposed features (and known issues), and join our [Discord](https://discord.gg/hERDfFZCsH)
+  to collaborate with hundreds of other builders. ## What you can do with Onlook:
+  - [x] Create Next.js app in seconds - [x] Start from text or image - [x] Use prebuilt
+  templates - [ ] Import from Figma - [ ] Import from GitHub repo - [ ] Make a PR
+  to a GitHub repo - [x] Visually edit your app - [x] Use Figma-like UI - [x] Preview
+  your app in real-time - [x] Manage brand assets and tokens - [x] Create and navigate
+  to Pages - [x] Browse layers - [x] Manage project Images - [x] Detect and use Components
+  – _Previously in [Onlook Desktop](https://github.com/onlook-dev/desktop)_ - [ ]
+  Drag-and-drop Components Panel - [x] Use Branching to experiment with designs -
+  [x] Development Tools - [x] Real-time code editor - [x] Save and restore from checkpoints
+  - [x] Run commands via CLI - [x] Connect with app marketplace - [x] Deploy your
+  app in seconds - [x] Generate sharable links - [x] Link your custom domain - [ ]
+  Collaborate with your team - [x] Real-time editing - [ ] Leave comments - [ ] Advanced
+  AI capabilities - [x] Queue multiple messages at once - [ ] Use Images as references
+  and as assets in a project - [ ] Setup and use MCPs in projects - [ ] Allow Onlook
+  to use itself as a toolcall for branch creation and iteration - [ ] Advanced project
+  support - [ ] Support non-NextJS projects - [ ] Support non-Tailwind projects ##
+  Getting Started Use our [hosted app](https://onlook.com) or [run locally](https://docs.onlook.com/developers/running-locally).
+  ### Usage Onlook will run on any Next.js + TailwindCSS project, import your project
+  into Onlook or start from scratch within the editor. Use the AI chat to create or
+  edit a project you're working on. At any time, you can always right-click an element
+  to open up the exact location of the element in code. Draw-in new divs and re-arrange
+  them within their parent containers by dragging-and-dropping. Preview the code side-by-side
+  with your site design. Use Onlook's editor toolbar to adjust Tailwind styles, directly
+  manipulate objects, and experiment with layouts. ## Documentation For full documentation,
+  visit [docs.onlook.com](https://docs.onlook.com) To see how to Contribute, visit
+  [Contributing to Onlook](https://docs.onlook.com/developers) in our docs. ## How
+  it works 1. When you create an app, we load the code into a web container 2. The
+  container runs and serves the code 3. Our editor receives the preview link and displays
+  it in an iFrame 4. Our editor reads and indexes the code from the container 5. We
+  instrument the code in order to map elements to their place in code 6. When the
+  element is edited, we edit the element in our iFrame, then in code 7. Our AI chat
+  also has code access and tools to understand and edit the code This architecture
+  can theoretically scale to any language or framework that displays DOM elements
+  declaratively (e.g. jsx/tsx/html). We are focused on making it work well with Next.js
+  and TailwindCSS for now. For a full walkthrough, check out our [Architecture Docs](https://docs.onlook.com/developers/architecture).
+  ### Our Tech Stack #### Front-end - [Next.js](https://nextjs.org/) - Full stack
+  - [TailwindCSS](https://tailwindcss.com/) - Styling - [tRPC](https://trpc.io/) -
+  Server interface #### Database - [Supabase](https://supabase.com/) - Auth, Database,
+  Storage - [Drizzle](https://orm.drizzle.team/) - ORM #### AI - [AI SDK](https://ai-sdk.dev/)
+  - LLM client - [OpenRouter](https://openrouter.ai/) - LLM model provider - [Morph
+  Fast Apply](https://morphllm.com) - Fast apply model provider - [Relace](https://relace.ai)
+  - Fast apply model provider ###"
 ---
 {% raw %}
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->

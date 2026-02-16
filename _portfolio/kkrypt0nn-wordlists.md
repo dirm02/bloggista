@@ -2,8 +2,69 @@
 layout: project
 name: Kkrypt0nn Wordlists
 slug: kkrypt0nn-wordlists
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/docker/v/kkrypt0nn/wordlists/alpine-latest?logo=docker
 repo_url: https://github.com/kkrypt0nn/wordlists
+indexed_content: "Wordlists Yet another collection of wordlists. They are sorted by
+  their content. Feel free to request to add new wordlists. ## \U0001F433 Docker Images
+  There are three Docker tags available for the [`kkrypt0nn/wordlists`](https://hub.docker.com/r/kkrypt0nn/wordlists)
+  Docker repository: - [`alpine-latest`](https://hub.docker.com/r/kkrypt0nn/wordlists/tags?name=alpine-latest)
+  - [`debian-latest`](https://hub.docker.com/r/kkrypt0nn/wordlists/tags?name=debian-latest)
+  - [`ubuntu-latest`](https://hub.docker.com/r/kkrypt0nn/wordlists/tags?name=ubuntu-latest)
+  These will have a `/wordlists` folder with all the wordlists in there for you to
+  use them. ## \U0001F4E6 HackTheBox Wordlists [Hack The Box](https://hackthebox.com)
+  is a platform designed for practicing penetration testing skills in a legal and
+  controlled environment. It offers various challenges and real-world scenarios for
+  users to sharpen their hacking abilities. In the [`wordlists/htb`](https://github.com/kkrypt0nn/wordlists/tree/main/wordlists/htb)
+  folder, you'll find a collection of custom wordlists I created specifically for
+  use on HTB. As I got more into the platform and had fun solving challenges, these
+  wordlists became invaluable for tasks like brute-forcing and enumeration. Feel free
+  to use them for your own HTB adventures, and I hope they help you level up your
+  hacking skills! ## \U0001F30D Contributing If you have a wordlist that you wish
+  to see here, please post them [here](https://github.com/kkrypt0nn/wordlists/issues).
+  If you already have a wordlist ready to be added, make sure to [open a pull request](https://github.com/kkrypt0nn/wordlists/pulls).
+  ## \U0001F4DC Wordlists Togglable Wordlists Discovery Apache - 13,232 Lines Apache
+  User Enum 1.0 - 8,916 Lines Apache User Enum 2.0 - 10,341 Lines Big - 20,469 Lines
+  Common - 4,739 Lines Common SQL Columns - 2,694 Lines Common SQL Tables - 3,695
+  Lines Conf - 100,895 Lines Directories - 58,655 Lines Directory List 1.0 - 141,694
+  Lines Directory List 2.3 Medium - 220,545 Lines Directory List 2.3 Small - 87,649
+  Lines Directory List Lowercase 2.3 Medium - 207,628 Lines Directory List Lowercase
+  2.3 Small - 81,628 Lines Extensions Common - 43 Lines Fuzz Php Special - 136,921
+  Lines Gitignore - 1,017 Lines Indexes - 10 Lines Joomla - 1,544 Lines JSP - 67,213
+  Lines LFI All - 1,485 Lines LFI Unix - 1,226 Lines LFI Windows - 259 Lines Most
+  Common - 1,166 Lines Robots - 990 Lines Sensitive Files Unix - 16 Lines Sensitive
+  Files Windows - 7 Lines Swagger - 958,874 Lines TLDs - 1,437 Lines Top Subdomains
+  - 114,441 Lines WP Plugins - 104,063 Lines WP Themes - 27,830 Lines Famous Dnsmap
+  - 17,576 Lines Facebook Phished - 2,441 Lines Fasttrack - 261 Lines Fern Wifi -
+  478 Lines Hotmail - 8,930 Lines Rockyou - 14,344,392 Lines HTB 2 Digits - 100 Lines
+  3 Digits - 1,000 Lines 4 Digits - 10,000 Lines Directories - 97,523 Lines Gitignore
+  - 1,017 Lines Subdomains - 150,779 Lines Users - 10,331 Lines Languages Arabic -
+  465,914 Lines Croatian - 215,956 Lines Czech - 535,889 Lines Danish - 154,437 Lines
+  Dutch - 173,562 Lines English - 354,297 Lines French - 336,531 Lines Georgian -
+  143,053 Lines German - 1,908,815 Lines Hebrew - 469,750 Lines Italian - 95,152 Lines
+  Norwegian - 322,043 Lines Polish - 300,676 Lines Portuguese - 312,367 Lines Russian
+  - 379,323 Lines Serbian - 263,909 Lines Spanish - 70,157 Lines Swedish - 72,370
+  Lines Turkish - 371,169 Lines Ukrainian - 331,520 Lines Miscellaneous Android Permissions
+  - 339 Lines BIP 39 - 2,048 Lines Companies - 60,047 Lines English Profanity Words
+  - 1,383 Lines French Profanity Words - 106 Lines HTML Colors - 148 Lines HTML JS
+  Events - 171 Lines HTML Tags - 129 Lines Names Names - 10,176 Lines Top Family Names
+  Chinese - 100 Lines Top Family Names USA - 1,000 Lines Top Female Names Australia
+  - 98 Lines Top Female Names Canada - 300 Lines Top Female Names Germany - 4,685
+  Lines Top Female Names India - 53 Lines Top Female Names USA - 1,000 Lines Top Male
+  Name Germany - 153 Lines Top Male Names Australia - 110 Lines Top Male Names Canada
+  - 1,047 Lines Top Male Names France - 481 Lines Top Male Names India - 272 Lines
+  Top Male Names Turkish - 688 Lines Top Male Names USA - 1,000 Lines Top Surnames
+  Character Chinese - 50 Lines Passwords 000Webhost - 720,302 Lines Bt4 Passwords
+  - 1,652,902 Lines Burnett - 1,024 Lines Common Passwords Win - 815 Lines Common
+  Roots - 4,724 Lines Darkweb 2017 - 9,999 Lines Db2 Default Passwords - 8 Lines Default
+  Passwords For Services - 1,243 Lines Dutch Passwords - 4,322,834 Lines Hak5 - 2,351
+  Lines Honeynet - 226,081 Lines HTTP Default Passwords - 19 Lines Indian Passwords
+  - 13,154 Lines Ipmi Passwords - 999 Lines Keyboard Patterns - 20 Lines Md5Decryptor
+  - 3,431,316 Lines Medical Devices Passwords - 173 Lines Mirai Passwords - 42 Lines
+  Most Used Passwords - 999,998 Lines Most Used Passwords Ncsc - 100,000 Lines Nord
+  VPN - 1,437 Lines Openwall - 3,721,224 Lines Password - 88,406 Lines Postgres Default
+  Passwords - 4 Lines Probable WPA - 4,800 Lines Tomcat Mgr Default Passwords - 7
+  Lines Top Adob"
 ---
 {% raw %}
 <h1 align="center">

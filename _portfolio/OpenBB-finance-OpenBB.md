@@ -2,8 +2,64 @@
 layout: project
 name: Openbb Finance Openbb
 slug: OpenBB-finance-OpenBB
+category: Uncategorized
 image: https://img.shields.io/twitter/url/https/twitter.com/openbb_finance.svg?style=social&label=Follow%20%40openbb_finance
 repo_url: https://github.com/OpenBB-finance/OpenBB
+indexed_content: '[](https://x.com/openbb_finance) [](https://discord.com/invite/xPHTuHCmuV)
+  [](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/OpenBB-finance/OpenBB)
+  [](https://pypi.org/project/openbb/) Open Data Platform by OpenBB (ODP) is the open-source
+  toolset that helps data engineers integrate proprietary, licensed, and public data
+  sources into downstream applications like AI copilots and research dashboards. ODP
+  operates as the "connect once, consume everywhere" infrastructure layer that consolidates
+  and exposes data to multiple surfaces at once: Python environments for quants, OpenBB
+  Workspace and Excel for analysts, MCP servers for AI agents, and REST APIs for other
+  applications. Get started with: `pip install openbb` ```python from openbb import
+  obb output = obb.equity.price.historical("AAPL") df = output.to_dataframe() ```
+  Data integrations available can be found here: --- ## OpenBB Workspace While the
+  Open Data Platform provides the open-source data integration foundation, **OpenBB
+  Workspace** offers the enterprise UI for analysts to visualize datasets and leverage
+  AI agents. The platform''s "connect once, consume everywhere" architecture enables
+  seamless integration between the two. You can find OpenBB Workspace at . Data integration:
+  - You can learn more about adding data to the OpenBB workspace from the [docs](https://docs.openbb.co/workspace)
+  or [this open source repository](https://github.com/OpenBB-finance/backends-for-openbb).
+  AI Agents integration: - You can learn more about adding AI agents to the OpenBB
+  workspace from [this open source repository](https://github.com/OpenBB-finance/agents-for-openbb).
+  ### Integrating Open Data Platform to the OpenBB Workspace Connect this library
+  to the OpenBB Workspace with a few simple commands, in a Python (3.9.21 - 3.12)
+  environment. #### Run an ODP backend - Install the packages. ```sh pip install "openbb[all]"
+  ``` - Start the API server over localhost. ```sh openbb-api ``` This will launch
+  a FastAPI server, via Uvicorn, at `127.0.0.1:6900`. You can check that it works
+  by going to . #### Integrate the ODP Backend to OpenBB Workspace Sign-in to the
+  [OpenBB Workspace](https://pro.openbb.co/), and follow the following steps: 1. Go
+  to the "Apps" tab 2. Click on "Connect backend" 3. Fill in the form with: Name:
+  Open Data Platform URL: 4. Click on "Test". You should get a "Test successful" with
+  the number of apps found. 5. Click on "Add". That''s it. --- Table of Contents Installation
+  Contributing License Disclaimer Contacts Star History Contributors ## 1. Installation
+  The ODP Python Package can be installed from [PyPI package](https://pypi.org/project/openbb/)
+  by running `pip install openbb` or by cloning the repository directly with `git
+  clone https://github.com/OpenBB-finance/OpenBB.git`. Please find more about the
+  installation process, in the [OpenBB Documentation](https://docs.openbb.co/python/installation).
+  ### ODP CLI installation The ODP CLI is a command-line interface that allows you
+  to access the ODP directly from your command line. It can be installed by running
+  `pip install openbb-cli` or by cloning the repository directly with `git clone https://github.com/OpenBB-finance/OpenBB.git`.
+  Please find more about the installation process in the [OpenBB Documentation](https://docs.openbb.co/cli/installation).
+  ## 2. Contributing There are three main ways of contributing to this project. (Hopefully
+  you have starred the project by now ⭐️) ### Become a Contributor - More information
+  on our [Developer Documentation](https://docs.openbb.co/python/developer). ### Create
+  a GitHub ticket Before creating a ticket make sure the one you are creating doesn''t
+  exist already [among the existing issues](https://github.com/OpenBB-finance/OpenBB/issues)
+  - [Report bug](https://github.com/OpenBB-finance/OpenBB/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBug%5D)
+  - [Suggest improvement](https://github.com/OpenBB-finance/OpenBB/issues/new?assignees=&labels=enhancement&template=enhancement.md&title=%5BIMPROVE%5D)
+  - [Request a feature](https://github.com/OpenBB-finance/OpenBB/issues/new?assignees=&labels=new+feature&template=feature_request.md&title=%5BFR%5D)
+  ### Provide feedback We are most active on [our Discord](https://openbb.co/discord),
+  but feel free to reach out to us in any of [our social media](https://openbb.co/links)
+  for feedback. ## 3. License Distributed under the AGPLv3 License. See [LICENSE](https://github.com/OpenBB-finance/OpenBB/blob/main/LICENSE)
+  for more information. ## 4. Disclaimer Trading in financial instruments involves
+  high risks including the risk of losing some, or all, of your investment amount,
+  and may not be suitable for all investors. Before deciding to trade in a financial
+  instrument you should be fully informed of the risks and costs associated with trading
+  the financial markets, carefully consider your investment objectives, level of experience,
+  and risk appetite, and seek p'
 ---
 {% raw %}
 <br />

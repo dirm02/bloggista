@@ -2,8 +2,66 @@
 layout: project
 name: 9001 Copyparty
 slug: 9001-copyparty
+category: ServerTools-ProxMox-CICD
 image: https://user-images.githubusercontent.com/241032/192042695-522b3ec7-6845-494a-abdb-d1c0d0e23801.png
 repo_url: https://github.com/9001/copyparty
+indexed_content: "### \U0001F4BE\U0001F389 copyparty turn almost any device into a
+  file server with resumable uploads/downloads using [*any*](#browser-support) web
+  browser * server only needs Python (2 or 3), all dependencies optional * \U0001F50C
+  protocols: [http(s)](#the-browser) // [webdav](#webdav-server) // [sftp](#sftp-server)
+  // [ftp(s)](#ftp-server) // [tftp](#tftp-server) // [smb/cifs](#smb-server) * \U0001F4F1
+  [android app](#android-app) // [iPhone shortcuts](#ios-shortcuts) \U0001F449 **[Get
+  started](#quickstart)!** or visit the **[read-only demo server](https://a.ocv.me/pub/demo/)**
+  \U0001F440 running on a nuc in my basement \U0001F4F7 **screenshots:** [browser](#the-browser)
+  // [upload](#uploading) // [unpost](#unpost) // [thumbnails](#thumbnails) // [search](#searching)
+  // [fsearch](#file-search) // [zip-DL](#zip-downloads) // [md-viewer](#markdown-viewer)
+  \U0001F3AC **videos:** [upload](https://a.ocv.me/pub/demo/pics-vids/up2k.webm) //
+  [cli-upload](https://a.ocv.me/pub/demo/pics-vids/u2cli.webm) // [race-the-beam](https://a.ocv.me/pub/g/nerd-stuff/cpp/2024-0418-race-the-beam.webm)
+  // \U0001F449 **[feature-showcase](https://a.ocv.me/pub/demo/showcase-hq.webm)**
+  ([youtube](https://www.youtube.com/watch?v=15_-hgsX2V0)) built in Norway \U0001F1F3\U0001F1F4
+  with contributions from [not-norway](https://github.com/9001/copyparty/graphs/contributors)
+  ## readme toc * top * [quickstart](#quickstart) - just run **[copyparty-sfx.py](https://github.com/9001/copyparty/releases/latest/download/copyparty-sfx.py)**
+  -- that's it! \U0001F389 * [mirrors](#mirrors) - other places to download copyparty
+  from * [at home](#at-home) - make it accessible over the internet * [on servers](#on-servers)
+  - you may also want these, especially on servers * [features](#features) - also
+  see [comparison to similar software](./docs/versus.md) * [testimonials](#testimonials)
+  - small collection of user feedback * [motivations](#motivations) - project goals
+  / philosophy * [notes](#notes) - general notes * [bugs](#bugs) - roughly sorted
+  by chance of encounter * [not my bugs](#not-my-bugs) - same order here too * [breaking
+  changes](#breaking-changes) - upgrade notes * [FAQ](#FAQ) - \"frequently\" asked
+  questions * [accounts and volumes](#accounts-and-volumes) - per-folder, per-user
+  permissions * [shadowing](#shadowing) - hiding specific subfolders * [dotfiles](#dotfiles)
+  - unix-style hidden files/folders * [the browser](#the-browser) - accessing a copyparty
+  server using a web-browser * [tabs](#tabs) - the main tabs in the ui * [hotkeys](#hotkeys)
+  - the browser has the following hotkeys * [navpane](#navpane) - switching between
+  breadcrumbs or navpane * [thumbnails](#thumbnails) - press `g` or `田` to toggle
+  grid-view instead of the file listing * [zip downloads](#zip-downloads) - download
+  folders (or file selections) as `zip` or `tar` files * [uploading](#uploading) -
+  drag files/folders into the web-browser to upload * [file-search](#file-search)
+  - dropping files into the browser also lets you see if they exist on the server
+  * [unpost](#unpost) - undo/delete accidental uploads * [self-destruct](#self-destruct)
+  - uploads can be given a lifetime * [race the beam](#race-the-beam) - download files
+  while they're still uploading ([demo video](http://a.ocv.me/pub/g/nerd-stuff/cpp/2024-0418-race-the-beam.webm))
+  * [incoming files](#incoming-files) - the control-panel shows the ETA for all incoming
+  files * [file manager](#file-manager) - cut/paste, rename, and delete files/folders
+  (if you have permission) * [shares](#shares) - share a file or folder by creating
+  a temporary link * [batch rename](#batch-rename) - select some files and press `F2`
+  to bring up the rename UI * [rss feeds](#rss-feeds) - monitor a folder with your
+  RSS reader * [opds feeds](#opds-feeds) - browse and download files from your e-book
+  reader * [recent uploads](#recent-uploads) - list all recent uploads * [media player](#media-player)
+  - plays almost every audio format there is * [playlists](#playlists) - create and
+  play [m3u8](https://en.wikipedia.org/wiki/M3U) playlists * [creating a playlist](#creating-a-playlist)
+  - with a standalone mediaplayer or copyparty * [audio equalizer](#audio-equalizer)
+  - and [dynamic range compressor](https://en.wikipedia.org/wiki/Dynamic_range_compression)
+  * [fix unreliable playback on android](#fix-unreliable-playback-on-android) - due
+  to phone / app settings * [textfile viewer](#textfile-viewer) - with realtime streaming
+  of logfiles and such ([demo](https://a.ocv.me/pub/demo/logtail/)) * [markdown viewer](#markdown-viewer)
+  - and there are *two* editors * [markdown vars](#markdown-vars) - dynamic docs with
+  serverside variable expansion * [other tricks](#other-tricks) * [searching](#searching)
+  - search by size, date, path/name, mp3-tags, ... * [server config](#server-config)
+  - using arguments or config files, or a mix of both * [zeroconf](#zeroconf) - announce
+  enabled services on the LAN ([pic](https://user-images.githubusercontent.com/241032/215344737-0eae8d98-9496-4256-9aa8-cd2f6971810d.png))
+  * [mdns](#mdns) - LAN domain-name and feature announcer * [ssdp](#ssdp) - windo"
 ---
 {% raw %}
 <img src="https://github.com/9001/copyparty/raw/hovudstraum/docs/logo.svg" width="250" align="right"/>

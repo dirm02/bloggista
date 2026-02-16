@@ -2,8 +2,67 @@
 layout: project
 name: Gtsteffaniak Filebrowser
 slug: gtsteffaniak-filebrowser
+category: File manager -Network-nmap
 image: https://goreportcard.com/badge/github.com/gtsteffaniak/filebrowser/backend
 repo_url: https://github.com/gtsteffaniak/filebrowser
+indexed_content: '[](https://goreportcard.com/report/github.com/gtsteffaniak/filebrowser/backend)
+  [](https://www.codacy.com/gh/gtsteffaniak/filebrowser/dashboard) [](https://github.com/gtsteffaniak/filebrowser/releases)
+  [](https://hub.docker.com/r/gtstef/filebrowser) [](https://www.apache.org/licenses/LICENSE-2.0)
+  [](https://github.com/gtsteffaniak/filebrowser/wiki/Q&A#is-there-a-way-to-donate-or-support-this-project)
+  FileBrowser Quantum The best free self-hosted web-based file manager. ## Pinned
+  :loudspeaker: [What''s Coming Soon](https://github.com/gtsteffaniak/filebrowser/discussions/1622)
+  :pushpin: [Read The Official Docs](https://filebrowserquantum.com/) (currently english-only)
+  ## About FileBrowser Quantum provides an easy way to access and manage your files
+  from the web. It has a modern responsive interface that has many advanced features
+  to manage users, access, sharing, and file preview and editing. This version is
+  called "Quantum" because it packs tons of advanced features into a tiny easy to
+  run file. Unlike the majority of alternative options, FileBrowser Quantum is simple
+  to install and easy to configure. The goal for this repo is to become the best open-source
+  self-hosted file browsing application that exists -- **all for free**. This repo
+  will always be free and open-source. Ready to try it out? See [Getting Started Docs](https://filebrowserquantum.com/en/docs/getting-started/).
+  ## How its different FileBrowser Quantum is a massive fork of the file browser open-source
+  project with the following changes: 1. ✅ Add and configure multiple sources 2. ✅
+  Login support for OIDC, password + 2FA, and proxy. 3. ✅ Beautiful, Responsive, and
+  Customizable user interface. 4. ✅ Streamlined configuration via `config.yaml` config
+  file. 5. ✅ Ultra-efficient [indexing](https://github.com/gtsteffaniak/filebrowser/wiki/Indexing)
+  and real-time updates - Real-time search results as you type. - Real-time monitoring
+  and updates in the UI. - Search supports file and folder sizes, along with various
+  filters. 6. ✅ Better listing browsing - Better thumbnail support including **office**,
+  **video**, and **album artwork** - Faster and more responsive views with animations.
+  - Folder sizes are displayed and support for thumbnails - Navigating remembers the
+  last scroll position. 7. ✅ Highly configurable and customizable sharing options
+  - share expiration time - users who can access share (including anonymous) - styling
+  and themes - file viewing, editing, and uploading permissions 8. ✅ Directory-level
+  access control that can be scoped to user or group. 9. ✅ Developer API support -
+  Ability to create long-lived API Tokens. - A helpful Swagger page is available at
+  `/swagger` endpoint for API enabled users. Notable features that this fork *does
+  not* have (removed): - :construction: jobs are not supported yet. - ❌ shell commands
+  are completely removed and will not be returned. FileBrowser Quantum differs significantly
+  from the original version. Many of these changes required a significant overhaul.
+  Creating a fork was a necessary process to make the program better. There have been
+  many growing pains, but a stable release is planned and coming soon. ## System Requirements
+  > [!WARNING] > Every file and directory in the source gets indexed (by default).
+  This enables powerful features such as instant search, but large source filesystems
+  can increase your system requirements. [See indexing wiki](https://github.com/gtsteffaniak/filebrowser/wiki/Indexing)
+  for more info. - **Memory**: depends on configured source complexity. See [how much
+  RAM does it require?](https://github.com/gtsteffaniak/filebrowser/discussions/787)
+  - **GPU**: Not currently used (planned) ## The UI The UI has a simple three-component
+  navigation system: 1. (Left) Multi-action button with slide-out panel. 2. (Middle)
+  The powerful search bar. 3. (Right) The view change toggle. All other functions
+  are moved either into the action menu or pop-up menus. If the action does not depend
+  on context, it will exist in the slide-out action panel. If the action is available
+  based on context, it will show up as a pop-up menu. ## Official Docs See the [Official
+  Docs](https://filebrowserquantum.com/). Contributions are welcome and encouraged!
+  See [FilebrowserDocs Github](https://github.com/quantumx-apps/filebrowserDocs).
+  ## Comparison Chart Application Name | Quantum | Filebrowser | Filestash | Nextcloud
+  | Google_Drive | FileRun --- | --- | --- | --- | --- | --- | --- | Filesystem support
+  | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | Linux | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | Windows | ✅ | ✅ | ✅ |
+  ❌ | ❌ | ✅ | Mac | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | Self hostable | ✅ | ✅ | ✅ | ✅ | ❌ | ✅
+  | Has Stable Release? | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | S3 support | ❌ | ❌ | ✅ | ✅ | ❌ |
+  ❌ | webdav support | :warning:* | ❌ | ✅ | ✅ | ❌ | ✅ | FTP support | ❌ | ❌ | ✅ |
+  ✅ | ❌ | ✅ | Dedicated docs site? | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | Multiple sources at once
+  | ✅ | ❌ | ✅ | ✅ | ❌ | ✅ | Docker image size | 180 MB (with ffmpeg) | 31 MB | 240
+  MB (main image) | 250 MB | ❌ | > 2 GB | Mi'
 ---
 {% raw %}
 <div align="center">

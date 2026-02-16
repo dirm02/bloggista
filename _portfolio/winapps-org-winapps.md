@@ -2,8 +2,69 @@
 layout: project
 name: Winapps Org Winapps
 slug: winapps-org-winapps
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/winapps-org-winapps/docs/readme/banner_dark.svg#gh-dark-mode-only
 repo_url: https://github.com/winapps-org/WinApps-Launcher)
+indexed_content: 'Run Windows applications (including [Microsoft 365](https://www.microsoft365.com/)
+  and [Adobe Creative Cloud](https://www.adobe.com/creativecloud.html)) on GNU/Linux
+  with `KDE Plasma`, `GNOME` or `XFCE`, integrated seamlessly as if they were native
+  to the OS. ## Underlying Mechanism WinApps works by: 1. Running Windows in a `Docker`,
+  `Podman` or `libvirt` virtual machine. 2. Querying Windows for all installed applications.
+  3. Creating shortcuts to selected Windows applications on the host GNU/Linux OS.
+  4. Using [`FreeRDP`](https://www.freerdp.com/) as a backend to seamlessly render
+  Windows applications alongside GNU/Linux applications. ## Additional Features -
+  The GNU/Linux `/home` directory is accessible within Windows via the `\\tsclient\home`
+  mount. - Integration with `Nautilus`, allowing you to right-click files to open
+  them with specific Windows applications based on the file MIME type. - The [official
+  taskbar widget](https://github.com/winapps-org/WinApps-Launcher) enables seamless
+  administration of the Windows subsystem and offers an easy way to launch Windows
+  applications. - Microsoft Office links (e.g. ms-word://) from the host system are
+  automatically opened in the Windows subsystem. (Note: You may need to use a [User
+  Agent Switcher](https://github.com/ray-lothian/UserAgent-Switcher/) browser extension
+  and set the User-Agent to Windows, as the Office webapps typically hide the "Open
+  in Desktop App" option for Linux users.) ## Supported Applications **WinApps supports
+  *ALL* Windows applications.** Support does not, however, extend to kernel-level
+  anti-cheat systems (e.g. Riot Vanguard). Universal application support is achieved
+  by: 1. Scanning Windows for any community tested applications (list below). 2. Scanning
+  Windows for any other `.exe` files listed within the Windows Registry. Community
+  tested applications benefit from high-resolution icons and pre-populated MIME types.
+  This enables file managers to determine which Windows applications should open files
+  based on file extensions. Icons for other detected applications are pulled from
+  `.exe` files. Contributing to the list of supported applications is encouraged through
+  submission of pull requests! Please help us grow the WinApps community. *Please
+  note that the provided list of community tested applications is community-driven.
+  As such, some applications may not be tested and verified by the WinApps team.*
+  ### Community Tested Applications Adobe Acrobat Pro (X) Icon in the Public Domain.
+  Adobe After Effects (CC) Icon in the Public Domain. Adobe Audition (CC) Icon in
+  the Public Domain. Adobe Bridge (CS6, CC) Icon in the Public Domain. Adobe Creative
+  Cloud (CC) Icon under MIT license . Adobe Illustrator (CC) Icon in the Public Domain.
+  Adobe InDesign (CC) Icon in the Public Domain. Adobe Lightroom (CC) Icon in the
+  Public Domain. Adobe Photoshop (CS6, CC, 2022) Icon in the Public Domain. Affinity
+  Designer 2 Icon under CC-BY-SA 4.0 via Serif Ltd. Affinity Photo 2 Icon under CC-BY-SA
+  4.0 via Serif Ltd. Affinity Publisher 2 Icon under CC-BY-SA 4.0 via Serif Ltd. Affinity
+  by Canva (v3) Icon in the Public Domain. Command Prompt (cmd.exe) Icon under MIT
+  license . File Explorer (Windows Explorer) Icon in the Public Domain. Internet Explorer
+  (11) Icon in the Public Domain. Microsoft Access (2016, 2019, o365) Icon in the
+  Public Domain. Microsoft Excel (2016, 2019, o365) Icon in the Public Domain. Microsoft
+  Word (2016, 2019, o365) Icon in the Public Domain. Microsoft OneNote (2016, 2019,
+  o365) Icon in the Public Domain. Microsoft Outlook (2016, 2019, o365) Icon in the
+  Public Domain. Microsoft PowerPoint (2016, 2019, o365) Icon in the Public Domain.
+  Microsoft Publisher (2016, 2019, o365) Icon in the Public Domain. Microsoft Visio
+  (Standard/Pro. 2021, Plan 2) Icon in the Public Domain. Microsoft Project (Standard/Pro.
+  2021, Plan 3/5) Icon in the Public Domain. Microsoft Visual Studio (Comm./Pro./Ent.
+  2022) Icon in the Public Domain. Autodesk Fusion 360 Icon in the Public Domain.
+  mIRC Icon in the Public Domain. PowerShell Icon under MIT license . Windows (Full
+  RDP Session) Icon in the Public Domain. ## Installation ### Step 1: Configure a
+  Windows VM Both `Docker` and `Podman` are recommended backends for running the Windows
+  virtual machine, as they facilitate an automated Windows installation process. WinApps
+  is also compatible with `libvirt`. While this method requires considerably more
+  manual configuration, it also provides greater virtual machine customisation options.
+  All three methods leverage the `KVM` hypervisor, ensuring excellent virtual machine
+  performance. Ultimately, the choice of backend depends on your specific use case.
+  The following guides are available: - [Creating a Windows VM with `Docker` or `Podman`](docs/docker.md)
+  - [Creating a Windows VM with `libvirt`](docs/libvirt.md) If you already have a
+  Windows VM or server you wish to use with WinApps, you will still have to follow
+  the [final steps described in the `libvirt` documentation](docs/li'
 ---
 {% raw %}
 <p align="center"><img align="center" width="700" src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/winapps-org-winapps/docs/readme/banner_dark.svg#gh-dark-mode-only"/></p>

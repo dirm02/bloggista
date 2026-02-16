@@ -2,8 +2,64 @@
 layout: project
 name: Ssshake Retro Computing Internet Resources
 slug: ssshake-retro-computing-internet-resources
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/ssshake/retro-computing-internet-resources/main/screenshots/logo-small.png
 repo_url: https://github.com/ssshake/retro-computing-internet-resources
+indexed_content: '# Retro Computing Internet Resources This is a list of projects
+  which let vintage computers connect to the internet! If you have a project you would
+  like added to the list please say so on the **[Discussion Page](https://github.com/ssshake/retro-computing-internet-resources/discussions)**
+  or submit a **[PR](https://github.com/ssshake/retro-computing-internet-resources/pulls)**!
+  Supplimentary information is available on the **[WIKI](https://github.com/ssshake/retro-computing-internet-resources/wiki)**.
+  # Links - [TheOldNet.com](http://theoldnet.com) - [The Old Net - HTTP Proxy](http://theoldnet.com/docs/httpproxy/index.html)
+  - [The Old Net - BBS](http://theoldnet.com/bbs.html) - [Protoweb](https://protoweb.org/)
+  - [Retrocampus BBS](http://bbs.retrocampus.com/) - [68k.news](http://68k.news/)
+  - [Frog Find](http://frogfind.com/) - [Wiby](http://wiby.org) - [WRP (Web Rendering
+  Proxy)](https://github.com/tenox7/wrp) - [Browservice](https://github.com/ttalvitie/browservice)
+  - [Retro-Proxy](https://github.com/DrKylstein/retro-proxy) - [Netscape Proxy](https://github.com/ericmackrodt/netscape-proxy)
+  - [WebOne](https://github.com/atauenis/webone) - [Timeprox](https://github.com/remino/timeprox)
+  - [JWZ''s http10proxy](https://www.jwz.org/hacks/http10proxy.pl) - [DreamPi](https://segaretro.org/DreamPi)
+  - [Kali](http://www.kali.net/) - [Brow.sh](https://www.brow.sh/) - [CyberTown Revival](https://www.cybertownrevival.com/#/)
+  - [Telnet BBS Guide](http://www.telnetbbsguide.com/bbs/list/brief/) - [Doge Microsystems
+  DIY Dialup Server](https://dogemicrosystems.ca/wiki/Dial_up_server) - [Cameron''s
+  World](https://www.cameronsworld.net/) - [MicroWeb](https://github.com/jhhoward/MicroWeb)
+  - [Crypto Ancienne](https://github.com/classilla/cryanc) - [OldWeb Today](https://oldweb.today/)
+  - [YouTube Parser for Slow Computers](https://github.com/Wa59/ytpfsc) - [Old''a
+  Vista](https://oldavista.com/) - [Vista Serv](http://vistaserv.net) - [NINA](https://nina.chat/)
+  - [ucanet](http://ucanet.net/) - [MacProxy](https://github.com/rdmark/macproxy)
+  - [NetTalk](https://github.com/rdmark/netatalk-2.x) - [Byte5''s ICQ Server](https://icq.byte5.com.br/)
+  # Project Screenshots ### [TheOldNet.com](http://theoldnet.com) [](http://theoldnet.com)
+  #### Additional Services: - [HTTP Proxy](http://theoldnet.com/docs/httpproxy/index.html)
+  - [C64 BBS](http://theoldnet.com/bbs.html) - [Android App](https://play.google.com/store/apps/details?id=com.daggasoft.theoldnet&hl=en_US&gl=US)
+  - [VRML Gallery](http://vrml.theoldnet.com/#/assets/places/theatre/vrml_1000818/theatre.wrl)
+  Starting in 2019 I had the idea of being able to browse the 1990''s web on a handful
+  of of my 1990''s computers. To my surprise the existing archives online were not
+  compatible with vintage browsers even though the content was from that era. One
+  weekend I wrote a proxy and everthing else grew from there. Two years later I''ve
+  provided nearly a dozen free services to vintage computer enthusiasts around the
+  world! --- ### [Protoweb](https://protoweb.org/) [](https://protoweb.org/) This
+  is an HTTP proxy that has its aim on high quality completeness of websites. The
+  protoweb team scrapes the Internet Archive and other resources and reassembles the
+  websites by hand as thoroughly as possible. You will not find every website on Protoweb,
+  but the ones that you do find will be of the best version out there. --- ### [Retrocampus
+  BBS](http://bbs.retrocampus.com/) [](http://bbs.retrocampus.com/) This BBS has it
+  all, games, chat, modern information from current web sites. Best of all it has
+  compatibility for over a dozen systems! --- ### [68k.news](http://68k.news/) [](http://68k.news/)
+  This is a proxy to google news which returns text and images but none of the incompatible
+  stuff that old browsers wouldn''t like. --- ### [Frog Find](http://frogfind.com/)
+  [](http://frogfind.com/) Frog Find is a great service which acts as a proxy to Duck
+  Duck Go. It returns text parsed out of webpages to ensure compatibility on even
+  the most limited of browsers. --- ### [Wiby](http://wiby.org) [](http://wiby.org/)
+  Wiby is a search engine with the stated goal of "building a web of pages as it was
+  in the earlier days of the internet". It has a large index of lightweight contributed
+  pages, a random "surprise me..." feature, and an HTTP-only filter. It''s also hosted
+  on a fleet of Optiplexes, and home to a [no-script chatroom](http://wiby.me/chat/).
+  --- ### [WRP (Web Rendering Proxy)](https://github.com/tenox7/wrp) [](https://github.com/tenox7/wrp)
+  This is a very clever and cool service. It lets you browse the modern internet on
+  vintage computers. This is generally impossible because most websites are partially/fully
+  rendered using client side javascript. Old browsers cannot handle this. WRP pre-renders
+  the webpages in a headless chrome instance and then returns a screenshot of the
+  webpage as an image map to the vintage computer. Very neat way of working through
+  the problem. --- ### [Browservice](https://github.com/ttalvitie/brow'
 ---
 {% raw %}
 # Retro Computing Internet Resources

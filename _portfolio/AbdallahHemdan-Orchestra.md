@@ -2,8 +2,31 @@
 layout: project
 name: Abdallahhemdan Orchestra
 slug: AbdallahHemdan-Orchestra
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://user-images.githubusercontent.com/40190772/104846822-22d3e800-58e5-11eb-9c6c-b7de610bd483.png
 repo_url: https://github.com/AbdallahHemdan/Orchestra
+indexed_content: 'Orchestra [](https://github.com/AbdallahHemdan/Orchestra/contributors)
+  [](https://github.com/AbdallahHemdan/Orchestra/issues) [](https://github.com/AbdallahHemdan/Orchestra/network)
+  [](https://github.com/AbdallahHemdan/Orchestra/stargazers) [](https://github.com/AbdallahHemdan/Orchestra/blob/master/LICENSE)
+  ## About > **Orchestra** is a sheet music reader (optical music recognition (**OMR**)
+  system) that converts sheet music to a machine-readable version. ## How it works
+  > List of steps we take to process the input sheet and get our results ### 1. Noise
+  Removal ### 2. Binarization ### 3. Staff line removal ### 4. Cutted buckets ###
+  5. Segmentation and detection ### 6. Recognition 1. Cutted 1 > [ \meter d1/4 e1/32
+  e2/2 e1/8 e1/16 e1/32 {e1/4,g1/4} e1/4 e1/8 c1/8 g1/32 c1/16 e1/32 ] 2. Cutted 2
+  > [ \meter {e1/4,g1/4,b1/4} a1/8 d1/8 c1/16 g1/16 d1/16 e1/16 c2/16 g2/16 d2/16
+  e2/16 {f1/4,g1/4,b1/4} c1/4 a1/4. a1/8 a1/32.. ] 3. Cutted 3 > [ \meter e1/16 e1/16
+  e1/16 e1/16 e1/4 e#1/4 g1/4 g&&1/4 g1/4 e#2/4 ] ### Installation 1. **_Clone the
+  repository_** ```sh $ git clone https://github.com/AbdallahHemdan/Orchestra.git
+  ``` 2. **_Navigate to repository directory_** ```sh $ cd Orchestra ``` 3. **_Install
+  dependencies_** ```sh $ pip install -r requirements.txt ``` ### Running 1. **_Put
+  you input files inside input folder_** 2. **_Put you output files inside output
+  folder_** 3. **_Running_** ```sh python main.py $path_of_input_folder $path_of_output_folder
+  ``` ## Contributing > Contributions are what make the open source community such
+  an amazing place to be learn, inspire, and create. Any contributions you make are
+  **greatly appreciated**. Check out our [contributing guidelines](https://github.com/AbdallahHemdan/Orchestra/blob/master/CONTRIBUTING.md)
+  for ways to contribute. ### Contributors Abdallah Hemdan Adel Mohamed Kareem Mohamed^3
+  Ahmed Mahboub ### Licence [MIT Licence](https://github.com/AbdallahHemdan/Orchestra/blob/master/LICENSE)'
 ---
 {% raw %}
 <div align="center">

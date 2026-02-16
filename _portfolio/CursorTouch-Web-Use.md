@@ -2,8 +2,37 @@
 layout: project
 name: Cursortouch Web Use
 slug: CursorTouch-Web-Use
+category: Extension-Pluggin-Cron-Scrap
 image: https://img.shields.io/badge/license-MIT-green
 repo_url: https://github.com/Jeomon/Web-Agent
+indexed_content: "\U0001F310 Web-Navigator **Web Navigator** is your intelligent browsing
+  companion, built to seamlessly navigate websites, interact with dynamic content,
+  perform smart searches, download files, and adapt to ever-changing pages — all with
+  minimal effort from you. Powered by advanced LLMs and the robust Playwright framework,
+  it transforms complex web tasks into streamlined, automated workflows that boost
+  productivity and save time. ## \U0001F6E0️Installation Guide ### **Prerequisites**
+  - Python 3.11 or higher - UV ### **Installation Steps** **Clone the repository:**
+  ```bash git clone https://github.com/CursorTouch/Web-Navigator.git cd Web-Navigator
+  ``` **Install dependencies:** ```bash uv sync ``` **Setup Playwright:** ```bash
+  playwright install ``` --- **Setting up the `.env` file:** ```bash GOOGLE_API_KEY=\"\"
+  ``` Basic setup of the agent. ```python from src.inference.gemini import ChatGemini
+  from src.agent.web import WebAgent from dotenv import load_dotenv import os load_dotenv()
+  google_api_key=os.getenv('GOOGLE_API_KEY') llm=ChatGemini(model='gemini-2.0-flash',api_key=google_api_key,temperature=0)
+  agent=Agent(llm=llm,verbose=True,use_vision=False) user_query=input('Enter your
+  query: ') agent_response=agent.invoke(user_query) print(agent_response.get('output'))
+  ``` Execute the following command to start the agent: ```bash python app.py ```
+  ## \U0001F3A5Demos **Prompt:** I want to know the price details of the RTX 4060
+  laptop gpu from varrious sellers from amazon.in https://github.com/user-attachments/assets/c729dda9-0ecc-4b07-9113-62fddccca52f
+  **Prompt:** Make a twitter post about AI on X https://github.com/user-attachments/assets/126ef697-f506-4630-9a0a-1dbbfead9f7e
+  **Prompt:** Can you play the trailer of GTA 6 on youtube https://github.com/user-attachments/assets/7abde708-7fe0-46f8-96ac-16124aaf2ef4
+  **Prompt:** Can you go to my github account and visit the Windows MCP https://github.com/user-attachments/assets/cb8ad60c-0609-42e3-9fb9-584ad77c4e3a
+  --- ## \U0001FAAALicense This project is licensed under MIT License - see the [LICENSE](LICENSE)
+  file for details. ## \U0001F91DContributing Contributions are welcome! Please see
+  [CONTRIBUTING](CONTRIBUTING.md) for setup instructions and development guidelines.
+  Made with ❤️ by [Jeomon George](https://github.com/Jeomon), [Muhammad Yaseen](https://github.com/mhmdyaseen)
+  --- ## \U0001F4D2References - **[Playwright Documentation](https://playwright.dev/docs/intro)**
+  - **[LangGraph Examples](https://github.com/langchain-ai/langgraph/blob/main/examples/web-navigation/web_voyager.ipynb)**
+  - **[vimGPT](https://github.com/ishan0102/vimGPT)** - **[WebVoyager](https://github.com/MinorJerry/WebVoyager)**"
 ---
 {% raw %}
 <div align="center">

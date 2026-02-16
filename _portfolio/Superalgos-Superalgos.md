@@ -2,8 +2,62 @@
 layout: project
 name: Superalgos Superalgos
 slug: Superalgos-Superalgos
+category: Platform -eCommerce
 image: https://img.shields.io/github/contributors-anon/Superalgos/Superalgos?label=Contributors
 repo_url: https://github.com/settings/tokens
+indexed_content: "# :small_orange_diamond: Superalgos 1.6.1 # :small_orange_diamond:
+  Table of Contents ## Main Topics - [Introduction](#small_orange_diamond-introduction)
+  - [Before You Begin](#small_orange_diamond-before-you-begin) - [Getting Started](#small_orange_diamond-getting-started)
+  - [Installation Options](#small_orange_diamond-installation-options) - [Installation
+  for Developers and Contributors](#small_orange_diamond-installation-for-developers-and-contributors)
+  - [Prerequisites](#prerequisites) - [Superalgos Platform Client Installation](#superalgos-platform-client-installation)
+  - [Usage](#small_orange_diamond-usage) - [Uninstall](#small_orange_diamond-uninstall)
+  - [Get In Touch](#small_orange_diamond-get-in-touch) - [Other Resources](#small_orange_diamond-other-resources)
+  - [Contributing](#small_orange_diamond-contributing) - [License](#small_orange_diamond-license)
+  ## Appendix - [Prerequisites Notes](#small_orange_diamond-prerequisites-notes) -
+  [Troubleshooting Dependencies Installation](#small_orange_diamond-troubleshooting-dependencies-installation)
+  - [WSL2 VSCode IDE Environment Setup](#small_orange_diamond-wsl2-vscode-ide-environment-setup)
+  - [Running Superalgos on a Headless Linux Server as a Daemon](#small_orange_diamond-running-superalgos-on-a-headless-linux-server-as-a-daemon)
+  # :small_orange_diamond: Introduction **[Superalgos](https://superalgos.org/) is
+  a community-owned open-source project with a decentralized and token-incentivized
+  Social Trading Network crowdsourcing superpowers for retail traders.** We are an
+  open and welcoming community nurtured and incentivized with the project's native
+  [Superalgos (SA) Token](https://superalgos.org/token-overview.shtml), which is distributed
+  among contributors to accelerate development. > :white_check_mark: Join the [Telegram
+  Community Group](https://t.me/superalgoscommunity) or the new [Discord Server](https://discord.gg/CGeKC6WQQb)
+  to connect with other users! Superalgos is a vast project. The focus of this README
+  file is the Superalgos Platform. Please, visit [the platform's page on the website](https://superalgos.org/crypto-trading-bots-platform.shtml)
+  for an overview of features and functionality. # :small_orange_diamond: Before You
+  Begin Worth noting before you start: * Online Demo | To get a feel of what Superalgos
+  is about without installing anything, take the (limited) [online demo](https://superalgos.org/crypto-trading-bots-platform-demo.shtml)
+  for a spin! * System requirements | Learn about the [minimum hardware](https://superalgos.org/crypto-trading-bots-system-requirements.shtml)
+  required to run the platform on different settings. * FAQS: * [Before you begin](https://superalgos.org/faqs-crypto-trading-bots-before-you-being.shtml)
+  * [Trust and safety](https://superalgos.org/faqs-crypto-trading-bots-trust-and-safety.shtml)
+  * [Trading with Superalgos](https://superalgos.org/faqs-crypto-trading-bots-trading-with-superalgos.shtml)
+  * [Open-source strategies](https://superalgos.org/faqs-crypto-trading-bots-open-source-crypto-trading-bots-strategies.shtml)
+  * Documentation | The platform features interactive and searchable documentation
+  counting over 1500 pages. The Docs are available [on the website](https://superalgos.org/Docs/Foundations/Book/user-manual.shtml)
+  and within the app. The in-app version of the Docs interacts with the app itself
+  and is likely more up-to-date than the web version. # :small_orange_diamond: Getting
+  Started Superalgos is an ever-growing ecosystem of tools and applications. This
+  guide will walk you through the main ways to install the Superalgos Platform — the
+  flagship application of the ecosystem. Once you install and launch the app, a series
+  of interactive tutorials take you by the hand and walk you around the system while
+  you learn the basic skills required to use the interface, mine data, backtest strategies,
+  and even run a live trading session. It is highly recommended to do all tutorials,
+  as they are carefully crafted to make your onboarding as easy as possible. > :white_check_mark:
+  **NOTE:** Tutorials are the absolute best way to tackle the learning curve. You
+  should do all tutorials before you start exploring other avenues on your own. The
+  tutorial uses Binance or Binance US as the exchange of choice. If you don't have
+  an account with Binance or Binance US, you will still be able to follow 100% of
+  the tutorial. When you get to the live trading section, keep going even if you don't
+  intend to run the session. You will learn how to work with other exchanges later
+  on. If both Binance and Binance US are blocked in your region, you will need to
+  set up a different exchange from the get-go. # :small_orange_diamond: Installation
+  Options There are a few methods to install the Superalgos Platform. We will briefly
+  describe the options available. Click the link to go to the specific README file
+  with further instructions for the installation method of your choice. 1. [Developers
+  and Contributors](#small_orange_diamond-installation-for-d"
 ---
 {% raw %}
 # :small_orange_diamond: Superalgos 1.6.1

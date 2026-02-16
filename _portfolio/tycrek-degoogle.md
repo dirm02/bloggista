@@ -2,8 +2,10 @@
 layout: project
 name: Tycrek Degoogle
 slug: tycrek-degoogle
+category: Uncategorized
 image: https://nogithub.codeberg.page/badge.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/tycrek-degoogle
+indexed_content: repo contents moved to [my archive](https://git.tycrek.com/archive/degoogle)
 ---
 {% raw %}
 <div align="center">

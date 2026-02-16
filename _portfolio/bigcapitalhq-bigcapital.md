@@ -2,8 +2,41 @@
 layout: project
 name: Bigcapitalhq Bigcapital
 slug: bigcapitalhq-bigcapital
+category: Finance-selfapp-healthapp-Improv
 image: https://gitpod.io/button/open-in-gitpod.svg
 repo_url: https://github.com/bigcapitalhq/bigcapital
+indexed_content: "Simple, smart online accounting software for small and medium businesses.
+  Bigcapital Cloud # What's Bigcapital? Bigcapital is a smart and open-source accounting
+  and inventory software, Bigcapital keeps all business finances in right place and
+  automates accounting processes to give the business powerful and intelligent financial
+  statements and reports to help in making decisions. # Getting Started We've got
+  serveral options on dev and prod depending on your need to get started quickly with
+  Bigcapital. ## Self-hosted Bigcapital is available open-source under AGPL license.
+  You can host it on your own servers using Docker. ### Docker To get started with
+  self-hosted with Docker and Docker Compose, take a look at the [Docker guide](https://docs.bigcapital.app/deployment/docker).
+  ## Development ### Local Setup To get started locally, we have a [guide to help
+  you](https://github.com/bigcapitalhq/bigcapital/blob/develop/CONTRIBUTING.md). ###
+  Gitpod - Click the Gitpod button below to open this project in development mode.
+  - This will open and configure the workspace in your browser with all the necessary
+  dependencies. [](https://gitpod.io/new/#https://github.com/bigcapitalhq/bigcapital)
+  ## Headless Accounting You can integrate Bigcapital API with your system to organize
+  your transactions in double-entry system to get the best financial reports. [](https://www.postman.com/bigcapital/workspace/bigcapital-api)
+  # Resources - [Documentation](https://docs.bigcapital.app/) - Learn how to use.
+  - [API Reference](https://docs.bigcapital.app/api-reference) - API reference docs
+  - [Contribution](https://github.com/bigcapitalhq/bigcapital/blob/develop/CONTRIBUTING.md)
+  - Welcome to any contributions. - [Discord](https://discord.com/invite/c8nPBJafeb)
+  - Ask for help. - [Bug Tracker](https://github.com/bigcapitalhq/bigcapital/issues)
+  - Notify us new bugs. # Changelog Please see [Releases](https://github.com/bigcapitalhq/bigcapital/releases)
+  for more information what has changed recently. # Contact us Meet our sales team
+  for any commercial inquiries. # Recognition # Contributors Thanks goes to these
+  wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)): Ahmed
+  Bouhuolia \U0001F4BB Ameir Abdeldayem \U0001F41B ElforJani13 \U0001F4BB Lars Scheibling
+  \U0001F41B Suhaib Affan \U0001F4BB Kalliopi Pliogka \U0001F41B Robert Koch \U0001F4BB
+  Casper Schuijt \U0001F41B ANasouf \U0001F4BB Ragnar Laud \U0001F41B Asena \U0001F41B
+  Ben Snyder \U0001F4BB Vederis Leunardus \U0001F4BB Chris Cantrell \U0001F41B Denis
+  \U0001F41B Sachin Mittal \U0001F41B Camilo Oviedo \U0001F4BB Mantey \U0001F41B Daniel
+  Lo Nigro \U0001F41B \U0001F4BB This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+  specification. Contributions of any kind welcome!"
 ---
 {% raw %}
 <p align="center">

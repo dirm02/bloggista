@@ -2,9 +2,68 @@
 layout: project
 name: A Ghorbani Pocketpal Ai
 slug: a-ghorbani-pocketpal-ai
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/a-ghorbani-pocketpal-ai/assets/images
   and logos/Download_models.png
 repo_url: https://github.com/a-ghorbani/pocketpal-ai
+indexed_content: "# PocketPal AI \U0001F4F1\U0001F680 PocketPal AI is a pocket-sized
+  AI assistant powered by small language models (SLMs) that run directly on your phone.
+  Designed for both iOS and Android, PocketPal AI lets you interact with various SLMs
+  without the need for an internet connection. Your privacy is fully protected as
+  all processing happens entirely on-device — your conversations, prompts, and data
+  never leave your phone or get stored on external servers. > **Note on Privacy**:
+  The only data that may leave your device is what you explicitly choose to share:
+  benchmark results (if you opt to contribute to the leaderboard) and any feedback
+  you voluntarily submit through the app. ## Table of Contents - [PocketPal AI \U0001F4F1\U0001F680](#pocketpal-ai-)
+  - [Table of Contents](#table-of-contents) - [\U0001F4F0 News & Announcements](#-news--announcements)
+  - [Features](#features) - [Installation](#installation) - [iOS](#ios) - [Android](#android)
+  - [Usage](#usage) - [Downloading a Model](#downloading-a-model) - [Loading a Model](#loading-a-model)
+  - [Chatting with the model](#chatting-with-the-model) - [Copying Text](#copying-text)
+  - [Message Editing](#message-editing) - [Using Pals](#using-pals) - [Benchmarking](#benchmarking)
+  - [Setup Hugging Face Access Token](#setup-hugging-face-access-token) - [Send Feedback](#send-feedback)
+  - [Development Setup](#development-setup) - [Prerequisites](#prerequisites) - [Getting
+  Started](#getting-started) - [Scripts](#scripts) - [Contributing](#contributing)
+  - [Quick Start for Contributors](#quick-start-for-contributors) - [Roadmap](#roadmap)
+  - [License](#license) - [Contact](#contact) - [Acknowledgements](#acknowledgements)
+  ## \U0001F4F0 News & Announcements - **\U0001F512 HF Token Authentication (v1.9.0,
+  Apr, 2025)**: Access gated models from Hugging Face with your authentication token.
+  - **\U0001F310 Localization Support (v1.8.16, Apr, 2025)**: PocketPal AI now supports
+  multiple languages (At the moment Japanese and Chinese). - **\U0001F4F1 iPad Support
+  (v1.8.12, Mar, 2025)**: Full support for iPad devices including landscape orientation.
+  - **\U0001F464 Pals Feature (v1.8.0, Feb, 2025)**: Create and chat with personalized
+  AI assistants with different personalities. - **\U0001F50D Benchmarking Tool (v1.6.1,
+  2024)**: Test and compare model performance with the built-in benchmarking feature.
+  - **\U0001F3A8 New Icon Alert (Nov 2024)**: PocketPal AI has a fresh new look! Huge
+  thanks to **[Chun Te Lee](https://github.com/Reeray)** for the design! [Read more](https://github.com/a-ghorbani/pocketpal-ai/discussions/102).
+  - **\U0001F680 Hugging Face Public Hub Integration (v1.5, Nov 2024)**: PocketPal
+  AI now integrates with the Hugging Face model Hub! Browse, download, and run models
+  directly from the Hugging Face Hub within the app. [Read more](https://github.com/a-ghorbani/pocketpal-ai/discussions/104)
+  ## Features - **Offline AI Assistance**: Run language models directly on your device
+  without internet connectivity. - **Model Flexibility**: Download and swap between
+  multiple SLMs, including Danube 2 and 3, Phi, Gemma 2, and Qwen. - **Auto Offload/Load**:
+  Automatically manage memory by offloading models when the app is in the background.
+  - **Inference Settings**: Customize model parameters like system prompt, temperature,
+  BOS token, and chat templates. - **Real-Time Performance Metrics**: View tokens
+  per second and milliseconds per token during AI response generation. - **Message
+  Editing**: Edit your messages and retry AI generation. - **Personalized Pals**:
+  Create different AI personalities with customized settings. - **Background Downloads**:
+  Continue downloading models while using other apps (iOS). - **Screen Awake During
+  Inference**: Keep your screen on while the AI is generating responses. - **Multi-device
+  Support**: Optimized for both phones and tablets, including iPad. - **Localization**:
+  Use the app in your preferred language. - **Hugging Face Integration**: Access both
+  public and gated models with authentication. ## Installation ### iOS Download PocketPal
+  AI from the App Store: [**Download on the App Store**](https://apps.apple.com/us/app/pocketpal-ai/id6502579498)
+  ### Android Get PocketPal AI on Google Play: [**Get it on Google Play**](https://play.google.com/store/apps/details?id=com.pocketpalai)
+  ## Usage ### Downloading a Model 1. Open the app and tap the **Menu** icon (☰).
+  2. Navigate to the **Models** page. 3. Choose a model from the list and tap **Download**.
+  4. Or tap the + button to add models from Hugging Face or locally downloaded ones.
+  5. If you select \"Add from Hugging Face\", you can search GGUF models directly
+  on HF and select any quantization that fits your device (memory and storage). 6.
+  You can then download it immediately or bookmark it for later. ### Loading a Model
+  - After downloading, tap **Load** next to the model to load it to memory. - You
+  can also load a model directly within the chat page using the chevron icon on the
+  left side of the chat input. ### Chatting with the model 1. Ensure a model is loaded.
+  2. Navigate to the **Chat** page from the menu. 3. Start conversing "
 ---
 {% raw %}
 # PocketPal AI 📱🚀

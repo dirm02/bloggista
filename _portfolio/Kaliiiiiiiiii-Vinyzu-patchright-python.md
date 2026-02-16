@@ -2,8 +2,67 @@
 layout: project
 name: Kaliiiiiiiiii Vinyzu Patchright Python
 slug: Kaliiiiiiiiii-Vinyzu-patchright-python
+category: Uncategorized
 image: https://img.shields.io/badge/License-Apache%202.0-green
 repo_url: https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-python
+indexed_content: "\U0001F3AD Patchright Python #### Patchright is a patched and undetected
+  version of the Playwright Testing and Automation Framework. It can be used as a
+  drop-in replacement for Playwright. > [!NOTE] > This repository serves the Patchright-Python
+  Package. To use Patchright with NodeJS, check out the [NodeJS Package](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-nodejs).
+  > Also check out the main [Patchright Driver Repository](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)
+  --- Sponsors If you’re looking for a high-performance browser automation platform
+  checkout [**Hyperbrowser**](https://hyperbrowser.ai/). It’s ideal for AI Agents,
+  large-scale web scraping and automated testing. [**Hyperbrowser**](https://hyperbrowser.ai/)
+  delivers cloud-based browser infrastructure that scales instantly from a few sessions
+  to thousands, with built-in CAPTCHA solving, stealth fingerprinting, and a global
+  proxy network. It integrates seamlessly with Puppeteer, Playwright, and Selenium,
+  so you can be up and running in minutes, no server or proxy management required.
+  Key Features: - **Instant scaling**: Launch 1,000+ concurrent browsers - **Captcha
+  Solving**: Handles reCAPTCHA, Cloudflare, AWS, and more - **Stealth mode**: Dynamic,
+  human-like fingerprints for undetectable automation - **Global proxy network**:
+  170+ countries with rotation and geo-targeting - **Built-in debugging**: Live view
+  and session replay for real-time monitoring - **1-line integration**: Works with
+  Puppeteer, Playwright, Selenium in Node.js or Python \U0001F449 Learn more at [**hyperbrowser.ai**](https://hyperbrowser.ai/)
+  --- [Thordata](https://www.thordata.com/?ls=github&lk=Vinyzu) - Your First Plan
+  is on Us! \U0001F4B0Get 100% of your first residential proxy purchase back as wallet
+  balance, up to $900. ### **⚡ Why Thordata?** \U0001F30D 190+ real residential &
+  ISP IP locations\\ \U0001F510 Fully encrypted, ultra-secure connections\\ \U0001F680
+  Optimized for web scraping, ad verification & automation workflows \U0001F525Don’t
+  wait — this is your **best time to start** with [Thordata](https://www.thordata.com/?ls=github&lk=Vinyzu)
+  and experience the safest, fastest proxy network. --- ## Install it from PyPI ```bash
+  # Install Patchright with Pip from PyPI pip install patchright ``` ```bash # Install
+  Chromium-Driver for Patchright patchright install chromium ``` --- ## Usage ####
+  Just change the import and use it like playwright. Patchright is a drop-in-replacement
+  for Playwright! > [!IMPORTANT] > Patchright only patches CHROMIUM based browsers.
+  Firefox and Webkit are not supported. ```py # patchright here! from patchright.sync_api
+  import sync_playwright with sync_playwright() as p: browser = p.chromium.launch()
+  page = browser.new_page() page.goto('http://playwright.dev') page.screenshot(path=f'example-{p.chromium.name}.png')
+  browser.close() ``` ```py import asyncio # patchright here! from patchright.async_api
+  import async_playwright async def main(): async with async_playwright() as p: browser
+  = await p.chromium.launch() page = await browser.new_page() await page.goto('http://playwright.dev')
+  await page.screenshot(path=f'example-{p.chromium.name}.png') await browser.close()
+  asyncio.run(main()) ``` ### Best Practice - use Chrome without Fingerprint Injection
+  To be completely undetected, use the following configuration: ```py playwright.chromium.launch_persistent_context(
+  user_data_dir=\"...\", channel=\"chrome\", headless=False, no_viewport=True, # do
+  NOT add custom browser headers or user_agent ... ) ``` > [!NOTE] > We recommend
+  using Google Chrome instead of Chromium. > You can install it via `patchright install
+  chrome` (or via any other installation method) and use it with `channel=\"chrome\"`.
+  --- ## Patches ### [Runtime.enable](https://vanilla.aslushnikov.com/?Runtime.enable)
+  Leak This is the biggest Patch Patchright uses. To avoid detection by this leak,
+  patchright avoids using [Runtime.enable](https://vanilla.aslushnikov.com/?Runtime.enable)
+  by executing Javascript in (isolated) ExecutionContexts. ### [Console.enable](https://vanilla.aslushnikov.com/?Console.enable)
+  Leak Patchright patches this leak by disabling the Console API all together. This
+  means, console functionality will not work in Patchright. If you really need the
+  console, you might be better off using Javascript loggers, although they also can
+  be easily detected. ### Command Flags Leaks Patchright tweaks the Playwright Default
+  Args to avoid detection by Command Flag Leaks. This (most importantly) affects:
+  - `--disable-blink-features=AutomationControlled` (added) to avoid navigator.webdriver
+  detection. - `--enable-automation` (removed) to avoid navigator.webdriver detection.
+  - `--disable-popup-blocking` (removed) to avoid popup crashing. - `--disable-component-update`
+  (removed) to avoid detection as a Stealth Driver. - `--disable-default-apps` (removed)
+  to enable default apps. - `--disable-extensions` (removed) to enable extensions
+  ### General Leaks Patchright patches some general leaks in the Playwright codebase.
+  This mainly includes poor setups a"
 ---
 {% raw %}
 <h1 align="center">

@@ -2,8 +2,53 @@
 layout: project
 name: Arwes Arwes
 slug: arwes-arwes
+category: Platform -eCommerce
 image: https://img.shields.io/bundlephobia/minzip/arwes.svg
 repo_url: https://github.com/arwes/arwes
+indexed_content: "Futuristic Sci-Fi UI Web Framework --- [ARWES](https://arwes.dev)
+  is a web framework to build user interfaces based on futuristic science fiction
+  designs, animations, and sound effects. The concepts behind are opinionated with
+  influences from [Cyberprep](https://aesthetics.fandom.com/wiki/Cyberprep) and productions
+  like [Star Citizen](http://robertsspaceindustries.com), [Halo](https://www.halowaypoint.com/en-us/games),
+  [NIKKE](https://nikke-en.com), and [Mecha Break](https://www.mechabreak.com/index).
+  It tries to inspire advanced science and technology. > The project is under development
+  and not ready for production yet. It is still in > [alpha release](https://stackoverflow.com/questions/40067469),
+  so the components > are being tested and their API may change as it gets completed.
+  > Branch [`main`](https://github.com/arwes/arwes/tree/main) is for `1.0.0-alpha`
+  > releases and public content deployed at [arwes.dev](https://arwes.dev). > Branch
+  [`next`](https://github.com/arwes/arwes/tree/next) is for `1.0.0-next` > releases
+  and active development deployed at [next.arwes.dev](https://next.arwes.dev). > The
+  previous version `@arwes/[package]@1.0.0-alpha.19` was moved to [version1-breakpoint2.arwes.dev](https://version1-breakpoint2.arwes.dev)
+  > and [playground.version1-breakpoint2.arwes.dev](https://playground.version1-breakpoint2.arwes.dev)
+  > with the branch [`version1-breakpoint2`](https://github.com/arwes/arwes/tree/version1-breakpoint2)
+  > where you can find the components, the playground, and the website source code.
+  This version > was released in April, 2021, and it is now deprecated. > The previous
+  version `arwes@1.0.0-alpha.5` was moved to [version1-breakpoint1.arwes.dev](https://version1-breakpoint1.arwes.dev)
+  > with the branch [`version1-breakpoint1`](https://github.com/arwes/arwes/tree/version1-breakpoint1)
+  > where you can find the components and the website source code. This version was
+  > released in February, 2018, and it is now deprecated. ## Packages ### Vanilla
+  [](https://bundlephobia.com/package/arwes) [](https://bundlephobia.com/package/arwes)
+  Core of the framework. Vanilla packages do not have major external dependencies
+  but most tools are low level APIs and sometimes require elaborated setups. Other
+  implementation packages simplify its use. ### React [](https://bundlephobia.com/package/@arwes/react)
+  [](https://bundlephobia.com/package/@arwes/react) ARWES offers [React](https://react.dev)
+  v18 specific packages with SSR support. ARWES does not work with React strict mode
+  nor React Server Components. ## Community ### Apps ØKN SoulExtract.com RomelPerez.dev
+  Archive RPG Cyber Movie Database Primary Buffer Panel Universe Dawn Badgeth Dark
+  Galaxies inCyberPunk Stream Overlay StarWards Lady of the Shalott Assembly RTS paingthet.com
+  glitchy.website ### Complements - [Augmented UI](https://augmented-ui.com) - [Rive
+  App](https://rive.app) - [tsParticles](https://particles.js.org) - [Vanta.js](https://www.vantajs.com)
+  - [Howler.js](https://howlerjs.com) ## Need help? Open [a GitHub issue](https://github.com/arwes/arwes/issues/new/choose)
+  or let's chat on [Discord](https://discord.gg/s5sbTkw). ## Roadmap Check out the
+  [ARWES Project Boards](https://github.com/orgs/arwes/projects). ## Contributors
+  Romel Pérez \U0001F4C6 \U0001F4BB ⚠️ \U0001F4D6 Nick West \U0001F4D6 \U0001F914
+  \U0001F52C \U0001F687 Joshua Pratt \U0001F4BB \U0001F440 Zoey \U0001F914 \U0001F440
+  Amir Arad \U0001F41B \U0001F4BB Stephen Bennett \U0001F41B \U0001F4BB Zixuan Wang
+  \U0001F41B \U0001F4BB Frityet \U0001F4B5 AthelesE \U0001F4B5 Ram \U0001F4B5 _This
+  project follows the [all-contributors](https://github.com/kentcdodds/all-contributors)
+  specification._ ## Want to contribute? The project is not fully open for sustancial
+  contributions yet until the first beta version is released. Follow the development
+  on [Discord](https://discord.gg/s5sbTkw) and [X (Twitter)](https://x.com/arwesjs)."
 ---
 {% raw %}
 <!-- markdownlint-disable MD033 MD013 MD028 -->

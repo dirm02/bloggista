@@ -2,8 +2,41 @@
 layout: project
 name: Javedh Dev Tracktor
 slug: javedh-dev-tracktor
+category: Uncategorized
 image: https://img.shields.io/github/license/javedh-dev/tracktor?label=License
 repo_url: https://github.com/javedh-dev/tracktor
+indexed_content: "> ⚠️ **WARNING:** > Tracktor is under active development. There
+  may be frequent breaking changes, though we are taking precautions but it is **not
+  stable for production use**. > _Please keep regular backups of your data!_ Tracktor
+  [](https://tracktor.bytedge.in) [](https://github.com/javedh-dev/tracktor/actions/workflows/ci.yml)
+  [](https://github.com/javedh-dev/tracktor/releases/latest) [](https://github.com/sponsors/javedh-dev)
+  Tracktor is an open-source web application for comprehensive vehicle management
+  . Easily track ⛽ fuel consumption, \U0001F6E0️ maintenance , \U0001F6E1️ insurance
+  , and \U0001F4C4 regulatory documents for all your vehicles in one place. ## ✨ Features
+  - \U0001F697 **Vehicle Management:** Add, edit, and manage multiple vehicles with
+  support for different fuel types. - ⛽ **Fuel Tracking:** Log fuel refills and monitor
+  fuel efficiency over time. - \U0001F6E0️ **Maintenance Log:** Record and view maintenance
+  history for each vehicle. - \U0001F4C4 **Document Tracking:** Track insurance and
+  pollution certificates with renewal dates. - \U0001F514 **Reminders:** Set and manage
+  reminders for maintenance, renewals, and other vehicle events. - \U0001F4CA **Dashboard:**
+  Visualize key metrics, analytics, and upcoming renewals. - \U0001F512 **User Authentication:**
+  Secure username/password authentication with session management. - \U0001F3A8 **Feature
+  Toggles:** Enable or disable specific features based on your needs. ## \U0001F6E0️
+  Tech Stack - \U0001F3A8 **Frontend:** SvelteKit, Tailwind CSS, Svelte 5 - \U0001F5A5️
+  **Backend:** SvelteKit Server Routes - \U0001F5C4️ **Database:** SQLite with Drizzle
+  ORM - \U0001F433 **Deployment:** Docker & Docker Compose ## \U0001F680 Getting Started
+  Refer to the [installation guide](./docs/installation.md) for setup instructions.
+  ## \U0001F4DA Documentation - [Installation Guide](./docs/installation.md) - Setup
+  instructions for Docker, local development, and Proxmox LXC - [Authentication](./docs/authentication.md)
+  - User authentication and session management - [Environment Variables](./docs/environment.md)
+  - Configuration options - [Feature Toggles](./docs/feature-toggles.md) - Customizing
+  enabled features - [Contributing](./docs/contributing.md) - Guidelines for contributing
+  ## \U0001F91D Contributing Contributions are welcome! Please read the [contributing
+  guidelines](./docs/contributing.md) before submitting a pull request. Consider supporting
+  this project by giving it a star ⭐ or [sponsoring](https://github.com/sponsors/javedh-dev).
+  ## \U0001F4C4 License This project is licensed under the MIT License. See the [LICENSE](LICENSE)
+  file for details. ## \U0001F4CA Repository activity ## ⭐ Star History ## \U0001F91D
+  Contributors"
 ---
 {% raw %}
 > ⚠️ **WARNING:**

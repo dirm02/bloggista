@@ -2,8 +2,59 @@
 layout: project
 name: Cdcsgit Lognote
 slug: cdcsgit-lognote
+category: WindowsTools- Linux
 image: https://github.com/user-attachments/assets/42707659-de5b-4e81-b6f6-32cdf86e114b
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '# LogNote Log viewer, Android logcat viewer for Windows, Linux,
+  Mac Filtered log viewer Online / offline logcat view Regular expression filter Aging
+  Test : Save split file by lines Kotlin + swing # Config path Save to the path set
+  in the environment variable "LOGNOTE_HOME"\ Default current path EX) After creating
+  the directory\ Windows : set LOGNOTE_HOME=D:\lognote\ Linux : export LOGNOTE_HOME=\~/lognote\
+  Mac : export LOGNOTE_HOME=\~/lognote # Run Windows : start javaw -Dfile.encoding=utf8
+  -Xmx1024m -jar LogNote.jar\ Linux : java -Dfile.encoding=utf8 -Xmx2048m -jar LogNote.jar\
+  Mac : java -Dfile.encoding=utf8 -Xmx2048m -jar LogNote.jar # How to use(tips) 1.
+  [Show only specific package logs - 1.0 ~ (use "Packages" menu)](https://cdcsutils.blogspot.com/2024/10/lognote-show-only-specific-package-logs.html)
+  1. [Show only specific package logs - ~ 0.3.8](https://cdcsutils.blogspot.com/2024/09/lognote-show-only-specific-package-logs.html)
+  1. [Add desktop shortcut in ubuntu](https://cdcsutils.blogspot.com/2024/10/lognote-setting-up-shortcut-to-re-run.html)
+  1. [Make screen capture(Add button, When a specific log occurs : log trigger)](https://cdcsutils.blogspot.com/2024/12/lognote-make-screen-captureadd-button.html)
+  # Mode 1. Read Cmd: Read the result after executing the command (ex: adb logcat)
+  - You must set the Scrollback value. - If the value is not set, logs pile up and
+  occur hang. - Recommended - Scrollback: 100000 (approximately 10 Mbytes), enable
+  “Split File” option 1. Read File: Read a file (File > Open, read multiple files
+  continuously) - Multiple files : Drag & drop or File > Open files - Append files
+  : Ctrl + drag & drop or File > append files - Save recent file view config on exit(filters,
+  bookmarks) - Open recent files: set to saved view config 1. Follow File: Continue
+  reading logs added to the file (ex: adb logcat > a.log, File > Follow - a.log) -
+  Used when you want to read the log of processing results of commands other than
+  adb # Log view mode 1. "Not adb mode(file open...)" or "View > Show process name
+  > None" 1. "Not adb mode(file open...)" or "View > Show process name > None" + "View
+  > Show divided by column" 1. "Adb mode" and "View > Show process name > Show with
+  color bg" 1. "Adb mode" and "View > Show process name > Show with color bg" + "View
+  > Show divided by column" # Shortcut keys 1. Ctrl + B: Toggle Bookmarks, multiple
+  selected lines can be set at the same time 1. Enter: View log dialog (Show long
+  log(with the ends cut off), select string and add to log combo(filter)) 1. Ctrl+F:
+  Show find toolbar - F3: Move to previous item - F4: Move to next item 1. Ctrl +
+  Page Down: Go to end of the log 1. Ctrl + Page Up: Go to the beginning of the log
+  1. Ctrl + R : stop cmd - connect device - clear log view - start cmd 1. Ctrl + G
+  : Go to line 1. Ctrl + ` : Focus to log combo 1. Ctrl + Del : Clear log view 1.
+  Ctrl + T : Show trigger list panel(aging test util) # Filter combobox color tag
+  If enter ''#'' in the filter combo box, the color tag list is displayed\ # Filter
+  combobox style Setting > Filter Style : set style, color 1. Single line 2. Single
+  line - highlight\ 3. Multi line 4. Multi line - highlight\ Highlight color : Include
+  text, Exclude text, Separator # Filter combobox size # Filter manager Click : replace\
+  Ctrl + Click : append\ # Find Ctrl + F : show find bar\ ESC : hide find bar\ F3
+  : move to previous\ F4 : move to next\ Click Filter or Full View : Set find target
+  view\ # Show process info When mode is logcat receiving, process info is shown as
+  a tooltip \ Right click > Popup menu > Process info => Show all process list \ #
+  Log format setting In addition to logcat logs, you can also use other logs by setting
+  the format \ # Log trigger - Aging test util(Ctrl-T) When a specific log occurs,
+  a command is executed or a dialog is displayed \ # Log cmd setting Set the adb path(to
+  view online log) and Add log cmds \ # Color settings Light(default) \ Dark \ \ Setting
+  > Appearance \ Fixed-width fonts are recommended : The columns for logcat entries(time,
+  pid, tag...) are aligned \ # View Control View > Rotation - Rotate 90 degrees clockwise
+  \ View > Full Logs - Toggle show/hide full log view \ Full log view > Windowed Mode
+  - Move the view to new window \ # Button Icons # Save split file by lines for aging
+  test \ Each time 100000 lines are saved, it is changed to a new file'
 ---
 {% raw %}
 # LogNote

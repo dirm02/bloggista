@@ -2,8 +2,68 @@
 layout: project
 name: Darkreader Darkreader
 slug: darkreader-darkreader
+category: Extension-Pluggin-Cron-Scrap
 image: https://raw.githubusercontent.com/darkreader/darkreader.github.io/master/images/darkreader-mascot.svg
 repo_url: https://github.com/darkreader/darkreader
+indexed_content: 'Dark Reader analyzes web pages and aims to reduce eyestrain while
+  browsing the web. Dark Reader Dark Reader is an open-source MIT-licensed browser
+  extension designed to analyze web pages. Dark Reader will generate a dark mode that
+  aims to reduce the eyestrain of the user. Dark Reader is feature-rich and is customizable
+  in many ways throughout the UI. ## Questions Most questions can be answered by reading
+  the [help page](https://darkreader.org/help/). If the help page doesn''t answer
+  your question, open up a new [discussion](https://github.com/darkreader/darkreader/discussions).
+  ## How to contribute Read more about contributing to Dark Reader in [CONTRIBUTING.md](https://github.com/darkreader/darkreader/blob/main/CONTRIBUTING.md).
+  ## Building for use Dark Reader build script requires a JavaScript runtime, either
+  NodeJS or Deno. We recommend using NodeJS, Deno support is experimental. ### Building
+  with NodeJS You can install the extension from a file. Install [Node.js](https://nodejs.org/)
+  (we recommend LTS or higher, but any version at or above 15 will work). Download
+  the source code (or check out from git). Open the terminal in the root folder and
+  run: - `npm install` - `npm run build` or `npm run build [-- flags]` This will create
+  a `build/release/darkreader-chrome.zip` file for use in a Chromium-based browser
+  and a `build/release/darkreader-firefox.xpi` file for use in Firefox. You can customize
+  the build process by passing flags to build script. To see all flags, run `npm run
+  build -- --help`. ### Building with Deno You can build Dark Reader with an alternative
+  runtime called [Deno](https://deno.land/). For this run `deno:bootstrap` script
+  (e.g., via `npm run deno:bootstrap` or manually copy the command from `package.json`).
+  Then run the same commands described above. Please note that if you encounter the
+  error `Too many open files (os error 24)`, then you should use the newer version
+  of Deno (preferably built from source or canary). ### Bundling with official Firefox
+  store signatures (experimental) Before publication, extension stores provide digital
+  signatures for extensions. These digital signatures certify the integrity of the
+  archive (that the extension bundle did not get corrupted or bit-rotted) and that
+  the extension store performed very basic extension validation. Dark Reader repository
+  contains these digital signatures and you can add them to the extension bundle.
+  The following will build Dark Reader for Firefox version 4.9.63: ``` npm run build
+  -- --firefox --version=4.9.63 ``` Please note that only Firefox Add-ons store signatures
+  are present in the repository right now. Also, due to NodeJS and TypeScript version
+  compatibility, one might have to first check out the old revision (commit), then
+  build the extension files, then check out the recent commit and create the bundle
+  (by running only `signature` and `zip` steps). ## Using Dark Reader on a website
+  You can use Dark Reader to enable dark mode on your website! - Install the package
+  from NPM (`npm install darkreader`) - or build from the source code (`npm run api`)
+  - or include the script via a CDN such as [unpkg](https://unpkg.com/darkreader/)
+  or [jsDelivr](https://www.jsdelivr.com/package/npm/darkreader) Then you can use
+  the following code to control Dark Reader''s API: ```javascript DarkReader.enable({
+  brightness: 100, contrast: 90, sepia: 10 }); DarkReader.disable(); // Enable when
+  the system color scheme is dark. DarkReader.auto({ brightness: 100, contrast: 90,
+  sepia: 10 }); // Stop watching for the system color scheme. DarkReader.auto(false);
+  // Get the generated CSS of Dark Reader returned as a string. const CSS = await
+  DarkReader.exportGeneratedCSS(); // Check if Dark Reader is enabled. const isEnabled
+  = DarkReader.isEnabled(); ``` ... or if you are using ES modules: ```javascript
+  import { enable as enableDarkMode, disable as disableDarkMode, auto as followSystemColorScheme,
+  exportGeneratedCSS as collectCSS, isEnabled as isDarkReaderEnabled } from ''darkreader'';
+  enableDarkMode({ brightness: 100, contrast: 90, sepia: 10, }); disableDarkMode();
+  followSystemColorScheme(); const CSS = await collectCSS(); const isEnabled = isDarkReaderEnabled();
+  ``` Be aware that Dark Reader will add the `chrome` object onto the `window` object.
+  These are to stub certain functions that the code will use. They originate from
+  the webextension-api. ## Site fixes Automatically syncing the site fixes for every
+  Dark Reader user was disabled because the GitHub team does not allow using GitHub
+  as a content delivery network (CDN). The storage of these files would be expensive,
+  and making requests to other resources would look suspicious. Each new release of
+  Dark Reader will include the new changes. However, this can be manually enabled
+  with the following steps: 1. Click on the Dark Reader extension icon. 2. Click on
+  the `Dev tools` button (in the bottom-right corner). 3. Go to `Advanced` and click
+  on the `Preview new design` button. 4. Close the developer tools window'
 ---
 {% raw %}
 <p align="center"><a href="https://darkreader.org" target="_blank" rel="noreferrer noopener"><img width="250" alt="Dark Reader's mascot" src="https://raw.githubusercontent.com/darkreader/darkreader.github.io/master/images/darkreader-mascot.svg"></a></p>

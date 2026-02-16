@@ -2,8 +2,12 @@
 layout: project
 name: Abatsakidis Facerecognition
 slug: abatsakidis-FaceRecognition
+category: Video-audio-Imae-manga-TTS-Voice
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/abatsakidis-FaceRecognition
+indexed_content: "## Description ## Multi Face Recognition and Detection ## Screenshot
+  ## Tested on ## **OS**: Windows 10 x86_64 **CPU**: Intel(R) Core(TM) i3-10110U CPU
+  @ 2.10GHz **Memory**: 8GB ## Author ## Batsakidis Athanasios a.batsakidis@re-think.gr"
 ---
 {% raw %}
 ## Description ##

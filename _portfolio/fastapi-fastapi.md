@@ -2,8 +2,71 @@
 layout: project
 name: Fastapi Fastapi
 slug: fastapi-fastapi
+category: API - Documentation
 image: https://fastapi.tiangolo.com/img/index/index-01-swagger-ui-simple.png
 repo_url: https://github.com/fastapi/fastapi
+indexed_content: "FastAPI framework, high performance, easy to learn, fast to code,
+  ready for production --- **Documentation**: https://fastapi.tiangolo.com **Source
+  Code**: https://github.com/fastapi/fastapi --- FastAPI is a modern, fast (high-performance),
+  web framework for building APIs with Python based on standard Python type hints.
+  The key features are: * **Fast**: Very high performance, on par with **NodeJS**
+  and **Go** (thanks to Starlette and Pydantic). [One of the fastest Python frameworks
+  available](#performance). * **Fast to code**: Increase the speed to develop features
+  by about 200% to 300%. * * **Fewer bugs**: Reduce about 40% of human (developer)
+  induced errors. * * **Intuitive**: Great editor support. Completion everywhere.
+  Less time debugging. * **Easy**: Designed to be easy to use and learn. Less time
+  reading docs. * **Short**: Minimize code duplication. Multiple features from each
+  parameter declaration. Fewer bugs. * **Robust**: Get production-ready code. With
+  automatic interactive documentation. * **Standards-based**: Based on (and fully
+  compatible with) the open standards for APIs: OpenAPI (previously known as Swagger)
+  and JSON Schema . * estimation based on tests conducted by an internal development
+  team, building production applications. ## Sponsors ### Keystone Sponsor ### Gold
+  and Silver Sponsors Other sponsors ## Opinions \"_[...] I'm using **FastAPI** a
+  ton these days. [...] I'm actually planning to use it for all of my team's **ML
+  services at Microsoft**. Some of them are getting integrated into the core **Windows**
+  product and some **Office** products._\" Kabir Khan - Microsoft (ref) --- \"_We
+  adopted the **FastAPI** library to spawn a **REST** server that can be queried to
+  obtain **predictions**. [for Ludwig]_\" Piero Molino, Yaroslav Dudin, and Sai Sumanth
+  Miryala - Uber (ref) --- \"_**Netflix** is pleased to announce the open-source release
+  of our **crisis management** orchestration framework: **Dispatch**! [built with
+  **FastAPI**]_\" Kevin Glisson, Marc Vilanova, Forest Monsen - Netflix (ref) ---
+  \"_I’m over the moon excited about **FastAPI**. It’s so fun!_\" Brian Okken - Python
+  Bytes podcast host (ref) --- \"_Honestly, what you've built looks super solid and
+  polished. In many ways, it's what I wanted **Hug** to be - it's really inspiring
+  to see someone build that._\" Timothy Crosley - Hug creator (ref) --- \"_If you're
+  looking to learn one **modern framework** for building REST APIs, check out **FastAPI**
+  [...] It's fast, easy to use and easy to learn [...]_\" \"_We've switched over to
+  **FastAPI** for our **APIs** [...] I think you'll like it [...]_\" Ines Montani
+  - Matthew Honnibal - Explosion AI founders - spaCy creators (ref) - (ref) --- \"_If
+  anyone is looking to build a production Python API, I would highly recommend **FastAPI**.
+  It is **beautifully designed**, **simple to use** and **highly scalable**, it has
+  become a **key component** in our API first development strategy and is driving
+  many automations and services such as our Virtual TAC Engineer._\" Deon Pillsbury
+  - Cisco (ref) --- ## FastAPI mini documentary There's a FastAPI mini documentary
+  released at the end of 2025, you can watch it online: ## **Typer**, the FastAPI
+  of CLIs If you are building a CLI app to be used in the terminal instead of a web
+  API, check out **Typer** . **Typer** is FastAPI's little sibling. And it's intended
+  to be the **FastAPI of CLIs**. ⌨️ \U0001F680 ## Requirements FastAPI stands on the
+  shoulders of giants: * Starlette for the web parts. * Pydantic for the data parts.
+  ## Installation Create and activate a virtual environment and then install FastAPI:
+  ```console $ pip install \"fastapi[standard]\" ---> 100% ``` **Note**: Make sure
+  you put `\"fastapi[standard]\"` in quotes to ensure it works in all terminals. ##
+  Example ### Create it Create a file `main.py` with: ```Python from fastapi import
+  FastAPI app = FastAPI() @app.get(\"/\") def read_root(): return {\"Hello\": \"World\"}
+  @app.get(\"/items/{item_id}\") def read_item(item_id: int, q: str | None = None):
+  return {\"item_id\": item_id, \"q\": q} ``` Or use async def ... If your code uses
+  `async` / `await`, use `async def`: ```Python hl_lines=\"7 12\" from fastapi import
+  FastAPI app = FastAPI() @app.get(\"/\") async def read_root(): return {\"Hello\":
+  \"World\"} @app.get(\"/items/{item_id}\") async def read_item(item_id: int, q: str
+  | None = None): return {\"item_id\": item_id, \"q\": q} ``` **Note**: If you don't
+  know, check the _\"In a hurry?\"_ section about `async` and `await` in the docs
+  . ### Run it Run the server with: ```console $ fastapi dev main.py ╭────────── FastAPI
+  CLI - Development mode ───────────╮ │ │ │ Serving at: http://127.0.0.1:8000 │ │
+  │ │ API docs: http://127.0.0.1:8000/docs │ │ │ │ Running in development mode, for
+  production use: │ │ │ │ fastapi run │ │ │ ╰─────────────────────────────────────────────────────╯
+  INFO: Will watch for changes in these directories: ['/home/user/code/awesomeapp']
+  INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit) INFO: Started
+  reloader pr"
 ---
 {% raw %}
 <p align="center">

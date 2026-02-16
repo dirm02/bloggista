@@ -2,8 +2,66 @@
 layout: project
 name: Botswin Botbrowser
 slug: botswin-BotBrowser
+category: Bots-honeypots
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/botswin-BotBrowser/docs/assets/logo-32.svg
 repo_url: https://github.com/botswin/BotBrowser
+indexed_content: "BotBrowser Advanced Privacy Browser Core with Unified Fingerprint
+  Defense \U0001F680 Identical privacy posture on any OS • Cross-platform & WebView
+  simulation • Fingerprint protection validated across 31+ tracking scenarios ---
+  ## What Is BotBrowser? BotBrowser is a privacy-first browser core designed to protect
+  users from browser fingerprinting, a technique recognized as a privacy threat by
+  W3C, major browser vendors, privacy regulators, and academic research ([see references](FINGERPRINT_PRIVACY.md)).
+  It keeps fingerprint signals uniform across every platform, preventing tracking
+  systems from collecting and correlating data to identify users. Run the same profile
+  on Windows, macOS, or Linux and the fingerprint posture stays identical each time.
+  All engineering focuses on privacy research, cross-platform tracking-resistance
+  validation, and maintaining protected environments for authorized defensive benchmarking.
+  Review the project [Legal Disclaimer](DISCLAIMER.md) and [Responsible Use Guidelines](RESPONSIBLE_USE.md)
+  before using the software. --- ## Why BotBrowser > **What makes BotBrowser different:**
+  Cross-platform privacy browser core with unified fingerprint technology that prevents
+  tracking data collection and device linkage. High-fidelity Profile Simulation including
+  Android WebView, keeps synthetic and aggregated fingerprints ready for policy-compliant
+  privacy experiments Latest Chromium Base stays synced to the newest stable Chrome
+  so trackers cannot key on stale engines Advanced Programmatic Control offers Playwright/Puppeteer
+  integration with CDP leak blocking so privacy tooling leaves no telemetry residue
+  Network Stack Parity with Full-Proxy QUIC/STUN (UDP over SOCKS5) delivers Chromium-level
+  tunneling so geo metadata does not leak and privacy labs maintain clean transport
+  parity Distributed Privacy Consistency lets you verify privacy protection across
+  multiple browser instances simultaneously with Mirror , validating privacy posture
+  in parallel Per-Context Fingerprint enables independent fingerprint bundles per
+  BrowserContext without spawning new processes, with millisecond-level switching
+  and reduced memory overhead ### Cross-Platform Fingerprint Protection - Single profile,
+  every host OS: identical UA, screen metrics, touch surfaces, fonts, and device APIs
+  on Windows, macOS, Linux (ENT Tier1), Android (PRO), and WebView (ENT Tier3) so
+  trackers see the same fingerprint everywhere. - Built-in configuration handles touch
+  simulation, device metrics, and locale/timezone detection from the proxy IP while
+  still allowing CLI overrides when privacy experiments require them. - Quick demos:
+  [▶️ CreepJS Android](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-creepjs-creepjs-Android)
+  • [▶️ Iphey](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-iphey-iphey-Android)
+  • [▶️ Pixelscan](//botswin.github.io/BotBrowser/video_player/index.html?video=antibots-pixelscan-pixelscan-Android)
+  --- ## Getting Started ### Quick Start **Step 1: Download** - [Latest release](https://github.com/botswin/BotBrowser/releases)
+  for your OS - [Demo profile](profiles/) (any `.enc` file) **Step 2: Launch** (use
+  absolute paths) - **Windows example:** ```cmd chrome.exe --bot-profile=\"C:\\absolute\\path\\to\\profile.enc\"
+  --user-data-dir=\"%TEMP%\\botprofile_%RANDOM%\" ``` - macOS/Linux commands follow
+  the same pattern; see [INSTALLATION.md](INSTALLATION.md) for full instructions.
+  **Step 3: Verify** - Visit [CreepJS](https://abrahamjuliot.github.io/creepjs/) or
+  your preferred tracking observatory to confirm identical privacy posture. - Timezone/locale/language
+  auto-derive from your proxy/IP; override via CLI only when needed. **[Complete Installation
+  Guide →](INSTALLATION.md)** ### Minimal Playwright Example ```javascript const browser
+  = await chromium.launch({ headless: true, executablePath: BOTBROWSER_EXEC_PATH,
+  args: [`--bot-profile=${BOT_PROFILE_PATH}`, '--proxy-server=socks5://usr:pwd@127.0.0.1:8989']
+  // or: http://usr:pwd@127.0.0.1:8989 }); const page = await browser.newPage(); await
+  page.addInitScript(() => { delete window.__playwright__binding__; delete window.__pwInitScripts;
+  }); await page.goto('https://abrahamjuliot.github.io/creepjs/'); ``` **Notes:**
+  - Use `--user-data-dir` with a unique temporary folder to avoid conflicts with running
+  Chromium instances - Prefer `--proxy-server` or per-context proxies (ENT Tier1);
+  auto timezone/locale detection applies in both cases - Avoid framework-specific
+  proxy/auth options (e.g., `page.authenticate()`), which disable BotBrowser's geo-detection
+  and may leak location information Examples: [Playwright](examples/playwright/) •
+  [Puppeteer](examples/puppeteer/) **More options:** - Framework-less approach: [`--bot-script`
+  + CDP](examples/bot-script/) (privileged context, earlier hook, fewer artifacts)
+  - Docker: [docker/README.md](docker/) - Full flags: [CLI_FLAGS.md](CLI_FLAGS.md)
+  ## Advanced Capabilities > **Professional-grade privacy technology** built on multi-"
 ---
 {% raw %}
 <h1 align="center"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/botswin-BotBrowser/docs/assets/logo-32.svg" alt="BotBrowser logo" width="32" height="32" /> BotBrowser</h1>

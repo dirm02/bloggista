@@ -2,8 +2,24 @@
 layout: project
 name: Logchimp Logchimp
 slug: logchimp-logchimp
+category: Platform -eCommerce
 image: https://api.star-history.com/svg?repos=logchimp/logchimp&type=timeline&legend=top-left
 repo_url: https://github.com/logchimp/logchimp
+indexed_content: "Track your customers feedback to build better products with LogChimp
+  Website • Docs • Guide • Contribute ## Features * \U0001F3A8 Brand customizable
+  * \U0001F4DD Create posts * \U0001F5C3️ Organise posts by Boards & Roadmaps * \U0001F4AA
+  Powerful dashboard * \U0001F510 Secure by design * \U0001F916 Self-hosted ## Getting
+  started To get started you can read our [deployment docs](https://logchimp.codecarrot.net/docs/install)
+  for self-hosting with Ubuntu or cloud hosting with one click deploy button. ## Let's
+  talk ## \U0001F91D\U0001F3FB Community Stay up to date on the development of LogChimp
+  you can star this repository, follow us on Twitter or reach out to the community
+  with these helpful resources. - Follow [@logchimp](https://twitter.com/@logchimp)
+  on Twitter. - Join the official [LogChimp Discord](https://discord.gg/A7mztcC) ##
+  Contributing We welcome contributions! To ensure your work doesn't conflict with
+  ongoing work, please: 1. Read our [contributing guide](CONTRIBUTING.md) 2. **Discuss
+  your ideas with us in public channels (GitHub/Discord) BEFORE starting development**
+  (No private DMs) 3. Get approval from a core team member This helps us align efforts
+  and prevents duplicated or conflicting work. ## Stargazers over time [](https://www.star-history.com/#logchimp/logchimp&type=timeline&legend=top-left)"
 ---
 {% raw %}
 <a href="https://logchimp.codecarrot.net/">

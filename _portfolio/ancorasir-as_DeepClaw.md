@@ -2,8 +2,67 @@
 layout: project
 name: Ancorasir As Deepclaw
 slug: ancorasir-as_DeepClaw
+category: EE-kicad-3D-Robotic
 image: https://zenodo.org/badge/DOI/10.5281/zenodo.581804.svg
 repo_url: https://github.com/ancorasir/as_urobotiq)
+indexed_content: "# as_urobotiq [as_urobotiq](https://github.com/ancorasir/as_urobotiq)
+  is intended to be setup as a general purpose robot platform for autonomous pick-and-place
+  with deep learning. The current robot setup includes a [UR5 arm from Universal Robot](https://www.universal-robots.com/products/ur5-robot/),
+  an [Adaptive 3 Finger gripper from Robotiq](http://robotiq.com/products/industrial-robot-hand/),
+  a [Kinect for X-box One camera from Microsoft](http://www.xbox.com/en-US/xbox-one/accessories/kinect),
+  an [Xtion Pro camera from ASUS](https://www.asus.com/3D-Sensor/Xtion_PRO/), and
+  an [FT300 sensor from Robotiq](http://robotiq.com/products/robotics-force-torque-sensor/),
+  all controlled by a high performance desktop computer with [NVIDIA TITAN X Graphics
+  Card](https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/) running
+  [Tensorflow](https://www.tensorflow.org/) to autonomously learn object grasping
+  using Deep Learning. This is a project under-development at the Sustainable and
+  Intelligent Robotics ([SIR](http://ancorasir.com)) Group , under the supervision
+  of Dr. Chaoyang Song. as_urobotiq: A general purpose robot for autonomous pick-and-place
+  with deep learning. Github.com/ancorasir/as_urobotiq, [](https://doi.org/10.5281/zenodo.581804)
+  Current branch: master. To simulate the robots, go to branch: ros-indigo. To test
+  tensorflow, go to branch: tf # Research Goal The aim of this project is to explore
+  autonomous and adaptive robotic pick-and-place through deep learning. [Recent research
+  by Google](https://sites.google.com/site/brainrobotdata/home) has demonstrated the
+  possibility of training a robotic learning system with hand-eye-coordination during
+  grasping task with significantly improved success rate. Yet to be validated, this
+  approach could provide the flexibility on the extensive visual calibration and object
+  recognition during usual robotic pick-and-place tasks. In human pick-and-place actions,
+  there's another critical component that involves the dexterity of human hand and
+  fingers, which enables the effective manipulation of objects. This is what we aim
+  at exploring in this project, where a similar robotic setup is presented with a
+  more advanced gripper with optional operation modes for adaptive grasping. Currently,
+  a Robotiq Adaptive 3 Finger gripper is configured for this project. Future development
+  involves the integration of custom hybrid grippers to be developed at the AncoraSIR
+  lab. ## Structured digitization of robotic grasping With specific attentions on
+  the structured digitization of the robotic grasping data collected from ROS and
+  the robot * Robot System (RS) and Controller Computer (CC) * RS: structured data
+  collection from each robotic component * CC: systematic data recording for efficient
+  storage * RS+CC: effective labelling of robotic data for autonomous learning ##
+  Simulation and implementation of robotic grasping With specific attentions on setting
+  up the simulation (ROS) and realization of robotic grasping for data collection
+  * Controller Computer (CC) * CC: ROS simulation of the robot platform * CC: hardware
+  implementation of the robot platform * CC: robot action programming for the grasping
+  task ## Grasping data processing for deep learning With specific attentions on processing
+  the recorded robot data for model training in tensorflow with efficiency * Controller
+  Computer (CC) and Learning Computer (LC) * CC: selective robot data processing for
+  LC * LC: cross-entropy method and servoing mechanism programming * CC+LC: efficient
+  data interfacing between CC and LC ## Deep learning modeling for robotic grasping
+  With specific attentions on the modification of Google’s learned model for our robotic
+  grasping learning * Learning Computer (LC) * LC: minimum network design and modeling
+  * LC: optimization and modification on Google's existing learned model * LC: introduction
+  of adaptive grasping to the autonomous learning # Research Team Dr. SONG, Chaoyang
+  (Chaoyang.Song@Monash.edu) * Principal Investigator Dr. WAN, Fang * Technical Consultant
+  Mr. CHEN, Yaohui * Research Assistant XIA, Tian | HE, Xiaoyi | DENG, Yuntian | ZHANG,
+  Jingwei | JIANG, Will | ONG, Ben * Team Members # System Setup * World => Pedestal
+  => Arm => FT Sensor => Gripper * World => Desk => Tray 1 => Objects (to be picked)
+  * World => Desk => Tray 2 => Objects (to be placed) * World => Camera 1 (main image
+  input on gripper, objects and trays) * World => Camera 2 (auxiliary image recording
+  for referencing) ## Hardware * Robot System * Arm: [UR5 from Universal Robot](https://www.universal-robots.com/products/ur5-robot/)
+  * Gripper: [Adaptive 3 Finger from Robotiq](http://robotiq.com/products/industrial-robot-hand/)
+  * Camera 1: [Kinect for X-box One from Microsoft](http://www.xbox.com/en-US/xbox-one/accessories/kinect)
+  * Camera 2: [Xtion Pro from ASUS](https://www.asus.com/3D-Sensor/Xtion_PRO/) * FT
+  Sensor: [FT300 from Robotiq](http://robotiq.com/products/robotics-force-torque-sensor/)
+  * Control Computer (CC) * Standar"
 ---
 {% raw %}
 # as_urobotiq

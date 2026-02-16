@@ -2,8 +2,31 @@
 layout: project
 name: Goauthentik Authentik
 slug: goauthentik-authentik
+category: Very important!!!!
 image: https://img.shields.io/discord/809154715984199690?label=Discord&style=for-the-badge
 repo_url: https://github.com/goauthentik/authentik
+indexed_content: "--- [](https://goauthentik.io/discord) [](https://github.com/goauthentik/authentik/actions/workflows/ci-main.yml)
+  [](https://github.com/goauthentik/authentik/actions/workflows/ci-outpost.yml) [](https://github.com/goauthentik/authentik/actions/workflows/ci-web.yml)
+  [](https://codecov.io/gh/goauthentik/authentik) [](https://explore.transifex.com/authentik/authentik/)
+  ## What is authentik? authentik is an open-source Identity Provider (IdP) for modern
+  SSO. It supports SAML, OAuth2/OIDC, LDAP, RADIUS, and more, designed for self-hosting
+  from small labs to large production clusters. Our [enterprise offering](https://goauthentik.io/pricing)
+  is available for organizations to securely replace existing IdPs such as Okta, Auth0,
+  Entra ID, and Ping Identity for robust, large-scale identity management. ## Installation
+  - Docker Compose: recommended for small/test setups. See the [documentation](https://docs.goauthentik.io/docs/install-config/install/docker-compose/).
+  - Kubernetes (Helm Chart): recommended for larger setups. See the [documentation](https://docs.goauthentik.io/docs/install-config/install/kubernetes/)
+  and the Helm chart [repository](https://github.com/goauthentik/helm). - AWS CloudFormation:
+  deploy on AWS using our official templates. See the [documentation](https://docs.goauthentik.io/docs/install-config/install/aws/).
+  - DigitalOcean Marketplace: one-click deployment via the official Marketplace app.
+  See the [app listing](https://marketplace.digitalocean.com/apps/authentik). ## Screenshots
+  | Light | Dark | | ----------------------------------------------------------- |
+  ---------------------------------------------------------- | | | | | | | ## Development
+  and contributions See the [Developer Documentation](https://docs.goauthentik.io/docs/developer-docs/)
+  for information about setting up local build environments, testing your contributions,
+  and our contribution process. ## Security Please see [SECURITY.md](SECURITY.md).
+  ## Adoption Using authentik? We'd love to hear your story and feature your logo.
+  Email us at [hello@goauthentik.io](mailto:hello@goauthentik.io) or open a GitHub
+  Issue/PR! ## License [](LICENSE) [](website/LICENSE) [](authentik/enterprise/LICENSE)"
 ---
 {% raw %}
 <p align="center">

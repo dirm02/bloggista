@@ -2,8 +2,45 @@
 layout: project
 name: Nostalgic Css Nes.css
 slug: nostalgic-css-NES.css
+category: Uncategorized
 image: https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png
 repo_url: https://github.com/SolidZORO/zpix-pixel-font)
+indexed_content: '日本語 / 简体中文 / Español / Português / Русский / Français NES.css is
+  a **NES-style(8bit-like)** CSS Framework. [![Gitter][gitter-badge]][gitter] [![Commitizen
+  friendly][commitizen-badge]][commitizen] ## Installation ### Styles NES.css is available
+  via either npm (preferred), Yarn, or a CDN. #### via package manager ```shell npm
+  install nes.css # or yarn add nes.css ``` Our `package.json` contains some additional
+  metadata under the following keys: * `sass` - path to our main Sass source file
+  * `style` - path to our non-minified CSS ##### AltCSS(sass, scss...) ```scss //
+  style.scss @import "./node_modules/nes.css/css/nes.css" ``` ##### JavaScript ```js
+  // script.js import "nes.css/css/nes.min.css"; ``` You need to install css-loader.
+  ##### HTML ```html ``` #### via CDN Import the CSS via a ` ` element: ```html ```
+  ### Fonts NES.css doesn''t provide any fonts, but we do maintain the following list
+  of fonts that we recommend for usage alongside the library. | Language | Font |
+  | --------- | ------------------------------------------------------------------
+  | | (Default) | [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
+  | | English | [Kongtext](https://www.dafont.com/kongtext.font) | | Japanese | [美咲フォント](http://littlelimit.net/misaki.htm)
+  | | Japanese | [Nu もち](http://kokagem.sakura.ne.jp/font/mochi/) | | Korean | [둥근모꼴](http://cactus.tistory.com/193)
+  | | Chinese | [Zpix (最像素)](https://github.com/SolidZORO/zpix-pixel-font) | ## Usage
+  NES.css only provides components. You will need to define your own layout. The recommended
+  font for NES.css is [Press Start 2P][press-start-2p-font]. However, [Press Start
+  2P][press-start-2p-font] only supports English characters. When you''re using this
+  framework with any language other than English, please use another font. Follow
+  the Google Fonts [instructions][google-fonts-guide] about how to include them, or
+  simply include it as below: ```html html, body, pre, code, kbd, samp { font-family:
+  "font-family you want to use"; } ``` ## CSS Only NES.css only requires CSS and doesn''t
+  depend on any JavaScript. ## Browser Support NES.css is compatible with the newest
+  version of the following browsers: * Chrome * Firefox * Safari Untested * IE/Edge
+  ## Copyright and license Code and documentation copyright 2018 [B.C.Rikko](https://github.com/BcRikko).
+  Code released under the MIT License. Docs released under Creative Commons. ## Development
+  If you''d like to help us out with the project, we welcome contributions of all
+  types! Check out our [`CONTRIBUTING.md`][contributing-document] for more details
+  on how you can help make NES.css amazing! [commitizen]: http://commitizen.github.io/cz-cli/
+  [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+  [contributing-document]: CONTRIBUTING.md [gitter]: https://gitter.im/nostalgic-css/Lobby
+  [gitter-badge]: https://img.shields.io/gitter/room/nostalgic-css/Lobby.svg [google-fonts-guide]:
+  https://developers.google.com/fonts/docs/getting_started [press-start-2p-font]:
+  https://fonts.google.com/specimen/Press+Start+2P?selection.family=Press+Start+2P'
 ---
 {% raw %}
 <div align="center">

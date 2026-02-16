@@ -2,8 +2,63 @@
 layout: project
 name: Facebookresearch Meta Seal
 slug: facebookresearch-meta-seal
+category: Very important!!!!
 image: https://img.shields.io/github/stars/facebookresearch/videoseal?style=social
 repo_url: https://github.com/facebookresearch/videoseal)
+indexed_content: "# Meta Seal ## State-of-the-Art, Open Source Invisible Watermarking
+  --- ### \U0001F310 **[Visit the Meta Seal Website →](https://facebookresearch.github.io/meta-seal)**
+  **Explore research papers, interactive demos, and comprehensive documentation**
+  --- | Repository | Description | Stars | |------------|-------------|-------| |
+  [**Video Seal**](https://github.com/facebookresearch/videoseal) | Image & Video
+  Watermarking | | | [**Audio Seal**](https://github.com/facebookresearch/audioseal)
+  | Audio Watermarking | | | [**Text Seal**](https://github.com/facebookresearch/textseal)
+  | Text Watermarking | | | [**Dist Seal**](https://github.com/facebookresearch/distseal)
+  | In-Model Latent Space Watermarking | | | [**Stable Signature**](https://github.com/facebookresearch/stable_signature)
+  | Latent Diffusion Watermarking | | | [**WAM**](https://github.com/facebookresearch/watermark-anything)
+  | Watermark Anything Model | | | [**WMAR**](https://github.com/facebookresearch/wmar)
+  | Autoregressive Image Generation | | --- ## \U0001F4D6 Overview **Meta Seal** is
+  a comprehensive, open-source framework for invisible, robust watermarking across
+  **all modalities**: audio, image, video, and text. This suite spans the entire generative
+  AI lifecycle—from training data and inference to generated media—providing state-of-the-art
+  tools for content provenance and authentication. --- ## \U0001F3AC Post-Hoc Watermarking
+  Watermarks applied **after content generation** by any model or system. Model-agnostic
+  and universal across all content types. ### Image & Video Models | Model | Description
+  | Resources | |-------|-------------|-----------| | **PixelSeal** | \U0001F3C6 Flagship
+  image & video watermarking model SOTA in terms of robustness and imperceptibility,
+  built with a better and more stable adversarial-only training paradigm | [Paper](https://ai.meta.com/research/publications/pixel-seal-adversarial-only-training-for-invisible-image-and-video-watermarking/)
+  • [Code](https://github.com/facebookresearch/videoseal) | | **ChunkySeal** | Bigger
+  model with 4× capacity boost to 1024 bits while preserving quality and robustness
+  | [Paper](https://arxiv.org/abs/2510.12812) • [Code](https://github.com/facebookresearch/videoseal)
+  | | **VideoSeal** | Extension of image watermarking models to video, resilient to
+  editing and video codecs | [Paper](https://arxiv.org/abs/2412.09492) • [Code](https://github.com/facebookresearch/videoseal)
+  • [▶️ Demo](https://aidemos.meta.com/videoseal) | | **WAM** | Embed (possibly multiple)
+  localized watermarks into images, survives inpainting and splicing attacks | [Paper](https://arxiv.org/abs/2411.07231)
+  • [Code](https://github.com/facebookresearch/watermark-anything) | | **SyncSeal**
+  | Watermarking models for robust image synchronization, enabling to revert geometric
+  transformations applied to image | [Paper](https://arxiv.org/abs/2509.15208) • [Code](https://github.com/facebookresearch/watermark-anything)
+  | ### Audio Models | Model | Description | Resources | |-------|-------------|-----------|
+  | **AudioSeal & AudioSeal Streaming** | Localized audio watermarking with sample-level
+  detection and streaming support for real-time applications | [Paper](https://arxiv.org/abs/2401.17264)
+  • [Code](https://github.com/facebookresearch/audioseal) | ### Text Models | Model
+  | Description | Resources | |-------|-------------|-----------| | **TextSeal** |
+  Comprehensive evaluation framework for post-hoc text watermarking with LLM rephrasing
+  | [Paper](https://arxiv.org/abs/2512.16904) • [Code](https://github.com/facebookresearch/textseal)
+  | --- ## \U0001F504 In-Model & Generation Time Watermarking Watermarks embedded
+  **during content generation** by modifying model behavior or latent representations.
+  | Model | Description | Resources | |-------|-------------|-----------| | **DISTSEAL**
+  | Unified latent space watermarking that enables 20× speedup over pixel methods
+  and secures open-source models via in-model distillation | [Paper](https://ai.meta.com/research/publications/distilling-latent-space-watermarkers-into-generative-image-models/)
+  • [Code](https://github.com/facebookresearch/distseal) | | **Stable Signature**
+  | Roots the watermark in the model's latent decoder for tracing the outputs of latent
+  generative models | [Paper](https://arxiv.org/abs/2303.15435) • [Code](https://github.com/facebookresearch/stable_signature)
+  | | **WMAR** | Watermarking for autoregressive image generation models | [Paper](https://arxiv.org/abs/2506.16349)
+  • [Code](https://github.com/facebookresearch/wmar) | --- ## \U0001F4CA Dataset Watermarking
+  Watermarks embedded **into training datasets** to track data provenance and detect
+  unauthorized usage. | Research | Description | Resources | |----------|-------------|-----------|
+  | **Radioactive watermarks** | Designed to detect if a language model was trained
+  on synthetic text by detecting weak residuals of watermark signals in fine-tuned
+  LLMs, with high confidence detection even when as little as 5% of training text
+  is watermarked | [Paper](https://arxiv.org"
 ---
 {% raw %}
 <div align="center">

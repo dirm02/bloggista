@@ -2,8 +2,65 @@
 layout: project
 name: Igglybuff Awesome Piracy
 slug: Igglybuff-awesome-piracy
+category: Uncategorized
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/Igglybuff/awesome-piracy
+indexed_content: '# Awesome Piracy [](https://awesome.re) > A curated list of arrrrrrrrr!
+  ## Archival This repository is now archived and will no longer receive updates.
+  More info: https://github.com/Igglybuff/awesome-piracy/issues/724 ## Preamble Over
+  the past couple of years, I''ve accumulated bookmarks, saved Reddit posts, and GitHub
+  stars all related to piracy in some form or another. This list is my attempt to
+  add structure to those resources and share them. Everything you need to get started
+  on your pirate voyage can be found below. I am aware that a number of websites featured
+  in this list rely on operating under obscurity, and that this list could potentially
+  contribute to their demise through excess exposure. I''m sorry about that - I just
+  like making lists. Please ensure you use an adblocker like [uBlock Origin](https://github.com/gorhill/uBlock)
+  to access any of the websites listed here, otherwise, you will have a bad time.
+  For discussion and feedback, please head to [the Reddit thread on /r/Piracy](https://www.reddit.com/r/Piracy/comments/9nontk/awesome_piracy_a_curated_list_of_awesome_warez/).
+  If you come across dead links, please report them by [creating an issue](https://github.com/Igglybuff/awesome-piracy/issues/new).
+  ## How to use this list Some items in this list could easily fit in more than one
+  category, so to make sure you find what you''re looking for please use `Ctrl + F`
+  (or `Cmd + F` on macOS). ## Emoji You will notice some items on this list have a
+  :star2: next to them. Items with a :star2: represent the author''s top pick for
+  that category. This is an entirely opinionated rating from someone who doesn''t
+  know everything about every item on the list, so be sure to check out alternative
+  options before assuming something is "the best". That said, I do explore and test
+  every resource I add to this list wherever possible. ## Background Information -
+  [Wikipedia "File sharing" category](https://en.wikipedia.org/wiki/Category:File_sharing)
+  Wikipedia''s full list of file-sharing related articles. ## Contents - [VPNs](#vpns)
+  - [VPN Guides and Tutorials](#vpn-guides-and-tutorials) - [VPN Subscription Services](#vpn-subscription-services)
+  - [Self-hosted VPNs](#self-hosted-vpns) - [Browser Extensions](#browser-extensions)
+  - [Userscripts](#userscripts) - [Password Vaults](#password-vaults) - [Antivirus](#antivirus)
+  - [Privacy](#privacy) - [Windows 10 Privacy](#windows-10-privacy) - [Email](#email)
+  - [Operating Systems](#operating-systems) - [Decentralised Networks](#decentralised-networks)
+  - [Domain Names](#domain-names) - [Torrenting](#torrenting) - [Trackers](#trackers)
+  - [Private Trackers](#private-trackers) - [Semi-Private Trackers](#semi-private-trackers)
+  - [Public Trackers](#public-trackers) - [Tracker Aggregators](#tracker-aggregators)
+  - [Tracker Proxies](#tracker-proxies) - [Tracker Invites](#tracker-invites) - [Torrent
+  Clients](#torrent-clients) - - [Deluge](#deluge) - [rTorrent](#rtorrent) - [WebTorrent
+  Clients](#webtorrent-clients) - [autodl-irssi](#autodl-irssi) - [Seedboxes](#seedboxes)
+  - [Web-based Cloud Seedboxes](#web-based-cloud-seedboxes) - [Seedbox Hosting Providers](#seedbox-hosting-providers)
+  - [Seedbox Setup Tools and Guides](#seedbox-setup-tools-and-guides) - [Tracker Frameworks](#tracker-frameworks)
+  - [Usenet](#usenet) - [Usenet Providers](#usenet-providers) - [Usenet Indexers](#usenet-indexers)
+  - [Usenet Indexing Software](#usenet-indexing-software) - [Paid Indexers](#paid-indexers)
+  - [Free Indexers](#free-indexers) - [Usenet Clients](#usenet-clients) - [Direct
+  Downloads](#direct-downloads) - [Download Managers](#download-managers) - [DDL Tools](#ddl-tools)
+  - [Custom Google Search Engines](#custom-google-search-engines) - [FTP Indexers](#ftp-indexers)
+  - [DDL Search Engines and Crawlers](#ddl-search-engines-and-crawlers) - [DDL Link
+  Sites](#ddl-link-sites) - [Premium Link Generators](#premium-link-generators) -
+  [Premium Link Hosts](#premium-link-hosts) - [Open Directories](#open-directories)
+  - [Streaming Sites](#streaming-sites) - [HD Streaming](#hd-streaming) - [Big Media
+  Libraries](#big-media-libraries) - [TV](#tv) - [Anime](#anime) - [Cartoons](#cartoons)
+  - [Sports Streaming](#sports-streaming) - [Specialty Sites](#specialty-sites) -
+  [Openload Hosts](#third-party-hosts) - [Media Centre Applications](#media-centre-applications)
+  - [Stremio](#stremio) - [Plex](#plex) - [Plex Plugins](#plex-plugins) - [Plex Requests](#plex-requests)
+  - [Plex Scripts and Tools](#plex-scripts-and-tools) - [Plex Shares](#plex-shares)
+  - [Plex Transcoding](#plex-transcoding) - [Plex Logging and Metrics](#plex-logging-and-metrics)
+  - [Plex Clients](#plex-clients) - [Kodi](#kodi) - [Gaming](#gaming) - [Repacks](#repacks)
+  - [ROMs](#roms) - [Console Games](#console-games) - [Homebrew and Custom Firmware](#homebrew-and-custom-firmware)
+  - [Music](#music) - [Music Streaming](#music-streaming) - [Music Downloading](#music-downloading)
+  - [Spotify](#spotify) - [iTunes](#itunes) - [Software](#software) - [Ebooks](#ebooks)
+  - [Maga'
 ---
 {% raw %}
 # Awesome Piracy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

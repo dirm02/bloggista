@@ -2,8 +2,68 @@
 layout: project
 name: 7h30th3r0n3 Raspyjack
 slug: 7h30th3r0n3-Raspyjack
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/badge/platform-Raspberry%20Pi-red?style=flat-square&logo=raspberry-pi
 repo_url: https://github.com/7h30th3r0n3/Raspyjack
+indexed_content: "RaspyJack Small network offensive toolkit for Raspberry&nbsp;Pi
+  (+ Waveshare&nbsp;1.44″ LCD HAT). > ⚠️ **For educational and authorized testing
+  purposes only, always use responsibly and legally.** > > RaspyJack is an offensive
+  security toolkit intended for cybersecurity professionals, researchers, penetration
+  testers, and ethical hackers. > Any use on networks or systems without the explicit
+  consent of the owner is **illegal** and **strictly prohibited**. > > The author
+  cannot be held responsible for any misuse or unlawful activity involving this project
+  > > **Full responsibility for any use of this tool rests solely with the user.**.
+  --- Join the Evil-M5 discord for help and updates on RaspyJack channel\U0001F609:
+  --- ## ✨ Features | Category | Built‑in actions | |----------|-----------------|
+  | **Recon** | Multiple customizable Nmap scan | | **Shells** | One‑click reverse
+  shell with IP selection or preconfigured IP | | **Creds capture** | Responder, ARP
+  MITM + sniff, DNS‑spoof phishing | | **Loot viewer** | Read Nmap scan / Responder
+  / DNSSpoof logs on‑device | | **File browser** | Lightweight text & image explorer
+  | | **System** | Theme editor, config save/restore, UI restart, shutdown | | **Custom
+  Script** | Custom python script can be added | | **WiFi Attacks** | Deauth attacks,
+  WiFi interface management, USB dongle support | | **Boot time** | On rpi 0w2 : ~22sec
+  | --- ## \U0001F6E0 Hardware | Item | Description | Buy| |------|-------------|-------------------|
+  | **Waveshare 1.44″ LCD HAT** | SPI TFT + joystick + 3 buttons | [Buy \U0001F517](https://s.click.aliexpress.com/e/_oEmEUZW)
+  or [Buy \U0001F517](https://s.click.aliexpress.com/e/_EwDqSv4)| | **Raspberry Pi
+  Zero 2 WH** | Quad-core 1 GHz, 512 MB RAM – super compact | [Buy \U0001F517](https://s.click.aliexpress.com/e/_omuGisy)
+  | | **RPI 0w with Waveshare Ethernet/USB HUB HAT** | 3 USB + 1 Ethernet | [Buy \U0001F517](https://s.click.aliexpress.com/e/_oDK0eYc)
+  | | **Alternative : Dual Ethernet/USB HUB HAT** | 2 USB + 2 Ethernet | [Buy \U0001F517](https://s.click.aliexpress.com/e/_oCX3pUA)
+  | --- Others hardwares : | Item | Description | Buy| |------|-------------|-------------------|
+  | **Raspberry Pi 4 Model B** (4 GB) | Quad-core 1.5 GHz, full-size HDMI, GigE LAN
+  | [Buy \U0001F517](https://s.click.aliexpress.com/e/_oFOHQdm) | | **Raspberry Pi
+  5** (8 GB) | Quad-core Cortex-A76 2.4 GHz, PCIe 2.0 x1 | [Buy \U0001F517](https://s.click.aliexpress.com/e/_oC6NEZe)
+  | *not tested yet on **Raspberry Pi 5** feedback are welcome in issue for tested
+  working devices --- ## \U0001F4E1 WiFi Attack Requirements **⚠️ Important:** The
+  onboard Raspberry Pi WiFi (Broadcom 43430) **cannot** be used for WiFi attacks due
+  to hardware limitations. ### Required USB WiFi Dongles for WiFi Attacks: | Dongle
+  | Chipset | Monitor Mode | Buy | |--------|---------|--------------|-----| | **Alfa
+  AWUS036ACH** | Realtek RTL8812AU | ✅ Full support | | | **TP-Link TL-WN722N v1**
+  | Atheros AR9271 | ✅ Full support | | | **Panda PAU09** | Realtek RTL8812AU | ✅
+  Full support | | **Features:** - **Deauth attacks** on 2.4GHz and 5GHz networks
+  - **Multi-target attacks** with interface switching - **Automatic USB dongle detection**
+  and setup - **Research-based attack patterns** for maximum effectiveness --- ##
+  \U0001F680 Installation and Setup ### Part 1 : setup OS note : This installation
+  is for a Raspberry Pi 0w2 (can probably be customized for others rpi). Install Raspberry
+  Pi imager --- Select Raspberry Pi Zero 2 W --- Go in Raspberry Pi OS (other) ---
+  Select Raspberry Pi OS Lite (32-bit) --- Select your SD card --- Change settings
+  to configure user and enable SSH --- Set username and password and enable SSH ---
+  You can now connect to it on ssh using ```bash ssh raspyjack@ ``` ### Part 2 : setup
+  Raspyjack ```bash sudo apt install git sudo su cd git clone https://github.com/7h30th3r0n3/raspyjack.git
+  mv raspyjack Raspyjack cd Raspyjack chmod +x install_raspyjack.sh sudo ./install_raspyjack.sh
+  sudo reboot ``` Note : Depending on the way you get the project Raspyjack-main can
+  take multiple name. Just be sure that Raspyjack folder are in /root. ### Update
+  ⚠️ Before updating backup your loot. ```bash sudo su cd /root rm -rf Raspyjack git
+  clone https://github.com/7h30th3r0n3/raspyjack.git mv raspyjack Raspyjack sudo reboot
+  ``` --- ### Part 3 : WiFi Attack Setup (Optional) **For WiFi attacks, you need a
+  USB WiFi dongle:** 1. **Plug in USB WiFi dongle** (see requirements above) 2. **Run
+  WiFi Manager** from RaspyJack menu 3. **Configure WiFi profiles** for auto-connect
+  4. **Test interface switching** between wlan0/wlan1 5. **Run deauth attacks** on
+  target networks **Quick Test:** ```bash cd /root/Raspyjack/payloads python3 fast_wifi_switcher.py
+  ``` --- ## \U0001F3AE Keymap | Key | Action | |-----|--------| | ↑ / ↓ | navigate
+  | | → or OK | enter / validate | | ← or BACK | go back | | Q (KEY1) | toggle view
+  mode / extra in dialogs | --- ## \U0001F3A8 View Modes RaspyJack features **three
+  different view modes** to navigate the main menu! Press **KEY1** to cycle through
+  them: ### \U0001F4CB **List View** (Default) - Classic vertica"
 ---
 {% raw %}
 <p align="center">

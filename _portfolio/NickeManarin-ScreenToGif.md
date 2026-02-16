@@ -2,8 +2,28 @@
 layout: project
 name: Nickemanarin Screentogif
 slug: NickeManarin-ScreenToGif
+category: Very important!!!!
 image: https://img.shields.io/badge/donate-Paypal-fd8200.svg
 repo_url: https://github.com/warpdotdev/brand-assets
+indexed_content: "Special thanks to: ### [Warp, built for coding with multiple AI
+  agents](https://www.warp.dev/ScreenToGif) [Available for MacOS, Linux, & Windows](https://www.warp.dev/ScreenToGif)
+  ScreenToGif \U0001F3AC screentogif.com This tool allows you to record a selected
+  area of your screen , live feed from your webcam or live drawings from a sketchboard
+  . Afterward, you can edit and save the animation as a gif, apng, video, psd or png
+  image. ⚠️ Attention, it requires .NET 9 Desktop Runtime (or above). ⚠️ Would you
+  like to help the project? * PayPal donation: [](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JCY2BGLULSWVJ&lc=US&item_name=ScreenToGif&item_number=screentogif&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+  * Patreon subscription: [](https://www.patreon.com/nicke) * Ko-fi donation: [](https://ko-fi.com/B0B7Y5Z9)
+  * Flattr subscription: https://flattr.com/@NickeManarin/domain/screentogif.com *
+  Steam wishlist: [](http://steamcommunity.com/id/nickesm/wishlist) * GOG Galaxy wishlist:
+  https://www.gog.com/u/Nickesm/wishlist * Amazon wishlist: https://www.amazon.com/hz/wishlist/ls/2S54SRWY2K8KF?ref_=wl_share
+  * Feedback (reporting bugs, ideas, etc) [](https://twitter.com/NickeManarin) * [Anyone
+  can still contribute to the localization of the app/website/installer](https://github.com/NickeManarin/ScreenToGif/blob/master/LOCALIZATION.md)
+  * Create a review. :) Please, avoid selling this app as yours I don't care if you
+  copy the source code to use in your project, but please avoid simply changing the
+  name and selling as your work. That's not why I'm sharing the source code, at all.
+  Screenshots Mentions Website Chip Softpedia PortableFreeware The creator also distributes
+  this app via these websites * [Chocolatey](https://chocolatey.org/packages/screentogif)
+  * [FOSSHUB](https://www.fosshub.com/ScreenToGif.html) * [Microsoft Store](https://www.microsoft.com/en-us/p/screentogif/9n3sqk8pds8g)"
 ---
 {% raw %}
 <div align="center" markdown="1">

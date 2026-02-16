@@ -2,8 +2,60 @@
 layout: project
 name: 4ian Gdevelop
 slug: 4ian-GDevelop
+category: Game-arcade-emulator
 image: https://circleci.com/gh/4ian/GDevelop.svg?style=shield
 repo_url: https://github.com/GDevelopApp/GDevelop-tutorials).
+indexed_content: "GDevelop is a **full-featured, no-code, open-source** game development
+  software. You can build **2D, 3D and multiplayer games** for mobile (iOS, Android),
+  desktop and the web. GDevelop is designed to be fast and incredibly intuitive: make
+  games using an easy-to-understand yet powerful event-based system and modular behaviors.
+  Create with AI that assists or builds alongside you. ## Getting started | ❔ I want
+  to... | \U0001F680 What to do | | -------------------------------------------------
+  | -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | \U0001F3AE Use GDevelop to make games | Go to [GDevelop homepage](https://gdevelop.io)
+  to download the app! | | ⚙️ Create/improve an extension | Read about [creating an
+  extension](https://wiki.gdevelop.io/gdevelop5/extensions/create), with no-code or
+  code. | | \U0001F9D1‍\U0001F4BB Contribute to the editor or game engine | Follow
+  this [README](newIDE/README.md). | | \U0001F47E Create or sell a game template |
+  Submit a [free example or a paid template on the Asset Store](https://wiki.gdevelop.io/gdevelop5/community/guide-for-submitting-an-example/).
+  | | \U0001F3A8 Share or sell an asset pack | Submit a [free or paid asset pack on
+  the Asset Store](https://wiki.gdevelop.io/gdevelop5/community/sell-asset-pack-store).
+  | | \U0001F310 Help translate GDevelop | Go on the [GDevelop project on Crowdin](https://crowdin.com/project/gdevelop)
+  or translate [in-app tutorials](https://github.com/GDevelopApp/GDevelop-tutorials).
+  | | \U0001F465 Get online game services or commercial support | See offers for [professionals,
+  teams or individual creators](https://gdevelop.io/pricing). | > Are you interested
+  in contributing to GDevelop for the first time? Take a look at the list of **[good
+  first issues](https://github.com/4ian/GDevelop/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8Cgood+first+issue%22)**,
+  **[good first contributions](https://github.com/4ian/GDevelop/discussions/categories/good-first-contribution)**
+  or the **[\"\U0001F3D0 not too hard\" cards](https://trello.com/b/qf0lM7k8/gdevelop-roadmap?menu=filter&filter=label:Not%20too%20hard%20%E2%9A%BD%EF%B8%8F)**
+  on the Roadmap. ## Games made with GDevelop - Find GDevelop games on [gd.games](https://gd.games),
+  the gaming platform for games powered by GDevelop. - See the [showcase of games](https://gdevelop.io/games)
+  created with GDevelop and published on Steam, iOS (App Store), Android (Google Play),
+  Itch.io, Newgrounds, CrazyGames, Poki... - Suggest your game to be [added to the
+  showcase here](https://docs.google.com/forms/d/e/1FAIpQLSfjiOnkbODuPifSGuzxYY61vB5kyMWdTZSSqkJsv3H6ePRTQA/viewform).
+  [](https://gdevelop.io/games) ## Technical architecture GDevelop is composed of
+  an **editor**, a **game engine**, an **ecosystem** of extensions as well as **online
+  services** and commercial support. | Directory | ℹ️ Description | | -------------
+  | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | `Core` | Core classes, describing the structure of a game and tools to implement
+  the IDE and work with GDevelop games. | | `GDJS` | The game engine, written in TypeScript,
+  using PixiJS and Three.js for 2D and 3D rendering (WebGL), powering all GDevelop
+  games. | | `GDevelop.js` | Bindings of `Core`, `GDJS` and `Extensions` to JavaScript
+  (with WebAssembly), used by the IDE. | | `newIDE` | The game editor, written in
+  JavaScript with React, Electron, PixiJS and Three.js. | | `Extensions` | Built-in
+  extensions for the game engine, providing objects, behaviors and new features. For
+  example, this includes the physics engines running in WebAssembly (Box2D or Jolt
+  Physics for 3D). All the [official and experimental extensions are on this repository](https://github.com/GDevelopApp/GDevelop-extensions).
+  [Community extensions are available here](https://github.com/GDevelopApp/GDevelop-community-list).
+  | To learn more about GDevelop Architecture, read the [architecture overview here](Core/GDevelop-Architecture-Overview.md).
+  Pre-generated documentation of the game engine is [available here](https://docs.gdevelop.io).
+  Status of the tests and builds: [](https://app.circleci.com/pipelines/github/4ian/GDevelop)
+  [](https://gdevelop.semaphoreci.com/projects/GDevelop) [](https://ci.appveyor.com/project/4ian/gdevelop/branch/master)
+  [](https://good-labs.github.io/greater-good-affirmation) ## Links ### Community
+  - [GDevelop forums](https://forum.gdevelop.io) and [Discord chat](https://discord.gg/gdevelop).
+  - [GDevelop homepage](https://gdevelop.io). - [GDevelop wiki (documentation)](https://wiki.gdevelop.io/gdevelop5/start).
+  - Help translate GDevelop in your language: [GDevelop project on Crowdin](https://crowdin.com/project/gdevelop).
+  - Open-source [extensions (official or experimental)](ht"
 ---
 {% raw %}
 ![GDevelop logo](https://raw.githubusercontent.com/4ian/GDevelop/master/newIDE/GDevelop%20banner.png "GDevelop logo")

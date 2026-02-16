@@ -2,8 +2,68 @@
 layout: project
 name: Kanbn Kan
 slug: kanbn-kan
+category: Management- Engineering- SocialM
 image: https://github.com/user-attachments/assets/f728f52e-bf67-4357-9ba2-c24c437488e3
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "Kan The open-source project management alternative to Trello. Roadmap
+  · Website · Docs · Discord ## Features \U0001F4AB - \U0001F441️ **Board Visibility**:
+  Control who can view and edit your boards - \U0001F91D **Workspace Members**: Invite
+  members and collaborate with your team - \U0001F680 **Trello Imports**: Easily import
+  your Trello boards - \U0001F50D **Labels & Filters**: Organise and find cards quickly
+  - \U0001F4AC **Comments**: Discuss and collaborate with your team - \U0001F4DD **Activity
+  Log**: Track all card changes with detailed activity history - \U0001F3A8 **Templates**
+  : Save time with reusable custom board templates - ⚡️ **Integrations (coming soon)**
+  : Connect your favourite tools See our [roadmap](https://kan.bn/kan/roadmap) for
+  upcoming features. ## Screenshot \U0001F441️ ## Made With \U0001F6E0️ - [Next.js](https://nextjs.org/?ref=kan.bn)
+  - [tRPC](https://trpc.io/?ref=kan.bn) - [Better Auth](https://better-auth.com/?ref=kan.bn)
+  - [Tailwind CSS](https://tailwindcss.com/?ref=kan.bn) - [Drizzle ORM](https://orm.drizzle.team/?ref=kan.bn)
+  - [React Email](https://react.email/?ref=kan.bn) ## Self Hosting \U0001F433 ###
+  One-click Deployments The easiest way to deploy Kan is through Railway. We've partnered
+  with Railway to maintain an official template that supports the development of the
+  project. ### Docker Compose Alternatively, you can self-host Kan with Docker Compose.
+  This will set up everything for you including your postgres database. 1. Create
+  a new file called `docker-compose.yml` and paste the following configuration: ```yaml
+  services: web: image: ghcr.io/kanbn/kan:latest container_name: kan-web ports: -
+  \"3000:3000\" networks: - kan-network environment: NEXT_PUBLIC_BASE_URL: http://localhost:3000
+  BETTER_AUTH_SECRET: your_auth_secret POSTGRES_URL: postgresql://kan:your_postgres_password@postgres:5432/kan_db
+  NEXT_PUBLIC_ALLOW_CREDENTIALS: true depends_on: - postgres restart: unless-stopped
+  postgres: image: postgres:15 container_name: kan-db environment: POSTGRES_DB: kan_db
+  POSTGRES_USER: kan POSTGRES_PASSWORD: your_postgres_password ports: - 5432:5432
+  volumes: - kan_postgres_data:/var/lib/postgresql/data restart: unless-stopped networks:
+  - kan-network networks: kan-network: volumes: kan_postgres_data: ``` 2. Start the
+  containers in detached mode: ```bash docker compose up -d ``` 3. Access Kan at http://localhost:3000
+  The application will be running in the background. You can manage the containers
+  using these commands: - To stop the containers: `docker compose down` - To view
+  logs: `docker compose logs -f` - To restart the containers: `docker compose restart`
+  For the complete Docker Compose configuration, see [docker-compose.yml](./docker-compose.yml)
+  in the repository. > **Note**: The Docker Compose configuration shown above is a
+  minimal example. For a complete setup with all features (email, OAuth, file uploads,
+  etc.), you'll need to create a `.env` file with the required environment variables.
+  See the Environment Variables section below for the full list of available options.
+  ## Local Development \U0001F9D1‍\U0001F4BB 1. Clone the repository (or fork) ```bash
+  git clone https://github.com/kanbn/kan.git ``` 2. Install dependencies ```bash pnpm
+  install ``` 3. Copy `.env.example` to `.env` and configure your environment variables
+  4. Migrate database ```bash pnpm db:migrate ``` 5. Start the development server
+  ```bash pnpm dev ``` ## Environment Variables \U0001F510 | Variable | Description
+  | Required | Example | | ----------------------------------------- | ---------------------------------------------------------
+  | ------------------------------------- | -----------------------------------------------------------
+  | | `POSTGRES_URL` | PostgreSQL connection URL | To use external database | `postgres://user:pass@localhost:5432/db`
+  | | `REDIS_URL` | Redis connection URL | For rate limiting (optional) | `redis://localhost:6379`
+  or `redis://redis:6379` (Docker) | | `EMAIL_FROM` | Sender email address | For Email
+  | `\"Kan \"` | | `SMTP_HOST` | SMTP server hostname | For Email | `smtp.resend.com`
+  | | `SMTP_PORT` | SMTP server port | For Email | `465` | | `SMTP_USER` | SMTP username/email
+  | No | `resend` | | `SMTP_PASSWORD` | SMTP password/token | No | `re_xxxx` | | `SMTP_SECURE`
+  | Use secure SMTP connection (defaults to true if not set) | For Email | `true`
+  | | `SMTP_REJECT_UNAUTHORIZED` | Reject invalid certificates (defaults to true if
+  not set) | For Email | `false` | | `NEXT_PUBLIC_DISABLE_EMAIL` | To disable all
+  email features | For Email | `true` | | `NEXT_PUBLIC_BASE_URL` | Base URL of your
+  installation | Yes | `http://localhost:3000` | | `NEXT_API_BODY_SIZE_LIMIT` | Maximum
+  API request body size (defaults to 1mb) | No | `50mb` | | `BETTER_AUTH_ALLOWED_DOMAINS`
+  | Comma-separated list of allowed domains for OIDC logins | For OIDC/Social login
+  | `example.com,subsidiary.com` | | `BETTER_AUTH_SECRET` | Auth encryption secret
+  | Yes | Random 32+ char string | | `BETTER_AUTH_TRUSTED_ORIGINS` | Allowed callback
+  origins | No | `http://localhost:3000,http://localhost:3001` | | `GOOGLE_CLIENT_ID`
+  | Google OAuth client ID | For Go"
 ---
 {% raw %}
 ![github-background](https://github.com/user-attachments/assets/f728f52e-bf67-4357-9ba2-c24c437488e3)

@@ -2,8 +2,69 @@
 layout: project
 name: Validatedev Brewservicesmanager
 slug: validatedev-BrewServicesManager
+category: iOS-imac
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/validatedev-BrewServicesManager/assets/BrewServicesManager-icon.png
 repo_url: https://github.com/validatedev/BrewServicesManager
+indexed_content: "# Brew Services Manager A macOS menu bar app for managing Homebrew
+  services --- ## Screenshot --- ## Overview A macOS menu bar app for managing Homebrew
+  services. Start, stop, and restart services without the terminal. ### Key Features
+  - **Homebrew Integration** — Manage all `brew services` from the menu bar - **Real-time
+  Status** — View service status at a glance - **Quick Actions** — Start, stop, and
+  restart services instantly - **Port Detection** — Automatically detect and display
+  listening ports for running services - **Service Links** — Configure custom URLs
+  for quick access to service web interfaces - **System Domain Support** — Manage
+  both user and system-level services with privilege escalation - **Launch at Login**
+  — Optionally start the app automatically when you log in - **Auto-refresh** — Configurable
+  refresh interval - **Debug Mode** — Verbose output for troubleshooting --- ## Requirements
+  - **macOS 15.0** (Sequoia) or later - **Homebrew** installed and configured - Services
+  installed via Homebrew (e.g., `brew install postgresql`, `brew install redis`) ---
+  ## Installation ### Option 1: Install via Homebrew ```bash brew install --cask validatedev/tap/brew-services-manager
+  ``` ### Option 2: Download Pre-built Release 1. Download the latest `.dmg` from
+  the [Releases](https://github.com/validatedev/BrewServicesManager/releases) page
+  2. Open the DMG and drag **Brew Services Manager** to your Applications folder 3.
+  Launch the app from Applications or Spotlight ### Option 3: Build from Source 1.
+  Clone the repository: ```bash git clone https://github.com/validatedev/BrewServicesManager.git
+  cd BrewServicesManager ``` 2. Open the project in Xcode: ```bash open BrewServicesManager.xcodeproj
+  ``` 3. **Configure Code Signing** (first time only): ```bash # Copy the development
+  config template cp Config/Development.shared.xcconfig Config/Development.xcconfig
+  # Edit the file and replace YOUR_TEAM_ID with your Apple Developer Team ID # You
+  can find your Team ID at: https://developer.apple.com/account # OR in Xcode: Settings
+  → Accounts → [Your Account] → Team ID nano Config/Development.xcconfig ``` 4. Build
+  and run (⌘R) or archive for distribution (Product → Archive) --- ## Usage ### Getting
+  Started 1. **Launch the App** — Brew Services Manager runs as a menu bar-only application.
+  Look for the mug icon (☕) in your menu bar. 2. **View Services** — Click the menu
+  bar icon to see all your Homebrew services and their current status. 3. **Manage
+  Services** — Hover over a service to reveal quick actions: - **▶️ Start** — Start
+  a stopped service - **⏹️ Stop** — Stop a running service - **\U0001F504 Restart**
+  — Restart a running service - **ℹ️ Info** — View detailed service information ###
+  Port Detection BrewServicesManager automatically detects listening ports for running
+  services: - **Automatic Detection** — Ports are detected from the main process and
+  all child processes - **Quick View** — See the first 3 ports in the service actions
+  popover (e.g., \"8384, 22000\") - **Detailed View** — Click \"View Info\" to see
+  all ports with protocol information (TCP/UDP) - **Works with Complex Services**
+  — Detects ports from services that spawn worker processes (like Syncthing, nginx)
+  Port detection happens automatically when you view service information. No configuration
+  needed! ### Service Links Add custom URLs to quickly access service web interfaces:
+  1. **Click the three-dots menu** on any service 2. **Select \"Manage Links...\"**
+  to open the link management interface 3. **Add a link:** - Click on an auto-suggested
+  URL (based on detected ports), or - Click \"Add Custom Link\" to enter any URL manually
+  - Optionally add a custom label (e.g., \"Admin Panel\", \"Metrics\") 4. **Access
+  your links** — They appear as clickable icons next to the service name **Examples:**
+  - Syncthing → `http://localhost:8384` (Web UI) - Local API → `http://localhost:3000`
+  (Development server) - nginx → `http://localhost:80` (Web server) Links are saved
+  automatically and persist across app restarts. ### Service Domains Brew Services
+  Manager supports two service domains: | Domain | Description | Privileges | |--------|-------------|------------|
+  | **User** | Services running under your user account | Standard user permissions
+  | | **System** | System-wide services (root-level) | Requires administrator password
+  | Switch between domains in **Settings → Service Domain**. ### Global Actions Perform
+  bulk operations on all services: - **Start All** — Start all stopped services -
+  **Stop All** — Stop all running services - **Restart All** — Restart all services
+  ### Settings Access settings via the ⚙️ **Settings** menu item: - **Service Domain**
+  — Switch between User and System domains - **Sudo Service User** — Specify a user
+  for sudo operations (system domain) - **Auto-refresh Interval** — Set how often
+  to refresh the service list (0 = disabled) - **Debug Mode** — Enable verbose output
+  for troubleshooting - **Launch at Login** — Automatically start the app when you
+  log in to macOS -"
 ---
 {% raw %}
 # Brew Services Manager

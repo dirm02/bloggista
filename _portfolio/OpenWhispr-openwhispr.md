@@ -2,8 +2,71 @@
 layout: project
 name: Openwhispr Openwhispr
 slug: OpenWhispr-openwhispr
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/github/downloads/OpenWhispr/openwhispr/total?style=flat&color=blue
 repo_url: https://github.com/OpenWhispr/openwhispr
+indexed_content: "# OpenWhispr [](https://github.com/OpenWhispr/openwhispr/releases)
+  An open source desktop dictation application that converts speech to text using
+  OpenAI Whisper. Features both local and cloud processing options for maximum flexibility
+  and privacy. ## Star History [](https://www.star-history.com/#OpenWhispr/openwhispr&type=date&legend=top-left)
+  ## License This project is licensed under the MIT License - see the [LICENSE](LICENSE)
+  file for details. This means you can freely use, modify, and distribute this software
+  for personal or commercial purposes. ## Features - ☁️ **OpenWhispr Cloud**: Sign
+  in and transcribe instantly — no API keys needed, with free and Pro plans - \U0001F510
+  **Account System**: Google OAuth and email/password sign-in with email verification
+  - \U0001F4B3 **Subscription Management**: Free tier (2,000 words/week), Pro tier
+  (unlimited), 7-day free trial - \U0001F3A4 **Global Hotkey**: Customizable hotkey
+  to start/stop dictation from anywhere (default: backtick `) - \U0001F916 **Multi-Provider
+  AI Processing**: Choose between OpenAI, Anthropic Claude, Google Gemini, or local
+  models - \U0001F3AF **Agent Naming**: Personalize your AI assistant with a custom
+  name for natural interactions - \U0001F9E0 **Multi-Provider AI**: - **OpenAI**:
+  GPT-5, GPT-4.1, o-series reasoning models - **Anthropic**: Claude Opus 4.5, Claude
+  Sonnet 4.5 - **Google**: Gemini 2.5 Pro/Flash/Flash-Lite - **Groq**: Ultra-fast
+  inference with Llama and Mixtral models - **Local**: Qwen, LLaMA, Mistral models
+  via llama.cpp - \U0001F512 **Privacy-First**: Local processing keeps your voice
+  data completely private - \U0001F3A8 **Modern UI**: Built with React 19, TypeScript,
+  and Tailwind CSS v4 - \U0001F680 **Fast**: Optimized with Vite and modern tooling
+  - \U0001F4F1 **Control Panel**: Manage settings, view history, and configure API
+  keys - \U0001F5C4️ **Transcription History**: SQLite database stores all your transcriptions
+  locally - \U0001F527 **Model Management**: Download and manage local Whisper models
+  (tiny, base, small, medium, large, turbo) - ⚡ **NVIDIA Parakeet**: Fast local transcription
+  via sherpa-onnx (multilingual, 25 languages) - \U0001F9F9 **Model Cleanup**: One-click
+  removal of cached Whisper models with uninstall hooks to keep disks tidy - \U0001F310
+  **Cross-Platform**: Works on macOS, Windows, and Linux - ⚡ **Automatic Pasting**:
+  Transcribed text automatically pastes at your cursor location - \U0001F5B1️ **Draggable
+  Interface**: Move the dictation panel anywhere on your screen - \U0001F504 **OpenAI
+  Responses API**: Using the latest Responses API for improved performance - \U0001F310
+  **Globe Key Toggle (macOS)**: Optional Fn/Globe key listener for a hardware-level
+  dictation trigger - ⌨️ **Compound Hotkeys**: Support for multi-key combinations
+  like `Cmd+Shift+K` - \U0001F399️ **Push-to-Talk (Windows)**: Native low-level keyboard
+  hook for true push-to-talk with compound hotkey support - \U0001F4D6 **Custom Dictionary**:
+  Add words, names, and technical terms to improve transcription accuracy - \U0001F427
+  **GNOME Wayland Support**: Native global shortcuts via D-Bus for GNOME Wayland users
+  ## Prerequisites - **Node.js 18+** and npm (Download from [nodejs.org](https://nodejs.org/))
+  - **macOS 10.15+**, **Windows 10+**, or **Linux** - On macOS, Globe key support
+  requires the Xcode Command Line Tools (`xcode-select --install`) so the bundled
+  Swift helper can run ## Quick Start ### For Personal Use (Recommended) 1. **Clone
+  the repository**: ```bash git clone https://github.com/OpenWhispr/openwhispr.git
+  cd openwhispr ``` 2. **Install dependencies**: ```bash npm install ``` 3. **Optional:
+  Set up API keys** (only needed for cloud processing): **Method A - Environment file**:
+  ```bash cp .env.example .env # Edit .env and add your API keys: # OPENAI_API_KEY=your_openai_key
+  # ANTHROPIC_API_KEY=your_anthropic_key # GEMINI_API_KEY=your_gemini_key # GROQ_API_KEY=your_groq_key
+  # MISTRAL_API_KEY=your_mistral_key ``` **Method B - In-app configuration**: - Run
+  the app and configure API keys through the Control Panel - Keys are automatically
+  saved and persist across app restarts 4. **Build the application**: ```bash npm
+  run build ``` 5. **Run the application**: ```bash npm run dev # Development mode
+  with hot reload # OR npm start # Production mode ``` 6. **Optional: Local Whisper
+  from source** (only needed if you want local processing): ```bash npm run download:whisper-cpp
+  ``` This downloads the whisper.cpp binary for your current platform into `resources/bin/`.
+  ### Building for Personal Use (Optional) If you want to build a standalone app for
+  personal use: ```bash # Build without code signing (no certificates required) npm
+  run pack # The unsigned app will be in: dist/mac-arm64/OpenWhispr.app (macOS) #
+  or dist/win-unpacked/OpenWhispr.exe (Windows) # or dist/linux-unpacked/open-whispr
+  (Linux) ``` **Note**: On macOS, you may see a security warning when first opening
+  the unsigned app. Right-click and select \"Open\" to bypass this. #### Windows **Native
+  Paste Binary (`windows-fast-paste`)**: OpenWhispr ships a native C binary for pasting
+  text on Windows, using the Win32 `SendInput` API. This is the **primary** paste
+  mech"
 ---
 {% raw %}
 # OpenWhispr

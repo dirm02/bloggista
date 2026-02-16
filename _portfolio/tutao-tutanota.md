@@ -2,8 +2,16 @@
 layout: project
 name: Tutao Tutanota
 slug: tutao-tutanota
+category: GreyHate-Cyber&Security
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tutao-tutanota/resources/images/logo-red.svg
 repo_url: https://github.com/tutao/tutanota
+indexed_content: 'Tuta Mail makes encryption easy Tuta Mail is the [secure email](https://tuta.com)
+  service with built-in end-to-end encryption that enables you to communicate securely
+  with anyone on all your devices. * Forum for bug reports/feature requests: https://www.reddit.com/r/tutanota
+  * Roadmap: https://tuta.com/roadmap/ * Issue and feature tracker: https://github.com/tutao/tutanota/issues.
+  Please submit your feature requests via Reddit or via support mail. Web client •
+  iOS App Store • Desktop Client ### Translating Tuta See [TRANSLATING.md](doc/TRANSLATING.md)
+  ### Building See [BUILDING.md](doc/BUILDING.md). ### Developing Tuta See [HACKING.md](doc/HACKING.md).'
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,69 @@
 layout: project
 name: Eclaire Labs Eclaire
 slug: eclaire-labs-eclaire
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/eclaire-labs-eclaire/docs/assets/logo-text.png
 repo_url: https://github.com/eclaire-labs/eclaire
+indexed_content: 'ECLAIRE Privacy-focused AI assistant for your data Click to watch
+  on YouTube Features • Installation • Selecting Models • Architecture • Development
+  • Contributing • Docs • API --- ## ⚠️ Important Notices > [!IMPORTANT] > **Pre-release
+  / Development Status** > Eclaire is currently in pre-release and under active development.
+  Expect frequent updates, breaking changes, and evolving APIs/configuration. > If
+  you deploy it, please **backup your data regularly** and review release notes carefully
+  before upgrading. > [!WARNING] > **Security Warning** > Do **NOT** expose Eclaire
+  directly to the public internet. > This project is designed to be self-hosted with
+  privacy and security in mind, but it is **not hardened for direct exposure**. >
+  > We strongly recommend placing it behind additional security layers such as: >
+  - [Tailscale](https://tailscale.com/) or other private networks/VPNs > - [Cloudflare
+  Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/)
+  > - A reverse proxy with authentication --- ## Description **Eclaire** is a local-first,
+  open-source AI that organizes, answers, and automates across tasks, notes, documents,
+  photos, bookmarks and more. There are are lot of existing frameworks and libraries
+  enabling various AI capabilities; few deliver a complete product allowing users
+  to get things done. Eclaire assembles proven building blocks into a cohesive, privacy-preserving
+  solution you can run yourself. With AI gaining rapid adoption, there is a growing
+  need for alternatives to closed ecosystems and hosted models, especially for personal,
+  private, or otherwise sensitive data. - **Self-hosted** - runs entirely on your
+  hardware with local models and data storage - **Unified data** - one place where
+  AI can see and connect everything - **AI-powered** - content understanding, search,
+  classification, OCR, and automation - **Open source** - transparent, extensible,
+  and community-driven ### What''s New in v0.6.0 - **Unified deployment**: frontend
+  + backend + workers can run in a single container - **Simplified Self-Hosting**
+  - new one-command `setup.sh` flow, plus a streamlined `compose.yaml` - **Better
+  AI Support** - New vision models (including Qwen3-VL), llama.cpp router, improved
+  MLX support. - **Modern Frontend** - Migrated from Next.js to Vite + TanStack Router
+  - **SQLite Support**: Full SQLite database support alongside Postgres for simpler
+  workloads - **Database Queue Mode**: Support Postgres or SQLite for job processing
+  instead of Redis/BullMQ - **New Admin CLI** - Manage your instance from the command
+  line See the [CHANGELOG](./CHANGELOG.md) for full details. ## Features - **Cross-platform**:
+  macOS, Linux and Windows. - **Private by default**: By default all AI models run
+  locally, all data is stored locally. - **Unified data**: Manage across tasks, notes,
+  documents, photos, bookmarks and more. - **AI conversations**: chat with context
+  from your content; see sources for answers; supports streaming and thinking tokens.
+  - **AI tool calling**: The assistant has tools to search data, open content, resolve
+  tasks, add comments, create notes, and more - **Flexible deployment**: Run as a
+  single unified container or separate services. SQLite or Postgres. Database queue
+  or Redis. *(See [Architecture](#architecture) section below.)* - **Full API**: OpenAI-compatible
+  REST endpoints with session tokens or API keys. [API Docs](https://eclaire.co/docs/api)
+  - **Model backends**: works with llama.cpp, vLLM, mlx-lm/mlx-vlm, LM Studio, Ollama,
+  and more via the standard OpenAI-compatible API. *(See [Selecting Models](#selecting-models).)*
+  - **Model support**: text and vision models from Qwen, Gemma, DeepSeek, Mistral,
+  Kimi, and others. *(See [Selecting Models](#selecting-models).)* - **Storage**:
+  all assets (uploaded or generated) live in Postgres or file/object storage. - **Integrations**:
+  Telegram (more channels coming). - **Documents**: PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX,
+  ODT/ODP/ODS, MD, TXT, RTF, Pages, Numbers, Keynote, HTML, CSV, and more. - **Photos/Images**:
+  JPG/JPEG, PNG, SVG, WebP, HEIC/HEIF, AVIF, GIF, BMP, TIFF, and more. - **Tasks**:
+  track user tasks or assign tasks for the AI assistant to complete; the assistant
+  add comments to tasks or write to separate docs. - **Notes**: plain text or Markdown
+  format. Links to other assets. - **Bookmarks**: Fetches bookmarks and creates PDF,
+  Readable and LLM friendly versions. Special handling for Github and Reddit APIs
+  and metadata. - **Organization**: Tags, pin, flag, due dates, etc. across all asset
+  types. - **Hardware acceleration**: takes advantage of Apple MLX, NVIDIA CUDA, and
+  other platform-specific optimizations. - **Mobile & PWA**: installable PWA; iOS
+  & Apple Watch via Shortcuts; Android via Tasker/MacroDroid. ## Sample use cases
+  - Dictate notes using Apple Watch (or other smartwatch). - Save bookmarks to read
+  later; generate clean “readable” and PDF versions. - Create readable and PDF versions
+  of websites - Extract text from photos and '
 ---
 {% raw %}
 <!-- README.md -->

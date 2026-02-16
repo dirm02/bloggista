@@ -2,8 +2,64 @@
 layout: project
 name: Simonaking Scrcpy Gui
 slug: SimonAKing-scrcpy-gui
+category: Android
 image: https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/icon.png
 repo_url: https://github.com/Tomotoes/scrcpy-gui
+indexed_content: "Scrcpy GUI Built with ❤︎ by Simon Ma - 中文文档 ✨ A simple & beautiful
+  GUI application for scrcpy ## \U0001F4A1Introduction [Scrcpy](https://github.com/Genymobile/scrcpy)
+  was created by the team behind the popular Android emulator Genymotion, but it is
+  not an Android emulator itself, it displays and controls Android devices connected
+  via USB or TCP/IP, it does not require any root access. It works with GNU/Linux,
+  Windows, and MacOS. Scrcpy works by running a server on your Android device, and
+  the desktop application communicates using USB (or using ADB tunneling wireless).
+  The server streams the H.264 video of the device screen. The client decodes the
+  video frames and displays them. The client captures input (keyboard and mouse) events,
+  sends them to the server, and the server injects them into the device. [The documentation](https://github.com/Genymobile/scrcpy/blob/master/DEVELOP.md)
+  provides more details. If you want to see your Android screen interact with the
+  app or content on your desktop, record your phone screen or perform other basic
+  tasks, then Scrcpy is a good choice. In short, Scrcpy is an excellent way to easily
+  view your Android screen on your computer and interact with it in real time. ##
+  ✨Features - **lightness** (native, displays only the device screen) - **performance**
+  (30~60fps) - **quality** (1920×1080 or above) - **low latency** ([35~70ms](https://github.com/Genymobile/scrcpy/pull/646))
+  - **low startup time** (~1 second to display the first image) - **non-intrusiveness**
+  (nothing is left installed on the device) - **No need for ROOT** - **Wired and wireless
+  can be connected** - **You can adjust the interface and bit rate** - **Pictures
+  can be cut at will, with a screen recording** - **Support multiple devices to screen
+  at the same time** - **Control your phone with your computer's keyboard and mouse**
+  - **Mobile computer sharing clipboard** - **Automatically detect USB connected apps**
+  - **Can directly add the LAN IP of the device to achieve the effect of wireless
+  control** - **Automatically save the connected IP address, automatically reminder
+  the next time you enter** - **Support device alias** - **Support for Chinese and
+  English** - **Tray menu** - **etc...** ## \U0001F31ERequirements 1. The Android
+  device requires at least API 21 (Android 5.0). 2. Make sure you [enabled adb debugging](https://developer.android.com/studio/command-line/adb.html#Enabling)
+  on your device(s). On some devices, you also need to enable [an additional option](https://github.com/Genymobile/scrcpy/issues/70#issuecomment-373286323)
+  to control it using keyboard and mouse. 3. Install scrcpy and configure environment
+  variables - Linux On Linux, you typically need to [build the app manually](https://github.com/Genymobile/scrcpy/blob/master/BUILD.md).
+  Don't worry, it's not that hard. A [Snap](https://en.wikipedia.org/wiki/Snappy_(package_manager))
+  package is available: [`scrcpy`](https://snapstats.org/snaps/scrcpy). For Arch Linux,
+  an [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) package is available:
+  [`scrcpy`](https://aur.archlinux.org/packages/scrcpy/). For Gentoo, an [Ebuild](https://wiki.gentoo.org/wiki/Ebuild)
+  is available: [`scrcpy/`](https://github.com/maggu2810/maggu2810-overlay/tree/master/app-mobilephone/scrcpy).
+  - Windows For Windows, for simplicity, prebuilt archives with all the dependencies
+  (including `adb`) are available: - [`scrcpy-win32-v1.10.zip`](https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-win32-v1.10.zip)
+  *(SHA-256: f98b400b3764404b33b212e9762dd6f1593ddb766c1480fc2609c94768e4a8e1)* -
+  [`scrcpy-win64-v1.10.zip`](https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-win64-v1.10.zip)
+  *(SHA-256: 95de34575d873c7e95dfcfb5e74d0f6af4f70b2a5bc6fde0f48d1a05480e3a44)* You
+  can also [build the app manually](https://github.com/Genymobile/scrcpy/blob/master/BUILD.md).
+  - macOS The application is available in [Homebrew](https://brew.sh/). Just install
+  it: ``` brew install scrcpy ``` You need `adb`, accessible from your `PATH`. If
+  you don't have it yet: ``` brew cask install android-platform-tools ``` You can
+  also [build the app manually](https://github.com/Genymobile/scrcpy/blob/master/BUILD.md).
+  ## \U0001F389Install Click here to download [App](https://github.com/Tomotoes/scrcpy-gui/releases).
+  ## \U0001F387Instructions ### connection method #### Prerequisites - Make sure **adb
+  , scrcpy** are working properly - Make sure the phone is turned on for USB debugging
+  and certified for computer debugging #### Wired connection 1. Make sure the phone
+  is connected to the computer via the data cable 2. Wait for the software to automatically
+  detect the device 3. Select the device and click `Open Selected Mirror`. 4. Wait
+  for the device to open #### Wireless connections 1. Please make sure the phone is
+  on the same LAN as the computer. 2. When connecting for the first time: - **Please
+  make sure your phone is connected to your computer via the cable** - **Please make
+  sure that only one mobile phone is connecte"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,56 @@
 layout: project
 name: Bridgecrewio Checkov
 slug: bridgecrewio-checkov
+category: Very important!!!!
 image: https://raw.githubusercontent.com/bridgecrewio/checkov/main/docs/web/images/checkov_blue_logo.png
 repo_url: https://github.com/bridgecrewio/checkov
+indexed_content: "[](#) [](https://prismacloud.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
+  [](https://github.com/bridgecrewio/checkov/actions?query=workflow%3Abuild) [](https://github.com/bridgecrewio/checkov/actions?query=event%3Apush+branch%3Amaster+workflow%3Asecurity)
+  [](https://github.com/bridgecrewio/checkov/actions?query=workflow%3Acoverage) [](https://www.checkov.io/1.Welcome/What%20is%20Checkov.html?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov)
+  [](https://pypi.org/project/checkov/) [](#) [](#) [](https://pepy.tech/project/checkov)
+  [](https://hub.docker.com/r/bridgecrew/checkov) [](https://codifiedsecurity.slack.com/)
+  **Checkov** is a static code analysis tool for infrastructure as code (IaC) and
+  also a software composition analysis (SCA) tool for images and open source packages.
+  It scans cloud infrastructure provisioned using [Terraform](https://terraform.io/),
+  [Terraform plan](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Terraform%20Plan%20Scanning.md),
+  [Cloudformation](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Cloudformation.md),
+  [AWS SAM](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/AWS%20SAM.md),
+  [Kubernetes](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Kubernetes.md),
+  [Helm charts](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Helm.md),
+  [Kustomize](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Kustomize.md),
+  [Dockerfile](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Dockerfile.md),
+  [Serverless](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Serverless%20Framework.md),
+  [Bicep](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Bicep.md),
+  [OpenAPI](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/OpenAPI.md),
+  [ARM Templates](https://github.com/bridgecrewio/checkov/blob/main/docs/7.Scan%20Examples/Azure%20ARM%20templates.md),
+  or [OpenTofu](https://opentofu.org/) and detects security and compliance misconfigurations
+  using graph-based scanning. It performs [Software Composition Analysis (SCA) scanning](docs/7.Scan%20Examples/Sca.md)
+  which is a scan of open source packages and images for Common Vulnerabilities and
+  Exposures (CVEs). Checkov also powers [**Prisma Cloud Application Security**](https://www.prismacloud.io/prisma/cloud/cloud-code-security/?utm_source=github&utm_medium=organic_oss&utm_campaign=checkov),
+  the developer-first platform that codifies and streamlines cloud security throughout
+  the development lifecycle. Prisma Cloud identifies, fixes, and prevents misconfigurations
+  in cloud resources and infrastructure-as-code files. ## **Table of contents** -
+  [Features](#features) - [Screenshots](#screenshots) - [Getting Started](#getting-started)
+  - [Disclaimer](#disclaimer) - [Support](#support) - [Migration - v2 to v3](https://github.com/bridgecrewio/checkov/blob/main/docs/1.Welcome/Migration.md)
+  ## Features * [Over 1000 built-in policies](https://github.com/bridgecrewio/checkov/blob/main/docs/5.Policy%20Index/all.md)
+  cover security and compliance best practices for AWS, Azure and Google Cloud. *
+  Scans Terraform, Terraform Plan, Terraform JSON, CloudFormation, AWS SAM, Kubernetes,
+  Helm, Kustomize, Dockerfile, Serverless framework, Ansible, Bicep, ARM, and OpenTofu
+  template files. * Scans Argo Workflows, Azure Pipelines, BitBucket Pipelines, Circle
+  CI Pipelines, GitHub Actions and GitLab CI workflow files * Supports Context-awareness
+  policies based on in-memory graph-based scanning. * Supports Python format for attribute
+  policies and YAML format for both attribute and composite policies. * Detects [AWS
+  credentials](https://github.com/bridgecrewio/checkov/blob/main/docs/2.Basics/Scanning%20Credentials%20and%20Secrets.md)
+  in EC2 Userdata, Lambda environment variables and Terraform providers. * [Identifies
+  secrets](https://www.prismacloud.io/prisma/cloud/secrets-security) using regular
+  expressions, keywords, and entropy based detection. * Evaluates [Terraform Provider](https://registry.terraform.io/browse/providers)
+  settings to regulate the creation, management, and updates of IaaS, PaaS or SaaS
+  managed through Terraform. * Policies support evaluation of [variables](https://github.com/bridgecrewio/checkov/blob/main/docs/2.Basics/Handling%20Variables.md)
+  to their optional default value. * Supports in-line [suppression](https://github.com/bridgecrewio/checkov/blob/main/docs/2.Basics/Suppressing%20and%20Skipping%20Policies.md)
+  of accepted risks or false-positives to reduce recurring scan failures. Also supports
+  global skip from using CLI. * [Output](https://github.com/bridgecrewio/checkov/blob/main/docs/2.Basics/Reviewing%20Scan%20Results.md)
+  currently available as CLI, [CycloneDX](https://cyclonedx.org), JSON, JUnit XML,
+  CSV, SARIF and github markdown and link to remediation [guides](https://docs.prismacloud.io/en/"
 ---
 {% raw %}
 [![checkov](https://raw.githubusercontent.com/bridgecrewio/checkov/main/docs/web/images/checkov_blue_logo.png)](#)

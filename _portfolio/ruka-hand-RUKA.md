@@ -2,8 +2,67 @@
 layout: project
 name: Ruka Hand Ruka
 slug: ruka-hand-RUKA
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ruka-hand-RUKA/assets/ruka.gif
 repo_url: https://github.com/ruka-hand/RUKA
+indexed_content: 'RUKA: Rethinking the Design of Humanoid Hands with Learning #####
+  [Anya Zorin*](https://anyazorin.github.io/), [Irmak Guzey*](https://irmakguzey.github.io/),
+  [Billy Yan](https://www.linkedin.com/in/yanyibobilly/), [Aadhithya Iyer](https://www.linkedin.com/in/aadhithya-iyer-147697176/),
+  [Lisa Kondrich](https://www.linkedin.com/in/lisa-kondrich/), [Nikhil X. Bhattasali](https://www.hertzfoundation.org/person/nikhil-bhattasali/),
+  [Lerrel Pinto](https://lerrelpinto.com) ##### New York University ##### &ensp; &ensp;
+  &ensp; &ensp; &ensp; ##### ## Installation Download the repo, create the conda environment,
+  install requirements and install the `ruka_hand` package. ``` git clone --recurse-submodules
+  https://github.com/ruka-hand/RUKA cd RUKA conda env create -f environment.yml conda
+  activate ruka_hand pip install -r requirements.txt pip install -e . ``` ### Download
+  data from OSF All controller weights, example keypoints and data collected are stored
+  in an OSF project, available [here](https://osf.io/hwajz/). You can run `./download_data.sh`
+  to download all controller checkpoints alongside some example keypoints and controller
+  data. This script will prompt you for an OSF username and token in order to clone
+  the project to your local directory. A token can be generated at: https://osf.io/settings/tokens.
+  After running the script, all provided data can be found un `ruka_data/osfstorage`.
+  Controller checkpoints will be downloaded to `ruka_data/osfstorage/checkpoints`.
+  Within this directory, you’ll find a controller for each finger of each hand. The
+  data structure is as follows: ``` checkpoints/ left_index/ config.yaml -> Was used
+  during training dataset_stats.pkl -> Stores statistics during training decoder_best.pkl
+  -> Decoder weights encoder_best.pkl -> Encoder weights left_middle/ ... ... right_index/
+  ... ... examples/ human_examples.npy robot_examples.npy data/ ... ``` Checkpoints
+  are later used in `ruka_hand/control/controller.py` and is necessary for any application
+  such as teleoperation. ## Initial Software Steps ### Connecting RUKA Connect the
+  RUKA hand to your workstation using a USB cable. Then, identify which port the USB
+  is connected to. You can do this by plugging and unplugging the hand while observing
+  the changes in the output of `ls /dev/ttyUSB*`. The port that appears when you plug
+  in the hand corresponds to that hand (left or right). Update the `USB_PORTS` dictionary
+  in `ruka_hand/utils/constants.py` accordingly, e.g., `USB_PORTS = {"left": "/dev/ttyUSB0",
+  "right": "/dev/ttyUSB1"}`. You can try moving the motors to the reset position by
+  running: ``` python scripts/reset_motors.py --hand_type ``` If this moves the intended
+  hand then it means that the initial software is completed! **NOTE:** If you get
+  an error saying that ``` serial.serialutil.SerialException: [Errno 13] could not
+  open port /dev/ttyUSB0: [Errno 13] Permission denied: ''/dev/ttyUSB0'' ``` You might
+  need to run following commands to add your user to `dialout` group and reboot the
+  machine for it to take effect. ``` sudo usermod -aG dialout $USER sudo reboot ```
+  ### Calibrating Motor Ranges Since RUKA is a tendon-driven hand, cable tensions
+  can vary between different builds. To ensure consistency across builds, we provide
+  a calibration script that determines the motor ranges by finding the fully curled
+  finger bound and the in-tension bound (finger is fully open and the tendon is in
+  tension). Run the following command to save the motor limits to `RUKA/motor_limits/
+  _ _limits.npy`: ``` python calibrate_motors.py --hand-type ``` These motor limits
+  are later used in `ruka_hand/control/hand.py`. If everything works well, this is
+  how the first half of calibration code should look like: During calibration, we
+  sometimes observe that the knuckle joints don''t fully curl. If you notice this
+  behavior (for example, the index finger not fully curling as shown in the provided
+  GIF), please gently push the finger to complete the curl. The second half of calibration
+  is manually adjusting the motor positions using the ↑/→ keys to increase, and the
+  ↓/← keys to decrease the position. You will adjust the motors one by one and save
+  the position by pressing enter. After running the calibration, execute `python scripts/reset_motors.py
+  --hand-type `. This should move the fingers to a fully open position, with the tendons
+  tensioned but the fingers remaining extended. If you want to adjust just one bound
+  (just curled or just tensioned), you can run the following command: ``` python calibrate_motors.py
+  --hand-type --mode ``` ## Installing and Using Pre Trained Controllers ### Load
+  and use the controllers We provide example keypoints to run on the robot when you
+  first build / initialize the hand. These examples are downloaded in `ruka_data/osfstorage/examples`
+  after you run `./download_data.sh`. `robot_examples.npy` is collected on the robot
+  and `human_examples.npy` is collected by a human using the MANUS glove. You can
+  simply initialize RUKA hand with the loaded control'
 ---
 {% raw %}
 <h1 align="center" style="font-size: 2.0em; font-weight: bold; margin-bottom: 0; border: none; border-bottom: none;">RUKA: Rethinking the Design of Humanoid Hands with Learning</h1>

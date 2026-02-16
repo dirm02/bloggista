@@ -2,8 +2,71 @@
 layout: project
 name: Wjddesigns Ultra Card
 slug: WJDDesigns-Ultra-Card
+category: Home automation-IoT
 image: https://img.shields.io/badge/HACS-Default-41BDF5.svg
 repo_url: https://github.com/hacs/integration)
+indexed_content: "[](https://github.com/hacs/integration) # Ultra Card 2.0 ## The
+  Visual Dashboard Builder That Changes Everything **Build professional Home Assistant
+  dashboards without writing a single line of YAML.** Ultra Card 2.0 is a revolutionary
+  modular card builder that transforms dashboard creation from tedious YAML editing
+  into an intuitive visual design experience. Complete creative freedom meets drag-and-drop
+  simplicity. Whether you're a beginner or a Home Assistant power user, Ultra Card
+  empowers you to create stunning, feature-rich dashboards in minutes, not hours.
+  **[Visit UltraCard.io](https://ultracard.io)** | **[Join Discord](https://discord.gg/6xVgHxzzBV)**
+  | **[View Documentation](https://github.com/WJDDesigns/Ultra-Card)** --- ## Why
+  Ultra Card? ### What Sets Us Apart **\U0001F3A8 Visual-First Philosophy** Other
+  cards require YAML knowledge and constant file editing. Ultra Card is built from
+  the ground up for visual creators. Every feature, every setting, every design choice
+  is accessible through an intuitive UI. Zero YAML required. **\U0001F9E9 Complete
+  Modular Freedom** Ultra Card isn't just another card. It's a complete layout engine
+  that can build ANY dashboard design imaginable. With 19+ module types, drag-and-drop
+  layouts, and unlimited nesting, your creativity is the only limit. **⚡ Professional-Grade
+  Engineering** Built with TypeScript from the ground up. Enterprise-ready, battle-tested,
+  and optimized for performance. Smart caching, responsive design, and seamless Home
+  Assistant integration make Ultra Card reliable for both hobby users and professional
+  installations. **\U0001F6D2 Community-Powered Marketplace** Access hundreds of pre-built
+  card designs through our integrated Preset Marketplace. One-click installation,
+  category filtering, and preview before you install. Share your creations with the
+  community and discover new design ideas daily. **\U0001F50C Ecosystem Unifier (Pro)**
+  Break down the barriers between card ecosystems. Ultra Card Pro lets you embed ANY
+  custom Home Assistant card (Bubble Card, Mushroom Cards, ApexCharts, and hundreds
+  more) directly within Ultra Card's powerful layout system. **☁️ Enterprise-Grade
+  Protection (Pro)** Cloud sync, automatic daily backups with 30-day retention, and
+  smart restore functionality protect your dashboard investment. Never lose hours
+  of design work again. --- ## Features at a Glance ### Build Visually - **\U0001F3A8
+  Drag-and-Drop Builder** - Effortlessly arrange layouts with instant visual feedback
+  - **\U0001F6E0️ Visual Editor** - Configure everything through an intuitive UI,
+  no YAML required - **\U0001F3AF 4-Tab Module Settings** - General, Actions, Logic,
+  and Design for complete control - **\U0001F4F1 Mobile Optimized** - Touch gestures
+  and responsive layouts for all devices ### Endless Possibilities - **\U0001F4E6
+  19+ Module Types** - Content display, interactive controls, layout systems, and
+  Pro animated modules - **\U0001F527 Conditional Logic** - Show/hide elements based
+  on states, time, or Jinja2 templates - **\U0001F517 Template Support** - Full Jinja2
+  template evaluation with CodeMirror editor - **\U0001F50C Card Integration** - Native
+  HA cards (unlimited) + 3rd party cards (5 free, unlimited Pro) - **\U0001F3AD Rich
+  Animation System** - Animated icons, bars, hover effects, and smooth transitions
+  ### Professional Design - **\U0001F308 Complete Design Controls** - Typography,
+  colors, spacing, borders, shadows, and filters - **\U0001F3A8 Gradient Support**
+  - Full gradient modes with multiple style options - **✨ Animation Effects** - Intro/outro
+  animations, hover states, and Pro animated modules - **\U0001F3AC Video Backgrounds
+  (Pro)** - Stunning video backgrounds with glass blur effects - **\U0001F313 Light
+  & Dark Theme Support** - Seamless integration with Home Assistant themes ### Cloud
+  Power (Pro) - **☁️ Cloud Configuration Sync** - Edit anywhere, access everywhere
+  across all devices - **\U0001F4F8 Automatic Daily Backups** - 30-day retention protects
+  your dashboard investment - **\U0001F4BE Manual Snapshots** - Up to 30 named backups
+  for critical configurations - **\U0001F504 Smart Restore** - Intelligent backup
+  matching by name or position - **\U0001F50C Native & 3rd Party Cards** - Native
+  HA cards unlimited for all; unlimited custom cards with Pro ### Community-Driven
+  - **\U0001F6D2 Preset Marketplace** - One-click community presets with instant installation
+  - **\U0001F30E 14 Languages** - Full internationalization support - **\U0001F4AC
+  Active Discord Community** - Help, discussion, and sharing creations - **⭐ Favorites
+  System** - Star and organize your most-used presets --- ## Quick Start ### 1. Install
+  Ultra Card #### HACS (Recommended) [](https://my.home-assistant.io/redirect/hacs_repository/?owner=WJDDesigns&repository=Ultra-Card&category=plugin)
+  **Or manually:** 1. Install HACS if you don't have it already 2. Open HACS in Home
+  Assistant 3. Go to \"Frontend\" 4. Click the menu (three dots) and select \"Custom
+  repositories\" 5. Add `https://github.com/WJDDesigns/Ultra-Card` as a \"Lovelace\"
+  repository 6. Install \"Ultra Card\" 7. Restart Home Assistant #### Manual Installation
+  1. Download `ultra-card.js` from the [latest release](https://github.com"
 ---
 {% raw %}
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)

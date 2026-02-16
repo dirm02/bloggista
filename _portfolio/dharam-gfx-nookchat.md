@@ -2,8 +2,70 @@
 layout: project
 name: Dharam Gfx Nookchat
 slug: dharam-gfx-nookchat
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dharam-gfx-nookchat/client/public/logo-md.png
 repo_url: https://github.com/dharam-gfx/nookchat.git
+indexed_content: "# NookChat ## Overview NookChat is a secure and anonymous chat application
+  enabling one-time, end-to-end encrypted conversations. With a focus on privacy,
+  NookChat requires no login and leaves no traces, offering users a cozy digital nook
+  for private communication. ## ✨ Features - **\U0001F512 End-to-End Encryption**:
+  All messages are encrypted using AES-256 via CryptoJS - **\U0001F464 No Account
+  Required**: Start chatting instantly without registration - **⏳ Ephemeral Conversations**:
+  Messages disappear after the chat session ends - **\U0001F4CE File Sharing**: Securely
+  share images and files with supported formats - **\U0001F60A Emoji Support**: Express
+  yourself with a full emoji picker and skin tone selection - **\U0001F313 Dark/Light
+  Mode**: Choose your preferred visual theme with system detection - **\U0001F514
+  Sound Notifications**: Customizable audio alerts with volume control - **\U0001F916
+  AI Reply Suggestions**: Smart response suggestions powered by Gemini AI - **\U0001F9F5
+  Reply Threading**: Reply to specific messages in conversations - **⌨️ Real-Time
+  Typing Indicators**: See when others are typing - **\U0001F4F1 Mobile Responsive**:
+  Works seamlessly across all devices with touch support - **\U0001F4CA Usage Analytics**:
+  Integrated Google Analytics (gtag.js) with privacy-focused tracking ## Project Structure
+  The project is organized into two main directories: - **client/**: Next.js frontend
+  application - **server/**: Express.js backend API and Socket.IO server ### Client
+  Structure ``` client/ ├── __mocks__/ # Jest mocks for file and style imports ├──
+  __tests__/ # Test files organized by component/hook/util ├── pages/ # API routes
+  including AI endpoints │ └── api/ │ └── ai/ # AI API endpoints for suggestions and
+  rewrites ├── public/ # Static assets including logos and sound files │ └── sounds/
+  # Audio files for notifications ├── src/ │ ├── app/ # Next.js App Router structure
+  │ │ └── chat/ # Chat room routes with dynamic [chatCode] │ ├── components/ # React
+  components organized by feature │ │ ├── appSettings/ # Application settings UI components
+  │ │ ├── chat/ # Chat interface components │ │ ├── footer/ # Footer components │
+  │ └── ui/ # Reusable UI components │ ├── contexts/ # React context providers │ ├──
+  features/ # Redux slices for state management │ ├── hooks/ # Custom React hooks
+  │ ├── services/ # API service layers │ ├── store/ # Redux store configuration │
+  ├── styles/ # Global styles and animations │ ├── types/ # TypeScript type definitions
+  │ └── utils/ # Utility functions ``` ### Server Structure ``` server/ ├── middleware/
+  # Express middleware including rate limiting ├── routes/ # API route definitions
+  ``` ## Prerequisites - Node.js (v18 or higher) - npm or yarn - Git ## Installation
+  ### Step 1: Clone the Repository ```bash git clone https://github.com/dharam-gfx/nookchat.git
+  cd nookchat ``` ### Step 2: Install Server Dependencies ```bash cd server npm install
+  ``` ### Step 3: Install Client Dependencies ```bash cd ../client npm install ```
+  ## Configuration ### Server Configuration 1. Create `.env` file in the server directory
+  with: ``` # Server Environment Variables SERVER_URL=http://localhost:5000 # Local
+  development URL # SERVER_URL=https://your-production-url.com # Uncomment for production
+  ``` ### Client Configuration The client is pre-configured to connect to the local
+  server during development and a production server in production mode. Create a `.env.local`
+  file in the client directory with the following variables: ``` # Server URL - the
+  base URL of your backend server NEXT_PUBLIC_SERVER_URL=your_server_url # API URL
+  - optional external API URL if different from SERVER_URL NEXT_PUBLIC_API_URL=your_api_url
+  # Encryption key for chat messages (32 bytes = 256 bits) NEXT_PUBLIC_ENCRYPTION_KEY=your_encryption_key
+  # Google Gemini API key for AI features GEMINI_API_KEY=your_gemini_api_key ``` For
+  development, you can use `http://localhost:5000` as the `NEXT_PUBLIC_SERVER_URL`.
+  ## Running the Application ### Development Mode 1. Start the server: ```bash cd
+  server npm run dev ``` 2. In a new terminal, start the client: ```bash cd client
+  npm run dev ``` 3. Open your browser and navigate to `http://localhost:3000` ###
+  Production Mode 1. Build the client: ```bash cd client npm run build ``` 2. Start
+  the client: ```bash npm start ``` 3. Start the server: ```bash cd ../server npm
+  start ``` ## Analytics Integration NookChat includes Google Analytics integration
+  using Google Tag Manager (gtag.js) to collect anonymous usage statistics while respecting
+  user privacy. Key features of the analytics implementation: - **Minimal Data Collection**:
+  Only collects anonymous usage patterns - **Privacy-First**: No personal data or
+  chat content is tracked - **Performance Optimized**: Scripts load only after the
+  interface is interactive - **GDPR Compliant**: Respects user privacy regulations
+  - **User-Centric Metrics**: Focuses on user experience metrics like session duration
+  and feature usage ## Deployment The application can be deployed to various platforms:
+  ### Client Deployment The Next.js client can "
 ---
 {% raw %}
 # NookChat

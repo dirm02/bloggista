@@ -2,8 +2,61 @@
 layout: project
 name: Carterperez Dev Cybersecurity Projects
 slug: CarterPerez-dev-Cybersecurity-Projects
+category: Uncategorized
 image: https://img.shields.io/badge/⏱️_4--5h-blue
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "Cybersecurity Projects \U0001F409 60 Cybersecurity Projects, Certification
+  Roadmaps & Resources View Complete Projects: Currently building: AI Threat Detection
+  --- ## Quick Navigation ### [Projects](#projects) 60 hands-on cybersecurity projects
+  with full source code, from beginner to advanced level. ### [Certification Roadmaps](./ROADMAPS/README.md)
+  10 structured career paths with certification guides for SOC Analyst, Pentester,
+  Security Engineer, and more. ### [Learning Resources](./RESOURCES/README.md) Tools,
+  courses, certifications, communities, and frameworks for cybersecurity professionals.
+  --- # Projects ## Beginner Projects | Project | Info | What You'll Learn | |---------|------|-------------------|
+  | **[Simple Port Scanner](./PROJECTS/beginner/simple-port-scanner)** Async TCP port
+  scanner in C++ | | TCP socket programming • Async I/O patterns • Service detection
+  [Source Code](./PROJECTS/beginner/simple-port-scanner) \\| [Docs](./PROJECTS/beginner/simple-port-scanner/learn)
+  | | **[Keylogger](./PROJECTS/beginner/keylogger)** Capture keyboard events with
+  timestamps | | Event handling • File I/O • Ethical considerations [Source Code](./PROJECTS/beginner/keylogger)
+  \\| [Docs](./PROJECTS/beginner/keylogger/learn) | | **[Caesar Cipher](./PROJECTS/beginner/caesar-cipher)**
+  CLI encryption/decryption tool | | Classical cryptography • Brute force attacks
+  • CLI design [Source Code](./PROJECTS/beginner/caesar-cipher) \\| [Docs](./PROJECTS/beginner/caesar-cipher/learn)
+  | | **[DNS Lookup CLI Tool](./PROJECTS/beginner/dns-lookup)** Query DNS records
+  with WHOIS | | DNS protocols • WHOIS queries • Reverse DNS lookup [Source Code](./PROJECTS/beginner/dns-lookup)
+  \\| [Docs](./PROJECTS/beginner/dns-lookup/learn) | | **[Simple Vulnerability Scanner](./PROJECTS/beginner/simple-vulnerability-scanner)**
+  Check software against CVE databases | | CVE databases • Dependency scanning • Vulnerability
+  assessment [Source Code](./PROJECTS/beginner/simple-vulnerability-scanner) \\| [Docs](./PROJECTS/beginner/simple-vulnerability-scanner/learn)
+  | | **[Metadata Scrubber Tool](./PROJECTS/beginner/metadata-scrubber-tool)** Remove
+  EXIF and privacy metadata | | EXIF data • Privacy protection • Batch processing
+  [Source Code](./PROJECTS/beginner/metadata-scrubber-tool) \\| [Docs](./PROJECTS/beginner/metadata-scrubber-tool/learn)
+  | | **[Network Traffic Analyzer](./PROJECTS/beginner/network-traffic-analyzer)**
+  Capture and analyze packets | | Packet capture • Protocol analysis • Traffic visualization
+  [Source Code](./PROJECTS/beginner/network-traffic-analyzer) \\| [Docs](./PROJECTS/beginner/network-traffic-analyzer/learn)
+  | | **[Hash Cracker](./SYNOPSES/beginner/Hash.Cracker.md)** Dictionary and brute-force
+  cracking | | Hash algorithms • Dictionary attacks • Password security [Learn More](./SYNOPSES/beginner/Hash.Cracker.md)
+  | | **[Steganography Tool](./SYNOPSES/beginner/Steganography.Tool.md)** Hide messages
+  in images | | LSB steganography • Image manipulation • Data hiding [Learn More](./SYNOPSES/beginner/Steganography.Tool.md)
+  | | **[MAC Address Spoofer](./SYNOPSES/beginner/MAC.Address.Spoofer.md)** Change
+  network interface MAC | | Network interfaces • MAC addresses • Vendor lookup [Learn
+  More](./SYNOPSES/beginner/MAC.Address.Spoofer.md) | | **[File Integrity Monitor](./SYNOPSES/beginner/File.Integrity.Monitor.md)**
+  Monitor directories with checksums | | Cryptographic hashing • File monitoring •
+  Alert systems [Learn More](./SYNOPSES/beginner/File.Integrity.Monitor.md) | | **[Security
+  News Scraper](./SYNOPSES/beginner/Security.News.Scraper.md)** Aggregate cybersecurity
+  news | | Web scraping • CVE parsing • Database storage [Learn More](./SYNOPSES/beginner/Security.News.Scraper.md)
+  | | **[Phishing URL Detector](./SYNOPSES/beginner/Phishing.URL.Detector.md)** Analyze
+  URLs for phishing | | URL analysis • Typosquatting detection • Safe browsing APIs
+  [Learn More](./SYNOPSES/beginner/Phishing.URL.Detector.md) | | **[SSH Brute Force
+  Detector](./SYNOPSES/beginner/SSH.Brute.Force.Detector.md)** Monitor and block SSH
+  attacks | | Log parsing • Attack detection • Firewall automation [Learn More](./SYNOPSES/beginner/SSH.Brute.Force.Detector.md)
+  | | **[Simple C2 Beacon](./PROJECTS/beginner/c2-beacon)** Command and Control beacon/server
+  | | C2 architecture • MITRE ATT&CK • WebSocket protocol • XOR encoding [Source Code](./PROJECTS/beginner/c2-beacon)
+  \\| [Docs](./PROJECTS/beginner/c2-beacon/learn) | | **[Base64 Encoder/Decoder](./SYNOPSES/beginner/Base64.Encoder.Decoder.md)**
+  Multi-format encoding tool | | Base64/32 encoding • URL encoding • Auto-detection
+  [Source Code](./PROJECTS/beginner/base64-tool) \\| [Docs](./PROJECTS/beginner/base64-tool/learn)
+  | | **[Firewall Log Parser](./SYNOPSES/beginner/Firewall.Log.Parser.md)** Parse
+  and visualize logs | | Log parsing • Pattern recognition • Data visualization [Learn
+  More](./SYNOPSES/beginner/Firewall.Log.Parser.md) | | **[ARP Spoofing Detector](./SYNOPSES/beginner/ARP.Spoofing.Detector.md)**
+  Detect ARP attacks | | ARP protocol "
 ---
 {% raw %}
 <div align="center">

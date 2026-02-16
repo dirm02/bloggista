@@ -2,8 +2,63 @@
 layout: project
 name: Pi Hole Pi Hole
 slug: pi-hole-pi-hole
+category: Uncategorized
 image: https://raw.githubusercontent.com/pi-hole/graphics/refs/heads/master/Vortex/vortex_with_text.svg
 repo_url: https://github.com/pi-hole/pi-hole
+indexed_content: '# Network-wide ad blocking via your own Linux hardware The Pi-hole®
+  is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects your
+  devices from unwanted content without installing any client-side software. - **Easy-to-install**:
+  our dialogs walk you through the simple installation process in less than ten minutes
+  - **Resolute**: content is blocked in _non-browser locations_, such as ad-laden
+  mobile apps and smart TVs - **Responsive**: seamlessly speeds up the feel of everyday
+  browsing by caching DNS queries - **Lightweight**: runs smoothly with [minimal hardware
+  and software requirements](https://docs.pi-hole.net/main/prerequisites/) - **Robust**:
+  a command-line interface that is quality assured for interoperability - **Insightful**:
+  a beautiful responsive Web Interface dashboard to view and control your Pi-hole
+  - **Versatile**: can optionally function as a [DHCP server](https://discourse.pi-hole.net/t/how-do-i-use-pi-holes-built-in-dhcp-server-and-why-would-i-want-to/3026),
+  ensuring _all_ your devices are protected automatically - **Scalable**: [capable
+  of handling hundreds of millions of queries](https://pi-hole.net/2017/05/24/how-much-traffic-can-pi-hole-handle/)
+  when installed on server-grade hardware - **Modern**: blocks ads over both IPv4
+  and IPv6 - **Free**: open source software that helps ensure _you_ are the sole person
+  in control of your privacy ----- ## One-Step Automated Install Those who want to
+  get started quickly and conveniently may install Pi-hole using the following command:
+  ```bash curl -sSL https://install.pi-hole.net | bash ``` ## Alternative Install
+  Methods Piping to `bash` is [controversial](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash),
+  as it prevents you from [reading code that is about to run](https://github.com/pi-hole/pi-hole/blob/master/automated%20install/basic-install.sh)
+  on your system. Therefore, we provide these alternative installation methods which
+  allow code review before installation: ### Method 1: Clone our repository and run
+  ```bash git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole cd "Pi-hole/automated
+  install/" sudo bash basic-install.sh ``` ### Method 2: Manually download the installer
+  and run ```bash wget -O basic-install.sh https://install.pi-hole.net sudo bash basic-install.sh
+  ``` ### Method 3: Using Docker to deploy Pi-hole Please refer to the [Pi-hole docker
+  repo](https://github.com/pi-hole/docker-pi-hole) to use the Official Docker Images.
+  ## [Post-install: Make your network take advantage of Pi-hole](https://docs.pi-hole.net/main/post-install/)
+  Once the installer has been run, you will need to [configure your router to have
+  **DHCP clients use Pi-hole as their DNS server**](https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245).
+  This router configuration will ensure that all devices connecting to your network
+  will have content blocked without any further intervention. If your router does
+  not support setting the DNS server, you can [use Pi-hole''s built-in DHCP server](https://discourse.pi-hole.net/t/how-do-i-use-pi-holes-built-in-dhcp-server-and-why-would-i-want-to/3026);
+  be sure to disable DHCP on your router first (if it has that feature available).
+  As a last resort, you can manually set each device to use Pi-hole as their DNS server.
+  ----- ## Pi-hole is free but powered by your support There are many reoccurring
+  costs involved with maintaining free, open-source, and privacy-respecting software;
+  expenses which [our volunteer developers](https://github.com/orgs/pi-hole/people)
+  pitch in to cover out-of-pocket. This is just one example of how strongly we feel
+  about our software and the importance of keeping it maintained. Make no mistake:
+  **your support is absolutely vital to help keep us innovating!** ### [Donations](https://pi-hole.net/donate)
+  Donating using our Sponsor Button is **extremely helpful** in offsetting a portion
+  of our monthly expenses: ### Alternative support If you''d rather not donate (_which
+  is okay!_), there are other ways you can help support us: - [GitHub Sponsors](https://github.com/sponsors/pi-hole/)
+  - [Patreon](https://patreon.com/pihole) - [Hetzner Cloud](https://hetzner.cloud/?ref=7aceisRX3AzA)
+  _affiliate link_ - [Digital Ocean](https://www.digitalocean.com/?refcode=344d234950e1)
+  _affiliate link_ - [Stickermule](https://www.stickermule.com/unlock?ref_id=9127301701&utm_medium=link&utm_source=invite)
+  _earn a $10 credit after your first purchase_ - [Amazon US](https://www.amazon.com/exec/obidos/redirect-home/pihole09-20)
+  _affiliate link_ - Spreading the word about our software and how you have benefited
+  from it ### Contributing via GitHub We welcome _everyone_ to contribute to issue
+  reports, suggest new features, and create pull requests. If you have something to
+  add - anything from a typo through to a whole new feature, we''re happy to check
+  it out! Just make sure to fill out our template when submitting your request; the
+  questions it asks wil'
 ---
 {% raw %}
 <!-- markdownlint-configure-file { "MD004": { "style": "consistent" } } -->

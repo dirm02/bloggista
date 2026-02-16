@@ -2,8 +2,47 @@
 layout: project
 name: Iperov Deepfacelive
 slug: iperov-DeepFaceLive
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/iperov-DeepFaceLive/doc/deepfacelive_intro.png
 repo_url: https://github.com/iperov/DeepFaceLab
+indexed_content: '## Face Swap (DFM) You can swap your face from a webcam or the face
+  in the video using trained face models. Here is a list of available ready-to-use
+  public face models. These persons do not exists. Similarities with real people are
+  accidental. Except Keanu Reeves. He exists, and he''s breathtaking! Keanu Reeves
+  examples Irina Arty examples Millie Park examples Rob Doe examples Jesse Stat examples
+  Bryan Greynolds examples Mr. Bean examples Ewon Spice examples Natasha Former examples
+  Emily Winston examples Ava de Addario examples Dilraba Dilmurat examples Matilda
+  Bobbie examples Yohanna Coralson examples Amber Song examples Kim Jarrey examples
+  David Kovalniy examples Jackie Chan examples Nicola Badge examples Joker examples
+  Dean Wiesel examples Silwan Stillwone examples Tim Chrys examples Zahar Lupin examples
+  Tim Norland examples Natalie Fatman examples Liu Lice examples Albica Johns examples
+  Meggie Merkel examples Tina Shift examples If you want a higher quality or better
+  face match, you can train your own face model using DeepFaceLab Here is an example
+  of Arnold Schwarzneggar trained on a particular face and used in a video call. Read
+  the FAQ for more information. ## Face Swap (Insight) You can swap your face from
+  a webcam or the face in the video using your own single photo. ## Face Animator
+  There is also a Face Animator module in DeepFaceLive app. You can control a static
+  face picture using video or your own face from the camera. The quality is not the
+  best, and requires fine face matching and tuning parameters for every face pair,
+  but enough for funny videos and memes or real-time streaming at 25 fps using 35
+  TFLOPS GPU. [](https://www.youtube.com/watch?v=Ng1C78Ceyxg) Here is a [mini video](doc/FaceAnimator_tutor.webm?raw=true)
+  showing the process of setting up the Face Animator for Obama controlling Kim Chen''s
+  face. ## System requirements any DirectX12 compatible graphics card (Recommended
+  RTX 2070+ / Radeon RX 5700 XT+ ) Modern CPU with AVX instructions 4GB RAM, 32GB+
+  paging file Windows 10 ## Documentation Windows Main setup - additional setup for
+  streaming - additional setup for video calls Using Android phone camera Linux Build
+  info Frequently asked questions for User for Developer ## Releases Windows 10 x64
+  (yandex.ru) Windows 10 x64 (mega.nz) Contains stand-alone zero-dependency all-in-one
+  ready-to-use portable self-extracting folder! You don''t need to install anything
+  other than video drivers. DirectX12 build : NVIDIA, AMD, Intel videocards. NVIDIA
+  build : NVIDIA cards only, GT730 and higher. Works faster than DX12. FaceMerger
+  can work also on AMD/Intel. ## Communication groups Discord Official discord channel.
+  English / Russian. QQ群124500433 中文交流QQ群，商务合作找群主 ## How can I help the project? Train
+  your own face model by following the recommendations in the FAQ section and share
+  it on Discord. If the model fits the quality, it will be added to the public library.
+  Register github account and push "Star" button. Donate via Paypal --> Donate via
+  Yoomoney bitcoin:bc1qewl062v70rszulml3f0mjdjrys8uxdydw3v6rq presents Windows (magnet
+  link) Latest release. Use torrent client to download. -->'
 ---
 {% raw %}
 <table align="center" border="0">

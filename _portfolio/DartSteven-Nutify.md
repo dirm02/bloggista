@@ -2,8 +2,70 @@
 layout: project
 name: Dartsteven Nutify
 slug: DartSteven-Nutify
+category: Uncategorized
 image: https://starchart.cc/DartSteven/Nutify.svg?variant=adaptive
 repo_url: https://github.com/DartSteven/Nutify
+indexed_content: "Join our Discord channel for any issues, questions, information,
+  or testing! If you like Nutify, please give it a ⭐️ on GitHub to help the project
+  grow! # Nutify - UPS Monitoring System Nutify is a comprehensive monitoring system
+  designed to track the health and performance of your Uninterruptible Power Supply
+  (UPS) devices. It provides real-time insights into critical UPS metrics, allowing
+  you to ensure the continuous operation and protection of your valuable equipment.
+  Nutify collects data, generates detailed reports, and visualizes key parameters
+  through interactive charts, all accessible via a user-friendly web interface. >
+  **\U0001F195 LATEST DOCKER IMAGES** > Use these tags to always get the latest version:
+  > • AMD64/x86_64: `dartsteven/nutify:amd64-latest` > • ARM64/aarch64: `dartsteven/nutify:arm64-latest`
+  > **\U0001F4CA Is Nutify working with your UPS?** > Please share your experience
+  in the [Discussions](https://github.com/DartSteven/Nutify/discussions) section under
+  \"Nutify UPS Compatibility List\". Your feedback helps the community! ## Latest
+  Version **Current Version**: 0.1.7 (07/07/2025) For a detailed list of changes and
+  improvements, please see the [changelog.txt](changelog.txt) file. ⚠️ **IMPORTANT:
+  Latest Updates in v0.1.7** ⚠️ Version 0.1.7 introduces significant improvements
+  including: - **User Authentication System:** Multi-user login with configurable
+  permissions for individual pages and options - **Enhanced Security:** Comprehensive
+  permission system for all configuration areas - **Improved Setup Wizard:** Fixed
+  UI issues and enhanced user experience - **System Stability:** Upgraded to NUT 2.8.3
+  and improved core architecture - **Better Reporting:** Fixed time/battery reports
+  with enhanced pandas integration \U0001F449 **For detailed information on new features
+  and migration, please see the [Nutify Wiki](https://github.com/DartSteven/Nutify/wiki).**
+  ## Key Features * **Real-time UPS Monitoring:** Continuously collects and displays
+  data from your UPS devices * **User Authentication System:** Multi-user login with
+  granular permission control for individual pages and configuration areas * **Detailed
+  Reports:** Generates comprehensive reports on UPS performance with enhanced pandas
+  integration * **Interactive Charts:** Visualizes UPS data using interactive charts
+  * **Setup Wizard:** Enhanced configuration wizard with improved UI and navigation
+  * **Customizable Dashboards:** Provides a web-based dashboard to view real-time
+  data * **Data Persistence:** Stores historical UPS data in a SQLite database with
+  improved schema * **Dockerized Deployment:** Easily deployable using Docker and
+  Docker Compose * **Flexible Deployment Modes:** Run as a complete NUT server or
+  as a lightweight client connecting to a remote NUT server * **Robust Mode Detection:**
+  Multi-layered CLIENT/SERVER mode detection with automatic fallback mechanisms *
+  **Enhanced Notification System:** Database-driven notifications with multiple channels
+  (Email, Ntfy, Webhooks) * **Discord Integration:** Send notifications directly to
+  Discord channels * **System Monitoring:** Real-time RAM and CPU usage widgets in
+  the dashboard header * **Multi-account Email Support:** Configure multiple email
+  accounts for notifications with simplified provider setup * **Energy Monitoring:**
+  Detailed analysis of energy consumption * **Battery Management:** Monitoring of
+  battery status and performance * **Event Management:** Logging and notification
+  of UPS events * **UPS Commands:** Interface to send commands to the UPS with permission
+  control * **Dark/Light Theme:** Customizable interface with both dark and light
+  themes * **Automated Reports:** Scheduled reports with detailed UPS status and improved
+  accuracy * **Push Notifications:** Integration with Ntfy for instant mobile alerts
+  * **Webhook Integration:** Flexible HTTP callbacks for third-party system integration
+  * **Advanced Configuration:** Fine-grained control over NUT settings and polling
+  with user-based access ## Authentication Controls (Optional) Nutify supports an
+  environment variable to disable login entirely: * `DISABLE_AUTH=true` to disable
+  the login system (no login prompt, permissions bypassed). * `SKIP_PERMCHECK=true`
+  to skip USB permission changes (useful for rootless containers). You can reset the
+  primary admin password via the CLI (recommended if you lose access): ```bash python
+  -m core.auth.reset_admin_password --username admin ``` Omit `--username` to target
+  the primary admin (ID 1) automatically, and omit `--password` to be prompted securely
+  in the terminal. * **Connection Recovery:** Automatic reconnection and recovery
+  from UPS communication failures * **Optimized Event Handling:** Native Python integration
+  with upsmon.conf for improved stability and responsiveness * **WebSocket-based Real-time
+  Data:** Efficient caching system significantly reducing CPU and RAM usage * **Modular
+  Architecture:** Extensible design with clean separation of concerns * **Professional
+  Branding:** Official logo and favicon for con"
 ---
 {% raw %}
 <p align="right">

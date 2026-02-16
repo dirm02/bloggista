@@ -2,8 +2,67 @@
 layout: project
 name: Bolna Ai Bolna
 slug: bolna-ai-bolna
+category: Uncategorized
 image: https://img.shields.io/static/v1?label=Chat%20on&message=Discord&color=blue&logo=Discord&style=flat-square
 repo_url: https://github.com/bolna-ai/bolna
+indexed_content: 'End-to-end open-source voice agents platform : Quickly build voice
+  firsts conversational assistants through a json. Discord | Hosted Docs | Website
+  > [!NOTE] > We are actively looking for maintainers. ## Introduction **[Bolna](https://bolna.ai)**
+  is the end-to-end open source production ready framework for quickly building LLM
+  based voice driven conversational applications. ## Demo https://github.com/bolna-ai/bolna/assets/1313096/2237f64f-1c5b-4723-b7e7-d11466e9b226
+  ## What is this repository? This repository contains the entire orchestration platform
+  to build voice AI applications. It technically orchestrates voice conversations
+  using combination of different ASR+LLM+TTS providers and models over websockets.
+  ## Components Bolna helps you create AI Voice Agents which can be instructed to
+  do tasks beginning with: 1. Orchestration platform (this open source repository)
+  2. Hosted APIs (https://docs.bolna.ai/api-reference/introduction) built on top of
+  this orchestration platform [currently closed source] 3. No-code UI playground at
+  https://platform.bolna.ai/ using the hosted APIs + tailwind CSS [currently closed
+  source] ## Development philosophy 1. Any integration, enhancement or feature initially
+  lands on this open source package since it forms the backbone of our Hosted APIs
+  and dashboard 2. Post that we expose APIs or make changes to existing APIs as required
+  for the same 3. Thirdly, we push it to the UI dashboard ```mermaid graph LR; A[Bolna
+  open source] -->B[Hosted APIs]; B[Hosted APIs] --> C[Hosted Playground] ``` ## Supported
+  providers and models 1. Initiating a phone call using telephony providers like `Twilio`,
+  `Plivo`, `Exotel` (coming soon), `Vonage` (coming soon) etc. 2. Transcribing the
+  conversations using `Deepgram`, `Azure` etc. 3. Using LLMs like `OpenAI`, `DeepSeek`,
+  `Llama`, `Cohere`, `Mistral`, etc to handle conversations 4. Synthesizing LLM responses
+  back to telephony using `AWS Polly`, `ElevenLabs`, `Deepgram`, `OpenAI`, `Azure`,
+  `Cartesia`, `Smallest` etc. Refer to the [docs](https://docs.bolna.ai/providers)
+  for a deepdive into all supported providers. ## Local example setup [will be moved
+  to a different repository] A basic local setup includes usage of [Twilio](local_setup/telephony_server/twilio_api_server.py)
+  or [Plivo](local_setup/telephony_server/plivo_api_server.py) for telephony. We have
+  dockerized the setup in `local_setup/`. One will need to populate an environment
+  `.env` file from `.env.sample`. The setup consists of four containers: 1. Telephony
+  web server: * Choosing Twilio: for initiating the calls one will need to set up
+  a [Twilio account](https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account)
+  * Choosing Plivo: for initiating the calls one will need to set up a [Plivo account](https://www.plivo.com/)
+  2. Bolna server: for creating and handling agents 3. `ngrok`: for tunneling. One
+  will need to add the `authtoken` to `ngrok-config.yml` 4. `redis`: for persisting
+  agents & prompt data ### Quick Start The easiest way to get started is to use the
+  provided script: ```bash cd local_setup chmod +x start.sh ./start.sh ``` This script
+  will check for Docker dependencies, build all services with BuildKit enabled, and
+  start them in detached mode. ### Manual Setup Alternatively, you can manually build
+  and run the services: 1. Make sure you have Docker with Docker Compose V2 installed
+  2. Enable BuildKit for faster builds: ```bash export DOCKER_BUILDKIT=1 export COMPOSE_DOCKER_CLI_BUILD=1
+  ``` 3. Build the images: ```bash docker compose build ``` 4. Run the services: ```bash
+  docker compose up -d ``` To run specific services only: ```bash docker compose up
+  -d bolna-app twilio-app # or docker compose up -d bolna-app plivo-app ``` Once the
+  docker containers are up, you can now start to create your agents and instruct them
+  to initiate calls. ## Example agents to create, use and start making calls You may
+  try out different agents from [example.bolna.dev](https://examples.bolna.dev). ##
+  Programmatic usage (minimal example) You can also build and run an agent directly
+  in Python without the local telephony setup. Example script: `examples/simple_assistant.py`
+  ```python import asyncio from bolna.assistant import Assistant from bolna.models
+  import ( Transcriber, Synthesizer, ElevenLabsConfig, LlmAgent, SimpleLlmAgent, )
+  async def main(): assistant = Assistant(name="demo_agent") # Configure audio input
+  (ASR) transcriber = Transcriber(provider="deepgram", model="nova-2", stream=True,
+  language="en") # Configure LLM llm_agent = LlmAgent( agent_type="simple_llm_agent",
+  agent_flow_type="streaming", llm_config=SimpleLlmAgent( provider="openai", model="gpt-4o-mini",
+  temperature=0.3, ), ) # Configure audio output (TTS) synthesizer = Synthesizer(
+  provider="elevenlabs", provider_config=ElevenLabsConfig( voice="George", voice_id="JBFqnCBsd6RMkjVDRZzb",
+  model="eleven_turbo_v2_5" ), stream=True, audio_format="wav", ) # Build a single
+  coherent pipeline: transcriber -> llm -> synthesizer assist'
 ---
 {% raw %}
 <h1 align="center">

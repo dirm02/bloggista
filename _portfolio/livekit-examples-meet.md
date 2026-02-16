@@ -2,8 +2,22 @@
 layout: project
 name: Livekit Examples Meet
 slug: livekit-examples-meet
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/livekit-examples-meet/.github/assets/livekit-meet.jpg
 repo_url: https://github.com/livekit/components-js
+indexed_content: "# LiveKit Meet Try the demo • LiveKit Components • LiveKit Docs
+  • LiveKit Cloud • Blog LiveKit Meet is an open source video conferencing app built
+  on [LiveKit Components](https://github.com/livekit/components-js), [LiveKit Cloud](https://cloud.livekit.io/),
+  and Next.js. It's been completely redesigned from the ground up using our new components
+  library. ## Tech Stack - This is a [Next.js](https://nextjs.org/) project bootstrapped
+  with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+  - App is built with [@livekit/components-react](https://github.com/livekit/components-js/)
+  library. ## Demo Give it a try at https://meet.livekit.io. ## Dev Setup Steps to
+  get a local dev setup up and running: 1. Run `pnpm install` to install all dependencies.
+  2. Copy `.env.example` in the project root and rename it to `.env.local`. 3. Update
+  the missing environment variables in the newly created `.env.local` file. 4. Run
+  `pnpm dev` to start the development server and visit [http://localhost:3000](http://localhost:3000)
+  to see the result. 5. Start development \U0001F389"
 ---
 {% raw %}
 <a href="https://livekit.io/">

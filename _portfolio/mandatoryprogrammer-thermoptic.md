@@ -2,8 +2,67 @@
 layout: project
 name: Mandatoryprogrammer Thermoptic
 slug: mandatoryprogrammer-thermoptic
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/mandatoryprogrammer-thermoptic/_readme/diagram.png
 repo_url: https://github.com/mandatoryprogrammer/thermoptic
+indexed_content: "# thermoptic > *\"I don't believe it, thermoptic camouflage!\"*
+  ## What is it? This is an HTTP proxy designed to bypass services that use fingerprinting
+  such as [JA4+](https://blog.foxio.io/ja4%2B-network-fingerprinting) to block certain
+  HTTP clients. Using this proxy, you can use your preferred HTTP clients like `curl`
+  and still have [magically](#how-does-that-work-exactly) indistinguishable fingerprints
+  from a real (Chrome/Chromium) web browser. `thermoptic` also comes with some [fun
+  features](#handling-browser-javascript-fingerprinting-with-thermoptic-hooks) to
+  mitigate JavaScript-based fingerprinting. It also makes it easy to do hybrid scraping
+  using both a web browser and low-level HTTP clients together. Even if you’re unfamiliar
+  with JA4+ fingerprinting, if you’ve done any scraping you’ve probably been blocked
+  by it before. Popular services such as Cloudflare use such techniques (and other
+  tricks) to detect use of \"non-human\" HTTP clients to block requests. These services
+  can also use this fingerprinting to detect if you start a session with a real browser
+  and then switch to a low-level client like `curl` later. `thermoptic` solves all
+  of these problems by presenting a unified \"real\" browser fingerprint for all scraping
+  requests. ## Example Here's an example JA4H (HTTP) fingerprint of `curl` without
+  the proxy: ``` $ curl https://ja4db.com/id/ja4h/ ge11nn090000_b6a016211e8a_000000000000_e3b0c44298fc
+  ``` This is quite different from the fingerprint that Chrome produces when you visit
+  the URL directly: ``` ge11cn19enus_f2808f0d04cf_9a10d4221160_7068f58def6e ``` However,
+  when we use the proxy to make the request, our JA4H fingerprint is magically identical:
+  ``` $ curl --proxy http://thermoptic:1234 https://ja4db.com/id/ja4h/ ge11cn19enus_f2808f0d04cf_9a10d4221160_7068f58def6e
+  ``` (The same goes for our JA4 TLS fingerprint as well, etc). ## Setup To start
+  a `thermoptic` proxy which cloaks your traffic through a containerized Chrome instance
+  on Ubuntu 22.04: ``` docker compose up --build ``` That's all, now you can proxy
+  traffic through it: ``` curl --proxy http://127.0.0.1:1234 --insecure https://ja4db.com/id/ja4h/
+  ``` Important notes: * By default the proxy runs without authentication. If you
+  plan on exposing the proxy externally please make sure to set authentication with
+  the environment variables `PROXY_USERNAME` and `PROXY_PASSWORD`. * If you don't
+  want to use `---insecure` you need to use the generated CA file located in `./ssl/rootCA.crt`.
+  This is generated the first time you run `thermoptic`. * You can connect `thermoptic`
+  to any Chrome/Chromium instance launched with the `--remote-debugging-port` flag.
+  This is essential as you'll want to set up and proxy through more commonly used
+  environments to keep your fingerprint as low profile as possible (e.g. Chrome on
+  Windows). ## Features - \U0001F575️ [Browser-parity proxying](#how-does-this-cloaking-work-exactly)
+  that replays requests through a real Chrome session to match JA4 fingerprints byte-for-byte.
+  - \U0001F91D Little to no custom code required to integrate your HTTP client (e.g.
+  `curl`, `requests`, etc) with `thermoptic`, just [set the proxy](#setup) and your
+  fingerprints are taken care of. - \U0001FA9D [Hook framework](#handling-browser-javascript-fingerprinting-with-thermoptic-hooks)
+  for before-request/after-request/on-start automation so you can drive the full browser
+  to solve challenges, or capture artifacts. - \U0001F4D8 An example Cloudflare turnstile
+  solving hook can be seen in [`./hooks/onstart.js`](https://github.com/mandatoryprogrammer/thermoptic/blob/main/hooks/onstart.js).
+  - \U0001F5A5️ [Web-browser control UI](#control-the-dockerized-chrome-browser-via-web-ui-xpra)
+  (at `http://127.0.0.1:14111`) to control the Dockerized Chrome browser window. Useful
+  to manually log into sites manually and then seemlessly use the proxy to make requests
+  as your logged-in session (and for debugging). - \U0001F50C Set an upstream HTTP
+  or SOCKS proxy URI via the `UPSTREAM_PROXY` environment variable in `docker-compose.yml`.
+  - \U0001F6E1️ Built-in health checks and restart control loop to detect frozen browsers
+  and recover automatically without operator babysitting. - ⚡ Supports HTTP/1.1 and
+  HTTP/2, allowing traffic to be proxied over either protocol. (_Note that you may
+  talk HTTP/1.1 to the proxy, and the puppeted Chrome may negotiate with the end site
+  over a different protocol._) ## How does this cloaking work exactly? * An HTTP request
+  is made using an HTTP client such as `curl` with `thermoptic` set as a proxy. *
+  `thermoptic` analyzes the request to best determine what type of browser request
+  it's *supposed* to be (e.g. manual URL visit? Form submission? A `fetch()` request?).
+  * `thermoptic` uses the [Chrome Debugging Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/)
+  to puppet the browser and set up a page that mocks the request exactly as it normally
+  would occur in a real web browser. * `thermoptic` triggers the request via the mocked
+  context and captures the HTTP response. * `thermoptic` sends t"
 ---
 {% raw %}
 # thermoptic

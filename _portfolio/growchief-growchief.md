@@ -2,8 +2,47 @@
 layout: project
 name: Growchief Growchief
 slug: growchief-growchief
+category: Platform -eCommerce
 image: https://github.com/user-attachments/assets/492ffc23-98ff-4d1b-a812-34debc0d2161
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Your ultimate social media automation tool (outreach tool) GrowChief
+  : An alternative to: Phantom Buster, Expandi, Zopto, LinkedIn Helper, Meet Alfred,
+  etc. GrowChief is an API based tool to automate your social media accounts such
+  as sending connection requests and follow-up messages. Perfect for n8n / Make /
+  Zapier users Explore the docs » N8N node · Register · Join Our Discord (devs only)
+  ## ✨ Features | | | | -------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------
+  | | | | --- ## Introduction Growchief is an open-source social media automation
+  tool (aka social scraper). It allows you to create a workflow (step-by-step) for
+  interacting with different accounts on social media, such as sending a connection
+  request, following up with a message, and so on. We do not encourage spam (perfect
+  for API/n8n automations). ## Why is GrowChief so good? * It takes care of concurrency
+  — even if you create 10 workflows with the same account and trigger all of them
+  at the same time, it will make an action every 10 minutes, never having multiple
+  scrapings happening at the same time. * Enrichment waterful — when you don''t provide
+  the account URL but other parameters like email, we use multiple provider to figure
+  out the profile URL. * It takes care of your working hours — you can use the API
+  to keep adding leads to your workflows, but they will only be processed during working
+  hours. * Proxies are allowed — you can add your own proxies or create one using
+  proxy providers to keep you safe. * Human-like automation — GrowChief uses natural
+  mouse movements and clicks on different parts of the screen. It never triggers clicks
+  by `"document.querySelector(''x'').click()"`. * It uses [Playwright](https://github.com/microsoft/playwright)
+  together with [Patchright](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright) for
+  maximum stealthiness. * It uses a special technology to authenticate your accounts
+  — you never need to put your username and password directly into the system. * It
+  always runs in headful — our Docker image is already built with `xvfb` for real
+  human automation. ## Things you should know * Social media automation is a common
+  practice in businesses, from small ones to enterprises. Yes, even the biggest companies
+  in the world do it. However, it violates the terms of service of the platforms and
+  can result in a ban. Use it at your own risk and connect only with leads you know.
+  * GrowChief Docker can work great without scale, as every time you start automation
+  it opens a Chrome browser (perfect for 1–2 accounts). However, once you scale, you
+  need a smarter system (remote browser) with an option to scale, as Chrome consumes
+  a lot of memory. For that, you can use GrowChief Cloud. ## Tech Stack * PNPM (Monorepo)
+  * React (Vite) * NestJS (Backend, Workers) * Prisma (Default to PostgreSQL) * Temporal
+  (Orchestrator) ## QuickStart / Installation View https://docs.growchief.com ## Sponsorship
+  This can be very valuable for Proxies / Lead enrichment companies, feel free to
+  check our sponsorship page.'
 ---
 {% raw %}
 <p align="center">

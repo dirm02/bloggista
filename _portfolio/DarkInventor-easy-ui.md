@@ -2,8 +2,15 @@
 layout: project
 name: Darkinventor Easy Ui
 slug: DarkInventor-easy-ui
+category: Frontend Framework
 image: https://github.com/DarkInventor/easy-ui/assets/67015517/d6865ba3-d092-4cfb-b859-7ce2a9be2570
 repo_url: https://github.com/DarkInventor/easy-ui
+indexed_content: 'Easy UI High Quality Templates for Web Designers ## Documentation
+  Visit https://www.easyui.pro/templates to view the templates. ## Contributing Visit
+  our [contributing guide](https://github.com/DarkInventor/easy-ui/blob/main/CONTRIBUTING.md)
+  to learn how to contribute. It only takes ~5 minutes to add your own! ## Let''s
+  talk ## Authors ## Deploy [](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDarkInventor%2Feasy-ui)
+  ## Stats ## License Licensed under the [MIT license](https://github.com/DarkInventor/easy-ui/blob/main/LICENSE.md).'
 ---
 {% raw %}
 ![easy-uiiii](https://github.com/DarkInventor/easy-ui/assets/67015517/d6865ba3-d092-4cfb-b859-7ce2a9be2570)

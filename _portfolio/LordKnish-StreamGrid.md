@@ -2,8 +2,67 @@
 layout: project
 name: Lordknish Streamgrid
 slug: LordKnish-StreamGrid
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/LordKnish-StreamGrid/src/renderer/src/assets/StreamGrid.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# StreamGrid Your Streams, Your Layout, Your Way StreamGrid revolutionizes
+  multi-stream viewing by giving you complete freedom over your layout. Want a massive
+  main stream surrounded by smaller feeds? Or five equally-sized streams? Or any other
+  arrangement you can imagine? StreamGrid makes it possible. Built with Electron,
+  React, and TypeScript, it's the perfect solution for watching multiple streams exactly
+  the way you want. **\U0001F4DA Documentation:** [API Reference](docs/API.md) | [Bruno
+  API Collection](bruno/README.md) https://github.com/user-attachments/assets/1e098512-ed39-4094-ab13-84c144e60f7c
+  ## ✨ Features - **Ultimate Layout Flexibility**: - Create ANY layout you can imagine
+  - from 2 streams to 5+ streams - Make streams any size you want - go big with your
+  main stream while keeping others visible - Perfect for scenarios like: * One large
+  main stream surrounded by smaller secondary streams * Equal-sized grid for monitoring
+  multiple sources * Custom arrangements for esports tournaments or multi-angle viewing
+  - **Intuitive Controls**: - Drag & Drop: Instantly reorganize your layout - Resize
+  Handles: Click and drag to adjust stream sizes in real-time - **Stream Management**:
+  - Add new streams with custom names and logos - Remove streams with a single click
+  - Persistent layout saving with aggressive auto-save - Export and Import your stream
+  setups to share with friends - **Grid Management System**: - Save multiple grid
+  configurations - Switch between different saved layouts instantly - Rename and organize
+  your grid presets - Perfect for different viewing scenarios (gaming, monitoring,
+  events) - **Responsive Design**: Automatically adjusts to window size while maintaining
+  video aspect ratios - **Stream Platform Support**: - **Local Files**: Play video
+  files directly from your computer - **YouTube**: Support for standard videos, live
+  streams, and shorts - **Twitch**: Support for channel live streams - **RTSP Streams**
+  (New in v2.0.0): Support for RTSP/RTSPS camera and streaming sources with automatic
+  transcoding - Requires FFmpeg installation - Supports authentication (username/password
+  in URL) - Low-latency HLS transcoding - Multiple concurrent RTSP streams - Automatic
+  retry on connection loss - **HLS Support**: Compatible with HTTP Live Streaming
+  (HLS) video sources - **MPEG-DASH Support**: Compatible with Dynamic Adaptive Streaming
+  over HTTP (DASH) video sources - **Chat Integration**: - YouTube chat for live streams
+  and videos - Twitch chat for live streams - Draggable and resizable chat windows
+  - **Cross-Platform**: Available for Windows, macOS, and Linux - **REST API for Automation**
+  (New in v2.0.0): - Full programmatic control via REST API - Add, update, and remove
+  streams remotely - Manage grid configurations programmatically - API key authentication
+  with rate limiting - [API documentation](docs/API.md) with [Bruno test collection](bruno/README.md)
+  - **M3U Playlist Import** (New in v2.0.0): - Import M3U/M3U8 playlists with one
+  click - Automatic grid arrangement with intelligent layout - **Advanced Sound Management**
+  (New in v2.0.0): - Global mute/unmute all streams - Per-stream audio controls -
+  Auto-start streams muted option - **Auto-Start & Auto-Restart** (New in v2.0.0):
+  - Automatically play all streams on app launch - Automatic retry for failed streams
+  with exponential backoff ## \U0001F680 Getting Started ### Option 1: Download Pre-built
+  Application (Recommended) 1. Visit the [Releases](https://github.com/LordKnish/StreamGrid/releases)
+  section 2. Download the latest version for your platform: - **Windows**: `streamgrid-2.0.0-win-x64.exe`
+  - **macOS (Intel)**: `streamgrid-2.0.0-mac-x64.dmg` - **macOS (Apple Silicon)**:
+  `streamgrid-2.0.0-mac-arm64.dmg` - **Linux**: `streamgrid-2.0.0-linux-x64.AppImage`
+  3. Install and run StreamGrid ### Option 2: Build from Source #### Prerequisites
+  - Node.js 18.x or higher - npm 9.x or higher - **FFmpeg** (required for RTSP streaming
+  support) ##### Installing FFmpeg **Windows:** 1. Download FFmpeg from [ffmpeg.org](https://ffmpeg.org/download.html)
+  2. Extract to `C:\\ffmpeg` 3. Add `C:\\ffmpeg\\bin` to your system PATH 4. Or use
+  Chocolatey: `choco install ffmpeg` **macOS:** ```bash brew install ffmpeg ``` **Linux
+  (Ubuntu/Debian):** ```bash sudo apt update sudo apt install ffmpeg ``` **Linux (Fedora/RHEL):**
+  ```bash sudo yum install ffmpeg ``` #### Steps 1. **Clone the repository** ```bash
+  git clone https://github.com/LordKnish/StreamGrid.git cd StreamGrid ``` 2. **Install
+  dependencies** ```bash npm install ``` 3. **Run in development mode** (for testing/development)
+  ```bash npm run dev ``` 4. **Build the application** (for production) ```bash #
+  Build for your current platform npm run build # Or build for specific platforms:
+  npm run build:win # Windows npm run build:mac # macOS npm run build:linux # Linux
+  ``` 5. **Find your built application** - Windows: `dist/streamgrid-2.0.0-win-x64.exe`
+  - macOS: `dist/streamgrid-2.0.0-mac-*.dmg` - Linux: `dist/streamgrid-2.0.0-linux-x64.AppImag"
 ---
 {% raw %}
 # StreamGrid

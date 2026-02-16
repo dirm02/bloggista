@@ -2,8 +2,62 @@
 layout: project
 name: Ezshine Awesomesites
 slug: ezshine-AwesomeSites
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/English-blue
 repo_url: https://github.com/ezshine/AwesomeSites-Pack04
+indexed_content: "[](./README_cn.md) --- Many amazing websites may disappear from
+  the internet over time. That's why I created this repository to backup these sites
+  for learning front-end technoledges and inspire our creativity. The number of websites
+  collected in this repository will be substantial, and I will continue to add more.
+  Don't forget star this repo and upvote in `ProductHunt`. ## Usage Every collected
+  websites have been tested and fixed, all can be running in localhost. After clone
+  the repository enter the website's folder, simply start a local HTTP server (e.g.
+  `live-server`) to run the website offline. for example ```bash clone git@github.com:ezshine/AwesomeSites-Pack01.git
+  cd ./AwesomeSites-Pack01/game/choochooworld.com/ live-server ``` ## Notice All website
+  files come from the browser's cache without any hacking techniques. Please do not
+  use any content for your commercial projects. All legal responsibilities arising
+  therefrom shall be borne by the user. ## Contact If you have any fascinating websites
+  you want to backup, please let me know and I can crawl them down for you. | Twitter
+  | Youtube | Bilibili | Wechat | | - | - | - | - | | [](https://twitter.com/ezshine)
+  | [](https://www.youtube.com/@awesomesites) | [](https://space.bilibili.com/422646817)
+  | [](https://open.weixin.qq.com/qr/code?username=ezfullstack) | ## Daily Show [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/curious.co)
+  ## Index · [Metaverse](#Metaverse) · [Game](#Game) · [Room](#Room) [· Car](#Car)
+  · [Exhibition](#Exhibition) · [Portfolio](#Portfolio) · [E-Commerce](#E-Commerce)
+  · [Space](#Space) · [Other](#Other) · ### Car ||||| |-|-|-|-| | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/car/www.lamborghini.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/car/toyotagazooracing.com)|
+  [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/car/www.vw.com.mx)|
+  [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/car/exp-gemini.lusion.co)
+  | | [](https://github.com/ezshine/AwesomeSites-Pack05/tree/main/car/www.experience-nouvelletwingo.renault.fr)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/car/mi-su7) | [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/car/www.classics-garage.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/car/labs.otherlife.xyz)
+  ### Exhibition ||||| |-|-|-|-| | [](https://github.com/ezshine/AwesomeSites-iconicmints.wsjbarrons.com)
+  | [](https://github.com/ezshine/AwesomeSites-tjdi-exhibition) | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/exhibition/exp-infinite-passerella.lusion.co)
+  | [](https://github.com/ezshine/AwesomeSites-Pack02/tree/main/car/vrshow-oss.dt-space.cn/showroom)
+  | | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/minisite/af1hotel.koikreative.com/)
+  | [](https://github.com/ezshine/AwesomeSites-Pack05/tree/main/room/www.anumberfromtheghost.com/)
+  ### Portfolio ||||| |-|-|-|-| | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/portfolio/bruno-simon.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/portfolio/david-hckh.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/portfolio/interview.ueno.co)
+  | [](https://github.com/ezshine/AwesomeSites-Pack01/tree/main/portfolio/madbox.io)
+  | | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/quentinhocde.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack03/tree/main/others/akinokogomi.vercel)
+  | [](https://github.com/ezshine/AwesomeSites-Pack03/tree/main/portfolio/wearezizo.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack03/tree/main/portfolio/www.brettwilliams.net)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/hle.io)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/impossible-box.web.app)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/www.luni-app)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/curious.co)
+  | | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/www.artisansdidees.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/logartis.info)
+  | [](https://github.com/ezshine/AwesomeSites-Pack04/tree/main/portfolio/logartis.info)
+  | [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/portfolio/www.sector32.net)
+  [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/portfolio/story.sector32.net)
+  | [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/portfolio/nanoshrineinteractive.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack06/tree/main/portfolio/www.utsubo.com)
+  ### Metaverse ||||| |-|-|-|-| | [](https://github.com/ezshine/AwesomeSites-Pack03/tree/main/metaverse/coastalworld.com)
+  | [](https://github.com/ezshine/AwesomeSites-Pack03/tree/main/metaverse/oppo_innoday2021)
+  | [](https://github.com/ezshine/AwesomeSites-douyin_carnival_2022) | [](https://github.com/ezshine/AwesomeSites-icbc-bj-metaverse)
+  |"
 ---
 {% raw %}
 <div align="center">

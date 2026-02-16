@@ -2,8 +2,42 @@
 layout: project
 name: Fossbilling Fossbilling
 slug: FOSSBilling-FOSSBilling
+category: Very important!!!!
 image: https://github.com/FOSSBilling/FOSSBilling/actions/workflows/ci.yml/badge.svg
 repo_url: https://github.com/FOSSBilling/FOSSBilling
+indexed_content: "[](https://github.com/FOSSBilling/FOSSBilling/actions/workflows/ci.yml)
+  [](https://github.com/FOSSBilling/FOSSBilling/releases/latest) [](https://opensource.org/licenses/Apache-2.0)
+  [](https://www.codefactor.io/repository/github/fossbilling/fossbilling) [](https://opencollective.com/fossbilling)
+  [](https://fossbilling.crowdin.com/FOSSBilling) [](https://fossbilling.org/discord)
+  [](https://stand-with-ukraine.pp.ua) [](CODE_OF_CONDUCT.md) > [!NOTE] > FOSSBilling
+  is under active development and currently considered beta. Expect rough edges and
+  limited support. **FOSSBilling** is a free, open-source billing and client management
+  system. It helps online service businesses automate invoicing, payments, and client
+  communication. While it’s popular with web hosting providers, it also works well
+  for software licensing, digital downloads, and subscription services. ## Features
+  - **Billing & Invoicing**: automated invoices, reminders, and basic reporting. -
+  **Client Management**: a central place for client data and communication. - **Extensibility**:
+  extension-friendly architecture for integrations and custom features. - **Payments**:
+  support for multiple gateways. - **Translations**: community-powered, multi-language
+  interface. - **Responsive UI**: usable on desktop and mobile. - **Security-focused**:
+  built with security best practices in mind. ## Getting Started ### Requirements
+  FOSSBilling runs on standard LAMP/LEMP stacks. For the latest system requirements
+  (PHP version, extensions, database, etc.), see the official [requirements](https://fossbilling.org/docs/getting-started/requirements).
+  ### Installation Follow the step-by-step [Getting Started guide](https://fossbilling.org/docs/getting-started).
+  **Just exploring?** Try the public [demo](https://fossbilling.org/demo). ## Contributing
+  We welcome contributions from the community! We’re actively modernizing the codebase
+  and there’s plenty to do. - Read the [contributor guide](https://github.com/FOSSBilling/FOSSBilling/blob/main/CONTRIBUTING.md).
+  - Pick an item from the [open issues](https://github.com/FOSSBilling/FOSSBilling/issues).
+  - Open a PR when you’re ready. If you prefer to start a conversation first, drop
+  by the [forum](https://forum.fossbilling.org/) or say hello on [Discord](https://fossbilling.org/discord).
+  ## Star History [](https://star-history.com/#FOSSBilling/FOSSBilling&Date) Not a
+  developer? Starring the repository helps others discover the project. ## License
+  FOSSBilling is released under the Apache 2.0 license. See [LICENSE](https://github.com/FOSSBilling/FOSSBilling/blob/main/LICENSE)
+  for details. This project includes third-party work: - Open Source Iconography by
+  [Pictogrammers](https://pictogrammers.com/) under the [Pictogrammers Free License](https://pictogrammers.com/docs/general/license/).
+  ## Links - Website: https://www.fossbilling.org/ - Documentation: https://fossbilling.org/docs
+  - Forum: https://forum.fossbilling.org - Discord: https://fossbilling.org/discord
+  - Twitter/X: https://twitter.com/FOSSBilling"
 ---
 {% raw %}
 <h1 align="center">

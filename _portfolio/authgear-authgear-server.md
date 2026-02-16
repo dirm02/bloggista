@@ -2,8 +2,65 @@
 layout: project
 name: Authgear Authgear Server
 slug: authgear-authgear-server
+category: Very important!!!!
 image: https://img.shields.io/github/check-runs/authgear/authgear-server/main
 repo_url: https://github.com/authgear/authgear-server
+indexed_content: "\U0001F4D8 Docs | ☁️ SaaS Cloud | ✨ Demo | \U0001F4AC Discord [](https://github.com/authgear/authgear-server/actions?query=branch%3Amain)
+  [](https://github.com/authgear/authgear-server/releases) [](https://demo.authgear.com/?utm_source=github&utm_medium=readme&utm_campaign=badge)
+  [](https://discord.gg/Kdn5vcYwAS) # Authgear: Open source alternative to Auth0 /
+  Clerk / Firebase Auth Authgear is an open-source extensible turnkey solution for
+  all of your consumer authentication needs. Authgear gets you started in 5 minutes
+  with developer-friendly SDKs and a comprehensive portal. Available for self-hosting
+  and on [Authgear Cloud](https://www.authgear.com/?utm_source=github&utm_medium=readme&utm_campaign=intro).
+  With a wide range of out-of-the-box features, it's perfect for SaaS product and
+  multi-apps ecosystem, such as: - Passwordless login: Magic-link/OTP with Email,
+  SMS, WhatsApp - Passkeys - Pre-built signup/login page - Pre-built user account
+  settings page - Biometric Login on iOS and Android - 2FA: TOTP (Google Authenticator,
+  Authy), SMS, Email - Integration with analytics, CDP, and drip campaigns - Enterprise
+  Security: Audit logs, Bruteforce Protection, Bot Production, Rate Limits - Modern
+  authentication and authorization protocols and SSO: OIDC/OAuth 2.0/SAML - B2B Enterprise
+  Connections: ADFS, LDAP - and more... **Why developers use Authgear** - **Authgear
+  Portal**: Web-interface for user management and setting up authentication/authorization
+  configurations - **Admin API**: Powerful GraphQL API to manage resources and all
+  things authentication - **End-user Experience**: Beautiful and tailorable out-of-the-box
+  pre-built authentication flows - **Enterprise-grade security**: MFA, SSO, RBAC,
+  and audit logs. Contact us: [](https://www.authgear.com/schedule-demo/?utm_source=github&utm_medium=readme&utm_campaign=contact_us)
+  ## Who is using Authgear We're grateful to the companies listed below for their
+  ongoing support and significant impact on our community. If you want to join the
+  list, email us at hello@authgear.com! ## Features and Components | | | |-|-| | Signup/Login
+  page Beautiful and customizable signup and login page ready to use, support dark/light
+  modes | | | Passwords, OTP, Passkeys, Biometric All modern authentication methods
+  that your users love. Add secure authentication for your users without compromising
+  on user experience | | | Multifactor Auth (MFA) Secure your application with additional
+  authentication factors. TOTP (Google Authenticator, Authy), SMS/ Email OTP, Additional
+  Password \\*Adaptive MFA coming soon | | | User Management Portal perfect for User
+  Support GUI for managing user profile, session revocation, analytics, monitoring,
+  logs, setting up authentication and authorization requirements | | | Account Settings
+  Pre-built account settings component for your user to self-manage profile, verify
+  their e-mail, or change their password, etc. | | | Role-based Access Control Extend
+  access management on your application that Authgear powers using Roles and Groups
+  | | | Social and Enterprise (OAuth) Connection Let your user login with Google,
+  Facebook, Apple, WeChat, Linkedin, ADFS, etc with very simple configs. | | | SAML
+  Enterprise SSO Enable SSO with enterprise softwares using SAML protocol | | | Passkeys
+  Easier and more secure anti-phishing alternative to passwords. Support FIDO2 compliant
+  hardware keys and password managers | | | Webhook and TypeScript Hooks Get notified
+  when important events such as new user signup happen. Customize and extend Authgear's
+  capabilities with custom logic. | | | I18n and Email/SMS templates Localization
+  for different languages and customizable email/SMS templates for authentication
+  flows. | | ### Components The repo `authgear-server` includes the following components
+  of Authgear: - Authgear server (the core service) - Portal (a web-interface for
+  managing configurations in Authgear projects) - AuthUI (a customizable User Interface
+  (UI) for login, user registration, and profile settings pages) - Admin API (provides
+  a GraphQL interface for developers to interact with services and data on Authgear)
+  This repo is the open-source project that powers Authgear's authentication-as-a-service
+  solution. It includes the code for the server, AuthUI, the Portal, and Admin API.
+  You can use it to set up your own self-hosted instance of Authgear service. ###
+  Authgear SDK In addition to Authgear Server, we provide SDKs that developers can
+  use to integrate Authgear into their apps. These SDKs exist as standalone projects
+  under the following repositories: - [JavaScript (Web) - NextJS, Vue, React, Angular](https://github.com/authgear/authgear-sdk-js)
+  - [React Native](https://github.com/authgear/authgear-sdk-js) - [Capacitor](https://github.com/authgear/authgear-sdk-js)
+  - [iOS](https://github.com/authgear/authgear-sdk-ios) - [Android](https://github.com/authgear/authgear-sdk-android)
+  - [Flutter](https://github.com/authgear/authgear-sdk-flutter) - [Xamarin](https://github.com/authgear/authgear-sdk-xama"
 ---
 {% raw %}
 <a href="https://www.authgear.com/?utm_source=github&utm_medium=readme&utm_campaign=logo"><img src="https://raw.githubusercontent.com/authgear/.github/main/profile/authgear-logo-github.svg" width="400" alt="Authgear Logo">

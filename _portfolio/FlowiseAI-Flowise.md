@@ -2,8 +2,65 @@
 layout: project
 name: Flowiseai Flowise
 slug: FlowiseAI-Flowise
+category: Very important!!!!
 image: https://img.shields.io/github/release/FlowiseAI/Flowise
 repo_url: https://github.com/FlowiseAI/Flowise
+indexed_content: "[](https://github.com/FlowiseAI/Flowise/releases) [](https://discord.gg/jbaHfsRVBW)
+  [](https://twitter.com/FlowiseAI) [](https://star-history.com/#FlowiseAI/Flowise)
+  [](https://github.com/FlowiseAI/Flowise/fork) English | [繁體中文](./i18n/README-TW.md)
+  | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)
+  Build AI Agents, Visually ## \U0001F4DA Table of Contents - [⚡ Quick Start](#-quick-start)
+  - [\U0001F433 Docker](#-docker) - [\U0001F468‍\U0001F4BB Developers](#-developers)
+  - [\U0001F331 Env Variables](#-env-variables) - [\U0001F4D6 Documentation](#-documentation)
+  - [\U0001F310 Self Host](#-self-host) - [☁️ Flowise Cloud](#️-flowise-cloud) - [\U0001F64B
+  Support](#-support) - [\U0001F64C Contributing](#-contributing) - [\U0001F4C4 License](#-license)
+  ## ⚡Quick Start Download and Install [NodeJS](https://nodejs.org/en/download) >=
+  18.15.0 1. Install Flowise ```bash npm install -g flowise ``` 2. Start Flowise ```bash
+  npx flowise start ``` 3. Open [http://localhost:3000](http://localhost:3000) ##
+  \U0001F433 Docker ### Docker Compose 1. Clone the Flowise project 2. Go to `docker`
+  folder at the root of the project 3. Copy `.env.example` file, paste it into the
+  same location, and rename to `.env` file 4. `docker compose up -d` 5. Open [http://localhost:3000](http://localhost:3000)
+  6. You can bring the containers down by `docker compose stop` ### Docker Image 1.
+  Build the image locally: ```bash docker build --no-cache -t flowise . ``` 2. Run
+  image: ```bash docker run -d --name flowise -p 3000:3000 flowise ``` 3. Stop image:
+  ```bash docker stop flowise ``` ## \U0001F468‍\U0001F4BB Developers Flowise has
+  3 different modules in a single mono repository. - `server`: Node backend to serve
+  API logics - `ui`: React frontend - `components`: Third-party nodes integrations
+  - `api-documentation`: Auto-generated swagger-ui API docs from express ### Prerequisite
+  - Install [PNPM](https://pnpm.io/installation) ```bash npm i -g pnpm ``` ### Setup
+  1. Clone the repository: ```bash git clone https://github.com/FlowiseAI/Flowise.git
+  ``` 2. Go into repository folder: ```bash cd Flowise ``` 3. Install all dependencies
+  of all modules: ```bash pnpm install ``` 4. Build all the code: ```bash pnpm build
+  ``` Exit code 134 (JavaScript heap out of memory) If you get this error when running
+  the above `build` script, try increasing the Node.js heap size and run the script
+  again: ```bash # macOS / Linux / Git Bash export NODE_OPTIONS=\"--max-old-space-size=4096\"
+  # Windows PowerShell $env:NODE_OPTIONS=\"--max-old-space-size=4096\" # Windows CMD
+  set NODE_OPTIONS=--max-old-space-size=4096 ``` Then run: ```bash pnpm build ```
+  5. Start the app: ```bash pnpm start ``` You can now access the app on [http://localhost:3000](http://localhost:3000)
+  6. For development build: - Create `.env` file and specify the `VITE_PORT` (refer
+  to `.env.example`) in `packages/ui` - Create `.env` file and specify the `PORT`
+  (refer to `.env.example`) in `packages/server` - Run: ```bash pnpm dev ``` Any code
+  changes will reload the app automatically on [http://localhost:8080](http://localhost:8080)
+  ## \U0001F331 Env Variables Flowise supports different environment variables to
+  configure your instance. You can specify the following variables in the `.env` file
+  inside `packages/server` folder. Read [more](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
+  ## \U0001F4D6 Documentation You can view the Flowise Docs [here](https://docs.flowiseai.com/)
+  ## \U0001F310 Self Host Deploy Flowise self-hosted in your existing infrastructure,
+  we support various [deployments](https://docs.flowiseai.com/configuration/deployment)
+  - [AWS](https://docs.flowiseai.com/configuration/deployment/aws) - [Azure](https://docs.flowiseai.com/configuration/deployment/azure)
+  - [Digital Ocean](https://docs.flowiseai.com/configuration/deployment/digital-ocean)
+  - [GCP](https://docs.flowiseai.com/configuration/deployment/gcp) - [Alibaba Cloud](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=Flowise社区版)
+  - Others - [Railway](https://docs.flowiseai.com/configuration/deployment/railway)
+  [](https://railway.app/template/pn4G8S?referralCode=WVNPD9) - [Northflank](https://northflank.com/stacks/deploy-flowiseai)
+  [](https://northflank.com/stacks/deploy-flowiseai) - [Render](https://docs.flowiseai.com/configuration/deployment/render)
+  [](https://docs.flowiseai.com/configuration/deployment/render) - [HuggingFace Spaces](https://docs.flowiseai.com/deployment/hugging-face)
+  - [Elestio](https://elest.io/open-source/flowiseai) [](https://elest.io/open-source/flowiseai)
+  - [Sealos](https://template.sealos.io/deploy?templateName=flowise) [](https://template.sealos.io/deploy?templateName=flowise)
+  - [RepoCloud](https://repocloud.io/details/?app_id=29) [](https://repocloud.io/details/?app_id=29)
+  ## ☁️ Flowise Cloud Get Started with [Flowise Cloud](https://flowiseai.com/). ##
+  \U0001F64B Support Feel free to ask any questions, raise problems, and request new
+  features in [Discussion](https://github.com/FlowiseAI/Flowise/discussions). ## \U0001F64C
+  Contributing Thanks go to these awesome contribu"
 ---
 {% raw %}
 <!-- markdownlint-disable MD030 -->

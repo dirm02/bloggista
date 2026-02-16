@@ -2,8 +2,66 @@
 layout: project
 name: 0xhappyboy Candleview
 slug: 0xhappyboy-candleview
+category: Data science
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xhappyboy-candleview/assets/logo/logo_imgtxt_light_en.png
 repo_url: https://github.com/0xhappyboy/candleview
+indexed_content: "An AI-driven financial time-series data visualization and rendering
+  engine. 简体中文 | English # ⚙️ Install ```bash npm i candleview ``` ```bash yarn add
+  candleview ``` # \U0001F310 Link | Website | Website(CN) | Emulator | Markets |
+  | ---------------------------------------------------- | ----------------------------------------------------
+  | ---------------------------------------------------------------- | -----------------------------------------------------------
+  | | Website | Website(CN) | Emulator | Markets | # \U0001F4DA Directory | **directory**
+  | **describe** | | :------------------- | :-------------------------------------------------------------------------------------------------------------------
+  | | **core** | CandleView Engine Core. | | **ai-proxy-service** | This is the scaffolding
+  project for CandleView AI services, which you can use to develop AI services for
+  CandleView. | | **assets** | Asset Directory. | # Props | Parameter | Type | Default
+  | Description | Required | | ------------------------------------- | --------------------------------------------------------------------------------------------------------
+  | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------
+  | -------- | | `theme` | `'dark' \\| 'light'` | `'dark'` | Theme mode | No | | `i18n`
+  | `'en' \\| 'zh-cn'` | `'zh-cn'` | Language setting | No | | `height` | `number
+  \\| string` | `500` | Chart height (px or percentage) | No | | `width` | `number
+  \\| string` | `'100%'` | Chart width (px or percentage) | No | | `title` | `string`
+  | `''` | Chart title displayed on the chart | Yes | | `toppanel` | `boolean` | `false`
+  | Show top toolbar | No | | `leftpanel` | `boolean` | `false` | Show left drawing
+  tools panel | No | | `markData` | `IStaticMarkData[]` | `[]` | Pre-drawn marks data
+  | No | | `timeframe` | `string` | `'1d'` | Chart timeframe (e.g., '1m', '1h', '1d')
+  | No | | `timezone` | `string` | `'Asia/Shanghai'` | Timezone for data display |
+  No | | `data` | `ICandleViewDataPoint[]` | `[]` | K-line data array | No | | `ai`
+  | `boolean` | `false` | Enable AI function | No | | `aiconfigs` | `AIConfig[]` |
+  `[]` | AI configuration list | No | | `terminal` | `boolean` | `false` | Show terminal
+  panel | No | | `isMobileMode` | `boolean` | `false` | Enable mobile mode | No |
+  | `isOpenViewportSegmentation` | `boolean` | `false` | Enable viewport data segmentation
+  | No | | `isCloseInternalTimeFrameCalculation` | `boolean` | `false` | Disable internal
+  timeframe calculation | No | | `timeframeCallbacks` | `Partial void>>` | `{}` |
+  Callbacks for custom timeframe switching | No | | `mainChartIndicators` | `string[]`
+  | `[]` | Main chart indicator names to initialize (supported: 'ma', 'ema', 'bollinger',
+  'ichimoku', 'donchian', 'envelope', 'vwap', 'heatmap', 'marketprofile') | No | |
+  `subChartIndicators` | `string[]` | `[]` | Sub chart indicator names to initialize
+  (supported: 'rsi', 'macd', 'volume', 'sar', 'kdj', 'atr', 'stochastic', 'cci', 'bbwidth',
+  'adx', 'obv') | No | | `danmakus` | `string[]` | `[]` | Danmaku messages | No |
+  | `handleScreenshotCapture` | `(imageData: { dataUrl: string; blob: Blob; width:
+  number; height: number; timestamp: number }) => void` | `undefined` | Callback for
+  screenshot capture | No | # \U0001F680 Quick Start ```typescript import { CandleView
+  } from \"./CandleView\"; const App = () => { return ( ); }; ``` # Implement custom
+  timeframe logic. ```typescript import { CandleView } from \"./CandleView\"; const
+  App = () => { return ( { // Implement a custom data source switching mechanism for
+  a 1m timeframe. }, \"5m\": () => { // Implement a custom data source switching mechanism
+  for a 5m timeframe. }, \"1D\": () => { // Implement a custom data source switching
+  mechanism for a 1D timeframe. }, \"1H\": () => { // Implement a custom data source
+  switching mechanism for a 1H timeframe. }, \"15m\": () => { // Implement a custom
+  data source switching mechanism for a 15m timeframe. }, \"30m\": () => { // Implement
+  a custom data source switching mechanism for a 30m timeframe. }, \"4H\": () => {
+  // Implement a custom data source switching mechanism for a 4H timeframe. }, }}
+  aiconfigs={[ { proxyUrl: \"http://localhost:3000/api\", brand: \"aliyun\", model:
+  \"qwen-turbo\", }, { proxyUrl: \"http://localhost:3000/api\", brand: \"deepseek\",
+  model: \"deepseek-chat\", }, { proxyUrl: \"http://localhost:3000/api\", brand: \"deepseek\",
+  model: \"deepseek-chat-lite\", }, ]} /> ); }; ``` # Danmaku System # AI Features
+  ## Supported Brands - **OpenAI**: GPT series models - **Aliyun (Alibaba Cloud)**:
+  Tongyi Qianwen and other models - **DeepSeek**: DeepSeek series models - **Claude**:
+  Anthropic models - **Gemini**: Google models ## Function Types - **Chart Analysis**:
+  AI analyzes current chart data, providing technical analysis, trend judgments, etc.
+  - **Predictive Analysis**: AI performs price predictions and risk assessments based
+  on historical data ## How to Use 1. **Enable AI Panel**: Select"
 ---
 {% raw %}
 <p align="center">

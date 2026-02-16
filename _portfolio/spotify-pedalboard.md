@@ -2,8 +2,64 @@
 layout: project
 name: Spotify Pedalboard
 slug: spotify-pedalboard
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://user-images.githubusercontent.com/213293/131147303-4805181a-c7d5-4afe-afb2-f591a4b8e586.png
 repo_url: https://github.com/spotify/pedalboard
+indexed_content: "[](https://github.com/spotify/pedalboard/blob/master/LICENSE) [](https://spotify.github.io/pedalboard)
+  [](https://pypi.org/project/pedalboard) [](https://pypi.org/project/pedalboard)
+  [](https://pypi.org/project/pedalboard) [](https://pypi.org/project/pedalboard)
+  [](https://github.com/spotify/pedalboard/actions/workflows/all.yml) [](https://gist.githubusercontent.com/psobot/8736467e9952991ef44a67915ee7c762/raw/coverage.json)
+  [](https://pypistats.org/packages/pedalboard) [](https://doi.org/10.5281/zenodo.7817838)
+  [](https://github.com/spotify/pedalboard/stargazers) `pedalboard` is a Python library
+  for working with audio: reading, writing, rendering, adding effects, and more. It
+  supports most popular audio file formats and a number of common audio effects out
+  of the box, and also allows the use of [VST3®](https://www.steinberg.net/en/company/technologies/vst3.html)
+  and [Audio Unit](https://en.wikipedia.org/wiki/Audio_Units) formats for loading
+  third-party software instruments and effects. `pedalboard` was built by [Spotify's
+  Audio Intelligence Lab](https://research.atspotify.com/audio-intelligence/) to enable
+  using studio-quality audio effects from within Python and TensorFlow. Internally
+  at Spotify, `pedalboard` is used for [data augmentation](https://en.wikipedia.org/wiki/Data_augmentation)
+  to improve machine learning models and to help power features like [Spotify's AI
+  DJ](https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/)
+  and [AI Voice Translation](https://newsroom.spotify.com/2023-09-25/ai-voice-translation-pilot-lex-fridman-dax-shepard-steven-bartlett/).
+  `pedalboard` also helps in the process of content creation, making it possible to
+  add effects to audio without using a Digital Audio Workstation. [](https://spotify.github.io/pedalboard)
+  ## Features - Built-in audio I/O utilities ([pedalboard.io](https://spotify.github.io/pedalboard/reference/pedalboard.io.html))
+  - Support for reading and writing AIFF, FLAC, MP3, OGG, and WAV files on all platforms
+  with no dependencies - Additional support for reading AAC, AC3, WMA, and other formats
+  depending on platform - Support for on-the-fly resampling of audio files and streams
+  with `O(1)` memory usage - Live audio effects via AudioStream - Built-in support
+  for a number of basic audio transformations, including: - Guitar-style effects:
+  `Chorus`, `Distortion`, `Phaser`, `Clipping` - Loudness and dynamic range effects:
+  `Compressor`, `Gain`, `Limiter` - Equalizers and filters: `HighpassFilter`, `LadderFilter`,
+  `LowpassFilter` - Spatial effects: `Convolution`, `Delay`, `Reverb` - Pitch effects:
+  `PitchShift` - Lossy compression: `GSMFullRateCompressor`, `MP3Compressor` - Quality
+  reduction: `Resample`, `Bitcrush` - Supports VST3® instrument and effect plugins
+  on macOS, Windows, and Linux ( pedalboard.load_plugin ) - Supports instrument and
+  effect Audio Units on macOS - Strong thread-safety, memory usage, and speed guarantees
+  - Releases Python's Global Interpreter Lock (GIL) to allow use of multiple CPU cores
+  - No need to use `multiprocessing`! - Even when only using one thread: - Processes
+  audio up to **300x** faster than [pySoX](https://github.com/rabitt/pysox) for single
+  transforms, and 2-5x faster than [SoxBindings](https://github.com/pseeth/soxbindings)
+  (via [iCorv](https://github.com/iCorv/pedalboard_with_tfdata)) - Reads audio files
+  up to **4x** faster than [librosa.load](https://librosa.org/doc/main/generated/librosa.load.html)
+  (in many cases) - Tested compatibility with TensorFlow - can be used in `tf.data`
+  pipelines! ## Installation `pedalboard` is available via PyPI (via [Platform Wheels](https://packaging.python.org/guides/distributing-packages-using-setuptools/#platform-wheels)):
+  ``` pip install pedalboard ``` If you are new to Python, follow [INSTALLATION.md](https://github.com/spotify/pedalboard/blob/master/INSTALLATION.md)
+  for a robust guide. ### Compatibility `pedalboard` is thoroughly tested with Python
+  3.10, 3.11, 3.12, 3.13, and 3.14. - Linux - Tested heavily in production use cases
+  at Spotify - Tested automatically on GitHub with VSTs - Platform `manylinux` and
+  `musllinux` wheels built for `x86_64` (Intel/AMD) and `aarch64` (ARM/Apple Silicon)
+  - Most Linux VSTs require a relatively modern Linux installation (with glibc > 2.27)
+  - macOS - Tested manually with VSTs and Audio Units - Tested automatically on GitHub
+  with VSTs - Platform wheels available for both Intel and Apple Silicon - Compatible
+  with a wide range of VSTs and Audio Units - Windows - Tested automatically on GitHub
+  with VSTs - Platform wheels available for `amd64` (x86-64, Intel/AMD) ## Examples
+  > **Note**: If you'd rather watch a video instead of reading examples or documentation,
+  watch Working with Audio in Python (feat. Pedalboard) on YouTube . ### Quick start
+  ```python from pedalboard import Pedalboard, Chorus, Reverb from pedalboard.io import
+  AudioFile # Make a Pedalboard object, containing multiple audio plugins: board =
+  Pedalboard([Chorus(), Rev"
 ---
 {% raw %}
 ![Pedalboard Logo](https://user-images.githubusercontent.com/213293/131147303-4805181a-c7d5-4afe-afb2-f591a4b8e586.png)

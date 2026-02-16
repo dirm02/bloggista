@@ -2,8 +2,68 @@
 layout: project
 name: Lin Snow Ech0
 slug: lin-snow-Ech0
+category: Uncategorized
 image: https://img.shields.io/github/v/release/lin-snow/Ech0
 repo_url: https://github.com/lin-snow/Ech0
+indexed_content: "[预览地址](https://memo.vaaat.com/) | [官网与文档](https://www.ech0.app/)
+  | [Ech0 Hub](https://hub.ech0.app/) # Ech0 [](https://github.com/lin-snow/Ech0/releases)
+  [](https://deepwiki.com/lin-snow/Ech0) [](https://hellogithub.com/repository/lin-snow/Ech0)
+  > 面向个人的新一代开源、自托管、专注思想流动的轻量级联邦发布平台。 Ech0 是一款专为个人用户设计的新一代开源自托管平台，低成本、超轻量，支持 ActivityPub
+  协议，让你轻松发布和分享想法、文字与链接。简洁直观的界面结合高效的命令行工具，让内容管理变得简单而自由。你的数据完全自主可控，随时随地与世界联通，构建属于你的思想网络。
+  --- 目录 - [Ech0](#ech0) - [产品亮点](#产品亮点) - [极速部署](#极速部署) - [\U0001F433 Docker 部署（推荐）](#-docker-部署推荐)
+  - [\U0001F40B Docker Compose](#-docker-compose) - [☸️ Kubernetes (Helm)](#️-kubernetes-helm)
+  - [版本更新](#版本更新) - [\U0001F504 Docker](#-docker) - [\U0001F48E Docker Compose](#-docker-compose-1)
+  - [☸️ Kubernetes (Helm)](#️-kubernetes-helm-1) - [常见问题](#常见问题) - [反馈与社区](#反馈与社区)
+  - [项目架构](#项目架构) - [开发指南](#开发指南) - [后端环境要求](#后端环境要求) - [前端环境要求](#前端环境要求) - [启动前后端联调](#启动前后端联调)
+  - [感谢充电支持！](#感谢充电支持) - [Star 增长曲线](#star-增长曲线) - [致谢](#致谢) - [支持项目](#支持项目) --- ##
+  产品亮点 ☁️ **原子级轻量**：内存占用不到**15MB**，镜像大小不到**50MB**,单SQLite文件存储架构 \U0001F680 **极速部署**：无需配置，从安装到使用只需1条命令
+  ✍️ **零干扰写作**：纯净的在线Markdown编辑器，支持丰富的Markdown插件与预览 \U0001F4E6 **数据主权**：所有内容存储于本地SQLite文件，支持RSS订阅
+  \U0001F510 **安全备份机制**：支持Web、TUI、CLI三种模式下一键导出、备份完整数据,支持后台自动备份 ♻️ **无感恢复支持**：支持TUI/CLI快照恢复与Web面板在线零停机恢复机制，保障数据安全无忧
+  \U0001F389 **永久免费**：AGPL-3.0协议开源，无追踪/无订阅/无服务依赖 \U0001F30D **跨端适配**：完美兼容桌面/移动浏览器，支持手机、iPad、PC三端响应式布局
+  \U0001F47E **PWA适配**：支持作为Web应用安装，体验更接近原生 \U0001F3F7️ **优雅的标签管理与过滤**：智能标签系统、快速过滤与精准检索，让信息组织更高效、更直观
+  ☁️ **S3 存储集成** —— 原生适配 S3 兼容对象存储，轻松实现云端高效存储 \U0001F310 **ActivityPub 联邦** —— 与 Mastodon、Misskey
+  等平台互联共通，构建去中心化生态 \U0001F511 **OAuth2和OIDC 身份认证** —— 原生支持 OAuth2 协议，轻松接入第三方登录与 API
+  授权 \U0001F648 **Passkey 无密码登录**：支持基于生物识别/硬件密钥的 Passkey 登录方式，显著提升安全性与登录体验 \U0001F4DD
+  **内置Todo管理**：轻松记录、管理每日待办事项，帮助你高效规划和追踪任务进度 \U0001F9D8 **安静的收件箱模式**：默认减少系统级打扰，信息按需呈现，回归工具“辅助而不干扰”的本质
+  \U0001FAB6 **高可用 Webhook**：支持与外部系统进行实时扩展与协作，实现事件驱动的自动化工作流 \U0001F317 **深色模式与主题扩展**：支持自适应系统或自由切换
+  Dark Mode，支持后期扩展自定义配色 \U0001F916 **快捷配置启动 Agent AI**：快捷配置多种大语言模型，无需动手折腾即可体验 AI \U0001F9F0
+  **命令行利器**：内置高可用 CLI 工具，为开发者与高级用户提供极致掌控力与自动化体验 \U0001F511 **快捷访问令牌管理**：支持生成与一键吊销访问令牌，安全高效地完成
+  API 调用与第三方集成 \U0001F4CA **实时系统资源监控面板**：基于 WebSocket 的高性能监控模块，让你对运行状态一目了然 \U0001F4DF
+  **极致 TUI 支持**：面向终端用户打造的友好交互界面，轻松对Ech0进行管理 \U0001F517 **Ech0 Connect**：全新多实例互联功能，实现Ech0实例间状态订阅与跟踪
+  \U0001F3B5 **无缝音乐集成**: 内置超低资源占用的音乐播放器，提供沉浸式背景音乐与专注模式 \U0001F3A5 **即时视频分享**: 原生支持哔哩哔哩/YouTube视频智能解析
+  \U0001F0CF **丰富的快捷卡片**：支持网站链接、GitHub项目等多种富媒体内容一键分享，让信息展示更加直观生动 ⚙️ **高级自定义功能**：为高级用户提供便捷自定义样式与脚本，分享更具表现力
+  \U0001F4AC **评论系统**：支持快捷接入Twikoo评论服务，轻量、快捷、无侵入，为你的内容带来即时互动与反馈 \U0001F4BB **跨平台兼容**：原生支持
+  Windows、Linux 以及树莓派等 ARM 架构设备，确保多样化部署场景下稳定运行 \U0001F517 **Ech0 Hub 广场**：内置 Ech0
+  Hub 广场，轻松发现、订阅和共享优质内容 \U0001F4E6 **二进制自包含**：集成完整资源，无需额外安装依赖或配置，极大简化部署流程 \U0001F517
+  **丰富的 API 支持**: 提供开放 API，方便与其他系统集成，实现更灵活的应用场景 \U0001F0CF **内容展示支持**：支持类 X（Twitter）风格卡片展示，同时支持点赞分享等社交互动
+  \U0001F464 **多账户权限管理**：支持多账户体系，提供灵活的权限控制，保障内容和功能访问的安全性与私密性 --- ## 极速部署 ### \U0001F433
+  Docker 部署（推荐） ```shell docker run -d \\ --name ech0 \\ -p 6277:6277 \\ -v /opt/ech0/data:/app/data
+  \\ -v /opt/ech0/backup:/app/backup \\ -e JWT_SECRET=\"Hello Echos\" \\ sn0wl1n/ech0:latest
+  ``` > \U0001F4A1 部署完成后访问 ip:6277 即可使用 > \U0001F6B7 建议把`-e JWT_SECRET=\"Hello Echos\"`里的`Hello
+  Echos`改成别的内容以提高安全性 > \U0001F4CD 首次使用注册的账号会被设置为管理员（目前仅管理员支持发布内容） > \U0001F388 数据存储在/opt/ech0/data下
+  ### \U0001F40B Docker Compose 创建一个新目录并将 `docker-compose.yml` 文件放入其中 在该目录下执行以下命令启动服务：
+  ```shell docker-compose up -d ``` ### ☸️ Kubernetes (Helm) 如果你希望在 Kubernetes 集群中部署
+  Ech0，可以使用项目提供的 Helm Chart。 由于本项目暂时未提供在线 Helm 仓库，你需要先将代码库克隆到本地，然后从本地目录进行安装。 1. **克隆代码库:**
+  ```shell git clone https://github.com/lin-snow/Ech0.git cd Ech0 ``` 2. **使用 Helm
+  安装:** ```shell # helm install helm install ech0 ./charts/ech0 ``` 你也可以自定义发布名称和命名空间：
+  ```shell helm install my-ech0 ./charts/ech0 --namespace my-namespace --create-namespace
+  ``` --- ## 版本更新 ### \U0001F504 Docker ```shell # 停止当前的容器 docker stop ech0 # 移除容器
+  docker rm ech0 # 拉取最新的镜像 docker pull sn0wl1n/ech0:latest # 启动新版本的容器 docker run -d
+  \\ --name ech0 \\ -p 6277:6277 \\ -v /opt/ech0/data:/app/data \\ -v /opt/ech0/backup:/app/backup
+  \\ -e JWT_SECRET=\"Hello Echos\" \\ sn0wl1n/ech0:latest ``` ### \U0001F48E Docker
+  Compose ```shell # 进入 compose 文件目录 cd /path/to/compose # 拉取最新镜像并重启 docker-compose
+  pull && \\ docker-compose up -d --force-recreate # 清理旧镜像 docker image prune -f ```
+  ### ☸️ Kubernetes (Helm) 1. **更新代码库:** 进入本地的 Ech0 代码库目录，并拉取最新的代码。 ```shell cd Ech0
+  git pull ``` 2. **更新 Helm Release:** 使用 `helm upgrade` 命令更新你的发布版本。 ```shell # helm
+  upgrade helm upgrade ech0 ./charts/ech0 ``` 如果你使用了自定义的发布名称和命名空间，请使用对应的名称： ```shell
+  helm upgrade my-ech0 ./charts/ech0 --namespace my-namespace ``` --- ## 常见问题 1. **Ech0是什么？**
+  Ech0 是一款轻量级的开源自托管平台，专为快速发布与分享个人想法、文字和链接而设计。它提供简洁的界面，支持零干扰的写作体验，所有数据存储于本地，确保用户对内容的完全控制。
+  2. **Ech0不是什么？** Ech0不是传统的笔记软件，设计之初并不是为了专业的笔记管理和记录（如Obsidian、Notion等），Ech0的核心功能类似朋友圈/说说。
+  3. **Ech0 是免费的吗？** 是的，Ech0 完全免费且开源，遵循 AGPL-3.0 协议。它没有广告、追踪、订阅或服务依赖。 4. **如何进行备份和恢复数据？**
+  由于所有内容都存储在本地 SQLite 文件中，您只需备份/opt/ech0/data目录中的文件即可（具体选择部署时的映射路径）。在需要恢复时，直接将备份文件还原即可，当然也可以使用在线数据管理，直接在设置-数据管理选项内使用创建、导出、恢复快照等功能即可快速管理数据。若恢复成功后数据依然没有显示最新内容，可以手动重启一下Docker容器即可！
+  5. **Ech0 支持 RSS 吗？** 是的，Ech0 支持 RSS 订阅，您可以通过 RSS 阅读器订阅您的内容更新。 6. **为什么发布失败，提示联系管理员？**
+  当前版本设计上，只有管理员可以发布内容。部署后，首个注册的用户会自动被设置为系统管理员，其他用户无法发布内容（可在设置中分配权限）。 7. **为什么没有明确的权限划分？**
+  Ech0 旨在保持简洁和轻量，因此在设计时没有复杂的权限系统。我们希望用户能够专注于分享内容，而不是被复杂的权限管理所困扰。为了保持流畅的使用体验，Ech0 尽量精简了功能，避免不必要的复杂性。（因此目前只有管理员与非管"
 ---
 {% raw %}
 <p align="left">

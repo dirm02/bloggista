@@ -2,8 +2,32 @@
 layout: project
 name: Bookerliu Geekdesk
 slug: BookerLiu-GeekDesk
+category: ServerTools-ProxMox-CICD
 image: https://s3.bmp.ovh/imgs/2023/04/25/ecfbf59916b9b854.gif
 repo_url: 'https://github.com/BookerLiu/GeekDesk](https:'
+indexed_content: "# GeekDesk 极客桌面 Small, **beautiful** desktop quickstart management
+  tool with integrated Everything search - [中文介绍](README-zh.md) - [English-machine
+  translation](README.md) Free / beautiful / highly customized is the need and direction
+  since the birth of GeekDesk, and will develop in these directions in the future
+  you can raise issues if you have good suggestions In addition, if you like GeekDesk,
+  you may be able to buy anti-exfoliation shampoo for the author Of course, ordering
+  a Star is also an incentive for the author~ \U0001F60A\U0001F60A\U0001F60A [**Paypal**](https://www.paypal.com/paypalme/BookerLiu)
+  ### Other: ### GitHub [https://github.com/BookerLiu/GeekDesk](https://github.com/BookerLiu/GeekDesk)
+  ### Gitee [https://gitee.com/BookerLiu/GeekDesk](https://gitee.com/BookerLiu/GeekDesk)
+  ## Integrate Everything to quickly search the entire disk - Integrate Everything
+  to quickly search the entire disk ## Global hotkeys / one-click callout / mouse
+  follow - Customize hotkeys settings and use the shortcuts you are used to - One-click
+  outbound call Use the middle mouse button to call out - Mouse Follow Automatically
+  follows the mouse position ## Custom wallpaper - Feel free to choose your favorite
+  wallpaper ## Interface effects such as frosted glass - Background image frosted
+  glass effect - Interface transparency - Interface rounded corners ## Customize the
+  menu icon - More than 80 system icons to choose from - It also supports online import
+  of Alibaba icon icons - For space reasons, reply in the public account Custom icon
+  You can view the tutorial Now the tutorial link has been pasted in the software
+  Welcome to pay attention to my public account\U0001F60A ## Scheduled reminders Never
+  forget - Scheduled reminders Never forget ## Development framework - wpf - .net
+  4.7.2 - [HandyControl](https://github.com/HandyOrg/HandyControl) ## Stargazers over
+  time [](https://starchart.cc/BookerLiu/GeekDesk) ## Contributors"
 ---
 {% raw %}
 # GeekDesk 极客桌面

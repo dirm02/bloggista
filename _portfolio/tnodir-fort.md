@@ -2,8 +2,34 @@
 layout: project
 name: Tnodir Fort
 slug: tnodir-fort
+category: WindowsTools- Linux
 image: https://img.shields.io/github/release/tnodir/fort.svg
 repo_url: https://github.com/tnodir/fort
+indexed_content: "Fort Firewall [](https://github.com/tnodir/fort/releases/latest)
+  [](https://crowdin.com/project/fort-firewall) [](https://codescene.io/projects/5344)
+  [](https://sonarcloud.io/summary/new_code?id=tnodir_fort) Fort is an effective firewall
+  designed for Windows 7 and later versions, offering both simplicity and robustness.
+  ## Features - Flexible network rules per application or global by addresses, ports,
+  protocols etc - Wildcards in application path names - Parent process based rules
+  - Filter by `SvcHost.exe` service names - Speed limit application groups - Blocklists
+  via \"Zones\" - Saves traffic statistics - Graphical display of the bandwidth -
+  Standalone firewall with own driver ## [System Requirements](https://github.com/tnodir/fort/wiki/User-Guide#system-requirements)
+  - Install latest [Visual C++ redistributable packages](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version):
+  [x64](https://aka.ms/vs/17/release/vc_redist.x64.exe), [x86](https://aka.ms/vs/17/release/vc_redist.x86.exe),
+  [ARM64](https://aka.ms/vs/17/release/vc_redist.arm64.exe) - Disable [HVCI (Core
+  Isolation: Memory Integrity)](https://github.com/tnodir/fort/wiki/HVCI) on Windows
+  10+ ### Which installer should I download? **Windows 10 1809** or newer: | [](https://github.com/tnodir/fort/releases/latest)
+  -------------------------------|--------- **Windows 7** or newer: | [](https://github.com/tnodir/fort/releases/latest)
+  ----- ## Wiki - [User Guide](https://github.com/tnodir/fort/wiki/User-Guide) - [Functionality
+  overview](https://github.com/tnodir/fort/wiki/Functionality-overview) - [Rules](https://github.com/tnodir/fort/wiki/Rules)
+  - [Frequently Asked Questions (FAQ)](https://github.com/tnodir/fort/wiki/FAQ) -
+  [Building](https://github.com/tnodir/fort/wiki/Building) ## Support - ⭐ Star it
+  on GitHub, ❤ Rate on [AlternativeTo](https://alternativeto.net/software/fort-firewall/about/)
+  - \U0001F41E [Report bugs](https://github.com/tnodir/fort/issues), ⚡ [Discuss ideas](https://github.com/tnodir/fort/discussions)
+  ### Sponsoring [](https://github.com/sponsors/tnodir) [](https://www.patreon.com/bePatron?u=9349286)
+  [](https://buymeacoffee.com/tnodir) ## SAST Tools [PVS-Studio](https://pvs-studio.com/en/pvs-studio/?utm_source=github&utm_medium=organic&utm_campaign=open_source)
+  - static analyzer for C, C++, C#, and Java code. ## Attribution - [FatCow Free Icons](http://www.fatcow.com/free-icons)
+  -- Nodir Temirkhodjaev,"
 ---
 {% raw %}
 <p align="center">

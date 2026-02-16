@@ -2,8 +2,67 @@
 layout: project
 name: Joeyism Linkedin Scraper
 slug: joeyism-linkedin_scraper
+category: Educational-map
 image: https://badge.fury.io/py/linkedin-scraper.svg
 repo_url: https://github.com/joeyism/linkedin_scraper.git
+indexed_content: '# LinkedIn Scraper [](https://badge.fury.io/py/linkedin-scraper)
+  [](https://www.python.org/downloads/) [](https://opensource.org/licenses/Apache-2.0)
+  Async LinkedIn scraper built with Playwright for extracting profile, company, and
+  job data from LinkedIn. ## ⚠️ Breaking Changes in v3.0.0 **Version 3.0.0 introduces
+  breaking changes and is NOT backwards compatible with previous versions.** ### What
+  Changed: - **Playwright instead of Selenium** - Complete rewrite using Playwright
+  for better performance and reliability - **Async/await throughout** - All methods
+  are now async and require `await` - **New package structure** - Imports have changed
+  (e.g., `from linkedin_scraper import PersonScraper`) - **Updated data models** -
+  Using Pydantic models instead of simple objects - **Different API** - Method signatures
+  and return types have changed ### Migration Guide: **Before (v2.x with Selenium):**
+  ```python from linkedin_scraper import Person person = Person("https://linkedin.com/in/username",
+  driver=driver) print(person.name) ``` **After (v3.0+ with Playwright):** ```python
+  import asyncio from linkedin_scraper import BrowserManager, PersonScraper async
+  def main(): async with BrowserManager() as browser: await browser.load_session("session.json")
+  scraper = PersonScraper(browser.page) person = await scraper.scrape("https://linkedin.com/in/username")
+  print(person.name) asyncio.run(main()) ``` **If you need the old Selenium-based
+  version:** ```bash pip install linkedin-scraper==2.11.2 ``` ## Quick Testing To
+  test that this works, you can clone this repo, install dependencies with ``` git
+  clone https://github.com/joeyism/linkedin_scraper.git cd linkedin_scraper pip3 install
+  -e . ``` then run ``` python3 samples/create_session.py python3 samples/scrape_company.py
+  python3 samples/scrape_person.py ``` and you will see the scraping in action. ---
+  ## Features - **Person Profiles** - Scrape comprehensive profile information - Basic
+  info (name, headline, location, about) - Work experience with details - Education
+  history - Skills and accomplishments - **Company Pages** - Extract company information
+  - Company overview and details - Industry and size - Headquarters location - **Company
+  Posts** - Scrape posts from company pages - Post content and text - Reactions, comments,
+  reposts counts - Posted date and images - **Job Listings** - Scrape job postings
+  - Job details and requirements - Company information - Application links - **Async/Await**
+  - Modern async Python with Playwright - **Type Safety** - Full Pydantic models for
+  all data - **Progress Callbacks** - Track scraping progress - **Session Management**
+  - Reuse authenticated sessions ## Installation ```bash pip install linkedin-scraper
+  ``` ### Install Playwright browsers: ```bash playwright install chromium ``` ##
+  Quick Start ### Basic Usage ```python import asyncio from linkedin_scraper import
+  BrowserManager, PersonScraper async def main(): # Initialize browser async with
+  BrowserManager(headless=False) as browser: # Load authenticated session await browser.load_session("session.json")
+  # Create scraper scraper = PersonScraper(browser.page) # Scrape a profile person
+  = await scraper.scrape("https://linkedin.com/in/williamhgates/") # Access data print(f"Name:
+  {person.name}") print(f"Headline: {person.headline}") print(f"Location: {person.location}")
+  print(f"Experiences: {len(person.experiences)}") print(f"Education: {len(person.educations)}")
+  asyncio.run(main()) ``` ### Company Scraping ```python from linkedin_scraper import
+  CompanyScraper async def scrape_company(): async with BrowserManager(headless=False)
+  as browser: await browser.load_session("session.json") scraper = CompanyScraper(browser.page)
+  company = await scraper.scrape("https://linkedin.com/company/microsoft/") print(f"Company:
+  {company.name}") print(f"Industry: {company.industry}") print(f"Size: {company.company_size}")
+  print(f"About: {company.about_us[:200]}...") asyncio.run(scrape_company()) ``` ###
+  Job Scraping ```python from linkedin_scraper import JobSearchScraper async def search_jobs():
+  async with BrowserManager(headless=False) as browser: await browser.load_session("session.json")
+  scraper = JobSearchScraper(browser.page) jobs = await scraper.search( keywords="Python
+  Developer", location="San Francisco", limit=10 ) for job in jobs: print(f"{job.title}
+  at {job.company}") print(f"Location: {job.location}") print(f"Link: {job.linkedin_url}")
+  print("---") asyncio.run(search_jobs()) ``` ### Company Posts Scraping ```python
+  from linkedin_scraper import BrowserManager, CompanyPostsScraper async def scrape_company_posts():
+  async with BrowserManager(headless=False) as browser: await browser.load_session("session.json")
+  scraper = CompanyPostsScraper(browser.page) posts = await scraper.scrape( "https://linkedin.com/company/microsoft/",
+  limit=10 ) for post in posts: print(f"Posted: {post.posted_date}") print(f"Text:
+  {post.text[:200]}...") print(f"Reactions: {post.reactions_count}") print(f"Comments:
+  {post.comments_count}'
 ---
 {% raw %}
 # LinkedIn Scraper

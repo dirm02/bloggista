@@ -2,8 +2,58 @@
 layout: project
 name: Krishmunot Awesome Startup
 slug: KrishMunot-awesome-startup
+category: Let's try this- Personal prefere
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: '# Awesome Startup [](https://github.com/sindresorhus/awesome) A
+  curated list of awesome books, videos, courses and resources about making a startup.
+  - [Books](#books) - [Videos](#videos-and-courses) - [General](#general) - [Resources](#resources)
+  - [Accelerators](#accelerators) - [Finance](#finance) - [Reading](#reading) - [Engineering](#engineering)
+  - [Venture Capital and Raising Money](#venture-capital-and-raising-money) - [Marketing,
+  Sales & metrics](#marketing-sales--metrics) - [Task Management & Collaboration](#task-management--collaboration)
+  - [Marketing Tools](#marketing-tools) - [Coworking & Virtual Offices](#coworking--virtual-offices)
+  - [Leadership & People](#leadership--people) # Books * [Quotes / Lessons / Videos
+  for Entrepreneurs and Startups](http://www.blockshelf.com/) * [For Entrepreneurs](http://powerbooks.strikingly.com/)
+  * [Zero to One by Peter Thiel](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296/ref=sr_1_1?ie=UTF8&qid=1540102964&sr=8-1&keywords=0+to+1)
+  Notes on Startups, or How to Build the Future * [Startup Notes](http://startupnotes.org/#page/1)
+  * [Hooked: How to Build Habit-Forming Products](http://amzn.com/1591847788) - [The
+  Lean Startup by Eric Ries](http://www.amazon.com/Lean-Startup-Innovation-Successful-ebook/dp/B004J4XGN6/)
+  - [Business Model Generation by Alexander Osterwalder](http://www.amazon.com/Business-Model-Generation-Visionaries-ebook/dp/B00BD6RFFS/)
+  - [The Startup Owner''s Manual by Steve Blank](http://www.amazon.com/Startup-Owners-Manual-Step--ebook/dp/B009UMTMKS/)
+  - The Startup Owner''s Manual lays out the best practices, lessons and tips that
+  have swept the startup world, offering a wealth of proven advice and information
+  for entrepreneurs of all stripes. - [Running Lean by Ash Maurya](http://www.amazon.com/Running-Lean-Iterate-Series-ebook/dp/B006UKFFE0/)
+  - A practical guide to the Lean Startup - [Founders At Work by Jessica Livingston](http://www.amazon.com/Founders-Work-Stories-Startups-ebook/dp/B009IXMK4O/)
+  - A collection of interviews about the early days of popular technology companies
+  - [The Founder''s Dilemmas by Noam Wasserman](http://www.amazon.com/The-Founders-Dilemmas-Entrepreneurship-ebook/dp/B007AIXKUM/)
+  - Drawing on a decade of research, Noam Wasserman reveals the common pitfalls founders
+  face and how to avoid them. - [Venture Deals by Brad Feld and Jason Mendelson](http://www.amazon.com/Venture-Deals-Smarter-Capitalist-ebook/dp/B00AO2PWOI/)
+  - [Venture Capitalists at Work by Tarang Shah and Sheetal Shah](http://www.amazon.com/Venture-Capitalists-Work-Billion-Dollar-ebook/dp/B006C9EM1Q/)
+  - Venture Capitalists at Work: How VCs Identify and Build Billion-Dollar Successes
+  offers unparalleled insights into the funding and management of companies like YouTube,
+  Zappos, Twitter, Starent, Facebook, and Groupon. The venture capitalists profiled—among
+  the best in the business—also reveal how they identify promising markets, products,
+  and entrepreneurs. - [Traction: A Startup Guide to Getting Customers](https://www.amazon.com/Traction-Startup-Achieve-Explosive-Customer/dp/0241242533)
+  - [Zero to One by Peter Thiel](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296/ref=sr_1_1?ie=UTF8&qid=1540102964&sr=8-1&keywords=0+to+1)
+  Notes on Startups, or How to Build the Future - [Hello, Startup](https://www.hello-startup.net/)
+  - The "Hello, World" tutorial for building a startup * [The Balanced Scorecard:
+  Translating Strategy into Action](https://www.amazon.com/Balanced-Scorecard-Translating-Strategy-Action/dp/0875846513)
+  - The Balanced Scorecard translates a company''s vision and strategy into a coherent
+  set of performance measures. The four perspectives of the scorecard--financial measures,
+  customer knowledge, internal business processes, and learning and growth--offer
+  a balance between short-term and long-term objectives, between outcomes desired
+  and performance drivers of those outcomes, and between hard objective measures and
+  softer, more subjective measures. This is a great tool for all companies, but importantly
+  early stage companies, to help them translate data to data execution into actionable
+  and measurable outcomes, across the business. * [Good to Great: Why Some Companies
+  Make the Leap and Others Don''t](https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996)
+  - Using tough benchmarks, Collins and his research team identified a set of elite
+  companies that made the leap to great results and sustained those results for at
+  least fifteen years. How great? After the leap, the good-to-great companies generated
+  cumulative stock returns that beat the general stock market by an average of seven
+  times in fifteen years, better than twice the results delivered by a composite index
+  of the world''s greatest companies, including Coca-Cola, Intel, General Electric,
+  and Merck. * [The Innovator''s Solution: Creating and Sustaining Successful Growth](https://www.amazon.com/Innovators-Solution-Creating-Sustaining-Successful/dp/1422196577'
 ---
 {% raw %}
 # Awesome Startup

@@ -2,8 +2,62 @@
 layout: project
 name: Revolist Revogrid
 slug: revolist-revogrid
+category: Uncategorized
 image: https://badgen.net/bundlephobia/min/@revolist/revogrid@latest
 repo_url: https://github.com/revolist/revogrid
+indexed_content: 'Powerful data grid component built with StencilJS . Support Millions
+  of cells and thousands of columns easy and efficiently for fast data rendering.
+  Easy to use. Demo and API • Key Features • How To Use • Installation • Docs • License
+  RevoGrid material theme. ## Key Features - **High Performance**: Handles millions
+  of cells in the viewport with a powerful core built by default. - **[Accessibility](https://rv-grid.com/guide/wcag)**:
+  Follows WAI-ARIA best practices. - **[RTL Support](https://rv-grid.com/guide/rtl)**:
+  Comprehensive Right-to-Left language support for Arabic, Hebrew, Persian, and other
+  RTL languages. Features automatic column reordering, proper text alignment, and
+  layout adjustments for RTL interfaces. - **[Keyboard Support](https://rv-grid.com/guide/defs#Keyboard)**:
+  - Excel-like focus for efficient navigation and editing. - Seamless copy/paste from
+  Excel, Google Sheets, or any other sheet format. - **Lightweight**: Minimal initial
+  bundle size . Can be imported with polyfills or as a module for modern browsers.
+  - **[Intelligent Virtual DOM](https://rv-grid.com/guide/overview#VNode-Reactive-DOM)**:
+  Smart row recombination to minimize redraws. - **[Virtual Scroll](https://rv-grid.com/guide/viewports)**:
+  Handles large datasets with infinite scroll. - **[Drag and Drop](https://rv-grid.com/guide/row/order)**:
+  Drag and drop in [rows](https://rv-grid.com/guide/row/order) and [columns](https://rv-grid.com/guide/column/order).
+  - **[Sorting](https://rv-grid.com/guide/sorting)**: Multiple options, customizable
+  per column, with advanced event handling. - **[Filtering](https://rv-grid.com/guide/filters)**:
+  - Predefined system filters. - Multi column filters. - Conditional filters. - Preserve
+  existing collections. - Selection. - Slider. - Header filtering. - Custom filters
+  to extend system filters with your own set. - **[Export](https://rv-grid.com/guide/export.plugin)**:
+  Export data to file. - **Custom Sizes**: Define custom sizes for [columns](https://rv-grid.com/guide/column/#Column-Size)
+  and [rows](https://rv-grid.com/guide/row/height). Automatic sizing based on content.
+  - **[Column Resizing](https://rv-grid.com/guide/column/resize)**: Adjust column
+  widths. - **Auto Size Columns**: Intelligent column width adjustment that automatically
+  adapts to content, ensuring optimal readability and layout efficiency. - **Pinned/Sticky/Freezed
+  Elements**: - [Columns](https://rv-grid.com/guide/column/pin) (define left or right).
+  - [Rows](https://rv-grid.com/guide/row/pin) (define top or bottom). - **Grouping**:
+  - [Column grouping](https://rv-grid.com/guide/column/grouping) (nested headers).
+  - Column grouping Drill Down: Collapse grouping columns to streamline your grid
+  view, trimming away unnecessary columns and enhancing data organization. Perfect
+  for focusing on the information that matters most, while keeping your workspace
+  clean and efficient. - [Row grouping](https://rv-grid.com/guide/row/grouping) (nested
+  rows). - **Column Types**: [More details](https://rv-grid.com/guide/column/#Column-Formats)
+  - [Text/String](https://rv-grid.com/guide/column/types#String) (default). - [Number](https://rv-grid.com/guide/column/types#Number).
+  - [Select/Dropdown](https://rv-grid.com/guide/column/types#Select-Dropdown). - [Date](https://rv-grid.com/guide/column/types#Date).
+  - Custom (create extended styles using any template). - **Range Operations**: -
+  [Selection](https://rv-grid.com/guide/defs#Range). - [Editing](https://rv-grid.com/guide/defs#Range-Autofill).
+  - **[Theme Packages](https://rv-grid.com/guide/theme)**: - Excel-like (default).
+  - Material (compact, dark, or light). - **[Extensibility](https://rv-grid.com/guide/jsx.template)**:
+  Modern VNode features and tsx support for easy extension. - **[Trimmed Rows](https://rv-grid.com/guide/row/#Trimmed-Rows)**:
+  Hide rows on demand. - **[Plugin System](https://rv-grid.com/guide/plugin/)**: Create
+  custom plugins or extend existing ones easily. - **[Formula Support](https://rv-grid.com/guide/cell/formula)**:
+  Evaluate formulas in cell data with Excel-like syntax, including basic arithmetic,
+  statistical functions, and cell references. - **[Pivot Table](https://rv-grid.com/demo/pivot)**:
+  Transform and analyze data dynamically with drag-and-drop field arrangement, aggregation
+  functions, and interactive filtering capabilities. - **[Master Detail/Subtables/Forms](https://rv-grid.com/guide/row/master.pro)**:
+  Expand rows to reveal child data. - **[Cell/Column/Row Span/Merge](https://rv-grid.com/guide/cell/merge)**:
+  Merge cells to form groups. - **Auto Merge**: Automatically merges cells with identical
+  values in a column. - **Form editig**: Edit forms directly within the grid, featuring
+  all necessary fields, including custom options and markdown support for a fast and
+  enhanced data entry experience. - **Customizations**: - [Column header template](https://rv-grid.com/guide/column/header.template).
+  - [Row header template](https://rv-grid.com/guide/row/headers). - [Cell properties](https://rv-'
 ---
 {% raw %}
 <p align="center">

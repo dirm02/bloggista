@@ -2,8 +2,31 @@
 layout: project
 name: Ahmadibrahiim Website Downloader
 slug: AhmadIbrahiim-Website-downloader
+category: Serv&Prod-Tools
 image: https://github.com/AhmadIbrahiim/Website-downloader/blob/master/public/Record.gif?raw=true
 repo_url: https://github.com/AhmadIbrahiim/Website-downloader
+indexed_content: "## Complete Website Downloader \U0001F4BE Download the complete
+  source code of any website (including all assets) \U0001F528. \U0001F449 Live Demo:
+  https://website-downloader.onrender.com ## Description \U0001F4D2 Website downloader
+  works with `wget` and `archiver` to download all websites assets and compress then
+  sends it back to the user through socket channel **wget params the being used**
+  `wget --mirror --convert-links --adjust-extension --page-requisites --no-parent
+  http://example.org` **Explanation of the various flags:** - --mirror – Makes (among
+  other things) the download recursive. - --convert-links – convert all the links
+  (also to stuff like CSS stylesheets) to relative, so it will be suitable for offline
+  viewing. - --adjust-extension – Adds suitable extensions to filenames (html or css)
+  depending on their content-type. - --page-requisites – Download things like CSS
+  style-sheets and images required to properly display the page offline. - --no-parent
+  – When recursing do not ascend to the parent directory. It useful for restricting
+  the download to only a portion of the site ### Deploy on cloud providers [](https://replit.com/github/AhmadIbrahiim/Website-downloader)
+  [](https://glitch.com/edit/#!/import/github/AhmadIbrahiim/Website-downloader) [](https://railway.app/new/template?template=https://github.com/AhmadIbrahiim/Website-downloader)
+  [](https://app.cyclic.sh/api/app/deploy/AhmadIbrahiim/Website-downloader) [](https://app.koyeb.com/deploy?type=git&repository=github.com/AhmadIbrahiim/Website-downloader&branch=main&name=Website-downloader)
+  [](https://render.com/deploy?repo=https://github.com/AhmadIbrahiim/Website-downloader)
+  ## How to run it \U0001F914 - `git clone https://github.com/AhmadIbrahiim/Website-downloader.git`
+  - `cd Website-downloader` - `$ npm install` - `$ npm start` - `http://localhost:3000/`
+  # How To Contribute: - Open Issue(s) with any bugs you notice. - Please create Pull
+  Requests if you think it would be an added value towards our program. ## Liked it
+  ? You can buy a coffee: Thank you, Email: me@ahmed-ibrahim.com https://www.ahmed-ibrahim.com"
 ---
 {% raw %}
 ## Complete Website Downloader 💾

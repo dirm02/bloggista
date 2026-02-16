@@ -2,8 +2,69 @@
 layout: project
 name: Boldbitcoinwallet Boldwallet
 slug: BoldBitcoinWallet-BoldWallet
+category: Serv&Prod-Tools
 image: https://github.com/user-attachments/assets/eb8f1a45-b2cb-46ec-a061-fc0cb4f10448
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Bold Bitcoin Wallet Seedless, secure Bitcoin wallet using Threshold
+  Signatures. ## About Bold Bitcoin Wallet is an open-source next-generation Bitcoin
+  wallet that eliminates traditional security tradeoffs and single points of failure.
+  It uses Threshold Signatures (2-of-2 or 2-of-3) over your mobile devices — no internet
+  needed for setup or signing. ## ✨ Key Features - ✅ **Seedless Setup** - Uses Threshold
+  Signature Scheme (TSS), no seed phrases required - \U0001F510 **No Seed Phrases**
+  - No paper backups or hardware wallets needed - \U0001F4F1 **Multi-Device Security**
+  - Up to 3 device-based key generation with 2 devices needed for signing - \U0001F39B
+  **PSBT Signer** - Compatible with wallets like Sparrow, Electrum, BlueWallet, and
+  more - \U0001F504 **P2P Encrypted Protocol** - Secure communication between devices
+  over Nostr or Local WiFi/Hotspot - \U0001F6AB **Offline Capable** - No internet
+  required for setup or signing transactions - \U0001F4E6 **100% Open Source** - Verifiable,
+  auditable, and transparent - \U0001F9FE **Flexible Mempool** - Supports Mempool.space
+  (public or self-hosted) for enhanced privacy - \U0001F310 **Connect Anywhere** -
+  Device pairing via Nostr relays (works from anywhere) or local WiFi ## \U0001F4F2
+  Install Bold Bitcoin Wallet App: [ ](https://apps.apple.com/ae/app/bold-bitcoin-wallet/id6748949478)
+  [ Via Playstore](https://play.google.com/store/apps/details?id=com.boldwallet) [
+  Via Zap Store](https://zapstore.dev/apps/naddr1qvzqqqr7pvpzq7xwd748yfjrsu5yuerm56fcn9tntmyv04w95etn0e23xrczvvraqq8xxmmd9e3x7mrywaskcmr9ws90nrd9)
+  [ ](https://f-droid.org/packages/com.boldwallet) --- ## \U0001F4F1 App Overview
+  Bold Bitcoin Wallet provides a complete Bitcoin wallet experience with a focus on
+  security and sovereignty: - **\U0001F512 Secure Lock Screen** - Biometric and passcode
+  protection - **\U0001F680 Easy Setup** - Quick onboarding with device pairing -
+  **\U0001F4BC Wallet Home** - Clean interface showing balance and transaction history
+  - **\U0001F4E4 Send Bitcoin** - Create and sign transactions securely - **\U0001F4E5
+  Receive Bitcoin** - Generate addresses with QR codes - **\U0001F39B PSBT Signing**
+  - Import and sign PSBTs from Sparrow, Electrum, and other wallets - **⚙️ Settings**
+  - Customize network, API providers, and wallet preferences - **\U0001F510 Multi-Device
+  Pairing** - Connect devices via Nostr or local WiFi For app screenshots and visual
+  previews, check the [App Store listing](https://apps.apple.com/ae/app/bold-bitcoin-wallet/id6748949478)
+  or [Play Store listing](https://play.google.com/store/apps/details?id=com.boldwallet).
+  ---- ## ➡️ BoldWallet Official Release **[Download Latest APK Release](https://github.com/BoldBitcoinWallet/BoldWallet/releases/latest)**
+  > ⚠️ **Important:** This APK is signed with the official BoldWallet keystore. >
+  It is **not compatible** with the version distributed via [F-Droid](https://f-droid.org).
+  > Always install updates from **one source only** to avoid signature conflicts.
+  ## \U0001F4D6 Dev Guide - You can build the Android APK yourself, via Auto Builder
+  or Manual Build as below. - iOS builds follow React-Native iphone–guide ## \U0001FA84
+  Android - Build It Yourself ### \U0001F501 Via Auto Builder Relies on docker (Dockerfile)
+  - guaranteed quick way to compile and release the APK. **Docker scripts are located
+  in `docker/scripts/` - see [docker/README.md](docker/README.md) for full documentation.**
+  Build the APK seamlessly following the steps: - Optional: edit android/release.sh
+  when needed: ```sh KEYSTORE_FILE=\"my-release-key.jks\" KEY_ALIAS=\"my-key\" KEYSTORE_PASSWORD=\"your_keystore_password\"
+  KEY_PASSWORD=\"your_key_password\" ``` - Run Docker Script Runner: ```sh # use sudo
+  if needed for docker # This will take time given your PC performance (couple of
+  minutes up to 30 minutes) # When done, the app-release.apk is generated within the
+  BoldWallet folder > sh docker-apk-builder.sh --fdroid #optional, for F-Droid foss
+  tailored build > sh docker-apk-builder.sh --fdroid --git=main #optional, which git
+  \"branch,tag, or commit-hash\" to use ``` ### ✍️ Via Manual Build Manual build,
+  requires manual and extra efforts to compiles the app on your PC. BoldWallet is
+  a typical React Native Mobile Based App ( android / iOS ). - Built using node v20.18.1
+  - npm install - To rebuild the android/app/libs/tss.aar: - Check the BBMTLib/README.md,
+  Android Section - For Android APK build: - cd android - ./release.sh - APK generated
+  under: ./android/app/build/outputs/apk/release/app-release.apk ---- ## \U0001F510
+  Recovery Without the App If you need to recover or spend Bitcoin from your keyshares
+  without using the mobile app, you can use the command-line recovery tools. This
+  is useful if: - The mobile app is unavailable or not working - You need to recover
+  funds from keyshare backups - You want to use the wallet from a desktop environment
+  ### Quick Recovery Guide Bold Wallet provides cross-platform CLI tools for recovering
+  and spending Bitcoin from keyshare backups: 1. **`bold-spend` binary** (Recommended)
+  - Works on Windows, Linux, and macOS 2. **`spend-bitcoin.sh` script** - Unix/Linux/macOS
+  only ### What You Need - **Keyshare files**: Both keyshare backup"
 ---
 {% raw %}
 # Bold Bitcoin Wallet

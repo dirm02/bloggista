@@ -2,8 +2,70 @@
 layout: project
 name: Hkuds Deeptutor
 slug: HKUDS-DeepTutor
+category: Future RAG ressources
 image: https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white
 repo_url: https://github.com/HKUDS/DeepTutor
+indexed_content: "# DeepTutor: AI-Powered Personalized Learning Assistant [](https://www.python.org/downloads/)
+  [](https://fastapi.tiangolo.com/) [](https://react.dev/) [](https://nextjs.org/)
+  [](https://tailwindcss.com/) [](LICENSE) &nbsp;&nbsp; &nbsp;&nbsp; [**Quick Start**](#quick-start)
+  · [**Core Modules**](#core-modules) · [**FAQ**](#faq) [\U0001F1E8\U0001F1F3 中文](assets/README/README_CN.md)
+  · [\U0001F1EF\U0001F1F5 日本語](assets/README/README_JA.md) · [\U0001F1EA\U0001F1F8
+  Español](assets/README/README_ES.md) · [\U0001F1EB\U0001F1F7 Français](assets/README/README_FR.md)
+  · [\U0001F1F8\U0001F1E6 العربية](assets/README/README_AR.md) · [\U0001F1F7\U0001F1FA
+  Русский](assets/README/README_RU.md) · [\U0001F1EE\U0001F1F3 हिन्दी](assets/README/README_HI.md)
+  · [\U0001F1F5\U0001F1F9 Português](assets/README/README_PT.md) \U0001F4DA **Massive
+  Document Knowledge Q&A** &nbsp;•&nbsp; \U0001F3A8 **Interactive Learning Visualization**
+  \U0001F3AF **Knowledge Reinforcement** &nbsp;•&nbsp; \U0001F50D **Deep Research
+  & Idea Generation** --- ### \U0001F4F0 News > **[2026.1.1]** Happy New Year! Join
+  our [Discord Community](https://discord.gg/eRsjPgMU4t), [Wechat Community](https://github.com/HKUDS/DeepTutor/issues/78),
+  or [Discussions](https://github.com/HKUDS/DeepTutor/discussions) - shape the future
+  of DeepTutor! \U0001F4AC > **[2025.12.30]** Visit our [Official Website](https://hkuds.github.io/DeepTutor/)
+  for more details! > **[2025.12.29]** DeepTutor is now live! ✨ ### \U0001F4E6 Releases
+  > **[2026.1.23]** Release [v0.6.0](https://github.com/HKUDS/DeepTutor/releases/tag/v0.6.0)
+  - Frontend session persistence, full Chinese support, Docker deployment updates,
+  and minor bug fixes -- Thanks for all the feedback! History releases > **[2026.1.18]**
+  Release [v0.5.2](https://github.com/HKUDS/DeepTutor/releases/tag/v0.5.1) - Enhance
+  RAG pipeline with Docling support and improve CI/CD workflows with several minor
+  bugs fixed -- Thanks to all the feedbacks! > **[2026.1.15]** Release [v0.5.0](https://github.com/HKUDS/DeepTutor/releases/tag/v0.5.0)
+  - Unified LLM & Embedding services, RAG pipeline selection, and major enhancements
+  to Home, History, QuestionGen & Settings modules -- Thanks to all the contributors!
+  > **[2026.1.9]** Release [v0.4.1](https://github.com/HKUDS/DeepTutor/releases/tag/v0.4.1)
+  with LLM Provider system overhaul, Question Generation robustness improvements,
+  and codebase cleanup - Thanks to all the contributors! > **[2026.1.9]** Release
+  [v0.4.0](https://github.com/HKUDS/DeepTutor/releases/tag/v0.4.0) with new code structure,
+  multiple llm & embeddings support - Thanks to all the contributors! > **[2026.1.5]**
+  [v0.3.0](https://github.com/HKUDS/DeepTutor/releases/tag/v0.3.0) - Unified PromptManager
+  architecture, CI/CD automation & pre-built Docker images on GHCR > **[2026.1.2]**
+  [v0.2.0](https://github.com/HKUDS/DeepTutor/releases/tag/v0.2.0) - Docker deployment,
+  Next.js 16 & React 19 upgrade, WebSocket security & critical vulnerability fixes
+  --- ## Key Features of DeepTutor ### \U0001F4DA Massive Document Knowledge Q&A •
+  **Smart Knowledge Base**: Upload textbooks, research papers, technical manuals,
+  and domain-specific documents. Build a comprehensive AI-powered knowledge repository
+  for instant access. • **Multi-Agent Problem Solving**: Dual-loop reasoning architecture
+  with RAG, web search, and code execution -- delivering step-by-step solutions with
+  precise citations. ### \U0001F3A8 Interactive Learning Visualization • **Knowledge
+  Simplification & Explanations**: Transform complex concepts, knowledge, and algorithms
+  into easy-to-understand visual aids, detailed step-by-step breakdowns, and engaging
+  interactive demonstrations. • **Personalized Q&A**: Context-aware conversations
+  that adapt to your learning progress, with interactive pages and session-based knowledge
+  tracking. ### \U0001F3AF Knowledge Reinforcement with Practice Exercise Generator
+  • **Intelligent Exercise Creation**: Generate targeted quizzes, practice problems,
+  and customized assessments tailored to your current knowledge level and specific
+  learning objectives. • **Authentic Exam Simulation**: Upload reference exams to
+  generate practice questions that perfectly match the original style, format, and
+  difficulty—giving you realistic preparation for the actual test. ### \U0001F50D
+  Deep Research & Idea Generation • **Comprehensive Research & Literature Review**:
+  Conduct in-depth topic exploration with systematic analysis. Identify patterns,
+  connect related concepts across disciplines, and synthesize existing research findings.
+  • **Novel Insight Discovery**: Generate structured learning materials and uncover
+  knowledge gaps. Identify promising new research directions through intelligent cross-domain
+  knowledge synthesis. --- \U0001F4DA Massive Document Knowledge Q&A Multi-agent Problem
+  Solving with Exact Citations \U0001F3A8 Interactive Learning Visualization Step-by-step
+  Visual Explanations with Personal QAs. \U0001F3AF Knowledge Reinforcement **Custom
+  Questions** Auto-Validated Practice Questions Generation **Mimic Questions** Clone
+  Exam Style for Authentic Practice \U0001F50D Deep Research & Idea Generation **Deep
+  Research** Knowledge Extension from Textbook with RAG, Web and Paper-search **Automated
+  IdeaGen** Brainstorming and Concept Synthesis wi"
 ---
 {% raw %}
 <div align="center">

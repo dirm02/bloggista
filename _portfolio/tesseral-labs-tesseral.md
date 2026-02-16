@@ -2,8 +2,58 @@
 layout: project
 name: Tesseral Labs Tesseral
 slug: tesseral-labs-tesseral
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tesseral-labs-tesseral/.github/img/splash.png
 repo_url: https://github.com/tesseral-labs/tesseral
+indexed_content: '# Tesseral Tesseral is **open source auth infrastructure for business
+  software** (i.e., B2B SaaS). Tesseral is a multi-tenant, API-first service designed
+  to run on the cloud. It is not an authentication library tied to a particular language
+  or framework; Tesseral works with any tech stack. Most developers should start by
+  using Tesseral''s managed service, available at [console.tesseral.com](https://console.tesseral.com).
+  You can also [self-host Tesseral](https://tesseral.com/docs/features/self-hosting-tesseral).
+  ## Key Features Tesseral bundles everything that a developer needs to manage users
+  in business software. | | | |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+  | [**Hosted, customizable login pages**](https://tesseral.com/docs/features/customizing-your-login-experience)
+  Prebuilt UIs, customizable to your brand. Add and remove login methods with just
+  a few clicks in the Tesseral Console. | | | [**B2B multitenancy**](https://tesseral.com/docs/features/b2b-multitenancy)
+  Tesseral is built for B2B SaaS. Your customer''s admins control how their users
+  log in to their tenant, and can add or remove users at will. | | | [**User impersonation**](https://tesseral.com/docs/features/user-impersonation)
+  See exactly what your users see. Debug and support faster by logging in as your
+  users. | | | [**Self-service config for your customers**](https://tesseral.com/docs/features/self-serve-organization-settings)
+  Pre-built settings pages where your customers can invite coworkers, edit their login
+  settings, and everything else they need. | | | [**Magic Links**](https://tesseral.com/docs/login-methods/primary-factors/log-in-with-email-magic-links)
+  Add "Log in with Email" support using magic links, without writing any code. | |
+  | **Social Login** Add [Log in with Google](https://tesseral.com/docs/login-methods/primary-factors/log-in-with-google),
+  [Log in with GitHub](https://tesseral.com/docs/login-methods/primary-factors/log-in-with-github),
+  and [Log in with Microsoft](https://tesseral.com/docs/login-methods/primary-factors/log-in-with-microsoft)
+  support without writing any code. | | | [**SAML (Enterprise Single Sign-On)**](https://tesseral.com/docs/features/saml-sso)
+  Add SAML support to your product without writing any code. | | | [**OIDC (Enterprise
+  Single Sign-On)**](https://tesseral.com/docs/features/oidc) Add OpenID Connect (OIDC)
+  support to your product without writing any code. | | | [**SCIM (Enterprise Directory
+  Sync)**](https://tesseral.com/docs/features/scim-provisioning) Add SCIM support
+  to your product without writing any code. | | | [**Role-based access control (RBAC)**](https://tesseral.com/docs/features/role-based-access-control)
+  Add fine-grained permissions to your product. The UI''s done for you, just plug
+  in `hasPermission` calls wherever you need them. | | | [**Multi-factor authentication
+  (MFA)**](https://tesseral.com/docs/features/multifactor-authentication-mfa) Add
+  2FA to your product without writing any code. Your customers can choose to require
+  MFA for their users if they wish. | | | [**Passkeys / WebAuthn**](https://tesseral.com/docs/login-methods/secondary-factors/login-with-passkey)
+  Add "Log in with Passkey" support to your product without writing any code. Supports
+  all passkey platforms, including Touch ID, Yubikeys, and more. | | | [**Authenticator
+  apps (TOTPs)**](https://tesseral.com/docs/login-methods/secondary-factors/login-with-authenticator-app)
+  Add time-based one-time-password (TOTP) support to your product without writing
+  any code. | | | [**API key management**](https://tesseral.com/docs/features/managed-api-keys)
+  Not just user authentication. If you want your customers to call your endpoints
+  automatically, give them API keys. UIs, permissions, and authentication checks all
+  come pre-built. | | | [**User invitations**](https://tesseral.com/docs/concepts/user-invites)
+  Your users can invite their coworkers, or you can invite them yourself from the
+  Tesseral Console. | | | [**Audit logs**](https://tesseral.com/docs/features/managed-audit-logs)
+  Get comprehensive logs of all actions taken in your product, and optionally share
+  those logs with your customers. | | | [**Webhooks**](https://tesseral.com/docs/features/webhooks)
+  Live-sync data from Tesseral into your database with realtime webhook delivery.
+  | | ## Get Started ### Read the documentation We encourage all developers to read
+  the full documentation first, which is available at [tesseral.com/docs](https://tesseral.com/docs).
+  This README provides only a very brief subset of the docs to illustrate some basic
+  ideas. &nbsp; ### SDKs Tesseral currently offers sev'
 ---
 {% raw %}
 ![](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tesseral-labs-tesseral/.github/img/splash.png)

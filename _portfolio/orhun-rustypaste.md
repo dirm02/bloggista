@@ -2,8 +2,65 @@
 layout: project
 name: Orhun Rustypaste
 slug: orhun-rustypaste
+category: Serv&Prod-Tools
 image: https://img.shields.io/github/v/release/orhun/rustypaste?style=flat&labelColor=823213&color=2c2c2c&logo=GitHub&logoColor=white
 repo_url: https://github.com/orhun/rustypaste
+indexed_content: '[](https://github.com/orhun/rustypaste/releases) [](https://crates.io/crates/rustypaste/)
+  [](https://codecov.io/gh/orhun/rustypaste) [](https://github.com/orhun/rustypaste/actions?query=workflow%3A%22Continuous+Integration%22)
+  [](https://github.com/orhun/rustypaste/actions?query=workflow%3A%22Continuous+Deployment%22)
+  [](https://hub.docker.com/r/orhunp/rustypaste) [](https://docs.rs/rustypaste/) **Rustypaste**
+  is a minimal file upload/pastebin service. ```sh $ echo "some text" > awesome.txt
+  $ curl -F "file=@awesome.txt" https://paste.site.com https://paste.site.com/safe-toad.txt
+  $ curl https://paste.site.com/safe-toad.txt some text ``` Table of Contents * [Features](#features)
+  * [Installation](#installation) * [From crates.io](#from-cratesio) * [Arch Linux](#arch-linux)
+  * [Alpine Linux](#alpine-linux) * [FreeBSD](#freebsd) * [Binary releases](#binary-releases)
+  * [Build from source](#build-from-source) * [Feature flags](#feature-flags) * [Testing](#testing)
+  * [Unit tests](#unit-tests) * [Test Fixtures](#test-fixtures) * [Usage](#usage)
+  * [CLI](#cli) * [Expiration](#expiration) * [One shot files](#one-shot-files) *
+  [One shot URLs](#one-shot-urls) * [URL shortening](#url-shortening) * [Paste file
+  from remote URL](#paste-file-from-remote-url) * [Cleaning up expired files](#cleaning-up-expired-files)
+  * [Delete file from server](#delete-file-from-server) * [Override the filename](#override-the-filename)
+  * [Server](#server) * [Authentication](#authentication) * [List endpoint](#list-endpoint)
+  * [HTML Form](#html-form) * [Docker](#docker) * [Nginx](#nginx) * [Third Party Clients](#third-party-clients)
+  * [Contributing](#contributing) * [License](#license) ## Features - File upload
+  & URL shortening & upload from URL - supports basic HTTP authentication - random
+  file names (optional) - pet name (e.g. `capital-mosquito.txt`) - alphanumeric string
+  (e.g. `yB84D2Dv.txt`) - random suffix (e.g. `file.MRV5as.tar.gz`) - supports expiring
+  links - auto-expiration of files (optional) - auto-deletion of expired files (optional)
+  - supports one shot links/URLs (can only be viewed once) - guesses MIME types -
+  supports overriding and blacklisting - supports forcing to download via `?download=true`
+  - no duplicate uploads (optional) - listing/deleting files - custom landing page
+  - Single binary - [binary releases](https://github.com/orhun/rustypaste/releases)
+  - Simple configuration - supports hot reloading - Easy to deploy - [docker images](https://hub.docker.com/r/orhunp/rustypaste)
+  - [appjail images](https://github.com/AppJail-makejails/rustypaste) - No database
+  - filesystem is used - Self-hosted - _centralization is bad!_ - Written in Rust
+  - _blazingly fast!_ ## Installation Packaging status [](https://repology.org/project/rustypaste/versions)
+  ### From crates.io ```sh cargo install rustypaste ``` ### Arch Linux ```sh pacman
+  -S rustypaste ``` ### Alpine Linux `rustypaste` is available for [Alpine Edge](https://pkgs.alpinelinux.org/packages?name=rustypaste&branch=edge).
+  It can be installed via [apk](https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper)
+  after enabling the [community repository](https://wiki.alpinelinux.org/wiki/Repositories).
+  ```sh apk add rustypaste ``` ### FreeBSD ```sh pkg install rustypaste ``` ### Binary
+  releases See the available binaries on the [releases](https://github.com/orhun/rustypaste/releases/)
+  page. ### Build from source ```sh git clone https://github.com/orhun/rustypaste.git
+  cd rustypaste/ cargo build --release ``` #### Feature flags - `shuttle`: enable
+  an entry point for deploying on Shuttle - `openssl`: use distro OpenSSL (binary
+  size is reduced ~20% in release mode) - `rustls`: use [rustls](https://github.com/rustls/rustls)
+  (enabled as default) To enable a feature for build, pass `--features` flag to `cargo
+  build` command. For example, to reuse the OpenSSL present on a distro already: ```sh
+  cargo build --release --no-default-features --features openssl ``` #### Testing
+  ##### Unit tests ```sh cargo test -- --test-threads 1 ``` ##### Test Fixtures ```sh
+  ./fixtures/test-fixtures.sh ``` ## Usage The standalone command line tool (`rpaste`)
+  is available [here](https://github.com/orhun/rustypaste-cli). ### CLI ```sh function
+  rpaste() { curl -F "file=@$1" -H "Authorization: " " " } ``` **\*** consider reading
+  authorization headers from a file. (e.g. `-H @rpaste_auth`) ```sh # upload a file
+  $ rpaste x.txt # paste from stdin $ rpaste - ``` #### Expiration ```sh $ curl -F
+  "file=@x.txt" -H "expire:10min" " " ``` supported units: - `nsec`, `ns` - `usec`,
+  `us` - `msec`, `ms` - `seconds`, `second`, `sec`, `s` - `minutes`, `minute`, `min`,
+  `m` - `hours`, `hour`, `hr`, `h` - `days`, `day`, `d` - `weeks`, `week`, `w` - `months`,
+  `month`, `M` - `years`, `year`, `y` #### One shot files ```sh $ curl -F "oneshot=@x.txt"
+  " " ``` #### One shot URLs ```sh $ curl -F "oneshot_url=https://example.com" " "
+  ``` #### URL shortening ```sh $ curl -F "url=https://example.com/some/long/url"
+  " " ``` #### Paste file from remote URL `'
 ---
 {% raw %}
 <a href="https://github.com/orhun/rustypaste"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/orhun-rustypaste/img/rustypaste_logo.png" width="500"></a>

@@ -2,8 +2,55 @@
 layout: project
 name: Boson Php Boson
 slug: boson-php-boson
+category: Uncategorized
 image: https://poser.pugx.org/boson-php/compiler/version?style=flat-square
 repo_url: https://github.com/boson-php/boson
+indexed_content: "--- Why Boson? Because it's not an [Electron](https://www.electronjs.org)!
+  And much easier than that =) By the way, there is more information about the project
+  [in the documentation](https://bosonphp.com/doc/master/introduction). > Also, this
+  repository contains included high level PHP bindings > [for Saucer v6.0](https://github.com/saucer/saucer).
+  ## Application Example You can find a detailed example application in the [Boson
+  Application](https://github.com/boson-php/app) repository. 1) You should download
+  the app using `composer create-project boson-php/app` 2) Then: - Run it using `php
+  index.php` - Or compile it using `php vendor/bin/boson compile` | | | | |:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
+  | Linux | macOS | Windows | ## Installation Boson package is available as Composer
+  repository and can be installed using the following command in a root of your project:
+  ```bash composer require boson-php/runtime ``` ## Documentation - You can learn
+  more [about what a Boson is](https://bosonphp.com/doc/master/introduction). - Information
+  [about the configs](https://bosonphp.com/doc/master/configuration) is available
+  on the [corresponding pages](https://bosonphp.com/doc/master/application-configuration).
+  - A more detailed description of working with the [application](https://bosonphp.com/doc/master/application),
+  [windows](https://bosonphp.com/doc/master/window) and [webview](https://bosonphp.com/doc/master/webview)
+  is also available. - Also, do not miss the detailed guide on additional apps for
+  working with [function bindings](https://bosonphp.com/doc/master/bindings-api),
+  [scripts](https://bosonphp.com/doc/master/scripts-api), [request interception](https://bosonphp.com/doc/master/schemes-api),
+  and more. - If you want to build an application based on [Symfony](https://bosonphp.com/doc/master/symfony-adapter),
+  [Laravel](https://bosonphp.com/doc/master/laravel-adapter) and [others](https://bosonphp.com/doc/master/psr7-adapter),
+  then similar functionality is also available. ## Components | Component | Description
+  | Status | |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | [boson-php/compiler](https://packagist.org/packages/boson-php/compiler) | Allows
+  you to compile a project into a executable | [](https://github.com/boson-php/compiler/actions/workflows/tests.yml)
+  | | [boson-php/cpu-info](https://packagist.org/packages/boson-php/cpu-info) | Provides
+  general information about the CPU | [](https://github.com/boson-php/cpu-info/actions/workflows/tests.yml)
+  | | [boson-php/globals-provider](https://packagist.org/packages/boson-php/globals-provider)
+  | Emulates the behavior of global PHP variables | [](https://github.com/boson-php/globals-provider/actions/workflows/tests.yml)
+  | | [boson-php/http](https://packagist.org/packages/boson-php/http) | Provides basic
+  HTTP structure | [](https://github.com/boson-php/http/actions/workflows/tests.yml)
+  | | [boson-php/http-body-decoder](https://packagist.org/packages/boson-php/http-body-decoder)
+  | Decoder for HTTP request body | [](https://github.com/boson-php/http-body-decoder/actions/workflows/tests.yml)
+  | | [boson-php/http-static-provider](https://packagist.org/packages/boson-php/http-static-provider)
+  | Provides the ability to easily handle static files | [](https://github.com/boson-php/http-static-provider/actions/workflows/tests.yml)
+  | | [boson-php/os-info](https://packagist.org/packages/boson-php/os-info) | Provides
+  general information about the operating system | [](https://github.com/boson-php/os-info/actions/workflows/tests.yml)
+  | | [boson-php/pasm](https://packagist.org/packages/boson-php/pasm) | Provides cross-platform
+  implementation of the PHP asm executor | [](https://github.com/boson-php/pasm/actions/workflows/tests.yml)
+  | | [boson-php/runtime](https://packagist.org/packages/boson-php/runtime) | Core
+  component for running applications | [](https://github.com/boson-php/runtime/actions/workflows/tests.yml)
+  | | [boson-php/saucer](https://packagist.org/packages/boson-php/saucer) | FFI Saucer
+  Bindings | [](https://github.com/boson-php/saucer/actions/workflows/tests.yml) |
+  | [boson-php/uri](https://packagist.org/packages/boson-php/uri) | Provides data
+  structures for URI | [](https://github.com/boson-php/uri/actions/workflows/tests.yml)
+  | | [boson-php/uri-factory](https://packagist.org/packages/bos"
 ---
 {% raw %}
 <a href="https://github.com/boson-php/boson">

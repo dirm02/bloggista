@@ -2,8 +2,67 @@
 layout: project
 name: Valeriansaliou Sonic
 slug: valeriansaliou-sonic
+category: EE-kicad-3D-Robotic
 image: https://github.com/valeriansaliou/sonic/workflows/Test%20and%20Build/badge.svg?branch=master
 repo_url: https://github.com/valeriansaliou/sonic
+indexed_content: "Sonic ===== [](https://github.com/valeriansaliou/sonic/actions?query=workflow%3A%22Test+and+Build%22)
+  [](https://github.com/valeriansaliou/sonic/actions?query=workflow%3A%22Build+and+Release%22)
+  [](https://deps.rs/repo/github/valeriansaliou/sonic) [](https://www.buymeacoffee.com/valeriansaliou)
+  **Sonic is a fast, lightweight and schema-less search backend. It ingests search
+  texts and identifier tuples that can then be queried against in a microsecond's
+  time.** Sonic can be used as a simple alternative to super-heavy and full-featured
+  search backends such as Elasticsearch in some use-cases. It is capable of normalizing
+  natural language search queries, auto-completing a search query and providing the
+  most relevant results for a query. Sonic is an identifier index, rather than a document
+  index; when queried, it returns IDs that can then be used to refer to the matched
+  documents in an external database. A strong attention to performance and code cleanliness
+  has been given when designing Sonic. It aims at being crash-free, super-fast and
+  puts minimum strain on server resources (our measurements have shown that Sonic
+  - when under load - responds to search queries in the μs range, eats ~30MB RAM and
+  has a low CPU footprint; [see our benchmarks](https://github.com/valeriansaliou/sonic#how-fast--lightweight-is-it)).
+  _Tested at Rust version: `rustc 1.74.1 (a28077b28 2023-12-04)`_ **\U0001F1EB\U0001F1F7
+  Crafted in Nantes, France.** **:newspaper: The Sonic project was initially announced
+  in [a post on my personal journal](https://journal.valeriansaliou.name/announcing-sonic-a-super-light-alternative-to-elasticsearch/).**
+  > _« Sonic » is the mascot of the Sonic project. I drew it to look like a psychedelic
+  hipster hedgehog._ ## Who uses it? Crisp Scrumpy _\U0001F44B You use Sonic and you
+  want to be listed there? [Contact me](https://valeriansaliou.name/)._ ## Demo Sonic
+  is integrated in all Crisp search products on the [Crisp](https://crisp.chat/) platform.
+  It is used to index half a billion objects on a $5/mth 1-vCPU SSD cloud server (as
+  of 2019). Crisp users use it to search in their messages, conversations, contacts,
+  helpdesk articles and more. **You can test Sonic live on: [Crisp Helpdesk](https://help.crisp.chat/),
+  and get an idea of the speed and relevance of Sonic search results. You can also
+  test search suggestions from there: start typing at least 2 characters for a word,
+  and get suggested a full word (press the tab key to expand suggestion). _Both search
+  and suggestions are powered by Sonic._** > _Sonic fuzzy search in helpdesk articles
+  at its best. Lookup for any word or group of terms, get results instantly._ ## Features
+  * **Search terms are stored in collections, organized in buckets**; you may use
+  a single bucket, or a bucket per user on your platform if you need to search in
+  separate indexes. * **Search results return object identifiers**, that can be resolved
+  from an external database if you need to enrich the search results. This makes Sonic
+  a simple word index, that points to identifier results. Sonic doesn't store any
+  direct textual data in its index, but it still holds a word graph for auto-completion
+  and typo corrections. * **Search query typos are corrected** if there are not enough
+  exact-match results for a given word in a search query, Sonic tries to correct the
+  word and tries against alternate words. You're allowed to make mistakes when searching.
+  * **Insert and remove items in the index**; index-altering operations are light
+  and can be committed to the server while it is running. A background tasker handles
+  the job of consolidating the index so that the entries you have pushed or popped
+  are quickly made available for search. * **Auto-complete any word** in real-time
+  via the suggest operation. This helps build a snappy word suggestion feature in
+  your end-user search interface. * **Full Unicode compatibility** on 80+ most spoken
+  languages in the world. Sonic removes useless stop words from any text (eg. 'the'
+  in English), after guessing the text language. This ensures any searched or ingested
+  text is clean before it hits the index; [see languages](https://github.com/valeriansaliou/sonic#which-text-languages-are-supported).
+  * **Simple protocol (Sonic Channel)**, that let you search your index, manage data
+  ingestion (push in the index, pop from the index, flush a collection, flush a bucket,
+  etc.) and perform administrative actions. Sonic Channel was designed to be lightweight
+  on resources and simple to integrate with; [read protocol specification](https://github.com/valeriansaliou/sonic/blob/master/PROTOCOL.md).
+  * **Easy-to-use libraries**, that let you connect to Sonic from your apps; [see
+  libraries](https://github.com/valeriansaliou/sonic#-sonic-channel-libraries). ##
+  How to use it? ### Installation Sonic is built in Rust. To install it, either download
+  a version from the [Sonic releases](https://github.com/valeriansaliou/sonic/releases)
+  page, use `cargo install` or pull the source code from `master`. \U0001F449 _Each
+  release binar"
 ---
 {% raw %}
 Sonic

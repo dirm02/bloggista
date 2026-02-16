@@ -2,8 +2,22 @@
 layout: project
 name: Wintrcat Wintrchess
 slug: WintrCat-wintrchess
+category: Game-arcade-emulator
 image: https://github.com/user-attachments/assets/9a33a746-c9cd-43b8-b17b-564f3f6ce4a2
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "> [!IMPORTANT] > Looking for maintainers! Please join [the Discord
+  server](https://discord.com/invite/XxtsAzPyCb) and open a ticket to apply :) WintrChess
+  A website that analyses Chess games with move classifications, for free. \U0001F4CC
+  wintrchess.com > Originally Game Report , the platform has been rebuilt with many
+  more features! ## \U0001F4C2 Project The WintrChess repository is a monorepo made
+  up of three packages: #### `client` The frontend for the website built with React
+  and TypeScript. #### `server` The backend for the website where the website content
+  is served, and where any API endpoints will live. #### `shared` Libraries, some
+  types and common logic is stored here and can be accessed by both other packages.
+  ## \U0001F4DA Documentation [Hosting WintrChess locally](https://github.com/WintrCat/wintrchess/blob/master/docs/hosting.md)
+  [Contributing to the project](https://github.com/WintrCat/wintrchess/blob/master/docs/contributing.md)
+  ## ☕ Support If you like this project or find it useful, consider buying me a little
+  coffee! Everything is appreciated so much \U0001F499 [https://ko-fi.com/wintrcat](https://ko-fi.com/wintrcat)"
 ---
 {% raw %}
 > [!IMPORTANT]

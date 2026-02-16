@@ -2,8 +2,65 @@
 layout: project
 name: Omnisvg Omnisvg
 slug: OmniSVG-OmniSVG
+category: AI-automation-web2-3SmartC-Agent
 image: https://api.star-history.com/svg?repos=OmniSVG/OmniSVG&type=Date
 repo_url: https://github.com/OpenVGLab/OmniSVG-train
+indexed_content: "Official repo for OmniSVG --> OmniSVG: A Unified Scalable Vector
+  Graphics Generation Model &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ## \U0001F525\U0001F525\U0001F525
+  News !! - [2025/12/31] \U0001F44B We have released the training code of OmniSVG，
+  Check out [OpenVGLab/OmniSVG-Train](https://github.com/OpenVGLab/OmniSVG-train)
+  - [2025/12/22] We have updated **MMSVG-Icon** (264K→904K) and **MMSVG-Illustration**
+  (66K→255K) datasets with enhanced captions and PNG previews! Check out [MMSVG-Icon](https://huggingface.co/datasets/OmniSVG/MMSVG-Icon)
+  and [MMSVG-Illustration](https://huggingface.co/datasets/OmniSVG/MMSVG-Illustration).
+  - [2025/12/02] We have released the **OmniSVG1.1_8B** weights and updated **OmniSVG1.1_4B**
+  model weights! Check out [OmniSVG1.1_8B](https://huggingface.co/OmniSVG/OmniSVG1.1_8B)
+  and [OmniSVG1.1_4B](https://huggingface.co/OmniSVG/OmniSVG1.1_4B). - [2025/12/02]
+  We have released **MMSVGBench** benchmark dataset and evaluation code! Check out
+  [MMSVGBench](https://huggingface.co/datasets/OmniSVG/MMSVGBench) and [Evaluation](https://github.com/OmniSVG/OmniSVG?tab=readme-ov-file#5-evaluation).
+  - [2025/09/18] OmniSVG is accepted to **NeurIPS 2025**\U0001F525! See you in San
+  Diego! - [2025/07/22] \U0001F44B We have released the Huggingface Demo. \U0001F917[Demo](https://huggingface.co/spaces/OmniSVG/OmniSVG-3B).
+  - [2025/07/22] \U0001F44B We have released the inference code and model weight of
+  MMSVG-Icon and MMSVG-Illustration dataset. \U0001F917[Weight](https://huggingface.co/OmniSVG/OmniSVG).
+  - [2025/04/09] \U0001F44B Release MMSVG-Icon and MMSVG-Illustration \U0001F917[Dataset](https://huggingface.co/OmniSVG).
+  - [2025/04/09] \U0001F44B Upload paper and init project. [Read](https://arxiv.org/abs/2504.06263)
+  ## \U0001F9E9 Community Contributions If you are developing / using OmniSVG in your
+  projects, or you want to contribute to OmniSVG, please let us know \U0001F389. -
+  If you find data issues when using MMSVG dataset, please drop an issue in this [form](https://npqawhh9ht.feishu.cn/wiki/KHv2wDqAxiSV8skpkANcbmlwnqc?from=from_copylink).
+  - \U0001F44B OmniSVG ComfyUI Plugin by [@smthemex](https://github.com/smthemex)
+  [ComfyUI_OmniSVG](https://github.com/smthemex/ComfyUI_OmniSVG). ## \U0001F4D1 Open-source
+  Plan - [x] Project Page & Technical Report - [x] MMSVG-Icon and MMSVG-Illustration
+  Dataset Release - [x] Inference Code & Model Weight of MMSVG-Icon and MMSVG-Illustration
+  Dataset - [x] Online Demo (Gradio deployed on Huggingface) - [x] Model Weight of
+  OmniSVG1.1_8B Release - [x] Model Weight of OmniSVG1.1_4B Release - [x] MMSVGBench
+  Benchmark & Evaluation Code Release ## 1. Introduction **OmniSVG** is the first
+  family of end-to-end multimodal SVG generators that leverage pre-trained Vision-Language
+  Models (VLMs), capable of generating complex and detailed SVGs, from simple icons
+  to intricate anime characters. We also introduce MMSVG-2M, a multimodal dataset
+  with two million richly annotated SVG assets, along with a standardized evaluation
+  protocol for conditional SVG generation tasks. ## 2. Models Downloading | Model
+  | Download link | Size | Update date | |-----------------------------|-------------------------------|------------|------|
+  | OmniSVG1.1_8B | [Huggingface](https://huggingface.co/OmniSVG/OmniSVG1.1_8B) |
+  17.2 GB | 2025-12-02 | | OmniSVG1.1_4B | [Huggingface](https://huggingface.co/OmniSVG/OmniSVG1.1_4B)
+  | 7.69 GB | 2025-12-02 | | OmniSVG-3B | [Huggingface](https://huggingface.co/OmniSVG/OmniSVG)
+  | 8.49 GB | 2025-07-22 | ## 3. Dependencies and Installation The dependencies configured
+  according to the following instructions provide an environment equipped for inference
+  ### 3.1 Clone the Repository ```bash git clone https://github.com/OmniSVG/OmniSVG.git
+  cd OmniSVG ``` ### 3.2 Create Conda Environment Create and activate a new conda
+  environment with Python 3.10: ```bash conda create -n omnisvg python=3.10 conda
+  activate omnisvg ``` ### 3.3 Install Dependencies #### System Dependencies Before
+  installing Python packages, you need to install Cairo library which is required
+  by `CairoSVG` in our dependencies: **macOS:** ```bash brew install cairo ``` **Linux
+  (Ubuntu/Debian):** ```bash sudo apt update sudo apt install libcairo2 libcairo2-dev
+  ``` > **Note:** Installing Cairo system library beforehand helps prevent potential
+  build errors when installing `CairoSVG` via pip. #### Python Dependencies We have
+  tested our environment with CUDA 12.1. You can install CUDA 12.1 by following the
+  [CUDA Toolkit installation guide](https://developer.nvidia.com/cuda-12-1-0-download-archive).
+  Install PyTorch with CUDA 12.1 support: ```bash pip install torch==2.3.0+cu121 torchvision==0.18.0+cu121
+  --index-url https://download.pytorch.org/whl/cu121 ``` Install remaining dependencies:
+  ```bash pip install -r requirements.txt ``` ## 4. Inference Script | | GPU Memory
+  Usage | Time per 256/512/1024/2048/4096 tokens | | ------------------------------------------------
+  | ---------------- | ----------------- | | OmniSVG1.1_8B | 26G | 5.38/9.02/20.11/40."
 ---
 {% raw %}
 <!-- <div align= "center">

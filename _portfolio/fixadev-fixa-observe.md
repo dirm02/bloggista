@@ -2,8 +2,33 @@
 layout: project
 name: Fixadev Fixa Observe
 slug: fixadev-fixa-observe
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fixadev-fixa-observe/.github/assets/logo.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/fixadev-fixa-observe
+indexed_content: "[](https://fixa.dev) \U0001F4D8 Docs | ☁️ Cloud Platform | \U0001F3AE
+  Discord # fixa: open-source testing and observability for voice agents fixa helps
+  you run simulated tests, analyze production calls, fix bugs in your voice agents.
+  oh, and we're fully open source. get started for free with our cloud platform -
+  no demos, no commitments, only pay for what you use. ## ✨ Features | | | | --------------------------------------------------------------------------------------------------------------------------------------
+  | :--------------------------------------------------------------------------: |
+  | **Automated Testing** Our voice agents call your voice agents to catch issues
+  before they reach production | | | **Deploy with Peace of Mind** Integrate seamlessly
+  into your CI/CD pipeline using our prebuilt github action, API, or SDK | | | **Monitor
+  Production Calls** Analyze latency, interruptions, and custom evals | | | **Measure
+  What Matters** Create evaluations to validate specific conversation flows and edge
+  cases | | | **Catch Issues Instantly** Slack alerts notify you immediately if evaluations
+  fail in production or latency thresholds are exceeded | | ## \U0001F4E6 Installation
+  & Setup 1. Create an account at [fixa.dev](https://fixa.dev) 2. Install the Fixa
+  SDK: ```bash npm install @fixa-dev/server # or yarn add @fixa-dev/server ``` 3.
+  Configure and use the client: ```typescript import { FixaClient } from \"@fixa-dev/server\";
+  const client = new FixaClient({ token: \"YOUR_TOKEN\" }); await client.agent.create({
+  phoneNumber: \"phoneNumber\", name: \"name\", systemPrompt: \"systemPrompt\", });
+  ``` 4. Use TypeScript types: ```typescript import { Fixa } from \"@fixa-dev/server\";
+  const request: Fixa.AgentCreateRequest = { // your request object }; ``` 5. Handle
+  errors: ```typescript import { FixaError } from \"@fixa-dev/server\"; try { await
+  client.agent.create({...}); } catch (err) { if (err instanceof FixaError) { console.log(err.statusCode);
+  console.log(err.message); console.log(err.body); } } ``` For detailed setup instructions
+  and examples, visit our [documentation](https://docs.fixa.dev/fixa-observe)."
 ---
 {% raw %}
 [![Fixa Logo](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fixadev-fixa-observe/.github/assets/logo.png)](https://fixa.dev)

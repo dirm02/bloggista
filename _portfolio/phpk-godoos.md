@@ -2,8 +2,62 @@
 layout: project
 name: Phpk Godoos
 slug: phpk-godoos
+category: File manager -Network-nmap
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/phpk-godoos/build/appicon.png
 repo_url: https://github.com/phpk/godoos)
+indexed_content: "GodoOS 一款高效的内网办公操作系统，内含word/excel/ppt/pdf/内网聊天/白板/思维导图等多个办公系统工具，支持原生文件存储。平台界面精仿windows风格，操作简便，同时保持低资源消耗和高性能运行。无需注册即可自动连接内网用户，实现即时通讯和文件共享。灵活高配置的应用商店，可无限扩展。
+  [English](README.en.md) | 简体中文 [使用文档](https://docs.godoos.com/zh/godoos.html) |
+  [AI](./docs/ai.md) | [FAQ](./docs/Faq.md) | [应用开发](./docs/Store.md) ### \U0001F4E5
+  下载安装(v1.0.5) 1. \U0001F4BB **Windows 用户**: - Windows (AMD64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_windows_amd64.exe)
+  [**桌面版**](https://godoos.com/upload/godoos/1.0.5/desktop/godoos-amd64-installer.exe)
+  - Windows (ARM64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_windows_arm64.exe)
+  [**桌面版**](https://godoos.com/upload/godoos/1.0.5/desktop/godoos-arm64-installer.exe)
+  2. \U0001F4BC **MacOS 用户**: - MacOS (AMD64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_darwin_amd64)
+  - MacOS (ARM64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_darwin_arm64)
+  提示：下载后以godoos_web_darwin_amd64为例，命令行： ``` sudo chmod +x godoos_web_darwin_amd64
+  sudo ./godoos_web_darwin_amd64 ``` 3. \U0001F4BD **Linux 用户**: - Linux (AMD64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_linux_amd64)
+  - Linux (ARM64) [**Web版**](https://godoos.com/upload/godoos/1.0.5/web/godoos_web_linux_arm64)
+  提示：下载后以godoos_web_darwin_amd64为例，root账号登录，命令行： ``` chmod +x godoos_web_darwin_amd64
+  ./godoos_web_darwin_amd64 ``` - 备注：web版下载后启动服务端。访问地址为：http://localhost:56780/。 ###
+  \U0001F6A2 **Docker安装1.0.4** #### 下载docker包 ``` wget https://godoos.com/upload/godoos/1.0.4/docker/godoos_latest.tar.gz
+  gzip -d godoos_latest.tar.gz docker load -i godoos_latest.tar docker run -d -p 56780:56780
+  --name godoos godoos/godoos:latest ``` - 如果设置本地存储，存储地址为 /root/.godoos/os，设置成功后保存
+  ## \U0001F49D 亮点 - ***无需联网使用，全开源*** - ***零配置，无需注册，下载即用*** - ***零污染，无插件依赖*** - ***精小，打包后仅70M，却包含了所有的办公套件***
+  - ***可无限扩展，支持自定义应用*** - ***golang开发后端，低资源消耗和高性能*** - ***支持多平台，Windows、Linux、MacOS***
+  - ***完善的应用商店体系，简单学习一下[应用商店配置](./docs/Store.md)即可开发出复杂的应用*** ## \U0001F496 开源地址 -
+  [Gitee](https://gitee.com/godoos/godoos) - [Gitcode](https://gitcode.com/aiok/godoos)
+  - [Github](https://github.com/phpk/godoos) ## \U0001F680 演示视频 - [全程操作](https://www.bilibili.com/video/BV1NdvaeEEz3/?vd_source=739e0e59aeefdb2e9f760e5037d00245)
+  ## \U0001F389 V1.0.6更新 - 重构前端，使开发难度降低 - 新增手机端，支持手机端文件管理 ## \U0001F389 V1.0.5更新日志
+  - 新增配置本地代理和远程代理，本地代理可实现本机ip映射外部域名，远程代理内嵌frpc设置后可实现内网用户外网域名访问。 - 修改锁屏机制，确保外网访问安全。
+  - 支持本地聊天ai对话文件和联网搜索。 - 新增知识库，支持知识库根据文件夹智能生成，一键添加知识库索引，一键搜索知识库。 - 新增复制/粘贴快捷键 - 新增文件检索，支持分词查询文档内容
+  - 新增frpc客户端管理，无需下载，支持一键启动和停止frpc客户端，实现内网穿透。 - 新增本地代理管理，支持http/静态文件/udp转发代理，支持一键启动和停止本地代理服务。
+  - 新增后台锁屏管理，可设定管理员和密码 ## \U0001F389 V1.0.4更新日志 - 新增配置远程存储状态下是否支持跨域 - 修复系统重启错误 - 支持配置onlyOffice地址，onlyOffice编辑word/ppt/excel文件
+  - 修复1.0.3闪屏问题 - 修复默认不打开广告 - 修复设置ollama地址无效的问题 - 修复内网聊天初始化问题 - 修复本地ai聊天编辑未更改引擎的错误
+  ## \U0001F389 V1.0.3更新日志 - 新增ai模型管理，可下载管理ollama模型(需要先安装ollama) - 新增ai助手，可控制整个系统的prompt
+  - word新增ai优化/续写/纠错/翻译/总结，生成大纲，根据大纲一键创建文章 - markdown更换为更实用的cherry-markdown，支持draw.io绘图，支持导出为思维导图/pdf/长图/docx/md/html格式
+  - 修复截图/截屏路径 - 修复更换存储将路径后系统不重置的问题 - 新增文件密码箱（系统设置里），可根据不同文件进行加密存储 - 美化日程提醒弹窗 - 修复word格式问题以及导出名字不对
+  - markdown新增ai优化/续写/纠错/翻译/总结，生成大纲，根据大纲一键创建文章 - 更改文档存储方式，支持选择文件夹 - 内网聊天新增ai对话，可保存对话历史，可更换模型和prompt
+  - 新增可定义端口和访问路径，支持web端系统重启 - 新增每个文件可独立设置密码，支持不可逆加密文件（加密文件后不可更改密码） ### \U0001F389
+  v1.0.2更新日志 - 新增本地文件加密存储 - 新增企业端接口（聊天/工作流/文件分享/文件加密） - 重构本地聊天，修改发现机制（基于ip扫描和arp过滤）
+  - 本地聊天可批量发送图片/文件夹，修改发送机制，消息基于udp发送，文件基于tcp发送 - 修复word导入格式丢失问题 - 修复文件重命名错误的bug -
+  修复拖拽上传中断的bug - 新增可手动关闭广告 - 优化初始化系统，初始化系统时只请求读写一次 - 去除浏览器存储 - 开源核心底层源码 - 优化思维导图和文件读取
+  ### \U0001F389 v1.0.1更新日志 - 优化初始化系统，初始化系统时只请求读写一次，确保1秒内打开 - 去除浏览器存储 - 内网聊天增加手工添加ip，跨网段通信在ping通的前提下如果发现不了对方可手工添加对方ip
+  - 修复思维导图保存的文件每次打开主题又会变成默认主题 - 新增webdav客户端 - 新增远程存储 - 修改选择文件夹会删除文件夹内的文件 ## ⚡ 功能说明和预览
+  ### 一、系统桌面 - 精仿windows风格 - 桌面文件管理 - 支持原生文件拖拽上传 ### 二、文件管理 - 文件拖拽上传 - 文件搜索 - 原生文件存储
+  - 直接压缩/解压文件夹（本地存储支持zip/tar/gz/bz2） ### 三、内网聊天 - 无需注册流程，只需在同一内网，即可自动发现并列出所有可用的聊天对象，支持基于局域网的即时消息传输、文件传输等功能。
+  ### 四、文档 - 简便的word编辑器，原生存储，支持二维码、手写签名，导入导出 ### 五、表格 - 原生存储，Excel编辑器，支持导入、导出，支持图片、公式
+  ### 六、markdown - 原生存储，采用vditor，支持导入、导出，支持大纲、实时预览 ### 七、思维导图 - 内置多种主题；支持快捷键；节点内容支持图片、图标、超链接、备注、标签。
+  ### 八、演示文稿 - 原生存储，采用pptist，支持文字、图片、形状、线条、图表、表格、视频、公式等。 ### 九、文件编辑器 - 原生存储，支持打开text/html/css/js/svg/xml/md等，可以当作一个简单的在线editplus。
+  ### 十、白板 - 集自由布局、画笔、便签多种创意表达能力于一体，激发团队创造力，随时随地，围绕一块白板沟通。 ### 十一、图片编辑 - 一个小型的photoshop，原生存储，支持搜索图片，支持图片裁剪、旋转、缩放、滤镜等功能
+  ### 十二、甘特图 - 项目管理必备工具，支持自定义项目人员和角色，支持拖拽/管理分配（资源、角色、工作）等。 ### 十三、浏览器 - 一款简单的内置浏览器
+  ### 十四、系统设置 - 可在这里切换存储方式，可切换系统背景。 ### 十五、应用商店 - 应用商店管理，丰富的外部接口，可导入/添加/下载外部应用。支持依赖库安装/卸载。
+  ### 十六、截图 - 一个简单的截图工具。截图后文件存到本地。 ### 十七、录屏 - 一个简单的录屏工具。录屏后录后文件存到本地。 ### 十八、计算器 -
+  一个仿windows10的计算器，支持历史记录。 ### 十九、音乐库 - 一个简单的声音存储库，支持播放音乐。 ### 二十、图片库 - 一个简单的图片存储库，支持查看图片
+  ### 二十一、看板 - 支持标准看板，项目管理必备工具，可快速创建看板并放置到不同的文件夹 ### 二十二、进程管理 - 支持进程管理，可以查看进程列表，杀死进程
+  ## \U0001F3C6 开发 ### 1.进入godo/deps/找到对应系统的文件夹，直接手工打zip压缩包 ### 2.构建 - 前端构建（必须） ```bash
+  cd frontend pnpm i pnpm build ``` - 桌面端构建 ```bash # go install github.com/wailsapp/wails/v2/cmd/wails@latest
+  wails build # wails build -nsis -upx //you need install nsis and upx ``` - web端构建
+  ```bash cd godo chmod +x quick_build.sh //linux or mac必须有执行权限，windows不需要 ./qu"
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,67 @@
 layout: project
 name: Antiwork Gumroad
 slug: antiwork-gumroad
+category: CLI TOOLS
 image: https://public-files.gumroad.com/logo/gumroad.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/antiwork-gumroad
+indexed_content: "Sell your stuff. See what sticks. Gumroad is an e-commerce platform
+  that enables creators to sell products directly to consumers. This repository contains
+  the source code for the Gumroad web application. ## Table of Contents - [Getting
+  Started](#getting-started) - [Prerequisites](#prerequisites) - [Installation](#installation)
+  - [Configuration](#configuration) - [Running Locally](#running-locally) - [Development](#development)
+  - [Logging in](#logging-in) - [Resetting Elasticsearch indices](#resetting-elasticsearch-indices)
+  - [Push Notifications](#push-notifications) - [Common Development Tasks](#common-development-tasks)
+  - [Linting](#linting) ## Getting Started ### Prerequisites > \U0001F4A1 If you're
+  on Windows, follow our [Windows setup guide](docs/development/windows.md) instead.
+  Before you begin, ensure you have the following installed: #### Ruby - https://www.ruby-lang.org/en/documentation/installation/
+  - Install the version listed in [the .ruby-version file](./.ruby-version) #### Node.js
+  - https://nodejs.org/en/download - Install the version listed in [the .node-version
+  file](./.node-version) #### Docker We use Docker to setup the services for development
+  environment. - For MacOS: Download the Docker app from the [Docker website](https://www.docker.com/products/docker-desktop)
+  - For Linux: ```bash sudo wget -qO- https://get.docker.com/ | sh sudo usermod -aG
+  docker $(whoami) ``` #### MySQL & Percona Toolkit Install a local version of MySQL
+  8.0.x to match the version running in production. The local version of MySQL is
+  a dependency of the Ruby `mysql2` gem. You do not need to start an instance of the
+  MySQL service locally. The app will connect to a MySQL instance running in the Docker
+  container. - For MacOS: ```bash brew install mysql@8.0 percona-toolkit brew link
+  --force mysql@8.0 # to use Homebrew's `openssl`: brew install openssl bundle config
+  --global build.mysql2 --with-opt-dir=\"$(brew --prefix openssl)\" # ensure MySQL
+  is not running as a service brew services stop mysql@8.0 ``` - For Linux: - MySQL:
+  - https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html - `apt install
+  libmysqlclient-dev` - Percona Toolkit: https://www.percona.com/doc/percona-toolkit/LATEST/installation.html
+  #### Image Processing Libraries ##### ImageMagick We use `imagemagick` for preview
+  editing. - For MacOS: `brew install imagemagick` - For Linux: `sudo apt-get install
+  imagemagick` ##### libvips For newer image formats we use `libvips` for image processing
+  with ActiveStorage. - For MacOS: `brew install libvips` - For Linux: `sudo apt-get
+  install libvips-dev` #### FFmpeg We use `ffprobe` that comes with `FFmpeg` package
+  to fetch metadata from video files. - For MacOS: `brew install ffmpeg` - For Linux:
+  `sudo apt-get install ffmpeg` #### PDFtk We use [pdftk](https://www.pdflabs.com/tools/pdftk-server/)
+  to stamp PDF files with the Gumroad logo and the buyers' emails. - For MacOS: Download
+  from [here](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg)
+  - **Note:** pdftk may be blocked by Apple's firewall. If this happens, go to Settings
+  > Privacy & Security and click \"Open Anyways\" to allow the installation. - For
+  Linux: `sudo apt-get install pdftk` #### wkhtmltopdf While generating invoices,
+  to convert HTML to PDF, PDFKit expects [wkhtmltopdf](https://wkhtmltopdf.org/) to
+  be installed on your system. [Download](https://wkhtmltopdf.org/downloads.html)
+  and install the version 0.12.6 for your platform. - **Note** similar to pdftk, this
+  may also be blocked by Apple's firewall on MacOS. Follow a similar process as above.
+  ### Installation #### Bundler and gems We use Bundler to install Ruby gems. ```shell
+  gem install bundler ``` Install gems: ```shell bundle install ``` Also make sure
+  to install `dotenv` as it is required for some console commands: ```shell gem install
+  dotenv ``` #### npm and Node.js dependencies Make sure the correct version of `npm`
+  is enabled: ```shell corepack enable ``` Install dependencies: ```shell npm install
+  ``` ### Configuration #### Set up Custom credentials App can be booted without any
+  custom credentials. But if you would like to use services that require custom credentials
+  (e.g. S3, Stripe, Resend, etc.), you can copy the `.env.example` file to `.env`
+  and fill in the values. ### Running Locally #### Start Docker services If you installed
+  Docker Desktop (on a Mac or Windows machine), you can run the following command
+  to start the Docker services: ```shell make local ``` If you are on Linux, or installed
+  Docker via a package manager on a mac, you may have to manually give docker superuser
+  access to open ports 80 and 443. To do that, use `sudo make local` instead. This
+  command will not terminate. You run this in one tab and start the application in
+  another tab. If you want to run Docker services in the background, use `LOCAL_DETACHED=true
+  make local` instead. #### Set up the database ```shell bin/rails db:prepare ```
+  For Linux (Debian / Ubuntu) you might need the fo"
 ---
 {% raw %}
 <p align="center">

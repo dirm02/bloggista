@@ -2,8 +2,59 @@
 layout: project
 name: Rsxdalv Tts Webui
 slug: rsxdalv-TTS-WebUI
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/rsxdalv-TTS-WebUI/documentation/screenshots/banner.png
 repo_url: https://github.com/rsxdalv/TTS-WebUI
+indexed_content: 'TTS WebUI [Download Installer](https://github.com/rsxdalv/TTS-WebUI/releases/download/v0.0.0/tts-webui-installer.zip)
+  || [Installation](#installation) || [Docker Setup](#docker-setup) || [Silly Tavern](#integrations)
+  || [Extensions](#extensions) || [Feedback / Bug reports](https://forms.gle/2L62owhBsGFzdFBC8)
+  [](https://github.com/rsxdalv/tts-webui) [](https://github.com/rsxdalv/tts-webui/stargazers)
+  [](https://github.com/rsxdalv/tts-webui/blob/main/LICENSE) [](https://discord.gg/V8BKTVRtJ9)
+  [](https://colab.research.google.com/github/rsxdalv/tts-webui/blob/main/documentation/notebooks/google_colab.ipynb)
+  [](https://github.com/rsxdalv/tts-webui/network/members) [](https://www.youtube.com/@TTS-WebUI)
+  ## Videos | [](https://youtu.be/JXojhFjZ39k) | [](https://youtu.be/YvM3DdRHDsI)
+  | [](https://youtu.be/_0rftbXPJLI) | | :------------------------------------------------------------------------------------------------------:
+  | :------------------------------------------------------------------------------------------------------:
+  | :------------------------------------------------------------------------------------------------------:
+  | ## Examples | | | | | :-----------------------------------------: | :-----------------------------------------:
+  | :-------------------------------: | ## Screenshots | .png) | .png) | .png) | |
+  :-----------------------------------------: | :-----------------------------------------:
+  | :-------------------------------: | | .png) | .png) | .png) | | :-----------------------------------------:
+  | :-----------------------------------------: | :-------------------------------:
+  | ## Supported Models | Text-to-speech | Audio/Music Generation | Audio Conversion/Tools
+  | | -----------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------
+  | ---------------------------------------------------------------------------- |
+  | [Bark](https://github.com/suno-ai/bark) | [MusicGen](https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md)
+  | [RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) |
+  | [Tortoise](https://github.com/neonbjb/tortoise-tts) | [MAGNeT](https://github.com/facebookresearch/audiocraft/blob/main/docs/MAGNET.md)
+  | [Demucs](https://github.com/facebookresearch/demucs) | | [Maha TTS](https://github.com/dubverse-ai/MahaTTS)
+  | [Stable Audio](https://github.com/Stability-AI/stable-audio-tools) | [Vocos](https://github.com/gemelo-ai/vocos)
+  | | [MMS](https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md)
+  | [Riffusion\*](https://github.com/riffusion/riffusion-hobby) | [Whisper](https://github.com/openai/whisper)
+  | | [Vall-E X](https://github.com/Plachtaa/VALL-E-X) | [AudioCraft Mac\*](https://github.com/trizko/audiocraft)
+  | [AP BWE](https://github.com/yxlu-0102/AP-BWE) | | [StyleTTS2](https://github.com/sidharthrajaram/StyleTTS2)
+  | [AudioCraft Plus\*](https://github.com/GrandaddyShmax/audiocraft_plus) | [Resemble
+  Enhance](https://github.com/resemble-ai/resemble-enhance) | | [SeamlessM4T](https://github.com/facebookresearch/seamless_communication)
+  | [ACE-Step\*](https://github.com/ACE-Step/ACE-Step) | [Audio Separator](https://github.com/nomadkaraoke/python-audio-separator)
+  | | [XTTSv2\*](https://github.com/coqui-ai/TTS) | [Song Bloom\*](https://github.com/rsxdalv/tts_webui_extension.song_bloom)
+  | [PyRNNoise\*](https://github.com/rsxdalv/tts_webui_extension.pyrnnoise) | | [MARS5\*](https://github.com/camb-ai/mars5-tts)
+  | | [MiMo Audio\*](https://github.com/rsxdalv/tts_webui_extension.mimo_audio) |
+  | [F5-TTS\*](https://github.com/SWivid/F5-TTS) | | | | [Parler TTS\*](https://github.com/huggingface/parler-tts)
+  | | | | [OpenVoice\*](https://github.com/myshell-ai/OpenVoice) | | | | [OpenVoice
+  V2\*](https://github.com/myshell-ai/OpenVoice) | | | | [Kokoro TTS\*](https://github.com/hexgrad/kokoro)
+  | | | | [DIA\*](https://github.com/nari-labs/dia) | | | | [CosyVoice\*](https://github.com/FunAudioLLM/CosyVoice)
+  | | | | [GPT-SoVITS\*](https://github.com/X-T-E-R/GPT-SoVITS-Inference) | | | |
+  [Piper TTS\*](https://github.com/rhasspy/piper) | | | | [Kimi Audio 7B Instruct\*](https://github.com/Dao-AILab/Kimi-Audio)
+  | | | | [Chatterbox\*](https://github.com/rsxdalv/chatterbox) | | | | [VibeVoice\*](https://github.com/rsxdalv/tts_webui_extension.vibevoice)
+  | | | | [Kitten TTS\*](https://github.com/rsxdalv/tts_webui_extension.kitten_tts)
+  | | | | [Index-TTS2\*](https://github.com/rsxdalv/tts_webui_extension.index_tts)
+  | | | | [VoxCPM\*](https://github.com/rsxdalv/tts_webui_extension.vox_cpm) | | |
+  | [FireRedTTS2\*](https://github.com/rsxdalv/tts_webui_extension.fireredtts2) |
+  | | | [MegaTTS3\*](https://github.com/rsxdalv/tts_webui_extension.megatts3) | |
+  | \* These models are not installed by default, instead they are available as extensions.
+  ## Installation ### Using the Installer (Recommended) Current base installation
+  size is around 10.7 GB.'
 ---
 {% raw %}
 <h1 align="center">TTS WebUI</h1>

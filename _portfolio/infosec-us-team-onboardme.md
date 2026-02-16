@@ -2,8 +2,73 @@
 layout: project
 name: Infosec Us Team Onboardme
 slug: infosec-us-team-onboardme
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/infosec-us-team-onboardme/resources/1.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# \U0001F9EA OnboardMe (Experimental) Below is a short user interface
+  walkthrough, starting from the homepage, then typing `mainnet:0x..smart-contract-address`
+  to visit a smart contract, and navigating its entry points: > ⚠️ Highly experimental.
+  It may fail on some contracts, compilers, or Slither versions. Expect sharp edges.
+  > > ⚠️ The videos and images in this README.md file will differ from the actual
+  interface, as we add features faster than we update the images in the README. Jumping
+  between files and tabs isn’t a great way to study an entry point in a Solidity smart
+  contract. Ideally, you want one scrollable view showing every internal function
+  and state variable the entry point touches. OnboardMe gives you that. By default,
+  press j to jump to the next entry point (no matter where it’s defined) while keeping
+  the entire flow in view. It doesn’t replace your IDE; it’s just the fastest way
+  to understand all possible execution paths, so you can dive deeper with your IDE
+  when needed. > **Tip**: Press **?** for a list shortcuts. OnboardMe was designed
+  for a keyboard-centric workflow and most features can only be triggered from a shortcut.
+  Shortcuts are configurable in `src/hotkeys.json`. ## ✨ Features - \U0001F9F1 Supports
+  local Solidity projects and deployed smart contracts - \U0001F9F5 Single scrollable
+  execution flow per entry point, including internal calls - \U0001F6E1️ Summarize
+  all checks on `msg.sender` to quickly detect access control issues or avoid wasting
+  time in well-known and well-protected admin functions - \U0001F50E Storage dependency
+  panel to trace writers for a selected storage variable - \U0001F4C8 State Variable
+  Tracking: Visualize how values, tokens, and state changes flow through functions
+  - \U0001FA9C Step-by-step mode to reveal internal calls as needed (Shift+T or `?`
+  menu) - \U0001F526 Interactive Flow Highlighting: Click on variables to see all
+  definitions, uses, and assignments - ✅ Audit marks with a filter to focus on audited
+  entry points - \U0001F517 Persisting audit marks across different smart contracts
+  ensures you never audit the same function twice - ⚠️ Warning marks to keep track
+  of potentially buggy code - \U0001F4DD Inline line comments via hotkey (persisted
+  locally) - \U0001F47B Dim irrelevant lines of code - \U0001F9ED Open contract in
+  a block explorer via hotkey - ⌨️ Keyboard-centric navigation (`j`/`k` for entry
+  points, `e` search, `r` right panel, `w` storage dependencies) - ⚙️ Configurable
+  hotkeys and help overlay via `src/hotkeys.json` - \U0001F4E6 Collapsible function
+  blocks with persisted state and synced collapse across identical code - \U0001F4CB
+  Chain- and address-aware header with copy-to-clipboard hotkey - \U0001F6E0️ Local
+  UI + API (`/generate`) and CLI (`python main.py`) ## \U0001F9E9 Understand the UI
+  layout ### \U0001F3AF Center The center section of the screen has the currently
+  selected entry point, with all the internal functions it executes, in a scrollable
+  page. ### ➡️ Right Pressing `r` toggles the visibility of the right panel, which
+  contains every global variable read/written during the execution of this entry point.
+  Pressing `w` toggles a data dependency panel that lets you list all possible ways
+  to modify a specific storage variable, either directly or indirectly. ### ⬅️ Left
+  Pressing `l` toggles the visibility of the left panel, which contains every entry
+  point. By default, you can switch between entry points by clicking on them or by
+  pressing `j`/`k` for next and previous. ### \U0001F50D Search Press `e` to fuzzy-find
+  entry points. ### \U0001FA84 Toggle functions Click the header of a function to
+  collapse its code. Folded code persists across contracts, so identical functions
+  stay collapsed. This is especially useful for common modifiers like `onlyRole` and
+  other repeated patterns across contracts, helping you focus on what matters. ###
+  \U0001F9EC Variable hover lens Hover or click any variable inside a function to
+  highlight every occurrence. Storage variables glow red, memory variables glow blue.
+  ### ⚠️ Mark your progress Press 'm' to mark an entry point as audited. Press 'i'
+  to mark an entry point as potentially buggy. Marks will save you time by skipping
+  entry points you have fully audited in the past, and remind you to check again entry
+  points you suspect to be vulnerable. Press `n` to add/edit an inline comment for
+  the currently hovered code line (comments persist locally in your browser). ###
+  \U0001F47B Dim irrelevant lines of code Press 'z' to dim lines of code distracting
+  you from the ones that matter most. ### \U0001F4D6 Call read-only functions in the
+  spot Without changing context, you can read the output of any view-only function
+  with the hotkey `Shift+V`. Sometimes you may need to read the code of a view-only
+  function that is never executed in any entry point (very common in oracles). You
+  can press `Shift+L` to switch to a panel of view-only functions. ### ❗ Checks on
+  `msg.sender` Entry points that enforce any check on `msg.sender` are highlighted.
+  Hover the icon to read more details about what is actually enforced, without having
+  to read the code. ### \U0001F9ED Step-by-Step Mode Step-by-step mode is built into
+  the UI. Open the `?`"
 ---
 {% raw %}
 # 🧪 OnboardMe (Experimental)

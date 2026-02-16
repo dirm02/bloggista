@@ -5,6 +5,7 @@
 
 require 'yaml'
 require 'fileutils'
+require 'json'
 
 STARRED_READMES = 'starred-readmes'
 PLACEHOLDER_IMAGE = '/assets/images/portfolio-placeholder.svg'
@@ -140,6 +141,33 @@ def read_readme_content(readme_path)
   content.sub(/\A---\s*\n.*?\n---\s*\n/m, '')
 end
 
+def load_categories_mapping(mystars_path)
+  mapping_file = File.join(mystars_path, 'categories-mapping.json')
+  return {} unless File.file?(mapping_file)
+  
+  JSON.parse(File.read(mapping_file))
+rescue => e
+  puts "Warning: Could not load categories-mapping.json: #{e.message}"
+  {}
+end
+
+def extract_category_from_mapping(slug, categories_mapping)
+  # slug format: "owner-repo"
+  # mapping key format: "owner/repo"
+  repo_key = slug.sub('-', '/')  # Replace first dash with /
+  categories_mapping[repo_key] || 'Uncategorized'
+end
+
+def index_readme_content(content, max_length = 5000)
+  return '' if content.nil? || content.empty?
+  # Strip frontmatter, HTML tags, and excessive whitespace for indexing
+  indexed = content.sub(/\A---\s*\n.*?\n---\s*\n/m, '')
+  indexed = indexed.gsub(/<[^>]+>/, ' ')  # Remove HTML tags
+  indexed = indexed.gsub(/!\[[^\]]*\]\([^)]+\)/, '')  # Remove images
+  indexed = indexed.gsub(/\s+/, ' ').strip
+  indexed.length > max_length ? indexed[0...max_length] : indexed
+end
+
 def process_mystars(mystars_path)
   projects = []
   base_path = projects_base_path(mystars_path)
@@ -148,6 +176,8 @@ def process_mystars(mystars_path)
   branch = get_mystars_branch(mystars_path)
   branch = 'master' if branch.nil? || branch.empty?
   raw_base = raw_base_for_folder(base_path, branch)
+  
+  categories_mapping = load_categories_mapping(mystars_path)
 
   Dir.foreach(base_path) do |entry|
     next if entry.start_with?('.')
@@ -172,13 +202,18 @@ def process_mystars(mystars_path)
 
     readme_content = read_readme_content(readme_path)
     readme_content = rewrite_readme_image_urls(readme_content, entry, raw_base)
+    
+    category = extract_category_from_mapping(entry, categories_mapping)
+    indexed_content = index_readme_content(readme_content)
 
     projects << {
       'name' => entry.gsub(/[-_]/, ' ').split.map(&:capitalize).join(' '),
       'slug' => entry,
+      'category' => category,
       'image' => image,
       'repo_url' => repo_url,
-      'readme' => readme_content
+      'readme' => readme_content,
+      'indexed_content' => indexed_content
     }
   end
 
@@ -203,8 +238,10 @@ def write_portfolio_collection(projects, output_dir)
       'layout' => 'project',
       'name' => p['name'],
       'slug' => p['slug'],
+      'category' => p['category'],
       'image' => p['image'],
-      'repo_url' => p['repo_url']
+      'repo_url' => p['repo_url'],
+      'indexed_content' => p['indexed_content']
     }
 
     body = p['readme'].to_s

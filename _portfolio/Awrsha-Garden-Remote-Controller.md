@@ -2,8 +2,70 @@
 layout: project
 name: Awrsha Garden Remote Controller
 slug: Awrsha-Garden-Remote-Controller
+category: Home automation-IoT
 image: https://img.shields.io/badge/Android-SMS%20Control-3DDC84?style=for-the-badge&logo=android&logoColor=white
 repo_url: https://github.com/Awrsha/Garden-Remote-Controller.git
+indexed_content: "# SMS Control - Remote IoT Device Management [](https://android-arsenal.com/api?level=24)
+  [](LICENSE) **Control your IoT devices remotely via SMS - No internet required**
+  [Features](#-features) • [Screenshots](#-screenshots) • [Installation](#-installation)
+  • [Usage](#-usage) • [Technical Details](#-technical-details) --- ## \U0001F4F1
+  Overview **SMS Control** is a powerful Android application that enables remote control
+  and monitoring of IoT devices through SMS commands. Perfect for home automation,
+  security systems, and remote monitoring where internet connectivity is unavailable
+  or unreliable. ### \U0001F3AF Key Highlights - **\U0001F310 No Internet Required**
+  - Works entirely over SMS - **\U0001F514 Real-time Alerts** - Instant notifications
+  for sensor triggers - **\U0001F3A8 Modern UI** - iOS-inspired design with smooth
+  animations - **⚡ Quick Actions** - One-tap control for common tasks - **\U0001F4CA
+  Status Monitoring** - Live device state tracking - **\U0001F504 Auto-refresh** -
+  Configurable automatic status updates - **\U0001F4BE Persistent Storage** - Saves
+  device states and chat history --- ## ✨ Features ### Device Control - **Toggle Controls**
+  - iOS-style switches for lights, pumps, fans - **Sensor Management** - Enable/disable
+  door sensors and PIR motion detectors - **Alarm System** - Programmable timers for
+  automated control - **Status Monitoring** - Real-time device state display ### Smart
+  Notifications - **Motion Detection** - Instant alerts for PIR sensor triggers -
+  **Door Sensors** - Notifications when door sensors activate - **Laser Detection**
+  - Emergency alerts with screen wake-up - **Custom Sounds** - Configurable vibration
+  and sound alerts ### Advanced Features - **Custom Commands** - Add your own commands
+  with icons - **Quick Commands** - Preset actions (Turn All Off/On, Restart, Emergency)
+  - **Auto-refresh** - Automatic status updates every 5 minutes - **Command History**
+  - Full SMS conversation log - **Backup/Restore** - Save and restore configuration
+  - **Enable/Disable Commands** - Toggle individual commands on/off ### User Interface
+  - **3-Column Grid Layout** - Efficient space utilization - **Loading States** -
+  Visual feedback for command execution - **Dark Mode Support** - System-wide theme
+  support - **Smooth Animations** - Polished click and toggle animations - **Status
+  Cards** - Beautiful iOS-style status displays --- ## \U0001F4F8 Screenshots (Successfull
+  Run on Andriod 16) | Home Screen | Icon | Status Monitor | |------------|---------------|----------------|
+  | | | | | Target SimCard Setup | Default Log | |------------|------------| | | |
+  --- ## \U0001F680 Installation ### Prerequisites - Android device running API 24+
+  (Android 7.0+) - SMS permissions - Target device with SMS capability ### Quick Start
+  1. **Clone the repository** ```bash git clone https://github.com/Awrsha/Garden-Remote-Controller.git
+  cd Garden-Remote-Controller cd sms-control ``` 2. **Open in Android Studio** ```bash
+  # Open Android Studio and select \"Open an Existing Project\" # Navigate to the
+  cloned directory ``` 3. **Build and Run** ```bash # Connect your Android device
+  or start an emulator # Click \"Run\" or press Shift+F10 ``` ### APK Installation
+  Download the latest APK from [Releases](https://github.com/Awrsha/Garden-Remote-Controller/releases)
+  and install on your device. --- ## \U0001F4D6 Usage ### Initial Setup 1. **Configure
+  Phone Number** - Open the app - Go to Settings (menu → Settings) - Enter the phone
+  number of your IoT device - Tap \"Save\" 2. **Grant Permissions** - Allow SMS permissions
+  when prompted - Enable notification permissions for alerts - Grant vibration permission
+  for haptic feedback ### Controlling Devices #### Toggle Controls 1. Tap any toggle-enabled
+  command (Sensors, Alarms, LEDs, Water, Fan) 2. The toggle animates to show the new
+  state 3. SMS command is sent automatically 4. Wait for device response (loading
+  indicator shown) #### Setting Alarms 1. Tap an alarm command (Alarm1, Alarm2, Alarm3)
+  2. Set time using the time picker 3. Adjust duration with +/- buttons 4. Tap \"Send\"
+  to configure the alarm #### Status Refresh - Tap the refresh icon in the toolbar
+  - Or enable auto-refresh (menu → Auto-Refresh) - Status updates every 5 minutes
+  when enabled ### Command Format The app sends SMS commands in the following formats:
+  ``` Status # Request full status Sensors on # Enable sensors Led1 off # Turn off
+  LED 1 Alarm1 14:30,10 # Set alarm at 14:30 for 10 minutes Water on # Turn on water
+  pump ``` ### Expected Device Responses Your IoT device should respond with status
+  messages like: ``` 12:34:56 07/01/2026 Monday >Sensors: ON >Alarms: ON >L1: ON A14:30
+  D10 >L2: OFF >Water: OFF >Fan: ON ``` --- ## \U0001F527 Technical Details ### Architecture
+  ``` ┌─────────────────────────────────────────┐ │ MainActivity │ │ ┌───────────────────────────────────┐
+  │ │ │ UI Layer (Activity + Fragments) │ │ │ └───────────────────────────────────┘
+  │ │ ┌───────────────────────────────────┐ │ │ │ RecyclerView Adapters │ │ │ │ •
+  CommandAdapter │ │ │ │ • MessageAdapter │ │ │ └───────────────────────────────────┘
+  │ │ ┌───────"
 ---
 {% raw %}
 # SMS Control - Remote IoT Device Management

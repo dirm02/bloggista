@@ -2,8 +2,63 @@
 layout: project
 name: 100mslive 100ms Flutter
 slug: 100mslive-100ms-flutter
+category: iOS-imac
 image: https://img.shields.io/pub/v/hmssdk_flutter
 repo_url: https://github.com/100mslive/100ms-flutter
+indexed_content: "[](https://pub.dev/packages/hmssdk_flutter) [](https://github.com/100mslive/100ms-flutter/actions/workflows/build.yml)
+  [](https://www.100ms.live/) [](https://docs.100ms.live/flutter/v2/foundation/basics)
+  [](https://100ms.live/discord) [](https://appdistribution.firebase.dev/i/b623e5310929ab70)
+  [](https://testflight.apple.com/join/Uhzebmut) [](https://dashboard.100ms.live/register)
+  # 100ms Flutter SDK \U0001F389 Integrate Real Time Audio and Video conferencing,
+  Interactive Live Streaming, and Chat in your apps with 100ms Flutter SDK. With support
+  for HLS and RTMP Live Streaming and Recording, Picture-in-Picture (PiP), CallKit,
+  VoIP, one-to-one Video Call Modes, Audio Rooms, Video Player and much more, add
+  immersive real-time communications to your apps. | Package | Version | | --------------
+  | ------------------------------------------------------------------------------------------------------
+  | | hms_room_kit | [](https://pub.dev/packages/hms_room_kit) | | hmssdk_flutter
+  | [](https://pub.dev/packages/hmssdk_flutter) | \U0001F4BB Checkout the 100ms Flutter
+  SDK [here](https://github.com/100mslive/100ms-flutter/tree/main/packages/hmssdk_flutter)
+  ❤️ Checkout the 100ms Prebuilt [here](https://github.com/100mslive/100ms-flutter/tree/main/packages/hms_room_kit)
+  \U0001F9F1 The Prebuilt QuickStart Guide is [available here](https://www.100ms.live/docs/flutter/v2/quickstart/prebuilt).
+  \U0001F4D6 Read the Complete Documentation here: https://www.100ms.live/docs/flutter/v2/guides/quickstart
+  \U0001F4F2 Download the Sample iOS app here: \U0001F916 Download the Sample Android
+  app here: 100ms Flutter apps are also available on the App Stores, do download them
+  and try it out. ## \U0001F682 Setup Guide 1. Sign up on & visit the Developer tab
+  to access your credentials. 2. Get familiarized with [Tokens & Security here](https://www.100ms.live/docs/flutter/v2/foundation/security-and-tokens)
+  3. Complete the steps in [Auth Token Quick Start Guide](https://www.100ms.live/docs/flutter/v2/guides/token)
+  4. Get the HMSSDK via [pub.dev](https://pub.dev/packages/hmssdk_flutter). Add the
+  `hmssdk_flutter` to your pubspec.yaml. \U0001F4D6 Do refer the Complete [Installation
+  Guide here](https://www.100ms.live/docs/flutter/v2/features/integration). ## \U0001F3C3♀️
+  How to run the Example App The full featured Example app is [available here](https://github.com/100mslive/100ms-flutter/tree/main/packages/hmssdk_flutter/example).
+  \U0001F680 We have added explanations & recommended usage guide for different features,
+  UI Layouts, Data Store, etc in [Example app ReadMe](https://github.com/100mslive/100ms-flutter/tree/main/packages/hmssdk_flutter/example).
+  To run the Example App on your system follow these steps - 1. Clone the 100ms Flutter
+  [Github Repo](https://github.com/100mslive/100ms-flutter.git) 2. In project root,
+  run `flutter pub get` to build the Flutter package 3. Change directory to `example`
+  folder 4. Now, to run the app, simply execute the `flutter run` command to run the
+  app on a connected device, or iOS simulator, or Android Emulator. 5. For running
+  on an iOS Device (iPhone or iPad), ensure you have set the Correct Development Team
+  in Xcode Signing & Capabilities section. The default [Example app](https://github.com/100mslive/100ms-flutter/tree/main/packages/hmssdk_flutter/example)
+  uses Provider State Management library. For other implementations please check out
+  - 1. [Simple QuickStart](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/flutter-quickstart-app)
+  2. [Bloc](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/bloc)
+  3. [Getx](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/getx)
+  4. [Mobx](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/mobx)
+  5. [Riverpod](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/riverpod)
+  6. [Audio Room App](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/flutter-audio-room-quickstart)
+  7. [CallKit & VoIP](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/hms-callkit-app)
+  8. [Flutterflow with Prebuilt](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/flutterflow-prebuilt-quickstart)
+  9. [Live Stream with HLS](https://github.com/100mslive/100ms-flutter/tree/main/sample%20apps/flutter-hls-quickstart)
+  10. [Full featured App](https://github.com/100mslive/100ms-flutter/tree/main/packages/hmssdk_flutter/example)
+  ## ☝️ Minimum Configuration - Support for Flutter 3.3.0 or above - Support for Android
+  API level 24 or above - Support for Java 17 or above - Support for iOS 12 or above
+  - Xcode 12 or above ## \U0001F91D Recommended Configuration - Flutter 3.13.0 or
+  above - Android API level 35 or above - Java 17 or above - iOS 16 or above - Xcode
+  15 or above ## \U0001F4F1 Supported Devices - The Android SDK supports Android API
+  level 24 and above. It is built for 64-bit architectures only (arm64-v8a, x86_64).
+  Devices running Android OS 12 or above is recommended. - iPhone & iPads with iOS
+  version 12 or above are supported. Devices running iOS 16 or above is recommended.
+  ## \U0001F527 Android"
 ---
 {% raw %}
 [![Pub Version](https://img.shields.io/pub/v/hmssdk_flutter)](https://pub.dev/packages/hmssdk_flutter)

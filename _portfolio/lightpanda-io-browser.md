@@ -2,8 +2,64 @@
 layout: project
 name: Lightpanda Io Browser
 slug: lightpanda-io-browser
+category: Uncategorized
 image: https://img.shields.io/github/license/lightpanda-io/browser
 repo_url: https://github.com/lightpanda-io/browser
+indexed_content: 'Lightpanda Browser lightpanda.io [](https://github.com/lightpanda-io/browser/blob/main/LICENSE)
+  [](https://twitter.com/lightpanda_io) [](https://github.com/lightpanda-io/browser)
+  Lightpanda is the open-source browser made for headless usage: - Javascript execution
+  - Support of Web APIs (partial, WIP) - Compatible with Playwright[^1], Puppeteer,
+  chromedp through [CDP](https://chromedevtools.github.io/devtools-protocol/) Fast
+  web automation for AI agents, LLM training, scraping and testing: - Ultra-low memory
+  footprint (9x less than Chrome) - Exceptionally fast execution (11x faster than
+  Chrome) - Instant startup [ ](https://github.com/lightpanda-io/demo) &emsp; [ ](https://github.com/lightpanda-io/demo)
+  _Puppeteer requesting 100 pages from a local website on a AWS EC2 m5.large instance.
+  See [benchmark details](https://github.com/lightpanda-io/demo)._ [^1]: **Playwright
+  support disclaimer:** Due to the nature of Playwright, a script that works with
+  the current version of the browser may not function correctly with a future version.
+  Playwright uses an intermediate JavaScript layer that selects an execution strategy
+  based on the browser''s available features. If Lightpanda adds a new [Web API](https://developer.mozilla.org/en-US/docs/Web/API),
+  Playwright may choose to execute different code for the same script. This new code
+  path could attempt to use features that are not yet implemented. Lightpanda makes
+  an effort to add compatibility tests, but we can''t cover all scenarios. If you
+  encounter an issue, please create a [GitHub issue](https://github.com/lightpanda-io/browser/issues)
+  and include the last known working version of the script. ## Quick start ### Install
+  **Install from the nightly builds** You can download the last binary from the [nightly
+  builds](https://github.com/lightpanda-io/browser/releases/tag/nightly) for Linux
+  x86_64 and MacOS aarch64. *For Linux* ```console curl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-x86_64-linux
+  && \ chmod a+x ./lightpanda ``` *For MacOS* ```console curl -L -o lightpanda https://github.com/lightpanda-io/browser/releases/download/nightly/lightpanda-aarch64-macos
+  && \ chmod a+x ./lightpanda ``` *For Windows + WSL2* The Lightpanda browser is compatible
+  to run on windows inside WSL. Follow the Linux instruction for installation from
+  a WSL terminal. It is recommended to install clients like Puppeteer on the Windows
+  host. **Install from Docker** Lightpanda provides [official Docker images](https://hub.docker.com/r/lightpanda/browser)
+  for both Linux amd64 and arm64 architectures. The following command fetches the
+  Docker image and starts a new container exposing Lightpanda''s CDP server on port
+  `9222`. ```console docker run -d --name lightpanda -p 9222:9222 lightpanda/browser:nightly
+  ``` ### Dump a URL ```console ./lightpanda fetch --obey_robots --log_format pretty
+  --log_level info https://demo-browser.lightpanda.io/campfire-commerce/ ``` ```console
+  INFO telemetry : telemetry status . . . . . . . . . . . . . [+0ms] disabled = false
+  INFO page : navigate . . . . . . . . . . . . . . . . . . . . [+6ms] url = https://demo-browser.lightpanda.io/campfire-commerce/
+  method = GET reason = address_bar body = false req_id = 1 INFO browser : executing
+  script . . . . . . . . . . . . . . [+118ms] src = https://demo-browser.lightpanda.io/campfire-commerce/script.js
+  kind = javascript cacheable = true INFO http : request complete . . . . . . . .
+  . . . . . . . . [+140ms] source = xhr url = https://demo-browser.lightpanda.io/campfire-commerce/json/product.json
+  status = 200 len = 4770 INFO http : request complete . . . . . . . . . . . . . .
+  . . [+141ms] source = fetch url = https://demo-browser.lightpanda.io/campfire-commerce/json/reviews.json
+  status = 200 len = 1615 ``` ### Start a CDP server ```console ./lightpanda serve
+  --obey_robots --log_format pretty --log_level info --host 127.0.0.1 --port 9222
+  ``` ```console INFO telemetry : telemetry status . . . . . . . . . . . . . [+0ms]
+  disabled = false INFO app : server running . . . . . . . . . . . . . . . . . [+0ms]
+  address = 127.0.0.1:9222 ``` Once the CDP server started, you can run a Puppeteer
+  script by configuring the `browserWSEndpoint`. ```js ''use strict'' import puppeteer
+  from ''puppeteer-core''; // use browserWSEndpoint to pass the Lightpanda''s CDP
+  server address. const browser = await puppeteer.connect({ browserWSEndpoint: "ws://127.0.0.1:9222",
+  }); // The rest of your script remains the same. const context = await browser.createBrowserContext();
+  const page = await context.newPage(); // Dump all the links from the page. await
+  page.goto(''https://demo-browser.lightpanda.io/amiibo/'', {waitUntil: "networkidle0"});
+  const links = await page.evaluate(() => { return Array.from(document.querySelectorAll(''a'')).map(row
+  => { return row.getAttribute(''href''); }); }); console.log(links); await page.close();
+  await context.close(); await browser.disconnect(); ``` ### Telemetry By default,
+  Lightpanda collects and'
 ---
 {% raw %}
 <p align="center">

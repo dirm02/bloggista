@@ -2,8 +2,30 @@
 layout: project
 name: Budgetbee Budgetbee
 slug: budgetbee-budgetbee
+category: Finance-selfapp-healthapp-Improv
 image: https://github.com/budgetbee/budgetbee/actions/workflows/server-tests.yml/badge.svg
 repo_url: https://github.com/budgetbee/budgetbee
+indexed_content: "[](https://github.com/budgetbee/budgetbee/actions/workflows/server-tests.yml)
+  [](https://github.com/budgetbee/budgetbee/actions/workflows/docker-build.yml) [](https://www.codefactor.io/repository/github/budgetbee/budgetbee)
+  BudgetBee is a personal finance management system. ## Disclaimer - ⚠️ The project
+  is under **very active** development. - ⚠️ Expect bugs and breaking changes. - ⚠️
+  **Important, do not use this application as the only app to record your finances
+  until you have a stable version v1.0.0.** If you want to contribute to this project,
+  you can! ## Installation BudgetBee is installed via docker-compose, if you want
+  to do an installation from e.g. Portainer, copy the [`/docker/compose` file](https://github.com/budgetbee/budgetbee/tree/main/docker/docker-compose.yml)
+  file, populate the variables and deploy it in your portainer application. ## Important
+  Wait around 30 seconds after all containers are up to execute the create user command
+  To create a user, run this command from your local machine, substituting the values
+  with the ones you want ```bash docker exec budgetbee-webserver-1 php scripts/create_user.php
+  ``` ## Roadmap | Features | Done | | --------------------------------------------
+  | ------ | | Import records Excel/Json | ✅ | | Create multiple users | ✅ | | Create
+  currencies | ✅ | | Add custom currencies | | | Create/Edit Categories | ✅ | | Budgets
+  by category | ✅ | | Create rules | | | Connect with banks | | | Export banckup |
+  | | Customize dashboard | | ## Updates To upgrade your BudgetBee application to
+  the latest version, rebuild your docker-compose images and re-upload the containers.
+  This can be done easily by: ```bash docker-compose up -d --build ``` ## Documentation
+  This section is currently under development ## Contributing If you would like to
+  collaborate with BudgetBee, you can do so by ## Bugs For bugs please [open an issue](https://github.com/budgetbee/budgetbee/issues)"
 ---
 {% raw %}
 [![Server Tests](https://github.com/budgetbee/budgetbee/actions/workflows/server-tests.yml/badge.svg)](https://github.com/budgetbee/budgetbee/actions/workflows/server-tests.yml)

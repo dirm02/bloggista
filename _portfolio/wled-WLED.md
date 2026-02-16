@@ -2,8 +2,47 @@
 layout: project
 name: Wled Wled
 slug: wled-WLED
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/send%20me%20a%20small%20gift-paypal-blue.svg?style=flat-square
 repo_url: https://github.com/wled-dev/WLED
+indexed_content: "# Welcome to WLED! ✨ A fast and feature-rich implementation of an
+  ESP32 and ESP8266 webserver to control NeoPixel (WS2812B, WS2811, SK6812) LEDs or
+  also SPI based chipsets like the WS2801 and APA102! Originally created by [Aircoookie](https://github.com/Aircoookie)
+  ## ⚙️ Features - WS2812FX library with more than 100 special effects - FastLED noise
+  effects and 50 palettes - Modern UI with color, effect and segment controls - Segments
+  to set different effects and colors to user defined parts of the LED string - Settings
+  page - configuration via the network - Access Point and station mode - automatic
+  failsafe AP - [Up to 10 LED outputs](https://kno.wled.ge/features/multi-strip/#esp32)
+  per instance - Support for RGBW strips - Up to 250 user presets to save and load
+  colors/effects easily, supports cycling through them. - Presets can be used to automatically
+  execute API calls - Nightlight function (gradually dims down) - Full OTA software
+  updateability (HTTP + ArduinoOTA), password protectable - Configurable analog clock
+  (Cronixie, 7-segment and EleksTube IPS clock support via usermods) - Configurable
+  Auto Brightness limit for safe operation - Filesystem-based config for easier backup
+  of presets and settings ## \U0001F4A1 Supported light control interfaces - WLED
+  app for [Android](https://play.google.com/store/apps/details?id=ca.cgagnier.wlednativeandroid)
+  and [iOS](https://apps.apple.com/gb/app/wled-native/id6446207239) - JSON and HTTP
+  request APIs - MQTT - E1.31, Art-Net, DDP and TPM2.net - [diyHue](https://github.com/diyhue/diyHue)
+  (Wled is supported by diyHue, including Hue Sync Entertainment under udp. Thanks
+  to [Gregory Mallios](https://github.com/gmallios)) - [Hyperion](https://github.com/hyperion-project/hyperion.ng)
+  - UDP realtime - Alexa voice control (including dimming and color) - Sync to Philips
+  hue lights - Adalight (PC ambilight via serial) and TPM2 - Sync color of multiple
+  WLED devices (UDP notifier) - Infrared remotes (24-key RGB, receiver required) -
+  Simple timers/schedules (time from NTP, timezones/DST supported) ## \U0001F4F2 Quick
+  start guide and documentation See the [documentation on our official site](https://kno.wled.ge)!
+  [On this page](https://kno.wled.ge/basics/tutorials/) you can find excellent tutorials
+  and tools to help you get your new project up and running! ## \U0001F5BC️ User interface
+  ## \U0001F4BE Compatible hardware See [here](https://kno.wled.ge/basics/compatible-hardware)!
+  ## ✌️ Other Licensed under the EUPL v1.2 license Credits [here](https://kno.wled.ge/about/contributors/)!
+  CORS proxy by [Corsfix](https://corsfix.com/) Join the Discord server to discuss
+  everything about WLED! Check out the WLED [Discourse forum](https://wled.discourse.group)!
+  You can also send me mails to [dev.aircoookie@gmail.com](mailto:dev.aircoookie@gmail.com),
+  but please, only do so if you want to talk to me privately. If WLED really brightens
+  up your day, you can [](https://paypal.me/aircoookie) *Disclaimer:* If you are prone
+  to photosensitive epilepsy, we recommended you do **not** use this software. If
+  you still want to try, don't use strobe, lighting or noise modes or high effect
+  speed settings. As per the EUPL license, I assume no liability for any damage to
+  you or any other person or equipment."
 ---
 {% raw %}
 <p align="center">

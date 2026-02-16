@@ -2,8 +2,68 @@
 layout: project
 name: Plemeri Transparent Background
 slug: plemeri-transparent-background
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/user-attachments/assets/50aaa2e1-b6f3-4dda-8e05-06f13456212a
 repo_url: https://github.com/plemeri/transparent-background
+indexed_content: "# Transparent Background This is a background removing tool powered
+  by [InSPyReNet (ACCV 2022)](https://github.com/plemeri/InSPyReNet.git). You can
+  easily remove background from the image or video or bunch of other stuffs when you
+  can make the background transparent! Image | Video | Webcam :-:|:-:|:-: | | ## ©️
+  Citation If you make use of this work, please cite our work. ``` @inproceedings{kim2022revisiting,
+  title={Revisiting Image Pyramid Structure for High Resolution Salient Object Detection},
+  author={Kim, Taehun and Kim, Kunhee and Lee, Joonyeong and Cha, Dongmin and Lee,
+  Jiho and Kim, Daijin}, booktitle={Proceedings of the Asian Conference on Computer
+  Vision}, pages={108--124}, year={2022} } ``` ## :rotating_light: Notice * `--jit`
+  option, also known as TorchScript option is widely used recently for disabling dynamic
+  resizing for stable output. Since it wasn't mean to be used in this way, I added
+  `--resize` option. For those who used `--jit` option because of the stability, you
+  don't have to specify anymore. You may also access to this option in python API
+  and GUI mode. * Default option is `--resize static` which provides less detailed
+  prediction but more stable * `--resize dynamic` option was the previous default
+  option which was disabled by `--jit` option previously. This will provide more detailed
+  prediction but less stable than `--resize static` option. * `flet` has been moved
+  to extra dependency since GUI mode is not used for most active users, and causing
+  import error for latest version. Please install with `pip install transparent-background[gui]`
+  ## :newspaper: News * Our package is currently not working properly on small images
+  without `--fast` argument. Sorry for the inconvenience and we'll fix this issue
+  with better algorithm coming out shortly. * [2023.09.22] For the issue with small
+  images without `--fast` argument, please download [This Checkpoint](https://drive.google.com/file/d/13YER0ri0RZkTdGQqWiwK795i39FrXNKL/view?usp=sharing).
+  After some user feedback (create issue or contact me), I'll decide to substitute
+  the current checkpoint to the newer one or train again with different approach.
+  * [2023.09.25] The above checkpoint is now available with `--mode base-nightly`
+  argument. `--fast` argument is deprecated. Use `--mode [MODE]` instead. `--mode`
+  argument supports `base`, `fast` and `base-nightly`. Note that `base-nightly` can
+  be changed without any notice. * [2023.10.19] Webcam support is not stable currently.
+  We remove the dependency for the latest release. Install with extra dependency option
+  `pip install transparent-background[webcam]` if you want to use webcam input. *
+  [2024.02.14] I added a [github sponsor badge](https://github.com/sponsors/plemeri).
+  Please help maintaining this project if you think this package is useful! * [2024.08.22]
+  [ComfyUI-Inspyrenet-Rembg](https://github.com/john-mnz/ComfyUI-Inspyrenet-Rembg)
+  is implemented by [john-mnz](https://github.com/john-mnz). Thank you for sharing
+  great work! * [2024.09.06] `transparent-background` total download counts reached
+  500,000 and ranked 5969 on [\U0001F3C6top=pypi-package](https://hugovk.github.io/top-pypi-packages/).
+  Thank you all for your huge support! * [2024.10.05] `--format`, `--resize` and `--reverse`
+  options are implemented. See Command Line and Usage sections for more details. ##
+  :inbox_tray: Installation ### Dependencies (python packages) package | version (>=)
+  :-|:- `pytorch` | `1.7.1` `torchvision` | `0.8.2` `opencv-python` | `4.6.0.66` `timm`
+  | `1.0.3` `tqdm` | `4.64.1` `kornia` | `0.5.4` `gdown` | `4.5.4` `pyvirtualcam`
+  (optional) | `0.6.0` Note: If you have any problem with [`pyvirtualcam`](https://pypi.org/project/pyvirtualcam/),
+  please visit their github repository or pypi homepage. Due to the backend workflow
+  for Windows and macOS, we only support Linux for webcam input. ### Dependencies
+  #### 1. Webcam input We basically follow the virtual camera settings from [`pyvirtualcam`](https://pypi.org/project/pyvirtualcam/).
+  If you do not choose to install virtual camera, it will visualize real-time output
+  with `cv2.imshow`. ##### A. Linux (v4l2loopback) ```bash # Install v4l2loopback
+  for webcam relay $ git clone https://github.com/umlaeute/v4l2loopback.git && cd
+  v4l2loopback $ make && sudo make install $ sudo depmod -a # Create virtual webcam
+  $ sudo modprobe v4l2loopback devices=1 ``` * Note: If you have any problem with
+  installing [`v4l2loopback`](https://github.com/umlaeute/v4l2loopback), please visit
+  their github repository. ##### B. Windows (OBS) Install OBS virtual camera from
+  [install OBS](https://obsproject.com/). ##### C. macOS (OBS) [not stable] Follow
+  the steps below. * [Install OBS](https://obsproject.com/). * Start OBS. * Click
+  \"Start Virtual Camera\" (bottom right), then \"Stop Virtual Camera\". * Close OBS.
+  #### 2. File explorer for GUI ##### A. Linux You need to install `zenity` to open
+  files and directories on Linux ```bash sudo apt install zenity ``` ### Install `transparent-background`
+  * Note: please specify"
 ---
 {% raw %}
 # Transparent Background

@@ -2,8 +2,67 @@
 layout: project
 name: Openearable Open Earable 2
 slug: OpenEarable-open-earable-2
+category: EE-kicad-3D-Robotic
 image: https://github.com/user-attachments/assets/2eeec41e-6be1-4a4f-b986-7d9a07b0f8e5
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '# OpenEarable 2 - Firmware [OpenEarable](openearable.com) is the
+  world''s first fully open-source AI platform for ear-based sensing applications
+  with true wireless audio. Packed with an unprecedented array of high-precision sensors,
+  OpenEarable redefines what''s possible in wearable tech. Designed for both development
+  and research applications, OpenEarable is modular, reconfigurable, and built for
+  the future. ## Table of Contents 1. [Setup](#setup) 2. [Battery States](#battery-states)
+  3. [Connection States](#connection-states) 4. [SD Card](#sd-card) 5. [Citing](#citing)
+  ## Setup 1. **Install Visual Studio Code (VS Code)** - Download and install from
+  [https://code.visualstudio.com](https://code.visualstudio.com). 2. **Install the
+  J‑Link Software and Documentation Package** - Download and install from [https://www.segger.com/downloads/jlink/](https://www.segger.com/downloads/jlink/).
+  3. **Install nRF-Util** - Download from [nRF Util – Nordic Semiconductor](https://www.nordicsemi.com/Products/Development-tools/nRF-Util).
+  - Add `nrfutil` to your system''s `PATH` environment variable. 4. **Install the
+  nRF Connect for VS Code Extension** - Open VS Code. - Go to the Extensions tab and
+  install **"nRF Connect for VS Code"**. - Install all required dependencies when
+  prompted. 5. **Install the Toolchain via nRF Connect** - Open the **nRF Connect**
+  tab in VS Code. - Click **"Install Toolchain"**. - Select and install **version
+  3.0.1**. 6. **Install the nRF Connect SDK** - In the **nRF Connect** tab, select
+  **"Manage SDK"**. - Install **SDK version 3.0.1**. 7. **Open the Firmware Folder
+  in VS Code** - Use `File > Open Folder` or drag-and-drop the firmware directory
+  into VS Code. - OR in the **APPLICATIONS** section of the nRF Connect tab: - Select
+  `Open Exisiting Application`. - Select the `open-earable-2` directory. 8. **Configure
+  the Application Build** - If not already open, navigate to the nrfConnect extension
+  tab in VSCode. - In the **APPLICATIONS** section of the nRF Connect extension tab:
+  - Select the `open-earable-2` application. - Click **"+ Add build configuration"**
+  to set up a new build. - Select the SDK version 3.0.1, toolchain version 3.0.1,
+  and `open-earable-2/nrf5340/cpuapp` as board target. - To build **with FOTA** (firmware
+  over-the-air update functionality): - Leave the `Base configuration files (Kconfig
+  fragments)` dropdown empty. - as `Extra CMAKE arguments` set `-DFILE_SUFFIX="fota"`.
+  - as `Build directory` name set `build_fota`. - To build **without FOTA**: - Select
+  `prj.conf` as the `Base configuration files (Kconfig fragments)`. - Do not set any
+  of the FOTA flags described above. 9. **J-Link Setup** - Wire your J-Link to the
+  debugging breakout PCB as shown below. - If you do not own a J-Link yet, here are
+  a few options (do **NOT** use J-Link clones, they will not work and are illegal!):
+  - [J-Link EDU Mini](https://mou.sr/3LrwiVe) (available to educational institutions,
+  private persons, and students) with [JTAG adapter](https://www.adafruit.com/product/2094)
+  and [cable](https://www.adafruit.com/product/1675). - Full-scale J-Link for commercial
+  use (e.g., [J-Link BASE Compact](https://mou.sr/4oQkAls)). - ⚠️ The wiring show
+  in the figure above is for the full-scale J-Link pinout. If you use the [JTAG adapter](https://www.adafruit.com/product/2094)
+  the wiring may be different so make sure it is correct in your case!. 11. **Build
+  and Flash** - Click on `Generate and Build` and wait for the application to build
+  (this will take some time) - Make sure your device is charged or powered via USB.
+  If the battery is fully discharged, the charging management IC will no longer supply
+  power to the MCU from the battery, so you won’t be able to flash the MCU unless
+  the battery is charged or the device is directly powered via USB. - Open a new terminal
+  in VS Code and run the following command from the root of the `open-earable-v2`
+  directory to flash the FOTA build. Make sure to set the serial number of your J-Link
+  (right click your J-Link in the `CONNECTED DEVICES` tab of the nRF connect extension
+  and copy the serial number). ```bash # --right for the right ear device, or no flag
+  to retain left/right bonding, --standalone for no pair # --hw version is optional
+  and can only be used with --left or --right ./tools/flash/flash_fota.sh --snr 123456789
+  --left --hw 2.0.1 ``` - or without FOTA ```bash # --right for the right ear device,
+  or no flag to retain left/right bonding, --standalone for no pair # --hw version
+  is optional and can only be used with --left or --right ./tools/flash/flash.sh --snr
+  123456789 --left ``` - The FOTA update script is also available for Windows as `./tools/flash/flash_fota.ps1`.
+  To execute it, open PowerShell with administrative privileges. 11. **Recover Board**
+  - If the application or network core becomes unresponsive, or you encounter flashing
+  issues, you can recover the board using the recovery script. The `--snr` parameter
+  specifies the serial number of your J-Link debugger. - Ensure the dev'
 ---
 {% raw %}
 # OpenEarable 2 - Firmware

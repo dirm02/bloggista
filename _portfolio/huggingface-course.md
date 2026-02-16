@@ -2,8 +2,56 @@
 layout: project
 name: Huggingface Course
 slug: huggingface-course
+category: Educational-map
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/huggingface/transformers),
+indexed_content: "# The Hugging Face Course This repo contains the content that's
+  used to create the **[Hugging Face course](https://huggingface.co/course/chapter1/1)**.
+  The course teaches you about applying Transformers to various tasks in natural language
+  processing and beyond. Along the way, you'll learn how to use the [Hugging Face](https://huggingface.co/)
+  ecosystem — [\U0001F917 Transformers](https://github.com/huggingface/transformers),
+  [\U0001F917 Datasets](https://github.com/huggingface/datasets), [\U0001F917 Tokenizers](https://github.com/huggingface/tokenizers),
+  and [\U0001F917 Accelerate](https://github.com/huggingface/accelerate) — as well
+  as the [Hugging Face Hub](https://huggingface.co/models). It's completely free and
+  open-source! ## \U0001F30E Languages and translations | Language | Source | Authors
+  | |:------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | [English](https://huggingface.co/course/en/chapter1/1) | [`chapters/en`](https://github.com/huggingface/course/tree/main/chapters/en)
+  | [@sgugger](https://github.com/sgugger), [@lewtun](https://github.com/lewtun),
+  [@LysandreJik](https://github.com/LysandreJik), [@Rocketknight1](https://github.com/Rocketknight1),
+  [@sashavor](https://github.com/sashavor), [@osanseviero](https://github.com/osanseviero),
+  [@SaulLu](https://github.com/SaulLu), [@lvwerra](https://github.com/lvwerra) | |
+  [Bengali](https://huggingface.co/course/bn/chapter1/1) (WIP) | [`chapters/bn`](https://github.com/huggingface/course/tree/main/chapters/bn)
+  | [@avishek-018](https://github.com/avishek-018), [@eNipu](https://github.com/eNipu)
+  | | [German](https://huggingface.co/course/de/chapter1/1) (WIP) | [`chapters/de`](https://github.com/huggingface/course/tree/main/chapters/de)
+  | [@JesperDramsch](https://github.com/JesperDramsch), [@MarcusFra](https://github.com/MarcusFra),
+  [@fabridamicelli](https://github.com/fabridamicelli) | | [Spanish](https://huggingface.co/course/es/chapter1/1)
+  (WIP) | [`chapters/es`](https://github.com/huggingface/course/tree/main/chapters/es)
+  | [@camartinezbu](https://github.com/camartinezbu), [@munozariasjm](https://github.com/munozariasjm),
+  [@fordaz](https://github.com/fordaz) | | [Persian](https://huggingface.co/course/fa/chapter1/1)
+  (WIP) | [`chapters/fa`](https://github.com/huggingface/course/tree/main/chapters/fa)
+  | [@jowharshamshiri](https://github.com/jowharshamshiri), [@schoobani](https://github.com/schoobani)
+  | | [French](https://huggingface.co/course/fr/chapter1/1) | [`chapters/fr`](https://github.com/huggingface/course/tree/main/chapters/fr)
+  | [@lbourdois](https://github.com/lbourdois), [@ChainYo](https://github.com/ChainYo),
+  [@melaniedrevet](https://github.com/melaniedrevet), [@abdouaziz](https://github.com/abdouaziz)
+  | | [Gujarati](https://huggingface.co/course/gu/chapter1/1) (WIP) | [`chapters/gu`](https://github.com/huggingface/course/tree/main/chapters/gu)
+  | [@pandyaved98](https://github.com/pandyaved98) | | [Hebrew](https://huggingface.co/course/he/chapter1/1)
+  (WIP) | [`chapters/he`](https://github.com/huggingface/course/tree/main/chapters/he)
+  | [@omer-dor](https://github.com/omer-dor) | | [Hindi](https://huggingface.co/course/hi/chapter1/1)
+  (WIP) | [`chapters/hi`](https://github.com/huggingface/course/tree/main/chapters/hi)
+  | [@pandyaved98](https://github.com/pandyaved98) | | [Bahasa Indonesia](https://huggingface.co/course/id/chapter1/1)
+  (WIP) | [`chapters/id`](https://github.com/huggingface/course/tree/main/chapters/id)
+  | [@gstdl](https://github.com/gstdl) | | [Italian](https://huggingface.co/course/it/chapter1/1)
+  (WIP) | [`chapters/it`](https://github.com/huggingface/course/tree/main/chapters/it)
+  | [@CaterinaBi](https://github.com/CaterinaBi), [@ClonedOne](https://github.com/ClonedOne),
+  [@Nolanogenn](https://github.com/Nolanogenn), [@EdAbati](https://github.com/EdAbati),
+  [@gdacciaro](https://github.com/gdacciaro) | | [Japanese](https://huggingface.co/course/ja/chapter1/1)
+  (WIP) | [`chapters/ja`](https://github.com/huggingface/course/tree/main/chapters/ja)
+  | [@hiromu166](https://github.com/@hiromu166), [@younesbelkada](https://github.com/@younesbelkada),
+  [@HiromuHota](https://github.com/@HiromuHota) | | [Korean](https://huggingface.co/course/ko/chapter1/1)
+  (WIP) | [`chapters/ko`](https://github.com/huggingface/course/tree/main/chapters/ko)
+  | [@Doohae](https://github.com/Doohae), [@wonhyeongseo](https://github.com/wonhyeongseo),
+  [@dlfrnaos19](https://github.com/dlfrnaos19), [@nsbg](https://github.com/nsbg) |
+  | [Portuguese](https://huggingface.co/course/pt/chapter1/1) (WIP) | [`chapters/pt`](https://github.com/huggingface/course/tree/main/chap"
 ---
 {% raw %}
 # The Hugging Face Course

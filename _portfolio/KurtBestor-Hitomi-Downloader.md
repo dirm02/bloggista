@@ -2,8 +2,31 @@
 layout: project
 name: Kurtbestor Hitomi Downloader
 slug: KurtBestor-Hitomi-Downloader
+category: WindowsTools- Linux
 image: https://img.shields.io/github/release/KurtBestor/Hitomi-Downloader.svg?logo=github
 repo_url: https://github.com/KurtBestor/Hitomi-Downloader
+indexed_content: "[](https://github.com/KurtBestor/Hitomi-Downloader/releases/latest)
+  [](https://github.com/KurtBestor/Hitomi-Downloader/releases/latest) [](https://github.com/KurtBestor/Hitomi-Downloader/releases)
+  ## Links - [Download](https://github.com/KurtBestor/Hitomi-Downloader/releases/latest)
+  - [Issues](https://github.com/KurtBestor/Hitomi-Downloader/issues) - [Scripts &
+  Plugins](https://github.com/KurtBestor/Hitomi-Downloader/wiki/Scripts-&-Plugins)
+  - [Chrome Extension](https://github.com/KurtBestor/Hitomi-Downloader/wiki/Chrome-Extension)
+  ## Demo ## Features - \U0001F370 Simple and clear user interface - \U0001F680 Download
+  acceleration - \U0001F4BB Supports 24 threads in a single task - \U0001F6A5 Supports
+  speed limit - \U0001F4DC Supports user scripts - \U0001F9F2 Supports BitTorrent
+  & Magnet - \U0001F39E️ Supports M3U8 & MPD format videos - \U0001F319 Dark mode
+  - \U0001F9F3 Portable - \U0001F4CB Clipboard monitor - \U0001F5C3️ Easy to organize
+  tasks ## Supported Sites | Site | URL | | :--: | -- | | **4chan** | | | **AfreecaTV**
+  | | | **ArtStation** | | | **baraag.net** | | | **bilibili** | | | **ComicWalker**
+  | | | **Coub** | | | **DeviantArt** | | | **Facebook** | | | **FC2 Video** | | |
+  **Flickr** | | | **Hameln** | | | **Imgur** | | | **Instagram** | | | **カクヨム** |
+  | | **Mastodon** | | | **Misskey** | | | **Naver Blog** | | | **Naver Cafe** | |
+  | **Naver Post** | | | **Naver Webtoon** | | | **Naver TV** | | | **Niconico** |
+  | | **Pawoo** | | | **Pinterest** | | | **Pixiv** | | | **pixivコミック** | | | **Soundcloud**
+  | | | **小説家になろう** | | | **TikTok** | | | **Tumblr** | | | **Twitch** | | | **Twitter**
+  | | | **Vimeo** | | | **Wayback Machine** | | | **Weibo** | | | **WikiArt** | |
+  | **Youku** | | | **YouTube** | | | **and more...** | [Supported sites by yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+  |"
 ---
 {% raw %}
 <p align="center">

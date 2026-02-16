@@ -2,8 +2,68 @@
 layout: project
 name: 0x4m4 Hexstrike Ai
 slug: 0x4m4-hexstrike-ai
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/badge/Python-3.8%2B-blue.svg
 repo_url: https://github.com/0x4m4/hexstrike-ai)
+indexed_content: "# HexStrike AI MCP Agents v6.0 ### AI-Powered MCP Cybersecurity
+  Automation Platform [](https://www.python.org/) [](LICENSE) [](https://github.com/0x4m4/hexstrike-ai)
+  [](https://github.com/0x4m4/hexstrike-ai) [](https://github.com/0x4m4/hexstrike-ai/releases)
+  [](https://github.com/0x4m4/hexstrike-ai) [](https://github.com/0x4m4/hexstrike-ai)
+  [](https://github.com/0x4m4/hexstrike-ai) **Advanced AI-powered penetration testing
+  MCP framework with 150+ security tools and 12+ autonomous AI agents** [\U0001F4CB
+  What's New](#whats-new-in-v60) • [\U0001F3D7️ Architecture](#architecture-overview)
+  • [\U0001F680 Installation](#installation) • [\U0001F6E0️ Features](#features) •
+  [\U0001F916 AI Agents](#ai-agents) • [\U0001F4E1 API Reference](#api-reference)
+  --- ## Follow Our Social Accounts &nbsp;&nbsp; --- ## Architecture Overview HexStrike
+  AI MCP v6.0 features a multi-agent architecture with autonomous AI agents, intelligent
+  decision-making, and vulnerability intelligence. ```mermaid %%{init: {\"themeVariables\":
+  { \"primaryColor\": \"#b71c1c\", \"secondaryColor\": \"#ff5252\", \"tertiaryColor\":
+  \"#ff8a80\", \"background\": \"#2d0000\", \"edgeLabelBackground\":\"#b71c1c\", \"fontFamily\":
+  \"monospace\", \"fontSize\": \"16px\", \"fontColor\": \"#fffde7\", \"nodeTextColor\":
+  \"#fffde7\" }}}%% graph TD A[AI Agent - Claude/GPT/Copilot] -->|MCP Protocol| B[HexStrike
+  MCP Server v6.0] B --> C[Intelligent Decision Engine] B --> D[12+ Autonomous AI
+  Agents] B --> E[Modern Visual Engine] C --> F[Tool Selection AI] C --> G[Parameter
+  Optimization] C --> H[Attack Chain Discovery] D --> I[BugBounty Agent] D --> J[CTF
+  Solver Agent] D --> K[CVE Intelligence Agent] D --> L[Exploit Generator Agent] E
+  --> M[Real-time Dashboards] E --> N[Progress Visualization] E --> O[Vulnerability
+  Cards] B --> P[150+ Security Tools] P --> Q[Network Tools - 25+] P --> R[Web App
+  Tools - 40+] P --> S[Cloud Tools - 20+] P --> T[Binary Tools - 25+] P --> U[CTF
+  Tools - 20+] P --> V[OSINT Tools - 20+] B --> W[Advanced Process Management] W -->
+  X[Smart Caching] W --> Y[Resource Optimization] W --> Z[Error Recovery] style A
+  fill:#b71c1c,stroke:#ff5252,stroke-width:3px,color:#fffde7 style B fill:#ff5252,stroke:#b71c1c,stroke-width:4px,color:#fffde7
+  style C fill:#ff8a80,stroke:#b71c1c,stroke-width:2px,color:#fffde7 style D fill:#ff8a80,stroke:#b71c1c,stroke-width:2px,color:#fffde7
+  style E fill:#ff8a80,stroke:#b71c1c,stroke-width:2px,color:#fffde7 ``` ### How It
+  Works 1. **AI Agent Connection** - Claude, GPT, or other MCP-compatible agents connect
+  via FastMCP protocol 2. **Intelligent Analysis** - Decision engine analyzes targets
+  and selects optimal testing strategies 3. **Autonomous Execution** - AI agents execute
+  comprehensive security assessments 4. **Real-time Adaptation** - System adapts based
+  on results and discovered vulnerabilities 5. **Advanced Reporting** - Visual output
+  with vulnerability cards and risk analysis --- ## Installation ### Quick Setup to
+  Run the hexstrike MCPs Server ```bash # 1. Clone the repository git clone https://github.com/0x4m4/hexstrike-ai.git
+  cd hexstrike-ai # 2. Create virtual environment python3 -m venv hexstrike-env source
+  hexstrike-env/bin/activate # Linux/Mac # hexstrike-env\\Scripts\\activate # Windows
+  # 3. Install Python dependencies pip3 install -r requirements.txt ``` ### Installation
+  and Setting Up Guide for various AI Clients: #### Installation & Demo Video Watch
+  the full installation and setup walkthrough here: [YouTube - HexStrike AI Installation
+  & Demo](https://www.youtube.com/watch?v=pSoftCagCm8) #### Supported AI Clients for
+  Running & Integration You can install and run HexStrike AI MCPs with various AI
+  clients, including: - **5ire (Latest version v0.14.0 not supported for now)** -
+  **VS Code Copilot** - **Roo Code** - **Cursor** - **Claude Desktop** - **Any MCP-compatible
+  agent** Refer to the video above for step-by-step instructions and integration examples
+  for these platforms. ### Install Security Tools **Core Tools (Essential):** ```bash
+  # Network & Reconnaissance nmap masscan rustscan amass subfinder nuclei fierce dnsenum
+  autorecon theharvester responder netexec enum4linux-ng # Web Application Security
+  gobuster feroxbuster dirsearch ffuf dirb httpx katana nikto sqlmap wpscan arjun
+  paramspider dalfox wafw00f # Password & Authentication hydra john hashcat medusa
+  patator crackmapexec evil-winrm hash-identifier ophcrack # Binary Analysis & Reverse
+  Engineering gdb radare2 binwalk ghidra checksec strings objdump volatility3 foremost
+  steghide exiftool ``` **Cloud Security Tools:** ```bash prowler scout-suite trivy
+  kube-hunter kube-bench docker-bench-security ``` **Browser Agent Requirements:**
+  ```bash # Chrome/Chromium for Browser Agent sudo apt install chromium-browser chromium-chromedriver
+  # OR install Google Chrome wget -q -O - https://dl.google.com/linux/linux_signing_key.pub
+  | sudo apt-key add - echo \"deb [arch=amd64] http://dl.google.com/linux/chrome/deb/
+  stable main\" | sudo tee /etc/apt/sources.list.d/google-chrome.list sudo apt update
+  && sudo apt install google-chrome-stable ``` ### Start the Server ```b"
 ---
 {% raw %}
 <div align="center">

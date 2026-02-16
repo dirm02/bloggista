@@ -2,8 +2,55 @@
 layout: project
 name: Mikeroyal Wsl Guide
 slug: mikeroyal-WSL-Guide
+category: Educational-map
 image: https://img.shields.io/maintenance/yes/2024?style=for-the-badge
 repo_url: https://github.com/mikeroyal/WSL-Guide
+indexed_content: 'WSL Guide #### A guide for using WSL and all the tools/utilities
+  that will make you a better and more efficient WSL developer. **Note: You can easily
+  convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/)
+  using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
+  # Table of Contents 1. [Getting Started with WSL](https://github.com/mikeroyal/WSL-Guide#getting-started-with-wsl)
+  * [Developer Resources](https://github.com/mikeroyal/WSL-Guide#developer-resources)
+  * [Books](https://github.com/mikeroyal/WSL-Guide#books) * [YouTube Videos](#youtube-videos)
+  * [Creating Backup & Restore Images in WSL 2](https://github.com/mikeroyal/WSL-Guide#creating-backup--restore-images-in-wsl-2)
+  * [Setting up Zsh and Oh My Zsh in WSL 2](https://github.com/mikeroyal/WSL-Guide#setting-up-zsh-and-oh-my-zsh-in-wsl-2)
+  * [Linux Software Package Formats & Package Managers](https://github.com/mikeroyal/WSL-Guide#linux-software-package-formats--package-managers)
+  * [Linux Kernel](#linux-kernel) * [File systems](https://github.com/mikeroyal/WSL-Guide#file-systems)
+  * [Systemd](https://github.com/mikeroyal/WSL-Guide#systemd) * [Init](https://github.com/mikeroyal/WSL-Guide#init)
+  2. [WSL Tools & Projects](https://github.com/mikeroyal/WSL-Guide#wsl-tools--projects)
+  3. [Setting up WSL Linux Distributions](https://github.com/mikeroyal/WSL-Guide#setting-up-wsl-linux-distributions)
+  4. [Azure Development](https://github.com/mikeroyal/WSL-Guide#azure-development)
+  5. [Amazon Web Services (AWS)](https://github.com/mikeroyal/WSL-Guide#amazon-web-services-aws)
+  6. [Google Cloud](https://github.com/mikeroyal/WSL-Guide#google-cloud-platform-gcp)
+  7. [Kubernetes](https://github.com/mikeroyal/WSL-Guide#kubernetes) * [Red Hat CodeReady
+  Containers (CRC) OpenShift](https://github.com/mikeroyal/WSL-Guide#Red-Hat-CodeReady-Containers-CRC)
+  * [Setting up Podman](https://github.com/mikeroyal/WSL-Guide#setting-up-podman)
+  * [Setting up Buildah](https://github.com/mikeroyal/WSL-Guide#setting-up-buildah)
+  * [Installing Kubernetes on WSL with Rancher Desktop](https://github.com/mikeroyal/WSL-Guide#installing-kubernetes-on-wsl-with-rancher-desktop)
+  * [Installing Kubernetes on WSL with Docker Desktop](https://github.com/mikeroyal/WSL-Guide#installing-kubernetes-on-wsl-with-docker-desktop)
+  * [Installing Kubernetes on WSL with Microk8s](https://github.com/mikeroyal/WSL-Guide#installing-kubernetes-on-wsl-with-microk8s)
+  8. [PowerShell Development](https://github.com/mikeroyal/WSL-Guide#powershell-development)
+  9. [Wayland Development](https://github.com/mikeroyal/WSL-Guide#wayland-development)
+  10. [Networking](https://github.com/mikeroyal/WSL-Guide#networking) 11. [Databases](https://github.com/mikeroyal/WSL-Guide#databases)
+  12. [Setting up macOS Workspace VM](https://github.com/mikeroyal/WSL-Guide#setting-up-a-macos-workspace-vm)
+  # Getting Started with WSL [Back to the Top](https://github.com/mikeroyal/WSL-Guide/blob/master/README.md#table-of-contents)
+  [Back to the Top](#table-of-contents) ### Developer Resources * [What is the Windows
+  Subsystem for Linux?](https://docs.microsoft.com/en-us/windows/wsl/about) * [WSL
+  2 Linux Kernel on GitHub](https://github.com/microsoft/WSL2-Linux-Kernel) is the
+  source for the Linux kernel used in Windows Subsystem for Linux 2 (WSL2). * [Developing
+  in Windows Subsystem for Linux (WSL) 2](https://code.visualstudio.com/docs/remote/wsl)
+  * [Using WSL 2 with Visual Studio Code](https://code.visualstudio.com/blogs/2019/09/03/wsl2)
+  * [GnuPG Tool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=JHeilingbrunner.vscode-gnupg-tool)
+  * [GPU accelerated machine learning training in the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/tutorials/gpu-compute)
+  * [CUDA on Windows Subsystem for Linux(WSL) 2](https://developer.nvidia.com/blog/announcing-cuda-on-windows-subsystem-for-linux-2/)
+  * [Set up a Linux Service Fabric cluster via WSL2 on your Windows developer machine](https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-local-linux-cluster-windows-wsl2)
+  * [WSLG: X11 and Wayland Applications in WSL](https://linuxplumbersconf.org/event/9/contributions/611/attachments/702/1298/XDC2020_-_X11_and_Wayland_applications_in_WSL.pdf)
+  * [How to run Podman on Windows with WSL 2](https://www.redhat.com/sysadmin/podman-windows-wsl2)
+  * [Create a development container in Visual Studio Code](https://code.visualstudio.com/docs/remote/create-dev-container)
+  * [Getting started with MySQL, MongoDB, PostgreSQL, SQLite, Microsoft SQL Server,
+  or Redis to set up a database on WSL](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
+  * [Setting up SAP HANA, express edition into WSL 2 (Windows Subsystem for Linux)](https://blogs.sap.com/2020/09/30/installing-sap-hana-express-edition-into-wsl2-windows-subsystem-for-linux/)
+  * [Set up your Node.js development environment with WSL 2](https://docs.microsoft.com/en-us/windows/nod'
 ---
 {% raw %}
 <h1 align="center">

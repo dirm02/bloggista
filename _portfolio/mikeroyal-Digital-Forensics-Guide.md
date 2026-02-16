@@ -2,8 +2,58 @@
 layout: project
 name: Mikeroyal Digital Forensics Guide
 slug: mikeroyal-Digital-Forensics-Guide
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/maintenance/yes/2024?style=for-the-badge
 repo_url: https://github.com/mikeroyal/Digital-Forensics-Guide
+indexed_content: 'Digital Forensics Guide #### A guide covering Digital Forensics
+  the applications, libraries and tools that will make you a better and more efficient
+  with Digital Forensics development. **Note: You can easily convert this markdown
+  file to a PDF in [VSCode](https://code.visualstudio.com/) using this handy extension
+  [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
+  # Table of Contents 1. [Getting Started with Digital Forensics ](https://github.com/mikeroyal/Digital-Forensics-Guide#getting-started-with-digital-forensics)
+  * [Books & Tutorials](#Books--Tutorials) * [Digital Forensics Certifications & Courses](#Digital-Forensics-Certifications--Courses)
+  * [Playbooks](#playbooks) * [YouTube Tutorials](#youtube-tutorials) 2. [Digital
+  Forensics Tools, Libraries, and Frameworks](https://github.com/mikeroyal/Digital-Forensics-Guide#digital-forensics-tools-libraries-and-frameworks)
+  3. [Virtualization](https://github.com/mikeroyal/Digital-Forensics-Guide#virtualization)
+  4. [File systems](https://github.com/mikeroyal/Digital-Forensics-Guide#file-systems)
+  5. [Security Tools and Frameworks](https://github.com/mikeroyal/Digital-Forensics-Guide#security-tools-and-frameworks)
+  6. [Networking](https://github.com/mikeroyal/Digital-Forensics-Guide#networking)
+  # Getting Started with Digital Forensics [Back to the Top](https://github.com/mikeroyal/Digital-Forensics-Guide#table-of-contents)
+  [Digital Forensics](https://www.dhs.gov/publication/digital-forensics-tools) is
+  the process of recovering and preserving material found on digital devices during
+  the course of criminal investigations. Digital forensics tools include hardware
+  and software tools used by law enforcement to collect and preserve digital evidence
+  and support or refute hypotheses before courts. [Computer Forensics](https://en.wikipedia.org/wiki/Computer_forensics)
+  is the process of examining digital media in a forensic-like manner with the goal
+  of identifying, preserving, recovering, analyzing and presenting facts and opinions
+  about the digital information. [Mobile device forensics](https://resources.infosecinstitute.com/topic/mobile-forensics-process-steps-types/)
+  is the science of recovering digital evidence from a mobile device under forensically
+  sound conditions using accepted methods. Mobile device forensics is an evolving
+  specialty in the field of digital forensics. [Network forensics](https://resources.infosecinstitute.com/topic/network-forensics-overview/)
+  is a science that centers on the discovery and retrieval of information surrounding
+  a cybercrime within a networked environment. Common forensic activities include
+  the capture, recording and analysis of events that occurred on a network in order
+  to establish the source of cyberattacks. [Database forensics](https://resources.infosecinstitute.com/topic/computer-forensics-overview-types-database-forensics/)
+  is the process of interrogating a failed database and trying to reconstruct the
+  metadata and page information from within a data set, whereas database recovery
+  implies some kind of restorative process that will enable the database to become
+  viable enough to be put back into a production environment, or healthy enough to
+  provide a backup that can be used in a database restore. ### Books & Tutorials -
+  [OSSTMM (Open Source Security Testing Methodology Manual) PDF](https://github.com/mikeroyal/Open-Source-Security-Guide/files/8834704/osstmm.en.2.1.pdf)
+  - [NIST Technical Guide to Information Security Testing and Assessment (PDF)](https://github.com/mikeroyal/Open-Source-Security-Guide/files/8834705/nistspecialpublication800-115.pdf)
+  - [Python Digital Forensics Cookbook](https://github.com/PythonForensics/PythonForensicsCookbook)
+  - [Applied Incident Response](https://www.amazon.com/Applied-Incident-Response-Steve-Anson/dp/1119560268/)
+  - Steve Anson''s book on Incident Response. - [Art of Memory Forensics](https://www.amazon.com/Art-Memory-Forensics-Detecting-Malware/dp/1118825098/)
+  - Detecting Malware and Threats in Windows, Linux, and Mac Memory. - [Crafting the
+  InfoSec Playbook: Security Monitoring and Incident Response Master Plan](https://www.amazon.com/Crafting-InfoSec-Playbook-Security-Monitoring/dp/1491949406)
+  - by Jeff Bollinger, Brandon Enright and Matthew Valites. - [Digital Forensics and
+  Incident Response: Incident response techniques and procedures to respond to modern
+  cyber threats](https://www.amazon.com/Digital-Forensics-Incident-Response-techniques/dp/183864900X)
+  - by Gerard Johansen. - [Introduction to DFIR](https://medium.com/@sroberts/introduction-to-dfir-d35d5de4c180/)
+  - By Scott J. Roberts. - [Incident Response & Computer Forensics, Third Edition](https://www.amazon.com/Incident-Response-Computer-Forensics-Third/dp/0071798684/)
+  - The definitive guide to incident response. - [Incident Response Techniques for
+  Ransomware Attacks](https://www.amazon.com/Incident-Response-Techniques-Ransomware-Attacks/dp/180324044X)
+  - A great guide to build an incident response s'
 ---
 {% raw %}
 <h1 align="center">

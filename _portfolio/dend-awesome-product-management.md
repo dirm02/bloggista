@@ -2,8 +2,64 @@
 layout: project
 name: Dend Awesome Product Management
 slug: dend-awesome-product-management
+category: Management- Engineering- SocialM
 image: https://awesome.re/badge-flat2.svg
 repo_url: https://github.com/dend/awesome-product-management
+indexed_content: "# Awesome Product Management [](https://awesome.re) [](https://github.com/dend/awesome-product-management/actions/workflows/makepdf.yml)
+  [](https://github.com/dend/awesome-product-management/actions/workflows/linkchecker.yml)
+  [](https://github.com/dend/awesome-product-management/stargazers) *A curated list
+  of awesome resources for product/program managers to learn and grow.* ## Who's a
+  product manager? By definition, a product manager is an individual who drives the
+  product vision and has a deep understanding of customer needs. PMs generally are
+  considered to be at the intersection of the business, technology and design spaces
+  - they are the experts in the problem space, and are able to learn and iterate quickly
+  to deliver valuable experiences to consumers. ## Contents - [Tools](#tools) - [Note-Taking
+  & Documentation](#note-taking--documentation) - [OneNote](#onenote) - [Bear](#bear)
+  - [Obsidian](#Obsidian) - [Notion](#notion) - [Notejoy](#notejoy) - [Task & Project
+  Management](#task--project-management) - [Trello](#trello) - [Taiga](#taiga) - [Tenzu](#tenzu)
+  - [To-Do](#to-do) - [Taskade](#taskade) - [Design & Prototyping](#design--prototyping)
+  - [Balsamiq](#balsamiq) - [Sketch](#sketch) - [Figma](#figma) - [Product Roadmapping
+  & Feedback](#product-roadmapping--feedback) - [productboard](#productboard) - [logchimp](#logchimp)
+  - [Hellonext](#hellonext) - [Screeb](#screeb) - [OKRs & Outcome Tracking](#okrs--outcome-tracking)
+  - [Tability](#tability) - [Articles](#articles) - [Product Fundamentals & Philosophy](#product-fundamentals--philosophy)
+  - [Product Development & Process](#product-development--process) - [Product Strategy
+  & Planning](#product-strategy--planning) - [Customer Research & User Experience](#customer-research--user-experience)
+  - [Team Collaboration & Leadership](#team-collaboration--leadership) - [Product
+  Metrics & Analytics](#product-metrics--analytics) - [Career Development & Skills](#career-development--skills)
+  - [Growth & Marketing](#growth--marketing) - [Books](#books) - [Product Management
+  Fundamentals](#product-management-fundamentals) - [Product Strategy & Planning](#product-strategy--planning-1)
+  - [Customer Research & User Experience](#customer-research--user-experience-1) -
+  [Product Development & Process](#product-development--process-1) - [Team Leadership
+  & Management](#team-leadership--management) - [Psychology & Behavioral Change](#psychology--behavioral-change)
+  - [Engineering & Technical](#engineering--technical) - [Podcasts](#podcasts) - [Communities](#communities)
+  - [Conferences](#conferences) - [Additional resources](#additional-resources) -
+  [License](#license) ## Tools In day-to-day activities, product managers need to
+  rely on tools to help them make sense of the information and insights they're handling.
+  The list below represents _some_ of those tools. A product manager doesn't need
+  to use every single one of them, and neither is one better than the other. These
+  are just pointers to some of the instruments that can be used to be effective at
+  organizing and sharing PM expertise. None of them, standalone, will make one a better
+  product manager. ### Note-taking & Knowledge Management Tools in this section help
+  product managers capture meeting notes, ideas, research, and product knowledge efficiently.
+  #### OneNote Efficient note-taking with superior organizational capabilities. Integrates
+  easily with team-based workflows, where notes from the same notebook can be shared
+  with many individuals. | Property | Value | |-----------|------------------------------------|
+  | Developer | [Microsoft](https://microsoft.com) | | Cost | Free | | Platform |
+  macOS, Windows, iOS, Android, web | | URL | https://onenote.com | #### Bear Note-taking
+  in Markdown format, with tag-based organizational capabilities. | Property | Value
+  | |-----------|--------------------------------------------| | Developer | [Shiny
+  Frog](http://www.shinyfrog.net/) | | Cost | Freemium (_$16/yr subscription available_)
+  | | Platform | macOS, iOS | | URL | https://bear.app/ | #### Obsidian Obsidian is
+  a private and flexible writing app that adapts to the way you think. From personal
+  notes to journaling, knowledge bases, and project management, Obsidian gives you
+  the tools to come up with ideas and organize them. Turn your notes into an online
+  wiki, knowledge base, documentation, or digital garden. | Property | Value | |-----------|---------------------------------------------|
+  | Developer | [Obsidian, Inc.](https://obsidian.md) | | Cost | Paid if used commercially
+  (_$50/user/year_) | | Platform | iOS, Android, Windows, Mac, Linux | | URL | https://obsidian.md/
+  | #### Notejoy A collaborative note-taking application that is simple, intuitive
+  and allows you to focus on the notes rather than the process around those. | Property
+  | Value | |-----------|------------------------------------------------------------------------------------------------------------------|
+  | Developer | [Sachin Rekhi](https://www.linkedin.com/in/sachinre"
 ---
 {% raw %}
 <div align="center">

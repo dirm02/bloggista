@@ -2,8 +2,67 @@
 layout: project
 name: Ivan Ayub97 Warlock Studio
 slug: Ivan-Ayub97-Warlock-Studio
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Ivan-Ayub97-Warlock-Studio/Assets/banner.png
 repo_url: https://github.com/Ivan-Ayub97/Warlock-Studio
+indexed_content: "[](https://github.com/Ivan-Ayub97/Warlock-Studio/commits/main) [](https://github.com/Ivan-Ayub97/Warlock-Studio/releases)
+  [](https://sourceforge.net/projects/warlock-studio/) **Warlock Studio** is a unified
+  platform for **upscaling, restoring, denoising, and interpolating frames in videos
+  and images.** It is inspired by and based on [Djdefrag](https://github.com/Djdefrag)
+  tools such as **QualityScaler** and **FluidFrames**. --- ## \U0001F4E5 Download
+  Installer       This installer was built using PyInstaller and Inno Setup .    
+  By default, it includes DirectML support to ensure maximum compatibility with any
+  graphics card (NVIDIA/AMD/INTEL).         Select your preferred option to download
+  the latest version (Direct Release/SourceForge):   --- ## \U0001F5BC️ Interface
+  Capture [Capture.webm](https://github.com/user-attachments/assets/86a679c7-ddf5-454f-9a05-db590cfced09)
+  --- ## \U0001F50D Quality Comparison [WsvideovsGit3.webm](https://github.com/user-attachments/assets/1326f86a-614e-40ae-b3a9-44ae15f648c6)
+  [WsvideovsGit.webm](https://github.com/user-attachments/assets/c72f389d-827e-49b9-91b7-fd13e5b59f22)
+  [WsvideovsGit2.webm](https://github.com/user-attachments/assets/6695cce2-f42f-4955-8b43-56ec6d7b0bd2)
+  --- ## ✨ Key Features - **AI Upscaling & Restoration** – Utilize **Real-ESRGAN,
+  BSRGAN, RealESRNet, RealESR_Animex4, and IRCNN** models for denoising, super-resolution,
+  and detail recovery. - **Face Restoration (GFPGAN)** – Recover facial details from
+  low-resolution or blurry images and video frames. - **Frame Interpolation (RIFE)**
+  – Smooth motion or generate slow-motion content with **2×, 4×, or 8× interpolation**.
+  - **Advanced Hardware Acceleration** – Intelligent provider selection prioritizes
+  **CUDA**, falls back to **DirectML**, and finally **CPU** for maximum compatibility.
+  - **Batch Processing** – Process multiple media files simultaneously, saving time
+  and effort. - **Custom Workflows** – Fine-grained control over models, resolution,
+  output formats, and quality parameters. - **Open-Source & Extensible** – Fully MIT
+  licensed, for contributors and developers. --- ## \U0001F5A5️ System Requirements
+  | Component | Minimum Specification | Recommended Specification | | :--- | :---
+  | :--- | | **OS** | Windows 10 (64-bit) | Windows 11 (64-bit) | | **RAM** | 8 GB
+  | 16 GB+ (Required for 4K & High-FPS Video) | | **GPU** | DirectX 12 Compatible
+  (DML) / NVIDIA GTX 10-Series | NVIDIA RTX 3060+ / AMD RX 6000+ | | **VRAM** | 4
+  GB | 8 GB - 12 GB+ (For Stable Diffusion/Video Interpolation) | | **Storage** |
+  2 GB available space | SSD (Critical for RIFE & Temp Video Processing) | | **Architecture**
+  | x64 | x64 (Native DirectML Support) | > **Performance Tip:** Given that **Warlock
+  Studio** leverages **DirectML** for hardware acceleration, keeping your GPU drivers
+  updated is essential for maximizing processing speed across NVIDIA, AMD, and Intel
+  hardware. --- ## \U0001F91D Contributions We welcome contributions from the community.
+  \U0001F4E7 Contact: **[negroayub97@gmail.com](mailto:negroayub97@gmail.com)** ---
+  ## \U0001F4DC License & Credits © 2025 **Iván Eduardo Chavez Ayub** Licensed under
+  **MIT**. Additional terms and attributions are provided in **NOTICE.md**. ### \U0001F4CA
+  Integrated Technologies & Licenses | Technology / Model | License | Author / Maintainer
+  | Source | | :--- | :--- | :--- | :--- | | **Real-ESRGAN** | BSD 3-Clause | Xintao
+  Wang | [GitHub](https://github.com/xinntao/Real-ESRGAN) | | • RealESRGANx4 | BSD
+  3-Clause | Xintao Wang | Same as above | | • RealESRNetx4 | BSD 3-Clause | Xintao
+  Wang | Same as above | | • RealESR_Gx4 | BSD 3-Clause | Xintao / Community | Same
+  as above | | • RealESR_Animex4 | BSD 3-Clause | Community | Same as above | | **BSRGAN**
+  | Apache 2.0 | Kai Zhang | [GitHub](https://github.com/cszn/BSRGAN) | | • BSRGANx4
+  | Apache 2.0 | Kai Zhang | Same as above | | • BSRGANx2 | Apache 2.0 | Kai Zhang
+  | Same as above | | **IRCNN** | BSD / Mixed | Kai Zhang | [GitHub](https://github.com/cszn/IRCNN)
+  | | • IRCNN_Mx1 | BSD / Mixed | Kai Zhang | Same as above | | • IRCNN_Lx1 | BSD
+  / Mixed | Kai Zhang | Same as above | | **GFPGAN** | Apache 2.0 | TencentARC | [GitHub](https://github.com/TencentARC/GFPGAN)
+  | | **RIFE** | MIT | Hzwer / Megvii | [GitHub](https://github.com/megvii-research/ECCV2022-RIFE)
+  | | **QualityScaler** | MIT | Djdefrag | [GitHub](https://github.com/Djdefrag/QualityScaler)
+  | | **FluidFrames** | MIT | Djdefrag | [GitHub](https://github.com/Djdefrag/FluidFrames)
+  | | **DirectML** | MIT | Microsoft | [GitHub](https://github.com/microsoft/DirectML)
+  | | **ONNX Runtime** | MIT | Microsoft | [GitHub](https://github.com/microsoft/onnxruntime)
+  | | **CustomTkinter** | MIT | Tom Schimansky | [GitHub](https://github.com/TomSchimansky/CustomTkinter)
+  | | **TkinterDnD2** | MIT | pmgagne | [GitHub](https://github.com/pmgagne/tkinterdnd2)
+  | | **OpenCV (cv2)** | Apache 2.0 | OpenCV Team | [Official Site](https://opencv.org/)
+  | | **NumPy** | BSD 3-Clause | NumPy Developers | [Official Site](https://numpy.org/)
+  | | **Pillow (PIL)** | HPND | Python-Pillow Team |"
 ---
 {% raw %}
 ![Warlock-Studio banner](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Ivan-Ayub97-Warlock-Studio/Assets/banner.png)

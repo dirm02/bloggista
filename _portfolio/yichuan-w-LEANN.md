@@ -2,8 +2,65 @@
 layout: project
 name: Yichuan W Leann
 slug: yichuan-w-LEANN
+category: Uncategorized
 image: https://colab.research.google.com/assets/colab-badge.svg
 repo_url: https://github.com/yichuan-w/LEANN
+indexed_content: "We track zero telemetry . This survey is the ONLY way to tell us
+  if you want GPU Acceleration or More Integrations next. \U0001F449 Click here to
+  cast your vote (2 mins) \U0001F4AC Join our Slack community! We'd love for you to
+  be part of the LEANN community! \U0001F449 Join LEANN Slack If the invite link has
+  expired or you have trouble joining, please open an issue and we'll help you get
+  in! The smallest vector index in the world. RAG Everything with LEANN! LEANN is
+  an innovative vector database that democratizes personal AI. Transform your laptop
+  into a powerful RAG system that can index and search through millions of documents
+  while using **97% less storage** than traditional solutions **without accuracy loss**.
+  LEANN achieves this through *graph-based selective recomputation* with *high-degree
+  preserving pruning*, computing embeddings on-demand instead of storing them all.
+  [Illustration Fig →](#️-architecture--how-it-works) | [Paper →](https://arxiv.org/abs/2506.08276)
+  **Ready to RAG Everything?** Transform your laptop into a personal AI assistant
+  that can semantic search your **[file system](#-personal-data-manager-process-any-documents-pdf-txt-md)**,
+  **[emails](#-your-personal-email-secretary-rag-on-apple-mail)**, **[browser history](#-time-machine-for-the-web-rag-your-entire-browser-history)**,
+  **[chat history](#-wechat-detective-unlock-your-golden-memories)** ([WeChat](#-wechat-detective-unlock-your-golden-memories),
+  [iMessage](#-imessage-history-your-personal-conversation-archive)), **[agent memory](#-chatgpt-chat-history-your-personal-ai-conversation-archive)**
+  ([ChatGPT](#-chatgpt-chat-history-your-personal-ai-conversation-archive), [Claude](#-claude-chat-history-your-personal-ai-conversation-archive)),
+  **[live data](#mcp-integration-rag-on-live-data-from-any-platform)** ([Slack](#slack-messages-search-your-team-conversations),
+  [Twitter](#-twitter-bookmarks-your-personal-tweet-library)), **[codebase](#-claude-code-integration-transform-your-development-workflow)**\\*
+  , or external knowledge bases (i.e., 60M documents) - all on your laptop, with zero
+  cloud costs and complete privacy. \\* Claude Code only supports basic `grep`-style
+  keyword search. **LEANN** is a drop-in **semantic search MCP service fully compatible
+  with Claude Code**, unlocking intelligent retrieval without changing your workflow.
+  \U0001F525 Check out [the easy setup →](packages/leann-mcp/README.md) ## Why LEANN?
+  > **The numbers speak for themselves:** Index 60 million text chunks in just 6GB
+  instead of 201GB. From emails to browser history, everything fits on your laptop.
+  [See detailed benchmarks for different applications below ↓](#-storage-comparison)
+  \U0001F512 **Privacy:** Your data never leaves your laptop. No OpenAI, no cloud,
+  no \"terms of service\". \U0001FAB6 **Lightweight:** Graph-based recomputation eliminates
+  heavy embedding storage, while smart graph pruning and CSR format minimize graph
+  storage overhead. Always less storage, less memory usage! \U0001F4E6 **Portable:**
+  Transfer your entire knowledge base between devices (even with others) with minimal
+  cost - your personal AI memory travels with you. \U0001F4C8 **Scalability:** Handle
+  messy personal data that would crash traditional vector DBs, easily managing your
+  growing personalized data and agent generated memory! ✨ **No Accuracy Loss:** Maintain
+  the same search quality as heavyweight solutions while using 97% less storage. ##
+  Installation ### \U0001F4E6 Prerequisites: Install uv [Install uv](https://docs.astral.sh/uv/getting-started/installation/#installation-methods)
+  first if you don't have it. Typically, you can install it with: ```bash curl -LsSf
+  https://astral.sh/uv/install.sh | sh ``` ### \U0001F680 Quick Install Clone the
+  repository to access all examples and try amazing applications, ```bash git clone
+  https://github.com/yichuan-w/LEANN.git leann cd leann ``` and install LEANN from
+  [PyPI](https://pypi.org/project/leann/) to run them immediately: ```bash uv venv
+  source .venv/bin/activate uv pip install leann ``` Low-resource? See \"Low-resource
+  setups\" in the [Configuration Guide](docs/configuration-guide.md#low-resource-setups).
+  --> \U0001F527 Build from Source (Recommended for development) ```bash git clone
+  https://github.com/yichuan-w/LEANN.git leann cd leann git submodule update --init
+  --recursive ``` **macOS:** Note: DiskANN requires MacOS 13.3 or later. ```bash brew
+  install libomp boost protobuf zeromq pkgconf uv sync --extra diskann ``` **Linux
+  (Ubuntu/Debian):** Note: On Ubuntu 20.04, you may need to build a newer Abseil and
+  pin Protobuf (e.g., v3.20.x) for building DiskANN. See [Issue #30](https://github.com/yichuan-w/LEANN/issues/30)
+  for a step-by-step note. You can manually install [Intel oneAPI MKL](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html)
+  instead of `libmkl-full-dev` for DiskANN. You can also use `libopenblas-dev` for
+  building HNSW only, by removing `--extra diskann` in the command below. ```bash
+  sudo apt-get update && sudo apt-get install -y \\ libomp-dev libboost-all-dev protobuf-compiler
+  libzmq3-dev \\ pkg-conf"
 ---
 {% raw %}
 <p align="center">

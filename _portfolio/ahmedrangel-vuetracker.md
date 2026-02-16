@@ -2,8 +2,11 @@
 layout: project
 name: Ahmedrangel Vuetracker
 slug: ahmedrangel-vuetracker
+category: Frontend Framework
 image: https://github.com/user-attachments/assets/e50094a8-16fd-4a5a-951e-f8d4bbccd1ea
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# VueTracker ## Credits Based on [nuxtlabs/vue-telescope-website](https://github.com/nuxtlabs/vue-telescope-website)
+  and [nuxtlabs/vue-telescope-extensions](https://github.com/nuxtlabs/vue-telescope-extensions)"
 ---
 {% raw %}
 # VueTracker

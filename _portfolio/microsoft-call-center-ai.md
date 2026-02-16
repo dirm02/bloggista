@@ -2,8 +2,68 @@
 layout: project
 name: Microsoft Call Center Ai
 slug: microsoft-call-center-ai
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/github/release-date/clemlesne/call-center-ai
 repo_url: https://github.com/clemlesne/call-center-ai
+indexed_content: '# Call Center AI AI-powered call center solution with Azure and
+  OpenAI GPT. [](https://github.com/clemlesne/call-center-ai/releases) [](https://github.com/clemlesne/call-center-ai/blob/main/LICENSE)
+  [](https://codespaces.new/microsoft/call-center-ai?quickstart=1) ## Overview Send
+  a phone call from AI agent, in an API call. Or, directly call the bot from the configured
+  phone number! Insurance, IT support, customer service, and more. The bot can be
+  customized in few hours (really) to fit your needs. ```bash # Ask the bot to call
+  a phone number data=''{ "bot_company": "Contoso", "bot_name": "Amélie", "phone_number":
+  "+11234567890", "task": "Help the customer with their digital workplace. Assistant
+  is working for the IT support department. The objective is to help the customer
+  with their issue and gather information in the claim.", "agent_phone_number": "+33612345678",
+  "claim": [ { "name": "hardware_info", "type": "text" }, { "name": "first_seen",
+  "type": "datetime" }, { "name": "building_location", "type": "text" } ] }'' curl
+  \ --header ''Content-Type: application/json'' \ --request POST \ --url https://xxx/call
+  \ --data $data ``` ### Features - **Enhanced communication and user experience**:
+  Integrates inbound and outbound calls with a dedicated phone number, supports multiple
+  languages and voice tones, and allows users to provide or receive information via
+  SMS. Conversations are **streamed in real-time** to avoid delays, can be **resumed
+  after disconnections**, and are **stored for future reference**. This ensures an
+  **improved customer experience**, enabling 24/7 communication and handling of low
+  to medium complexity calls, all in a more accessible and user-friendly manner. -
+  **Advanced intelligence and data management**: Leverages **gpt-4.1** and **gpt-4.1-nano**
+  (known for higher performance and a 10–15x cost premium) to achieve nuanced comprehension.
+  It can discuss **private and sensitive data**, including customer-specific information,
+  while following **retrieval-augmented generation (RAG)** best practices to ensure
+  secure and compliant handling of internal documents. The system understands domain-specific
+  terms, follows a structured claim schema, generates automated to-do lists, filters
+  inappropriate content, and detects jailbreak attempts. Historical conversations
+  and past interactions can also be used to **fine-tune the LLM**, improving accuracy
+  and personalization over time. Redis caching further enhances efficiency. - **Customization,
+  oversight, and scalability**: Offers **customizable prompts**, feature flags for
+  controlled experimentation, human agent fallback, and call recording for quality
+  assurance. Integrates Application Insights for monitoring and tracing, provides
+  publicly accessible claim data, and plans future enhancements such as automated
+  callbacks and IVR-like workflows. It also enables the creation of a **brand-specific
+  custom voice**, allowing the assistant’s voice to reflect the company’s identity
+  and improve brand consistency. - **Cloud-native deployment and resource management**:
+  Deployed on **Azure** with a containerized, serverless architecture for low maintenance
+  and elastic scaling. This approach optimizes costs based on usage, ensuring flexibility
+  and affordability over time. Seamless integration with **Azure Communication Services**,
+  **Cognitive Services**, and **OpenAI resources** provides a secure environment suitable
+  for rapid iteration, continuous improvement, and accommodating variable workloads
+  in the call center. ### Demo A French demo is avaialble on YouTube. Do not hesitate
+  to watch the demo in x1.5 speed to get a quick overview of the project. Voice is
+  hesitant on purpose to show the bot can handle it. All the infrastructure is deployed
+  on Azure, mostly in serverless mode. Provisionning of the LLM resources can be done
+  to reduce the latency. [](https://youtube.com/watch?v=i_qhNdUUxSI) Main interactions
+  shown in the demo: 1. User calls the call center 2. The bot answers and the conversation
+  starts 3. The bot stores conversation, claim and todo list in the database Extract
+  of the data stored during the call: ```json { "claim": { "incident_description":
+  "Collision avec un autre véhicule, voiture dans le fossé, pas de blessés", "incident_location":
+  "Nationale 17", "involved_parties": "Dujardin, Madame Lesné", "policy_number": "DEC1748"
+  }, "messages": [ { "created_at": "2024-12-10T15:51:04.566727Z", "action": "talk",
+  "content": "Non, je pense que c''est pas mal. Vous avez répondu à mes questions
+  et là j''attends la dépaneuse. Merci beaucoup.", "persona": "human", "style": "none",
+  "tool_calls": [] }, { "created_at": "2024-12-10T15:51:06.040451Z", "action": "talk",
+  "content": "Je suis ravi d''avoir pu vous aider! Si vous avez besoin de quoi que
+  ce soit d''autre, n''hésitez pas à nous contacter. Je vous souhaite une bonne journée
+  et j''espère que tout se passera bien avec la dépanneuse. Au revoir!", "persona":
+  "assistant", "style": "none", "tool_calls": [] } ], "next": { "action": "'
 ---
 {% raw %}
 # Call Center AI

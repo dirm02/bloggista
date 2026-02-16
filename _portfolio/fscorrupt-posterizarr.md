@@ -2,8 +2,34 @@
 layout: project
 name: Fscorrupt Posterizarr
 slug: fscorrupt-posterizarr
+category: Entertainment tools
 image: https://img.shields.io/static/v1?style=for-the-badge&logo=docker&logoColor=FFFFFF&message=docker&color=1E63EE&label=
 repo_url: https://github.com/fscorrupt/posterizarr
+indexed_content: "Automate the creation of beautiful, textless posters for your Plex,
+  Jellyfin, or Emby library. View Full Documentation » Report Bug · Request Feature
+  · Join our Discord ## About The Project Posterizarr is a PowerShell script with
+  a full Web UI that automates generating images for your media library. It fetches
+  artwork from Fanart.tv, TMDB, TVDB, Plex, and IMDb, focusing on textless images
+  and applying your own custom overlays and text. * **User-Friendly Web UI:** Manage
+  settings, monitor activity, and trigger runs from a browser. * **Multiple Media
+  Servers:** Supports Plex, Jellyfin, and Emby. * **Kometa Integration:** Organizes
+  assets in a Kometa-compatible folder structure. * **Smart Integration:** Trigger
+  runs from Tautulli, Sonarr, and Radarr. ## \U0001F680 Get Started All installation
+  instructions, configuration guides, and advanced tutorials have been moved to our
+  dedicated documentation site. ## **[Click Here to Read the Full Documentation](https://fscorrupt.github.io/posterizarr/installation)**
+  ## Supported Platforms \U0001F4BB [](https://fscorrupt.github.io/posterizarr/installation)
+  [](https://fscorrupt.github.io/posterizarr/installation) [](https://fscorrupt.github.io/posterizarr/installation)
+  [](https://fscorrupt.github.io/posterizarr/installation) [](https://fscorrupt.github.io/posterizarr/installation)
+  [](https://fscorrupt.github.io/posterizarr/installation) ## Enjoy Feel free to customize
+  the script further to meet your specific preferences or automation requirements.
+  ## PR Rules > [!IMPORTANT] > > - Adjust on each PR the version number in script
+  on Line 55 `$CurrentScriptVersion = \"2.1.0\"` > - Adjust the version number in
+  [Release.txt](Release.txt) to match the one in script. > - this is required because
+  the script checks against this file if a newer version is available. > - Do not
+  include images on a PR. Version synchronization is critical for update detection
+  **⭐ Star this repo if Posterizarr helps organize your media library!** [](https://star-history.com/#fscorrupt/posterizarr&Date)
+  --- Made with ❤️ by [fscorrupt](https://github.com/fscorrupt) and the [open source
+  community](https://github.com/fscorrupt/posterizarr/graphs/contributors)"
 ---
 {% raw %}
 <a name="readme-top"></a>

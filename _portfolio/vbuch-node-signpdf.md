@@ -2,8 +2,67 @@
 layout: project
 name: Vbuch Node Signpdf
 slug: vbuch-node-signpdf
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/vbuch/node-signpdf/master/resources/logo-horizontal.svg?sanitize=true
 repo_url: https://github.com/digitalbazaar/forge)
+indexed_content: '# [](https://snyk.io/test/npm/node-signpdf) Formerly known as [`node-signpdf`](https://www.npmjs.com/package/node-signpdf)
+  `@signpdf` is a family of packages trying to make signing of PDFs simple in Node.js.
+  * [@signpdf](#signpdf) * [Purpose](#purpose) * [Usage](#usage) * [Packages](#packages)
+  * [Notes](#notes) * [Signing PDF in simple steps](#signing-pdf-in-simple-steps)
+  * [Generate a PDF](#generate-a-pdf) * [Append a signature placeholder](#append-a-signature-placeholder)
+  * [Generate and apply signature](#generate-and-apply-signature) * [Credits](#credits)
+  * [Contributing](#contributing) ## Purpose The main purpose of this package is **to
+  demonstrate** the way signing can be achieved **in a piece of readable code** as
+  it can take a lot of hours to figure out. ## Usage When this repo was started we
+  really wanted people to understand the signing flow. If that''s your case, you should
+  read the [[Signing PDF in simple steps]](#signing-pdf-in-simple-steps) section.
+  If you are here with "Give me the code", you should maybe go to [our packages/examples](/packages/examples).
+  Depending on your usecase you may need different combinations of packages. ### I
+  am getting PDFs that already have placeholders This is the most simple case of them
+  all. `$ npm i -S @signpdf/signpdf @signpdf/signer-p12 node-forge`. Then have a look
+  at the [with-placeholder.js example](/packages/examples/src/with-placeholder.js).
+  It should be as simple as: ```javascript import signpdf from ''@signpdf/signpdf'';
+  import { P12Signer } from ''@signpdf/signer-p12''; ... const signer = new P12Signer(fs.readFileSync(PATH_TO_P12_CERTIFICATE));
+  const signedPdf = await signpdf.sign(fs.readFileSync(PATH_TO_PDF_FILE), signer);
+  ``` ### I am generating a PDF with PDFKit This is how the library was started as
+  we needed to sign a document that we were generating on the fly. You will need `$
+  npm i -S @signpdf/signpdf @signpdf/placeholder-pdfkit010 @signpdf/signer-p12 node-forge`
+  and a look at the [pdfkit010.js example](/packages/examples/src/pdfkit010.js). ###
+  I have a .pdf file and I want to sign it This seems to be the most common usecase
+  - people work with PDF documents coming from different sources and they need to
+  digitally sign them. Both [placeholder helpers](#placeholder-helpers) placeholder-plain
+  and placeholder-pdf-lib can help here. #### Plain Start with `$ npm i -S @signpdf/signpdf
+  @signpdf/placeholder-plain @signpdf/signer-p12 node-forge`. Head over to either
+  [the JS example](/packages/examples/src/javascript.js) or [the TS one](/packages/examples/src/typescript.ts).
+  An advantage of working with the plain version would be that in theory it should
+  be quicker and use less memory (not benchmarked). A great disadvantage: it is very
+  fragile relying on strings being poisitioned in a certain way. #### PDF-LIB `$ npm
+  i -S @signpdf/signpdf @signpdf/placeholder-pdf-lib pdf-lib @signpdf/signer-p12 node-forge`
+  gets you started. Then comes the [the PDF-LIB example](/packages/examples/src/pdf-lib.js).
+  PDF-LIB provides tremendous PDF API, it is very well documented and well supported.
+  ## Packages `@signpdf` is split into multiple packages. In the case where you are
+  already working with the PDF-generating library PDFKit, this is the command you
+  will start with once you want to start signing these documents: `$ npm i -S @signpdf/signpdf
+  @signpdf/placeholder-pdfkit010 @signpdf/signer-p12 node-forge`. So what are all
+  these packages and why do you need them? ### [@signpdf/signpdf](/packages/signpdf)
+  [](https://badge.fury.io/js/@signpdf%2Fsignpdf) This is the main package, the integrating
+  one, the one that wraps everything up. It uses a [Signer](#signers) implementation
+  that provides cryptographic signing to sign a well-prepared PDF document. A PDF
+  document is well-prepared if it has a signature placeholder. If your PDF does not
+  have that, you may want to add one using one of our [placeholder helpers](#placeholder-helpers).
+  ### Signers Signers are small libraries that `@signpdf/signpdf` will call with a
+  PDF and they will know how to provide an e-signature in return. Their output is
+  then fed as the signature in the resulting document. #### [@signpdf/signer-p12](./packages/signer-p12)
+  [](https://badge.fury.io/js/@signpdf%2Fsigner-p12) With the help of its [peerDependency
+  `node-forge`](#node-forge) the P12 signer provides the actual cryptographic signing
+  of a Buffer using a P12 certificate bundle. This is done in detached mode as required
+  for PDF. ### Placeholder helpers A placeholder is the e-signature equivallent of
+  the label "Sign here:......." in your paper document. They are a required part of
+  the process of [Signing PDFs](#signing-pdf-in-simple-steps). Different projects
+  acquire their PDFs differently so we try to support some helpers that know how to
+  add e-signature placeholders. #### [@signpdf/placeholder-pdfkit](/packages/placeholder-pdfkit)
+  [](https://badge.fury.io/js/@signpdf%2Fplaceholder-pdfkit) Works on top of `PDFKit
+  0.11.0+` and given a `PDFDocument` that is i'
 ---
 {% raw %}
 # ![@signpdf](https://raw.githubusercontent.com/vbuch/node-signpdf/master/resources/logo-horizontal.svg?sanitize=true)

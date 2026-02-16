@@ -2,8 +2,27 @@
 layout: project
 name: Duobaseio Forui
 slug: duobaseio-forui
+category: Flutter-Ionic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/duobaseio-forui/docs/public/logos/light_logo.png
 repo_url: https://github.com/duobaseio/forui
+indexed_content: "\U0001F4DA Documentation • \U0001F5BC️ Widgets • \U0001F913 API
+  Reference • \U0001F5FA️ Road Map Forui is a Flutter UI library that provides a set
+  of beautifully designed, minimalistic widgets. > [!IMPORTANT] > Forui 0.18.0+ requires
+  Flutter **3.41.0+**. Run `flutter --version` to check your Flutter version. ## Why
+  Choose Forui? * \U0001F3A8 Over 40+ beautifully crafted widgets. * ⚡ Bundled [CLI](https://forui.dev/docs/concepts/themes#themes)
+  to generate themes & styling boilerplate. * ✅ [Well-tested](https://app.codecov.io/gh/duobaseio/forui).
+  * \U0001F30D I10n support. * \U0001FA9D First-class [Flutter Hooks](https://pub.dev/packages/flutter_hooks)
+  integration via [`forui_hooks`](https://pub.dev/packages/forui_hooks). ## Documentation
+  Visit [forui.dev/docs](https://forui.dev/docs) to view the documentation. ## Flutter
+  Hooks Integration Forui provides first class integration with [Flutter Hooks](https://pub.dev/packages/flutter_hooks).
+  All controllers are exposed as hooks in the companion `forui_hooks` package. ##
+  Contributing Please read the [contributing guide](/CONTRIBUTING.md). ## Nightly
+  Builds Nightly builds are available on the `nightly` branch. To use the latest nightly
+  build, add the following to your `pubspec.yaml`: ```yaml dependencies: forui: git:
+  url: https://github.com/duobaseio/forui.git ref: nightly path: forui ``` Nightly
+  builds are not guaranteed to be stable. Use at your own risk. ## License Code is
+  licensed under the [MIT License](LICENSE). Fonts are licensed under [Open Font License](LICENSE).
+  Icons are licensed under [ISC License](https://github.com/duobaseio/forui/blob/main/LICENSE)."
 ---
 {% raw %}
 <a href="https://forui.dev">

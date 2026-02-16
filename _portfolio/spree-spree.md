@@ -2,8 +2,61 @@
 layout: project
 name: Spree Spree
 slug: spree-spree
+category: Platform -eCommerce
 image: https://vendo-production-res.cloudinary.com/image/upload/w_2000/q_auto/v1742985405/docs/github/Spree_Commerce_open-source_eCommerce_myzurl.jpg
 repo_url: https://github.com/spree/spree
+indexed_content: 'Spree Commerce - Open Source eCommerce Platform Spree Commerce is
+  an API-first, open-source eCommerce platform for fast growing businesses and enterprises.
+  Spree supports complex commerce scenarios natively and lets you combine them: B2B
+  eCommerce , multi-store , multi-region , multi-vendor marketplace , digital products
+  , multi-tenant commerce . Website · Documentation · Quickstart Guide · Roadmap ·
+  Slack · Enterprise ## Getting Started Copy and paste the following command to your
+  terminal to set up Spree in 5 minutes: ```bash bash -c "$(curl -fsSL https://spreecommerce.org/install)"
+  ``` If you prefer to install Spree manually, you may follow the [Quickstart Guide](https://spreecommerce.org/docs/developer/getting-started/quickstart).
+  Make sure to check out **Spree 5** announcement below and the latest [Spree 5.3
+  release](https://github.com/spree/spree/releases/tag/v5.3.0). If you like what you
+  see, consider giving Spree a GitHub star :star: Thank you for supporting Spree open-source
+  :heart: ## Documentation Spree supports complex commerce scenarios natively ane
+  lets you combine them as your business evolves: B2B eCommerce , multi-store , multi-region
+  , multi-vendor marketplace , digital products , multi-tenant commerce . - [Developer
+  Docs](https://spreecommerce.org/docs/developer/getting-started/quickstart) - [API
+  Reference](https://spreecommerce.org/docs/api-reference/introduction) - [Integrations](https://spreecommerce.org/docs/integrations/integrations)
+  - [User Docs](https://spreecommerce.org/docs/user/what-is-spree-commerce) - [Use
+  Cases](https://spreecommerce.org/docs/use-case/overview) ## Spree 5 Announcement
+  & Demo [](https://spreecommerce.org/announcing-spree-5-the-biggest-open-source-release-ever/)
+  [Spree 5](https://spreecommerce.org/announcing-spree-5-the-biggest-open-source-release-ever/)
+  is the most feature-packed open-source release in Spree Commerce''s history — transforming
+  the platform into an API-first, developer-friendly, enterprise-grade eCommerce solution
+  that still adheres to its open-source roots. **Spree 5 packs a punch with:** - **Admin
+  Dashboard** — Completely new Admin Dashboard built with [Tailwind CSS](https://spreecommerce.org/docs/developer/admin/custom-css),
+  Admin SDK with [Tables DSL](https://spreecommerce.org/docs/developer/admin/tables),
+  staff management with [role-based permissions](https://spreecommerce.org/docs/developer/customization/permissions)
+  - **Pricing & Promotions** — [Flexible Pricing Engine](https://spreecommerce.org/docs/developer/core-concepts/products#price-lists)
+  with regional/B2B/wholesale pricing out of the box, [Customer Groups](https://spreecommerce.org/docs/user/customers/customer-groups),
+  [Gift Cards](https://spreecommerce.org/docs/developer/core-concepts/store-credits-gift-cards),
+  and enhanced [Promotions UI](https://spreecommerce.org/docs/user/promotions/create-a-promotion)
+  - **Products & Catalog** — [Metafields](https://spreecommerce.org/docs/developer/core-concepts/metafields)
+  for custom data without migrations, [CSV importer/exporter](https://spreecommerce.org/docs/user/manage-products/import-products),
+  Digital products, Product Tags, [Bulk operations UI](https://spreecommerce.org/docs/user/manage-products/bulk-product-operations)
+  - **Checkout & Payments** — [Stripe](https://spreecommerce.org/docs/integrations/payments/stripe),
+  [Adyen](https://spreecommerce.org/docs/integrations/payments/adyen), Payment Links,
+  Wallet payments (Apple Pay/Google Pay), Buy Now Pay Later, Bank & SEPA payments
+  - **Integrations & Extensibility** — [Event Bus with Subscribers](https://spreecommerce.org/docs/developer/core-concepts/events),
+  [Webhooks 2.0 with admin UI](https://spreecommerce.org/docs/developer/core-concepts/webhooks),
+  native integrations ([Google Analytics 4](https://spreecommerce.org/docs/integrations/analytics/google-analytics),
+  [Google Tag Manager](https://spreecommerce.org/docs/integrations/analytics/google-tag-manager),
+  [Klaviyo](https://spreecommerce.org/docs/integrations/marketing/klaviyo)) - **Developer
+  Experience** — New CLI Installer, code generators, LSP editor integrations, Claude
+  Code/Cursor AI integrations Upcoming **Spree 5.4** expands the platform''s reach
+  to JavaScript developers with: - **[New REST API](api)** — ~10x faster than API
+  v2, built for simplicity and performance - **[TypeScript SDK](sdk)** — First-class
+  developer experience with full type safety - **[Next.js Starter Kit](https://github.com/spree/nextjs-starter-spree)**
+  — Production-ready headless storefront powered by the new API Read the [full Spree
+  5.3 announcement here](https://spreecommerce.org/announcing-spree-commerce-5-3-with-price-lists-customer-groups-new-admin-tools/).
+  To install Spree, check out this [Quickstart Guide](https://spreecommerce.org/docs/developer/getting-started/quickstart).
+  ## Enterprise Support Your success is backed by the team that builds Spree. [Contact
+  us](https://spreecommerce.org/get-started/) to get access to: * **Dedicated Success
+  Manager** — y'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,46 @@
 layout: project
 name: Public Apis Public Apis
 slug: public-apis-public-apis
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/public-apis-public-apis/.github/cs1586-APILayerLogoUpdate2022-LJ_v2-HighRes.png
 repo_url: https://github.com/davemachado/public-api)
+indexed_content: "# Try Public APIs for free The Public APIs repository is manually
+  curated by community members like you and folks working at [APILayer](https://apilayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo).
+  It includes an extensive list of public APIs from many domains that you can use
+  for your own products. Consider it a treasure trove of APIs well-managed by the
+  community over the years. APILayer is the fastest way to integrate APIs into any
+  product. Explore [APILayer APIs](https://apilayer.com/products/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo)
+  here for your next project. Join our [Discord server](https://discord.com/invite/hgjA78638n/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo)
+  to get updates, ask questions, get answers, random community calls, and more. ##
+  APILayer APIs | API | Description | Call this API | |:---|:---|:---| | [IPstack](https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers)
+  | Locate and Identify Website Visitors by IP Address | [ ](https://god.gw.postman.com/run-collection/10131015-55145132-244c-448c-8e6f-8780866e4862?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10131015-55145132-244c-448c-8e6f-8780866e4862%26entityType%3Dcollection%26workspaceId%3D2b7498b6-6d91-4fa8-817f-608441fe42a8)|
+  | [Marketstack](https://marketstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers)
+  | Free, easy-to-use REST API interface delivering worldwide stock market data in
+  JSON format | [ ](https://god.gw.postman.com/run-collection/10131015-9cbac391-3611-4f50-9bfd-d24ae41c97c1?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10131015-9cbac391-3611-4f50-9bfd-d24ae41c97c1%26entityType%3Dcollection%26workspaceId%3D2b7498b6-6d91-4fa8-817f-608441fe42a8)|
+  | [Weatherstack](https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers)
+  | Retrieve instant, accurate weather information for any location in the world in
+  lightweight JSON format | [ ](https://god.gw.postman.com/run-collection/10131015-276c4312-f682-425d-b6b1-0f82c0a7f2b3?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10131015-276c4312-f682-425d-b6b1-0f82c0a7f2b3%26entityType%3Dcollection%26workspaceId%3D2b7498b6-6d91-4fa8-817f-608441fe42a8)|
+  | [Numverify](https://numverify.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers
+  ) | Global Phone Number Validation & Lookup JSON API |[ ](https://god.gw.postman.com/run-collection/10131015-0760d25e-b802-412e-b0e4-26e5ca3b9ffa?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10131015-0760d25e-b802-412e-b0e4-26e5ca3b9ffa%26entityType%3Dcollection%26workspaceId%3D2b7498b6-6d91-4fa8-817f-608441fe42a8)|
+  | [Fixer](https://fixer.io/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers)
+  | Fixer is a simple and lightweight API for current and historical foreign exchange
+  (forex) rates. |[ ](https://god.gw.postman.com/run-collection/10131015-0d9c66b3-5f1a-42ed-a5ca-379217bd629d?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D10131015-0d9c66b3-5f1a-42ed-a5ca-379217bd629d%26entityType%3Dcollection%26workspaceId%3D2b7498b6-6d91-4fa8-817f-608441fe42a8)|
+  | [Aviationstack](https://aviationstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers)
+  | Free, real-time flight status and global Aviation data API |[ ](https://god.gw.postman.com/run-collection/10131015-72ee0d35-018e-4370-a2b6-a66d3ebd5b5a?action=collection/fork)|
+  ## Learn more about Public APIs Get Involved * [Contributing Guide](CONTRIBUTING.md)
+  * [API for this project](https://github.com/davemachado/public-api) * [Issues](https://github.com/public-apis/public-apis/issues)
+  * [Pull Requests](https://github.com/public-apis/public-apis/pulls) * [LICENSE](LICENSE)
+  ## Index * [Animals](#animals) * [Anime](#anime) * [Anti-Malware](#anti-malware)
+  * [Art & Design](#art--design) * [Authentication & Authorization](#authentication--authorization)
+  * [Blockchain](#blockchain) * [Books](#books) * [Business](#business) * [Calendar](#calendar)
+  * [Cloud Storage & File Sharing](#cloud-storage--file-sharing) * [Continuous Integration](#continuous-integration)
+  * [Cryptocurrency](#cryptocurrency) * [Currency Exchange](#currency-exchange) *
+  [Data Validation](#data-validation) * [Development](#development) * [Dictionaries](#dictionaries)
+  * [Documents & Productivity](#documents--productivity) * [Email](#email) * [Entertainment](#entertainment)
+  * [Environment](#environment) * [Events](#events) * [Finance](#finance) * [Food
+  & Drink](#food--drink) * [Games & Comics](#games--comics) * [Geocoding](#geocoding)
+  * [Government](#government) * [Health](#health) * [Jobs](#jobs) * [Machine Learning](#machine-learning)
+  * [Music](#music) * [News](#news) * [Open Data](#open-data) * [Open Source Project"
 ---
 {% raw %}
 # Try Public APIs for free

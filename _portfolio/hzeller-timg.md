@@ -2,8 +2,70 @@
 layout: project
 name: Hzeller Timg
 slug: hzeller-timg
+category: Uncategorized
 image: https://img.shields.io/badge/License-GPL%20v2-blue.svg
 repo_url: https://github.com/hzeller/timg
+indexed_content: 'Terminal Image and Video Viewer ===============================
+  [](https://github.com/hzeller/timg/blob/main/LICENSE) &nbsp; [](../../actions/workflows/ubuntu.yml)
+  [](../../actions/workflows/macos.yml) [](../../actions/workflows/macos-brew.yml)
+  ### https://timg.sh/ A user-friendly terminal image viewer that uses graphic capabilities
+  of terminals (Sixel, Kitty or iterm2), or 24-Bit color capabilities and unicode
+  character blocks if these are not available. On terminals that implement the [sixel]
+  protocol, the [Kitty Graphics Protocol], or the [iTerm2 Graphics Protocol] this
+  displays images in full resolution. But even the fallback block display is usable.
+  Displays regular images, plays animated gifs, scrolls static images and plays videos.
+  Useful if you want to have a quick visual check without leaving the comfort of your
+  shell and having to start a bulky image viewer. Sometimes this is the only way if
+  your terminal is connected remotely via ssh. And of course if you don''t need the
+  resolution. While icons typically fit pixel-perfect, larger images are scaled down
+  to match the resolution. The command line accepts any number of image/video filenames
+  that it shows in sequence one per page or in a grid in multiple columns, depending
+  on your choice of `--grid`. The output is emitted in-line with minimally messing
+  with your terminal, so you can simply go back in history using your terminals''
+  scroll-bar (Or redirecting the output to a file allows you to later simply `cat`
+  that file to your terminal. Even `less -R` seems to be happy with it). #### Pixelation
+  On a regular terminal, block-characters are used to output images. Half blocks present
+  pixels color-accurately, and quarter blocks provide a higher spatial resolution
+  at the expense of slightly worse color accuracy. These modes should be compatible
+  with most common terminals that support UTF8 and 24Bit color. If you are on a [Kitty][Kitty
+  Graphics Protocol], [iTerm2], or [wezterm] terminal, or a terminal that supports
+  the sixel protocol, images can be shown in full resolution. -p kitty, -p iterm2,
+  or -p sixel | -p quarter | -p half | ----------------------------------|------------|---------|
+  | | | #### Grid display Images can be shown in a grid, which is very useful if you
+  quickly want to browse through a lot of images. You can choose to show the filename
+  as title, so it is easy to find exactly the filename you''re looking for (The following
+  grid uses `--grid=2` and is pixelated `-p iterm2`). This is how the same grid looks
+  if no high-res mode is available with - `-p quarter` ... ### Synopsis ``` usage:
+  timg [options] [ ...] Options (most common first): -p : Pixelation: ''h'' = half
+  blocks ''q'' = quarter blocks ''k'' = kitty graphics ''i'' = iTerm2 graphics ''s''
+  = sixel graphics Default: Auto-detect graphics, otherwise ''quarter''. --grid= [x
+  ] : Arrange images in a grid ("contact sheet"). -C, --center : Center image horizontally
+  in available cell. --title[= ]: Print title above each image. Accepts the following
+  format parameters: %f = full filename; %b = basename %w = image width; %h = height
+  %D = internal decoder used If no parameter is given, defaults to "%f" Env-var override
+  with TIMG_DEFAULT_TITLE -f : Read newline-separated list of image files to show.
+  Relative filenames are relative to current directory. (-f and -F can be provided
+  multiple times.) -F : like -f, but relative filenames considered relative to the
+  directory containing the filelist. -b : Background color to use behind alpha channel.
+  Format color name like ''yellow'', ''#rrggbb'', ''auto'' or ''none''. ''auto'' is
+  terminal background color. (default ''auto''). -B : Checkerboard pattern color to
+  use on alpha. --pattern-size= : Integer factor scale of the checkerboard pattern.
+  --auto-crop[= ] : Crop away all same-color pixels around image. The optional pre-crop
+  is the width of border to remove beforehand to get rid of an uneven border. --rotate=
+  : Rotate according to included exif orientation. or ''off''. Default: exif. -W,
+  --fit-width: Scale to fit width of available space, even if it exceeds height. -U,
+  --upscale[=i]: Allow Upscaling. If an image is smaller than the available frame
+  (e.g. an icon), enlarge it to fit. Optional parameter ''i'' only enlarges in integer
+  steps. --clear[=every]: Clear draw area first. Optional argument ''every'' will
+  clear before every image (useful with -w/-wr, but not with --grid) -V : Directly
+  use Video subsystem. Don''t probe image decoding first (useful, if you stream video
+  from stdin) -I : Only use Image subsystem. Don''t attempt video decoding -w : Wait
+  time between images (default: 0.0). -wr : like above, but wait time between rows
+  in grid. -a : Switch off anti-aliasing (default: on). -g x : Output geometry in
+  character cells. Partial geometry leaving out one value -g x or -gx is possible,
+  the other value it then derived from the terminal size. Default derived from terminal
+  size is 160x50 -o : Write to instead of stdout. -E : Don''t hide the cursor while
+  showing images. --compress[=level]: O'
 ---
 {% raw %}
 <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/hzeller-timg/img/logo.svg" align="left" width="165" alt="timg logo" title="timg">

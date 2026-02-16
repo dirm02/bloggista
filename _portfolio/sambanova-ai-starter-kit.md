@@ -2,8 +2,68 @@
 layout: project
 name: Sambanova Ai Starter Kit
 slug: sambanova-ai-starter-kit
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sambanova-ai-starter-kit/images/dark-logo.png
 repo_url: https://github.com/sambanova/ai-starter-kit
+indexed_content: '# SambaNova AI Starter Kits # Overview SambaNova AI Starter Kits
+  are a collection of open-source examples and guides designed to facilitate the deployment
+  of AI-driven use cases for both developers and enterprises. To run these examples,
+  you can obtain a free API key using [SambaCloud](https://cloud.sambanova.ai). Alternatively,
+  if you are a current SambaNova customer, you can deploy your models using [SambaStack](https://sambanova.ai/products/sambastack)
+  or [SambaManaged](https://sambanova.ai/products/sambamanaged). Most of the code
+  examples are written in Python, although the concepts can be applied to any programming
+  language. Questions? Just message us on SambaNova Community or create an issue in
+  GitHub. We''re happy to help live! # Available AI Starter Kits The table below lists
+  the available kits, which are grouped into four categories: 1) Data Ingestion &
+  Preparation, 2) Model Development & Optimization, 3) Intelligent Information Retrieval,
+  and 4) Advanced AI Capabilities. For functionalities related to third-party integrations,
+  find a list in our [Integrations Repository](https://github.com/sambanova/integrations)
+  and [Integrations Docs](https://docs.sambanova.ai/cloud/docs/integrations). Name
+  Kit Description Category Data Extraction Series of notebooks that demonstrate methods
+  for extracting text from documents in different input formats. Data Ingestion &
+  Preparation Enterprise Knowledge Retrieval Sample implementation of the semantic
+  search workflow using the SambaNova platform to get answers to questions about your
+  documents. Includes a runnable demo. Intelligent Information Retrieval Multimodal
+  Knowledge Retriever Sample implementation of the semantic search workflow leveraging
+  the SambaNova platform to get answers using text, tables, and images to questions
+  about your documents. Includes a runnable demo. Intelligent Information Retrieval
+  RAG Evaluation Kit A tool for evaluating the performance of LLM APIs using the RAG
+  Evaluation methodology. Intelligent Information Retrieval Search Assistant Sample
+  implementation of the semantic search workflow built using the SambaNova platform
+  to get answers to your questions using search engine snippets, and website crawled
+  information as the source. Includes a runnable demo. Intelligent Information Retrieval
+  Benchmarking This kit evaluates the performance of multiple LLM models hosted in
+  SambaNova Solutions. It offers various performance metrics and configuration options.
+  Users can also see these metrics within a chat interface. Advanced AI Capabilities
+  Financial Assistant This app demonstrates the capabilities of LLMs in extracting
+  and analyzing financial data using function calling, web scraping, and RAG. Advanced
+  AI Capabilities Function Calling Example of tools calling implementation and a generic
+  function calling module that can be used inside your application workflows. Advanced
+  AI Capabilities Custom Chat Templates complete workflow of how modern chat models
+  format, send, and interpret conversations. From Jinja chat templates to Completions
+  API invocation and tool-call parsing. Advanced AI Capabilitie # Getting Started
+  Go to [SambaNova Quickstart Guide](./quickstart/README.md) if it''s your first time
+  using the AI State Kits and you want to try out simple examples. ## Getting a SambaNova
+  API key and setting your generative models Currently, there are two ways to obtain
+  an API key from SambaNova. You can get a free API key using SambaCloud. Alternatively,
+  if you are a current SambaNova customer, you can deploy your models using SambaStack
+  or SambaManaged. ### Use SambaCloud (Option 1) To generate an API key, go to the
+  [API section of the SambaCloud portal](https://cloud.sambanova.ai/apis). To integrate
+  SambaCloud LLMs with this AI starter kit, update the API information by configuring
+  the environment variables in the `ai-starter-kit/.env` file, use [.env-example](.env-example)
+  as template: - Enter the SambaCloud API key in the `ai-starter-kit/.env` file, for
+  example: ```bash SAMBANOVA_API_KEY = "your-sambanova-api-key" ``` ### Use SambaStack/SambaManaged
+  (Option 2) Begin by deploying your LLM of choice (e.g., Llama 3.3 70B) to an endpoint
+  for inference in SambaStack/SambaManaged. To integrate your LLM deployed on SambaStack/SambaManaged
+  with this AI starter kit, update the API information by configuring the environment
+  variables in the `ai-starter-kit/.env` file, use [.env-example](.env-example) as
+  template: - Set your SambaStack/SambaManaged variables, for example: ``` bash SAMBANOVA_API_KEY
+  = "your-sambanova-api-key" SAMBANOVA_API_BASE = "you-sambanova-base-url" ``` ##
+  Run the desired starter kit Go to the `README.md` of the starter kit you want to
+  use and follow the instructions. See [Available AI Starter Kits](#available-ai-starter-kits).
+  ## Additional information Setting up your virtual environment There are two approaches
+  to setting up your virtual environment for the AI Starter Kits: 1. **Individual
+  Kit Setup (Traditional Method)** 2. **Base En'
 ---
 {% raw %}
 <a href="https://sambanova.ai/">

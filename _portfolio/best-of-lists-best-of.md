@@ -2,8 +2,70 @@
 layout: project
 name: Best Of Lists Best Of
 slug: best-of-lists-best-of
+category: Uncategorized
 image: https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg
 repo_url: https://github.com/best-of-lists/best-of
+indexed_content: "best-of \U0001F3C6&nbsp; Discover best-of lists with awesome open-source
+  projects on all kinds of topics. This curated list contains 25 best-of lists with
+  a total of 42K stars grouped into 10 categories. All projects are ranked by a project-quality
+  score, which is calculated based on various metrics automatically collected from
+  Github and different package managers. If you like to add or update projects, feel
+  free to open an [issue](https://github.com/best-of-lists/best-of/issues/new/choose),
+  submit a [pull request](https://github.com/best-of-lists/best-of/pulls), or directly
+  edit the [projects.yaml](https://github.com/best-of-lists/best-of/edit/main/projects.yaml).
+  Contributions are very welcome! > \U0001F9D9‍♂️ Create your own best-of list in
+  just 3 minutes with [this guide](https://github.com/best-of-lists/best-of/blob/main/create-best-of-list.md).
+  ## Contents - [Machine Learning & Data Engineering](#machine-learning--data-engineering)
+  _7 projects_ - [Web Development](#web-development) _5 projects_ - [Native Development](#native-development)
+  _1 projects_ - [Robot Development](#robot-development) _1 projects_ - [Embedded
+  Development](#embedded-development) _1 projects_ - [Development Tools](#development-tools)
+  _1 projects_ - [Documentation](#documentation) _2 projects_ - [Programming Languages](#programming-languages)
+  _3 projects_ - [Internet](#internet) _1 projects_ - [Cryptocurrencies & Blockchain](#cryptocurrencies--blockchain)
+  _1 projects_ - [Others](#others) _2 projects_ ## Explanation - \U0001F947\U0001F948\U0001F949&nbsp;
+  Combined project-quality score - ⭐️&nbsp; Star count from GitHub - \U0001F423&nbsp;
+  New project _(less than 6 months old)_ - \U0001F4A4&nbsp; Inactive project _(6 months
+  no activity)_ - \U0001F480&nbsp; Dead project _(12 months no activity)_ - \U0001F4C8\U0001F4C9&nbsp;
+  Project is trending up or down - ➕&nbsp; Project was recently added - \U0001F468‍\U0001F4BB&nbsp;
+  Contributors count from GitHub - \U0001F500&nbsp; Fork count from GitHub - \U0001F4CB&nbsp;
+  Issue count from GitHub - ⏱️&nbsp; Last update timestamp on package manager - \U0001F4E5&nbsp;
+  Download count from package manager - \U0001F4E6&nbsp; Number of dependent projects
+  - &nbsp; Best-of list with Python projects - &nbsp; Best-of list with JavaScript
+  projects ## Machine Learning & Data Engineering _Best-of lists about machine learning,
+  data engieering, data science, or other topics related to big data._ best-of-ml-python
+  (\U0001F94723 · ⭐ 23K) - A ranked list of awesome machine learning Python libraries...
+  - [GitHub](https://github.com/lukasmasuch/best-of-ml-python) (\U0001F468‍\U0001F4BB
+  56 · \U0001F500 3K · \U0001F4CB 63 - 46% open · ⏱️ 07.11.2025): ``` git clone https://github.com/ml-tooling/best-of-ml-python
+  ``` best-of-jupyter (\U0001F94817 · ⭐ 1.2K) - A ranked list of awesome Jupyter Notebook,
+  Hub and Lab.. - [GitHub](https://github.com/ml-tooling/best-of-jupyter) (\U0001F468‍\U0001F4BB
+  14 · \U0001F500 90 · \U0001F4CB 9 - 55% open · ⏱️ 05.02.2026): ``` git clone https://github.com/ml-tooling/best-of-jupyter
+  ``` best-of-mcp-servers (\U0001F94813 · ⭐ 29 · \U0001F423) - A ranked list of MCP
+  servers. Updated weekly. - [GitHub](https://github.com/tolkonepiu/best-of-mcp-servers)
+  (\U0001F468‍\U0001F4BB 5 · \U0001F500 6 · ⏱️ 11.02.2026): ``` git clone https://github.com/tolkonepiu/best-of-mcp-servers
+  ``` best-of-ml-rust (\U0001F94912 · ⭐ 470) - A ranked list of awesome machine learning
+  Rust libraries. - [GitHub](https://github.com/e-tornike/best-of-ml-rust) (\U0001F468‍\U0001F4BB
+  4 · \U0001F500 24 · ⏱️ 26.11.2025): ``` git clone https://github.com/e-tornike/best-of-ml-rust
+  ``` Show 3 hidden projects... - best-of-streamlit (\U0001F94813 · ⭐ 1.4K · \U0001F480)
+  - A ranked gallery of awesome streamlit apps built by the.. - awesome-gpts (\U0001F94813
+  · ⭐ 1.4K · \U0001F480) - Collection of all the GPTs created by the community. -
+  best-of-ml-julia (\U0001F9497 · ⭐ 24 · \U0001F480) - A ranked list of awesome machine
+  learning Julia libraries. ## Web Development _Best-of lists about react, vue, angular,
+  html5, css, or other topics related to web development._ best-of-web-python (\U0001F94718
+  · ⭐ 2.7K) - A ranked list of awesome python libraries for web.. - [GitHub](https://github.com/ml-tooling/best-of-web-python)
+  (\U0001F468‍\U0001F4BB 16 · \U0001F500 190 · \U0001F4CB 7 - 42% open · ⏱️ 29.01.2026):
+  ``` git clone https://github.com/ml-tooling/best-of-web-python ``` best-of-react
+  (\U0001F94811 · ⭐ 1K) - A ranked list of awesome React open-source libraries and
+  tools... - [GitHub](https://github.com/lukasmasuch/best-of-react) (\U0001F468‍\U0001F4BB
+  9 · \U0001F500 120 · \U0001F4CB 4 - 50% open · ⏱️ 28.08.2025): ``` git clone https://github.com/lukasmasuch/best-of-react
+  ``` best-of-django (\U0001F9499 · ⭐ 130) - A ranked list of awesome Django related
+  Python packages. - [GitHub](https://github.com/fkromer/best-of-django) (\U0001F468‍\U0001F4BB
+  3 · \U0001F500 15 · ⏱️ 01.02.2026): ``` git clone https://github.com/fkromer/best-of-django
+  ``` best-of-fastapi (\U0001F9499 · ⭐ 46) - List of automatically rated Python packages
+  for FastAPI. - [GitHub](https://github.com/fkromer/best-of-fastapi) (\U0001F468‍\U0001F4BB
+  3 · \U0001F500 1 · ⏱️ 07.02.2026): ``` git clone https://github.com/fkromer/best-of-fastapi
+  ``` best-of-vue (\U0001F9495 · ⭐ 6 · \U0001F4A4) - List of automatically rated Vue
+  projects. - [GitHub](https://github.com/fkromer/best-of-vue) (\U0001F468‍\U0001F4BB
+  2 · ⏱️ 22.05.2025): ``` git clone https://github.com/fkromer/best-of-vue ``` ##
+  Native Development _Best-of lists about iOS, Andnroi"
 ---
 {% raw %}
 <!-- markdownlint-disable -->

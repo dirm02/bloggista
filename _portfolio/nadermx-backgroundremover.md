@@ -2,8 +2,68 @@
 layout: project
 name: Nadermx Backgroundremover
 slug: nadermx-backgroundremover
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/nadermx/backgroundremover/main/examplefiles/backgroundremoverexample.png
 repo_url: https://github.com/nadermx/backgroundremover
+indexed_content: '# BackgroundRemover BackgroundRemover is a command line tool to
+  remove background from [image](https://github.com/nadermx/backgroundremover#image)
+  and [video](https://github.com/nadermx/backgroundremover#video) using AI, made by
+  [nadermx](https://john.nader.mx) to power [https://BackgroundRemoverAI.com](https://backgroundremoverai.com).
+  If you wonder why it was made read this [short blog post](https://johnathannader.com/my-first-open-source-project/).
+  ### Requirements * python >= 3.6 * python3.6-dev #or what ever version of python
+  you use * torch and torchvision stable version (https://pytorch.org) * ffmpeg 4.4+
+  * To clarify, you must install both python and whatever dev version of python you
+  installed. IE; python3.10-dev with python3.10 or python3.8-dev with python3.8 ####
+  How to install torch and ffmpeg Go to https://pytorch.org and scroll down to `INSTALL
+  PYTORCH` section and follow the instructions. **For CPU-only (default):** ```bash
+  pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+  ``` **For GPU (CUDA) support:** ```bash # For CUDA 11.8 pip3 install torch torchvision
+  --index-url https://download.pytorch.org/whl/cu118 # For CUDA 12.1 pip3 install
+  torch torchvision --index-url https://download.pytorch.org/whl/cu121 ``` Visit https://pytorch.org/get-started/locally/
+  to find the correct command for your CUDA version. **To install ffmpeg and python-dev:**
+  ```bash sudo apt install ffmpeg python3.6-dev ``` ### Installation To Install backgroundremover,
+  install it from pypi ```bash pip install --upgrade pip pip install backgroundremover
+  ``` Please note that when you first run the program, it will check to see if you
+  have the u2net models, if you do not, it will pull them from this repo It is also
+  possible to run this without installing it via pip, just clone the git to local
+  start a virtual env and install requirements and run ```bash python -m backgroundremover.cmd.cli
+  -i "video.mp4" -mk -o "output.mov" ``` and for windows ```bash python.exe -m backgroundremover.cmd.cli
+  -i "video.mp4" -mk -o "output.mov" ``` ### Installation using Docker ```bash git
+  clone https://github.com/nadermx/backgroundremover.git cd backgroundremover docker
+  build -t bgremover . # Basic usage (models will be downloaded on each run) alias
+  backgroundremover=''docker run -it --rm -v "$(pwd):/tmp" bgremover:latest'' # Recommended:
+  Persist models between runs to avoid re-downloading mkdir -p ~/.u2net alias backgroundremover=''docker
+  run -it --rm -v "$(pwd):/tmp" -v "$HOME/.u2net:/root/.u2net" bgremover:latest''
+  # For video processing: Increase shared memory to avoid multiprocessing errors alias
+  backgroundremover=''docker run -it --rm --shm-size=2g -v "$(pwd):/tmp" -v "$HOME/.u2net:/root/.u2net"
+  bgremover:latest'' ``` **Note for Docker video processing:** Video processing uses
+  multiprocessing which requires adequate shared memory. If you encounter errors like
+  `OSError: [Errno 95] Operation not supported`, use `--shm-size=2g` (or higher) or
+  `--ipc=host` when running the container. ### GPU Acceleration BackgroundRemover
+  automatically detects and uses your GPU if available, which provides significant
+  speed improvements (typically 5-10x faster than CPU). **To verify GPU is being used:**
+  ```bash python3 -c "import torch; print(''GPU available:'', torch.cuda.is_available());
+  print(''GPU name:'', torch.cuda.get_device_name(0) if torch.cuda.is_available()
+  else ''N/A'')" ``` **Troubleshooting GPU issues:** 1. **GPU not detected**: Ensure
+  you installed the CUDA-compatible version of PyTorch (see installation instructions
+  above) 2. **Out of memory errors**: Reduce GPU batch size with `-gb 1` flag 3. **Slow
+  performance on CPU**: Install CUDA-compatible PyTorch for GPU acceleration 4. **CUDA
+  version mismatch**: Match your PyTorch CUDA version with your system''s CUDA installation
+  The tool will automatically fall back to CPU if GPU is not available or encounters
+  errors. ### Usage as a cli ## Image Remove the background from a local file image
+  ```bash backgroundremover -i "/path/to/image.jpeg" -o "output.png" ``` Supported
+  image formats: `.jpg`, `.jpeg`, `.png`, `.heic`, `.heif` (HEIC/HEIF support requires
+  pillow-heif) ### Process all images in a folder You can now remove backgrounds from
+  all supported image or video files in a folder using the `--input-folder` (`-if`)
+  option. You can also optionally set an output folder using `--output-folder` (`-of`).
+  If `--output-folder` is not provided, the outputs will be saved in the same input
+  folder, prefixed with `output_`. ### Example: Folder of Images ```bash backgroundremover
+  -if "/path/to/image-folder" -of "/path/to/output-folder" ``` This will process all
+  `.jpg`, `.jpeg`, `.png`, `.heic`, and `.heif` images in the folder and save the
+  results to the output folder. ### Advance usage for image background removal **Alpha
+  Matting for Better Edge Quality:** By default, backgroundremover produces soft,
+  natural edges. For some use cases (like cartoons, graphics, or sharp-edged objects),
+  you may want '
 ---
 {% raw %}
 # BackgroundRemover

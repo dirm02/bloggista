@@ -2,8 +2,60 @@
 layout: project
 name: Atarity Deploy Your Own Saas
 slug: Atarity-deploy-your-own-saas
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Atarity-deploy-your-own-saas/scryer.jpg
 repo_url: https://github.com/Atarity/deploy-your-own-saas
+indexed_content: "**[[Submit product or tutorial](https://github.com/Atarity/deploy-your-own-saas/issues/new?assignees=&labels=&template=submit-new-product.md)]**
+  or make it thru PR. ### \U0001F64A Deploy your own `VPN` - [OpenVPN](https://openvpn.net/)
+  — full-featured open source VPN solution. [(Digital Ocean tutorial)](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04)
+  - [dockovpn.io](https://github.com/alekslitvinenk/docker-openvpn) — stateless OpenVPN
+  dockerized server which doesn't require persistent storage. - [WireGuard](https://www.wireguard.com/)
+  — faster, simpler, leaner, and more useful than IPsec. It intends to be considerably
+  more performant than OpenVPN. [(Digital Ocean tutorial)](https://www.digitalocean.com/community/tutorials/how-to-create-a-point-to-point-vpn-with-wireguard-on-ubuntu-16-04)
+  - [Algo VPN](https://github.com/trailofbits/algo) — set of Ansible scripts that
+  simplify the setup of a personal Wireguard and IPsec VPN. ### \U0001F3A7 Deploy
+  your own `Music streaming service` - [Ampache](https://github.com/ampache/ampache)
+  — web based audio/video streaming application and file manager. - [Madsonic](https://beta.madsonic.org/pages/index.jsp)
+  — web-based media library and media streamer with jukebox functionality. - [Mopidy](https://www.mopidy.com/)
+  — extensible music server. - [Koel](https://koel.dev/) — simple web-based personal
+  audio streaming service. [(GitHub)](https://github.com/phanan/koel) - [Funkwhale](https://funkwhale.audio/)
+  — web-based music library with Airsonic compatibility. [(GitLab)](https://dev.funkwhale.audio/funkwhale/funkwhale)
+  - [AzuraCast](https://www.azuracast.com/) — web radio management suite, with a modern
+  web app. [(GitHub)](https://github.com/AzuraCast/AzuraCast) - [Black Candy](https://github.com/blackcandy-org/blackcandy)
+  — music streaming server with web UI and iOS/Android apps. - [Audiobookshelf](https://audiobookshelf.org)
+  — audiobook and podcast server. [(GitHub)](https://github.com/advplyr/audiobookshelf)
+  ### \U0001F4F7 Deploy your own `Photo hosting` - [Immich](https://immich.app/) —
+  high performance photo and video solution with familiar UI. [(GitHub)](https://github.com/immich-app/immich)
+  - [Chevereto](https://chevereto.com/free) — powerful and fast image hosting script
+  that allows you to create your very own image hosting website in just minutes. -
+  [PhotoPrism](https://photoprism.app/) — personal photo management with Ai classification
+  and lots of features. [(GitHub)](https://github.com/photoprism/photoprism) - [Lychee](https://lychee.electerious.com/)
+  — upload, manage and share photos like from a native application. [(GitHub)](https://github.com/electerious/Lychee)
+  - [Photo-Stream](https://github.com/maxvoltar/photo-stream/) — super-simple, jekyll-based,
+  self-hosted photo stream. - [Piwigo](https://piwigo.org/) — PHP image gallery. [(GitHub)](https://github.com/Piwigo)
+  - [Pinry](https://docs.getpinry.com/) — your own Pinterest with boards and tags.
+  [(GitHub)](https://github.com/pinry/pinry) ### \U0001F4DA Deploy your own `eBooks
+  catalog` - [Calibre](https://github.com/kovidgoyal/calibre) — e-book manager, packed
+  with all you need features (including server). - [COPS](https://github.com/seblucas/cops)
+  — Calibre OPDS and HTML server. [(Urown tutorial)](https://roll.urown.net/server/ebooks.html)
+  - [Calibre-Web](https://github.com/janeczku/calibre-web) — web UI for Calibre database.
+  ### \U0001F4C4 Deploy your own `Google Docs` - [Collabora](https://www.collaboraoffice.com/collabora-online/)
+  — LibreOffice in the cloud with collaboration features. [(tutorial for OwnCloud)](https://www.collaboraoffice.com/code/docker/)
+  - [ONLYOFFICE CE](https://www.onlyoffice.com/) — private cloud office with collaboration
+  features. CE version distributed as [Docker image](https://helpcenter.onlyoffice.com/server/docker/opensource/deploy-community-edition-in-digitalocean.aspx).
+  [(GitHub)](https://github.com/ONLYOFFICE) - [SeaTable](https://seatable.io/) — your
+  own Airtable where spreadsheets meets database. - [Baserow](https://baserow.io/)
+  — your own API-focused Airtable with plugins. - [Nocodb](https://docs.nocodb.com)
+  — Airtable alternative could be based on top of MySQL, PostgreSQL, SQL Server, SQLite
+  & MariaDB with solid GUI [(GitHub)](https://github.com/nocodb/nocodb) ### \U0001F3AC
+  Deploy your own `Netflix` - [Jellyfin](https://jellyfin.org/) — media system that
+  puts you in control of managing and streaming your media. [(GitHub)](https://github.com/jellyfin/jellyfin)
+  ### \U0001F4DD Deploy your own `Notes` - [CodiMD](https://github.com/hackmdio/codimd)
+  — realtime collaborative markdown notes. - [Standard Notes](https://standardnotes.org/)
+  — clean and simple web app with E2E encryption, extensions and clients. [How to
+  self-host tutorial](https://theselfhostingblog.com/posts/how-to-completely-self-host-standard-notes/)
+  - [TinyList](https://tinylist.app/) — your own Google Keep. Simple and clean. [(GitHub)](https://github.com/baggachipz/tinylist)
+  - [Leanote](http://leanote.org/) — your own Evernote."
 ---
 {% raw %}
 **[[Submit product or tutorial](https://github.com/Atarity/deploy-your-own-saas/issues/new?assignees=&labels=&template=submit-new-product.md)]** or make it thru PR.

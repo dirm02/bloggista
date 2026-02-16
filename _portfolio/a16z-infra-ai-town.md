@@ -2,8 +2,69 @@
 layout: project
 name: A16z Infra Ai Town
 slug: a16z-infra-ai-town
+category: Uncategorized
 image: https://github.com/a16z-infra/ai-town/assets/3489963/a4c91f17-23ed-47ec-8c4e-9f9a8505057d
 repo_url: https://github.com/a16z-infra/ai-town
+indexed_content: "# AI Town \U0001F3E0\U0001F4BB\U0001F48C [Live Demo](https://www.convex.dev/ai-town)
+  [Join our community Discord: AI Stack Devs](https://discord.gg/PQUmTBTGmT) AI Town
+  is a virtual town where AI characters live, chat and socialize. This project is
+  a deployable starter kit for easily building and customizing your own version of
+  AI town. Inspired by the research paper [_Generative Agents: Interactive Simulacra
+  of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf). The primary goal of this
+  project, beyond just being a lot of fun to work on, is to provide a platform with
+  a strong foundation that is meant to be extended. The back-end natively supports
+  shared global state, transactions, and a simulation engine and should be suitable
+  from everything from a simple project to play around with to a scalable, multi-player
+  game. A secondary goal is to make a JS/TS framework available as most simulators
+  in this space (including the original paper above) are written in Python. ## Overview
+  - \U0001F4BB [Stack](#stack) - \U0001F9E0 [Installation](#installation) (cloud,
+  local, Docker, self-host, Fly.io, ...) - \U0001F4BB️ [Windows Pre-requisites](#windows-installation)
+  - \U0001F916 [Configure your LLM of choice](#connect-an-llm) (Ollama, OpenAI, Together.ai,
+  ...) - \U0001F464 [Customize - YOUR OWN simulated world](#customize-your-own-simulation)
+  - \U0001F469‍\U0001F4BB [Deploying to production](#deploy-the-app-to-production)
+  - \U0001F41B [Troubleshooting](#troubleshooting) ## Stack - Game engine, database,
+  and vector search: [Convex](https://convex.dev/) - Auth (Optional): [Clerk](https://clerk.com/)
+  - Default chat model is `llama3` and embeddings with `mxbai-embed-large`. - Local
+  inference: [Ollama](https://github.com/jmorganca/ollama) - Configurable for other
+  cloud LLMs: [Together.ai](https://together.ai/) or anything that speaks the [OpenAI
+  API](https://platform.openai.com/). PRs welcome to add more cloud provider support.
+  - Background Music Generation: [Replicate](https://replicate.com/) using [MusicGen](https://huggingface.co/spaces/facebook/MusicGen)
+  Other credits: - Pixel Art Generation: [Replicate](https://replicate.com/), [Fal.ai](https://serverless.fal.ai/lora)
+  - All interactions, background music and rendering on the component in the project
+  are powered by [PixiJS](https://pixijs.com/). - Tilesheet: - https://opengameart.org/content/16x16-game-assets
+  by George Bailey - https://opengameart.org/content/16x16-rpg-tileset by hilau -
+  We used https://github.com/pierpo/phaser3-simple-rpg for the original POC of this
+  project. We have since re-wrote the whole app, but appreciated the easy starting
+  point - Original assets by [ansimuz](https://opengameart.org/content/tiny-rpg-forest)
+  - The UI is based on original assets by [Mounir Tohami](https://mounirtohami.itch.io/pixel-art-gui-elements)
+  # Installation The overall steps are: 1. [Build and deploy](#build-and-deploy) 2.
+  [Connect it to an LLM](#connect-an-llm) ## Build and Deploy There are a few ways
+  to run the app on top of Convex (the backend). 1. The standard Convex setup, where
+  you develop locally or in the cloud. This requires a Convex account(free). This
+  is the easiest way to depoy it to the cloud and seriously develop. 2. If you want
+  to try it out without an account and you're okay with Docker, the Docker Compose
+  setup is nice and self-contained. 3. There's a community fork of this project offering
+  a one-click install on [Pinokio](https://pinokio.computer/item?uri=https://github.com/cocktailpeanutlabs/aitown)
+  for anyone interested in running but not modifying it \U0001F60E. 4. You can also
+  deploy it to [Fly.io](https://fly.io/). See [./fly](./fly) for instructions. ###
+  Standard Setup Note, if you're on Windows, see [below](#windows-installation). ```sh
+  git clone https://github.com/a16z-infra/ai-town.git cd ai-town npm install ``` This
+  will require logging into your Convex account, if you haven't already. To run it:
+  ```sh npm run dev ``` You can now visit http://localhost:5173. If you'd rather run
+  the frontend and backend separately (which syncs your backend functions as they're
+  saved), you can run these in two terminals: ```bash npm run dev:frontend npm run
+  dev:backend ``` See [package.json](./package.json) for details. ### Using Docker
+  Compose with self-hosted Convex You can also run the Convex backend with the self-hosted
+  Docker container. Here we'll set it up to run the frontend, backend, and dashboard
+  all via docker compose. ```sh docker compose up --build -d ``` The container will
+  keep running in the background if you pass `-d`. After you've done it once, you
+  can `stop` and `start` services. - The frontend will be running on http://localhost:5173.
+  - The backend will be running on http://localhost:3210 (3211 for the http api).
+  - The dashboard will be running on http://localhost:6791. To log into the dashboard
+  and deploy from the convex CLI, you will need to generate an admin key. ```sh docker
+  compose exec backend ./generate_admin_key.sh ``` Add it to your `.env.local` file.
+  Note: If you run `down` and `up`, you'll have to generate the key again and update
+  the `.env"
 ---
 {% raw %}
 # AI Town 🏠💻💌

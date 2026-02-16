@@ -2,8 +2,15 @@
 layout: project
 name: Justcallmekoko Esp32marauder
 slug: justcallmekoko-ESP32Marauder
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/github/license/mashape/apistatus.svg
 repo_url: https://github.com/justcallmekoko/ESP32Marauder
+indexed_content: "# ESP32 Marauder A suite of WiFi/Bluetooth offensive and defensive
+  tools for the ESP32 [](https://github.com/justcallmekoko/ESP32Marauder/actions/workflows/build_push.yml)
+  ## Getting Started Download the [latest release](https://github.com/justcallmekoko/ESP32Marauder/releases/latest)
+  of the firmware. Check out the project [wiki](https://github.com/justcallmekoko/ESP32Marauder/wiki)
+  for a full overview of the ESP32 Marauder # For Sale Now You can buy the ESP32 Marauder
+  using [this link](https://www.justcallmekokollc.com)"
 ---
 {% raw %}
 <!---[![License: MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/justcallmekoko/ESP32Marauder/blob/master/LICENSE)--->

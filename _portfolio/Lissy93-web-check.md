@@ -2,8 +2,66 @@
 layout: project
 name: Lissy93 Web Check
 slug: Lissy93-web-check
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/Lissy93/web-check/master/.github/screenshots/web-check-screenshot1.png
 repo_url: https://github.com/warpdotdev/brand-assets
+indexed_content: "Web-Check Comprehensive, on-demand open source intelligence for
+  any website \U0001F310 web-check.xyz --- Kindly supported by: The $HOME of all things
+  in the terminal. Find your next CLI / TUI tool and more at Terminal Trove, Get updates
+  on new tools on our newsletter. Kindly supported by: Warp , built for coding with
+  multiple AI agents --- #### Contents - **[About](#about)** - [Screenshot](#screenshot)
+  - [Live Demo](#live-demo) - [Mirror](#mirror) - [Features](#features) - **[Usage](#usage)**
+  - [Deployment](#deployment) - [Option#1: Netlify](#deploying---option-1-netlify)
+  - [Option#2: Vercel](#deploying---option-2-vercel) - [Option#3: Docker](#deploying---option-3-docker)
+  - [Option#4: Source](#deploying---option-4-from-source) - [Configuration Options](#configuring)
+  - [Developer Setup](#developing) - **[Community](#community)** - [Contributing](#contributing)
+  - [Bugs](#reporting-bugs) - [Support](#supporting) - **[License](#license)** ---
+  ## About Get an insight into the inner-workings of a given website: uncover potential
+  attack vectors, analyse server architecture, view security configurations, and learn
+  what technologies a site is using. Currently the dashboard will show: IP info, SSL
+  chain, DNS records, cookies, headers, domain info, search crawl rules, page map,
+  server location, redirect ledger, open ports, traceroute, DNS security extensions,
+  site performance, trackers, associated hostnames, carbon footprint. Stay tuned,
+  as I'll add more soon! The aim is to help you easily understand, optimize and secure
+  your website. ### Screenshot Expand Screenshot [](https://web-check.as93.net/) [](https://github.com/Lissy93/web-check/tree/master/.github/screenshots)
+  ### Live Demo A hosted version can be accessed at: **[web-check.as93.net](https://web-check.as93.net)**
+  ### Mirror The source for this repo is mirrored to CodeBerg, available at: **[codeberg.org/alicia/web-check](https://codeberg.org/alicia/web-check)**
+  ### Status Build & Deploys: [](https://app.netlify.com/sites/web-check/deploys)
+  [](https://vercel.com/as93/web-check/) [](https://github.com/Lissy93/web-check/actions/workflows/docker.yml)
+  [](https://github.com/Lissy93/web-check/actions/workflows/deploy-aws.yml) Repo Management
+  & Miscellaneous: [](https://github.com/Lissy93/web-check/actions/workflows/mirror.yml)
+  [](https://github.com/Lissy93/web-check/actions/workflows/credits.yml) ### Features
+  Click to expand / collapse section **Note** _this list needs updating, many more
+  jobs have been added since..._ The following section outlines the core features,
+  and briefly explains why this data might be useful for you to know, as well as linking
+  to further resources for learning more. IP Info ###### Description An IP address
+  (Internet Protocol address) is a numerical label assigned to each device connected
+  to a network / the internet. The IP associated with a given domain can be found
+  by querying the Domain Name System (DNS) for the domain's A (address) record. ######
+  Use Cases Finding the IP of a given server is the first step to conducting further
+  investigations, as it allows us to probe the server for additional info. Including
+  creating a detailed map of a target's network infrastructure, pinpointing the physical
+  location of a server, identifying the hosting service, and even discovering other
+  domains that are hosted on the same IP address. ###### Useful Links - [Understanding
+  IP Addresses](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking)
+  - [IP Addresses - Wiki](https://en.wikipedia.org/wiki/IP_address) - [RFC-791 Internet
+  Protocol](https://tools.ietf.org/html/rfc791) - [whatismyipaddress.com](https://whatismyipaddress.com/)
+  SSL Chain ###### Description SSL certificates are digital certificates that authenticate
+  the identity of a website or server, enable secure encrypted communication (HTTPS),
+  and establish trust between clients and servers. A valid SSL certificate is required
+  for a website to be able to use the HTTPS protocol, and encrypt user + site data
+  in transit. SSL certificates are issued by Certificate Authorities (CAs), which
+  are trusted third parties that verify the identity and legitimacy of the certificate
+  holder. ###### Use Cases SSL certificates not only provide the assurance that data
+  transmission to and from the website is secure, but they also provide valuable OSINT
+  data. Information from an SSL certificate can include the issuing authority, the
+  domain name, its validity period, and sometimes even organization details. This
+  can be useful for verifying the authenticity of a website, understanding its security
+  setup, or even for discovering associated subdomains or other services. ###### Useful
+  Links - [TLS - Wiki](https://en.wikipedia.org/wiki/Transport_Layer_Security) - [What
+  is SSL (via Cloudflare learning)](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
+  - [RFC-8446 - TLS](https://tools.ietf.org/html/rfc8446) - [SSL Checker](https://www.sslshopper.com/ssl-checker.html)
+  DN"
 ---
 {% raw %}
 <h1 align="center">Web-Check</h1>

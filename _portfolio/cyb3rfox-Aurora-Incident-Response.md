@@ -2,8 +2,67 @@
 layout: project
 name: Cyb3rfox Aurora Incident Response
 slug: cyb3rfox-Aurora-Incident-Response
+category: Serv&Prod-Tools
 image: http://img.youtube.com/vi/2j2XYcqQIm0/0.jpg
 repo_url: https://github.com/cyb3rfox/Aurora-Incident-Response
+indexed_content: '# Aurora Incident Response Incident Response Documentation made
+  easy. Developed by Incident Responders for Incident Responders. Aurora brings "Spreadsheet
+  of Doom" used in the SANS FOR508 class to the next level. Having led many cases
+  and taught so many students how to do IR right, I realized, that many struggle with
+  keeping control over all the findings. That does not only prevent them from seeing
+  what they already have, but even less so what they are missing. It''s intended to
+  be used in small and big incident response investigations to track findings, tasks,
+  making reporting easy and generally stay on top of the game. The current version
+  has been battle tested multiple times now. I''ll keep fixing bugs and adding features
+  as we go, but please remember, it''s a leisure time project. So any help is appreciated.
+  Lateral Movement Visual Timeline ## 1 Download & Installation You can download the
+  current release of Aurora Incident Response from the [Releases Page](https://github.com/cyb3rfox/Aurora-Incident-Response/releases).
+  Aurora Incident Response is available for MacOS, Windows and Linux. We are working
+  on making it available for iPads and Android tablets as well. Here''s a video on
+  how to use Aurora: [](http://www.youtube.com/watch?v=2j2XYcqQIm0 "") ## 2 Development
+  If you want to contribute, you are encouraged to do so. I''d totally like to see
+  the tool growing. The whole application is built on an electron base and written
+  in plain Javascript and HTML. Even though technically I could have used node.js
+  modules for functionality like Webdav I refrained from it. The reason is, that node
+  modules will not run out of the box when migrating the code to phonegap for IOS
+  and Android. The good news is, it''s really fast to set up your development environment.
+  I personally use Webstorm but it should work with pretty much any IDE. ### 2.1 Set
+  up your build environment As pointed out in the description, Aurora Incident Response
+  is built on top of Electron which allows for multi platform compatibility. You can
+  easily install your tool chain the following way. Start by installing `node.js`.
+  Follow the links to their [download page](https://nodejs.org/en/download/). With
+  `nodejs` installed, checkout the [Aurora Github repository](git clone https://github.com/cyb3rfox/Aurora-Incident-Response)
+  (or fork first if you want to contribute). git clone https://github.com/cyb3rfox/Aurora-Incident-Response
+  cd Aurora-Incident-Response/src Now you need to install Electron using node. Currently
+  Aurora is configured to run with `electron` 4.0.6. npm install electron@4.0.6 You
+  can now run the code by invoking: node_modules/.bin/electron . That''s fast, isn''t
+  it? ### 2.2 Roadmap The following points are already on the roadmap. Please just
+  post a new issue or send a message on [Twitter](https://twitter.com/cyberfox) if
+  you got any suggestions for new improvements. You can checkout the planned feature
+  for the nex releases under [projects](https://github.com/cyb3rfox/Aurora-Incident-Response/projects).
+  ### 2.3 Build executables for distribution To build and cross build you I use `electron-packager`.
+  npm install electron-packager Build for Windows: ./node_modules/.bin/electron-packager
+  . Aurora --asar --prune --platform=win32 --electron-version=4.0.6 --arch=x64 --icon=icon/aurora.ico
+  --out=release-builds --ignore "node_modules/\.bin" Build for MacOS: ./node_modules/.bin/electron-packager
+  ./src Aurora --overwrite --platform=darwin --arch=x64 --icon=icon/aurora.icns --prune=true
+  --out=release-builds Build for Linux: ./node_modules/.bin/electron-packager . Aurora
+  --asar --prune --platform=linux --electron-version=4.0.6 --arch=x64 --icon=icon/aurora.ico
+  --out=release-builds --ignore "node_modules/\.bin" ### 2.4 Sourcecode Navigator
+  This section describes the various sourcecode files. For now I need to keep this
+  section small. I tried to comment in the code as good as I can. If you got any questions,
+  just ping me. If you want to join me developing the tool, there''s a slack channel
+  to communicate. Drop me a note and I will invite you. #### 2.4.1 `main.js` Electron
+  apps differentiates between a main (background) and a render process(chromium browser
+  window). This file controls the main process. For aurora you usually only need to
+  go there if you want to turn on the Javascript console in the Aurora window. Just
+  unquote the following line: win.webContents.openDevTools() The second thing that''s
+  handled there is autosaving and unlocking when you exit the program. For that the
+  main and the render process share a global variable called global.Dirty.is_dirty
+  that is used to signal to the main process if it can quit right away or if the file
+  needs to be sanitized before exiting. It''s actually a very similar concept to the
+  NTFS dirty bit. #### 2.4.2 `index.html` ` This is the main Aurora file that strings
+  together all scripts and stylesheets. It also initiates the GUI. other than that
+  it has no functionality. #### 2.4.3 `gui_definitions.js` I tried as good as '
 ---
 {% raw %}
 # Aurora Incident Response

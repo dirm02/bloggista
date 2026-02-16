@@ -2,8 +2,63 @@
 layout: project
 name: Netalertx Netalertx
 slug: netalertx-NetAlertX
+category: File manager -Network-nmap
 image: https://img.shields.io/docker/image-size/jokobsk/netalertx?label=Size&logo=Docker&color=0aa8d2&logoColor=fff&style=for-the-badge
 repo_url: https://github.com/jokob-sk/NetAlertX
+indexed_content: "[](https://hub.docker.com/r/jokobsk/netalertx) [](https://hub.docker.com/r/jokobsk/netalertx)
+  [](https://github.com/jokob-sk/NetAlertX/releases) [](https://discord.gg/NczTUTWyRr)
+  [](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Falexbelgium%2Fhassio-addons)
+  # NetAlertX - Network Visibility & Asset Intelligence Framework ![main][main] \U0001F4F7
+  Click for more screenshots | ![Main screen][main] | ![device_details 1][device_details]
+  | ![Screen network][network] | |----------------------|----------------------|----------------------|
+  | ![presence][presence] | ![maintenance][maintenance] | ![settings][settings] |
+  | ![sync_hub][sync_hub] | ![report1][report1] | ![device_nmap][device_nmap] | Head
+  to [https://netalertx.com/](https://netalertx.com/) for even more gifs and screenshots
+  \U0001F4F7. Centralized network visibility and continuous asset discovery. Monitor
+  devices, detect change, and stay aware across distributed networks. NetAlertX provides
+  a centralized \"Source of Truth\" (NSoT) for network infrastructure. Maintain a
+  real-time inventory of every connected device, identify Shadow IT and unauthorized
+  hardware to maintain regulatory compliance, and automate compliance workflows across
+  distributed sites. NetAlertX is designed to bridge the gap between simple network
+  scanning and complex SIEM tools, providing actionable insights without the overhead.
+  ## Table of Contents - [Quick Start](#quick-start) - [Features](#features) - [Documentation](#documentation)
+  - [Security \\& Privacy](#security--privacy) - [FAQ](#faq) - [Troubleshooting Tips](#troubleshooting-tips)
+  - [Everything else](#everything-else) ## Quick Start > [!WARNING] > ⚠️ **Important:**
+  The docker-compose has recently changed. Carefully read the [Migration guide](https://docs.netalertx.com/MIGRATION/?h=migrat#12-migration-from-netalertx-v25524)
+  for detailed instructions. Start NetAlertX in seconds with Docker: ```bash docker
+  run -d \\ --network=host \\ --restart unless-stopped \\ -v /local_data_dir:/data
+  \\ -v /etc/localtime:/etc/localtime:ro \\ --tmpfs /tmp:uid=20211,gid=20211,mode=1700
+  \\ -e PORT=20211 \\ -e APP_CONF_OVERRIDE='{\"GRAPHQL_PORT\":\"20214\"}' \\ ghcr.io/netalertx/netalertx:latest
+  ``` Note: Your `/local_data_dir` should contain a `config` and `db` folder. To deploy
+  a containerized instance directly from the source repository, execute the following
+  BASH sequence: ```bash git clone https://github.com/netalertx/NetAlertX.git cd NetAlertX
+  docker compose up --force-recreate --build # To customize: edit docker-compose.yaml
+  and run that last command again ``` Need help configuring it? Check the [usage guide](https://docs.netalertx.com/README)
+  or [full documentation](https://docs.netalertx.com/). For Home Assistant users:
+  [Click here to add NetAlertX](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Falexbelgium%2Fhassio-addons)
+  For other install methods, check the [installation docs](#documentation) --- ###
+  || [Docker guide](https://docs.netalertx.com/DOCKER_INSTALLATION) || [Releases](https://github.com/netalertx/NetAlertX/releases)
+  || [Docs](https://docs.netalertx.com/) || [Plugins](https://docs.netalertx.com/PLUGINS)
+  || [Website](https://netalertx.com) --- ## Features ### Discovery & Asset Intelligence
+  Continuous monitoring for unauthorized asset discovery, connection state changes,
+  and IP address management (IPAM) drift. Discovery & scan methods include: **arp-scan**,
+  **Pi-hole - DB import**, **Pi-hole - DHCP leases import**, **Generic DHCP leases
+  import**, **UNIFI controller import**, **SNMP-enabled router import**. Check the
+  [Plugins](https://docs.netalertx.com/PLUGINS#readme) docs for a full list of avaliable
+  plugins. ### Notification gateways Send notifications to more than 80+ services,
+  including Telegram via [Apprise](https://hub.docker.com/r/caronc/apprise), or use
+  native [Pushsafer](https://www.pushsafer.com/), [Pushover](https://www.pushover.net/),
+  or [NTFY](https://ntfy.sh/) publishers. ### Integrations and Plugins Feed your data
+  and device changes into [Home Assistant](https://docs.netalertx.com/HOME_ASSISTANT),
+  read [API endpoints](https://docs.netalertx.com/API), or use [Webhooks](https://docs.netalertx.com/WEBHOOK_N8N)
+  to setup custom automation flows. You can also build your own scanners with the
+  [Plugin system](https://docs.netalertx.com/PLUGINS#readme) in as little as [15 minutes](https://www.youtube.com/watch?v=cdbxlwiWhv8).
+  ### Workflows The [workflows module](https://docs.netalertx.com/WORKFLOWS) automates
+  IT governance by enforcing device categorization and cleanup policies. Whether you
+  need to assign newly discovered devices to a specific Network Node, auto-group devices
+  from a given vendor, unarchive a device if detected online, or automatically delete
+  devices, this module provides the flexibility to tailor the automations to your
+  needs. ## Documentation Explore all the [documentation here](https://docs.netalertx.com/) "
 ---
 {% raw %}
 [![Docker Size](https://img.shields.io/docker/image-size/jokobsk/netalertx?label=Size&logo=Docker&color=0aa8d2&logoColor=fff&style=for-the-badge)](https://hub.docker.com/r/jokobsk/netalertx)

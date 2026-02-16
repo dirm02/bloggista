@@ -2,8 +2,75 @@
 layout: project
 name: Spel987 Polyuploader
 slug: spel987-PolyUploader
+category: Serv&Prod-Tools
 image: https://i.imgur.com/ru5jvSs.png
 repo_url: https://github.com/spel987/PolyUploader.git
+indexed_content: "# PolyUploader ## Upload your files remotely to different hosting
+  sites. \U0001F4D6 Documentation website | \U0001F4C8 Statistics | \U0001F9FE Terms
+  \U0001F680 Quick overview | ⬇️ Installation | \U0001F310 Supported hosts | \U0001F50D
+  Comparison with Mirrored.to, Mirrorace.org and MultiUp \U0001F4CA Telemetry | \U0001F6E0️
+  Managing CORS | \U0001F5D2️ Notes from the developer | \U0001F464 Credits # Quick
+  overview: - Upload from local storage or via URL to 133 hosts at once - Link your
+  own API keys for compatible hosts - View a detailed history of your uploads with
+  expiration status and delete buttons - Create and manage upload profiles to automate
+  frequent tasks - Generate a single sharing link to bundle multiple host links (e.g.
+  [example](https://p-u.vercel.app/QZZGsMNho9)) - No account required, fully open-source,
+  fast, and free - Built with a focus on speed and security using Rust backend Be
+  sure to respect the [terms](https://p-u.vercel.app/terms) when using the software.
+  # Installation ## - \U0001F527 Use the application by compiling it by hand: 1) **Clone
+  the repository:** ``` git clone https://github.com/spel987/PolyUploader.git ```
+  2) **Install the latest version of Rust:** https://www.rust-lang.org/tools/install
+  3) **Install Tauri-CLI with this command:** ``` cargo install tauri-cli ``` 4) **Start
+  compilation with this command:** ``` cargo tauri build ``` You'll find the installer
+  in the `.\\src-tauri\\target\\release\\bundle` folder. **Or start debugging the
+  application with this command:** ``` cargo tauri dev ``` *Optional: If you wish
+  to modify the CSS with TailwindCSS:* 1) **Install the latest version of Node.js:**
+  https://nodejs.org 2) **Install the dependencies:** ``` npm i ``` 3) **Run the script
+  command to build the CSS file:** ``` npm run tailwind ``` ## - \U0001F5A5️ Or simply
+  download and run the [release](https://github.com/spel987/PolyUploader/releases/latest)
+  (Windows only). > 1) For the moment, the application is only available on Windows.
+  I tried to build the application for Linux but I kept getting webkit errors and
+  on top of that Linux doesn't handle certain CSS effects in the same way. The application
+  wouldn't look very good and would be full of bugs. However, why not work to solve
+  this problem in future versions. > 2) I'm not providing a portable version at the
+  moment. In fact, Tauri creates a `C:\\Users\\ \\AppData\\Local\\PolyUploader` folder
+  containing the data required by the Webview. # Supported hosts ## \U0001F4CB All
+  hosts ### \U0001F5D2️ Legend | Column | Emoji(s) | Meaning(s) | | ------------------------------------
+  | --------- | ------------------------------------------------------------------
+  | | Name | \U0001F39E️ | \U0001F39E️ = Specialist video streaming host | | \U0001F4C1
+  Max file size / \U0001F550 File retention | \U0001F47B, \U0001F464 | \U0001F47B
+  = Anonymous upload limits \U0001F464 = Account-based upload limits | | \U0001F5D1️
+  Supports manual file deletion | ✔️, \U0001F527, - | ✔️ = Yes \U0001F527 = Only with
+  API key - = Not supported | | \U0001F511 API key support | ✨, \U0001F512, - | ✨
+  = API key optional \U0001F512 = API key required - = Not supported | ### \U0001F310
+  Hosts | Name | Url | \U0001F4C1 Max file size | \U0001F550 File retention time |
+  \U0001F5D1️ Supports manual file deletion | \U0001F511 API key support | | :-------------------------------------------------------------------------
+  | :--------------------------- | :--------------------: | :--------------------------:
+  | :-------------------------------: | :----------------: | | 1fichier | https://1fichier.com
+  | \U0001F47B, \U0001F464 300 GB | \U0001F47B 15 days \U0001F464 30 days | ✔️ | ✨
+  | | Turbobit | https://turbobit.net | \U0001F47B 200 MB \U0001F464 200 GB | \U0001F47B
+  7 days \U0001F464 30 days | - | ✨ | | Bowfile | https://bowfile.com | 20 GB | 30
+  days | ✔️ | - | | Gofile | https://gofile.io | \U0001F47B, \U0001F464 infinite |
+  \U0001F47B, \U0001F464 10 days | ✔️ | ✨ | | Hitfile | https://hitfile.net | \U0001F47B
+  4 GB \U0001F464 100 GB | \U0001F47B, \U0001F464 30 days | - | ✨ | | 1Cloudfile |
+  https://1cloudfile.com | 5 GB | 30 days | ✔️ | - | | file-upload.org | https://file-upload.org
+  | 200 MB | 60 days | - | - | | RapidFileShare | http://rapidfileshare.net | 512
+  MB | 5 days | ✔️ | - | | Upload.ee | https://upload.ee | 100 MB | 50 days | ✔️ |
+  - | | Netu \U0001F39E️ | https://netu.ac | \U0001F47B 8 GB \U0001F464 100 GB | \U0001F47B,
+  \U0001F464 30 days | - | ✨ | | Buzzheavier | https://buzzheavier.com | \U0001F47B,
+  \U0001F464 infinite | \U0001F47B, \U0001F464 7 days | \U0001F527 | ✨ | | HexUpload
+  | https://hexload.com | 2 GB | 60 days | ✔️ | - | | VikingFile | https://vikingfile.com
+  | 10 GB | 20 days | - | - | | DailyUploads | https://dailyuploads.net | infinite
+  | 30 days | - | - | | UsersDrive | https://usersdrive.com | 2.25 GB | 10 days |
+  ✔️ | - | | Send.now | https://send.now | 100 GB | 15 days | - | - | | Mexa.sh |
+  https://mexa.sh | 500 MB | 60 days | ✔️ | - | | MegaUp | https://megaup.net | 5
+  GB | 60 days | ✔️ | - | | Uploadify | https://uploadify.net | 2 GB | infinite |
+  ✔️ | - | | Clicknupload | https://clicknupload.click | 2 GB | 7 days | ✔️ | - |
+  | Filespace | https://filespace.com | 150 MB | 10 days | ✔️ | - | | Gulfup | https://www.gulf-up.com
+  | \U0001F47B 200 MB \U0001F464 10 GB | \U0001F47B 10 days \U0001F464 30 days | ✔️
+  | ✨ | | Fastupload | https://fastupload.io | 50 GB | 30 days | ✔️ | - | | UploadHive
+  | https://uploadhive.com | infinite | 30 days | - | - | | DepositFiles | https://dfiles.eu
+  | 10 GB | 90 days | - | - | | Download.gg | https"
 ---
 {% raw %}
 # PolyUploader 

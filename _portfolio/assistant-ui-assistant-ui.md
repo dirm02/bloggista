@@ -2,8 +2,50 @@
 layout: project
 name: Assistant Ui Assistant Ui
 slug: assistant-ui-assistant-ui
+category: Uncategorized
 image: https://img.shields.io/npm/v/assistant-ui
 repo_url: https://github.com/assistant-ui/assistant-ui)
+indexed_content: "Product · Documentation · Examples · Discord Community · Contact
+  Sales [](https://www.npmjs.com/package/@assistant-ui/react) [](https://www.npmjs.com/package/@assistant-ui/react)
+  [](https://deepwiki.com/assistant-ui/assistant-ui) [](https://app.workweave.ai/reports/repository/org_GhSIrtWo37b5B3Mv0At3wQ1Q/722184017)
+  [⭐️ Star us on GitHub](https://github.com/assistant-ui/assistant-ui) ## The UX of
+  ChatGPT in your React app \U0001F4AC\U0001F680 **assistant-ui** is an open source
+  TypeScript/React library to build production-grade AI chat experiences fast. - Handles
+  streaming, auto-scrolling, accessibility, and real-time updates for you - Fully
+  composable primitives inspired by shadcn/ui and cmdk — customize every pixel - Works
+  with your stack: AI SDK, LangGraph, Mastra, or any custom backend - Broad model
+  support out of the box (OpenAI, Anthropic, Mistral, Perplexity, AWS Bedrock, Azure,
+  Google Gemini, Hugging Face, Fireworks, Cohere, Replicate, Ollama) with easy extension
+  to custom APIs ## Why assistant-ui - **Fast to production**: battle-tested primitives,
+  built-in streaming and attachments - **Designed for customization**: composable
+  pieces instead of a monolithic widget - **Great DX**: sensible defaults, keyboard
+  shortcuts, a11y, and strong TypeScript - **Enterprise-ready**: optional chat history
+  and analytics via Assistant Cloud ## Getting Started Run one of the following in
+  your terminal: ```bash npx assistant-ui create # new project npx assistant-ui init
+  # add to existing project ``` [](https://youtu.be/k6Dc8URmLjk) ## Features - **Build**:
+  composable primitives to create any chat UX (message list, input, thread, toolbar)
+  and a polished shadcn/ui theme you can fully customize. - **Ship**: production-ready
+  UX out of the box — streaming, auto-scroll, retries, attachments, markdown, code
+  highlighting, and voice input (dictation) — plus keyboard shortcuts and accessibility
+  by default. - **Generate**: render tool calls and JSON as components, collect human
+  approvals inline, and enable safe frontend actions. - **Integrate**: works with
+  AI SDK, LangGraph, Mastra, or custom backends; broad provider support; optional
+  chat history and analytics via Assistant Cloud (single env var). ## Backends - **Assistant
+  Cloud**: managed chat persistence and analytics. Deploy with the Cloud Starter template;
+  bring any model/provider. - **AI SDK**: integration with Vercel AI SDK; connect
+  to any supported provider. - **LangGraph**: integration with LangGraph and LangGraph
+  Cloud; connect via LangChain providers. - **Mastra**: integration with Mastra agents/workflows/RAG;
+  model routing via Vercel AI SDK; optional Mastra Cloud. - **Custom**: use assistant-ui
+  on top of your own backend/streaming protocol. ## Customization assistant-ui takes
+  a Radix-style approach: instead of a single monolithic chat component, you compose
+  primitives and bring your own styles. We provide a great starter config; you control
+  everything else. Sample customization to make a Perplexity lookalike: ## Traction
+  assistant-ui is the most popular UI library for building AI chat. Hundreds of companies
+  and projects use assistant-ui to build in-app AI assistants, including , , , , ,
+  , , , and more. ## Demos ## Community & Support - [Check out example demos](https://www.assistant-ui.com/)
+  - [Read the docs](https://www.assistant-ui.com/docs/) - [Join our Discord](https://discord.com/invite/S9dwgCNEFs)
+  - [Book a sales call](https://cal.com/simon-farshid/assistant-ui) --- Backed by
+  Y Combinator. Building something with assistant-ui? We’d love to hear from you."
 ---
 {% raw %}
 <a href="https://www.assistant-ui.com">

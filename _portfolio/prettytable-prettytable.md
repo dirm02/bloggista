@@ -2,8 +2,67 @@
 layout: project
 name: Prettytable Prettytable
 slug: prettytable-prettytable
+category: Frontend Framework
 image: https://img.shields.io/pypi/v/prettytable.svg?logo=pypi&logoColor=FFE873
 repo_url: https://github.com/prettytable/prettytable
+indexed_content: '# PrettyTable [](https://pypi.org/project/prettytable/) [](https://pypi.org/project/prettytable/)
+  [](https://pypistats.org/packages/prettytable) [](https://github.com/prettytable/prettytable/actions)
+  [](https://codecov.io/gh/prettytable/prettytable) [](LICENSE) [](https://github.com/psf/black)
+  [](https://tidelift.com/subscription/pkg/pypi-prettytable?utm_source=pypi-prettytable&utm_medium=badge)
+  PrettyTable lets you print tables in an attractive ASCII form: ``` +-----------+------+------------+-----------------+
+  | City name | Area | Population | Annual Rainfall | +-----------+------+------------+-----------------+
+  | Adelaide | 1295 | 1158259 | 600.5 | | Brisbane | 5905 | 1857594 | 1146.4 | | Darwin
+  | 112 | 120900 | 1714.7 | | Hobart | 1357 | 205556 | 619.5 | | Melbourne | 1566
+  | 3806092 | 646.9 | | Perth | 5386 | 1554769 | 869.4 | | Sydney | 2058 | 4336374
+  | 1214.8 | +-----------+------+------------+-----------------+ ``` ## Installation
+  Install via pip: python3 -m pip install -U prettytable Install latest development
+  version: python3 -m pip install -U git+https://github.com/prettytable/prettytable
+  Or from `requirements.txt`: -e git://github.com/prettytable/prettytable.git#egg=prettytable
+  ## Demo To see demo output, run: ```bash python3 -m prettytable ``` ## Tutorial
+  on how to use the PrettyTable API ### Getting your data into (and out of) the table
+  Let''s suppose you have a shiny new PrettyTable: ```python from prettytable import
+  PrettyTable table = PrettyTable() ``` and you want to put some data into it. You
+  have a few options. #### Row by row You can add data one row at a time. To do this
+  you can set the field names first using the `field_names` attribute, and then add
+  the rows one at a time using the `add_row` method: ```python table.field_names =
+  ["City name", "Area", "Population", "Annual Rainfall"] table.add_row(["Adelaide",
+  1295, 1158259, 600.5]) table.add_row(["Brisbane", 5905, 1857594, 1146.4]) table.add_row(["Darwin",
+  112, 120900, 1714.7]) table.add_row(["Hobart", 1357, 205556, 619.5]) table.add_row(["Sydney",
+  2058, 4336374, 1214.8]) table.add_row(["Melbourne", 1566, 3806092, 646.9]) table.add_row(["Perth",
+  5386, 1554769, 869.4]) ``` #### All rows at once When you have a list of rows, you
+  can add them in one go with `add_rows`: ```python table.field_names = ["City name",
+  "Area", "Population", "Annual Rainfall"] table.add_rows( [ ["Adelaide", 1295, 1158259,
+  600.5], ["Brisbane", 5905, 1857594, 1146.4], ["Darwin", 112, 120900, 1714.7], ["Hobart",
+  1357, 205556, 619.5], ["Sydney", 2058, 4336374, 1214.8], ["Melbourne", 1566, 3806092,
+  646.9], ["Perth", 5386, 1554769, 869.4], ] ) ``` #### Column by column You can add
+  data one column at a time as well. To do this you use the `add_column` method, which
+  takes two arguments - a string which is the name for the field the column you are
+  adding corresponds to, and a list or tuple which contains the column data: ```python
+  table.add_column("City name", ["Adelaide", "Brisbane", "Darwin", "Hobart", "Sydney",
+  "Melbourne", "Perth"]) table.add_column("Area", [1295, 5905, 112, 1357, 2058, 1566,
+  5386]) table.add_column("Population", [1158259, 1857594, 120900, 205556, 4336374,
+  3806092, 1554769]) table.add_column("Annual Rainfall",[600.5, 1146.4, 1714.7, 619.5,
+  1214.8, 646.9, 869.4]) ``` #### Mixing and matching If you really want to, you can
+  even mix and match `add_row` and `add_column` and build some of your table in one
+  way and some of it in the other. Tables built this way are kind of confusing for
+  other people to read, though, so don''t do this unless you have a good reason. ####
+  Importing data from a CSV file If you have your table data in a comma-separated
+  values file (.csv), you can read this data into a PrettyTable like this: ```python
+  from prettytable import from_csv with open("myfile.csv") as fp: mytable = from_csv(fp)
+  ``` #### Importing data from a database cursor If you have your table data in a
+  database which you can access using a library which confirms to the Python DB-API
+  (e.g. an SQLite database accessible using the `sqlite` module), then you can build
+  a PrettyTable using a cursor object, like this: ```python import sqlite3 from prettytable
+  import from_db_cursor connection = sqlite3.connect("mydb.db") cursor = connection.cursor()
+  cursor.execute("SELECT field1, field2, field3 FROM my_table") mytable = from_db_cursor(cursor)
+  ``` #### Getting data out There are three ways to get data out of a PrettyTable,
+  in increasing order of completeness: - The `del_row` method takes an integer index
+  of a single row to delete. - The `del_column` method takes a field name of a single
+  column to delete. - The `clear_rows` method takes no arguments and deletes all the
+  rows in the table - but keeps the field names as they were so you that you can repopulate
+  it with the same kind of data. - The `clear` method takes no arguments and deletes
+  all rows and all field names. It''s not quite the same as creating a fresh table
+  instance, though - style related settings, discussed later, a'
 ---
 {% raw %}
 # PrettyTable

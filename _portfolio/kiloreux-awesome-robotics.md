@@ -2,8 +2,56 @@
 layout: project
 name: Kiloreux Awesome Robotics
 slug: kiloreux-awesome-robotics
+category: EE-kicad-3D-Robotic
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: 'Awesome Robotics ================ [](https://github.com/sindresorhus/awesome)
+  This is a list of various books, courses and other resources for robotics. It''s
+  an attempt to gather useful material in one place for everybody who wants to learn
+  more about the field. ### Courses ### * [Artificial Intelligence for Robotics](https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373)
+  **Udacity** * [Robotics Nanodegree](https://www.udacity.com/course/robotics-software-engineer--nd209)
+  **Udacity** :dollar: * [Autonomous Mobile Robots](https://courses.edx.org/courses/course-v1:ETHx+AMRx+2T2019/5b151c51e8bf47c29d97f8a12369df17/)
+  **edX** * [Underactuated Robotics](http://underactuated.csail.mit.edu/underactuated.html)
+  **MIT CSAIL** * [Autonomous Mobile Robots](https://courses.edx.org/courses/ETHx/AMRx/1T2014/info)
+  **edX** * [Robot Mechanics and Control, Part I](https://www.edx.org/course/robot-mechanics-control-part-i-snux-snu446-345-1x)
+  **edX** * [Robot Mechanics and Control, Part II](https://www.edx.org/course/robot-mechanics-control-part-ii-snux-snu446-345-2x)
+  **edX** * [Autonomous Navigation for Flying Robots](https://www.edx.org/course/autonomous-navigation-flying-robots-tumx-autonavx-0)
+  **edX** * [Robotics Specialization by GRASP Lab](https://www.coursera.org/specializations/robotics)
+  **Coursera** :dollar: * [Control of Mobile Robots](https://www.coursera.org/course/conrob)
+  **Coursera** * [QUT Robot Academy](https://robotacademy.net.au/) **QUT** * [Robotic
+  vision](https://www.qut.edu.au/study/short-courses-and-professional-development/short-courses/robotic-vision)
+  **QUT** * [Introduction to robotics](http://ocw.mit.edu/courses/mechanical-engineering/2-12-introduction-to-robotics-fall-2005/)
+  **MIT** * [Robotics: Vision Intelligence and Machine Learning](https://www.edx.org/course/robotics-vision-intelligence-machine-pennx-robo2x)
+  **edX** * [Applied robot design](https://www.youtube.com/user/StanfordCS235/videos)
+  **Stanford University** * [Introduction to Robotics](https://see.stanford.edu/Course/CS223A)
+  **Stanford University** * [Introduction to Mobile Robotics](http://ais.informatik.uni-freiburg.de/teaching/ss16/robotics/index_en.php)
+  **University of Freiburg** * [Robotics](https://www.edx.org/micromasters/pennx-robotics)
+  **edx** :dollar: * [Columbia Robotics](https://www.edx.org/course/robotics-columbiax-csmm-103x-2)
+  **edx** * [Modern Robotics: Mechanics, Planning, and Control](https://www.coursera.org/specializations/modernrobotics?)
+  **Coursera** * [Hello (Real) World with ROS – Robot Operating System](https://www.edx.org/course/hello-real-world-with-ros-robot-operating-system-2)
+  **edx** * [Advanced Robotics](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/)
+  **UCBerkeley** * [Building Arduino robots and devices](https://www.coursera.org/learn/arduino)
+  **Coursera** * [Introduction to The Robot Operating System (ROS2)](https://www.coursera.org/projects/ros2-intro)
+  **Coursera** * [Modern Robotics: Mechanics, Planning, and Control Specialization](https://www.coursera.org/specializations/modernrobotics)
+  **Coursera** * [Become a Robotics Software Enginee](https://www.udacity.com/course/robotics-software-engineer--nd209)
+  **Udacity** * [Advanced Robotics](http://www.cs.berkeley.edu/~pabbeel/cs287-fa13/)
+  **UC Berkeley** * [Self-Driving Cars with Duckietown](https://www.edx.org/learn/technology/eth-zurich-self-driving-cars-with-duckietown)
+  **edX** ### Books ### * [Probabilistic Robotics (Intelligent Robotics and Autonomous
+  Agents series)](http://www.amazon.com/Probabilistic-Robotics-Intelligent-Autonomous-Agents/dp/0262201623/)
+  :dollar: * [Introduction to Autonomous Mobile Robots (Intelligent Robotics and Autonomous
+  Agents series)](http://www.amazon.com/Introduction-Autonomous-Mobile-Intelligent-Robotics/dp/0262015358/)
+  :dollar: * [Springer Handbook of Robotics](https://www.amazon.com/Springer-Handbook-Robotics-Handbooks/dp/3319325507/)
+  :dollar: * [Planning Algorithms](http://planning.cs.uiuc.edu/) * [A gentle introduction
+  to ROS](https://cse.sc.edu/~jokane/agitr/agitr-letter.pdf) * [A Mathematical Introduction
+  to Robotic Manipulation](http://www.cds.caltech.edu/~murray/mlswiki/?title=First_edition)
+  * [Learning Computing With Robots](http://wiki.roboteducation.org/Introduction_to_Computer_Science_via_Robots)
+  * [Robotics, Vision and Control: Fundamental Algorithms in MATLAB (Springer Tracts
+  in Advanced Robotics)](http://www.amazon.com/Robotics-Vision-Control-Fundamental-Algorithms/dp/3642201431)
+  :dollar: * [INTECH Books](http://www.intechopen.com/subjects/robotics) * [Introduction
+  to Autonomous Robots](https://github.com/correll/Introduction-to-Autonomous-Robots/releases)
+  * [Principles of Robot Motion: Theory, Algorithms, and Implementations ](https://www.amazon.com/Principles-Robot-Motion-Implementations-Intelligent/dp/0262033275):dollar:
+  * [Introduction to Modern Robotics: Mechanics, Planning, and Control](http://hades.mech.northwestern.edu/index.php/LynchAndPark)
+  [[pdf](http://hades.mech.northweste'
 ---
 {% raw %}
 Awesome Robotics

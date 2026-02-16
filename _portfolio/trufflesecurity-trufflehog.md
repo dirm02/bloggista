@@ -2,8 +2,64 @@
 layout: project
 name: Trufflesecurity Trufflehog
 slug: trufflesecurity-trufflehog
+category: Very important!!!!
 image: https://goreportcard.com/badge/github.com/trufflesecurity/trufflehog/v3
 repo_url: https://github.com/trufflesecurity/test_keys
+indexed_content: "TruffleHog Find leaked credentials. --- [](https://goreportcard.com/report/github.com/trufflesecurity/trufflehog/v3)
+  [](/LICENSE) [](/pkg/detectors) --- # :mag_right: _Now Scanning_ **...and more**
+  To learn more about TruffleHog and its features and capabilities, visit our [product
+  page](https://trufflesecurity.com/trufflehog?gclid=CjwKCAjwouexBhAuEiwAtW_Zx5IW87JNj97Ci7heFnA5ar6-DuNzT2Y5nIl9DuZ-FOUqx0Qg3vb9nxoClcEQAvD_BwE).
+  # :globe_with_meridians: TruffleHog Enterprise Are you interested in continuously
+  monitoring **Git, Jira, Slack, Confluence, Microsoft Teams, Sharepoint (and more)**
+  for credentials? We have an enterprise product that can help! Learn more at . We
+  take the revenue from the enterprise product to fund more awesome open source projects
+  that the whole community can benefit from. # What is TruffleHog \U0001F43D TruffleHog
+  is the most powerful secrets **Discovery, Classification, Validation,** and **Analysis**
+  tool. In this context, secret refers to a credential a machine uses to authenticate
+  itself to another machine. This includes API keys, database passwords, private encryption
+  keys, and more. ## Discovery \U0001F50D TruffleHog can look for secrets in many
+  places including Git, chats, wikis, logs, API testing platforms, object stores,
+  filesystems and more. ## Classification \U0001F4C1 TruffleHog classifies over 800
+  secret types, mapping them back to the specific identity they belong to. Is it an
+  AWS secret? Stripe secret? Cloudflare secret? Postgres password? SSL Private key?
+  Sometimes it's hard to tell looking at it, so TruffleHog classifies everything it
+  finds. ## Validation ✅ For every secret TruffleHog can classify, it can also log
+  in to confirm if that secret is live or not. This step is critical to know if there’s
+  an active present danger or not. ## Analysis \U0001F52C For the 20 some of the most
+  commonly leaked out credential types, instead of sending one request to check if
+  the secret can log in, TruffleHog can send many requests to learn everything there
+  is to know about the secret. Who created it? What resources can it access? What
+  permissions does it have on those resources? # :loudspeaker: Join Our Community
+  Have questions? Feedback? Jump into Slack or Discord and hang out with us. Join
+  our [Slack Community](https://join.slack.com/t/trufflehog-community/shared_invite/zt-pw2qbi43-Aa86hkiimstfdKH9UCpPzQ)
+  Join the [Secret Scanning Discord](https://discord.gg/8Hzbrnkr7E) # :tv: Demo ```bash
+  docker run --rm -it -v \"$PWD:/pwd\" trufflesecurity/trufflehog:latest github --org=trufflesecurity
+  ``` # :floppy_disk: Installation Several options are available for you: ### MacOS
+  users ```bash brew install trufflehog ``` ### Docker: _Ensure Docker engine is running
+  before executing the following commands:_ #### &nbsp;&nbsp;&nbsp;&nbsp;Unix ```bash
+  docker run --rm -it -v \"$PWD:/pwd\" trufflesecurity/trufflehog:latest github --repo
+  https://github.com/trufflesecurity/test_keys ``` #### &nbsp;&nbsp;&nbsp;&nbsp;Windows
+  Command Prompt ```bash docker run --rm -it -v \"%cd:/=\\%:/pwd\" trufflesecurity/trufflehog:latest
+  github --repo https://github.com/trufflesecurity/test_keys ``` #### &nbsp;&nbsp;&nbsp;&nbsp;Windows
+  PowerShell ```bash docker run --rm -it -v \"${PWD}:/pwd\" trufflesecurity/trufflehog
+  github --repo https://github.com/trufflesecurity/test_keys ``` #### &nbsp;&nbsp;&nbsp;&nbsp;M1
+  and M2 Mac ```bash docker run --platform linux/arm64 --rm -it -v \"$PWD:/pwd\" trufflesecurity/trufflehog:latest
+  github --repo https://github.com/trufflesecurity/test_keys ``` ### Binary releases
+  ```bash Download and unpack from https://github.com/trufflesecurity/trufflehog/releases
+  ``` ### Compile from source ```bash git clone https://github.com/trufflesecurity/trufflehog.git
+  cd trufflehog; go install ``` ### Using installation script ```bash curl -sSfL https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/scripts/install.sh
+  | sh -s -- -b /usr/local/bin ``` ### Using installation script, verify checksum
+  signature (requires cosign to be installed) ```bash curl -sSfL https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/scripts/install.sh
+  | sh -s -- -v -b /usr/local/bin ``` ### Using installation script to install a specific
+  version ```bash curl -sSfL https://raw.githubusercontent.com/trufflesecurity/trufflehog/main/scripts/install.sh
+  | sh -s -- -b /usr/local/bin ``` # :closed_lock_with_key: Verifying the artifacts
+  Checksums are applied to all artifacts, and the resulting checksum file is signed
+  using cosign. You need the following tool to verify signature: - [Cosign](https://docs.sigstore.dev/cosign/system_config/installation/)
+  Verification steps are as follows: 1. Download the artifact files you want, and
+  the following files from the [releases](https://github.com/trufflesecurity/trufflehog/releases)
+  page. - trufflehog\\_{version}\\_checksums.txt - trufflehog\\_{version}\\_checksums.txt.pem
+  - trufflehog\\_{version}\\_checksums.txt.sig 2. Verify the signature: ```shell cosign
+  verify-blob \\ --certificate \\ --signature \\ --certificate-identity"
 ---
 {% raw %}
 <p align="center">

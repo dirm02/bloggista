@@ -2,8 +2,67 @@
 layout: project
 name: Blessedrebus Krawl
 slug: BlessedRebuS-Krawl
+category: Bots-honeypots
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/BlessedRebuS-Krawl/img/deception-page.png
 repo_url: https://github.com/blessedrebus/krawl
+indexed_content: "Krawl A modern, customizable web honeypot server designed to detect
+  and track malicious activity from attackers and web crawlers through deceptive web
+  pages, fake credentials, and canary tokens. What is Krawl? • Installation • Honeypot
+  Pages • Dashboard • Todo • Contributing ## Demo Tip: crawl the `robots.txt` paths
+  for additional fun ### Krawl URL: [http://demo.krawlme.com](http://demo.krawlme.com)
+  ### View the dashboard [http://demo.krawlme.com/das_dashboard](http://demo.krawlme.com/das_dashboard)
+  ## What is Krawl? **Krawl** is a cloud‑native deception server designed to detect,
+  delay, and analyze malicious attackers, web crawlers and automated scanners. It
+  creates realistic fake web applications filled with low‑hanging fruit such as admin
+  panels, configuration files, and exposed fake credentials to attract and identify
+  suspicious activity. By wasting attacker resources, Krawl helps clearly distinguish
+  malicious behavior from legitimate crawlers. It features: - **Spider Trap Pages**:
+  Infinite random links to waste crawler resources based on the [spidertrap project](https://github.com/adhdproject/spidertrap)
+  - **Fake Login Pages**: WordPress, phpMyAdmin, admin panels - **Honeypot Paths**:
+  Advertised in robots.txt to catch scanners - **Fake Credentials**: Realistic-looking
+  usernames, passwords, API keys - **[Canary Token](#customizing-the-canary-token)
+  Integration**: External alert triggering - **Random server headers**: Confuse attacks
+  based on server header and version - **Real-time Dashboard**: Monitor suspicious
+  activity - **Customizable Wordlists**: Easy JSON-based configuration - **Random
+  Error Injection**: Mimic real server behavior ## \U0001F680 Installation ### Docker
+  Run Run Krawl with the latest image: ```bash docker run -d \\ -p 5000:5000 \\ -e
+  KRAWL_PORT=5000 \\ -e KRAWL_DELAY=100 \\ -e KRAWL_DASHBOARD_SECRET_PATH=\"/my-secret-dashboard\"
+  \\ -e KRAWL_DATABASE_RETENTION_DAYS=30 \\ --name krawl \\ ghcr.io/blessedrebus/krawl:latest
+  ``` Access the server at `http://localhost:5000` ### Docker Compose Create a `docker-compose.yaml`
+  file: ```yaml services: krawl: image: ghcr.io/blessedrebus/krawl:latest container_name:
+  krawl-server ports: - \"5000:5000\" environment: - CONFIG_LOCATION=config.yaml -
+  TZ=\"Europe/Rome\" volumes: - ./config.yaml:/app/config.yaml:ro - krawl-data:/app/data
+  restart: unless-stopped volumes: krawl-data: ``` Run with: ```bash docker-compose
+  up -d ``` Stop with: ```bash docker-compose down ``` ### Kubernetes **Krawl is also
+  available natively on Kubernetes**. Installation can be done either [via manifest](kubernetes/README.md)
+  or [using the helm chart](helm/README.md). ## Use Krawl to Ban Malicious IPs Krawl
+  uses a reputation-based system to classify attacker IP addresses. Every five minutes,
+  Krawl exports the identified malicious IPs to a `malicious_ips.txt` file. This file
+  can either be mounted from the Docker container into another system or downloaded
+  directly via `curl`: ```bash curl https://your-krawl-instance/ /api/download/malicious_ips.txt
+  ``` This file can be used to [update a set of firewall rules](https://www.allthingstech.ch/using-opnsense-and-ip-blocklists-to-block-malicious-traffic),
+  for example on OPNsense and pfSense, enabling automatic blocking of malicious IPs
+  or using IPtables ## IP Reputation Krawl [uses tasks that analyze recent traffic
+  to build and continuously update an IP reputation](src/tasks/analyze_ips.py) score.
+  It runs periodically and evaluates each active IP address based on multiple behavioral
+  indicators to classify it as an attacker, crawler, or regular user. Thresholds are
+  fully customizable. The analysis includes: - **Risky HTTP methods usage** (e.g.
+  POST, PUT, DELETE ratios) - **Robots.txt violations** - **Request timing anomalies**
+  (bursty or irregular patterns) - **User-Agent consistency** - **Attack URL detection**
+  (e.g. SQL injection, XSS patterns) Each signal contributes to a weighted scoring
+  model that assigns a reputation category: - `attacker` - `bad_crawler` - `good_crawler`
+  - `regular_user` - `unknown` (for insufficient data) The resulting scores and metrics
+  are stored in the database and used by Krawl to drive dashboards, reputation tracking,
+  and automated mitigation actions such as IP banning or firewall integration. ##
+  Forward server header If Krawl is deployed behind a proxy such as NGINX the **server
+  header** should be forwarded using the following configuration in your proxy: ```bash
+  location / { proxy_pass https://your-krawl-instance; proxy_pass_header Server; }
+  ``` ## API Krawl uses the following APIs - https://iprep.lcrawl.com (IP Reputation)
+  - https://nominatim.openstreetmap.org/reverse (Reverse IP Lookup) - https://api.ipify.org
+  (Public IP discovery) - http://ident.me (Public IP discovery) - https://ifconfig.me
+  (Public IP discovery) ## Configuration Krawl uses a **configuration hierarchy**
+  in which **environment variables take precedence over the configuration file**.
+  This approach is recommended for Docker deployments and quick out-of-the-box"
 ---
 {% raw %}
 <h1 align="center">Krawl</h1>

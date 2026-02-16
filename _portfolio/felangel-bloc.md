@@ -2,8 +2,59 @@
 layout: project
 name: Felangel Bloc
 slug: felangel-bloc
+category: Flutter-Ionic
 image: https://img.shields.io/pub/v/angular_bloc.svg
 repo_url: https://github.com/felangel/bloc
+indexed_content: '--- A predictable state management library that helps implement
+  the BLoC design pattern. | Package | Pub | | ------------------------------------------------------------------------------------------
+  | --------------------------------------------------------------------------------------------------------------
+  | | [angular_bloc](https://github.com/felangel/bloc/tree/master/packages/angular_bloc)
+  | [](https://pub.dev/packages/angular_bloc) | | [bloc](https://github.com/felangel/bloc/tree/master/packages/bloc)
+  | [](https://pub.dev/packages/bloc) | | [bloc_concurrency](https://github.com/felangel/bloc/tree/master/packages/bloc_concurrency)
+  | [](https://pub.dev/packages/bloc_concurrency) | | [bloc_lint](https://github.com/felangel/bloc/tree/master/packages/bloc_lint)
+  | [](https://pub.dev/packages/bloc_lint) | | [bloc_test](https://github.com/felangel/bloc/tree/master/packages/bloc_test)
+  | [](https://pub.dev/packages/bloc_test) | | [bloc_tools](https://github.com/felangel/bloc/tree/master/packages/bloc_tools)
+  | [](https://pub.dev/packages/bloc_tools) | | [flutter_bloc](https://github.com/felangel/bloc/tree/master/packages/flutter_bloc)
+  | [](https://pub.dev/packages/flutter_bloc) | | [hydrated_bloc](https://github.com/felangel/bloc/tree/master/packages/hydrated_bloc)
+  | [](https://pub.dev/packages/hydrated_bloc) | | [replay_bloc](https://github.com/felangel/bloc/tree/master/packages/replay_bloc)
+  | [](https://pub.dev/packages/replay_bloc) | --- ## Sponsors Our top sponsors are
+  shown below! [[Become a Sponsor](https://github.com/sponsors/felangel)] --- ## Overview
+  The goal of this library is to make it easy to separate _presentation_ from _business
+  logic_, facilitating testability and reusability. ## Documentation - [Official Documentation](https://bloclibrary.dev)
+  - [Angular Bloc Package](https://github.com/felangel/bloc/tree/master/packages/angular_bloc/README.md)
+  - [Bloc Package](https://github.com/felangel/bloc/tree/master/packages/bloc/README.md)
+  - [Bloc Concurrency Package](https://github.com/felangel/bloc/tree/master/packages/bloc_concurrency/README.md)
+  - [Bloc Lint Package](https://github.com/felangel/bloc/tree/master/packages/bloc_lint/README.md)
+  - [Bloc Test Package](https://github.com/felangel/bloc/tree/master/packages/bloc_test/README.md)
+  - [Bloc Tools Package](https://github.com/felangel/bloc/tree/master/packages/bloc_tools/README.md)
+  - [Flutter Bloc Package](https://github.com/felangel/bloc/tree/master/packages/flutter_bloc/README.md)
+  - [Hydrated Bloc Package](https://github.com/felangel/bloc/tree/master/packages/hydrated_bloc/README.md)
+  - [Replay Bloc Package](https://github.com/felangel/bloc/tree/master/packages/replay_bloc/README.md)
+  ## Migration - [Migration Guide](https://bloclibrary.dev/migration) ## Examples
+  ### Dart - [Counter](https://github.com/felangel/bloc/tree/master/packages/bloc/example)
+  - an example of how to create a `CounterBloc` (pure dart). ### Flutter - [Counter](https://bloclibrary.dev/tutorials/flutter-counter)
+  - an example of how to create a `CounterBloc` to implement the classic Flutter Counter
+  app. - [Form Validation](https://github.com/felangel/bloc/tree/master/examples/flutter_form_validation)
+  - an example of how to use the `bloc` and `flutter_bloc` packages to implement form
+  validation. - [Bloc with Stream](https://github.com/felangel/bloc/tree/master/examples/flutter_bloc_with_stream)
+  - an example of how to hook up a `bloc` to a `Stream` and update the UI in response
+  to data from the `Stream`. - [Complex List](https://github.com/felangel/bloc/tree/master/examples/flutter_complex_list)
+  - an example of how to manage a list of items and asynchronously delete items one
+  at a time using `bloc` and `flutter_bloc`. - [Infinite List](https://bloclibrary.dev/tutorials/flutter-infinite-list)
+  - an example of how to use the `bloc` and `flutter_bloc` packages to implement an
+  infinite scrolling list. - [Login Flow](https://bloclibrary.dev/tutorials/flutter-login)
+  - an example of how to use the `bloc` and `flutter_bloc` packages to implement a
+  Login Flow. - [Firebase Login](https://bloclibrary.dev/tutorials/flutter-firebase-login)
+  - an example of how to use the `bloc` and `flutter_bloc` packages to implement login
+  via Firebase. - [Github Search](https://bloclibrary.dev/tutorials/github-search)
+  - an example of how to create a Github Search Application using the `bloc` and `flutter_bloc`
+  packages. - [Weather](https://bloclibrary.dev/tutorials/flutter-weather) - an example
+  of how to create a Weather Application using the `bloc` and `flutter_bloc` packages.
+  The app uses a `RefreshIndicator` to implement "pull-to-refresh" as well as dynamic
+  theming. - [Todos](https://bloclibrary.dev/tutorials/flutter-todos) - an example
+  of how to create a Todos Application using the `bloc` and `flutter_bloc` packages.
+  - [Timer](https://bloclibrary.dev/tutorials/flutter-timer) - an example of how to
+  create a Timer using the `bloc` and `flutter_bloc` packages. - [Shopping Cart](https://github.com/felangel/bloc/'
 ---
 {% raw %}
 <p align="center">

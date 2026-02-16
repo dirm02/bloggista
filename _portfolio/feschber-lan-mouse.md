@@ -2,8 +2,64 @@
 layout: project
 name: Feschber Lan Mouse
 slug: feschber-lan-mouse
+category: WindowsTools- Linux
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/deskflow/deskflow)
+indexed_content: '# Lan Mouse Lan Mouse is a *cross-platform* mouse and keyboard sharing
+  software similar to universal-control on Apple devices. It allows for using multiple
+  PCs via a single set of mouse and keyboard. This is also known as a Software KVM
+  switch. Goal of this project is to be an open-source alternative to proprietary
+  tools like [Synergy 2/3](https://symless.com/synergy), [Share Mouse](https://www.sharemouse.com/de/)
+  and other open source tools like [Deskflow](https://github.com/deskflow/deskflow)
+  or [Input Leap](https://github.com/input-leap) (Synergy fork). Focus lies on performance,
+  ease of use and a maintainable implementation that can be expanded to support additional
+  backends for e.g. Android, iOS, ... in the future. ***blazingly fast™*** because
+  it''s written in rust. - _Now with a gtk frontend_ ## Encryption Lan Mouse encrypts
+  all network traffic using the DTLS implementation provided by [WebRTC.rs](https://github.com/webrtc-rs/webrtc).
+  There are currently no mitigations in place for timing side-channel attacks. ##
+  OS Support Most current desktop environments and operating systems are fully supported,
+  this includes - GNOME >= 45 - KDE Plasma >= 6.1 - Most wlroots based compositors,
+  including Sway (>= 1.8), Hyprland and Wayfire - Windows - MacOS ### Caveats / Known
+  Issues > [!Important] > - **X11** currently only has support for input emulation,
+  i.e. can only be used on the receiving end. > > - **Sway / wlroots**: Wlroots based
+  compositors without libei support on the receiving end currently do not handle modifier
+  events on the client side. > This results in CTRL / SHIFT / ALT / SUPER keys not
+  working with a sending device that is NOT using the `layer-shell` backend > > -
+  **Wayfire**: If you are using [Wayfire](https://github.com/WayfireWM/wayfire), make
+  sure to use a recent version (must be newer than October 23rd) and **add `shortcuts-inhibit`
+  to the list of plugins in your wayfire config!** > Otherwise input capture will
+  not work. > > - **Windows**: The mouse cursor will be invisible when sending input
+  to a Windows system if > there is no real mouse connected to the machine. For more
+  detailed information about os support see [Detailed OS Support](#detailed-os-support)
+  ### Android & IOS A proof of concept for an Android / IOS Application by [rohitsangwan01](https://github.com/rohitsangwan01)
+  can be found [here](https://github.com/rohitsangwan01/lan-mouse-mobile). It can
+  be used as a remote control for any device supported by Lan Mouse. ## Installation
+  Arch Linux Lan Mouse can be installed from the [official repositories](https://archlinux.org/packages/extra/x86_64/lan-mouse/):
+  ```sh pacman -S lan-mouse ``` The prerelease version (following `main`) is available
+  on the AUR: ```sh paru -S lan-mouse-git ``` Nix (OS) - nixpkgs: [search.nixos.org](https://search.nixos.org/packages?channel=unstable&show=lan-mouse&from=0&size=50&sort=relevance&type=packages&query=lan-mouse)
+  - flake: [README.md](./nix/README.md) Fedora You can install Lan Mouse from the
+  [Terra Repository](https://terra.fyralabs.com). After enabling Terra: ```sh dnf
+  install lan-mouse ``` MacOS - Download the package for your Mac (Intel or ARM) from
+  the releases page - Unzip it - Remove the quarantine with `xattr -rd com.apple.quarantine
+  "Lan Mouse.app"` - Launch the app - Grant accessibility permissions in System Preferences
+  Manual Installation First make sure to [install the necessary dependencies](#installing-dependencies-for-development--compiling-from-source).
+  Precompiled release binaries for Windows, MacOS and Linux are available in the [releases
+  section](https://github.com/feschber/lan-mouse/releases). For Windows, the depenedencies
+  are included in the .zip file, for other operating systems see [Installing Dependencies](#installing-dependencies-for-development--compiling-from-source).
+  Alternatively, the `lan-mouse` binary can be compiled from source (see below). ###
+  Installing desktop file, app icon and firewall rules (optional) ```sh # install
+  lan-mouse (replace path/to/ with the correct path) sudo cp path/to/lan-mouse /usr/local/bin/
+  # install app icon sudo mkdir -p /usr/local/share/icons/hicolor/scalable/apps sudo
+  cp lan-mouse-gtk/resources/de.feschber.LanMouse.svg /usr/local/share/icons/hicolor/scalable/apps
+  # update icon cache gtk-update-icon-cache /usr/local/share/icons/hicolor/ # install
+  desktop entry sudo mkdir -p /usr/local/share/applications sudo cp de.feschber.LanMouse.desktop
+  /usr/local/share/applications # when using firewalld: install firewall rule sudo
+  cp firewall/lan-mouse.xml /etc/firewalld/services # -> enable the service in firewalld
+  settings ``` Instead of downloading from the releases, the `lan-mouse` binary can
+  be easily compiled via cargo or nix: ### Compiling and installing manually: ```sh
+  # compile in release mode cargo build --release # install lan-mouse sudo cp target/release/lan-mouse
+  /usr/local/bin/ ``` ### Compiling and installing via cargo: ```sh # will end up
+  in ~/.cargo/bin cargo install lan-mouse ``` ### C'
 ---
 {% raw %}
 # Lan Mouse

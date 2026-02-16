@@ -2,8 +2,61 @@
 layout: project
 name: Hascheksolutions Opentrashmail
 slug: HaschekSolutions-opentrashmail
+category: Mail services -server-chat apps
 image: https://img.shields.io/badge/php-8.1%2B-brightgreen.svg
 repo_url: https://github.com/hascheksolutions/opentrashmail
+indexed_content: 'Open Trashmail [](https://hub.docker.com/r/hascheksolutions/opentrashmail)
+  [](https://github.com/HaschekSolutions/opentrashmail/actions) [](https://github.com/HaschekSolutions/opentrashmail/blob/master/LICENSE)
+  [](https://hits.seeyoufarm.com) [](https://github.com/HaschekSolutions/opentrashmail)
+  #### Selfhosted `trashmail` solution - Receive Emails via `Web UI`, `JSON API`,
+  `RSS feed` and `Custom Webhooks` # [Changelog](/CHANGELOG.md) # Features - Python-powered
+  mail server that works out of the box for any domain you throw at it - `RSS feed`
+  for every email address - `JSON API` for integrating it in your own projects. Can
+  be used to automate 2fa emails - `Webhooks` with per-email configuration and customizable
+  JSON payloads - Handles attachments - Supports `Plaintext`, `STARTTLS` and `TLS
+  on connect` - Web interface - Automatic dark/light mode switcher - Download attachments
+  - Delete emails - Generate random email addresses - View server logs and list all
+  accounts as admin - 100% file based, no database needed - Can be used as Email Honeypot
+  or to programmatically solve 2fa emails - No need to pre-create email addresses.
+  Any valid email address can be sent to # General API calls and functions | Endpoint
+  | Explanation | Example output | |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+  | /rss/`[email-address]` | Renders RSS XML for rss clients to render emails | [](https://pictshare.net/ysu5qp.png)
+  | | /api/raw/`[email-address]/[id]` | Returns the raw email of the address. Warning:
+  Output can be as large as the email itself so might be up to 20mb for mails with
+  large attachments | [](https://pictshare.net/pkb49p.png) | | /api/attachment`[email-address]/[attachment-id]`
+  | Returns the attachment with the correct mime type as header | | | /api/delete/`[email-address]/[id]`
+  | Deletes a specific email message and their attachments | | | /api/deleteaccount/`[email-address]`|
+  Deletes all messages and attachments of this email account | | | /api/webhook/get/`[email-address]`
+  | Get webhook configuration for an email address | | | /api/webhook/save/`[email-address]`
+  | Save webhook configuration for an email address | | | /api/webhook/delete/`[email-address]`
+  | Delete webhook configuration for an email address | | # JSON API | Endpoint |
+  Explanation | Example output | |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+  | /json/`[email-address]` | Returns an array of received emails with links to the
+  attachments and the parsed text based body of the email. If `ADMIN` email is entered,
+  will return all emails of all accounts | [](https://pictshare.net/sflw6t.png) |
+  | /json/`[email-address]/[id]` | To see all the data of a received email, take the
+  ID from the previous call and poll this to get the raw and HTML body of the email.
+  Can be huge since the body can contain all attachments in base64 | [](https://pictshare.net/eltku4.png)
+  | | /json/listaccounts | If `SHOW_ACCOUNT_LIST` is set to true in the config.ini,
+  this endpoint will return an array of all email addresses which have received at
+  least one email | [](https://pictshare.net/u6agji.png) | # Configuration Just edit
+  the `config.ini` You can use the following settings - `URL` -> The url under which
+  the GUI will be hosted. No tailing slash! example: https://trashmail.mydomain.eu
+  - `DOMAINS` -> Comma separated list of domains this mail server will be receiving
+  emails on. It''s just so the web interface can generate random addresses - `MAILPORT`->
+  The port the Python-powered SMTP server will listen on. `Default: 25` - `ADMIN`
+  -> An email address (doesn''t have to exist, just has to be valid) that will list
+  all emails of all addresses the server has received. Kind of a catch-all - `DATEFORMAT`
+  -> How should timestamps be shown on the web interface ([moment.js syntax](https://momentjs.com/docs/#/displaying/))
+  - `PASSWORD` -> If configured, site and API can''t be used without providing it
+  via form, POST/GET variable `password` or http header `PWD` (eg: `curl -H "PWD:
+  123456" http://localhost:8080/json...`) - `ALLOWED_IPS` -> Comma separated list
+  of IPv4 or IPv6 CIDR addresses that are allowed to use the web UI or API - `ATTACHMENTS_MAX_SIZE`
+  -> Max size for each individual attachment of an email in Bytes - `MAILPORT_TLS`
+  -> If set to something higher than 0, this port will be used for TLSC (TLS on Connect).
+  Which means plaintext auth will not be possible. Usually set to `465`. Needs `TLS_CERTIFICATE`
+  and `TLS_PRIVATE_KEY` to work - `TLS_CERTIFICATE` -> Path to the certificate (chain).
+  Can be relative to the /python directory or absolute - `TLS_PRIVATE_KE'
 ---
 {% raw %}
 <p align="center">

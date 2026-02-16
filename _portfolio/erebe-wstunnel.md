@@ -2,8 +2,69 @@
 layout: project
 name: Erebe Wstunnel
 slug: erebe-wstunnel
+category: EE-kicad-3D-Robotic
 image: https://github.com/erebe/wstunnel/assets/854278/6e3580b0-c4f8-449e-881e-64d1df56b0ce
 repo_url: https://github.com/erebe/wstunnel
+indexed_content: "## Summary * [Description](#description) * [Demo server](#demo)
+  * [Command line](#cmd) * [Examples](#examples) * [Release](#release) * [Note](#note)
+  * [Benchmark](#bench) * [How to build](#build) ## Description Most of the time when
+  you are using a public network, you are behind some kind of firewall or proxy. One
+  of their purpose is to constrain you to only use certain kind of protocols and consult
+  only a subset of the web. Nowadays, the most widespread protocol is http and is
+  de facto allowed by third party equipment. Wstunnel uses the websocket protocol
+  which is compatible with http in order to bypass firewalls and proxies. Wstunnel
+  allows you to tunnel whatever traffic you want and access whatever resources/site
+  you need. My inspiration came from [this project](https://www.npmjs.com/package/wstunnel)
+  but as I don't want to install npm and nodejs to use this tool, I remade it in ~~Haskell~~
+  Rust and improved it. **What to expect:** * Easy to use * Good error messages and
+  debug information * Static forward (reverse) tunneling (TCP, UDP, Unix socket, Stdio)
+  * Dynamic (reverse) tunneling (Socks5 proxy, HTTP proxy and Transparent Proxy) *
+  Support for using http proxy (when behind one) as gateway * Support of proxy protocol
+  * Support for tls/https server with certificates auto-reload (with embedded self-signed
+  certificate, or your own) * Support of mTLS with certificates auto-reload - [documentation
+  here](https://github.com/erebe/wstunnel/blob/main/docs/using_mtls.md) * Support
+  IPv6 * Support for Websocket and HTTP2 as transport protocol (websocket is more
+  performant) * **Standalone binaries** (so just cp it where you want) [here](https://github.com/erebe/wstunnel/releases)
+  ## Sponsors Part of Wstunnel development has been sponsored by ## Note v7.0.0 is
+  a complete rewrite of wstunnel in Rust and is not compatible with previous version.
+  Previous code in Haskell can be found on branch https://github.com/erebe/wstunnel/tree/haskell
+  What to expect from previous version: * More throughput and less jitter due to Haskell
+  GC. Most of you will not care, as it was performant enough already. But you can
+  now saturate a gigabit ethernet card with a single connection * Command line is
+  more homogeneous/has better UX. All tunnel can be specified multiple times * Tunnel
+  protocol tries to look like normal traffic, to avoid being flagged * Support of
+  reverse tunneling * New bug, it is a rewrite (╯'□')╯︵ ┻━┻ ¯\\\\_(ツ)_/¯ * Mainly
+  for me to ease the maintenance of the project. I don't do a lot of haskell nowadays
+  and it was harder for me to keep maintening the project over time, as I get lost
+  in touch of the Haskell ecosystem and new release. * Armv7 build (aka raspberry
+  pi), as new version of GHC (Haskell compiler) dropped its support ## Demo server
+  If you just want to try out that you can bypass your proxy/firewall. You can give
+  it a try with wstunnel demo server. ```bash # In a terminal start wstunnel client
+  # You can set as tls-sni-override whatever domain you want. The tunnel is the only
+  one that is going to be allowed. wstunnel client -L 'tcp://4443:localhost:444?proxy_protocol'
+  -P demo --tls-sni-override=google.fr wss://49.13.58.9 # on another terminal, run
+  curl and it should return you this greetings curl -k https://localhost:4443 > Memento
+  mori ! ``` ## Command line ``` Usage: wstunnel client [OPTIONS] Arguments: Address
+  of the wstunnel server You can either use websocket or http2 as transport protocol.
+  Use websocket if you are unsure. Example: For websocket with TLS wss://wstunnel.example.com
+  or without ws://wstunnel.example.com For http2 with TLS https://wstunnel.example.com
+  or without http://wstunnel.example.com *WARNING* HTTP2 as transport protocol is
+  harder to make it works because: - If you are behind a (reverse) proxy/CDN they
+  are going to buffer the whole request before forwarding it to the server Obviously,
+  this is not going to work for tunneling traffic - if you have wstunnel behind a
+  reverse proxy, most of them (i.e: nginx) are going to turn http2 request into http1
+  This is not going to work, because http1 does not support streaming naturally The
+  only way to make it works with http2 is to have wstunnel directly exposed to the
+  internet without any reverse proxy in front of it Options: -L, --local-to-remote
+  Listen on local and forwards traffic from remote. Can be specified multiple times
+  examples: 'tcp://1212:google.com:443' => listen locally on tcp on port 1212 and
+  forward to google.com on port 443 'tcp://2:n.lan:4?proxy_protocol' => listen locally
+  on tcp on port 2 and forward to n.lan on port 4 Send a proxy protocol header v2
+  when establishing connection to n.lan 'udp://1212:1.1.1.1:53' => listen locally
+  on udp on port 1212 and forward to cloudflare dns 1.1.1.1 on port 53 'udp://1212:1.1.1.1:53?timeout_sec=10'
+  timeout_sec on udp force close the tunnel after 10sec. Set it to 0 to disable the
+  timeout [default: 30] 'socks5://[::1]:1212' => listen locally with socks5 on port
+  1212 and forward dynamically requested tu"
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,69 @@
 layout: project
 name: Mail 0 Zero
 slug: Mail-0-Zero
+category: Uncategorized
 image: https://api.star-history.com/svg?repos=Mail-0/Zero&type=Timeline
 repo_url: https://github.com/Mail-0/Zero.git
+indexed_content: "# Zero An Open-Source Gmail Alternative for the Future of Email
+  ## What is Zero? Zero is an open-source AI email solution that gives users the power
+  to **self-host** their own email app while also integrating external services like
+  Gmail and other email providers. Our goal is to modernize and improve emails through
+  AI agents to truly modernize emails. ## Why Zero? Most email services today are
+  either **closed-source**, **data-hungry**, or **too complex to self-host**. 0.email
+  is different: - ✅ **Open-Source** – No hidden agendas, fully transparent. - \U0001F9BE
+  **AI Driven** - Enhance your emails with Agents & LLMs. - \U0001F512 **Data Privacy
+  First** – Your emails, your data. Zero does not track, collect, or sell your data
+  in any way. Please note: while we integrate with external services, the data passed
+  through them is not under our control and falls under their respective privacy policies
+  and terms of service. - ⚙️ **Self-Hosting Freedom** – Run your own email app with
+  ease. - \U0001F4EC **Unified Inbox** – Connect multiple email providers like Gmail,
+  Outlook, and more. - \U0001F3A8 **Customizable UI & Features** – Tailor your email
+  experience the way you want it. - \U0001F680 **Developer-Friendly** – Built with
+  extensibility and integrations in mind. ## Tech Stack Zero is built with modern
+  and reliable technologies: - **Frontend**: Next.js, React, TypeScript, TailwindCSS,
+  Shadcn UI - **Backend**: Node.js, Drizzle ORM - **Database**: PostgreSQL - **Authentication**:
+  Better Auth, Google OAuth ## Getting Started ### Video Tutorial Watch this helpful
+  video tutorial on how to set up Zero locally: ### Prerequisites **Required Versions:**
+  - [Node.js](https://nodejs.org/en/download) (v18 or higher) - [pnpm](https://pnpm.io)
+  (v10 or higher) - [Docker](https://docs.docker.com/engine/install/) (v20 or higher)
+  Before running the application, you'll need to set up services and configure environment
+  variables. For more details on environment variables, see the [Environment Variables](#environment-variables)
+  section. ### Setup Options You can set up Zero in two ways: Standard Setup (Recommended)
+  #### Quick Start Guide 1. **Clone and Install** ```bash # Clone the repository git
+  clone https://github.com/Mail-0/Zero.git cd Zero # Install dependencies pnpm install
+  # Start database locally pnpm docker:db:up ``` 2. **Set Up Environment** - Run `pnpm
+  nizzy env` to setup your environment variables - Run `pnpm nizzy sync` to sync your
+  environment variables and types - Start the database with the provided docker compose
+  setup: `pnpm docker:db:up` - Initialize the database: `pnpm db:push` 3. **Start
+  the App** ```bash pnpm dev ``` 4. **Open in Browser** Visit [http://localhost:3000](http://localhost:3000)
+  Devcontainer Setup #### Quick Start guide 1. **Clone and Install** ```bash # Clone
+  the repository git clone https://github.com/Mail-0/Zero.git cd Zero ``` Then open
+  the code in devcontainer and install the dependencies: ``` pnpm install # Start
+  the database locally pnpm docker:db:up ``` 2. **Set Up Environment** - Run `pnpm
+  nizzy env` to setup your environment variables - Run `pnpm nizzy sync` to sync your
+  environment variables and types - Start the database with the provided docker compose
+  setup: `pnpm docker:db:up` - Initialize the database: `pnpm db:push` 3. **Start
+  The App** ```bash pnpm dev ``` Visit [http://localhost:3000](http://localhost:3000)
+  ### Environment Setup 1. **Better Auth Setup** - Open the `.env` file and change
+  the BETTER_AUTH_SECRET to a random string. (Use `openssl rand -hex 32` to generate
+  a 32 character string) ```env BETTER_AUTH_SECRET=your_secret_key ``` 2. **Google
+  OAuth Setup** (Required for Gmail integration) - Go to [Google Cloud Console](https://console.cloud.google.com)
+  - Create a new project - Add the following APIs in your Google Cloud Project: [People
+  API](https://console.cloud.google.com/apis/library/people.googleapis.com), [Gmail
+  API](https://console.cloud.google.com/apis/library/gmail.googleapis.com) - Use the
+  links above and click 'Enable' or - Go to 'APIs and Services' > 'Enable APIs and
+  Services' > Search for 'Google People API' and click 'Enable' - Go to 'APIs and
+  Services' > 'Enable APIs and Services' > Search for 'Gmail API' and click 'Enable'
+  - Enable the Google OAuth2 API - Create OAuth 2.0 credentials (Web application type)
+  - Add authorized redirect URIs: - Development: - `http://localhost:8787/api/auth/callback/google`
+  - Production: - `https://your-production-url/api/auth/callback/google` - Add to
+  `.env`: ```env GOOGLE_CLIENT_ID=your_client_id GOOGLE_CLIENT_SECRET=your_client_secret
+  ``` - Add yourself as a test user: - Go to [`Audience`](https://console.cloud.google.com/auth/audience)
+  - Under 'Test users' click 'Add Users' - Add your email and click 'Save' > [!WARNING]
+  > The authorized redirect URIs in Google Cloud Console must match **exactly** what
+  you configure in the `.env`, including the protocol (http/https), domain, and path
+  - these are provided above. 3. **Autumn Setup** (Required for some encryption) -
+  Go to [Autumn"
 ---
 {% raw %}
 <p align="center">

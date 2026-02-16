@@ -2,8 +2,65 @@
 layout: project
 name: Jellyfin Jellyfin
 slug: jellyfin-jellyfin
+category: Uncategorized
 image: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true
 repo_url: https://github.com/jellyfin/jellyfin
+indexed_content: 'Jellyfin The Free Software Media System --- --- Jellyfin is a Free
+  Software Media System that puts you in control of managing and streaming your media.
+  It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated
+  server to end-user devices via multiple apps. Jellyfin is descended from Emby''s
+  3.5.2 release and ported to the .NET platform to enable full cross-platform support.
+  There are no strings attached, no premium licenses or features, and no hidden agendas:
+  just a team that wants to build something better and work together to achieve it.
+  We welcome anyone who is interested in joining us in our quest! For further details,
+  please see [our documentation page](https://jellyfin.org/docs/). To receive the
+  latest updates, get help with Jellyfin, and join the community, please visit [one
+  of our communication channels](https://jellyfin.org/docs/general/getting-help).
+  For more information about the project, please see our [about page](https://jellyfin.org/docs/general/about).
+  Want to get started? Check out our downloads page or our installation guide , then
+  see our quick start guide . You can also build from source . Something not working
+  right? Open an Issue on GitHub. Want to contribute? Check out our contributing choose-your-own-adventure
+  to see where you can help, then see our contributing guide and our community standards
+  . New idea or improvement? Check out our feature request hub . Don''t see Jellyfin
+  in your language? Check out our Weblate instance to help translate Jellyfin and
+  its subprojects. --- ## Jellyfin Server This repository contains the code for Jellyfin''s
+  backend server. Note that this is only one of many projects under the Jellyfin GitHub
+  [organization](https://github.com/jellyfin/) on GitHub. If you want to contribute,
+  you can start by checking out our [documentation](https://jellyfin.org/docs/general/contributing/index.html)
+  to see what to work on. ## Server Development These instructions will help you get
+  set up with a local development environment in order to contribute to this repository.
+  Before you start, please be sure to completely read our [guidelines on development
+  contributions](https://jellyfin.org/docs/general/contributing/development.html).
+  Note that this project is supported on all major operating systems except FreeBSD,
+  which is still incompatible. ### Prerequisites Before the project can be built,
+  you must first install the [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet)
+  on your system. Instructions to run this project from the command line are included
+  here, but you will also need to install an IDE if you want to debug the server while
+  it is running. Any IDE that supports .NET 6 development will work, but two options
+  are recent versions of [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+  (at least 2022) and [Visual Studio Code](https://code.visualstudio.com/Download).
+  [ffmpeg](https://github.com/jellyfin/jellyfin-ffmpeg) will also need to be installed.
+  ### Cloning the Repository After dependencies have been installed you will need
+  to clone a local copy of this repository. If you just want to run the server from
+  source you can clone this repository directly, but if you are intending to contribute
+  code changes to the project, you should [set up your own fork](https://jellyfin.org/docs/general/contributing/development.html#set-up-your-copy-of-the-repo)
+  of the repository. The following example shows how you can clone the repository
+  directly over HTTPS. ```bash git clone https://github.com/jellyfin/jellyfin.git
+  ``` ### Installing the Web Client The server is configured to host the static files
+  required for the [web client](https://github.com/jellyfin/jellyfin-web) in addition
+  to serving the backend by default. Before you can run the server, you will need
+  to get a copy of the web client since they are not included in this repository directly.
+  Note that it is also possible to [host the web client separately](#hosting-the-web-client-separately)
+  from the web server with some additional configuration, in which case you can skip
+  this step. There are three options to get the files for the web client. 1. Download
+  one of the finished builds from the [Azure DevOps pipeline](https://dev.azure.com/jellyfin-project/jellyfin/_build?definitionId=27).
+  You can download the build for a specific release by looking at the [branches tab](https://dev.azure.com/jellyfin-project/jellyfin/_build?definitionId=27&_a=summary&repositoryFilter=6&view=branches)
+  of the pipelines page. 2. Build them from source following the instructions on the
+  [jellyfin-web repository](https://github.com/jellyfin/jellyfin-web) 3. Get the pre-built
+  files from an existing installation of the server. For example, with a Windows server
+  installation the client files are located at `C:\Program Files\Jellyfin\Server\jellyfin-web`
+  ### Running The Server The following instructions will help you get the project
+  up and running via the command line, or your preferred IDE. #### Running Wit'
 ---
 {% raw %}
 <h1 align="center">Jellyfin</h1>

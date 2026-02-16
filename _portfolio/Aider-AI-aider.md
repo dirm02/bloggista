@@ -2,8 +2,62 @@
 layout: project
 name: Aider Ai Aider
 slug: Aider-AI-aider
+category: Uncategorized
 image: https://aider.chat/assets/logo.svg
 repo_url: https://github.com/Aider-AI/aider
+indexed_content: 'AI Pair Programming in Your Terminal Aider lets you pair program
+  with LLMs to start a new project or build on your existing codebase. ## Features
+  ### [Cloud and local LLMs](https://aider.chat/docs/llms.html) Aider works best with
+  Claude 3.7 Sonnet, DeepSeek R1 & Chat V3, OpenAI o1, o3-mini & GPT-4o, but can connect
+  to almost any LLM, including local models. ### [Maps your codebase](https://aider.chat/docs/repomap.html)
+  Aider makes a map of your entire codebase, which helps it work well in larger projects.
+  ### [100+ code languages](https://aider.chat/docs/languages.html) Aider works with
+  most popular programming languages: python, javascript, rust, ruby, go, cpp, php,
+  html, css, and dozens more. ### [Git integration](https://aider.chat/docs/git.html)
+  Aider automatically commits changes with sensible commit messages. Use familiar
+  git tools to easily diff, manage and undo AI changes. ### [Use in your IDE](https://aider.chat/docs/usage/watch.html)
+  Use aider from within your favorite IDE or editor. Ask for changes by adding comments
+  to your code and aider will get to work. ### [Images & web pages](https://aider.chat/docs/usage/images-urls.html)
+  Add images and web pages to the chat to provide visual context, screenshots, reference
+  docs, etc. ### [Voice-to-code](https://aider.chat/docs/usage/voice.html) Speak with
+  aider about your code! Request new features, test cases or bug fixes using your
+  voice and let aider implement the changes. ### [Linting & testing](https://aider.chat/docs/usage/lint-test.html)
+  Automatically lint and test your code every time aider makes changes. Aider can
+  fix problems detected by your linters and test suites. ### [Copy/paste to web chat](https://aider.chat/docs/usage/copypaste.html)
+  Work with any LLM via its web chat interface. Aider streamlines copy/pasting code
+  context and edits back and forth with a browser. ## Getting Started ```bash python
+  -m pip install aider-install aider-install # Change directory into your codebase
+  cd /to/your/project # DeepSeek aider --model deepseek --api-key deepseek= # Claude
+  3.7 Sonnet aider --model sonnet --api-key anthropic= # o3-mini aider --model o3-mini
+  --api-key openai= ``` See the [installation instructions](https://aider.chat/docs/install.html)
+  and [usage documentation](https://aider.chat/docs/usage.html) for more details.
+  ## More Information ### Documentation - [Installation Guide](https://aider.chat/docs/install.html)
+  - [Usage Guide](https://aider.chat/docs/usage.html) - [Tutorial Videos](https://aider.chat/docs/usage/tutorials.html)
+  - [Connecting to LLMs](https://aider.chat/docs/llms.html) - [Configuration Options](https://aider.chat/docs/config.html)
+  - [Troubleshooting](https://aider.chat/docs/troubleshooting.html) - [FAQ](https://aider.chat/docs/faq.html)
+  ### Community & Resources - [LLM Leaderboards](https://aider.chat/docs/leaderboards/)
+  - [GitHub Repository](https://github.com/Aider-AI/aider) - [Discord Community](https://discord.gg/Y7X7bhMQFV)
+  - [Release notes](https://aider.chat/HISTORY.html) - [Blog](https://aider.chat/blog/)
+  ## Kind Words From Users - *"My life has changed... Aider... It''s going to rock
+  your world."* — [Eric S. Raymond on X](https://x.com/esrtweet/status/1910809356381413593)
+  - *"The best free open source AI coding assistant."* — [IndyDevDan on YouTube](https://youtu.be/YALpX8oOn78)
+  - *"The best AI coding assistant so far."* — [Matthew Berman on YouTube](https://www.youtube.com/watch?v=df8afeb1FY8)
+  - *"Aider ... has easily quadrupled my coding productivity."* — [SOLAR_FIELDS on
+  Hacker News](https://news.ycombinator.com/item?id=36212100) - *"It''s a cool workflow...
+  Aider''s ergonomics are perfect for me."* — [qup on Hacker News](https://news.ycombinator.com/item?id=38185326)
+  - *"It''s really like having your senior developer live right in your Git repo -
+  truly amazing!"* — [rappster on GitHub](https://github.com/Aider-AI/aider/issues/124)
+  - *"What an amazing tool. It''s incredible."* — [valyagolev on GitHub](https://github.com/Aider-AI/aider/issues/6#issue-1722897858)
+  - *"Aider is such an astounding thing!"* — [cgrothaus on GitHub](https://github.com/Aider-AI/aider/issues/82#issuecomment-1631876700)
+  - *"It was WAY faster than I would be getting off the ground and making the first
+  few working versions."* — [Daniel Feldman on X](https://twitter.com/d_feldman/status/1662295077387923456)
+  - *"THANK YOU for Aider! It really feels like a glimpse into the future of coding."*
+  — [derwiki on Hacker News](https://news.ycombinator.com/item?id=38205643) - *"It''s
+  just amazing. It is freeing me to do things I felt were out my comfort zone before."*
+  — [Dougie on Discord](https://discord.com/channels/1131200896827654144/1174002618058678323/1174084556257775656)
+  - *"This project is stellar."* — [funkytaco on GitHub](https://github.com/Aider-AI/aider/issues/112#issuecomment-1637429008)
+  - *"Amazing project, definitely the best AI coding assistant I''ve used."* — [joshuavial
+  on GitHub](https://github.com/Aider-AI/aider/issues/84) - *"I absolutely lo'
 ---
 {% raw %}
 <p align="center">

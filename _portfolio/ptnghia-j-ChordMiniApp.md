@@ -2,8 +2,68 @@
 layout: project
 name: Ptnghia J Chordminiapp
 slug: ptnghia-j-ChordMiniApp
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ptnghia-j-ChordMiniApp/public/homepage.png
 repo_url: https://github.com/ptnghia-j/ChordMiniApp.git
+indexed_content: "# ChordMini **Advanced music analysis platform with AI-powered chord
+  recognition, beat detection, and synchronized lyrics.** ## Features Overview ###
+  \U0001F3E0 Homepage Interface Clean, intuitive interface for YouTube search, URL
+  input, and recent video access. ### \U0001F3B5 Beat & Chord Analysis Chord progression
+  visualization with synchronized beat detection and grid layout with add-on features:
+  Roman Numeral Analysis, Key Modulation Signals, Simplified Chord Notation, and Enhanced
+  Chord Correction. ### \U0001F3B5 Guitar Diagrams Interactive guitar chord diagrams
+  with **accurate fingering patterns** from the official @tombatossals/chords-db database,
+  featuring multiple chord positions and synchronized beat grid integration. ### \U0001F3A4
+  Lead Sheet with AI Assistant Synchronized lyrics transcription with AI chatbot for
+  contextual music analysis and translation support. ## \U0001F680 Quick Setup ###
+  Prerequisites - **Node.js 18+** and **npm** - **Python 3.9+** (for backend) - **Firebase
+  account** (free tier) ### Setup Steps 1. **Clone and install** Clone with submodules
+  in one command (for fresh clones) ```bash git clone --recursive https://github.com/ptnghia-j/ChordMiniApp.git
+  cd ChordMiniApp npm install ``` #### Verify that submodules are populated ``` ls
+  -la python_backend/models/Beat-Transformer/ ls -la python_backend/models/Chord-CNN-LSTM/
+  ls -la python_backend/models/ChordMini/ ``` #### If chord recognition encounters
+  issue with fluidsynth: Install FluidSynth for MIDI synthesis ``` # --- Windows ---
+  choco install fluidsynth # --- macOS --- brew install fluidsynth # --- Linux (Debian/Ubuntu-based)
+  --- sudo apt update sudo apt install fluidsynth ``` 2. **Environment setup** ```bash
+  cp .env.example .env.local ``` Edit `.env.local`: ```bash NEXT_PUBLIC_PYTHON_API_URL=http://localhost:5001
+  NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+  NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+  NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+  ``` 3. **Start Python backend** (Terminal 1) ```bash cd python_backend python -m
+  venv myenv source myenv/bin/activate # On Windows: myenv\\Scripts\\activate pip
+  install -r requirements.txt python app.py ``` 4. **Start frontend** (Terminal 2)
+  ```bash npm run dev ``` 5. **Open application** Visit [http://localhost:3000](http://localhost:3000)
+  --- ## \U0001F433 Docker Deployment (Recommended for Production) ### Prerequisites
+  - Docker and Docker Compose installed ([Get Docker](https://docs.docker.com/get-docker/))
+  - Firebase account with API keys configured ### Quick Start 1. **Download configuration
+  files** ```bash curl -O https://raw.githubusercontent.com/ptnghia-j/ChordMiniApp/main/docker-compose.prod.yml
+  curl -O https://raw.githubusercontent.com/ptnghia-j/ChordMiniApp/main/.env.docker.example
+  ``` 2. **Configure environment** ```bash cp .env.docker.example .env.docker # Edit
+  .env.docker with your API keys (see API Keys Setup section below) ``` 3. **Start
+  the application** ```bash docker compose -f docker-compose.prod.yml --env-file .env.docker
+  up -d ``` 4. **Access the application** Visit [http://localhost:3000](http://localhost:3000)
+  5. **Stop the application** ```bash docker compose -f docker-compose.prod.yml down
+  ``` > **Note:** If you have Docker Compose V1 installed, use `docker-compose` (with
+  hyphen) instead of `docker compose` (with space). ### Docker Desktop GUI (Alternative)
+  If you prefer using Docker Desktop GUI: 1. Open Docker Desktop 2. Go to \"Images\"
+  tab and search for `ptnghia/chordminiapp-frontend` and `ptnghia/chordminiapp-backend`
+  3. Pull both images 4. Use the \"Containers\" tab to manage running containers ###
+  Required Environment Variables Edit `.env.docker` with these required values: -
+  `NEXT_PUBLIC_FIREBASE_API_KEY` - Firebase API key - `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+  - Firebase project ID - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` - Firebase storage
+  bucket - `NEXT_PUBLIC_YOUTUBE_API_KEY` - YouTube Data API v3 key - `MUSIC_AI_API_KEY`
+  - Music.AI API key - `GEMINI_API_KEY` - Google Gemini API key - `GENIUS_API_KEY`
+  - Genius API key See the API Keys Setup section below for detailed instructions
+  on obtaining these keys. --- ## \U0001F4CB Detailed Setup Instructions ### Firebase
+  Setup 1. **Create Firebase project** - Visit [Firebase Console](https://console.firebase.google.com/)
+  - Click \"Create a project\" - Follow the setup wizard 2. **Enable Firestore Database**
+  - Go to \"Firestore Database\" in the sidebar - Click \"Create database\" - Choose
+  \"Start in test mode\" for development 3. **Get Firebase configuration** - Go to
+  Project Settings (gear icon) - Scroll down to \"Your apps\" - Click \"Add app\"
+  → Web app - Copy the configuration values to your `.env.local` 4. **Create Firestore
+  collections** The app uses the following Firestore collections. They are created
+  automatically on first write (no manual creation required): - `transcriptions` —
+  Beat and chord analy"
 ---
 {% raw %}
 # ChordMini

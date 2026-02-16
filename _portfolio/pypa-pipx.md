@@ -2,8 +2,67 @@
 layout: project
 name: Pypa Pipx
 slug: pypa-pipx
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/pypa/pipx/raw/main/logo.svg
 repo_url: https://github.com/pypa/pipx
+indexed_content: '# pipx — Install and Run Python Applications in Isolated Environments
+  **Documentation**: **Source Code**: _For comparison to other tools including pipsi,
+  see [Comparison to Other Tools](https://pipx.pypa.io/stable/comparisons/)._ ## Install
+  pipx > [!WARNING] > > It is not recommended to install `pipx` via `pipx`. If you''d
+  like to do this anyway, take a look at the > [`pipx-in-pipx`](https://github.com/mattsb42-meta/pipx-in-pipx)
+  project and read about the limitations there. ### On macOS ``` brew install pipx
+  pipx ensurepath sudo pipx ensurepath --global # optional to allow pipx actions with
+  --global argument ``` Upgrade pipx with `brew update && brew upgrade pipx`. ###
+  On Linux - Ubuntu 23.04 or above ``` sudo apt update sudo apt install pipx pipx
+  ensurepath sudo pipx ensurepath --global # optional to allow pipx actions with --global
+  argument ``` - Fedora: ``` sudo dnf install pipx pipx ensurepath sudo pipx ensurepath
+  --global # optional to allow pipx actions with --global argument ``` - Arch: ```
+  sudo pacman -S python-pipx pipx ensurepath sudo pipx ensurepath --global # optional
+  to allow pipx actions with --global argument ``` - Using `pip` on other distributions:
+  ``` python3 -m pip install --user pipx python3 -m pipx ensurepath sudo pipx ensurepath
+  --global # optional to allow pipx actions with --global argument ``` Upgrade pipx
+  with `python3 -m pip install --user --upgrade pipx`. ### On Windows - install via
+  [Scoop](https://scoop.sh/) ``` scoop install pipx pipx ensurepath ``` Upgrade pipx
+  with `scoop update pipx`. - install via pip (requires pip 19.0 or later) ``` # If
+  you installed python using Microsoft Store, replace `py` with `python3` in the next
+  line. py -m pip install --user pipx ``` It is possible (even most likely) the above
+  finishes with a WARNING looking similar to this: ``` WARNING: The script pipx.exe
+  is installed in ` \AppData\Roaming\Python\Python3x\Scripts` which is not on PATH
+  ``` If so, go to the mentioned folder, allowing you to run the pipx executable directly.
+  Enter the following line (even if you did not get the warning): ``` .\pipx.exe ensurepath
+  ``` This will add both the above mentioned path and the `%USERPROFILE%\.local\bin`
+  folder to your search path. Restart your terminal session and verify `pipx` does
+  run. Upgrade pipx with `py -m pip install --user --upgrade pipx`. ### Using pipx
+  without installing (via zipapp) You can also use pipx without installing it. The
+  zipapp can be downloaded from [Github releases](https://github.com/pypa/pipx/releases)
+  and you can invoke it with a Python 3.9+ interpreter: ``` python pipx.pyz ensurepath
+  ``` ### Use with pre-commit pipx [has pre-commit support](installation.md#pre-commit).
+  ### Shell completions Shell completions are available by following the instructions
+  printed with this command: ``` pipx completions ``` For more details, see the [installation
+  instructions](https://pipx.pypa.io/stable/installation/). ## Overview: What is `pipx`?
+  pipx is a tool to help you install and run end-user applications written in Python.
+  It''s roughly similar to macOS''s `brew`, JavaScript''s [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b),
+  and Linux''s `apt`. It''s closely related to pip. In fact, it uses pip, but is focused
+  on installing and managing Python packages that can be run from the command line
+  directly as applications. ### How is it Different from pip? pip is a general-purpose
+  package installer for both libraries and apps with no environment isolation. pipx
+  is made specifically for application installation, as it adds isolation yet still
+  makes the apps available in your shell: pipx creates an isolated environment for
+  each application and its associated packages. pipx does not ship with pip, but installing
+  it is often an important part of bootstrapping your system. ### Where Does `pipx`
+  Install Apps From? By default, pipx uses the same package index as pip, [PyPI](https://pypi.org/).
+  pipx can also install from all other sources pip can, such as a local directory,
+  wheel, git url, etc. Python and PyPI allow developers to distribute code with "console
+  script entry points". These entry points let users call into Python code from the
+  command line, effectively acting like standalone applications. pipx is a tool to
+  install and run any of these thousands of application-containing packages in a safe,
+  convenient, and reliable way. **In a way, it turns Python Package Index (PyPI) into
+  a big app store for Python applications.** Not all Python packages have entry points,
+  but many do. If you would like to make your package compatible with pipx, all you
+  need to do is add a [console scripts](https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html#the-console-scripts-entry-point)
+  entry point. If you''re a poetry user, use [these instructions](https://python-poetry.org/docs/pyproject/#scripts).
+  Or, if you''re using hatch, [try this](https://hatch.pypa.io/latest/config/metadata/#cli).
+  ## Features `pipx` enables yo'
 ---
 {% raw %}
 <p align="center">

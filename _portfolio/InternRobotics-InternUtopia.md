@@ -2,8 +2,57 @@
 layout: project
 name: Internrobotics Internutopia
 slug: InternRobotics-InternUtopia
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/badge/arXiv%202407.10943-red?logo=arxiv
 repo_url: https://github.com/grutopia/grutopia.github.io
+indexed_content: "[](https://www.youtube.com/watch?v=fD0F1jIax5Y) [](https://arxiv.org/abs/2407.10943)
+  [](https://github.com/grutopia/grutopia.github.io/releases/download/v0.1.0/GRUtopia.pdf)
+  [](https://github.com/InternRobotics/InternUtopia) [](https://internrobotics.github.io/user_guide/internutopia/)
+  [](https://www.youtube.com/watch?v=fD0F1jIax5Y) [](https://www.bilibili.com/video/BV1JUbxeMEsL/?buvid=XU42709457560E0722A8AA591EE792A3DAE59&from_spmid=search.search-result.0.0&is_story_h5=false&mid=vxiHfNKVdk6fb8fduRusuX8FTQ%2FSZMtL1rElX6M3iMo%3D&p=1&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=e78b4bb6-087b-4a72-817b-b06ef91167f3&share_source=COPY&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1720788955&unique_k=CeKgxGI&up_id=3546722198358311&vd_source=7f685cd616faf836ed7469749c100410)
+  [](https://pepy.tech/projects/internutopia) [](https://github.com/InternRobotics/InternUtopia/issues)
+  [](https://discord.gg/5jeaQHUj4B) # InternUtopia ## \U0001F525 News - \\[2025-07\\]
+  InternUtopia 2.2.0 is released! - \\[2025-07\\] Our project has been renamed to
+  InternUtopia. - \\[2025-02\\] GRUtopia 2.0 released! - \\[2024-07\\] We release
+  the [paper](https://arxiv.org/abs/2407.10943) and demos of GRUtopia. ## \U0001F680
+  New Features in 2.0 release - Gym compatible env implementation. - Easy-to-use pythonic
+  config system to use out-of-the-box [sensors](https://internrobotics.github.io/user_guide/internutopia/tutorials/how-to-use-sensor.html),
+  [controllers](https://internrobotics.github.io/user_guide/internutopia/tutorials/how-to-use-controller.html),
+  [robots](https://internrobotics.github.io/user_guide/internutopia/tutorials/how-to-use-robot.html)
+  and [tasks](https://internrobotics.github.io/user_guide/internutopia/tutorials/how-to-use-task.html).
+  - Examples of driving [diverse robots](https://internrobotics.github.io/user_guide/internutopia/get_started/drive-unitree-g1-with-keyboard.html)
+  and the corresponding policies. - Benchmark and baseline for [social navigation](https://internrobotics.github.io/user_guide/internnav/)
+  and [mobile manipulation](https://internrobotics.github.io/user_guide/internmanip/)
+  task. - Teleportation tools with [Mocap](https://internrobotics.github.io/user_guide/internutopia/get_started/control-franak-with-your-hand.html)
+  and [Apple VisionPro](https://internrobotics.github.io/user_guide/internutopia/get_started/teleoprate-fourier-gr1-with-visionpro.html).
+  - Physically accurate [interactive object assets](https://huggingface.co/datasets/InternRobotics/GRScenes)
+  that are ready for simulation. - Procedural [Indoor Scene Generation](https://github.com/InternRobotics/InternUtopia/tree/main/toolkits/indoor_scenes_generation)
+  with [GRScenes-100](https://internrobotics.github.io/user_guide/internutopia/get_started/dive-into-grscenes-100.html).
+  ## \U0001F4CB Contents - [\U0001F3E0 About](#-about) - [\U0001F4DA Getting Started](#-getting-started)
+  - [\U0001F3D9️ Assets](#️-assets) - [\U0001F4E6 Benchmark & Method](#-benchmark--method)
+  - [\U0001F465 Support](#-support) - [\U0001F4DD TODO List](#-todo-list) - [\U0001F517
+  Citation](#-citation) - [\U0001F4C4 License](#-license) - [\U0001F44F Acknowledgements](#-acknowledgements)
+  ## \U0001F3E0 About Recent works have been exploring the scaling laws in the field
+  of Embodied AI. Given the prohibitive costs of collecting real-world data, we believe
+  the Simulation-to-Real (Sim2Real) paradigm is a more feasible path for scaling the
+  learning of embodied models. We introduce project InternUtopia (aka. 桃源 in Chinese),
+  a general-purpose research platform for embodied AGI. It features several advancements:
+  * \U0001F3D9️ GRScenes , the scene dataset, includes 100k interactive finely annotated
+  scenes. GRScenes covers 89 diverse scene categories, facilitating deployment of
+  general robots across different scenarios. * \U0001F9D1‍\U0001F91D‍\U0001F9D1 GRResidents
+  , a Large Language Model (LLM) driven Non-Player Character (NPC) system that enables
+  social interaction, task generation, and task assignment, thus simulating social
+  scenarios for embodied AI applications. * \U0001F916 GRBench , a collection of embodied
+  AI benchmarks for assessing various capabilities of solving embodied tasks. We hope
+  that this work can alleviate the scarcity of high-quality data in this field and
+  provide a more comprehensive assessment of embodied AI research. ## \U0001F4DA Getting
+  Started ### Prerequisites - Ubuntu 20.04, 22.04 - [NVIDIA Omniverse Isaac Sim 4.5.0](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/install_workstation.html)
+  - Ubuntu 20.04/22.04 Operating System - NVIDIA GPU (RTX 2070 or higher) - NVIDIA
+  GPU Driver (recommended version 535.216.01+) - Docker (Optional) - NVIDIA Container
+  Toolkit (Optional) - Conda - Python 3.10.16 (3.10.* should be ok) ### Installation
+  We provide the installation guide [here](https://internrobotics.github.io/user_guide/internutopia/get_started/installation.html).
+  You can install locally or use docker and verify the installation easily. ### Documentation
+  \\& Tutorial We provide detailed [docs](https://internrobotics.github.io/user_guide/internutopia/)
+  for the basic usage of differ"
 ---
 {% raw %}
 [![demo](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/InternRobotics-InternUtopia/static/teaser.webp "demo")](https://www.youtube.com/watch?v=fD0F1jIax5Y)

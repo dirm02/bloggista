@@ -2,8 +2,58 @@
 layout: project
 name: Fomantic Fomantic Ui
 slug: fomantic-Fomantic-UI
+category: Uncategorized
 image: https://fomantic-ui.com/images/logo.png#128
 repo_url: https://github.com/fomantic/Fomantic-UI
+indexed_content: "# Fomantic-UI The official community fork of the popular Semantic-UI
+  framework. [](https://github.com/fomantic/Fomantic-UI/actions/workflows/ci.yml)
+  [](https://github.com/fomantic/Fomantic-UI/actions/workflows/nightly.yml) [](https://github.com/fomantic/Fomantic-UI/commits/develop)
+  [](https://github.com/fomantic/Fomantic-UI/blob/1fd94d2479f297c906bed557f0567d1d3f0a4d2c/LICENSE.md)
+  [](https://discord.gg/YChxjJ3) [](https://twitter.com/fomanticui) [](https://www.npmjs.com/package/fomantic-ui)
+  [](https://www.npmjs.com/package/fomantic-ui) [](https://www.jsdelivr.com/package/npm/fomantic-ui)
+  [](https://cdnjs.com/libraries/fomantic-ui) [](https://packagequality.com/#?package=fomantic-ui)
+  [](https://github.com/fomantic/Fomantic-UI/graphs/contributors) [](https://github.com/features/security)
+  [](https://snyk.io/test/github/fomantic/Fomantic-UI?targetFile=package.json) [](https://bestpractices.coreinfrastructure.org/projects/7496)
+  [](https://gurubase.io/g/fomantic-ui) --- > *NOTE:* Fomantic was created to continue
+  active development of Semantic-UI and has the intent to be merged back into the
+  master repository once active development can restart. For more info please read
+  the following issues https://github.com/Semantic-Org/Semantic-UI/issues/6109 https://github.com/Semantic-Org/Semantic-UI/issues/6413
+  > > *EDIT:* Lots has changed since we started this project and we are now starting
+  the development of FUI v3. You can read more about the v3 proposals [here](https://github.com/fomantic/Fomantic-UI/issues/319).
+  > > To be clear merging back into SUI is still our intention, read [this comment](https://github.com/fomantic/Fomantic-UI/issues/319#issuecomment-461736399)
+  for more info --- Fomantic allows developers to build beautiful websites fast, with
+  **concise HTML**, **intuitive javascript**, and **simplified debugging**, helping
+  make front-end development a delightful experience. Fomantic is responsively designed
+  allowing your website to scale on multiple devices. ## \U0001F4E1 Installation ```bash
+  $ npm install fomantic-ui ``` Living on the edge? Try our nightly build and test
+  new features and bug fixes early! ```bash $ npm install fomantic-ui@nightly ```
+  Fomantic includes an interactive installer to help setup your project. * For more
+  details on setup visit our [getting started guide](https://fomantic-ui.com/introduction/getting-started.html).
+  * To learn more about theming please read our [theming guide](https://fomantic-ui.com/usage/theming.html)
+  ### \U0001F4BB Browser Support * []() Chrome >= 88 * []() Edge >= 88 * []() Safari
+  >= 14.1 * []() Firefox >= 82 * []() Opera >= 75 * []() Samsung Internet >= 15 *
+  []() iOS >= 14.1 * []() Android >= 8 --- ## \U0001F4E6 Other packages | Environment
+  | Install Command | Repository | Third-Party | |-------------|---------------------------------------|------------------------------------------------------------------|-------------|
+  | CSS Only | `npm install fomantic-ui-css` | [Fomantic-UI-CSS](https://github.com/fomantic/Fomantic-UI-CSS)
+  | | | LESS | `npm install fomantic-ui-less` | [Fomantic-UI-LESS](https://github.com/fomantic/Fomantic-UI-LESS)
+  | | | SASS | `gem 'fomantic-ui-sass'` | [Fomantic-UI-SASS](https://github.com/fomantic/Fomantic-UI-SASS)
+  | ✅ | --- ## \U0001F4AC Community ### \U0001F4A1 Getting Help If you're looking
+  for help with an issue we offer multiple ways for you to get support. You can post
+  usage questions here on GitHub or you can ask in our community [Discord](https://discord.gg/YChxjJ3)
+  server. ### \U0001F41B Submitting Bugs and Enhancements [GitHub Issues](https://github.com/fomantic/Fomantic-UI/issues)
+  is for suggesting enhancements and reporting bugs. Before submitting a bug make
+  sure you do the following: * Check to see if the issue has already been raised.
+  * [Fork this boilerplate JSFiddle](https://jsfiddle.net/31d6y7mn) to create a reproducible
+  example of the bug. If a bug is apparent in the docs you can simply link to the
+  docs example, just make it clear exactly how to reproduce the issue. Only bugs that
+  include a test case can be triaged. * If submitting an enhancement try and create
+  it in the [JSFiddle](https://jsfiddle.net/31d6y7mn) if not it's fine but explain
+  clearly what you want. ### \U0001F4DD Pull Requests Before creating a pull request
+  be sure to read the [Contributing Guide](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md),
+  this is where we explain everything you need to know about contributing to Fomantic.
+  ## Sponsors ### Cross-browser testing provided by [BrowserStack](https://www.browserstack.com)
+  [](https://www.browserstack.com) ### IDE's provided by [JetBrains](https://www.jetbrains.com?from=Fomantic-UI)
+  [](https://jb.gg/OpenSourceSupport?from=Fomantic-UI) ---"
 ---
 {% raw %}
 ![Fomantic Logo](https://fomantic-ui.com/images/logo.png#128)

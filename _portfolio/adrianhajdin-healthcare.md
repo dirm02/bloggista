@@ -2,8 +2,70 @@
 layout: project
 name: Adrianhajdin Healthcare
 slug: adrianhajdin-healthcare
+category: Serv&Prod-Tools
 image: https://github.com/adrianhajdin/healthcare/assets/151519281/a7dd73b6-93de-484d-84e0-e7f4e299167b
 repo_url: https://github.com/adrianhajdin/healthcare
+indexed_content: "A HealthCare Management System Build this project step by step with
+  our detailed tutorial on JavaScript Mastery YouTube. Join the JSM family! ## \U0001F4CB
+  Table of Contents 1. \U0001F916 [Introduction](#introduction) 2. ⚙️ [Tech Stack](#tech-stack)
+  3. \U0001F50B [Features](#features) 4. \U0001F938 [Quick Start](#quick-start) 5.
+  \U0001F578️ [Snippets (Code to Copy)](#snippets) 6. \U0001F517 [Assets](#links)
+  7. \U0001F680 [More](#more) ## \U0001F6A8 Tutorial This repository contains the
+  code corresponding to an in-depth tutorial available on our YouTube channel, JavaScript
+  Mastery . If you prefer visual learning, this is the perfect resource for you. Follow
+  our tutorial to learn how to build projects like these step-by-step in a beginner-friendly
+  manner! ## \U0001F916 Introduction A healthcare patient management application that
+  allows patients to easily register, book, and manage their appointments with doctors,
+  featuring administrative tools for scheduling, confirming, and canceling appointments,
+  along with SMS notifications, all built using Next.js. If you're getting started
+  and need assistance or face any bugs, join our active Discord community with over
+  **34k+** members. It's a place where people help each other out. ## ⚙️ Tech Stack
+  - Next.js - Appwrite - Typescript - TailwindCSS - ShadCN - Twilio ## \U0001F50B
+  Features \U0001F449 **Register as a Patient**: Users can sign up and create a personal
+  profile as a patient. \U0001F449 **Book a New Appointment with Doctor**: Patients
+  can schedule appointments with doctors at their convenience and can book multiple
+  appointments. \U0001F449 **Manage Appointments on Admin Side**: Administrators can
+  efficiently view and handle all scheduled appointments. \U0001F449 **Confirm/Schedule
+  Appointment from Admin Side**: Admins can confirm and set appointment times to ensure
+  they are properly scheduled. \U0001F449 **Cancel Appointment from Admin Side**:
+  Administrators have the ability to cancel any appointment as needed. \U0001F449
+  **Send SMS on Appointment Confirmation**: Patients receive SMS notifications to
+  confirm their appointment details. \U0001F449 **Complete Responsiveness**: The application
+  works seamlessly on all device types and screen sizes. \U0001F449 **File Upload
+  Using Appwrite Storage**: Users can upload and store files securely within the app
+  using Appwrite storage services. \U0001F449 **Manage and Track Application Performance
+  Using Sentry**: The application uses Sentry to monitor and track its performance
+  and detect any errors. and many more, including code architecture and reusability
+  ## \U0001F938 Quick Start Follow these steps to set up the project locally on your
+  machine. **Prerequisites** Make sure you have the following installed on your machine:
+  - [Git](https://git-scm.com/) - [Node.js](https://nodejs.org/en) - [npm](https://www.npmjs.com/)
+  (Node Package Manager) **Cloning the Repository** ```bash git clone https://github.com/adrianhajdin/healthcare.git
+  cd healthcare ``` **Installation** Install the project dependencies using npm: ```bash
+  npm install ``` **Set Up Environment Variables** Create a new file named `.env.local`
+  in the root of your project and add the following content: ```env #APPWRITE NEXT_PUBLIC_ENDPOINT=https://cloud.appwrite.io/v1
+  PROJECT_ID= API_KEY= DATABASE_ID= PATIENT_COLLECTION_ID= APPOINTMENT_COLLECTION_ID=
+  NEXT_PUBLIC_BUCKET_ID= NEXT_PUBLIC_ADMIN_PASSKEY=111111 ``` Replace the placeholder
+  values with your actual Appwrite credentials. You can obtain these credentials by
+  signing up on the [Appwrite website](https://appwrite.io/). **Running the Project**
+  ```bash npm run dev ``` Open [http://localhost:3000](http://localhost:3000) in your
+  browser to view the project. ## \U0001F578️ Snippets tailwind.config.ts ```typescript
+  import type { Config } from \"tailwindcss\"; const { fontFamily } = require(\"tailwindcss/defaultTheme\");
+  const config = { darkMode: [\"class\"], content: [ \"./pages/**/*.{ts,tsx}\", \"./components/**/*.{ts,tsx}\",
+  \"./app/**/*.{ts,tsx}\", \"./src/**/*.{ts,tsx}\", ], prefix: \"\", theme: { container:
+  { center: true, padding: \"2rem\", screens: { \"2xl\": \"1400px\", }, }, extend:
+  { colors: { green: { 500: \"#24AE7C\", 600: \"#0D2A1F\", }, blue: { 500: \"#79B5EC\",
+  600: \"#152432\", }, red: { 500: \"#F37877\", 600: \"#3E1716\", 700: \"#F24E43\",
+  }, light: { 200: \"#E8E9E9\", }, dark: { 200: \"#0D0F10\", 300: \"#131619\", 400:
+  \"#1A1D21\", 500: \"#363A3D\", 600: \"#76828D\", 700: \"#ABB8C4\", }, }, fontFamily:
+  { sans: [\"var(--font-sans)\", ...fontFamily.sans], }, backgroundImage: { appointments:
+  \"url('/assets/images/appointments-bg.png')\", pending: \"url('/assets/images/pending-bg.png')\",
+  cancelled: \"url('/assets/images/cancelled-bg.png')\", }, keyframes: { \"accordion-down\":
+  { from: { height: \"0\" }, to: { height: \"var(--radix-accordion-content-height)\"
+  }, }, \"accordion-up\": { from: { height: \"var(--radix-accordion-content-height)\"
+  }, to: { height: \"0\" }, }, \"caret-blink\": { \"0%,70%,100%\": { opacity: \"1\"
+  }, \"20%,50%\": { opacity: \"0\" }, }, }, animation: { \"accordion-down\": \"accordion-down
+  0.2s ease-out\", \"accordion-up\": \"accordion-up 0.2s ease-out\", \"caret-blink\":
+  \"caret-blink 1.25s ease-out infinite\", }, }, }, plugins: [require(\"tailwindcss-anima"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,71 @@
 layout: project
 name: Guhcostan Mac Cleaner Cli
 slug: guhcostan-mac-cleaner-cli
+category: iOS-imac
 image: https://img.shields.io/npm/v/mac-cleaner-cli?color=cb3837&label=npm&logo=npm
 repo_url: https://github.com/guhcostan/mac-cleaner-cli
+indexed_content: "\U0001F9F9 Mac Cleaner CLI Free & Open Source Mac cleanup tool Scan
+  and remove junk files, caches, logs, and more — all from your terminal. \U0001FA9F
+  Also available for Windows: windows-cleaner-cli --- ## ⚡ Quick Start ```bash npx
+  mac-cleaner-cli ``` That's it! No installation needed. The CLI will: 1. \U0001F50D
+  **Scan** your Mac for cleanable files 2. \U0001F4CB **Show** you what was found
+  with sizes 3. ✅ **Let you select** exactly what to clean 4. \U0001F5D1️ **Clean**
+  the selected items safely ## \U0001F3AC See It In Action ``` $ npx mac-cleaner-cli
+  \U0001F9F9 Mac Cleaner CLI ──────────────────────────────────────────────────────
+  Scanning your Mac for cleanable files... Found 44.8 GB that can be cleaned: ? Select
+  categories to clean (space to toggle, enter to confirm): ❯ ◯ ● Trash 2.1 GB (45
+  items) ◯ ● Browser Cache 1.5 GB (3 items) ◯ ● Temporary Files 549.2 MB (622 items)
+  ◯ ● User Cache Files 15.5 GB (118 items) ◯ ● Development Cache 21.9 GB (14 items)
+  ↑↓ navigate • ← back • → enter • space select • a all • i invert • ⏎ submit # Press
+  → on a supported category to browse and select specific folders/files ? Browsing:
+  Root Scan Results ❯ ◯ \U0001F4C2 com.apple.Safari 1.2 GB ◯ \U0001F4C2 com.google.Chrome
+  2.3 GB ◯ \U0001F4C2 com.spotify.client 824.1 MB ↑↓ navigate • ← back • → enter •
+  space select • a all • i invert • ⏎ submit Summary: Items to delete: 802 Space to
+  free: 41.5 GB ? Proceed with cleaning? (Y/n) ✓ Cleaning Complete! ──────────────────────────────────────────────────────
+  Trash ✓ 2.1 GB freed Browser Cache ✓ 1.5 GB freed Temporary Files ✓ 549.2 MB freed
+  User Cache Files ✓ 15.5 GB freed Development Cache ✓ 21.9 GB freed ──────────────────────────────────────────────────────
+  \U0001F389 Freed 41.5 GB of disk space! Cleaned 802 items ``` ## ✨ Features | Feature
+  | Description | |---------|-------------| | \U0001F680 **One Command** | Just run
+  `npx mac-cleaner-cli` — no complex flags | | \U0001F3AF **Interactive** | Select
+  exactly what you want to clean with checkboxes | | \U0001F4C1 **File Explorer**
+  | Drill down (`→`) into supported categories to select specific folders/files |
+  | \U0001F6E1️ **Safe by Default** | Risky items hidden unless you use `--risky`
+  | | \U0001F50D **Smart Scanning** | Finds caches, logs, dev files, browser data,
+  and more | | \U0001F4F1 **App Uninstaller** | Remove apps completely with all associated
+  files | | \U0001F527 **Maintenance** | Flush DNS cache, free purgeable space | |
+  \U0001F512 **Privacy First** | 100% offline — no data ever leaves your machine |
+  | \U0001F4E6 **Minimal Dependencies** | Only 5 runtime deps, all from trusted maintainers
+  | ## \U0001F3AF What It Cleans ### \U0001F7E2 Safe (always safe to delete) | Category
+  | What it cleans | |----------|---------------| | `trash` | Files in the Trash bin
+  | | `temp-files` | Temporary files in /tmp and /var/folders | | `browser-cache`
+  | Chrome, Safari, Firefox, Arc cache | | `homebrew` | Homebrew download cache |
+  | `docker` | Unused Docker images, containers, volumes | ### \U0001F7E1 Moderate
+  (generally safe) | Category | What it cleans | |----------|---------------| | `system-cache`
+  | Application caches in ~/Library/Caches | | `system-logs` | System and application
+  logs | | `dev-cache` | npm, yarn, pip, Xcode DerivedData, CocoaPods | | `node-modules`
+  | Orphaned node_modules in old projects | ### \U0001F534 Risky (use `--risky` flag)
+  | Category | What it cleans | |----------|---------------| | `downloads` | Downloads
+  older than 30 days | | `ios-backups` | iPhone and iPad backup files | | `mail-attachments`
+  | Downloaded email attachments | | `duplicates` | Duplicate files (keeps newest)
+  | | `large-files` | Files larger than 500MB | | `language-files` | Unused language
+  localizations | ## \U0001F4D6 Usage ### Basic Usage ```bash # Interactive mode —
+  scan, select, and clean npx mac-cleaner-cli # Include risky categories npx mac-cleaner-cli
+  --risky # Enable file picker for all categories npx mac-cleaner-cli --risky -f ```
+  ### Folder-Level Selection (Interactive) In interactive mode, you can drill into
+  some categories and select specific folders/files to delete: - Controls: `↑↓` navigate
+  • `←` back • `→` enter • `space` select • `a` all • `i` invert • `⏎` submit - Supported
+  categories include: User Cache Files (`system-cache`), Temporary Files (`temp-files`),
+  System Log Files (`system-logs`), Development Cache (`dev-cache`), Browser Cache
+  (`browser-cache`), Homebrew Cache (`homebrew`) ### Uninstall Apps Remove applications
+  completely with all their preferences, caches, and support files: ```bash npx mac-cleaner-cli
+  uninstall ``` ### Maintenance Tasks ```bash # Flush DNS cache (may require sudo)
+  npx mac-cleaner-cli maintenance --dns # Free purgeable space npx mac-cleaner-cli
+  maintenance --purgeable ``` ### Other Commands ```bash # List all available categories
+  npx mac-cleaner-cli categories # Manage configuration npx mac-cleaner-cli config
+  --init npx mac-cleaner-cli config --show # Manage backups npx mac-cleaner-cli backup
+  --list npx mac-cleaner-cli backup --clean ``` ### Other flags ```bash # Show help
+  npx mac-cleaner-cli -h # or --help # Show version npx mac-cleaner-cli -V # or --version
+  # Directory paths shown in absolute format npx mac-cleane"
 ---
 {% raw %}
 <p align="center">

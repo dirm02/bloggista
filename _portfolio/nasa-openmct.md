@@ -2,8 +2,65 @@
 layout: project
 name: Nasa Openmct
 slug: nasa-openmct
+category: Uncategorized
 image: https://img.shields.io/badge/license-Apache%202.0-blue.svg
 repo_url: https://github.com/nasa/openmct
+indexed_content: "# Open MCT [](http://www.apache.org/licenses/LICENSE-2.0) [](https://codecov.io/gh/nasa/openmct)
+  [](https://percy.io/b2e34b17/openmct) [](https://www.npmjs.com/package/openmct)
+  Open MCT (Open Mission Control Technologies) is a next-generation mission control
+  framework for visualization of data on desktop and mobile devices. It is developed
+  at NASA's Ames Research Center, and is being used by NASA for data analysis of spacecraft
+  missions, as well as planning and operation of experimental rover systems. As a
+  generalizable and open source framework, Open MCT could be used as the basis for
+  building applications for planning, operation, and analysis of any systems producing
+  telemetry data. > [!NOTE] > Please visit our [Official Site](https://nasa.github.io/openmct/)
+  and [Getting Started Guide](https://nasa.github.io/openmct/getting-started/) Once
+  you've created something amazing with Open MCT, showcase your work in our GitHub
+  Discussions [Show and Tell](https://github.com/nasa/openmct/discussions/categories/show-and-tell)
+  section. We love seeing unique and wonderful implementations of Open MCT! ## Building
+  and Running Open MCT Locally Building and running Open MCT in your local dev environment
+  is very easy. Be sure you have [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/)
+  installed, then follow the directions below. Need additional information? Check
+  out the [Getting Started](https://nasa.github.io/openmct/getting-started/) page
+  on our website. (These instructions assume you are installing as a non-root user;
+  developers have [reported issues](https://github.com/nasa/openmct/issues/1151) running
+  these steps with root privileges.) 1. Clone the source code: ```sh git clone https://github.com/nasa/openmct.git
+  ``` 2. (Optional) Install the correct node version using [nvm](https://github.com/nvm-sh/nvm):
+  ```sh nvm install ``` 3. Install development dependencies (Note: Check the `package.json`
+  engine for our tested and supported node versions): ```sh npm install ``` 4. Run
+  a local development server: ``` npm start ``` > [!IMPORTANT] > Open MCT is now running,
+  and can be accessed by pointing a web browser at [http://localhost:8080/](http://localhost:8080/)
+  Open MCT is built using [`npm`](http://npmjs.com/) and [`webpack`](https://webpack.js.org/).
+  ## Documentation Documentation is available on the [Open MCT website](https://nasa.github.io/openmct/documentation/).
+  ### Examples The clearest examples for developing Open MCT plugins are in the [tutorials](https://github.com/nasa/openmct-tutorial)
+  provided in our documentation. > [!NOTE] > We want Open MCT to be as easy to use,
+  install, run, and develop for as > possible, and your feedback will help us get
+  there! > Feedback can be provided via [GitHub issues](https://github.com/nasa/openmct/issues/new/choose),
+  > [Starting a GitHub Discussion](https://github.com/nasa/openmct/discussions), >
+  or by emailing us at [arc-dl-openmct@mail.nasa.gov](mailto:arc-dl-openmct@mail.nasa.gov).
+  ## Developing Applications With Open MCT For more on developing with Open MCT, see
+  our documentation for a guide on [Developing Applications with Open MCT](./API.md#starting-an-open-mct-application).
+  ## Compatibility This is a fast moving project and we do our best to test and support
+  the widest possible range of browsers, operating systems, and NodeJS APIs. We have
+  a published list of support available in our package.json's `browserslist` key.
+  The project utilizes `nvm` to maintain consistent node and npm versions across all
+  projects. For UNIX, MacOS, Windows WSL, and other POSIX-compliant shell environments,
+  click [here](https://github.com/nvm-sh/nvm). For Windows, check out [nvm-windows](https://github.com/coreybutler/nvm-windows).
+  If you encounter an issue with a particular browser, OS, or NodeJS API, please [file
+  an issue](https://github.com/nasa/openmct/issues/new/choose). ## Plugins Open MCT
+  can be extended via plugins that make calls to the Open MCT API. A plugin is a group
+  of software components (including source code and resources such as images and HTML
+  templates) that is intended to be added or removed as a single unit. As well as
+  providing an extension mechanism, most of the core Open MCT codebase is also written
+  as plugins. For information on writing plugins, please see [our API documentation](./API.md#plugins).
+  ## Tests Our automated test coverage comes in the form of unit, e2e, visual, performance,
+  and security tests. ### Unit Tests Unit Tests are written for [Jasmine](https://jasmine.github.io/api/edge/global)
+  and run by [Karma](http://karma-runner.github.io). To run: `npm test` The test suite
+  is configured to load any scripts ending with `Spec.js` found in the `src` hierarchy.
+  Full configuration details are found in `karma.conf.js`. By convention, unit test
+  scripts should be located alongside the units that they test; for example, `src/foo/Bar.js`
+  would be tested by `src/foo/BarSpec.js`. ### e2e, Visual, and Performance Testing
+  Our e2e (end-to-end), Visual, and"
 ---
 {% raw %}
 # Open MCT [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![codecov](https://codecov.io/gh/nasa/openmct/branch/master/graph/badge.svg?token=7DQIipp3ej)](https://codecov.io/gh/nasa/openmct) [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/b2e34b17/openmct) [![npm version](https://img.shields.io/npm/v/openmct.svg)](https://www.npmjs.com/package/openmct) ![CodeQL](https://github.com/nasa/openmct/workflows/CodeQL/badge.svg)

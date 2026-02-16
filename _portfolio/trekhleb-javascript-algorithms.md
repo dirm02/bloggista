@@ -2,8 +2,65 @@
 layout: project
 name: Trekhleb Javascript Algorithms
 slug: trekhleb-javascript-algorithms
+category: Very important!!!!
 image: https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg
 repo_url: https://github.com/trekhleb/javascript-algorithms
+indexed_content: "# JavaScript Algorithms and Data Structures > \U0001F1FA\U0001F1E6
+  UKRAINE [IS BEING ATTACKED](https://war.ukraine.ua/) BY RUSSIAN ARMY. CIVILIANS
+  ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED. > - Help Ukraine via:
+  > - [Serhiy Prytula Charity Foundation](https://prytulafoundation.org/en/) > - [Come
+  Back Alive Charity Foundation](https://savelife.in.ua/en/donate-en/) > - [National
+  Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
+  > - More info on [war.ukraine.ua](https://war.ukraine.ua/) and [MFA of Ukraine](https://twitter.com/MFA_Ukraine)
+  [](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
+  [](https://codecov.io/gh/trekhleb/javascript-algorithms) This repository contains
+  JavaScript based examples of many popular algorithms and data structures. Each algorithm
+  and data structure has its own separate README with related explanations and links
+  for further reading (including ones to YouTube videos). _Read this in other languages:_
+  [_简体中文_](README.zh-CN.md), [_繁體中文_](README.zh-TW.md), [_한국어_](README.ko-KR.md),
+  [_日本語_](README.ja-JP.md), [_Polski_](README.pl-PL.md), [_Français_](README.fr-FR.md),
+  [_Español_](README.es-ES.md), [_Português_](README.pt-BR.md), [_Русский_](README.ru-RU.md),
+  [_Türkçe_](README.tr-TR.md), [_Italiano_](README.it-IT.md), [_Bahasa Indonesia_](README.id-ID.md),
+  [_Українська_](README.uk-UA.md), [_Arabic_](README.ar-AR.md), [_Tiếng Việt_](README.vi-VN.md),
+  [_Deutsch_](README.de-DE.md), [_Uzbek_](README.uz-UZ.md), [_עברית_](README.he-IL.md)
+  ## Data Structures A data structure is a particular way of organizing and storing
+  data in a computer so that it can be accessed and modified efficiently. More precisely,
+  a data structure is a collection of data values, the relationships among them, and
+  the functions or operations that can be applied to the data. Remember that each
+  data has its own trade-offs. And you need to pay attention more to why you're choosing
+  a certain data structure than to how to implement it. `B` - Beginner, `A` - Advanced
+  * `B` [Linked List](src/data-structures/linked-list) * `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
+  * `B` [Queue](src/data-structures/queue) * `B` [Stack](src/data-structures/stack)
+  * `B` [Hash Table](src/data-structures/hash-table) * `B` [Heap](src/data-structures/heap)
+  - max and min heap versions * `B` [Priority Queue](src/data-structures/priority-queue)
+  * `A` [Trie](src/data-structures/trie) * `A` [Tree](src/data-structures/tree) *
+  `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree) * `A` [AVL
+  Tree](src/data-structures/tree/avl-tree) * `A` [Red-Black Tree](src/data-structures/tree/red-black-tree)
+  * `A` [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range
+  queries examples * `A` [Fenwick Tree](src/data-structures/tree/fenwick-tree) (Binary
+  Indexed Tree) * `A` [Graph](src/data-structures/graph) (both directed and undirected)
+  * `A` [Disjoint Set](src/data-structures/disjoint-set) - a union–find data structure
+  or merge–find set * `A` [Bloom Filter](src/data-structures/bloom-filter) * `A` [LRU
+  Cache](src/data-structures/lru-cache/) - Least Recently Used (LRU) cache ## Algorithms
+  An algorithm is an unambiguous specification of how to solve a class of problems.
+  It is a set of rules that precisely define a sequence of operations. `B` - Beginner,
+  `A` - Advanced ### Algorithms by Topic * **Math** * `B` [Bit Manipulation](src/algorithms/math/bits)
+  - set/get/update/clear bits, multiplication/division by two, make negative etc.
+  * `B` [Binary Floating Point](src/algorithms/math/binary-floating-point) - binary
+  representation of the floating-point numbers. * `B` [Factorial](src/algorithms/math/factorial)
+  * `B` [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form
+  versions * `B` [Prime Factors](src/algorithms/math/prime-factors) - finding prime
+  factors and counting them using Hardy-Ramanujan's theorem * `B` [Primality Test](src/algorithms/math/primality-test)
+  (trial division method) * `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm)
+  - calculate the Greatest Common Divisor (GCD) * `B` [Least Common Multiple](src/algorithms/math/least-common-multiple)
+  (LCM) * `B` [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) -
+  finding all prime numbers up to any given limit * `B` [Is Power of Two](src/algorithms/math/is-power-of-two)
+  - check if the number is power of two (naive and bitwise algorithms) * `B` [Pascal's
+  Triangle](src/algorithms/math/pascal-triangle) * `B` [Complex Number](src/algorithms/math/complex-number)
+  - complex numbers and basic operations with them * `B` [Radian & Degree](src/algorithms/math/radian)
+  - radians to degree and backwards conversion * `B` [Fast Powering](src/algorithms/math/fast-powering)
+  * `B` [Horner's method](src/algorithms/math/horner-method) - polynomial evaluation
+  * `B` [Matrices](src/algorithms/math/matrix) - matrices and "
 ---
 {% raw %}
 # JavaScript Algorithms and Data Structures

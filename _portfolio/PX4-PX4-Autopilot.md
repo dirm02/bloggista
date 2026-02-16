@@ -2,8 +2,54 @@
 layout: project
 name: Px4 Px4 Autopilot
 slug: PX4-PX4-Autopilot
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/PX4-PX4-Autopilot/docs/assets/site/px4_logo.svg
 repo_url: https://github.com/PX4/PX4-Autopilot
+indexed_content: 'The autopilot stack the industry builds on. --- ## About PX4 is
+  an open-source autopilot stack for drones and unmanned vehicles. It supports multirotors,
+  fixed-wing, VTOL, rovers, and many more experimental platforms from racing quads
+  to industrial survey aircraft. It runs on [NuttX](https://nuttx.apache.org/), Linux,
+  and macOS. Licensed under [BSD 3-Clause](LICENSE). ## Why PX4 **Modular architecture.**
+  PX4 is built around [uORB](https://docs.px4.io/main/en/middleware/uorb.html), a
+  [DDS](https://docs.px4.io/main/en/middleware/uxrce_dds.html)-compatible publish/subscribe
+  middleware. Modules are fully parallelized and thread safe. You can build custom
+  configurations and trim what you don''t need. **Wide hardware support.** PX4 runs
+  on a wide range of [autopilot boards](https://docs.px4.io/main/en/flight_controller/)
+  and supports an extensive set of sensors, telemetry radios, and actuators through
+  the [Pixhawk](https://pixhawk.org/) ecosystem. **Developer friendly.** First-class
+  support for [MAVLink](https://mavlink.io/) and [DDS / ROS 2](https://docs.px4.io/main/en/ros2/)
+  integration. Comprehensive [SITL simulation](https://docs.px4.io/main/en/simulation/),
+  hardware-in-the-loop testing, and [log analysis](https://docs.px4.io/main/en/log/flight_log_analysis.html)
+  tools. An active developer community on [Discord](https://discord.gg/dronecode)
+  and the [weekly dev call](https://docs.px4.io/main/en/contribute/). **Vendor neutral
+  governance.** PX4 is hosted under the [Dronecode Foundation](https://www.dronecode.org/),
+  part of the Linux Foundation. Business-friendly BSD-3 license. No single vendor
+  controls the roadmap. ## Supported Vehicles Multicopter Fixed Wing VTOL Rover …and
+  many more: helicopters, autogyros, airships, submarines, boats, and other experimental
+  platforms. These frames have basic support but are not part of the regular flight-test
+  program. See the full airframe reference . ## Quick Start ```bash git clone https://github.com/PX4/PX4-Autopilot.git
+  --recursive cd PX4-Autopilot make px4_sitl ``` > [!NOTE] > See the [Development
+  Guide](https://docs.px4.io/main/en/development/development.html) for toolchain setup
+  and build options. ## Documentation & Resources | Resource | Description | | ---
+  | --- | | [User Guide](https://docs.px4.io/main/en/) | Build, configure, and fly
+  with PX4 | | [Developer Guide](https://docs.px4.io/main/en/development/development.html)
+  | Modify the flight stack, add peripherals, port to new hardware | | [Airframe Reference](https://docs.px4.io/main/en/airframes/airframe_reference.html)
+  | Full list of supported frames | | [Autopilot Hardware](https://docs.px4.io/main/en/flight_controller/)
+  | Compatible flight controllers | | [Release Notes](https://docs.px4.io/main/en/releases/)
+  | What''s new in each release | | [Contribution Guide](https://docs.px4.io/main/en/contribute/)
+  | How to contribute to PX4 | ## Community - **Weekly Dev Call** — open to all developers
+  ([Dronecode calendar](https://www.dronecode.org/calendar/)) - **Discord** — [Join
+  the Dronecode server](https://discord.gg/dronecode) - **Discussion Forum** — [PX4
+  Discuss](https://discuss.px4.io/) - **Maintainers** — see [`MAINTAINERS.md`](MAINTAINERS.md)
+  - **Contributor Stats** — [LFX Insights](https://insights.lfx.linuxfoundation.org/foundation/dronecode)
+  ## Contributing We welcome contributions of all kinds — bug reports, documentation,
+  new features, and code reviews. Please read the [Contribution Guide](https://docs.px4.io/main/en/contribute/)
+  to get started. ## Governance The PX4 Autopilot project is hosted by the [Dronecode
+  Foundation](https://www.dronecode.org/), a [Linux Foundation](https://www.linuxfoundation.org/)
+  Collaborative Project. Dronecode holds all PX4 trademarks and serves as the project''s
+  legal guardian, ensuring vendor-neutral stewardship — no single company owns the
+  name or controls the roadmap. The source code is licensed under the [BSD 3-Clause](LICENSE)
+  license, so you are free to use, modify, and distribute it in your own projects.'
 ---
 {% raw %}
 <p align="center">

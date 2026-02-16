@@ -10,9 +10,28 @@ layout: default
 
   {% assign projects = site.portfolio | sort: 'name' %}
   {% if projects.size > 0 %}
+  <!-- Filter controls -->
+  <div class="portfolio-filters mb-4">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" id="search-input" class="form-control" placeholder="Search projects...">
+      </div>
+      <div class="col-md-6">
+        <select id="category-filter" class="form-select">
+          <option value="">All Categories ({{ projects.size }})</option>
+          {% assign categories = projects | map: 'category' | uniq | sort %}
+          {% for category in categories %}
+            {% assign cat_count = projects | where: 'category', category | size %}
+            <option value="{{ category }}">{{ category }} ({{ cat_count }})</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+  
   <div id="portfolio-grid" class="portfolio-grid row">
     {% for project in projects %}
-    <div class="portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4" data-index="{{ forloop.index0 }}">
+    <div class="portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4" data-index="{{ forloop.index0 }}" data-name="{{ project.name | downcase }}" data-category="{{ project.category }}" data-search="{{ project.indexed_content | downcase }}">
       <a href="{{ project.url | relative_url }}" class="portfolio-card text-decoration-none" title="{{ project.name }}">
         <div class="portfolio-card-image">
           <img src="{% if project.image contains 'http' %}{{ project.image }}{% else %}{{ project.image | relative_url }}{% endif %}" alt="{{ project.name }}" loading="lazy" onerror="this.src='{{ '/assets/images/portfolio-placeholder.svg' | relative_url }}'"/>
@@ -28,6 +47,7 @@ layout: default
   <script>
     window.PORTFOLIO_PROJECTS = {{ projects | jsonify }};
   </script>
+  <script src="{{ '/assets/js/portfolio-filter.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/portfolio-pagination.js' | relative_url }}" defer></script>
   {% else %}
   <p class="text-muted">No projects to display yet. The sync runs every 24 hours.</p>

@@ -2,8 +2,64 @@
 layout: project
 name: Ictnlp Stream Omni
 slug: ictnlp-Stream-Omni
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/badge/arXiv-2506.13642-b31b1b.svg?logo=arXiv
 repo_url: https://github.com/ictnlp/Stream-Omni)
+indexed_content: "# Stream-Omni: Simultaneous Multimodal Interactions with Large Language-Vision-Speech
+  Model [](https://arxiv.org/abs/2506.13642) [](https://huggingface.co/ICTNLP/stream-omni-8b)
+  [](https://huggingface.co/datasets/ICTNLP/InstructOmni) [](https://github.com/ictnlp/Stream-Omni)
+  > [**Shaolei Zhang**](https://zhangshaolei1998.github.io/), [**Shoutao Guo**](https://scholar.google.com.hk/citations?user=XwHtPyAAAAAJ),
+  [**Qingkai Fang**](https://fangqingkai.github.io/), [**Yan Zhou**](https://zhouyan19.github.io/zhouyan/),
+  [**Yang Feng**](https://people.ucas.edu.cn/~yangfeng?language=en)\\* Stream-Omni
+  is a GPT-4o-like language-vision-speech chatbot that simultaneously supports interaction
+  across various modality combinations, with the following features\U0001F4A1: - **Omni
+  Interaction**: Support multimodal inputs including text, vision, and speech, and
+  generate both text and speech responses. - **Seamless \"see-while-hear\" Experience**:
+  Simultaneously output *intermediate textual results* (e.g., ASR transcriptions and
+  model responses) during speech interactions, like the advanced voice service of
+  GPT-4o. - **Efficient Training**: Require only a small amount of omni-modal data
+  for training. ## \U0001F5A5 Demo \U0001F3A7 Vision-grounded Speech Interaction (simultaneously
+  produce intermediate text) \U0001F3A7 https://github.com/user-attachments/assets/25807982-aa95-4633-9e92-10d995900258
+  https://github.com/user-attachments/assets/df8d79ba-63db-487c-a4a9-f183372168a1
+  > [!NOTE] > > **Stream-Omni can produce intermediate textual results (ASR transcription
+  and text response) during speech interaction, offering users a seamless \"see-while-hear\"
+  experience.** - Downlaod Stream-Omni model from [here](https://huggingface.co/ICTNLP/stream-omni-8b),
+  put in `${STREAMOMNI_CKPT}`. - Downlaod CosyVoice (Tokenizer & Flow Model) from
+  [here](https://modelscope.cn/models/iic/CosyVoice-300M-25Hz/files), put in `COSYVOICE_CKPT=./CosyVoice-300M-25Hz`:
+  ```python from modelscope import snapshot_download snapshot_download('iic/CosyVoice-300M-25Hz',
+  local_dir='./CosyVoice-300M-25Hz') ``` - Run these scripts to launch the API and
+  interface, and then interact through the browser (http://localhost:7860): ```bash
+  # controller python stream_omni/serve/controller.py --host 0.0.0.0 --port 10000
+  # CosyVoice worker COSYVOICE_CKPT=path_to_CosyVoice-300M-25Hz # e.g., ./CosyVoice-300M-25Hz
+  WAV_DIR=path_to_save_generated_audio CUDA_VISIBLE_DEVICES=0 PYTHONPATH=CosyVoice/third_party/Matcha-TTS
+  python ./CosyVoice/cosyvoice_worker.py --port 21003 --model ${COSYVOICE_CKPT} --wav_dir
+  ./gen_wavs/ # Stream-Omni worker, add --load-8bit for VRAM lower than 32GB STREAMOMNI_CKPT=path_to_stream-omni-8b
+  # e.g., ./stream-omni-8b CUDA_VISIBLE_DEVICES=1 python ./stream_omni/serve/model_worker.py
+  --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000
+  --model-path ${STREAMOMNI_CKPT} --model-name stream-omni # Interface python stream_omni/serve/gradio_web.py
+  --controller http://localhost:10000 --model-list-mode reload --port 7860 ``` - You
+  can also refer to [`api.py`](./api.py) for the usage of API. ## \U0001F525 Quick
+  Start > [!Tip] > > **Stream-Omni achieves modality alignments through sequence-dimension
+  concatenation for vision-text alignment and layer-dimension mapping for speech-text
+  alignment.** ### Requirements - Install packages: ```bash conda create -n streamomni
+  python=3.10 -y conda activate streamomni pip install -e . pip install flash-attn
+  --no-build-isolation pip install -r requirements.txt pip install -r CosyVoice/requirements.txt
+  ``` ### Command Interaction - Run these scripts for vision-grounded speech interaction:
+  ```bash export CUDA_VISIBLE_DEVICES=0 export PYTHONPATH=CosyVoice/third_party/Matcha-TTS
+  STREAMOMNI_CKPT=path_to_stream-omni-8b # Replace the path of cosyvoice model in
+  run_stream_omni.py (e.g., cosyvoice = CosyVoiceModel('./CosyVoice-300M-25Hz')) #
+  add --load-8bit for VRAM lower than 32GB python ./stream_omni/eval/run_stream_omni.py
+  \\ --model-path ${STREAMOMNI_CKPT} \\ --image-file ./stream_omni/serve/examples/cat.jpg
+  --conv-mode stream_omni_llama_3_1 --model-name stream-omni \\ --query ./stream_omni/serve/examples/cat_color.wav
+  ``` You should get the following outputs: ```yaml ASR Outputs: What is the color
+  of the cat LLM Outputs: The cat is gray and black. Speech Tokens: Speech Outputs:
+  Audio saved at ./output_893af1597afe2551d76c37a75c813b16.wav ``` - Interaction across
+  various modality combinations: | Inputs | Outputs | Intermediate Outputs | Scripts
+  | | ------------------------- | ------- | ------------------------------------------------------------
+  | ------------------------------------------------------------ | | Text + Vision
+  (or None) | Text | / | [`run_stream_omni_t2t.py`](./stream_omni/eval/run_stream_omni_t2t.py)
+  | | Text + Vision (or None) | Speech | Text result of model outputs | [`run_stream_omni_t2s.py`](./stream_omni/eval/run_stream_omni_t2s.py)
+  | | Speech + Vision (or None) | Text | ASR transciption of user inputs | [`run_stream_omni_s"
 ---
 {% raw %}
 # Stream-Omni: Simultaneous Multimodal Interactions with Large Language-Vision-Speech Model

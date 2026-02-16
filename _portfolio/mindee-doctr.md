@@ -2,8 +2,65 @@
 layout: project
 name: Mindee Doctr
 slug: mindee-doctr
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/badge/Slack-Community-4A154B?style=flat-square&logo=slack&logoColor=white
 repo_url: https://github.com/mindee/doctr
+indexed_content: '[](https://slack.mindee.com) [](LICENSE) [](https://github.com/mindee/doctr/pkgs/container/doctr)
+  [](https://codecov.io/gh/mindee/doctr) [](https://www.codefactor.io/repository/github/mindee/doctr)
+  [](https://app.codacy.com/gh/mindee/doctr?utm_source=github.com&utm_medium=referral&utm_content=mindee/doctr&utm_campaign=Badge_Grade)
+  [](https://mindee.github.io/doctr) [](https://pypi.org/project/python-doctr/) [](https://huggingface.co/spaces/mindee/doctr)
+  [](https://colab.research.google.com/github/mindee/notebooks/blob/main/doctr/quicktour.ipynb)
+  [](https://gurubase.io/g/doctr) **Optical Character Recognition made seamless &
+  accessible to anyone, powered by PyTorch** What you can expect from this repository:
+  - efficient ways to parse textual information (localize and identify each word)
+  from your documents - guidance on how to integrate this in your current architecture
+  ## Quick Tour ### Getting your pretrained model End-to-End OCR is achieved in docTR
+  using a two-stage approach: text detection (localizing words), then text recognition
+  (identify all characters in the word). As such, you can select the architecture
+  used for [text detection](https://mindee.github.io/doctr/latest/modules/models.html#doctr-models-detection),
+  and the one for [text recognition](https://mindee.github.io/doctr/latest//modules/models.html#doctr-models-recognition)
+  from the list of available implementations. ```python from doctr.models import ocr_predictor
+  model = ocr_predictor(det_arch=''db_resnet50'', reco_arch=''crnn_vgg16_bn'', pretrained=True)
+  ``` ### Reading files Documents can be interpreted from PDF or images: ```python
+  from doctr.io import DocumentFile # PDF pdf_doc = DocumentFile.from_pdf("path/to/your/doc.pdf")
+  # Image single_img_doc = DocumentFile.from_images("path/to/your/img.jpg") # Webpage
+  (requires `weasyprint` to be installed) webpage_doc = DocumentFile.from_url("https://www.yoursite.com")
+  # Multiple page images multi_img_doc = DocumentFile.from_images(["path/to/page1.jpg",
+  "path/to/page2.jpg"]) ``` ### Putting it together Let''s use the default pretrained
+  model for an example: ```python from doctr.io import DocumentFile from doctr.models
+  import ocr_predictor model = ocr_predictor(pretrained=True) # PDF doc = DocumentFile.from_pdf("path/to/your/doc.pdf")
+  # Analyze result = model(doc) ``` ### Dealing with rotated documents Should you
+  use docTR on documents that include rotated pages, or pages with multiple box orientations,
+  you have multiple options to handle it: - If you only use straight document pages
+  with straight words (horizontal, same reading direction), consider passing `assume_straight_pages=True`
+  to the ocr_predictor. It will directly fit straight boxes on your page and return
+  straight boxes, which makes it the fastest option. - If you want the predictor to
+  output straight boxes (no matter the orientation of your pages, the final localizations
+  will be converted to straight boxes), you need to pass `export_as_straight_boxes=True`
+  in the predictor. Otherwise, if `assume_straight_pages=False`, it will return rotated
+  bounding boxes (potentially with an angle of 0°). If both options are set to False,
+  the predictor will always fit and return rotated boxes. To interpret your model''s
+  predictions, you can visualize them interactively as follows: ```python # Display
+  the result (requires matplotlib & mplcursors to be installed) result.show() ```
+  Or even rebuild the original document from its predictions: ```python import matplotlib.pyplot
+  as plt synthetic_pages = result.synthesize() plt.imshow(synthetic_pages[0]); plt.axis(''off'');
+  plt.show() ``` The `ocr_predictor` returns a `Document` object with a nested structure
+  (with `Page`, `Block`, `Line`, `Word`, `Artefact`). To get a better understanding
+  of our document model, check our [documentation](https://mindee.github.io/doctr/modules/io.html#document-structure):
+  You can also export them as a nested dict, more appropriate for JSON format: ```python
+  json_output = result.export() ``` ### Use the KIE predictor The KIE predictor is
+  a more flexible predictor compared to OCR as your detection model can detect multiple
+  classes in a document. For example, you can have a detection model to detect just
+  dates and addresses in a document. The KIE predictor makes it possible to use detector
+  with multiple classes with a recognition model and to have the whole pipeline already
+  setup for you. ```python from doctr.io import DocumentFile from doctr.models import
+  kie_predictor # Model model = kie_predictor(det_arch=''db_resnet50'', reco_arch=''crnn_vgg16_bn'',
+  pretrained=True) # PDF doc = DocumentFile.from_pdf("path/to/your/doc.pdf") # Analyze
+  result = model(doc) predictions = result.pages[0].predictions for class_name in
+  predictions.keys(): list_predictions = predictions[class_name] for prediction in
+  list_predictions: print(f"Prediction for {class_name}: {prediction}") ``` The KIE
+  predictor results per page are in a dictionary format with each key representing
+  a class name and it''s value are the pr'
 ---
 {% raw %}
 <p align="center">

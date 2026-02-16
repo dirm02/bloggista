@@ -2,8 +2,63 @@
 layout: project
 name: Openhealthforall Open Health
 slug: OpenHealthForAll-open-health
+category: Management- Engineering- SocialM
 image: https://api.star-history.com/svg?repos=OpenHealthForAll/open-health&type=Date
 repo_url: https://github.com/OpenHealthForAll/open-health.git
+indexed_content: "# \U0001F680 **OpenHealth** **AI Health Assistant | Powered by Your
+  Data** > **\U0001F4E2 Now Available on Web!** > We've made OpenHealth more accessible
+  with two tailored options: > **[Clinic](https://qna.open-health.me/)** - Quick and
+  easy health consultations > **[Full Platform](https://www.open-health.me/)** - Advanced
+  tools for comprehensive health management ### \U0001F30D Choose Your Language [English](README.md)
+  | [Français](i18n/readme/README.fr.md) | [Deutsch](i18n/readme/README.de.md) | [Español](i18n/readme/README.es.md)
+  | [한국어](i18n/readme/README.ko.md) | [中文](i18n/readme/README.zh.md) | [日本語](i18n/readme/README.ja.md)
+  | [Українська](i18n/readme/README.uk.md) | [Русский](i18n/readme/README.ru.md) |
+  [اردو](i18n/readme/README.ur.md) --- ## \U0001F31F Overview > OpenHealth helps you
+  **take charge of your health data**. By leveraging AI and your personal health information,
+  > OpenHealth provides a private assistant that helps you better understand and manage
+  your health. You can run it completely locally for maximum privacy. ## ✨ Project
+  Features Core Features - \U0001F4CA **Centralized Health Data Input:** Easily consolidate
+  all your health data in one place. - \U0001F6E0️ **Smart Parsing:** Automatically
+  parses your health data and generates structured data files. - \U0001F91D **Contextual
+  Conversations:** Use the structured data as context for personalized interactions
+  with GPT-powered AI. ## \U0001F4E5 Supporting Data Sources & Language Models Data
+  Sources You Can Add Supported Language Models • Blood Test Results • Health Checkup
+  Data • Personal Physical Information • Family History • Symptoms • LLaMA • DeepSeek-V3
+  • GPT • Claude • Gemini ## \U0001F914 Why We Built OpenHealth > - \U0001F4A1 **Your
+  health is your responsibility.** > - ✅ True health management combines **your data**
+  + **intelligence**, turning insights into actionable plans. > - \U0001F9E0 AI acts
+  as an unbiased tool to guide and support you in managing your long-term health effectively.
+  ## \U0001F5FA️ Project Diagram ```mermaid graph LR subgraph Health Data Sources
+  A1[Clinical Records Blood Tests/Diagnoses/ Prescriptions/Imaging] A2[Health Platforms
+  Apple Health/Google Fit] A3[Wearable Devices Oura/Whoop/Garmin] A4[Personal Records
+  Diet/Symptoms/ Family History] end subgraph Data Processing B1[Data Parser & Standardization]
+  B2[Unified Health Data Format] end subgraph AI Integration C1[LLM Processing Commercial
+  & Local Models] C2[Interaction Methods RAG/Cache/Agents] end A1 & A2 & A3 & A4 -->
+  B1 B1 --> B2 B2 --> C1 C1 --> C2 style A1 fill:#e6b3cc,stroke:#cc6699,stroke-width:2px,color:#000
+  style A2 fill:#b3d9ff,stroke:#3399ff,stroke-width:2px,color:#000 style A3 fill:#c2d6d6,stroke:#669999,stroke-width:2px,color:#000
+  style A4 fill:#d9c3e6,stroke:#9966cc,stroke-width:2px,color:#000 style B1 fill:#c6ecd9,stroke:#66b399,stroke-width:2px,color:#000
+  style B2 fill:#c6ecd9,stroke:#66b399,stroke-width:2px,color:#000 style C1 fill:#ffe6cc,stroke:#ff9933,stroke-width:2px,color:#000
+  style C2 fill:#ffe6cc,stroke:#ff9933,stroke-width:2px,color:#000 classDef default
+  color:#000 ``` > **Note:** The data parsing functionality is currently implemented
+  in a separate Python server and is planned to be migrated to TypeScript in the future.
+  ## Getting Started ## ⚙️ How to Run OpenHealth Installation Instructions 1. **Clone
+  the Repository:** ```bash git clone https://github.com/OpenHealthForAll/open-health.git
+  cd open-health ``` 2. **Setup and Run:** ```bash # Copy environment file cp .env.example
+  .env # Start the application using Docker/Podman Compose docker/podman compose --env-file
+  .env up ``` For existing users, use: ```bash # Generate ENCRYPTION_KEY for .env
+  file: # Run the command below and add the output to ENCRYPTION_KEY in .env echo
+  $(head -c 32 /dev/urandom | base64) # Rebuild and start the application docker/podman
+  compose --env-file .env up --build ``` to rebuild the image. Run this also if you
+  make any modifications to the .env file. 3. **Access OpenHealth:** Open your browser
+  and navigate to `http://localhost:3000` to begin using OpenHealth. > **Note:** The
+  system consists of two main components: parsing and LLM. For parsing, you can use
+  docling for full local execution, while the LLM component can run fully locally
+  using Ollama. > **Note:** If you're using Ollama with Docker, make sure to set the
+  Ollama API endpoint to: `http://docker.for.mac.localhost:11434` on a Mac or `http://host.docker.internal:11434`
+  on Windows. --- ## Star History [](https://star-history.com/#OpenHealthForAll/open-health&Date)
+  --- ## \U0001F310 Community and Support ### \U0001F4AB Share Your Story & Get Updated
+  & Give Feedback [](https://www.reddit.com/r/AIDoctor/) [](https://discord.gg/B9K654g4wf)
+  ### \U0001F91D Talk with Team [](https://calendly.com/open-health/30min) [](mailto:sj@open-health.me)"
 ---
 {% raw %}
 # 🚀 **OpenHealth**

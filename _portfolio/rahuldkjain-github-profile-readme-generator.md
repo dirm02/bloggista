@@ -2,8 +2,62 @@
 layout: project
 name: Rahuldkjain Github Profile Readme Generator
 slug: rahuldkjain-github-profile-readme-generator
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/rahuldkjain-github-profile-readme-generator/src/images/mdg.png
 repo_url: https://github.com/rahuldkjain/github-profile-readme-generator
+indexed_content: "GitHub Profile README Generator View Demo · Report Bug · Request
+  Feature Loved the tool? Please consider donating \U0001F4B8 to help it improve!
+  #### Tired of editing GitHub Profile README with new features? This tool provides
+  an easy way to create a GitHub profile readme with the latest add-ons such as `visitors
+  count`, `github stats`, etc. ## \U0001F680 Demo Try the tool: [GitHub Profile README
+  Generator](https://rahuldkjain.github.io/github-profile-readme-generator) ## \U0001F9D0
+  Features Just fill in the details such as `Name`, `Tagline`, `Dev Platforms Username`,
+  `Current Work`, `Portfolio`, `Blog`, etc. with a minimal UI. - **Uniform Dev Icons**
+  - **Uniform Social Icons** - **Visitors Counter Badge** - **GitHub Profile Stats
+  Card** - **GitHub Top Skills** - **GitHub Streak Stats** - **Dynamic Dev(.)to Blogs**
+  (GitHub Action) - **Dynamic Medium Blogs** (GitHub Action) - **Dynamic Personal
+  Blogs from RSS Feed** (GitHub Action) - **Wakatime Stats** [contribute](https://github.com/rahuldkjain/github-profile-readme-generator/issues/115)
+  - **Buy Me A Coffee button** Click on `Generate README` to get your README in `markdown`.
+  You can preview the README too. ## \U0001F6E0️ Installation Steps 1. Clone the repository
+  ```bash git clone https://github.com/rahuldkjain/github-profile-readme-generator.git
+  ``` 2. Change the working directory ```bash cd github-profile-readme-generator ```
+  3. Install dependencies ```bash npm install ``` 4. Run the app ```bash npm run dev
+  ``` \U0001F31F You are all set! ## \U0001F370 Contributing Please contribute using
+  [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add
+  commits, and [open a pull request](https://github.com/rahuldkjain/github-profile-readme-generator/compare).
+  Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md),
+  and the process for submitting pull requests to us. ## \U0001F4BB Built with - [Next.js
+  15](https://nextjs.org/) - React framework with App Router - [TypeScript](https://www.typescriptlang.org/)
+  - Type safety and better DX - [Tailwind CSS](https://tailwindcss.com/) - Utility-first
+  CSS framework - [Framer Motion](https://www.framer.com/motion/) - Production-ready
+  motion library - [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
+  - [React Hook Form](https://react-hook-form.com/) - Performant forms with easy validation
+  ## \U0001F647 Special Thanks - [Anurag Hazra](https://github.com/anuraghazra) for
+  amazing [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+  - [Anton Komarev](https://github.com/antonkomarev) for super cool [github-profile-views-counter](https://github.com/antonkomarev/github-profile-views-counter)
+  - [Gautam Krishna R](https://github.com/gautamkrishnar) for the awesome [blog post
+  workflow](https://github.com/gautamkrishnar/blog-post-workflow) - [Jonah Lawrence](https://github.com/DenverCoder1)
+  for the incredible [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats)
+  - [Julien Monty](https://github.com/konpa) for super useful [devicon](https://github.com/konpa/devicon)
+  - [Eliot Sanford](https://github.com/techieeliot) for adding hashnode as a blog
+  input ## \U0001F647 Sponsors - [Scott C Wilson](https://github.com/scottcwilson)
+  donated the first-ever grant to this tool. A big thanks to him. - [Max Schmitt](https://github.com/mxschmitt)
+  loved the tool and showed support with his donation. Thanks a lot. - [Aadit Kamat](https://github.com/aaditkamat)
+  find the tool useful and showed support with his donation. A big thanks to him.
+  - [Jean-Michel Fayard](https://github.com/jmfayard) used the generator to create
+  his GitHub Profile README and he loved it. Thanks to him for showing support to
+  the tool with the donation. ## \U0001F512 Privacy & Analytics This tool includes
+  privacy-friendly analytics to help improve the user experience: - **Google Analytics
+  4** with GDPR-compliant consent management - **IP anonymization** and privacy-first
+  configuration - **Custom events** tracking for GitHub auto-fill, README generation,
+  and exports - **Cookie consent banner** - users can opt-out anytime - **No personal
+  data** collection - only anonymous usage patterns ## \U0001F4C4 Font Licensing This
+  project uses the **Wotfard** font family: - **Font**: Wotfard Regular - **Usage**:
+  This font is used under fair use for open source projects - **Source**: Downloaded
+  from online typography resources - **Note**: If you're the font creator and have
+  concerns about usage, please [contact us](mailto:rahuldkjain@gmail.com) For commercial
+  use of this project, please verify font licensing requirements. ## \U0001F64F Support
+  ## \U0001F31F Star History Developed with ❤️ in India \U0001F1EE\U0001F1F3"
 ---
 {% raw %}
 <p align="center">

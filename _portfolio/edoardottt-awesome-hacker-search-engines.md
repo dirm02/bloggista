@@ -2,8 +2,64 @@
 layout: project
 name: Edoardottt Awesome Hacker Search Engines
 slug: edoardottt-awesome-hacker-search-engines
+category: GreyHate-Cyber&Security
 image: https://raw.githubusercontent.com/edoardottt/images/main/awesome-hacker-search-engines/awesome.svg
 repo_url: https://github.com/trickest/cve)
+indexed_content: 'Awesome Hacker Search Engines A curated list of awesome search engines
+  useful during Penetration testing, Vulnerability assessments, Red/Blue Team operations,
+  Bug Bounty and more General • Servers • Vulnerabilities • Exploits • Attack surface
+  • Code • Email addresses • Domains • URLs • DNS • Certificates • WiFi networks •
+  Device Info • Credentials • Leaks • Hidden Services • Social Networks • Phone numbers
+  • Images • Threat Intelligence • Web History • Files • Surveillance cameras • Crypto
+  • People ### General Search Engines - [Google](https://www.google.com/) - [Bing](https://www.bing.com/)
+  - [Yahoo!](http://www.yahoo.com/) - [Yandex](https://yandex.com/) - [Ask](https://www.ask.com/)
+  - [Baidu](https://www.baidu.com/) - [SearXNG](https://searx.be/?q=) - [EXALead](http://www.exalead.com/search/web/)
+  - [DuckDuckGo](https://duckduckgo.com/) - [Swisscows](https://swisscows.com/en)
+  - [Naver](https://www.naver.com/) - [AOL](https://search.aol.com) - [Brave](https://search.brave.com/)
+  - [Yep](https://yep.com/) - [Gibiru](https://gibiru.com/) - [Kagi](https://kagi.com/)
+  - [Stract](https://stract.com/) ### Servers - [Shodan](https://shodan.io) - Search
+  Engine for the Internet of Everything - [Censys Search](https://search.censys.io/)
+  - Search Engine for every server on the Internet to reduce exposure and improve
+  security - [Onyphe.io](https://www.onyphe.io/) - Cyber Defense Search Engine for
+  open-source and cyber threat intelligence data - [ZoomEye](https://www.zoomeye.org/)
+  - Global cyberspace mapping - [GreyNoise](https://viz.greynoise.io/) - The source
+  for understanding internet noise - [Natlas](https://natlas.io/) - Scaling Network
+  Scanning - [Netlas.io](https://netlas.io/) - Discover, Research and Monitor any
+  Assets Available Online - [FOFA](https://fofa.info/) - Cyberspace mapping - [Quake](https://quake.360.net/quake/#/index)
+  - Cyberspace surveying and mapping system - [Hunter](https://hunter.how/) - Internet
+  Search Engines For Security Researchers - [ODIN](https://getodin.com/) - One of
+  the most powerful search engines for Scanned Internet Assets - [Modat Magnify](https://magnify.modat.io/)
+  - The Largest Internet Device DNA Dataset Available ### Vulnerabilities - [NIST
+  NVD](https://nvd.nist.gov/vuln/search) - US National Vulnerability Database - [MITRE
+  CVE](https://cve.mitre.org/cve/search_cve_list.html) - Identify, define, and catalog
+  publicly disclosed cybersecurity vulnerabilities - [GitHub Advisory Database](https://github.com/advisories)
+  - Security vulnerability database inclusive of CVEs and GitHub originated security
+  advisories - [cloudvulndb.org](https://www.cloudvulndb.org/) - The Open Cloud Vulnerability
+  & Security Issue Database - [osv.dev](https://osv.dev/list) - Open Source Vulnerabilities
+  - [Vulners.com](https://vulners.com/) - Your Search Engine for Security Intelligence
+  - [opencve.io](https://www.opencve.io/cve) - Easiest way to track CVE updates and
+  be alerted about new vulnerabilities - [security.snyk.io](https://security.snyk.io/)
+  - Open Source Vulnerability Database - [Mend Vulnerability Database](https://www.mend.io/vulnerability-database/)
+  - The largest open source vulnerability DB - [Rapid7 - DB](https://www.rapid7.com/db/)
+  - Vulnerability & Exploit Database - [CVEDetails](https://www.cvedetails.com/) -
+  The ultimate security vulnerability datasource - [VulnIQ](https://vulniq.com/) -
+  Vulnerability intelligence and management solution - [SynapsInt](https://synapsint.com/)
+  - The unified OSINT research tool - [Aqua Vulnerability Database](https://avd.aquasec.com/)
+  - Vulnerabilities and weaknesses in open source applications and cloud native infrastructure
+  - [Vulmon](https://vulmon.com/) - Vulnerability and exploit search engine - [VulDB](https://vuldb.com/)
+  - Number one vulnerability database - [ScanFactory](https://in.scanfactory.io/cvemon.html)
+  - Realtime Security Monitoring - [Trend Micro Zero Day Initiative](https://www.zerodayinitiative.com/advisories/published/)
+  - Publicly disclosed vulnerabilities discovered by Zero Day Initiative researchers
+  - [Google Project Zero](https://bugs.chromium.org/p/project-zero/issues/list?can=1&q=&sort=-id&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary)
+  - Vulnerabilities including Zero Days - [Trickest CVE Repository](https://github.com/trickest/cve)
+  - Gather and update all available and newest CVEs with their PoC - [cnvd.org.cn](https://www.cnvd.org.cn/)
+  - Chinese National Vulnerability Database - [InTheWild.io](https://inthewild.io/feed)
+  - Check CVEs in our free, open source feed of exploited vulnerabilities - [Vulnerability
+  Lab](https://www.vulnerability-lab.com/) - Vulnerability research, bug bounties
+  and vulnerability assessments - [Red Hat Security Advisories](https://access.redhat.com/security/security-updates/)
+  - Information about security flaws that affect Red Hat products and services in
+  the form of security advisories - [Cisco Security Advisories](https://sec.cloudapps.cisco.com/security/center/publicationListing.x)
+  - Se'
 ---
 {% raw %}
 <h1 align="center">

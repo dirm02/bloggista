@@ -2,8 +2,61 @@
 layout: project
 name: Evroon Bracket
 slug: evroon-bracket
+category: Entertainment tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/evroon-bracket/frontend/public/favicon-wide.svg
 repo_url: https://github.com/evroon/bracket
+indexed_content: "Demo · Documentation · Quickstart · GitHub · Releases Tournament
+  system meant to be easy to use. Bracket is written in async Python (with [FastAPI](https://fastapi.tiangolo.com))
+  and [Vite](https://vite.dev/) as frontend using the [Mantine](https://mantine.dev/)
+  library. It has the following features: - Supports **single elimination, round-robin
+  and swiss** formats. - **Build your tournament structure** with multiple stages
+  that can have multiple groups/brackets in them. - **Drag-and-drop matches** to different
+  courts or reschedule them to another start time. - Various **dashboard pages** are
+  available that can be presented to the public, customized with a logo. - Create/update
+  **teams**, and add players to **teams**. - Create **multiple clubs**, with **multiple
+  tournaments** per club. - **Swiss tournaments** can be handled dynamically, with
+  automatic scheduling of matches. Explore the Bracket docs&nbsp;&nbsp;▶ # Live Demo
+  A demo is available for free at . The demo lasts for 30 minutes, after which your
+  data will de deleted. # Quickstart To quickly run bracket to see how it works, clone
+  it and run `docker compose up`: ```bash git clone git@github.com:evroon/bracket.git
+  cd bracket sudo docker compose up -d ``` This will start the backend and frontend
+  of Bracket, as well as a postgres instance. You should now be able to view bracket
+  at http://localhost:3000. You can log in with the following credentials: - Username:
+  `test@example.org` - Password: `aeGhoe1ahng2Aezai0Dei6Aih6dieHoo`. To insert dummy
+  rows into the database, run: ```bash docker exec bracket-backend uv run --no-dev
+  ./cli.py create-dev-db ``` See also the [quickstart docs](https://docs.bracketapp.nl/docs/running-bracket/quickstart).
+  # Usage Read the [usage guide](https://docs.bracketapp.nl/docs/usage/guide) for
+  how to organize a tournament in Bracket from start to finish. # Configuration Read
+  the [configuration docs](https://docs.bracketapp.nl/docs/running-bracket/configuration)
+  for how to configure Bracket. Bracket's backend is configured using `.env` files
+  (`prod.env` for production, `dev.env` for development etc.). But you can also configure
+  Bracket using environment variables directly, for example by specifying them in
+  the `docker-compose.yml`. The frontend doesn't can be configured by environment
+  variables as well, as well as `.env` files using Vite's way of loading environment
+  variables. # Running Bracket in production Read the [deployment docs](https://docs.bracketapp.nl/docs/deployment)
+  for how to deploy Bracket and run it in production. Bracket can be run in Docker
+  or by itself (using `uv` and `pnpm`). # Development setup Read the [development
+  docs](https://docs.bracketapp.nl/docs/community/development) for how to run Bracket
+  for development. Prerequisites are `pnpm`, `postgresql` and `uv` to run the frontend,
+  database and backend. # Translations Based on your browser settings, your language
+  should be automatically detected and loaded. For now, there's no manual way of choosing
+  a different language. ## Supported Languages To add/refine translations, [Crowdin](https://crowdin.com/project/bracket)
+  is used. See the [docs](https://docs.bracketapp.nl/docs/community/contributing/#translating)
+  for more information. # More screenshots # Help If you're having trouble getting
+  Bracket up and running, or have a question about usage or configuration, feel free
+  to ask. The best place to do this is by creating a [Discussion](https://github.com/evroon/bracket/discussions).
+  # Supporting Bracket If you're using Bracket and would like to help support its
+  development, that would be greatly appreciated! Several areas that we need a bit
+  of help with at the moment are: - ⭐ **Star Bracket** on GitHub - \U0001F310 **Translating**:
+  Help make Bracket available to non-native English speakers by adding your language
+  (via [crowdin](https://crowdin.com/project/bracket)) - \U0001F4E3 **Spread the word**
+  by sharing Bracket to help new users discover it - \U0001F5A5️ **Submit a PR** to
+  add a new feature, fix a bug, extend/update the docs or something else See the [contribution
+  docs](https://docs.bracketapp.nl/docs/community/contributing) for more information
+  on how to contribute # Contributors Erik Vroon Null BachErik Danny Piper Max Ricketts-Uy
+  Sevi C Nicolas Vanheuverzwijn Amin NAIRI Felipe Gomes De Melo IzStriker Jon Miller
+  Oscar Tobar Rios Raphael Le Goaller # License Bracket is licensed under [AGPL-v3.0](https://choosealicense.com/licenses/agpl-3.0/).
+  Please note that any contributions also fall under this license. See [LICENSE](LICENSE)"
 ---
 {% raw %}
 <p align="center">

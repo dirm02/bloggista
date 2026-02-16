@@ -2,8 +2,68 @@
 layout: project
 name: Zerocore Ai Microsandbox
 slug: zerocore-ai-microsandbox
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/zerocore-ai-microsandbox/assets/microsandbox-banner-xl-dark.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '———&nbsp;&nbsp;&nbsp;easy secure execution of untrusted user/ai
+  code&nbsp;&nbsp;&nbsp;——— ## &nbsp;Microsandbox Microsandbox makes it **easy** to
+  run untrusted workloads within a **hardware-isolated** and **fast startup** execution
+  environment. Running untrusted code securely is hard. Traditional solutions—containers,
+  VMs, or cloud sandboxes—each trade off speed, isolation, or control. Microsandbox
+  aims to give the best of all worlds. > [!WARNING] > Microsandbox is still **experimental
+  software**. Expect breaking changes, missing features, and rough edges. ## &nbsp;&nbsp;Key
+  Features - **Strong Isolation**: Hardware-level VM isolation with [microVMs](./MSB_V_DOCKER.md).
+  - **Instant Startup**: Boot times under 200 ms. - **OCI Compatible**: Runs standard
+  container images. - **Self-Hosted**: Deploy within your infrastructure with autonomy.
+  - **AI-Ready**: Integrates seamlessly with agent and AI workflows via [MCP](./MCP.md).
+  Microsandbox is designed to be the execution backbone of the agentic web—fast, secure,
+  and flexible. ## &nbsp;&nbsp;Demo Sandbox Environment [ASCIINEMA →] With Claude
+  ## &nbsp;&nbsp;Getting Started #### PREREQUISITE ##### &nbsp;&nbsp;1. Download `microsandbox`
+  ```sh curl -sSL https://get.microsandbox.dev | sh ``` ##### &nbsp;&nbsp;2. Start
+  the server ```sh msb server start --dev ``` ##### &nbsp;&nbsp;3. Pull the environment
+  image [Optional] ```sh msb pull microsandbox/python ``` ## #### BASICS `microsandbox`
+  ships with a bunch of flexible commands to make it easy to manage and access sandboxes
+  which are highlighted below ##### &nbsp;&nbsp;Temporary Sandbox For experimentation
+  or one-off tasks, temporary sandboxes provide a clean environment that leaves no
+  trace on exit. For example, create a sandbox based on the `microsandbox/python`
+  image by running: ```sh msx python # or `msb exe --image python` ``` ##### &nbsp;&nbsp;System-wide
+  Sandboxes This provides the option to run long-lived sandboxes which are automatically
+  setup as a system-wide executable. This also makes frequently used sandboxes incredibly
+  convenient to access — no need to navigate to specific directories or remember complex
+  commands. ```sh msi python py-data # or `msb install --image alpine py-data` py-data
+  # From any directory, run the sandbox ``` > If no alias is specified, the image
+  name is used as the default. In the example above, this will be `python`. If a sandbox
+  with similar name exists, an error will be returned. > [!TIP] > > Run `msb --help`
+  to see all the options available for a subcommand. > > For example, `msb add --help`.
+  ## &nbsp;&nbsp;SDK&nbsp;&nbsp; BETA ##### &nbsp;&nbsp;1. Install the SDK > See open
+  issues for future language support. | Language | Instruction | | ---------- | --------------------------
+  | | Python | `pip install microsandbox` | | Rust | `cargo add microsandbox` | |
+  JavaScript | `npm install microsandbox` | ##### &nbsp;&nbsp;2. Execute the Code
+  > The first run pulls the environment image, so it’ll take a bit longer. You can
+  pre-pull an image it to make runs instant. For more information on how to use the
+  SDK, refer to the [SDK Readme](./sdk/README.md). ##### Python ```py import asyncio
+  from microsandbox import PythonSandbox async def main(): async with PythonSandbox.create(name="test")
+  as sb: exec = await sb.run("name = ''Python''") exec = await sb.run("print(f''Hello
+  {name}!'')") print(await exec.output()) # prints Hello Python! asyncio.run(main())
+  ``` ##### JavaScript ```js import { NodeSandbox } from "microsandbox"; async function
+  main() { const sb = await NodeSandbox.create({ name: "test" }); try { let exec =
+  await sb.run("var name = ''JavaScript''"); exec = await sb.run("console.log(`Hello
+  ${name}!`)"); console.log(await exec.output()); // prints Hello JavaScript! } finally
+  { await sb.stop(); } } main().catch(console.error); ``` ##### Rust ```rs use microsandbox::{SandboxOptions,
+  PythonSandbox}; #[tokio::main] async fn main() -> Result > { let options = SandboxOptions::builder().name("test").build();
+  let mut sb = PythonSandbox::create(options).await?; let exec = sb.run(r#"name =
+  "Python""#).await?; let exec = sb.run(r#"print(f"Hello {name}!")"#).await?; println!("{}",
+  exec.output().await?); // prints Hello Python! sb.stop().await?; Ok(()) } ``` ##
+  &nbsp;&nbsp;Project Sandbox&nbsp;&nbsp; BETA Beyond the SDK, microsandbox supports
+  project-based development with the familiar package-manager workflow devs are used
+  to. Think of it like `npm` or `cargo`, but for sandboxes! #### QUICK DEMO ## ####
+  SETUP GUIDE ##### &nbsp;&nbsp;1. Create a Sandbox Project Each sandbox project needs
+  a file, `Sandboxfile` at the root of the project directory, which serves as the
+  configuration manifest for your sandbox environments. To initialize one, run: ```sh
+  msb init ``` ##### &nbsp;&nbsp;2. Add a Sandbox to the Project Proceed to register
+  a new `python` sandbox named `app` in your `Sandboxfile`. ```sh msb add app \ --image
+  python \ --cpus 1 \ --memory 1024 \ --start ''python -c "print(\"hello\")"'' ```
+  ##### &nbsp;&n'
 ---
 {% raw %}
 <a href="./#gh-dark-mode-only" target="_blank">

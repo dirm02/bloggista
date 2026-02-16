@@ -2,8 +2,69 @@
 layout: project
 name: Hexastack Hexabot
 slug: Hexastack-Hexabot
+category: Bots-honeypots
 image: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Build Smooth AI Chatbots / Agents Hexabot provides everything you
+  need to create and manage your own AI powered chatbot / agent, Customizable, Multi-Channel,
+  Multi-Lingual and Text-to-Action Capabilities. Extensions Library . Documentation
+  Video Tutorial · Join Our Discord ## Description [Hexabot](https://hexabot.ai/)
+  is an open-source AI chatbot / agent solution. It allows you to create and manage
+  multi-channel, and multilingual chatbots / agents with ease. Hexabot is designed
+  for flexibility and customization, offering powerful text-to-action capabilities.
+  Originally a closed-source project (version 1), we''ve now open-sourced version
+  2 to contribute to the community and enable developers to customize and extend the
+  platform with [extensions](https://hexabot.ai/extensions). ## Features - **LLMs
+  & NLU Support:** Integrate with your favorite LLM model whether it''s by using Ollama,
+  ChatGPT, Mistral or Gemini ... Manage training datasets for machine learning models
+  that detect user intent and language, providing intelligent responses. - **Multi-Channel
+  Support:** Create consistent chatbot experiences across multiple channels like web,
+  mobile, and social media platforms. - **Visual Editor:** Design and manage chatbot
+  flows with an intuitive drag-and-drop interface. Supports text messages, quick replies,
+  carousels, and more. - **Plugin System:** Extend Hexabot''s functionality by developing
+  and installing extensions from the [Extension Library](https://hexabot.ai/extensions).
+  Enable features like text-to-action responses, 3rd party system integrations, and
+  more. - **Multi-lingual Support:** Define multiple languages, allowing the chatbot
+  to interact with users in their preferred language. - **Knowledge Base:** Seamlessly
+  integrate and manage dynamic content such as product catalogs and store lists for
+  more engaging conversations. - **User Roles & Permissions:** Granular access control
+  to manage user roles and permissions for different parts of the system. - **Contextual
+  Data:** Define variables to collect and leverage relevant information about end-users
+  to deliver personalized responses. - **Subscribers & Labels:** Organize users by
+  assigning labels and customize their chat experience based on defined segments.
+  - **Inbox & Handover:** Provides a real-time chat window where conversations can
+  be monitored and handed over to human agents when necessary. - **Analytics Dashboard:**
+  Monitor chatbot interactions and performance with insightful metrics and visualizations.
+  ## Directory Structure - **frontend:** The admin panel built with React/Next.js
+  for managing chatbot configurations and flows. - **api:** The backend API built
+  with NestJS and connected to MongoDB for data storage and management. - **widget:**
+  A React-based live chat widget that can be embedded into any website to provide
+  real-time interaction. - **docker:** A set of Docker Compose files for deploying
+  the entire solution, making it easy to run Hexabot in any environment. ## Getting
+  Started ### Prerequisites - Node.js >= 20.18.1 - npm (Node Package Manager) - Docker
+  installed ### Installation Install Hexabot CLI globally to have easy access to its
+  commands: ```sh npm install -g hexabot-cli ``` ### Usage 1. **Create a new project**:
+  ```sh hexabot create my-chatbot ``` This will create a new folder `my-chatbot` with
+  all necessary files to get started. 2. **Navigate to your project folder**: ```sh
+  cd my-chatbot ``` 3. **Install dependencies**: ```sh npm install ``` 4. **Initialize
+  environment**: ```sh hexabot init ``` This command copies the `.env.example` file
+  to `.env`, which you can edit to customize your configuration. 5. **Run in development
+  mode**: ```sh hexabot dev --services ollama ``` This starts the required services
+  in development mode. UI Admin Panel is accessible via http://localhost:8080, the
+  default credentials are : - **Username:** admin@admin.admin - **Password:** adminadmin
+  ## Documentation For detailed information on how to get started, as well as in-depth
+  user and developer guides, please refer to our full documentation available in the
+  docs folder or visit the [Documentation](https://docs.hexabot.ai). You can also
+  find specific documentation for different components of the project in the following
+  locations: - [CLI Documentation](https://github.com/Hexastack/hexabot-cli/) - [API
+  Documentation](api/README.md) - [UI Documentation](frontend/README.md) - [Live Chat
+  Widget Documentation](widget/README.md) ## Contributing We welcome contributions
+  from the community! Whether you want to report a bug, suggest new features, or submit
+  a pull request, your input is valuable to us. Please refer to our contribution policy
+  first : [How to contribute to Hexabot](./CONTRIBUTING.md) [](./CODE_OF_CONDUCT.md)
+  Feel free to join us on [Discord](https://discord.gg/rNb9t2MFkG) 1. **Clone the
+  Repository:** ```bash $ git clone https://github.com/hexastack/hexabot.git ``` 2.
+  **Installation:** Install node dependencies: ```bash $ npm install ``` 3. **Environment'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,64 @@
 layout: project
 name: Tradingview Lightweight Charts
 slug: tradingview-lightweight-charts
+category: Finance-selfapp-healthapp-Improv
 image: https://github.com/tradingview/lightweight-charts/raw/master/.github/logo.svg?sanitize=true
 repo_url: https://github.com/tradingview/lightweight-charts
+indexed_content: 'Lightweight Charts™ [![CircleCI][ci-img]][ci-link] [![npm version][npm-version-img]][npm-link]
+  [![npm bundle size][bundle-size-img]][bundle-size-link] [![Dependencies count][deps-count-img]][bundle-size-link]
+  [![Downloads][npm-downloads-img]][npm-link] [![pkg.pr.new][pkg-pr-new-img]][pkg-pr-new-link]
+  [Demos][demo-url] | [Documentation](https://tradingview.github.io/lightweight-charts/)
+  | [Reddit](https://www.reddit.com/r/TradingView/) TradingView Lightweight Charts™
+  are one of the smallest and fastest financial HTML5 charts. The Lightweight Charts™
+  library is the best choice for you if you want to display financial data as an interactive
+  chart on your web page without affecting your web page loading speed and performance.
+  It is the best choice for you if you want to replace static image charts with interactive
+  ones. The size of the library is close to static images but if you have dozens of
+  image charts on a web page then using this library can make the size of your web
+  page smaller. Take a look at [awesome-tradingview](https://github.com/tradingview/awesome-tradingview?tab=readme-ov-file#lightweight-charts)
+  for related projects created by our community members. The library provides a rich
+  set of charting capabilities out of the box, but developers can also extend its
+  functionality by building custom plugins. See the [interactive plugin examples here](https://tradingview.github.io/lightweight-charts/plugin-examples/),
+  or check out [plugin-examples/README.md](https://github.com/tradingview/lightweight-charts/tree/master/plugin-examples)
+  for more details. ## Installing ### es6 via npm ```bash npm install lightweight-charts
+  ``` ### Latest master build To try the latest `master` build without waiting for
+  a release (powered by [pkg.pr.new](https://pkg.pr.new)): ```bash npm install https://pkg.pr.new/lightweight-charts@master
+  ``` The import and usage below applies to both npm installation options: ```js import
+  { createChart, LineSeries } from ''lightweight-charts''; const chart = createChart(document.body,
+  { width: 400, height: 300 }); const lineSeries = chart.addSeries(LineSeries); lineSeries.setData([
+  { time: ''2019-04-11'', value: 80.01 }, { time: ''2019-04-12'', value: 96.63 },
+  { time: ''2019-04-13'', value: 76.64 }, { time: ''2019-04-14'', value: 81.89 },
+  { time: ''2019-04-15'', value: 74.43 }, { time: ''2019-04-16'', value: 80.01 },
+  { time: ''2019-04-17'', value: 96.63 }, { time: ''2019-04-18'', value: 76.64 },
+  { time: ''2019-04-19'', value: 81.89 }, { time: ''2019-04-20'', value: 74.43 },
+  ]); ``` ### CDN You can use [unpkg](https://unpkg.com/): The standalone version
+  creates `window.LightweightCharts` object with all exports from `esm` version: ```js
+  const chart = LightweightCharts.createChart(document.body, { width: 400, height:
+  300 }); const lineSeries = chart.addSeries(LightweightCharts.LineSeries); lineSeries.setData([
+  { time: ''2019-04-11'', value: 80.01 }, { time: ''2019-04-12'', value: 96.63 },
+  { time: ''2019-04-13'', value: 76.64 }, { time: ''2019-04-14'', value: 81.89 },
+  { time: ''2019-04-15'', value: 74.43 }, { time: ''2019-04-16'', value: 80.01 },
+  { time: ''2019-04-17'', value: 96.63 }, { time: ''2019-04-18'', value: 76.64 },
+  { time: ''2019-04-19'', value: 81.89 }, { time: ''2019-04-20'', value: 74.43 },
+  ]); ``` ### Build Variants |Dependencies included|Mode|ES module|IIFE (`window.LightweightCharts`)|
+  |-|-|-|-| |No|PROD|`lightweight-charts.production.mjs`|N/A| |No|DEV|`lightweight-charts.development.mjs`|N/A|
+  |Yes (standalone)|PROD|`lightweight-charts.standalone.production.mjs`|`lightweight-charts.standalone.production.js`|
+  |Yes (standalone)|DEV|`lightweight-charts.standalone.development.mjs`|`lightweight-charts.standalone.development.js`|
+  ## Development See [BUILDING.md](./BUILDING.md) for instructions on how to build
+  `lightweight-charts` from source. ## License Licensed under the Apache License,
+  Version 2.0 (the "License"); you may not use this software except in compliance
+  with the License. You may obtain a copy of the License at LICENSE file. Unless required
+  by applicable law or agreed to in writing, software distributed under the License
+  is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+  either express or implied. See the License for the specific language governing permissions
+  and limitations under the License. This software incorporates several parts of tslib
+  ( , (c) Microsoft Corporation) that are covered by BSD Zero Clause License. This
+  license requires specifying TradingView as the product creator. You shall add the
+  "attribution notice" from the NOTICE file and a link to to the page of your website
+  or mobile application that is available to your users. As thanks for creating this
+  product, we''d be grateful if you add it in a prominent place. You can use the [`attributionLogo`](https://tradingview.github.io/lightweight-charts/docs/api/interfaces/LayoutOptions#attributionLogo)
+  chart option for displaying an appropriate link to on the chart itself, which will
+  satisfy the link requirement. [demo-url]:'
 ---
 {% raw %}
 <!-- markdownlint-disable no-inline-html first-line-h1 -->

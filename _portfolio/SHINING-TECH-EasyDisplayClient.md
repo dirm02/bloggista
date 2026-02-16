@@ -2,8 +2,27 @@
 layout: project
 name: Shining Tech Easydisplayclient
 slug: SHINING-TECH-EasyDisplayClient
+category: Uncategorized
 image: https://img.shields.io/badge/lang-English-blue.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/SHINING-TECH-EasyDisplayClient
+indexed_content: "[](./README.md) [](./README.zh-CN.md) [](./README.zh-TW.md) [](./README.ja.md)
+  # EasyDisplay **EasyDisplay** is a minimalist, offline-first digital signage solution.
+  - ✅ **Local-first architecture** — works without internet - \U0001F4F1 **Cross-platform
+  support** — Android, Windows, Linux, IOS - \U0001F6E0️ **Easy to extend** - \U0001F4E6
+  Ideal for **meeting room displays**, **retail signs**, and **info panels** --- ##
+  \U0001F680 Getting Started Once installed, EasyDisplay runs a local server that
+  lets you control content directly from any browser — no cloud setup required. ###
+  Step 1: Install & Launch Install the app and start the program on your device. ###
+  Step 2: Open Browser Open your browser and visit: http://[device-ip]:[port] ###
+  Step 3: Edit Program to manage and update the screen content in real-time. ### Step
+  4: \U0001F4FA Push to Screen Display content instantly on screens. For full usage
+  instructions, see the [EasyDisplay User Guide](https://sites.google.com/view/shiningtech/how-to-use).
+  --- ## \U0001F3A8 Custom Layout (Drag & Drop) Design your display content freely
+  with an intuitive drag-and-drop editor — no coding required. --- ## \U0001F5A5️
+  Use Cases ### \U0001F37D️ Restaurant Menu Boards ### \U0001F6CD️ Store Promotions
+  ### \U0001F4F0 Info Screens --- ## \U0001F4F2 Get the App EasyDisplay is available
+  on Google Play: --- ## \U0001F4C4 License Licensed under the **GNU Affero General
+  Public License v3.0 (AGPLv3)**. See [LICENSE](./LICENSE) for full terms."
 ---
 {% raw %}
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](./README.md)

@@ -2,8 +2,42 @@
 layout: project
 name: 5rahim Seanime
 slug: 5rahim-seanime
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/5rahim-seanime/docs/images/seanime-logo.png
 repo_url: https://github.com/5rahim/seanime
+indexed_content: 'Seanime Documentation | Latest release | Tutorials | Discord | Copyright
+  Leave a star if you like the project! ⭐️ ## About Seanime is a **media server**
+  with a **web interface** and **desktop app** for managing your local library, streaming
+  anime and reading manga. > [!IMPORTANT] >Seanime does not provide, host, or distribute
+  any media content. Users are responsible for obtaining media through legal means
+  and complying with their local laws. Extensions listed on the app are unaffiliated
+  with Seanime and may be removed if they violated copyright laws. ## Features - Cross-platform
+  web interface and desktop app - Built-in video player with Seanime Denshi (supports
+  SSA/ASS subtitles, Anime4K sharpening, and more) - Complete AniList integration
+  (browse, manage, score, discover, etc.) - Custom source support for adding series
+  not available on AniList and even non-anime/manga series - Offline mode for use
+  without an internet connection - Scan your anime library in seconds (no renaming
+  or special folder structure required) - Integrated torrent search engine for extensions
+  - Stream torrents directly to your media player without downloading using Bittorrent,
+  Torbox and Real-Debrid - Support for qBittorrent, Transmission, Torbox and Real-Debrid
+  for downloading - Automatically download new episodes with custom filters - MPV,
+  VLC and MPC-HC support for watching on desktop - Watch on mobile with external player
+  links to mobile apps (Outplayer, VLC, etc.) - Transcoding and direct play for streaming
+  to any device web browser - Online streaming support for extensions - Read manga
+  chapters from your local library or extensions - Schedule for tracking upcoming
+  or missed episodes - Customizable UI - And more ## Get started Read the installation
+  guide to set up Seanime on your device. How to install Seanime ## Goal This is a
+  one-person project and may not meet every use case. If it doesn’t fully fit your
+  needs, other tools might be a better match. ### Not planned - Support for other
+  trackers such as Trakt, SIMKL, etc. - Support for other media players - Dedicated
+  clients (TV, mobile, etc.) Consider sponsoring or sharing the project if you want
+  to see more features implemented. ## Sponsors The maintenance of this project is
+  made possible by the sponsors. ## Development and Build Building from source is
+  straightforward, you''ll need [Node.js](https://nodejs.org/en/download) and [Go](https://go.dev/doc/install)
+  installed on your system. Development and testing might require additional configuration.
+  [Read more here](https://github.com/5rahim/seanime/blob/main/DEVELOPMENT_AND_BUILD.md)
+  > [!NOTE] > For copyright-related requests, please contact the maintainer using
+  the contact information provided on [the website](https://seanime.app/docs/policies).'
 ---
 {% raw %}
 <p align="center">

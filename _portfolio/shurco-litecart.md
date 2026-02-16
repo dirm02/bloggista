@@ -2,8 +2,69 @@
 layout: project
 name: Shurco Litecart
 slug: shurco-litecart
+category: Very important!!!!
 image: https://github.com/shurco/litecart/blob/main/.github/media/demo.gif
 repo_url: https://github.com/shurco/litecart
+indexed_content: "## \U0001F6D2&nbsp;&nbsp;What is litecart? Litecart is an open source
+  shopping-cart in 1 file of embedded database (SQLite), convenient dashboard UI and
+  simple site. > [!WARNING] > Current major version is zero (`v0.x.x`) to accommodate
+  rapid development and fast iteration while getting early feedback from users. Please
+  keep in mind that litecart is still under active development and therefore full
+  backward compatibility is not guaranteed before reaching v1.0.0. ### Video Example
+  ### Admin Panel Screenshots ## \U0001F3C6&nbsp;&nbsp;Features \U0001F680 **Simple
+  and Fast**: Enjoy a one-click installation process that gets your store up and running
+  quickly, saving you time and effort. \U0001F4B0 **Support for Popular Payment Systems**:
+  Accept payments seamlessly with support for popular payment systems, ensuring a
+  smooth checkout experience for your customers. \U0001F511 **Sell Files and License
+  Keys**: Whether you're selling digital files or license keys, litecart has you covered,
+  providing flexibility in the types of products you can offer. ⚙️ **Lightweight and
+  Efficient**: litecart utilizes SQLite as its embedded database, eliminating the
+  need for heavy databases like MySQL, PostgreSQL, or MongoDB. This results in a lightweight
+  website that performs exceptionally well. ☁️ **Easily Customizable**: Modify and
+  customize your litecart website effortlessly to match your branding and unique requirements,
+  making it truly your own. \U0001F9DE‍♂️ **Convenient Administration Panel**: With
+  a user-friendly dashboard UI, litecart offers a hassle-free administration panel,
+  allowing you to manage your store, inventory, and orders with ease. ⚡️ **Hardware
+  Compatibility**: Whether you're running litecart on a powerful server or a modest
+  hardware setup, rest assured that it will work seamlessly, providing a consistent
+  shopping experience for your customers. \U0001F512 **Built-in HTTPS Support**: Prioritizing
+  security, litecart comes with built-in support for HTTPS, ensuring the safety of
+  your customers' data. \U0001F193 **Free Products Support**: Offer free products
+  to your customers by setting the product price to 0. Free products are automatically
+  processed without requiring payment system integration, making it perfect for free
+  downloads, samples, or promotional content. \U0001F310 **Multi-language Support**:
+  Built-in internationalization (i18n) support allows you to create multilingual stores.
+  By default, litecart includes support for English and Chinese languages. The language
+  switcher is available in both the admin panel and the public site, making it easy
+  to manage content in multiple languages and provide a localized shopping experience
+  for your customers. ## ⬇️&nbsp;&nbsp;Installation `litecart` is engineered for easy
+  installation and operation, requiring just a single command from your terminal.
+  Besides the conventional installation method, `litecart` can also be set up and
+  operated via HomeBrew, Docker, or any other container orchestration tools like Docker
+  Compose, Docker Swarm, Rancher, or Kubernetes. #### &nbsp;Install on macOS The fastest
+  method to install `litecart` on macOS involves using Homebrew. This will install
+  the command-line tools and the `litecart` server as a combined executable. If you
+  don't utilize Homebrew, adhere to the Linux instructions below for `litecart` installation.
+  ```shell brew install shurco/tap/litecart ``` Alternately, you can configure the
+  tap and install the package separately: ``` shell $ brew tap shurco/tap $ brew install
+  litecart ``` #### &nbsp;Install on Linux The most straightforward and recommended
+  method to start using `litecart` on Unix operating systems involves installing and
+  utilizing the `litecart` command-line tool. Execute the given command in your terminal
+  and adhere to the instructions displayed on the screen. ```bash curl -L https://raw.githubusercontent.com/shurco/litecart/main/scripts/install
+  | sh ``` #### &nbsp;Install on Windows The simplest and most recommended method
+  to start using `litecart` on Windows is by installing and utilizing the `litecart`
+  command-line tool. Execute the given command in your terminal and adhere to the
+  instructions displayed on the screen. ```bash curl -L https://raw.githubusercontent.com/shurco/litecart/main/scripts/install
+  | sh ``` or download and unzip the [latest version](https://github.com/shurco/litecart/releases/latest)
+  for Windows. #### &nbsp;Run using Docker Docker enables the management and operation
+  of a `litecart` instance without requiring the installation of any command-line
+  tools. The `litecart` Docker container includes all necessary command-line tools
+  or even for server execution. For [Docker Hub](https://hub.docker.com/r/shurco/litecart):
+  ```bash docker run \\ -v ./lc_base:/lc_base \\ -v ./lc_digitals:/lc_digitals \\
+  -v ./lc_uploads:/lc_uploads \\ -v ./site:/site \\ --rm shurco/litecart:latest init
+  docker run \\ --name litecart \\ --restart unless-stopped \\ -p '8080:8080' \\ -v
+  ./lc_base:/lc_base \\ -v ./lc_digitals:/lc_digitals \\ -v ./lc_uploads:/lc_uploads
+  \\ -v ./site:/site \\ shurco/litecart:latest ```"
 ---
 {% raw %}
 <p align="center">

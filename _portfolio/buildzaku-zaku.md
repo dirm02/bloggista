@@ -2,8 +2,22 @@
 layout: project
 name: Buildzaku Zaku
 slug: buildzaku-zaku
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/buildzaku-zaku/assets/zaku-icon.png
 repo_url: https://github.com/buildzaku/zaku
+indexed_content: 'Fast, open-source API client with fangs > [!WARNING] > Zaku is in
+  early stages of development, expect breaking changes. Installation macOS Download
+  for [Arm (Apple Silicon)](https://github.com/buildzaku/zaku/releases/latest/download/zaku-aarch64-apple-darwin.dmg)
+  or [x86 (Intel)](https://github.com/buildzaku/zaku/releases/latest/download/zaku-x86_64-apple-darwin.dmg)
+  After installing, run this command from your terminal: ```sh xattr -c /Applications/Zaku.app
+  ``` This is required because Zaku is not code signed yet. [Read more](https://discussions.apple.com/thread/253714860)
+  Linux Download the [.deb package](https://github.com/buildzaku/zaku/releases/latest/download/zaku-x86_64-unknown-linux-gnu.deb)
+  for x86 Ubuntu/Debian From your terminal, navigate to the download location and
+  run: ```sh sudo apt install ./zaku-x86_64-unknown-linux-gnu.deb ``` Or install via
+  Snap: ```sh sudo snap install zaku ``` Windows Download the [.exe file](https://github.com/buildzaku/zaku/releases/latest/download/zaku-x86_64-pc-windows-msvc.exe)
+  or [MSI package](https://github.com/buildzaku/zaku/releases/latest/download/zaku-x86_64-pc-windows-msvc.msi)
+  Launch the installer and follow the prompts. ## Contributing Checkout the [contributing
+  guide](./.github/CONTRIBUTING.md). ## License Zaku is licensed under the [MIT license](./LICENSE.md).'
 ---
 {% raw %}
 <br>

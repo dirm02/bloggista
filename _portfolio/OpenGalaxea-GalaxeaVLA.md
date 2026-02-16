@@ -2,8 +2,65 @@
 layout: project
 name: Opengalaxea Galaxeavla
 slug: OpenGalaxea-GalaxeaVLA
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/badge/Project%20Page-000000?style=for-the-badge&logo=github
 repo_url: https://github.com/Physical-Intelligence/openpi)-based
+indexed_content: "# Galaxea Open-World Dataset & G0 Dual-System VLA Model [](https://opengalaxea.github.io/GalaxeaVLA/)
+  [](https://arxiv.org/abs/2509.00576v1) [](https://opengalaxea.github.io/GalaxeaVLA/)
+  [](https://opengalaxea.github.io/GalaxeaVLA/visualizer/index.html) [](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset)
+  [](https://www.modelscope.cn/datasets/Galaxea/Galaxea-Open-World-Dataset) [](https://x.com/Galaxea_x)
+  [](https://www.linkedin.com/company/galaxeadynamics/posts/?feedView=all&viewAsMember=true)
+  [](https://discord.gg/hB6BuUWZZA) ## \U0001F4E2 News [Feb 12, 2026] Update **G0Plus**
+  pre-trained weights trained on larger-scale teleoperation and web data. Release
+  **G0Tiny** (250M, SmolVLM2 backbone) for R1 Pro Orin edge deployment. New out-of-the-box
+  demos: **Fold Towels** and **Handover Gift** (on-device G0Tiny inference via TensorRT
+  at up to 10 Hz). Add [openpi](https://github.com/Physical-Intelligence/openpi)-based
+  **pi0/pi0fast** fine-tuning support. [Jan 4, 2026] We are releasing **G0Plus**,
+  our latest pre-trained VLA model for multi-task robot manipulation. [Oct 7, 2025]
+  Now Lerobot Format Galaxea Open-World Dataset is available at [Huggingface](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset)!
+  [Sep 17, 2025] Release G0-VLA fine-tuning and real-robot inference code. [Sep 9,
+  2025] Release G0-VLA pretrained model weights. [Huggingface](https://huggingface.co/OpenGalaxea/G0-VLA)
+  and [Modelscope](https://www.modelscope.cn/models/Galaxea/G0-VLA)! [Sep 9, 2025]
+  Release Galaxea Open-World Dataset. [Huggingface](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset)
+  and [Modelscope](https://www.modelscope.cn/datasets/Galaxea/Galaxea-Open-World-Dataset)!
+  ## \U0001F4CC Overview **GalaxeaVLA** is an open-source project dedicated to advancing
+  real-world, long-horizon, and few-shot robot manipulation. 1. **Galaxea Open-World
+  Dataset** - **500+ hours** of real-world mobile manipulation data. - All data collected
+  using **one uniform robotic embodiment** for consistency. - Fine-grained **subtask
+  language annotations**. - Covers **residential**, **kitchen**, **retail**, and **office**
+  settings. - Dataset in **RLDS/LeRobot** format. 2. **Easy-to-Use Fine-Tuning Framework**
+  - Fully compatible with the [LeRobot](https://github.com/huggingface/lerobot) dataset
+  format and scalable to large, real-world datasets. - Modular design enables easy
+  extension and adaptation for new tasks and environments. 3. **Model Checkpoints
+  & An Out-of-the-Box Demo!** - **G0Plus_3B_base**: A powerful pre-trained model with
+  **2k hours+** real-world robot data for fine-tuning on custom tasks. - **G0Tiny_250M_base**:
+  A lightweight pre-trained model with **1k hours** of R1 Pro VR teleoperation data,
+  with only **250M** parameters for on-device deployment on the R1 Pro Orin platform.
+  - **G0Plus_3B_base-pick_and_place**: A deployment-ready checkpoint, post-trained
+  for robust pick-and-place performance in the wild. - **Out-of-the-Box Pick Up Anything
+  Demo**: a Dockerfile and step-by-step guides for quick setup and reproducible experiments.
+  - **Out-of-the-Box Fold Towels Demo**: a Dockerfile and step-by-step guides for
+  quick setup and reproducible experiments. - **Out-of-the-Box Handover Gift Demo**:
+  a step-by-step guide for on-device G0Tiny VLA inference on R1 Pro Orin. ## \U0001F680
+  Galaxea Open-World Dataset ### **Key features** - **500+ hours** of real-world mobile
+  manipulation data. - All data collected using **one uniform robotic embodiment**
+  for consistency. - Fine-grained **subtask language annotations**. - Covers **residential**,
+  **kitchen**, **retail**, and **office** settings. - Dataset in **RLDS** and **LeRobot**
+  format. See more dataset (formats and examples) details [here](docs/dataset.md).
+  ## ⚙️ GalaxeaVLA Getting Started ### GPU Requirements To run our pretrained models
+  in this repository, you will need an NVIDIA GPU with at least the following specifications.
+  These estimations assume a single GPU, but you can also use multiple GPUs with model
+  parallelism to reduce per-GPU memory requirements by configuring `--nnodes` and`--nproc-per-node`
+  in the fine-tune start shell script. | Mode | Memory Required | Example GPU | |
+  ------------------ | --------------- | ------------------------ | | Inference |
+  > 8 GB | RTX 3090 / **RTX 4090 (Recommended)** | | Fine-Tuning (Full) | > 70 GB
+  | A100 (80GB) / H20 (96GB) | ### Installation ```bash git clone https://github.com/OpenGalaxea/GalaxeaVLA
+  cd GalaxeaVLA uv sync --index-strategy unsafe-best-match source .venv/bin/activate
+  uv pip install -e . uv pip install -e .[dev] ``` Note that before you run the installation:
+  1. Recommend to [install uv](https://docs.astral.sh/uv/getting-started/installation/)
+  without using a conda environment. 2. Recommend to add env variables at the beginning
+  of your terminal, if you are in the country: ```bash export UV_DEFAULT_INDEX=https://mirrors.aliyun.com/pypi/simple/
+  export UV_PYTHON_INSTALL_MIRROR=https://gh-proxy.com/https://github.com/astr"
 ---
 {% raw %}
 # Galaxea Open-World Dataset & G0 Dual-System VLA Model

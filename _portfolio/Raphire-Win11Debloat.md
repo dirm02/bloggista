@@ -2,8 +2,65 @@
 layout: project
 name: Raphire Win11debloat
 slug: Raphire-Win11Debloat
+category: WindowsTools- Linux
 image: https://img.shields.io/github/v/release/Raphire/Win11Debloat?style=for-the-badge&label=Latest%20release
 repo_url: https://github.com/Raphire/Win11Debloat
+indexed_content: '# Win11Debloat [](https://github.com/Raphire/Win11Debloat/releases/latest)
+  [](https://github.com/Raphire/Win11Debloat/discussions) [](https://github.com/Raphire/Win11Debloat/wiki/)
+  Win11Debloat is a lightweight, easy to use PowerShell script that allows you to
+  quickly declutter and improve your Windows experience. It can remove pre-installed
+  bloatware apps, disable telemetry, remove intrusive interface elements and much
+  more. No need to painstakingly go through all the settings yourself or remove apps
+  one by one. Win11Debloat makes the process quick and easy! The script also includes
+  many features that system administrators and power users will enjoy. Such as support
+  for Windows Audit mode, the option to make changes to other Windows users and the
+  ability to access all of Win11Debloat''s features right from the command-line. Please
+  refer to our [wiki](https://github.com/Raphire/Win11Debloat/wiki/) for more details.
+  #### Did this script help you? Please consider buying me a cup of coffee to support
+  my work [](https://ko-fi.com/M4M5C6UPC) ## Usage > [!Warning] > Great care went
+  into making sure this script does not unintentionally break any OS functionality,
+  but use at your own risk! If you run into any issues, please report them [here](https://github.com/Raphire/Win11Debloat/issues).
+  ### Quick method Download & run the script automatically via PowerShell. 1. Open
+  PowerShell or Terminal, preferably as an administrator. 2. Copy and paste the command
+  below into PowerShell: ```PowerShell & ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
+  ``` 3. Wait for the script to automatically download Win11Debloat. 4. Carefully
+  read through and follow the on-screen instructions. This method supports command-line
+  parameters to customize the behaviour of the script. Please click [here](https://github.com/Raphire/Win11Debloat/wiki/Command%E2%80%90line-Interface#parameters)
+  for more information. ### Traditional method Manually download & run the script.
+  1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/releases/latest),
+  and extract the .ZIP file to your desired location. 2. Navigate to the Win11Debloat
+  folder 3. Double click the `Run.bat` file to start the script. NOTE: If the console
+  window immediately closes and nothing happens, try the advanced method below. 4.
+  Accept the Windows UAC prompt to run the script as administrator, this is required
+  for the script to function. 5. Carefully read through and follow the on-screen instructions.
+  ### Advanced method Manually download the script & run the script via PowerShell.
+  Recommended for advanced users. 1. [Download the latest version of the script](https://github.com/Raphire/Win11Debloat/releases/latest),
+  and extract the .ZIP file to your desired location. 2. Open PowerShell or Terminal
+  as an administrator. 3. Temporarily enable PowerShell execution by entering the
+  following command: ```PowerShell Set-ExecutionPolicy Unrestricted -Scope Process
+  -Force ``` 4. In PowerShell, navigate to the directory where the files were extracted.
+  Example: `cd c:\Win11Debloat` 5. Now run the script by entering the following command:
+  ```PowerShell .\Win11Debloat.ps1 ``` 6. Carefully read through and follow the on-screen
+  instructions. This method supports command-line parameters to customize the behaviour
+  of the script. Please click [here](https://github.com/Raphire/Win11Debloat/wiki/Command%E2%80%90line-Interface#parameters)
+  for more information. ## Features Below is an overview of the key features and functionality
+  offered by Win11Debloat. Please refer to [the wiki](https://github.com/Raphire/Win11Debloat/wiki/Default-Settings)
+  for more information about the default settings preset. > [!Tip] > All of the changes
+  made by Win11Debloat can easily be reverted and almost all of the apps can be reinstalled
+  through the Microsoft Store. A full guide on how to revert changes can be found
+  [here](https://github.com/Raphire/Win11Debloat/wiki/Reverting-Changes). #### App
+  Removal - Remove a wide variety of preinstalled apps. Click [here](https://github.com/Raphire/Win11Debloat/wiki/App-Removal)
+  for more info. #### Privacy & Suggested Content - Disable telemetry, diagnostic
+  data, activity history, app-launch tracking & targeted ads. - Disable tips, tricks,
+  suggestions & ads across Windows. - Disable ''Windows Spotlight'' and tips & tricks
+  on the lock screen. - Disable ''Windows Spotlight'' desktop background option. -
+  Disable ads, suggestions and the MSN news feed in Microsoft Edge. - Hide Microsoft
+  365 ads on the Settings ''Home'' page, or hide the ''Home'' page entirely. ####
+  AI Features - Disable & remove Microsoft Copilot. - Disable Windows Recall. (W11
+  only) - Disable Click to Do, AI text & image analysis tool. (W11 only) - Disable
+  AI Features in Edge. (W11 only) - Disable AI Features in Paint. (W11 only) - Disable
+  AI Features in Notepad. (W11 only) #### System - Disable the Drag Tray for sharing
+  & moving files. (W11 only) - Restore the old Windows 10 style context menu. '
 ---
 {% raw %}
 # Win11Debloat

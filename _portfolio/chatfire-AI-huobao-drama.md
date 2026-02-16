@@ -2,8 +2,69 @@
 layout: project
 name: Chatfire Ai Huobao Drama
 slug: chatfire-AI-huobao-drama
+category: Uncategorized
 image: https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat&logo=go
 repo_url: https://github.com/chatfire-AI/huobao-drama.git
+indexed_content: "# \U0001F3AC Huobao Drama - AI Short Drama Production Platform **Full-stack
+  AI Short Drama Automation Platform Based on Go + Vue3** [](https://golang.org) [](https://vuejs.org)
+  [](https://creativecommons.org/licenses/by-nc-sa/4.0/) [Features](#features) • [Quick
+  Start](#quick-start) • [Deployment](#deployment) [简体中文](README-CN.md) | [English](README.md)
+  | [日本語](README-JA.md) --- ## \U0001F4D6 About Huobao Drama is an AI-powered short
+  drama production platform that automates the entire workflow from script generation,
+  character design, storyboarding to video composition. 火宝短剧商业版地址：[火宝短剧商业版](https://drama.chatfire.site/shortvideo)
+  火宝小说生成：[火宝小说生成](https://marketing.chatfire.site/huobao-novel/) ### \U0001F3AF Core
+  Features - **\U0001F916 AI-Driven**: Parse scripts using large language models to
+  extract characters, scenes, and storyboards - **\U0001F3A8 Intelligent Creation**:
+  AI-generated character portraits and scene backgrounds - **\U0001F4F9 Video Generation**:
+  Automatic storyboard video generation using text-to-video and image-to-video models
+  - **\U0001F504 Complete Workflow**: End-to-end production workflow from idea to
+  final video。 ### \U0001F6E0️ Technical Architecture Based on **DDD (Domain-Driven
+  Design)** with clear layering: ``` ├── API Layer (Gin HTTP) ├── Application Service
+  Layer (Business Logic) ├── Domain Layer (Domain Models) └── Infrastructure Layer
+  (Database, External Services) ``` ### \U0001F3A5 Demo Videos Experience AI short
+  drama generation: **Sample Work 1** **Sample Work 2** [Watch Video 1](https://ffile.chatfire.site/cf/public/20260114094337396.mp4)
+  | [Watch Video 2](https://ffile.chatfire.site/cf/public/fcede75e8aeafe22031dbf78f86285b8.mp4)
+  --- ## ✨ Features ### \U0001F3AD Character Management - ✅ AI-generated character
+  portraits - ✅ Batch character generation - ✅ Character image upload and management
+  ### \U0001F3AC Storyboard Production - ✅ Automatic storyboard script generation
+  - ✅ Scene descriptions and shot design - ✅ Storyboard image generation (text-to-image)
+  - ✅ Frame type selection (first frame/key frame/last frame/panel) ### \U0001F3A5
+  Video Generation - ✅ Automatic image-to-video generation - ✅ Video composition and
+  editing - ✅ Transition effects ### \U0001F4E6 Asset Management - ✅ Unified asset
+  library management - ✅ Local storage support - ✅ Asset import/export - ✅ Task progress
+  tracking --- ## \U0001F680 Quick Start ### \U0001F4CB Prerequisites | Software |
+  Version | Description | | ----------- | ------- | -------------------------------
+  | | **Go** | 1.23+ | Backend runtime | | **Node.js** | 18+ | Frontend build environment
+  | | **npm** | 9+ | Package manager | | **FFmpeg** | 4.0+ | Video processing (**Required**)
+  | | **SQLite** | 3.x | Database (built-in) | #### Installing FFmpeg **macOS:** ```bash
+  brew install ffmpeg ``` **Ubuntu/Debian:** ```bash sudo apt update sudo apt install
+  ffmpeg ``` **Windows:** Download from [FFmpeg Official Site](https://ffmpeg.org/download.html)
+  and configure environment variables Verify installation: ```bash ffmpeg -version
+  ``` ### ⚙️ Configuration Copy and edit the configuration file: ```bash cp configs/config.example.yaml
+  configs/config.yaml vim configs/config.yaml ``` Configuration file format (`configs/config.yaml`):
+  ```yaml app: name: \"Huobao Drama API\" version: \"1.0.0\" debug: true # Set to
+  true for development, false for production server: port: 5678 host: \"0.0.0.0\"
+  cors_origins: - \"http://localhost:3012\" read_timeout: 600 write_timeout: 600 database:
+  type: \"sqlite\" path: \"./data/drama_generator.db\" max_idle: 10 max_open: 100
+  storage: type: \"local\" local_path: \"./data/storage\" base_url: \"http://localhost:5678/static\"
+  ai: default_text_provider: \"openai\" default_image_provider: \"openai\" default_video_provider:
+  \"doubao\" ``` **Key Configuration Items:** - `app.debug`: Debug mode switch (recommended
+  true for development) - `server.port`: Service port - `server.cors_origins`: Allowed
+  CORS origins for frontend - `database.path`: SQLite database file path - `storage.local_path`:
+  Local file storage path - `storage.base_url`: Static resource access URL - `ai.default_*_provider`:
+  AI service provider configuration (API keys configured in Web UI) ### \U0001F4E5
+  Installation ```bash # Clone the project git clone https://github.com/chatfire-AI/huobao-drama.git
+  cd huobao-drama # Install Go dependencies go mod download # Install frontend dependencies
+  cd web npm install cd .. ``` ### \U0001F3AF Starting the Project #### Method 1:
+  Development Mode (Recommended) **Frontend and backend separation with hot reload**
+  ```bash # Terminal 1: Start backend service go run main.go # Terminal 2: Start frontend
+  dev server cd web npm run dev ``` - Frontend: `http://localhost:3012` - Backend
+  API: `http://localhost:5678/api/v1` - Frontend automatically proxies API requests
+  to backend #### Method 2: Single Service Mode **Backend serves both API and frontend
+  static files** ```bash # 1. Build frontend cd web npm run build cd .. # 2. Start
+  service go run main.go ``` Access: `http://localhost:5678` ### \U0001F5C4️ Database
+  Initialization Database tables are automatically created on first startup (using
+  GORM AutoMigrate), no manual mig"
 ---
 {% raw %}
 # 🎬 Huobao Drama - AI Short Drama Production Platform

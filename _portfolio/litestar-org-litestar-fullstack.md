@@ -2,8 +2,35 @@
 layout: project
 name: Litestar Org Litestar Fullstack
 slug: litestar-org-litestar-fullstack
+category: Uncategorized
 image: https://github.com/litestar-org/litestar-fullstack/actions/workflows/ci.yaml/badge.svg
 repo_url: https://github.com/litestar-org/litestar-fullstack
+indexed_content: "| Project | | Status | | --------- | :-- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | CI/CD | | [](https://github.com/litestar-org/litestar-fullstack/actions/workflows/ci.yaml)
+  | | Quality | | [](https://sonarcloud.io/summary/new_code?id=litestar-org_litestar)
+  [](https://sonarcloud.io/summary/new_code?id=litestar-org_litestar) [](https://sonarcloud.io/summary/new_code?id=litestar-org_litestar)
+  [](https://sonarcloud.io/summary/new_code?id=litestar-org_litestar) [](https://sonarcloud.io/summary/new_code?id=litestar-org_litestar)
+  | | Community | | [](https://reddit.com/r/litestarapi) [](https://discord.gg/litestar)
+  [](https://matrix.to/#/#litestar:matrix.org) [](https://blog.litestar.dev) [](https://twitter.com/LitestarAPI)
+  [](https://blog.litestar.dev) | | Meta | | [](https://github.com/litestar-org/litestar)
+  [](https://github.com/python/mypy) [](https://spdx.org/licenses/) [](https://github.com/sponsors/litestar-org)
+  [](https://github.com/astral-sh/ruff) [](https://github.com/psf/black) [](#contributors-)
+  | # Litestar Fullstack Reference Application This is a reference application that
+  you can use to get your next Litestar application running quickly. It contains most
+  of the boilerplate required for a production web API with features like: - Latest
+  Litestar configured with best practices - Integration with [SQLAlchemy 2.0](https://www.sqlalchemy.org/),
+  [SAQ (Simple Asynchronous Queue)](https://saq-py.readthedocs.io/en/latest/), [Structlog](https://www.structlog.org/en/stable/),
+  and [Granian](https://github.com/emmett-framework/granian) - Frontend integrated
+  with Vite in SPA mode and React Email templates compiled to static HTML - JWT auth
+  with refresh tokens, MFA, OAuth, and admin surfaces - Multi-stage Docker build using
+  a minimal Python 3.13 runtime image (including a distroless variant) - Team and
+  role management with service/repository patterns and Advanced Alchemy filters Take
+  what you need and adapt it to your own projects ## Quick Start To quickly get a
+  development environment running, run the following: ```shell make install . .venv/bin/activate
+  ``` ### Local Development ```bash cp .env.local.example .env . .venv/bin/activate
+  make start-infra app database upgrade app run ``` ### Docker If you want to run
+  the entire development environment containerized, you can run the following: ```bash
+  docker compose up ```"
 ---
 {% raw %}
 <!-- markdownlint-disable -->

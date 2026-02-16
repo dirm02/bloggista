@@ -2,8 +2,44 @@
 layout: project
 name: Evershopcommerce Evershop
 slug: evershopcommerce-evershop
+category: Platform -eCommerce
 image: https://img.shields.io/twitter/url/http/shields.io.svg?style=social
 repo_url: https://github.com/evershopcommerce/evershop
+indexed_content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EverShop Documentation | Demo
+  ## Introduction EverShop is a modern, TypeScript-first eCommerce platform built
+  with GraphQL and React. Designed for developers, it offers essential commerce features
+  in a modular, fully customizable architecture—perfect for building tailored shopping
+  experiences with confidence and speed. ## Installation Using Docker You can get
+  started with EverShop in minutes by using the Docker image. The Docker image is
+  a great way to get started with EverShop without having to worry about installing
+  dependencies or configuring your environment. ```bash curl -sSL https://raw.githubusercontent.com/evershopcommerce/evershop/main/docker-compose.yml
+  > docker-compose.yml docker compose up -d ``` For the full installation guide, please
+  refer to our [Installation guide](https://evershop.io/docs/development/getting-started/installation-guide).
+  ## Documentation - [Installation guide](https://evershop.io/docs/development/getting-started/installation-guide).
+  - [Extension development](https://evershop.io/docs/development/module/create-your-first-extension).
+  - [Theme development](https://evershop.io/docs/development/theme/theme-overview).
+  ## Demo Explore our demo store. Demo user: Email: demo@evershop.io Password: 123456
+  ## Support If you like my work, feel free to: - ⭐ this repository. It helps. - [][tweet]
+  about EverShop. Thank you! [tweet]: https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fevershopcommerce%2Fevershop&text=Awesome%20React%20Ecommerce%20Project&hashtags=react,ecommerce,expressjs,graphql
+  ## Contributing EverShop is an open-source project. We are committed to a fully
+  transparent development process and appreciate highly any contributions. Whether
+  you are helping us fix bugs, proposing new features, improving our documentation
+  or spreading the word - we would love to have you as part of the EverShop community.
+  ### Ask a question about EverShop You can ask questions, and participate in discussions
+  about EverShop-related topics in the EverShop Discord channel. ### Create a bug
+  report If you see an error message or run into an issue, please [create bug report](https://github.com/evershopcommerce/evershop/issues/new).
+  This effort is valued and it will help all EverShop users. ### Submit a feature
+  request If you have an idea, or you're missing a capability that would make development
+  easier and more robust, please [Submit feature request](https://github.com/evershopcommerce/evershop/issues/new).
+  If a similar feature request already exists, don't forget to leave a \"+1\". If
+  you add some more information such as your thoughts and vision about the feature,
+  your comments will be embraced warmly :) Please refer to our [Contribution Guidelines](./CONTRIBUTING.md)
+  and [Code of Conduct](./CODE_OF_CONDUCT.md). ## \U0001F680 The Future of EverShop
+  EverShop is seeing rapid organic growth and strong adoption from the developer community.
+  We are now scaling our operations and building **EverShop Cloud**. If you are a
+  strategic investor interested in the future of Node.js commerce and our mission
+  to set a new standard for modern eCommerce, we’d love to share our vision and roadmap
+  with you. \U0001F4E9 **Get in touch:** support@evershop.io ## License [GPL-3.0 License](https://github.com/evershopcommerce/evershop/blob/main/LICENSE)"
 ---
 {% raw %}
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>

@@ -2,8 +2,63 @@
 layout: project
 name: Ggml Org Llama.cpp
 slug: ggml-org-llama.cpp
+category: Uncategorized
 image: https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png
 repo_url: https://github.com/ggml-org/llama.cpp
+indexed_content: "# llama.cpp [](https://opensource.org/licenses/MIT) [](https://github.com/ggml-org/llama.cpp/releases)
+  [](https://github.com/ggml-org/llama.cpp/actions/workflows/server.yml) [Manifesto](https://github.com/ggml-org/llama.cpp/discussions/205)
+  / [ggml](https://github.com/ggml-org/ggml) / [ops](https://github.com/ggml-org/llama.cpp/blob/master/docs/ops.md)
+  LLM inference in C/C++ ## Recent API changes - [Changelog for `libllama` API](https://github.com/ggml-org/llama.cpp/issues/9289)
+  - [Changelog for `llama-server` REST API](https://github.com/ggml-org/llama.cpp/issues/9291)
+  ## Hot topics - **[guide : using the new WebUI of llama.cpp](https://github.com/ggml-org/llama.cpp/discussions/16938)**
+  - [guide : running gpt-oss with llama.cpp](https://github.com/ggml-org/llama.cpp/discussions/15396)
+  - [[FEEDBACK] Better packaging for llama.cpp to support downstream consumers \U0001F917](https://github.com/ggml-org/llama.cpp/discussions/15313)
+  - Support for the `gpt-oss` model with native MXFP4 format has been added | [PR](https://github.com/ggml-org/llama.cpp/pull/15091)
+  | [Collaboration with NVIDIA](https://blogs.nvidia.com/blog/rtx-ai-garage-openai-oss)
+  | [Comment](https://github.com/ggml-org/llama.cpp/discussions/15095) - Multimodal
+  support arrived in `llama-server`: [#12898](https://github.com/ggml-org/llama.cpp/pull/12898)
+  | [documentation](./docs/multimodal.md) - VS Code extension for FIM completions:
+  https://github.com/ggml-org/llama.vscode - Vim/Neovim plugin for FIM completions:
+  https://github.com/ggml-org/llama.vim - Hugging Face Inference Endpoints now support
+  GGUF out of the box! https://github.com/ggml-org/llama.cpp/discussions/9669 - Hugging
+  Face GGUF editor: [discussion](https://github.com/ggml-org/llama.cpp/discussions/9268)
+  | [tool](https://huggingface.co/spaces/CISCai/gguf-editor) ---- ## Quick start Getting
+  started with llama.cpp is straightforward. Here are several ways to install it on
+  your machine: - Install `llama.cpp` using [brew, nix or winget](docs/install.md)
+  - Run with Docker - see our [Docker documentation](docs/docker.md) - Download pre-built
+  binaries from the [releases page](https://github.com/ggml-org/llama.cpp/releases)
+  - Build from source by cloning this repository - check out [our build guide](docs/build.md)
+  Once installed, you'll need a model to work with. Head to the [Obtaining and quantizing
+  models](#obtaining-and-quantizing-models) section to learn more. Example command:
+  ```sh # Use a local model file llama-cli -m my_model.gguf # Or download and run
+  a model directly from Hugging Face llama-cli -hf ggml-org/gemma-3-1b-it-GGUF # Launch
+  OpenAI-compatible API server llama-server -hf ggml-org/gemma-3-1b-it-GGUF ``` ##
+  Description The main goal of `llama.cpp` is to enable LLM inference with minimal
+  setup and state-of-the-art performance on a wide range of hardware - locally and
+  in the cloud. - Plain C/C++ implementation without any dependencies - Apple silicon
+  is a first-class citizen - optimized via ARM NEON, Accelerate and Metal frameworks
+  - AVX, AVX2, AVX512 and AMX support for x86 architectures - RVV, ZVFH, ZFH, ZICBOP
+  and ZIHINTPAUSE support for RISC-V architectures - 1.5-bit, 2-bit, 3-bit, 4-bit,
+  5-bit, 6-bit, and 8-bit integer quantization for faster inference and reduced memory
+  use - Custom CUDA kernels for running LLMs on NVIDIA GPUs (support for AMD GPUs
+  via HIP and Moore Threads GPUs via MUSA) - Vulkan and SYCL backend support - CPU+GPU
+  hybrid inference to partially accelerate models larger than the total VRAM capacity
+  The `llama.cpp` project is the main playground for developing new features for the
+  [ggml](https://github.com/ggml-org/ggml) library. Models Typically finetunes of
+  the base models below are supported as well. Instructions for adding support for
+  new models: [HOWTO-add-model.md](docs/development/HOWTO-add-model.md) #### Text-only
+  - [X] LLaMA \U0001F999 - [x] LLaMA 2 \U0001F999\U0001F999 - [x] LLaMA 3 \U0001F999\U0001F999\U0001F999
+  - [X] [Mistral 7B](https://huggingface.co/mistralai/Mistral-7B-v0.1) - [x] [Mixtral
+  MoE](https://huggingface.co/models?search=mistral-ai/Mixtral) - [x] [DBRX](https://huggingface.co/databricks/dbrx-instruct)
+  - [x] [Jamba](https://huggingface.co/ai21labs) - [X] [Falcon](https://huggingface.co/models?search=tiiuae/falcon)
+  - [X] [Chinese LLaMA / Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) and
+  [Chinese LLaMA-2 / Alpaca-2](https://github.com/ymcui/Chinese-LLaMA-Alpaca-2) -
+  [X] [Vigogne (French)](https://github.com/bofenghuang/vigogne) - [X] [BERT](https://github.com/ggml-org/llama.cpp/pull/5423)
+  - [X] [Koala](https://bair.berkeley.edu/blog/2023/04/03/koala/) - [X] [Baichuan
+  1 & 2](https://huggingface.co/models?search=baichuan-inc/Baichuan) + [derivations](https://huggingface.co/hiyouga/baichuan-7b-sft)
+  - [X] [Aquila 1 & 2](https://huggingface.co/models?search=BAAI/Aquila) - [X] [Starcoder
+  models](https://github.com/ggml-org/llama.cpp/pull/3187) - [X] [Refact](https://huggingface.co/smallcloudai/Refact-1_6B-fim)
+  - [X] [MPT](https://github.com/ggml-org/llama.cpp/pull/3417) - [X] [Bloom](https://gi"
 ---
 {% raw %}
 # llama.cpp

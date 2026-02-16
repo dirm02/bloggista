@@ -2,8 +2,68 @@
 layout: project
 name: Fathulfahmy Aio Usb Drive
 slug: fathulfahmy-aio-usb-drive
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fathulfahmy-aio-usb-drive/images/logo.png
 repo_url: https://github.com/othneildrew/Best-README-Template
+indexed_content: '[![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url] [![LinkedIn][linkedin-shield]][linkedin-url]
+  --> All In One USB Drive A curated collection of useful to have programs on a multiboot
+  USB drive Explore the docs » View Demo &middot; --> Report Bug &middot; Request
+  Feature Table of Contents About Programs Getting Started Prerequisites Setup USB
+  Drive Add Programs Usage FAQ Roadmap Contributing License Contact Acknowledgments
+  ## About ![All In One USB Drive Screen Shot][product-screenshot] All In One USB
+  Drive is a curated collection of diagnostic and rescue tools, operating system,
+  and application installers, along with a step‑by‑step guide for preparing and using
+  the USB drive. The repository serves as a reference for building a "Swiss‑army knife"
+  USB drive that bundles essential utilities into a single, updatable, portable toolkit.
+  ( back to top ) ## Programs ### Open-source | Name | Description | Download | |
+  ------------ | --------------------------------------------------------- | --------------------------------------
+  | | SystemRescue | Linux-based rescue toolkit | [Download SystemRescue][system-rescue]
+  | | Rescuezilla | Disk imaging/cloning | [Download Rescuezilla][rescuezilla] | |
+  Netboot.xyz | Network required rescue toolkit and OS installer | [Download Netboot.xyz][netbootxyz]
+  | | Debian | LTS Linux distro live environment and installer | [Download Debian][debian]
+  | | Ubuntu | LTS Linux distro live environment and installer | [Download Ubuntu][ubuntu]
+  | | Fedora Linux | Bleeding-edge Linux distro live environment and installer | [Download
+  Fedora Linux][fedora-linux] | | Arch Linux | Bleeding-edge Linux distro installer
+  | [Download Arch Linux][arch-linux] | ### Closed-source | Name | Description | Download
+  | | ----------------- | --------------------------------------- | ----------------------------------------------
+  | | Hiren''s BootCD PE | Windows 11-based rescue toolkit | [Download Hiren''s BootCD
+  PE][hirens-bootcd-pe] | | Windows 11 | Microsoft Windows 11 installer | [Download
+  Windows 11][windows11] | | OfficeSetup | Microsoft Office 365 Pro Plus installer
+  | [Download Office365][office365] | > [!TIP] > See [Community Pick](#community-pick)
+  for recommended tools and alternatives by the community. ( back to top ) ## Getting
+  started ### Prerequisites - USB drive > [!IMPORTANT] > Minimum 32 GB > Recommended
+  64 GB > (To install all programs listed above) ### Setup USB Drive 1. Format USB
+  drive 2. [Download Ventoy][ventoy] 3. Extract Ventoy 4. Run `Ventoy2Disk.exe` on
+  Windows or `VentoyGUI` on Linux 5. Select USB drive 6. Click install or update ###
+  Add Programs 1. Download ISO 2. Copy and paste ISO to multiboot USB drive > [!TIP]
+  > Ventoy USB drive works as a regular USB drive. You may add or remove any type
+  of files. You may format Ventoy USB drive to remove Ventoy. ( back to top ) ## Usage
+  1. Power OFF PC 2. Insert multiboot USB drive 3. Power ON PC 4. Enter BIOS 5. Set
+  multiboot USB drive as first boot option 6. Save and exit ( back to top ) ## FAQ
+  **Q: How to launch Netboot.xyz?** A: Connect PC to ethernet before turning on PC
+  **Q: Where is GParted and Memtest86+?** A: It is included in SystemRescue **Q: How
+  to activate Microsoft?** A: Run [Microsoft Activation Script][massgrave] 1. Install
+  Microsoft Windows or Microsoft Office 365 2. Launch Windows 3. Open Powershell 4.
+  Copy and paste the code below ```sh irm https://get.activated.win | iex ``` 4. Press
+  Enter - HWID - Permanently Activate Windows - Ohook - Permanently Activate Office
+  - TSforge - Permanently Activate Windows/ESU/Office ( back to top ) ## Community
+  Pick | Name | Description | Download | | ---- | ----------- | -------- | | Grml
+  | Linux live-system for rescue and generic purposes | [Download Grml][grml] | |
+  | | | ## Roadmap See [open issues](https://github.com/fathulfahmy/aio-usb-drive/issues)
+  for a full list of proposed features (and known issues). ( back to top ) ## Contributing
+  Contributions are what make the open source community such an amazing place to learn,
+  inspire, and create. Any contributions you make are **greatly appreciated**. If
+  you have a suggestion that would make this better, please fork the repo and create
+  a pull request. You can also simply open an issue with the tag "enhancement". Don''t
+  forget to give the project a star! Thanks again! 1. Fork the project 2. Create your
+  feature branch (`git checkout -b feat/amazing-feature`) 3. Commit your changes (`git
+  commit -m ''feat: add some amazing feature''`) 4. Push to the branch (`git push
+  origin feat/amazing-feature`) 5. Open a Pull Request ( back to top ) ### Top contributors
+  ## License Distributed under the MIT License. See `LICENSE` for more information.
+  ( back to top ) ## Contact Fathul Fahmy - [@fathulfahmy](https://linkedin.com/in/fathulfahmy)
+  - fathulfahmy@protonmail.com Project Link: https://github.com'
 ---
 {% raw %}
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->

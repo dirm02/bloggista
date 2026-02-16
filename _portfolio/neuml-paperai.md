@@ -2,8 +2,63 @@
 layout: project
 name: Neuml Paperai
 slug: neuml-paperai
+category: Science -math-physics-chemistry
 image: https://raw.githubusercontent.com/neuml/paperai/master/demo.png
 repo_url: https://github.com/neuml/paperai
+indexed_content: 'AI for medical and scientific papers -------------------------------------------------------------------------------------------------------------------------------------------------------
+  `paperai` is an AI application for medical and scientific papers. ⚡ Supercharge
+  research tasks with AI-driven report generation. A `paperai` application goes through
+  repositories of articles and generates bulk answers to questions backed by Large
+  Language Model (LLM) prompts and Retrieval Augmented Generation (RAG) pipelines.
+  A `paperai` configuration file enables bulk LLM inference operations in a performant
+  manner. Think of it like kicking off hundreds of ChatGPT prompts over your data.
+  `paperai` can generate reports in Markdown, CSV and annotate answers directly on
+  PDFs (when available). ## Installation The easiest way to install is via pip and
+  PyPI ``` pip install paperai ``` Python 3.10+ is supported. Using a Python [virtual
+  environment](https://docs.python.org/3/library/venv.html) is recommended. `paperai`
+  can also be installed directly from GitHub to access the latest, unreleased features.
+  ``` pip install git+https://github.com/neuml/paperai ``` See [this link](https://neuml.github.io/txtai/install/#environment-specific-prerequisites)
+  to help resolve environment-specific install issues. ### Docker Run the steps below
+  to build a docker image with `paperai` and all dependencies. ``` wget https://raw.githubusercontent.com/neuml/paperai/master/docker/Dockerfile
+  docker build -t paperai . docker run --name paperai --rm -it paperai ``` paperetl
+  can be added in to have a single image to index and query content. Follow the instructions
+  to build a [paperetl docker image](https://github.com/neuml/paperetl#docker) and
+  then run the following. ``` docker build -t paperai --build-arg BASE_IMAGE=paperetl
+  --build-arg START=/scripts/start.sh . docker run --name paperai --rm -it paperai
+  ``` ## Examples The following notebooks and applications demonstrate the capabilities
+  provided by `paperai`. ### Notebooks | Notebook | Description | | |:----------|:-------------|------:|
+  | [Introducing paperai](https://github.com/neuml/paperai/blob/master/examples/01_Introducing_paperai.ipynb)
+  | Overview of the functionality provided by paperai | [](https://colab.research.google.com/github/neuml/paperai/blob/master/examples/01_Introducing_paperai.ipynb)
+  | | [Medical Research Project](https://github.com/neuml/paperai/blob/master/examples/02_Medical_Research_Project.ipynb)
+  | Research young onset colon cancer | [](https://colab.research.google.com/github/neuml/paperai/blob/master/examples/02_Medical_Research_Project.ipynb)
+  | ### Applications | Application | Description | |:----------|:-------------| |
+  [Search](https://github.com/neuml/paperai/blob/master/examples/search.py) | Search
+  a `paperai` index. Set query parameters, execute searches and display results. |
+  ## Building a model `paperai` indexes databases previously built with [paperetl](https://github.com/neuml/paperetl).
+  The following shows how to create a new `paperai` index. 1. (Optional) Create an
+  index.yml file `paperai` uses the default txtai embeddings configuration when not
+  specified. Alternatively, an index.yml file can be specified that takes all the
+  same options as a txtai embeddings instance. See the [txtai documentation](https://neuml.github.io/txtai/embeddings/configuration)
+  for more on the possible options. A simple example is shown below. ``` path: sentence-transformers/all-MiniLM-L6-v2
+  content: True ``` 2. Build embeddings index ``` python -m paperai.index ``` The
+  paperai.index process requires an input data path and optionally takes index configuration.
+  This configuration can either be a vector model path or an index.yml configuration
+  file. ## Running queries The fastest way to run queries is to start a `paperai`
+  shell ``` paperai ``` A prompt will come up. Queries can be typed directly into
+  the console. ## Report schema The following steps through an example `paperai` report
+  configuration file and describes each section. ```yaml name: ColonCancer options:
+  llm: Intelligent-Internet/II-Medical-8B-1706-GGUF/II-Medical-8B-1706.Q4_K_M.gguf
+  system: You are a medical literature document parser. You extract fields from data.
+  template: | Quickly extract the following field using the provided rules and context.
+  Rules: - Keep it simple, don''t overthink it - ONLY extract the data - NEVER explain
+  why the field is extracted - NEVER restate the field name only give the field value
+  - Say no data if the field can''t be found within the context Field: {question}
+  Context: {context} context: 5 params: maxlength: 4096 stripthink: True Research:
+  query: colon cancer young adults columns: - name: Date - name: Study - name: Study
+  Link - name: Journal - {name: Sample Size, query: number of patients, question:
+  Sample Size} - {name: Objective, query: objective, question: Study Objective} -
+  {name: Causes, query: possible causes, question: List of possible causes} - {name:
+  Detection, query: diagnosis, questio'
 ---
 {% raw %}
 <p align="center">

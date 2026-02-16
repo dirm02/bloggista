@@ -2,8 +2,62 @@
 layout: project
 name: Websitebeaver Capacitor Document Scanner
 slug: WebsiteBeaver-capacitor-document-scanner
+category: Serv&Prod-Tools
 image: https://img.shields.io/npm/v/capacitor-document-scanner/latest.svg?style=for-the-badge&logo=npm
 repo_url: https://github.com/WebsiteBeaver/capacitor-document-scanner
+indexed_content: "# Capacitor Document Scanner [](https://www.npmjs.com/package/capacitor-document-scanner)
+  [](https://github.com/WebsiteBeaver/capacitor-document-scanner/blob/master/package.json)
+  This is a Capacitor plugin that lets you scan documents using Android and iOS. You
+  can use it to create apps that let users scan notes, homework, business cards, receipts,
+  or anything with a rectangular shape. | iOS | Android | | --------------------------------------------------------------------------------------------------------------------
+  | ------------------------------------------------------------------------------------------------------------------------
+  | | | | ## Install ```bash npm install capacitor-document-scanner npx cap sync ```
+  ## Examples * [Basic Example](#basic-example) * [Limit Number of Scans](#limit-number-of-scans)
+  * [Remove Cropper](#remove-cropper) ### Basic Example ```typescript import { Capacitor
+  } from '@capacitor/core' import { DocumentScanner } from 'capacitor-document-scanner'
+  const scanDocument = async () => { // start the document scanner const { scannedImages
+  } = await DocumentScanner.scanDocument() // get back an array with scanned image
+  file paths if (scannedImages.length > 0) { // set the img src, so we can view the
+  first scanned image const scannedImage = document.getElementById('scannedImage')
+  as HTMLImageElement scannedImage.src = Capacitor.convertFileSrc(scannedImages[0])
+  } } ``` Here's what this example looks like with several items https://user-images.githubusercontent.com/26162804/160264220-0a77a55c-33b1-492a-9617-6d2c083b0583.mp4
+  https://user-images.githubusercontent.com/26162804/160264222-bef1ba3d-d6c1-43c8-ba2e-77ff5baef836.mp4
+  https://user-images.githubusercontent.com/26162804/161643046-57536193-0c6c-4edf-8f29-6f3ef9854dc5.mp4
+  https://user-images.githubusercontent.com/26162804/161643075-365b5008-4bc8-4507-969d-b2c188f372ec.mp4
+  https://user-images.githubusercontent.com/26162804/161643102-35283536-73a3-4b05-bd76-c06514ca3928.mp4
+  https://user-images.githubusercontent.com/26162804/161643126-f5c2461d-768d-481c-8dee-4d74a0cae778.mp4
+  https://user-images.githubusercontent.com/26162804/161643156-4ce1abac-d78b-4211-a99a-f0bebd40e2a6.mp4
+  https://user-images.githubusercontent.com/26162804/161643167-fc751455-1a1a-4b1c-b06f-a3a2cef0d0b0.mp4
+  https://user-images.githubusercontent.com/26162804/161643192-71db71af-392d-4b6a-b94d-851a3369dbf3.mp4
+  https://user-images.githubusercontent.com/26162804/161643203-2a265cc1-5cf1-4474-b43c-7b1b2dcba704.mp4
+  ### Limit Number of Scans You can limit the number of scans. For example if your
+  app lets a user scan a business card you might want them to only capture the front
+  and back. In this case you can set maxNumDocuments to 2. This only works on Android.
+  ```typescript import { Capacitor } from '@capacitor/core' import { DocumentScanner
+  } from 'capacitor-document-scanner' const scanDocument = async () => { // limit
+  the number of scans to 2 const { scannedImages } = await DocumentScanner.scanDocument({
+  maxNumDocuments: 2 }) // get back an array with scanned image file paths if (scannedImages.length
+  > 0) { // set the img src, so we can view the first scanned image const scannedImage
+  = document.getElementById('scannedImage') as HTMLImageElement scannedImage.src =
+  Capacitor.convertFileSrc(scannedImages[0]) } } ``` https://user-images.githubusercontent.com/26162804/161643345-6fe15f33-9414-46f5-b5d5-24d88948e801.mp4
+  ### Remove Cropper You can automatically accept the detected document corners, and
+  prevent the user from making adjustments. Set letUserAdjustCrop to false to skip
+  the crop screen. This limits the max number of scans to 1. This only works on Android.
+  ```typescript import { Capacitor } from '@capacitor/core' import { DocumentScanner
+  } from 'capacitor-document-scanner' const scanDocument = async () => { // skip the
+  crop screen const { scannedImages } = await DocumentScanner.scanDocument({ letUserAdjustCrop:
+  false }) // get back an array with scanned image file paths if (scannedImages.length
+  > 0) { // set the img src, so we can view the first scanned image const scannedImage
+  = document.getElementById('scannedImage') as HTMLImageElement scannedImage.src =
+  Capacitor.convertFileSrc(scannedImages[0]) } } ``` https://user-images.githubusercontent.com/26162804/161643377-cabd7f51-a16f-4f5e-938a-afb6f3b1c8cb.mp4
+  ## iOS iOS requires the following usage description be added and filled out for
+  your app in `Info.plist`: - `NSCameraUsageDescription` (`Privacy - Camera Usage
+  Description`) Read about [Configuring `Info.plist`](https://capacitorjs.com/docs/ios/configuration#configuring-infoplist)
+  in the [iOS Guide](https://capacitorjs.com/docs/ios) for more information on setting
+  iOS permissions in Xcode ## Documentation * [`scanDocument(...)`](#scandocument)
+  * [Interfaces](#interfaces) * [Enums](#enums) ### scanDocument(...) ```typescript
+  scanDocument(options?: ScanDocumentOptions | undefined) => Promise ``` Opens the
+  camera, and starts the document scan | Param | Type | | ----"
 ---
 {% raw %}
 # Capacitor Document Scanner

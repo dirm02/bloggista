@@ -2,8 +2,64 @@
 layout: project
 name: Hotheadhacker Awesome Selfhost Docker
 slug: hotheadhacker-awesome-selfhost-docker
+category: Very important!!!!
 image: https://gitads.dev/v1/ad-serve?source=hotheadhacker/awesome-selfhost-docker@github
 repo_url: https://github.com/nextcloud/docker)
+indexed_content: "# Awesome Self-Host Docker \U0001F680 Curated list of open-source,
+  self-hosted projects deployable with Docker and docker-compose. Your go-to resource
+  for amazing self-hostable software. ## GitAds Sponsored [](https://gitads.dev/v1/ad-track?source=hotheadhacker/awesome-selfhost-docker@github)
+  --- ## Table of Contents - [Productivity](#productivity) - [Development](#development)
+  - [Media](#media) - [Communication](#communication) - [Security](#security) - [Monitoring](#monitoring)
+  - [File Sharing](#file-sharing) - [Home Automation](#home-automation) - [Analytics](#analytics)
+  - [Miscellaneous](#miscellaneous) ## Productivity | Project | Description | |---------|-------------|
+  | [Nextcloud](https://github.com/nextcloud/docker) | Productivity platform for file
+  hosting and collaboration | | [Joplin](https://github.com/laurent22/joplin) | Note-taking
+  and to-do application | | [Paperless-ng](https://github.com/jonaswinkler/paperless-ng)
+  | Document management system | | [Bookstack](https://github.com/BookStackApp/BookStack)
+  | Platform for organizing and storing information | | [Trilium](https://github.com/zadam/trilium)
+  | Hierarchical note-taking application | | [HedgeDoc](https://github.com/hedgedoc/hedgedoc)
+  | Collaborative markdown editor | | [Wekan](https://github.com/wekan/wekan) | Open-source
+  Trello-like kanban board | | [Zim](https://github.com/jaap-karssenberg/zim-desktop-wiki)
+  | Desktop wiki & note-taking | | [Standard Notes](https://github.com/standardnotes/server)
+  | Encrypted note-taking app | | [Kanboard](https://github.com/kanboard/kanboard)
+  | Project management software | | [Etherpad](https://github.com/ether/etherpad-lite)
+  | Real-time collaborative document editing | | [OnlyOffice](https://github.com/ONLYOFFICE/Docker-DocumentServer)
+  | Office suite that enables you to manage documents, projects, team, and customer
+  relations in one place | | [CryptPad](https://github.com/xwiki-labs/cryptpad) |
+  Collaboration suite that is end-to-end encrypted | | [Outline](https://github.com/outline/outline)
+  | A modern team knowledge base | | [WeeWX](https://github.com/weewx/weewx) | Weather
+  station software | | [Kimai](https://github.com/kevinpapst/kimai2) | Time-tracking
+  application | | [Restyaboard](https://github.com/RestyaPlatform/board) | Open-source
+  Trello-like kanban board | | [Taskcafe](https://github.com/JordanKnott/taskcafe)
+  | Open-source project management tool | | [Focalboard](https://github.com/mattermost/focalboard)
+  | Open-source project management tool | | [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)
+  | Open-source Notion alternative with a focus on privacy and extensibility.| | [Tillywork](https://github.com/tillywork/tillywork)
+  | Opensource work management solution. Manage your sprints, projects, and sales
+  pipelines in one place | | [Huly](https://github.com/hcengineering/platform) | All-in-One
+  Project Management Platform | ## Development | Project | Description | |---------|-------------|
+  | [GitLab](https://github.com/gitlab/gitlab-ce) | DevOps platform | | [Gitea](https://github.com/go-gitea/gitea)
+  | Lightweight code hosting solution | | [Drone](https://github.com/drone/drone)
+  | Continuous Integration platform | | [Jenkins](https://github.com/jenkinsci/docker)
+  | Automation server for CI/CD | | [Gogs](https://github.com/gogs/gogs) | Painless
+  self-hosted Git service | | [Portainer](https://github.com/portainer/portainer)
+  | Lightweight management UI for Docker | | [SonarQube](https://github.com/SonarSource/docker-sonarqube)
+  | Continuous inspection of code quality | | [Sentry](https://github.com/getsentry/onpremise)
+  | Error tracking and performance monitoring | | [Taiga](https://github.com/taigaio/taiga-back)
+  | Project management platform | | [Redmine](https://github.com/bitnami/bitnami-docker-redmine)
+  | Project management web application | | [Phabricator](https://github.com/phacility/phabricator)
+  | Suite of open-source tools for peer code review, task management, and project
+  communication | | [Code-Server](https://github.com/cdr/code-server) | Run VS Code
+  on any machine anywhere | | [Theia](https://github.com/eclipse-theia/theia) | Cloud
+  & desktop IDE framework implemented in TypeScript | | [JupyterHub](https://github.com/jupyterhub/jupyterhub)
+  | Multi-user server for Jupyter notebooks | | [GitBucket](https://github.com/gitbucket/gitbucket)
+  | Git platform powered by Scala | | [Gerrit](https://github.com/GerritCodeReview/gerrit)
+  | Web-based code review system | | [Fossil](https://github.com/fossil-scm/fossil)
+  | Distributed version control system | | [Sourcegraph](https://github.com/sourcegraph/deploy-sourcegraph-docker)
+  | Code search and navigation tool | | [CodiMD](https://github.com/hackmdio/codimd)
+  | Real-time collaborative markdown notes | | [Leantime](https://github.com/Leantime/leantime)
+  | Open-source project management system | | [Tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)
+  | The financial transactions database designed for mission critical safety and performance.
+  | | [Undb](https://git"
 ---
 {% raw %}
 # Awesome Self-Host Docker

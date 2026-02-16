@@ -2,8 +2,71 @@
 layout: project
 name: Jobitjoseph Owonconnect
 slug: jobitjoseph-owonconnect
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/badge/version-1.0.0-blue
 repo_url: https://github.com/jobitjoseph/owonconnect
+indexed_content: "# OWON OEL8511 Web Control Interface A modern, web-based control
+  interface for the OWON OEL8511 Electronic Load using the Web Serial API. Control
+  your electronic load directly from your browser with real-time monitoring, data
+  logging, and battery testing capabilities. ## ✨ Features ### \U0001F3AE **Multiple
+  Operating Modes** - **Constant Current (CC)** - Precision current sinking - **Constant
+  Voltage (CV)** - Voltage regulation mode - **Constant Resistance (CR)** - Electronic
+  resistance simulation - **Constant Power (CP)** - Power dissipation control - -
+  **Dynamic mode** - Switch between two preset current levels - **Battery Test** -
+  Automated discharge testing with capacity measurement ### \U0001F4CA **Real-Time
+  Monitoring** - Live voltage, current, and power readings - Real-time graphing with
+  Chart.js - Configurable update rate (100-5000ms) - Min/Max statistics tracking -
+  Capacity and energy measurements (mAh, Wh) - Duration tracking with HH:MM:SS timer
+  ### \U0001F527 **Advanced Controls** - Adjustable current range (AUTO/LOW/HIGH)
+  - Slew rate control for smooth transitions - Over-voltage protection (OVP) - Over-current
+  protection (OCP) - Over-power protection (OPP) - Short circuit protection - Remote
+  sensing capability - Immediate device updates on value changes ### \U0001F50B **Battery
+  Testing** - Multiple battery chemistry presets (Li-ion, LiPo, LiFePO4, NiMH, NiCd,
+  Lead Acid) - Customizable discharge current - Voltage cutoff with auto-stop - Real-time
+  State of Charge (SOC) calculation - Discharge curve graphing - Comprehensive test
+  data logging ### \U0001F4BE **Data Export** - CSV export of all measurements - PNG
+  snapshot of graphs - Test reports with summary statistics ### \U0001F3A8 **Modern
+  UI** - Dark theme optimized for long sessions - Material Design inspired interface
+  - Responsive layout - Intuitive dial visualizations - Color-coded readings - Status
+  indicators ## \U0001F5A5️ Browser Requirements The Web Serial API is required to
+  communicate with the device. Supported browsers: | Browser | Minimum Version | Status
+  | |---------|----------------|--------| | Google Chrome | 89+ | ✅ Fully Supported
+  | | Microsoft Edge | 89+ | ✅ Fully Supported | | Opera | 75+ | ✅ Fully Supported
+  | | Brave | Latest | ✅ Fully Supported | | Safari | Any | ❌ Not Supported | | Firefox
+  | Any | ❌ Not Supported | ## \U0001F680 Quick Start ### Installation **No installation
+  required!** This is a standalone HTML file. 1. Download `owon_web_complete.html`
+  2. Double-click to open in your browser, or 3. Host on a web server for HTTPS access
+  ### First Time Setup 1. **Open the file** in Chrome, Edge, or Opera 2. **Connect
+  your OWON OEL8511** via USB 3. **Click \"\U0001F50C Connect\"** button 4. **Select
+  your device** from the port list (usually \"USB-SERIAL CH340\" or similar) 5. **Device
+  connects automatically** and reads current settings ### Serial Settings The application
+  automatically configures: - **Baud Rate**: 115200 - **Data Bits**: 8 - **Stop Bits**:
+  1 - **Parity**: None - **Flow Control**: None ## \U0001F4D6 Usage Guide ### Basic
+  Operation #### 1. **Select Mode** ``` Sidebar → Click CC/CV/CR/CP/Dynamic button
+  Device automatically switches mode Settings populate from device ``` #### 2. **Set
+  Parameters** ``` Enter value in input field Press Enter or Tab Command immediately
+  sent to device Dial updates to show setting ``` #### 3. **Enable Load** ``` Click
+  \"\U0001F7E2 INPUT ON\" button Load activates Real-time monitoring begins Graph
+  starts recording ``` #### 4. **Monitor & Log** ``` Watch live readings update View
+  real-time graph Statistics tracked automatically Export data when complete ``` ###
+  Constant Current (CC) Mode **Use Case**: Discharge testing, LED testing, current
+  source simulation 1. Select **Load > CC** from sidebar 2. **Set Current**: Enter
+  desired current (0-20A) 3. **Configure Settings**: - Current Range: AUTO/LOW/HIGH
+  - Slew Rate: Transition speed (A/μs) - Current Limit: Maximum current - Voltage
+  On Level: Turn-on threshold 4. **Enable Protections**: - OVP: Over-voltage protection
+  - OCP: Over-current protection - OPP: Over-power protection 5. Click **INPUT ON**
+  6. Monitor load in real-time ### Constant Voltage (CV) Mode **Use Case**: Battery
+  charging simulation, voltage regulation testing 1. Select **Load > CV** from sidebar
+  2. **Set Voltage**: Enter desired voltage (0-150V) 3. **Configure Settings**: -
+  Voltage Range: AUTO/LOW/HIGH - Current Limit: Maximum current draw - Remote Sensing:
+  Enable for accurate voltage 4. Click **INPUT ON** ### Constant Resistance (CR) Mode
+  **Use Case**: Resistive load simulation, heater testing 1. Select **Load > CR**
+  from sidebar 2. **Set Resistance**: Enter desired resistance (Ω) 3. **Configure
+  Settings**: - Current Limit: Safety limit - Power Limit: Maximum power 4. Click
+  **INPUT ON** ### Constant Power (CP) Mode **Use Case**: Power supply testing, thermal
+  testing 1. Select **Load > CP** from sidebar 2. **Set Power**: Enter desired power
+  (0-200W) 3. **Configure Settings**: - Voltage Limit: Maximum voltage - Current Limit:
+  Maximum current - Slew Rate: Power transition speed 4. "
 ---
 {% raw %}
 # OWON OEL8511 Web Control Interface

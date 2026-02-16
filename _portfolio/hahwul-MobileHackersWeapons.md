@@ -2,8 +2,61 @@
 layout: project
 name: Hahwul Mobilehackersweapons
 slug: hahwul-MobileHackersWeapons
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/github/stars/hahwul/WebHackersWeapons?label=WebHackersWeapons
 repo_url: https://github.com/hahwul/MobileHackersWeapons
+indexed_content: "A collection of awesome tools used by Mobile hackers. Happy hacking
+  , Happy bug-hunting! ## Family project [](https://github.com/hahwul/WebHackersWeapons)
+  [](https://github.com/hahwul/MobileHackersWeapons) ## Table of Contents - [Weapons](#weapons)
+  - [Contribute](/CONTRIBUTING.md) - [Thanks to contributor](#thanks-to-contributor)
+  ## Weapons *Attributes* | | Attributes | |-------|---------------------------------------------------|
+  | Types | `Analysis` `Pentest` `Proxy` `RE` `Scripts` `Scanner` `Utils` `Device`
+  `Discovery`, `Monitor`, `NFC`, `Target`, `Bluetooth`, `Jailbreak`, `Inject`, `Unpinning`|
+  | Tags | [`Inject`](/categorize/tags/Inject.md) [`SCRIPTS`](/categorize/tags/SCRIPTS.md)
+  [`Hijack`](/categorize/tags/Hijack.md) [`Target`](/categorize/tags/Target.md) [`Jailbreak`](/categorize/tags/Jailbreak.md)
+  [`Monitor`](/categorize/tags/Monitor.md) [`Unpinning`](/categorize/tags/Unpinning.md)
+  [`Bluetooth`](/categorize/tags/Bluetooth.md) [`Discovery`](/categorize/tags/Discovery.md)
+  [`NFC`](/categorize/tags/NFC.md) | | Langs | [`Python`](/categorize/langs/Python.md)
+  [`C++`](/categorize/langs/C++.md) [`TypeScript`](/categorize/langs/TypeScript.md)
+  [`Unknown`](/categorize/langs/Unknown.md) [`JavaScript`](/categorize/langs/JavaScript.md)
+  [`Ruby`](/categorize/langs/Ruby.md) [`Shell`](/categorize/langs/Shell.md) [`Java`](/categorize/langs/Java.md)
+  [`Go`](/categorize/langs/Go.md) [`Meson`](/categorize/langs/Meson.md) [`Objective-C`](/categorize/langs/Objective-C.md)
+  [`Kotlin`](/categorize/langs/Kotlin.md) [`C`](/categorize/langs/C.md) [`Objective-C++`](/categorize/langs/Objective-C++.md)
+  | ### All | Type | Name | Description | Star | | --- | --- | --- | --- | |Analysis|[scrounger](https://github.com/nettitude/scrounger)|Mobile
+  application testing toolkit|| |Analysis|[flipper](https://github.com/facebook/flipper)|A
+  desktop debugging platform for mobile developers.|| |Analysis|[RMS-Runtime-Mobile-Security](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security)|Runtime
+  Mobile Security (RMS) \U0001F4F1\U0001F525 - is a powerful web interface that helps
+  you to manipulate Android and iOS Apps at Runtime|| |Pentest|[metasploit-framework](https://github.com/rapid7/metasploit-framework)|Metasploit
+  Framework|| |Proxy|[httptoolkit](https://github.com/httptoolkit/httptoolkit)|HTTP
+  Toolkit is a beautiful & open-source tool for debugging, testing and building with
+  HTTP(S) on Windows, Linux & Mac|| |Proxy|[BurpSuite](https://portswigger.net/burp)|The
+  BurpSuite|| |Proxy|[zaproxy](https://github.com/zaproxy/zaproxy)|The OWASP ZAP core
+  project|| |Proxy|[proxify](https://github.com/projectdiscovery/proxify)|Swiss Army
+  knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the
+  go.|| |Proxy|[hetty](https://github.com/dstotijn/hetty)|Hetty is an HTTP toolkit
+  for security research.|| |RE|[frida](https://github.com/frida/frida)|Clone this
+  repo to build Frida|| |RE|[ghidra](https://github.com/NationalSecurityAgency/ghidra)|Ghidra
+  is a software reverse engineering (SRE) framework|| |RE|[frida-tools](https://github.com/frida/frida-tools)|Frida
+  CLI tools|| |RE|[fridump](https://github.com/Nightbringer21/fridump)|A universal
+  memory dumper using Frida|| |RE|[diff-gui](https://github.com/antojoseph/diff-gui)|GUI
+  for Frida -Scripts|| |Scanner|[Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)|Mobile
+  Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows)
+  pen-testing, malware analysis and security assessment framework capable of performing
+  static and dynamic analysis.|| |Scanner|[StaCoAn](https://github.com/vincentcox/StaCoAn)|StaCoAn
+  is a crossplatform tool which aids developers, bugbounty hunters and ethical hackers
+  performing static code analysis on mobile applications.|| |Utils|[watchman](https://github.com/facebook/watchman)|Watches
+  files and records, or triggers actions, when they change.|| ||[frida-scripts](https://github.com/0xdea/frida-scripts)|A
+  collection of my Frida.re instrumentation scripts to facilitate reverse engineering
+  of mobile apps.|| ||[frida-gadget](https://github.com/ksg97031/frida-gadget)|frida-gadget
+  is a tool that can be used to patch APKs in order to utilize the Frida gadget.||
+  ### iOS | Type | Name | Description | Star | | --- | --- | --- | --- | |Analysis|[needle](https://github.com/FSecureLABS/needle)|The
+  iOS Security Testing Framework|| |Analysis|[iblessing](https://github.com/Soulghost/iblessing)|iblessing
+  is an iOS security exploiting toolkit, it mainly includes application information
+  collection, static analysis and dynamic analysis. It can be used for reverse engineering,
+  binary analysis and vulnerability mining.|| |Analysis|[objection](https://github.com/sensepost/objection)|\U0001F4F1
+  objection - runtime mobile exploration|| |Analysis|[iFunBox](http://www.i-funbox.com/)|General
+  file management software for iPhone and other Apple products|| |RE|[frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump)|pull
+  decrypted ipa from"
 ---
 {% raw %}
 

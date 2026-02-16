@@ -2,8 +2,70 @@
 layout: project
 name: Abhishekkumar62000 Mathsathi Helping Rag Ai Agent
 slug: abhishekkumar62000-MathSathi-Helping-RAG-AI-Agent
+category: Science -math-physics-chemistry
 image: https://mermaid.ink/img/pako\:eNqNVF1vgjAQ_SuEr0oV4YWd0ZbUW6zFtWq1RrEsmToXqPD_vrUmSjN8EkhxPt7ZeY4xYyC22RjbVkBvJd9IUmF2Kf84QVrKVmYaG2VpTUiZ3F2Tdx2Zn8sLR6w72Rr9ShLfVqCVHZeBchXndA-UrVjObd53WtMoUpM6GlOsJ30CCX9u9b9u1MbcQekvhXUzEtYmtQFW6cFuXOhhW1ZtHWWecegpHGXkgRnPb2DNzE22L11nztfb8k6-BR0JQHy8EF3jZkL2kEMjNjKPwAf7Iewg7M1iDBm88HBk3j41f2nmO4OKa34Fsv4oRXqJ57ihYfVUp6oHuGj_njKhYzOw?type=png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "Our App:-- https://mathsathi-rag-ai-agent.streamlit.app/ APP DEmo
+  Video:-- https://github.com/user-attachments/assets/7d2382f2-bede-4518-ac00-e49006ca1d5b
+  --- # \U0001F9E0 MathSathi Helping AI Agent \U0001F916 **Your Personal Math Mentor,
+  Anytime Anywhere** \U0001F517 **Live App**: [MathSathi on Streamlit](https://mathsathi-rag-ai-agent.streamlit.app/)
+  --- ## \U0001F31F Introduction **MathSathi Helping AI Agent** is a modern AI-powered
+  learning companion built to make mathematics engaging, interactive, and accessible.
+  Designed with **students, educators, researchers, and lifelong learners** in mind,
+  MathSathi acts as your **personal math mentor**—guiding you through problem-solving,
+  error diagnosis, and personalized practice. This application combines the **power
+  of AI, advanced visualization, OCR (Optical Character Recognition), interactive
+  dashboards, and animated solutions** into a **single Streamlit-based platform**.
+  With a unique blend of smart features and a visually appealing UI, MathSathi makes
+  math not only simpler but also fun and adaptive. --- ## \U0001F680 Features in Depth
+  ### \U0001F3A8 Sidebar Experience * **Animated Logo & Branding**: A colorful, animated
+  logo gives the app a vibrant identity. * **AI Assistant Illustration**: A large,
+  welcoming AI character sets the tone for an interactive experience. * **Developer
+  Info Section**: Professional presentation of the developer with a full photo and
+  name for authenticity. --- ### \U0001F4DA Main Functionalities #### 1. **Ask a Question**
+  * Input any math query (supports **LaTeX** for complex equations). * Get **step-by-step
+  AI-generated solutions**. * Interactive **feedback buttons**: Helpful, Not Helpful,
+  Request More Detail. * Feedback is **stored for analysis**, helping track where
+  users struggle. --- #### 2. **View Feedback** * Centralized **feedback dashboard**.
+  * See all user responses in **tabular format**. * Analyze user satisfaction and
+  **performance of the AI agent**. --- #### 3. **Benchmark Results** * Test MathSathi’s
+  accuracy on **predefined math datasets**. * Automatically calculate **accuracy scores
+  and performance metrics**. * Results exportable to **CSV format** for detailed offline
+  analysis. --- #### 4. **My Dashboard** * A **personalized user dashboard** that
+  adapts to the learner. * Displays: * Feedback statistics (positive, negative, detail
+  requests). * Latest benchmark test results. * **Smart recommendations** for practice
+  problems. --- #### 5. **Whiteboard** * Interactive **digital whiteboard** for sketching
+  math problems. * Upload whiteboard images for **OCR-based text extraction**. * Extracted
+  math is solved instantly with **step-by-step AI explanations**. --- #### 6. **Math
+  OCR & Quiz** * Upload **math images/screenshots** from books or notes. * OCR extracts
+  math equations and processes them. * **Auto-generated quizzes** for practice, based
+  on extracted content. --- #### 7. **Animated Solution** * Enter a math problem and
+  watch the solution **unfold step by step**. * Controls for: * Next/Previous step
+  navigation. * **Autoplay animated walkthroughs**. * Show all steps at once. * Perfect
+  for **visual learners**. --- #### 8. **Error Diagnosis & Hints** * Input your math
+  question along with your **own solution** (even if incorrect). * The AI diagnoses
+  mistakes, explains **where the error occurred**, and provides **correction hints**.
+  * Suggests **similar practice questions** to reinforce learning. --- ### \U0001F6E0️
+  Technical Highlights * **Streamlit-based UI** with modern, animated, neon-glass
+  design. * **OCR.Space API** integration for reliable image-to-text conversion. *
+  **Robust logging system** for feedback, performance, and benchmark tracking. * **Custom
+  Styling**: Engaging, colorful, and interactive UI. * Designed for **scalability**,
+  making it future-ready for more AI integrations. --- ## \U0001F4CA Learning & Feedback
+  Analytics * Every solution request and feedback is **tracked, stored, and analyzed**.
+  * Helps educators and developers understand **where learners face difficulties**.
+  * Provides data-driven insights to improve both **MathSathi** and **user learning
+  outcomes**. --- ## \U0001F308 Why MathSathi? Unlike traditional math-solving apps,
+  MathSathi isn’t just about giving the answer—it focuses on: ✅ **Step-by-step clarity**.
+  ✅ **Interactive learning** (animated solutions, quizzes, whiteboard input). ✅ **Personalization**
+  (user dashboards, error-based hints, practice recommendations). ✅ **Engaging Design**
+  (fun, colorful, AI-powered assistant style). It’s **not just a calculator**—it’s
+  your **math companion, guide, and mentor**. --- ## \U0001F52E Future Enhancements
+  * AI-driven **voice assistant** for math problem solving. * **Gamification elements**:
+  badges, streaks, and progress tracking. * Support for **advanced topics** like Calculus,
+  Linear Algebra, and Statistics. * **Integration with Learning Management Systems
+  (LMS)** for schools and colleges. --- # \U0001F4CC MathSathi App Workflow:-- ##
+  \U0001F333 **Tree Workflow (Start → End)** ``` MathSathi Helping AI Agent \U0001F916
+  │ ├── 1. User Launches App │ └── Sidebar loads (Logo, "
 ---
 {% raw %}
 <img width="1024" height="1024" alt="Logo" src="https://github.com/user-attachments/assets/9f592b1f-c290-4ab8-9f72-a319f9d456a3" />

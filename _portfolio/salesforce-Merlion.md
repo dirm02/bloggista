@@ -2,8 +2,68 @@
 layout: project
 name: Salesforce Merlion
 slug: salesforce-Merlion
+category: Management- Engineering- SocialM
 image: https://github.com/salesforce/Merlion/raw/main/figures/dashboard_anomaly.png
 repo_url: https://github.com/salesforce/Merlion
+indexed_content: '# Merlion: A Machine Learning Library for Time Series ## Table of
+  Contents 1. [Introduction](#introduction) 1. [Comparison with Related Libraries](#comparison-with-related-libraries)
+  1. [Installation](#installation) 1. [Documentation](#documentation) 1. [Getting
+  Started](#getting-started) 1. [Anomaly Detection](#anomaly-detection) 1. [Forecasting](#forecasting)
+  1. [Evaluation and Benchmarking](#evaluation-and-benchmarking) 1. [Technical Report
+  and Citing Merlion](#technical-report-and-citing-merlion) ## Introduction Merlion
+  is a Python library for time series intelligence. It provides an end-to-end machine
+  learning framework that includes loading and transforming data, building and training
+  models, post-processing model outputs, and evaluating model performance. It supports
+  various time series learning tasks, including forecasting, anomaly detection, and
+  change point detection for both univariate and multivariate time series. This library
+  aims to provide engineers and researchers a one-stop solution to rapidly develop
+  models for their specific time series needs, and benchmark them across multiple
+  time series datasets. Merlion''s key features are - Standardized and easily extensible
+  data loading & benchmarking for a wide range of forecasting and anomaly detection
+  datasets. This includes transparent support for custom datasets. - A library of
+  diverse models for anomaly detection, forecasting, and change point detection, all
+  unified under a shared interface. Models include classic statistical methods, tree
+  ensembles, and deep learning approaches. Advanced users may fully configure each
+  model as desired. - Abstract `DefaultDetector` and `DefaultForecaster` models that
+  are efficient, robustly achieve good performance, and provide a starting point for
+  new users. - AutoML for automated hyperaparameter tuning and model selection. -
+  Unified API for using a wide range of models to forecast with [exogenous regressors](https://opensource.salesforce.com/Merlion/tutorials/forecast/3_ForecastExogenous.html).
+  - Practical, industry-inspired post-processing rules for anomaly detectors that
+  make anomaly scores more interpretable, while also reducing the number of false
+  positives. - Easy-to-use ensembles that combine the outputs of multiple models to
+  achieve more robust performance. - Flexible evaluation pipelines that simulate the
+  live deployment & re-training of a model in production, and evaluate performance
+  on both forecasting and anomaly detection. - Native support for visualizing model
+  predictions, including with a clickable visual UI. - Distributed computation [backend](https://opensource.salesforce.com/Merlion/merlion.spark.html)
+  using PySpark, which can be used to serve time series applications at industrial
+  scale. ## Comparison with Related Libraries The table below provides a visual overview
+  of how Merlion''s key features compare to other libraries for time series anomaly
+  detection and/or forecasting. | | Merlion | Prophet | Alibi Detect | Kats | darts
+  | statsmodels | nixtla | GluonTS | RRCF | STUMPY | Greykite |pmdarima :--- | :---:
+  | :---:| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :----:
+  | :---: | Univariate Forecasting | ✅ | ✅| | ✅ | ✅ | ✅ | ✅ | ✅ | | |✅| ✅ | Multivariate
+  Forecasting | ✅ | | | ✅ | ✅ | ✅| ✅ | ✅ | | | | | | Univariate Anomaly Detection
+  | ✅ | ✅ | ✅ | ✅ | ✅ | | | | ✅ | ✅ | ✅ | ✅ | | Multivariate Anomaly Detection | ✅
+  | | ✅ | ✅ | ✅ | | | | ✅ | ✅ | | | | | Pre Processing | ✅ | | ✅ | ✅ | ✅ | | ✅ | ✅
+  | | | ✅ | ✅ | Post Processing | ✅ | | ✅ | | | | | | | | | | | AutoML | ✅ | | | ✅
+  | | | | | | | | ✅ | | ✅ | Ensembles | ✅ | | | ✅ | ✅ | | | | | ✅ | | | | | Benchmarking
+  | ✅ | | | | ✅ | ✅ | ✅ | | | | ✅ | | Visualization | ✅ | ✅ | | ✅ | ✅ | | | | | |
+  ✅ | The following features are new in Merlion 2.0: | | Merlion | Prophet | Alibi
+  Detect | Kats | darts | statsmodels | nixtla | GluonTS | RRCF | STUMPY | Greykite
+  |pmdarima :--- | :---: | :---:| :---: | :---: | :---: | :---: | :---: | :---: |
+  :---: | :---: | :----: | :---: | Exogenous Regressors | ✅ | ✅ | | |✅ | ✅ | | | |
+  | ✅ | ✅ | Change Point Detection | ✅ | ✅ | ✅ | ✅ | | | | | | | ✅ | | Clickable Visual
+  UI | ✅ | | | | | | | | | | | | Distributed Backend | ✅ | | | | | | ✅ | | | | | ##
+  Installation Merlion consists of two sub-repos: `merlion` implements the library''s
+  core time series intelligence features, and `ts_datasets` provides standardized
+  data loaders for multiple time series datasets. These loaders load time series as
+  ``pandas.DataFrame`` s with accompanying metadata. You can install `merlion` from
+  PyPI by calling ``pip install salesforce-merlion``. You may install from source
+  by cloning this repoand calling ``pip install Merlion/``, or ``pip install -e Merlion/``
+  to install in editable mode. You may install additional dependencies via ``pip install
+  salesforce-merlion[all]``, or by calling ``pip install "Merlion/[all]"`` if installing
+  from source. Individually, the optional dependencies include ``dashboard`` for a
+  GUI dashboard, ``spar'
 ---
 {% raw %}
 <div align="center">

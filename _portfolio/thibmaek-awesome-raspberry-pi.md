@@ -2,8 +2,62 @@
 layout: project
 name: Thibmaek Awesome Raspberry Pi
 slug: thibmaek-awesome-raspberry-pi
+category: Very important!!!!
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome Raspberry Pi [](https://github.com/sindresorhus/awesome)
+  [](https://github.com/thibmaek/awesome-raspberry-pi/blob/main/CONTRIBUTORS.md) >
+  The Raspberry Pi is a series of credit card-sized single-board computers developed
+  in the United Kingdom by the Raspberry Pi Foundation to promote the teaching of
+  basic computer science in schools and developing countries. Official Link: [Raspberry
+  Pi Foundation Homepage](https://raspberrypi.org), [Raspberry Pi Computer Homepage](https://www.raspberrypi.com)
+  This list is a collection of tools, projects, images and resources conforming to
+  the [Awesome Manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md)
+  Contributions *very welcome* but first see [Contributing](#contributing) ## Contents
+  - [Models](#models) - [OS Images](#os-images) - [Tools](#tools) - [Projects](#projects)
+  - [Resources](#resources) ## Models The complete collection of (consumer) Raspberry
+  Pi models consist of: - Raspberry Pi 1, Model A & Model B (2012, discontinued) -
+  [Raspberry Pi 1, Model B+](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/)
+  (July, 2014) - [Raspberry Pi 1, Model A+](https://www.raspberrypi.org/products/raspberry-pi-1-model-a-plus/)
+  (November, 2014) - [Raspberry Pi 2, Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
+  (February, 2015) - [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/)
+  (November, 2015) - [Raspberry Pi 3, Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+  (March, 2016) - [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
+  (February, 2017) - [Raspberry Pi 3, Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+  (March, 2018) - [Raspberry Pi 3, Model A+](https://www.raspberrypi.org/products/raspberry-pi-3-model-a-plus/)
+  (November, 2018) - [Raspberry Pi 4, Model B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
+  (June, 2019) - [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/)
+  (October, 2023) - [Raspberry Pi 400](https://www.raspberrypi.org/products/raspberry-pi-400/)
+  (November, 2020) - [Raspberry Pi 500](https://www.raspberrypi.com/products/raspberry-pi-500/)
+  (December, 2024) - [Raspberry Pi 500+](https://www.raspberrypi.com/products/raspberry-pi-500-plus/)
+  (September, 2025) - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico)
+  (January, 2021) - [Raspberry Pi Pico 2](https://www.raspberrypi.com/products/raspberry-pi-pico-2/)
+  (August, 2024) - [Raspberry Pi Zero 2 W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
+  (October, 2021) - [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-w)
+  (June, 2022) ## OS Images - [Alpine Linux](https://wiki.alpinelinux.org/wiki/Raspberry_Pi)
+  - Security-oriented, lightweight Linux distribution based on musl libc and busybox.
+  - [Arch Linux ARM](https://archlinuxarm.org/) - Lightweight and flexible Linux distribution
+  that tries to Keep It Simple. - [Armbian](https://www.armbian.com/rpi4b/) - A base
+  operating system platform for single board computers (SBCs) that other projects
+  can trust to build upon. - [balenaOS](https://www.balena.io/os/) - open source OS
+  to run Docker containers on embedded devices that's been designed for reliability
+  and proven in production. - [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)
+  - Bootloader/universal OS installer, with support to VNC and HDMI-CEC. - [chilipie-kiosk](https://github.com/futurice/chilipie-kiosk)
+  - Image which boots directly into full-screen Chrome, perfect for dashboards and
+  build monitors. - [Channels DVR Server](https://getchannels.com/raspberry-pi/) -
+  Custom image for Channels DVR Server which provides a whole home DVR system. - [Debian](https://raspi.debian.net)
+  - Unofficial Debian image for Raspberry Pi (maintained by a Debian Developer). -
+  [DietPi](https://github.com/Fourdee/DietPi) - Minimal image designed to fit on a
+  2GB SD card, with tons of configurable settings and scripts. - [DroneBridge](https://github.com/seeul8er/DroneBridge)
+  - A WifiBroadcast extension to make for a real alternative to DJI Lightbridge and
+  other similar systems. - [EZ-WifiBroadcast](https://github.com/bortek/EZ-WifiBroadcast/wiki)
+  - Affordable Wireless Digital HD Video Transmission made easy. - [Fedora](https://fedoraproject.org/wiki/Raspberry_Pi#Preparing_the_SD_card)
+  - Linux Fedora distribution built for the Pi. - [FreeBSD](https://wiki.freebsd.org/arm/Raspberry%20Pi)
+  - FreeBSD is an advanced computer operating system used to power modern servers,
+  desktops, and embedded platforms. - [FreedomBox](https://www.freedombox.org) - FreedomBox
+  is a private home server for non-experts. - [Gentoo](https://wiki.gentoo.org/wiki/Raspberry_Pi)
+  - Gentoo Stage 3 tarball for Raspberry Pi. - [Gladys Assistant](https://gladysassistant.com)
+  - Gladys, a privacy-first, open-source home assistant. - [Hass.io](https"
 ---
 {% raw %}
 # Awesome Raspberry Pi

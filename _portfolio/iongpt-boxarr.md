@@ -2,8 +2,65 @@
 layout: project
 name: Iongpt Boxarr
 slug: iongpt-boxarr
+category: Entertainment tools
 image: https://img.shields.io/badge/License-GPLv3-blue.svg
 repo_url: https://github.com/iongpt/boxarr
+indexed_content: "# Boxarr - Box Office Tracking for Radarr **Automatically track
+  and add trending box office movies to your Radarr library** [](https://www.gnu.org/licenses/gpl-3.0)
+  [](https://www.python.org/downloads/) [](https://www.docker.com/) [](https://github.com/iongpt/boxarr/wiki)
+  --- Boxarr monitors weekly box office charts and seamlessly integrates with Radarr
+  to ensure your media library always has what people want to watch. No more manual
+  searching for popular movies - Boxarr handles it automatically. ## \U0001F3AF Why
+  Boxarr? - **Stay Current** - Never miss trending movies that everyone's talking
+  about - **Save Time** - No more manually searching for and adding popular films
+  - **Smart Automation** - Automatically add movies based on your preferences - **Family
+  Friendly** - Keep your media server stocked with what people actually want to watch
+  ## \U0001F914 Why Not Overseerr? Overseerr is excellent for request-based libraries
+  where users actively request content. Boxarr serves a different purpose: - **Automatic
+  vs Request-Based**: Boxarr automatically adds mainstream hits without anyone having
+  to request them - **Box Office Focus**: Tracks actual commercial success, not just
+  user requests - **Zero User Interaction**: Works silently in the background, no
+  user accounts or requests needed - **Complementary Tool**: Use both! Overseerr for
+  specific requests, Boxarr for mainstream coverage ## \U0001F4CB Why Not Radarr Lists?
+  While Radarr lists are useful, Boxarr offers unique advantages: - **Box Office =
+  Mainstream Appeal**: Tracks movies with proven commercial success, ensuring broad
+  appeal - **Unbiased Selection**: Based on actual revenue data, not curator preferences
+  or ratings - **Weekly Updates**: Fresh data every week, not dependent on list maintainer
+  updates - **Duplicate Prevention**: Uses Radarr API to check existing movies before
+  adding - **Historical Tracking**: Build a library of movies that were culturally
+  significant at release Boxarr ensures your library includes the mainstream movies
+  that dominated theaters - the films people are most likely to want to watch. ##
+  \U0001F4DA Documentation **[View the full documentation in our Wiki](https://github.com/iongpt/boxarr/wiki)**
+  for detailed guides, configuration options, and troubleshooting. ## ✨ Key Features
+  - **\U0001F4CA [Weekly Box Office Tracking](https://github.com/iongpt/boxarr/wiki/Box-Office-Tracking)**
+  - Automatically fetches top 10 movies from Box Office Mojo - **\U0001F504 [Radarr
+  Integration](https://github.com/iongpt/boxarr/wiki/Configuration-Guide#radarr-connection)**
+  - Seamlessly checks and adds movies to your library - **\U0001F5C2️ [Genre‑Based
+  Root Folders](https://github.com/iongpt/boxarr/wiki/Genre-Based-Root-Folders)**
+  - Organize movies into folders by genre - **⚡ [Auto-Add Movies](https://github.com/iongpt/boxarr/wiki/Configuration-Guide#automation-settings)**
+  - Automatically add trending movies with smart filters - **\U0001F50D [Advanced
+  Custom Filtering](https://github.com/iongpt/boxarr/wiki/Configuration-Guide#filter-settings)**
+  - Fine-tune selections with genre, rating, and release year filters - **\U0001F4C5
+  [Scheduled Updates](https://github.com/iongpt/boxarr/wiki/Configuration-Guide#automation-settings)**
+  - Runs weekly on your preferred schedule - **\U0001F3A8 [Beautiful Web UI](https://github.com/iongpt/boxarr/wiki/Home#-visual-tour)**
+  - Clean, responsive interface for all devices - **\U0001F680 [Easy Setup](https://github.com/iongpt/boxarr/wiki/Initial-Setup)**
+  - Simple web-based configuration wizard ## \U0001F4CB Requirements - **Radarr**
+  v3.0+ (required) - **Docker** (recommended) or Python 3.10+ - Network access to
+  Box Office Mojo ## \U0001F680 Quick Start ### Docker (Recommended) ```bash docker
+  run -d \\ --name boxarr \\ -p 8888:8888 \\ -v /path/to/config:/config \\ ghcr.io/iongpt/boxarr:latest
+  ``` Visit `http://localhost:8888` and follow the setup wizard. ### Docker Compose
+  ```yaml version: '3.8' services: boxarr: image: ghcr.io/iongpt/boxarr:latest container_name:
+  boxarr ports: - 8888:8888 volumes: - ./config:/config restart: unless-stopped environment:
+  - TZ=America/New_York # Optional: Set your timezone ``` **[View full installation
+  guide →](https://github.com/iongpt/boxarr/wiki/Installation-Guide)** ## ⚙️ Initial
+  Setup 1. Open your browser to `http://localhost:8888` 2. Enter your Radarr URL and
+  API key 3. Configure quality profiles and preferences 4. Save and start tracking!
+  **[View detailed setup guide →](https://github.com/iongpt/boxarr/wiki/Initial-Setup)**
+  ## \U0001F4D6 Configuration & Features - **[Box Office Tracking](https://github.com/iongpt/boxarr/wiki/Box-Office-Tracking)**
+  - How weekly tracking works - **[Configuration Guide](https://github.com/iongpt/boxarr/wiki/Configuration-Guide)**
+  - All settings explained - **[Auto-Add Movies](https://github.com/iongpt/boxarr/wiki/Configuration-Guide#auto-add-movies)**
+  - Automatic movie additions with filters - **[Genre-Based Root Folders](https://github.com/iongpt/boxarr/wiki/Genre-Based-Root-Folders)**
+  - Smart content organization - **[API Reference](https://github.com/iongpt/boxarr/wiki/API-Refer"
 ---
 {% raw %}
 # Boxarr - Box Office Tracking for Radarr

@@ -2,8 +2,72 @@
 layout: project
 name: Diodiogod Tts Audio Suite
 slug: diodiogod-TTS-Audio-Suite
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://dcbadge.limes.pink/api/server/EwKE8KBDqD
 repo_url: https://github.com/diodiogod/ComfyUI_ChatterBox_SRT_Voice).*
+indexed_content: "[](https://discord.gg/EwKE8KBDqD) [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url] [![Forks][forks-shield]][forks-url] [![Dynamic
+  TOML Badge][version-shield]][version-url] [](https://ko-fi.com/diogogo) # TTS Audio
+  Suite v4.21.2 [](https://ko-fi.com/diogogo) *Universal multi-engine TTS extension
+  for ComfyUI - evolved from the original [ChatterBox Voice project](https://github.com/diodiogod/ComfyUI_ChatterBox_SRT_Voice).*
+  A comprehensive ComfyUI extension providing unified Text-to-Speech, Voice Conversion,
+  and Audio Editing capabilities through multiple engines including ChatterboxTTS,
+  F5-TTS, Higgs Audio 2, Step Audio EditX, and RVC (Real-time Voice Conversion), with
+  modular architecture designed for extensibility and future engine integrations.
+  ## Quick Engine Comparison | Engine | Languages | Size | Key Features | |--------|-----------|------|--------------|
+  | **F5-TTS** | \U0001F1FA\U0001F1F8​\U0001F1E9\U0001F1EA​\U0001F1EA\U0001F1F8​\U0001F1EB\U0001F1F7​\U0001F1EE\U0001F1F9​\U0001F1EF\U0001F1F5
+  +4 | ~1.2GB each | Targeted Word/Speech Editing, Speed control | | **ChatterBox**
+  | \U0001F1FA\U0001F1F8​\U0001F1E9\U0001F1EA​\U0001F1EB\U0001F1F7​\U0001F1EE\U0001F1F9​\U0001F1EF\U0001F1F5​\U0001F1F0\U0001F1F7
+  +4 | ~4.3GB | Expressiveness slider | | **ChatterBox 23L** | \U0001F310 24 languages
+  | ~4.3GB | 24 languages in single model, emotion tokens (v2 - doesn't work) | |
+  **VibeVoice** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1E9\U0001F1EA​\U0001F1EA\U0001F1F8​\U0001F1EB\U0001F1F7​\U0001F1EE\U0001F1F9
+  +21 | 5.4GB / 18GB | 90-min long-form, Native 4-speaker (Base models) | | **Higgs
+  Audio 2** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1E9\U0001F1EA​\U0001F1EA\U0001F1F8​\U0001F1F0\U0001F1F7
+  | ~9GB | 3 multi-speaker, CUDA graphs (55+ tokens/sec) | | **IndexTTS-2** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1EF\U0001F1F5
+  | ~4.7GB | Emotion Control: 8 vectors, Text as reference | | **CosyVoice3** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1EF\U0001F1F5​\U0001F1F0\U0001F1F7
+  | ~5.4GB | Paralinguistic tags | | **Qwen3-TTS** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1E9\U0001F1EA​\U0001F1EA\U0001F1F8​\U0001F1EB\U0001F1F7​\U0001F1EE\U0001F1F9
+  +4 | ~3-6GB | Voice design, ASR (Automatic Speech Recognition) | | **Step Audio
+  EditX** | \U0001F1FA\U0001F1F8​\U0001F1E8\U0001F1F3​\U0001F1EF\U0001F1F5​\U0001F1F0\U0001F1F7
+  | ~7GB | Second Pass Speech Editing Node: 14 emotions, 32 speaking styles | | **RVC**
+  | \U0001F310 Any | 100-300MB | Real-time VC, Pitch shift (±14) | \U0001F4CA **[Full
+  comparison tables →](docs/ENGINE_COMPARISON.md)** | **[Language matrix →](docs/LANGUAGE_SUPPORT.md)**
+  | **[Feature matrix →](docs/FEATURE_COMPARISON.md)** *Note: These tables are generated
+  automatically from source: [tts_audio_suite_engines.yaml](docs/Dev%20reports/tts_audio_suite_engines.yaml)*
+  ## \U0001F680 Project Evolution Timeline ``` \U0001F3AD ChatterBox Voice Era       \U0001F31F
+  Multi-Engine Era |                 | v1.0 ───────────► v1.1 ────────► v2.0 ──────────► v3.0
+  ─────────┐ Jun 25   Jun 25         Jun 25      Jul 25 │ │    │             │      │
+  │ Foundation   SRT            Modular       F5-TTS + │ ChatterBox   Subtitles     
+  Structure       Audio │ Voice Cloning   Timing Node    Refactor      Analyzer │
+              ▼ v3.4 ◄──────────────── v3.2 ◄──────────────── v3.1 ◄────────────┘
+  Jul 25          Jul 25          Jul 25 │          │          │ Language         
+  Pause          Character Switching          Tags          Switching [German:Bob]
+           [pause:1s]          [Alice] │ │ ⚙️ TTS Audio Suite Era ▼ | v4.0 ──────────►
+  v4.3 ──────────► v4.4 ────────► v4.5 ──────────┐ Aug 25 Aug 25 Aug 25 Aug 25 │ │
+  │ │ │ │ BREAKING! RVC + Silent Higgs Audio 2 │ Project Voice Speech New TTS Engine
+  │ Renamed Conversion Analyzer Voice Cloning │ TTS Audio Suite + Streaming │ ▼ v4.9
+  ◄─────────────── v4.8 ◄────────────────── v4.6 ◄───────────┘ Sep 25     Sep 25     Aug
+  25 │     │     │ IndexTTS-2     Chatterbox     VibeVoice Emotion     Multilingual
+      New TTS Engine Control     Official (23-lang)     90min Generation │ │ \U0001F3A8
+  Inline Editor Tags Era ▼ | v4.12 ──────────────► v4.15 ────────────► v4.16 ──────────►
+  v4.19 Oct 25 Dez 25 Dez 25 Jan 26 │ │ │ │ Per-Seg Parameter Step Audio EditX CosyVoice3
+  Qwen3-TTS Switching [seed:24] Inline Edit tags TTS + VC TTS VoiceDesign ``` \U0001F4CB
+  Table of Contents - [\U0001F3A5 Demo Videos](#-demo-videos) - [Features](#features)
+  - [\U0001F195 What's New in my Project?](#-whats-new-in-my-project) - [SRT Timing
+  and TTS Node](#srt-timing-and-tts-node) - [\U0001F195 F5-TTS Integration and \U0001F195
+  Audio Analyzer](#-f5-tts-integration-and--audio-analyzer) - [\U0001F5E3️ Silent
+  Speech Analyzer](#️-silent-speech-analyzer) - [\U0001F3AD Character & Narrator Switching](#-character--narrator-switching)
+  - [\U0001F30D Language Switching with Bracket Syntax](#-language-switching-with-bracket-syntax)
+  - [\U0001F504 Iterative Voice Conversion](#-iterative-voice-conversion) - [\U0001F3B5
+  RVC Voice Conversion Integration](#-rvc-voice-conversion-integration) - [⏸️ Pause
+  Tags System](#️-pause-tags-system) - [\U0001F30D Multi-language ChatterBox Community
+  Models](#-multi-language-chatterbox-community-models) - [\U0001F310 Chatterbox Multilingual
+  TTS (Official 23-Lang)](#-chatterbox-multilingual-tts-official-23-lang) - [⚙️ Universal
+  Streaming Architecture](#️-universal-streaming-architecture) - [\U0001F399️ Higgs
+  Audio 2 Voice Cloning](#️-higgs-audio-2-voice-cloning) - [\U0001F3B5 VibeVoice Long-Form
+  Generation](#-vibevoice-long-form-generation) - [ IndexTTS-2 With Emotion Control](#-indextts-2-with-emotion-control)
+  - [\U0001F3A8 Step Audio EditX - LLM Audio Editing](#-step-audio-editx---llm-audio-editing)
+  - [\U0001F5E3️ CosyVoice3 Multilingual Voice Cloning](#️-cosyvoice3-multilingual-voice-cloning)
+  - [\U0001F3A4 Qwen3-TTS - 3 Model Types with Text-to-Voice Design](#-q"
 ---
 {% raw %}
 <a id="readme-top"></a>

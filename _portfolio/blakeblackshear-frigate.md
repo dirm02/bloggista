@@ -2,8 +2,38 @@
 layout: project
 name: Blakeblackshear Frigate
 slug: blakeblackshear-frigate
+category: Home automation-IoT
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/blakeblackshear/frigate
+indexed_content: '# Frigate NVR™ - Realtime Object Detection for IP Cameras [](https://opensource.org/licenses/MIT)
+  \[English\] | [简体中文](https://github.com/blakeblackshear/frigate/blob/dev/README_CN.md)
+  A complete and local NVR designed for [Home Assistant](https://www.home-assistant.io)
+  with AI object detection. Uses OpenCV and Tensorflow to perform realtime object
+  detection locally for IP cameras. Use of a GPU or AI accelerator is highly recommended.
+  AI accelerators will outperform even the best CPUs with very little overhead. See
+  Frigate''s supported [object detectors](https://docs.frigate.video/configuration/object_detectors/).
+  - Tight integration with Home Assistant via a [custom component](https://github.com/blakeblackshear/frigate-hass-integration)
+  - Designed to minimize resource use and maximize performance by only looking for
+  objects when and where it is necessary - Leverages multiprocessing heavily with
+  an emphasis on realtime over processing every frame - Uses a very low overhead motion
+  detection to determine where to run object detection - Object detection with TensorFlow
+  runs in separate processes for maximum FPS - Communicates over MQTT for easy integration
+  into other systems - Records video with retention settings based on detected objects
+  - 24/7 recording - Re-streaming via RTSP to reduce the number of connections to
+  your camera - WebRTC & MSE support for low-latency live view ## Documentation View
+  the documentation at https://docs.frigate.video ## Donations If you would like to
+  make a donation to support development, please use [Github Sponsors](https://github.com/sponsors/blakeblackshear).
+  ## License This project is licensed under the **MIT License**. - **Code:** The source
+  code, configuration files, and documentation in this repository are available under
+  the [MIT License](LICENSE). You are free to use, modify, and distribute the code
+  as long as you include the original copyright notice. - **Trademarks:** The "Frigate"
+  name, the "Frigate NVR" brand, and the Frigate logo are **trademarks of Frigate,
+  Inc.** and are **not** covered by the MIT License. Please see our [Trademark Policy](TRADEMARK.md)
+  for details on acceptable use of our brand assets. ## Screenshots ### Live dashboard
+  ### Streamlined review workflow ### Multi-camera scrubbing ### Built-in mask and
+  zone editor ## Translations We use [Weblate](https://hosted.weblate.org/projects/frigate-nvr/)
+  to support language translations. Contributions are always welcome. --- **Copyright
+  © 2026 Frigate, Inc.**'
 ---
 {% raw %}
 <p align="center">

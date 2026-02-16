@@ -2,8 +2,50 @@
 layout: project
 name: Dolanmiu Docx
 slug: dolanmiu-docx
+category: Serv&Prod-Tools
 image: https://user-images.githubusercontent.com/2917613/38582539-f84311b6-3d07-11e8-90db-5885ae02c3c4.png
 repo_url: https://github.com/dolanmiu/docx
+indexed_content: "Easily generate and modify .docx files with JS/TS. Works for Node
+  and on the Browser. --- [![NPM version][npm-image]][npm-url] [![Downloads per month][downloads-image]][downloads-url]
+  [![GitHub Action Workflow Status][github-actions-workflow-image]][github-actions-workflow-url]
+  [![Known Vulnerabilities][snky-image]][snky-url] [![PRs Welcome][pr-image]][pr-url]
+  [![codecov][codecov-image]][codecov-url] [![Docx.js Editor][docxjs-editor-image]][docxjs-editor-url]
+  # Demo ## Browser Here are examples of `docx` being used with basic `HTML/JS` in
+  a browser environment: - https://codepen.io/dolanmiu/pen/RwNeObg - https://jsfiddle.net/dolanmiu/onadx1gu/
+  Here are examples of `docx` working in `Angular`: - https://stackblitz.com/edit/angular-docx
+  - https://stackblitz.com/edit/angular-wmd6k3 Here are examples of `docx` working
+  in `React`: - https://stackblitz.com/edit/react-docx - https://stackblitz.com/edit/react-docx-images
+  (adding images to Word Document) Here is an example of `docx` working in `Vue.js`:
+  - https://stackblitz.com/edit/vuejs-docx ## Node Press `endpoint` on the `RunKit`
+  website: - https://runkit.com/dolanmiu/docx-demo1 - Simple paragraph and text -
+  https://runkit.com/dolanmiu/docx-demo2 - Advanced Paragraphs and text - https://runkit.com/dolanmiu/docx-demo3
+  - Bullet points - https://runkit.com/dolanmiu/docx-demo4 - Simple table - https://runkit.com/dolanmiu/docx-demo5
+  - Images - https://runkit.com/dolanmiu/docx-demo6 - Margins - https://runkit.com/dolanmiu/docx-demo7
+  - Landscape - https://runkit.com/dolanmiu/docx-demo8 - Header and Footer - https://runkit.com/dolanmiu/docx-demo10
+  - **My CV generated with docx** More [here](https://github.com/dolanmiu/docx/tree/master/demo)
+  # How to use & Documentation Please refer to the [documentation at https://docx.js.org/](https://docx.js.org/)
+  for details on how to use this library, examples and much more! # Playground Experience
+  `docx` in action through [Docx.js Editor][docxjs-editor-url], an interactive playground
+  where you can code and preview the results in real-time. # Examples Check the [demo
+  folder](https://github.com/dolanmiu/docx/tree/master/demo) for examples. # Contributing
+  Read the contribution guidelines [here](https://docx.js.org/#/contribution-guidelines).
+  # Used by [ ](https://hfour.com/) [ ](https://fuzzproductions.com/) [ ](https://www.mettzer.com/)
+  [ ](https://www.wisedoc.net/) [ ](https://www.dabblewriter.com/) [ ](https://turbopatent.com/)
+  [ ](http://www.madisoncres.com/) [ ](https://www.beekast.com/) [ ](https://herraizsoto.com/)
+  [ ](http://www.ativer.com.br/) [ ](https://www.arity.co/) [ ](https://www.circadianrisk.com/)
+  [ ](https://lexense.com/) [ ](https://novelpad.co/) [ ](https://proton.me/) ...and
+  many more! --- [![patreon][patreon-image]][patreon-url] [![browserstack][browserstack-image]][browserstack-url]
+  Made with \U0001F496 [npm-image]: https://badge.fury.io/js/docx.svg [npm-url]: https://npmjs.org/package/docx
+  [downloads-image]: https://img.shields.io/npm/dm/docx.svg [downloads-url]: https://npmjs.org/package/docx
+  [github-actions-workflow-image]: https://github.com/dolanmiu/docx/workflows/Default/badge.svg
+  [github-actions-workflow-url]: https://github.com/dolanmiu/docx/actions [snky-image]:
+  https://snyk.io/test/github/dolanmiu/docx/badge.svg [snky-url]: https://snyk.io/test/github/dolanmiu/docx
+  [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg [pr-url]: http://makeapullrequest.com
+  [codecov-image]: https://codecov.io/gh/dolanmiu/docx/branch/master/graph/badge.svg
+  [codecov-url]: https://codecov.io/gh/dolanmiu/docx [patreon-image]: https://user-images.githubusercontent.com/2917613/51251459-4e880480-1991-11e9-92bf-38b96675a9e2.png
+  [patreon-url]: https://www.patreon.com/dolanmiu [browserstack-image]: https://user-images.githubusercontent.com/2917613/54233552-128e9d00-4505-11e9-88fb-025a4e04007c.png
+  [browserstack-url]: https://www.browserstack.com [docxjs-editor-image]: https://img.shields.io/badge/Docx.js%20Editor-2b579a.svg?style=flat&amp;logo=javascript&amp;logoColor=white
+  [docxjs-editor-url]: https://docxjs-editor.vercel.app/"
 ---
 {% raw %}
 <p align="center">

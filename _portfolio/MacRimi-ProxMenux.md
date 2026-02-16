@@ -2,8 +2,26 @@
 layout: project
 name: Macrimi Proxmenux
 slug: MacRimi-ProxMenux
+category: ServerTools-ProxMox-CICD
 image: https://api.star-history.com/svg?repos=MacRimi/ProxMenux&type=Date
 repo_url: https://github.com/MacRimi/ProxMenux
+indexed_content: "**ProxMenux** is a management tool for **Proxmox VE** that simplifies
+  system administration through an interactive menu, allowing you to execute commands
+  and scripts with ease. --- ## \U0001F4CC Installation To install ProxMenux, simply
+  run the following command in your Proxmox server terminal: ```bash bash -c \"$(wget
+  -qLO - https://raw.githubusercontent.com/MacRimi/ProxMenux/main/install_proxmenux.sh)\"
+  ``` ⚠️ Be careful when copying scripts from the internet. Always remember to check
+  the source! \U0001F4C4 You can [review the source code](https://github.com/MacRimi/ProxMenux/blob/main/install_proxmenux.sh)
+  before execution. \U0001F6E1️ All executable links follow our [Code of Conduct](https://github.com/MacRimi/ProxMenux?tab=coc-ov-file#-2-security--code-responsibility).
+  --- ## \U0001F4CC How to Use Once installed, launch **ProxMenux** by running: ```bash
+  menu ``` Then, follow the on-screen options to manage your Proxmox server efficiently.
+  --- ## \U0001F4CC System Requirements \U0001F5A5 **Compatible with:** - Proxmox
+  VE 8.x and 9.x \U0001F4E6 **Dependencies:** - `bash`, `curl`, `wget`, `jq`, `whiptail`,
+  `python3-venv` (These dependencies are installed automatically during setup.) -
+  **Translations are handled in a Python virtual environment using `googletrans-env`.**
+  --- ## ⭐ Support the Project! If you find **ProxMenux** useful, consider giving
+  it a ⭐ on GitHub to help others discover it! ## Star History [](https://www.star-history.com/#MacRimi/ProxMenux&Date)
+  Support the project on Ko-fi! ## Contributors [contrib.rocks](https://contrib.rocks)."
 ---
 {% raw %}
 <div align="center">

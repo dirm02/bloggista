@@ -2,8 +2,64 @@
 layout: project
 name: Freelensapp Freelens
 slug: freelensapp-freelens
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/%F0%9F%8F%A0-freelens.app-02a7a0
 repo_url: https://github.com/freelensapp/freelens)
+indexed_content: "# Freelens [](https://freelens.app) [](https://github.com/freelensapp/freelens)
+  [](https://discord.gg/NjKZERK95Y) [](https://www.reddit.com/r/freelens/) [](https://bountyhub.dev/bounties?repo=freelens)
+  [](https://deepwiki.com/freelensapp/freelens) [](https://insights.linuxfoundation.org/project/freelens)
+  [](https://github.com/freelensapp/freelens?tab=MIT-1-ov-file#readme) [](https://github.com/freelensapp/freelens/releases/latest)
+  [](https://formulae.brew.sh/cask/freelens#default) [](https://winstall.app/apps/Freelensapp.Freelens)
+  [](https://scoop.sh/#/apps?q=freelens&s=1&d=0) [](https://flathub.org/apps/app.freelens.Freelens)
+  [](https://snapcraft.io/freelens) [](https://aur.archlinux.org/packages/freelens-bin)
+  [](https://www.npmjs.com/package/@freelensapp/core) [](https://github.com/freelensapp/freelens/actions/workflows/unit-tests.yaml)
+  [](https://github.com/freelensapp/freelens/actions/workflows/integration-tests.yaml)
+  [](https://github.com/freelensapp/freelens/actions/workflows/trunk-check.yaml) [Freelens](https://freelens.app)
+  is a free and open-source user interface designed for managing Kubernetes clusters.
+  It provides a standalone application compatible with macOS, Windows, and Linux operating
+  systems, making it accessible to a wide range of users. The application aims to
+  simplify the complexities of Kubernetes management by offering an intuitive and
+  user-friendly interface. ## Downloads See the [releases](https://github.com/freelensapp/freelens/releases)
+  page and download the right package for your system. ### macOS macOS 12 or later
+  is required. Download either the PKG (installer) or DMG (image) package from the
+  [releases](https://github.com/freelensapp/freelens/releases) page. Both arm64 (M1
+  chip or newer) and amd64 (Intel) variants are available. All binary packages are
+  built on macOS 14 and should be compatible with newer systems. #### Homebrew Run
+  the following command: ```sh brew install --cask freelens ``` ### Linux Linux with
+  GNU C Library 2.34 or later is required. It is provided ie. by Debian 12, Fedora
+  35, Mint 21, openSUSE Leap 15.4, Ubuntu 22.04 and by rolling release distributions
+  like Arch, Manjaro or Tumbleweed. Download DEB or RPM (package) or AppImage (executable)
+  from the [releases](https://github.com/freelensapp/freelens/releases) page. Both
+  arm64 (aarch64) and amd64 (x86_64) variants are available. All binary packages are
+  built on Ubuntu 22.04 and should be compatible with new systems. #### AppImage The
+  Linux AppImage file requires libz.so and libfuse.so.2. You can add them by running:
+  ```sh sudo apt install libfuse2 zlib1g-dev ``` Run the application with additional
+  arguments: ```sh ./Freelens*.AppImage --no-sandbox --ozone-platform-hint=auto --enable-features=WebRTCPipeWireCapturer
+  --enable-features=WaylandWindowDecorations --disable-gpu-compositing ``` #### Flatpak
+  The package is available on the [Flathub](https://flathub.org/apps/app.freelens.Freelens)
+  App Store for Linux. Use GNOME Software application or run the following commands:
+  ```sh flatpak install flathub app.freelens.Freelens flatpak run app.freelens.Freelens
+  ``` The application is sandboxed. It includes bundled `kubectl` and `helm` commands
+  and uses the `~/.kube/config` file by default. Flatpak adds wrappers for the `aws`,
+  `doctl`, `gke-gcloud-auth-plugin`, and `kubelogin` tools, running them as commands
+  from the host system. The terminal uses `/bin/sh` by default, but it can be switched
+  to, for example, `/bin/bash` for a sandboxed environment or `/app/bin/host-spawn`
+  for a host environment. #### Snap The package is available on the [Snap](https://snapcraft.io/freelens)
+  Store for Linux. Use App Center application or run the following command: ```sh
+  snap install freelens --classic ``` #### APT repository Run the following commands:
+  ```sh curl -L https://raw.githubusercontent.com/freelensapp/freelens/refs/heads/main/freelens/build/apt/freelens.asc
+  | sudo tee /etc/apt/keyrings/freelens.asc curl -L https://raw.githubusercontent.com/freelensapp/freelens/refs/heads/main/freelens/build/apt/freelens.sources
+  | sudo tee /etc/apt/sources.list.d/freelens.sources sudo apt update sudo apt install
+  freelens ``` #### Arch User Repository The package is available on the [Arch User
+  Repository (AUR)](https://wiki.archlinux.org/title/Arch_User_Repository). Check
+  the [freelens-bin](https://aur.archlinux.org/packages/freelens-bin) package page.
+  ### Windows Windows 10 or later is required. Download the EXE (NSIS) or MSI installers
+  from the [releases](https://github.com/freelensapp/freelens/releases) page. Both
+  the x64 (amd64) and arm64 versions of the Windows binaries are provided. However,
+  an EXE installer (NSIS) itself is x86 binary only even if it installs arm64 application
+  and then installs to `C:\\Program Files (x86)\\Freelens` path by default. The version
+  of the MSI package has the last 4th digit always `0` and this is a limitation of
+  this package format. #### Portable Download the Portable EXE from the [releases](https://github.com/"
 ---
 {% raw %}
 # Freelens

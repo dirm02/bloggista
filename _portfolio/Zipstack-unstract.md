@@ -2,8 +2,62 @@
 layout: project
 name: Zipstack Unstract
 slug: Zipstack-unstract
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FZipstack%2Funstract%2Frefs%2Fheads%2Fmain%2Fpyproject.toml
 repo_url: https://github.com/astral-sh/uv)
+indexed_content: "# Unstract ## The Data Layer for your Agentic Workflows—Automate
+  Document-based workflows with close to 100% accuracy! [](https://github.com/astral-sh/uv)
+  [](https://cla-assistant.io/Zipstack/unstract) [](https://results.pre-commit.ci/latest/github/Zipstack/unstract/main)
+  [](https://sonarcloud.io/summary/new_code?id=Zipstack_unstract) [](https://sonarcloud.io/summary/new_code?id=Zipstack_unstract)
+  [](https://sonarcloud.io/summary/new_code?id=Zipstack_unstract) [](https://sonarcloud.io/summary/new_code?id=Zipstack_unstract)
+  [](https://sonarcloud.io/summary/new_code?id=Zipstack_unstract) ## \U0001F916 Prompt
+  Studio Prompt Studio is a purpose-built environment that supercharges your schema
+  definition efforts. Compare outputs from different LLMs side-by-side, keep tab on
+  costs while you develop generic prompts that work across wide-ranging document variations.
+  And when you're ready, launch extraction APIs with a single click. ## \U0001F50C
+  Integrations that suit your environment Once you've used Prompt Studio to define
+  your schema, Unstract makes it easy to integrate into your existing workflows. Simply
+  choose the integration type that best fits your environment: | Integration Type
+  | Description | Best For | Documentation | |------------------|-------------|----------|---------------|
+  | \U0001F5A5️ **MCP Servers** | Run Unstract as an MCP Server to provide structured
+  data extraction to Agents or LLMs in your ecosystem. | Developers building **Agentic/LLM
+  apps/tools** that speak MCP. | [Unstract MCP Server Docs](https://docs.unstract.com/unstract/unstract_platform/mcp/unstract_platform_mcp_server/)
+  | | \U0001F310 **API Deployments** | Turn any document into JSON with an API call.
+  Deploy any Prompt Studio project as a REST API endpoint with a single click. | Teams
+  needing **programmatic access** in apps, services, or custom tooling. | [API Deployment
+  Docs](https://docs.unstract.com/unstract/unstract_platform/api_deployment/unstract_api_deployment_intro/)
+  | | ⚙️ **ETL Pipelines** | Embed Unstract directly into your ETL jobs to transform
+  unstructured data before loading it into your warehouse / database. | **Engineering
+  and Data engineering teams** that need to batch process documents into clean JSON.
+  | [ETL Pipelines Docs](https://docs.unstract.com/unstract/unstract_platform/etl_pipeline/unstract_etl_pipeline_intro/)
+  | | \U0001F9E9 **n8n Nodes** | Use Unstract as ready-made nodes in n8n workflows
+  for drag-and-drop automation. | **Low-code users** and **ops teams** automating
+  workflows. | [Unstract n8n Nodes Docs](https://docs.unstract.com/unstract/unstract_platform/api_deployment/unstract_api_deployment_n8n_custom_node/)
+  | ## ☁️ Getting Started (Cloud / Enterprise) The easy-peasy way to try Unstract
+  is to [sign up for a **14-day free trial**](https://unstract.com/start-for-free/).
+  Give Unstract a spin now! Unstract Cloud also comes with some really awesome features
+  that give serious accuracy boosts to agentic/LLM-powered document-centric workflows
+  in the enterprise. | Feature | Description | Documentation | |---------|-------------|---------------|
+  | \U0001F9EA **LLMChallenge** | Uses two Large Language Models to ensure trustworthy
+  output. You either get the right response or no response at all. | [Docs](https://docs.unstract.com/unstract/unstract_platform/features/llm_challenge/llm_challenge_intro/)
+  | | ⚡ **SinglePass Extraction** | Reduces LLM token usage by up to **8x**, dramatically
+  cutting costs. | [Docs](https://docs.unstract.com/unstract/editions/cloud_edition/#singlepass-extraction)
+  | | \U0001F4C9 **SummarizedExtraction** | Reduces LLM token usage by up to **6x**,
+  saving costs while keeping accuracy. | [Docs](https://docs.unstract.com/unstract/unstract_platform/features/summarized_extraction/summarized_extraction_intro/)
+  | | \U0001F440 **Human-In-The-Loop** | Side-by-side comparison of extracted value
+  and source document, with highlighting for human review and tweaking. | [Docs](https://docs.unstract.com/unstract/unstract_platform/human_quality_review/human_quality_review_intro/)
+  | | \U0001F510 **SSO Support** | Enterprise-ready authentication options for seamless
+  onboarding and off-boarding. | [Docs](https://docs.unstract.com/unstract/editions/cloud_edition/#enterprise-features)
+  | ## ⏩ Quick Start Guide Unstract comes well documented. You can get introduced
+  to the [basics of Unstract](https://docs.unstract.com/unstract/), and [learn how
+  to connect](https://docs.unstract.com/unstract/unstract_platform/setup_accounts/whats_needed)
+  various systems like LLMs, Vector Databases, Embedding Models and Text Extractors
+  to it. The easiest way to wet your feet is to go through our [Quick Start Guide](https://docs.unstract.com/unstract/unstract_platform/quick_start)
+  where you actually get to do some prompt engineering in Prompt Studio and launch
+  an API to structure varied credit card statements! ## \U0001F680 Getting started
+  (self-hosted) ### System Requirements - 8GB RAM (minimum) ### Prerequisites - Linux
+  or MacOS (Intel or M-series) - Docker - Docker Compose (if you need to install it
+  separately) - Git "
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,69 @@
 layout: project
 name: Unclecode Crawl4ai
 slug: unclecode-crawl4ai
+category: Let's try this- Personal prefere
 image: https://img.shields.io/github/stars/unclecode/crawl4ai?style=social
 repo_url: https://github.com/unclecode/crawl4ai
+indexed_content: "# \U0001F680\U0001F916 Crawl4AI: Open-source LLM Friendly Web Crawler
+  & Scraper. [](https://github.com/unclecode/crawl4ai/stargazers) [](https://github.com/unclecode/crawl4ai/network/members)
+  [](https://badge.fury.io/py/crawl4ai) [](https://pypi.org/project/crawl4ai/) [](https://pepy.tech/project/crawl4ai)
+  [](https://github.com/sponsors/unclecode) --- #### \U0001F680 Crawl4AI Cloud API
+  — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to
+  be _**drastically more cost-effective**_ than any of the existing solutions. \U0001F449
+  **Apply [here](https://forms.gle/E9MyPaNXACnAMaqG7) for early access** _We’ll be
+  onboarding in phases and working closely with early users. Limited slots._ --- Crawl4AI
+  turns the web into clean, LLM ready Markdown for RAG, agents, and data pipelines.
+  Fast, controllable, battle tested by a 50k+ star community. [✨ Check out latest
+  update v0.8.0](#-recent-updates) ✨ **New in v0.8.0**: Crash Recovery & Prefetch
+  Mode! Deep crawl crash recovery with `resume_state` and `on_state_change` callbacks
+  for long-running crawls. New `prefetch=True` mode for 5-10x faster URL discovery.
+  Critical security fixes for Docker API (hooks disabled by default, file:// URLs
+  blocked). [Release notes →](https://github.com/unclecode/crawl4ai/blob/main/docs/blog/release-v0.8.0.md)
+  ✨ Recent v0.7.8: Stability & Bug Fix Release! 11 bug fixes addressing Docker API
+  issues, LLM extraction improvements, URL handling fixes, and dependency updates.
+  [Release notes →](https://github.com/unclecode/crawl4ai/blob/main/docs/blog/release-v0.7.8.md)
+  ✨ Previous v0.7.7: Complete Self-Hosting Platform with Real-time Monitoring! Enterprise-grade
+  monitoring dashboard, comprehensive REST API, WebSocket streaming, and smart browser
+  pool management. [Release notes →](https://github.com/unclecode/crawl4ai/blob/main/docs/blog/release-v0.7.7.md)
+  \U0001F913 My Personal Story I grew up on an Amstrad, thanks to my dad, and never
+  stopped building. In grad school I specialized in NLP and built crawlers for research.
+  That’s where I learned how much extraction matters. In 2023, I needed web-to-Markdown.
+  The “open source” option wanted an account, API token, and $16, and still under-delivered.
+  I went turbo anger mode, built Crawl4AI in days, and it went viral. Now it’s the
+  most-starred crawler on GitHub. I made it open source for **availability**, anyone
+  can use it without a gate. Now I’m building the platform for **affordability**,
+  anyone can run serious crawls without breaking the bank. If that resonates, join
+  in, send feedback, or just crawl something amazing. Why developers pick Crawl4AI
+  - **LLM ready output**, smart Markdown with headings, tables, code, citation hints
+  - **Fast in practice**, async browser pool, caching, minimal hops - **Full control**,
+  sessions, proxies, cookies, user scripts, hooks - **Adaptive intelligence**, learns
+  site patterns, explores only what matters - **Deploy anywhere**, zero keys, CLI
+  and Docker, cloud friendly ## \U0001F680 Quick Start 1. Install Crawl4AI: ```bash
+  # Install the package pip install -U crawl4ai # For pre release versions pip install
+  crawl4ai --pre # Run post-installation setup crawl4ai-setup # Verify your installation
+  crawl4ai-doctor ``` If you encounter any browser-related issues, you can install
+  them manually: ```bash python -m playwright install --with-deps chromium ``` 2.
+  Run a simple web crawl with Python: ```python import asyncio from crawl4ai import
+  * async def main(): async with AsyncWebCrawler() as crawler: result = await crawler.arun(
+  url=\"https://www.nbcnews.com/business\", ) print(result.markdown) if __name__ ==
+  \"__main__\": asyncio.run(main()) ``` 3. Or use the new command-line interface:
+  ```bash # Basic crawl with markdown output crwl https://www.nbcnews.com/business
+  -o markdown # Deep crawl with BFS strategy, max 10 pages crwl https://docs.crawl4ai.com
+  --deep-crawl bfs --max-pages 10 # Use LLM extraction with a specific question crwl
+  https://www.example.com/products -q \"Extract all product prices\" ``` ## \U0001F496
+  Support Crawl4AI > \U0001F389 **Sponsorship Program Now Open!** After powering 51K+
+  developers and 1 year of growth, Crawl4AI is launching dedicated support for **startups**
+  and **enterprises**. Be among the first 50 **Founding Sponsors** for permanent recognition
+  in our Hall of Fame. Crawl4AI is the #1 trending open-source web crawler on GitHub.
+  Your support keeps it independent, innovative, and free for the community — while
+  giving you direct access to premium benefits. [](https://github.com/sponsors/unclecode)
+  [](https://github.com/sponsors/unclecode) ### \U0001F91D Sponsorship Tiers - **\U0001F331
+  Believer ($5/mo)** — Join the movement for data democratization - **\U0001F680 Builder
+  ($50/mo)** — Priority support & early access to features - **\U0001F4BC Growing
+  Team ($500/mo)** — Bi-weekly syncs & optimization help - **\U0001F3E2 Data Infrastructure
+  Partner ($2000/mo)** — Full partnership with dedicated support *Custom arrangements
+  available - see [SPONSORS.md](SPONSORS.md) for details & contact* **Why sponsor?**
+  No rate-limited APIs. No lock-in. Build and own y"
 ---
 {% raw %}
 # 🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.

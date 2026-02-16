@@ -2,8 +2,70 @@
 layout: project
 name: Fspecii Heartmula Studio
 slug: fspecii-HeartMuLa-Studio
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/fspecii/HeartMuLa-Studio/main/frontend/public/heartmula-icon.svg
 repo_url: https://github.com/HeartMuLa/heartlib
+indexed_content: "HeartMuLa Studio A professional, Suno-like music generation studio
+  for HeartLib Features • Demo • Installation • Usage • Configuration • Credits ---
+  ## Demo ## Features ### \U0001F3B5 AI Music Generation | Feature | Description |
+  |---------|-------------| | **Full Song Generation** | Create complete songs with
+  vocals and lyrics up to 4+ minutes | | **Instrumental Mode** | Generate instrumental
+  tracks without vocals | | **Style Tags** | Define genre, mood, tempo, and instrumentation
+  | | **Seed Control** | Reproduce exact generations for consistency | | **Queue System**
+  | Queue multiple generations and process them sequentially | ### \U0001F3A8 Reference
+  Audio (Style Transfer) `Experimental` | Feature | Description | |---------|-------------|
+  | **Audio Upload** | Use any audio file as a style reference | | **Waveform Visualization**
+  | Professional waveform display powered by WaveSurfer.js | | **Region Selection**
+  | Draggable 10-second region selector for precise style sampling | | **Style Influence**
+  | Adjustable slider to control reference audio influence (1-100%) | | **Synced Playback**
+  | Modal waveform syncs with bottom player in real-time | > **Coming Soon: LoRA Voice
+  Training** - We're actively developing LoRA-based voice training with exceptional
+  results. Our early tests show voice consistency that surpasses Suno. Stay tuned
+  for updates! ### \U0001F3A4 AI-Powered Lyrics | Feature | Description | |---------|-------------|
+  | **Lyrics Generation** | Generate lyrics from a topic using LLMs | | **Multiple
+  Providers** | Support for Ollama (local) and OpenRouter (cloud) | | **Style Suggestions**
+  | AI-suggested style tags based on your concept | | **Prompt Enhancement** | Improve
+  your prompts with AI assistance | ### \U0001F3A7 Professional Interface | Feature
+  | Description | |---------|-------------| | **Spotify-Inspired UI** | Clean, modern
+  design with dark/light mode | | **Bottom Player** | Full-featured player with waveform,
+  volume, and progress | | **History Feed** | Browse, search, and manage all generated
+  tracks | | **Likes & Playlists** | Organize favorites into custom playlists | |
+  **Real-time Progress** | Live generation progress with step indicators | | **Responsive
+  Design** | Works on desktop and mobile devices | ## Tech Stack | Layer | Technologies
+  | |-------|-------------| | **Frontend** | React 18, TypeScript, TailwindCSS, Framer
+  Motion, WaveSurfer.js | | **Backend** | FastAPI, SQLModel, SSE (Server-Sent Events)
+  | | **AI Engine** | [HeartLib](https://github.com/HeartMuLa/heartlib) - MuQ, MuLan,
+  HeartCodec | | **LLM Integration** | Ollama, OpenRouter | ## Performance Optimizations
+  HeartMuLa Studio uses **mmgp (Memory Management for GPU Poor)** for intelligent
+  GPU memory management, enabling reliable generation on GPUs with 10GB+ VRAM. ###
+  \U0001F9E0 mmgp Memory Management mmgp provides lazy model loading with automatic
+  memory swapping between the transformer and codec models. This is more reliable
+  than traditional quantization methods, especially on newer GPUs. | Feature | Description
+  | |---------|-------------| | **bf16 Precision** | Default mode, fastest performance
+  | | **Model Swapping** | Automatically swaps models when VRAM is limited | | **INT8
+  Quantization** | Optional, ~12% slower but lower peak VRAM | **Performance on RTX
+  3060 12GB (bf16 + Model Swap):** | Duration | Generation Time | Real-Time Factor
+  | |----------|-----------------|------------------| | 30 seconds | ~48 seconds |
+  1.60x | | 60 seconds | ~80 seconds | 1.33x | ### ⚡ Flash Attention Automatically
+  configured based on your GPU: | GPU | Flash Attention | |-----|-----------------|
+  | NVIDIA SM 7.0+ (Volta, Turing, Ampere, Ada, Hopper) | ✅ Enabled | | NVIDIA SM
+  6.x and older (Pascal, Maxwell) | ❌ Disabled (uses math backend) | | AMD GPUs |
+  ❌ Disabled (compatibility varies) | ### \U0001F525 torch.compile (Experimental)
+  Enable PyTorch 2.0+ compilation for **~2x faster inference** on supported GPUs:
+  ```bash # Enable torch.compile HEARTMULA_COMPILE=true python -m uvicorn backend.app.main:app
+  --host 0.0.0.0 --port 8000 # With max performance (slower first run, faster subsequent
+  runs) HEARTMULA_COMPILE=true HEARTMULA_COMPILE_MODE=max-autotune python -m uvicorn
+  backend.app.main:app --host 0.0.0.0 --port 8000 ``` | Mode | Description | |------|-------------|
+  | `default` | Good balance of compile time and performance | | `reduce-overhead`
+  | Faster compilation, slightly less optimal code | | `max-autotune` | Best performance,
+  but slowest compilation (recommended for production) | **Requirements:** - PyTorch
+  2.0+ - **Linux/WSL2**: Install Triton (`pip install triton`) - **Windows**: Install
+  Triton-Windows (`pip install -U 'triton-windows>=3.2, **Note:** First generation
+  will be slower due to compilation. Subsequent generations benefit from the compiled
+  kernels. ### \U0001F3AF Smart Multi-GPU Detection Automatically selects the best
+  GPU configuration: - **Single GPU**: Uses mmgp with model swapping based on available
+  VRAM - **Multi-GPU**: HeartMuLa → fastest GPU (Flash Attention), HeartCodec → largest
+  VR"
 ---
 {% raw %}
 <p align="center">

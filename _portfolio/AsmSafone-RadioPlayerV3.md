@@ -2,8 +2,42 @@
 layout: project
 name: Asmsafone Radioplayerv3
 slug: AsmSafone-RadioPlayerV3
+category: Bots-honeypots
 image: https://awesome.re/mentioned-badge-flat.svg
 repo_url: https://github.com/tgcalls/awesome-tgcalls)
+indexed_content: "# \U0001F4FB Telegram Radio Player V3 [](https://github.com/tgcalls/awesome-tgcalls)
+  [](https://github.com/AsmSafone/RadioPlayerV3/stargazers) [](https://github.com/AsmSafone/RadioPlayerV3/network/members)
+  [](https://github.com/AsmSafone/RadioPlayerV3/issues) [](https://github.com/AsmSafone/RadioPlayerV3/issues?q=is%3Aissue+is%3Aclosed)
+  [](https://github.com/AsmSafone/RadioPlayerV3/pulls) [](https://github.com/AsmSafone/RadioPlayerV3/graphs/contributors)
+  [](https://github.com/AsmSafone/RadioPlayerV3) [](https://github.com/AsmSafone/RadioPlayerV3/commits/main)
+  [](LICENSE) [](https://sonarcloud.io/summary/new_code?id=LightYagami28_RadioPlayerV3)
+  [](https://t.me/AsmSafone) [](https://t.me/AsmSupport) --- ## \U0001F3A7 What is
+  it? A modern Telegram bot to stream nonstop Radio, Music, and YouTube Lives directly
+  into Group or Channel Voice Chats. Live in production at: * \U0001F4E1 [AsmSafone
+  Channel](https://t.me/AsmSafone) * \U0001F3B5 [AsmSupport Group](https://t.me/AsmSupport)
+  --- ## \U0001F680 Features * \U0001F3B6 Playlist with queuing and 24/7 radio support
+  * \U0001F534 YouTube Live stream support * \U0001F501 Auto-fallback to radio when
+  playlist ends * \U0001F504 Persistent playback even after Heroku restarts * ⏱️ Show
+  current audio playback position * \U0001F579️ Interactive controls via buttons and
+  commands * ⬇️ Download audio from YouTube * \U0001F3F7️ Dynamic VC title updates
+  with song name * ⚡ Pre-download next tracks to ensure smooth playback --- ## ☁ Deploy
+  Instantly ### \U0001F49C Deploy to Heroku [](https://deploy.safone.tech) > **Note:**
+  Set Heroku region to **Europe** for better stability. ### ⚡ Deploy to Railway [](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FAsmSafone%2FRadioPlayerV3&envs=API_ID%2CAPI_HASH%2CBOT_TOKEN%2CSESSION_STRING%2CCHAT_ID%2CLOG_GROUP%2CADMINS%2CADMIN_ONLY%2CMAXIMUM_DURATION%2CSTREAM_URL%2CREPLY_MESSAGE)
+  > Ensure a voice chat is **started in your group/channel** before deploying. ---
+  ## \U0001F527 Configuration ### Required ENV Vars ``` API_ID, API_HASH, BOT_TOKEN,
+  SESSION_STRING, CHAT_ID ``` ### Optional ENV Vars ``` LOG_GROUP, AUTH_USERS, STREAM_URL,
+  MAXIMUM_DURATION, REPLY_MESSAGE, ADMIN_ONLY, HEROKU_API_KEY, HEROKU_APP_NAME ```
+  > [\U0001F517 Live Stream URLs](https://telegra.ph/Live-Radio-Stream-Links-05-17)
+  | [⚙️ Generate SESSION\\_STRING](https://t.me/genStr_robot) --- ## \U0001F4E6 Requirements
+  * Python >= 3.6 * FFmpeg Installed * Telegram API + String Session * User Account
+  as Admin in VC --- ## \U0001F5A5️ Run Locally (VPS) ```bash # Install dependencies
+  sudo apt install git curl python3-pip ffmpeg -y # Clone & setup git clone https://github.com/AsmSafone/RadioPlayerV3
+  cd RadioPlayerV3 pip3 install -r requirements.txt # Set .env values # Run the bot
+  python3 main.py ``` --- ## \U0001F4C4 License ```text GNU AGPLv3 Copyright (c) 2021
+  Asm Safone ``` --- ## \U0001F64C Credits * [@AsmSafone](https://github.com/AsmSafone)
+  * [@delivrance](https://github.com/delivrance) - Pyrogram * [@MarshalX](https://github.com/MarshalX)
+  - PyTgCalls * [All Contributors](https://github.com/AsmSafone/RadioPlayerV3/graphs/contributors)
+  ---"
 ---
 {% raw %}
 # 📻 Telegram Radio Player V3

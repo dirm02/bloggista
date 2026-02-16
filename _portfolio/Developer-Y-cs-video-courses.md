@@ -2,8 +2,58 @@
 layout: project
 name: Developer Y Cs Video Courses
 slug: Developer-Y-cs-video-courses
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/Developer-Y/cs-video-courses
+indexed_content: "# Computer Science courses with video lectures ## Introduction -
+  Please check [NOTES](https://github.com/Developer-Y/cs-video-courses/blob/master/NOTES.md)
+  for general information about this list. - Please refer [CONTRIBUTING.md](https://github.com/Developer-Y/cs-video-courses/blob/master/CONTRIBUTING.md)
+  for contribution guidelines. - Please feel free to raise any genuine issue you may
+  have, however, it has been noticed that few people open empty issues to raise their
+  GitHub contribution on their account. Such spammers will be blocked. - You are welcome
+  to contribute, please create PR for actual college/University level courses. Please
+  do not add links for small MOOCs, basic tutorials, or advertisements for some sites/channels.
+  ------------------------------ Table of Contents ------------------------------
+  - [Introduction to Computer Science](#introduction-to-computer-science) - [Data
+  Structures and Algorithms](#data-structures-and-algorithms) - [Systems Programming](#systems-programming)
+  * [Operating Systems](#operating-systems) * [Distributed Systems](#distributed-systems)
+  * [Real-Time Systems](#real-time-systems) - [Database Systems](#database-systems)
+  - [Software Engineering](#software-engineering) * [Object Oriented Design](#object-oriented-design)
+  * [Software Engineering](#software-engineering) * [Software Architecture](#software-architecture)
+  * [Concurrency](#concurrency) * [Mobile Application Development](#mobile-application-development)
+  - [Artificial Intelligence](#artificial-intelligence) - [Machine Learning](#machine-learning)
+  * [Introduction to Machine Learning](#introduction-to-machine-learning) * [Data
+  Mining](#data-mining) * [Probabilistic Graphical Modeling](#probabilistic-graphical-modeling)
+  * [Deep Learning](#deep-learning) * [Reinforcement Learning](#reinforcement-learning)
+  * [Advanced Machine Learning](#advanced-machine-learning) * [Natural Language Processing](#natural-language-processing)
+  * [Generative AI and LLMs](#generative-ai-and-llms) * [Computer Vision](#computer-vision)
+  * [Time Series Analysis](#time-series-analysis) * [Optimization](#optimization)
+  * [Unsupervised Learning](#unsupervised-learning) * [Misc Machine Learning Topics](#misc-machine-learning-topics)
+  - [Computer Networks](#computer-networks) - [Math for Computer Scientist](#math-for-computer-scientist)
+  - [Web Programming and Internet Technologies](#web-programming-and-internet-technologies)
+  - [Theoretical CS and Programming Languages](#theoretical-cs-and-programming-languages)
+  - [Embedded Systems](#embedded-systems) - [Real time system evaluation](#real-time-system-evaluation)
+  - [Computer Organization and Architecture](#computer-organization-and-architecture)
+  - [Security](#security) - [Computer Graphics](#computer-graphics) - [Image Processing
+  and Computer Vision](#image-processing-and-computer-vision) - [Computational Physics](#computational-physics)
+  - [Computational Biology](#computational-biology) - [Quantum Computing](#quantum-computing)
+  - [Robotics and Control](#robotics-and-control) - [Computational Finance](#computational-finance)
+  - [Network Science](#network-science) - [Blockchain Development](#blockchain-development)
+  - [Misc](#misc) ## Courses ------------------------------ ### Introduction to Computer
+  Science - [CS 10 - The Beauty and Joy of Computing - Spring 2015 - Dan Garcia -
+  UC Berkeley InfoCoBuild](http://www.infocobuild.com/education/audio-video-courses/computer-science/cs10-spring2015-berkeley.html)
+  - [6.0001 - Introduction to Computer Science and Programming in Python - MIT OCW](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/video_galleries/lecture-videos/)
+  - [6.001 - Structure and Interpretation of Computer Programs, MIT](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/)
+  - [Introduction to Computational Thinking - MIT](https://computationalthinking.mit.edu/Fall22/)
+  - [CS 50 - Introduction to Computer Science, Harvard University](https://online-learning.harvard.edu/course/cs50-introduction-computer-science)
+  ([cs50.tv](http://cs50.tv/2017/fall/)) - [CS50R - Introduction to Programming with
+  R](https://cs50.harvard.edu/r/2024/) ([Lecture Videos](https://www.youtube.com/playlist?list=PLhQjrBD2T382yfNp_-xzX244d-O9W6YmD))
+  - [CS50: Introduction to Computer Science with Python - Harvard (David J. Malan)](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V)
+  - [CS 61A - Structure and Interpretation of Computer Programs [Python], UC Berkeley](https://cs61a.org/)
+  - [CPSC 110 - Systematic Program Design [Racket], University of British Columbia](https://www.youtube.com/channel/UC7dEjIUwSxSNcW4PqNRQW8w/playlists?view=1&flow=grid&sort=da)
+  - [CS50's Understanding Technology](https://www.youtube.com/playlist?list=PLhQjrBD2T382p8amnvUp1rws1p7n7gJ2p)
+  - [CSE 142 Computer Programming I (Java Programming), Spring 2016 - University of
+  Washington](https://courses.cs.was"
 ---
 {% raw %}
 <!-- omit in toc -->

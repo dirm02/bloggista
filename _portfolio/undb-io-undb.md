@@ -2,8 +2,33 @@
 layout: project
 name: Undb Io Undb
 slug: undb-io-undb
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/undb-io-undb/docs/images/intro.jpeg
 repo_url: https://github.com/undb-io/undb
+indexed_content: "undb The Open Source no code database / BaaS UNDB is a no-code platform
+  that can also serve as a Backend as a Service (BaaS). It is based on SQLite and
+  can be packaged into a binary file using Bun for backend service. Additionally,
+  it can be deployed as a service via Docker, offering a UI for table management.
+  Website | Documentation | Twitter / X | Discord | Roadmap ## Features - ⚡ No-code
+  platform, easy to use - \U0001F5C4️ Based on SQLite, a lightweight database - \U0001F941
+  Built-in playground mode, try it out without any setup - \U0001F510 Private and
+  local first - \U0001F4E6 Can be packaged into a binary file using Bun - \U0001F4CA
+  Support formula field like Excel/Airtable - \U0001F310 OpenAPI RESTful API support
+  - \U0001FA9C Progressive deployment, from local in single file to cloud complicated
+  stacks. - \U0001F433 Supports Docker deployment - \U0001F6E0️ Provides a UI for
+  table management ## Screenshot ## Quick start - Try [undb cloud](https://app.undb.io)
+  - Run with docker ```bash docker run -p 3721:3721 ghcr.io/undb-io/undb:latest ```
+  - Run with docker with volume ```bash docker run -d \\ -p 3721:3721 \\ -v $(pwd)/undb:/usr/src/app/.undb
+  \\ --name undb \\ ghcr.io/undb-io/undb:latest ``` ### Deploy on Render.com ## Development
+  ### Local Development (Recommended) 1. **Install Bun** Refer to [Bun's official
+  documentation](https://bun.sh/docs) for installation instructions. 2. **Clone the
+  repository** ```bash git clone https://github.com/undb-io/undb.git cd undb ``` 3.
+  **Install dependencies** ```bash bun install ``` 4. **Start the development server**
+  ```bash bun run dev ``` ### Docker compose development ```bash docker compose up
+  -d ``` then visit `http://localhost:3721` ## Build ### Packaging into a Binary File
+  1. **Build** ```bash bun run build ``` ### Docker Deployment 1. **Build the Docker
+  image** ```bash docker build -t undb . ``` 2. **Run the Docker container** ```bash
+  docker run -d -p 3721:3721 undb ```"
 ---
 {% raw %}
 <h1 align="center" style="border-bottom: none">

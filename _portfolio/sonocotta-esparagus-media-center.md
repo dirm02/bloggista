@@ -2,8 +2,66 @@
 layout: project
 name: Sonocotta Esparagus Media Center
 slug: sonocotta-esparagus-media-center
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sonocotta-esparagus-media-center/images/open-source-hardware-logo.png
 repo_url: https://github.com/sonocotta/esparagus-media-center
+indexed_content: "# Esparagus Media Center [](https://discord.gg/PtnaAaQMpS) Esparagus
+  Media Center is a series of ESP32-based media center devices. They all run [Squeezelite-ESP32](https://github.com/sle118/squeezelite-esp32)
+  software and have similar media capabilities, but are aimed at different use cases.
+  They share a similar look, and compared to my earlier designs, they have a great-looking
+  aluminum case. ## Table of Contents - [Esparagus Media Center](#esparagus-media-center)
+  - [Table of Contents](#table-of-contents) - [Why Esparagus](#why-esparagus) - [Motivation](#motivation)
+  - [Esparagus HiFi MediaLink](#esparagus-hifi-medialink) - [Loud Esparagus](#loud-esparagus)
+  - [Louder Esparagus](#louder-esparagus) - [Amped Esparagus](#amped-esparagus) -
+  [Esparagus Audio Brick (prototype)](#esparagus-audio-brick-prototype) - [Which device
+  is right for me](#which-device-is-right-for-me) - [Features](#features) - [Onboard
+  PSRAM](#onboard-psram) - [Board Pinout](#board-pinout) - [Common to every board](#common-to-every-board)
+  - [Peripheral (Loud Esparagus \\& Esparagus HiFi MediaLink )](#peripheral-loud-esparagus--esparagus-hifi-medialink-)
+  - [Rotary encoder (Amped Esparagus)](#rotary-encoder-amped-esparagus) - [TAS5805M
+  DAC (Louder Esparagus)](#tas5805m-dac-louder-esparagus) - [Peripheral - OLED Screen
+  and W5500 Ethernet (Louder Esparagus)](#peripheral---oled-screen-and-w5500-ethernet-louder-esparagus)
+  - [Other Peripheral (Louder Esparagus)](#other-peripheral-louder-esparagus) - [Which
+  software is right for me](#which-software-is-right-for-me) - [Software samples](#software-samples)
+  - [Platformio IDE](#platformio-ide) - [Arduino IDE](#arduino-ide) - [Using Esparagus
+  Media Center with the Home Assistant](#using-esparagus-media-center-with-the-home-assistant)
+  - [Configuring Home Assistant](#configuring-home-assistant) - [Home Assistant: LMS
+  or Airplay](#home-assistant-lms-or-airplay) - [Native HA integration](#native-ha-integration)
+  - [Integrate into Music Assistant directly](#integrate-into-music-assistant-directly)
+  - [Home Assistant: ESPHome](#home-assistant-esphome) - [Snapclient multi-room playback
+  (experimental)](#snapclient-multi-room-playback-experimental) - [Sendspin multi-room
+  playback (experimental)](#sendspin-multi-room-playback-experimental) - [Install
+  steps](#install-steps) - [Home Assistant: Snapcast](#home-assistant-snapcast) -
+  [Squeezelite-ESP32](#squeezelite-esp32) - [How to flash and configure](#how-to-flash-and-configure)
+  - [Squeezelite-esp32 Bug causing boot loop](#squeezelite-esp32-bug-causing-boot-loop)
+  - [Squeezelite-esp32 reboots and connection drops](#squeezelite-esp32-reboots-and-connection-drops)
+  - [Standalone Snapclient](#standalone-snapclient) - [Snapclient benefits](#snapclient-benefits)
+  - [Hardware](#hardware) - [Boxed](#boxed) - [PCB](#pcb) - [BTL and PBTL mode (Louder
+  and Amped boards)](#btl-and-pbtl-mode-louder-and-amped-boards) - [Power figures
+  (comparison of BTL and PBTL modes)](#power-figures-comparison-of-btl-and-pbtl-modes)
+  - [Amped TPA3110 Amp](#amped-tpa3110-amp) - [Louder TAS5805M DAC](#louder-tas5805m-dac)
+  - [TAS5805M DSP capabilities](#tas5805m-dsp-capabilities) - [Louder and Amped Esparagus
+  power considerations](#louder-and-amped-esparagus-power-considerations) - [Power
+  Delivery-enabled adapters](#power-delivery-enabled-adapters) - [Louder and Amped
+  Esparagus NOPD](#louder-and-amped-esparagus-nopd) - [Louder and Amped Esparagus
+  DUAL](#louder-and-amped-esparagus-dual) - [Efficiency](#efficiency) - [Speakers
+  selection](#speakers-selection) - [OLED screen (soldered in)](#oled-screen-soldered-in)
+  - [OLED models](#oled-models) - [OLED screen (solder-less)](#oled-screen-solder-less)
+  - [OLED models](#oled-models-1) - [Software side](#software-side) - [Audio Brick
+  details](#audio-brick-details) - [Relay Driver](#relay-driver) - [Errata](#errata)
+  - [Where to buy](#where-to-buy) ## Why Esparagus ChatGPT made me call it that way.
+  I only asked if there is a fruit or vegetable that is phonetically close to ESP32,
+  which is the heart of this device. ## Motivation I did a few audio projects in the
+  past, some using [ESP32](https://hackaday.io/project/173620-loud-esp), some using
+  larger [Orange Pi](https://hackaday.io/project/191936-orange-pi-home-media-center)
+  and [Raspberry Pi](https://hackaday.io/project/162373-orangepi-zero-pulse-music-server-using-i2s-dac)
+  devices. Each has its pros and cons, and with each iteration, I'm trying to focus
+  on the details that were working best for me, while actually using them. What I
+  like about the ESP32 is how lightweight it is. It barely draws power, so you may
+  not care to turn it off at all. It boots in seconds and is ready for use in a snap.
+  Still, it is capable and works at par with Linux SBC solutions for audio applications,
+  while costing a fraction of their price. Combined with a proper Hi-Fi DAC, you would
+  not tell a difference between commercial devices standing side by side and costing
+  much more. Over the last few years, I have seen a few amazing software pr"
 ---
 {% raw %}
 # Esparagus Media Center

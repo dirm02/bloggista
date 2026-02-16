@@ -2,8 +2,58 @@
 layout: project
 name: Drakkar Software Octobot
 slug: Drakkar-Software-OctoBot
+category: Uncategorized
 image: https://img.shields.io/pypi/v/OctoBot.svg?logo=pypi
 repo_url: https://github.com/Drakkar-Software/OctoBot
+indexed_content: "# OctoBot - Free Open Source Crypto Trading Bot [](https://pypi.org/project/OctoBot)
+  [](https://pepy.tech/project/octobot) [](https://hub.docker.com/r/drakkarsoftware/octobot)
+  [](https://github.com/Drakkar-Software/OctoBot/actions) [](https://deepwiki.com/Drakkar-Software/OctoBot)
+  []() [](https://t.me/octobot_trading) [](https://discord.com/invite/vHkcb8W) [](https://t.me/OctoBot_Project)
+  [](https://x.com/DrakkarsOctoBot) [](https://www.youtube.com/@octobot1134) ## Open
+  source crypto trading bot with a visual user interface [OctoBot](https://www.octobot.cloud/trading-bot?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=readme_what_is_octobot)
+  is an open source cryptocurrency trading robot designed for crypto investors who
+  want to automate their investment strategies. The bot can automate strategies using
+  built-in: - Strategies such as [grids](#grid-trading-bot), [DCA strategies](#dca-trading-bot),
+  [crypto baskets](#crypto-basket-trading-bot) and much more, which can all be configured
+  - [AI connectors](#ai-trading-bot) to trade using any [OpenAI](https://openai.com/)
+  or [Ollama](https://ollama.com/) model such as ChatGPT, llama or any [custom model](https://ollama.com/search)
+  running on an Ollama server - [TradingView connectors](#tradingview-trading-bot)
+  to automate trades from [TradingView](https://www.tradingview.com/?aff_id=27595)
+  indicators or strategies - Social indicators to analyze social data such as [Google
+  trends](https://trends.google.com/trends/explore?date=today%205-y&q=%2Fm%2F05p0rrx&hl=en)
+  or [Reddit](https://reddit.com) - Technical analysis indicators such as RSI, Moving
+  Averages or MACD - [15+ exchange integrations](#your-trading-bot-for-binance-coinbase-hyperliquid-and-15-other-exchanges)
+  including Binance, Coinbase, MEXC and Hyperliquid The trading bot is written in
+  Python being built and improved as a free open source software since 2018. It can
+  be [installed on your system or executed on a cloud provider](#installing-octobot-open-source-crypto-trading-bot).
+  ### An easy to use trading bot with a Mobile App, Web and Telegram user interfaces
+  Are you looking for a bot you can setup from the peaceful environment of your home
+  computer and that you can follow from anywhere using your phone? OctoBot is designed
+  for crypto investors who want to automate their trading strategies in a simple way,
+  using a graphic interface to: - Configure the details of their strategy and its
+  traded markets and exchange(s) - Test and optimize the strategy using [backtesting](https://www.octobot.cloud/en/guides/octobot-usage/backtesting?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=backtesting)
+  - Live test it with paper money - Execute it on a real exchange account, by automatically
+  sending orders to the exchange Once started, an OctoBot can be followed using its
+  web interface, making it reachable when running on a cloud server. OctoBot can also
+  be connected to a Telegram bot, therefore turning OctoBot into a [Telegram trading
+  bot](https://www.octobot.cloud/en/guides/octobot-interfaces/telegram?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=telegram).
+  You can also follow your trading bot from the OctoBot mobile app, which is designed
+  to automate [octobot.cloud](https://www.octobot.cloud/trading-bot?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=octobot_app_section)
+  strategies, the app can also be used to follow your open source OctoBot's profits,
+  portfolio, open orders and trades. &nbsp;&nbsp;&nbsp;&nbsp; ### Live and backtesting
+  trading strategies automation OctoBot is more than just a strategy execution engine,
+  it can also simulate investments using [risk-free paper trading](https://www.octobot.cloud/en/guides/octobot-usage/simulator?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=risk-free_paper_trading).
+  Even better, the trading robot comes with its [built-in backtesting engine](https://www.octobot.cloud/en/guides/octobot-usage/backtesting?utm_source=github&utm_medium=dk&utm_campaign=regular_open_source_content&utm_content=backtesting_engine)
+  to help you test and optimize your strategy over a long period of time with a simulated
+  portfolio and historical exchange data. Backtesting your trading strategy and portfolio
+  will give you accurate insights on the past performance and behavior of your trading
+  strategy starting from its initial portfolio. This analysis tool gives you all the
+  metrics to create the best version of your strategy before automating it with your
+  real funds, on your exchange account. ### Your trading bot for Binance, Coinbase,
+  Hyperliquid and 15+ other exchanges OctoBot supports the vast majority of crypto
+  exchanges thanks to the great [CCXT library](https://github.com/ccxt/ccxt). This
+  wide range of supported exchanges makes it easy to create investment strategies
+  on any crypto, from Bitcoin, Ethereum or Solana t"
 ---
 {% raw %}
 # OctoBot - Free Open Source Crypto Trading Bot

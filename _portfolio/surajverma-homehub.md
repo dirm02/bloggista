@@ -2,8 +2,68 @@
 layout: project
 name: Surajverma Homehub
 slug: surajverma-homehub
+category: WindowsTools- Linux
 image: https://github.com/surajverma/homehub/actions/workflows/docker-publish.yml/badge.svg
 repo_url: https://github.com/surajverma/homehub
+indexed_content: "[](https://github.com/surajverma/homehub/actions/workflows/docker-publish.yml)
+  [](https://github.com/surajverma/homehub/commits/main) [](https://github.com/surajverma/homehub/issues)
+  [](https://github.com/surajverma/homehub/issues?q=is%3Aissue+is%3Aclosed) [](https://github.com/surajverma/homehub/issues?q=is%3Aissue+is%3Aopen+label%3A\"in+progress\")
+  [](https://github.com/surajverma/homehub/stargazers) > **Maintainer Note** > Thank
+  you for your interest in this project! I originally started it as a personal utility
+  and never expected it to grow so quickly—I’m genuinely thrilled and grateful that
+  it’s become helpful to you and your family. > > Please note that I am currently
+  the sole maintainer and manage this repository alongside a full-time job, which
+  means the time I can give to this project is somewhat limited. Responses to issues,
+  pull requests, or questions may be delayed, especially during busy periods at work
+  or at home. > > I typically work on the project after office hours or on weekends,
+  depending on my availability and energy. Your patience, understanding, and support
+  mean a lot—thank you for helping make this project better! # \U0001F3E1 HomeHub:
+  Your All-In-One Family Dashboard Ever wanted a simple, private spot on your home
+  network for your family's daily stuff? That's HomeHub. It's a lightweight, self-hosted
+  web app that turns any computer (even a Raspberry Pi!) into a central hub for shared
+  notes, shopping lists, chores, a media downloader, and even a family expense tracker.
+  It’s designed to be easy to use for everyone in the family, with a clean interface
+  that works great on any device. ## What Can It Do? HomeHub is packed with useful
+  tools to make family life a little more organized: * **\U0001F4DD Shared Notes**:
+  A simple place to jot down quick notes for everyone to see. * **☁️ Shared Cloud**:
+  Easily upload and share files across your home network. * **\U0001F6D2 Shopping
+  List**: A collaborative list so you never forget the milk again. Comes with suggestions
+  based on your history! * **✅ Chore Tracker**: A simple to-do list for household
+  tasks. * **\U0001F5D3️ Calendar & Reminders**: A shared calendar to keep track of
+  important dates. * **\U0001F44B Who's Home?**: See at a glance who is currently
+  home. * **\U0001F4B0 Expense Tracker**: A powerful tool to track family spending,
+  with support for recurring bills like newspapers, milk, or subscriptions. * **\U0001F3AC
+  Media Downloader**: Save videos or music from popular sites directly to your server.
+  * ...and more, including a **Recipe Book**, **Expiry Tracker**, **URL Shortener**,
+  **PDF Compressor**, **Weather Updates** and **QR Code Generator**! ## Salient Features
+  * **Private & Self-Hosted**: All your data stays on your network. No cloud, no tracking.
+  * **Simple & Lightweight**: Runs smoothly on minimal hardware. * **Family-Focused**:
+  Designed to be intuitive for users of all technical skill levels. * **Customizable**:
+  Toggle features on or off and even change the color theme right from the `config.yml`
+  file. ## Getting Started is Easy The best way to run HomeHub is with Docker. It's
+  quick and keeps everything tidy 1. First, copy the `config-example.yml` to `config.yml`.
+  This is where you'll name your hub and add family members. You can also set an optional
+  password to protect the whole site. Click to see an example config.yml ```yaml instance_name:
+  \"My Home Hub\" password: \"\" #leave blank for password less access admin_name:
+  \"Administrator\" feature_toggles: shopping_list: true media_downloader: true pdf_compressor:
+  true qr_generator: true notes: true shared_cloud: true who_is_home: true personal_status:
+  true chores: true recipes: true expiry_tracker: true url_shortener: true expense_tracker:
+  true family_members: - Mom - Dad - Dipanshu - Vivek - India reminders: # time_format
+  controls how reminder times are displayed in the UI. # Allowed values: \"12h\" (default)
+  or \"24h\". Remove or leave blank to fall back to 12h. time_format: 12h # calendar_start_day
+  controls which day the reminders calendar starts on. # Accepts full weekday names
+  (sunday, saturday). calendar_start_day: monday #default is Sunday, comment this
+  line to switch to default # Example reminder categories (keys lowercase no spaces
+  recommended) categories: - key: health label: Health color: \"#dc2626\" - key: bills
+  label: Bills color: \"#0d9488\" - key: school label: School color: \"#7c3aed\" -
+  key: family label: Family color: \"#2563eb\" #Optional settings theme: primary_color:
+  \"#1d4ed8\" secondary_color: \"#a0aec0\" background_color: \"#f7fafc\" card_background_color:
+  \"#fff\" text_color: \"#333\" sidebar_background_color: \"#2563eb\" sidebar_text_color:
+  \"#ffffff\" sidebar_link_color: \"rgba(255,255,255,0.95)\" sidebar_link_border_color:
+  \"rgba(255,255,255,0.18)\" sidebar_active_color: \"#3b82f6\" ``` **2. Run with Docker
+  Compose** Use the provided `compose.yml` file to get started in seconds: ```yaml
+  # compose.yml services: homehub: container_name: homehub image: ghcr.io/surajverma/homehub:latest
+  ports: - \"5000:5000\" #app listens internally on port 5000 environment: -"
 ---
 {% raw %}
 [![CI/CD](https://github.com/surajverma/homehub/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/surajverma/homehub/actions/workflows/docker-publish.yml)

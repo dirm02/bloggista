@@ -2,8 +2,68 @@
 layout: project
 name: Cactus Compute Cactus
 slug: cactus-compute-cactus
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/cactus-compute-cactus/assets/banner.jpg
 repo_url: https://github.com/cactus-compute/cactus
+indexed_content: '``` ┌─────────────────┐ Energy-efficient inference engine for running
+  AI on mobile devices │ Cactus Engine │ ←── OpenAI compatible APIs for C/C++, Swift,
+  Kotlin, Flutter & React-Native └─────────────────┘ Supports tool call, auto RAG,
+  NPU, INT4, and cloud handoff for complex tasks │ ┌─────────────────┐ Zero-copy computation
+  graph, think PyTorch for mobile devices │ Cactus Graph │ ←── You can implement custom
+  models directly using this └─────────────────┘ Highly optimised for RAM & lossless
+  weight quantisation │ ┌─────────────────┐ Low-level ARM-specific SIMD kernels (Apple,
+  Snapdragon, Google, Exynos, MediaTek & Raspberry Pi) │ Cactus Kernels │ ←── Optimised
+  Matrix Multiplication & n └─────────────────┘ Custom attention kernels with KV-Cache
+  Quantisation, chunked prefill, streaming LLM, etc. ``` ## Cactus Engine ```cpp #include
+  cactus.h cactus_model_t model = cactus_init( "path/to/weight/folder", "path to txt
+  or dir of txts for auto-rag", ); const char* messages = R"([ {"role": "system",
+  "content": "You are a helpful assistant."}, {"role": "user", "content": "My name
+  is Henry Ndubuaku"} ])"; const char* options = R"({ "max_tokens": 50, "stop_sequences":
+  [" "] })"; char response[4096]; int result = cactus_complete( model, // model handle
+  from cactus_init messages, // JSON array of chat messages response, // buffer to
+  store response JSON sizeof(response), // size of response buffer options, // optional:
+  generation options (nullptr for defaults) nullptr, // optional: tools JSON for function
+  calling nullptr, // optional: streaming callback fn(token, id, user_data) nullptr
+  // optional: user data passed to callback ); ``` Example response from Gemma3-270m
+  ```json { "success": true, // when successfully generated locally "error": null,
+  // returns specific errors if success = false "cloud_handoff": false, // true when
+  model is unconfident, simply route to cloud "response": "Hi there!", // null when
+  error is not null or cloud_handoff = true "function_calls": [], // parsed to [{"name":"set_alarm","arguments":{"hour":"10","minute":"0"}}]
+  "confidence": 0.8193, // how confident the model is with its response "time_to_first_token_ms":
+  45.23, // latency (time to first token) "total_time_ms": 163.67, // total execution
+  time "prefill_tps": 1621.89, // prefill tokens per second "decode_tps": 168.42,
+  // decode tokens per second "ram_usage_mb": 245.67, // current process RAM usage
+  in MB "prefill_tokens": 28, "decode_tokens": 50, "total_tokens": 78 } ``` ## Cactus
+  Graph ```cpp #include cactus.h CactusGraph graph; auto a = graph.input({2, 3}, Precision::FP16);
+  auto b = graph.input({3, 4}, Precision::INT8); auto x1 = graph.matmul(a, b, false);
+  auto x2 = graph.transpose(x1); auto result = graph.matmul(b, x2, true); float a_data[6]
+  = {1.1f, 2.3f, 3.4f, 4.2f, 5.7f, 6.8f}; float b_data[12] = {1, 2, 3, 4, 5, 6, 7,
+  8, 9, 10, 11, 12}; graph.set_input(a, a_data, Precision::FP16); graph.set_input(b,
+  b_data, Precision::INT8); graph.execute(); void* output_data = graph.get_output(result);
+  graph.hard_reset(); ``` ## Benchmark (INT8) | Device | LFM2.5-1.2B (1k-Prefill/100-Decode)
+  | LFM2.5-VL-1.6B (256px-Latency & Decode) | Whisper-Small-244m (30s-audio-Latency
+  & Decode) |--------|--------|--------|----------| | Mac M4 Pro | 582tps/77tps (76MB
+  RAM) | 0.2s/76tps (87MB RAM) | 0.1s/119tps (73MB RAM) | | iPad/Mac M4 | 379tps/46tps
+  (30MB RAM) | 0.2s/46tps (53MB RAM) | 0.2s/100tp (122MB RAM) | | iPad/Mac M2 | 315tps/42tps
+  (181MB RAM) | 0.3s/42tps (426MB RAM) | 0.3s/86tps (160MB RAM) | | iPhone 17 Pro
+  | 300tps/33tps (108MB RAM)| 0.3s/33tps (156MB RAM) | 0.3s/114tps (177MB RAM)| |
+  Galaxy S25 Ultra | 226tps/36tps (1.2GB RAM) | 2.6s/33tps (2GB RAM) | 2.3s/90tps
+  (363MB RAM) | | Pixel 10 Pro | - | - | - | | Vivo X200 Pro | - | - | - | | Device
+  | LFM2-350m (1k-Prefill/100-Decode) | LFM2-VL-450m (256px-Latency & Decode) | Moonshine-Base-67m
+  (30s-audio-Latency & Decode) |--------|--------|--------|----------| | iPad/Mac
+  M2 | 998tps/101tps (334MB RAM) | 0.2s/109tps (146MB RAM) | 0.3s/395tps (201MB RAM)
+  | | iPad/Mac M1 | - | - | - | | iPhone 13 Mini | - | - | - | | Galaxy A56 | - |
+  - | - | | Pixel 6a | 218tps/44tps (395MB RAM)| 2.5s/36tps (631MB RAM) | 1.5s/189tps
+  (111MB RAM)| | Nothing CMF | - | - | - | | Raspberry Pi 5 | - | - | - | ## Supported
+  Models | Model | Features | |-------|----------| | google/gemma-3-270m-it | completion
+  | | google/functiongemma-270m-it | completion, tools | | LiquidAI/LFM2-350M | completion,
+  tools, embed | | Qwen/Qwen3-0.6B | completion, tools, embed | | LiquidAI/LFM2-700M
+  | completion, tools, embed | | google/gemma-3-1b-it | completion | | LiquidAI/LFM2.5-1.2B-Thinking
+  | completion, tools, embed | | LiquidAI/LFM2.5-1.2B-Instruct | completion, tools,
+  embed | | Qwen/Qwen3-1.7B | completion, tools, embed | | LiquidAI/LFM2-2.6B | completion,
+  tools, embed | | LiquidAI/LFM2-VL-450M | vision, txt & img embed, Apple NPU | |
+  LiquidAI/LFM2.5-VL-1.6B | vision, txt & img embed, Apple NPU | | UsefulSensors/moonshine-base
+  | transcription, spee'
 ---
 {% raw %}
 <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/cactus-compute-cactus/assets/banner.jpg" alt="Logo" style="border-radius: 30px; width: 100%;">

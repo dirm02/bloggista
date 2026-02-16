@@ -2,8 +2,70 @@
 layout: project
 name: Open Webui Open Webui
 slug: open-webui-open-webui
+category: Uncategorized
 image: https://img.shields.io/github/stars/open-webui/open-webui?style=social
 repo_url: https://github.com/sponsors/tjbck)
+indexed_content: "# Open WebUI \U0001F44B [](https://discord.gg/5rJgQTnV4s) [](https://github.com/sponsors/tjbck)
+  **Open WebUI is an [extensible](https://docs.openwebui.com/features/plugin/), feature-rich,
+  and user-friendly self-hosted AI platform designed to operate entirely offline.**
+  It supports various LLM runners like **Ollama** and **OpenAI-compatible APIs**,
+  with **built-in inference engine** for RAG, making it a **powerful AI deployment
+  solution**. Passionate about open-source AI? [Join our team →](https://careers.openwebui.com/)
+  > [!TIP] > **Looking for an [Enterprise Plan](https://docs.openwebui.com/enterprise)?**
+  – **[Speak with Our Sales Team Today!](https://docs.openwebui.com/enterprise)**
+  > > Get **enhanced capabilities**, including **custom theming and branding**, **Service
+  Level Agreement (SLA) support**, **Long-Term Support (LTS) versions**, and **more!**
+  For more information, be sure to check out our [Open WebUI Documentation](https://docs.openwebui.com/).
+  ## Key Features of Open WebUI ⭐ - \U0001F680 **Effortless Setup**: Install seamlessly
+  using Docker or Kubernetes (kubectl, kustomize or helm) for a hassle-free experience
+  with support for both `:ollama` and `:cuda` tagged images. - \U0001F91D **Ollama/OpenAI
+  API Integration**: Effortlessly integrate OpenAI-compatible APIs for versatile conversations
+  alongside Ollama models. Customize the OpenAI API URL to link with **LMStudio, GroqCloud,
+  Mistral, OpenRouter, and more**. - \U0001F6E1️ **Granular Permissions and User Groups**:
+  By allowing administrators to create detailed user roles and permissions, we ensure
+  a secure user environment. This granularity not only enhances security but also
+  allows for customized user experiences, fostering a sense of ownership and responsibility
+  amongst users. - \U0001F4F1 **Responsive Design**: Enjoy a seamless experience across
+  Desktop PC, Laptop, and Mobile devices. - \U0001F4F1 **Progressive Web App (PWA)
+  for Mobile**: Enjoy a native app-like experience on your mobile device with our
+  PWA, providing offline access on localhost and a seamless user interface. - ✒️\U0001F522
+  **Full Markdown and LaTeX Support**: Elevate your LLM experience with comprehensive
+  Markdown and LaTeX capabilities for enriched interaction. - \U0001F3A4\U0001F4F9
+  **Hands-Free Voice/Video Call**: Experience seamless communication with integrated
+  hands-free voice and video call features using multiple Speech-to-Text providers
+  (Local Whisper, OpenAI, Deepgram, Azure) and Text-to-Speech engines (Azure, ElevenLabs,
+  OpenAI, Transformers, WebAPI), allowing for dynamic and interactive chat environments.
+  - \U0001F6E0️ **Model Builder**: Easily create Ollama models via the Web UI. Create
+  and add custom characters/agents, customize chat elements, and import models effortlessly
+  through [Open WebUI Community](https://openwebui.com/) integration. - \U0001F40D
+  **Native Python Function Calling Tool**: Enhance your LLMs with built-in code editor
+  support in the tools workspace. Bring Your Own Function (BYOF) by simply adding
+  your pure Python functions, enabling seamless integration with LLMs. - \U0001F4BE
+  **Persistent Artifact Storage**: Built-in key-value storage API for artifacts, enabling
+  features like journals, trackers, leaderboards, and collaborative tools with both
+  personal and shared data scopes across sessions. - \U0001F4DA **Local RAG Integration**:
+  Dive into the future of chat interactions with groundbreaking Retrieval Augmented
+  Generation (RAG) support using your choice of 9 vector databases and multiple content
+  extraction engines (Tika, Docling, Document Intelligence, Mistral OCR, External
+  loaders). Load documents directly into chat or add files to your document library,
+  effortlessly accessing them using the `#` command before a query. - \U0001F50D **Web
+  Search for RAG**: Perform web searches using 15+ providers including `SearXNG`,
+  `Google PSE`, `Brave Search`, `Kagi`, `Mojeek`, `Tavily`, `Perplexity`, `serpstack`,
+  `serper`, `Serply`, `DuckDuckGo`, `SearchApi`, `SerpApi`, `Bing`, `Jina`, `Exa`,
+  `Sougou`, `Azure AI Search`, and `Ollama Cloud`, injecting results directly into
+  your chat experience. - \U0001F310 **Web Browsing Capability**: Seamlessly integrate
+  websites into your chat experience using the `#` command followed by a URL. This
+  feature allows you to incorporate web content directly into your conversations,
+  enhancing the richness and depth of your interactions. - \U0001F3A8 **Image Generation
+  & Editing Integration**: Create and edit images using multiple engines including
+  OpenAI's DALL-E, Gemini, ComfyUI (local), and AUTOMATIC1111 (local), with support
+  for both generation and prompt-based editing workflows. - ⚙️ **Many Models Conversations**:
+  Effortlessly engage with various models simultaneously, harnessing their unique
+  strengths for optimal responses. Enhance your experience by leveraging a diverse
+  set of models in parallel. - \U0001F510 **Role-Based Access Control (RBAC)**: Ensure
+  secure access with restricted permissions; only authorized individuals can access
+  your Ollama, and exclusive model creation/pulling rights are reserved for administrators.
+  - \U0001F5C4️ **Flexible Database & Storage Options**: C"
 ---
 {% raw %}
 # Open WebUI 👋

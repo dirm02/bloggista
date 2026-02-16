@@ -2,8 +2,60 @@
 layout: project
 name: Pico 8 Awesome Pico 8
 slug: pico-8-awesome-PICO-8
+category: Uncategorized
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome PICO-8 [](https://awesome.re) A curated list of PICO-8
+  resources, tutorials, tools and more. Inspired by the [awesome](https://github.com/sindresorhus/awesome)
+  list thing. You might also like [awesome-lua](https://github.com/LewisJEllis/awesome-lua)
+  and [awesome-love2d](https://github.com/JanWerder/awesome-love2d). PICO-8 is a fantasy
+  console for making, sharing and playing tiny games and other computer programs.
+  When you turn it on, the machine greets you with a shell for typing in a subset
+  of [Lua](https://www.lua.org/) commands and provides simple built-in tools for creating
+  your own cartridges. ## Contents - [Community](#community) - [Demoscene](#demoscene)
+  - [Resources](#resources) - [Tutorials](#tutorials) - [Tools](#tools) - [Libraries](#libraries)
+  - [Assets](#assets) - [Text Editors Language Support](#text-editors-language-support)
+  - [Hacks](#hacks---undocumented-pico-8-features) - [Hardware](#hardware) - [Articles
+  & Posts](#articles--posts) - [Talks](#talks) - [Clones](#clones) - [Contributing](#i-want-to-contribute)
+  - [License](#license) ### Community - [Lexaloffle](https://www.lexaloffle.com) -
+  [Blog](https://www.lexaloffle.com/bbs/?uid=1) - [PICO-8](https://www.lexaloffle.com/pico-8.php)
+  - [Forum/BBS](https://www.lexaloffle.com/bbs/?cat=7) - [Twitter](https://twitter.com/lexaloffle)
+  - [Facebook](https://www.facebook.com/lexaloffle/) - [Youtube](https://www.youtube.com/user/lexaloffletv)
+  - [Subreddit](https://www.reddit.com/r/pico8/) - [#pico8 on Twitter](https://twitter.com/hashtag/pico8)
+  - [#pico8 on Freenode](https://webchat.freenode.net/?randomnick=1&channels=#pico8&prompt=1)
+  - [Pico-8 Console News](https://twitter.com/pico8console) - [Pico-8 Wiki](https://pico-8.wikia.com/wiki/Pico-8_Wikia)
+  - [Slack Team](https://slofile.com/slack/pico-8) - PICO-8 Slack chat. - [Discord
+  Server](https://discord.gg/EwQ86eq) - PICO-8 Discord chat. ### DemoScene - [Pico-8
+  demos on Demozoo](https://demozoo.org/platforms/81/) - [Pico-8 demos on Pouet](https://www.pouet.net/prodlist.php?platform%5B%5D=PICO-8)
+  - [Article with demoscene effects code](https://medium.com/swlh/creativity-through-limitation-pico-8-fantasy-console-175294e13332)
+  - [Pico-8 demos on Youtube](https://www.youtube.com/results?search_query=pico+8+demoscene)
+  ### Resources - [Official Manual](https://www.lexaloffle.com/pico-8.php?page=manual)
+  - Placeholder dump of pico-8.txt! (Proper manual coming soon). - [PicoZine #1](https://sectordub.itch.io/pico-8-fanzine-1),
+  [#2](https://sectordub.itch.io/pico-8-fanzine-2), [#3](https://sectordub.itch.io/pico-8-fanzine-3)
+  and [#4](https://sectordub.itch.io/-pico-8-zine-4) - PICO-8 Zine is a 48-page fanzine
+  made by and for PICO-8 users. - [Going from Lua 5.2 to PICO-8's Lua](https://gist.github.com/josefnpat/bfe4aaa5bbb44f572cd0)
+  - This document is here to help folks with a proficiency in Lua understand the limitations
+  and discrepencies between Lua and PICO-8's Lua. - [Cheat Sheet (printable)](https://ztiromoritz.github.io/pico-8-spick/)
+  - A reduced cheat sheet in a printable format. German and English version available.
+  - [Cheat Sheet (wallpaper)](https://www.lexaloffle.com/bbs/?tid=28207) - An enhancement
+  of the printable cheat sheet for use as a desktop wallpaper. ### Tutorials - [Music
+  Tracker Tutorial Series](https://www.youtube.com/playlist?list=PLjZAika8vyZkyOjoCp0EbHeIFZ8MLlhvg)
+  - Making audio with PICO-8. - [Tron Lightcycle game from scratch](https://youtu.be/ZuaLuMhwcc8)
+  - A quick introduction to PICO-8 writing a game from scratch. - [A PICO-8 Spaceshooter
+  in 16 GIFs](https://ztiromoritz.github.io/pico-8-shooter/) - Screencaptures of writing
+  a Spaceshooter game step by step. - [Token optimization](https://github.com/seleb/PICO-8-Token-Optimizations)
+  - tips&tricks for saving tokens. - [Tweetjam, BBS thread](https://www.lexaloffle.com/bbs/?tid=3726)
+  - cards which code fits in a tweet (really useful to learn some fun techniques).
+  - [Sample code on the BBS](https://www.lexaloffle.com/bbs/?search=sample+code) -
+  the search is not 100% accurate, but some of those cards features some nice tricks
+  you can re-use in your future code. - [Newgrounds Medals Tutorial](https://github.com/Bigaston/pico-8-newgrounds-tutorial)
+  - a little tutorial to add Newgrounds Medals to PICO-8 games. - [Binary save system](https://ultiman3rd.wordpress.com/2018/02/01/pico-8-binary-save-system/)
+  - Custom game save system that supports various data types - [Lazy Devs Breakout](https://youtube.com/playlist?list=PLea8cjCua_P0qjjiG8G5FBgqwpqMU7rBk&si=CaivHwqC6uYjJA21)
+  - step-by-step videos for [roguelikes](https://youtube.com/playlist?list=PLea8cjCua_P3LL7J1Q9b6PJua0A-96uUS&si=ZYrBbZMJr9ABHsnA),
+  [shmups](https://youtube.com/playlist?list=PLea8cjCua_P3Sfq4XJqNVbd1vsWnh7LZd&si=bKKGy-2IKwcTQxeF),
+  and more ### Tools - [Sprite Editor](https://www.lexaloffle.com/bbs/?tid=51270)
+  - Keyboard only 8x8 pixel art tool. - [pico2png](https://github.com/briacp/pico2png)
+  - Spritesheet extraction written in perl. - [Spritesheets and tools for "
 ---
 {% raw %}
 # Awesome PICO-8 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

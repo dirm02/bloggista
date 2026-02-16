@@ -2,8 +2,68 @@
 layout: project
 name: Dylanhogg Awesome Python
 slug: dylanhogg-awesome-python
+category: Very important!!!!
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/dylanhogg/awesome-python
+indexed_content: "# Awesome Python [](https://awesome.re) [](https://opensource.org/licenses/MIT)
+  Hand-picked awesome Python libraries and frameworks, organised by category \U0001F40D
+  Interactive version: [www.awesomepython.org](https://www.awesomepython.org/) Updated
+  11 Feb 2026 with 1,553 repos ## Categories - [Newly Created Repositories](#newly-created-repositories)
+  - Awesome Python is regularly updated, and this category lists the most recently
+  created GitHub repositories from all the other repositories here (10 repos) - [Agentic
+  AI](#agentic-ai) - Agentic AI libraries, frameworks and tools: AI agents, workflows,
+  autonomous decision-making, goal-oriented tasks, and API integrations (109 repos)
+  - [Code Quality](#code-quality) - Code quality tooling: linters, formatters, pre-commit
+  hooks, unused code removal (14 repos) - [Crypto and Blockchain](#crypto-and-blockchain)
+  - Cryptocurrency and blockchain libraries: trading bots, API integration, Ethereum
+  virtual machine, solidity (10 repos) - [Data](#data) - General data libraries: data
+  processing, serialisation, formats, databases, SQL, connectors, web crawlers, data
+  generation/augmentation/checks (81 repos) - [Debugging](#debugging) - Debugging
+  and tracing tools (3 repos) - [Diffusion Text to Image](#diffusion-text-to-image)
+  - Text-to-image diffusion model libraries, tools and apps for generating images
+  from natural language (40 repos) - [Finance](#finance) - Financial and quantitative
+  libraries: investment research tools, market data, algorithmic trading, backtesting,
+  financial derivatives (27 repos) - [Game Development](#game-development) - Game
+  development tools, engines and libraries (6 repos) - [GIS](#gis) - Geospatial libraries:
+  raster and vector data formats, interactive mapping and visualisation, computing
+  frameworks for processing images, projections (17 repos) - [Graph](#graph) - Graphs
+  and network libraries: network analysis, graph machine learning, visualisation (4
+  repos) - [GUI](#gui) - Graphical user interface libraries and toolkits (6 repos)
+  - [Jupyter](#jupyter) - Jupyter and JupyterLab and Notebook tools, libraries and
+  plugins (16 repos) - [LLMs and ChatGPT](#llms-and-chatgpt) - Large language model
+  and GPT libraries and frameworks: auto-gpt, agents, QnA, chain-of-thought workflows,
+  API integations. Also see the Natural Language Processing category for crossover
+  (348 repos) - [Math and Science](#math-and-science) - Mathematical, numerical and
+  scientific libraries (22 repos) - [Machine Learning - General](#machine-learning---general)
+  - General and classical machine learning libraries. See below for other sections
+  covering specialised ML areas (143 repos) - [Machine Learning - Deep Learning](#machine-learning---deep-learning)
+  - Machine learning libraries that cross over with deep learning in some way (67
+  repos) - [Machine Learning - Interpretability](#machine-learning---interpretability)
+  - Machine learning interpretability libraries. Covers explainability, prediction
+  explainations, dashboards, understanding knowledge development in training (21 repos)
+  - [Machine Learning - Ops](#machine-learning---ops) - MLOps tools, frameworks and
+  libraries: intersection of machine learning, data engineering and DevOps; deployment,
+  health, diagnostics and governance of ML models (48 repos) - [Machine Learning -
+  Reinforcement](#machine-learning---reinforcement) - Machine learning libraries and
+  toolkits that cross over with reinforcement learning in some way: agent reinforcement
+  learning, agent environemnts, RLHF (22 repos) - [Machine Learning - Time Series](#machine-learning---time-series)
+  - Machine learning and classical timeseries libraries: forecasting, seasonality,
+  anomaly detection, econometrics (17 repos) - [Natural Language Processing](#natural-language-processing)
+  - Natural language processing libraries and toolkits: text processing, topic modelling,
+  tokenisers, chatbots. Also see the LLMs and ChatGPT category for crossover (72 repos)
+  - [Packaging](#packaging) - Python packaging, dependency management and bundling
+  (21 repos) - [Pandas](#pandas) - Pandas and dataframe libraries: data analysis,
+  statistical reporting, pandas GUIs, pandas performance optimisations (18 repos)
+  - [Performance](#performance) - Performance, parallelisation and low level libraries
+  (19 repos) - [Profiling](#profiling) - Memory and CPU/GPU profiling tools and libraries
+  (8 repos) - [Security](#security) - Security related libraries: vulnerability discovery,
+  SQL injection, environment auditing (12 repos) - [Simulation](#simulation) - Simulation
+  libraries: robotics, economic, agent-based, traffic, physics, astronomy, chemistry,
+  quantum simulation. Also see the Maths and Science category for crossover (35 repos)
+  - [Study](#study) - Miscellaneous study resources: algorithms, general resources,
+  system design, code repos for textbooks, best practices, tutorials (63 repos) -
+  [Template](#template) - Template tools and libraries: cookiecutter repos, generators,
+  quick-starts (9 repos) - [Terminal](#terminal) - Termina"
 ---
 {% raw %}
 # Awesome Python  

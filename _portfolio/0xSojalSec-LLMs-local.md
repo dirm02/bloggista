@@ -2,8 +2,62 @@
 layout: project
 name: 0xsojalsec Llms Local
 slug: 0xSojalSec-LLMs-local
+category: Very important!!!!
 image: https://preview.redd.it/my-160gb-local-llm-rig-v0-qukd2c1lzk5f1.jpeg?auto=webp&s=eda341738c4e87aa8d6940d138804df741ea2b08
 repo_url: https://github.com/menloresearch/jan)
+indexed_content: "# LLMs-local list of awesome platforms, tools, and resources run
+  for LLMs locally ## Table of Contents - [Inference platforms](#inference-platforms)
+  - [Inference engines](#inference-engines) - [User Interfaces](#user-interfaces)
+  - [Large Language Models](#large-language-models) - [Explorers, Benchmarks, Leaderboards](#explorers-benchmarks-leaderboards)
+  - [Model providers](#model-providers) - [Specific models](#specific-models) - [General
+  purpose](#general-purpose) - [Coding](#coding) - [Multimodal](#multimodal) - [Image](#image)
+  - [Audio](#audio) - [Miscellaneous](#miscellaneous) - [Tools](#tools) - [Models](#models)
+  - [Agent Frameworks](#agent-frameworks) - [Model Context Protocol](#model-context-protocol)
+  - [Retrieval-Augmented Generation](#retrieval-augmented-generation) - [Coding Agents](#coding-agents)
+  - [Computer Use](#computer-use) - [Browser Automation](#browser-automation) - [Memory
+  Management](#memory-management) - [Testing, Evaluation, and Observability](#testing-evaluation-and-observability)
+  - [Research](#research) - [Training and Fine-tuning](#training-and-fine-tuning)
+  - [Miscellaneous](#miscellaneous-1) - [Hardware](#hardware) - [Tutorials](#tutorials)
+  - [Models](#models-1) - [Prompt Engineering](#prompt-engineering) - [Context Engineering](#context-engineering)
+  - [Inference](#inference) - [Agents](#agents) - [Retrieval-Augmented Generation](#retrieval-augmented-generation-1)
+  - [Miscellaneous](#miscellaneous-2) - [Communities](#communities) ## Inference platforms
+  - [LM Studio](https://lmstudio.ai/) - discover, download and run local LLMs - [jan](https://github.com/menloresearch/jan)
+  - an open source alternative to ChatGPT that runs 100% offline on your computer
+  - [LocalAI](https://github.com/mudler/LocalAI) - the free, open-source alternative
+  to OpenAI, Claude and others - [ChatBox](https://github.com/ChatBoxAI/ChatBox) -
+  user-friendly desktop client app for AI models/LLMs - [lemonade](https://github.com/lemonade-sdk/lemonade)
+  - a local LLM server with GPU and NPU Acceleration [Back to Table of Contents](#table-of-contents)
+  ## Inference engines - [ollama](https://github.com/ollama/ollama) - get up and running
+  with LLMs - [llama.cpp](https://github.com/ggml-org/llama.cpp) - LLM inference in
+  C/C++ - [vllm](https://github.com/vllm-project/vllm) - a high-throughput and memory-efficient
+  inference and serving engine for LLMs - [exo](https://github.com/exo-explore/exo)
+  - run your own AI cluster at home with everyday devices - [BitNet](https://github.com/microsoft/BitNet)
+  - official inference framework for 1-bit LLMs - [sglang](https://github.com/sgl-project/sglang)
+  - a fast serving framework for large language models and vision language models
+  - [Nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) - a lightweight vLLM
+  implementation built from scratch - [koboldcpp](https://github.com/LostRuins/koboldcpp)
+  - run GGUF models easily with a KoboldAI UI - [gpustack](https://github.com/gpustack/gpustack)
+  - simple, scalable AI model deployment on GPU clusters - [mlx-lm](https://github.com/ml-explore/mlx-lm)
+  - generate text and fine-tune large language models on Apple silicon with MLX -
+  [distributed-llama](https://github.com/b4rtaz/distributed-llama) - connect home
+  devices into a powerful cluster to accelerate LLM inference - [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp)
+  - llama.cpp fork with additional SOTA quants and improved performance - [FastFlowLM](https://github.com/FastFlowLM/FastFlowLM)
+  - run LLMs on AMD Ryzen™ AI NPUs - [vllm-gfx906](https://github.com/nlzy/vllm-gfx906)
+  - vLLM for AMD gfx906 GPUs, e.g. Radeon VII / MI50 / MI60 - [llm-scaler](https://github.com/intel/llm-scaler)
+  - run LLMs on Intel Arc™ Pro B60 GPUs [Back to Table of Contents](#table-of-contents)
+  ## User Interfaces - [Open WebUI](https://github.com/open-webui/open-webui) - User-friendly
+  AI Interface (Supports Ollama, OpenAI API, ...) - [Lobe Chat](https://github.com/lobehub/lobe-chat)
+  - an open-source, modern design AI chat framework - [Text generation web UI](https://github.com/oobabooga/text-generation-webui)
+  - LLM UI with advanced features, easy setup, and multiple backend support - [SillyTavern](https://github.com/SillyTavern/SillyTavern)
+  - LLM Frontend for Power Users - [Page Assist](https://github.com/n4ze3m/page-assist)
+  - Use your locally running AI models to assist you in your web browsing [Back to
+  Table of Contents](#table-of-contents) ## Large Language Models ### Explorers, Benchmarks,
+  Leaderboards - [AI Models & API Providers Analysis](https://artificialanalysis.ai/)
+  - understand the AI landscape to choose the best model and provider for your use
+  case - [LLM Explorer](https://llm-explorer.com/) - explore list of the open-source
+  LLM models - [Dubesor LLM Benchmark table](https://dubesor.de/benchtable) - small-scale
+  manual performance comparison benchmark - [oobabooga benchmark](https://oobabooga.github.io/benchmark.html)
+  - a list sorted by size (on disk) for each score [Back to Table of Contents](#table-of-c"
 ---
 {% raw %}
 # LLMs-local

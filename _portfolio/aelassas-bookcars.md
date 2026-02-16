@@ -2,8 +2,66 @@
 layout: project
 name: Aelassas Bookcars
 slug: aelassas-bookcars
+category: Serv&Prod-Tools
 image: https://github.com/aelassas/bookcars/actions/workflows/build.yml/badge.svg
 repo_url: https://github.com/aelassas/bookcars
+indexed_content: "[](https://github.com/aelassas/bookcars/actions/workflows/build.yml)
+  [](https://github.com/aelassas/bookcars/actions/workflows/test.yml) [](https://coveralls.io/github/aelassas/bookcars?branch=main)
+  [](https://github.com/aelassas/bookcars/actions/workflows/containerize.yml) [](https://github.com/aelassas/bookcars/actions/workflows/loc.yml)
+  [](https://bookcars.dynv6.net:3002/) [](https://github.com/aelassas/bookcars/wiki)
+  [](https://bookcars.dynv6.net:3002/) ## BookCars BookCars is a car rental platform
+  with an admin panel for managing fleets and bookings, as well as a frontend and
+  a mobile app for renting cars. It comes with built-in support for Stripe and PayPal
+  payment gateways, allowing you to choose the one best suited for your country or
+  business model. If Stripe isn't available in your region, PayPal serves as a secure
+  and reliable alternative. BookCars supports both single-supplier and multi-supplier
+  modes. Suppliers can manage their fleets and bookings through a dedicated admin
+  panel. Each new supplier receives an email prompting them to create their account
+  and gain access to the system. The admin panel allows admins to manage suppliers,
+  cars, countries, locations, parking spots, customers, bookings, and payments. Customers
+  can register through the web frontend or mobile app, search for available cars based
+  on pickup and drop-off points and time, choose a car and complete the checkout process
+  in a few clicks. ## Quick Links * [Overview](https://github.com/aelassas/bookcars/wiki/Overview)
+  * [Install Guide (Self-hosted)](https://github.com/aelassas/bookcars/wiki/Installing-(Self%E2%80%90hosted))
+  * [Install Guide (Docker)](https://github.com/aelassas/bookcars/wiki/Installing-(Docker))
+  * [Build Mobile App](https://github.com/aelassas/bookcars/wiki/Build-Mobile-App)
+  * [Price Calculation](https://github.com/aelassas/bookcars/wiki/Price-Calculation)
+  * [Rental Date and Time Constraints](https://github.com/aelassas/bookcars/wiki/Rental-Date-and-Time-Constraints)
+  * [Payment Gateways](https://github.com/aelassas/bookcars/wiki/Payment-Gateways)
+  * [FAQ](https://github.com/aelassas/bookcars/wiki/FAQ) * [Full Documentation](https://github.com/aelassas/bookcars/wiki)
+  ## Features ### Supplier & Fleet Management * Supplier management * Supplier contracts
+  * Supplier search result limit * Ready for single or multiple suppliers * Car fleet
+  management * Flexible time-based car availability * Flexible rental date and time
+  constraints * Booking management * Vehicle scheduler * Auto-notification system
+  ### Pricing & Payments * Dynamic price calculation: hourly, daily, weekly, bi-weekly,
+  and monthly rates * Date-based price rates * Price change rate * Payment management
+  * Multiple payment gateways supported: Stripe, PayPal * Multiple payment methods:
+  Credit Card, PayPal, Google Pay, Apple Pay, Link, Pay at the counter, Pay in full,
+  Pay deposit ### Locations & Search * Hierarchical locations with country, map, and
+  parking integration * Location-based search with nested child location support *
+  Map display for locations and parking spots ### User Experience * Customer management
+  * Multiple login options: Google, Facebook, Apple, Email * Multiple language support:
+  English, French, Spanish * Multiple currencies support * Multiple pagination styles:
+  classic (next/previous), infinite scroll * Push notifications ### Security & Performance
+  * Secure against XSS, XST, CSRF, MITM, and DDoS attacks * Responsive admin panel
+  and frontend * Native mobile app for Android and iOS (single codebase) * Docker
+  support for easy deployment and better developer experience * Error monitoring and
+  performance tracing ### Supported Platforms * iOS * Android * Web * Docker ## Support
+  & Contributing If this project helped you, saved you time, or inspired you in any
+  way, please consider supporting its future growth and maintenance. You can show
+  your support by starring the repository (it helps increase visibility and shows
+  your appreciation), sharing the project (recommend it to colleagues, communities,
+  or on social media), or making a donation (if you'd like to financially support
+  the development) via [GitHub Sponsors](https://github.com/sponsors/aelassas) (one-time
+  or monthly), [PayPal](https://www.paypal.me/aelassaspp), or [Buy Me a Coffee](https://www.buymeacoffee.com/aelassas).
+  Open-source software requires time, effort, and resources to maintain—your support
+  helps keep this project alive, up-to-date, and accessible to everyone. Every contribution,
+  big or small, makes a difference and motivates continued work on features, bug fixes,
+  and new ideas. --> ## Live Demo ### Frontend * URL: https://bookcars.dynv6.net:3002/
+  * Login: jdoe@bookcars.ma * Password: B00kC4r5 ### Admin Panel * URL: https://bookcars.dynv6.net:3001/
+  * Login: admin@bookcars.ma * Password: B00kC4r5 ### Mobile App You can install the
+  Android app on any Android device. #### Scan this code with a device Open the Camera
+  app and point it at this code. Then tap the notification that appear"
 ---
 {% raw %}
 [![build](https://github.com/aelassas/bookcars/actions/workflows/build.yml/badge.svg)](https://github.com/aelassas/bookcars/actions/workflows/build.yml) 

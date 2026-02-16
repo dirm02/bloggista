@@ -2,8 +2,60 @@
 layout: project
 name: Grapesjs Grapesjs
 slug: GrapesJS-grapesjs
+category: Educational-map
 image: https://github.com/GrapesJS/grapesjs/actions/workflows/quality.yml/badge.svg
 repo_url: https://github.com/GrapesJS/grapesjs
+indexed_content: "# [GrapesJS](http://grapesjs.com) [](https://github.com/GrapesJS/grapesjs/actions)
+  [](https://discord.gg/QAbgGXq) [](https://cdnjs.com/libraries/grapesjs) [](https://www.npmjs.com/package/grapesjs)
+  > If you looking to embed the [Studio](https://app.grapesjs.com/studio) editor in
+  your application, we now offer the [Studio SDK](https://app.grapesjs.com/dashboard/sdk/licenses?ref=repo-readme),
+  a ready-to-use visual builder that's easy to embed in external applications, with
+  GrapesJS team support included. GrapesJS is a free and open source Web Builder Framework
+  which helps building HTML templates, faster and easily, to be delivered in sites,
+  newsletters or mobile apps. Mainly, GrapesJS was designed to be used inside a [CMS]
+  to speed up the creation of dynamic templates. To better understand this concept
+  check the image below Generally any 'template system', that you'd find in various
+  applications like CMS, is composed by the **structure** (HTML), **style** (CSS)
+  and **variables**, which are then replaced with other templates and contents on
+  server-side and rendered on client. This demos show examples of what is possible
+  to achieve: Webpage Demo - http://grapesjs.com/demo.html Newsletter Demo - http://grapesjs.com/demo-newsletter-editor.html
+  ## Table of contents - [Features](#features) - [Download](#download) - [Usage](#usage)
+  - [Development](#development) - [Documentation](#documentation) - [API](#api) -
+  [Testing](#testing) - [Plugins](#plugins) - [Support](#support) - [Changelog](https://github.com/GrapesJS/grapesjs/releases)
+  - [Contributing](https://github.com/GrapesJS/grapesjs/blob/dev/CONTRIBUTING.md)
+  - [License](#license) ## Features | Blocks | Style Manager | Layer Manager | | ----------------------------------------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------------------------------------
+  | --------------------------------------------------------------------------------------------------------------------------------------
+  | | | | | | Code Viewer | Asset Manager | | --------------------------------------------------------------------------------------------------------------------------------
+  | --------------------------------------------------------------------------------------------------------------------------------------
+  | | | | - Local and remote storage - Default built-in commands (basically for creating
+  and managing different components) ## Download - CDNs - UNPKG (resolves to the latest
+  version) - `https://unpkg.com/grapesjs` - `https://unpkg.com/grapesjs/dist/css/grapes.min.css`
+  - CDNJS (replace `X.X.X` with the current version) - `https://cdnjs.cloudflare.com/ajax/libs/grapesjs/X.X.X/grapes.min.js`
+  - `https://cdnjs.cloudflare.com/ajax/libs/grapesjs/X.X.X/css/grapes.min.css` - NPM
+  - `npm i grapesjs` - GIT - `git clone https://github.com/GrapesJS/grapesjs.git`
+  For the development purpose you should follow instructions below. ## Usage ```html
+  var editor = grapesjs.init({ container: '#gjs', components: ' Hello world! ', style:
+  '.txt-red{color: red}', }); ``` For a more practical example I'd suggest looking
+  up the code inside this demo: http://grapesjs.com/demo.html ## Development Follow
+  the [Contributing Guide](https://github.com/GrapesJS/grapesjs/blob/dev/CONTRIBUTING.md).
+  ## Documentation Check the getting started guide here: [Documentation] ## API API
+  References could be found here: [API-Reference] ## Testing ```sh $ pnpm test ```
+  ## Plugins [Official Plugins](https://github.com/orgs/GrapesJS/repositories?q=-repo%3Agrapesjs%2Fgrapesjs&type=source)
+  | [Community Plugins](https://github.com/topics/grapesjs-plugin) ### Wrappers -
+  [@grapesjs/react](https://github.com/GrapesJS/react) - GrapesJS wrapper for React
+  that allows you to build custom and declarative UI for your editor. ### Extensions
+  - [grapesjs-plugin-export](https://github.com/GrapesJS/export) - Export GrapesJS
+  templates in a zip archive - [grapesjs-plugin-filestack](https://github.com/GrapesJS/filestack)
+  - Add Filestack uploader in Asset Manager - [grapesjs-plugin-ckeditor](https://github.com/GrapesJS/ckeditor)
+  - Replaces the built-in RTE with CKEditor - [grapesjs-tui-image-editor](https://github.com/GrapesJS/tui-image-editor)
+  - GrapesJS TOAST UI Image Editor - [grapesjs-blocks-basic](https://github.com/GrapesJS/blocks-basic)
+  - Basic set of blocks - [grapesjs-plugin-forms](https://github.com/GrapesJS/components-forms)
+  - Set of form components and blocks - [grapesjs-navbar](https://github.com/GrapesJS/components-navbar)
+  - Simple navbar component - [grapesjs-component-countdown](https://github.com/GrapesJS/components-countdown)
+  - Simple countdown component - [grapesjs-style-gradient](https://github.com/GrapesJS/style-gradient)
+  - Add `gradient` type input to the Style Manager - [grapesjs-style-filter](https://github.com/GrapesJS/style-filter)
+  - Add `filter` type input to the Style Ma"
 ---
 {% raw %}
 # [GrapesJS](http://grapesjs.com)

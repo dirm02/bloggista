@@ -2,8 +2,50 @@
 layout: project
 name: Lets Devops Awesome Learning
 slug: Lets-DevOps-awesome-learning
+category: Uncategorized
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# awesome-learning [](https://github.com/sindresorhus/awesome) [](https://travis-ci.org/TheRemoteLab/awesome-learning)
+  [](http://creativecommons.org/licenses/by-nc/4.0/) [](https://letsdevops.slack.com)
+  ... because learning DevOps is awesome =======================================================================================================================
+  ### Hello world! We will try our best to make sure this is the finest curated list
+  of all DevOps resources at one place. Help us by fixing our mistakes and adding
+  more useful links. Thanks! | [Philosophy](#philosophy) :thought_balloon: | [Processes](#processes)
+  :speech_balloon: | [Source Code Management](#source-code-management) :octocat: |
+  [Build Automation](#build-automation) :arrows_counterclockwise: | [Continuous Integration](#continuous-integration)
+  :arrows_counterclockwise: | [Continuous Delivery](#continuous-delivery) :arrows_counterclockwise:
+  | |---------------------------------------------|------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+  | | | | | | | | [Infrastructure As Code](#infrastructure-as-code) :loop: | [Monitoring](#monitoring)
+  :bar_chart: | [Logging](#logging) :page_facing_up: | [IAAS Providers](#iaas-providers)
+  :cloud: | [PAAS Providers](#paas-providers) :cloud: | [Containerisation](#containerisation)
+  :ship: | |---------------------------------------------------------|---------------------------------------|--------------------------------------|-------------------------------------------|-------------------------------------------|----------------------------------------------|
+  | | | | | | | | [MicroServices](#microservices) :microscope: | [Anti Patterns](#anti-patterns)
+  :no_entry_sign: | [Security](#security) :lock: | [Languages](#languages) :pencil:
+  | [Books](#books) :books: | [Slide Presentations](#slide-presentations) | [Videos](#videos)
+  :tv: | |----------------------------------------------|-------------------------------------------------|------------------------------|----------------------------------|---------------------------------------------|--------------------------|-----------------------|
+  | | | | | | | | * [Conferences and Meet-ups](#conferences) :video_camera: * [Contributing](#contributing)
+  * [License](#license) * [Roadmap](#roadmap) ## Philosophy - [ ] [Five years, building
+  a culture, and handing it off](http://laughingmeme.org/2015/08/31/five-years-building-a-culture-and-handing-it-off/)
+  - [ ] [3 characteristics of an effective cloud developer](http://www.thoughtsoncloud.com/2015/10/3-characteristics-of-an-effective-cloud-developer/)
+  - [ ] [The Must Know Checklist For DevOps & Site Reliability Engineers](https://medium.com/faun/the-must-know-checklist-for-devops-system-reliability-engineers-f74c1cbf259d)
+  ## Processes - [ ] [I want to be a DevOps!](http://brassy.net/articles/getting-in-to-devops/)
+  - [ ] [Hiring a Cloud Engineer? Questions to Ask and What You Should Hear](https://medium.com/aws-activate-startup-blog/hiring-a-cloud-engineer-questions-to-ask-and-what-you-should-hear-12a960d97163)
+  - [ ] [How To Write A Good Status Update](http://blog.statuspage.io/how-to-write-a-good-status-update)
+  - [ ] [Communication and Collaboration across teams](http://theremotelab.com/blog/slack+trello/)
+  - [ ] [5 Expert Recommendations when Hiring a DevOps Engineer](http://blog.flux7.com/5-expert-recommendations-when-hiring-a-devops-engineer)
+  - [ ] [16 DevOps Best Practices Every Developer Should Know](https://spacelift.io/blog/devops-best-practices)
+  ## Source Code Management - [ ] [Gitignore examples - Ignoring what shouldn't go
+  inside your codebase](https://github.com/github/gitignore) - [ ] [Contributing to
+  Open Source on GitHub](https://guides.github.com/activities/contributing-to-open-source/)
+  - [ ] [Useful Git Workflows - Comparison as well](https://www.atlassian.com/git/tutorials/comparing-workflows/)
+  - [ ] [GitHub Training & Guides](https://vimeo.com/channels/githubguides) - [ ]
+  [Versioning 101](http://semver.org/) - [ ] [Forking Vs Branching](http://stackoverflow.com/questions/3611256/forking-vs-branching-in-github)
+  - [ ] [How is SVN v 1.8 branching / merging compared to Git?](http://stackoverflow.com/questions/19333088/how-is-svn-v-1-8-branching-merging-compared-to-git)
+  - [ ] [Code Reviews - Git Pull Requests Vs Gerrit](https://julien.danjou.info/blog/2013/rant-about-github-pull-request-workflow-implementation)
+  - [ ] [Zappr - Approvals for Github PRs - By Zalando](https://zappr.opensource.zalan.do/login)
+  ## Build Automation: ## Continuous Integration: - [ ] [CI Using Docker platform
+  - Jenkins, SonarQube, Nexus, Gitlab](https://blog.codecentric.de/en/2015/10/continuous-integration-platform-using-docker-container-jenkins-sonarqube-nexus-gitlab/)
+  - [ ] "
 ---
 {% raw %}
 # awesome-learning

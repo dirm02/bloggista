@@ -2,8 +2,39 @@
 layout: project
 name: Robot Learning Co Trlc Dk1
 slug: robot-learning-co-trlc-dk1
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/robot-learning-co-trlc-dk1/media/xray.jpg
 repo_url: https://github.com/robot-learning-co/trlc-dk1
+indexed_content: 'An Open Source Dev Kit for AI-native Robotics by The Robot Learning
+  Company ## Demo ## CAD TRLC-DK1 v0.3.0 Follower CAD TRLC-DK1 v0.2.0 Leader CAD Copyright
+  2025-2026 The Robot Learning Company UG (haftungsbeschränkt). All rights reserved.
+  ## Installation ``` git clone https://github.com/robot-learning-co/trlc-dk1.git
+  uv venv uv pip install -e . ``` This repo uses [LeRobot''s plugin conventions](https://huggingface.co/docs/lerobot/integrate_hardware#using-your-own-lerobot-devices-)
+  to be automatically detected by a LeRobot installation in the same Python environment.
+  ## Examples Use [LeRobot''s CLI](https://huggingface.co/docs/lerobot/il_robots)
+  to identify your teleop, robot, and camera ports: ``` uv run lerobot-find-port uv
+  run lerobot-find-cameras ``` Example I: Single Arm Teleoperation ```bash uv run
+  lerobot-teleoperate \ --robot.type=dk1_follower \ --robot.port=/dev/ttyACM0 \ --robot.joint_velocity_scaling=0.2
+  \ --teleop.type=dk1_leader \ --teleop.port=/dev/ttyACM1 \ --robot.cameras="{ context:
+  {type: opencv, index_or_path: 0, width: 1280, height: 720, fps: 60, fourcc: "MJPG"},
+  wrist: {type: opencv, index_or_path: 1, width: 1280, height: 720, fps: 60, rotation:
+  180, fourcc: "MJPG"} }" \ --display_data=true ``` Example II: Bimanual Recording
+  ```bash lerobot-record \ --robot.type=bi_dk1_follower \ --robot.right_arm_port=/dev/ttyACM0
+  \ --robot.left_arm_port=/dev/ttyACM1 \ --robot.joint_velocity_scaling=1.0 \ --teleop.type=bi_dk1_leader
+  \ --teleop.right_arm_port=/dev/ttyACM2 \ --teleop.left_arm_port=/dev/ttyACM3 \ --robot.cameras="{
+  head: {type: opencv, index_or_path: /dev/video0, width: 960, height: 540, fps: 60,
+  fourcc: "MJPG"}, right_wrist: {type: opencv, index_or_path: /dev/video2, width:
+  960, height: 540, fps: 60, rotation: 180, fourcc: "MJPG"}, left_wrist: {type: opencv,
+  index_or_path: /dev/video4, width: 960, height: 540, fps: 60, rotation: 180, fourcc:
+  "MJPG"}, }" \ --dataset.repo_id=$USER/my_test_dataset \ --dataset.push_to_hub=false
+  \ --dataset.num_episodes=3 \ --dataset.episode_time_s=30 \ --dataset.reset_time_s=20
+  \ --dataset.single_task="Test the LeRobot recording pipeling." ``` ## URDF (v0.2)
+  A high-quality URDF file was developed by community member Andreas Köpf: [andreaskoepf/trlc-dk1-follower-urdf](https://github.com/andreaskoepf/trlc-dk1-follower-urdf)
+  ## Acknowledgements - [GELLO](https://wuphilipp.github.io/gello_site/) by Philipp
+  Wu et al. - [Low-Cost Robot Arm](https://github.com/AlexanderKoch-Koch/low_cost_robot)
+  by Alexander Koch - [LeRobot](https://github.com/huggingface/lerobot) by HuggingFace,
+  Inc. - [SO-100](https://github.com/TheRobotStudio/SO-ARM100) by TheRobotStudio -
+  [OpenArm](https://openarm.dev/) by Enactic, Inc.'
 ---
 {% raw %}
 <p align="center">

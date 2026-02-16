@@ -2,8 +2,64 @@
 layout: project
 name: Netdata Netdata
 slug: netdata-netdata
+category: Uncategorized
 image: https://img.shields.io/badge/Platforms-Linux%20%7C%20macOS%20%7C%20FreeBSD%20%7C%20Windows-blue
 repo_url: https://github.com/netdata/netdata
+indexed_content: 'X-Ray Vision for your infrastructure! Every Metric, Every Second.
+  No BS. Visit our Home Page MENU: **[WHO WE ARE](#who-we-are)** | **[KEY FEATURES](#key-features)**
+  | **[GETTING STARTED](#getting-started)** | **[HOW IT WORKS](#how-it-works)** |
+  **[FAQ](#faq)** | **[DOCS](#book-documentation)** | **[COMMUNITY](#tada-community)**
+  | **[CONTRIBUTE](#pray-contribute)** | **[LICENSE](#scroll-license)** > [!WARNING]
+  > People **get addicted to Netdata.** > Once you use it on your systems, *there''s
+  no going back.* []() --- ## WHO WE ARE Netdata is an open-source, real-time infrastructure
+  monitoring platform. Monitor, detect, and act across your entire infrastructure.
+  **Core Advantages:** * **Instant Insights** – With Netdata you can access per-second
+  metrics and visualizations. * **Zero Configuration** – You can deploy immediately
+  without complex setup. * **ML-Powered** – You can detect anomalies, predict issues,
+  and automate analysis. * **Efficient** – You can monitor with minimal resource usage
+  and maximum scalability. * **Secure & Distributed** – You can keep your data local
+  with no central collection needed. With Netdata, you get real-time, per-second updates.
+  Clear **insights at a glance**, no complexity. All heroes have a great origin story.
+  Click to discover ours. In 2013, at the company where Costa Tsaousis was COO, a
+  significant percentage of their cloud-based transactions failed silently, severely
+  impacting business performance. Costa and his team tried every troubleshooting tool
+  available at the time. None could identify the root cause. As Costa later wrote:
+  “*I couldn’t believe that monitoring systems provide so few metrics and with such
+  low resolution, scale so badly, and cost so much to run.*” Frustrated, he decided
+  to build his own monitoring tool, starting from scratch. That decision led to countless
+  late nights and weekends. It also sparked a fundamental shift in how infrastructure
+  monitoring and troubleshooting are approached, both in method and in cost. ### Most
+  Energy-Efficient Monitoring Tool According to the [University of Amsterdam study](https://www.ivanomalavolta.com/files/papers/ICSOC_2023.pdf),
+  Netdata is the most energy-efficient tool for monitoring Docker-based systems. The
+  study also shows Netdata excels in CPU usage, RAM usage, and execution time compared
+  to other monitoring solutions. --- ## Key Features | Feature | Description | What
+  Makes It Unique | |----------------------------|-------------------------------------------|----------------------------------------------------------|
+  | **Real-Time** | Per-second data collection and processing | Works in a beat –
+  click and see results instantly | | **Zero-Configuration** | Automatic detection
+  and discovery | Auto-discovers everything on the nodes it runs | | **ML-Powered**
+  | Unsupervised anomaly detection | Trains multiple ML models per metric at the edge
+  | | **Long-Term Retention** | High-performance storage | ~0.5 bytes per sample with
+  tiered storage for archiving | | **Advanced Visualization** | Rich, interactive
+  dashboards | Slice and dice data without query language | | **Extreme Scalability**
+  | Native horizontal scaling | Parent-Child centralization with multi-million samples/s
+  | | **Complete Visibility** | From infrastructure to applications | Simplifies operations
+  and eliminates silos | | **Edge-Based** | Processing at your premises | Distributes
+  code instead of centralizing data | > [!NOTE] > Want to put Netdata to the test
+  against Prometheus? > Explore the [full comparison](https://www.netdata.cloud/blog/netdata-vs-prometheus-2025/).
+  --- ## Netdata Ecosystem This three-part architecture enables you to scale from
+  single nodes to complex multi-cloud environments: | Component | Description | License
+  | |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+  | **Netdata Agent** | • Core monitoring engine • Handles collection, storage, ML,
+  alerts, exports • Runs on servers, cloud, K8s, IoT • Zero production impact | [GPL
+  v3+](https://www.gnu.org/licenses/gpl-3.0) | | **Netdata Cloud** | • Enterprise
+  features • User management, RBAC, horizontal scaling • Centralized alerts • Free
+  community tier • No metric storage centralization | | | **Netdata UI** | • Dashboards
+  and visualizations • Free to use • Included in standard packages • Latest version
+  via CDN | [NCUL1](https://app.netdata.cloud/LICENSE.txt) | ## What You Can Monitor
+  With Netdata you can monitor all these components across platforms: | Component
+  | Linux | FreeBSD | macOS | Windows | |------------------------------------------------------------------------------------------------------------:|:--------------------------------:|:-------:|:-----:|:-------------------------------------------------:|
+  | **System Resources** CPU, Memory and system shared resources | Full | Yes | Yes
+  | Yes | | **Storage** Disks'
 ---
 {% raw %}
 <p align="center">

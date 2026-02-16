@@ -2,8 +2,66 @@
 layout: project
 name: Blenderskool Blaze
 slug: blenderskool-blaze
+category: File manager -Network-nmap
 image: https://github.com/blenderskool/blaze/raw/next/client/src/assets/images/apple-touch-icon-152x152.png
 repo_url: https://github.com/blenderskool/blaze
+indexed_content: "Blaze - A P2P file sharing web app ⚡ Blaze is a file sharing progressive
+  web app(PWA) that allows **users to transfer files between multiple devices.** It
+  works similar to SHAREit or the Files app by Google but uses web technologies to
+  eliminate the process of installing native apps for different devices and operating
+  systems. It also supports instant file sharing with **multiple devices at once**
+  which many file sharing apps lack. Blaze primarily uses [WebTorrent](https://webtorrent.io)
+  and WebSockets protocol (as a fallback) to transfer files between multiple devices.
+  Files shared **via WebTorrent are peer-to-peer**(as they use WebRTC internally)
+  which means there is direct transfer between the sender and receiver **without any
+  intermediate server**. Do note that tracker servers in WebTorrent are used which
+  carry metadata and facilitate the file transfer but do not get the complete file
+  in any form. ### Features - \U0001F4A1 No account creation or signups. - \U0001F680
+  One-to-One and Many-to-Many file transfers. - \U0001F52E Works across different
+  networks and devices. - ⚡ Easy to use, and no app installation required. - \U0001F4F1
+  PWA for device-level integrations. ### Try it out! - Go to a deployed client of
+  Blaze - https://blaze.now.sh - Set a basic nickname(this is not stored on any server)
+  - Create a new room. Room is where peers must join to share files among each other.
+  - On another device, follow the above steps and join the same room. (Make sure to
+  give a different nickname) - Both your devices should show up. Now start sharing
+  some files! Read more about how Blaze works at a basic level in this [Medium article](https://medium.com/@AkashHamirwasia/new-ways-of-sharing-files-across-devices-over-the-web-using-webrtc-2554abaeb2e6).
+  ### Deploy your own instance of Blaze Read more on [Deploying on your own server](#running-blaze-in-production)
+  ## Sponsors Blaze is sponsored by: ## Build process - For the frontend, webpack
+  is setup internally via preact-cli. Overrides can be made in `preact.config.js`
+  file. - For the backend, [sucrase](https://www.npmjs.com/package/sucrase) is used
+  to transform ES modules imports/exports to CommonJS. Environment variables Following
+  environment variables can be set in the build process: | variable | description
+  | default | |----------------------|-----------------------------------------------------------------------|---------------------------------------------------|
+  | **client** | Variables for **client** should be set as build args if using Docker.
+  | | | `WS_HOST` | URL to the server that is running the Blaze WebSockets server.
+  | 'ws://\\ :3030' | | `SERVER_HOST` | URL to the server that running the Blaze HTTP
+  server. | 'http://\\ :3030' | | `WS_SIZE_LIMIT` | Max file size limit when transferring
+  files over WebSockets in bytes. | 100000000 (100 MBs) | | `TORRENT_SIZE_LIMIT` |
+  Max file size limit when transferring files over WebTorrent in bytes. | 700000000
+  (700 MBs) | | **server** | | | | `ORIGIN` | Array of string URLs to allow CORS.
+  | * | | `PORT` | Port for the server to run. | 3030 | | `WS_SIZE_LIMIT` | Max file
+  size limit when transferring files over WebSockets in bytes. | 100000000 (100 MBs)
+  | | `DISABLE_SSE_EVENTS` | Disable server side events to reduce long-lived connections.
+  | false | | `TRUST_PROXY` | Whether server is behind a trusted proxy and can read
+  forwarded IPs. | _false_ when standalone, _true_ in docker-compose | ----------------------------------------------------------------------------------------------------------------------------------------------------
+  **NOTE:** Any URL in the environment variables should not end with `/`. ## Running
+  Blaze in production Blaze can be easily deployed on your own server using Docker
+  and `docker-compose`. The frontend and the backend is completely decoupled from
+  each other. ### Docker images Following Docker images are available: - **[Blaze
+  Server](https://hub.docker.com/r/akashhamirwasia/blaze-server)**: This is the backend
+  Node.js server that is used for WebSockets communication. The environment variables
+  listed for the server in previous section can be passed to the container. It exposes
+  port `3030`. - **[Blaze Client](https://hub.docker.com/r/akashhamirwasia/blaze-client)**:
+  This is the frontend progressive web app of Blaze used by clients for sharing files.
+  Nginx is used as a web server for this statically generated frontend. The environment
+  variables listed above must be **passed as ARGS while building the image**. The
+  frontend container exposes port `80`. - **[Blaze](https://hub.docker.com/r/akashhamirwasia/blaze)**:
+  This is a higher level image that includes both Blaze Server and Blaze Client images
+  above. It must be used when docker-compose is not available in the environment,
+  or there is a limit to run only a single container. docker-compose must be used
+  to run Blaze in other cases which is explained in next section. Running high level
+  Blaze image docker run -p 8080:80 -p 3030:3030 -e PORT=80 akashhamirwasia/blaze:latest
+  NOTE: The PORT env"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,67 @@
 layout: project
 name: Hotheadhacker Seedbox Lite
 slug: hotheadhacker-seedbox-lite
+category: WindowsTools- Linux
 image: https://img.shields.io/badge/SeedBox-Lite-green?style=for-the-badge&logo=leaf
 repo_url: https://github.com/hotheadhacker/seedbox-lite
+indexed_content: "# \U0001F3AC SeedBox Lite Stream Torrents Instantly **A modern,
+  lightweight torrent streaming application with instant playback** [View all screenshots](https://github.com/hotheadhacker/seedbox-lite/tree/main/screenshots)
+  [Features](#-features) • [Screenshots](#-screenshots) • [Quick Start](#-quick-start)
+  • [Installation](#-installation) • [Documentation](#-documentation) ## \U0001F680
+  Overview SeedBox Lite is a cutting-edge torrent streaming platform that allows you
+  to watch movies and TV shows instantly without waiting for complete downloads. Built
+  with modern web technologies, it provides a Netflix-like experience with powerful
+  torrent capabilities. ### ✨ Key Highlights - **\U0001F3AF Instant Streaming** -
+  Start watching immediately as the torrent downloads - **\U0001F510 Password Protection**
+  - Secure access with authentication - **\U0001F4F1 Mobile Optimized** - Perfect
+  responsive design for all devices - **\U0001F3A5 Smart Video Player** - Advanced
+  player with subtitles and fullscreen support - **⚡ Fast Setup** - Deploy in minutes
+  with Docker or PM2 - **\U0001F310 Cross-Platform** - Works on Windows, macOS, and
+  Linux - **\U0001F3A8 Modern UI** - Clean, intuitive interface inspired by popular
+  streaming services ## \U0001F3AF Features ### Core Streaming Features - **Torrent
+  to Stream** - Convert any movie/TV torrent to instant streaming - **Progress Tracking**
+  - Real-time download progress and cache management - **Smart Caching** - Intelligent
+  caching system with configurable limits - **Multiple Formats** - Support for MP4,
+  MKV, AVI, and more video formats - **Subtitle Support** - Automatic subtitle detection
+  and loading ### User Experience - **Netflix-Style Interface** - Familiar and intuitive
+  design - **Mobile-First Design** - Optimized for smartphones and tablets - **Native
+  Fullscreen** - True fullscreen experience on mobile devices - **Gesture Controls**
+  - Double-tap to fullscreen, intuitive video controls - **Responsive Layout** - Adapts
+  perfectly to any screen size ### Technical Features - **Password Authentication**
+  - Secure access control - **CORS Enabled** - Cross-origin resource sharing for flexible
+  deployment - **Health Monitoring** - Built-in health checks and monitoring - **Production
+  Ready** - Optimized for production deployments - **Docker Support** - Easy containerized
+  deployment - **PM2 Integration** - Process management for Node.js applications ###
+  Mobile Optimizations - **iOS Safari Support** - Native fullscreen using WebKit APIs
+  - **Android Chrome** - Optimized for Android mobile browsers - **Range Requests**
+  - HTTP range support for smooth video seeking - **Mobile Viewport** - Proper viewport
+  handling for app-like experience - **Touch Optimized** - Gesture-friendly video
+  controls ## \U0001F4F8 Screenshots [View all screenshots](https://github.com/hotheadhacker/seedbox-lite/tree/main/screenshots)
+  ## \U0001F680 Quick Start ### Using Docker (Recommended) ```bash # Clone the repository
+  git clone https://github.com/hotheadhacker/seedbox-lite.git cd seedbox-lite # Start
+  with Docker Compose docker-compose up -d # Access the application open http://localhost:5174
+  ``` ### Using PM2 ```bash # Clone and install dependencies git clone https://github.com/hotheadhacker/seedbox-lite.git
+  cd seedbox-lite # Install backend dependencies cd server && npm install # Install
+  frontend dependencies cd ../client && npm install # Build frontend npm run build
+  # Start with PM2 pm2 start ecosystem.config.js ``` ## \U0001F4CB Prerequisites ###
+  System Requirements - **Node.js** 18+ - **npm** 8+ - **Docker** 20+ (for Docker
+  deployment) - **PM2** (for PM2 deployment) ### Operating System Support - ✅ Windows
+  10/11 - ✅ macOS 10.15+ - ✅ Ubuntu 18.04+ - ✅ Debian 10+ - ✅ CentOS 7+ ### Browser
+  Support - ✅ Chrome 90+ - ✅ Firefox 88+ - ✅ Safari 14+ - ✅ Edge 90+ - ✅ Mobile browsers
+  (iOS Safari, Android Chrome) ## \U0001F6E0 Installation ### Method 1: Docker Deployment
+  (Recommended) #### Step 1: Clone Repository ```bash git clone https://github.com/hotheadhacker/seedbox-lite.git
+  cd seedbox-lite ``` #### Step 2: Configure Environment ```bash # Copy and edit environment
+  variables cp .env.example .env nano .env ``` **Key Environment Variables:** ```bash
+  # Server Configuration NODE_ENV=production SERVER_PORT=3001 ACCESS_PASSWORD=your_secure_password
+  # Frontend Configuration FRONTEND_URL=http://localhost:5174 VITE_API_BASE_URL=http://localhost:3001
+  # Docker Ports BACKEND_PORT=3001 FRONTEND_PORT=5174 ``` #### Step 3: Deploy ```bash
+  # Start all services docker-compose up -d # Check status docker-compose ps # View
+  logs docker-compose logs -f ``` #### Step 4: Access Application - **Frontend**:
+  http://localhost:5174 - **Backend API**: http://localhost:3001 - **Default Login**:
+  Password set in `ACCESS_PASSWORD` ### Method 2: PM2 Deployment #### Step 1: System
+  Setup ```bash # Install Node.js 18+ curl -fsSL https://deb.nodesource.com/setup_18.x
+  | sudo -E bash - sudo apt-get install -y nodejs # Install PM2 globally npm install
+  -g pm2 ``` #### Step 2: Application Setup ```bash # Clone repository git clone https://github.com/hotheadhacker/seedbox-lite.git "
 ---
 {% raw %}
 # 🎬 SeedBox Lite

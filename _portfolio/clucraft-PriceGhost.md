@@ -2,8 +2,70 @@
 layout: project
 name: Clucraft Priceghost
 slug: clucraft-PriceGhost
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/clucraft-PriceGhost/assets/header.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'A self-hosted price tracking application that monitors product prices
+  from any website. Get notified when prices drop, hit your target price, or items
+  come back in stock. --- ## You Choose the Price. Always. **Unlike other price trackers
+  that silently pick a price and hope it''s right**, PriceGhost uses a multi-strategy
+  extraction system with a unique **Price Voting Modal** that puts you in control.
+  ### How It Works When you add a product, PriceGhost runs **four independent extraction
+  methods** in parallel: | Method | How It Works | Reliability | |--------|--------------|-------------|
+  | **JSON-LD** | Reads schema.org structured data embedded by the retailer | Highest
+  | | **Site-Specific** | Custom-tuned scrapers for major retailers (Amazon, Best
+  Buy, Walmart, etc.) | High | | **Generic CSS** | Intelligent CSS selectors that
+  find price patterns | Medium | | **AI Analysis** | Claude/GPT/Ollama analyzes the
+  page context | High | Each method "votes" on what it thinks the price is. If they
+  agree, you''re good to go. If they disagree, **you see all the candidates and make
+  the final call**. ### The Price Selection Modal Multiple prices found? No problem.
+  You decide which one is correct. The modal shows you: - **Every price candidate**
+  found by each extraction method - **Confidence scores** so you know which ones are
+  most reliable - **Context** explaining where each price was found (e.g., "Structured
+  Data", "Site Scraper", "AI Extraction") - **The product image and name** so you
+  can verify you''re tracking the right item This means: - No more accidentally tracking
+  a "Save $200" discount amount instead of the actual price - No more confusion between
+  monthly payment plans ($49/mo) and the real price ($1,999) - No more tracking bundle
+  prices when you wanted the single item - **You always know exactly what price you''re
+  tracking** This feature doesn''t exist in Keepa, CamelCamelCamel, Honey, or any
+  other price tracker we''ve seen. They guess. You choose. --- ## Built by AI. Built
+  Right. This entire application was developed collaboratively with [Claude](https://claude.ai)
+  (Anthropic''s AI assistant) using [Claude Code](https://claude.ai/claude-code).
+  Every feature, from database migrations to responsive UI components, was crafted
+  through iterative conversation and careful code generation. **This is not "AI slop."**
+  This is a fully functional, production-ready application with: - Proper error handling
+  throughout - Clean, maintainable TypeScript codebase - Real security practices (JWT
+  auth, bcrypt hashing, input validation) - Thoughtful UX with toast notifications,
+  loading states, and responsive design - Comprehensive API with consistent patterns
+  Built with Claude Opus 4.5. --- ## Strongly Recommended: Enable AI Features While
+  PriceGhost includes multiple scraping strategies (JSON-LD, meta tags, CSS selectors,
+  pattern matching, and headless browser), **we highly recommend enabling AI-powered
+  features** for the best results. Modern e-commerce sites use increasingly complex
+  layouts, dynamic pricing, and anti-scraping measures. AI can understand page context
+  and reliably extract prices even from difficult sites. ### AI Extraction (Fallback)
+  When standard scraping fails to find a price, AI extraction kicks in as a fallback.
+  ### AI Verification (Recommended) Verifies every scraped price to ensure accuracy.
+  This catches issues like accidentally scraping a "savings" amount ($189.99 off)
+  instead of the actual product price ($675.59). ### AI Arbitration When multiple
+  extraction methods disagree, AI can analyze all candidates and recommend the correct
+  one - which you can then confirm or override in the Price Selection Modal. **To
+  enable:** 1. Get an API key from [Anthropic](https://console.anthropic.com) (Claude),
+  [OpenAI](https://platform.openai.com), or install [Ollama](https://ollama.ai) locally
+  (free) 2. Go to Settings > AI Extraction 3. Enable **AI Extraction** (fallback)
+  and/or **AI Verification** (recommended) 4. Select your provider and enter your
+  API key (or Ollama URL) The cost is minimal (fractions of a cent per API call with
+  Claude Haiku/GPT-4o-mini). Ollama is completely free but requires local compute.
+  --- ## Features ### Multi-Strategy Price Extraction - **4 extraction methods** -
+  JSON-LD, site-specific scrapers, generic CSS, and AI work together - **Price voting
+  system** - Methods vote on the correct price; consensus = automatic, disagreement
+  = you choose - **Price Selection Modal** - See all price candidates with confidence
+  scores and context - **AI arbitration** - When methods disagree, AI helps recommend
+  the right price - **Headless browser support** - Puppeteer with stealth mode for
+  JavaScript-heavy sites (Best Buy, Target, Walmart, etc.) ### Price Tracking - **Universal
+  scraping** - Works with virtually any e-commerce website - **AI-powered fallback**
+  - Optional Claude, GPT, or Ollama (local) integration for difficult-to-scrape sites
+  - **AI price verification** - Verify scraped prices with AI to catch extraction
+  err'
 ---
 {% raw %}
 <p align="center">

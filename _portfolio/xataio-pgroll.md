@@ -2,8 +2,68 @@
 layout: project
 name: Xataio Pgroll
 slug: xataio-pgroll
+category: database-backend baas
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/xataio-pgroll/docs/img/schema-changes-flow@2x.png
 repo_url: https://github.com/xataio/pgroll
+indexed_content: '&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # pgroll - Zero-downtime,
+  reversible, schema migrations for Postgres `pgroll` is an open source command-line
+  tool that offers safe and reversible schema migrations for PostgreSQL by serving
+  multiple schema versions simultaneously. It takes care of the complex migration
+  operations to ensure that client applications continue working while the database
+  schema is being updated. This includes ensuring changes are applied without locking
+  the database, and that both old and new schema versions work simultaneously (even
+  when breaking changes are being made!). This removes risks related to schema migrations,
+  and greatly simplifies client application rollout, also allowing for instant rollbacks.
+  See the [introductory blog post](https://pgroll.com/blog/introducing-pgroll-zero-downtime-reversible-schema-migrations-for-postgres)
+  for more about the problems solved by `pgroll`. ## Features - Zero-downtime migrations
+  (no database locking, no breaking changes). - Keep old and new schema versions working
+  simultaneously. - Automatic columns backfilling when needed. - Instant rollback
+  in case of issues during migration. - Works against existing schemas, no need to
+  start from scratch. - Works with Postgres 14.0 or later. - Works with any Postgres
+  service (including RDS and Aurora). - Written in Go, cross-platform single binary
+  with no external dependencies. ## Table of Contents - [Installation](#installation)
+  - [Usage](#usage) - [How pgroll works](#how-pgroll-works) - [Documentation](#documentation)
+  - [Benchmarks](#benchmarks) - [Contributing](#contributing) - [License](#license)
+  - [Support](#support) ## Installation ### Binaries Binaries are available for Linux,
+  macOS & Windows, check our [Releases](https://github.com/xataio/pgroll/releases).
+  ### From source To install `pgroll` from the source, run the following command:
+  ```sh go install github.com/xataio/pgroll@latest ``` Note: requires [Go 1.24](https://golang.org/doc/install)
+  or later. ### From package manager - Homebrew To install `pgroll` with homebrew,
+  run the following command: ```sh # macOS or Linux brew tap xataio/pgroll brew install
+  pgroll ``` ## Usage Follow these steps to perform your first schema migration using
+  `pgroll`: ### Prepare the database `pgroll` needs to store some internal state in
+  the database. A table is created to track the current schema version and store version
+  history. To prepare the database, run the following command: ```sh pgroll init --postgres-url
+  postgres://user:password@host:port/dbname ``` ### Start a migration Create a migration
+  file. You can check the [examples](examples) folder for some examples. For instance,
+  use this migration file to create a new `customers` table: initial_migration.json
+  ```json { "name": "initial_migration", "operations": [ { "create_table": { "name":
+  "customers", "columns": [ { "name": "id", "type": "integer", "pk": true }, { "name":
+  "name", "type": "varchar(255)", "unique": true }, { "name": "bio", "type": "text",
+  "nullable": true } ] } } ] } ``` Then run the following command to start the migration:
+  ```sh pgroll --postgres-url postgres://user:password@host:port/dbname start initial_migration.json
+  ``` This will create a new schema version in the database, and apply the migration
+  operations (create a table). After this command finishes, both the old version of
+  the schema (with no customers table) and the new one (with the customers table)
+  will be accessible simultaneously. ### Configure client applications After starting
+  a migration, client applications can start using the new schema version. In order
+  to do so, they need to be configured to access it. This can be done by setting the
+  `search_path` to the new schema version name (provided by `pgroll start` output),
+  for instance: ```sql SET search_path TO ''public_initial_migration''; ``` ### Complete
+  the migration Once there are no more client applications using the old schema version,
+  the migration can be completed. This will remove the old schema. To complete the
+  migration, run the following command: ```sh pgroll --postgres-url postgres://user:password@host:port/dbname
+  complete ``` ### Rolling back a migration At any point during a migration, it can
+  be rolled back to the previous version. This will remove the new schema and leave
+  the old one as it was before the migration started. To rollback a migration, run
+  the following command: ```sh pgroll --postgres-url postgres://user:password@host:port/dbname
+  rollback ``` ## How pgroll works `pgroll` works by creating virtual schemas by using
+  views on top of the physical tables. This allows for performing all the necessary
+  changes needed for a migration without affecting the existing clients. `pgroll`
+  follows a [expand/contract workflow](https://openpracticelibrary.com/practice/expand-and-contract-pattern/).
+  On migration start, it will perform all the additive changes (create tables, add
+  columns, etc) in the physical schema, without breaking it. When a breaking change
+  is required on '
 ---
 {% raw %}
 <div align="center">

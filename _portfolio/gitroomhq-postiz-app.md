@@ -2,8 +2,54 @@
 layout: project
 name: Gitroomhq Postiz App
 slug: gitroomhq-postiz-app
+category: Management- Engineering- SocialM
 image: https://github.com/user-attachments/assets/a27ee220-beb7-4c7e-8c1b-2c44301f82ef
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "NEW: check out Postiz agent CLI! perfect for OpenClaw and other
+  agents Your ultimate AI social media scheduling tool Postiz : An alternative to:
+  Buffer.com, Hypefury, Twitter Hunter, etc... Postiz offers everything you need to
+  manage your social media posts, build an audience, capture leads, and grow your
+  business. Explore the docs » Watch the YouTube Tutorials» Register · Join Our Discord
+  (devs only) · Public API NodeJS SDK · N8N custom node · Make.com integration ##
+  New - Postiz-as-a-service - Enterprise (Cloud) Integrate powerful social media scheduling
+  capabilities into your SaaS. Multi-tenant architecture designed for SaaS companies
+  who want to offer social media management to their users. - **Skip App Approvals**
+  - Use Postiz apps directly without going through lengthy social platform approval
+  processes. Get the full power of Postiz instantly. - **Multi-Tenant Architecture**
+  - each of your customers gets their own isolated environment with separate accounts,
+  channels, and team management. - **Headless API** - Full REST API access to build
+  your own frontend experience. Complete control over the user interface and branding.
+  - **Full OAuth Support** - Connect all major social platforms including Facebook,
+  Instagram, Twitter, LinkedIn, TikTok, and more. [Check it here](https://postiz.com/enterprise)
+  ## \U0001F50C See the leading Postiz features ## ✨ Features | | | | -------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------
+  | | | | ### Our Sponsors | Sponsor | Logo | Description | |---------|:-----------------------------------------------------------------------:|-----------------|
+  | [Hostinger](https://www.hostinger.com/?ref=postiz) | | Hostinger is on a mission
+  to make online success possible for anyone – from developers to aspiring bloggers
+  and business owners | # Intro - Schedule all your social media posts (many AI features)
+  - Measure your work with analytics. - Collaborate with other team members to exchange
+  or buy posts. - Invite your team members to collaborate, comment, and schedule posts.
+  - At the moment there is no difference between the hosted version to the self-hosted
+  version - Perfect for automation (API) with platforms like N8N, Make.com, Zapier,
+  etc. ## Tech Stack - Pnpm workspaces (Monorepo) - NextJS (React) - NestJS - Prisma
+  (Default to PostgreSQL) - Temporal - Resend (email notifications) ## Quick Start
+  To have the project up and running, please follow the [Quick Start Guide](https://docs.postiz.com/quickstart)
+  ## Sponsor Postiz We now give a few options to Sponsor Postiz: - Just a donation:
+  You like what we are building, and want to buy us some coffees so we can build faster.
+  - Main Repository: Get your logo with a backlink from the main Postiz repository.
+  Postiz has almost 3m downloads and 20k views per month. - Main Repository + Website:
+  Get your logo on the central repository and the main website. Here are some metrics:
+  - Website has 20k hits per month + 65 DR (strong backlink) - Repository has 20k
+  hits per month + Almost 3m docker downloads. Link: https://opencollective.com/postiz
+  ## Postiz Compliance - Postiz is an open-source, self-hosted social media scheduling
+  tool that supports platforms like X (formerly Twitter), Bluesky, Mastodon, Discord,
+  and others. - Postiz hosted service uses official, platform-approved OAuth flows.
+  - Postiz does not automate or scrape content from social media platforms. - Postiz
+  does not collect, store, or proxy API keys or access tokens from users. - Postiz
+  never ask users to paste API keys into our hosted product. - Postiz Users always
+  authenticate directly with the social platform (e.g., X, Discord, etc.), ensuring
+  platform compliance and data privacy. ## Star History [](https://www.star-history.com/#gitroomhq/postiz-app&type=date&legend=top-left)
+  ## License This repository's source code is available under the [AGPL-3.0 license](LICENSE)."
 ---
 {% raw %}
 <p align="center">

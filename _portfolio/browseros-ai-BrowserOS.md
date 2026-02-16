@@ -2,8 +2,67 @@
 layout: project
 name: Browseros Ai Browseros
 slug: browseros-ai-BrowserOS
+category: Uncategorized
 image: https://img.shields.io/badge/Discord-Join%20us-blue
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://discord.gg/YKwjt5vuKr) [](https://dub.sh/browserOS-slack)
+  [](https://twitter.com/browseros_ai) [](LICENSE) ## \U0001F310 BrowserOS is an open-source
+  Chromium fork that runs AI agents natively. **The privacy-first alternative to ChatGPT
+  Atlas, Perplexity Comet, and Dia.** \U0001F512 Use your own API keys or run local
+  models with Ollama. Your data never leaves your machine. \U0001F4A1 Join our [Discord](https://discord.gg/YKwjt5vuKr)
+  or [Slack](https://dub.sh/browserOS-slack) and help us build! Have feature requests?
+  [Suggest here](https://github.com/browseros-ai/BrowserOS/issues/99). ## Quick start
+  1. Download and install BrowserOS: - [macOS](https://files.browseros.com/download/BrowserOS.dmg)
+  - [Windows](https://files.browseros.com/download/BrowserOS_installer.exe) - [Linux
+  (AppImage)](https://files.browseros.com/download/BrowserOS.AppImage) - [Linux (Debian)](https://cdn.browseros.com/download/BrowserOS.deb)
+  2. Import your Chrome data (optional) 3. Connect your AI provider — use Claude,
+  OpenAI, Gemini, or local models via Ollama and LMStudio. 4. Start automating! ##
+  What makes BrowserOS special - \U0001F3E0 Feels like home — same Chrome interface,
+  all your extensions just work - \U0001F916 AI agents that run on YOUR browser, not
+  in the cloud - \U0001F512 Privacy first — bring your own keys or run local models
+  with Ollama. Your browsing history stays on your machine - \U0001F91D [BrowserOS
+  as MCP server](https://docs.browseros.com/features/use-with-claude-code) — control
+  the browser from `claude-code`, `gemini-cli`, or any MCP client (31 tools) - \U0001F504
+  [Workflows](https://docs.browseros.com/features/workflows) — build repeatable browser
+  automations with a visual graph builder - \U0001F4C2 [Cowork](https://docs.browseros.com/features/cowork)
+  — combine browser automation with local file operations. Research the web, save
+  reports to your folder - ⏰ [Scheduled Tasks](https://docs.browseros.com/features/scheduled-tasks)
+  — run the agent on autopilot, daily or every few minutes - \U0001F4AC [LLM Hub](https://docs.browseros.com/features/llm-chat-hub)
+  — compare Claude, ChatGPT, and Gemini side-by-side on any page - \U0001F6E1️ Built-in
+  ad blocker — [10x more protection than Chrome](https://docs.browseros.com/features/ad-blocking)
+  with uBlock Origin + Manifest V2 support - \U0001F680 100% open source under AGPL-3.0
+  ## Demos ### \U0001F916 BrowserOS agent in action [](https://www.youtube.com/watch?v=SoSFev5R5dI)
+  ### \U0001F387 Install [BrowserOS as MCP](https://docs.browseros.com/features/use-with-claude-code)
+  and control it from `claude-code` https://github.com/user-attachments/assets/c725d6df-1a0d-40eb-a125-ea009bf664dc
+  ### \U0001F4AC Use BrowserOS to chat https://github.com/user-attachments/assets/726803c5-8e36-420e-8694-c63a2607beca
+  ### ⚡ Use BrowserOS to scrape data https://github.com/user-attachments/assets/9f038216-bc24-4555-abf1-af2adcb7ebc0
+  ## Why We're Building BrowserOS For the first time since Netscape pioneered the
+  web in 1994, AI gives us the chance to completely reimagine the browser. We've seen
+  tools like Cursor deliver 10x productivity gains for developers—yet everyday browsing
+  remains frustratingly archaic. You're likely juggling 70+ tabs, battling your browser
+  instead of having it assist you. Routine tasks, like ordering something from amazon
+  or filling a form should be handled seamlessly by AI agents. At BrowserOS, we're
+  convinced that AI should empower you by automating tasks locally and securely—keeping
+  your data private. We are building the best browser for this future! ## How we compare
+  vs Chrome While we're grateful for Google open-sourcing Chromium, but Chrome hasn't
+  evolved much in 10 years. No AI features, no automation, no MCP support. vs Brave
+  We love what Brave started, but they've spread themselves too thin with crypto,
+  search, VPNs. We're laser-focused on AI-powered browsing. vs Arc/Dia Many loved
+  Arc, but it was closed source. When they abandoned users, there was no recourse.
+  We're 100% open source - fork it anytime! vs Perplexity Comet They're a search/ad
+  company. Your browser history becomes their product. We keep everything local. vs
+  ChatGPT Atlas Your browsing data could be used for ads or to train their models.
+  We keep your history and agent interactions strictly local. ## Contributing We'd
+  love your help making BrowserOS better! - \U0001F41B [Report bugs](https://github.com/browseros-ai/BrowserOS/issues)
+  - \U0001F4A1 [Suggest features](https://github.com/browseros-ai/BrowserOS/issues/99)
+  - \U0001F4AC [Join Discord](https://discord.gg/YKwjt5vuKr) - \U0001F426 [Follow
+  on Twitter](https://x.com/browserOS_ai) ## License BrowserOS is open source under
+  the [AGPL-3.0 license](LICENSE). ## Credits - [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
+  - BrowserOS uses some patches for enhanced privacy. Thanks to everyone behind this
+  project! - [The Chromium Project](https://www.chromium.org/) - At the core of BrowserOS,
+  making it possible to exist in the first place. ## Stargazers Thank you to all our
+  supporters! [](https://www.star-history.com/#browseros-ai/BrowserOS&Date) ## Built
+  with ❤️ from San Francisco"
 ---
 {% raw %}
 <div align="center">

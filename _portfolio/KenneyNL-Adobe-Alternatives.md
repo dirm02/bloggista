@@ -2,8 +2,68 @@
 layout: project
 name: Kenneynl Adobe Alternatives
 slug: KenneyNL-Adobe-Alternatives
+category: WindowsTools- Linux
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/Diolinux/PhotoGIMP)
+indexed_content: "# Adobe Alternatives > A list of alternatives for Adobe software,
+  originally collected by [@XdanielArt](https://x.com/XdanielArt) and improved upon
+  by the community. Feel free to open issues or pull requests, or create an image
+  (for easy sharing) out of the data. The lists are always ordered with the free and
+  open-source option on top, but it might not be the best alternative depending on
+  your use case. **Legend:** - ✨ = Free and open-source (or source available) - ⭐️
+  = Free of charge - \U0001F4B5 = Single purchase - \U0001F512 = Subscription for
+  more functions - ⌛ = Free trial **Alternatives to:** - [Photoshop](#photoshop) -
+  [Illustrator](#illustrator) - [Animate](#animate) - [InDesign](#indesign) - [Substance](#substance)
+  - [Lightroom](#lightroom) - [XD](#xd) - [Premiere](#premiere) - [Acrobat](#acrobat)
+  - [Bridge](#bridge) - [Dreamweaver](#dreamweaver) - [ColdFusion](#coldfusion) -
+  [Audition](#audition) - [After Effects](#after-effects) - [Mixamo](#mixamo) ## Photoshop
+  ### Photography - ✨ [PhotoGIMP](https://github.com/Diolinux/PhotoGIMP) *(Windows,
+  macOS, Linux)* - ✨ [GIMP](https://www.gimp.org) *(Windows, macOS, Linux)* - ✨️ [Pinta](https://www.pinta-project.com)
+  *(Windows, macOS, Linux)* - ✨ [digiKam](https://www.digikam.org/) *(Windows, macOS,
+  Linux)* - ✨ (\U0001F4B5) [Paint.NET](https://www.getpaint.net/) *(Windows)* - ⭐️
+  (\U0001F4B5) [Photopea](https://www.photopea.com) *(Browser)* - ⭐️ (\U0001F4B5,
+  \U0001F512) [Sumo Paint](https://sumo.app) *(Windows, macOS, Linux)* - ⭐️ (\U0001F4B5,
+  \U0001F512) [Sumopaint](https://paint.sumo.app) *(Browser, Windows, macOS, Linux)*
+  - ⭐️ (\U0001F512) [Pixlr](https://pixlr.com) *(Browser)* - ⭐️ (\U0001F512) [Affinity](https://www.affinity.studio/)
+  *(Windows, macOS, iOS(under development))* - \U0001F4B5 [Pixelmator Pro](https://www.pixelmator.com/pro)
+  *(macOS)* - \U0001F4B5 [PaintShop Pro](https://www.paintshoppro.com) *(Windows)*
+  - \U0001F4B5 [Photoline](https://www.pl32.com) *(Windows, macOS)* - \U0001F4B5 [Acorn](https://flyingmeat.com/acorn)
+  *(macOS)* ### Painting - ✨ [Krita](https://krita.org) *(Windows, macOS, Linux, Android)*
+  - ✨ [MyPaint](https://mypaint.app) *(Windows, macOS, Linux)* - ✨ [Tux Paint](https://tuxpaint.org/)
+  *(Windows, macOS, Linux)* - ✨ [Kleki](https://kleki.com/) *(Browser)* - ⭐️ (\U0001F512)
+  [IbisPaint](https://ibispaint.com) *(Windows, Android, iOS)* - ⭐️ (\U0001F4B5) [Sketchbook](https://www.sketchbook.com)
+  *(Windows, macOS, Android, iOS)* - ⭐️ [FireAlpaca](https://firealpaca.com) *(Windows,
+  macOS, Linux)* - ⭐️ [MediBang](https://medibangpaint.com) *(Windows, macOS, Android)*
+  - \U0001F4B5 [Paintstorm](https://paintstormstudio.com/index.html) *(Windows, macOS,
+  Linux, iOS)* - \U0001F4B5 [Corel Painter](https://www.painterartist.com) *(Windows,
+  macOS)* - \U0001F4B5 [Rebelle](https://www.escapemotions.com/products/rebelle) *(Windows,
+  macOS)* - \U0001F4B5 (\U0001F512) [Clip Studio Paint](https://www.clipstudio.net)
+  *(Windows, macOS, Android, iOS)* - \U0001F4B5 [PaintTool SAI](https://www.systemax.jp/en/sai)
+  *(Windows)* - \U0001F4B5 [Procreate](https://procreate.com) *(iOS)* - \U0001F4B5
+  [Linea Sketch](https://linea-app.com) *(iOS)* - \U0001F4B5 [Artstudio Pro](https://apps.apple.com/us/app/artstudio-pro/id1244142051)
+  *(iOS)* - \U0001F4B5 [Infinite Studio](https://www.infinitestudio.art) *(Android,
+  iOS)* - \U0001F4B5 [Realistic Paint Studio](https://realisticpaint.com) *(Windows,
+  macOS, iOS)* - \U0001F4B5 [ArtRage](https://www.artrage.com/artrage) *(Windows,
+  macOS, Android, iOS)* ### Pixel art - ✨ [Pixelorama](https://orama-interactive.itch.io/pixelorama)
+  *(Browser, Windows, macOS, Linux, Raspberry Pi)* - ✨ [PixiEditor](https://pixieditor.net)
+  *(Windows)* - ✨ [LibreSprite](https://libresprite.github.io) *(Windows, macOS, Linux)*
+  - ✨ [GrafX2](http://grafx2.chez.com) *(Windows, Linux, Android)* - ✨ [Piskel](https://www.piskelapp.com)
+  *(Browser, Windows, macOS, Linux)* - ✨ (or \U0001F4B5) [Aseprite](https://www.aseprite.org)
+  *(Windows, macOS, Linux)* - ⭐️ [Lospec Pixel Editor](https://apps.lospec.com/pixel-editor)
+  *(Browser)* - ⭐️ [Pixel Studio](https://store.steampowered.com/app/1204050/Pixel_Studio__pixel_art_editor)
+  *(Windows, macOS)* - ⭐️ [Microsoft Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H)
+  *(Windows)* - ⭐️ [GraphicsGale](https://graphicsgale.com) *(Windows)* - ⭐️ (\U0001F512)
+  [Pixilart](https://www.pixilart.com/draw) *(Browser, Android, iOS)* - ⭐️ (\U0001F512)
+  [dotpict](https://dotpict.net/) *(Android, iOS)* - \U0001F4B5 [Pro Motion NG](https://www.cosmigo.com)
+  *(Windows)* - \U0001F4B5 [Lightcube](https://www.lightcube.art) *(Windows)* - \U0001F4B5
+  [Pyxel Edit](https://pyxeledit.com) *(Windows, macOS, Linux)* - \U0001F4B5 [Pixquare](https://www.pixquare.art)
+  *(macOS, iOS)* ## Illustrator ### General - ✨ [Inkscape](https://inkscape.org) *(Windows,
+  macOS, Linux)* - ✨ [Graphite](https://graphite.rs) *(Browser now / Windows, macOS,
+  Linux apps in future)* - ⭐️ (\U0001F512) [Linearity Curve](https://www.linearity.io/curve)
+  *(macOS, iOS)* - ⭐️ [Affinity](https://www.affinity.studio/) *(Windows, macOS, iOS(under
+  development))* - \U0001F4B5 (⌛) [Boxy SVG](https://boxy-svg.com) *(Browser)* - \U0001F4B5
+  [Amadine](https://amadine.com/) *(macOS, iOS)* - \U0001F4B5 [Xara Designer](https://www.xara.com/designerpro-plus)
+  *(Windows)* - \U0001F512 [Corel Vector](https://app.corelvector.com"
 ---
 {% raw %}
 # Adobe Alternatives

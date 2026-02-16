@@ -2,8 +2,67 @@
 layout: project
 name: Exo Explore Exo
 slug: exo-explore-exo
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/exo-explore-exo/docs/imgs/exo-logo-transparent.png
 repo_url: https://github.com/ml-explore/mlx)
+indexed_content: 'exo: Run frontier AI locally. Maintained by [exo labs](https://x.com/exolabs).
+  --- exo connects all your devices into an AI cluster. Not only does exo enable running
+  models larger than would fit on a single device, but with [day-0 support for RDMA
+  over Thunderbolt](https://x.com/exolabs/status/2001817749744476256?s=20), makes
+  models run faster as you add more devices. ## Features - **Automatic Device Discovery**:
+  Devices running exo automatically discover each other - no manual configuration.
+  - **RDMA over Thunderbolt**: exo ships with [day-0 support for RDMA over Thunderbolt
+  5](https://x.com/exolabs/status/2001817749744476256?s=20), enabling 99% reduction
+  in latency between devices. - **Topology-Aware Auto Parallel**: exo figures out
+  the best way to split your model across all available devices based on a realtime
+  view of your device topology. It takes into account device resources and network
+  latency/bandwidth between each link. - **Tensor Parallelism**: exo supports sharding
+  models, for up to 1.8x speedup on 2 devices and 3.2x speedup on 4 devices. - **MLX
+  Support**: exo uses [MLX](https://github.com/ml-explore/mlx) as an inference backend
+  and [MLX distributed](https://ml-explore.github.io/mlx/build/html/usage/distributed.html)
+  for distributed communication. ## Dashboard exo includes a built-in dashboard for
+  managing your cluster and chatting with models. 4 × 512GB M3 Ultra Mac Studio running
+  DeepSeek v3.1 (8-bit) and Kimi-K2-Thinking (4-bit) ## Benchmarks Qwen3-235B (8-bit)
+  on 4 × M3 Ultra Mac Studio with Tensor Parallel RDMA Source: Jeff Geerling: 15 TB
+  VRAM on Mac Studio – RDMA over Thunderbolt 5 DeepSeek v3.1 671B (8-bit) on 4 × M3
+  Ultra Mac Studio with Tensor Parallel RDMA Source: Jeff Geerling: 15 TB VRAM on
+  Mac Studio – RDMA over Thunderbolt 5 Kimi K2 Thinking (native 4-bit) on 4 × M3 Ultra
+  Mac Studio with Tensor Parallel RDMA Source: Jeff Geerling: 15 TB VRAM on Mac Studio
+  – RDMA over Thunderbolt 5 --- ## Quick Start Devices running exo automatically discover
+  each other, without needing any manual configuration. Each device provides an API
+  and a dashboard for interacting with your cluster (runs at `http://localhost:52415`).
+  There are two ways to run exo: ### Run from Source (macOS) **Prerequisites:** -
+  [brew](https://github.com/Homebrew/brew) (for simple package management on macOS)
+  ```bash /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ``` - [uv](https://github.com/astral-sh/uv) (for Python dependency management) -
+  [macmon](https://github.com/vladkens/macmon) (for hardware monitoring on Apple Silicon)
+  - [node](https://github.com/nodejs/node) (for building the dashboard) ```bash brew
+  install uv macmon node ``` - [rust](https://github.com/rust-lang/rustup) (to build
+  Rust bindings, nightly for now) ```bash curl --proto ''=https'' --tlsv1.2 -sSf https://sh.rustup.rs
+  | sh rustup toolchain install nightly ``` Clone the repo, build the dashboard, and
+  run exo: ```bash # Clone exo git clone https://github.com/exo-explore/exo # Build
+  dashboard cd exo/dashboard && npm install && npm run build && cd .. # Run exo uv
+  run exo ``` This starts the exo dashboard and API at http://localhost:52415/ *Please
+  view the section on RDMA to enable this feature on MacOS >=26.2!* ### Run from Source
+  (Linux) **Prerequisites:** - [uv](https://github.com/astral-sh/uv) (for Python dependency
+  management) - [node](https://github.com/nodejs/node) (for building the dashboard)
+  - version 18 or higher - [rust](https://github.com/rust-lang/rustup) (to build Rust
+  bindings, nightly for now) **Installation methods:** **Option 1: Using system package
+  manager (Ubuntu/Debian example):** ```bash # Install Node.js and npm sudo apt update
+  sudo apt install nodejs npm # Install uv curl -LsSf https://astral.sh/uv/install.sh
+  | sh # Install Rust (using rustup) curl --proto ''=https'' --tlsv1.2 -sSf https://sh.rustup.rs
+  | sh rustup toolchain install nightly ``` **Option 2: Using Homebrew on Linux (if
+  preferred):** ```bash # Install Homebrew on Linux /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  # Install dependencies brew install uv node # Install Rust (using rustup) curl --proto
+  ''=https'' --tlsv1.2 -sSf https://sh.rustup.rs | sh rustup toolchain install nightly
+  ``` **Note:** The `macmon` package is macOS-only and not required for Linux. Clone
+  the repo, build the dashboard, and run exo: ```bash # Clone exo git clone https://github.com/exo-explore/exo
+  # Build dashboard cd exo/dashboard && npm install && npm run build && cd .. # Run
+  exo uv run exo ``` This starts the exo dashboard and API at http://localhost:52415/
+  **Important note for Linux users:** Currently, exo runs on CPU on Linux. GPU support
+  for Linux platforms is under development. If you''d like to see support for your
+  specific Linux hardware, please [search for existing feature requests](https://github.com/exo-explore/exo/issues)
+  or create a new one. **Configuration Options:** - `--no-worker`: Run exo'
 ---
 {% raw %}
 <div align="center">

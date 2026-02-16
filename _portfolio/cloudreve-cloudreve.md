@@ -2,8 +2,37 @@
 layout: project
 name: Cloudreve Cloudreve
 slug: cloudreve-cloudreve
+category: Management- Engineering- SocialM
 image: https://raw.githubusercontent.com/cloudreve/docs/master/images/homepage.png
 repo_url: https://github.com/cloudreve/cloudreve
+indexed_content: "[中文版本](https://github.com/cloudreve/cloudreve/blob/master/README_zh-CN.md)
+  Cloudreve Self-hosted file management system with multi-cloud support. Homepage
+  • Try it • Discussion • Documents • Download • Telegram • Discord ## :sparkles:
+  Features - :cloud: Support storing files into Local, Remote node, OneDrive, S3 compatible
+  API, Qiniu Kodo, Aliyun OSS, Tencent COS, Huawei Cloud OBS, Kingsoft Cloud KS3,
+  Upyun. - :outbox_tray: Upload/Download in directly transmission from client to storage
+  providers. - \U0001F4BE Integrate with Aria2/qBittorrent to download files in background,
+  use multiple download nodes to share the load. - \U0001F4DA Compress/Extract/Preview
+  archived files, download files in batch. - \U0001F4BB WebDAV support covering all
+  storage providers. - :zap:Drag&Drop to upload files or folders, with parallel resumable
+  upload support. - :card_file_box: Extract media metadata from files, search files
+  by metadata or tags. - :family_woman_girl_boy: Multi-users with multi-groups. -
+  :link: Create share links for files and folders with expiration date. - :eye_speech_bubble:
+  Preview videos, images, audios, ePub files online; edit texts, diagrams, Markdown,
+  images, Office documents online. - :art: Customize theme colors, dark mode, PWA
+  application, SPA, i18n. - :rocket: All-in-one packaging, with all features out of
+  the box. - \U0001F308 ... ... ## :hammer_and_wrench: Deploy To deploy Cloudreve,
+  you can refer to [Getting started](https://docs.cloudreve.org/overview/quickstart)
+  for a quick local deployment to test. When you're ready to deploy Cloudreve to a
+  production environment, you can refer to [Deploy](https://docs.cloudreve.org/overview/deploy/)
+  for a complete deployment. ## :gear: Build Please refer to [Build](https://docs.cloudreve.org/overview/build/)
+  for how to build Cloudreve from source code. ## :rocket: Contributing If you're
+  interested in contributing to Cloudreve, please refer to [Contributing](https://docs.cloudreve.org/api/contributing/)
+  for how to contribute to Cloudreve. ## :alembic: Stacks - [Go](https://golang.org/)
+  + [Gin](https://github.com/gin-gonic/gin) + [ent](https://github.com/ent/ent) -
+  [React](https://github.com/facebook/react) + [Redux](https://github.com/reduxjs/redux)
+  + [Material-UI](https://github.com/mui-org/material-ui) ## :scroll: License GPL
+  V3"
 ---
 {% raw %}
 [中文版本](https://github.com/cloudreve/cloudreve/blob/master/README_zh-CN.md)

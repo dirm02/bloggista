@@ -2,8 +2,61 @@
 layout: project
 name: Therobotstudio So Arm100
 slug: TheRobotStudio-SO-ARM100
+category: EE-kicad-3D-Robotic
 image: https://github.com/user-attachments/assets/e814ed0a-72ce-43ad-80bf-5f03b7f16b90
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "Standard Open SO-100 & SO-101 Arms Build Your Own SO-101 Robot!
+  The SO‑101 is the next‑generation version of the SO‑100 robot arm, originally designed
+  by the [RobotStudio](https://www.therobotstudio.com) in collaboration with [Hugging
+  Face](https://huggingface.co/lerobot). It has improved wiring, is easier to assemble
+  (no gear removal) and uses updated motors for the leader arm. These arms are designed
+  to work seamlessly with the open‑source \U0001F917 LeRobot library. Join our community
+  on [Discord](https://discord.gg/ggrqhPTsMe) to collaborate on both hardware and
+  software, and help make end‑to‑end AI for robotics more accessible. ### Documentation
+  \U0001F4D6 - For the SO‑101 docs, follow this page further. - Here you can find
+  the [SO‑100 docs](SO100.md) which is deprecated. ### Getting Your Own SO‑101 You
+  have two options: - **Build it Yourself** - Source the components from the [Bill
+  of Materials](#sourcing-parts). - 3D print the parts (or order the 3D printed parts),
+  explained in [Printing the Parts](#printing-the-parts). - Follow our [Assembly Guide](https://huggingface.co/docs/lerobot/so101).
+  - **Buy a Kit** - Buy assembled arms or a parts kit from one of the vendors [here](#kits).
+  - Optionally follow our [Assembly Guide](https://huggingface.co/docs/lerobot/so101).
+  ### Setup with LeRobot \U0001F917 After sourcing all parts you can setup your SO-101
+  with LeRobot [tutorial](https://huggingface.co/docs/lerobot/so101). ### Optional
+  Hardware \U0001F527 This repository also includes a range of optional hardware designs
+  such as a raised leader base and different camera mounts. Here you can explore the
+  [full list](#optional-hardware). ## Kits You can find all optional for SO-100/SO-101
+  kits here: - from PartaBot :us: [US](https://partabot.com) (They include **assembled**
+  versions, and also sell LeKiwi and Koch robots) - from Seeed studio :earth_africa:
+  [International](https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html)
+  or :cn: [China](https://item.taobao.com/item.htm?id=878010637397&skuId=5915703371829&spm=a213gs.v2success.0.0.4cbf4831mkqWLn)
+  or :jp: [Akizuki Denshi](https://akizukidenshi.com/catalog/g/g131169/) or [Aliexpress](https://www.aliexpress.com/item/3256808696884714.html?gatewayAdapt=4itemAdapt)
+  (They include **3d printed kits**) - from WowRobo :earth_africa: [International](https://shop.wowrobo.com/products/so-arm101-diy-kit-assembled-version-1)
+  or :cn: [China](https://item.taobao.com/item.htm?ft=t&id=860171734711) (They include
+  **assembled** versions) - from Sudoremove :kr: [South Korea](https://smartstore.naver.com/sudoremove/products/12022333117)
+  - from NeoBot :cn: [China](https://item.taobao.com/item.htm?ft=t&id=957685951340)
+  - from Autodiscovery :eu: [EU](https://autodiscovery.eu/en/products/so-101-kit??utm_source=hf&utm_medium=shop&utm_content=web)
+  Additionally you can find SO-100 follower arm kit (without leader arm) on [Phospho](https://robots.phospho.ai).
+  It can be especially useful if you own a VR headset. ## Sourcing Parts The follower
+  and leader arm for this teleoperation setup will almost the same off the shelf parts
+  (except for the motors). If you plan on creating the classic teleoperation set up
+  to be used with the `LeRobot` library please buy from the Parts for Two Arms below.
+  We only have links for US, EU, CN, and JP for now. If you find links for other countries,
+  please create an issue or PR so that we add them to the list. Note that prices and
+  items may vary depending on geographic location. > [!IMPORTANT] > The STS3215 motors
+  for the follower arm comes in two sizes. The 7.4V has a stall torque of 16.5kg.cm
+  at 6V (and likely slightly less for a 5V power supply). The 12V version has a stall
+  torque of 30kg.cm. While we found the 7.4V to be sufficient, if you would like more
+  powerful motors you can buy the 12V version [here](https://www.alibaba.com/product-detail/6PCS-12V-30KG-STS3215-High-Torque_1601216757543.html).
+  Note if you do this, you will also have to buy a 12V 5A+ power supply instead of
+  a 5V one. The leader arm is always 7.4V for the SO101. #### Parts For Two Arms (Follower
+  and Leader Setup): | Part | Amount | Unit Cost (US) | Buy US | Unit Cost (EU) |
+  Buy EU | Unit Cost (RMB) | Buy CN | Unit Cost (JPY) | Buy JP | | -------------------------------------------
+  | ------ | -------------- | ---------------------------------------------------------------------------------------------------------
+  | -------------- | -------------------------------------------------------------------------------------------------
+  | --------------- | -------------------------------------------------------------------------------
+  | --------------- | -------------------------------------------------------------------------------
+  | | STS3215 Servo 7.4V, 1/345 gear (C001) ** [2](#leaderbundle) | 7 | $13.89 | [Alibaba](https://www.alibaba.com/product-detail/Top-Seller-Low-Cost-Feetech-STS3215_1600999461525.html)
+  | €12.2 | [Alibaba](https://www.alibaba.com/product-detail/Top-Seller-Low-Cost-Feetech-STS3215_1600999461525.html) "
 ---
 {% raw %}
 <div align="center">

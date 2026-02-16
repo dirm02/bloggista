@@ -2,8 +2,70 @@
 layout: project
 name: Fastapi Full Stack Fastapi Template
 slug: fastapi-full-stack-fastapi-template
+category: Frontend Framework
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fastapi-full-stack-fastapi-template/img/login.png
 repo_url: https://github.com/fastapi/full-stack-fastapi-template
+indexed_content: "# Full Stack FastAPI Template ## Technology Stack and Features -
+  ⚡ [**FastAPI**](https://fastapi.tiangolo.com) for the Python backend API. - \U0001F9F0
+  [SQLModel](https://sqlmodel.tiangolo.com) for the Python SQL database interactions
+  (ORM). - \U0001F50D [Pydantic](https://docs.pydantic.dev), used by FastAPI, for
+  the data validation and settings management. - \U0001F4BE [PostgreSQL](https://www.postgresql.org)
+  as the SQL database. - \U0001F680 [React](https://react.dev) for the frontend. -
+  \U0001F483 Using TypeScript, hooks, [Vite](https://vitejs.dev), and other parts
+  of a modern frontend stack. - \U0001F3A8 [Tailwind CSS](https://tailwindcss.com)
+  and [shadcn/ui](https://ui.shadcn.com) for the frontend components. - \U0001F916
+  An automatically generated frontend client. - \U0001F9EA [Playwright](https://playwright.dev)
+  for End-to-End testing. - \U0001F987 Dark mode support. - \U0001F40B [Docker Compose](https://www.docker.com)
+  for development and production. - \U0001F512 Secure password hashing by default.
+  - \U0001F511 JWT (JSON Web Token) authentication. - \U0001F4EB Email based password
+  recovery. - \U0001F4EC [Mailcatcher](https://mailcatcher.me) for local email testing
+  during development. - ✅ Tests with [Pytest](https://pytest.org). - \U0001F4DE [Traefik](https://traefik.io)
+  as a reverse proxy / load balancer. - \U0001F6A2 Deployment instructions using Docker
+  Compose, including how to set up a frontend Traefik proxy to handle automatic HTTPS
+  certificates. - \U0001F3ED CI (continuous integration) and CD (continuous deployment)
+  based on GitHub Actions. ### Dashboard Login [](https://github.com/fastapi/full-stack-fastapi-template)
+  ### Dashboard - Admin [](https://github.com/fastapi/full-stack-fastapi-template)
+  ### Dashboard - Items [](https://github.com/fastapi/full-stack-fastapi-template)
+  ### Dashboard - Dark Mode [](https://github.com/fastapi/full-stack-fastapi-template)
+  ### Interactive API Documentation [](https://github.com/fastapi/full-stack-fastapi-template)
+  ## How To Use It You can **just fork or clone** this repository and use it as is.
+  ✨ It just works. ✨ ### How to Use a Private Repository If you want to have a private
+  repository, GitHub won't allow you to simply fork it as it doesn't allow changing
+  the visibility of forks. But you can do the following: - Create a new GitHub repo,
+  for example `my-full-stack`. - Clone this repository manually, set the name with
+  the name of the project you want to use, for example `my-full-stack`: ```bash git
+  clone git@github.com:fastapi/full-stack-fastapi-template.git my-full-stack ``` -
+  Enter into the new directory: ```bash cd my-full-stack ``` - Set the new origin
+  to your new repository, copy it from the GitHub interface, for example: ```bash
+  git remote set-url origin git@github.com:octocat/my-full-stack.git ``` - Add this
+  repo as another \"remote\" to allow you to get updates later: ```bash git remote
+  add upstream git@github.com:fastapi/full-stack-fastapi-template.git ``` - Push the
+  code to your new repository: ```bash git push -u origin master ``` ### Update From
+  the Original Template After cloning the repository, and after doing changes, you
+  might want to get the latest changes from this original template. - Make sure you
+  added the original repository as a remote, you can check it with: ```bash git remote
+  -v origin git@github.com:octocat/my-full-stack.git (fetch) origin git@github.com:octocat/my-full-stack.git
+  (push) upstream git@github.com:fastapi/full-stack-fastapi-template.git (fetch) upstream
+  git@github.com:fastapi/full-stack-fastapi-template.git (push) ``` - Pull the latest
+  changes without merging: ```bash git pull --no-commit upstream master ``` This will
+  download the latest changes from this template without committing them, that way
+  you can check everything is right before committing. - If there are conflicts, solve
+  them in your editor. - Once you are done, commit the changes: ```bash git merge
+  --continue ``` ### Configure You can then update configs in the `.env` files to
+  customize your configurations. Before deploying it, make sure you change at least
+  the values for: - `SECRET_KEY` - `FIRST_SUPERUSER_PASSWORD` - `POSTGRES_PASSWORD`
+  You can (and should) pass these as environment variables from secrets. Read the
+  [deployment.md](./deployment.md) docs for more details. ### Generate Secret Keys
+  Some environment variables in the `.env` file have a default value of `changethis`.
+  You have to change them with a secret key, to generate secret keys you can run the
+  following command: ```bash python -c \"import secrets; print(secrets.token_urlsafe(32))\"
+  ``` Copy the content and use that as password / secret key. And run that again to
+  generate another secure key. ## How To Use It - Alternative With Copier This repository
+  also supports generating a new project using [Copier](https://copier.readthedocs.io).
+  It will copy all the files, ask you configuration questions, and update the `.env`
+  files with your answers. ### Install Copier You can install Copier with: ```bash
+  pip install copier ``` Or better, if you have [`pipx`](https://pipx.pypa.io/), you
+  can run it with: ```bash pipx install copier ``` **Note**: If you have "
 ---
 {% raw %}
 # Full Stack FastAPI Template

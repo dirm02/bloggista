@@ -2,8 +2,69 @@
 layout: project
 name: Umercodez Droidpad
 slug: UmerCodez-DroidPad
+category: Frontend Framework
 image: https://img.shields.io/github/license/umer0586/DroidPad?style=for-the-badge
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '[ ](https://github.com/umer0586/DroidPad/releases) [ ](https://f-droid.org/packages/com.github.umer0586.droidpad/)
+  [ ](https://apt.izzysoft.de/fdroid/index/apk/com.github.umer0586.droidpad) ## Create
+  Customizable Control Interfaces for Bluetooth Low Energy, Bluetooth, WebSocket,
+  MQTT, TCP, and UDP Protocols with Simple Drag-and-Drop Functionality. ### Key Features:
+  1. **Drag-and-Drop Control Pad Creation** Design your control pads by dragging and
+  dropping components like buttons, sliders, switches, Joystick and D-PAD. 2. **Multi-Protocol
+  Support and Seamless Server Connections** Easily configure your control pad to support
+  network protocols such as **Bluetooth LE, WebSocket (Client/Server), MQTT, TCP,
+  and UDP**. Once connected, you can interact with the control pad’s components—including
+  **buttons, sliders, switches, joysticks, and D-PADs**—to send real-time commands
+  directly to the connected server or BLE client, where these commands can be processed.
+  3. **Switch Connection Type Anytime** You can change the connection type of a control
+  pad at any time without creating a duplicate for a different connection. 4. **Update
+  UI From your Script** You can change the state of SWITCH,SLIDER,LED and GAUGE from
+  your script ## Supported Components 1. Switch 2. Button 3. Slider 4. DPAD 5. Joystick
+  6. Steering Wheel 7. LED 8. GAUGE 9. LOG 10. Accelerometer and Gyroscope (If supported
+  by the device) ## How It Works (4 steps) ### **Step 1: Create a Control Pad** Start
+  by creating a new control pad. Provide a unique name to identify your control pad.
+  ### **Step 2: Design Your Control Pad** After creating the control pad, click on
+  the **Build** icon and use the drag-and-drop interface to add components like switches,
+  buttons, and sliders etc. Assign a unique **ID** to each component. This ID will
+  be sent to the server during interactions. ### **Step 3: Configure Connection Settings**
+  Tap **''Settings**, choose a connection type (TCP, Bluetooth LE, UDP, WebSocket,
+  or MQTT), enter the server address and port. You can switch between connection types
+  anytime ### **Step 4: Connect and Interact** a. Click on the **Play** icon to start
+  interacting with your control pad. b. Tap the **Connect** button in the bottom-right
+  corner to establish a connection with the server. ## **Reading Interactions** When
+  users interact with the control pad, JSON-formatted or CSV messages are generated
+  based on the type of component used. These string messages enable receivers to understand
+  and process interactions sent from the control pad. Below are the formats and details
+  for each interaction: --- ### **SWITCH** Toggling a switch generates the following
+  JSON: ```json { "id": "the id you specified", "type": "SWITCH", "state": true }
+  ``` For **Bluetooth** and **Bluetooth LE** connections, toggling a switch generates
+  a `CSV` message in the format: ` ,SWITCH, `. - The `state` field indicates whether
+  the switch is **on** (`true`) or **off** (`false`). --- ### **BUTTON** Pressing
+  or releasing a button generates this JSON: ```json { "id": "the id you specified",
+  "type": "BUTTON", "state": "PRESS" } ``` For **Bluetooth** and **Bluetooth LE**
+  connections, pressing or releasing a button generates a `CSV` message in the format:
+  ` ,BUTTON, `. - The `state` field can have following values: - **"PRESS"**: When
+  the button is being pressed (finger on the button). - **"RELEASE"**: When the button
+  is released (finger lifted off after pressing). - **"CLICK"**: Indicates tap gesture
+  --- ### **DPAD (Directional Pad)** Pressing or releasing a button on DPAD generates
+  this JSON: ```json { "id": "the id you specified", "type": "DPAD", "button": "RIGHT",
+  "state": "CLICK" } ``` For **Bluetooth** and **Bluetooth LE** connections, pressing
+  or releasing a button on DPAD generates a `CSV` message in the format: ` ,DPAD,
+  , `. - The `state` field can have following values: - **"PRESS"**: When the button
+  is being pressed (finger on the button). - **"RELEASE"**: When the button is released
+  (finger lifted off after pressing). - **"CLICK"**: Indicates tap gesture - The `button`
+  field can be **"LEFT"**,**"RIGHT"**,**"UP"** or **"DOWN"** --- ### **STEERING WHEEL**
+  Rotating a steering wheel generates this JSON: ```json { "id": "your id", "type":
+  "STEERING_WHEEL", "angle": 45.233445 } ``` For **Bluetooth** and **Bluetooth LE**
+  connections the `CSV` is ` ,STEERING_WHEEL, ` - where `angle` is rotation angle
+  of the steering wheel in degrees - **Positive values** indicate clockwise rotation
+  - **Negative values** indicate counter-clockwise (anti-clockwise) rotation --- ###
+  **JOYSTICK** Moving joystick handle generates this JSON: ```json { "id": "the id
+  you specified", "type": "JOYSTICK", "x": 0.71150637, "y": -0.13367589 } ``` For
+  **Bluetooth** and **Bluetooth LE** : ` ,JOYSTICK, , ` _Note : Joystick is not rotatable
+  in the Builder Screen_ The values of x and y range: - From -1.0 to 1.0 for both
+  axes. - Positive x values indicate movement to the right, and negative values indicate
+  movement to t'
 ---
 {% raw %}
 <div align="center">

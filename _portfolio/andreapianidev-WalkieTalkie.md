@@ -2,8 +2,71 @@
 layout: project
 name: Andreapianidev Walkietalkie
 slug: andreapianidev-WalkieTalkie
+category: iOS-imac
 image: https://www.andreapiani.com/talky.png
 repo_url: https://github.com/andreapianidev/WalkieTalkie.git
+indexed_content: "// Created by Andrea Piani - Immaginet Srl - 15/01/25 - https://www.andreapiani.com
+  - README.md # Talky - Professional Walkie-Talkie & FM Radio App [](https://developer.apple.com/ios/)
+  [](https://swift.org/) [](https://developer.apple.com/xcode/) []() ## \U0001F4F1
+  Overview **Talky is now Open Source!** \U0001F389 Talky is a professional iOS app
+  that combines Push-to-Talk walkie-talkie functionality with integrated FM radio
+  streaming. Built with SwiftUI and modern technologies, it offers peer-to-peer communication
+  through Multipeer Connectivity and real-time radio streaming without requiring internet
+  connectivity. ## ✨ Features - \U0001F399️ **Push-to-Talk Communication**: Professional
+  walkie-talkie system with crystal-clear audio - \U0001F4FB **FM Radio Integration**:
+  Built-in radio streaming with advanced playback controls - \U0001F517 **Multipeer
+  Connectivity**: Peer-to-peer communication without internet connection - \U0001F514
+  **Smart Notifications**: Intelligent notification system with cooldown protection
+  - \U0001F30D **Multi-language Support**: Italian, English, Spanish localization
+  - ⚡ **Power Management**: Optimized battery usage and power monitoring - \U0001F3B5
+  **Audio Management**: Advanced audio session control and management - \U0001F4F3
+  **Haptic Feedback**: Tactile feedback for enhanced user experience - \U0001F525
+  **Firebase Integration**: Analytics and crash reporting for better app insights
+  - \U0001F3AF **Modern Architecture**: Clean MVVM pattern with SwiftUI and Combine
+  ## \U0001F3D7️ Architecture ### Design Patterns - **MVVM (Model-View-ViewModel)**:
+  Primary architecture pattern for clean separation of concerns - **Singleton Pattern**:
+  Shared managers for system-wide functionality - **Observer Pattern**: Reactive programming
+  using `@Published` and `ObservableObject` - **Dependency Injection**: SwiftUI's
+  `@StateObject` and `@ObservedObject` for loose coupling ### Core Components ####
+  \U0001F527 Managers (Business Logic Layer) - **AudioManager**: Audio session management,
+  recording, playback, and real-time audio processing - **MultipeerManager**: Peer-to-peer
+  communication, device discovery, and connection management - **RadioManager**: FM
+  radio streaming, playback controls, and audio routing - **NotificationManager**:
+  Smart notification system with anti-spam protection and user engagement - **SettingsManager**:
+  User preferences persistence and app configuration - **PowerManager**: Battery monitoring
+  and power optimization strategies - **HapticManager**: Tactile feedback coordination
+  for enhanced UX - **FirebaseManager**: Analytics tracking, crash reporting, and
+  app insights - **Logger**: Centralized logging system with categorized output ####
+  \U0001F3A8 Views (Presentation Layer) - **ContentView**: Main interface with Radio/Walkie-Talkie
+  mode toggle and primary controls - **ConnectionsView**: Active peer-to-peer connection
+  management and status monitoring - **ExploreView**: Device discovery interface for
+  finding and connecting to nearby devices - **SettingsView**: App configuration,
+  user preferences, and system settings ## \U0001F4C1 Project Structure ``` WalkieTalkie/
+  ├── WalkieTalkie.xcodeproj/ # Xcode Project Configuration │ ├── project.pbxproj
+  # Project settings and build configuration │ └── project.xcworkspace/ # Workspace
+  for dependencies ├── WalkieTalkie/ # Main Source Code │ ├── \U0001F527 Managers
+  (Business Logic) │ │ ├── AudioManager.swift # Audio session, recording, playback
+  management │ │ ├── MultipeerManager.swift # P2P communication and device discovery
+  │ │ ├── RadioManager.swift # FM radio streaming and controls │ │ ├── NotificationManager.swift
+  # Smart notifications with anti-spam │ │ ├── SettingsManager.swift # User preferences
+  and app configuration │ │ ├── PowerManager.swift # Battery monitoring and optimization
+  │ │ ├── HapticManager.swift # Tactile feedback coordination │ │ └── FirebaseManager.swift
+  # Analytics and crash reporting │ ├── \U0001F3A8 Views (SwiftUI Interface) │ │ ├──
+  ContentView.swift # Main app interface with mode toggle │ │ ├── ConnectionsView.swift
+  # P2P connection management │ │ ├── ExploreView.swift # Device discovery and pairing
+  │ │ └── SettingsView.swift # App configuration and preferences │ ├── \U0001F6E0️
+  Utilities │ │ ├── Logger.swift # Centralized logging system │ │ └── String+Localization.swift
+  # Localization extensions │ ├── \U0001F3B5 Audio Resources │ │ ├── f1.mp3 - f24.mp3
+  # Frequency tone samples (1-24) │ │ ├── radio2.mp3 # Radio background audio │ │
+  ├── radio3.mp3 # Alternative radio samples │ │ └── radio4.mp3 │ ├── \U0001F3A8 Assets
+  │ │ ├── Assets.xcassets/ # App icons, images, and color sets │ │ └── Contents.json
+  # Asset catalog configuration │ ├── \U0001F30D Localization │ │ ├── it.lproj/ #
+  Italian translations │ │ ├── en.lproj/ # English translations │ │ └── es.lproj/
+  # Spanish translations │ ├── ⚙️ Configuration │ │ ├── Info.plist # App metadata
+  and permissions │ │ ├── WalkieTalkie-Info.plist # Additional app configuration │
+  │ ├── GoogleService-Info.plist # Firebase configuration │ │ └── WalkieTalkieApp.swift
+  # App entry point and initialization ├── \U0001F4DA Documentation │ ├── plan.md
+  # Development roadmap │ ├── AppStore_De"
 ---
 {% raw %}
 // Created by Andrea Piani - Immaginet Srl - 15/01/25 - https://www.andreapiani.com - README.md

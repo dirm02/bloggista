@@ -2,8 +2,62 @@
 layout: project
 name: Redocly Redoc
 slug: Redocly-redoc
+category: Very important!!!!
 image: http://img.shields.io/npm/v/redoc.svg
 repo_url: https://github.com/Redocly/redoc
+indexed_content: "# Generate beautiful API documentation from OpenAPI [](https://www.npmjs.com/package/redoc)
+  [](https://github.com/Redocly/redoc/blob/main/LICENSE) [](https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js)
+  [](https://www.npmjs.com/package/redoc) [](https://www.jsdelivr.com/package/npm/redoc)
+  ## About Redoc Redoc is an open source tool for generating documentation from OpenAPI
+  (formerly Swagger) definitions. By default Redoc offers a three-panel, responsive
+  layout: - The left panel contains a search bar and navigation menu. - The central
+  panel contains the documentation. - The right panel contains request and response
+  examples. ## Live demo If you want to see how Redoc renders your OpenAPI definition,
+  you can try it out online at https://redocly.github.io/redoc/. A version of the
+  Swagger Petstore API is displayed by default. To test it with your own OpenAPI definition,
+  enter the URL for your definition and select **TRY IT**. ## Redoc features - Responsive
+  three-panel design with menu/scrolling synchronization - Support for OpenAPI 3.1,
+  OpenAPI 3.0, and Swagger 2.0 - Ability to integrate your API introduction into the
+  side menu - High-level grouping in side menu with the [`x-tagGroups`](https://redocly.com/docs/api-reference-docs/specification-extensions/x-tag-groups/)
+  specification extension - [Simple integration with `create-react-app`](https://redocly.com/docs/redoc/quickstart/react/)
+  - Code samples support (with vendor extension) ## Usage Redoc is provided as a CLI
+  tool (also distributed as a Docker image), HTML tag, and React component. ### Generate
+  documentation from the CLI If you have Node installed, quickly generate documentation
+  using `npx`: ```bash npx @redocly/cli build-docs openapi.yaml ``` The tool outputs
+  by default to a file named `redoc-static.html` that you can open in your browser.
+  > [Redocly CLI](https://github.com/Redocly/redocly-cli/) does more than docs; check
+  it out and add linting, bundling, and more to your API workflow. ### Add an HTML
+  element to the page Create an HTML page, or edit an existing one, and add the following
+  within the body tags: ```html ``` Open the HTML file in your browser, and your API
+  documentation is shown on the page. Add your own `spec-url` to the ` ` tag; this
+  attribute can also be a local file. The JavaScript library can also be installed
+  locally using `npm` and served from your own server, see the [HTML deployment documentation](https://redocly.com/docs/redoc/deployment/html/)
+  for more details. ### More usage options Check out the [deployment documentation](./docs/deployment/intro.md)
+  for more options, and detailed documentation for each. ## Redoc vs. Redocly API
+  Reference Redoc is Redocly's community-edition product. Looking for something more?
+  We also offer [hosted API reference documentation](https://redocly.com/docs/api-registry/guides/api-registry-quickstart/)
+  with additional features including: * Try-it console * Automated code samples *
+  Pagination * Extra theme options ### Documentation and resources - [Reference docs](https://redocly.com/docs/api-reference-docs/getting-started/)
+  - we take care of the hosting - [Redoc](https://redocly.com/docs/redoc/) - detailed
+  documentation for this open source project (also in the `docs/` folder) - [Command-line
+  interface to bundle your docs into a web-ready HTML file](https://redocly.com/docs/cli/commands/build-docs/)
+  - API linting, bundling, and much more with open source [Redocly CLI](https://redocly.com/docs/cli)
+  ## Showcase A sample of the organizations using Redocly tools in the wild: - [Rebilly](https://api-reference.rebilly.com/)
+  - [Docker Engine](https://docs.docker.com/engine/api/v1.25/) - [Zuora](https://www.zuora.com/developer/api-reference/)
+  - [Discourse](http://docs.discourse.org) - [Commbox](https://www.commbox.io/api/)
+  - [APIs.guru](https://apis.guru/api-doc/) - [BoxKnight](https://www.docs.boxknight.com/)
+  - [Quaderno API](https://developers.quaderno.io/api) _Pull requests to add your
+  own API page to the list are welcome_ ## Configuration Redoc is highly configurable,
+  see the [configuration documentation](docs/config.md) for details. ### OpenAPI specification
+  extensions Redoc uses the following [specification extensions](https://redocly.com/docs/api-reference-docs/spec-extensions/):
+  * [`x-logo`](docs/redoc-vendor-extensions.md#x-logo) - is used to specify API logo
+  * [`x-traitTag`](docs/redoc-vendor-extensions.md#x-traitTag) - useful for tags that
+  refer to non-navigation properties like Pagination, Rate-Limits, etc * [`x-codeSamples`](docs/redoc-vendor-extensions.md#x-codeSamples)
+  - specify operation code samples * [`x-badges`](docs/redoc-vendor-extensions.md#x-badges)
+  - specify operation badges * [`x-examples`](docs/redoc-vendor-extensions.md#x-examples)
+  - specify JSON example for requests * [`x-nullable`](docs/redoc-vendor-extensions.md#x-nullable)
+  - mark schema param as a nullable * [`x-displayName`](docs/redoc-vendor-extensions.md#x-displayname)
+  - specify human-friendly names for the menu "
 ---
 {% raw %}
 <div align="center">

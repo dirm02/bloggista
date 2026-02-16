@@ -2,8 +2,68 @@
 layout: project
 name: Nicotsx Zerobyte
 slug: nicotsx-zerobyte
+category: ServerTools-ProxMox-CICD
 image: https://github.com/nicotsx/zerobyte/blob/main/screenshots/add-volume.png?raw=true
 repo_url: https://github.com/nicotsx/zerobyte
+indexed_content: 'Zerobyte Powerful backup automation for your remote storage Encrypt,
+  compress, and protect your data with ease Backup management with scheduling and
+  monitoring > [!WARNING] > Zerobyte is still in version 0.x.x and is subject to major
+  changes from version to version. I am developing the core features and collecting
+  feedbacks. Expect bugs! Please open issues or feature requests ## Intro Zerobyte
+  is a backup automation tool that helps you save your data across multiple storage
+  backends. Built on top of Restic, it provides an modern web interface to schedule,
+  manage, and monitor encrypted backups of your remote storage. ### Features - &nbsp;
+  **Automated backups** with encryption, compression and retention policies powered
+  by Restic - &nbsp; **Flexible scheduling** For automated backup jobs with fine-grained
+  retention policies - &nbsp; **End-to-end encryption** ensuring your data is always
+  protected - &nbsp; **Multi-protocol support**: Backup from NFS, SMB, WebDAV, SFTP,
+  or local directories ## Installation In order to run Zerobyte, you need to have
+  Docker and Docker Compose installed on your server. Then, you can use the provided
+  `docker-compose.yml` file to start the application. ```yaml services: zerobyte:
+  image: ghcr.io/nicotsx/zerobyte:v0.25 container_name: zerobyte restart: unless-stopped
+  cap_add: - SYS_ADMIN ports: - "4096:4096" devices: - /dev/fuse:/dev/fuse environment:
+  - TZ=Europe/Paris # Set your timezone here - BASE_URL=http://localhost:4096 # URL
+  you will use to access Zerobyte - APP_SECRET=94bad46...c66e25d5c2b # Generate your
+  own secret with `openssl rand -hex 32` volumes: - /etc/localtime:/etc/localtime:ro
+  - /var/lib/zerobyte:/var/lib/zerobyte ``` > [!WARNING] > It is highly discouraged
+  to run Zerobyte on a server that is accessible from the internet (VPS or home server
+  with port forwarding) If you do, make sure to change the port mapping to "127.0.0.1:4096:4096"
+  and use a secure tunnel (SSH tunnel, Cloudflare Tunnel, etc.) with authentication.
+  > [!WARNING] > Do not try to point `/var/lib/zerobyte` on a network share. You will
+  face permission issues and strong performance degradation. > [!NOTE] > **TrueNAS
+  Users:** The host path `/var/lib` is ephemeral on TrueNAS and will be reset during
+  system upgrades. Instead of using `/var/lib/zerobyte:/var/lib/zerobyte`, create
+  a dedicated ZFS dataset (e.g., `tank/docker/zerobyte`) and mount it instead: > >
+  ```yaml > volumes: > - /etc/localtime:/etc/localtime:ro > - /mnt/tank/docker/zerobyte:/var/lib/zerobyte
+  > ``` > > This ensures your configuration, encryption keys, and database persist
+  across TrueNAS upgrades. Then, run the following command to start Zerobyte: ```bash
+  docker compose up -d ``` Once the container is running, you can access the web interface
+  at `http:// :4096`. ## Configuration Zerobyte can be customized using environment
+  variables. Below are the available options: ### Environment Variables | Variable
+  | Description | Default | | :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------
+  | :--------------------- | | `BASE_URL` | **Required.** The base URL of your Zerobyte
+  instance (e.g., `https://zerobyte.example.com`). See [Authentication](#authentication)
+  below. | (none) | | `APP_SECRET` | **Required.** A random secret key (32+ chars)
+  used to encrypt sensitive data in the database. Generate with `openssl rand -hex
+  32`. | (none) | | `PORT` | The port the web interface and API will listen on. |
+  `4096` | | `RESTIC_HOSTNAME` | The hostname used by Restic when creating snapshots.
+  Automatically detected if a custom hostname is set in Docker. | `zerobyte` | | `TZ`
+  | Timezone for the container (e.g., `Europe/Paris`). **Crucial for accurate backup
+  scheduling.** | `UTC` | | `TRUSTED_ORIGINS` | Comma-separated list of extra trusted
+  origins for CORS (e.g., `http://localhost:3000,http://example.com`). | (none) |
+  | `LOG_LEVEL` | Logging verbosity. Options: `debug`, `info`, `warn`, `error`. |
+  `info` | | `SERVER_IDLE_TIMEOUT` | Idle timeout for the server in seconds. | `60`
+  | | `RCLONE_CONFIG_DIR` | Path to the rclone config directory inside the container.
+  Change this if running as a non-root user. | `/root/.config/rclone` | ### Secret
+  References For enhanced security, Zerobyte supports dynamic secret resolution for
+  sensitive fields (like passwords, access keys, etc.) in volume and repository configurations.
+  Instead of storing the encrypted secret in the database, you can use one of the
+  following prefixes: - `env://VAR_NAME`: Reads the secret from the environment variable
+  `VAR_NAME`. - `file://SECRET_NAME`: Reads the secret from `/run/secrets/SECRET_NAME`
+  (standard Docker Secrets path). **Example:** When configuring an S3 repository,
+  you can set the Secret Access Key to `env://S3_SECRET_KEY` and then provide that
+  variable in your `docker-compose.yml`. ### Simplified setup (No remote mounts) If
+  you only need to back up locally mounted folders and don''t req'
 ---
 {% raw %}
 <div align="center">

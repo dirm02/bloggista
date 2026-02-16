@@ -2,8 +2,68 @@
 layout: project
 name: Qeeqbox Honeypots
 slug: qeeqbox-honeypots
+category: File manager -Network-nmap
 image: https://github.com/qeeqbox/.github/blob/main/data/social-analyzer.png
 repo_url: https://github.com/telekom-security/tpotce)
+indexed_content: '30 low-high level honeypots in a single PyPI package for monitoring
+  network traffic, bots activities, and username \ password credentials. ## Why honeypots
+  package is very powerful? The honeypots respond back, non-blocking, can be used
+  as objects, or called directly with the in-built auto-configure scripts! Also, they
+  are easy to set up and customize; it takes 1-2 seconds to spin a honeypot up. You
+  can spin up multiple instances with the same type. For easy integration, the output
+  can be logged to a Postgres database, file[s], terminal, or Syslog. This honeypots
+  package is the only package that contains all the following: dhcp, dns, elastic,
+  ftp, http proxy, https proxy, http, https, imap, ipp, irc, ldap, memcache, mssql,
+  mysql, ntp, oracle, pjl, pop3, postgres, rdp, redis, sip, smb, smtp, snmp, socks5,
+  ssh, telnet, vnc. Honeypots is in the awesome [telekom security T-Pot project!](https://github.com/telekom-security/tpotce)
+  ## New - Add `capture_commands` to options for capturing more information about
+  the threat source (Look at the table if it''s supported or not) ## Easy! ## Install
+  ``` pip3 install honeypots ``` ## honeypots -h ```sh Qeeqbox/honeypots customizable
+  honeypots for monitoring network traffic, bots activities, and username\password
+  credentials Arguments: --setup target honeypot E.g. ssh or you can have multiple
+  E.g ssh,http,https --list list all available honeypots --kill kill all honeypots
+  --verbose Print error msgs Honeypots options: --ip Override the IP --port Override
+  the Port (Do not use on multiple!) --username Override the username --password Override
+  the password --config Use a config file for honeypots settings --options Extra options
+  (capture_commands for capturing all threat actor data) General options: --termination-strategy
+  {input,signal} Determines the strategy to terminate by --test Test a honeypot --auto
+  Setup the honeypot with random port ``` ## Usage Example - Auto configuration with
+  default ports honeypot, or multiple honeypots separated by comma or word `all` ```
+  sudo -E python3 -m honeypots --setup ssh --options capture_commands ``` ## Usage
+  Example - Auto configuration with random port (No need for higher privileges) honeypot,
+  or multiple honeypots separated by comma or word `all` ``` python3 -m honeypots
+  --setup ssh --auto ``` ## Usage Example - Auto configure with specific ports (You
+  might need for higher privileges) Use as honeypot:port or multiple honeypots as
+  honeypot:port,honeypot:port ``` sudo -E python3 -m honeypots --setup imap:143,mysql:3306,redis:6379
+  ``` ## Usage Example - Custom configure with logs location honeypot, or multiple
+  honeypots in a dict ```bash sudo -E python3 -m honeypots --setup ftp --config config.json
+  ``` #### config.json (Output to folder and terminal) ```json { "logs": "file,terminal,json",
+  "logs_location": "/var/log/honeypots/", "syslog_address": "", "syslog_facility":
+  0, "postgres": "", "sqlite_file":"", "db_options": [], "sniffer_filter": "", "sniffer_interface":
+  "", "honeypots": { "ftp": { "port": 21, "ip": "0.0.0.0", "username": "ftp", "password":
+  "anonymous", "log_file_name": "ftp.log", "max_bytes": 10000, "backup_count": 10,
+  "options":["capture_commands"] } } } ``` #### config.json (Output to syslog) ```json
+  { "logs": "syslog", "logs_location": "", "syslog_address": "udp://localhost:514",
+  "syslog_facility": 3, "postgres": "", "sqlite_file":"", "db_options": [], "sniffer_filter":
+  "", "sniffer_interface": "", "honeypots": { "ftp": { "port": 21, "ip": "0.0.0.0",
+  "username": "test", "password": "test", "options":["capture_commands"] } } } ```
+  #### config.json (Output to Postgres db) ```json { "logs": "db_postgres", "logs_location":
+  "", "syslog_address":"", "syslog_facility":0, "postgres":{ "username":"postgres",
+  "password":"test", "hostname":"192.168.2.20", "port":"5432", "db":"honeypots" },
+  "sqlite_file":"", "db_options":["drop"], "sniffer_filter": "", "sniffer_interface":
+  "", "honeypots": { "ftp": { "port": 21, "username": "test", "password": "test" }
+  } } ``` #### config.json (Output to sqlite db) ```json { "logs": "db_sqlite", "logs_location":
+  "", "syslog_address":"", "syslog_facility":0, "postgres":"", "sqlite_file":"/home/test.db",
+  "db_options":["drop"], "sniffer_sniffer_filter": "", "sniffer_interface": "", "honeypots":
+  { "ftp": { "port": 21, "username": "test", "password": "test", "options":["capture_commands"]
+  } } } ``` ## db structure ```json [ { "id": 1, "date": "2021-11-18 06:06:42.304338+00",
+  "data": { "server": "ftp_server", "action": "process", "status": "success", "ip":
+  "0.0.0.0", "port": "21", "username": "test", "password": "test" } } ] ``` ## Usage
+  Example - Import as object and auto test ```python from honeypots import QSSHServer
+  qsshserver = QSSHServer(port=9999) qsshserver.run_server(process=True) qsshserver.test_server(port=9999)
+  INFO:chameleonlogger:[''servers'', {''status'': ''success'', ''username'': ''test'',
+  ''src_ip'': ''127.0.0.1'', ''server'': ''ssh_server'', ''action'': ''login'', ''password'':
+  ''test'', ''src_port'': 38696}] qsshserv'
 ---
 {% raw %}
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/honeypots/main/readme/honeypots.png"></p>

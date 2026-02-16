@@ -2,8 +2,72 @@
 layout: project
 name: Egalitarianmonkey Hometube
 slug: EgalitarianMonkey-hometube
+category: Video-audio-Imae-manga-TTS-Voice
 image: "https://img.shields.io/badge/\U0001F310-Website-blueviolet"
 repo_url: https://github.com/EgalitarianMonkey/hometube
+indexed_content: "# &nbsp;HomeTube [](https://hometube.egalitarianmonkey.com) [](https://www.reddit.com/r/HomeTube/)
+  [](https://python.org) [](https://streamlit.io) [](https://github.com/EgalitarianMonkey/hometube/releases)
+  [](https://github.com/EgalitarianMonkey/hometube/pkgs/container/hometube) [](LICENSE)
+  **\U0001F3E1 Universal Video Downloader for Your Media Server** Download, process,
+  and organize ads-free best-quality videos at Home. \U0001F3AC HomeTube is a simple
+  web UI for downloading single videos and playlists from the internet with the highest
+  quality available and moving them to specific local locations automatically managed
+  and integrated by media server such as Plex or Jellyfin. A simple friendly solution
+  for easily integrating preferred videos from Youtube and others platforms to local
+  media server: - **\U0001F6AB Ad-Free Content**: Block natively all videos' ads and
+  sponsors - **\U0001F3C6 Best Quality Control**: Advanced best videos quality download
+  strategy or manual override - **\U0001F3AC Media Server Ready**: Download best quality
+  videos with explicit name and location directly in your HomeLab media server structure
+  and get automatic watch experience on Plex, Jellyfin, Emby or even on your PC -
+  **\U0001F4CB Intelligent Playlist Sync**: Download and synchronize playlists with
+  resilient tracking - local library stays perfectly in sync with source - **\U0001F4F1
+  Network Access**: Web interface videos download accessible from any device on your
+  network - **\U0001F3AF One-Click Downloads**: Paste URL → Get perfectly organized
+  video - **\U0001F510 Cookies Authentication**: Essential for reliable downloads
+  - unlocks restricted content and prevents signature errors - **\U0001F3AC Advanced
+  Processing**: Cut clips, embed subtitles, convert formats - **⚙️ Advanced Configurations**:
+  Organized advanced options including any custom yt-dlp arguments (proxy, max-filesize,
+  etc.) - **\U0001F3A5 Video Sources**: **YouTube**, Reddit, Vimeo, Dailymotion, TikTok,
+  Twitch, Facebook, Instagram, etc. [See complete list (1800+)](docs/supported-platforms.md)
+  | \U0001F3AF **Easy to Use** | \U0001F527 **Powerful** | \U0001F3E0 **HomeLab Ready**
+  | |:---:|:---:|:---:| | Web interface | 1800+ platforms | Docker deployment | |
+  One-click downloads | Advanced processing | Network accessible | | Auto-organization
+  | Cookie authentication | Plex/Jellyfin ready | --> ## \U0001F6E0️ HomeTube Options
+  ### \U0001F3E0 HomeLab Integration **Automatic integration with self-hosted setup**:
+  - **\U0001F433 Docker Ready**: One-command deployment with Docker Compose - **\U0001F3AC
+  Media Server Integration**: Direct integration with media server thanks to well
+  named video files automatically moved to chosen locations watched by media server
+  such as Plex, Jellyfin, or Emby. - **\U0001F195 Create new folder from the UI**:
+  Create organized new folder structures when necessary from the \"\U0001F195 Create
+  New Folder\" option at the bottom of the \"Destination folder\" field listing menu
+  (e.g., `Tech/Python/Advanced`) - **\U0001F4F1 Network Access**: Web interface accessible
+  from any device on your network - **\U0001F510 Secure**: No cloud dependencies,
+  everything runs locally - **⚙️ Configurable**: Extensive customization through environment
+  variables [Setup your HomeLab integration](docs/deployment.md). ### \U0001F6AB Block
+  all ads and sponsors **Automatically skip sponsors, ads, and promotional content**
+  with built-in SponsorBlock support. Just download your video and sponsors segments
+  are automatically detected and marked. - ✅ **Auto-detection**: Sponsors segments
+  automatically identified - ✅ **Manage sponsors to block**: Sponsors segments to
+  block or mark can be managed in the UI - ✅ **Community-driven**: Powered by SponsorBlock's
+  crowd-sourced database - ✅ **Zero configuration**: Works out of the box for YouTube
+  videos [Learn more about SponsorBlock features](docs/usage.md#-sponsorblock-integration).
+  ### \U0001F36A Cookies Authentication (Highly Recommended) **Cookies authentication
+  should be setup** for optimal video downloading experience and to avoid common download
+  failures. #### \U0001F6A8 **Why Cookies Are Essential** Even for **public YouTube
+  videos**, cookies are increasingly necessary because of modern protections. They
+  ensure **higher quality, reliability, and access** to all formats: - **\U0001F3C6
+  Access the best quality** (AV1/Opus, high-res video, premium audio) - **\U0001F513
+  Unlock restricted content** (age-gated, member-only, region-locked) - **\U0001F510
+  Handle encrypted signatures (n-sig)** required for many video/audio streams - **\U0001F6E1️
+  Bypass anti-bot measures** that block automated downloaders - **\U0001F4FA Ensure
+  stream availability** (audio/video may be signature-protected even for public videos)
+  - **⚡ Improve reliability** (fewer \"format unavailable\" or extraction errors)
+  - **\U0001F3B5 Get high-quality audio tracks** (Opus, AAC) without failures - **\U0001F680
+  Reduce throttling** for faster, more stable downloads \U0001F449 In short: **cookies
+  are not just for private content — they’re the key to consistent, best-quality downloads.**
+  #### \U0001F6E0️ **Setup Options** We can use **Browser cookies** if on a machine
+  sharing a browser, otherwise **Cookies File** in HomeLab setup. [More details about
+  Cookies authentication setup]"
 ---
 {% raw %}
 <!-- markdownlint-disable-file -->

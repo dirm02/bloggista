@@ -2,8 +2,67 @@
 layout: project
 name: 0xsojalsec Realtime Phone Agents Course
 slug: 0xSojalSec-realtime-phone-agents-course
+category: SDesk-Workflow- SaaS-PaaS-any!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/main_gh_image.png
 repo_url: https://github.com/neural-maze/realtime-phone-agents-course
+indexed_content: "☎️ Phone Calling Agents Course ☎️ How to build an Agent Call Center
+  using FastRTC, Superlinked, Twilio, Opik & RunPod ## Table of Contents - [Table
+  of Contents](#table-of-contents) - [Course Overview](#course-overview) - [Who is
+  this course for?](#who-is-this-course-for) - [Course Breakdown: Week by Week](#course-breakdown-week-by-week)
+  - [Getting Started](#getting-started) - [Lesson 0: Project Overview and Architecture](#lesson-0-project-overview-and-architecture)
+  - [Lesson 1: Building Realtime Voice Agents with FastRTC](#lesson-1-building-realtime-voice-agents-with-fastrtc)
+  - [Lesson 2: The Missing Layer in Modern AI Retrieval](#lesson-2-the-missing-layer-in-modern-ai-retrieval)
+  - [The tech stack](#the-tech-stack) - [Contributors](#contributors) - [License](#license)
+  ## Course Overview This isn't your typical plug-and-play tutorial where you spin
+  up a demo in five minutes and call it a day. Instead, we're building a **real estate
+  company**, but with a twist … the employees will be **realtime voice agents**! By
+  the end of this course, you'll have a system capable of: * ☎️ Receive inbound calls
+  with Twilio * \U0001F4DE Make outbound calls through Twilio * \U0001F3E0 Search
+  live property data using Superlinked * ⚡ Run realtime conversations powered by FastRTC
+  * \U0001F5E3️ Transcribe speech instantly with Moonshine + Fast Whisper * \U0001F399️
+  Generate lifelike voices using Kokoro + Orpheus 3B * \U0001F680 Deploy open-source
+  models on Runpod for GPU acceleration Excited? Let's get started! --- \U0001F4EC
+  Stay Updated Join The Neural Maze and learn to build AI Systems that actually work,
+  from principles to production. Every Wednesday, directly to your inbox. Don't miss
+  out! \U0001F3A5 Watch More Content Join Jesús Copado on YouTube to explore how to
+  build real AI projects—from voice agents to creative tools. Weekly videos with code,
+  demos, and ideas that push what's possible with AI. Don't miss the next drop! ---
+  ## Who is this course for? This course is for Software Engineers, ML Engineers,
+  and AI Engineers who want to level up by building complex end-to-end apps. It's
+  not just a basic \"Hello World\" tutorial—it's a deep dive into making **production-ready
+  voice agents**. ## Course Breakdown: Week by Week Each week, you'll unlock **a new
+  chapter of the journey**. You'll get: * \U0001F9FE A Substack article that walks
+  through the concepts and code in detail * \U0001F4BB A new batch of code pushed
+  directly to this repo * \U0001F3A5 A Live Session where we explore everything together
+  Here’s what the upcoming weeks look like \U0001F447 | Lesson Number | Title | Article
+  | Code | Live Session | |:-------------:|:--------------:|:------------:|:------------:|:-----------:|
+  | 0 | Project overview and architecture | | Week 0 | | | 1 | Building Realtime Voice
+  Agents with FastRTC | | Week 1 | | | 2 | The Missing Layer in Modern AI Retrieval
+  | | Week 2 | November 30 | | 3 | Improving STT and TTS Systems | December 3 | December
+  3 | December 7 | | 4 | Deployment, monitoring and Twilio Integration | December
+  10 | December 10 | December 14 --- ## Getting Started Before diving into the lessons,
+  make sure you have everything set up properly: 1. \U0001F4CB **Initial Setup**:
+  Follow the instructions in [`docs/GETTINGS_STARTED.md`](docs/GETTINGS_STARTED.md)
+  to configure your environment and install dependencies. 2. \U0001F4DA **Learn Lesson
+  by Lesson**: Once setup is complete, come back here and follow the lessons in order.
+  Each lesson builds on the previous one, so it's important to follow them sequentially!
+  --- ## Lesson 0: Project Overview and Architecture **Goal**: Understand the big
+  picture and architecture of the realtime phone agent system. ### Steps: 1. \U0001F4D6
+  Read the [Substack article](https://theneuralmaze.substack.com/p/the-architecture-of-realtime-phone)
+  to understand the overall architecture 2. \U0001F3A5 Watch the [Live Session recording](https://theneuralmaze.substack.com/p/the-architecture-of-phone-calling)
+  for a deeper dive This lesson sets the foundation for everything that follows! ---
+  ## Lesson 1: Building Realtime Voice Agents with FastRTC **Goal**: Build your first
+  working voice agent using FastRTC and integrate it with Twilio. ### Steps: 1. \U0001F4D6
+  **Read the Article**: Start with the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with)
+  to understand FastRTC fundamentals 2. \U0001F4D3 **Work Through the Notebook**:
+  Open and run through [`notebooks/lesson_1_fastrtc_agents.ipynb`](notebooks/lesson_1_fastrtc_agents.ipynb)
+  to get hands-on experience 3. \U0001F4BB **Explore the Code**: Dive into the repository
+  code to see how everything is implemented 4. \U0001F680 **Run the Applications**:
+  Try both deployment options: #### Option A: Gradio Application (Quick Demo) Run
+  the Gradio interface (check out demo videos in the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with)):
+  ```bash make start-gradio-application ``` This starts an interactive web interface
+  where you can test the voice agent locally. > **_NOTE:_** If you get the error 'No
+  such file or directory: 'ffprobe', just install _ffmpeg_ i"
 ---
 {% raw %}
 <div align="center">

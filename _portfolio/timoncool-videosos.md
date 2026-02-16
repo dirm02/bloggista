@@ -2,8 +2,69 @@
 layout: project
 name: Timoncool Videosos
 slug: timoncool-videosos
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/github/stars/timoncool/videosos?style=social
 repo_url: https://github.com/timoncool/videosos
+indexed_content: "# VideoSOS - Open-Source AI Video Editor with 100+ Models [](https://github.com/timoncool/videosos/stargazers)
+  [](https://github.com/timoncool/videosos/network/members) [](https://github.com/timoncool/videosos/issues)
+  [](https://opensource.org/licenses/MIT) [](https://nextjs.org) [](https://remotion.dev)
+  Create professional videos with AI in your browser. Free, open-source video editor
+  featuring Google Veo 3.1, FLUX, Gemini 2.5 Flash, Imagen 4, and 100+ top AI models
+  for text-to-video, image-to-video, text-to-image generation, image editing, music
+  composition, and voiceover creation. No uploads, complete privacy, advanced timeline
+  editing. **[\U0001F680 Try the Live Demo](https://videosos.vercel.app/)** | [\U0001F1F7\U0001F1FA
+  Русская версия README](./README.ru.md) ## Screenshots ### Video Editor — Main Interface
+  ### Video Editor — Project Statistics --- ## Key Features ### \U0001F916 100+ AI
+  Models VideoSOS integrates with **fal.ai** and **Runware.ai** to bring you cutting-edge
+  AI generation capabilities: - **\U0001F3AC Video Generation**: Text-to-video and
+  image-to-video with state-of-the-art models including Google Veo 3.1, Kling 2.5,
+  and Hailuo-02 - **\U0001F3A8 Image Generation**: Text-to-image with cutting-edge
+  models including Gemini 2.5 Flash, Imagen 4.0, FLUX.1 Pro, and Ideogram V3 - **✏️
+  Image Editing**: AI-powered photo editing with leading models including Gemini 2.5
+  Flash Edit, FLUX.1 Kontext, and Qwen Image Edit - **\U0001F3B5 Audio Generation**:
+  Music composition with Stable Audio and natural voiceovers with multiple voices
+  Switch between providers seamlessly or use both simultaneously for maximum flexibility.
+  [See complete model list below](#supported-ai-models). ### \U0001F512 100% Privacy-First
+  Architecture Everything runs locally in your browser. Your projects, media, and
+  API keys are stored in IndexedDB on your device. No uploads, no tracking, no data
+  collection. ### \U0001F3AC Timeline Editor Advanced multi-track video editing with
+  drag-and-drop functionality, precise keyframe control, audio waveform visualization,
+  and real-time preview. Support for multiple aspect ratios (16:9, 9:16, 1:1) perfect
+  for social media platforms. ### \U0001F4B0 Cost Tracking & Project Statistics Built-in
+  cost tracking and comprehensive project analytics help you stay within budget. Track
+  generation costs per media item, view total project expenses, and get detailed breakdowns
+  by media type, AI provider, and model usage. Perfect for managing your AI generation
+  budget and analyzing usage patterns. ### \U0001F50D Advanced Model Selection Enhanced
+  model selection interface with intelligent search, filtering by provider (FAL/Runware),
+  and categorization by type (text-to-video, image-to-video, text-to-image, image
+  editing). Real-time pricing display for FAL models helps you make informed decisions
+  before generating content. ### \U0001F3A8 Multi-Modal Content Generation Create
+  complete video projects with AI-generated images, videos, background music, and
+  voiceovers. Advanced features include camera movement controls, video upscaling
+  with Topaz, and automatic lip-sync for voiceovers. ### ⚡ Client-Side Video Processing
+  Powered by **FFmpeg.wasm** and **Remotion** for high-quality video rendering entirely
+  in the browser. No server uploads, no waiting in queues. Export videos with proper
+  audio mixing and precise timing control. ### \U0001F30D International & Accessible
+  Full internationalization support (English/Russian) with keyboard shortcuts for
+  power users. Intuitive UI designed for both beginners and professionals. ## Supported
+  AI Models VideoSOS features 100+ AI models across video generation, image generation,
+  and image editing. All models are available through dual provider support for maximum
+  reliability. ### Complete Model List by Category #### Text-to-Video Models | Model
+  | Provider | Description | |-------|----------|-------------| | Veo 3.1 | FAL, Runware
+  | Google's latest video model with native audio | | Veo 3.1 Fast | FAL, Runware
+  | Faster version of Veo 3.1 | | Veo 3 | FAL, Runware | Cinematic video with synchronized
+  audio | | Veo 3 Fast | FAL | Fast cinematic video generation | | Kling 2.5 | FAL,
+  Runware | High-quality video synthesis | | Hailuo-02 | FAL, Runware | Advanced video
+  generation | #### Image-to-Video Models | Model | Provider | Description | |-------|----------|-------------|
+  | Veo 3.1 Image-to-Video | FAL | Animate images with Veo 3.1 | | Veo 3.1 Fast Image-to-Video
+  | FAL | Fast image animation | | Veo 3 Image-to-Video | FAL, Runware | Animate static
+  images | | Veo 3 Fast Image-to-Video | FAL, Runware | Fast image animation | ####
+  Text-to-Image Models | Model | Provider | Description | |-------|----------|-------------|
+  | Gemini 2.5 Flash Image | FAL, Runware | Ultra-fast image generation | | Imagen
+  4.0 Ultra | FAL, Runware | Google's highest quality image model | | Imagen 4.0 Preview
+  Fast | FAL, Runware | Fast high-quality images | | Hunyuan Image 3.0 | FAL, Runware
+  | State-of-the-art image synthesis | | Seedream 4.0 | FAL, Runware | High-resolution
+  image generation | | Seedream 3.0 | FAL, Runware | Qua"
 ---
 {% raw %}
 # VideoSOS - Open-Source AI Video Editor with 100+ Models

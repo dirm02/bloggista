@@ -2,8 +2,22 @@
 layout: project
 name: Zen Browser Desktop
 slug: zen-browser-desktop
+category: Uncategorized
 image: https://img.shields.io/github/downloads/zen-browser/desktop/total.svg
 repo_url: https://github.com/zen-browser/desktop
+indexed_content: "### `Zen Browser` [](https://github.com/zen-browser/desktop/releases)
+  [](https://crowdin.com/project/zen-browser) [](https://github.com/zen-browser/desktop/actions/workflows/build.yml)
+  Zen is a firefox-based browser with the aim of pushing your productivity to a new
+  level! Download • Website • Documentation • Release Notes ### Firefox Versions -
+  [`Release`](https://zen-browser.app/download) - Is currently built using Firefox
+  version `147.0.3`! \U0001F680 - [`Twilight`](https://zen-browser.app/download?twilight)
+  - Is currently built using Firefox version `RC 147.0.3`! ### Contributing If you'd
+  like to report a bug, please do so on our [GitHub Issues page](https://github.com/zen-browser/desktop/issues/)
+  and for feature requests, you can use [Github Discussions](https://github.com/zen-browser/desktop/discussions).
+  Zen is an open-source project, and we welcome contributions from the community!
+  Please take a look at the [contribution guidelines](./docs/contribute.md) before
+  getting started! #### Partners Thanks to all the partners of Zen for their support
+  and contributions:"
 ---
 {% raw %}
 <!--

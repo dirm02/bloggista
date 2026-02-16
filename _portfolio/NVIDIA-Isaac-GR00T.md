@@ -2,8 +2,67 @@
 layout: project
 name: Nvidia Isaac Gr00t
 slug: NVIDIA-Isaac-GR00T
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/NVIDIA-Isaac-GR00T/media/header_compress.png
 repo_url: https://github.com/NVIDIA/Isaac-GR00T
+indexed_content: 'Website | Model | Dataset | Paper | Research Blog ## NVIDIA Isaac
+  GR00T > We just released GR00T N1.6, an updated version of GR00T N1 with improved
+  performance and new features. Check out the [release blog post](https://research.nvidia.com/labs/gear/gr00t-n1_6/)
+  for more details. > To use the older version, N1.5, please checkout the [n1.5-release](https://github.com/NVIDIA/Isaac-GR00T/tree/n1.5-release)
+  branch. NVIDIA Isaac GR00T N1.6 is an open vision-language-action (VLA) model for
+  generalized humanoid robot skills. This cross-embodiment model takes multimodal
+  input, including language and images, to perform manipulation tasks in diverse environments.
+  GR00T N1.6 is trained on a diverse mixture of robot data including bimanual, semi-humanoid
+  and an expansive humanoid dataset. It is adaptable through post-training for specific
+  embodiments, tasks and environments. The neural network architecture of GR00T N1.6
+  is a combination of vision-language foundation model and diffusion transformer head
+  that denoises continuous actions. Here is a schematic diagram of the architecture:
+  Here is the general procedure to use GR00T N1.6: 1. We assume the user has already
+  collected a dataset of robot demonstrations in the form of (video, state, action)
+  triplets for a specific task. 2. The user will first convert the demonstration data
+  into the LeRobot compatible data schema (more info in [`getting_started/data_preparation.md`](getting_started/data_preparation.md)),
+  which is compatible with the upstream [Huggingface LeRobot Dataset V2](https://github.com/huggingface/lerobot).
+  3. Our repo provides convenient scripts to validate zero-shot performance of the
+  pretrained model (see [Policy API Guide](getting_started/policy.md) and [RoboCasa
+  Zero-Shot](examples/robocasa-gr1-tabletop-tasks/README.md)). 4. Our repo provides
+  examples of different configurations for training with different robot embodiments
+  (see [`examples/`](examples/) and [Fine-tuning Guide](getting_started/finetune_new_embodiment.md)).
+  5. Our repo provides convenient scripts for finetuning the pre-trained GR00T N1.6
+  model on user''s data, and running inference, see [`examples`](examples). 6. Our
+  repo provides convenient scripts to run academic simulation benchmarks with finetuned
+  checkpoints (see [LIBERO](examples/LIBERO/README.md), [SimplerEnv](examples/SimplerEnv/README.md),
+  [RoboCasa](examples/robocasa/README.md)). 7. The user will need to connect the `Gr00tPolicy`
+  to the robot controller to execute actions on their target hardware. ## What''s
+  New in GR00T N1.6 GR00T N1.6 represents a significant upgrade over GR00T N1.5, with
+  improvements in both model architecture and data leading to better performance in
+  many aspects. ### Model and Data Improvements Architectural changes: - Base VLM:
+  We use an internal NVIDIA Cosmos-Reason-2B VLM variant. The VLM supports flexible
+  resolution and can encode images in their native aspect ratio without padding. The
+  VLM is trained both general vision-language tasks and embodied reasoning tasks like
+  next action prediction. - Uses 2x larger DiT (32 layers vs 16 layers in N1.5). -
+  Removes N1.5''s post-VLM 4-layer transformer adapter. Instead, unfreezes top 4 layers
+  of the VLM during pretraining. - Predicts state-relative action chunks for most
+  embodiments, rather than absolute joint angles or EEF positions. Beyond the N1.5
+  data mixture, the N1.6 pretraining data additionally includes several thousand hours
+  of teleoperated data from: - Bimanual YAM arms - AGIBot Genie1 - Simulated Galaxea
+  R1 Pro on the BEHAVIOR suite - Whole-Body Locomanipulation with Unitree G1 Other
+  code-level improvements: - Faster dataloader with sharded dataloader support. -
+  RTC and Async Policy Wrapper for inference (soon to release) - Simplified data processing
+  pipeline with `processing_gr00t_n1d6.py` - Flexible Training configuration ## Target
+  Audience GR00T N1.6 is intended for researchers and professionals in robotics. This
+  repository provides tools to: - Leverage a pre-trained foundation model for robot
+  control - Fine-tune on small, custom datasets - Adapt the model to specific robotics
+  tasks with minimal data - Deploy the model for inference The focus is on enabling
+  customization of robot behaviors through finetuning. ## Installation Guide ### Clone
+  the Repository GR00T relies on submodules for certain dependencies. Include them
+  when cloning: ```sh git clone --recurse-submodules https://github.com/NVIDIA/Isaac-GR00T
+  cd Isaac-GR00T ``` If you''ve already cloned without submodules, initialize them
+  separately: ```sh git submodule update --init --recursive ``` ### Set Up the Environment
+  GR00T uses [uv](https://github.com/astral-sh/uv) for fast, reproducible dependency
+  management. > **Requirement:** uv **v0.8.4+** is needed to parse `[tool.uv.extra-build-dependencies]`
+  in `pyproject.toml` (required for building `flash-attn`). For RTX-5090, this was
+  tested with CUDA 12.8, `flash-attn==2.8.0.post2`, `pytorch-cu128`. After installing
+  uv, create the environment and insta'
 ---
 {% raw %}
 <div align="center">

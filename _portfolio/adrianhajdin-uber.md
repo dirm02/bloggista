@@ -2,8 +2,71 @@
 layout: project
 name: Adrianhajdin Uber
 slug: adrianhajdin-uber
+category: Very important!!!!
 image: https://i.ibb.co/Bf04Hpd/Readme-thumbnail-from-JS-Mastery.png
 repo_url: https://github.com/sujatagunale/EasyRead
+indexed_content: "Full Stack Uber Clone Build this project step by step with our detailed
+  tutorial on JavaScript Mastery YouTube. Join the JSM family! ## \U0001F4CB Table
+  of Contents 1. \U0001F916 [Introduction](#introduction) 2. ⚙️ [Tech Stack](#tech-stack)
+  3. \U0001F50B [Features](#features) 4. \U0001F938 [Quick Start](#quick-start) 5.
+  \U0001F578️ [Snippets (Code to Copy)](#snippets) 6. \U0001F587️ [Links](#links)
+  7. \U0001F4E6 [Assets](#assets) 8. \U0001F680 [More](#more) ## \U0001F6A8 Tutorial
+  This repository contains the code corresponding to an in-depth tutorial available
+  on our YouTube channel, JavaScript Mastery . If you prefer visual learning, this
+  is the perfect resource for you. Follow our tutorial to learn how to build projects
+  like these step-by-step in a beginner-friendly manner! ## \U0001F916 Introduction
+  Built with React Native for handling the user interface, Google Maps for rendering
+  maps with directions, stripe for handling payments, serverless Postgres for managing
+  databases, and styled with TailwindCSS, Uber Clone is a perfect mobile app. The
+  primary goal is to demonstrate how to develop full-stack mobile applications to
+  showcase the developer's skills in a unique manner that creates a lasting impact.
+  If you're getting started and need assistance or face any bugs, join our active
+  Discord community with over **34k+** members. It's a place where people help each
+  other out. ## ⚙️ Tech Stack - React Native - Expo - Stripe - PostgreSQL - Google
+  Maps - zustand - Clerk - Tailwind CSS ## \U0001F50B Features \U0001F449 **Onboarding
+  Flow**: Seamless user registration and setup process. \U0001F449 **Email Password
+  Authentication with Verification**: Secure login with email verification. \U0001F449
+  **oAuth Using Google**: Easy login using Google credentials. \U0001F449 **Authorization**:
+  Secure access control for different user roles. \U0001F449 **Home Screen with Live
+  Location & Google Map**: Real-time location tracking with markers on a map. \U0001F449
+  **Recent Rides**: View a list of recent rides at a glance. \U0001F449 **Google Places
+  Autocomplete**: Search any place on Earth with autocomplete suggestions. \U0001F449
+  **Find Rides**: Search for rides by entering 'From' and 'To' locations. \U0001F449
+  **Select Rides from Map**: Choose available cars near your location from the map.
+  \U0001F449 **Confirm Ride with Detailed Information**: View complete ride details,
+  including time and fare price. \U0001F449 **Pay for Ride Using Stripe**: Make payments
+  using multiple methods like cards and others. \U0001F449 **Create Rides After Successful
+  Payment**: Book a ride after confirming payment. \U0001F449 **Profile**: Manage
+  account details in the profile screen. \U0001F449 **History**: Review all rides
+  booked so far. \U0001F449 **Responsive on Android and iOS**: Optimized for both
+  Android and iOS devices. and many more, including code architecture and reusability
+  ## \U0001F938 Quick Start Follow these steps to set up the project locally on your
+  machine. **Prerequisites** Make sure you have the following installed on your machine:
+  - [Git](https://git-scm.com/) - [Node.js](https://nodejs.org/en) - [npm](https://www.npmjs.com/)
+  (Node Package Manager) **Cloning the Repository** ```bash git clone https://github.com/JavaScript-Mastery-Pro/uber.git
+  cd uber ``` **Installation** Install the project dependencies using npm: ```bash
+  npm install ``` **Set Up Environment Variables** Create a new file named `.env`
+  in the root of your project and add the following content: ```env EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+  EXPO_PUBLIC_PLACES_API_KEY= EXPO_PUBLIC_DIRECTIONS_API_KEY= DATABASE_URL= EXPO_PUBLIC_SERVER_URL=https://uber.dev/
+  EXPO_PUBLIC_GEOAPIFY_API_KEY= EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY= STRIPE_SECRET_KEY=
+  ``` Replace the placeholder values with your actual Clerk, Stripe, NeonDB, Google
+  Maps, andgeoapify credentials. You can obtain these credentials by signing up on
+  the [Clerk](https://clerk.com/), [Stripe](https://stripe.com/in), [NeonDB](https://neon.tech/),
+  [Google Maps](https://console.cloud.google.com/) and [geoapify](https://www.geoapify.com/)
+  websites respectively. **Running the Project** ```bash npx expo start ``` Download
+  the [Expo Go](https://expo.dev/go) app and Scan the QR code on your respective device
+  to view the project. ## \U0001F578️ Snippets Here are some code snippets from the
+  project to help you get started quickly. ### Setup .vscode/settings.json ```json
+  { \"editor.formatOnPaste\": true, \"editor.formatOnSave\": true, \"[typescriptreact]\":
+  { \"editor.defaultFormatter\": \"esbenp.prettier-vscode\" }, \"[typescript]\": {
+  \"editor.defaultFormatter\": \"esbenp.prettier-vscode\" }, \"editor.codeActionsOnSave\":
+  { \"source.fixAll.eslint\": \"explicit\" } } ``` tailwind.config.js ```js /** @type
+  {import('tailwindcss').Config} */ module.exports = { content: [\"./app/**/*.{js,jsx,ts,tsx}\",
+  \"./components/**/*.{js,jsx,ts,tsx}\"], theme: { extend: { fontFamily: { Jakarta:
+  [\"Jakarta\", \"sans-serif\"], JakartaBold: [\"Jakarta-Bold\", \"sans-serif\"],
+  JakartaExtraBold: [\"Jakarta-ExtraBold\", \"sans-serif\"], JakartaExtraLight: [\"Jakarta-ExtraLight\",
+  \"sans-serif\"], JakartaLight: [\"Jakarta-Light\", \"sans-serif\"], JakartaMedium:
+  [\"Jakarta-Medium\", \"sans-serif\"], JakartaSemiBold: [\"Jakarta-SemiBold\", \"sans-serif\"]"
 ---
 {% raw %}
 <div align="center">

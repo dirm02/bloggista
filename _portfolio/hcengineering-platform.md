@@ -2,8 +2,68 @@
 layout: project
 name: Hcengineering Platform
 slug: hcengineering-platform
+category: Platform -eCommerce
 image: https://img.shields.io/twitter/follow/huly_io?style=for-the-badge
 repo_url: https://github.com/hcengineering/huly-selfhost).
+indexed_content: "# Huly Platform [](https://x.com/huly_io) ⭐️ Your star shines on
+  us. Star us on GitHub! ## About The Huly Platform is a robust framework designed
+  to accelerate the development of business applications, such as CRM systems. This
+  repository includes several applications, such as Chat, Project Management, CRM,
+  HRM, and ATS. Various teams are building products on top of the Platform, including
+  [Huly](https://huly.io) and [TraceX](https://tracex.co). ## Self-Hosting If you're
+  primarily interested in self-hosting Huly without the intention to modify or contribute
+  to its development, please use [huly-selfhost](https://github.com/hcengineering/huly-selfhost).
+  This project offers a convenient method to host Huly using `docker`, designed for
+  ease of use and quick setup. Explore this option to effortlessly enjoy Huly on your
+  own server. ## Activity ## API Client If you want to interact with Huly programmatically,
+  check out our [API Client](https://github.com/hcengineering/huly.core/tree/main/packages/api-client)
+  documentation. The API client provides a typed interface for all Huly operations
+  and can be used to build integrations and custom applications. You can find API
+  usage examples in the [Huly examples](https://github.com/hcengineering/huly-examples)
+  repository. ## Changelog For detailed information about changes, improvements, and
+  bug fixes in each version, see our [Changelog](./changelog.md). ## Versions The
+  Huly Platform uses two types of version tags to distinguish between production-ready
+  and development releases: - **Production Versions (`v*`)** - Stable releases for
+  end users - Example: `v0.7.310`, `v0.7.307`, `v0.6.501` - These versions are recommended
+  for production deployments - Suitable for self-hosted installations - Published
+  with release notes on [GitHub Releases](https://github.com/hcengineering/platform/releases)
+  - **Development Versions (`s*`)** - Pre-release builds for developers - Example:
+  `s0.7.313`, `s0.7.292`, `s0.7.288` - Used for development and testing purposes -
+  May contain experimental features or bug fixes - Not recommended for production
+  use ## Architecture For detailed information about the platform architecture, services,
+  and their interactions, see our [Architecture Overview](./ARCHITECTURE_OVERVIEW.md).
+  ## Table of Contents - [Huly Platform](#huly-platform) - [About](#about) - [Self-Hosting](#self-hosting)
+  - [Activity](#activity) - [API Client](#api-client) - [Changelog](#changelog) -
+  [Versions](#versions) - [Architecture](#architecture) - [Table of Contents](#table-of-contents)
+  - [Pre-requisites](#pre-requisites) - [Verification](#verification) - [Branches
+  \\& Contributing](#branches--contributing) - [Setup dev environment](#setup-dev-environment)
+  - [Fast start](#fast-start) - [Installation](#installation) - [Build and run](#build-and-run)
+  - [Run in development mode](#run-in-development-mode) - [Update project structure
+  and database](#update-project-structure-and-database) - [Troubleshooting](#troubleshooting)
+  - [Build \\& Watch](#build--watch) - [Tests](#tests) - [Unit tests](#unit-tests)
+  - [UI tests](#ui-tests) - [Package publishing](#package-publishing) - [Additional
+  testing](#additional-testing) - [WSL build guide](#wsl-build-guide) ## Pre-requisites
+  - Before proceeding, ensure that your system meets the following requirements: -
+  [Node.js](https://nodejs.org/en/download/) (v20.11.0 is required) - [Docker](https://docs.docker.com/get-docker/)
+  - [Docker Compose](https://docs.docker.com/compose/install/) ## Verification To
+  verify the installation, perform the following checks in your terminal: - Ensure
+  that the `docker` commands are available: ```bash docker --version docker compose
+  version ``` ## Branches & Contributing - The `main` branch is the default branch
+  used for production deployments. Changes to this branch are made from the `staging`
+  branch once a version is ready for community use. - The `staging` branch is used
+  for pre-release testing. It is stable enough for testing but not yet ready for production
+  deployment. - The `develop` branch is used for development and is the default branch
+  for contributions. We periodically merge `develop` into `staging` to perform testing
+  builds. Once we are satisfied with the build quality in our pre-release deployment,
+  we merge changes into `main` and release a new version to the community. ## Setup
+  dev environment ### To initialise the communication submodule ```bash git submodule
+  init git submodule update ``` ### To update the communication submodule ```bash
+  git submodule update ``` ### Authentication This project uses GitHub Packages for
+  dependency management. To successfully download dependencies, you need to generate
+  a GitHub personal access token and log in to npm using that token. Follow these
+  steps: 1. Generate a GitHub Token: - Log in to your GitHub account - Go to **Settings**
+  > **Developer settings** > **Personal access tokens** (https://github.com/settings/personal-access-tokens)
+  - Click **Generate new token** - Select the requ"
 ---
 {% raw %}
 # Huly Platform

@@ -2,8 +2,58 @@
 layout: project
 name: Igorescodro Alkaa
 slug: igorescodro-alkaa
+category: iOS-imac
 image: https://github.com/igorescodro/alkaa/actions/workflows/build.yml/badge.svg
 repo_url: https://github.com/igorescodro/alkaa
+indexed_content: "[](https://www.codefactor.io/repository/github/igorescodro/alkaa/overview/main)
+  # Alkaa - Multiplatform Alkaa (_begin_, _start_ in Finnish) is a to-do application
+  to study the latest components, architecture, and tools for multiplatform development.
+  The project is available on Google Play, App Store, and for Desktop! ❤️ The current
+  version of Alkaa was completely migrated to **Kotlin and Compose Multiplatform**!
+  ## Android | | | | | | ------------- | ------------- | ------------- | -------------
+  | ## iOS | | | | | | ------------- | ------------- | ------------- | -------------
+  | ## \U0001F4E6 Download ## \U0001F4DA Tech stack One of the main goals of Alkaa
+  is to use all the latest libraries and tools available. ### \U0001F9D1\U0001F3FB‍\U0001F4BB
+  Multiplatform development - Application entirely written in [Kotlin](https://kotlinlang.org)
+  - UI developed in [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+  - UI Tests with [Compose Multiplatform UI Testing](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html)
+  - Following the [Material You](https://m3.material.io/) guidelines and dynamic color
+  (Android only) - Adaptive layouts with [Compose Adaptive](https://developer.android.com/develop/ui/compose/layouts/adaptive)
+  - Navigation using [Navigation3](https://developer.android.com/jetpack/compose/navigation)
+  - Asynchronous processing using [Coroutines](https://kotlin.github.io/kotlinx.coroutines/)
+  - Widgets using [Jetpack Glance](https://developer.android.com/jetpack/androidx/releases/glance)
+  - Dependency injection with [Koin](https://insert-koin.io) - Database using [SQLDelight](https://github.com/cashapp/sqldelight)
+  - Local storage with [DataStore](https://developer.android.com/topic/libraries/architecture/datastore)
+  - License management with [AboutLibraries](https://github.com/mikepenz/AboutLibraries)
+  For more dependencies used in project, please access the [Dependency File](https://github.com/igorescodro/alkaa/blob/main/gradle/libs.versions.toml)
+  If you want to check the previous version of Alkaa, please take a look at the latest
+  [V1](https://github.com/igorescodro/alkaa/tree/v1.7.0) or [V2](https://github.com/igorescodro/alkaa/tree/v2.3.0)
+  releases. ### \U0001F9EA Quality - [ktlint](https://github.com/pinterest/ktlint)
+  - [detekt](https://github.com/arturbosch/detekt) - [compose-rules](https://github.com/twitter/compose-rules)
+  - [lint](https://developer.android.com/studio/write/lint) - [CodeFactor](https://www.codefactor.io/)
+  ## \U0001F3DB Architecture Alkaa architecture is strongly based on the [Hexagonal
+  Architecture](https://alistair.cockburn.us/hexagonal-architecture/) by Alistair
+  Cockburn. The application also relies heavily on modularization for better separation
+  of concerns and encapsulation. Let's take a look at each major module of the application:
+  * **app**, **ios-app**, and **desktop-app** - The platform-specific app modules.
+  They contain the initialization logic for each platform. * **shared** - The module
+  containing the code shared between all platforms. * **features** - The modules containing
+  the features (visual or not) of the application. * **domain** - The modules containing
+  the business logic. These modules depend only on themselves, and all interaction
+  is done via _dependency inversion_. * **data** - The modules containing the data
+  logic (local, repository, etc.). * **libraries** - The modules with useful small
+  libraries for the project, such as design system, navigation, testing, etc. This
+  type of architecture protects the most important modules in the app. To achieve
+  this, all dependencies point to the center. The modules are organized so that _the
+  more a module is in the center, the more important it is_. To better represent the
+  idea behind the modules, here is an architecture image representing the flow of
+  dependency: ## \U0001F4C3 License ``` Copyright 2018 Igor Escodro Licensed under
+  the Apache License, Version 2.0 (the \"License\"); you may not use this file except
+  in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software distributed
+  under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+  OF ANY KIND, either express or implied. See the License for the specific language
+  governing permissions and limitations under the License. ```"
 ---
 {% raw %}
 ![Build](https://github.com/igorescodro/alkaa/actions/workflows/build.yml/badge.svg)

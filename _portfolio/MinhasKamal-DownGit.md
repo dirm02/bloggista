@@ -2,8 +2,27 @@
 layout: project
 name: Minhaskamal Downgit
 slug: MinhasKamal-DownGit
+category: Management- Engineering- SocialM
 image: https://img.shields.io/badge/Donate-PayPal-green.svg
 repo_url: https://github.com/MinhasKamal/DownGit
+indexed_content: 'DownGit [](https://www.paypal.com/donate/?business=5KR6BA9MYTM62&no_recurring=0&currency_code=USD)
+  #### Create GitHub Resource Download Link With this tool you can directly download
+  or create download link to any GitHub **public directory or file**. ### Website
+  [DownGit ↑](https://minhaskamal.github.io/DownGit) ### How to Use? ##### Advanced
+  Usage A typical download URL will look like this- `https://minhaskamal.github.io/DownGit/#/home?url=
+  &fileName= &rootDirectory= ` Now, if you want to download this directory- **`https://github.com/MinhasKamal/DownGit/tree/master/res/images`**
+  with this file name- **`DownGit-Images.zip`** and this root directory name- **`ImagesOfDownGit`**,
+  then the URL will be- https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/DownGit/tree/master/res/images&fileName=DownGit-Images&rootDirectory=ImagesOfDownGit
+  In default, value of `fileName` and `rootDirectory` is set to the name of the downloading
+  file or directory. If you do not want to add the directory itself in the zip, then
+  set `rootDirectory=false`. Like: this link- https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/DownGit/tree/master/res/images&rootDirectory=false,
+  will download a file named **`images.zip`**; however the root directory- `"images"`,
+  will not be included in the zip. If you want to download file- **`https://github.com/MinhasKamal/DownGit/blob/master/res/images/downgit.png`**
+  with name- **`DownGitIcon.zip`**, then the link will be- https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/DownGit/blob/master/res/images/downgit.png&fileName=DownGitIcon
+  ### Citation If this tool was helpful for your research, please cite- ```bibtex
+  @misc{Minhas2016DownGit, author = {Kamal, Minhas}, title = {DownGit: Create GitHub
+  Resource Download Link}, year = {2016}, publisher = {GitHub}, url = {https://github.com/MinhasKamal/DownGit}
+  } ``` ### License DownGit is licensed under MIT License .'
 ---
 {% raw %}
 <h1> <img src="https://github.com/MinhasKamal/DownGit/raw/master/res/images/downgit.png" width="20" height=auto /> DownGit </h1>

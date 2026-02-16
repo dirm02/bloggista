@@ -2,8 +2,68 @@
 layout: project
 name: Teamclouday Androidmic
 slug: teamclouday-AndroidMic
+category: WindowsTools- Linux
 image: https://img.shields.io/github/v/release/teamclouday/AndroidMic.svg?logo=github&label=GitHub&cacheSeconds=3600
 repo_url: https://github.com/teamclouday/AndroidMic
+indexed_content: 'AndroidMic Use your Android phone as a microphone for your PC -->
+  [](https://github.com/teamclouday/AndroidMic/releases/latest) [](https://f-droid.org/packages/io.github.teamclouday.AndroidMic)
+  --- ## Features - **Cross-platform**: Works on Linux, Windows, and macOS - **Multiple
+  connection options**: WiFi (TCP/UDP), USB Serial, and USB ADB - **Audio processing**:
+  Noise cancellation and audio wave visualization - **Customizable audio settings**:
+  Sample rate, channels, and bit depth --- ## ⚠️ Important Requirements **This app
+  requires a virtual audio cable device to work!** AndroidMic streams audio from your
+  phone to your PC, but your PC needs a way to recognize this audio stream as a microphone
+  input. This is where virtual audio cables come in. ### Virtual Audio Cable Setup
+  **On Windows:** - Install [Virtual Audio Cable (VAC)](https://vac.muzychenko.net/en/download.htm)
+  or [VB Cable](https://vb-audio.com/Cable/) (both free options available) - These
+  tools create virtual audio devices on your system - Once installed, you''ll have
+  a virtual output device (speaker/playback) and a virtual input device (microphone)
+  - AndroidMic plays audio to the virtual output, which is internally wired to the
+  virtual input that your apps can use as a microphone **On Linux:** - Use PulseAudio
+  or PipeWire to create virtual audio devices - Example with PulseAudio: ```bash pactl
+  load-module module-null-sink sink_name=virtual_mic pactl load-module module-remap-source
+  master=virtual_mic.monitor source_name=virtual_mic_source ``` **On macOS:** - Use
+  [BlackHole](https://existential.audio/blackhole/) or similar virtual audio driver
+  --- ## Setup Guide ### Step 1: Install Virtual Audio Cable Follow the instructions
+  above for your operating system to install a virtual audio cable solution. This
+  step is **required** before proceeding. ### Step 2: PC Application Setup 1. **Download
+  and install** - Get the latest release from the [releases page](https://github.com/teamclouday/AndroidMic/releases/latest)
+  - Install and launch the app > **macOS users**: You may need to run this command
+  to allow the app to run: > ```sh > xattr -c /Applications/AndroidMic.app > ``` >
+  See [this discussion](https://discussions.apple.com/thread/253714860?sortBy=best)
+  for more details. 2. **Select output audio device** - Choose the **virtual output
+  device** (e.g., "VB Cable Input" or "Virtual Audio Cable") from the dropdown - This
+  is the playback device that''s wired to your virtual microphone - Do NOT select
+  your regular speakers or headphones 3. **Choose connection method** - **TCP/UDP
+  (WiFi)**: - Connect your phone and PC to the same network - No additional setup
+  required - **USB ADB**: - Install [Android Debug Bridge (ADB)](https://developer.android.com/tools/adb)
+  - Enable USB debugging on your phone (Developer Options) - Connect phone via USB
+  cable - **USB Serial**: - Connect phone via USB cable - Set phone''s USB mode to
+  "Charging only" - **Windows**: Close Android Studio and ensure ADB process is not
+  running - **Linux**: Configure [udev rules](https://github.com/libusb/libusb/wiki/FAQ#can-i-run-libusb-applications-on-linux-without-root-privilege)
+  for USB permissions - **Samsung phones**: You may need [Zadig](https://zadig.akeo.ie/)
+  to change USB driver to WinUSB 4. **Configure audio settings** (Advanced) - Click
+  to open advanced settings - Choose format supported by your virtual audio device
+  - Common settings: 44.1kHz or 48kHz sample rate, mono channel, 16-bit or 24-bit
+  depth ### Step 3: Android Application Setup 1. **Install the app** - Download the
+  APK from [releases](https://github.com/teamclouday/AndroidMic/releases/latest) or
+  [F-Droid](https://f-droid.org/packages/io.github.teamclouday.AndroidMic) - Install
+  and open the app 2. **Configure settings** - Open the side drawer menu - Select
+  the **same connection method** chosen on PC - Configure audio settings (sample rate,
+  channels, bit depth) - these can be adjusted independently from PC settings 3. **Connect
+  and start** - Grant required permissions: - **Microphone**: To access your phone''s
+  mic - **Notification**: To show recording status in background - Start recording
+  - Connect to PC: - **TCP/UDP**: Enter PC IP address and port (shown in PC app log)
+  - **USB ADB**: Just click connect - **USB Serial**: Allow accessory mode when prompted
+  --- ## Using AndroidMic in Other Apps After setup, the virtual microphone will appear
+  in your system''s audio input devices. Select it in any application: - Discord,
+  Teams, Zoom (voice chat) - OBS, Streamlabs (streaming) - Audacity, FL Studio (recording)
+  - Any other app that accepts microphone input --- ## Troubleshooting ### Can''t
+  hear audio / No microphone detected - Verify virtual audio cable is properly installed
+  - Ensure you selected the virtual **output** device in AndroidMic PC app - Check
+  that applications are using the virtual **input** device as microphone - On Windows:
+  Check that VAC/VB Cable devices are set as default in Sound Settings ### Windows
+  Defender flags the ap'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,58 @@
 layout: project
 name: Pot App Pot Desktop
 slug: pot-app-pot-desktop
+category: Uncategorized
 image: https://img.shields.io/github/license/pot-app/pot-desktop.svg
 repo_url: https://github.com/TheDavidDelta/lingva-translate)
+indexed_content: "# Pot (派了个萌的翻译器) > \U0001F308 一个跨平台的划词翻译软件 ([QQ 频道](https://pd.qq.com/s/akns94e1r))
+  中文 | English | 한글 # 目录 - [使用说明](#使用说明) - [特色功能](#特色功能) - [支持接口](#支持接口) - [插件系统](#插件系统)
+  - [安装指南](#安装指南) - [外部调用](#外部调用) - [Wayland 支持](#wayland-支持) - [国际化](#国际化weblate)
+  - [贡献者](#贡献者) - [感谢](#感谢) # 使用说明 | 划词翻译 | 输入翻译 | 外部调用 | | ----------------------------------------------------
+  | -------------------------------------------------------------- | --------------------------------------------------------------------
+  | | 鼠标选中需要翻译的文本，按下设置的划词翻译快捷键即可 | 按下输入翻译快捷键呼出翻译窗口，输入待翻译文本后按下 回车 翻译 | 通过被其他软件调用实现更加方便高效的功能,
+  详见 [外部调用](#外部调用) | | | | | | 剪切板监听模式 | 截图 OCR | 截图翻译 | | ----------------------------------------------------------------------
+  | ------------------------------------------------- | ------------------------------------------------
+  | | 在任意翻译面板上点击左上角图标启动剪切板监听默认，复制文字即可完成翻译 | 按下截图 OCR 快捷键后框选需要识别区域即可完成识别 | 按下截图翻译快捷键后框选需要识别区域即可完成翻译
+  | | | | | # 特色功能 - [x] 多接口并行翻译 ([支持接口](#支持接口)) - [x] 多接口文字识别 ([支持接口](#支持接口)) - [x]
+  多接口语音合成 ([支持接口](#支持接口)) - [x] 导出到生词本 ([支持接口](#支持接口)) - [x] 外部调用 ([详情](#外部调用)) -
+  [x] 支持插件系统 ([插件系统](#插件系统)) - [x] 支持所有 PC 平台 (Windows, macOS, Linux) - [x] 支持 Wayland
+  (在 KDE、Gnome 以及 Hyprland 上测试) - [x] 多语言支持 # 支持接口 ## 翻译 - [x] [OpenAI](https://platform.openai.com/)
+  - [x] [智谱 AI](https://www.zhipuai.cn/) - [x] [Gemini Pro](https://gemini.google.com/)
+  - [x] [Ollama](https://www.ollama.com/) (离线) - [x] [阿里翻译](https://www.aliyun.com/product/ai/alimt)
+  - [x] [百度翻译](https://fanyi.baidu.com/) - [x] [彩云小译](https://fanyi.caiyunapp.com/)
+  - [x] [腾讯翻译君](https://fanyi.qq.com/) - [x] [腾讯交互翻译](https://transmart.qq.com/) -
+  [x] [火山翻译](https://translate.volcengine.com/) - [x] [小牛翻译](https://niutrans.com/)
+  - [x] [Google](https://translate.google.com) - [x] [Bing](https://learn.microsoft.com/zh-cn/azure/cognitive-services/translator/)
+  - [x] [Bing 词典](https://www.bing.com/dict) - [x] [DeepL](https://www.deepl.com/)
+  - [x] [有道翻译](https://ai.youdao.com/) - [x] [剑桥词典](https://dictionary.cambridge.org/)
+  - [x] [Yandex](https://translate.yandex.com/) - [x] [Lingva](https://github.com/TheDavidDelta/lingva-translate)
+  ([插件](https://github.com/pot-app/pot-app-translate-plugin-template)) - [x] [Tatoeba](https://tatoeba.org/)
+  ([插件](https://github.com/pot-app/pot-app-translate-plugin-tatoeba)) - [x] [ECDICT](https://github.com/skywind3000/ECDICT)
+  ([插件](https://github.com/pot-app/pot-app-translate-plugin-ecdict)) 更多接口支持见 [插件系统](#插件系统)
+  ## 文字识别 - [x] 系统 OCR (离线) - [x] [Windows.Media.OCR](https://learn.microsoft.com/en-us/uwp/api/windows.media.ocr.ocrengine?view=winrt-22621)
+  on Windows - [x] [Apple Vision Framework](https://developer.apple.com/documentation/vision/recognizing_text_in_images)
+  on MacOS - [x] [Tesseract OCR](https://github.com/tesseract-ocr) on Linux - [x]
+  [Tesseract.js](https://tesseract.projectnaptha.com/) (离线) - [x] [百度](https://ai.baidu.com/tech/ocr/general)
+  - [x] [腾讯](https://cloud.tencent.com/product/ocr-catalog) - [x] [火山](https://www.volcengine.com/product/OCR)
+  - [x] [迅飞](https://www.xfyun.cn/services/common-ocr) - [x] [腾讯图片翻译](https://cloud.tencent.com/document/product/551/17232)
+  - [x] [百度图片翻译](https://fanyi-api.baidu.com/product/22) - [x] [Simple LaTeX](https://simpletex.cn/)
+  - [x] [OCRSpace](https://ocr.space/) ([插件](https://github.com/pot-app/pot-app-recognize-plugin-template))
+  - [x] [Rapid](https://github.com/RapidAI/RapidOcrOnnx) (离线 [插件](https://github.com/pot-app/pot-app-recognize-plugin-rapid))
+  - [x] [Paddle](https://github.com/hiroi-sora/PaddleOCR-json) (离线 [插件](https://github.com/pot-app/pot-app-recognize-plugin-paddle))
+  更多接口支持见 [插件系统](#插件系统) ## 语音合成 - [x] [Lingva](https://github.com/thedaviddelta/lingva-translate)
+  更多接口支持见 [插件系统](#插件系统) ## 生词本 - [x] [Anki](https://apps.ankiweb.net/) - [x] [欧路词典](https://dict.eudic.net/)
+  - [x] [有道](https://www.youdao.com/) ([插件](https://github.com/pot-app/pot-app-collection-plugin-youdao))
+  - [x] [扇贝](https://web.shanbay.com/web/main) ([插件](https://github.com/pot-app/pot-app-collection-plugin-shanbay))
+  更多接口支持见 [插件系统](#插件系统) # 插件系统 软件内置接口数量有限，但是您可以通过插件系统来扩展软件的功能。 ## 插件安装 你可以在 [Plugin
+  List](https://pot-app.com/plugin.html) 查找你需要的插件，然后前往插件仓库下载插件。 pot 插件的扩展名为 `.potext`,
+  下载得到`.potext`文件之后， 在 偏好设置-服务设置-添加外部插件-安装外部插件 选择对应的 `.potext` 即可安装成功，添加到服务列表中即可像内置服务一样正常使用了。
+  ### 故障排除 - 找不到指定的模块 (Windows) 出现类似这样的报错是因为系统缺少 C++库，前往[这里](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)安装即可解决问题。
+  - 不是有效的 Win32 应用程序 (Windows) 出现类似这样的报错说明你没有下载对应系统或者架构的插件，前往插件仓库下载正确的插件即可解决问题。 ##
+  插件开发 在 [Plugin List](https://pot-app.com/plugin.html) 中的 [模板](https://pot-app.com/plugin.html#%E6%A8%A1%E6%9D%BF)
+  章节提供了各种插件的开发模板，具体的开发文档请查看对应的模板仓库。 # 安装指南 ## Windows ### 通过 Winget 安装 ```powershell
+  winget install Pylogmon.pot ``` ### 手动安装 1. 在 [Release](https://github.com/pot-app/pot-desktop/releases/latest)
+  页面下载最新 `exe` 安装包。 - 64 位机器下载 `pot_{version}_x64-setup.exe` - 32 位机器下载 `pot_{version}_x86-setup.exe`
+  - arm64 机器下载 `pot_{version}_arm64-setup.exe` 2. 双击安装包进行安装。 ### 故障排除 - 启动后没有界面，点击托盘图标没有"
 ---
 {% raw %}
 <img width="200px" src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/pot-app-pot-desktop/public/icon.svg" align="left"/>

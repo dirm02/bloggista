@@ -2,8 +2,68 @@
 layout: project
 name: T3dotgg Stripe Recommendations
 slug: t3dotgg-stripe-recommendations
+category: Uncategorized
 image: https://github.com/user-attachments/assets/c7271fa6-493c-4b1c-96cd-18904c2376ee
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '# How I Stay Sane Implementing Stripe > [!NOTE] > **Update (2025-02-07)**
+  > Stripe invited me to speak with the CEO at their company-wide all hands meeting.
+  They were super receptive to my feedback, and I see a bright future where none of
+  this is necessary. Until then, I still think this is the best way to set up payments
+  in your SaaS apps. I have set up Stripe far too many times. I''ve never enjoyed
+  it. I''ve talked to the Stripe team about the shortcomings and they say they''ll
+  fix them...eventually. Until then, this is how I recommend setting up Stripe. I
+  don''t cover everything - check out [things that are still your problem](#things-that-are-still-your-problem)
+  for clarity on what I''m NOT helping with. > If you want to stay sane implementing
+  file uploads, check out my product [UploadThing](https://uploadthing.com/). ###
+  Pre-requirements - TypeScript - Some type of JS backend - Working auth (that is
+  verified on your JS backend) - A KV store (I use Redis, usually [Upstash](https://upstash.com/?utm_source=theo),
+  but any KV will work) ### General philosophy IMO, the biggest issue with Stripe
+  is the "split brain" it inherently introduces to your code base. When a customer
+  checks out, the "state of the purchase" is in Stripe. You''re then expected to track
+  the purchase in your own database via webhooks. There are [over 258 event types](https://docs.stripe.com/api/events/types).
+  They all have different amounts of data. The order you get them is not guaranteed.
+  None of them should be trusted. It''s far too easy to have a payment be failed in
+  stripe and "subscribed" in your app. These partial updates and race conditions are
+  obnoxious. I recommend avoiding them entirely. My solution is simple: _a single
+  `syncStripeDataToKV(customerId: string)` function that syncs all of the data for
+  a given Stripe customer to your KV_. The following is how I (mostly) avoid getting
+  Stripe into these awful split states. ## The Flow This is a quick overview of the
+  "flow" I recommend. More detail below. Even if you don''t copy my specific implementation,
+  you should read this. _I promise all of these steps are necessary. Skipping any
+  of them will make life unnecessarily hard_ 1. **FRONTEND:** "Subscribe" button should
+  call a `"generate-stripe-checkout"` endpoint onClick 1. **USER:** Clicks "subscribe"
+  button on your app 1. **BACKEND:** Create a Stripe customer 1. **BACKEND:** Store
+  binding between Stripe''s `customerId` and your app''s `userId` 1. **BACKEND:**
+  Create a "checkout session" for the user - With the return URL set to a dedicated
+  `/success` route in your app 1. **USER:** Makes payment, subscribes, redirects back
+  to `/success` 1. **FRONTEND:** On load, triggers a `syncAfterSuccess` function on
+  backend (hit an API, server action, rsc on load, whatever) 1. **BACKEND:** Uses
+  `userId` to get Stripe `customerId` from KV 1. **BACKEND:** Calls `syncStripeDataToKV`
+  with `customerId` 1. **FRONTEND:** After sync succeeds, redirects user to wherever
+  you want them to be :) 1. **BACKEND:** On [_all relevant events_](#events-i-track),
+  calls `syncStripeDataToKV` with `customerId` This might seem like a lot. That''s
+  because it is. But it''s also the simplest Stripe setup I''ve ever seen work. Let''s
+  go into the details on the important parts here. ### Checkout flow The key is to
+  make sure **you always have the customer defined BEFORE YOU START CHECKOUT**. The
+  ephemerality of "customer" is a straight up design flaw and I have no idea why they
+  built Stripe like this. Here''s an adapted example from how we''re doing it in [T3
+  Chat](https://t3.chat). ```ts export async function GET(req: Request) { const user
+  = auth(req); // Get the stripeCustomerId from your KV store let stripeCustomerId
+  = await kv.get(`stripe:user:${user.id}`); // Create a new Stripe customer if this
+  user doesn''t have one if (!stripeCustomerId) { const newCustomer = await stripe.customers.create({
+  email: user.email, metadata: { userId: user.id, // DO NOT FORGET THIS }, }); //
+  Store the relation between userId and stripeCustomerId in your KV await kv.set(`stripe:user:${user.id}`,
+  newCustomer.id); stripeCustomerId = newCustomer.id; } // ALWAYS create a checkout
+  with a stripeCustomerId. They should enforce this. const checkout = await stripe.checkout.sessions.create({
+  customer: stripeCustomerId, success_url: "https://t3.chat/success", ... }); ```
+  ### syncStripeDataToKV This is the function that syncs all of the data for a given
+  Stripe customer to your KV. It will be used in both your `/success` endpoint and
+  in your `/api/stripe` webhook handler. The Stripe api returns a ton of data, much
+  of which can not be serialized to JSON. I''ve selected the "most likely to be needed"
+  chunk here for you to use, and there''s a [type definition later in the file](#custom-stripe-subscription-type).
+  Your implementation will vary based on if you''re doing subscriptions or one-time
+  purchases. The example below is with subcriptions (again from [T3 Chat](https://t3.chat)).
+  ```ts // The contents of this function shoul'
 ---
 {% raw %}
 # How I Stay Sane Implementing Stripe

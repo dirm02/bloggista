@@ -2,8 +2,66 @@
 layout: project
 name: Supertokens Supertokens Core
 slug: supertokens-supertokens-core
+category: Very important!!!!
 image: https://raw.githubusercontent.com/supertokens/supertokens-logo/master/images/Artboard%20%E2%80%93%2027%402x.png
 repo_url: https://github.com/supertokens/supertokens-core
+indexed_content: "[](https://supertokens.com/) # Open-Source auth provider Add **secure
+  login and session management** to your apps. [SDKs available](https://supertokens.com/docs/community/sdks)
+  for popular languages and front-end frameworks e.g. Node.js, Go, Python, React.js,
+  React Native, Vanilla JS, etc. Supertokens architecture is optimized to add secure
+  authentication for your users without compromising on user and developer experience
+  **Three building blocks of SuperTokens architecture** 1. Frontend SDK: Manages session
+  tokens and renders login UI widgets 2. Backend SDK: Provides APIs for sign-up, sign-in,
+  signout, session refreshing, etc. Your Frontend will talk to these APIs 3. SuperTokens
+  Core: The HTTP service for the core auth logic and database operations. This service
+  is used by the Backend SDK ## Features [](https://supertokens.com/docs/guides) *
+  Passwordless Login * Social Login * Email Password Login * Phone Password Login
+  * Session Management * Multi-Factor Authentication * Multi Tenancy / Organization
+  Support (Enterprise SSO) * User Roles * Microservice Authentication ## Learn more
+  - [\U0001F680 What is SuperTokens?](https://github.com/supertokens/supertokens-core#-what-is-supertokens)
+  - [Philosophy](https://github.com/supertokens/supertokens-core#philosophy) - [Features
+  + Demo app](https://github.com/supertokens/supertokens-core#features---click-here-to-see-the-demo-app)
+  - [Documentation](https://github.com/supertokens/supertokens-core#documentation)
+  - [\U0001F3D7️ Architecture](https://github.com/supertokens/supertokens-core#%EF%B8%8F-architecture)
+  - [☕ Why Java?](https://github.com/supertokens/supertokens-core#-why-java) - [⌨️
+  User Management Dashboard](https://github.com/supertokens/supertokens-core#-user-management-dashboard)
+  - [\U0001F525 SuperTokens vs Others](https://github.com/supertokens/supertokens-core#-supertokens-vs-others)
+  - [\U0001F6E0️ Building from source](https://github.com/supertokens/supertokens-core#%EF%B8%8F-building-from-source)
+  - [\U0001F465 Community](https://github.com/supertokens/supertokens-core#-community)
+  - [Contributors](https://github.com/supertokens/supertokens-core#contributors-across-all-supertokens-repositories)
+  - [\U0001F469‍\U0001F4BB Contributing](https://github.com/supertokens/supertokens-core#-contributing)
+  - [\U0001F4DD License](https://github.com/supertokens/supertokens-core#-license)
+  ### If you like our project, please :star2: this repository! For feedback, feel
+  free to join our [Discord](https://supertokens.io/discord), or create an issue on
+  this repo ## \U0001F680 What is SuperTokens? SuperTokens is an open-core alternative
+  to proprietary login providers like Auth0 or AWS Cognito. We are different because
+  we offer: - Open source: SuperTokens can be used for free, forever, with no limits
+  on the number of users. - An on-premises deployment so that you control 100% of
+  your user data, using your own database. - An end-to-end solution with login, sign-ups,
+  user and session management, without all the complexities of OAuth protocols. -
+  Ease of implementation and higher security. - Extensibility: Anyone can contribute
+  and make SuperTokens better! ### Philosophy Authentication directly affects the
+  UX, dev experience, and security of any app. We believe that current solutions cannot
+  optimize for all three \"pillars\", leading to many applications hand-rolling their
+  own auth. This not only leads to security issues but is also a massive time drain.
+  We want to change that - we believe the only way is to provide a solution that has
+  the right level of abstraction gives you maximum control, is secure, and is simple
+  to use - just like if you build it yourself, from scratch (minus the time to learn,
+  build, and maintain). We also believe in the principle of least vendor lock-in.
+  Your having full control of your user's data means that you can switch away from
+  SuperTokens without forcing your existing users to logout, reset their passwords,
+  or in the worst case, sign up again. ### [Click here](https://thirdpartyemailpassword.demo.supertokens.com/)
+  to see the demo app. - Please visit [our website](https://supertokens.io/pricing)
+  to see the list of features. - We want to make features as decoupled as possible.
+  This means you can use SuperTokens for just login, or just session management, or
+  both. In fact, we also offer session management integrations with other login providers
+  like Auth0. ### Documentation The docs can be seen [on our website](https://supertokens.io/docs/community/introduction).
+  There is more information about SuperTokens on the [GitHub wiki section](https://github.com/supertokens/supertokens-core/wiki).
+  ## \U0001F3D7️ Architecture Please find an [architecture diagram here](https://supertokens.io/docs/community/architecture)
+  **For more information, please visit our [GitHub wiki section](https://github.com/supertokens/supertokens-core/wiki/SuperTokens-Architecture).**
+  ## ☕ Why Java? - ✅ Whilst running Java can seem difficult, we provide the JDK along
+  with the binary/docker image when distributing it. This makes running SuperTokens
+  just like running any othe"
 ---
 {% raw %}
 [![SuperTokens banner](https://raw.githubusercontent.com/supertokens/supertokens-logo/master/images/Artboard%20%E2%80%93%2027%402x.png)](https://supertokens.com/)

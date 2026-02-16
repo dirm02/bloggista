@@ -2,8 +2,68 @@
 layout: project
 name: Memvid Memvid
 slug: memvid-memvid
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/npm/v/memvid-cli?style=flat-square
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "Memvid is a single-file memory layer for AI agents with instant
+  retrieval and long-term memory. Persistent, versioned, and portable memory, without
+  databases. Website · Try Sandbox · Docs · Discussions ## Benchmark Highlights **\U0001F680
+  Higher accuracy than any other memory system :** +35% SOTA on LoCoMo, best-in-class
+  long-horizon conversational recall & reasoning **\U0001F9E0 Superior multi-hop &
+  temporal reasoning:** +76% multi-hop, +56% temporal vs. the industry average **⚡
+  Ultra-low latency at scale** 0.025ms P50 and 0.075ms P99, with 1,372× higher throughput
+  than standard **\U0001F52C Fully reproducible benchmarks:** LoCoMo (10 × ~26K-token
+  conversations), open-source eval, LLM-as-Judge ## What is Memvid? Memvid is a portable
+  AI memory system that packages your data, embeddings, search structure, and metadata
+  into a single file. Instead of running complex RAG pipelines or server-based vector
+  databases, Memvid enables fast retrieval directly from the file. The result is a
+  model-agnostic, infrastructure-free memory layer that gives AI agents persistent,
+  long-term memory they can carry anywhere. ## What are Smart Frames? Memvid draws
+  inspiration from video encoding, not to store video, but to **organize AI memory
+  as an append-only, ultra-efficient sequence of Smart Frames.** A Smart Frame is
+  an immutable unit that stores content along with timestamps, checksums and basic
+  metadata. Frames are grouped in a way that allows efficient compression, indexing,
+  and parallel reads. This frame-based design enables: - Append-only writes without
+  modifying or corrupting existing data - Queries over past memory states - Timeline-style
+  inspection of how knowledge evolves - Crash safety through committed, immutable
+  frames - Efficient compression using techniques adapted from video encoding The
+  result is a single file that behaves like a rewindable memory timeline for AI systems.
+  ## Core Concepts - **Living Memory Engine** Continuously append, branch, and evolve
+  memory across sessions. - **Capsule Context (`.mv2`)** Self-contained, shareable
+  memory capsules with rules and expiry. - **Time-Travel Debugging** Rewind, replay,
+  or branch any memory state. - **Smart Recall** Sub-5ms local memory access with
+  predictive caching. - **Codec Intelligence** Auto-selects and upgrades compression
+  over time. ## Use Cases Memvid is a portable, serverless memory layer that gives
+  AI agents persistent memory and fast recall. Because it's model-agnostic, multi-modal,
+  and works fully offline, developers are using Memvid across a wide range of real-world
+  applications. - Long-Running AI Agents - Enterprise Knowledge Bases - Offline-First
+  AI Systems - Codebase Understanding - Customer Support Agents - Workflow Automation
+  - Sales and Marketing Copilots - Personal Knowledge Assistants - Medical, Legal,
+  and Financial Agents - Auditable and Debuggable AI Workflows - Custom Applications
+  ## SDKs & CLI Use Memvid in your preferred language: | Package | Install | Links
+  | | --------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------
+  | | **CLI** | `npm install -g memvid-cli` | [](https://www.npmjs.com/package/memvid-cli)
+  | | **Node.js SDK** | `npm install @memvid/sdk` | [](https://www.npmjs.com/package/@memvid/sdk)
+  | | **Python SDK** | `pip install memvid-sdk` | [](https://pypi.org/project/memvid-sdk/)
+  | | **Rust** | `cargo add memvid-core` | [](https://crates.io/crates/memvid-core)
+  | --- ## Installation (Rust) ### Requirements - **Rust 1.85.0+** — Install from
+  [rustup.rs](https://rustup.rs) ### Add to Your Project ```toml [dependencies] memvid-core
+  = \"2.0\" ``` ### Feature Flags | Feature | Description | | -------------------
+  | ---------------------------------------------------------------- | | `lex` | Full-text
+  search with BM25 ranking (Tantivy) | | `pdf_extract` | Pure Rust PDF text extraction
+  | | `vec` | Vector similarity search (HNSW + local text embeddings via ONNX) | |
+  `clip` | CLIP visual embeddings for image search | | `whisper` | Audio transcription
+  with Whisper | | `api_embed` | Cloud API embeddings (OpenAI) | | `temporal_track`
+  | Natural language date parsing (\"last Tuesday\") | | `parallel_segments` | Multi-threaded
+  ingestion | | `encryption` | Password-based encryption capsules (.mv2e) | | `symspell_cleanup`
+  | Robust PDF text repair (fixes \"emp lo yee\" -> \"employee\") | Enable features
+  as needed: ```toml [dependencies] memvid-core = { version = \"2.0\", features =
+  [\"lex\", \"vec\", \"temporal_track\"] } ``` ## Quick Start ```rust use memvid_core::{Memvid,
+  PutOptions, SearchRequest}; fn main() -> memvid_core::Result { // Create a new memory
+  file let mut mem = Memvid::create(\"knowledge.mv2\")?; // Add documents with metadata
+  let opts = PutOptions::builder() .title(\"Meeting Notes\") .uri(\"mv2://meetings/2024-01-15\")
+  .tag(\"project\", \"alpha\") .build(); mem.put_bytes_with_options(b\"Q4 planning
+  discussion...\", opts)?; mem.commit()?; // Search let response = mem.search(SearchRequest"
 ---
 {% raw %}
 <!-- HEADER:START -->

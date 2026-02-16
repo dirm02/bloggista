@@ -2,8 +2,65 @@
 layout: project
 name: Cfu288 Mere Medical
 slug: cfu288-mere-medical
+category: Management- Engineering- SocialM
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/cfu288-mere-medical/images/logo.png
 repo_url: https://github.com/cfu288/mere-medical
+indexed_content: 'Mere Medical A personal health record to aggregate and sync all
+  of your medical records from multiple patient portals in one place. Currently supports
+  thousands of hospitals and clinics and major electronic medical record systems.
+  Self-hosted, privacy-focused, and offline-first. See Docs • View Demo ## What is
+  Mere Medical Mere Medical is a self-hosted web app to aggregate and sync all of
+  your medical records from all your doctor and hospital visits in one place. See
+  everything in a timeline view or quickly summarize your records. > [!NOTE] > ~~Mere
+  is currently pre-release software: updates may break backwards compatibility.~~
+  > Mere has been "pre-release software" since 2022. That probably says more about
+  my fear of committing to an official release than a reflection of Mere. Will avoid
+  breaking backwards compatibility where reasonable. > > This project is supported
+  by a single developer who is also a full-time medical resident. If you would like
+  to support this project, please consider [donating](https://github.com/sponsors/cfu288)
+  to help with hosting costs or help by tackling one of the open [issues](https://github.com/cfu288/mere-medical/issues).
+  ## Getting Started Here are some ways to get Mere Medical running on your local
+  computer ### Docker Compose ```yaml services: app: image: cfu288/mere-medical:latest
+  ports: - ''4200:80'' environment: - ONPATIENT_CLIENT_ID=${ONPATIENT_CLIENT_ID} -
+  ONPATIENT_CLIENT_SECRET=${ONPATIENT_CLIENT_SECRET} - EPIC_CLIENT_ID=${EPIC_CLIENT_ID}
+  - EPIC_CLIENT_ID_DSTU2=${EPIC_CLIENT_ID_DSTU2} - EPIC_CLIENT_ID_R4=${EPIC_CLIENT_ID_R4}
+  - EPIC_SANDBOX_CLIENT_ID=${EPIC_SANDBOX_CLIENT_ID} - EPIC_SANDBOX_CLIENT_ID_DSTU2=${EPIC_SANDBOX_CLIENT_ID_DSTU2}
+  - EPIC_SANDBOX_CLIENT_ID_R4=${EPIC_SANDBOX_CLIENT_ID_R4} - CERNER_CLIENT_ID=${CERNER_CLIENT_ID}
+  - VERADIGM_CLIENT_ID=${VERADIGM_CLIENT_ID} - VA_CLIENT_ID=${VA_CLIENT_ID} - HEALOW_CLIENT_ID=${HEALOW_CLIENT_ID}
+  - HEALOW_CLIENT_SECRET=${HEALOW_CLIENT_SECRET} - PUBLIC_URL=${PUBLIC_URL} ``` (
+  back to top ) ## Local Development ### Prerequisites - npm - nvm - Docker - nx ###
+  Installation 1. Clone the repo ```sh git clone https://github.com/cfu288/mere-medical.git
+  ``` 2. Set up NPM and install NPM packages ```sh nvm install v20.11.0 nvm use npm
+  install ``` 3. If Nx is not installed, install it ```sh npm i nx -g ``` if you are
+  prompted to run migrations, run the following: ```sh npx nx migrate --run-migrations
+  ``` 4. Create `.env` files for each project to run and fill with values ```sh cp
+  apps/api/.example.env apps/api/.env ``` ```sh vim apps/web/src/environments/config.json
+  ``` 5. Generate localhost ssl certs ``` mkdir -p .dev/certs mkcert -key-file .dev/certs/localhost-key.pem
+  -cert-file .dev/certs/localhost.pem localhost mkcert -install ``` 6. Serve each
+  one on its own: ```bash npx nx serve web npx nx serve api ``` or together as a full
+  app: ```bash npx nx run-many --target=serve --projects=api,web --output-style=stream
+  ``` 7. Run e2e tests ```bash npx nx run web-e2e:e2e ``` 8. Build and serve in docker
+  container: ```bash docker build -t mere-medical . docker run -p 4200:80 -i -t \
+  --name mere-medical \ -e ONPATIENT_CLIENT_ID= \ -e ONPATIENT_CLIENT_SECRET= \ -e
+  EPIC_CLIENT_ID= \ -e EPIC_CLIENT_ID_DSTU2= \ -e EPIC_CLIENT_ID_R4= \ -e EPIC_SANDBOX_CLIENT_ID=
+  \ -e EPIC_SANDBOX_CLIENT_ID_DSTU2= \ -e EPIC_SANDBOX_CLIENT_ID_R4= \ -e CERNER_CLIENT_ID=
+  \ -e VERADIGM_CLIENT_ID= \ -e VA_CLIENT_ID= \ -e HEALOW_CLIENT_ID= \ -e HEALOW_CLIENT_SECRET=
+  \ -e PUBLIC_URL=https://localhost:4200 \ mere-medical:latest ``` Note the following
+  environment variables can be provided: | Variable | Required | Description | Example
+  | | ------------------------------ | -------- | --------------------------------------------------------------------------------------------------------------
+  | ----------------------------------------------------------------------------------
+  | | `PUBLIC_URL` | Yes | Full URL where Mere Medical is accessible. **Must include
+  protocol** (`https://` or `http://`). | `https://app.meremedical.co` | | `ONPATIENT_CLIENT_ID`
+  | No | Client ID for OnPatient/DrChrono | See [OnPatient setup](https://meremedical.co/docs/getting-started/onpatient-setup)
+  | | `ONPATIENT_CLIENT_SECRET` | No | Client secret for OnPatient/DrChrono | See
+  [OnPatient setup](https://meremedical.co/docs/getting-started/onpatient-setup) |
+  | `EPIC_CLIENT_ID_R4` | No | Client ID for Epic MyChart production (recommended)
+  | See [Epic setup](https://meremedical.co/docs/getting-started/epic-setup) | | `EPIC_SANDBOX_CLIENT_ID_R4`
+  | No | Client ID for Epic MyChart sandbox (recommended) | See [Epic setup](https://meremedical.co/docs/getting-started/epic-setup)
+  | | `EPIC_CLIENT_ID` | No | Client ID for Epic MyChart production (legacy DSTU2,
+  for backwards compatibility) | See [Epic setup](https://meremedical.co/docs/getting-started/epic-setup)
+  | | `EPIC_CLIENT_ID_DSTU2` | No | Client ID for Epic MyChart production (legacy
+  DSTU2) | See [Epic setup](https://meremedical.co/docs/getting-started/epic'
 ---
 {% raw %}
 <a name="readme-top"></a>

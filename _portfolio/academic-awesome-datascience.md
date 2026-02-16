@@ -2,8 +2,66 @@
 layout: project
 name: Academic Awesome Datascience
 slug: academic-awesome-datascience
+category: Data science
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Special thanks to Sponsors: ### [Requestly - Free & Open-Source
+  alternative to Postman](https://requestly.com/awesomedatascience) [All-in-one platform
+  to Test, Mock and Intercept APIs](https://requestly.com/awesomedatascience) # AWESOME
+  DATA SCIENCE [](https://github.com/sindresorhus/awesome) **An open-source Data Science
+  repository to learn and apply concepts toward solving real- world problems.** This
+  is a shortcut path to start studying **Data Science**. Just follow the steps to
+  answer the questions, "What is Data Science, and what should I study to learn Data
+  Science?" ## Sponsors | Sponsor | Pitch | | --- | --- | | --- | Be the first to
+  sponsor! `github@academic.io` | ## Table of Contents - [What is Data Science?](#what-is-data-science)
+  - [Where do I Start?](#where-do-i-start) - [Training Resources](#training-resources)
+  - [Tutorials](#tutorials) - [Free Courses](#free-courses) - [Massively Open Online
+  Courses](#moocs) - [Intensive Programs](#intensive-programs) - [Colleges](#colleges)
+  - [The Data Science Toolbox](#the-data-science-toolbox) - [Algorithms](#algorithms)
+  - [Supervised Learning](#supervised-learning) - [Unsupervised Learning](#unsupervised-learning)
+  - [Semi-Supervised Learning](#semi-supervised-learning) - [Reinforcement Learning](#reinforcement-learning)
+  - [Data Mining Algorithms](#data-mining-algorithms) - [Deep Learning Architectures](#deep-learning-architectures)
+  - [General Machine Learning Packages](#general-machine-learning-packages) - [Model
+  Evaluation & Monitoring](#model-evaluation--monitoring) - [Evidently AI](#evidently-ai)
+  - [Deep Learning Packages](#deep-learning-packages) - [PyTorch Ecosystem](#pytorch-ecosystem)
+  - [TensorFlow Ecosystem](#tensorflow-ecosystem) - [Keras Ecosystem](#keras-ecosystem)
+  - [Visualization Tools](#visualization-tools) - [Miscellaneous Tools](#miscellaneous-tools)
+  - [Literature and Media](#literature-and-media) - [Books](#books) - [Book Deals
+  (Affiliated)](#book-deals-affiliated) - [Journals, Publications, and Magazines](#journals-publications-and-magazines)
+  - [Newsletters](#newsletters) - [Bloggers](#bloggers) - [Presentations](#presentations)
+  - [Podcasts](#podcasts) - [YouTube Videos & Channels](#youtube-videos--channels)
+  - [Socialize](#socialize) - [Facebook Accounts](#facebook-accounts) - [Twitter Accounts](#twitter-accounts)
+  - [Telegram Channels](#telegram-channels) - [Slack Communities](#slack-communities)
+  - [GitHub Groups](#github-groups) - [Data Science Competitions](#data-science-competitions)
+  - [Fun](#fun) - [Infographics](#infographics) - [Datasets](#datasets) - [Comics](#comics)
+  - [Other Awesome Lists](#other-awesome-lists) - [Hobby](#hobby) ## What is Data
+  Science? **[`^ back to top ^`](#awesome-data-science)** Data Science is one of the
+  hottest topics on the Computer and Internet farmland nowadays. People have gathered
+  data from applications and systems until today and now is the time to analyze them.
+  The next steps are producing suggestions from the data and creating predictions
+  about the future. [Here](https://www.quora.com/Data-Science/What-is-data-science)
+  you can find the biggest question for **Data Science** and hundreds of answers from
+  experts. | Link | Preview | | --- | --- | | [Data Science For Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
+  | Microsoft are pleased to offer a 10-week, 20-lesson curriculum all about Data
+  Science. | | [What is Data Science @ O''reilly](https://www.oreilly.com/ideas/what-is-data-science)
+  | _Data scientists combine entrepreneurship with patience, the willingness to build
+  data products incrementally, the ability to explore, and the ability to iterate
+  over a solution. They are inherently interdisciplinary. They can tackle all aspects
+  of a problem, from initial data collection and data conditioning to drawing conclusions.
+  They can think outside the box to come up with new ways to view the problem, or
+  to work with very broadly defined problems: “here’s a lot of data, what can you
+  make from it?”_ | | [What is Data Science @ Quora](https://www.quora.com/Data-Science/What-is-data-science)
+  | Data Science is a combination of a number of aspects of Data such as Technology,
+  Algorithm development, and data interference to study the data, analyse it, and
+  find innovative solutions to difficult problems. Basically Data Science is all about
+  Analysing data and driving for business growth by finding creative ways. | | [The
+  sexiest job of 21st century](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century)
+  | _Data scientists today are akin to Wall Street “quants” of the 1980s and 1990s.
+  In those days people with backgrounds in physics and math streamed to investment
+  banks and hedge funds, where they could devise entirely new algorithms and data
+  strategies. Then a variety of universities developed master’s programs in financial
+  engineering, which churned out a second generation of talent that was more accessible
+  to mainstream firms. The pattern was repeated later in the 1990s with '
 ---
 {% raw %}
 <div align="center" markdown="1">

@@ -2,8 +2,60 @@
 layout: project
 name: Localsend Localsend
 slug: localsend-localsend
+category: Let's try this- Personal prefere
 image: https://repology.org/badge/tiny-repos/localsend.svg
 repo_url: https://github.com/localsend/localsend
+indexed_content: "# LocalSend [![CI status][ci-badge]][ci-workflow] [![Translations][translate-badge]][translate-link]
+  [![Packaging status][packaging-badge]][packaging-link] [ci-badge]: https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg
+  [ci-workflow]: https://github.com/localsend/localsend/actions/workflows/ci.yml [translate-badge]:
+  https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [translate-link]:
+  https://hosted.weblate.org/engage/localsend/ [packaging-badge]: https://repology.org/badge/tiny-repos/localsend.svg
+  [packaging-link]: https://repology.org/project/localsend/versions [Homepage][homepage]
+  • [Discord][discord] • [GitHub][github] • [Codeberg][codeberg] [English (Default)](README.md)
+  • [Español](readme_i18n/README_ES.md) • [فارسی](readme_i18n/README_FA.md) • [Filipino](readme_i18n/README_PH.md)
+  • [Français](readme_i18n/README_FR.md) • [Indonesia](readme_i18n/README_ID.md) •
+  [Italiano](readme_i18n/README_IT.md) • [日本語](readme_i18n/README_JA.md) • [ភាសាខ្មែរ](readme_i18n/README_KM.md)
+  • [한국어](readme_i18n/README_KO.md) • [Polski](readme_i18n/README_PL.md) • [Português
+  Brasil](readme_i18n/README_PT_BR.md) • [Русский](readme_i18n/README_RU.md) • [ภาษาไทย](readme_i18n/README_TH.md)
+  • [Türkçe](readme_i18n/README_TR.md) • [Українська](readme_i18n/README_UK.md) •
+  [Tiếng Việt](readme_i18n/README_VI.md) • [中文](readme_i18n/README_ZH.md) [homepage]:
+  https://localsend.org [discord]: https://discord.gg/GSRWmQNP87 [github]: https://github.com/localsend/localsend
+  [codeberg]: https://codeberg.org/localsend/localsend LocalSend is a free, open-source
+  app that allows you to securely share files and messages with nearby devices over
+  your local network without needing an internet connection. - [About](#about) - [Sponsors](#sponsors)
+  - [Screenshots](#screenshots) - [Download](#download) - [How It Works](#how-it-works)
+  - [Getting Started](#getting-started) - [Contributing](#contributing) - [Translation](#translation)
+  - [Bug Fixes and Improvements](#bug-fixes-and-improvements) - [Troubleshooting](#troubleshooting)
+  - [Building](#building) - [Android](#android) - [iOS](#ios) - [macOS](#macos) -
+  [Windows](#windows) - [Linux](#linux) ## About LocalSend is a cross-platform app
+  that enables secure communication between devices using a REST API and HTTPS encryption.
+  Unlike other messaging apps that rely on external servers, LocalSend doesn't require
+  an internet connection or third-party servers, making it a fast and reliable solution
+  for local communication. ## Sponsors Browser testing via ## Screenshots ## Download
+  [](https://repology.org/project/localsend/versions) It is recommended to download
+  the app either from an app store or from a package manager because the app does
+  not have an auto-update. | Windows | macOS | Linux | Android | iOS | Fire OS | |-------------------------|-------------------------|--------------------|----------------|---------------|------------|
+  | [Winget][] | [App Store][] | [Flathub][] | [Play Store][] | [App Store][] | [Amazon][]
+  | | [Scoop][] | [Homebrew][] | [Nixpkgs][] | [F-Droid][] | | | | [Chocolatey][]
+  | [DMG Installer][latest] | [Snap][] | [APK][latest] | | | | [EXE Installer][latest]
+  | | [AUR][] | | | | | [Portable ZIP][latest] | | [TAR][latest] | | | | | | | [DEB][latest]
+  | | | | | | | [AppImage][latest] | | | | Read more about [distribution channels][].
+  > [!CAUTION] > **Unofficial MSIX preview:** you can try builds from the latest commits
+  at [localsend.ob-buff.dev](https://localsend.ob-buff.dev/). Stability is not guaranteed
+  and all custom code tweaks are listed on that site. [windows store]: https://www.microsoft.com/store/apps/9NCB4Z0TZ6RR
+  [app store]: https://apps.apple.com/us/app/localsend/id1661733229 [play store]:
+  https://play.google.com/store/apps/details?id=org.localsend.localsend_app [f-droid]:
+  https://f-droid.org/packages/org.localsend.localsend_app [amazon]: https://www.amazon.com/dp/B0BW6MP732
+  [winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/l/LocalSend/LocalSend
+  [scoop]: https://scoop.sh/#/apps?s=0&d=1&o=true&q=localsend&id=fb88113be361ca32c0dcac423cb4afdeda0b0c66
+  [chocolatey]: https://community.chocolatey.org/packages/localsend [homebrew]: https://formulae.brew.sh/cask/localsend
+  [flathub]: https://flathub.org/apps/details/org.localsend.localsend_app [nixpkgs]:
+  https://search.nixos.org/packages?show=localsend [snap]: https://snapcraft.io/localsend
+  [aur]: https://aur.archlinux.org/packages/localsend-bin [latest]: https://github.com/localsend/localsend/releases/latest
+  [distribution channels]: https://github.com/localsend/localsend/blob/main/CONTRIBUTING.md#distribution
+  **Compatibility** | Platform | Minimum Version | Note | |----------|-----------------|-----------------------------------------------------------------------------------------------------------------------------|
+  | Android | 5.0 | - | | iOS | 12.0 | - | | macOS | 11 Big Sur | Use OpenCore Legacy
+  Patcher 2.0.2 (See [#1005](https://github.com/localsend/localsend/issues/1005#issuec"
 ---
 {% raw %}
 # LocalSend

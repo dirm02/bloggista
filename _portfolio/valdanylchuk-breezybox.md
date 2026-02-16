@@ -2,8 +2,50 @@
 layout: project
 name: Valdanylchuk Breezybox
 slug: valdanylchuk-breezybox
+category: EE-kicad-3D-Robotic
 image: https://components.espressif.com/components/valdanylchuk/breezybox/badge.svg
 repo_url: https://github.com/valdanylchuk/breezybox.git
+indexed_content: '# BreezyBox A BusyBox-inspired shell and virtual terminal system
+  for ESP32. [](https://components.espressif.com/components/valdanylchuk/breezybox)
+  ## Features - **Unix-like Shell**: Familiar commands like `ls`, `cat`, `echo`, `cd`,
+  `pwd`, `cp`, `mv`, `rm`, `mkdir` - **Virtual Terminals**: Multiple independent terminals
+  with hotkey switching (F1-F4) - **ANSI Colors**: Full 16-color support with SGR
+  escape sequences - **I/O Redirection**: Support for `>`, `>>`, ` - Display file
+  contents head [-n N] - Show first N lines (default 10) tail [-n N] - Show last N
+  lines (default 10) more - Paginate file contents wc [-lwc] - Count lines/words/chars
+  cp - Copy file mv - Move/rename file rm [-r] - Remove file or directory mkdir -
+  Create directory ``` ### Navigation ``` cd [path] - Change directory pwd - Print
+  working directory ``` ### System ``` free - Show memory usage (SRAM/PSRAM) df -
+  Show filesystem space du [-s] [path] - Show disk usage date [datetime] - Show/set
+  date and time clear - Clear screen sh - Run shell script help - List all commands
+  ``` ### Networking ``` wifi scan - Scan for WiFi networks wifi connect [pass] -
+  Connect to WiFi wifi disconnect - Disconnect from WiFi wifi status - Show connection
+  status wifi forget - Forget saved network httpd [dir] [-p port] - Start HTTP file
+  server ``` ### Programs ``` eget - Download ELF from GitHub releases app_name -
+  run app_name ELF file from /root/bin/ or CWD ``` ### Built-in ``` echo [text...]
+  - Print text to stdout ``` ## I/O Redirection ```bash $ echo "Hello" > /root/test.txt
+  # Write to file $ echo "World" >> /root/test.txt # Append to file $ cat 1 ? argv[1]
+  : "World"); return 0; } // Register in your app esp_console_cmd_t cmd = { .command
+  = "hello", .help = "Say hello", .hint = "[name]", .func = &cmd_hello, }; esp_console_cmd_register(&cmd);
+  ``` ## Dependencies - ESP-IDF >= 5.0 - [joltwallet/littlefs](https://components.espressif.com/components/joltwallet/littlefs)
+  - Filesystem - [espressif/elf_loader](https://components.espressif.com/components/espressif/elf_loader)
+  - ELF execution - PSRAM required for full functionality ## License This is free
+  software under MIT License - see [LICENSE](LICENSE) file. ## Contributing - help
+  wanted! The best help is currently more testing beyond "works on my computer", more
+  shared examples and fun use cases: 1. More ELF apps – see the examples at my [breezyapps
+  repo](https://github.com/valdanylchuk/breezyapps), they are super easy to follow.
+  Even a carefully written stdlib C program with no platform-specific bits may work
+  sometimes, also with some ANSI codes. But be sure to verify on the actual ESP32-S3:
+  the memory is tight, the larger PSRAM requires alignment, and there are other limits
+  and quirks. You can publish and install the apps using your own repo. 2. More full
+  example firmware repositories: for different boards, with different styles. Maybe
+  you provide the basic LVGL text label example on some popular board. Maybe you prefer
+  C++ to plain C. Maybe you embrace the GUI. Maybe you port some retro games. Maybe
+  you even make it work on P4, or C6 (RISC-V, a completely different CPU). Maybe you
+  attach some cool gadgets to it. Maybe you build an extra cool cyberdeck case. Or
+  maybe you reproduce the exact same thing, and just share your setup experience and
+  hands-on impressions. It would be so cool to see more people using BreezyBox, and
+  to have more ready-to-clone examples for everyone! Have fun!'
 ---
 {% raw %}
 # BreezyBox

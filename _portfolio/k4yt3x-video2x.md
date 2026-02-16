@@ -2,8 +2,66 @@
 layout: project
 name: K4yt3x Video2x
 slug: k4yt3x-video2x
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/user-attachments/assets/9b1cc8a7-2903-4d2c-80a2-8d81f007e45b
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "## \U0001F31F Version 6.0.0 Video2X 6.0.0 highlights: - Complete
+  rewrite of the Video2X project in C/C++. - Faster and more efficient architecture.
+  - Cross-platform support for Windows and Linux. - Vastly improved output quality.
+  - New GUI and installer for easy setup on Windows. Click to see more details Version
+  6.0.0 is a complete rewrite of this project in C/C++. It: - genuinely works this
+  time, with much less hassle compared to the 5.0.0 beta; - is blazing fast, thanks
+  to the new optimized pipeline and the efficiency of C/C++; - is cross-platform,
+  available now for both Windows and Linux; - offers significantly better output quality
+  with Anime4K v4, Real-ESRGAN, Real-CUGAN, and RIFE; - supports two modes: filtering
+  (upscaling) and frame interpolation; - supports Anime4K v4 and all custom MPV-compatible
+  GLSL shaders; - supports Real-ESRGAN, Real-CUGAN, and RIFE (all models) via ncnn
+  and Vulkan; - requires zero additional disk space during processing, just space
+  for the final output. ## \U0001F5A5️ Hardware Requirements Your system must meet
+  the minimum hardware requirements below to run Video2X. - **CPU** - The precompiled
+  binaries require CPUs with AVX2 support. - **Intel**: Haswell (Q2 2013) or newer
+  - **AMD**: Excavator (Q2 2015) or newer - **GPU** - The GPU must support Vulkan.
+  - **NVIDIA**: Kepler (GTX 600 series, Q2 2012) or newer - **AMD**: GCN 1.0 (Radeon
+  HD 7000 series, Q1 2012) or newer - **Intel**: HD Graphics 4000 (Q2 2012) or newer
+  ## [\U0001FA9F Install on Windows](https://docs.video2x.org/installing/windows-qt6.html)
+  **[Download the Latest Windows Installer Executable (6.4.0)](https://github.com/k4yt3x/video2x/releases/download/6.4.0/video2x-qt6-windows-amd64-installer.exe)**
+  You can download the latest Windows release on the [releases page](https://github.com/k4yt3x/video2x/releases/latest).
+  For basic GUI usage, refer to the [documentation](https://docs.video2x.org/running/desktop.html).
+  If you're unable to download directly from GitHub, try the [mirror site](https://files.k4yt3x.com).
+  The GUI currently supports the following languages: - English (United States) -
+  简体中文（中国） - 日本語（日本） - Português (Portugal) - Français (France) - Deutsch (Deutschland)
+  ## [\U0001F427 Install on Linux](https://docs.video2x.org/installing/linux.html)
+  Video2X packages are available for the Linux distros listed below. A universal AppImage
+  is also available for other distros. If you'd like to build it from source code,
+  refer to the [PKGBUILD](packaging/arch/PKGBUILD) file for a general overview of
+  the required dependencies and commands. - Arch Linux: AUR packages, maintained by
+  [@K4YT3X](https://github.com/k4yt3x). - [aur/video2x](https://aur.archlinux.org/packages/video2x)
+  - [aur/video2x-git](https://aur.archlinux.org/packages/video2x-git) - [aur/video2x-qt6](https://aur.archlinux.org/packages/video2x-qt6)
+  - [aur/video2x-qt6-git](https://aur.archlinux.org/packages/video2x-qt6-git) - Arch
+  Linux (Chinese Mainland): archlinuxcn packages, maintained by [@Integral-Tech](https://github.com/Integral-Tech).
+  - [archlinuxcn/video2x](https://github.com/archlinuxcn/repo/tree/master/archlinuxcn/video2x)
+  - [archlinuxcn/video2x-git](https://github.com/archlinuxcn/repo/tree/master/archlinuxcn/video2x-git)
+  - [archlinuxcn/video2x-qt6](https://github.com/archlinuxcn/repo/tree/master/archlinuxcn/video2x-qt6)
+  - [archlinuxcn/video2x-qt6-git](https://github.com/archlinuxcn/repo/tree/master/archlinuxcn/video2x-qt6-git)
+  - Other distros: `Video2X-x86_64.AppImage` on the [releases page](https://github.com/k4yt3x/video2x/releases/latest).
+  ## [\U0001F4E6 Container Image](https://docs.video2x.org/running/container.html)
+  Video2X [container images](https://github.com/k4yt3x/video2x/pkgs/container/video2x)
+  are available on the GitHub Container Registry for easy deployment on Linux and
+  macOS. If you already have Docker/Podman installed, only one command is needed to
+  start upscaling a video. For more information on how to use Video2X's Docker image,
+  please refer to the [documentation](https://docs.video2x.org/running/container.html).
+  ## [\U0001F4D4 Google Colab](https://colab.research.google.com/drive/1gWEwcA9y57EsxwOjmLNmNMXPsafw0kGo)
+  You can use Video2X on [Google Colab](https://colab.research.google.com/) **for
+  free** if you don't have a powerful GPU of your own. You can borrow a powerful GPU
+  (NVIDIA T4, L4, or A100) on Google's server for free for a maximum of 12 hours per
+  session. **Please use the free resource fairly** and do not create sessions back-to-back
+  and run upscaling 24/7. This might result in you getting banned. You can get [Colab
+  Pro/Pro+](https://colab.research.google.com/signup/pricing) if you'd like to use
+  better GPUs and get longer runtimes. Usage instructions are embedded in the [Colab
+  Notebook](https://colab.research.google.com/drive/1gWEwcA9y57EsxwOjmLNmNMXPsafw0kGo).
+  ## [\U0001F4AC Telegram Discussion Group](https://t.me/video2x) Join our Telegram
+  discussion group to ask any questions you have about Video2X, chat directly with
+  the developers, or discuss super resolution, frame interpo"
 ---
 {% raw %}
 <p align="center">

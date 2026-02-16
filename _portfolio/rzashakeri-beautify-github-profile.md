@@ -2,8 +2,71 @@
 layout: project
 name: Rzashakeri Beautify Github Profile
 slug: rzashakeri-beautify-github-profile
+category: Very important!!!!
 image: https://images.repography.com/logo.svg
 repo_url: https://github.com/username/username
+indexed_content: "--- # Hello friends \U0001F590️ How are you? If you want to make
+  the look of your github profile more beautiful, you have come to the right place.
+  # \U0001F4D6 Table of Contents - [\U0001F4CC The first step : Set up the GitHub
+  Repository](#-the-first-step--set-up-the-github-repository) - [\U0001F4A1 Where
+  do we get ideas ?](#-where-do-we-get-ideas-) - [\U0001F6A9 What do we do after seeing
+  these profiles ?](#-what-do-we-do-after-seeing-these-profiles-) - [\U0001F9E9 Badges
+  ](#-badges-) - [\U0001F6E0️ Widgets ](#%EF%B8%8F-widgets-) - [✅ Icons ](#-icons-)
+  - [⚙️ Profile Generator ](#%EF%B8%8F-profile-generator-) - [\U0001F609 Emojis ](#-emojis)
+  - [Give A Star ⭐](#give-a-star-) # \U0001F4CC The first step : Set up the GitHub
+  Repository Create a repository with your GitHub username \U0001F447 Template : \U0001F447
+  ``` https://github.com/username/username ``` Example : \U0001F447 ``` https://github.com/rzashakeri/rzashakeri
+  ``` ### After Create Repository, **Create a README.md** in Repository and Done ✅
+  Now that we have built the repository, we come to the interesting part: **designing
+  our README.md.** > Persian guide for first step \U0001F449 [Link \U0001F517](https://www.instagram.com/p/CQlxnAnHId0/)
+  # \U0001F4A1 Where do we get ideas ? You must have been asked which profiles to
+  get ideas from? You can see the profile of different people through the site below
+  the gateway profile and get ideas from them \U0001F447 ### [\U0001F517 Awesome Github
+  Profile ](https://zzetao.github.io/awesome-github-profile/) # \U0001F6A9 What do
+  we do after seeing these profiles ? Well, so far you have been able to find cool
+  ideas from the profiles of different people. Now it's time to use different tools
+  to beautify your github profile, which you can access from the list below. ## \U0001F9E9
+  Badges \U0001F447 Click to expand list ### 1 . [List of Badges, in Markdown](https://github.com/Naereen/badges)
+  A list of badges and cards, with their Markdown code, that can be included in a
+  README.md file for a GitHub \U0001F4CD For example : ### 2 . [Markdown badges in
+  many different categories ](https://github.com/Ileriayo/markdown-badges) Badges
+  for your personal developer branding, profile, and projects. \U0001F4CD For example
+  : ### 3 . [View Count Badge](https://github.com/dwyl/hits) A badge generator service
+  that counts views on your markdown file. \U0001F4CD For example : ### 4 . [shields](https://shields.io/)
+  Concise, consistent, and legible badges in SVG and raster format and Make tokens
+  with custom values \U0001F4CD For example : ### 5 . [laravel github profile view
+  counter](https://github.com/caneco/laravel-github-profile-view-counter) This package
+  will allows you to track Github profile views and display them in your profile readme,
+  for free. \U0001F4CD For example : ### 6 . [Stackoverflow Badge](https://github.com/claytonjhamilton/stackoverflow-badge)
+  Display your stats with this unique StackOverflow Badge \U0001F4CD For example :
+  ### 7 . [Badges for GitHub](https://github.com/Envoy-VC/Badges-for-GitHub) A Curated
+  list of Badges used in GitHub \U0001F4CD For example : ### 8 . [Badges 4 README.md
+  Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile) Improve your
+  README.md profile with these amazing badges. \U0001F4CD For example : ### 9 . [Github
+  Profile Views Counter](https://github.com/antonkomarev/github-profile-views-counter)
+  It counts how many times your GitHub profile has been viewed. Free cloud micro-service.
+  \U0001F4CD For example : ### 10 . [ColoredBadges](https://github.com/MikeCodesDotNET/ColoredBadges)
+  Some badges I created for my GitHub profile readme. \U0001F4CD For example : ###
+  11 . [AppVeyor](https://www.appveyor.com/docs/status-badges/) A Project status badge
+  is a dynamically generated image displaying the status of the last build. You can
+  put a status badge on the home page of your GitHub project or intranet portal: \U0001F4CD
+  For example : ### 12 . [For The Badge](https://github.com/BraveUX/for-the-badge)
+  Badges for badges' sake. \U0001F4CD For example : ### 13 . [Grunt Badge](https://gruntjs.com/built-with-grunt-badge)
+  Do you use Grunt in a project and want to proudly display that in your project README
+  or on your project website? Now you can with the \"Built with Grunt\" badge! \U0001F4CD
+  For example : ### 14 . [semaphoreci Status Badges](https://docs.semaphoreci.com/essentials/status-badges/)
+  Create a badge that displays your project's current build status. The build status
+  is determined by the status of the first pipeline in your newest workflow. You can
+  use this badge in your project's README file or any web page. \U0001F4CD For example
+  : ### 15 . [Aoc Badges Action](https://github.com/J0B10/aoc-badges-action) Github
+  Action to update the badges of your Readme to show your current Advent of Code stats
+  \U0001F4CD For example : ### 16 . [Github Badges](https://github.com/eugustavo/github-badges)
+  Application made to create badges for your readme \U0001F4D1 \U0001F4CD For example
+  : ### 17 . [Discord Md Badge](https://github.com/ashmonty/discord-md-badge) Add
+  to your GitHub readme a badge that shows your Discord username and presence! \U0001F4CD
+  For example : ### 18 . [simple badges](https://github.com/developStorm/simple-badges)
+  Awesome Simple Icons on your favorite Shields.io Badges. Try out on your profile
+  today! \U0001F4CD For example : "
 ---
 {% raw %}
 <img src="https://raw.githubusercontent.com/rzashakeri/beautifygithubprofile/master/cover-repo.jpg">

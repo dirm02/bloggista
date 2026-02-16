@@ -2,8 +2,68 @@
 layout: project
 name: Boxyhq Saas Starter Kit
 slug: boxyhq-saas-starter-kit
+category: Platform -eCommerce
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/boxyhq-saas-starter-kit/public/saas-starter-kit-poster.png
 repo_url: https://github.com/boxyhq/jackson
+indexed_content: "# ⭐ Enterprise SaaS Starter Kit The Open Source Next.js SaaS boilerplate
+  for Enterprise SaaS app development. Please star ⭐ the repo if you want us to continue
+  developing and improving the SaaS Starter Kit! \U0001F600 ## \U0001F4D6 Additional
+  Resources Video - [BoxyHQ's SaaS Starter Kit: Your Ultimate Enterprise-Compliant
+  Boilerplate](https://www.youtube.com/watch?v=oF8QIwQIhyo) Blog - [Enterprise-ready
+  Saas Starter Kit](https://boxyhq.com/blog/enterprise-ready-saas-starter-kit) Next.js-based
+  SaaS starter kit saves you months of development by starting you off with all the
+  features that are the same in every product, so you can focus on what makes your
+  app unique. ## \U0001F6E0️ Built With - [Next.js](https://nextjs.org) This is a
+  React framework that provides features such as server-side rendering and static
+  site generation. It's used for building the user interface of your application.
+  The main configuration for Next.js can be found in `next.config.js`. - [Tailwind
+  CSS](https://tailwindcss.com) This is a utility-first CSS framework for rapidly
+  building custom user interfaces. It's used for styling the application. The configuration
+  for Tailwind CSS can be found in `postcss.config.js`. - [Postgres](https://www.postgresql.org)
+  This is a powerful, open source object-relational database system. It's used for
+  storing application data. The connection to Postgres is likely managed through Prisma.
+  - [React](https://reactjs.org) This is a JavaScript library for building user interfaces.
+  It's used for creating the interactive elements of your application. The React components
+  are located in the components directory. - [Prisma](https://www.prisma.io) This
+  is an open-source database toolkit. It's used for object-relational mapping, which
+  simplifies the process of writing database queries. Prisma configuration and schema
+  can be found in the prisma directory. - [TypeScript](https://www.typescriptlang.org)
+  This is a typed superset of JavaScript that compiles to plain JavaScript. It's used
+  to make the code more robust and maintainable. TypeScript definitions and configurations
+  can be found in files like `next-env.d.ts` and `i18next.d.ts`. - [SAML Jackson](https://github.com/boxyhq/jackson)
+  (Provides SAML SSO, Directory Sync) This is a service for handling SAML SSO (Single
+  Sign-On). It's used to allow users to sign in with a single ID and password to any
+  of several related systems i.e (using a single set of credentials). The implementation
+  of SAML Jackson is primarily located within the files associated with authentication.
+  - [Svix](https://www.svix.com/) (Provides Webhook Orchestration) This is a service
+  for handling webhooks. It's used to emit events on user/team CRUD operations, which
+  can then be caught and handled by other parts of the application or external services.
+  The integration of Svix is distributed throughout the codebase, primarily in areas
+  where Create, Read, Update, and Delete (CRUD) operations are executed. - [Retraced](https://github.com/retracedhq/retraced)
+  (Provides Audit Logs Service) This is a service for audit logging and data visibility.
+  It helps track user activities within the application i.e (who did what and when
+  in the application). The usage of Retraced would be dispersed throughout the codebase,
+  likely in the files where important actions are performed. - [Stripe](https://stripe.com)
+  (Provides Payments) This is a service for handling payments. It's used to process
+  payments for the application. The integration of Stripe is likely found in the files
+  associated with billing and subscriptions. - [Playwright](https://playwright.dev)
+  (Provides E2E tests) This is a Node.js library for automating browsers. It's used
+  to run end-to-end tests on the application. The Playwright configuration and tests
+  can be found in the tests directory. - [Docker](https://www.docker.com) (Provides
+  Docker Compose) This is a platform for developing, shipping, and running applications.
+  It's used to containerize the application and its dependencies. The Docker configuration
+  can be found in the Dockerfile and docker-compose.yml. - [NextAuth.js](https://next-auth.js.org)
+  (Provides Authentication) This is a complete open-source authentication solution
+  for Next.js applications. It's used to handle user authentication and authorization.
+  The NextAuth.js configuration and providers can be found in the `pages/api/auth/[...nextauth].ts`
+  file. ## \U0001F680 Deployment ## ✨ Getting Started Please follow these simple steps
+  to get a local copy up and running. ### Prerequisites - Node.js (Version: >=18.x)
+  - PostgreSQL - NPM - Docker compose ### Development #### 1. Setup - [Fork](https://github.com/boxyhq/saas-starter-kit/fork)
+  the repository - Clone the repository by using this command: ```bash git clone https://github.com/
+  /saas-starter-kit.git ``` #### 2. Go to the project folder ```bash cd saas-starter-kit
+  ``` #### 3. Install dependencies ```bash npm install ``` #### 4. Set up your .env
+  file Duplicate `.env.example` to `.env`. ```bash cp .env.example .env ``` #### 5.
+  C"
 ---
 {% raw %}
 <picture>

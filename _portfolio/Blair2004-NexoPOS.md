@@ -2,8 +2,64 @@
 layout: project
 name: Blair2004 Nexopos
 slug: Blair2004-NexoPOS
+category: Very important!!!!
 image: https://poser.pugx.org/blair2004/nexopos/v
 repo_url: https://github.com/blair2004/NexoPOS
+indexed_content: '[](//packagist.org/packages/blair2004/nexopos) [](//packagist.org/packages/blair2004/nexopos)
+  [](//packagist.org/packages/blair2004/nexopos) [](//packagist.org/packages/blair2004/nexopos)
+  NexoPOS is a free point-of-sale system built using Laravel, TailwindCSS, Vue, and
+  other open-source resources. This POS System focuses on utilities and functionalities
+  to offer most businesses all the tools they need to manage their store more effectively.
+  NexoPOS includes a responsive and beautiful dashboard that ease the interaction
+  either on a smartphone, tablet, or desktop. Read Review On: [](https://laravel-news.com/nexopos-point-of-sale-for-laravel?utm_source=github.com&utm_medium=readme&utm_campagin=nexopos)
+  ## Demo Now you can create demo instances on [NexoPOS Cloud](https://cloud.nexopos.com).
+  [](https://cloud.digitalocean.com/apps/new?repo=https://github.com/blair2004/NexoPOS/tree/v5.0.x&refcode=ebdb80cb0ec7)
+  ## Documentation All the documentation for NexoPOS can be found on [My NexoPOS](https://my.nexopos.com/en/documentation).
+  That includes : - [Configuring the environment](https://my.nexopos.com/en/documentation/getting-started/configuring-the-environment)
+  - [Downloading NexoPOS](https://my.nexopos.com/en/documentation/getting-started/download-and-install)
+  - [Installing NexoPOS](https://my.nexopos.com/en/documentation/getting-started/installation-wizard)
+  - [Rest API](https://docs.api.nexopos.com) And for developers, there are more technical
+  tutorials that cover: - [Creating a module](https://my.nexopos.com/en/documentation/developpers-guides/how-to-create-a-module-for-nexopos-4-x)
+  - [Create a menu for a module](https://my.nexopos.com/en/documentation/developpers-guides/how-to-create-a-menu-on-nexopos-4-x)
+  - [Create a route](https://my.nexopos.com/en/documentation/developpers-guides/how-to-register-routes-for-modules)
+  We''ve also created a video tutorial that will help you perform those easily. [
+  ](https://www.youtube.com/watch?v=V80-hOJCywY) # Get More Using Modules NexoPOS
+  available on [CodeCanyon](https://codecanyon.net/item/nexopos-4x-pos-crm-inventory-manager/31188619)
+  gives access to the premium modules marketplace. While purchasing on CodeCanyon,
+  you get : - $40 In credit to [My NexoPOS](https://my.nexopos.com/en/marketplace)
+  balance. - Access to NexoPOS marketplace - Premium Support & Installation Service
+  - You''re eligible for customization ## Changelog & Feature Announcement We frequently
+  discuss the future of the app (while waiting, discussions are allowed). You can
+  join the WhatsApp [group where tips](https://chat.whatsapp.com/KHWgNmfcfJy7SwJiRQTmG8)
+  are shared on NexoPOS. ## Support Terms 1 - The support on NexoPOS only applies
+  to the information provided by the users while creating an issue. This means we
+  won''t either do the installation on your server or check an issue on your server.
+  You''re therefore invited not to post your server information while creating an
+  issue. We''ll use your explanations to reproduce your issue and therefore to solve
+  it. 2 - If you would like to have dedicated support. Consider registering as a member
+  to [My NexoPOS platform](https://my.nexopos.com/en/account/checkout/premium). ##
+  Troubleshooting Here we list the known issues and the way around them. Not everyone
+  is likely to face these issues, as it depends on the environment used. - CSRF error
+  After Installation Chances are when you make your installation, you''ll have your
+  website URL changed. Unfortunately, if the domain has to change, it must be clearly
+  described on the .env file. We''ve written a guide that explains how to solve the
+  [CSRF issue on NexoPOS](https://my.nexopos.com/en/documentation/troubleshooting/how-to-fix-csrf-token-mismatch-on-nexopos-4-x).
+  - Error After Database Details (using `php artisan serve`) If you''re serving the
+  project using `php artisan serve`, after setting up the database credentials and
+  having them validated, you might get stuck in an infinite loading page. This is
+  caused because during the database setup, the ".env" is updated which causes Laravel
+  to restart the development server and therefore invalidate your session. The way
+  around this is to refresh the page, and you''ll reach the application details section.
+  ## Contribution Guidelines Do you plan to contribute? That''s awesome. We don''t
+  have that many developers on it, so we''re open to any type of contributions. If
+  you''re a developer, you''ll start by forking the project and deploying that locally
+  for further tests. Refer to the package.json file to see the available commands
+  to build the project. **To install Node.js dependencies** ``` npm install ``` **To
+  Launch The Dev Mode (Watch)** ``` npx vite ``` **To Build The Project** ``` npx
+  vite build ``` ## Star History Thank you for all your support over the years :).
+  [](https://star-history.com/#blair2004/NexoPOS&Date) ## Screenshots The branch 4.7.x
+  introduces the "Dark Mode" which will make working continuously with NexoPOS easier
+  without hurting sight. ### Media Component The media com'
 ---
 {% raw %}
 [![Latest Stable Version](https://poser.pugx.org/blair2004/nexopos/v)](//packagist.org/packages/blair2004/nexopos) [![Total Downloads](https://poser.pugx.org/blair2004/nexopos/downloads)](//packagist.org/packages/blair2004/nexopos) [![Latest Unstable Version](https://poser.pugx.org/blair2004/nexopos/v/unstable)](//packagist.org/packages/blair2004/nexopos) [![License](https://poser.pugx.org/blair2004/nexopos/license)](//packagist.org/packages/blair2004/nexopos)

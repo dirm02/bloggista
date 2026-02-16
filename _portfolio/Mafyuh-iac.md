@@ -2,8 +2,52 @@
 layout: project
 name: Mafyuh Iac
 slug: Mafyuh-iac
+category: ServerTools-ProxMox-CICD
 image: https://github.com/Mafyuh/iac/actions/workflows/CD.yml/badge.svg
 repo_url: https://github.com/Mafyuh/iac
+indexed_content: "[](https://github.com/Mafyuh/iac/actions/workflows/CD.yml) [](https://github.com/Mafyuh/iac/actions/workflows/ansible-playbooks.yml)
+  [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp;
+  [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp;
+  [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp; [](https://kubernetes.io/)&nbsp;
+  [](https://kubernetes.io/)&nbsp; # iac (wip) This is my homelab infrastructure,
+  defined in code. --- | Hypervisor | OS | Tools | Networking | Misc. Automations
+  | | -----------------------------------------------------------------------------------------------
+  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------
+  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | [](https://www.proxmox.com) | [](https://www.talos.dev/) [](https://releases.ubuntu.com/noble/)
+  [](https://archlinux.org/) | [](https://www.docker.com/) [](https://k3s.io/) [](https://github.com/renovatebot/renovate)
+  [](https://opentofu.org/) [](https://www.packer.io/) [](https://www.ansible.com/)
+  [](https://fluxcd.io/) | [](https://www.ui.com/) | [](https://n8n.io/) [](https://github.com/features/actions)
+  | ## \U0001F4D6 **Overview** This repository contains the IaC ([Infrastructure as
+  Code](https://en.wikipedia.org/wiki/Infrastructure_as_code)) configuration for my
+  homelab. Most of my homelab runs on **Proxmox**, with VMs managed and maintained
+  using [OpenTofu](https://opentofu.org/). All VMs are cloned from templates I created
+  with [Packer](https://www.packer.io/). All services are **containerized**, either
+  managed with **Docker Compose** or **orchestrated with Kubernetes**. Over time,
+  I've been migrating everything to Kubernetes using **[GitOps](https://en.wikipedia.org/wiki/DevOps)
+  practices**, which is my long-term goal. To automate infrastructure updates, I use
+  **Github Actions**, which trigger workflows upon changes to this repo. This ensures
+  seamless deployment and maintenance across my homelab: - **[Flux](https://fluxcd.io/)**
+  manages Continuous Deployment (CD) for Kubernetes, deployed via [Flux Operator](https://fluxcd.control-plane.io/).
+  - **[Docker CD Workflow](https://github.com/Mafyuh/iac/blob/main/.github/workflows/CD.yml)**
+  handles Continuous Deployment for Docker services. - **[Renovate](https://github.com/renovatebot/renovate)**
+  keeps services updated by opening PRs for new versions. - **[Ansible](https://github.com/ansible/ansible)**
+  is used to execute playbooks on all of my VMs, automating management and configurations
+  ### \U0001F512 **Security & Networking** For Secret management I use [Bitwarden
+  Secrets](https://bitwarden.com/products/secrets-manager/) and their various [integrations](https://bitwarden.com/help/ansible-integration/)
+  into the tools used. > Kubernetes is using External Secrets implementation of BWS,
+  not official. BWS Access Key is SOPS encrypted. **[GitGuardian](https://www.gitguardian.com/)**
+  makes sure to alert me if I do accidentally push a secret Each container image is
+  automatically scanned by **[Trivy](https://trivy.dev/latest/)**, with detected vulnerabilities
+  published to **[Github Security](https://github.com/security)** I use **Oracle Cloud**
+  for their [Always-Free](https://www.oracle.com/cloud/free/) VM's and deploy Docker
+  services that require uptime here. [Twingate](https://www.twingate.com/) is used
+  to connect my home network to the various VPS's securely using [Zero Trust architecture](https://en.wikipedia.org/wiki/Zero_trust_architecture).
+  I use [**Cloudflare**](https://www.cloudflare.com/) for my DNS provider with [**Cloudflare
+  Tunnels**](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/)
+  to expose some of the services to the world. [**Cloudflare Access**](https://www.cloudfla"
 ---
 {% raw %}
 [![CD](https://github.com/Mafyuh/iac/actions/workflows/CD.yml/badge.svg)](https://github.com/Mafyuh/iac/actions/workflows/CD.yml)

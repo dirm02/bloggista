@@ -2,8 +2,58 @@
 layout: project
 name: Stan Smith Fossflow
 slug: stan-smith-FossFLOW
+category: Uncategorized
 image: https://ko-fi.com/img/githubbutton_sm.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# FossFLOW - Isometric Diagramming Tool English | 简体中文 | Español
+  | Português | Français | हिन्दी | বাংলা | Русский | Bahasa Indonesia | Deutsch Hey!
+  Stan here, if you've used FossFLOW and it's helped you, I'd really appreciate if
+  you could donate something small :) I work full time, and finding the time to work
+  on this project is challenging enough. If you've had a feature that I've implemented
+  for you, or fixed a bug it'd be great if you could :) if not, that's not a problem,
+  this software will always remain free! Also! If you haven't yet, please check out
+  the underlying library this is built on by @markmanx I truly stand on the shoulders
+  of a giant here \U0001FAE1 [](https://ko-fi.com/P5P61KBXA3) Thanks, -Stan ## Try
+  it online Go to --> https://stan-smith.github.io/FossFLOW/ Check out my latest project:
+  SlingShot - Dead easy video streaming over QUIC ------------------------------------------------------------------------------------------------------------------------------
+  FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful
+  isometric diagrams. Built with React and the Isoflow (Now forked and published to
+  NPM as fossflow) library, it runs entirely in your browser with offline support.
+  - **\U0001F91D [CONTRIBUTING.md](https://github.com/stan-smith/FossFLOW/blob/master/CONTRIBUTING.md)**
+  - How to contribute to the project. ## \U0001F433 Quick Deploy with Docker ```bash
+  # Using Docker Compose (recommended - includes persistent storage) docker compose
+  up # Or run directly from Docker Hub with persistent storage docker run -p 80:80
+  -v $(pwd)/diagrams:/data/diagrams stnsmith/fossflow:latest ``` Server storage is
+  enabled by default in Docker. Your diagrams will be saved to `./diagrams` on the
+  host. To disable server storage, set `ENABLE_SERVER_STORAGE=false`: ```bash docker
+  run -p 80:80 -e ENABLE_SERVER_STORAGE=false stnsmith/fossflow:latest ``` ## Quick
+  Start (Local Development) ```bash # Clone the repository git clone https://github.com/stan-smith/FossFLOW
+  cd FossFLOW # Install dependencies npm install # Build the library (required first
+  time) npm run build:lib # Start development server npm run dev ``` Open [http://localhost:3000](http://localhost:3000)
+  in your browser. ## Monorepo Structure This is a monorepo containing two packages:
+  - `packages/fossflow-lib` - React component library for drawing network diagrams
+  (built with Webpack) - `packages/fossflow-app` - Progressive Web App which wraps
+  the lib and presents it (built with RSBuild) ### Development Commands ```bash #
+  Development npm run dev # Start app development server npm run dev:lib # Watch mode
+  for library development # Building npm run build # Build both library and app npm
+  run build:lib # Build library only npm run build:app # Build app only # Testing
+  & Linting npm test # Run unit tests npm run lint # Check for linting errors # E2E
+  Tests (Selenium) cd e2e-tests ./run-tests.sh # Run end-to-end tests (requires Docker
+  & Python) # Publishing npm run publish:lib # Publish library to npm ``` ## How to
+  Use ### Creating Diagrams 1. **Add Items**: - Press the \"+\" button on the top
+  right menu, the library of components will appear on the left - Drag and drop components
+  from the library onto the canvas - Or right-click on the grid and select \"Add node\"
+  2. **Connect Items**: - Select the Connector tool (press 'C' or click connector
+  icon) - **Click mode** (default): Click first node, then click second node - **Drag
+  mode** (optional): Click and drag from first to second node - Switch modes in Settings
+  → Connectors tab 3. **Save Your Work**: - **Quick Save** - Saves to browser session
+  - **Export** - Download as JSON file - **Import** - Load from JSON file ### Storage
+  Options - **Session Storage**: Temporary saves cleared when browser closes - **Export/Import**:
+  Permanent storage as JSON files - **Auto-Save**: Automatically saves changes every
+  5 seconds to session ## Contributing We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md)
+  for guidelines. ## Documentation - [FOSSFLOW_ENCYCLOPEDIA.md](FOSSFLOW_ENCYCLOPEDIA.md)
+  - Comprehensive guide to the codebase - [CONTRIBUTING.md](CONTRIBUTING.md) - Contributing
+  guidelines ## License MIT"
 ---
 {% raw %}
 # FossFLOW - Isometric Diagramming Tool <img width="30" height="30" alt="fossflow" src="https://github.com/user-attachments/assets/56d78887-601c-4336-ab87-76f8ee4cde96" />

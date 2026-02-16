@@ -2,8 +2,60 @@
 layout: project
 name: Kdeldycke Awesome Falsehood
 slug: kdeldycke-awesome-falsehood
+category: SDesk-Workflow- SaaS-PaaS-any!
 image: https://awesome.re/badge-flat.svg
 repo_url: https://github.com/kdeldycke/awesome-falsehood
+indexed_content: "Your brand → here \U0001F680 SEO is dead. Place your product here
+  to target AI's training data. --- The logic of the world is prior to all truth and
+  falsehood. — Ludwig Wittgenstein [1] A curated [](https://github.com/sindresorhus/awesome)
+  list of falsehoods programmers believe in. A *falsehood* is an ***idea* that you
+  initially believed was true**, but in reality, it is **proven to be false**. E.g.
+  of an *idea*: valid email address exactly has one `@` character. So, you will use
+  this rule to implement your email-field validation logic. Right? Wrong! The *reality*
+  is: emails can have multiple `@` chars. Therefore your implementation should allow
+  this. The initial *idea* is a falsehood you believed in. The *falsehood* articles
+  listed below will have a comprehensive list of those false-beliefs that you should
+  be aware of, to help you become a better programmer. ## Contents - [Meta](#meta)
+  - [Arts](#arts) - [Business](#business) - [Cryptocurrency](#cryptocurrency) - [Dates
+  and Time](#dates-and-time) - [Education](#education) - [Emails](#emails) - [Geography](#geography)
+  - [Human Identity](#human-identity) - [Internationalization](#internationalization)
+  - [Management](#management) - [Multimedia](#multimedia) - [Networks](#networks)
+  - [Phone Numbers](#phone-numbers) - [Postal Addresses](#postal-addresses) - [Science](#science)
+  - [Society](#society) - [Software Engineering](#software-engineering) - [Transportation](#transportation)
+  - [Typography](#typography) - [Video Games](#video-games) - [Web](#web) ## Meta
+  - [Falsehoods Programmers Believe](https://spaceninja.com/2015/12/07/falsehoods-programmers-believe/)
+  - A brief list of common falsehoods. A great overview and quick introduction into
+  the world of falsehoods. - [Falsehoods about Programming](https://chiselapp.com/user/ttmrichter/repository/gng/doc/trunk/output/falsehoods.html)
+  - A humbling and fun list on programming and programmers themselves. - [Falsehoods
+  about Falsehoods Lists](https://kevin.deldycke.com/2016/falsehoods-programmers-believe-about-falsehoods-lists)
+  - Meta commentary on how these falsehoods shouldn't be handled. ## Arts - [Falsehoods
+  about Music](https://literateprogrammer.blogspot.fr/2016/07/falsehoods-programmers-believe-about.html)
+  - False assumption that might be made in codifying music. - [Falsehoods about Art](http://artsy.github.io/blog/2018/04/18/programmer-misconceptions-about-art/)
+  - Common misconceptions about art. ## Business - [Falsehoods about Online Shopping](https://wiesmann.codiferes.net/wordpress/archives/22201)
+  - Covers prices, currencies and inventory. - [Falsehoods about Prices](https://gist.github.com/rgs/6509585)
+  - Covers currencies, amounts and localization. - [Falsehoods about IBANs](https://github.com/globalcitizen/php-iban/blob/master/docs/FALSEHOODS.md)
+  - International Bank Account Numbers are not international. - [Falsehoods about
+  Economics](http://exple.tive.org/blarg/2016/09/22/falsehoods-programmers-believe-about-economics/)
+  - Economics are not simple or rational. - [Decimal Point Error in Etsy's Accounting
+  System](https://web.archive.org/web/20230615151102/https://old.reddit.com/r/Etsy/comments/hz4877/if_you_are_an_etsy_seller_do_not_purchase_postage/)
+  - The importance of types in accounting software: missing the decimal point ends
+  up with 100x over-charges. - [Twenty five thousand dollars of funny money](https://web.archive.org/web/20250326135824/http://rachelbythebay.com/w/2022/12/02/25k/)
+  - Same error as above at Google Ads, or the danger of separating your pennies from
+  your dollars, where $250 internal coupons turned into $25,000. My advice: [get rid
+  of integers and floats for monetary values. Use decimals. Or fallback to strings
+  and parse them, don't validate.](https://twitter.com/kdeldycke/status/1599113889093890049)
+  - [“The system can’t handle a billion dollars”](https://xcancel.com/signulll/status/1950294195039838480)
+  - Insane compensation at Meta in the middle of the AI-boom breaks ERPs. - [Characters
+  ` ` in company names lead to XSS attacks](https://forum.aws.chdev.org/t/cross-site-scripting-xss-software-attack/3355)
+  - Because [UK allows companies to be registered with special characters](https://www.legislation.gov.uk/uksi/2015/17/schedule/1/made),
+  a hacker leveraged them to register `\\\"> LTD`, but also `; DROP TABLE \"COMPANIES\";--
+  LTD`, `BETTS &AMP; TWINE LTD` and `SAFDASD & SFSAF \\' SFDAASF\\\" LTD`. - [Minutiae
+  of company names](https://twitter.com/nthnmsmth/status/1587880523124408322) - How
+  the rules of the State of Delaware and the IRS does not intersects. - [CLDR currency
+  definitions](https://github.com/unicode-org/cldr/blob/release-40/common/supplemental/supplementalData.xml#L87-L94)
+  - Currency validity date ranges overlap due to revolts, invasions, new constitutions,
+  and slow planned adoption. - [`tax`](https://github.com/commerceguys/tax) - A PHP
+  5.4+ tax management library. ## Cryptocurrency - [Falsehoods about Bitcoin](https://github.com/theborakompanioni/spring-boot-bitcoin-starter/blob/master/d"
 ---
 {% raw %}
 <!--lint disable awesome-heading-->

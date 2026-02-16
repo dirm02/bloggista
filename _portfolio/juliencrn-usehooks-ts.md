@@ -2,8 +2,60 @@
 layout: project
 name: Juliencrn Usehooks Ts
 slug: juliencrn-usehooks-ts
+category: Frontend Framework
 image: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
 repo_url: https://github.com/juliencrn/usehooks-ts
+indexed_content: "usehooks-ts React hook library, ready to use, written in Typescript.
+  [](code_of_conduct.md) [](https://github.com/juliencrn/usehooks-ts/blob/master/LICENSE)
+  [](#contributors-) npm i usehooks-ts Created by Julien Caron and maintained with
+  ❤️ by an amazing team of developers . ## \U0001F4AB Introduction useHooks(\U0001F525).ts
+  is a React hooks library, written in Typescript and easy to use. It provides a set
+  of hooks that enables you to build your React applications faster. The hooks are
+  built upon the principles of DRY (Don't Repeat Yourself). There are hooks for most
+  common use cases you might need. The library is designed to be as minimal as possible.
+  It is fully tree-shakable (using the ESM version), meaning that you only import
+  the hooks you need, and the rest will be removed from your bundle making the cost
+  of using this library negligible. Most hooks are extensively tested and are being
+  used in production environments. ### Usage example ```tsx import { useLocalStorage
+  } from 'usehooks-ts' function Component() { const [value, setValue] = useLocalStorage('my-localStorage-key',
+  0) // ... } ``` ## \U0001FA9D Available Hooks - [`useBoolean`](https://usehooks-ts.com/react-hook/use-boolean)
+  — handles boolean state with useful utility functions. - [`useClickAnyWhere`](https://usehooks-ts.com/react-hook/use-click-any-where)
+  — handles click events anywhere on the document. - [`useCopyToClipboard`](https://usehooks-ts.com/react-hook/use-copy-to-clipboard)
+  — copies text to the clipboard using the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
+  - [`useCountdown`](https://usehooks-ts.com/react-hook/use-countdown) — manages countdown.
+  - [`useCounter`](https://usehooks-ts.com/react-hook/use-counter) — manages a counter
+  with increment, decrement, reset, and setCount functionalities. - [`useDarkMode`](https://usehooks-ts.com/react-hook/use-dark-mode)
+  — returns the current state of the dark mode. - [`useDebounceCallback`](https://usehooks-ts.com/react-hook/use-debounce-callback)
+  — creates a debounced version of a callback function. - [`useDebounceValue`](https://usehooks-ts.com/react-hook/use-debounce-value)
+  — returns a debounced version of the provided value, along with a function to update
+  it. - [`useDocumentTitle`](https://usehooks-ts.com/react-hook/use-document-title)
+  — sets the document title. - [`useEventCallback`](https://usehooks-ts.com/react-hook/use-event-callback)
+  — creates a memoized event callback. - [`useEventListener`](https://usehooks-ts.com/react-hook/use-event-listener)
+  — attaches event listeners to DOM elements, the window, or media query lists. -
+  [`useHover`](https://usehooks-ts.com/react-hook/use-hover) — tracks whether a DOM
+  element is being hovered over. - [`useIntersectionObserver`](https://usehooks-ts.com/react-hook/use-intersection-observer)
+  — tracks the intersection of a DOM element with its containing element or the viewport
+  using the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+  - [`useInterval`](https://usehooks-ts.com/react-hook/use-interval) — creates an
+  interval that invokes a callback function at a specified delay using the [setInterval
+  API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval).
+  - [`useIsClient`](https://usehooks-ts.com/react-hook/use-is-client) — determines
+  if the code is running on the client side (in the browser). - [`useIsMounted`](https://usehooks-ts.com/react-hook/use-is-mounted)
+  — determines if the component is currently mounted. - [`useIsomorphicLayoutEffect`](https://usehooks-ts.com/react-hook/use-isomorphic-layout-effect)
+  — uses either useLayoutEffect or useEffect based on the environment (client-side
+  or server-side). - [`useLocalStorage`](https://usehooks-ts.com/react-hook/use-local-storage)
+  — uses the [localStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+  to persist state across page reloads. - [`useMap`](https://usehooks-ts.com/react-hook/use-map)
+  — manages a key-value [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+  state with setter actions. - [`useMediaQuery`](https://usehooks-ts.com/react-hook/use-media-query)
+  — tracks the state of a media query using the [Match Media API](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia).
+  - [`useOnClickOutside`](https://usehooks-ts.com/react-hook/use-on-click-outside)
+  — handles clicks outside a specified element. - [`useReadLocalStorage`](https://usehooks-ts.com/react-hook/use-read-local-storage)
+  — reads a value from [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage),
+  closely related to [useLocalStorage()](https://usehooks-ts.com/react-hook/use-local-storage).
+  - [`useResizeObserver`](https://usehooks-ts.com/react-hook/use-resize-observer)
+  — observes the size of an element using the [ResizeObserver API](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver).
+  - [`useScreen`](https://useho"
 ---
 {% raw %}
 <img src="https://github.com/juliencrn/usehooks-ts/blob/master/.github/screenshot.png" alt="usehooks-ts banner" align="center" />

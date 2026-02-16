@@ -2,8 +2,67 @@
 layout: project
 name: Vectifyai Pageindex
 slug: VectifyAI-PageIndex
+category: Future RAG ressources
 image: https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# PageIndex: Vectorless, Reasoning-based RAG Reasoning-based RAG&nbsp;
+  ◦ &nbsp;No Vector DB&nbsp; ◦ &nbsp;No Chunking&nbsp; ◦ &nbsp;Human-like Retrieval
+  \U0001F3E0 Homepage &nbsp; • &nbsp; \U0001F5A5️ Chat Platform &nbsp; • &nbsp; \U0001F50C
+  MCP &nbsp; • &nbsp; \U0001F4DA Docs &nbsp; • &nbsp; \U0001F4AC Discord &nbsp; •
+  &nbsp; ✉️ Contact &nbsp; \U0001F4E2 Latest Updates **\U0001F525 Releases:** - [**PageIndex
+  Chat**](https://chat.pageindex.ai): The first human-like document-analysis agent
+  [platform](https://chat.pageindex.ai) built for professional long documents. Can
+  also be integrated via [MCP](https://pageindex.ai/mcp) or [API](https://docs.pageindex.ai/quickstart)
+  (beta). **\U0001F4DD Articles:** - [**PageIndex Framework**](https://pageindex.ai/blog/pageindex-intro):
+  Introduces the PageIndex framework — an *agentic, in-context* *tree index* that
+  enables LLMs to perform *reasoning-based*, *human-like retrieval* over long documents,
+  without vector DB or chunking. **\U0001F9EA Cookbooks:** - [Vectorless RAG](https://docs.pageindex.ai/cookbook/vectorless-rag-pageindex):
+  A minimal, hands-on example of reasoning-based RAG using PageIndex. No vectors,
+  no chunking, and human-like retrieval. - [Vision-based Vectorless RAG](https://docs.pageindex.ai/cookbook/vision-rag-pageindex):
+  OCR-free, vision-only RAG with PageIndex's reasoning-native retrieval workflow that
+  works directly over PDF page images. --- # \U0001F4D1 Introduction to PageIndex
+  Are you frustrated with vector database retrieval accuracy for long professional
+  documents? Traditional vector-based RAG relies on semantic *similarity* rather than
+  true *relevance*. But **similarity ≠ relevance** — what we truly need in retrieval
+  is **relevance**, and that requires **reasoning**. When working with professional
+  documents that demand domain expertise and multi-step reasoning, similarity search
+  often falls short. Inspired by AlphaGo, we propose **[PageIndex](https://vectify.ai/pageindex)**
+  — a **vectorless**, **reasoning-based RAG** system that builds a **hierarchical
+  tree index** from long documents and uses LLMs to **reason** *over that index* for
+  **agentic, context-aware retrieval**. It simulates how *human experts* navigate
+  and extract knowledge from complex documents through *tree search*, enabling LLMs
+  to *think* and *reason* their way to the most relevant document sections. PageIndex
+  performs retrieval in two steps: 1. Generate a “Table-of-Contents” **tree structure
+  index** of documents 2. Perform reasoning-based retrieval through **tree search**
+  ### \U0001F3AF Core Features Compared to traditional vector-based RAG, **PageIndex**
+  features: - **No Vector DB**: Uses document structure and LLM reasoning for retrieval,
+  instead of vector similarity search. - **No Chunking**: Documents are organized
+  into natural sections, not artificial chunks. - **Human-like Retrieval**: Simulates
+  how human experts navigate and extract knowledge from complex documents. - **Better
+  Explainability and Traceability**: Retrieval is based on reasoning — traceable and
+  interpretable, with page and section references. No more opaque, approximate vector
+  search (“vibe retrieval”). PageIndex powers a reasoning-based RAG system that achieved
+  **state-of-the-art** [98.7% accuracy](https://github.com/VectifyAI/Mafin2.5-FinanceBench)
+  on FinanceBench, demonstrating superior performance over vector-based RAG solutions
+  in professional document analysis (see our [blog post](https://vectify.ai/blog/Mafin2.5)
+  for details). ### \U0001F4CD Explore PageIndex To learn more, please see a detailed
+  introduction of the [PageIndex framework](https://pageindex.ai/blog/pageindex-intro).
+  Check out this GitHub repo for open-source code, and the [cookbooks](https://docs.pageindex.ai/cookbook),
+  [tutorials](https://docs.pageindex.ai/tutorials), and [blog](https://pageindex.ai/blog)
+  for additional usage guides and examples. The PageIndex service is available as
+  a ChatGPT-style [chat platform](https://chat.pageindex.ai), or can be integrated
+  via [MCP](https://pageindex.ai/mcp) or [API](https://docs.pageindex.ai/quickstart).
+  ### \U0001F6E0️ Deployment Options - Self-host — run locally with this open-source
+  repo. - Cloud Service — try instantly with our [Chat Platform](https://chat.pageindex.ai/),
+  or integrate with [MCP](https://pageindex.ai/mcp) or [API](https://docs.pageindex.ai/quickstart).
+  - _Enterprise_ — private or on-prem deployment. [Contact us](https://ii2abc2jejf.typeform.com/to/tK3AXl8T)
+  or [book a demo](https://calendly.com/pageindex/meet) for more details. ### \U0001F9EA
+  Quick Hands-on - Try the [**Vectorless RAG**](https://github.com/VectifyAI/PageIndex/blob/main/cookbook/pageindex_RAG_simple.ipynb)
+  notebook — a *minimal*, hands-on example of reasoning-based RAG using PageIndex.
+  - Experiment with [*Vision-based Vectorless RAG*](https://github.com/VectifyAI/PageIndex/blob/main/cookbook/vision_RAG_pageindex.ipynb)
+  — no OCR; a minimal, reasoning-native RAG pipeline that works directly over page
+  images. &nbsp;&nbsp; --- # \U0001F332 PageIndex Tree Structure PageIndex can transform
+  lengthy PDF documents into a semantic **tree structure**, si"
 ---
 {% raw %}
 <div align="center">

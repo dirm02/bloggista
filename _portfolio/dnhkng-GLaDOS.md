@@ -2,8 +2,68 @@
 layout: project
 name: Dnhkng Glados
 slug: dnhkng-GLaDOS
+category: AI-automation-web2-3SmartC-Agent
 image: https://api.star-history.com/svg?repos=dnhkng/GlaDOS&type=Date
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# GLaDOS Personality Core ## Prologue > *\"Science isn't about asking
+  why. It's about asking, 'Why not?'\" - Cave Johnson* GLaDOS is the AI antagonist
+  from Valve's Portal series—a sardonic, passive-aggressive superintelligence who
+  views humans as test subjects worthy of both study and mockery. Back in 2022 when
+  ChatGPT made its debut, I had a realization: we are living in the Sci-Fi future
+  and can actually build her now. A demented, obsessive AI fixated on humanity, super
+  intelligent yet utterly lacking sound judgment; so just like an LLM, right? 2026,
+  and still no moon colonies or flying cars. But a passive-aggressive AI that controls
+  your lights and runs experiments on you? That we can do. The architecture borrows
+  from Minsky's Society of Mind—rather than one monolithic prompt, multiple specialized
+  agents (vision, memory, personality, planning) each contribute to a dynamic context.
+  GLaDOS's \"self\" emerges from their combined output, assembled fresh for each interaction.
+  The hard part was latency. Getting round-trip response time under 600 milliseconds
+  is a threshold—below it, conversation stops feeling stilted and starts to flow.
+  That meant training a custom TTS model and ruthlessly cutting milliseconds from
+  every part of the pipeline. Since 2023 I've refactored the system multiple times
+  as better models came out. The current version finally adds what I always wanted:
+  vision, memory, and tool use via MCP. She sees through a camera, hears through a
+  microphone, speaks through a speaker, and judges you accordingly. [Join our Discord!](https://discord.com/invite/ERTDKwpjNB)
+  | [Sponsor the project](https://ko-fi.com/dnhkng) https://github.com/user-attachments/assets/c22049e4-7fba-4e84-8667-2c6657a656a0
+  ## Vision > *\"We've both said a lot of things that you're going to regret\" - GLaDOS*
+  Most voice assistants wait for wake words. GLaDOS doesn't wait—she observes, thinks,
+  and speaks when she has something to say. All the while, parts of her minds are
+  tracking what she sees, monitoring system stats, and researching new neurotoxin
+  recipes online. **Goals:** - **Proactive behavior**: React to events (vision, sound,
+  time) without being prompted - **Emotional state**: PAD model (Pleasure-Arousal-Dominance)
+  for reactive mood - **Persistent personality**: HEXACO traits provide stable character
+  across sessions - **Multi-agent architecture**: Subagents handle research, memory,
+  emotions; main agent stays focused - **Real-time conversation**: Optimized latency,
+  natural interruption handling ## What's New - **Emotions**: PAD model for reactive
+  mood + HEXACO traits for persistent personality - **Long-term Memory**: Facts, preferences,
+  and conversation summaries persist across sessions - **Observer Agent**: Constitutional
+  AI monitors behavior and self-adjusts within bounds - **Vision**: FastVLM gives
+  her eyes. [Details](/docs/vision.md) | [Demo](https://www.youtube.com/watch?v=JDd9Rc4toEo)
+  - **Autonomy**: She watches, waits, and speaks when she has something to say. [Details](/docs/autonomy.md)
+  - **MCP Tools**: Extensible tool system for home automation, system info, etc. [Details](/docs/mcp.md)
+  - **8GB SBC**: Runs on a Rock5b with RK3588 NPU. [Branch](https://github.com/dnhkng/RKLLM-Gradio)
+  ## Roadmap > *\"Federal regulations require me to warn you that this next test chamber...
+  is looking pretty good.” - GLaDOS* There's still a lot do do; I will be swapping
+  out models are they are released, and then working on anamatronics, once a good
+  model with inverse kinematics comes out. There was a time when I would code that
+  myself; these days it makes more sense to wait until a trained model is released!
+  - [x] Train GLaDOS voice - [x] Personality that actually sounds like her - [x] Vision
+  via VLM - [x] Autonomy (proactive behavior) - [x] MCP tool system - [x] Emotional
+  state (PAD + HEXACO model) - [x] Long-term memory - [ ] Implement streaming ASR
+  (nvidia/multitalker-parakeet-streaming-0.6b-v1) - [ ] Observer agent (behavior adjustment)
+  - [ ] 3D-printable enclosure - [ ] Animatronics ## Architecture > *\"Let's be honest.
+  Neither one of us knows what that thing does. Just put it in the corner and I'll
+  deal with it later.\" - GLaDOS* ```mermaid flowchart TB subgraph Input mic[\U0001F3A4
+  Microphone] --> vad[VAD] --> asr[ASR] text[⌨️ Text Input] tick[⏱️ Timer] cam[\U0001F4F7
+  Camera]--> vlm[VLM] end subgraph Minds[\"Subagents\"] sensors[Sensors] weather[Weather]
+  emotion[Emotion] news[News] memory[Memory] end ctx[\U0001F4CB Context] subgraph
+  Core[\"Main Agent\"] llm[\U0001F9E0 LLM] tts[TTS] end subgraph Output speaker[\U0001F50A
+  Speaker] logs[Logs] images[\U0001F5BC️ Images] motors[⚙️ Animatronics] end asr -->|priority|
+  llm text -->|priority| llm vlm --> ctx tick -->|autonomy| llm Minds -->|write| ctx
+  ctx -->|read| llm llm --> tts --> speaker llm --> logs llm |MCP| tools[Tools] tools
+  --> images tools --> motors ``` GLaDOS runs a loop: each tick she reads her slots
+  (weather, news, vision, mood), decides if she has something to say, and speaks.
+  No wake word—if she has an opinion, you'll hear it. **Two l"
 ---
 {% raw %}
 <a href="https://trendshift.io/repositories/9828" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9828" alt="dnhkng%2FGlaDOS | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>

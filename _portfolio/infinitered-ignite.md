@@ -2,8 +2,66 @@
 layout: project
 name: Infinitered Ignite
 slug: infinitered-ignite
+category: Very important!!!!
 image: https://img.shields.io/github/stars/infinitered/ignite
 repo_url: https://github.com/infinitered/ignite
+indexed_content: "# Ignite - the battle-tested React Native boilerplate [](https://dl.circleci.com/status-badge/redirect/gh/infinitered/ignite/tree/master)
+  ## Proven React Native boilerplate Developed and maintained consistently since 2016,
+  Ignite is the oldest active and most popular third-party React Native / Expo app
+  boilerplate. This is the React Native starting point that the [Infinite Red](https://infinite.red/react-native-app-development-company)
+  team uses on a day-to-day basis to build client apps. Developers who use Ignite
+  report that it saves them two to four weeks of time on average off the beginning
+  of their React Native project! ## Intro Videos Here are a few videos / talks that
+  introduce Ignite and show off some of its features. Check them out! Getting Started
+  with Ignite Ignite talk at Chain React 2024 - Robin Heinze ## [Full Documentation](https://github.com/infinitered/ignite/blob/master/docs/README.md)
+  We've put great effort into the documentation as a team, please [read through it
+  here](https://github.com/infinitered/ignite/blob/master/docs). If you're unsure
+  why a certain decision was made related to this boilerplate or how to proceed with
+  a particular feature, it's likely documented. If it still isn't clear, go through
+  the proper [help channels](#reporting-bugs--getting-help) and we always welcome
+  PRs to improve the docs! ## Tech Stack Nothing makes it into Ignite unless it's
+  been proven on projects that Infinite Red works on. Ignite apps include the following
+  rock-solid technical decisions out of the box: | Library | Category | Version |
+  Description | | -------------------------------- | -------------------- | -------
+  | ---------------------------------------------- | | React Native | Mobile Framework
+  | v0.81 | The best cross-platform mobile framework | | React | UI Framework | v19
+  | The most popular UI framework in the world | | TypeScript | Language | v5 | Static
+  typechecking | | React Navigation | Navigation | v7 | Performant and consistent
+  navigation framework | | Expo | SDK | v54 | Allows (optional) Expo modules | | Expo
+  Font | Custom Fonts | v14 | Import custom fonts | | Expo Localization | Internationalization
+  | v17 | i18n support (including RTL!) | | RN Reanimated | Animations | v4 | Beautiful
+  and performant animations | | MMKV | Persistence | v3 | State persistence | | apisauce
+  | REST client | v3 | Communicate with back-end | | Jest | Test Runner | v29 | Standard
+  test runner for JS apps | | date-fns | Date library | v4 | Excellent date library
+  | | react-native-keyboard-controller | Keyboard library | v1 | Great keyboard manager
+  library | | react-native-edge-to-edge | UI library | v1 | Enables edge-to-edge in
+  Android | | Reactotron RN | Inspector/Debugger | v5 | JS debugging | | Maestro |
+  Testing Framework | | Automate end-to-end UI testing | | Hermes | JS engine | |
+  Fine-tuned JS engine for RN | Ignite also comes with a [component library](./docs/boilerplate/app/components/Components.md)
+  that is tuned for custom designs, theming support, testing, custom fonts, generators,
+  and much, much more. ## Quick Start Prerequisites: - You'll need at least a recent
+  version of [Node](https://nodejs.org/en) to run the CLI - For compiling/running
+  in a simulator, make sure you're set up for React Native by following [the official
+  documentation](https://reactnative.dev/docs/environment-setup). The Ignite CLI will
+  walk you through the steps to ignite a new React Native app: ```bash # Get walked
+  through the prompts for the different options to start your new app npx ignite-cli@latest
+  new PizzaApp # Accept all the recommended defaults and get straight to coding! npx
+  ignite-cli@latest new PizzaApp --yes ``` Once you're up and running, check out our
+  [Getting Started Guide](https://docs.infinite.red/ignite-cli/Guide/). If you'd like
+  to follow a tutorial, check out [this one from Robin Heinze](https://shift.infinite.red/creating-a-trivia-app-with-ignite-bowser-part-1-1987cc6e93a1).
+  ### Troubleshooting The above commands may fail with various errors, depending on
+  your operating system and dependency versions. Some troubleshooting steps to follow:
+  - Uninstall global versions of the Ignite CLI via `npm uninstall -g ignite-cli`
+  and use the CLI via `npx ignite-cli` - Make sure you are using a reasonably recent
+  version of Node. This can be checked via the `node --version` command. If you require
+  multiple Node versions on your system, install `nvm`, and then run `nvm install
+  --lts`. At the time of writing, Node LTS is v20.x.x. - If the installation fails
+  because of an Xcode error (missing Xcode command line tools), the easiest way to
+  install them is to run `sudo xcode-select --install` in your terminal. - If Xcode
+  and command line tools are already installed, but the installation complains about
+  missing patch dependencies, you may need to switch the Xcode location to something
+  else: `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` - Opening
+  the project in Xcode can give you other insights into what's happeni"
 ---
 {% raw %}
 <p align="center"><img src="https://user-images.githubusercontent.com/1479215/206780298-2b98221d-9c57-4cd3-866a-cf85ec1ddd9e.jpg" alt="Ignite README Splash Image" /></p>

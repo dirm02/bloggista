@@ -2,8 +2,33 @@
 layout: project
 name: Hackunderway Searchphone
 slug: HackUnderway-SearchPhone
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/badge/Join%20Our%20Fanpage-Hack%20Underway-1.svg
 repo_url: https://github.com/HackUnderway/SearchPhone
+indexed_content: "# SearchPhone \U0001D412\U0001D41E\U0001D41A\U0001D42B\U0001D41C\U0001D421
+  \U0001D40F\U0001D421\U0001D428\U0001D427\U0001D41E is a tool for looking up linked
+  phone number information, which uses the Phone Number Analyzer API from the RAPIDAPI
+  website, developed for use with Python from the terminal. \U0001F441 [](https://www.facebook.com/HackUnderway/)
+  # \U0001F511 API Key Get your API key. Name | Key | | ------------------- |--------------
+  | | [Phone Number Analyzer](https://rapidapi.com/bpt22/api/phone-number-analyzer)
+  |  \U0001F511 (Necessary) | - Select the free plan. When they get their Phone Number
+  Analyzer API, you can add it to the **.env** file Replacing \"Your_Api_Key\" with
+  your actual RapidAPI key and save the changes. # Example > **The project is open
+  to partners.** # SUPPORTED DISTRIBUTIONS |Distribution | Version Check | supported
+  | status | ----------|-------|------|-------| |Kali Linux| 2024.3| yes| working
+  | |Parrot Security OS| 6.0| yes | working | |Windows| 11 | yes | working | |BackBox|
+  8.1 | yes | working | |Arch Linux| 2024.06.01 | yes | working | # USAGE ``` git
+  clone https://github.com/HackUnderway/SearchPhone.git ``` ``` cd SearchPhone ```
+  ``` python3 search_phone.py ``` # REQUIREMENTS ``` pip install -r requirements.txt
+  ``` # SUPPORT Questions, bugs or suggestions to : info@hackunderway.com # LICENSE
+  - [x] SearchPhone is licensed. - [x] See [LICENSE](https://github.com/HackUnderway/SearchPhone#MIT-1-ov-file)
+  for more information. We need partners and sponsors, if you're interested in support
+  or help contact. # SECURITY RESEARCHER * Victor Bancayan - [@VictorBancayan](https://twitter.com/VictorBancayan)
+  - (**CEO at [Hack Underway](https://www.instagram.com/hackunderway/)**) ## \U0001F517
+  LINKS [](https://www.patreon.com/c/HackUnderway) ``` Fanpage: https://www.facebook.com/HackUnderway
+  X: https://twitter.com/JeyZetaOficial Web site: https://hackunderway.com Youtube:
+  https://www.youtube.com/@JeyZetaOficial ``` [](https://www.facebook.com/HackUnderway/)
+  from made in with by: Victor Bancayan , if you want Donate © 2024"
 ---
 {% raw %}
 # SearchPhone

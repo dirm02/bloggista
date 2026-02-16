@@ -2,8 +2,65 @@
 layout: project
 name: Raspap Raspap Webgui
 slug: RaspAP-raspap-webgui
+category: EE-kicad-3D-Robotic
 image: https://i.imgur.com/aNAG3Wa.jpeg
 repo_url: https://github.com/raspap/raspap-webgui
+indexed_content: "[](https://github.com/raspap/raspap-webgui/releases) [](https://github.com/thibmaek/awesome-raspberry-pi)
+  [](https://github.com/sponsors/RaspAP) [](https://app.travis-ci.com/RaspAP/raspap-webgui)
+  [](https://crowdin.com/project/raspap) [](https://twitter.com/rasp_ap) [](https://reddit.com/r/RaspAP)
+  [](https://discord.gg/KVAsaAR) RaspAP is feature-rich wireless router software that
+  _just works_ on many popular [Debian-based devices](#supported-operating-systems),
+  including the Raspberry Pi. Our [custom OS images](#pre-built-image), [Quick installer](#quick-installer)
+  and [Docker container](#docker-support) create a known-good default configuration
+  for all current Raspberry Pis with onboard wireless. A fully responsive, mobile-ready
+  interface gives you control over the relevant services and networking options. Advanced
+  DHCP settings, [WireGuard](https://docs.raspap.com/wireguard/), [Tailscale](https://docs.raspap.com/tailscale/)
+  and [OpenVPN](https://docs.raspap.com/openvpn/) support, [SSL certificates](https://docs.raspap.com/ssl/),
+  [ad blocking](#ad-blocking), security audits, [captive portal integration](https://docs.raspap.com/captive/),
+  themes and [multilingual options](https://docs.raspap.com/translations/) are included.
+  RaspAP has been featured by [PC World](https://www.pcwelt.de/article/1789512/raspberry-pi-als-wlan-router.html),
+  [MSN](https://www.msn.com/en-us/news/technology/4-reasons-i-installed-raspap-on-my-raspberry-pi/ar-AA1GLHdE),
+  [Adafruit](https://blog.adafruit.com/2016/06/24/raspap-wifi-configuration-portal-piday-raspberrypi-raspberry_pi/),
+  [Raspberry Pi Weekly](https://www.raspberrypi.org/weekly/commander/), and [Awesome
+  Raspberry Pi](https://project-awesome.org/thibmaek/awesome-raspberry-pi) and implemented
+  in [countless projects](https://github.com/RaspAP/raspap-awesome#projects). We hope
+  you enjoy using RaspAP as much as we do creating it. Tell us how you use this with
+  [your own projects](https://github.com/raspap/raspap-awesome). ## Contents - [Quick
+  start](#quick-start) - [Join Insiders](#join-insiders) - [WireGuard support](#wireguard-support)
+  - [OpenVPN support](#openvpn-support) - [VPN Provider support](#vpn-provider-support)
+  - [Ad Blocking](#ad-blocking) - [Bridged AP](#bridged-ap) - [Manual installation](#manual-installation)
+  - [802.11ac 5GHz support](#80211ac-5ghz-support) - [Supported operating systems](#supported-operating-systems)
+  - [HTTPS support](#https-support) - [Docker support](#docker-support) - [Custom
+  user plugins](#custom-user-plugins) - [Multilingual support](#multilingual-support)
+  - [How to contribute](#how-to-contribute) - [Reporting issues](#reporting-issues)
+  - [License](#license) ## Quick start RaspAP gives you two different ways to get
+  up and running quickly. The simplest and recommended approach is to use a custom
+  Raspberry Pi OS image with RaspAP preinstalled. This option eliminates guesswork
+  and gives you a base upon which to build. Alternatively, you may execute the Quick
+  installer on an existing [compatible OS](https://docs.raspap.com/#compatible-operating-systems).
+  ### Pre-built image Custom Raspberry Pi OS Lite images with the latest RaspAP are
+  available for [direct download](https://github.com/RaspAP/raspap-webgui/releases/latest).
+  This includes both 32- and 64-bit builds for ARM architectures. | Operating system
+  | Debian version | Kernel version | RaspAP version | Size | | ------------ | --------------
+  | -------------- | -------------- | ---- | | Raspberry Pi OS (64-bit) Lite | 13
+  (trixie) | 6.12 | Latest | 826 MB | | Raspberry Pi OS (32-bit) Lite | 13 (trixie)
+  | 6.12 | Latest | 799 MB | These images are automatically generated with each release
+  of RaspAP. You may choose between an `arm64` or `armhf` (32-bit) based build. Refer
+  to [this resource](https://www.raspberrypi.com/software/operating-systems/) to ensure
+  compatibility with your hardware. After downloading your desired image from the
+  [latest release page](https://github.com/RaspAP/raspap-webgui/releases/latest),
+  use a utility such as the Raspberry Pi Imager or [balenaEtcher](https://www.balena.io/etcher)
+  to flash the OS image onto a microSD card. Insert the card into your device and
+  boot it up. The latest RaspAP release version with the most popular optional components
+  will be active and ready for you to configure. ### Quick installer Alternatively,
+  start with a clean install of a [latest release of Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/).
+  Both the 32- and 64-bit release versions are supported, as well as the latest 64-bit
+  Desktop distribution. Update RPi OS to its latest version, including the kernel
+  and firmware, followed by a reboot: ``` sudo apt-get update sudo apt-get full-upgrade
+  sudo reboot ``` Set the WiFi country in raspi-config's **Localisation Options**:
+  `sudo raspi-config`. Install RaspAP from your device's shell prompt: ```sh curl
+  -sL https://install.raspap.com | bash ``` The Quick installer will respond to several
+  [command line arguments](https://doc"
 ---
 {% raw %}
 ![RaspAP Hero](https://i.imgur.com/aNAG3Wa.jpeg)

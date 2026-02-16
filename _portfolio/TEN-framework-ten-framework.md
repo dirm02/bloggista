@@ -2,8 +2,64 @@
 layout: project
 name: Ten Framework Ten Framework
 slug: TEN-framework-ten-framework
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/TEN-framework/ten-framework
+indexed_content: "![Image][ten-framework-banner] [![TEN Releases][ten-releases-badge]][ten-releases]
+  [![Coverage Status][coverage-badge]][coverage] [![Release Date][release-date-badge]][ten-releases]
+  [![Commits][commits-badge]][commit-activity] [![Issues closed][issues-closed-badge]][issues-closed]
+  [![Contributors][contributors-badge]][contributors] [![GitHub license][license-badge]][license]
+  [![Ask DeepWiki][deepwiki-badge]][deepwiki] [![ReadmeX][readmex-badge]][readmex]
+  [![README in English][lang-en-badge]][lang-en-readme] [![简体中文操作指南][lang-zh-badge]][lang-zh-readme]
+  [![日本語のREADME][lang-jp-badge]][lang-jp-readme] [![README in 한국어][lang-kr-badge]][lang-kr-readme]
+  [![README en Español][lang-es-badge]][lang-es-readme] [![README en Français][lang-fr-badge]][lang-fr-readme]
+  [![README in Italiano][lang-it-badge]][lang-it-readme] [![TEN-framework%2Ften_framework
+  | Trendshift][trendshift-badge]][trendshift] [Official Site][official-site] • [Documentation][documentation]
+  • [Blog][blog] Table of Contents - [Welcome to TEN][welcome-to-ten] - [Agent Examples][agent-examples-section]
+  - [Quick Start with Agent Examples][quick-start] - [Localhost][localhost-section]
+  - [Codespaces][codespaces-section] - [Agent Examples Self-Hosting][agent-examples-self-hosting]
+  - [Deploying with Docker][deploying-with-docker] - [Deploying with other cloud services][deploying-with-other-cloud-services]
+  - [Stay Tuned][stay-tuned] - [TEN Ecosystem][ten-ecosystem-anchor] - [Questions][questions]
+  - [Contributing][contributing] - [Code Contributors][code-contributors] - [Contribution
+  Guidelines][contribution-guidelines] - [License][license-section] ## Welcome to
+  TEN TEN is an open-source framework for real-time multimodal conversational AI.
+  [TEN Ecosystem][ten-ecosystem-anchor] includes [TEN Framework][ten-framework], [Agent
+  Examples][agent-examples-repo], [VAD][ten-vad], [Turn Detection][ten-turn-detection]
+  and [Portal][ten-portal]. | Community Channel | Purpose | | ---------------- | -------
+  | | [![Follow on X][follow-on-x-badge]][follow-on-x] | Follow TEN Framework on X
+  for updates and announcements | | [![Discord TEN Community][discord-badge]][discord-invite]
+  | Join our Discord community to connect with developers | | [![Follow on LinkedIn][linkedin-badge]][linkedin]
+  | Follow TEN Framework on LinkedIn for updates and announcements | | [![Hugging
+  Face Space][hugging-face-badge]][hugging-face] | Join our Hugging Face community
+  to explore our spaces and models | | [![WeChat][wechat-badge]][wechat-discussion]
+  | Join our WeChat group for Chinese community discussions | ## Agent Examples ![Image][voice-assistant-image]
+  Multi-Purpose Voice Assistant — This low-latency, high-quality real-time assistant
+  supports both RTC and [WebSocket][websocket-example] connections, and you can extend
+  it with [Memory][memory-example], [VAD][voice-assistant-vad-example], [Turn Detection][voice-assistant-turn-detection-example],
+  and other extensions. See the [Example code][voice-assistant-example] for more details.
+  ![divider][divider-light] ![divider][divider-dark] ![Image][doodler-image] Doodler
+  — A doodle board that turns spoken or typed prompts into simple hand-drawn sketches,
+  complete with a crayon palette and real-time drawing. [Example code][doodler-example]
+  ![divider][divider-light] ![divider][divider-dark] ![Image][speaker-diarization-image]
+  Speaker Diarization — Real-time diarization that detects and labels speakers, the
+  Who Likes What game shows an interactive use case. [Example code][speechmatics-diarization-example]
+  ![divider][divider-light] ![divider][divider-dark] ![Image][lip-sync-image] Lip
+  Sync Avatars — Works with multiple avatar vendors, the main character features Kei,
+  an anime character with MotionSync-powered lip sync, and also supports realistic
+  avatars from Trulience, HeyGen, and Tavus. See the [Example code][voice-assistant-live2d-example]
+  for different Live2D characters. ![divider][divider-light] ![divider][divider-dark]
+  ![Image][sip-call-image] SIP Call — SIP extension that enables phone calls powered
+  by TEN. [Example code][voice-assistant-sip-example] ![divider][divider-light] ![divider][divider-dark]
+  ![Image][transcription-image] Transcription — A transcription tool that transcribes
+  audio to text. [Example code][transcription-example] ![divider][divider-light] ![divider][divider-dark]
+  ![Image][esp32-image] ESP32-S3 Korvo V3 — Runs TEN agent example on the Espressif
+  ESP32-S3 Korvo V3 development board to integrate LLM-powered communication with
+  hardware. See the [integration guide][esp32-guide] for more details. [![][back-to-top]][readme-top]
+  ## Quick Start with Agent Examples ### Localhost #### Step ⓵ - Prerequisites | Category
+  | Requirements | | --- | --- | | **Keys** | • Agora [App ID][agora-app-id] and [App
+  Certificate][agora-app-certificate] • [OpenAI][openai-api] API key • [Deepgram][deepgram]
+  ASR • [ElevenLabs][elevenlabs] TTS | | **Installation** | • [Docker][docker] / [Docker
+  Compose][docker-compose] • [Node.js (LTS) v18][nodejs] | | **Minimum Sy"
 ---
 {% raw %}
 <div align="center" id="readme-top">

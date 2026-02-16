@@ -2,8 +2,28 @@
 layout: project
 name: 0xdsm Pinkerton
 slug: 0xdsm-Pinkerton
+category: GreyHate-Cyber&Security
 image: https://i.imgur.com/qQXb2ha.png
 repo_url: https://github.com/000pp/pinkerton.git`
+indexed_content: "# \U0001F575️ Pinkerton > Investigating JavaScript files since 1850
+  ___ Python project to crawl for JavaScript files and search for secrets like API
+  keys, authorization tokens, hardcoded passwords, or related data. ## ⚡ Getting started
+  A quick guide on how to install and use Pinkerton. 1. Clone the repository with:
+  `git clone https://github.com/000pp/pinkerton.git` 2. Install the libraries with:
+  `pip3 install -r requirements.txt --break-system-packages` 3. Run Pinkerton with:
+  `python3 main.py -u https://example.com` ### \U0001F433 Docker If you want to use
+  pinkerton in a Docker container, follow this procedure: ``` 1. Clone the repository
+  - git clone https://github.com/000pp/pinkerton.git 2. Build the image - sudo docker
+  build -t pinkerton:latest . 3. Run container - sudo docker run pinkerton:latest
+  ``` ### ⚫ BlackArch ``` pacman -Syu pinkerton ``` ## \U0001F528 Contributing A quick
+  guide on how to contribute to the project. 1. Create a fork of the Pinkerton repository
+  2. Clone the repository with `git clone https://github.com/your/pinkerton.git` 3.
+  Type `cd pinkerton/` 4. Create a branch and make your changes 5. Commit and perform
+  a git push 6. Open a pull request ## \U0001F64F Credits - [m4ll0k (SecretFinder
+  creator)](https://github.com/m4ll0k) for the regex patterns - [h33lit (Jubaer Alnazi)](https://github.com/h33tlit)
+  for the regex patterns - [zricethezav (GitLeaks creator)](https://github.com/zricethezav/gitleaks)
+  for the regex patterns ## ⚠️ Warning - The developer is not responsible for any
+  malicious use of this tool."
 ---
 {% raw %}
 # 🕵️ Pinkerton

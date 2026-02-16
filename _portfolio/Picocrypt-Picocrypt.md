@@ -2,8 +2,69 @@
 layout: project
 name: Picocrypt Picocrypt
 slug: Picocrypt-Picocrypt
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Picocrypt-Picocrypt/images/logo.svg
 repo_url: https://github.com/Picocrypt/Picocrypt
+indexed_content: "\U0001F341 **Proudly made in Canada.** \U0001F341 Picocrypt is a
+  very small (hence Pico ), very simple, yet very secure encryption tool that you
+  can use to protect your files. It's designed to be the go-to tool for file encryption,
+  with a focus on security, simplicity, and reliability. Picocrypt uses the secure
+  XChaCha20 cipher and the Argon2id key derivation function to provide a high level
+  of security. # ❄️ Project archived ❄️ Picocrypt has been permanently archived and
+  frozen into a read-only state. Read the [reason](https://github.com/Picocrypt/Picocrypt/issues/134)
+  why. ***Please read it carefully and fully**; it's not the format you might expect.*
+  **Picocrypt is still fully functional, stable, and secure as is. You can continue
+  using it confidently.** Archiving Picocrypt doesn't mean there's anything wrong
+  with it, just that I'm done working on it. A community-developed successor to Picocrypt
+  is available and called [Picocrypt NG](https://github.com/Picocrypt-NG). ⚠️ **I
+  do not endorse, develop, nor support Picocrypt NG; use it at your own risk.** ⚠️
+  Picocrypt NG is not subject to the same rigorous testing and design I applied to
+  Picocrypt. # Downloads ℹ️ **You are highly recommended to read through the [Features](https://github.com/Picocrypt/Picocrypt?tab=readme-ov-file#features)
+  section below to fully understand the features and limitations of Picocrypt before
+  using it.** ℹ️ Make sure to only download Picocrypt from this repository to ensure
+  that you get the authentic and backdoor-free Picocrypt. When sharing Picocrypt with
+  others, be sure to link to this repository to prevent any confusion. Besides this
+  repository, there is no official website/webpage or mobile apps for Picocrypt. For
+  example, beware of picocrypt.org ([archive.org snapshot](https://web.archive.org/web/20240816235513/http://picocrypt.org/)),
+  which claimed to be the official website for this project. ## Windows To download
+  the latest, standalone, and portable executable for Windows, click here . If it
+  won't start, see here for a solution or use the installer below which automatically
+  fixes the issue (recommended). If you use Picocrypt frequently, you can also download
+  the [installer](https://github.com/Picocrypt/Picocrypt/releases/download/1.49/Installer.exe)
+  for easy access, automatic file extension association, and bundled compatibility
+  helpers. Administrator privileges are not required to run the installer. If your
+  antivirus flags Picocrypt as a virus, please report it as a false positive to help
+  everyone. ## macOS Download Picocrypt here , open the container, and drag Picocrypt
+  to your Applications. You will need to manually trust the app from a terminal if
+  macOS prevents you from opening it: ``` xattr -d com.apple.quarantine /Applications/Picocrypt.app
+  ``` Note: the macOS app is built for Apple silicon only. If you're still on Intel,
+  you can build from source. **Warning: Picocrypt will cease to work on macOS in the
+  future** because Apple doesn't care about backwards compatibility. Once OpenGL is
+  removed and/or GLFW compatibility is broken, Picocrypt will no longer work and it
+  will be very difficult to fix. If you're a macOS user, you're probably better off
+  using the CLI or Web version instead. Maybe also consider using an OS that actually
+  somewhat cares about its developers and users... ## Linux Download the raw binary
+  here (you may need the packages below). Alternatively, try the .deb or Flatpak .
+  ``` sudo apt install -y libc6 libgcc-s1 libgl1 libgtk-3-0 libstdc++6 libx11-6 ```
+  ## CLI A command-line interface is available for Picocrypt here . It can encrypt
+  and decrypt files, folders, and glob patterns, and supports paranoid mode and Reed-Solomon
+  encoding. You can use it on systems that don't have a GUI or can't run the GUI app.
+  ## Web A functionally limited web app is available here which allows you to encrypt
+  and decrypt standard Picocrypt volumes (no advanced features or keyfiles) on any
+  modern browser, including mobile devices. It's a simple, future-proof way to securely
+  encrypt files that should work indefinitely due to the web's stable nature. Note
+  that you can only encrypt/decrypt single files up to a maximum size of 512 MiB.
+  # Comparison Here's how Picocrypt compares to other popular encryption tools. |
+  | Picocrypt | VeraCrypt | 7-Zip GUI | BitLocker | Cryptomator | | --------------
+  | -------------- | -------------- | -------------- | -------------- | --------------
+  | | Free |✅ Yes |✅ Yes |✅ Yes |✅ Bundled |✅ Yes | | Open Source |✅ GPLv3 |✅ Multi
+  |✅ LGPL |❌ No |✅ GPLv3 | | Cross-Platform |✅ Yes |✅ Yes |❌ No |❌ No |✅ Yes | | Size
+  |✅ 3 MiB |❌ 20 MiB |✅ 2 MiB |✅ N/A |❌ 50 MiB | | Portable |✅ Yes |✅ Yes |❌ No |✅
+  Yes |❌ No | | Permissions |✅ None |❌ Admin |❌ Admin |❌ Admin |❌ Admin | | Ease-Of-Use
+  |✅ Easy |❌ Hard |✅ Easy |✅ Easy |\U0001F7E7 Medium | | Cipher |✅ XChaCha20 |✅ AES-256
+  |✅ AES-256 |\U0001F7E7 AES-128 |✅ AES-256 | | Key Derivation |✅ Argon2 |\U0001F7E7
+  PBKDF2 |❌ SHA-256 |❓ Unknown |✅ Scrypt | | Data Integrity |✅ Always |❌ No |❌ No
+  |❓ Unknown |✅ Always | | De"
 ---
 {% raw %}
 🍁 **Proudly made in Canada.** 🍁

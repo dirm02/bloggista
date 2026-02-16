@@ -2,8 +2,65 @@
 layout: project
 name: Harlanhong Actalker
 slug: harlanhong-ACTalker
+category: AI-automation-web2-3SmartC-Agent
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/harlanhong-ACTalker/assets/teaser_compressed.jpg
 repo_url: https://github.com/harlanhong/ACTalker.git
+indexed_content: "## :book: Audio-visual Controlled Video Diffusion with Masked Selective
+  State Spaces Modeling for Natural Talking Head Generation (ICCV 2025) > [[Paper](https://arxiv.org/abs/2504.02542)]
+  &emsp; [[Project Page](https://harlanhong.github.io/publications/actalker/index.html)]
+  &emsp; [[HuggingFace](https://huggingface.co/papers/2504.02542)] [Fa-Ting Hong](https://harlanhong.github.io),
+  [Longhao Zhang](https://dblp.org/pid/236/7382.html), [Li Shen](https://scholar.google.co.uk/citations?user=ABbCaxsAAAAJ&hl=en),
+  [Dan Xu](https://www.danxurgb.net) --> The Hong Kong University of Science and Technology,
+  Alibaba Cloud --> > [Fa-Ting Hong](https://harlanhong.github.io) 1,2 , Zunnan Xu
+  2,3 , Zixiang Zhou 2 , Jun Zhou 2 , Xiu Li 3 , Qin Lin 2 , Qinglin Lu 2 , [Dan Xu](https://www.danxurgb.net)
+  1 > 1 The Hong Kong University of Science and Technology > 2 Tencent > 3 Tsinghua
+  University :triangular_flag_on_post: **Updates** \U0001F389 **Paper accepted at
+  ICCV 2025!** &#9745; arXiv paper is available [here](https://arxiv.org/abs/2504.02542)
+  \U0001F527 **Project Status**: We are continuously organizing the open-source release.
+  Pre-trained checkpoints will be released gradually. Stay tuned! ## Framework ##
+  :gear: Installation ### System Requirements - **Python**: 3.10 - **CUDA**: 11.8
+  (recommended) or 12.1+ - **GPU Memory**: 24GB+ VRAM (H100/A100 recommended) - **System
+  RAM**: 32GB+ - **Storage**: 20GB+ available space - **OS**: Linux (Ubuntu 20.04+
+  recommended) - **FFmpeg**: Required for video processing ### Hardware Performance
+  | GPU Model | VRAM | Inference Speed | Batch Size | Notes | |-----------|------|----------------|------------|-------|
+  | NVIDIA H100 | 80GB | ~6min/25steps | 1 | Recommended | | NVIDIA A100 | 40GB |
+  ~8min/25steps | 1 | Good performance | | NVIDIA RTX 4090 | 24GB | ~12min/25steps
+  | 1 | Minimum requirement | | NVIDIA RTX 3090 | 24GB | ~15min/25steps | 1 | Usable
+  but slow | ### ⚠️ Important Notes #### Mamba SSM Compatibility **ACTalker uses Mamba
+  SSM, which has strict environment requirements!** ✅ **Recommended Configuration
+  (Tested Successfully):** - CUDA 11.8 + PyTorch 2.0.1 + mamba-ssm 1.2.0.post1 - This
+  combination ensures full Mamba SSM compatibility ❌ **Known Issues:** - CUDA 12.x
+  versions may have compatibility issues with mamba-ssm - PyTorch 2.1+ may cause dependency
+  conflicts - Incorrect version combinations will cause inference failures ### Prerequisites
+  Before installation, make sure you have FFmpeg and libx264 installed: **Ubuntu/Debian:**
+  ```bash sudo apt update sudo apt install ffmpeg libx264-dev ``` **CentOS/RHEL:**
+  ```bash sudo yum install epel-release sudo yum install ffmpeg x264-devel ``` **Conda
+  (Alternative):** ```bash conda install -c conda-forge ffmpeg x264 ``` ### Option
+  1: One-Click Auto Installation \U0001F680 ```bash git clone https://github.com/harlanhong/ACTalker.git
+  cd ACTalker bash install_actalker.sh ``` This script will automatically install
+  all compatible dependency versions, including Mamba SSM. ### Option 2: Using Pre-configured
+  Environment File ```bash conda env create -f environment.yaml conda activate actalker
+  ``` ### Complete Verification After installation, run complete environment testing:
+  ```bash # Verify FFmpeg installation ffmpeg -version # Verify basic environment
+  python -c \"import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available:
+  {torch.cuda.is_available()}')\" # Verify Mamba SSM python -c \"from src.models.base.mamba_layer
+  import MAMBA_AVAILABLE; print(f'Mamba available: {MAMBA_AVAILABLE}')\" # Run environment
+  test script python test_environment.py ``` ## :package: Pretrained Models ACTalker
+  requires pretrained models to function properly. The main model needed is **Stable
+  Video Diffusion**. ### Required Models #### 1. Stable Video Diffusion (SVD-XT-1.1)
+  - **Model**: [`stabilityai/stable-video-diffusion-img2vid-xt-1-1`](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1)
+  - **Purpose**: Image-to-video generation backbone - **Size**: ~9.5GB - **License**:
+  Requires agreement to Stability AI Community License #### 2. Pretrained checkpoints
+  - **Model**: [`pretrained Checkpoints`](https://hkustconnect-my.sharepoint.com/:f:/g/personal/fhongac_connect_ust_hk/ErbIGCYPpIRDjFcPgtYXoMABt5HWl5XS_He18Tii4wGQ5A?e=TjmfjR)
+  ## TL;DR: We propose ACTalker, an end-to-end video diffusion framework for talking
+  head synthesis that supports both single and multi-signal control (e.g., audio,
+  pose, expression). ACTalker uses a parallel mamba-based architecture with a gating
+  mechanism to assign different control signals to specific facial regions, ensuring
+  fine-grained and conflict-free generation. A mask-drop strategy further enhances
+  regional independence and control stability. Experiments show that ACTalker produces
+  natural, synchronized talking head videos under various control combinations. ##
+  Expression Driven Samples https://github.com/user-attachments/assets/fc46c7cd-d1b4-44a6-8649-2ef973107637
+  ## Audio Dirven Samples https://github.com/user-attachments/assets"
 ---
 {% raw %}
 

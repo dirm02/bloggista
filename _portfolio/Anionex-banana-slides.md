@@ -2,8 +2,66 @@
 layout: project
 name: Anionex Banana Slides
 slug: Anionex-banana-slides
+category: Management- Engineering- SocialM
 image: https://img.shields.io/github/stars/Anionex/banana-slides?style=square
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "*Vibe your PPT like vibing code.* **中文 | [English](README_EN.md)**
+  [](https://github.com/Anionex/banana-slides/stargazers) [](https://github.com/Anionex/banana-slides/network)
+  [](https://github.com/Anionex/banana-slides/watchers) [](https://github.com/Anionex/banana-slides)
+  [](https://github.com/Anionex/banana-slides/issues) [](https://github.com/Anionex/banana-slides/pulls)
+  一个基于nano banana pro\U0001F34C的原生AI PPT生成应用，支持想法/大纲/页面描述生成完整PPT演示文稿， 自动提取附件图表、上传任意素材、口头提出修改，迈向真正的\"Vibe
+  PPT\" \U0001F3AF 降低PPT制作门槛，让每个人都能快速创作出美观专业的演示文稿 *如果该项目对你有用, 欢迎star\U0001F31F & fork\U0001F374*
+  ## ✨ 项目缘起 你是否也曾陷入这样的困境：明天就要汇报，但PPT还是一片空白；脑中有无数精彩的想法，却被繁琐的排版和设计消磨掉所有热情？ 我(们)渴望能快速创作出既专业又具设计感的演示文稿，传统的AI
+  PPT生成app，虽然大体满足“快”这一需求，却还存在以下问题： - 1️⃣只能选择预设模版，无法灵活调整风格 - 2️⃣自由度低，多轮改动难以进行 - 3️⃣成品观感相似，同质化严重
+  - 4️⃣素材质量较低，缺乏针对性 - 5️⃣图文排版割裂，设计感差 以上这些缺陷，让传统的AI ppt生成器难以同时满足我们“快”和“美”的两大PPT制作需求。即使自称Vibe
+  PPT，但是在我的眼中还远不够“Vibe”。 但是，nano banana\U0001F34C模型的出现让一切有了转机。我尝试使用\U0001F34Cpro进行ppt页面生成，发现生成的结果无论是质量、美感还是一致性，都做的非常好，且几乎能精确渲染prompt要求的所有文字+遵循参考图的风格。那为什么不基于\U0001F34Cpro，做一个原生的\"Vibe
+  PPT\"应用呢？ ## \U0001F468‍\U0001F4BB 适用场景 1. **小白**：零门槛快速生成美观PPT，无需设计经验，减少模板选择烦恼 2.
+  **PPT专业人士**：参考AI生成的布局和图文元素组合，快速获取设计灵感 3. **教育工作者**：将教学内容快速转换为配图教案PPT，提升课堂效果 4. **学生**：快速完成作业Pre，把精力专注于内容而非排版美化
+  5. **职场人士**：商业提案、产品介绍快速可视化，多场景快速适配 ## \U0001F3A8 结果案例 | | | |:---:|:---:| | | |
+  | **软件开发最佳实践** | **DeepSeek-V3.2技术展示** | | | | | **预制菜智能产线装备研发和产业化** | **钱的演变：从贝壳到纸币的旅程**
+  | 更多可见 使用案例 ## \U0001F3AF 功能介绍 ### 1. 灵活多样的创作路径 支持**想法**、**大纲**、**页面描述**三种起步方式，满足不同创作习惯。
+  - **一句话生成**：输入一个主题，AI 自动生成结构清晰的大纲和逐页内容描述。 - **自然语言编辑**：支持以 Vibe 形式口头修改大纲或描述（如\"把第三页改成案例分析\"），AI
+  实时响应调整。 - **大纲/描述模式**：既可一键批量生成，也可手动调整细节。 ### 2. 强大的素材解析能力 - **多格式支持**：上传 PDF/Docx/MD/Txt
+  等文件，后台自动解析内容。 - **智能提取**：自动识别文本中的关键点、图片链接和图表信息，为生成提供丰富素材。 - **风格参考**：支持上传参考图片或模板，定制
+  PPT 风格。 ### 3. \"Vibe\" 式自然语言修改 不再受限于复杂的菜单按钮，直接通过**自然语言**下达修改指令。 - **局部重绘**：对不满意的区域进行口头式修改（如\"把这个图换成饼图\"）。
+  - **整页优化**：基于 nano banana pro\U0001F34C 生成高清、风格统一的页面。 ### 4. 开箱即用的格式导出 - **多格式支持**：一键导出标准
+  **PPTX** 或 **PDF** 文件。 - **完美适配**：默认 16:9 比例，排版无需二次调整，直接演示。 ### 5. 可自由编辑的pptx导出（Beta迭代中）
+  - **导出图像为高还原度、背景干净的、可自由编辑图像和文字的PPT页面** - 相关更新见 https://github.com/Anionex/banana-slides/issues/121
+  **\U0001F31F和notebooklm slide deck功能对比** | 功能 | notebooklm | 本项目 | | --- | --- |
+  --- | | 页数上限 | 15页 | **无限制** | | 二次编辑 | 不支持 | **框选编辑+口头编辑** | | 素材添加 | 生成后无法添加 |
+  **生成后自由添加** | | 导出格式 | 仅支持导出为 PDF | **导出为PDF、(可编辑)pptx** | | 水印 | 免费版有水印 | **无水印，自由增删元素**
+  | > 注：随着新功能添加,对比可能过时 ## \U0001F525 近期更新 - 【2-9】： * 新功能 * 支持在首页、大纲、描述卡片里面粘贴图片并立即识别，并提供更好的交互体验
+  * 大纲章节手动编辑：支持手动调整页面所属章节（part）。 * Docker 多架构：镜像支持 amd64 / arm64 构建。 * 国际化 + 暗黑模式：新增中英文切换；支持亮色/暗色/跟随系统主题；全组件适配暗黑模式。
+  * 修复与体验优化 * 修复导出相关 500、参考文件关联时序、outline/page 数据错位、任务轮询错误项目、描述生成无限轮询、图片预览内存泄漏、批量删除部分失败处理。
+  * 优化格式示例提示、HTTP 错误提示文案、Modal 关闭体验、清理旧项目 localStorage、移除首次创建项目冗余提示。 * 若干其他优化和修复 -
+  【1-4】 : v0.3.0发布：可编辑pptx导出全面升级： * 支持最大程度还原图片中文字的字号、颜色、加粗等样式； * 支持了识别表格中的文字内容； *
+  更精确的文字大小和文字位置还原逻辑 * 优化导出工作流，大大减少了导出后背景图残留文字的现象； * 支持页面多选逻辑，灵活选择需要生成和导出的具体页面。 * **详细效果和使用方法见
+  https://github.com/Anionex/banana-slides/issues/121** - 【12-27】: 加入了对无图片模板模式的支持和较高质量的文字预设，现在可以通过纯文字描述的方式来控制ppt页面风格
+  ## \U0001F5FA️ 开发计划 | 状态 | 里程碑 | | --- | --- | | ✅ 已完成 | 从想法、大纲、页面描述三种路径创建 PPT |
+  | ✅ 已完成 | 解析文本中的 Markdown 格式图片 | | ✅ 已完成 | PPT 单页添加更多素材 | | ✅ 已完成 | PPT 单页框选区域Vibe口头编辑
+  | | ✅ 已完成 | 素材模块: 素材生成、上传等 | | ✅ 已完成 | 支持多种文件的上传+解析 | | ✅ 已完成 | 支持Vibe口头调整大纲和描述
+  | | ✅ 已完成 | 初步支持可编辑版本pptx文件导出 | | \U0001F504 进行中 | 支持多层次、精确抠图的可编辑pptx导出 | | \U0001F504
+  进行中 | 网络搜索 | | \U0001F504 进行中 | Agent 模式 | | \U0001F68D 部分 | 优化前端加载速度 | | \U0001F9ED
+  规划中 | 在线播放功能 | | \U0001F9ED 规划中 | 简单的动画和页面切换效果 | | \U0001F68D 部分 | 多语种支持 | | \U0001F3E2商业版功能
+  | 用户系统 | ## \U0001F4E6 使用方法 ### 使用 Docker Compose\U0001F433（推荐） 这是最简单的部署方式，可以一键启动前后端服务。
+  \U0001F4D2Windows用户说明 如果你使用 Windows, 请先安装 Windows Docker Desktop，检查系统托盘中的 Docker
+  图标，确保 Docker 正在运行，然后使用相同的步骤操作。 > **提示**：如果遇到问题，确保在 Docker Desktop 设置中启用了 WSL 2 后端（推荐），并确保端口
+  3000 和 5000 未被占用。 0. **克隆代码仓库** ```bash git clone https://github.com/Anionex/banana-slides
+  cd banana-slides ``` 1. **配置环境变量** 创建 `.env` 文件（参考 `.env.example`）： ```bash cp .env.example
+  .env ``` 编辑 `.env` 文件，配置必要的环境变量： > **项目中大模型接口以AIHubMix平台格式为标准，推荐使用 [AIHubMix](https://aihubmix.com/?aff=17EC)
+  获取API密钥，减小迁移成本** > **友情提示：谷歌nano banana pro模型接口费用较高，请注意调用成本** ```env # AI Provider格式配置
+  (gemini / openai / vertex) AI_PROVIDER_FORMAT=gemini # Gemini 格式配置（当 AI_PROVIDER_FORMAT=gemini
+  时使用） GOOGLE_API_KEY=your-api-key-here GOOGLE_API_BASE=https://generativelanguage.googleapis.com
+  # 代理示例: https://aihubmix.com/gemini # OpenAI 格式配置（当 AI_PROVIDER_FORMAT=openai 时使用）
+  OPENAI_API_KEY=your-api-key-here OPENAI_API_BASE=https://api.openai.com/v1 # 代理示例:
+  https://aihubmix.com/v1 # Vertex AI 格式配置（当 AI_PROVIDER_FORMAT=vertex 时使用） # 需要 GCP
+  服务账户，可使用 GCP 免费额度 # VERTEX_PROJECT_ID=your-gcp-project-id # VERTEX_LOCATION=global
+  # GOOGLE_APPLICATION_CREDENTIALS=./gcp-service-account.json # Lazyllm 格式配置（当 AI_PROVIDER_FORMAT=lazyllm
+  时使用） # 选择文本生成和图片生成使用的厂商 TEXT_MODEL_SOURCE=deepseek # 文本生成模型厂商 IMAGE_MODEL_SOURCE=doubao
+  # 图片编辑模型厂商 IMAGE_CAPTION_MODEL_SOURCE=qwen # 图片描述模型厂商 # 各厂商 API Key（只需配置你要使用的厂商）
+  DOUBAO_API_KEY=your-doubao-api-key # 火山引擎/豆包 DEEPSEEK_API_KEY=your-deepseek-api-key
+  # DeepSeek QWEN_API_KEY=your-qwen-api-key # 阿里云/通义千问 GLM_API_KEY=your-glm-api-key
+  # 智谱 GLM SILICONFLOW_API_KEY=your-siliconflow-api-key # 硅基流动 SE"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,44 @@
 layout: project
 name: Mentra Community Mentraos
 slug: Mentra-Community-MentraOS
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Mentra-Community-MentraOS/images/mach1.png
 repo_url: https://github.com/TeamOpenSmartGlasses/DiscussPlusPlus
+indexed_content: 'MentraOS The open source operating system for smart glasses Website
+  • Documentation • Developer Console • Mentra Store Nightly Builds ## Supported Smart
+  Glasses Works with Even Realities G1, Mentra Mach 1, Mentra Live. See [smart glasses
+  compatibility list here](./glasses-compatibility.md). ## Apps on Mentra Store The
+  Mentra Store already has a ton of useful apps that real users are running everyday.
+  Here are some apps already published by developers on the Mentra Store: Captions
+  Link Merge Notes Calendar Dash Translation See All ## Write Once, Run on Any Smart
+  Glasses **MentraOS is how developers build smart glasses apps.** We handle the pairing,
+  connection, data streaming, and cross-compatibility, so you can focus on creating
+  amazing apps. Every component is 100% open source (MIT license). ### Why Build with
+  MentraOS? - **Cross Compatibility**: Your app runs on any pair of smart glasses
+  - **Speed**: TypeScript SDK means you''re making apps in minutes, not months - **Control**:
+  Access smart glasses I/O - displays, microphones, cameras, speakers - **Distribution**:
+  Get your app in front of everyone using smart glasses ## Development Setup ### Quick
+  Start For detailed setup instructions, see [CLAUDE.md](./CLAUDE.md) in the repository
+  root. ### Recommended Development Environment (Mobile) - **Platform**: macOS or
+  Linux (Windows has known issues with this project) - **Node.js**: Version 20.x (use
+  nvm for version management) - **Package Manager**: bun (preferred) or npm - **Android**:
+  Android Studio with Java SDK 17 - **iOS**: Xcode (macOS only) - **Cloud**: Docker
+  and Docker Compose ### Key Commands **Mobile App** (`mobile/`): ```bash bun install
+  bun start # Start dev server bun android # Run on Android bun ios # Run on iOS bun
+  test # Run tests ``` **Cloud Backend** (`cloud/`): ```bash bun install bun run dev
+  # Start Docker dev environment bun run test # Run tests ``` For complete build instructions,
+  testing guidelines, and code style requirements, see [CLAUDE.md](./CLAUDE.md). ##
+  MentraOS Community The MentraOS Community is a group of developers, companies, and
+  users dedicated to ensuring the next personal computer is open, cross-compatible,
+  and user-controlled. That''s why we''re building MentraOS. To get involved, join
+  the [MentraOS Community Discord server](https://mentra.glass/discord). ## Contact
+  Have questions or ideas? We''d love to hear from you! - **Email**: [team@mentra.glass](mailto:team@mentra.glass)
+  - **Discord**: [Join our community](http://mentra.glass/discord) - **Twitter**:
+  [Follow @mentralabs](https://x.com/mentralabs) ## Contributing MentraOS is made
+  by a community and we welcome PRs. Here''s the Contributors Guide: [docs.mentra.glass/os-devs/contributing](https://docs.mentraglass.com/os-devs/contributing/overview)
+  Looking for ways to contribute? We mark issues we''d love the community to help
+  with using the **"Help Wanted"** tag. Check them out here: [Help Wanted Issues](https://github.com/Mentra-Community/MentraOS/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22)
+  ## License MIT License Copyright 2025 MentraOS Community --- © 2025 Mentra Labs'
 ---
 {% raw %}
 <div align="center">

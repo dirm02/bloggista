@@ -2,8 +2,64 @@
 layout: project
 name: Shadps4 Emu Shadps4
 slug: shadps4-emu-shadPS4
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/shadps4-emu-shadPS4/documents/Screenshots/1.png
 repo_url: https://github.com/shadps4-emu/shadPS4
+indexed_content: 'shadPS4 | Bloodborne by From Software | Hatsune Miku Project DIVA
+  Future Tone by SEGA | | :-----------------------------------------------------------:
+  | :--------------------------------------------------------------------------------------------:
+  | | | | | Yakuza 0 by SEGA | DRIVECLUB™ by Evolution Studios | | :------------------------------------------------------------------------:
+  | :------------------------------------------------------------------: | | | | #
+  General information **shadPS4** is an early **PlayStation 4** emulator for **Windows**,
+  **Linux** and **macOS** written in C++. > [!IMPORTANT] > This is the emulator core,
+  which does not include a GUI. If you just want to use the emulator as an end user,
+  download the [**QtLauncher**](https://github.com/shadps4-emu/shadps4-qtlauncher/releases)
+  instead. If you encounter problems or have doubts, do not hesitate to look at the
+  [**Quickstart**](https://github.com/shadps4-emu/shadPS4/wiki/I.-Quick-start-%5BUsers%5D).\
+  To verify that a game works, you can look at [**shadPS4 Game Compatibility**](https://github.com/shadps4-compatibility/shadps4-game-compatibility).\
+  To discuss shadPS4 development, suggest ideas or to ask for help, join our [**Discord
+  server**](https://discord.gg/bFJxfftGW6).\ To get the latest news, go to our [**X
+  (Twitter)**](https://x.com/shadps4) or our [**website**](https://shadps4.net/).\
+  You can donate to the project via our [**Kofi page**](https://ko-fi.com/shadps4).
+  # Status > [!IMPORTANT] > shadPS4 is early in development, don''t expect a flawless
+  experience. Currently, the emulator can successfully run games like [**Bloodborne**](https://www.youtube.com/watch?v=5sZgWyVflFM),
+  [**Dark Souls Remastered**](https://www.youtube.com/watch?v=-3PA-Xwszts), [**Red
+  Dead Redemption**](https://www.youtube.com/watch?v=Al7yz_5nLag), and many other
+  games. # Why This project began for fun. Given our limited free time, it may take
+  some time before shadPS4 can run more complex games, but we''re committed to making
+  small, regular updates. # Building ## Docker For building shadPS4 in a containerized
+  environment using Docker and VSCode, check the instructions here: [**Docker Build
+  Instructions**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-docker.md)
+  ## Windows Check the build instructions for [**Windows**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-windows.md).
+  ## Linux Check the build instructions for [**Linux**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-linux.md).
+  ## macOS Check the build instructions for [**macOS**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-macos.md).
+  > [!IMPORTANT] > macOS users need at least macOS 15.4 to run shadPS4. Due to GPU
+  issues there are currently heavy bugs on Intel Macs. # Usage examples > [!IMPORTANT]
+  > For a user-friendly GUI, download the [**QtLauncher**](https://github.com/shadps4-emu/shadps4-qtlauncher/releases).
+  To get the list of all available commands and also a more detailed description of
+  what each command does, please refer to the `--help` flag''s output. Below is a
+  list of commonly used command patterns: ```sh shadPS4 CUSA00001 # Searches for a
+  game folder called CUSA00001 in the list of game install folders, and boots it.
+  shadPS4 --fullscreen true --config-clean CUSA00001 # the game argument is always
+  the last one, shadPS4 -g CUSA00001 --fullscreen true --config-clean # ...unless
+  manually specified otherwise. shadPS4 /path/to/game.elf # Boots a PS4 ELF file directly.
+  Useful if you want to boot an executable that is not named eboot.bin. shadPS4 CUSA00001
+  -- -flag1 -flag2 # Passes ''-flag1'' and ''-flag2'' to the game executable in argv.
+  ``` # Debugging and reporting issues For more information on how to test, debug
+  and report issues with the emulator or games, read the [**Debugging documentation**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/Debugging/Debugging.md).
+  # Keyboard and Mouse Mappings > [!NOTE] > Some keyboards may also require you to
+  hold the Fn key to use the F\* keys. Mac users should use the Command key instead
+  of Control, and need to use Command+F11 for full screen to avoid conflicting with
+  system key bindings. | Button | Function | |-------------|-------------| F10 | FPS
+  Counter Ctrl+F10 | Video Debug Info F11 | Fullscreen F12 | Trigger RenderDoc Capture
+  > [!NOTE] > Xbox and DualShock controllers work out of the box. | Controller button
+  | Keyboard equivalent | |-------------|-------------| LEFT AXIS UP | W | LEFT AXIS
+  DOWN | S | LEFT AXIS LEFT | A | LEFT AXIS RIGHT | D | RIGHT AXIS UP | I | RIGHT
+  AXIS DOWN | K | RIGHT AXIS LEFT | J | RIGHT AXIS RIGHT | L | TRIANGLE | Numpad 8
+  or C | CIRCLE | Numpad 6 or B | CROSS | Numpad 2 or N | SQUARE | Numpad 4 or V |
+  PAD UP | UP | PAD DOWN | DOWN | PAD LEFT | LEFT | PAD RIGHT | RIGHT | OPTIONS |
+  RETURN | BACK BUTTON / TOUCH PAD | SPACE | L1 | Q | R1 | U | L2 | E | R2 | O | L3
+  | X | R3 | M | Keyboard and mouse inputs can be customized in the se'
 ---
 {% raw %}
 <!--

@@ -2,8 +2,31 @@
 layout: project
 name: 0wczar Airframe
 slug: 0wczar-airframe
+category: SDesk-Workflow- SaaS-PaaS-any!
 image: https://user-images.githubusercontent.com/2330394/206842713-ba6aa08f-9864-462e-8a49-6fb0db1fdd79.png
 repo_url: https://github.com/0wczar/BS5-Jekyll
+indexed_content: 'A premium and open source dashboard template with a responsive and
+  high-quality UI. Demo &bull; Documentation &bull; Website &bull; Contact # What
+  is airframe? **Airframe Dashboard** has a huge collection of components that can
+  be used in a great number of combinations and variations. It can be used in all
+  types of custom web applications such as CRMs, CMSs, Admin Panels, Admin Dashboards,
+  Analytics, etc. # Installation ### Install Jekyll and Ruby The entire application
+  framework is built around [Jekyll](https://jekyllrb.com). On how to install Jekyll,
+  [here](https://jekyllrb.com/docs/installation/) are the instructions for each Operating
+  System. **This step is required** in order to proceed with the next installation.
+  ### Install "airframe-dashboard" To install on your computer, please follow the
+  steps below one by one. 1. Download the **.zip** package to your computer from [here](https://github.com/0wczar/BS5-Jekyll/archive/refs/heads/bootstrap5.2-custom.zip).
+  2. Open **Terminal** on Linux/macOS. 3. **Unpack** the .zip package you downloaded.
+  4. In terminal type `cd`, then **drag & drop** the unpacked folder `airframe-dashboard`
+  to the terminal and confirm with `enter` on keyboard. 5. Once you are in the Terminal
+  folder you can start installing, just type in `jekyll serve`. 6. Open http://localhost:3000
+  in your browser # Credits Stack tech. used in this project. - Bootstrap - Roboto
+  (Font) - Jekyll - Font Awesome - Holder.js # Community ### Updates It is worth subscribing
+  to our [newsletter](news). You will have **access** to updates, news and **early
+  versions** of **React** and **Figma Design System**. ### Roadmap Our plan for the
+  next days and months is available here ### Changelog See the history of all versions,
+  also for Alpha and Beta here . ### Contribute To submit issues, request features,
+  and contribute, check out here . # License Apache License 2.0 # Author tomasz.owczarczyk@gmail.com'
 ---
 {% raw %}
 <p align="center" width="100%">

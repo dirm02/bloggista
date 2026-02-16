@@ -2,8 +2,66 @@
 layout: project
 name: Shubhamsaboo Awesome Llm Apps
 slug: Shubhamsaboo-awesome-llm-apps
+category: AI-automation-web2-3SmartC-Agent
 image: https://api.star-history.com/svg?repos=Shubhamsaboo/awesome-llm-apps&type=Date
 repo_url: https://github.com/tinyfish-io/tinyfish-cookbook
+indexed_content: "Deutsch | Español | français | 日本語 | 한국어 | Português | Русский |
+  中文 # \U0001F31F Awesome LLM Apps A curated collection of **Awesome LLM apps built
+  with RAG, AI Agents, Multi-agent Teams, MCP, Voice Agents, and more.** This repository
+  features LLM apps that use models from **OpenAI** , **Anthropic**, **Google**, **xAI**
+  and open-source models like **Qwen** or **Llama** that you can run locally on your
+  computer. ## \U0001F914 Why Awesome LLM Apps? - \U0001F4A1 Discover practical and
+  creative ways LLMs can be applied across different domains, from code repositories
+  to email inboxes and more. - \U0001F525 Explore apps that combine LLMs from OpenAI,
+  Anthropic, Gemini, and open-source alternatives with AI Agents, Agent Teams, MCP
+  & RAG. - \U0001F393 Learn from well-documented projects and contribute to the growing
+  open-source ecosystem of LLM-powered applications. ## \U0001F64F Thanks to our sponsors
+  TinyFish Tiger Data MCP Speechmatics Become a Sponsor ## \U0001F4C2 Featured AI
+  Projects ### AI Agents ### \U0001F331 Starter AI Agents * [\U0001F399️ AI Blog to
+  Podcast Agent](starter_ai_agents/ai_blog_to_podcast_agent/) * [❤️‍\U0001FA79 AI
+  Breakup Recovery Agent](starter_ai_agents/ai_breakup_recovery_agent/) * [\U0001F4CA
+  AI Data Analysis Agent](starter_ai_agents/ai_data_analysis_agent/) * [\U0001FA7B
+  AI Medical Imaging Agent](starter_ai_agents/ai_medical_imaging_agent/) * [\U0001F602
+  AI Meme Generator Agent (Browser)](starter_ai_agents/ai_meme_generator_agent_browseruse/)
+  * [\U0001F3B5 AI Music Generator Agent](starter_ai_agents/ai_music_generator_agent/)
+  * [\U0001F6EB AI Travel Agent (Local & Cloud)](starter_ai_agents/ai_travel_agent/)
+  * [✨ Gemini Multimodal Agent](starter_ai_agents/gemini_multimodal_agent_demo/) *
+  [\U0001F504 Mixture of Agents](starter_ai_agents/mixture_of_agents/) * [\U0001F4CA
+  xAI Finance Agent](starter_ai_agents/xai_finance_agent/) * [\U0001F50D OpenAI Research
+  Agent](starter_ai_agents/opeani_research_agent/) * [\U0001F578️ Web Scraping AI
+  Agent (Local & Cloud SDK)](starter_ai_agents/web_scrapping_ai_agent/) ### \U0001F680
+  Advanced AI Agents * [\U0001F3DA️ \U0001F34C AI Home Renovation Agent with Nano
+  Banana Pro](advanced_ai_agents/multi_agent_apps/ai_home_renovation_agent) * [\U0001F50D
+  AI Deep Research Agent](advanced_ai_agents/single_agent_apps/ai_deep_research_agent/)
+  * [\U0001F4CA AI VC Due Diligence Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_vc_due_diligence_agent_team)
+  * [\U0001F52C AI Research Planner & Executor (Google Interactions API)](advanced_ai_agents/single_agent_apps/research_agent_gemini_interaction_api)
+  * [\U0001F91D AI Consultant Agent](advanced_ai_agents/single_agent_apps/ai_consultant_agent)
+  * [\U0001F3D7️ AI System Architect Agent](advanced_ai_agents/single_agent_apps/ai_system_architect_r1/)
+  * [\U0001F4B0 AI Financial Coach Agent](advanced_ai_agents/multi_agent_apps/ai_financial_coach_agent/)
+  * [\U0001F3AC AI Movie Production Agent](advanced_ai_agents/single_agent_apps/ai_movie_production_agent/)
+  * [\U0001F4C8 AI Investment Agent](advanced_ai_agents/single_agent_apps/ai_investment_agent/)
+  * [\U0001F3CB️‍♂️ AI Health & Fitness Agent](advanced_ai_agents/single_agent_apps/ai_health_fitness_agent/)
+  * [\U0001F680 AI Product Launch Intelligence Agent](advanced_ai_agents/multi_agent_apps/product_launch_intelligence_agent)
+  * [\U0001F5DE️ AI Journalist Agent](advanced_ai_agents/single_agent_apps/ai_journalist_agent/)
+  * [\U0001F9E0 AI Mental Wellbeing Agent](advanced_ai_agents/multi_agent_apps/ai_mental_wellbeing_agent/)
+  * [\U0001F4D1 AI Meeting Agent](advanced_ai_agents/single_agent_apps/ai_meeting_agent/)
+  * [\U0001F9EC AI Self-Evolving Agent](advanced_ai_agents/multi_agent_apps/ai_Self-Evolving_agent/)
+  * [\U0001F468\U0001F3FB‍\U0001F4BC AI Sales Intelligence Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_sales_intelligence_agent_team)
+  * [\U0001F3A7 AI Social Media News and Podcast Agent](advanced_ai_agents/multi_agent_apps/ai_news_and_podcast_agents/)
+  * [\U0001F310 Openwork - Open Browser Automation Agent](https://github.com/accomplish-ai/openwork)
+  ### \U0001F3AE Autonomous Game Playing Agents * [\U0001F3AE AI 3D Pygame Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1/)
+  * [♜ AI Chess Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent/)
+  * [\U0001F3B2 AI Tic-Tac-Toe Agent](advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/)
+  ### \U0001F91D Multi-agent Teams * [\U0001F9F2 AI Competitor Intelligence Agent
+  Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team/)
+  * [\U0001F4B2 AI Finance Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_finance_agent_team/)
+  * [\U0001F3A8 AI Game Design Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_game_design_agent_team/)
+  * [\U0001F468‍⚖️ AI Legal Agent Team (Cloud & Local)](advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/)
+  * [\U0001F4BC AI Recruitment Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/)
+  * [\U0001F3E0 AI Real Estate Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_real_estate_agent_team)
+  * [\U0001F468‍\U0001F4BC AI Services Agency (CrewAI)](advanced_ai_agents/multi_agent_apps/agent_teams/ai_services_agency/)
+  * [\U0001F468‍\U0001F3EB AI Teaching Agent Team](advanced_ai_agents/multi_agent_apps/agent_teams/ai_teaching_agent_team/)
+  * [\U0001F4BB Multimodal Coding Agent Team](advanced_ai_a"
 ---
 {% raw %}
 <p align="center">

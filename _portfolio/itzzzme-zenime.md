@@ -2,8 +2,36 @@
 layout: project
 name: Itzzzme Zenime
 slug: itzzzme-zenime
+category: Uncategorized
 image: https://vercel.com/button
 repo_url: https://github.com/itzzzme/zenime
+indexed_content: "Zenime - anime streaming platform Zenime is an open-source anime
+  streaming service that uses custom API, built using ReactJS with javascript and
+  Tailwind CSS. It lets you easily find any anime with intuitive search & suggestion
+  feature and stream seamlessly. View more Features ### General - Sub Anime support
+  - Dub Anime support - User-friendly interface - Mobile responsive - Fast page load
+  - Character & Voice Actors ### Watch Page - Related Animes - Recommended Animes
+  - Available seasons - Estimated schedule of upcoming episodes - **Player** - Autoplay
+  - Autoskip intro/outro - Autonext ## Previews View more screenshots AnimeInfo Page
+  Searchbar Character & Voice Actors Watch Page ## Installation and Local Development
+  ### 1. Make sure you have node installed on your device ### 2. Run the following
+  code to clone the repository and install all required dependencies ```bash git clone
+  https://github.com/itzzzme/zenime.git cd zenime npm install # or yarn ``` ### 3.
+  Refer the .env.example to set your .env file up ## Start the server ```bash npm
+  start # or npm run dev (to run develepment server) ``` ## Docker Container ### Build
+  the container ```bash docker build -t zenime . ``` ### Run the container ```bash
+  docker run -d -p 5173:80 zenime ``` ## Live Deployment ### Vercel Host your own
+  instance of Zenime on vercel [](https://vercel.com/new/clone?repository-url=https://github.com/itzzzme/zenime)
+  ### Render Host your own instance of Zenime on Render. [](https://render.com/deploy?repo=https://github.com/itzzzme/zenime)
+  ### Pull Requests - Pull requests are welcomed that address bug fixes, improvements,
+  or new features. - Fork the repository and create a new branch for your changes.
+  - Ensure your code follows our coding standards. - Include tests if applicable.
+  - Describe your changes clearly in the pull request, explaining the problem and
+  solution. ### Reporting Issues If you discover any issues or have suggestions for
+  improvement, please open an issue. Provide a clear and concise description of the
+  problem, steps to reproduce it, and any relevant information about your environment.
+  ### Support If you like the project feel free to drop a star ✨. Your appreciation
+  means a lot. Made by itzzzme \U0001FAF0"
 ---
 {% raw %}
 <p align="center">

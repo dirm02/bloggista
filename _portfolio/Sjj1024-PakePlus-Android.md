@@ -2,8 +2,71 @@
 layout: project
 name: Sjj1024 Pakeplus Android
 slug: Sjj1024-PakePlus-Android
+category: Very important!!!!
 image: https://github.com/Sjj1024/PakePlus/raw/main/docs/static/imgs/pakeplus.png
 repo_url: https://github.com/Sjj1024/PakePlus
+indexed_content: "English 简体中文 日本语 PakePlus-Android Turn any webpage into a desktop
+  or mobile app in just 9 minutes. Simple and easy to use. PakePlus supports Mac,
+  Windows, and Linux, and support Android and iOS. There’s no need to install complex
+  dependencies locally— all you need is a Github Token. Plus, PakePlus is only about
+  5MB in size. For the latest version, please see the release page . or visit: PakePlus
+  Web . Check the README for information on popular packages and custom development
+  . Feel free to share your suggestions in the discussion area . https://github.com/user-attachments/assets/b88bf541-0b26-4020-9eec-da79e1734fc9
+  Sponsors PakePlus is an MIT-licensed open source project with its ongoing development
+  made possible entirely by the support of these awesome backers. If you'd like to
+  join them, please consider sponsoring PakePlus's development. FineVoice Create Every
+  Voice You Imagine Tauri Create cross-platform applications Cursor Cursor is the
+  best way to code with AI. JetBrains The Leading IDE for Professional Development
+  ## Features - \U0001F390 Approximately 20 times smaller than Electron (less than
+  5MB!) and 10 times faster. - \U0001F680 Built with Rust Tauri, PakePlus is lighter
+  and faster than JavaScript-based frameworks. - \U0001F4E6 Comes with rich built-in
+  features — supports shortcuts, immersive windows, and minimalist customization.
+  - \U0001F47B PakePlus is a minimalist tool that replaces traditional packaging with
+  Tauri for cross-platform desktop apps. - \U0001F4F2 Uses native frameworks to package
+  Android and iOS apps — smaller and faster than Tauri2. - \U0001F917 Easy to use
+  — just one GitHub Token is all you need to get a desktop app. - \U0001F339 No need
+  to install complex dependencies locally — use GitHub Actions for cloud-based automatic
+  packaging. - \U0001F9D1‍\U0001F91D‍\U0001F9D1 Internationalization support — automatically
+  follows your system language. - \U0001F4A1 Supports custom JavaScript injection
+  — write your own JS to inject into the page. - \U0001F3A8 Beautiful and user-friendly
+  UI — better experience for beginners, supports Chinese names for packaging. - \U0001F4E1
+  Usable directly via the web, but the client offers stronger functionality and is
+  recommended. - \U0001F510 Data security — your token is stored only locally, and
+  your project stays safely in your own Git repo. - \U0001F340 Supports static file
+  packaging — drop in a compiled dist folder or index.html from Vue/React to create
+  a client app. - \U0001F41E Debug mode supported — find and eliminate bugs during
+  preview or release. - \U0001F4AC If you run into any issues, feel free to join our
+  technical community for help. ## Use Cases - Have a website? Instantly turn it into
+  a app and elevate its appearance. - Have a Vue/React project and don’t want to buy
+  a server? Package it as a desktop app. - Want your Cocos game to run as a cross-platform
+  client? No problem. - Need to build your Unity project as a cross-platform client?
+  Also no problem. - Hide your website address from casual sharing or bots scraping
+  your content. - For internal company platforms — restrict access to your site via
+  a dedicated client only. - Turn any website into your custom client — inject JS
+  for automation and custom features. - Annoyed by website ads? Hide them with powerful
+  JS. - Want to use Tauri2 but the environment is too heavy? Use PakePlus instead!
+  ## Getting Started 1. Download the app from the release page：https://github.com/Sjj1024/PakePlus/releases,
+  double-click to install, and run the app. or visit web: PakePlus Web 2. Configure
+  a Github Token, create a new project, and set up the configurations. get token guide:
+  English 简体中文 日本语 ``` Explanation of Github Token permissions: 1. For the beta version,
+  token permissions required: All repositories: Fork an original template repository
+  Actions: Manage GitHub actions Administration: Fork and manage files in the repository
+  Contents: Add, delete, modify, and find repository contents Issues: Submit issues
+  to PakePlus 1. For the classic version, token permissions required: repo: Fork and
+  manage template code workflow: Compile and release your software ``` 1. You can
+  preview the app in a new window and click the publish button to package the app.
+  2. You can download the app from the release page. ## FAQ 1. Mac users may see an
+  “App is damaged” warning on installation. click cancel and Run the following command,
+  then reopen the app:（This is because the application requires an official signature
+  to avoid the prompt of \"The application is damaged\" popping up after installation.
+  However, the cost of the official signature is $99 per year... Therefore, it is
+  necessary to manually bypass the signature to use it normally） ```sh sudo xattr
+  -r -d com.apple.quarantine /Applications/PakePlus.app ``` 1. When you package the
+  app, Mac users may see an “App is damaged” warning on installation. click cancel
+  and Run the following command, then reopen the app: ```sh sudo xattr -r -d com.apple.quarantine
+  /Applications/YourAppName.app ``` 3. If you encounter any issues while using the
+  program, please download the latest version, as versions developed before 2025 were
+  based "
 ---
 {% raw %}
 <h4 align="right"> 

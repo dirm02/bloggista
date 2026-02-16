@@ -2,8 +2,64 @@
 layout: project
 name: Resemble Ai Chatterbox
 slug: resemble-ai-chatterbox
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/resemble-ai-chatterbox/Chatterbox-Turbo.jpg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Chatterbox TTS [](https://resemble-ai.github.io/chatterbox_turbo_demopage/)
+  [](https://huggingface.co/spaces/ResembleAI/chatterbox-turbo-demo) [](https://podonos.com/resembleai/chatterbox)
+  [](https://discord.gg/rJq9cRJBJ6) _Made with ♥️ by **Chatterbox** is a family of
+  three state-of-the-art, open-source text-to-speech models by Resemble AI. We are
+  excited to introduce **Chatterbox-Turbo**, our most efficient model yet. Built on
+  a streamlined 350M parameter architecture, **Turbo** delivers high-quality speech
+  with less compute and VRAM than our previous models. We have also distilled the
+  speech-token-to-mel decoder, previously a bottleneck, reducing generation from 10
+  steps to just **one**, while retaining high-fidelity audio output. **Paralinguistic
+  tags** are now native to the Turbo model, allowing you to use `[cough]`, `[laugh]`,
+  `[chuckle]`, and more to add distinct realism. While Turbo was built primarily for
+  low-latency voice agents, it excels at narration and creative workflows. If you
+  like the model but need to scale or tune it for higher accuracy, check out our competitively
+  priced TTS service ( link ). It delivers reliable performance with ultra-low latency
+  of sub 200ms—ideal for production use in agents, applications, or interactive media.
+  ### ⚡ Model Zoo Choose the right model for your application. | Model | Size | Languages
+  | Key Features | Best For | \U0001F917 | Examples | |:----------------------------------------------------------------------------------------------------------------|
+  :--- | :--- |:--------------------------------------------------------|:---------------------------------------------|:--------------------------------------------------------------------------|
+  :--- | | **Chatterbox-Turbo** | **350M** | **English** | Paralinguistic Tags (`[laugh]`),
+  Lower Compute and VRAM | Zero-shot voice agents, Production | [Demo](https://huggingface.co/spaces/ResembleAI/chatterbox-turbo-demo)
+  | [Listen](https://resemble-ai.github.io/chatterbox_turbo_demopage/) | | Chatterbox-Multilingual
+  [(Language list)](#supported-languages) | 500M | 23+ | Zero-shot cloning, Multiple
+  Languages | Global applications, Localization | [Demo](https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS)
+  | [Listen](https://resemble-ai.github.io/chatterbox_demopage/) | | Chatterbox [(Tips
+  and Tricks)](#original-chatterbox-tips) | 500M | English | CFG & Exaggeration tuning
+  | General zero-shot TTS with creative controls | [Demo](https://huggingface.co/spaces/ResembleAI/Chatterbox)
+  | [Listen](https://resemble-ai.github.io/chatterbox_demopage/) | ## Installation
+  ```shell pip install chatterbox-tts ``` Alternatively, you can install from source:
+  ```shell # conda create -yn chatterbox python=3.11 # conda activate chatterbox git
+  clone https://github.com/resemble-ai/chatterbox.git cd chatterbox pip install -e
+  . ``` We developed and tested Chatterbox on Python 3.11 on Debian 11 OS; the versions
+  of the dependencies are pinned in `pyproject.toml` to ensure consistency. You can
+  modify the code or dependencies in this installation mode. ## Usage ##### Chatterbox-Turbo
+  ```python import torchaudio as ta import torch from chatterbox.tts_turbo import
+  ChatterboxTurboTTS # Load the Turbo model model = ChatterboxTurboTTS.from_pretrained(device=\"cuda\")
+  # Generate with Paralinguistic Tags text = \"Hi there, Sarah here from MochaFone
+  calling you back [chuckle], have you got one minute to chat about the billing issue?\"
+  # Generate audio (requires a reference clip for voice cloning) wav = model.generate(text,
+  audio_prompt_path=\"your_10s_ref_clip.wav\") ta.save(\"test-turbo.wav\", wav, model.sr)
+  ``` ##### Chatterbox and Chatterbox-Multilingual ```python import torchaudio as
+  ta from chatterbox.tts import ChatterboxTTS from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+  # English example model = ChatterboxTTS.from_pretrained(device=\"cuda\") text =
+  \"Ezreal and Jinx teamed up with Ahri, Yasuo, and Teemo to take down the enemy's
+  Nexus in an epic late-game pentakill.\" wav = model.generate(text) ta.save(\"test-english.wav\",
+  wav, model.sr) # Multilingual examples multilingual_model = ChatterboxMultilingualTTS.from_pretrained(device=device)
+  french_text = \"Bonjour, comment ça va? Ceci est le modèle de synthèse vocale multilingue
+  Chatterbox, il prend en charge 23 langues.\" wav_french = multilingual_model.generate(spanish_text,
+  language_id=\"fr\") ta.save(\"test-french.wav\", wav_french, model.sr) chinese_text
+  = \"你好，今天天气真不错，希望你有一个愉快的周末。\" wav_chinese = multilingual_model.generate(chinese_text,
+  language_id=\"zh\") ta.save(\"test-chinese.wav\", wav_chinese, model.sr) # If you
+  want to synthesize with a different voice, specify the audio prompt AUDIO_PROMPT_PATH
+  = \"YOUR_FILE.wav\" wav = model.generate(text, audio_prompt_path=AUDIO_PROMPT_PATH)
+  ta.save(\"test-2.wav\", wav, model.sr) ``` See `example_tts.py` and `example_vc.py`
+  for more examples. ## Supported Languages Arabic (ar) • Danish (da) • German (de)
+  • Greek (el) • English (en) • Spanish (es) • Finnish (fi) "
 ---
 {% raw %}
 ![Chatterbox Turbo Image](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/resemble-ai-chatterbox/Chatterbox-Turbo.jpg)

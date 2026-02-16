@@ -2,8 +2,61 @@
 layout: project
 name: Canopyai Orpheus Tts
 slug: canopyai-Orpheus-TTS
+category: AI-automation-web2-3SmartC-Agent
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/canopyai/Orpheus-TTS
+indexed_content: "# Orpheus TTS #### Updates \U0001F525 - [5/2025] We've partnered
+  with [Baseten](https://www.baseten.co/blog/canopy-labs-selects-baseten-as-preferred-inference-provider-for-orpheus-tts-model)
+  to bring highly optimized inference to Orpheus at fp8 (more performant) and fp16
+  (full fidelity) inference. See code and docs [here](/additional_inference_options/baseten_inference_example/README.md).
+  - [4/2025] We release a [family of multilingual models](https://huggingface.co/collections/canopylabs/orpheus-multilingual-research-release-67f5894cd16794db163786ba)
+  in a research preview. We release a [training guide](https://canopylabs.ai/releases/orpheus_can_speak_any_language#training)
+  that explains how we created these models in the hopes that even better versions
+  in both the languages released and new languages are created. We welcome feedback
+  and criticism as well as invite questions in this [discussion](https://github.com/canopyai/Orpheus-TTS/discussions/123)
+  for feedback and questions. ## Overview Orpheus TTS is a SOTA open-source text-to-speech
+  system built on the Llama-3b backbone. Orpheus demonstrates the emergent capabilities
+  of using LLMs for speech synthesis. [Check out our original blog post](https://canopylabs.ai/model-releases)
+  https://github.com/user-attachments/assets/ce17dd3a-f866-4e67-86e4-0025e6e87b8a
+  ## Abilities - **Human-Like Speech**: Natural intonation, emotion, and rhythm that
+  is superior to SOTA closed source models - **Zero-Shot Voice Cloning**: Clone voices
+  without prior fine-tuning - **Guided Emotion and Intonation**: Control speech and
+  emotion characteristics with simple tags - **Low Latency**: ~200ms streaming latency
+  for realtime applications, reducible to ~100ms with input streaming ## Models We
+  provide 2 English models, and additionally we offer the data processing scripts
+  and sample datasets to make it very straightforward to create your own finetune.
+  1. [**Finetuned Prod**](https://huggingface.co/canopylabs/orpheus-tts-0.1-finetune-prod)
+  – A finetuned model for everyday TTS applications 2. [**Pretrained**](https://huggingface.co/canopylabs/orpheus-tts-0.1-pretrained)
+  – Our base model trained on 100k+ hours of English speech data We also offer a family
+  of multilingual models in a research release. 1. [**Multlingual Family**](https://huggingface.co/collections/canopylabs/orpheus-multilingual-research-release-67f5894cd16794db163786ba)
+  - 7 pairs of pretrained and finetuned models. ### Inference #### Simple setup on
+  Colab We offer a standardised prompt format across languages, and these notebooks
+  illustrate how to use our models in English. 1. [Colab For Tuned Model](https://colab.research.google.com/drive/1KhXT56UePPUHhqitJNUxq63k-pQomz3N?usp=sharing)
+  (not streaming, see below for realtime streaming) – A finetuned model for everyday
+  TTS applications. 2. [Colab For Pretrained Model](https://colab.research.google.com/drive/10v9MIEbZOr_3V8ZcPAIh8MN7q2LjcstS?usp=sharing)
+  – This notebook is set up for conditioned generation but can be extended to a range
+  of tasks. #### One-click deployment on Baseten Baseten is our [preferred inference
+  partner](https://www.baseten.co/blog/canopy-labs-selects-baseten-as-preferred-inference-provider-for-orpheus-tts-model)
+  for Orpheus. Get a dedicated deployment with real-time streaming on production-grade
+  infrastructure [in one click on Baseten](https://www.baseten.co/library/orpheus-tts/).
+  #### Streaming Inference Example 1. Clone this repo ```bash git clone https://github.com/canopyai/Orpheus-TTS.git
+  ``` 2. Navigate and install packages ```bash cd Orpheus-TTS && pip install orpheus-speech
+  # uses vllm under the hood for fast inference ``` vllm pushed a slightly buggy version
+  on March 18th so some bugs are being resolved by reverting to `pip install vllm==0.7.3`
+  after `pip install orpheus-speech` 4. Run the example below: ```python from orpheus_tts
+  import OrpheusModel import wave import time model = OrpheusModel(model_name =\"canopylabs/orpheus-tts-0.1-finetune-prod\",
+  max_model_len=2048) prompt = '''Man, the way social media has, um, completely changed
+  how we interact is just wild, right? Like, we're all connected 24/7 but somehow
+  people feel more alone than ever. And don't even get me started on how it's messing
+  with kids' self-esteem and mental health and whatnot.''' start_time = time.monotonic()
+  syn_tokens = model.generate_speech( prompt=prompt, voice=\"tara\", ) with wave.open(\"output.wav\",
+  \"wb\") as wf: wf.setnchannels(1) wf.setsampwidth(2) wf.setframerate(24000) total_frames
+  = 0 chunk_counter = 0 for audio_chunk in syn_tokens: # output streaming chunk_counter
+  += 1 frame_count = len(audio_chunk) // (wf.getsampwidth() * wf.getnchannels()) total_frames
+  += frame_count wf.writeframes(audio_chunk) duration = total_frames / wf.getframerate()
+  end_time = time.monotonic() print(f\"It took {end_time - start_time} seconds to
+  generate {duration:.2f} seconds of audio\") ``` #### Setup Issues If you've cloned
+  this repository and encounter a KV cache error or `max_model_len` property d"
 ---
 {% raw %}
 # Orpheus TTS

@@ -2,8 +2,68 @@
 layout: project
 name: Fo 000 Bluing
 slug: fO-000-bluing
+category: Uncategorized
 image: https://raw.githubusercontent.com/fO-000/bluing/master/assets/bluing-features-mermaid-mindmap.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/fO-000-bluing
+indexed_content: 'Bluing An intelligence gathering tool for hacking Bluetooth English
+  · 简体中文 Bluing (formerly [bluescan](https://pypi.org/project/bluescan/)) is a **Blu**etooth
+  **In**telligence **G**athering tool written primarily in Python. It can help us
+  snoop on the internal structure of Bluetooth which is a complex protocol, or hack
+  Bluetooth devices. Here are the main features of the tool: ## Installation Bluing
+  partially depend on [BlueZ](http://www.bluez.org/), the official Linux Bluetooth
+  protocol stack. So it only supports running on Linux. The following command is used
+  to install dependencies: ```sh sudo apt install python3-pip python3-dev libcairo2-dev
+  libgirepository1.0-dev \ libbluetooth-dev libdbus-1-dev bluez-tools python3-cairo-dev
+  \ rfkill meson patchelf bluez ubertooth adb python-is-python3 ``` Currently, bluing
+  is distributed via [PyPI](https://pypi.org/project/bluing/) and **only supports
+  Python 3.10**. The following is an installation command: ```sh sudo pip3.10 install
+  bluing ``` ## Usage > * God said, "Let there be **colorful**", and there was [**colorful**](https://fo-000.github.io/bluing/#-usage).
+  > * Perhaps you would like a brief overview of the [recommended hardware](https://fo-000.github.io/bluing/#-recommended-hardware).
+  $ bluing --help An intelligence gathering tool for hacking Bluetooth Usage: bluing
+  [-h | --help] bluing (-v | --version) bluing [-i &lthci>] --clean BD_ADDR bluing
+  --flash-micro-bit bluing &ltcommand> [&ltargs>...] Arguments: BD_ADDR Bluetooth
+  device address Options: -h, --help Print this help and quit -v, --version Print
+  version information and quit -i &lthci> HCI device --clean Clean cached data of
+  a remote device --flash-micro-bit Download the dedicated firmware to micro:bit(s)
+  Commands: br Basic Rate system, includes an optional Enhanced Data Rate (EDR) extension
+  le Low Energy system android Android Bluetooth stack spoof Spoof with new local
+  device information plugin Manage plugins Run `bluing &ltcommand> --help` for more
+  information on a command. ### `br` command: Basic Rate system $ bluing br --help
+  Usage: bluing br [-h | --help] bluing br [-i &lthci>] [--inquiry-len=&ltn>] --inquiry
+  bluing br [-i &lthci>] --sdp BD_ADDR bluing br [-i &lthci>] --local --sdp bluing
+  br [-i &lthci>] --lmp-features BD_ADDR bluing br [-i &lthci>] --local --lmp-features
+  bluing br [-i &lthci>] --stack BD_ADDR bluing br [-i &lthci>] --local --stack bluing
+  br [-i &lthci>] [--inquiry-scan] --mon-incoming-conn bluing br --org=&ltname> --timeout=&ltsec>
+  --sniff-and-guess-bd-addr Arguments: BD_ADDR BR/EDR Bluetooth device address Options:
+  -h, --help Print this help and quit -i &lthci> HCI device --local Target a local
+  BR/EDR device instead of a remote one --inquiry Discover other nearby BR/EDR controllers
+  --inquiry-len=&ltn> Maximum amount of time (added to --ext-inquiry-len=&ltn>) specified
+  before the Inquiry is halted. Time = n * 1.28 s Time range: 1.28 to 61.44 s Range
+  of n: 0x01 to 0x30 [default: 8] --ext-inquiry-len=&ltn> Extended_Inquiry_Length
+  measured in number of Baseband slots. Interval Length = n * 0.625 ms (1 Baseband
+  slot) Time Range: 0 to 40.9 s Range of n: 0x0000 to 0xFFFF [default: 0] --sdp Retrieve
+  information from the SDP database of a remote BR/EDR device --lmp-features Read
+  LMP features of a remote BR/EDR device --stack Determine the Bluetooth stack type
+  of a remote BR/EDR device --mon-incoming-conn Print incoming connection from other
+  nearby BR/EDR devices --inquiry-scan Enable the Inquiry Scan --sniff-and-guess-bd-addr
+  Sniff SAPs of BD_ADDRs over the air, then guess the address based on the organization
+  name. Need at least one Ubertooth device --org=&ltname> An organization name in
+  the OUI.txt --timeout=&ltsec> Timeout in second(s) #### `--inquiry`: Discover other
+  nearby BR/EDR controllers $ sudo bluing br --inquiry [ INFO ] Discovering other
+  nearby BR/EDR Controllers on hci0 for 10.24 sec BD_ADDR: B0:C9:52:45:33:13 ( GUANGDONG
+  OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD ) Page scan repetition mode: 1 (R1) Reserved:
+  0x02 CoD: 0x5a020c Service Class: 0b1011010000 Telephony Object Transfer Capturing
+  Networking Major Device Class: 0b00010, Phone Clock offset: 0x50D5 RSSI: -61 Extended
+  inquiry response: Complete Local Name: old man phone Complete List of 16-bit Service
+  Class UUIDs 0x1105 OBEXObjectPush 0x110a AudioSource 0x110c A/V_RemoteControlTarget
+  0x110e A/V_RemoteControl 0x1112 Headset - Audio Gateway (AG) 0x1115 PANU 0x1116
+  NAP 0x111f HandsfreeAudioGateway 0x112d SIM_Access 0x112f Phonebook Access - PSE
+  0x1200 PnPInformation 0x1132 Message Access Server Complete List of 32-bit Service
+  Class UUIDs None Complete List of 128-bit Service Class UUIDs A49EAA15-CB06-495C-9F4F-BB80A90CDF00
+  00000000-0000-0000-0000-000000000000 ... ... [ INFO ] Requesting the names of all
+  discovered devices... B0:C9:52:45:33:13 : old man phone ... ... #### `--sdp`: Retrieve
+  information from the SDP database of a remote BR/EDR device $ sudo bluing br --sdp
+  34:13:46:23:6A:4D Scanning ⠋ Number of service records'
 ---
 {% raw %}
 <h1 align="center">Bluing</h1>

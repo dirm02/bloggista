@@ -2,8 +2,15 @@
 layout: project
 name: Karanchandekar Architect Website
 slug: KaranChandekar-architect-website
+category: Uncategorized
 image: https://user-images.githubusercontent.com/93200960/215093326-13249bd8-2956-48cc-b310-dd24bff344f4.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/KaranChandekar-architect-website
+indexed_content: "# Architect Website Fully responsive architect website using html,
+  css and javascript. ## Languages - HTML5 - CSS3 - JavaScript ## Screenshot ## Demo
+  https://user-images.githubusercontent.com/93200960/196207036-bd425f78-1be9-49fe-8474-98769cef3eea.mp4
+  ## \U0001F680 About Me I'm a self tought frontend web developer... ## \U0001F517
+  Links [](https://portfolio-me-karanchandekar.vercel.app/) [](https://www.linkedin.com/in/karan-chandekar-a87263219/)
+  [](https://twitter.com/karanchandekar1)"
 ---
 {% raw %}
 # Architect Website

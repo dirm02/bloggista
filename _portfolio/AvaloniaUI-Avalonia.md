@@ -2,8 +2,56 @@
 layout: project
 name: Avaloniaui Avalonia
 slug: AvaloniaUI-Avalonia
+category: API - Documentation
 image: https://github.com/user-attachments/assets/d55eb468-fa5c-499f-858e-54618beb6f92
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://github.com/sponsors/AvaloniaUI) [](https://avaloniaui.net?utm_source=github&utm_medium=referral&utm_content=readme_link)
+  [](https://t.me/Avalonia) [](https://dev.azure.com/AvaloniaUI/AvaloniaUI/_build/latest?definitionId=4)
+  [](#backers) [](#sponsors) [](https://github.com/sponsors/AvaloniaUI) [](https://www.nuget.org/packages/Avalonia)
+  [](https://www.nuget.org/packages/Avalonia) ## \U0001F4D6 About [Avalonia](https://avaloniaui.net?utm_source=github&utm_medium=referral&utm_content=readme_link)
+  is a cross-platform UI framework for dotnet, providing a flexible styling system
+  and supporting a wide range of platforms such as Windows, macOS, Linux, iOS, Android
+  and WebAssembly. Avalonia is mature and production ready and is used by companies,
+  including [Schneider Electric](https://avaloniaui.net/showcase#se), [Unity](https://avaloniaui.net/showcase#unity),
+  [JetBrains](https://avaloniaui.net/showcase#rider) and [GitHub](https://avaloniaui.net/showcase#github).
+  Considered by many to be the spiritual successor to WPF, Avalonia UI provides a
+  familiar, modern development experience for XAML developers creating cross-platform
+  applications. While Avalonia UI is [similar to WPF](https://docs.avaloniaui.net/docs/next/get-started/wpf/),
+  it isn't a 1:1 copy, and you'll find plenty of improvements. For those seeking a
+  cross-platform WPF, we have created [Avalonia XPF]([https://avaloniaui.net/xpf](https://avaloniaui.net/xpf?utm_source=github&utm_medium=referral&utm_content=readme_link)),
+  enabling WPF applications to run on macOS and Linux with little to no code changes.
+  Avalonia XPF is a commercial product and is licensed per-app, per-platform. ####
+  Blog To see the latest announcements and read about the state of Avalonia, check
+  out the [Avalonia UI Blog](https://www.avaloniaui.net/blog?utm_source=github&utm_medium=referral&utm_content=readme_link).
+  #### Breaking Changes You can also see what [breaking changes](https://github.com/AvaloniaUI/Avalonia/issues/3538)
+  we have planned and what our [past breaking changes](https://github.com/AvaloniaUI/Avalonia/wiki/Breaking-Changes)
+  have been. #### Awesome Avalonia [Awesome Avalonia](https://github.com/AvaloniaCommunity/awesome-avalonia)
+  is community-curated list of awesome Avalonia UI tools, libraries, projects and
+  resources. Go and see what people are building with Avalonia! ## \U0001F680 Getting
+  Started See our [Get Started](https://avaloniaui.net/gettingstarted?utm_source=github&utm_medium=referral&utm_content=readme_link)
+  guide to begin developing apps with Avalonia UI. ### Visual Studio The Avalonia
+  [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=AvaloniaTeam.AvaloniaVS)
+  contains project and control templates that will help you get started, or you can
+  use the .NET Core CLI. For a starter guide see our [documentation](https://docs.avaloniaui.net/docs/getting-started).
+  ### JetBrains Rider [JetBrains Rider](https://www.jetbrains.com/rider/whatsnew/?mkt_tok=eyJpIjoiTURBNU1HSmhNV0kwTUdFMiIsInQiOiJtNnU2VEc1TlNLa1ZRVkROYmdZYVpYREJsaU1qdUhmS3dxSzRHczdYWHl0RVlTNDMwSFwvNUs3VENTNVM0bVcyNFdaRmVYZzVWTTF1N3VrQWNGTkJreEhlam1hMlB4UVVWcHBGM1dNOUxoXC95YnRQdGgyUXl1YmZCM3h3d3BVWWdBIn0%3D#avalonia-support)
+  now has official support for Avalonia. Code completion, inspections and refactorings
+  are supported out of the box, for XAML previewer add `https://plugins.jetbrains.com/plugins/dev/14839`
+  to plugin repositories and install [AvaloniaRider](https://github.com/ForNeVeR/AvaloniaRider)
+  plugin. ### Avalonia Packages Avalonia is delivered via NuGet package manager. You
+  can find the packages here: https://www.nuget.org/packages/Avalonia/ Use these commands
+  in the Package Manager console to install Avalonia manually: ``` Install-Package
+  Avalonia Install-Package Avalonia.Desktop ``` ## Showcase [](https://avaloniaui.net/showcase?utm_source=github&utm_medium=referral&utm_content=readme_link)
+  See what others have built with Avalonia UI on our [Showcase](https://avaloniaui.net/showcase?utm_source=github&utm_medium=referral&utm_content=readme_link).
+  We welcome submissions! ## Sponsors Avalonia development is supported by the generous
+  sponsorship of [Devolutions](https://devolutions.net/?utm_source=pr&utm_medium=partnership&utm_campaign=avalonia&utm_id=C086&member_status=responded).
+  ## Community Join our community hub to get early access to upcoming features, share
+  your thoughts, and connect directly with the Avalonia team. [](https://avaloniaui.community)
+  ## Bleeding Edge Builds We also have a [nightly build](https://github.com/AvaloniaUI/Avalonia/wiki/Using-nightly-build-feed)
+  which tracks the current state of master. Although these packages are less stable
+  than the release on NuGet.org, you'll get all the latest features and bugfixes right
+  away and many of our users actually prefer this feed! ## Learning ### Documentation
+  Documentation can be found at https://docs.avaloniaui.net. ### Tutorials We also
+  have a [tutorial](https://docs.avaloniaui.net/docs/getting-started/programming-with-"
 ---
 {% raw %}
 [![Star_Banner@3x](https://github.com/user-attachments/assets/d55eb468-fa5c-499f-858e-54618beb6f92)](https://github.com/sponsors/AvaloniaUI)

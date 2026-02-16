@@ -2,8 +2,29 @@
 layout: project
 name: Vitejs Vite
 slug: vitejs-vite
+category: Future RAG ressources
 image: https://img.shields.io/npm/v/vite.svg?label=%20
 repo_url: https://github.com/vitejs/vite
+indexed_content: "# Vite ⚡ > Next Generation Frontend Tooling - \U0001F4A1 Instant
+  Server Start - ⚡️ Lightning Fast HMR - \U0001F6E0️ Rich Features - \U0001F4E6 Optimized
+  Build - \U0001F529 Universal Plugin Interface - \U0001F511 Fully Typed APIs Vite
+  (French word for \"quick\", pronounced [`/viːt/`](https://cdn.jsdelivr.net/gh/vitejs/vite@main/docs/public/vite.mp3),
+  like \"veet\") is a new breed of frontend build tooling that significantly improves
+  the frontend development experience. It consists of two major parts: - A dev server
+  that serves your source files over [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules),
+  with [rich built-in features](https://vite.dev/guide/features.html) and astonishingly
+  fast [Hot Module Replacement (HMR)](https://vite.dev/guide/features.html#hot-module-replacement).
+  - A [build command](https://vite.dev/guide/build.html) that bundles your code with
+  [Rollup](https://rollupjs.org), pre-configured to output highly optimized static
+  assets for production. In addition, Vite is highly extensible via its [Plugin API](https://vite.dev/guide/api-plugin.html)
+  and [JavaScript API](https://vite.dev/guide/api-javascript.html) with full typing
+  support. [Read the Docs to Learn More](https://vite.dev). ## Packages | Package
+  | Version (click for changelogs) | | -----------------------------------------------
+  | :--------------------------------------------------------------------------------------------------------------------------------
+  | | [vite](packages/vite) | [](packages/vite/CHANGELOG.md) | | [@vitejs/plugin-legacy](packages/plugin-legacy)
+  | [](packages/plugin-legacy/CHANGELOG.md) | | [create-vite](packages/create-vite)
+  | [](packages/create-vite/CHANGELOG.md) | ## Contribution See [Contributing Guide](CONTRIBUTING.md).
+  ## License [MIT](LICENSE). ## Sponsors"
 ---
 {% raw %}
 <p align="center">

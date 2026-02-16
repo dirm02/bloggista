@@ -2,8 +2,69 @@
 layout: project
 name: Gjarek98 Win11debloat By Raphire
 slug: gjarek98-Win11Debloat-by-Raphire
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/gjarek98-Win11Debloat-by-Raphire/Assets/menu.png
 repo_url: https://github.com/Raphire/Win11Debloat
+indexed_content: "# Win11Debloat Win11Debloat is a simple, easy to use and lightweight
+  PowerShell script that can remove pre-installed Windows bloatware apps, disable
+  telemetry and declutter the experience by disabling or removing intrusive interface
+  elements, ads and more. No need to painstakingly go through all the settings yourself
+  or remove apps one by one. Win11Debloat makes the process quick and easy! The script
+  also includes many features that system administrators will enjoy. Such as support
+  for Windows Audit mode and the ability to run the script without requiring user
+  input during runtime. #### Did this script help you? Please consider buying me a
+  cup of coffee to support my work [](https://ko-fi.com/M4M5C6UPC) ## Features > [!Tip]
+  > All of the changes made by Win11Debloat can easily be reverted and almost all
+  of the apps can be reinstalled through the Microsoft Store. A full guide on how
+  to revert changes can be found [here](https://github.com/Raphire/Win11Debloat/discussions/114).
+  #### App Removal - Remove a wide variety of bloatware apps. - Remove all pinned
+  apps from start for the current user, or for all existing & new users. (Windows
+  11 only) #### Telemetry, Tracking & Suggested Content - Disable telemetry, diagnostic
+  data, activity history, app-launch tracking & targeted ads. - Disable tips, tricks,
+  suggestions and ads in start, settings, notifications, File Explorer, and on the
+  lockscreen. #### Bing Web Search, Copilot & More - Disable & remove Bing web search
+  & Cortana from Windows search. - Disable & remove Windows Copilot. (Windows 11 only)
+  - Disable Windows Recall snapshots. (Windows 11 only) #### File Explorer - Show
+  hidden files, folders and drives. - Show file extensions for known file types. -
+  Hide the Home or Gallery section from the File Explorer navigation pane. (Windows
+  11 only) - Hide the 3D objects, music or OneDrive folder from the File Explorer
+  navigation pane. (Windows 10 only) - Hide duplicate removable drive entries from
+  the File Explorer navigation pane, so only the entry under 'This PC' remains. ####
+  Taskbar - Align taskbar icons to the left. (Windows 11 only) - Hide or change the
+  search icon/box on the taskbar. (Windows 11 only) - Hide the taskview button from
+  the taskbar. (Windows 11 only) - Disable the widgets service & hide icon from the
+  taskbar. - Hide the chat (meet now) icon from the taskbar. #### Context Menu - Restore
+  the old Windows 10 style context menu. (Windows 11 only) - Hide the 'Include in
+  library', 'Give access to' and 'Share' options from the context menu. (Windows 10
+  only) #### Other - Disable Xbox game/screen recording. (Also stops gaming overlay
+  popups) - Sysprep mode to apply changes to the Windows Default user profile. ##
+  Default Mode The default mode applies the changes that are recommended for most
+  users, expand the section below for more info. Click to expand Default mode applies
+  the following changes: - Remove the default selection of bloatware apps. (See below
+  for full list) - Disable telemetry, diagnostic data, activity history, app-launch
+  tracking & targeted ads. - Disable tips, tricks, suggestions and ads in start, settings,
+  notifications, File Explorer, and on the lockscreen. - Disable & remove Bing web
+  search & Cortana from Windows search. - Disable Windows Copilot. (Windows 11 only)
+  - Show file extensions for known file types. - Hide the 3D objects folder under
+  'This pc' from File Explorer. (Windows 10 only) - Disable the widget service & hide
+  the icon from the taskbar. - Hide the Chat (meet now) icon from the taskbar. ####
+  Apps that ARE removed by default Click to expand Microsoft bloat: - Clipchamp.Clipchamp
+  - Microsoft.3DBuilder - Microsoft.549981C3F5F10 (Cortana app) - Microsoft.BingFinance
+  - Microsoft.BingFoodAndDrink - Microsoft.BingHealthAndFitness - Microsoft.BingNews
+  - Microsoft.BingSearch* (Bing web search in Windows) - Microsoft.BingSports - Microsoft.BingTranslator
+  - Microsoft.BingTravel - Microsoft.BingWeather - Microsoft.Getstarted (Cannot be
+  uninstalled in Windows 11) - Microsoft.Messaging - Microsoft.Microsoft3DViewer -
+  Microsoft.MicrosoftJournal - Microsoft.MicrosoftOfficeHub - Microsoft.MicrosoftPowerBIForWindows
+  - Microsoft.MicrosoftSolitaireCollection - Microsoft.MicrosoftStickyNotes - Microsoft.MixedReality.Portal
+  - Microsoft.NetworkSpeedTest - Microsoft.News - Microsoft.Office.OneNote (Discontinued
+  UWP version only, does not remove new MS365 versions) - Microsoft.Office.Sway -
+  Microsoft.OneConnect - Microsoft.Print3D - Microsoft.SkypeApp - Microsoft.Todos
+  - Microsoft.WindowsAlarms - Microsoft.WindowsFeedbackHub - Microsoft.WindowsMaps
+  - Microsoft.WindowsSoundRecorder - Microsoft.XboxApp (Old Xbox Console Companion
+  App, no longer supported) - Microsoft.ZuneVideo - MicrosoftCorporationII.MicrosoftFamily
+  (Microsoft Family Safety) - MicrosoftTeams (Old personal version of MS Teams from
+  the MS Store) - MSTeams (New MS Teams app) Third party bloat: - ACGMediaPlayer -
+  ActiproSoftwareLLC - AdobeSystemsIncorporated.AdobePhotoshopExpress - A"
 ---
 {% raw %}
 # Win11Debloat

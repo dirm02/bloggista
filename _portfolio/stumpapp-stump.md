@@ -2,8 +2,68 @@
 layout: project
 name: Stumpapp Stump
 slug: stumpapp-stump
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://run.pstmn.io/button.svg
 repo_url: https://github.com/awesome-selfhosted/awesome-selfhosted
+indexed_content: "Stump is a free and open source comics, manga and digital book server
+  with OPDS support, created with Rust , Axum , Prisma and React . Table of Contents
+  - [Roadmap \U0001F5FA](#roadmap-) - [Getting Started \U0001F680](#getting-started-)
+  - [Developer Guide \U0001F4BB](#developer-guide-) - [Where to start?](#where-to-start)
+  - [Project Structure \U0001F4E6](#project-structure-) - [Apps](#apps) - [Core](#core)
+  - [Crates](#crates) - [Docs](#docs) - [Packages](#packages) - [Similar Projects
+  \U0001F46F](#similar-projects-) - [License \U0001F4DD](#license-) > **\U0001F6A7
+  Disclaimer \U0001F6A7**: Stump is under active development and is an ongoing **WIP**.
+  Anyone is welcome to try it out, but **DO NOT** expect a fully featured or bug-free
+  experience. If you'd like to contribute and help expedite feature development, please
+  review the [developer guide](#developer-guide-). ## Roadmap \U0001F5FA The following
+  items are the major targets for Stump's first stable release: - \U0001F4C3 Full
+  OPDS + OPDS Page Streaming support - \U0001F4D5 EPUB, PDF, and CBZ/CBR support -
+  \U0001F4DA Organize libraries with collections and reading lists - \U0001F510 Granular
+  access-control with managed user accounts - \U0001F680 Easy setup and deployment
+  using Docker or bare metal - \U0001F440 Fully responsive, built-in UI with a dark
+  mode - \U0001F3C3 Low resource utilization with excellent performance - \U0001F9F0
+  Easily consumable and documented REST API, so community tools and scripts can interact
+  with Stump - \U0001F30F Language support _(look [here](https://github.com/stumpapp/stump/issues/106))_
+  - \U0001F308 And more! Things you can expect to see afterwards: - \U0001F5A5️ Cross-platform
+  desktop app _(Windows, Mac, Linux)_ - \U0001F4F1 In-house mobile app _(Android,
+  iOS)_ - \U0001F50E Versatile full-text search _(blocked by [prisma#9414](https://github.com/prisma/prisma/issues/9414))_
+  - \U0001F465 Configurable book clubs _(see [this issue](https://github.com/stumpapp/stump/issues/120))_
+  Feel free to reach out if you have anything else you'd like to see! ## Getting Started
+  \U0001F680 Stump isn't ready for normal usage yet. To give it a spin, it is recommended
+  to try the nightly [Docker image](https://hub.docker.com/r/aaronleopold/stump).
+  If you're interested in development, or trying it from source, you can follow the
+  [developer guide](#developer-guide-). For more information about getting started,
+  check out the [guides](https://stumpapp.dev/guides) available on the Stump website.
+  ## Developer Guide \U0001F4BB Contributions are very **welcome**! Please review
+  the [CONTRIBUTING.md](https://github.com/stumpapp/stump/tree/develop/.github/CONTRIBUTING.md)
+  before getting started. A quick summary of the steps required to get going: 1. Install
+  [yarn](https://yarnpkg.com/), [rust](https://www.rust-lang.org/tools/install) and
+  [node](https://nodejs.org/en/download/). - If you're running Windows, you will need
+  [Visual C++](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+  - If you're running macOS on Apple Silicon, you'll need to install [Rosetta](https://support.apple.com/en-us/HT211861)
+  2. Install [cargo-watch](https://crates.io/crates/cargo-watch) 3. Run the setup
+  script: ```bash ./scripts/system-setup.sh ``` This isn't strictly necessary, and
+  is mostly beneficial for Linux users (it installs some system dependencies). Feel
+  free to skip this step if you'd like, and instead just run: ```bash yarn run setup
+  ``` This will build the React app, generate the Prisma client, and generate the
+  Rust-TypeScript types. To do any of these individually, you can run: ```bash # build
+  the React app yarn web build # generate the Prisma client and Rust-TypeScript types
+  cargo codegen # or cargo prisma generate --schema=./core/prisma/schema.prisma for
+  just the Prisma client ``` 4. Start one of the apps: A few example commands are:
+  ```bash # run the webapp + server yarn dev:web # run the desktop app + server yarn
+  start:desktop # run the docs website yarn docs dev ``` Or just `cargo` for the server
+  (and other Rust apps): ```bash cargo run --package stump_server --bin stump_server
+  ``` And that's it! #### Where to start? If you aren't sure where to start, I recommend
+  taking a look at [open issues](https://github.com/stumpapp/stump/issues). You can
+  also check out the [current project board](https://github.com/orgs/stumpapp/projects/4)
+  to see what's actively being worked on or planned. In general, the following areas
+  are good places to start: - Translation, so Stump is accessible to as many people
+  as possible - [Crowdin](https://crowdin.com/project/stump) is used for translations
+  - Writing comprehensive tests - Designing and/improving UI/UX - Docker build optimizations,
+  caching, etc - CI pipelines, automated releases and release notes, etc - And lots
+  more! [](https://app.getpostman.com/run-collection/6434946-9cf51d71-d680-46f5-89da-7b6cf7213a20?action=collection%2Ffork&collection-url=entityId%3D6434946-9cf51d71-d680-46f5-89da-7b6cf7213a20%26entityType%3Dcollection%26workspaceId%3D722014ea-55eb-4a49-b29d-814300c1016d)
+  ## Project Structure \U0001F4E6 Click to expand Stump has a monorepo structure managed
+  by [yarn workspaces](https://yarnpkg.com/features/workspaces) "
 ---
 {% raw %}
 <p align="center">

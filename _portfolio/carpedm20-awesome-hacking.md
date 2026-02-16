@@ -2,8 +2,57 @@
 layout: project
 name: Carpedm20 Awesome Hacking
 slug: carpedm20-awesome-hacking
+category: GreyHate-Cyber&Security
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome Hacking -An Amazing Project [](https://github.com/sindresorhus/awesome)
+  A curated list of awesome Hacking. Inspired by [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning/)
+  If you want to contribute to this list (please do), send me a pull request! For
+  a list of free hacking books available for download, go [here](https://github.com/Hack-with-Github/Free-Security-eBooks)
+  ## Table of Contents - [System](#system) - [Tutorials](#tutorials) - [Tools](#tools)
+  - [Docker](#docker-images-for-penetration-testing--security) - [General](#general)
+  - [Reverse Engineering](#reverse-engineering) - [Tutorials](#tutorials-1) - [Tools](#tools-1)
+  - [General](#general-1) - [Web](#web) - [Tools](#tools-2) - [General](#general-2)
+  - [Network](#network) - [Tools](#tools-3) - [Forensic](#forensic) - [Tools](#tools-4)
+  - [Cryptography](#cryptography) - [Tools](#tools-5) - [Wargame](#wargame) - [System](#system-1)
+  - [Reverse Engineering](#reverse-engineering-1) - [Web](#web-1) - [Cryptography](#cryptography-1)
+  - [Bug bounty](#bug-bounty) - [CTF](#ctf) - [Competition](#competition) - [General](#general-2)
+  - [OS](#os) - [Online resources](#online-resources) - [Post exploitation](#post-exploitation)
+  - [tools](#tools-6) - [ETC](#etc) # System ## Tutorials * [Roppers Computing Fundamentals](https://www.roppers.org/courses/fundamentals)
+  * Free, self-paced curriculum that builds a base of knowledge in computers and networking.
+  Intended to build up a student with no prior technical knowledge to be confident
+  in their ability to learn anything and continue their security education. Full text
+  available as a [gitbook](https://www.hoppersroppers.org/fundamentals/). * [Corelan
+  Team's Exploit writing tutorial](https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/)
+  * [Exploit Writing Tutorials for Pentesters](http://web.archive.org/web/20140916085343/http://www.punter-infosec.com/exploit-writing-tutorials-for-pentesters/)
+  * [Understanding the basics of Linux Binary Exploitation](https://github.com/r0hi7/BinExp)
+  * [Shells](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
+  * [Missing Semester](https://missing.csail.mit.edu/2020/course-shell/) ## Tools
+  * [Metasploit](https://github.com/rapid7/metasploit-framework) A computer security
+  project that provides information about security vulnerabilities and aids in penetration
+  testing and IDS signature development. * [mimikatz](https://github.com/gentilkiwi/mimikatz)
+  - A little tool to play with Windows security * [Hackers tools](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuiujH1lpn8cA9dsyulbYRv)
+  - Tutorial on tools. ### Docker Images for Penetration Testing & Security * `docker
+  pull kalilinux/kali-linux-docker` [official Kali Linux](https://hub.docker.com/r/kalilinux/kali-last-release/)
+  * `docker pull owasp/zap2docker-stable` - [official OWASP ZAP](https://github.com/zaproxy/zaproxy)
+  * `docker pull wpscanteam/wpscan` - [official WPScan](https://hub.docker.com/r/wpscanteam/wpscan/)
+  * `docker pull metasploitframework/metasploit-framework ` - [Official Metasploit](https://hub.docker.com/r/metasploitframework/metasploit-framework/)
+  * `docker pull citizenstig/dvwa` - [Damn Vulnerable Web Application (DVWA)](https://hub.docker.com/r/citizenstig/dvwa/)
+  * `docker pull wpscanteam/vulnerablewordpress` - [Vulnerable WordPress Installation](https://hub.docker.com/r/wpscanteam/vulnerablewordpress/)
+  * `docker pull hmlio/vaas-cve-2014-6271` - [Vulnerability as a service: Shellshock](https://hub.docker.com/r/hmlio/vaas-cve-2014-6271/)
+  * `docker pull hmlio/vaas-cve-2014-0160` - [Vulnerability as a service: Heartbleed](https://hub.docker.com/r/hmlio/vaas-cve-2014-0160/)
+  * `docker pull opendns/security-ninjas` - [Security Ninjas](https://hub.docker.com/r/opendns/security-ninjas/)
+  * `docker pull noncetonic/archlinux-pentest-lxde` - [Arch Linux Penetration Tester](https://hub.docker.com/r/noncetonic/archlinux-pentest-lxde)
+  * `docker pull diogomonica/docker-bench-security` - [Docker Bench for Security](https://hub.docker.com/r/diogomonica/docker-bench-security/)
+  * `docker pull ismisepaul/securityshepherd` - [OWASP Security Shepherd](https://hub.docker.com/r/ismisepaul/securityshepherd/)
+  * `docker pull danmx/docker-owasp-webgoat` - [OWASP WebGoat Project docker image](https://hub.docker.com/r/danmx/docker-owasp-webgoat/)
+  * `docker pull vulnerables/web-owasp-nodegoat` - [OWASP NodeGoat](https://github.com/owasp/nodegoat#option-3---run-nodegoat-on-docker)
+  * `docker pull citizenstig/nowasp` - [OWASP Mutillidae II Web Pen-Test Practice
+  Application](https://hub.docker.com/r/citizenstig/nowasp/) * `docker pull bkimminich/juice-shop`
+  - [OWASP Juice Shop](https://github.com/bkimminich/juice-shop#docker-container--)
+  * `docker pull phocean/msf` - [Docker Metasploit](https://hub.docker.com/r/phocean/msf/)
+  ## General * [Exploit database](https://www.exploit-db.com/) - An ultimate archive
+  of exploits and vulnerable software # Re"
 ---
 {% raw %}
 # Awesome Hacking -An Amazing Project [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)

@@ -2,8 +2,66 @@
 layout: project
 name: Rongronggg9 Rss To Telegram Bot
 slug: Rongronggg9-RSS-to-Telegram-Bot
+category: Serv&Prod-Tools
 image: https://img.shields.io/github/commit-activity/m/Rongronggg9/RSS-to-Telegram-Bot?logo=git&label=commit
 repo_url: https://github.com/Rongronggg9/RSS-to-Telegram-Bot
+indexed_content: 'RSS to Telegram Bot A Telegram RSS bot that cares about your reading
+  experience [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/commits) [](https://hosted.weblate.org/engage/rss-to-telegram-bot/)
+  [](https://www.codefactor.io/repository/github/rongronggg9/rss-to-telegram-bot)
+  [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/stargazers) [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/fork)
+  [](https://t.me/RSStT_Bot) [](https://t.me/RSStT_Group) [](https://t.me/RSStT_Channel)
+  | [简体中文 README] | [CHANGELOG] | [FAQ] | [Documentation] | [Channels Using RSStT]
+  | |:-------------:|:-----------:|:-----:|-----------------|:----------------------:|
+  [简体中文 README]: README.zh.md [CHANGELOG]: docs/CHANGELOG.md [FAQ]: docs/FAQ.md [Documentation]:
+  docs [Channels Using RSStT]: docs/channels-using-rsstt.md ## Highlights - Multi-user
+  - I18n - English, Chinese, Cantonese, Italian, and [more](docs/translation-guide.md)!
+  - The content of the posts of an RSS feed will be sent to Telegram - Keep rich-text
+  format - Keep media (customizable) - Images, Videos, and Audio both in the post
+  content and enclosure; Documents in the post enclosure - Long images will be sent
+  as files to prevent Telegram from compressing the image and making it unreadable
+  - Drop annoying icons, they break the reading experience - Automatically replace
+  emoji shortcodes with emoji - Automatically replace emoji images with emoji or its
+  description text - Automatically determine whether the title of the RSS feed is
+  auto-filled, if so, omit the title (customizable) - Automatically show the author-name
+  (customizable) - Automatically split too-long messages - Messages can be sent as
+  Telegraph posts (customizable) - [Various customizable formatting settings](docs/formatting-settings.md)
+  - Hashtags, custom title, etc. - Individual proxy settings for Telegram and RSS
+  feeds - OPML importing and exporting (keep custom title) - Optimized performance
+  (see also the [FAQ](docs/FAQ.md#q-how-is-the-performance-of-the-bot)) - User-friendly
+  - HTTP Caching ## Deployment [](https://hub.docker.com/r/rongronggg9/rss-to-telegram)\
+  [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/actions/workflows/publish-docker-image.yml?query=branch%3Amaster)
+  [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/actions/workflows/publish-docker-image.yml?query=branch%3Adev)
+  [](https://pypi.org/project/rsstt/) [](https://test.pypi.org/project/rsstt/) [](https://www.python.org)\
+  [](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/actions/workflows/publish-to-pypi.yml)
+  [&logo=pypi&logoColor=white)](https://github.com/Rongronggg9/RSS-to-Telegram-Bot/actions/workflows/publish-to-test-pypi.yml)
+  [](https://pypi.org/project/rsstt/) It is quite easy to deploy your RSStT instance.
+  The most recommended way to deploy RSStT is Docker Compose: it is suitable for virtually
+  all VPS. [Railway.app](https://railway.app) (a PaaS platform) is also officially
+  supported. You may also install RSStT from [PyPI](https://pypi.org/project/rsstt/)
+  (tracking `master` branch) or [TestPyPI](https://test.pypi.org/project/rsstt/) (tracking
+  `dev` branch, which is always up-to-date) using pip. For developers or experienced
+  users, dirty run from source is also an option. For more details, refer to the [deployment
+  guide](docs/deployment-guide.md). ## Translation Read the translation guide [here](docs/translation-guide.md).
+  You can help to translate the bot using [Hosted Weblate](https://hosted.weblate.org/projects/rss-to-telegram-bot/).
+  Special thanks to their free hosting service for libre projects! ## Using the public
+  bot The [public bot](https://t.me/RSStT_Bot) comes with absolutely no warranty.
+  I will try my best to maintain it, but I cannot guarantee that it will always work
+  perfectly. Meanwhile, you should "fair use" the bot, avoid subscribing to too many
+  RSS feeds.\ If you use the [public bot](https://t.me/RSStT_Bot) in your Channel,
+  consider mentioning the bot (or this project) in your channel description (or pinned
+  message) to let more people know about it. That''s not a compulsion. ## Known channels
+  using RSStT Want to preview what the messages sent by RSStT look like? Here is a
+  [list of channels using RSStT](docs/channels-using-rsstt.md). ## Licensing This
+  project is licensed under [AGPLv3+](LICENSE). Closed-source distribution or bot-hosting
+  are strictly prohibited. If you distribute or host it with code modifications, make
+  sure the source code is available to anyone who can use the bot (by editing the
+  repo URL in [`src/i18n/__init__.py`](src/i18n/__init__.py)). RSS to Telegram Bot
+  Copyright (C) 2020-2024 Rongrong This program is free software: you can redistribute
+  it and/or modify it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the License, or (at
+  your option) any later version. This program is distributed in the hope that it
+  will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  or FITNE'
 ---
 {% raw %}
 <p align="center">

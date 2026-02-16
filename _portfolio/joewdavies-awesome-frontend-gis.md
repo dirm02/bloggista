@@ -2,8 +2,64 @@
 layout: project
 name: Joewdavies Awesome Frontend Gis
 slug: joewdavies-awesome-frontend-gis
+category: Future RAG ressources
 image: https://img.shields.io/github/stars/antvis/L7?style=social
 repo_url: https://github.com/sindresorhus/awesome
+indexed_content: "Awesome Frontend GIS Geographic Information Systems (GIS) for web
+  browsers. For managing, analyzing, editing, and visualizing geographic data. *A
+  compilation of geospatial-related web frameworks, tools, demos, applications, data
+  sources and more.* ## Contents - [\U0001F468‍\U0001F4BB JavaScript Libraries](#-javascript-libraries)
+  - [Mapping](#mapping) - [Data Processing](#data-processing) - [LiDAR](#lidar) -
+  [Remote Sensing](#remote-sensing) - [\U0001F4BE Data sources](#-data-sources) -
+  [Downloads](#downloads) - [Web APIs](#web-apis) - [Collections](#collections) -
+  [\U0001F4D2 Notebooks](#-notebooks) - [Beginner](#beginner) - [Intermediate](#intermediate)
+  - [Advanced](#advanced) - [:world\\_map: Web maps](#world_map-web-maps) - [\U0001F310
+  Web apps](#-web-apps) - [\U0001F3A8 Colour advice](#-colour-advice) - [\U0001F4CD
+  Icons](#-icons) - [\U0001F4FA Videos](#-videos) - [\U0001F4DA Further reading](#-further-reading)
+  ## \U0001F468‍\U0001F4BB JavaScript Libraries ### Mapping Libraries for creating
+  web maps: - [antvis L7](https://github.com/antvis/L7) - Large-scale WebGL-powered
+  Geospatial Data Visualization. - [ArcGIS Maps SDK for JavaScript](https://developers.arcgis.com/javascript/latest/)
+  - Modern JavaScript API and web component library for building interactive 2D and
+  3D web apps for the browser. - [ArcGIS REST JS](https://github.com/Esri/arcgis-rest-js)
+  - Compact, modular JavaScript wrappers for the ArcGIS REST API that run in Node.js
+  and modern browsers. - [Bertin.js](https://github.com/neocarto/bertin) - A JavaScript
+  library for visualizing geospatial data and making thematic maps for the web. -
+  [Cesium.js](https://github.com/CesiumGS/cesium) - An open-source JavaScript library
+  for world-class 3D mapping of geospatial data. - [d3-geo](https://github.com/d3/d3-geo)
+  - A library for creating maps based on D3.js. - [d3-geo-projection](https://github.com/d3/d3-geo-projection)
+  - Extended geographic projections. - [d3-geo-voronoi](https://github.com/Fil/d3-geo-voronoi)
+  - Voronoi diagrams and Delaunay triangulation for the sphere. - [datamaps](https://github.com/markmarkoh/datamaps)
+  - Customizable map visualizations in one file. - [Deck.GL](https://github.com/visgl/deck.gl)
+  - WebGL2 powered geospatial visualization layers. - [Eurostat-map](https://github.com/eurostat/eurostat-map.js)
+  - Create and customise web maps showing Eurostat data using D3.js. - [globe.gl](https://github.com/vasturiano/globe.gl)
+  - This library is a convenience wrapper around the three-globe plugin, using ThreeJS/WebGL
+  for 3D rendering. - [Google Maps](https://developers.google.com/maps/documentation/javascript)
+  - JavaScript API for Google Maps. - [gridviz](https://github.com/eurostat/gridviz)
+  - A package for visualizing gridded data. - [HERE maps API](https://developer.here.com/develop/javascript-api)
+  - Build web applications with feature-rich and customizable HERE maps. - [iTowns](https://github.com/iTowns/itowns)
+  - A Three.js-based framework written in JavaScript/WebGL for visualizing 3D geospatial
+  data. - [Leaflet](https://github.com/Leaflet/Leaflet) - The leading open-source
+  JavaScript library for mobile-friendly interactive maps. - [Map Forecast API](https://github.com/windycom/API)
+  - Simple-to-use library based on Leaflet 1.4.x. It allows you to show wind maps.
+  - [Mapbox GL JS](https://github.com/mapbox/mapbox-gl-js) - JavaScript library that
+  uses WebGL to render interactive maps from vector tiles. - [maplibre](https://github.com/maplibre/maplibre-gl-js)
+  - It originated as an open-source fork of mapbox-gl-js, before their switch to a
+  non-OSS license in December 2020. - [MapTalks.js](https://github.com/maptalks/maptalks.js)
+  - An open-source JavaScript library for integrated 2D/3D maps. - [OpenLayers](https://github.com/openlayers/openlayers)
+  - A high-performance, feature-packed library for creating interactive maps on the
+  web. - [react-simple-maps](https://github.com/zcreativelabs/react-simple-maps) -
+  An SVG mapping component library for React, built on top of d3-geo. - [Tangram](https://github.com/tangrams/tangram)
+  - WebGL map rendering engine for creative cartography. - [TerriaJS](https://github.com/TerriaJS/terriajs)
+  - A library for building rich, web-based geospatial data explorers. - [Wrld.js](https://github.com/wrld3d/wrld.js/)
+  - Animated 3D city maps based on Leaflet. ### Data Processing Libraries that help
+  you analyse and process geospatial data: - [Arc.js](https://github.com/springmeyer/arc.js)
+  - Calculate great circles routes as lines in GeoJSON or WKT format. - [awesome-GeoJSON](https://github.com/tmcw/awesome-geojson)
+  - Catalogue of GeoJSON tools. - [Euclid.ts](https://github.com/mathigon/euclid.js)
+  - 2D Euclidean geometry classes, utilities, and drawing tools. - [flatbush](https://github.com/mourner/flatbush)
+  - A really fast static spatial index for 2D points and rectangles in JavaScript.
+  - [FlatGeoBuf](https://github.com/flatgeobuf/flatgeobuf) - A performant binary encoding
+  for geographic data based on flatbuffers. - [flatten-js](https://github.com/alexbol99/flatten-js)
+  - For manipulating geometrical shapes, finding i"
 ---
 {% raw %}
 <!--lint disable double-link awesome-heading -->

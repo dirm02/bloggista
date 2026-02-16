@@ -2,8 +2,63 @@
 layout: project
 name: Cmu Perceptual Computing Lab Openpose
 slug: CMU-Perceptual-Computing-Lab-openpose
+category: Uncategorized
 image: https://github.com/CMU-Perceptual-Computing-Lab/openpose/workflows/CI/badge.svg
 repo_url: https://github.com/CMU-Perceptual-Computing-Lab/openpose
+indexed_content: "----------------- | **Build Type** |`Linux` |`MacOS` |`Windows`
+  | | :---: | :---: | :---: | :---: | | **Build Status** | [](https://github.com/CMU-Perceptual-Computing-Lab/openpose/actions)
+  | [](https://github.com/CMU-Perceptual-Computing-Lab/openpose/actions) | [](https://ci.appveyor.com/project/gineshidalgo99/openpose/branch/master)
+  | [**OpenPose**](https://github.com/CMU-Perceptual-Computing-Lab/openpose) has represented
+  the **first real-time multi-person system to jointly detect human body, hand, facial,
+  and foot keypoints (in total 135 keypoints) on single images**. It is **authored
+  by** [**Ginés Hidalgo**](https://www.gineshidalgo.com), [**Zhe Cao**](https://people.eecs.berkeley.edu/~zhecao),
+  [**Tomas Simon**](http://www.cs.cmu.edu/~tsimon), [**Shih-En Wei**](https://scholar.google.com/citations?user=sFQD3k4AAAAJ&hl=en),
+  [**Yaadhav Raaj**](https://www.raaj.tech), [**Hanbyul Joo**](https://jhugestar.github.io),
+  **and** [**Yaser Sheikh**](http://www.cs.cmu.edu/~yaser). It is **maintained by**
+  [**Ginés Hidalgo**](https://www.gineshidalgo.com) **and** [**Yaadhav Raaj**](https://www.raaj.tech).
+  OpenPose would not be possible without the [**CMU Panoptic Studio dataset**](http://domedb.perception.cs.cmu.edu).
+  We would also like to thank all the people who [have helped OpenPose in any way](doc/09_authors_and_contributors.md).
+  Authors Ginés Hidalgo (left) and Hanbyul Joo (right) in front of the CMU Panoptic
+  Studio ## Contents 1. [Results](#results) 2. [Features](#features) 3. [Related Work](#related-work)
+  4. [Installation](#installation) 5. [Quick Start Overview](#quick-start-overview)
+  6. [Send Us Feedback!](#send-us-feedback) 7. [Citation](#citation) 8. [License](#license)
+  ## Results ### Whole-body (Body, Foot, Face, and Hands) 2D Pose Estimation Testing
+  OpenPose: (Left) Crazy Uptown Funk flashmob in Sydney video sequence. (Center and
+  right) Authors Ginés Hidalgo and Tomas Simon testing face and hands ### Whole-body
+  3D Pose Reconstruction and Estimation Tianyi Zhao testing the OpenPose 3D Module
+  ### Unity Plugin Tianyi Zhao and Ginés Hidalgo testing the OpenPose Unity Plugin
+  ### Runtime Analysis We show an inference time comparison between the 3 available
+  pose estimation libraries (same hardware and conditions): OpenPose, Alpha-Pose (fast
+  Pytorch version), and Mask R-CNN. The OpenPose runtime is constant, while the runtime
+  of Alpha-Pose and Mask R-CNN grow linearly with the number of people. More details
+  [**here**](https://arxiv.org/abs/1812.08008). ## Features **Main Functionality**:
+  - **2D real-time multi-person keypoint detection**: - 15, 18 or **25-keypoint body/foot
+  keypoint estimation**, including **6 foot keypoints**. **Runtime invariant to number
+  of detected people**. - **2x21-keypoint hand keypoint estimation**. **Runtime depends
+  on number of detected people**. See [**OpenPose Training**](https://github.com/CMU-Perceptual-Computing-Lab/openpose_train)
+  for a runtime invariant alternative. - **70-keypoint face keypoint estimation**.
+  **Runtime depends on number of detected people**. See [**OpenPose Training**](https://github.com/CMU-Perceptual-Computing-Lab/openpose_train)
+  for a runtime invariant alternative. - [**3D real-time single-person keypoint detection**](doc/advanced/3d_reconstruction_module.md):
+  - 3D triangulation from multiple single views. - Synchronization of Flir cameras
+  handled. - Compatible with Flir/Point Grey cameras. - [**Calibration toolbox**](doc/advanced/calibration_module.md):
+  Estimation of distortion, intrinsic, and extrinsic camera parameters. - **Single-person
+  tracking** for further speedup or visual smoothing. **Input**: Image, video, webcam,
+  Flir/Point Grey, IP camera, and support to add your own custom input source (e.g.,
+  depth camera). **Output**: Basic image + keypoint display/saving (PNG, JPG, AVI,
+  ...), keypoint saving (JSON, XML, YML, ...), keypoints as array class, and support
+  to add your own custom output code (e.g., some fancy UI). **OS**: Ubuntu (20, 18,
+  16, 14), Windows (10, 8), Mac OSX, Nvidia TX2. **Hardware compatibility**: CUDA
+  (Nvidia GPU), OpenCL (AMD GPU), and non-GPU (CPU-only) versions. **Usage Alternatives**:
+  - [**Command-line demo**](doc/01_demo.md) for built-in functionality. - [**C++ API**](doc/04_cpp_api.md/)
+  and [**Python API**](doc/03_python_api.md) for custom functionality. E.g., adding
+  your custom inputs, pre-processing, post-posprocessing, and output steps. For further
+  details, check the [major released features](doc/07_major_released_features.md)
+  and [release notes](doc/08_release_notes.md) docs. ## Related Work - [**OpenPose
+  training code**](https://github.com/CMU-Perceptual-Computing-Lab/openpose_train)
+  - [**OpenPose foot dataset**](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/)
+  - [**OpenPose Unity Plugin**](https://github.com/CMU-Perceptual-Computing-Lab/openpose_unity_plugin)
+  - OpenPose papers published in **IEEE TPAMI and CVPR**. Cite them in your publications
+  if OpenPose helps your research! (Links and more details i"
 ---
 {% raw %}
 <div align="center">

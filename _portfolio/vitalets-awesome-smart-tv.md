@@ -2,8 +2,61 @@
 layout: project
 name: Vitalets Awesome Smart Tv
 slug: vitalets-awesome-smart-tv
+category: Entertainment tools
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome Smart TV [](https://github.com/sindresorhus/awesome) >
+  A curated list of awesome resources for building Smart TV apps [Smart TV](https://en.wikipedia.org/wiki/Smart_TV)
+  is a growing platform of TVs having access to the internet and allowing to browse
+  web-sites and install applications. It has own ecosystem with main players like
+  Samsung, LG, Android TV and Apple TV. In this list you will find official and third-party
+  resources for developing Smart TV apps and communicating with TV from remote devices.
+  ## Contents * [Platforms](#platforms) * [Samsung Tizen](#samsung-tizen) * [LG webOS](#lg-webos)
+  * [Android TV](#android-tv) * [Apple tvOS](#apple-tvos) * [Google Chromecast](#google-chromecast)
+  * [Cross-platform frameworks](#cross-platform-frameworks) * [Remote control protocols](#remote-control-protocols)
+  * [Navigation libraries](#navigation-libraries) * [Testing](#testing) * [Misc](#misc)
+  * [Community](#community) ## Platforms Below are the most popular platforms for
+  Smart TV. The full list is [here](https://en.wikipedia.org/wiki/List_of_smart_TV_platforms_and_middleware_software).
+  ### Samsung Tizen #### Official resources * [Samsung TV Developers site](http://developer.samsung.com/tv)
+  - News, documentation and SDK downloads. * [Tizen TV Developers site](https://developer.tizen.org/tizen/tv)
+  - Full API documentation and guides for developing Tizen TV apps. * [Tizen Studio](https://developer.tizen.org/development/tizen-studio/download)
+  - IDE for TV apps development including Tizen TV Emulator. * [Smart View SDK](http://developer.samsung.com/tv/develop/extension-libraries/smart-view-sdk/download/)
+  - Official Android, IOS and JavaScript SDK for communication between remote device
+  and Samsung Smart TV. * [Samsung TV Developers Forum](http://developer.samsung.com/forum/?topCtgy=06)
+  - Ask questions and share tips when developing apps with Samsung SDKs. * [Samsung
+  Smart TV Bug Bounty](https://samsungtvbounty.com) - If you find bug in Samsung TV,
+  submit it here and get a reward $1000+. * [vscode-extension-tizentv](https://marketplace.visualstudio.com/items?itemName=tizensdk.tizentv)
+  - A Visual Studio Code extension that provides a lightweight IDE for Tizen application
+  developers. * [Wits](https://github.com/Samsung/Wits) - A tool for reloading tv
+  app's JavaScript/CSS without reinstalling the app every time you make a change.
+  #### Third-party remote control libraries * [samsungctl](https://github.com/Ape/samsungctl)
+  - Library and command line tool for remote controlling Samsung televisions via a
+  TCP/IP connection. It currently supports both pre-2016 TVs as well most of the modern
+  Tizen-OS TVs with Ethernet or Wi-Fi connectivity (Python). * [samsung-tv-remote](https://github.com/Badisi/samsung-tv-remote)
+  - Node.js module to remotely control Samsung Smart TV starting from 2016 (JavaScript).
+  * [homebridge-samsungtv2016](https://github.com/kyleaa/homebridge-samsungtv2016)
+  - A plugin for [Homebridge](https://github.com/nfarina/homebridge) that allows you
+  to control your 2016 Samsung TV with HomeKit and Siri (JavaScript). * [homebridge-samsung-tizen](https://github.com/tavicu/homebridge-samsung-tizen)
+  - A plugin for [Homebridge](https://github.com/nfarina/homebridge) that allows you
+  to control your Samsung Tizen TV with HomeKit and Siri (JavaScript). * [samsung-remote-models-2014-and-newer](https://github.com/tdudek/samsung-remote-models-2014-and-newer)
+  - Encrypted communication with the internal web service of Samsung TV models 2014+.
+  * [SmartCrypto](https://github.com/sectroyer/SmartCrypto) - SmartView2 encrypted
+  handshake API implementation in C/Python. * [samsung-messagebox](https://github.com/shantanugoel/samsung-messagebox)
+  - Python script to show notifications on Samsung TVs. * [samsung-tv-control](https://github.com/Toxblh/samsung-tv-control)
+  - Library for remote control Samsung TV in your Node.js #### Other * [Identification
+  of Samsung TV models 2008-2017](http://en.tab-tv.com/?page_id=7123) - How to get
+  screen size, matrix type, year of development, series and other parameters from
+  Samsung TV model name. * [Tizen Studio development references](https://github.com/claromes/tizenstudio)
+  - Documents focused on web apps for Smart TVs e Professional Monitors, based in
+  personal researches. * [TizenBrew] (https://github.com/reisxd/TizenBrew) - A way
+  to experience modded websites and you can install newer apps without fighting with
+  Tizen Studio * [TizenTube] (https://github.com/reisxd/TizenTube) - A TizenBrew module
+  that enhances your favourite streaming websites viewing experience by removing ads
+  and adding support for Sponsorblock. ### LG webOS #### Official resources * [webOS
+  TV Developers Site](http://webostv.developer.lge.com) - WebOS TV apps development
+  principles, tutorials, API documentation and packaging tools. * [webOS TV IDE +
+  SDK](http://webostv.developer.lge.com/sdk/download/download-sdk/) - IDE for apps
+  development including a Command Line Interface and emulator. * [Connect SDK](http://www.svlconne"
 ---
 {% raw %}
 # Awesome Smart TV [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)

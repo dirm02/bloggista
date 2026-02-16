@@ -2,8 +2,69 @@
 layout: project
 name: Ai Collection Ai Collection
 slug: ai-collection-ai-collection
+category: Uncategorized
 image: https://awesome.re/badge-flat2.svg
 repo_url: https://github.com/ai-collection/ai-collection&text=Checkout
+indexed_content: "# AI Collection [](https://awesome.re) --- THE GENERATIVE AI LANDSCAPE
+  A Collection of Awesome Generative AI Applications --- Status &nbsp;&nbsp; --- Contributing
+  Guide • License • Blog --- Translations: - español: [README.es.md](https://github.com/ai-collection/ai-collection/blob/main/README.es.md)
+  - Français: [README.fr.md](https://github.com/ai-collection/ai-collection/blob/main/README.fr.md)
+  - Русский: [README.ru.md](https://github.com/ai-collection/ai-collection/blob/main/README.ru.md)
+  - Hindi: [README.hi.md](https://github.com/ai-collection/ai-collection/blob/main/README.hi.md)
+  - 简体中文: [README.zh-CN.md](https://github.com/ai-collection/ai-collection/blob/main/README.zh-CN.md)
+  --- Top Picks JobWinner is an AI-powered job application assistant that produces
+  tailored resumes, cover letters, and interview preparation documents. JobWinner
+  is an AI-powered platfom that gets you more interviews and job offers. Here’s what
+  we offer now: ✔️ AI CV Enhancer: Generate tailored resumes for each job application
+  ✔️ Cover Letter Generator: Craft unique and job-specific cover letters ✔️ Interview
+  Preparation: Access role-specific interview questions and answers ✔️ Job Match Insights:
+  Evaluate how well you fit each position Get Started with JobWinner StickerIt.AI
+  | #1 Mobile, AI-Powered Sticker Design and Sales Solution ​StickerIt.AI is your
+  premier solution for creating and selling AI-powered stickers directly from your
+  mobile device. Transform any location into a vibrant sticker workshop. With just
+  two tablets and a printer, you can start selling custom stickers made in minutes.
+  Our platform is designed to run your AI sticker business anytime, anywhere. Get
+  Started with StickerIt.AI First AI tool to generate your own custom fonts and download
+  them in installable format on Mac and Windows \"Not another tool. Another world.
+  Another Future. Our AI Font Generator uses generative AI to create brand-new fonts
+  that you can download and install, making it a game-changer in font creation. We
+  believe that making font design more open and accessible brings new energy to modern
+  creativity. This way, anyone can customize and adapt our fonts to fit their unique
+  ideas and needs.\" Get Started with Creative Fabrica --- ### A hand-picked list
+  of awesome AI applications featured on AI Collection If your AI application deserves
+  a spot on this hand-picked list, please talk to me: Email Pavel ## Index - \U0001F552
+  [Latest Additions to AI Collection](#latest-additions-to-ai-collection) - \U0001F4C8
+  [Accounting & Finance](#accounting--finance) - \U0001F3B2 [Animation & 3D Modeling](#animation--3d-modeling)
+  - \U0001F3EF [Architecture & Interior Design](#architecture--interior-design) -
+  \U0001F304 [Art & Image Generator](#art--image-generator) - \U0001F60E [Avatars](#avatars)
+  - \U0001F916\U0001F4AC [Chat Bot](#chat-bot) - \U0001F4BB [Code & Database Assistant](#code--database-assistant)
+  - \U0001F4E0 [Content Generation & Seo](#content-generation--seo) - \U0001F9F0 [Creators
+  Toolkit](#creators-toolkit) - \U0001F468‍\U0001F4BB [Customer Support](#customer-support)
+  - \U0001F6D2 [Ecommerce](#ecommerce) - \U0001F9E0 [Education & Learning](#education--learning)
+  - \U0001F4E7 [Email Assistant](#email-assistant) - \U0001F469‍\U0001F3A4 [Fashion](#fashion)
+  - \U0001F92A [Fun](#fun) - \U0001F3AE [Gaming](#gaming) - \U0001F381\U0001F4A1 [Gift
+  Ideas](#gift-ideas) - \U0001F469‍⚕️ [Healthcare](#healthcare) - \U0001F469‍\U0001F4BC
+  [Human Resources & Resume](#human-resources--resume) - \U0001F4A1 [Idea Generation](#idea-generation)
+  - \U0001F469‍⚖️ [Legal](#legal) - ⚜️ [Logo Generator](#logo-generator) - \U0001F468‍\U0001F4BB
+  [Meeting Assistant](#meeting-assistant) - \U0001F3BC [Music & Audio Generation](#music--audio-generation)
+  - \U0001F9DE‍♂️ [Organization & Automation](#organization--automation) - \U0001F4F8
+  [Photo & Image Editing](#photo--image-editing) - \U0001F50C [Plugins & Extensions](#plugins--extensions)
+  - \U0001F680 [Productivity & Personal Growth](#productivity--personal-growth) -
+  \U0001F393 [Research Assistant](#research-assistant) - \U0001F5F3 [Reviews & Recommendations](#reviews--recommendations)
+  - \U0001F4B0 [Sales & Marketing](#sales--marketing) - \U0001F50D [Search Engines](#search-engines)
+  - \U0001F4CA [Slides & Presentations](#slides--presentations) - \U0001F49E [Social
+  Networks & Dating](#social-networks--dating) - \U0001F4E2 [Speech](#speech) - \U0001F4DD
+  [Text](#text) - \U0001F4DD\U0001F509 [Text To Speech](#text-to-speech) - \U0001F1FA\U0001F1F3
+  [Translation & Transcript](#translation--transcript) - \U0001F3D6 [Vacation & Trip
+  Planner](#vacation--trip-planner) - \U0001F3AC [Video Generation & Editing](#video-generation--editing)
+  - \U0001F578 [Web Design](#web-design) - ✍️ [Writing Assistant](#writing-assistant)
+  ## Latest Additions to AI Collection ### GLM 5 #### Unleash AI Power: 745B Parameter
+  Model for Chat, Code & Creativity [Visit](https://thataicollection.com/redirect/glm-5?utm_source=aicollection&utm_medium=github&utm_campaign=aicollection)
+  GLM 5 is a next-gen AI model offering unparalleled performance in chat, code generation,
+  image & video creation. Leverage its 128K context window & advanced reasoning for
+  a complete AI solution. [More Information and Pricing](https://thataicollection.com/en/application/glm-5?utm_source=aicollection&utm_medium=github&utm_campaign=aicollection)
+  ### Seedream 5.0 AI #### Unleash stunning AI images effortlessly with Seedream 5.0
+  AI "
 ---
 {% raw %}
 # <img width="20" style="margin-right:6px;" alt="ai-collection-logo" src="https://cdn.thataicollection.com/images/logo.webp" /> AI Collection [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)

@@ -2,8 +2,67 @@
 layout: project
 name: Prestashop Prestashop
 slug: PrestaShop-PrestaShop
+category: Platform -eCommerce
 image: https://github.com/PrestaShop/PrestaShop/actions/workflows/php.yml/badge.svg
 repo_url: https://github.com/PrestaShop/PrestaShop
+indexed_content: "About PrestaShop -------- [](https://github.com/PrestaShop/PrestaShop/actions/workflows/php.yml)
+  [](https://github.com/PrestaShop/PrestaShop/actions/workflows/integration.yml) [](https://github.com/PrestaShop/PrestaShop/actions/workflows/sanity.yml)
+  [](https://nightly.prestashop-project.org/) [](https://php.net/) [](https://github.com/PrestaShop/PrestaShop)
+  [](https://insights.linuxfoundation.org/project/prestashop) [](https://www.prestashop-project.org/slack/)
+  [](https://github.com/PrestaShop/PrestaShop/network) [](https://github.com/PrestaShop/PrestaShop/stargazers)
+  PrestaShop is an Open Source e-commerce web application, committed to providing
+  the best shopping cart experience for both merchants and customers. It is written
+  in PHP, is highly customizable, supports all the major payment services, is translated
+  in many languages and localized for many countries, has a fully responsive design
+  (both front and back office), etc. [See all the available features][available-features].
+  This repository contains the source code of PrestaShop, which is intended for development
+  and preview only. To download the latest stable public version of PrestaShop (currently,
+  version 9.0), please go to [the releases page][download]. The first stable version
+  of PrestaShop 9.0 was released on June 10th, 2025. Learn more about it on [the Build
+  devblog](https://build.prestashop-project.org/tag/9.0/). About the `develop` branch
+  -------- The `develop` branch of this repository contains the work in progress source
+  code for the next version of PrestaShop. Currently, it is exclusively for version
+  9.1. For more information on our branch system, read our guide on [installing PrestaShop
+  for development][install-guide-dev]. Server configuration -------- To install the
+  latest PrestaShop 9.0, you need a web server running PHP 8.1+ and any flavor of
+  MySQL 5.6+ (MySQL, MariaDB, Percona Server, etc.). You will also need a database
+  administration tool, such as phpMyAdmin, in order to create a database for PrestaShop.
+  We recommend the Apache or Nginx web servers (check out our [example Nginx configuration
+  file][example-nginx]). You can find more information on our [System requirements][system-requirements]
+  page and on the [System Administrator Guide][sysadmin-guide]. Installation --------
+  If you downloaded the source code from GitHub, read our guide on [installing PrestaShop
+  for development][install-guide-dev]. If you intend to install a production shop,
+  make sure to download the latest version from [our releases page][download], then
+  read the [install guide for users][install-guide]. ## \U0001F433 Docker Development
+  Environment PrestaShop provides a complete Docker-based development environment.
+  ### Quick Start ```bash # Start the development environment make docker-start #
+  Access your PrestaShop installation # Frontend: http://localhost:8001 # Backend:
+  http://localhost:8001/admin-dev # Email testing: http://localhost:1080 ``` **Default
+  Admin Credentials:** - Email: `demo@prestashop.com` - Password: `Correct Horse Battery
+  Staple` Or the backoffice on this URL: http://localhost:8001/admin-dev (default
+  access credentials: demo@prestashop.com / Correct Horse Battery Staple) You can
+  customize the admin credentials by setting the following environment variables before
+  running docker compose: ``` export ADMIN_MAIL=your-email@example.com export ADMIN_PASSWD=Your-Secure-Password
+  docker compose up ``` Docker will bind your port **8001** to the web server. If
+  you want to use other port, open and modify the file `docker-compose.yml`. MySQL
+  credentials can also be found and modified in this file if needed. **Note:** Before
+  auto-installing PrestaShop, this container checks the file *app/config/parameters.php*
+  does not exist on startup. If you expect the container to (re)install your shop,
+  remove this file if it exists. And make sure the container user `www-data` has write
+  access to the whole workspace. ### Documentation For detailed information, see:
+  - **[\U0001F680 Development Guide](./docs/DEVELOPMENT.md)** - Complete setup and
+  development guide Documentation -------- For technical information (core, module
+  and theme development, performance...), head on to [PrestaShop DevDocs][devdocs]
+  If you want to learn how to use PrestaShop 9, read our [User documentation][user-doc].
+  First-time users will be particularly interested in the following guides: * [Getting
+  Started][getting-started]: How to install PrestaShop, and what you need to know.
+  * [User Guide][user-guide]: All there is to know to put PrestaShop to good use.
+  * [Updating Guide][updating-guide]: Switching to the newest version is not trivial.
+  Make sure you do it right. * [Merchant's Guide][merchant-guide]: Tips and tricks
+  for first-time online sellers. * The [FAQ][faq-17] page should also be of tremendous
+  help to you. Contributing -------- PrestaShop is an Open Source project, and it
+  wouldn't be possible without the help of the [hundreds of contributors][contributors-md],
+  who submitted improvements and bugfixes over the y"
 ---
 {% raw %}
 About PrestaShop

@@ -2,8 +2,70 @@
 layout: project
 name: Ahmad Jx Hozn Realestate Fullstack
 slug: AHMAD-JX-Hozn-RealEstate-Fullstack
+category: Uncategorized
 image: https://img.shields.io/github/repo-size/AHMAD-JX/Hozn-RealEstate-Fullstack?style=for-the-badge
 repo_url: https://github.com/AHMAD-JX/Hozn-RealEstate-Fullstack
+indexed_content: "# Hozn - Real Estate \U0001F3E1\U0001F680 ## \U0001F31F Overview
+  **Hozn - Real Estate** is a **Full-Stack** real estate website built with **React,
+  Next.js, TypeScript**, and a **Node.js (Express) backend**. The platform allows
+  users to browse, list, and manage properties seamlessly. ## \U0001F3AF Features
+  - \U0001F525 **Modern UI/UX** with smooth animations - \U0001F3E0 **Property listing
+  & management** - \U0001F3E0 **BUY & Sell Property listing ** - \U0001F512 **User
+  authentication** (Signup/Login) - \U0001F4CA **Admin Dashboard** for managing users
+  & listings - \U0001F4E1 **Backend API** built with Express & Sequelize - \U0001F3A8
+  **Fully Responsive** on all devices ### Backend: - **Authentication & Authorization**
+  (JWT-based login/signup) - **Profile Management** (Edit user details) - **Real Estate
+  Listings** (Add, update, delete properties) - **Buying & Selling API** - **Database
+  Management with PostgreSQL & Sequelize** ## \U0001F4F8 Screenshots ### \U0001F3E0
+  Home Page ### \U0001F3E1 Property Listing ### \U0001F6E0️ Dashboard ## \U0001F6E0️
+  Tech Stack ### \U0001F310 Frontend - **React.js** (Framework: Next.js) - **TypeScript**
+  - **Tailwind CSS & CSS** (for styling) - **SCSS** - **Framer Motion** (for animations)
+  - **Three.js** - **Axios** (for API calls) ### \U0001F5A5️ Backend (real-estate-backend)
+  - **Node.js** (Runtime) - **Express.js** (Framework) - **Sequelize** (ORM for PostgreSQL/MySQL)
+  - **JWT (JSON Web Token)** (for authentication) - **bcrypt.js** (for password hashing)
+  - **Multer** (for handling file uploads) ## \U0001F4C2 Project Structure ``` Hozn-RealEstate-Fullstack/Hozn-RealEstate
+  ├── Hozn-RealEstate/ # React + Next.js frontend │ ├── .next/ │ ├── node_modules/
+  │ ├── public/ │ └── src/ | ├── app/ │ ├── components/ │ ├── data/ | ├── hooks/ │
+  ├── layouts/ │ ├── models/ │ ├── redux/ │ ├── styles/ │ ├── types/ │ └── utils/
+  │ ├── real-estate-backend/ # Node.js Express.js backend │ ├── config/ │ ├── migrations/
+  │ ├── models/ │ ├── node_modules/ │ ├── seeders/ │ └── src/ | ├── config/ │ ├──
+  controllers/ │ ├── middleware/ | ├── models/ │ ├── routes/ │ ├── models/ │ ├── app.ts
+  │ ├── custom.d.ts │ └── server.ts │ └── README.md ``` ## ⚙️ Installation & Setup
+  ### 1️⃣ Install Node.js and npm Ensure you have **Node.js** and **npm** installed.
+  If not, install it from: \U0001F449 [Download Node.js](https://nodejs.org/) Check
+  installation: ```sh node -v npm -v ``` ### 2️⃣ Install PostgreSQL Database Download
+  and install **PostgreSQL**: \U0001F449 [Download PostgreSQL](https://www.postgresql.org/download/)
+  After installation, create a new database: ```sh psql -U postgres CREATE DATABASE
+  real-estate-backend; ``` ### 3️⃣ Clone the Repository ```sh git clone https://github.com/AHMAD-JX/Hozn-RealEstate-Fullstack.git
+  cd Hozn-RealEstate-Fullstack ``` ### 2️⃣ Install dependencies: ```sh # Install frontend
+  dependencies cd Hozn-RealEstate npm install # Install backend dependencies cd ../real-estate-backend
+  npm install ``` ### 3️⃣ Setup environment variables: **Frontend (`.env.local`):**
+  ``` NEXT_PUBLIC_API_URL=http://localhost:5000/api ``` **Backend (`.env`):** ```
+  PORT=5000 DATABASE_URL=postgres://user:password@localhost:5432/realestate JWT_SECRET=your_jwt_secret
+  ``` ### 4️⃣ Run the project: ```sh # Start backend server cd real-estate-backend
+  npm run dev # Start frontend cd ../hozn-frontend npx ts-node src/server.ts or npm
+  run dev ``` ## \U0001F6E0️ API Endpoints | Method | Endpoint | Description | |--------|---------------------|-----------------------------|
+  | POST | /api/signup | User Signup | | POST | /api/login | User Login | | GET |
+  /api/profile | Get User Profile | | PUT | /api/profile/edit | Edit User Profile
+  | | POST | /api/property/add | Add New Property | | GET | /api/property/list | List
+  Properties | | POST | /api/property/buy | Buy Property | | DELETE | /api/property/sell
+  | Sell Property | #### \U0001F4CC Example API Request (Add Property): ```sh curl
+  -X POST \"http://localhost:5000/api/properties\" \\ -H \"Content-Type: application/json\"
+  \\ -H \"Authorization: Bearer YOUR_TOKEN\" \\ -d '{\"title\":\"Luxury Villa\", \"price\":250000,
+  \"location\":\"Cairo\", \"description\":\"Spacious 3-bedroom villa\"}' ``` ## \U0001F4E1
+  API Endpoints ### \U0001F3E0 Authentication (Auth Routes) | Method | Endpoint |
+  Description | |--------|---------------|-----------------------| | POST | /signup
+  | Register a new user | | POST | /login | Authenticate user | ### \U0001F4C4 Profile
+  Routes | Method | Endpoint | Description | |--------|-------------|----------------------------|
+  | GET | /profile | Fetch user profile | | PUT | /profile | Update user profile |
+  ### \U0001F3E0 Properties Routes | Method | Endpoint | Description | |--------|----------------|----------------------------|
+  | GET | /properties | Fetch all properties | | POST | /properties | Add a new property
+  | | PUT | /properties/:id| Update property details | | DELETE | /properties/:id|
+  Delete a property | --- ## \U0001F4A1 Example API Request (Update Profile) ```js
+  fetch('http://localhost:5000/api/profile', { method: 'PUT', headers: { 'Content-Type':
+  'application/json', 'Authorization': `Bearer YOUR_TOKEN` }, body: JSON.stringify({
+  firstName: \"John\", lastName: \"Doe\", phoneNumber: \"123456789\", about: \"Real
+  estate expert.\" }) }) ."
 ---
 {% raw %}
 # Hozn - Real Estate 🏡🚀

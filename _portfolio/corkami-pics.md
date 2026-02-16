@@ -2,8 +2,11 @@
 layout: project
 name: Corkami Pics
 slug: corkami-pics
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/corkami-pics/binary/mp4.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/corkami-pics
+indexed_content: 'Welcome! ## Binary posters ## 25 posters (2017-10-30) ## 59 tracings
+  (2022-28-11) ## 9 outlines (2016-11-29)'
 ---
 {% raw %}
 Welcome!

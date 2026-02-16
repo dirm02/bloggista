@@ -2,8 +2,63 @@
 layout: project
 name: Rickstaa Awesome Adsb
 slug: rickstaa-awesome-adsb
+category: Let's try this- Personal prefere
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/rickstaa/awesome-adsb
+indexed_content: "# Awesome ADS-B [](https://awesome.re) [](https://github.com/rickstaa/awesome-adsb/graphs/contributors)
+  [](https://github.com/rickstaa/awesome-adsb/stargazers) > **Note** > Just type `adsb.cool`
+  to go here. A curated list of awesome [ASD-B](https://en.wikipedia.org/wiki/Automatic_Dependent_Surveillance%E2%80%93Broadcast)
+  tools, projects, docker images, resources and other shiny things \U0001F4E1. **Automatic
+  Dependent Surveillance–Broadcast (ADS-B)** is a surveillance technology and form
+  of Electronic [Conspicuity](https://en.wikipedia.org/wiki/Airborne_collision_avoidance_system#Aircraft_collision_avoidance)
+  in which an [aircraft](https://en.wikipedia.org/wiki/Aircraft) determines its position
+  via [satellite navigation](https://en.wikipedia.org/wiki/Satellite_navigation) or
+  other sensors and periodically broadcasts it, enabling it to be tracked. ## Contents
+  - [Docs and Quickstarts](#docs-and-quickstarts) - [Books and Articles](#books-and-articles)
+  - [ADS-B Aggregators](#ads-b-aggregators) - [Open source orientated](#open-source-orientated)
+  - [Community driven](#community-driven) - [Non-profits](#non-profits) - [Commercial](#commercial)
+  - [Other](#other) - [Software](#software) - [General](#general) - [Feeding](#feeding)
+  - [Visualisation](#visualisation) - [Browser extensions](#browser-extensions) -
+  [Apps](#apps) - [Social](#social) - [Hardware](#hardware) - [SBC](#sbc) - [Receivers](#receivers)
+  - [Filters](#filters) - [Antennas](#antennas) - [Follow](#follow) ## Docs and Quickstarts
+  - [ADS-B docker guide](https://sdr-enthusiasts.gitbook.io/ads-b/) - Everything you
+  want to know about ADS-B reception, decoding and sharing. - [ADS-B equipment guide](https://sdr-enthusiasts.gitbook.io/ads-b/intro/equipment-needed)
+  - A excellent ADS-B hardware guide written by the community. - [PiAware ADS-B tutorial](https://flightaware.com/adsb/piaware/build/)
+  - FlightAware's ADS-B setup tutorial. - [ADSB-B transponders guide](https://www.sportys.com/blog/ads-b-out-questions-1090-978/)
+  - A guide explaining the difference between 978 and 1090 MHz transponders. ## Books
+  and Articles - [The 1090 Megahertz Riddle - Junzi Sun](https://mode-s.org/decode/index.html)
+  - A Guide to Decoding Mode S and ADS-B Signals. ## ADS-B Aggregators > **Note**
+  > The aggregators below are displayed per category based on the number of feeders
+  on **27-02-2023**. If the number of feeders was unavailable, sites were compared
+  based on the number of planes they tracked. Feel free to open a [create a pull request](https://github.com/rickstaa/awesome-adsb/pulls)
+  if you think the order needs to be updated. ### Open source orientated - [adsb.fi](https://adsb.fi)
+  - A community-driven flight tracker with hundreds of feeders worldwide that provides
+  open and unfiltered access to worldwide air traffic data. - [ADSB One](https://adsb.one)
+  - A one-stop resource for all aero-related information and a community-driven aggregator
+  for aero-feed data legally dedicated to the public interest. - [ADSB.lol](https://adsb.lol)
+  - A completely open-source and community-driven flight tracker that displays and provides
+  [ODbL-licensed](https://opendatacommons.org/licenses/odbl/summary/) data via a [free
+  API](https://api.adsb.lol/) as well as [free historical data](https://github.com/adsblol/globe_history).
+  ### Community driven - [ADSBHub.org](https://www.adsbhub.org) - A service for real-time
+  ADS-B data sharing and exchange between plane tracking enthusiasts, plane spotters,
+  radio amateurs and professionals interested in developing ADS-B-related software.
+  - [TheAirTraffic](https://theairtraffic.com) - A community-driven ADS-B aggregator
+  dedicated to keeping the air-tracking data on their site open and unfiltered. -
+  [PlaneSpotters.net](https://www.planespotters.net) - A civil aviation database and
+  aggregator with a large collection of aircraft photos and information. - [Plane.watch](https://plane.watch)
+  - A community hosted flight tracker. - [www.live-military-mode-s.eu](https://www.live-military-mode-s.eu)
+  - A community driven flight tracker that is focused at tracking military aircraft.
+  - [adsb.chaos-consulting.de](https://adsb.chaos-consulting.de) - A non-commercial
+  tracker for flights, ships, and radiosondes managed by enthusiasts. Focuses on the
+  contributions of individual feeding stations. ### Non-profits - [Opensky Network](https://opensky-network.org)
+  - The OpenSky Network is a non-profit association based in Switzerland that provides
+  open access to flight tracking control data. It was set up as a research project
+  by several universities and government entities to improve the security, reliability
+  and efficiency of the airspace. ### Commercial - [FlightAware](https://flightaware.com)[^1]
+  - An American multinational technology company that provides real-time, historical,
+  and predictive flight tracking data and products. - [FlightRadar24](https://www.flightradar24.com)[^1]
+  - A Swedish internet-based service that shows real-time aircraft flight tracking
+  information on a map. - [RadarBo"
 ---
 {% raw %}
 <!-- GITHUB LOGO PLACEHOLDER -->

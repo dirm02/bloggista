@@ -2,8 +2,47 @@
 layout: project
 name: Sync In Desktop
 slug: Sync-in-desktop
+category: Uncategorized
 image: https://raw.githubusercontent.com/Sync-in/assets/main/logo.svg
 repo_url: https://github.com/Sync-in/server)
+indexed_content: "_Welcome to the Sync-in desktop client repository!_ - \U0001F30D
+  [Website](https://sync-in.com) - \U0001F4C4 [Documentation](https://sync-in.com/docs)
+  - \U0001F4E5 [Download the desktop app](https://sync-in.com/downloads) - \U0001F5C4️
+  [GitHub Server Repository](https://github.com/Sync-in/server) - \U0001F4BB [GitHub
+  Desktop & CLI Repository](https://github.com/Sync-in/desktop) The client for the
+  **Sync-in platform** provides a **local interface for synchronization, file management,
+  and server interactions**. Available as both a **desktop application** (Windows,
+  macOS, Linux) and a **command line interface (CLI)**, Sync-in adapts to different
+  workflows — whether on a **personal workstation**, **automation environment**, or
+  **headless server**. --- ## \U0001F680 Features ### \U0001F4BB Desktop Application
+  - \U0001F310 Multi-server support: connect and manage multiple Sync-in servers from
+  a single client - \U0001F501 Flexible file synchronization - ⬆️⬇️ One-way sync (push
+  or pull) - \U0001F504 Two-way sync - \U0001F6E1️ Multiple sync strategies - ✅ Secure
+  mode: checksum-based verification for maximum integrity - ⚡ Fast mode: metadata-based
+  detection (date, size) for improved performance - \U0001F4C6 Scheduled synchronization:
+  automate sync tasks - \U0001F3AF Custom filters: include or exclude files and folders
+  - \U0001F9EA Sync preview: simulate operations before applying changes - \U0001F4E5
+  Integrated download and transfer manager - \U0001F440 Transfer monitoring: real-time
+  logs and synchronization tracking - \U0001F916 Guided configuration wizard: simplified
+  setup and onboarding - \U0001F510 Modern authentication support compatible with
+  Sync-in server identity flows - \U0001F504 Automatic updates: background update
+  system --- ### \U0001F4DF Command Line Interface (CLI) - \U0001F9E9 Runs in any
+  environment supporting Node.js - \U0001F501 Synchronize files to and from any Sync-in
+  server - ⚙️ Ideal for automation, scripting, cron jobs, CI/CD pipelines, and headless
+  environments - \U0001F510 Compatible with Sync-in authentication and identity flows
+  --- ## \U0001F49B Support Sync-in is an independent open source project. If you
+  find it useful, you can: - ⭐ Star the repositories - \U0001F41B Report issues and
+  suggest improvements - \U0001F91D Contribute code, translations, or documentation
+  - \U0001F4AC Join the community on : - [GitHub Discussions](https://github.com/Sync-in/desktop/discussions)
+  - [Discord](https://discord.gg/qhJyzwaymT) - \U0001F496 Support the project ! -
+  [GitHub Sponsors](https://github.com/sponsors/Sync-in) - [Other ways to support](https://sync-in.com/support)
+  --- ## \U0001F91D Contributing Before submitting your pull request, please confirm
+  the following: - ✅ I have read and followed the [contribution guide](CONTRIBUTING.md).
+  - ✅ I am submitting this pull request in good faith and to help improve Sync-in.
+  --- ## \U0001F4DC License This project is licensed under the **GNU Affero General
+  Public License (AGPL-3.0-or-later)**. See [LICENSE](LICENSE) for the full text.
+  Sync-in® is a registered trademark, see our [Trademark Policy](https://sync-in.com/trademark).
+  --- _Thank you for using **Sync-in** ! \U0001F680_"
 ---
 {% raw %}
 <a href="https://sync-in.com" target="_blank" rel="noopener">

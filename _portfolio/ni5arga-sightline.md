@@ -2,8 +2,68 @@
 layout: project
 name: Ni5arga Sightline
 slug: ni5arga-sightline
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ni5arga-sightline/screenshots/screenshot2.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/ni5arga-sightline
+indexed_content: '# Sightline Geospatial infrastructure intelligence platform for
+  discovering and analyzing physical-world assets using OpenStreetMap data. ## Overview
+  Sightline enables searching, monitoring, and analyzing real-world infrastructure
+  including: - Telecommunications towers - Power plants and substations - Data centers
+  - Airports and helipads - Ports and harbours - Warehouses and industrial facilities
+  - Pipelines and refineries - Military installations - Hospitals, prisons, embassies
+  - Surveillance cameras and security infrastructure And many more asset types across
+  20+ categories with over 150 searchable infrastructure types. ## Architecture ```mermaid
+  flowchart TB subgraph Frontend SearchBar Filters ResultList MapView["MapView (Leaflet.js)"]
+  end subgraph Backend route["route.ts"] parser["parser.ts (NLP)"] geo["geo.ts (Nominatim)"]
+  overpass["overpass.ts (OSM)"] cache["cache.ts"] end subgraph External["External
+  APIs"] Nominatim["Nominatim (Geocoding)"] OverpassAPI["Overpass API (OSM Data)"]
+  end Frontend -->|POST /api/search| route route --> parser route --> geo route -->
+  overpass route --> cache geo --> Nominatim overpass --> OverpassAPI ``` ## Data
+  Sources ### OpenStreetMap All infrastructure data comes from [OpenStreetMap](https://www.openstreetmap.org/),
+  a collaborative mapping project. OSM data is crowd-sourced and may contain inaccuracies
+  or gaps. ### Nominatim Geographic resolution uses the [Nominatim](https://nominatim.openstreetmap.org/)
+  geocoding service to convert place names to bounding boxes and coordinates. ###
+  Overpass API Infrastructure queries execute against the [Overpass API](https://overpass-api.de/),
+  which provides read-only access to OSM data. ## Query Syntax ### Natural Language
+  ``` telecom towers in karnataka power plants near mumbai data centers in california
+  airports in germany ``` ### Structured Queries ``` type:telecom operator:airtel
+  region:karnataka type:data_center operator:google type:substation region:texas type:airport
+  country:france ``` ### Supported Parameters | Parameter | Description | Example
+  | |-----------|-------------|---------| | `type:` | Asset type | `type:power_plant`
+  | | `operator:` | Operator/owner | `operator:google` | | `region:` | State/region
+  | `region:bavaria` | | `country:` | Country | `country:india` | | `near:` | Proximity
+  search | `near:london` | | `radius:` | Search radius (km) | `radius:100` | ### Supported
+  Asset Types #### Energy & Power | Type | Aliases | Description | |------|---------|-------------|
+  | `power_plant` | `powerplant` | Power generation facilities | | `substation` |
+  - | Electrical substations | | `transformer` | - | Power transformers | | `power_line`
+  | - | High voltage power lines | | `power_pole` | - | Power distribution poles |
+  | `solar` | - | Solar farms and panels | | `wind` | - | Wind farms and turbines
+  | | `nuclear` | `nuclear_site` | Nuclear power plants | | `hydroelectric` | - |
+  Hydroelectric plants | | `geothermal` | - | Geothermal plants | | `coal` | - | Coal
+  power plants | | `gas_power` | - | Gas power plants | | `oil_power` | - | Oil power
+  plants | | `biogas` | - | Biogas plants | | `biomass` | - | Biomass plants | | `tidal`
+  | - | Tidal power plants | #### Telecommunications | Type | Aliases | Description
+  | |------|---------|-------------| | `telecom` | `tower` | Telecom towers | | `antenna`
+  | - | Antennas | | `mast` | - | Communication masts | | `cell_tower` | - | Mobile
+  cell towers | | `radio_tower` | - | Radio transmission towers | | `broadcast_tower`
+  | - | TV/Radio broadcast towers | | `satellite_dish` | - | Satellite dishes | |
+  `telephone_exchange` | - | Telephone exchanges | | `data_center` | `datacenter`
+  | Data centers | #### Oil, Gas & Mining | Type | Aliases | Description | |------|---------|-------------|
+  | `refinery` | - | Oil refineries | | `pipeline` | - | Pipelines | | `oil_well`
+  | - | Oil extraction wells | | `gas_well` | - | Gas extraction wells | | `storage_tank`
+  | - | Fuel/liquid storage tanks | | `silo` | - | Storage silos | | `gasometer` |
+  - | Gas storage tanks | | `quarry` | `mine` | Quarries and mines | | `landfill`
+  | - | Landfill sites | | `scrap_yard` | - | Scrap yards | #### Water & Utilities
+  | Type | Aliases | Description | |------|---------|-------------| | `water_tower`
+  | - | Water towers | | `water_treatment` | - | Water treatment plants | | `wastewater`
+  | `sewage`, `sewage_plant` | Wastewater plants | | `dam` | - | Dams | | `reservoir`
+  | - | Reservoirs | | `pumping_station` | - | Water pumping stations | | `water_well`
+  | - | Water wells | #### Aviation | Type | Aliases | Description | |------|---------|-------------|
+  | `airport` | - | Airports | | `helipad` | - | Helipads | | `airfield` | - | Military/private
+  airfields | | `runway` | - | Airport runways | | `taxiway` | - | Airport taxiways
+  | | `terminal` | - | Airport terminals | | `hangar` | - | Aircraft hangars | | `atc_tower`
+  | - | Air traffic control towers | #### Maritime | Type | Aliases | Description
+  | |------|---------|-------------| | `po'
 ---
 {% raw %}
 # Sightline

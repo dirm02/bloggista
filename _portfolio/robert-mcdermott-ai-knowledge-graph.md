@@ -2,8 +2,68 @@
 layout: project
 name: Robert Mcdermott Ai Knowledge Graph
 slug: robert-mcdermott-ai-knowledge-graph
+category: Uncategorized
 image: https://github.com/robert-mcdermott/ai-knowledge-graph/blob/main/data/ai-knowledge-graph-example.png
 repo_url: https://github.com/robert-mcdermott/ai-knowledge-graph
+indexed_content: '# AI Powered Knowledge Graph Generator This system takes an unstructured
+  text document, and uses an LLM of your choice to extract knowledge in the form of
+  Subject-Predicate-Object (SPO) triplets, and visualizes the relationships as an
+  interactive knowledge graph. A demo of a knowlege graph created with this project
+  can be found here: [Industrial-Revolution Knowledge Graph](https://robert-mcdermott.github.io/ai-knowledge-graph/)
+  ## Features - **Text Chunking**: Automatically splits large documents into manageable
+  chunks for processing - **Knowledge Extraction**: Uses AI to identify entities and
+  their relationships - **Entity Standardization**: Ensures consistent entity naming
+  across document chunks - **Relationship Inference**: Discovers additional relationships
+  between disconnected parts of the graph - **Interactive Visualization**: Creates
+  an interactive graph visualization - **Works with Any OpenAI Compatible API Endpoint**:
+  Ollama, LM Studio, OpenAI, vLLM, LiteLLM (provides access to AWS Bedrock, Azure
+  OpenAI, Anthropic and many other LLM services) ## Requirements - Python 3.11+ -
+  Required packages (install using `pip install -r requirements.txt` or `uv sync`)
+  ## Quick Start 1. Clone this repository 2. Install dependencies: `pip install -r
+  requirements.txt` 3. Configure your settings in `config.toml` 4. Run the system:
+  ```bash python generate-graph.py --input your_text_file.txt --output knowledge_graph.html
+  ``` Or with UV: ```bash uv run generate-graph.py --input your_text_file.txt --output
+  knowledge_graph.html ``` Or installing and using as a module: ```bash pip install
+  --upgrade -e . generate-graph --input your_text_file.txt --output knowledge_graph.html
+  ``` ## Configuration The system can be configured using the `config.toml` file:
+  ```toml [llm] model = "gemma3" # Google open weight model api_key = "sk-1234" base_url
+  = "http://localhost:11434/v1/chat/completions" # Local Ollama instance running locally
+  (but can be any OpenAI compatible endpoint) max_tokens = 8192 temperature = 0.2
+  [chunking] chunk_size = 200 # Number of words per chunk overlap = 20 # Number of
+  words to overlap between chunks [standardization] enabled = true # Enable entity
+  standardization use_llm_for_entities = true # Use LLM for additional entity resolution
+  [inference] enabled = true # Enable relationship inference use_llm_for_inference
+  = true # Use LLM for relationship inference apply_transitive = true # Apply transitive
+  inference rules ``` ## Command Line Options - `--input FILE`: Input text file to
+  process - `--output FILE`: Output HTML file for visualization (default: knowledge_graph.html)
+  - `--config FILE`: Path to config file (default: config.toml) - `--debug`: Enable
+  debug output with raw LLM responses - `--no-standardize`: Disable entity standardization
+  - `--no-inference`: Disable relationship inference - `--test`: Generate sample visualization
+  using test data ### Usage message (--help) ```bash generate-graph --help usage:
+  generate-graph [-h] [--test] [--config CONFIG] [--output OUTPUT] [--input INPUT]
+  [--debug] [--no-standardize] [--no-inference] Knowledge Graph Generator and Visualizer
+  options: -h, --help show this help message and exit --test Generate a test visualization
+  with sample data --config CONFIG Path to configuration file --output OUTPUT Output
+  HTML file path --input INPUT Path to input text file (required unless --test is
+  used) --debug Enable debug output (raw LLM responses and extracted JSON) --no-standardize
+  Disable entity standardization --no-inference Disable relationship inference ```
+  ### Example Run **Command:** ```bash generate-graph --input data/industrial-revolution.txt
+  --output industrial-revolution-kg.html ``` **Console Output:** ```markdown Using
+  input text from file: data/industrial-revolution.txt ==================================================
+  PHASE 1: INITIAL TRIPLE EXTRACTION ==================================================
+  Processing text in 13 chunks (size: 100 words, overlap: 20 words) Processing chunk
+  1/13 (100 words) Processing chunk 2/13 (100 words) Processing chunk 3/13 (100 words)
+  Processing chunk 4/13 (100 words) Processing chunk 5/13 (100 words) Processing chunk
+  6/13 (100 words) Processing chunk 7/13 (100 words) Processing chunk 8/13 (100 words)
+  Processing chunk 9/13 (100 words) Processing chunk 10/13 (100 words) Processing
+  chunk 11/13 (100 words) Processing chunk 12/13 (86 words) Processing chunk 13/13
+  (20 words) Extracted a total of 216 triples from all chunks ==================================================
+  PHASE 2: ENTITY STANDARDIZATION ==================================================
+  Starting with 216 triples and 201 unique entities Standardizing entity names across
+  all triples... Applied LLM-based entity standardization for 15 entity groups Standardized
+  201 entities into 181 standard forms After standardization: 216 triples and 160
+  unique entities ================================================== PHASE 3: RELATIONSHIP
+  INFERENCE ==========================================='
 ---
 {% raw %}
 ![ai-knowledge-graph-example](https://github.com/robert-mcdermott/ai-knowledge-graph/blob/main/data/ai-knowledge-graph-example.png)

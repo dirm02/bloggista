@@ -2,8 +2,62 @@
 layout: project
 name: Kdeldycke Awesome Iam
 slug: kdeldycke-awesome-iam
+category: Educational-map
 image: https://awesome.re/badge-flat.svg
 repo_url: https://github.com/kdeldycke/awesome-iam
+indexed_content: "This list is sponsored [0] by: Drag and drop your auth. Add authentication,
+  user management, and authorization to your app with a few lines of code. Your brand → here
+  \U0001F680 SEO is dead. Place your product here to target AI's training data. ---
+  Trusting is hard. Knowing who to trust, even harder. — Maria V. Snyder [1] [IAM](https://en.wikipedia.org/wiki/Identity_management)
+  stands for Identity and Access Management. It is a complex domain which covers **user
+  accounts, authentication, authorization, roles, permissions and privacy**. It is
+  an essential pillar of the cloud stack, where users, products and security meets.
+  The [other pillar being billing & payments \U0001F4B0](https://github.com/kdeldycke/awesome-billing/).
+  This curated [](https://github.com/sindresorhus/awesome) list expose all the technologies,
+  protocols and jargon of the domain in a comprehensive and actionable manner. ##
+  Contents - [Overview](#overview) - [Security](#security) - [Account Management](#account-management)
+  - [Cryptography](#cryptography) - [Identifiers](#identifiers) - [Zero-trust Network](#zero-trust-network)
+  - [Authentication](#authentication) - [Password-based auth](#password-based-auth)
+  - [Multi-factor auth](#multi-factor-auth) - [SMS-based](#sms-based) - [Password-less
+  auth](#password-less-auth) - [WebAuthn](#webauthn) - [Security key](#security-key)
+  - [Public-Key Infrastructure (PKI)](#public-key-infrastructure-pki) - [JWT](#jwt)
+  - [Authorization](#authorization) - [Policy models](#policy-models) - [RBAC frameworks](#rbac-frameworks)
+  - [ABAC frameworks](#abac-frameworks) - [ReBAC frameworks](#rebac-frameworks) -
+  [AWS policy tools](#aws-policy-tools) - [Macaroons](#macaroons) - [Other tools](#other-tools)
+  - [OAuth2 & OpenID](#oauth2--openid) - [SAML](#saml) - [Secret Management](#secret-management)
+  - [Hardware Security Module (HSM)](#hardware-security-module-hsm) - [Trust & Safety](#trust--safety)
+  - [User Identity](#user-identity) - [Fraud](#fraud) - [Moderation](#moderation)
+  - [Threat Intelligence](#threat-intelligence) - [Captcha](#captcha) - [Blocklists](#blocklists)
+  - [Hostnames and Subdomains](#hostnames-and-subdomains) - [Emails](#emails) - [Reserved
+  IDs](#reserved-ids) - [Profanity](#profanity) - [Privacy](#privacy) - [Anonymization](#anonymization)
+  - [GDPR](#gdpr) - [UX/UI](#uxui) - [Competitive Analysis](#competitive-analysis)
+  - [History](#history) ## Overview In a Stanford class providing an [overview of
+  cloud computing](https://web.stanford.edu/class/cs349d/docs/L01_overview.pdf), the
+  software architecture of the platform is described as in the right diagram → Here
+  we set out the big picture: definition and strategic importance of the domain, its
+  place in the larger ecosystem, plus some critical features. - [The EnterpriseReady
+  SaaS Feature Guides](https://www.enterpriseready.io) - The majority of the features
+  making B2B users happy will be implemented by the IAM perimeter. - [IAM is hard.
+  It's really hard.](https://web.archive.org/web/20200809095434/https://twitter.com/kmcquade3/status/1291801858676228098)
+  - “Overly permissive AWS IAM policies that allowed `s3:GetObject` to `*` (all) resources”,
+  led to \\$80 million fine for Capital One. The only reason why you can't overlook
+  IAM as a business owner. - [IAM Is The Real Cloud Lock-In](https://forrestbrazeal.com/2019/02/18/cloud-irregular-iam-is-the-real-cloud-lock-in/)
+  - A little *click-baity*, but author admit that “It depends on how much you trust
+  them to 1. Stay in business; 2. Not jack up your prices; 3. Not deprecate services
+  out from under you; 4. Provide more value to you in business acceleration than they
+  take away in flexibility.” ## Security Security is one of the most central pillar
+  of IAM foundations. Here are some broad concepts. - [Enterprise Information Security](https://infosec.mozilla.org)
+  - Mozilla's security and access guidelines. - [Mitigating Cloud Vulnerabilities](https://web.archive.org/web/20250529050934/https://media.defense.gov/2020/Jan/22/2002237484/-1/-1/0/CSI-MITIGATING-CLOUD-VULNERABILITIES_20200121.PDF)
+  - “This document divides cloud vulnerabilities into four classes (misconfiguration,
+  poor access control, shared tenancy vulnerabilities, and supply chain vulnerabilities)”.
+  - [Cartography](https://github.com/lyft/cartography) - A Neo4J-based tool to map
+  out dependencies and relationships between services and resources. Supports AWS,
+  GCP, GSuite, Okta and GitHub. - [Open guide to AWS Security and IAM](https://github.com/open-guides/og-aws#security-and-iam)
+  ## Account Management The foundation of IAM: the definition and life-cycle of users,
+  groups, roles and permissions. - [As a user, I want…](https://mobile.twitter.com/oktopushup/status/1030457418206068736)
+  - A meta-critic of account management, in which features expected by the business
+  clash with real user needs, in the form of user stories written by a fictional project
+  manager. - [Things end users care about but programmers don't](https://instadeq.com/blog/posts/things-end-users-care-about-but-"
 ---
 {% raw %}
 <!--lint disable awesome-heading-->

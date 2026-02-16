@@ -2,8 +2,70 @@
 layout: project
 name: Debugswift Debugswift
 slug: DebugSwift-DebugSwift
+category: iOS-imac
 image: https://github.com/DebugSwift/DebugSwift/assets/31082311/fdc117a2-e9f9-4246-9e9e-fcae818b7ea1
 repo_url: https://github.com/DebugSwift/DebugSwift
+indexed_content: "# DebugSwift | | DebugSwift is a comprehensive toolkit designed
+  to streamline and elevate the debugging experience for Swift-based applications.
+  Whether you are troubleshooting issues or optimizing performance, DebugSwift offers
+  a powerful set of features to make your debugging process more efficient and effective.
+  | |---|---| ## \U0001F4CB Table of Contents - [\U0001F680 Features](#features) -
+  [\U0001F6E0 Installation & Setup](#installation--setup) - [\U0001F527 Troubleshooting](#troubleshooting)
+  - [\U0001F4DD Examples](#examples) - [\U0001F527 Configuration](#configuration)
+  ## Requirements - **iOS 14.0+** - **Swift 6.0+** - **Xcode 16.0+** ## Features ###
+  \U0001F310 Network Inspector - **HTTP Monitoring:** Capture all requests/responses
+  with detailed logs and filtering - **WebSocket Inspector:** Zero-config automatic
+  monitoring of WebSocket connections and frames - **Request Limiting:** Set thresholds
+  to monitor and control API usage - **Smart Content:** Automatic JSON formatting
+  with syntax highlighting - **Encryption Support:** Automatic decryption of encrypted
+  API responses with AES-256/128 and custom decryptors ### ⚡ Performance - **Real-time
+  Metrics:** Monitor CPU, memory, and FPS in real-time - **Memory Leak Detection:**
+  Automatic detection of leaked ViewControllers and Views - **Thread Checker:** Detect
+  main thread violations with detailed stack traces - **Performance Widget:** Overlay
+  displaying live performance stats ### \U0001F4F1 App Tools - **Crash Reports:**
+  Detailed crash analysis with screenshots and stack traces - **Console Logs:** Real-time
+  console output monitoring and filtering - **Device Info:** App version, build, device
+  details, and more - **APNS Tokens:** Easy access and copying of push notification
+  tokens - **Custom Actions:** Add your own debugging actions and info ### \U0001F3A8
+  Interface Tools - **Grid Overlay:** Visual alignment grid with customizable colors
+  and opacity - **View Hierarchy:** 3D interactive view hierarchy inspector - **Touch
+  Indicators:** Visual feedback for touch interactions - **Animation Control:** Slow
+  down animations for easier debugging - **View Borders:** Highlight view boundaries
+  with colorization - **SwiftUI Render Tracking (Beta):** Automatically detect and
+  visualize SwiftUI view re-renders with dedicated settings screen ### \U0001F4C1
+  Resources - **File Browser:** Navigate app sandbox and shared app group containers
+  - **UserDefaults:** View and modify app preferences at runtime - **Keychain:** Inspect
+  keychain entries - **Database Browser:** SQLite and Realm database inspection -
+  **Push Notifications:** Simulate push notifications with templates and test scenarios
+  ## Installation & Setup ### \U0001F343 Swift Package Manager (Recommended) Add to
+  your `Package.swift`: ```swift dependencies: [ .package(url: \"https://github.com/DebugSwift/DebugSwift.git\",
+  from: \"1.0.0\") ] ``` Or add through Xcode: `File` > `Add Package Dependencies`
+  > Enter URL: ``` https://github.com/DebugSwift/DebugSwift ``` ### \U0001F3AF CocoaPods
+  #### Option 1: Source Distribution (Standard) Add to your `Podfile`: ```ruby pod
+  'DebugSwift' ``` #### Option 2: XCFramework Distribution (Faster Builds) ⚡ Add to
+  your `Podfile`: ```ruby pod 'DebugSwift', :http => 'https://github.com/DebugSwift/DebugSwift/releases/latest/download/DebugSwift.xcframework.zip'
+  ``` ### \U0001F34E Apple Silicon Support DebugSwift **fully supports Apple Silicon
+  Macs** with native arm64 simulator builds! No more architecture exclusions or compatibility
+  issues. **Supported Architectures:** - \U0001F4F1 **iOS Device**: arm64 - \U0001F5A5️
+  **iOS Simulator**: arm64 (Apple Silicon) + x86_64 (Intel) **Migration Note:** If
+  you were using architecture exclusions like `'EXCLUDED_ARCHS[sdk=iphonesimulator*]'
+  => 'arm64'`, you can now **remove them** as they are no longer needed. ### Basic
+  Setup ```swift import DebugSwift @main class AppDelegate: UIResponder, UIApplicationDelegate
+  { private let debugSwift = DebugSwift() func application( _ application: UIApplication,
+  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool { #if DEBUG debugSwift.setup() // debugSwift.setup(disable: [.leaksDetector])
+  debugSwift.show() #endif return true } } ``` ### Shake to Toggle (Optional) ```swift
+  extension UIWindow { open override func motionEnded(_ motion: UIEvent.EventSubtype,
+  with event: UIEvent?) { super.motionEnded(motion, with: event) #if DEBUG if motion
+  == .motionShake { if let appDelegate = UIApplication.shared.delegate as? AppDelegate
+  { appDelegate.debugSwift.toggle() } } #endif } } ``` ## \U0001F527 Troubleshooting
+  ### Apple Silicon Build Issues If you encounter build errors like `error unsupported
+  Swift architecture` or `DebugSwift.framework only contains x86_64 slice for simulator`
+  on Apple Silicon Macs: #### Solution 1: Update to Latest Version Ensure you're using
+  the latest version of DebugSwift which includes full Apple Silicon support: ```ruby
+  # CocoaPods pod 'DebugSwift', '~> 1.8.1' # Swift Package Manager - update to latest
+  ``` #### Solution 2: Use XCFramework Distribution (Recommended) For faster builds
+  and guaranteed architec"
 ---
 {% raw %}
 # DebugSwift

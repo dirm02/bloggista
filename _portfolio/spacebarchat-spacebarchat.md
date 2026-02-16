@@ -2,8 +2,37 @@
 layout: project
 name: Spacebarchat Spacebarchat
 slug: spacebarchat-spacebarchat
+category: Platform -eCommerce
 image: https://avatars.githubusercontent.com/u/75180178?s=200&v=4
 repo_url: https://github.com/spacebarchat/server))
+indexed_content: 'Spacebar ### [About](https://spacebar.chat/) Spacebar is a free,
+  opensource selfhostable discord-compatible chat, voice and video platform. * **Discord-compatible**
+  (Use all your custom clients/bots with minimal changes) * **Selfhostable** ([Server](https://github.com/spacebarchat/server))
+  * **Open Source** ([GitHub Organization]()) * **Configurable** (Configure every
+  aspect and limits to your needs) * **Decentralized** (no abuse of power and doesn''t
+  have a single point of failure) * **Extendable** (secure and cross-platform plugin
+  system) * **Themeable** (cross-platform theme system with design editor) * **Secure**
+  (publicly audited and hosted FOSS software for transparent foundation in terms of
+  security) Logo by [@ItsRealmy](https://github.com/ItsRealmy). Original logo by [@nwlandas](https://twitter.com/nwlandas).
+  ### Usage and Support You can find setup guides and lots of other information in
+  our [Documentation](https://docs.spacebar.chat) For any kind of support regarding
+  Spacebar, feel free to ask questions in our [Discord guild](https://discord.gg/ZrnGQP6p3d).
+  ### Repositories | Repo name | Brief description | | :--- | :--- | | [Server](https://github.com/spacebarchat/server)
+  | Spacebar API + Gateway + CDN Server + WebRTC + Admin Dashboard | | [Client](https://github.com/spacebarchat/client)
+  | Spacebar Client compatible with Spacebar-server and discord.com | | [Docs](https://github.com/spacebarchat/docs)
+  | Documentation of Spacebar | | [Landing page](https://github.com/spacebarchat/landingpage)
+  | Our [Homepage](https://spacebar.chat) | ### Contribute This project is only possible
+  by volunteers like you your contribution is very much appreciated. You can find
+  information about how to contribute [here](https://docs.spacebar.chat/contributing/).
+  We also mark issues as "Good first issues" if you''re looking for things to get
+  you started. ### License Copyright (C) 2021-2024 Spacebar and Spacebar Contributors
+  This program is free software: you can redistribute it and/or modify it under the
+  terms of the GNU Affero General Public License as published by the Free Software
+  Foundation version 3 of the License This program is distributed in the hope that
+  it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General
+  Public License for more details. You should have received a copy of the GNU Affero
+  General Public License along with this program. If not, see https://www.gnu.org/licenses/agpl-3.0.de.html'
 ---
 {% raw %}
 <p align="center">

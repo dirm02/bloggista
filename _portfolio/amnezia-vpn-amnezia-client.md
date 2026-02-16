@@ -2,8 +2,60 @@
 layout: project
 name: Amnezia Vpn Amnezia Client
 slug: amnezia-vpn-amnezia-client
+category: Uncategorized
 image: https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml/badge.svg?branch=dev
 repo_url: https://github.com/amnezia-vpn/amnezia-client
+indexed_content: '# Amnezia VPN ### _The best client for self-hosted VPN_ [](https://github.com/amnezia-vpn/amnezia-client/actions/workflows/deploy.yml?query=branch:dev)
+  [](https://gitpod.io/#https://github.com/amnezia-vpn/amnezia-client) ### [English]([https://github.com/amnezia-vpn/amnezia-client/blob/dev/README_RU.md](https://github.com/amnezia-vpn/amnezia-client/tree/dev?tab=readme-ov-file#))
+  | [Русский](https://github.com/amnezia-vpn/amnezia-client/blob/dev/README_RU.md)
+  [Amnezia](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-en)
+  is an open-source VPN client, with a key feature that enables you to deploy your
+  own VPN server on your server. [](https://amnezia.org) ### [Website](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-en)
+  | [Alt website link](https://storage.googleapis.com/amnezia/amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-en-mirror)
+  | [Documentation](https://docs.amnezia.org) | [Troubleshooting](https://docs.amnezia.org/troubleshooting)
+  > [!TIP] > If the [Amnezia website](https://amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-en)
+  is blocked in your region, you can use an [Alternative website link](https://storage.googleapis.com/amnezia/amnezia.org?utm_source=github&utm_campaign=amnezia_website-readme-en-mirror).
+  [All releases](https://github.com/amnezia-vpn/amnezia-client/releases) ## Features
+  - Very easy to use - enter your IP address, SSH login, password and Amnezia will
+  automatically install VPN docker containers to your server and connect to the VPN.
+  - Classic VPN-protocols: OpenVPN, WireGuard and IKEv2 protocols. - Protocols with
+  traffic Masking (Obfuscation): OpenVPN over [Cloak](https://github.com/cbeuw/Cloak)
+  plugin, Shadowsocks (OpenVPN over Shadowsocks), [AmneziaWG](https://docs.amnezia.org/documentation/amnezia-wg/)
+  and XRay. - Split tunneling support - add any sites to the client to enable VPN
+  only for them or add Apps (only for Android and Desktop). - Windows, MacOS, Linux,
+  Android, iOS releases. - Support for AmneziaWG protocol configuration on [Keenetic
+  beta firmware](https://docs.keenetic.com/ua/air/kn-1611/en/6319-latest-development-release.html#UUID-186c4108-5afd-c10b-f38a-cdff6c17fab3_section-idm33192196168192-improved).
+  ## Links - [https://amnezia.org](https://amnezia.org) - Project website | [Alternative
+  link (mirror)](https://storage.googleapis.com/kldscp/amnezia.org) - [https://docs.amnezia.org](https://docs.amnezia.org)
+  - Documentation - [https://www.reddit.com/r/AmneziaVPN](https://www.reddit.com/r/AmneziaVPN)
+  - Reddit - [https://t.me/amnezia_vpn_en](https://t.me/amnezia_vpn_en) - Telegram
+  support channel (English) - [https://t.me/amnezia_vpn_ir](https://t.me/amnezia_vpn_ir)
+  - Telegram support channel (Farsi) - [https://t.me/amnezia_vpn_mm](https://t.me/amnezia_vpn_mm)
+  - Telegram support channel (Myanmar) - [https://t.me/amnezia_vpn](https://t.me/amnezia_vpn)
+  - Telegram support channel (Russian) - [https://vpnpay.io/en/amnezia-premium/](https://vpnpay.io/en/amnezia-premium/)
+  - Amnezia Premium ## Tech AmneziaVPN uses several open-source projects to work:
+  - [OpenSSL](https://www.openssl.org/) - [OpenVPN](https://openvpn.net/) - [Shadowsocks](https://shadowsocks.org/)
+  - [Qt](https://www.qt.io/) - [LibSsh](https://libssh.org) - forked from Qt Creator
+  - and more... ## Checking out the source code Make sure to pull all submodules after
+  checking out the repo. ```bash git submodule update --init --recursive ``` ## Development
+  Want to contribute? Welcome! ### Help with translations Download the most actual
+  translation files. Go to ["Actions" tab](https://github.com/amnezia-vpn/amnezia-client/actions?query=is%3Asuccess+branch%3Adev),
+  click on the first line. Then scroll down to the "Artifacts" section and download
+  "AmneziaVPN_translations". Unzip this file. Each *.ts file contains strings for
+  one corresponding language. Translate or correct some strings in one or multiple
+  *.ts files and commit them back to this repository into the ``client/translations``
+  folder. You can do it via a web-interface or any other method you''re familiar with.
+  ### Building sources and deployment Check deploy folder for build scripts. ### How
+  to build an iOS app from source code on MacOS 1. First, make sure you have [XCode](https://developer.apple.com/xcode/)
+  installed, at least version 14 or higher. 2. We use QT to generate the XCode project.
+  We need QT version 6.6.2. Install QT for MacOS [here](https://doc.qt.io/qt-6/macos.html)
+  or [QT Online Installer](https://www.qt.io/download-open-source). Required modules:
+  - MacOS - iOS - Qt 5 Compatibility Module - Qt Shader Tools - Additional Libraries:
+  - Qt Image Formats - Qt Multimedia - Qt Remote Objects 3. Install CMake if required.
+  We recommend CMake version 3.25. You can install CMake [here](https://cmake.org/download/)
+  4. You also need to install go >= v1.16. If you don''t have it installed already,
+  download go from the [official website](https://golang.org/dl/) or use Homebrew.
+  T'
 ---
 {% raw %}
 # Amnezia VPN

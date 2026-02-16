@@ -2,8 +2,69 @@
 layout: project
 name: Openbmb Chatdev
 slug: OpenBMB-ChatDev
+category: AI-automation-web2-3SmartC-Agent
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/OpenBMB-ChatDev/frontend/public/media/logo.png
 repo_url: https://github.com/OpenBMB/ChatDev
+indexed_content: "# ChatDev 2.0 - DevAll A Zero-Code Multi-Agent Platform for Developing
+  Everything 【 English | 简体中文 】 【\U0001F4DA Developers | \U0001F465 Contributors ｜⭐️
+  ChatDev 1.0 (Legacy) 】 ## \U0001F4D6 Overview ChatDev has evolved from a specialized
+  software development multi-agent system into a comprehensive multi-agent orchestration
+  platform. - **ChatDev 2.0 (DevAll)** is a **Zero-Code Multi-Agent Platform** for
+  \"Developing Everything\". It empowers users to rapidly build and execute customized
+  multi-agent systems through simple configuration. No coding is required—users can
+  define agents, workflows, and tasks to orchestrate complex scenarios such as data
+  visualization, 3D generation, and deep research. - **ChatDev 1.0 (Legacy)** operates
+  as a **Virtual Software Company**. It utilizes various intelligent agents (e.g.,
+  CEO, CTO, Programmer) participating in specialized functional seminars to automate
+  the entire software development life cycle—including designing, coding, testing,
+  and documenting. It serves as the foundational paradigm for communicative agent
+  collaboration. ## \U0001F389 News • **Jan 07, 2026: \U0001F680 We are excited to
+  announce the official release of ChatDev 2.0 (DevAll)!** This version introduces
+  a zero-code multi-agent orchestration platform. The classic ChatDev (v1.x) has been
+  moved to the [`chatdev1.0`](https://github.com/OpenBMB/ChatDev/tree/chatdev1.0)
+  branch for maintenance. More details about ChatDev 2.0 can be found on [our official
+  post](https://x.com/OpenBMB/status/2008916790399701335). Old News •Sep 24, 2025:
+  \U0001F389 Our paper [Multi-Agent Collaboration via Evolving Orchestration](https://arxiv.org/abs/2505.19591)
+  has been accepted to NeurIPS 2025. The implementation is available in the `puppeteer`
+  branch of this repository. •May 26, 2025: \U0001F389 We propose a novel puppeteer-style
+  paradigm for multi-agent collaboration among large language model based agents.
+  By leveraging a learnable central orchestrator optimized with reinforcement learning,
+  our method dynamically activates and sequences agents to construct efficient, context-aware
+  reasoning paths. This approach not only improves reasoning quality but also reduces
+  computational costs, enabling scalable and adaptable multi-agent cooperation in
+  complex tasks. See our paper in [Multi-Agent Collaboration via Evolving Orchestration](https://arxiv.org/abs/2505.19591).
+  •June 25, 2024: \U0001F389To foster development in LLM-powered multi-agent collaboration\U0001F916\U0001F916
+  and related fields, the ChatDev team has curated a collection of seminal papers\U0001F4C4
+  presented in a [open-source](https://github.com/OpenBMB/ChatDev/tree/main/MultiAgentEbook)
+  interactive e-book\U0001F4DA format. Now you can explore the latest advancements
+  on the [Ebook Website](https://thinkwee.top/multiagent_ebook) and download the [paper
+  list](https://github.com/OpenBMB/ChatDev/blob/main/MultiAgentEbook/papers.csv).
+  •June 12, 2024: We introduced Multi-Agent Collaboration Networks (MacNet) \U0001F389,
+  which utilize directed acyclic graphs to facilitate effective task-oriented collaboration
+  among agents through linguistic interactions \U0001F916\U0001F916. MacNet supports
+  co-operation across various topologies and among more than a thousand agents without
+  exceeding context limits. More versatile and scalable, MacNet can be considered
+  as a more advanced version of ChatDev's chain-shaped topology. Our preprint paper
+  is available at [https://arxiv.org/abs/2406.07155](https://arxiv.org/abs/2406.07155).
+  This technique has been incorporated into the [macnet](https://github.com/OpenBMB/ChatDev/tree/macnet)
+  branch, enhancing support for diverse organizational structures and offering richer
+  solutions beyond software development (e.g., logical reasoning, data analysis, story
+  generation, and more). • May 07, 2024, we introduced \"Iterative Experience Refinement\"
+  (IER), a novel method where instructor and assistant agents enhance shortcut-oriented
+  experiences to efficiently adapt to new tasks. This approach encompasses experience
+  acquisition, utilization, propagation and elimination across a series of tasks and
+  making the pricess shorter and efficient. Our preprint paper is available at https://arxiv.org/abs/2405.04219,
+  and this technique will soon be incorporated into ChatDev. • January 25, 2024: We
+  have integrated Experiential Co-Learning Module into ChatDev. Please see the [Experiential
+  Co-Learning Guide](wiki.md#co-tracking). • December 28, 2023: We present Experiential
+  Co-Learning, an innovative approach where instructor and assistant agents accumulate
+  shortcut-oriented experiences to effectively solve new tasks, reducing repetitive
+  errors and enhancing efficiency. Check out our preprint paper at https://arxiv.org/abs/2312.17025
+  and this technique will soon be integrated into ChatDev. • November 15, 2023: We
+  launched ChatDev as a SaaS platform that enables software developers and innovative
+  entrepreneurs to build software efficiently at a very low cost and remove the barrier
+  to entry. Try it out at https://chatdev.modelbest.cn/. • November 2, 2023: ChatDev
+  is now supported with a new feature: incr"
 ---
 {% raw %}
 # ChatDev 2.0 - DevAll

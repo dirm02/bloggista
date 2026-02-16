@@ -2,8 +2,50 @@
 layout: project
 name: Mercurjs Mercur
 slug: mercurjs-mercur
+category: Platform -eCommerce
 image: https://cdn.prod.website-files.com/6790aeffc4b432ccaf1b56e5/67a225dc6fa298afc1cc4ae6_Mercur%20Cover.png
 repo_url: https://github.com/mercurjs/mercur
+indexed_content: "Mercur Open Source Marketplace Platform Mercur | Docs | Discord
+  Community # What is Mercur? Mercur is the first truly limitless open source marketplace
+  platform that combines the simplicity of SaaS with the freedom of open source. Built
+  on [MedusaJS](https://github.com/medusajs/medusa), it empowers businesses to create
+  custom marketplaces without choosing between ownership and ease of use. Mercur is
+  a platform to start, customize, manage, and scale your marketplace for every business
+  model with a modern technology stack. ## Announcing Mercur 1.0 After months of development,
+  testing, and close collaboration with early adopters, we’re excited to announce
+  the official release of **Mercur 1.0** - the first truly limitless marketplace platform.
+  Version 1.0 is fully open source and ready to be self-hosted, giving you **full
+  control over infrastructure, customizations, and data**. With this version, **Mercur
+  is production-ready for B2C marketplaces**. The first complete version includes
+  a vendor system, admin panel, and a fully built B2C Storefront. Read more in **[official
+  release announcement](https://www.mercurjs.com/updates/mercur-1-0-release)** ##
+  Why Choose Mercur? - Full Ownership: Unlike SaaS platforms, you own your marketplace
+  with no transaction fees or vendor lock-in - Modern Foundation: Built on MedusaJS,
+  offering a modern tech stack that developers love - Beautiful by Default: Create
+  stunning storefronts without sacrificing customization ## Power Any Marketplace
+  Model - Custom B2B Marketplace: Build enterprise-grade platforms with specialized
+  workflows - Custom B2C Marketplace: Create engaging consumer marketplaces with modern
+  UX - eCommerce Extension: Transform your store into a marketplace (coming soon)
+  &nbsp; # Ready-to-go marketplace features Storefronts for Marketplace Customizable
+  storefronts designed for B2B and B2C with all elements including browsing and buying
+  products across multiple vendors at once. Discover B2C Storefront Repository - \U0001F6CD️
+  Check demo Admin Panel Control over whole marketplace: setting product categories,
+  vendors, commissions and rules Vendor Panel A powerful dashboard giving sellers
+  complete control over their products, orders, and store management in one intuitive
+  interface. Discover Vendor Panel - Contact us to get demo Integrations Built-in
+  integration with Stripe for payments and Resend for communication needs. More integrations
+  coming soon. &nbsp; ## Quickstart **Step 1**: Install `mercur-cli` using NPM: ```bash
+  npm i -g mercur-cli ``` **Step 2**: Run CLI installation: ```bash mercur-cli install
+  ``` or ```bash npx mercur-cli install ``` The script will guide you through the
+  installation process. You will have to enter project name and database connection
+  parameters. Also, you'll be asked if you want to install Mercur Storefront and Vendor
+  panel. **Step 3**: After installation is done, move to the project catalog and start
+  the servers: ```bash cd mercur-cli dev ``` &nbsp; ## Prerequisites - [Node.js v20+](https://nodejs.org/en/download)
+  - [Yarn](https://yarnpkg.com/getting-started/install) - [PostgreSQL](https://git-scm.com/downloads)
+  - [Git CLI](https://www.postgresql.org/download/) # Resources #### Learn more about
+  Mercur - [Mercur Website](https://www.mercurjs.com/) - [Mercur Docs](https://docs.mercurjs.com/introduction)
+  #### Learn more about Medusa - [Medusa Website](https://www.medusajs.com/) - [Medusa
+  Docs](https://docs.medusajs.com/v2)"
 ---
 {% raw %}
 ![Mercur Main Cover](https://cdn.prod.website-files.com/6790aeffc4b432ccaf1b56e5/67a225dc6fa298afc1cc4ae6_Mercur%20Cover.png)

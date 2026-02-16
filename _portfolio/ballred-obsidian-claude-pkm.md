@@ -2,8 +2,70 @@
 layout: project
 name: Ballred Obsidian Claude Pkm
 slug: ballred-obsidian-claude-pkm
+category: Let's try this- Personal prefere
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/ballred/obsidian-claude-pkm
+indexed_content: "**\U0001F4CA [Take the quick poll](https://github.com/ballred/obsidian-claude-pkm/discussions/4)**
+  - Help shape what gets built next! --- # Obsidian + Claude Code PKM Starter Kit
+  \U0001F680 A complete personal knowledge management system that combines Obsidian's
+  powerful note-taking with Claude Code's AI assistance. Go from zero to a fully functional
+  PKM in 15 minutes or less. **v2.1** - Unified skills pattern (skills and slash commands
+  merged), hooks, agents, and rules. ## ✨ Features ### Core PKM - **\U0001F3AF Goal-Aligned
+  System** - Cascading goals from 3-year vision to daily tasks - **\U0001F4C5 Daily
+  Notes System** - Structured daily planning and reflection - **\U0001F4F1 Mobile
+  Ready** - GitHub integration for notes on any device - **\U0001F504 Version Controlled**
+  - Never lose a thought with automatic Git backups - **\U0001F3A8 Fully Customizable**
+  - Adapt templates and structure to your needs ### AI-Powered (v2.1) - **⚡ Unified
+  Skills** - Skills and slash commands merged (`/daily`, `/weekly`, `/push`, `/onboard`)
+  - **\U0001FA9D Hooks** - Auto-commit on save, session initialization - **\U0001F916
+  Custom Agents** - Note organizer, weekly reviewer, goal aligner, inbox processor
+  - **\U0001F4CF Modular Rules** - Path-specific conventions for markdown, productivity,
+  projects - **\U0001F9E0 Output Styles** - Productivity Coach for accountability
+  - **\U0001F4CA Status Line** - Vault stats in terminal (note count, inbox, uncommitted
+  changes) - **\U0001F441️ Progress Visibility** - See spinner updates during multi-step
+  operations like morning routines ## \U0001F680 Quick Start ### Prerequisites - [Obsidian](https://obsidian.md/)
+  installed - [Claude Code CLI](https://code.claude.com/docs) installed - Git installed
+  - GitHub account (optional, for mobile sync) ### 15-Minute Quickstart ```bash #
+  1) Install prerequisites (once) # - Obsidian: https://obsidian.md/ # - Git: https://git-scm.com/
+  # - Claude Code CLI: https://code.claude.com/docs # 2) Clone this repository git
+  clone https://github.com/ballred/obsidian-claude-pkm.git cd obsidian-claude-pkm
+  # 3) Run setup (macOS/Linux) chmod +x scripts/setup.sh ./scripts/setup.sh # 3b)
+  Windows scripts\\setup.bat ``` ### Manual Copy (alternative) ```bash # Copy the
+  vault template to your preferred location cp -r vault-template ~/Documents/ObsidianPKM
+  ``` ### Open in Obsidian 1. Launch Obsidian 2. Click \"Open folder as vault\" 3.
+  Select your vault folder (e.g., ~/Documents/ObsidianPKM) 4. Start with today's daily
+  note! ## \U0001F4D6 Documentation - **[Setup Guide](docs/SETUP_GUIDE.md)** - Detailed
+  installation instructions - **[Customization](docs/CUSTOMIZATION.md)** - Make it
+  yours - **[Workflow Examples](docs/WORKFLOW_EXAMPLES.md)** - Daily routines and
+  best practices - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues
+  and solutions ## \U0001F5C2️ Structure ``` Your Vault/ ├── CLAUDE.md # AI context
+  and navigation ├── CLAUDE.local.md.template # Template for personal overrides ├──
+  .claude-plugin/ │ └── plugin.json # Plugin manifest ├── .claude/ │ ├── agents/ #
+  Custom AI agents │ │ ├── note-organizer.md │ │ ├── weekly-reviewer.md │ │ ├── goal-aligner.md
+  │ │ └── inbox-processor.md │ ├── skills/ # Unified skills (invoke with /skill-name)
+  │ │ ├── daily/ # /daily - Create daily notes, routines │ │ ├── weekly/ # /weekly
+  - Weekly review process │ │ ├── push/ # /push - Git commit and push │ │ ├── onboard/
+  # /onboard - Load vault context │ │ ├── goal-tracking/ # Auto: Track goal progress
+  │ │ └── obsidian-vault-ops/ # Auto: Vault file operations │ ├── hooks/ # Event automation
+  (NEW) │ │ ├── session-init.sh │ │ └── auto-commit.sh │ ├── rules/ # Path-specific
+  conventions (NEW) │ │ ├── markdown-standards.md │ │ ├── productivity-workflow.md
+  │ │ └── project-management.md │ ├── scripts/ │ │ └── statusline.sh # Terminal status
+  display (NEW) │ ├── output-styles/ │ │ └── coach.md # Productivity Coach │ └── settings.json
+  # Permissions and config (NEW) ├── Daily Notes/ ├── Goals/ ├── Projects/ ├── Templates/
+  └── Archives/ ``` ## \U0001F9E0 Output Styles This starter kit includes a **Productivity
+  Coach** output style that transforms Claude into an accountability partner. The
+  coach will: - Challenge you to clarify your true intentions - Point out misalignments
+  between stated goals and actions - Ask powerful questions to drive momentum - Hold
+  you accountable to your commitments - Help you identify and overcome resistance
+  To use the coach style in Claude Code: 1. The output style is automatically included
+  in `.claude/output-styles/` 2. Start Claude Code and type `/output-style` to select
+  from available styles 3. Or directly activate with: `/output-style coach` 4. The
+  style preference is automatically saved for your project Learn more about [customizing
+  output styles](docs/CUSTOMIZATION.md#output-styles). ## \U0001F916 Custom Agents
+  (v2.0) Ask Claude to use specialized agents for common PKM tasks: ```bash # Organize
+  your vault and fix broken links claude \"Use the note-organizer agent to audit my
+  vault\" # Facilitate weekly review aligned with goals claude \"Use the weekly-reviewer
+  agent for my weekly review\" # Check if daily work aligns with long-t"
 ---
 {% raw %}
 **📊 [Take the quick poll](https://github.com/ballred/obsidian-claude-pkm/discussions/4)** - Help shape what gets built next!

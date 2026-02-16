@@ -2,8 +2,68 @@
 layout: project
 name: Ai Boost Awesome Ai For Science
 slug: ai-boost-awesome-ai-for-science
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ai-boost-awesome-ai-for-science/assets/banner.jpg
 repo_url: https://github.com/ai-boost/awesome-ai-for-science
+indexed_content: "✨ Awesome AI for Science (AI4Science) ✨ A curated list of awesome
+  AI tools, libraries, papers, datasets, and frameworks that accelerate scientific
+  discovery across all disciplines. Deutsch | English | Español | français | 日本語 |
+  한국어 | Português | Русский | 中文 > AI is revolutionizing scientific research - from
+  drug discovery and materials design to climate modeling and astrophysics. This repository
+  collects the best resources to help researchers leverage AI in their work. ## \U0001F4DA
+  Contents - [\U0001F9EA AI Tools for Research](#-ai-tools-for-research) - [\U0001F4C4
+  Paper→Poster / Slides / Graphical Abstract](#-paperposter--slides--graphical-abstract)
+  - [\U0001F4CA Chart Understanding & Generation](#-chart-understanding--generation)
+  - [\U0001F504 Paper-to-Code & Reproducibility](#-paper-to-code--reproducibility)
+  - [\U0001F4CB Scientific Documentation & Parsing](#-scientific-documentation--parsing)
+  - [\U0001F9F0 Research Workbench & Plugins](#-research-workbench--plugins) - [\U0001F578
+  Knowledge Extraction & Scholarly KGs](#-knowledge-extraction--scholarly-kgs) - [\U0001F916
+  Research Agents & Autonomous Workflows](#-research-agents--autonomous-workflows)
+  - [\U0001F3F7 Data Labeling & Curation](#-data-labeling--curation) - [⚗ Scientific
+  Machine Learning](#-scientific-machine-learning) - [\U0001F4D6 Papers & Reviews](#-papers--reviews)
+  - [\U0001F52C Domain-Specific Applications](#-domain-specific-applications) - [\U0001F9EC
+  Biology & Medicine](#-biology--medicine) - [⚛ Chemistry & Materials](#-chemistry--materials)
+  - [\U0001F30C Physics & Astronomy](#-physics--astronomy) - [\U0001F30D Earth & Climate
+  Science](#-earth--climate-science) - [\U0001F33E Agriculture & Ecology](#-agriculture--ecology)
+  - [\U0001F916 Foundation Models for Science](#-foundation-models-for-science) -
+  [\U0001F4C8 Datasets & Benchmarks](#-datasets--benchmarks) - [\U0001F4BB Computing
+  Frameworks](#-computing-frameworks) - [\U0001F393 Educational Resources](#-educational-resources)
+  - [\U0001F3DB Research Communities](#-research-communities) - [\U0001F4DA Related
+  Awesome Lists](#-related-awesome-lists) --- ## \U0001F9EA AI Tools for Research
+  ### Literature & Knowledge Management - [Semantic Scholar](https://www.semanticscholar.org/)
+  - AI-powered academic search (Allen AI) - [arXiv](https://arxiv.org/) - Open-access
+  repository of electronic preprints and postprints - [OpenAlex](https://openalex.org/)
+  - Open catalog of scholarly papers and authors - [CORE](https://core.ac.uk/) - Aggregator
+  of open access research papers ### Data Analysis & Visualization - [PandasAI](https://github.com/Sinaptik-AI/pandas-ai)
+  - Conversational data analysis using natural language - [DeepAnalyze](https://github.com/ruc-datalab/DeepAnalyze)
+  - First agentic LLM for autonomous data science with end-to-end pipeline from data
+  to analyst-grade reports - [AutoViz](https://github.com/AutoViML/AutoViz) - Automated
+  data visualization with minimal code - [Chat2Plot](https://github.com/nyanp/chat2plot)
+  - Secure text-to-visualization through standardized chart specifications ### Data
+  Labeling & Annotation - [Label Studio](https://github.com/heartexlabs/label-studio)
+  - Multi-type data labeling and annotation tool - [Snorkel](https://github.com/snorkel-team/snorkel)
+  - Programmatic data labeling and weak supervision ### Research Workbench & Plugins
+  - [Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills)
+  - Comprehensive collection of 125+ ready-to-use scientific skill modules for Claude
+  AI across bioinformatics, cheminformatics, clinical research, ML, and materials
+  science --- ## \U0001F4C4 Paper→Poster / Slides / Graphical Abstract ### Poster
+  Generation - [Paper2Poster](https://github.com/Paper2Poster/Paper2Poster) - Multi-agent
+  system with Parser-Planner-Painter architecture converting `paper.pdf` to editable
+  `poster.pptx`, outperforms GPT-4o with 87% fewer tokens - [mPLUG-PaperOwl](https://github.com/X-PLUG/mPLUG-DocOwl)
+  - Multimodal LLM for scientific charts and diagrams understanding/generation ###
+  Slides & Presentation Generation - [Auto-Slides](https://auto-slides.github.io/)
+  - Multi-agent academic paper to high-quality presentation slides with interactive
+  refinement - [PPTAgent](https://github.com/icip-cas/PPTAgent) - Beyond text-to-slides
+  generation with PPTEval multi-dimensional evaluation (EMNLP 2025) - [paper2slides](https://github.com/takashiishida/paper2slides)
+  - Transform arXiv papers into Beamer slides using LLMs - [PaperToSlides](https://github.com/jxtse/PaperToSlides)
+  - AI-powered tool that automatically converts academic papers (PDF) into presentation
+  slides - [pdf2slides](https://github.com/ha0ranyu/pdf2slides) - Convert PDF files
+  into editable slides with three lines of code - [SlideDeck AI](https://github.com/barun-saha/slide-deck-ai)
+  - Co-create PowerPoint presentations with Generative AI from documents or topics
+  - [AI Multi-Agent Presentation Builder](https://github.com/Azure-Samples/ai-multi-agent-presentation-builder)
+  - Azure Semantic Kernel multi-agent PPT generation reference ### Video & Media Generation
+  - [Paper2Video](https://github.com/showlab/Paper2Video) - First benchmark for automatic
+  video generation from scientific papers (NeurI"
 ---
 {% raw %}
 <div align="center">

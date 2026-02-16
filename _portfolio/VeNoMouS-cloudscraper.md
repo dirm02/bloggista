@@ -2,8 +2,71 @@
 layout: project
 name: Venomous Cloudscraper
 slug: VeNoMouS-cloudscraper
+category: Let's try this- Personal prefere
 image: https://badge.fury.io/py/cloudscraper.svg
 repo_url: https://github.com/kennethreitz/requests).
+indexed_content: "# cloudscraper - Enhanced Edition [](https://badge.fury.io/py/cloudscraper)
+  [](https://opensource.org/licenses/MIT) [](https://pypi.org/project/cloudscraper/)
+  **Enhanced by [Zied Boughdir](https://github.com/zinzied)** ## Latest Release: v3.0.0
+  \U0001F680 - Major Upgrade ### \U0001F195 Major New Features in v3.0.0 - **\U0001F6E1️
+  Automatic 403 Error Recovery** - Intelligent session refresh when 403 errors occur
+  after prolonged use - **\U0001F4CA Session Health Monitoring** - Proactive session
+  management with configurable refresh intervals - **\U0001F504 Smart Session Refresh**
+  - Automatic cookie clearing and fingerprint rotation - **\U0001F3AF Enhanced Stealth
+  Mode** - Improved anti-detection with human-like behavior simulation - **\U0001F527
+  Modern Python Support** - Python 3.8+ with latest dependency versions - **\U0001F4E6
+  Modern Packaging** - Uses pyproject.toml and modern build tools - **\U0001F9EA Comprehensive
+  Testing** - New test suite with pytest and CI/CD integration - **\U0001F680 Performance
+  Improvements** - Optimized code with better error handling ### \U0001F527 Breaking
+  Changes - **Minimum Python version**: Now requires Python 3.8+ - **Updated dependencies**:
+  All dependencies upgraded to latest stable versions - **Removed legacy code**: Cleaned
+  up Python 2 compatibility code ### ✅ Previous Features (Still Available) - **Executable
+  Compatibility Fix** - Complete solution for PyInstaller, cx_Freeze, and auto-py-to-exe
+  conversion - **Cloudflare v3 JavaScript VM Challenge Support** - Handle the latest
+  and most sophisticated Cloudflare protection - **Cloudflare Turnstile Challenge
+  Support** - Support for Cloudflare's CAPTCHA alternative - **Enhanced JavaScript
+  Interpreter Support** - Improved VM-based challenge execution - **Complete Protection
+  Coverage** - Now supports all Cloudflare challenge types (v1, v2, v3, Turnstile)
+  ### \U0001F527 Improvements - **\U0001F3AF Fixed User Agent Issues in Executables**
+  - Automatic fallback system for missing browsers.json - **\U0001F6E1️ PyInstaller
+  Detection** - Automatically detects and handles executable environments - **\U0001F4E6
+  Comprehensive Fallback System** - 70+ built-in user agents covering all platforms
+  - Enhanced proxy rotation and stealth mode capabilities - Better detection and handling
+  of modern Cloudflare protection mechanisms - Improved compatibility with all JavaScript
+  interpreters (js2py, nodejs, native) - Updated documentation with comprehensive
+  examples ### \U0001F4CA Test Results All features tested with **100% success rate**
+  for core functionality: - ✅ Basic requests: 100% pass rate - ✅ User agent handling:
+  100% pass rate - ✅ Cloudflare v1 challenges: 100% pass rate - ✅ Cloudflare v2 challenges:
+  100% pass rate - ✅ Cloudflare v3 challenges: 100% pass rate - ✅ Stealth mode: 100%
+  pass rate A Python module to bypass Cloudflare's anti-bot page (also known as \"I'm
+  Under Attack Mode\", or IUAM), implemented with [Requests](https://github.com/kennethreitz/requests).
+  This enhanced version includes support for Cloudflare v2 challenges, proxy rotation,
+  stealth mode, and more. Cloudflare changes their techniques periodically, so I will
+  update this repo frequently. This can be useful if you wish to scrape or crawl a
+  website protected with Cloudflare. Cloudflare's anti-bot page currently just checks
+  if the client supports Javascript, though they may add additional techniques in
+  the future. Due to Cloudflare continually changing and hardening their protection
+  page, cloudscraper requires a JavaScript Engine/interpreter to solve Javascript
+  challenges. This allows the script to easily impersonate a regular web browser without
+  explicitly deobfuscating and parsing Cloudflare's Javascript. For reference, this
+  is the default message Cloudflare uses for these sorts of pages: ``` Checking your
+  browser before accessing website.com. This process is automatic. Your browser will
+  redirect to your requested content shortly. Please allow up to 5 seconds... ```
+  Any script using cloudscraper will sleep for ~5 seconds for the first visit to any
+  site with Cloudflare anti-bots enabled, though no delay will occur after the first
+  request. # Installation Simply run `pip install cloudscraper`. The PyPI package
+  is at https://pypi.org/project/cloudscraper/ ```bash pip install cloudscraper ```
+  Alternatively, clone this repository and run `python setup.py install`. ## Migration
+  from cloudscraper If you were previously using the original `cloudscraper` package,
+  you can now use this enhanced version directly: ```python # Enhanced import import
+  cloudscraper # Enhanced version ``` The API remains compatible, so you only need
+  to change the import statements in your code. All function calls and parameters
+  work the same way. ### Codebase Structure The codebase has been streamlined to improve
+  maintainability and reduce confusion: - **Single Module**: All code is now in the
+  `cloudscraper` module - **Removed Redundancy**: The redundant directories have been
+  removed - **Updated Tests**: All test files have been updated to use the `cloudscraper`
+  module This makes the codebase cleaner and easier to maintain while ensuring backward
+  com"
 ---
 {% raw %}
 # cloudscraper - Enhanced Edition

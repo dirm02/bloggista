@@ -2,8 +2,69 @@
 layout: project
 name: Robertdavidgraham Masscan
 slug: robertdavidgraham-masscan
+category: GreyHate-Cyber&Security
 image: https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/badge.svg?branch=master
 repo_url: https://github.com/robertdavidgraham/masscan
+indexed_content: '[](https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/?branch=master)
+  # MASSCAN: Mass IP port scanner This is an Internet-scale port scanner. It can scan
+  the entire Internet in under 5 minutes, transmitting 10 million packets per second,
+  from a single machine. Its usage (parameters, output) is similar to `nmap`, the
+  most famous port scanner. When in doubt, try one of those features -- features that
+  support widespread scanning of many machines are supported, while in-depth scanning
+  of single machines aren''t. Internally, it uses asynchronous transmission, similar
+  to port scanners like `scanrand`, `unicornscan`, and `ZMap`. It''s more flexible,
+  allowing arbitrary port and address ranges. NOTE: masscan uses its own **ad hoc
+  TCP/IP stack**. Anything other than simple port scans may cause conflict with the
+  local TCP/IP stack. This means you need to use either the `--src-ip` option to run
+  from a different IP address, or use `--src-port` to configure which source ports
+  masscan uses, then also configure the internal firewall (like `pf` or `iptables`)
+  to firewall those ports from the rest of the operating system. This tool is free,
+  but consider contributing money to its development: Bitcoin wallet address: 1MASSCANaHUiyTtR3bJ2sLGuMw5kDBaj4T
+  # Building On Debian/Ubuntu, it goes something like the following. It doesn''t really
+  have any dependencies other than a C compiler (such as `gcc` or `clang`). sudo apt-get
+  --assume-yes install git make gcc git clone https://github.com/robertdavidgraham/masscan
+  cd masscan make This puts the program in the `masscan/bin` subdirectory. To install
+  it (on Linux) run: make install The source consists of a lot of small files, so
+  building goes a lot faster by using the multi-threaded build. This requires more
+  than 2gigs on a Raspberry Pi (and breaks), so you might use a smaller number, like
+  `-j4` rather than all possible threads. make -j While Linux is the primary target
+  platform, the code runs well on many other systems (Windows, macOS, etc.). Here''s
+  some additional build info: * Windows w/ Visual Studio: use the VS10 project * Windows
+  w/ MinGW: just type `make` * Windows w/ cygwin: won''t work * Mac OS X /w XCode:
+  use the XCode4 project * Mac OS X /w cmdline: just type `make` * FreeBSD: type `gmake`
+  * other: try just compiling all the files together, `cc src/*.c -o bin/masscan`
+  On macOS, the x86 binaries seem to work just as fast under ARM emulation. # Usage
+  Usage is similar to `nmap`. To scan a network segment for some ports: # masscan
+  -p80,8000-8100 10.0.0.0/8 2603:3001:2d00:da00::/112 This will: * scan the `10.x.x.x`
+  subnet, and `2603:3001:2d00:da00::x` subnets * scans port 80 and the range 8000
+  to 8100, or 102 ports total, on both subnets * print output to ` ` that can be redirected
+  to a file To see the complete list of options, use the `--echo` feature. This dumps
+  the current configuration and exits. This output can be used as input back into
+  the program: # masscan -p80,8000-8100 10.0.0.0/8 2603:3001:2d00:da00::/112 --echo
+  > xxx.conf # masscan -c xxx.conf --rate 1000 ## Banner checking Masscan can do more
+  than just detect whether ports are open. It can also complete the TCP connection
+  and interaction with the application at that port in order to grab simple "banner"
+  information. Masscan supports banner checking on the following protocols: * FTP
+  * HTTP * IMAP4 * memcached * POP3 * SMTP * SSH * SSL * SMBv1 * SMBv2 * Telnet *
+  RDP * VNC The problem with this is that masscan contains its own TCP/IP stack separate
+  from the system you run it on. When the local system receives a SYN-ACK from the
+  probed target, it responds with a RST packet that kills the connection before masscan
+  can grab the banner. The easiest way to prevent this is to assign masscan a separate
+  IP address. This would look like one of the following examples: # masscan 10.0.0.0/8
+  -p80 --banners --source-ip 192.168.1.200 # masscan 2a00:1450:4007:810::/112 -p80
+  --banners --source-ip 2603:3001:2d00:da00:91d7:b54:b498:859d The address you choose
+  has to be on the local subnet and not otherwise be used by another system. Masscan
+  will warn you that you''ve made a mistake, but you might''ve messed up the other
+  machine''s communications for several minutes, so be careful. In some cases, such
+  as WiFi, this isn''t possible. In those cases, you can firewall the port that masscan
+  uses. This prevents the local TCP/IP stack from seeing the packet, but masscan still
+  sees it since it bypasses the local stack. For Linux, this would look like: # iptables
+  -A INPUT -p tcp --dport 61000 -j DROP # masscan 10.0.0.0/8 -p80 --banners --source-port
+  61000 You probably want to pick ports that don''t conflict with ports Linux might
+  otherwise choose for source-ports. You can see the range Linux uses, and reconfigure
+  that range, by looking in the file: /proc/sys/net/ipv4/ip_local_port_range On the
+  latest version of Kali Linux (2018-August), that range is 32768 to 60999, so you
+  should choose ports either below 32768 or 61000 and above. S'
 ---
 {% raw %}
 [![unittests](https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/badge.svg?branch=master)](https://github.com/robertdavidgraham/masscan/actions/workflows/unittests.yml/?branch=master)

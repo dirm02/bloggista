@@ -2,8 +2,66 @@
 layout: project
 name: Giovantenne Cg2 T1d
 slug: giovantenne-CG2-T1D
+category: EE-kicad-3D-Robotic
 image: https://www.datocms-assets.com/56675/1757097907-pxl_20250905_170517849.jpg?fm=webp&w=610
 repo_url: https://github.com/giovantenne/CG2)
+indexed_content: '# WiFi Desktop Glucose Monitor (CG2‑T1D) This is a **free and open
+  source project** that lets you check your CGM-detected glucose values in real time
+  with a small piece of hardware. Supported CGM sources: - Abbott LibreView (Libre
+  2) - Dexcom Share (US / OUS / JP) This is a remix of my other project CryptoGadgets
+  v2 (CG2) that I created for my personal use. You can find the original project [here](https://github.com/giovantenne/CG2)
+  ## Features - Built-in WiFi – works independently, no PC required - Real-time glucose
+  level display - 3 zoom levels to view the past 12, 6, or 3 hours - Adjustable brightness
+  for any environment - Automatic refresh every 60 seconds - Missing data visual-alert
+  if no updates are received for more than 5 minutes - Upgradable firmware (OTA check
+  on boot) ## User Manual This is a stand-alone device. This means that you don’t
+  need a PC to get it running and that you can simply power it through the usb-c port.
+  Before doing so you will need to connect it to your WiFi network by following these
+  simple steps: - Power-up your device. When setting it up for the first time, and
+  everytime it is not able to connect to an existing WiFi network, the device will
+  start in “access-point/captive-portal" mode and it will broadcast the WiFi SSID
+  “T1D-Sucks”. - Connect your phone/computer to the “T1D-Sucks” WiFi network using
+  the following password: 12345678 - Your phone/computer should prompt you with a
+  login/welcome page. If not you can simply browse to the following address: http://172.217.28.1.
+  You should then be able to see and access the device setup interface. - On the menu
+  click “Configure new AP”. You should then be presented with a list of existing WiFi
+  networks. - Click on your network SSID name, enter your passphrase and click “Apply”.
+  - Browse to the QR code displayed on the screen to enter your CGM credentials. Enter:
+  - LibreView: email, password, patient index (0 for first, 1 for second…) - Dexcom:
+  username/email/phone, password, region (US / Out of US / Japan) You also can easily
+  update the device firmware by downloading the latest version, if needed, from the
+  following link: https://github.com/giovantenne/CG2-T1D/releases You can check the
+  firmware version you are currently running by simply looking at the display during
+  the booting process, below the logo. On every successful Wi‑Fi connection the device
+  performs a lightweight OTA check; if a newer build is available on the update server
+  it will show an "update in progress" screen and apply it automatically. ### Factory
+  reset (wipe Wi‑Fi and app settings) - Hold Button 1 (the top button, GPIO35) while
+  powering up: the device will erase all saved Wi‑Fi networks and reset internal settings,
+  then reboot into Access Point mode. - Or browse to the IP shown during the boot
+  process, go to the “Reset” page and confirm. This also erases known Wi‑Fi credentials.
+  After reset, the device will no longer reconnect to your previous network until
+  you reconfigure it. ### Buttons (quick reference) - Button 1 short press: cycle
+  brightness - Button 1 long press (~2s): force refresh - Button 2 short press: toggle
+  zoom (3 → 6 → 12 → hours) - Button 2 long press (~2s): deep sleep ## Video [](https://www.youtube.com/watch?v=8-MzdPxjns4)
+  ## Requirements - TTGO T-Display - [here](https://www.lilygo.cc/products/lilygo%C2%AE-ttgo-t-display-1-14-inch-lcd-esp32-control-board)
+  - 3D BOX - [here](stl/) - 3.7V 1100mAh LiPo Battery with Micro JST 1.25 connector
+  (optional) ## Download and Load the Firmware The easiest way to flash firmware.
+  Build your own CG2-T1D using the following firmware flash tool: - Download the latest
+  firmware from the [Releases](https://github.com/giovantenne/CG2-T1D/releases) page
+  - Download the [partitions.bin](https://github.com/giovantenne/CG2-T1D/raw/refs/heads/master/bin/partitions.bin)
+  file - Download the [bootloader.bin](https://github.com/giovantenne/CG2-T1D/raw/refs/heads/master/bin/bootloader.bin)
+  file - Open the [ESP Web Tool](https://esp.huhn.me/) to flash the firmware directly
+  from your browser (recommended via Google Chrome incognito mode) - Connect your
+  device, set the table as shown in the image below, and click _PROGRAM_: ## Build
+  From Source and Load the Firmware - Install [PlatformIO Core](https://platformio.org/install/cli)
+  - Linux users: you may need to add the udev rule by running `curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules
+  | sudo tee /etc/udev/rules.d/99-platformio-udev.rules` - Connect the board via USB
+  - Clone this repository `git clone https://github.com/giovantenne/CG2-T1D` - Run
+  `cd CG2-T1D && pio run -t upload` ### Run the test suite This project includes on‑device
+  unit tests (Unity) for core helpers and persistence. - Build and run tests on the
+  board: - `pio test -e ttgo-t1 -v` Notes: - Tests are isolated from the main app
+  logic — the application entry points are guarded with `#ifndef UNIT_TEST`. - The
+  test runner resets the board'
 ---
 {% raw %}
 # WiFi Desktop Glucose Monitor (CG2‑T1D)

@@ -2,8 +2,67 @@
 layout: project
 name: Joeanamier Tiktokdownloader
 slug: JoeanAmier-TikTokDownloader
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/JoeanAmier-TikTokDownloader/docs/screenshot/终端交互模式截图CN1.png
 repo_url: https://github.com/JoeanAmier/TikTokDownloader
+indexed_content: "DouK-Downloader 简体中文 | English \U0001F525 TikTok 发布/喜欢/合辑/直播/视频/图集/音乐；抖音发布/喜欢/收藏/收藏夹/视频/图集/实况/直播/音乐/合集/评论/账号/搜索/热榜数据采集工具：
+  完全开源，基于 HTTPX 模块实现的免费数据采集和文件下载工具；批量下载抖音账号发布、喜欢、收藏、收藏夹作品；批量下载 TikTok 账号发布、喜欢作品；下载抖音链接或
+  TikTok 链接作品；获取抖音直播拉流地址；下载抖音直播视频；获取 TikTok 直播拉流地址；下载 TikTok 直播视频；采集抖音作品评论数据；批量下载抖音合集作品；批量下载
+  TikTok 合辑作品；采集抖音账号详细数据；采集抖音用户 / 作品 / 直播搜索结果；采集抖音热榜数据。 ⭐ 本项目历史名称： TikTokDownloader
+  \U0001F4E3 本项目将于未来进行代码结构重构，目标是让代码更加稳健，并具备更好的可维护性与扩展性；如果你对项目设计、实现方式或优化思路有想法，欢迎提出建议或参与讨论！
+  # \U0001F4DD 项目功能 功能列表（点击展开） ✅ 下载抖音无水印视频/图集 ✅ 下载抖音无水印实况/动图 ✅ 下载最高画质视频文件 ✅ 下载 TikTok
+  视频原画 ✅ 下载 TikTok 无水印视频/图集 ✅ 下载抖音账号发布/喜欢/收藏/收藏夹作品 ✅ 下载 TikTok 账号发布/喜欢作品 ✅ 采集抖音 /
+  TikTok 详细数据 ✅ 批量下载链接作品 ✅ 多账号批量下载作品 ✅ 自动跳过已下载的文件 ✅ 持久化保存采集数据 ✅ 支持 CSV/XLSX/SQLite
+  格式保存数据 ✅ 下载动态/静态封面图 ✅ 获取抖音直播拉流地址 ✅ 获取 TikTok 直播拉流地址 ✅ 调用 ffmpeg 下载直播 ✅ Web UI 交互界面
+  ✅ 采集抖音作品评论数据 ✅ 下载抖音合集作品 ✅ 下载 TikTok 合辑作品 ✅ 记录点赞收藏等统计数据 ✅ 筛选作品发布时间 ✅ 支持账号作品增量下载 ✅
+  支持使用代理采集数据 ✅ 支持局域网远程访问 ✅ 采集抖音账号详细数据 ✅ 作品统计数据更新 ✅ 支持自定义账号/合集标识 ✅ 自动更新账号昵称/标识 ✅ 部署至私有服务器
+  ✅ 部署至公开服务器 ✅ 采集抖音搜索数据 ✅ 采集抖音热榜数据 ✅ 记录已下载作品 ID ☑️ 扫码登陆获取 Cookie ✅ 从浏览器读取 Cookie ✅
+  支持 Web API 调用 ✅ 支持多线程下载作品 ✅ 文件完整性处理机制 ✅ 自定义规则筛选作品 ✅ 按文件夹归档保存作品文件 ✅ 自定义设置文件大小上限 ✅
+  支持文件断点续传下载 ✅ 监听剪贴板链接下载作品 # \U0001F4BB 程序截图 前往 bilibili 观看演示 ； 前往 YouTube 观看演示 ##
+  终端交互模式 建议通过配置文件管理账号，更多介绍请查阅 文档 ***** ***** ## Web UI 交互模式 > **项目代码已重构，该模式代码尚未更新，未来开发完成重新开放！**
+  ## Web API 接口模式 ***** > **启动该模式后，访问 `http://127.0.0.1:5555/docs` 或者 `http://127.0.0.1:5555/redoc`
+  可以查阅自动生成的文档！** ### API 调用示例代码 ```python from httpx import post from rich import
+  print def demo(): headers = {\"token\": \"\"} data = { \"detail_id\": \"0123456789\",
+  \"pages\": 2, } api = \"http://127.0.0.1:5555/douyin/comment\" response = post(api,
+  json=data, headers=headers) print(response.json()) demo() ``` # \U0001F4CB 项目说明
+  ## 快速入门 ⭐ Mac OS、Windows 10 及以上用户可前往 Releases 或者 Actions 下载已编译的程序，开箱即用！ ⭐ 本项目包含自动构建可执行文件的
+  GitHub Actions，使用者可以随时使用 GitHub Actions 将最新源码构建为可执行文件！ ⭐ 自动构建可执行文件教程请查阅本文档的 构建可执行文件指南
+  部分；如果需要更加详细的图文教程，请 查阅文章 ！ 注意：由于 Mac OS 平台的可执行文件 main 未经过代码签名，首次运行时会受到系统安全限制。请先在终端执行
+  xattr -cr 项目文件夹路径 命令移除安全标记，执行一次后即可正常运行。 运行可执行文件 或者 配置环境运行 （二选一） 运行可执行文件 下载 Releases
+  或者 Actions 构建的可执行文件压缩包 解压后打开程序文件夹，双击运行 main 配置环境运行 [//]: # ( 安装不低于 3.12 版本的 Python
+  解释器 ) 安装 3.12 版本的 Python 解释器 下载最新的源码或 Releases 发布的源码至本地 使用 pip 安装项目依赖 运行 python
+  -m venv venv 命令创建虚拟环境（可选） 运行 .\\venv\\Scripts\\activate.ps1 或者 venv\\Scripts\\activate
+  命令激活虚拟环境（可选） 运行 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+  命令安装程序所需模块 运行 python .\\main.py 或者 python main.py 命令启动 DouK-Downloader 使用 uv 安装项目依赖（推荐）
+  运行 uv venv 命令创建虚拟环境 运行 uv sync 命令同步环境依赖 运行 uv run main.py 命令启动 DouK-Downloader 阅读
+  DouK-Downloader 的免责声明，根据提示输入内容 将 Cookie 信息写入配置文件 从剪贴板读取 Cookie（推荐） 参考 Cookie 提取教程
+  ，复制所需 Cookie 至剪贴板 选择 从剪贴板读取 Cookie 选项，程序会自动读取剪贴板的 Cookie 并写入配置文件 从浏览器读取 Cookie 选择
+  从浏览器读取 Cookie 选项，按照提示输入浏览器类型或序号 扫码登录获取 Cookie （失效） 选择 扫码登录获取 Cookie 选项，程序会显示登录二维码图片，并使用默认应用打开图片
+  使用抖音 APP 扫描二维码并登录账号 按照提示操作，程序会自动将 Cookie 写入配置文件 返回程序界面，依次选择 终端交互模式 -> 批量下载链接作品(通用)
+  -> 手动输入待采集的作品链接 输入抖音作品链接即可下载作品文件（TikTok 平台需要更多初始设置，详见文档） 更多详细说明请查看 项目文档 ⭐ 推荐使用 Windows
+  终端 （Windows 11 自带默认终端） ### Docker 容器 获取镜像 方式一：使用 Dockerfile 文件构建镜像 方式二：使用 docker
+  pull joeanamier/tiktok-downloader 命令拉取镜像 方式三：使用 docker pull ghcr.io/joeanamier/tiktok-downloader
+  命令拉取镜像 创建容器： docker run --name 容器名称(可选) -p 主机端口号:5555 -v tiktok_downloader_volume:/app/Volume
+  -it &lt;镜像名称&gt; 注意： 此处的 &lt;镜像名称&gt; 需与您在第一步中使用的镜像名称保持一致（例如 joeanamier/tiktok-downloader
+  或 ghcr.io/joeanamier/tiktok-downloader ） 运行容器 启动容器： docker start -i 容器名称/容器 ID 重启容器：
+  docker restart -i 容器名称/容器 ID Docker 容器无法直接访问宿主机的文件系统，部分功能不可用，例如： 从浏览器读取 Cookie ；其他功能如有异常请反馈！
+  ## 关于 Cookie [点击查看 Cookie 获取教程](https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6%95%99%E7%A8%8B.md)
+  > * Cookie 仅需在失效后重新写入配置文件，并非每次运行程序都要写入配置文件！ > > * Cookie 会影响下载的视频文件分辨率，如果无法下载最高分辨率的视频文件，请尝试更新
+  Cookie！ > > * 程序获取数据失败时，可以尝试更新 Cookie 或者使用已登录的 Cookie！ ## 其他说明 程序提示用户输入时，直接回车代表返回上级菜单，输入
+  Q 或 q 代表结束运行 由于获取账号喜欢作品和收藏作品数据仅返回喜欢 / 收藏作品的发布日期，不返回操作日期，因此程序需要获取全部喜欢 / 收藏作品数据再进行日期筛选；如果作品数量较多，可能会花费较长的时间；可通过
+  max_pages 参数控制请求次数 获取私密账号的发布作品数据需要登录后的 Cookie，且登录的账号需要关注该私密账号 批量下载账号作品或合集作品时，如果对应的昵称或标识发生变化，程序会自动更新已下载作品文件名称中的昵称和标识
+  程序下载文件时会先将文件下载至临时文件夹，下载完成后再移动至储存文件夹；程序运行结束时会清空临时文件夹 批量下载收藏作品模式 目前仅支持下载当前已登录 Cookie
+  对应账号的收藏作品，暂不支持多账号 如果想要程序使用代理请求数据，必须在 settings.json 设置 proxy 参数，否则程序不会使用代理 如果您的计算机没有合适的程序编辑
+  JSON 文件，建议使用 在线工具 编辑配置文件内容，修改后需要重启软件才能生效。 当程序请求用户输入内容或链接时，请注意避免输入的内容或链接包含换行符，这可能会导致预期之外的问题
+  本项目不会支持付费作品下载，请勿反馈任何关于付费作品下载的问题 Windows 系统需要以管理员身份运行程序才能读取 Chromium、Chrome、Edge
+  浏览器 Cookie 本项目并未针对程序多开的情况进行优化，如需程序多开，请复制整个项目的文件夹，避免出现预期之外的问题 程序运行过程中，如需终止程序或 ffmpeg
+  ，请按下 Ctrl + C 终止运行，不要直接点击终端窗口的关闭按钮 构建可执行文件指南 构建可执行文件指南（点击展开） 本指南将引导您通过 Fork 本仓库并执行
+  GitHub Actions 自动完成基于最新源码的程序构建和打包！ --- ### 使用步骤 #### 1. Fork 本仓库 1. 点击项目仓库右上角的 **Fork**
+  按钮，将本仓库 Fork 到您的个人 GitHub 账户中 2. 您的 Fork 仓库地址将类似于：`https://github.com/your-username/this-repo`
+  --- #### 2. 启用 GitHub Actions 1. 前往您 Fork 的仓库页面 2. 点击顶部的 **Settings** 选项卡 3. 点击右侧的
+  **Actions** 选项卡 4. 点击 **General** 选项 5. 在 **Actions permissions** 下，选择 **Allow all
+  actions and reusable workflows** 选项，点击 **Save** 按钮 --- #### 3. 手动触发打包流程 1. 在您 Fork
+  的仓库中，点击顶部的 *"
 ---
 {% raw %}
 <div align="center">

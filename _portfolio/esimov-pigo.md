@@ -2,8 +2,67 @@
 layout: project
 name: Esimov Pigo
 slug: esimov-pigo
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/esimov/pigo/actions/workflows/ci.yml/badge.svg
 repo_url: https://github.com/esimov/pigo
+indexed_content: "[](https://github.com/esimov/pigo/actions/workflows/ci.yml) [](https://goreportcard.com/report/github.com/esimov/pigo)
+  [](https://pkg.go.dev/github.com/esimov/pigo/core) [](./LICENSE) [](https://github.com/esimov/pigo/releases/tag/v1.4.6)
+  [](https://snapcraft.io/pigo) Pigo is a pure Go face detection, pupil/eyes localization
+  and facial landmark points detection library based on the **[Pixel Intensity Comparison-based
+  Object detection](https://arxiv.org/pdf/1305.4537.pdf)** paper. | Rectangle face
+  marker | Circle face marker |:--:|:--: | | | ### Motivation The reason why Pigo
+  has been developed is because almost all of the currently existing solutions for
+  face detection in the Go ecosystem are purely bindings to some C/C++ libraries like
+  `OpenCV` or `dlib`, but calling a C program through `cgo` introduces huge latencies
+  and implies a significant trade-off in terms of performance. Also, in many cases
+  installing OpenCV on various platforms is cumbersome. **The Pigo library does not
+  require any additional modules or third party applications to be installed**, although
+  you might need to install Python and OpenCV if you wish to run the library in a
+  real time desktop application. Head over to this [subtopic](#real-time-face-detection-running-as-a-shared-object)
+  for more details. ### Key features - [x] Does not require OpenCV or any 3rd party
+  modules to be installed - [x] High processing speed - [x] There is no need for image
+  preprocessing prior to detection - [x] There is no need for the computation of integral
+  images, image pyramid, HOG pyramid or any other similar data structure - [x] The
+  face detection is based on pixel intensity comparison encoded in the binary file
+  tree structure - [x] Fast detection of in-plane rotated faces - [x] The library
+  can detect even faces with eyeglasses - [x] [Pupils/eyes localization](#pupils--eyes-localization)
+  - [x] [Facial landmark points detection](#facial-landmark-points-detection) - [x]
+  **[Webassembly support \U0001F389](#wasm-webassembly-support-)** ### Todo - [ ]
+  Object detection and description **The library can also detect in plane rotated
+  faces.** For this reason a new `-angle` parameter has been included into the command
+  line utility. The command below will generate the following result (see the table
+  below for all the supported options). ```bash $ pigo -in input.jpg -out output.jpg
+  -cf cascade/facefinder -angle=0.8 -iou=0.01 ``` | Input file | Output file |:--:|:--:
+  | | | Note: In case of in plane rotated faces the angle value should be adapted
+  to the provided image. ### Pupils / eyes localization Starting from **v1.2.0** Pigo
+  offers pupils/eyes localization capabilities. The implementation is based on [Eye
+  pupil localization with an ensemble of randomized trees](https://www.sciencedirect.com/science/article/abs/pii/S0031320313003294).
+  Check out this example for a realtime demo: https://github.com/esimov/pigo/tree/master/examples/puploc
+  ### Facial landmark points detection **v1.3.0** marks a new milestone in the library
+  evolution, Pigo being able to detect facial landmark points. The implementation
+  is based on [Fast Localization of Facial Landmark Points](https://arxiv.org/pdf/1403.6888.pdf).
+  Check out this example for a realtime demo: https://github.com/esimov/pigo/tree/master/examples/facial_landmark
+  ## Install Install Go, set your `GOPATH`, and make sure `$GOPATH/bin` is on your
+  `PATH`. ```bash $ go install github.com/esimov/pigo/cmd/pigo@latest ``` ### Binary
+  releases In case you do not have installed or do not wish to install Go, you can
+  obtain the binary file from the [releases](https://github.com/esimov/pigo/releases)
+  folder. The library can be accessed as a snapcraft function too. ## API Below is
+  a minimal example of using the face detection API. First, you need to load and parse
+  the binary classifier, then convert the image to grayscale mode, and finally run
+  the cascade function which returns a slice containing the row, column, scale and
+  the detection score. ```Go cascadeFile, err := ioutil.ReadFile(\"/path/to/cascade/file\")
+  if err != nil { log.Fatalf(\"Error reading the cascade file: %v\", err) } src, err
+  := pigo.GetImage(\"/path/to/image\") if err != nil { log.Fatalf(\"Cannot open the
+  image file: %v\", err) } pixels := pigo.RgbToGrayscale(src) cols, rows := src.Bounds().Max.X,
+  src.Bounds().Max.Y cParams := pigo.CascadeParams{ MinSize: 20, MaxSize: 1000, ShiftFactor:
+  0.1, ScaleFactor: 1.1, ImageParams: pigo.ImageParams{ Pixels: pixels, Rows: rows,
+  Cols: cols, Dim: cols, }, } pigo := pigo.NewPigo() // Unpack the binary file. This
+  will return the number of cascade trees, // the tree depth, the threshold and the
+  prediction from tree's leaf nodes. classifier, err := pigo.Unpack(cascadeFile) if
+  err != nil { log.Fatalf(\"Error reading the cascade file: %s\", err) } angle :=
+  0.0 // cascade rotation angle. 0.0 is 0 radians and 1.0 is 2*pi radians // Run the
+  classifier over the obtained leaf nodes and return the detection results. // The
+  result contains quadruplets representing the ro"
 ---
 {% raw %}
 <h1 align="center"><img alt="pigo-logo" src="https://user-images.githubusercontent.com/883386/55795932-8787cf00-5ad1-11e9-8c3e-8211ba9427d8.png" height=240/></h1>

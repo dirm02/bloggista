@@ -2,8 +2,62 @@
 layout: project
 name: Jesec Flood
 slug: jesec-flood
+category: ServerTools-ProxMox-CICD
 image: https://github.com/jesec/flood/raw/master/flood.svg
 repo_url: https://github.com/jesec/flood
+indexed_content: "# Flood [](https://flood.js.org) [](https://github.com/jesec/flood/actions/workflows/build.yml)
+  [](https://crowdin.com/project/flood) [](https://discord.gg/Z7yR5Uf) Flood is a
+  monitoring service for various torrent clients. It's a Node.js service that communicates
+  with your favorite torrent client and serves a decent web UI for administration.
+  [Flood-UI](https://github.com/Flood-UI) organization hosts related projects. ####
+  Supported Clients | Client | Support | | ---------------------------------------------------------------
+  | --------------------------------------------------------------------------------------------------------------
+  | | [rTorrent](https://github.com/rakshasa/rtorrent) | :white_check_mark: ([tested](https://github.com/jesec/flood/blob/master/server/.vitest/rtorrent.setup.ts))
+  | | [qBittorrent](https://github.com/qbittorrent/qBittorrent) v4.1+ | :white_check_mark:
+  ([tested](https://github.com/jesec/flood/blob/master/server/.vitest/qbittorrent.setup.ts))
+  | | [Transmission](https://github.com/transmission/transmission) | :white_check_mark:
+  ([tested](https://github.com/jesec/flood/blob/master/server/.vitest/transmission.setup.ts))
+  | | [Deluge](https://github.com/deluge-torrent/deluge) v2+ | :alembic: Experimental
+  | ##### RTorrent Notes For now, rakshasa/rtorrent and jesec/rtorrent are both supported.
+  If you are using rakshasa/rtorrent>0.15.1 (upstream rtorrent with json-rpc support),
+  you will need to add these options to your config: ```ini method.insert=d.down.sequential,value|const,0
+  method.insert=d.down.sequential.set,value|const,0 ``` #### Integrating with Flood
+  APIs are officially documented inline by the [comments](https://github.com/jesec/flood/blob/f7019001dd81ee8401c87d4c4cd6da6f5f520611/server/routes/api/torrents.ts#L106-L117)
+  and [types](https://github.com/jesec/flood/blob/f7019001dd81ee8401c87d4c4cd6da6f5f520611/shared/schema/api/torrents.ts#L10-L32).
+  You can also check out: - [community documentation site](https://flood-api.netlify.app)
+  - [list of unofficial client API libraries](https://github.com/jesec/flood/wiki/List-of-unofficial-client-API-libraries)
+  - [list of unofficial API integrations](https://github.com/jesec/flood/wiki/List-of-unofficial-API-integrations)
+  Flood conforms to [Semantic Versioning](https://semver.org) conventions. #### Feedback
+  If you have a specific issue or bug, please file a [GitHub issue](https://github.com/jesec/flood/issues).
+  Please join the [Flood Discord server](https://discord.gg/Z7yR5Uf) to discuss feature
+  requests and implementation details. #### More Information Check out the [Wiki](https://github.com/jesec/flood/wiki)
+  for more information. # Getting started ### Pre-Requisites Install [Node.js runtime](https://nodejs.org/).
+  Flood tracks `Current` and provides support to `Active LTS` as well. - Debian, Ubuntu
+  (`apt`/`.deb`) and Enterprise Linux (`yum`/`dnf`/`.rpm`) -based distributions users
+  can install `nodejs` from [NodeSource](https://github.com/nodesource/distributions)
+  software repository. - Windows users can use [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget),
+  [Chocolatey](https://chocolatey.org/packages/nodejs) or installer. - macOS users
+  can use [brew](https://brew.sh/) or installer. - Check [Node.js website](https://nodejs.org/en/download/package-manager)
+  for more. Alternatively, download a single-executable build from [Releases](https://github.com/jesec/flood/releases)
+  (or rolling build from [Actions](https://nightly.link/jesec/flood/workflows/publish-rolling/master)).
+  It bundles `Node.js` and supports `Linux`, `macOS` and `Windows`. ### Installation
+  (sudo) `npm install --global flood` or `npx flood` Or use `@jesec/flood` for cutting-edge
+  builds. Or [build from source](https://github.com/jesec/flood#Building-Flood). ###
+  Run `flood` or `npx flood` if you installed Flood via `npm`. `npm run start` if
+  you compiled Flood from source. Check [Wiki](https://github.com/jesec/flood/wiki)
+  for how to install Flood as a service. ### Configuration Flood uses a command line
+  configuration interface. Run `flood --help`, `npx flood --help` or `npm run start
+  -- --help` to get help about command line arguments. If you want to know more about
+  configurations, check [shared/schema/Config.ts](https://github.com/jesec/flood/blob/master/shared/schema/Config.ts).
+  When Flood's builtin user management is enabled (default), you will be prompted
+  to configure the connection to torrent client when loading the web interface. **What
+  to configure** 1. If you are proxying requests to Flood from your own web server,
+  configure Flood's path from the host at the `--baseuri` (or `baseURI`) property.
+  All requests will be prefixed with this value. - For example, if serving Flood from
+  `https://foo.bar/apps/flood`, you would set `baseURI` to `/apps/flood`. If serving
+  flood from `https://foo.bar`, you do not need to configure `baseURI`. - Read more
+  about proxying requests to Flood in the [Wiki](https://github.com/jesec/flood/wiki).
+  1. Check [Wiki](https"
 ---
 {% raw %}
 # Flood

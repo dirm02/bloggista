@@ -2,8 +2,68 @@
 layout: project
 name: Marceloprates Prettymaps
 slug: marceloprates-prettymaps
+category: EE-kicad-3D-Robotic
 image: https://github.com/marceloprates/prettymaps/raw/main/pictures/heerhugowaard.png
 repo_url: https://github.com/gboeing/osmnx),
+indexed_content: '# prettymaps A minimal Python library to draw customized maps from
+  [OpenStreetMap](https://www.openstreetmap.org/#map=12/11.0733/106.3078) created
+  using the [osmnx](https://github.com/gboeing/osmnx), [matplotlib](https://matplotlib.org/),
+  [shapely](https://shapely.readthedocs.io/en/stable/index.html) and [vsketch](https://github.com/abey79/vsketch)
+  packages. # [](https://marceloprates.github.io/prettymaps/) [](https://pypi.org/project/prettymaps/)
+  [](https://www.python.org/) [](LICENSE) This work is [licensed](LICENSE) under a
+  GNU Affero General Public License v3.0 (you can make commercial use, distribute
+  and modify this project, but must **disclose** the source code with the license
+  and copyright notice) ## Note about crediting and NFTs: - Please keep the printed
+  message on the figures crediting my repository and OpenStreetMap ([mandatory by
+  their license](https://www.openstreetmap.org/copyright)). - I am personally **against**
+  NFTs for their [environmental impact](https://earth.org/nfts-environmental-impact/),
+  the fact that they''re a [giant money-laundering pyramid scheme](https://twitter.com/smdiehl/status/1445795667826208770)
+  and the structural incentives they create for [theft](https://twitter.com/NFTtheft)
+  in the open source and generative art communities. - **I do not authorize in any
+  way this project to be used for selling NFTs**, although I cannot legally enforce
+  it. **Respect the creator**. - The [AeternaCivitas](https://magiceden.io/marketplace/aeterna_civitas)
+  and [geoartnft](https://www.geo-nft.com/) projects have used this work to sell NFTs
+  and refused to credit it. See how they reacted after being exposed: [AeternaCivitas](https://github.com/marceloprates/prettymaps/raw/main/pictures/NFT_theft_AeternaCivitas.jpg),
+  [geoartnft](https://github.com/marceloprates/prettymaps/raw/main/pictures/NFT_theft_geoart.jpg).
+  - **I have closed my other generative art projects on Github and won''t be sharing
+  new ones as open source to protect me from the NFT community**. ## As seen on [Hacker
+  News](https://web.archive.org/web/20210825160918/https://news.ycombinator.com/news):
+  ## [prettymaps subreddit](https://www.reddit.com/r/prettymaps_/) ## [Google Colaboratory
+  Demo](https://colab.research.google.com/github/marceloprates/prettymaps/blob/master/notebooks/examples.ipynb)
+  # Installation ### Install locally: Install prettymaps with: ``` pip install prettymaps
+  ``` ### Install on Google Colaboratory: Install prettymaps with: ``` !pip install
+  -e "git+https://github.com/marceloprates/prettymaps#egg=prettymaps" ``` Then **restart
+  the runtime** (Runtime -> Restart Runtime) before importing prettymaps # Run front-end
+  After prettymaps is installed, you can run the front-end (streamlit) application
+  from the prettymaps repository using: ``` streamlit run app.py ``` # Tutorial Plotting
+  with prettymaps is very simple. Run: ```python prettymaps.plot(your_query) ``` **your_query**
+  can be: 1. An address (Example: "Porto Alegre"), 2. Latitude / Longitude coordinates
+  (Example: (-30.0324999, -51.2303767)) 3. A custom boundary in GeoDataFrame format
+  ```python %reload_ext autoreload %autoreload 2 import prettymaps plot = prettymaps.plot(''Stad
+  van de Zon, Heerhugowaard, Netherlands'') ``` Fetching geodataframes took 14.43
+  seconds You can also choose from different "presets" (parameter combinations saved
+  in JSON files) See below an example using the "minimal" preset ```python import
+  prettymaps plot = prettymaps.plot( ''Stad van de Zon, Heerhugowaard, Netherlands'',
+  preset = ''minimal'' ) ``` Fetching geodataframes took 5.48 seconds Run ```python
+  prettymaps.presets() ``` to list all available presets: ```python import prettymaps
+  prettymaps.presets() ``` .dataframe tbody tr th:only-of-type { vertical-align: middle;
+  } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align:
+  right; } preset params 0 abraca-redencao {''layers'': {''perimeter'': {}, ''streets'':
+  {''widt... 1 barcelona {''layers'': {''perimeter'': {''circle'': False}, ''s...
+  2 barcelona-plotter {''layers'': {''streets'': {''width'': {''primary'': 5... 3
+  cb-bf-f {''layers'': {''streets'': {''width'': {''trunk'': 6, ... 4 default {''layers'':
+  {''perimeter'': {}, ''streets'': {''widt... 5 heerhugowaard {''layers'': {''perimeter'':
+  {}, ''streets'': {''widt... 6 macao {''layers'': {''perimeter'': {}, ''streets'':
+  {''cust... 7 minimal {''layers'': {''perimeter'': {}, ''streets'': {''widt... 8
+  plotter {''layers'': {''perimeter'': {}, ''streets'': {''widt... 9 tijuca {''layers'':
+  {''perimeter'': {}, ''streets'': {''widt... To examine a specific preset, run: ```python
+  import prettymaps prettymaps.preset(''default'') ``` Preset(params={''layers'':
+  {''perimeter'': {}, ''streets'': {''width'': {''motorway'': 5, ''trunk'': 5, ''primary'':
+  4.5, ''secondary'': 4, ''tertiary'': 3.5, ''cycleway'': 3.5, ''residential'': 3,
+  ''service'': 2, ''unclassified'': 2, ''pedestrian'': 2, ''footway'': 1}}, ''waterway'':
+  {''tags'': {''waterway'': [''river'', ''stream'']}, ''width'': {''river'': 20, ''stream'':
+  10}}, ''building'': {''tags'': {''building'': True, ''landuse'': ''construction''}},
+  ''water'': {''tags'': '
 ---
 {% raw %}
 # prettymaps

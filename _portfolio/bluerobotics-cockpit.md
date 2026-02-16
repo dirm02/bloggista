@@ -2,8 +2,68 @@
 layout: project
 name: Bluerobotics Cockpit
 slug: bluerobotics-cockpit
+category: EE-kicad-3D-Robotic
 image: https://github.com/bluerobotics/cockpit/actions/workflows/ci.yml/badge.svg
 repo_url: https://github.com/bluerobotics/cockpit
+indexed_content: "Cockpit - A Modern Ground Control Software \U0001F310 Live Demo
+  • \U0001F4E6 Install • \U0001F4D6 Documentation • \U0001F4AC Community [](https://github.com/bluerobotics/cockpit/actions/workflows/ci.yml)
+  [](https://github.com/bluerobotics/cockpit/releases) [](https://hub.docker.com/r/bluerobotics/cockpit/tags)
+  --- ## \U0001F3AF What is Cockpit? An intuitive, customizable, and powerful ground
+  control station software for remote vehicles of all types Cockpit is a web-based
+  ground control station that aims to improve how you interact with remote vehicles.
+  Whether you're piloting underwater ROVs, surface boats, aerial drones, or ground
+  rovers, Cockpit provides an intuitive and highly customizable interface that adapts
+  to your needs. ### ✨ Key Highlights - **\U0001F310 Universal Platform**: Runs in
+  your browser or as a native desktop application - **\U0001F3A8 Fully Customizable**:
+  Drag-and-drop widget interface that adapts to your workflow - **\U0001F680 Multi-Vehicle
+  Support**: Control submarines, boats, drones and rovers from different interfaces
+  in the same application - **\U0001F4F9 Advanced Video**: Support for as many video
+  streams as you need, with recording, snapshots, and real-time statistics - **\U0001F5FA️
+  Mission Planning**: Sophisticated waypoint planning with automated survey patterns
+  - **\U0001F3AE Joystick Support**: Extensive gamepad support with customizable button
+  mappings - **\U0001F527 Extensible**: Advanced plugin system with DIY widgets, custom
+  actions, data-lake variables, and input elements - **\U0001F4CA Data Rich**: Comprehensive
+  telemetry logging and real-time data visualization --- ## \U0001F680 Quick Start
+  ### Accessing Cockpit #### - Option 1: Try it Online If you just want to take a
+  look at Cockpit, you can visit our **[live demo](https://docs.bluerobotics.com/cockpit)**
+  to experience it instantly in your browser. #### - Option 2: Download the Native
+  App (Recommended) Download the [latest release](https://blueos.cloud/cockpit/docs/latest/usage/installation/#self-contained-application)
+  of our native desktop app for your platform. It offers the best performance, as
+  well as all the features available in the app. We have dedicated builds for every
+  Desktop platform, so make sure you're using the correct one to have the best possible
+  experience. - **Windows**: `.exe` - **macOS (Intel)**: `x64 .dmg` - **macOS (Apple
+  Silicon)**: `arm64 .dmg` - **Linux**: `.AppImage` - **Steam OS**: `.Flatpak` ####
+  - Option 3: Install the BlueOS Extension (Lite version!) If you're using BlueOS,
+  you can install Cockpit [from the Extensions page](https://blueos.cloud/docs/stable/usage/advanced/#extensions).
+  > ⚠️ Due to technical limitations of web browsers, the BlueOS Extension has limited
+  functionality compared to the native app. > > [See below](#%EF%B8%8F-browser-vs-desktop-whats-the-difference)
+  for details. #### - Option 4: Docker (for Developers) ```bash docker run -p 8080:8080
+  bluerobotics/cockpit:latest ``` Once you have Cockpit running, it's time to connect
+  to your vehicle: ### Connecting to your vehicle If you're running Cockpit as a BlueOS
+  extension, it should automatically connect to your vehicle, but if you're running
+  the native app and you have BlueOS in your vehicle, you can use the Vehicle Discovery
+  dialog to easily connect to it. If for some reason you missed this dialog during
+  boot you can just head to `Menu>Settings>General` and find the \"Search for vehicles\"
+  button there. If you have your vehicle connected through a serial interface, like
+  a [USB-Serial radio](https://ardupilot.org/plane/docs/common-telemetry-landingpage.html#common-telemetry-landingpage),
+  you should [manually configure the connection address]((https://blueos.cloud/cockpit/docs/latest/usage/getting-started/#general-configuration)).
+  To do that activate the checkmark for \"Mavlink2Rest connection\" under `Menu>Settings>General`
+  and use `serial:path/to/serial/device?baudrate=desired-baudrate` there. ### Streaming
+  video If you want to stream video from your vehicle and you're not using BlueOS,
+  you will need to run [`mavlink-camera-manager`](https://github.com/mavlink/mavlink-camera-manager)
+  manually in the same machine as Cockpit, activate the checkmark for \"WebRTC connection\"
+  and use `ws://127.0.0.1:6020` there. --- ## \U0001F5A5️ Browser vs Desktop: What's
+  the Difference? Most of the motivation behind having distinct versions with different
+  features is tied to browsers' limitations -- more specifically, the need for secure
+  context to access the most powerful APIs (e.g., filesystem, geolocation, serial
+  communication), which is usually not the case when you're serving Cockpit from a
+  hosted webpage with issued certificates. To overcome this, we moved to shipping
+  additional features in a native app, built over [Electron](https://www.electronjs.org/),
+  which also enables us to embed functionality beyond what the browser can provide.
+  Below is a table summarizing the current status, but in general, you can expect
+  more features and better performance on the native app: | **Feature** | **\U0001F310
+  Browser** | **\U0001F5A5️ Desktop** | |-------------|---------------|----------------|
+  | *"
 ---
 {% raw %}
 <div align="center">

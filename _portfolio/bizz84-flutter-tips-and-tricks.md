@@ -2,8 +2,52 @@
 layout: project
 name: Bizz84 Flutter Tips And Tricks
 slug: bizz84-flutter-tips-and-tricks
+category: Flutter-Ionic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/bizz84-flutter-tips-and-tricks/flutter-tips-preview.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/bizz84-flutter-tips-and-tricks
+indexed_content: "# Flutter Tips & Tricks A collection of all the Flutter tips & tricks
+  I share on [X (Twitter)](https://x.com/biz84), [LinkedIn](https://www.linkedin.com/in/andreabizzotto/recent-activity/all/),
+  and [Bluesky](https://bsky.app/profile/codewithandrea.com). If you find this useful,
+  give it a star! \U0001F31F ## Preview ## Download the App This repo now has a companion
+  app! [Download it here](https://fluttertips.dev/) to get all my Flutter tips on
+  your phone: [](https://fluttertips.dev/) ## Full List > I'm adding new tips regularly
+  (newest at the top \U0001F447). | ID | View on GitHub (this repo) | X Post | LinkedIn
+  Post | Bluesky Post | Link on [codewithandrea.com](https://codewithandrea.com/)
+  | | -- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  ------ | ------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------
+  | | 256 | [Relative & Absolute Imports in Dart](tips/0256-relative-absolute-imports-dart/index.md)
+  | [link](https://x.com/biz84/status/1970424616339333506) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-you-can-use-absolute-imports-activity-7376190465567797248-WMcz)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lzineac3hc2b) | | | 255
+  | [Deprecated APIs in Matrix4](tips/0255-matrix4-vector3/index.md) | [link](https://x.com/biz84/status/1963179034596065692)
+  | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-some-matrix4-apis-such-as-activity-7368945020202033156-LyAb)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lxwelnjst222) | | | 254
+  | [Use Multiple Flutter Versions with Puro](tips/0254-multiple-flutter-versions-puro/index.md)
+  | [link](https://x.com/biz84/status/1931999304337760702) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-puro-is-a-powerful-tool-that-activity-7337765132606885888-5qB1)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lr5zap6fqc2n) | | | 253
+  | [Preserve Trailing Commas in Dart 3.8](tips/0253-preserve-trailing-commas-dart-3.8/index.md)
+  | [link](https://x.com/biz84/status/1925126563588194639) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-dart-38-introduces-a-new-activity-7330892354045804547-c-pC)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lpod6unsd224) | [link](https://codewithandrea.com/articles/updated-formatter-dart-3-8/)
+  | | 252 | [Null-aware elements in Dart 3.8](tips/0252-null-aware-elements-dart-3.8/index.md)
+  | [link](https://x.com/biz84/status/1925097550551355480) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-dart-38-introduces-null-aware-activity-7330863488443023361-HJ26)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lpo4sw4tdc2o) | | | 251
+  | [GoRouter Delegate Listener for Screen Tracking](tips/0251-go-router-delegate-listener/index.md)
+  | [link](https://x.com/biz84/status/1920475265823596649) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-if-your-app-uses-gorouter-activity-7326241428102144000-1eLq)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3loo2ipupr226) | | | 250
+  | [Button Styles in Material 3](tips/0250-button-styles-material3/index.md) | [link](https://x.com/biz84/status/1920049708824736120)
+  | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-material-3-supports-5-types-activity-7325815699250077696-0tNS)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lol3w42kzc26) | | | 249
+  | [Test your UI with ThemeData.platform](tips/0249-themedata-platform/index.md)
+  | [link](https://x.com/biz84/status/1919713657971171620) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-by-overriding-themedataplatform-activity-7325479508629741568-u8BB)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3loirckcv6k26) | | | 248
+  | [Adaptive Alert Dialog (Material, Cupertino)](tips/0248-adaptive-alert-dialog/index.md)
+  | [link](https://x.com/biz84/status/1917863560081821811) | [link](https://www.linkedin.com/posts/andreabizzotto_in-many-of-my-projects-i-use-a-simple-alert-activity-7323629404767608833-7l43)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lo3wk6phne23) | | | 247
+  | [How to Initialize Firebase Remote Config](tips/0247-firebase-remote-config-init/index.md)
+  | [link](https://x.com/biz84/status/1917490060662038589) | [link](https://www.linkedin.com/posts/andreabizzotto_firebase-remote-config-is-great-but-its-activity-7323257186095120385-ioPy)
+  | [link](https://bsky.app/profile/codewithandrea.com/post/3lnzdvjmiac23) | | | 246
+  | [How to Disable Impeller on Android](tips/0246-disable-impeller-android/index.md)
+  | [link](https://x.com/biz84/status/1917195051282882814) | [link](https://www.linkedin.com/posts/andreabizzotto_did-you-know-since-flutter-329-impeller-activity-7322960928092614656-y3a4)
+  | [link](https://bsky."
 ---
 {% raw %}
 # Flutter Tips & Tricks

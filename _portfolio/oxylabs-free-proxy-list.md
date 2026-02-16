@@ -2,8 +2,40 @@
 layout: project
 name: Oxylabs Free Proxy List
 slug: oxylabs-free-proxy-list
+category: Uncategorized
 image: https://raw.githubusercontent.com/oxylabs/free-proxy-list/refs/heads/main/images/Free-proxies-V1_GitHub.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/oxylabs-free-proxy-list
+indexed_content: "# Free Proxy List [](https://oxylabs.io/products/free-proxies?utm_source=877&utm_medium=affiliate&groupid=877&utm_content=free-proxies-github&transaction_id=102c8d36f7f0d0e5797b8f26152160)
+  [](https://discord.gg/Pds3gBmKMH) [](https://www.youtube.com/@oxylabs) Claim your
+  access to [free US proxy servers](https://oxylabs.io/products/free-proxies) from
+  Oxylabs. Sign up on the [dashboard](https://dashboard.oxylabs.io/) to unlock premium
+  features including: - [x] Free HTTP/HTTPS/SOCKS5 proxies - [X] 20 concurrent sessions
+  - [X] 5GB of traffic per month across 5 US IPs - [X] Exceptional performance & speed
+  ## \U0001F6E0️ How to get free proxy server IPs 1. Register an account on the [Oxylabs
+  dashboard](https://dashboard.oxylabs.io/). 2. Head to the [Datacenter Proxies page](https://dashboard.oxylabs.io/en/overview/datacenter-proxies)
+  and create a proxy user. 3. Test the connection using a proxy manager or send a
+  web request via cURL, Python, or your preferred setup. ## \U0001F9E9 Easy proxy
+  management on Chrome [Oxy® Proxy Manager](https://oxylabs.io/products/chrome-proxy-extension)
+  is a **free Chrome extension** enabling you to easily switch between multiple IP
+  addresses during browsing sessions. See the [integration steps](https://developers.oxylabs.io/proxies/integration-guides/shared-datacenter-proxies-guides/oxy-proxy-extension-for-chrome)
+  to find out more. ## \U0001F517 Simple integration Oxylabs' free premium proxies
+  easily integrate with various third-party tools and enhance their functionality.
+  Explore detailed [integration guides](https://oxylabs.io/resources/integrations)
+  and [documentation](https://developers.oxylabs.io/proxies/datacenter-proxies/free-datacenter-ips).
+  [](https://curl.se) [](https://python.org) [](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  [](https://php.net) [](https://go.dev) [](https://www.java.com) [](https://dotnet.microsoft.com/languages/csharp)
+  ### Python integration example Install the [requests](https://requests.readthedocs.io/en/latest/)
+  library using `pip` via your terminal: ```bash pip install requests ``` Then, create
+  a new Python file and utilize this code sample: ```python import requests # Replace
+  with your proxy user credentials. username = 'USERNAME' password = 'PASSWORD' #
+  Port `8000` rotates IPs from your proxy list. address = 'dc.oxylabs.io:8000' proxies
+  = { 'https': f'https://user-{username}:{password}@{address}' } response = requests.get('https://ip.oxylabs.io/location',
+  proxies=proxies) print(response.text) ``` ### Featured in Technical Communities
+  We’re excited to see that our content and tools are being referenced by developers
+  and technical writers across platforms! [Best 10 Free Proxy Providers](https://medium.com/@lambert.watts.809/best-10-free-proxy-providers-dd78cd93fc04)
+  [What Is a Residential Proxy?](https://medium.com/@marvis.crisco67/what-is-a-residential-proxy-101e71812a2f)
+  [12 Best Proxy Providers](https://medium.com/@simon.dalton.349/best-proxy-providers-77e68734574f)
+  ## Contacts Email - hello@oxylabs.io Live chat"
 ---
 {% raw %}
 

@@ -2,8 +2,58 @@
 layout: project
 name: Cshum Imagor
 slug: cshum-imagor
+category: Uncategorized
 image: https://github.com/cshum/imagor/workflows/test/badge.svg
 repo_url: https://github.com/cshum/imagor
+indexed_content: "# imagor [](https://github.com/cshum/imagor/actions/workflows/test.yml)
+  [](https://coveralls.io/github/cshum/imagor?branch=master) [](https://hub.docker.com/r/shumc/imagor/)
+  [](https://pkg.go.dev/github.com/cshum/imagor) imagor is a fast, secure image processing
+  server and Go library. imagor uses one of the most efficient image processing library
+  [libvips](https://github.com/libvips/libvips) with Go binding [vipsgen](https://github.com/cshum/vipsgen).
+  It is typically 4-8x [faster](https://github.com/libvips/libvips/wiki/Speed-and-memory-use)
+  than using the quickest ImageMagick settings. imagor implements libvips [streaming](https://www.libvips.org/2019/11/29/True-streaming-for-libvips.html)
+  that facilitates parallel processing pipelines, achieving high network throughput.
+  imagor features a ton of image processing use cases, available as a HTTP server
+  with first-class Docker support. It adopts the [thumbor](https://thumbor.readthedocs.io/en/latest/usage.html#image-endpoint)
+  URL syntax representing a high-performance drop-in replacement. imagor is a Go library
+  built with speed, security and extensibility in mind. Alongside there is [imagorvideo](https://github.com/cshum/imagorvideo)
+  bringing video thumbnail capability through ffmpeg C bindings. ### Quick Start ```bash
+  docker run -p 8000:8000 shumc/imagor -imagor-unsafe -imagor-auto-webp ``` Original
+  images: ``` https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png
+  https://raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif
+  https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher-front.png
+  ``` Try out the following image URLs: ``` http://localhost:8000/unsafe/fit-in/200x200/filters:fill(white)/https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png
+  http://localhost:8000/unsafe/200x200/smart/filters:fill(white):format(jpeg):quality(80)/https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png
+  http://localhost:8000/unsafe/fit-in/-180x180/10x10/filters:hue(290):saturation(100):fill(yellow)/raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png
+  http://localhost:8000/unsafe/30x40:100x150/filters:fill(cyan)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif
+  http://localhost:8000/unsafe/fit-in/200x150/filters:fill(yellow):watermark(raw.githubusercontent.com/cshum/imagor/master/testdata/gopher-front.png,repeat,bottom,0,40,40)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif
+  ``` ### Image Endpoint imagor endpoint is a series of URL parts which defines the
+  image operations, followed by the image URI: ``` /HASH|unsafe/trim/AxB:CxD/(adaptive-)(full-)fit-in/stretch/-Ex-F/GxH:IxJ/HALIGN/VALIGN/smart/filters:NAME(ARGS):NAME(ARGS):.../IMAGE
+  ``` - `HASH` is the URL signature hash, or `unsafe` if unsafe mode is used - `trim`
+  removes surrounding space in images using top-left pixel color - `AxB:CxD` means
+  manually crop the image at left-top point `AxB` and right-bottom point `CxD`. Coordinates
+  can also be provided as float values between 0 and 1 (percentage of image dimensions)
+  - `fit-in` means that the generated image should not be auto-cropped and otherwise
+  just fit in an imaginary box specified by `ExF`. If `full-fit-in` is specified,
+  then the largest size is used for cropping (width instead of height, or the other
+  way around). If `adaptive-fit-in` is specified, it inverts requested width and height
+  if it would get a better image definition - `stretch` means resize the image to
+  `ExF` without keeping its aspect ratios - `-Ex-F` means resize the image to be `ExF`
+  of width per height size. The minus signs mean flip horizontally and vertically
+  - `GxH:IxJ` add left-top padding `GxH` and right-bottom padding `IxJ` - `HALIGN`
+  is horizontal alignment of crop. Accepts `left`, `right` or `center`, defaults to
+  `center` - `VALIGN` is vertical alignment of crop. Accepts `top`, `bottom` or `middle`,
+  defaults to `middle` - `smart` means using smart detection of focal points - `filters`
+  a pipeline of image filter operations to be applied, see filters section - `IMAGE`
+  is the image path or URI - For image URI that contains `?` character, this will
+  interfere the URL query and should be encoded with [`encodeURIComponent`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
+  or equivalent - Base64 URLs: Use `b64:` prefix to encode image URLs with special
+  characters as [base64url](https://developer.mozilla.org/en-US/docs/Glossary/Base64#url_and_filename_safe_base64).
+  This encoding is more robust if you have special characters in your image URL, and
+  can fix encoding/signing issues in your setup. ### Filters Filters `/filters:NAME(ARGS):NAME(ARGS):.../`
+  is a pipeline of image operations that will be sequentially applied to the image.
+  Examples: ``` /filters:fill(white):format(jpeg)/ /filters:hue(290):saturation(100):fill(yellow):format(jpeg):quality(80)/
+  /filters:fill(white):watermark(raw.githubusercontent."
 ---
 {% raw %}
 # imagor

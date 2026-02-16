@@ -2,8 +2,66 @@
 layout: project
 name: Tw93 Mole
 slug: tw93-Mole
+category: iOS-imac
 image: https://img.shields.io/github/stars/tw93/mole?style=flat-square
 repo_url: https://github.com/tw93/mole
+indexed_content: 'Mole Deep clean and optimize your Mac. ## Features - **All-in-one
+  toolkit**: CleanMyMac, AppCleaner, DaisyDisk, and iStat Menus combined into a **single
+  binary** - **Deep cleaning**: Scans and removes caches, logs, and browser leftovers
+  to **reclaim gigabytes of space** - **Smart uninstaller**: Thoroughly removes apps
+  along with launch agents, preferences, and **hidden remnants** - **Disk insights**:
+  Visualizes usage, manages large files, **rebuilds caches**, and refreshes system
+  services - **Live monitoring**: Real-time stats for CPU, GPU, memory, disk, and
+  network to **diagnose performance issues** ## Quick Start **Install via Homebrew:**
+  ```bash brew install mole ``` **Or via script:** ```bash # Optional args: -s latest
+  for main branch code, -s 1.17.0 for specific version curl -fsSL https://raw.githubusercontent.com/tw93/mole/main/install.sh
+  | bash ``` **Windows:** Mole is designed for macOS, but we offer an experimental
+  Windows version based on user demand. See the [windows branch](https://github.com/tw93/Mole/tree/windows),
+  for early adopters only. **Run:** ```bash mo # Interactive menu mo clean # Deep
+  cleanup mo uninstall # Remove apps + leftovers mo optimize # Refresh caches & services
+  mo analyze # Visual disk explorer mo status # Live system health dashboard mo purge
+  # Clean project build artifacts mo installer # Find and remove installer files mo
+  touchid # Configure Touch ID for sudo mo completion # Set up shell tab completion
+  mo update # Update Mole mo remove # Remove Mole from system mo --help # Show help
+  mo --version # Show installed version mo clean --dry-run # Preview the cleanup plan
+  mo clean --whitelist # Manage protected caches mo clean --dry-run --debug # Detailed
+  preview with risk levels and file info mo optimize --dry-run # Preview optimization
+  actions mo optimize --debug # Run with detailed operation logs mo optimize --whitelist
+  # Manage protected optimization rules mo purge --paths # Configure project scan
+  directories mo analyze /Volumes # Analyze external drives only ``` ## Tips - **Terminal**:
+  iTerm2 has known compatibility issues; we recommend Alacritty, kitty, WezTerm, Ghostty,
+  or Warp. - **Safety**: Built with strict protections. See [Security Audit](SECURITY_AUDIT.md).
+  Preview changes with `mo clean --dry-run`. - **Be Careful**: Although safe by design,
+  file deletion is permanent. Please review operations carefully. - **Debug Mode**:
+  Use `--debug` for detailed logs (e.g., `mo clean --debug`). Combine with `--dry-run`
+  for comprehensive preview including risk levels and file details. - **Operation
+  Log**: File operations are logged to `~/.config/mole/operations.log` for troubleshooting.
+  Disable with `MO_NO_OPLOG=1`. - **Navigation**: Supports arrow keys and Vim bindings
+  (`h/j/k/l`). - **Status Shortcuts**: In `mo status`, press `k` to toggle cat visibility
+  and save preference, `q` to quit. - **Configuration**: Run `mo touchid` for Touch
+  ID sudo, `mo completion` for shell tab completion, `mo clean --whitelist` to manage
+  protected paths. - **Simulator Runtime Volumes**: In `mo clean` -> Developer tools,
+  Mole auto-detects and removes unused CoreSimulator `Volumes/Cryptex` entries (IN_USE
+  items are safely skipped). ## Features in Detail ### Deep System Cleanup ```bash
+  $ mo clean Scanning cache directories... ✓ User app cache 45.2GB ✓ Browser cache
+  (Chrome, Safari, Firefox) 10.5GB ✓ Developer tools (Xcode, Node.js, npm) 23.3GB
+  ✓ System logs and temp files 3.8GB ✓ App-specific cache (Spotify, Dropbox, Slack)
+  8.4GB ✓ Trash 12.3GB ====================================================================
+  Space freed: 95.5GB | Free space now: 223.5GB ====================================================================
+  ``` ### Smart App Uninstaller ```bash $ mo uninstall Select Apps to Remove ═══════════════════════════
+  ▶ ☑ Photoshop 2024 (4.2G) | Old ☐ IntelliJ IDEA (2.8G) | Recent ☐ Premiere Pro (3.4G)
+  | Recent Uninstalling: Photoshop 2024 ✓ Removed application ✓ Cleaned 52 related
+  files across 12 locations - Application Support, Caches, Preferences - Logs, WebKit
+  storage, Cookies - Extensions, Plugins, Launch daemons ====================================================================
+  Space freed: 12.8GB ====================================================================
+  ``` ### System Optimization ```bash $ mo optimize System: 5/32 GB RAM | 333/460
+  GB Disk (72%) | Uptime 6d ✓ Rebuild system databases and clear caches ✓ Reset network
+  services ✓ Refresh Finder and Dock ✓ Clean diagnostic and crash logs ✓ Remove swap
+  files and restart dynamic pager ✓ Rebuild launch services and spotlight index ====================================================================
+  System optimization completed ====================================================================
+  Use `mo optimize --whitelist` to exclude specific optimizations. ``` ### Disk Space
+  Analyzer By default, overview skips external drives mounted under `/Volumes` for
+  faster startup. To inspect external drives, run `mo analyze /Volumes` (or a s'
 ---
 {% raw %}
 <div align="center">

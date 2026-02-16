@@ -2,8 +2,54 @@
 layout: project
 name: Codephiliax Chat2db
 slug: CodePhiliaX-Chat2DB
+category: Very important!!!!
 image: https://github.com/user-attachments/assets/2f2a682d-9cc0-4470-93d3-19b4f1f6589e
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "\U0001F680 Zoer is Launching Powered by Chat2DB Team - AI-powered
+  app builder that creates professional applications in minutes, no coding required
+  --- [![ReadmeX][readmex-image]][readmex-url] [![Discord][discord-image]][discord-url]
+  [![Twitter][twitter-image]][twitter-url] [![Telegram][telegram-image]][telegram-url]
+  [![Whatsapp][whatsapp-image]][whatsapp-url] [![Reddit][reddit-image]][reddit-url]
+  [![Gmail][gmail-image]][gmail-url] [readmex-image]: https://raw.githubusercontent.com/CodePhiliaX/resource-trusteeship/main/readmex.svg
+  [readmex-url]: https://readmex.com/CodePhiliaX/Chat2DB [discord-image]: https://img.shields.io/badge/-Join%20us%20on%20Discord-%237289DA.svg?style=flat&logo=discord&logoColor=white
+  [discord-url]: https://discord.com/invite/uNjb3n5JVN [twitter-image]: https://img.shields.io/twitter/follow/_Chat2DB?label=Chat2DB
+  [twitter-url]: https://twitter.com/intent/tweet?text=Chat2DB-An%20intelligent%20and%20versatile%20general-purpose%20SQL%20client%20and%20reporting%20tool%20for%20databases%20which%20integrates%20ChatGPT%20capabilities.&url=https://github.com/chat2db/Chat2DB&hashtags=ChatGPT,AGI,SQL%20Client,Reporting%20tool
+  [telegram-image]: https://img.shields.io/twitter/url?label=Telegram&logo=Telegram&style=social&url=https://github.com/chat2db/Chat2DB
+  [telegram-url]: https://t.me/share/url?text=Chat2DB-An%20intelligent%20and%20versatile%20general-purpose%20SQL%20client%20and%20reporting%20tool%20for%20databases%20which%20integrates%20ChatGPT%20capabilities.&url=https://github.com/chat2db/Chat2DB
+  [whatsapp-image]: https://img.shields.io/twitter/url?label=whatsapp&logo=whatsapp&style=social&url=https://github.com/chat2db/Chat2DB
+  [whatsapp-url]: https://api.whatsapp.com/send?text=Chat2DB-An%20intelligent%20and%20versatile%20general-purpose%20SQL%20client%20and%20reporting%20tool%20for%20databases%20which%20integrates%20ChatGPT%20capabilities.%20https://github.com/chat2db/Chat2DB
+  [reddit-image]: https://img.shields.io/twitter/url?label=Reddit&logo=Reddit&style=social&url=https://github.com/chat2db/Chat2DB
+  [reddit-url]: https://www.reddit.com/submit?url=https://github.com/chat2db/Chat2DB&title=Chat2DB-An%20intelligent%20and%20versatile%20general-purpose%20SQL%20client%20and%20reporting%20tool%20for%20databases%20which%20integrates%20ChatGPT%20capabilities.
+  [gmail-image]: https://img.shields.io/twitter/url?label=Gmail&logo=Gmail&style=social&url=https://github.com/chat2db/Chat2DB
+  [gmail-url]: mailto:?subject=Check%20this%20GitHub%20repository%20out.&body=Chat2DB-An%20intelligent%20and%20versatile%20general-purpose%20SQL%20client%20and%20reporting%20tool%20for%20databases%20which%20integrates%20ChatGPT%20capabilities.%3A%0Ahttps://github.com/chat2db/Chat2DB
+  **1. Intelligent SQL Generation**: Chat2DB Pro supports AI-driven intelligent SQL
+  development to help you write SQL queries faster. **2. Database Management**: Supports
+  more than 10 databases, including MySQL, PostgreSQL, H2, Oracle, SQLServer, SQLite,
+  MariaDB, ClickHouse, DM, Presto, DB2, OceanBase, Hive, KingBase, MongoDB, Redis,
+  Snowflake, and more. **3. Intelligent Report Generation**: Chat2DB Pro supports
+  AI-driven intelligent data reporting to help you generate dashboards faster. **4.
+  Data Structure Synchronization**: Chat2DB Pro supports database table structure
+  synchronization to help you sync database table structures faster. ## Feature Comparison
+  Feature Community Open Source Local Pro Database Types 16+ Target 100+ Target 100+
+  Supported AI Requires AI Configuration AI ready on installation AI ready on installation
+  AI Capabilities Basic Varied Varied Visual Table Editor ✅ ✅ ✅ SQL Console ✅ ✅ ✅
+  SQL Formatting ✅ ✅ ✅ Save Query Records ✅ ✅ ✅ Theme Color Settings ✅ ✅ ✅ Data Structure
+  Sync ❌ ✅ ✅ Database Grouping ❌ ✅ ✅ Database Structure Import/Export ❌ ✅ ✅ Data Import/Export
+  ❌ ✅ ✅ Data Migration ❌ ✅ ✅ Copy/Clear Table ❌ ✅ ✅ Open and Run SQL Files ❌ ✅ ✅ UML
+  Diagram ❌ In Development In Development Generate Code ❌ ✅ ✅ Copy Results as Insert/Update
+  ❌ ✅ ✅ Modify Query Results ❌ ✅ ✅ Intelligent SQL Editor ❌ ✅ ✅ AI Table Creation
+  ❌ ✅ ✅ AI Data Sets ❌ ✅ ✅ Chat2Excel ❌ ✅ ✅ Intelligent Dashboard ❌ ✅ ✅ Editor Settings
+  ❌ ✅ ✅ Custom Shortcuts ❌ ✅ ✅ Cross-device Usage ❌ ❌ ✅ ## Download and Installation
+  Chat2DB is a cross-platform application that supports Windows, MacOS, and Linux.
+  You can download Chat2DB from the following links: - [Download Pro Version](https://chat2db.ai/download)
+  - [Download Local Version](https://chat2db.ai/download) - [Download Open Source
+  Version](https://github.com/CodePhiliaX/Chat2DB/releases/tag/v0.3.6) ## Community
+  Edition Docker Installation ### System Requirements Before installing Chat2DB, ensure
+  your system meets the following requirements: - Docker 19.03.0 or later - Docker
+  Compose 1.25.0 or later - CPU >= 2 Cores - RAM >= 4 GiB ```bash docker rm chat2db
+  docker run --name=chat2db -ti -p 10824:10824 -v ~/.chat2db-docker:/root/.chat2db
+  chat2db/chat2db:latest docker start chat2db ``` ## Code Debugging ## Runtime Environment
+  Not"
 ---
 {% raw %}
 <div align="center">

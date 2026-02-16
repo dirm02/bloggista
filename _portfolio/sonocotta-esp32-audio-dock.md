@@ -2,8 +2,64 @@
 layout: project
 name: Sonocotta Esp32 Audio Dock
 slug: sonocotta-esp32-audio-dock
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sonocotta-esp32-audio-dock/images/open-source-hardware-logo.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# ESP32 Audio Docks and Louder ESP [](https://discord.gg/PtnaAaQMpS)
+  ESP32 Audio Docks is a range of development boards (earlier docks) that allow you
+  to develop Audio solutions based on ESP32 chips. These were created to make Audio
+  development entry as easy and inexpensive as possible. First generation docks |
+  **HiFi-ESP32** | **HiFi-ESP32-Plus** | |---|---| | | | | **Loud-ESP32** | **Loud-ESP32-Plus**
+  | | | **Louder-ESP32** | **Louder-ESP32-Plus** | | | | **Amped-ESP32** | **Amped-ESP32-Plus**
+  | | | ⚠️ _Looking for Esparagus boards? Check out sister repository: [Esapragus
+  Media Center](https://github.com/sonocotta/esparagus-media-center/)_ ## Table of
+  Contents - [ESP32 Audio Docks and Louder ESP](#esp32-audio-docks-and-louder-esp)
+  - [Table of Contents](#table-of-contents) - [Motivation](#motivation) - [HiFi-ESP32](#hifi-esp32)
+  - [HiFi-ESP32 Plus](#hifi-esp32-plus) - [Loud-ESP32](#loud-esp32) - [Louder-ESP32](#louder-esp32)
+  - [Amped-ESP32](#amped-esp32) - [Amped-ESP32 Plus (Work in progress)](#amped-esp32-plus-work-in-progress)
+  - [Which device is right for me](#which-device-is-right-for-me) - [Features](#features)
+  - [Onboard PSRAM](#onboard-psram) - [Boards Pinout](#boards-pinout) - [Legacy boards](#legacy-boards)
+  - [HiFi-ESP32 and Amped-ESP32](#hifi-esp32-and-amped-esp32) - [Amped-ESP32-Plus](#amped-esp32-plus)
+  - [HiFi-ESP32 Plus and Amped-ESP32 Plus](#hifi-esp32-plus-and-amped-esp32-plus)
+  - [Loud-ESP32](#loud-esp32-1) - [Louder-ESP32 and Louder-ESP32-Plus](#louder-esp32-and-louder-esp32-plus)
+  - [Ethernet (all boards)](#ethernet-all-boards) - [Optional peripheral (all boards)](#optional-peripheral-all-boards)
+  - [Mic header](#mic-header) - [Which software is right for me](#which-software-is-right-for-me)
+  - [Software samples](#software-samples) - [Platformio IDE](#platformio-ide) - [Arduino
+  IDE](#arduino-ide) - [Using ESP32 Audio Boards with the Home Assistant](#using-esp32-audio-boards-with-the-home-assistant)
+  - [Configuring Home Assistant](#configuring-home-assistant) - [Home Assistant: LMS
+  or Airplay](#home-assistant-lms-or-airplay) - [Native HA integration](#native-ha-integration)
+  - [Integrate into Music Assistant directly](#integrate-into-music-assistant-directly)
+  - [Home Assistant: ESPHome way](#home-assistant-esphome-way) - [Snapclient multi-room
+  playback (experimental)](#snapclient-multi-room-playback-experimental) - [Sendspin
+  multi-room playback (experimental)](#sendspin-multi-room-playback-experimental)
+  - [Install steps](#install-steps) - [PCM5122 DSP capabilities (HiFi-ESP32 Plus \\&
+  Amped-ESP32 Plus)](#pcm5122-dsp-capabilities-hifi-esp32-plus--amped-esp32-plus)
+  - [Home Assistant: Snapcast](#home-assistant-snapcast) - [Squeezelite-ESP32](#squeezelite-esp32)
+  - [How to flash and configure](#how-to-flash-and-configure) - [Ethernet configuration](#ethernet-configuration)
+  - [Squeezelite-esp32 reboots and connection drops](#squeezelite-esp32-reboots-and-connection-drops)
+  - [Other smart home options](#other-smart-home-options) - [Building Tasmota with
+  I2S support](#building-tasmota-with-i2s-support) - [Connect to the MQTT broker](#connect-to-the-mqtt-broker)
+  - [Connect Louder-ESP32 to the MQTT broker](#connect-louder-esp32-to-the-mqtt-broker)
+  - [Testing audio playback with MQTT controls](#testing-audio-playback-with-mqtt-controls)
+  - [Standalone Snapclient](#standalone-snapclient) - [Snapclient benefits](#snapclient-benefits)
+  - [Flashing ESP32-S3](#flashing-esp32-s3) - [Hardware](#hardware) - [ESP Audio Solo](#esp-audio-solo)
+  - [ESP Audio Duo](#esp-audio-duo) - [HiFi-ESP](#hifi-esp) - [Louder ESP](#louder-esp)
+  - [HiFi-ESP32](#hifi-esp32-1) - [Loud-ESP32](#loud-esp32-2) - [Amped-ESP32](#amped-esp32-1)
+  - [Amped-ESP32 with TPA3128 amp](#amped-esp32-with-tpa3128-amp) - [Louder-ESP32](#louder-esp32-1)
+  - [HiFi-ESP32 Plus](#hifi-esp32-plus-1) - [Amped-ESP32 Plus (Coming Soon)](#amped-esp32-plus-coming-soon)
+  - [Optional SPI Ethernet module](#optional-spi-ethernet-module) - [BTL and PBTL
+  mode (Louder and Amped boards)](#btl-and-pbtl-mode-louder-and-amped-boards) - [Power
+  figures (comparison of BTL and PBTL modes)](#power-figures-comparison-of-btl-and-pbtl-modes)
+  - [Amped TPA3110 Amp](#amped-tpa3110-amp) - [Amped TPA3128 Amp](#amped-tpa3128-amp)
+  - [Louder TAS5805M DAC](#louder-tas5805m-dac) - [TAS5805M DSP capabilities](#tas5805m-dsp-capabilities)
+  - [Louder-ESP32 and Amped-ESP32 power considerations](#louder-esp32-and-amped-esp32-power-considerations)
+  - [Connector specs](#connector-specs) - [Efficiency](#efficiency) - [Speakers selection](#speakers-selection)
+  - [OLED screen](#oled-screen) - [OLED models](#oled-models) - [Software side](#software-side)
+  - [Case](#case) - [Where to buy](#where-to-buy) ## Motivation I spent the last few
+  years developing different solutions based on ESP devices. It all started with ESP8266,
+  where CPU power is not really sufficient to do real-time decoding, so you're limited
+  to a rather simple ding-dong business. Then ESP32 came, bringing two much more capable
+  cores, so you have a powerh"
 ---
 {% raw %}
 # ESP32 Audio Docks and Louder ESP

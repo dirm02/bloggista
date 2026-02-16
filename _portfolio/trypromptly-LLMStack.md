@@ -2,8 +2,70 @@
 layout: project
 name: Trypromptly Llmstack
 slug: trypromptly-LLMStack
+category: Uncategorized
 image: https://github.com/trypromptly/LLMStack/assets/431988/1a5ee127-c964-4c82-a05f-b1628691bca7
 repo_url: https://github.com/trypromptly/LLMStack
+indexed_content: "LLMStack is a no-code platform for building generative AI agents,
+  workflows and chatbots, connecting them to your data and business processes. Quickstart
+  | Documentation | Promptly ## Overview Build tailor-made generative AI agents, applications
+  and chatbots that cater to your unique needs by chaining multiple LLMs. Seamlessly
+  integrate your own data, internal tools and GPT-powered models without any coding
+  experience using LLMStack's no-code builder. Trigger your AI chains from Slack or
+  Discord. Deploy to the cloud or on-premise. See full demo video here ## Getting
+  Started **_Check out our Cloud offering at [Promptly](https://trypromptly.com) or
+  follow the instructions below to deploy LLMStack on your own infrastructure._**
+  LLMStack deployment comes with a default admin account whose credentials are `admin`
+  and `promptly`. _Be sure to change the password from admin panel after logging in_.
+  ### Installation #### Prerequisites LLMStack depends on a background docker container
+  to run jobs. Make sure you have Docker installed on your machine if want to use
+  jobs. You can follow the instructions [here](https://docs.docker.com/get-docker/)
+  to install Docker. #### Install LLMStack using `pip` ```sh pip install llmstack
+  ``` > If you are on windows, please use WSL2 (Windows Subsystem for Linux) to install
+  LLMStack. You can follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+  to install WSL2. Once you are in a WSL2 terminal, you can install LLMStack using
+  the above command. Start LLMStack using the following command: ```sh llmstack ```
+  Above commands will install and start LLMStack. It will create `.llmstack` in your
+  home directory and places the database and config files in it when run for the first
+  time. Once LLMStack is up and running, it should automatically open your browser
+  and point it to [localhost:3000](http://localhost:3000). > You can add your own
+  keys to providers like OpenAI, Cohere, Stability etc., from Settings page. If you
+  want to provide default keys for all the users of your LLMStack instance, you can
+  add them to the `~/.llmstack/config` file. LLMStack: Quickstart video ## Features
+  **\U0001F916 Agents**: Build generative AI agents like AI SDRs, Research Analysts,
+  RPA Automations etc., **without writing any code**. Connect agents to your internal
+  or external tools, search the web or browse the internet with agents. **\U0001F517
+  Chain multiple models**: LLMStack allows you to chain multiple LLMs together to
+  build complex generative AI applications. **\U0001F4CA Use generative AI on your
+  Data**: Import your data into your accounts and use it in AI chains. LLMStack allows
+  importing various types (_CSV, TXT, PDF, DOCX, PPTX etc.,_) of data from a variety
+  of sources (_gdrive, notion, websites, direct uploads etc.,_). Platform will take
+  care of preprocessing and vectorization of your data and store it in the vector
+  database that is provided out of the box. **\U0001F6E0️ No-code builder**: LLMStack
+  comes with a no-code builder that allows you to build AI chains without any coding
+  experience. You can chain multiple LLMs together and connect them to your data and
+  business processes. **☁️ Deploy to the cloud or on-premise**: LLMStack can be deployed
+  to the cloud or on-premise. You can deploy it to your own infrastructure or use
+  our cloud offering at [Promptly](https://trypromptly.com). **\U0001F680 API access**:
+  Apps or chatbots built with LLMStack can be accessed via HTTP API. You can also
+  trigger your AI chains from **_Slack_** or **_Discord_**. **\U0001F3E2 Multi-tenant**:
+  LLMStack is multi-tenant. You can create multiple organizations and add users to
+  them. Users can only access the data and AI chains that belong to their organization.
+  ## What can you build with LLMStack? Using LLMStack you can build a variety of generative
+  AI applications, chatbots and agents. Here are some examples: **\U0001F469\U0001F3FB‍\U0001F4BC
+  AI SDRs**: You can build AI SDRs (Sales Development Representatives) that can generate
+  personalized emails, LinkedIn messages, cold calls, etc., for your sales team **\U0001F469\U0001F3FB‍\U0001F4BB
+  Research Analysts**: You can build AI Research Analysts that can generate research
+  reports, investment thesis, etc., for your investment team **\U0001F916 RPA Automations**:
+  You can build RPA automations that can automate your business processes by generating
+  emails, filling forms, etc., **\U0001F4DD Text generation**: You can build apps
+  that generate product descriptions, blog posts, news articles, tweets, emails, chat
+  messages, etc., by using text generation models and optionally connecting your data.
+  Check out this [marketing content generator](https://trypromptly.com/app/50ee8bae-712e-4b95-9254-74d7bcf3f0cb)
+  for example **\U0001F916 Chatbots**: You can build chatbots trained on your data
+  powered by ChatGPT like [Promptly Help](https://trypromptly.com/app/f4d7cb50-1805-4add-80c5-e30334bce53c)
+  that is embedded on Promptly website **\U0001F3A8 Multimedia generation**: Build
+  complex applications that can generate text, images, videos, audio, etc. from a
+  prompt. This [story generator](https://tryprompt"
 ---
 {% raw %}
 <p align="center">

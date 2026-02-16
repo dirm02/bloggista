@@ -2,8 +2,70 @@
 layout: project
 name: Rainxchzed Github Store
 slug: rainxchzed-Github-Store
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/rainxchzed-Github-Store/composeApp/src/commonMain/composeResources/drawable/app-icon.png
 repo_url: https://github.com/rainxchzed/Github-Store
+indexed_content: "# GitHub Store # \U0001F5FA️ Project Overview GitHub Store is a
+  cross-platform app store for GitHub releases, designed to simplify discovering and
+  installing open-source software. It automatically detects installable binaries (APK,
+  EXE, DMG, AppImage, DEB, RPM), provides one-click installation, tracks updates,
+  and presents repository information in a clean, app-store style interface. Built
+  with Kotlin Multiplatform and Compose Multiplatform for Android and Desktop platforms.
+  # \U0001F4D4 Wiki & Resources Check out GitHub Store [Wiki](https://github.com/rainxchzed/Github-Store/wiki)
+  for FAQ and useful information \U0001F310 **Website:** [github-store.org](https://github-store.org)
+  \U0001F4AC **Discord:** [Join the community](https://discord.gg/x9Cvh2Z9qS) \U0001F4DC
+  **Privacy Policy:** [github-store.org/privacy-policy](https://github-store.org/privacy-policy/)
+  --- ### \U0001F4CB Legal Notice GitHub Store is an independent, open-source project
+  not affiliated with GitHub, Inc. The name describes the app's functionality (discovering
+  GitHub releases) and does not imply trademark ownership. GitHub® is a registered
+  trademark of GitHub, Inc. --- # \U0001F503 Download > [!IMPORTANT] > **macOS Users:**
+  You may see a warning that Apple cannot verify GitHub Store. This happens because
+  the app is distributed outside the App Store and is not notarized yet. Allow it
+  via System Settings → Privacy & Security → Open Anyway. --- # \U0001F3C6 Featured
+  In HowToMen: Top 20 Best Android Apps 2026 | Top 12 App Stores that are Better than
+  Google Play Store HelloGitHub: Featured Project --- ## \U0001F680 Features - **Smart
+  discovery** - Home sections for “Trending”, “Recently Updated”, and “New” projects
+  with time‑based filters. - Only repos with valid installable assets are shown. -
+  Platform‑aware topic scoring so Android/desktop users see relevant apps first. -
+  **Latest‑release installs** - Fetches `/releases/latest` for each repo. - Shows
+  only assets from the latest release. - Single “Install latest” action, plus an expandable
+  list of all installers for that release. - **Rich details screen** - App name, version,
+  “Install latest” button. - Stars, forks, open issues. - Rendered README content
+  (“About this app”). - Latest release notes (body) with markdown formatting. - List
+  of installers with platform labels and file sizes. - **Cross‑platform UX** - Android:
+  opens APK downloads with the package installer, tracks installations in a local
+  database, and shows them in a dedicated Apps screen with update indicators. - Desktop
+  (Windows/macOS/Linux): downloads installers to the user’s Downloads folder and opens
+  them with the default handler; no hidden temp locations. --- ## \U0001F50D How does
+  my app appear in GitHub Store? GitHub Store does not use any private indexing or
+  manual curation rules. Your project can appear automatically if it follows these
+  conditions: 1. **Public repository on GitHub** - Visibility must be `public`. 2.
+  **At least one published release** - Created via GitHub Releases (not only tags).
+  - The latest release must not be a draft or prerelease. 3. **Installable assets
+  in the latest release** - The latest release must contain at least one asset file
+  with a supported extension: - Android: `.apk` - Windows: `.exe`, `.msi` - macOS:
+  `.dmg`, `.pkg` - Linux: `.deb`, `.rpm`, `.AppImage` - GitHub Store ignores GitHub’s
+  auto‑generated source artifacts (`Source code (zip)` / `Source code (tar.gz)`).
+  4. **Discoverable by search / topics** - Repositories are fetched via the public
+  GitHub Search API. - Topic, language, and description help the ranking: - Android
+  apps: topics like `android`, `mobile`, `apk`. - Desktop apps: topics like `desktop`,
+  `windows`, `linux`, `macos`, `compose-desktop`, `electron`. - Having at least a
+  few stars makes it more likely to appear under Popular/Updated/New sections. If
+  your repo meets these conditions, GitHub Store can find it through search and show
+  it automatically—no manual submission required. --- ## \U0001F9ED How GitHub Store
+  works (high‑level) 1. **Search** - Uses GitHub’s `/search/repositories` endpoint
+  with platform‑aware queries. - Applies simple scoring based on topics, language,
+  and description. - Filters out archived repos and those with too few signals. 2.
+  **Release + asset check** - For candidate repos, calls `/repos/{owner}/{repo}/releases/latest`.
+  - Checks the `assets` array for platform‑specific file extensions. - If no suitable
+  asset is found, the repo is excluded from results. 3. **Details screen** - Repository
+  info: name, owner, description, stars, forks, issues. - Latest release: tag, published
+  date, body (changelog), assets. - README: loaded from the default branch and rendered
+  as “About this app”. 4. **Install flow** - When the user taps “Install latest”:
+  - Picks the best matching asset for the current platform. - Streams the download.
+  - Delegates to the OS installer (APK installer on Android, default handler on desktop).
+  - On Android, records the installation in a local database and uses package monitoring
+  to keep the installed list in sync. --- ## ✅ Pros / Why use Gi"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,62 @@
 layout: project
 name: Lissy93 Portainer Templates
 slug: Lissy93-portainer-templates
+category: Very important!!!!
 image: https://readme-contribs.as93.net/sponsors/lissy93?avatarSize=80
 repo_url: https://github.com/portainer/templates)),
+indexed_content: "Portainer Templates A compiled list of 500+ ready to go Portainer
+  App templates \U0001F310 portainer-templates.as93.net > **TL;DR** Under Settings
+  → App Templates in your Portainer GUI, paste this URL: > `https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates_v3.json`
+  Contents - [Intro](#intro) - [Usage](#usage) - [Self-Hosting](#self-hosting) - [Editing](#editing)
+  - [Included Apps](#supported-apps-and-stacks) - [Sources](#sources) - [Raising Issues](#raising-issues)
+  - [Contributing](#contributing) - [Website](#website) - [Mirror](#mirror) - [Credits](#credits)
+  - [License](#license) ## Intro In [Portainer](https://www.portainer.io/), [App Templates](https://docs.portainer.io/user/docker/templates)
+  enable you to easily deploy services with a predetermined configuration, while allowing
+  you to customize options through the web UI. While Portainer ships with some default
+  templates (see [portainer/templates](https://github.com/portainer/templates)), it's
+  often helpful to have 1-click access to many more apps + stacks, without having
+  to constantly switch template sources. This repo combines app templates from several
+  [sources](#sources), to create a ready-to-go [template file](https://github.com/Lissy93/portainer-templates/blob/main/templates.json)
+  containing all the apps you'll ever need. It's also possible to self-host, as well
+  as combine with your own custom templates. You can browse all supported apps and
+  stacks and see stats, config options and stand-alone installation commands for each,
+  at [portainer-templates.as93.net](https://portainer-templates.as93.net) --- ## Usage
+  1. Log into your Portainer web UI 2. Under Settings --> App Templates , update the
+  URL to - `https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates_v3.json`
+  3. Now under Home --> App Templates , you should see all apps. Click one to deploy.
+  The old v2 (`https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json`)
+  is no longer working with the current portainer version. Show me... Alternatively,
+  when you start Portainer, you can append the `--templates` flag pointing to the
+  templates URL. --- ## Self-Hosting If you'd prefer to source templates locally,
+  you can self-host with Docker - there's a sample NGINX container provided Just run:
+  `docker run -p 8080:80 lissy93/portainer-templates` (changing 8080 to a port of
+  your choice) You'll then be able to pass Portainer the template file located at
+  `http://[host]:[port]/templates.json` Alternatively, you can build the image yourself
+  locally, with the following commands (if you're using your own fork, don't forget
+  to switch `lissy93` out for your username!) ```bash git clone https://github.com/lissy93/portainer-templates.git
+  cd portainer-templates docker build -t portainer-templates . docker run -d -p \"8080:80\"
+  portainer-templates ``` If you're using your own template file, but don't want to
+  fork this repository, you can instead simply pass your `templates.json` file to
+  the above Docker container as a volume, with `-v \"${PWD}/templates.json:/usr/share/nginx/html/templates.json\"`
+  --- ## Editing The `template.json` file is generated using the scripts in [`lib`](https://github.com/Lissy93/portainer-templates/tree/main/lib),
+  using GitHub Actions. Running the `make` command will download all listed sources,
+  parse them, and combine them with anything in the sources dir, outputting the `templates.json`
+  file. _So, you only need to edit **either** the [`sources.csv`](https://github.com/Lissy93/portainer-templates/blob/main/sources.csv)
+  file, **or** add your templates directly into the [`sources/`](https://github.com/Lissy93/portainer-templates/tree/main/sources)
+  directory._ ### Adding a new Source If you're maintaining your own list of Portainer
+  templates, and would like them to be included, just add the URL to your template.json
+  file to [`sources.csv`](https://github.com/Lissy93/portainer-templates/blob/main/sources.csv),
+  along with a name. When the action runs, it will download the content, parse it
+  and add it to the final template. ### Adding a Template / Template list Alternatively,
+  place your template file within the [`sources`](https://github.com/Lissy93/portainer-templates/tree/main/sources)
+  directory, and it will be automatically combined into the main `template.json`.
+  Be sure that your template corresponds to [Portainer's App Template JSON Format](https://docs.portainer.io/advanced/app-templates/format).
+  ### Validating Templates There is a schema defined in [`Schema.json`](https://github.com/Lissy93/portainer-templates/blob/main/Schema.json),
+  which can be used to validate any Portainer template. Run `make validate` to ensure
+  your template conforms to Portainer's App Template [specification](https://docs.portainer.io/advanced/app-templates/format).
+  ### Maintaining your own Templates If you'd like to use this repo as a base, but
+  maintain your own list of template, just fork the repository, and update `lissy93`
+  with your username in the import UR"
 ---
 {% raw %}
 <h1 align="center">Portainer Templates</h1>

@@ -2,8 +2,66 @@
 layout: project
 name: Jeremyckahn Chitchatter
 slug: jeremyckahn-chitchatter
+category: Mail services -server-chat apps
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/jeremyckahn-chitchatter/public/logo/logo.svg
 repo_url: https://github.com/dmotz/trystero).
+indexed_content: "# Chitchatter Logo provided by [@ramyashreeshetty](https://github.com/ramyashreeshetty)
+  Chitchatter is a free (as in both price and freedom) communication tool. Designed
+  to be the simplest way to connect with others privately and securely, it is: - Fully
+  open source (licensed under [GPL v2](./LICENSE)) - Peer-to-peer - Whenever possible,
+  otherwise a TURN server is used to ensure reliable peer connection - End-to-end
+  encrypted (via [WebRTC](https://webrtc-security.github.io/)) - Ephemeral - Message
+  content is never persisted to disk on either the client or server - Decentralized
+  - **No API server required**. Chitchatter works completely without an API server
+  - all that's required for basic functionality is availability of GitHub for static
+  assets, and public WebTorrent and TURN relay servers for establishing peer-to-peer
+  communication. An optional API server is available to provide enhanced connectivity
+  features, but users can always choose to use Chitchatter without it. - Embeddable
+  - [Self-hostable](#self-hosting) Chitchatter uses [Vite](https://vitejs.dev/). The
+  secure networking and streaming magic would not be possible without [Trystero](https://github.com/dmotz/trystero).
+  File transfer functionality is powered by [`secure-file-transfer`](https://github.com/jeremyckahn/secure-file-transfer).
+  ## Status - [](https://snyk.io/test/github/jeremyckahn/chitchatter?targetFile=package.json)
+  ## How to use it Open and join a room to start chatting with anyone else who is
+  in the room. By default, room names are random [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)s
+  that are generated client-side. To privately communicate with someone, it is recommended
+  to join one of these randomly-generated rooms and share the URL (via the \"\U0001F517\"
+  button at the top of the page) to whomever you wish to communicate with via a secure
+  medium of your choosing (such as [Burner Note](https://burnernote.com/) or [Yopass](https://yopass.se/)).
+  Your user name will be presented to you, and it would be good to share that with
+  who you will be chatting with beforehand so they know they're talking to you. **No
+  API server required**: Chitchatter works completely without any API server or backend
+  infrastructure. All communication happens directly between your browser and other
+  users' browsers. While an optional API server is available for enhanced connectivity
+  features, you can always use Chitchatter without it. ## Features - Multiple peers
+  per room (limited only by the number of peer connections your browser supports).
+  - Public and private rooms. - Video and audio chatting. - Screen sharing. - Direct
+  messaging. - File sharing: - Unlimited file size transfers. - Files are encrypted
+  prior to sending and decrypted by the receiver (the key is the room name). - Embedding
+  into other web apps via `iframe`. - Markdown support via [`react-markdown`](https://github.com/remarkjs/react-markdown).
+  - Includes support for syntax highlighting of code. - Conversation backfilling from
+  peers when a new participant joins. - Multiline message support (hold `shift` and
+  press `enter`). - Dark and light themes. - Automatic peer verification via client-side
+  [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
+  ## Anti-features - Messages are never persisted to disk. When you leave a peer room,
+  messages are cleared from memory and cannot be retrieved. - Chitchatter is an entirely
+  client-side communication app. It uses public WebTorrent servers to establish peer
+  connections and TURN relay servers when direct peer-to-peer connections cannot be
+  established, but there is no Chitchatter API server. - No analytics, tracking, or
+  telemetry of any kind. - This is a community-driven and unfunded project that makes
+  no money. The users come first and there is no corporate influence or financial
+  interest involved. ## Why another chat app? There is no shortage of user-friendly
+  chat apps available, but they rely on a central service to facilitate communication.
+  It is difficult to trust these central services, as commercial interests and [government
+  pressure](https://www.npr.org/2022/08/12/1117092169/nebraska-cops-used-facebook-messages-to-investigate-an-alleged-illegal-abortion)
+  can compel service operators to work against the best interest of the users. Even
+  when user data is handled in good faith by service operators, the possibility remains
+  that [encrypted data held at rest may be decrypted](https://www.cbsnews.com/news/fbi-may-have-found-way-to-unlock-san-bernardino-shooters-iphone/)
+  against the user's will. Chitchatter designs around these risks with a [web mesh
+  architecture](https://dev.to/jeremyckahn/taking-the-power-back-with-web-meshes-omg).
+  There is no central service operator that stores or potentially mishandles communication
+  data. Some services are required to establish an initial connection between peers,
+  but otherwise the app uses direct peer-to-peer communication for everything. Any
+  services that are used by Chitchatter have n"
 ---
 {% raw %}
 # Chitchatter

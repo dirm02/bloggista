@@ -2,8 +2,64 @@
 layout: project
 name: Geo Tp Esp32 Bus Pirate
 slug: geo-tp-ESP32-Bus-Pirate
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/geo-tp-ESP32-Bus-Pirate/images/logo_protocols_banner_small.png
 repo_url: https://github.com/geo-tp/ESP32-Bus-Pirate
+indexed_content: "# ESP32 Bus Pirate **ESP32 Bus Pirate** is an open-source firmware
+  that turns your device into a multi-protocol hacker's tool, inspired by the [legendary
+  Bus Pirate](https://buspirate.com/). It supports sniffing, sending, scripting, and
+  interacting with various digital protocols (I2C, UART, 1-Wire, SPI, etc.) via a
+  serial terminal or web-based CLI. It also communicates with radio protocols like
+  Bluetooth, Wi-Fi, Sub-GHz and RFID. Use the [ESP32 Bus Pirate Web Flasher](https://geo-tp.github.io/ESP32-Bus-Pirate/webflasher/)
+  to install the firmware in one click. See the [Wiki](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki)
+  for step-by-step guides on every mode and command. Check [ESP32 Bus Pirate Scripts](https://github.com/geo-tp/ESP32-Bus-Pirate-Scripts)
+  for a collection of scripts. ## Features - Interactive command-line interface (CLI)
+  via **USB Serial or WiFi Web**. - **Modes for:** - [HiZ](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/01-HiZ)
+  (default) - [I2C](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/05-I2C) (scan,
+  glitch, slave mode, dump, eeprom) - [SPI](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/06-SPI)
+  (eeprom, flash, sdcard, slave mode) - [UART](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/03-UART)
+  / [Half-Duplex UART](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/04-HDUART)
+  (bridge, read, write) - [1WIRE](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/02-1WIRE)
+  (ibutton, eeprom) - [2WIRE](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/07-2WIRE)
+  (sniff, smartcard) / [3WIRE](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/08-3WIRE)
+  (eeprom) - [DIO](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/09-DIO) (Digital
+  I/O, read, pullup, set, pwm) - [Infrared](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/11-INFRARED)
+  (device-b-gone, universal remote) - [USB](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/12-USB)
+  (HID, mouse, keyboard, gamepad, storage) - [Bluetooth](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/13-BLUETOOTH)
+  (BLE HID, scan, spoofing, sniffing) - [Wi-Fi](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/14-WIFI)
+  / [Ethernet](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/18-ETHERNET) (sniff,
+  deauth, nmap, netcat) - [JTAG](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/15-JTAG)
+  (scan pinout, SWD) - [LED](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/10-LED)
+  (animations, set LEDs) - [I2S](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/16-I2S)
+  (test speakers, mic, play sound) - [CAN](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/17-CAN)
+  (sniff, send and receive frames) - [SUBGHZ](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/19-SUBGHZ)
+  (sniff, scan, replay) - [RFID](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/20-RFID)
+  (read, write, clone) - [RF24](https://github.com/geo-tp/ESP32-Bus-Pirate/wiki/21-RF24)
+  (scan, sniff) - **Protocol sniffers** for I2C, SPI, 1Wire, 2wire, CAN, Wi-Fi, Bluetooth,
+  SubGhz. - Baudrate **auto-detection**, AT commands and various tools for UART. -
+  Registers manipulation, **EEPROM dump tools**, identify devices for I2C. - Read
+  all sort of **EEPROM, Flash** and various others tools for SPI. - Scripting using
+  **Bus Pirate-style bytecode** instructions or **Python**. - Device-B-Gone command
+  with more than **80 supported INFRARED protocols**. - Direct I/O management, **PWM,
+  servo**, pulse. - Analyze radio signals and frequencies **on every bands**. - Near
+  than **50 addressable LEDs protocols** supported. - **Ethernet and WiFi** are supported
+  to access networks. - Import and export data with the **LittleFS over HTTP.** ##
+  Supported Devices | Device | | Description | |-----------------------|------------------------------------------|---------------------------------------------------|
+  | **ESP32 S3 Dev Kit** | | More than 20 available GPIO, 1 button | | **M5 Cardputer**
+  | | 2 GPIO (Grove), screen, keyboard, mic, speaker, IR TX, SD card, battery, [standalone
+  mode](#standalone-mode-for-the-cardputer) | | **M5 Cardputer ADV** | | 12 GPIO (Grove,
+  Header), screen, keyboard, mic, speaker, IR TX, SD card, IMU, battery, [standalone
+  mode](#standalone-mode-for-the-cardputer) | | **M5 Stick S3** | | 13 GPIO (Grove,
+  Header), screen, mic, speaker, IR TX, IR RX, IMU, 3 buttons, battery | | **M5 StampS3**
+  | | 9 GPIO (exposed pins), 1 button | | **M5 AtomS3 Lite** | | 8 GPIO (Grove, Header),
+  IR TX, 1 buttton | | **LILYGO T-Embed** | | 9 GPIO (Grove, Header), screen, encoder,
+  speaker, mic, SD card | | **LILYGO T-Embed CC1101** | | 4 GPIO (2x Qwiic), screen,
+  encoder, speaker, mic, SD Card, CC1101, PN532, IR TX, IR RX , battery | | **Seeed
+  Studio Xiao S3** | | 9 GPIO (exposed pins), 1 button - **Other ESP32-S3-based Boards**
+  - All boards based on the **ESP32-S3 can be supported**, provided they have at least
+  **8 MB of flash.** - You can **flash the s3 dev-kit firmware onto any ESP32-S3 board.**
+  - Keep in mind that the **default pin mapping in the firmware may not match** your
+  specific board. ## Getting Started [](https://geo-tp.github.io/ESP32-Bus-Pirate/webf"
 ---
 {% raw %}
 # ESP32 Bus Pirate

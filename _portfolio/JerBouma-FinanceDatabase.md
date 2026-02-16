@@ -2,8 +2,64 @@
 layout: project
 name: Jerbouma Financedatabase
 slug: JerBouma-FinanceDatabase
+category: Finance-selfapp-healthapp-Improv
 image: https://img.shields.io/badge/Sponsor_this_Project-grey?logo=github
 repo_url: https://github.com/sponsors/JerBouma)
+indexed_content: "[](https://github.com/sponsors/JerBouma) [](https://www.buymeacoffee.com/jerbouma)
+  [](https://www.linkedin.com/in/boumajeroen/) [](https://www.jeroenbouma.com/projects/financedatabase)
+  [](https://pypi.org/project/financedatabase/) [](https://pypi.org/project/financedatabase/)
+  [](https://pepy.tech/project/financedatabase) | **Call for Contributors to the FinanceDatabase**
+  | |:------------------------------------------------------:| | The **FinanceDatabase**
+  serves the role of providing anyone with any type of financial product categorization
+  entirely for free. To achieve this, the FinanceDatabase relies on community involvement
+  to add, edit, and remove tickers over time. This is made easy enough that anyone,
+  even those with a lack of coding experience, can contribute because of the use of
+  CSV files that can be manually edited with ease. **I'd like to invite you to go
+  to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md)
+  to understand how you can help. Thank you!** | As a private investor, the sheer
+  amount of information that can be found on the internet is rather daunting. Trying
+  to understand what types of companies or ETFs are available is incredibly challenging,
+  with millions of companies and derivatives available on the market. Sure, the most
+  traded companies and ETFs can quickly be found simply because they are known to
+  the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However,
+  what else is out there is often unknown. **This database tries to solve that**.
+  It features 300,000+ symbols containing Equities, ETFs, Funds, Indices, Currencies,
+  Cryptocurrencies, and Money Markets. It therefore allows you to obtain a broad overview
+  of sectors, industries, types of investments, and much more. The aim of this database
+  is explicitly _not_ to provide up-to-date fundamentals or stock data, as those can
+  be obtained with ease (with the help of this database) by using the [Finance Toolkit
+  \U0001F6E0️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights
+  into the products that exist in each country, industry, and sector and provides
+  the most essential information about each product. With this information, you can
+  analyze specific areas of the financial world and/or find a product that is hard
+  to find. For examples of how you can combine this database with the earlier mentioned
+  packages, see the [Usage](#usage) section. Some key statistics of the database:
+  | Product | Quantity | Sectors | Industries | Countries | Exchanges | | -----------------
+  | ---------- | ---------- | ------------- | --------- | --------- | | Equities |
+  158.429 | 12 | 63 | 111 | 83 | | ETFs | 36.786 | 295 | 22 | 111 | 53 | | Funds |
+  57.881 | 1541 | 52 | 111 | 34 | | Product | Quantity | Category | | -----------------
+  | --------- | --------------------- | | Currencies | 2.556 | 175 Currencies | |
+  Cryptocurrencies | 3.367 | 352 Cryptocurrencies | | Indices | 91.183 | 64 Exchanges
+  | | Money Markets | 1.367 | 3 Exchanges | The Finance Database is used within or
+  referenced by: ___ # Installation Before installation, consider starring the project
+  on GitHub, which helps others find the project as well. To install the FinanceDatabase,
+  simply use the following: ``` pip install financedatabase -U ``` Then within Python
+  use: ```python import financedatabase as fd ``` # Usage This section explains in
+  detail how the database can be queried with the related `financedatabase` package.
+  Note that examples here are purposely cut off to a maximum of 10 entries due to
+  the sheer size of the database. Furthermore, the summary column is also omitted
+  for readability. For the full detailed results, see the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started).
+  Let's start by importing the package: ```python import financedatabase as fd ```
+  Initialization of each asset class is only required once . It is therefore important
+  that you save the class to a variable so that you can query the database much more
+  quickly. A simple example is shown below. ```python equities = fd.Equities() equities.select()
+  ``` A sample of the output is shown below: | symbol | name | currency | sector |
+  industry_group | industry | exchange | market | country | state | city | zipcode
+  | website | market_cap | isin | cusip | figi | composite_figi | shareclass_figi
+  | |:---------|:-------------------------------|:-----------|:-----------------------|:-----------------------------------------------|:---------------------------------------|:-----------|:--------------------------|:--------------|:--------|:--------------------|:-----------|:---------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+  | PMTA.DU | PTC Inc. | EUR | Information Technology | Software & Services | Software
+  | DUS | Dusseldorf Stock Exchange | United States | MA | Boston | 2210 | http://www.ptc.com
+  | Large Cap | US69370C1009 | 69370C100 | BBG000"
 ---
 {% raw %}
 <img src="https://user-images.githubusercontent.com/46355364/220746807-669cdbc1-ac67-404c-b0bb-4a3d67d9931f.jpg" alt="Logo">

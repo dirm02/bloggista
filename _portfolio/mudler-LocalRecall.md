@@ -2,8 +2,68 @@
 layout: project
 name: Mudler Localrecall
 slug: mudler-LocalRecall
+category: Future RAG ressources
 image: https://goreportcard.com/badge/github.com/mudler/LocalRecall
 repo_url: https://github.com/mudler/LocalRecall
+indexed_content: "Your AI. Your Hardware. Your Rules. [](https://goreportcard.com/report/github.com/mudler/LocalRecall)
+  [](https://opensource.org/licenses/MIT) [](https://github.com/mudler/LocalRecall/stargazers)
+  [](https://github.com/mudler/LocalRecall/issues) A lightweight, no-frills RESTful
+  API designed for managing knowledge bases and files stored in vector databases—**no
+  GPU, internet, or cloud services required**! LocalRecall provides a simple and generic
+  abstraction layer to handle knowledge retrieval, ideal for AI agents and chatbots
+  to manage both long-term and short-term memory seamlessly. Currently, LocalRecall
+  is batteries included and supports multiple vector database engines: - **Chromem**:
+  Local file-based vector store (default) - **PostgreSQL**: Production-ready PostgreSQL
+  with TimescaleDB, pgvector, and pgvectorscale for hybrid search (BM25 + vector similarity)
+  It can easily integrate with LocalAI, LocalAGI, and other agent frameworks, offering
+  an intuitive web UI for convenient file management, including support for raw text
+  inputs. ## \U0001F4DA\U0001F195 Local Stack Family \U0001F195 LocalAI is now part
+  of a comprehensive suite of AI tools designed to work together: LocalAI LocalAI
+  is the free, Open Source OpenAI alternative. LocalAI act as a drop-in replacement
+  REST API that's compatible with OpenAI API specifications for local AI inferencing.
+  Does not require GPU. LocalAGI A powerful Local AI agent management platform that
+  serves as a drop-in replacement for OpenAI's Responses API, enhanced with advanced
+  agentic capabilities. --- ## \U0001F31F Features - ⚡ **RESTful API**: Simple and
+  intuitive REST interface for knowledge management. - \U0001F4E1 **Fully Local**:
+  Operates offline without external cloud dependencies. - \U0001F4DA **RAG Knowledgebase**:
+  Retrieve-Augmented Generation (RAG) compatible with multiple vector databases. -
+  \U0001F5C3️ **Memory Management**: Ideal for AI-driven applications requiring memory
+  abstraction. - \U0001F4C2 **File Support**: - ✅ Markdown - ✅ Plain Text - ✅ PDF
+  - ⏳ More formats coming soon! --- ## ⚙️ Prerequisites - **Go** 1.16 or higher -
+  **Docker** (optional, for containerized deployment) --- ## \U0001F6A7 Quickstart
+  ### \U0001F4E5 Clone Repository ```sh git clone https://github.com/mudler/LocalRecall.git
+  cd LocalRecall ``` ### \U0001F6E0️ Build from Source ```sh go build -o localrecall
+  ``` ### ▶️ Run Application ```sh ./localrecall ``` Your web UI will be available
+  at `http://localhost:8080`. --- ## \U0001F433 Docker Deployment ### Using Chromem
+  (Default) Build and run using Docker: ```sh docker build -t localrecall . docker
+  run -ti -v $PWD/state:/state \\ -e COLLECTION_DB_PATH=/state/db \\ -e EMBEDDING_MODEL=granite-embedding-107m-multilingual
+  \\ -e FILE_ASSETS=/state/assets \\ -e OPENAI_API_KEY=sk-1234567890 \\ -e OPENAI_BASE_URL=http://localai:8080
+  \\ -p 8080:8080 localrecall # Or use the images already built by the CI: docker
+  run -ti -v $PWD/state:/state \\ -e COLLECTION_DB_PATH=/state/db \\ -e EMBEDDING_MODEL=granite-embedding-107m-multilingual
+  \\ -e FILE_ASSETS=/state/assets \\ -e OPENAI_API_KEY=sk-1234567890 \\ -e OPENAI_BASE_URL=http://localai:8080
+  \\ -p 8080:8080 quay.io/mudler/localrecall ``` ### Using PostgreSQL (Recommended
+  for Production) For production deployments, PostgreSQL provides better performance,
+  scalability, and hybrid search capabilities (combining BM25 keyword search with
+  vector similarity search). #### Quick Start with Docker Compose The easiest way
+  to get started with PostgreSQL is using Docker Compose: ```sh docker compose up
+  -d ``` This will start: - **LocalAI**: For embeddings (port 8081) - **PostgreSQL**:
+  With TimescaleDB, pgvector, and pgvectorscale extensions (port 5432) - **LocalRecall**:
+  RAG server configured to use PostgreSQL (port 8080) #### Manual Setup 1. **Start
+  PostgreSQL** (using the pre-built image): ```sh docker run -d \\ --name localrecall-postgres
+  \\ -e POSTGRES_DB=localrecall \\ -e POSTGRES_USER=localrecall \\ -e POSTGRES_PASSWORD=localrecall
+  \\ -p 5432:5432 \\ -v postgres_data:/var/lib/postgresql/data \\ quay.io/mudler/localrecall:latest-postgresql
+  ``` 2. **Start LocalRecall** with PostgreSQL: ```sh docker run -ti \\ -e DATABASE_URL=postgresql://localrecall:localrecall@localhost:5432/localrecall?sslmode=disable
+  \\ -e VECTOR_ENGINE=postgres \\ -e EMBEDDING_MODEL=granite-embedding-107m-multilingual
+  \\ -e FILE_ASSETS=/assets \\ -e OPENAI_API_KEY=sk-1234567890 \\ -e OPENAI_BASE_URL=http://localai:8080
+  \\ -e HYBRID_SEARCH_BM25_WEIGHT=0.5 \\ -e HYBRID_SEARCH_VECTOR_WEIGHT=0.5 \\ -p
+  8080:8080 \\ quay.io/mudler/localrecall ``` #### PostgreSQL Features - **Hybrid
+  Search**: Combines BM25 (keyword) and vector (semantic) search with configurable
+  weights - **Advanced Indexing**: - GIN indexes for full-text search - BM25 indexes
+  for keyword search - DiskANN/HNSW indexes for vector similarity search - **Extensions
+  Included**: - `pg_textsearch`: BM25 keyword search - `vectorscale`: Advanced vector
+  search with DiskANN - `pgvector`: Vector similarity search (fallback) - `timescaledb`:
+  Time-series capabilities --- ## \U0001F30D Environment Variables LocalRecall uses
+  environment varia"
 ---
 {% raw %}
 <p align="center">

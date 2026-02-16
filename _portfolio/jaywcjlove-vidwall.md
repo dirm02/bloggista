@@ -2,8 +2,21 @@
 layout: project
 name: Jaywcjlove Vidwall
 slug: jaywcjlove-vidwall
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/jaywcjlove-vidwall/assets/vidwall.gif
 repo_url: https://github.com/jaywcjlove/vidwall
+indexed_content: "> [!TIP] > Declaration: This project is not an open-source project.
+  The repository serves as the official website, used to collect issues and user demands.
+  This is done to save costs, because without an official website, the application
+  cannot pass the review. Vidwall 简体中文 • Contact & Support • Changelog Set stunning
+  4K videos as your dynamic desktop wallpaper — supports MP4 and MOV formats. Simply
+  drag and drop a video into the app and apply it with a single click. Bring your
+  desktop to life with animated wallpapers! Perfect for adding visual flair to your
+  workspace or recording videos with an eye-catching background. Here are some high-quality
+  video wallpaper websites — feel free to download from the links below. If you have
+  other great recommendations, feel free to share them via email or by opening an
+  issue: - https://www.desktophut.com - https://motionbgs.com - https://moewalls.com
+  - https://mylivewallpapers.com - https://wallsflow.com"
 ---
 {% raw %}
 <!--idoc:ignore:start-->

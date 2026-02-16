@@ -2,8 +2,65 @@
 layout: project
 name: Tntwise Real Video Enhancer
 slug: TNTwise-REAL-Video-Enhancer
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FTNTwise%2FREAL-Video-enhancer%2F&countColor=%23263759
 repo_url: https://github.com/qwertyquerty/pypresence)
+indexed_content: "# REAL Video Enhancer [](https://github.com/qwertyquerty/pypresence)
+  Download on Steam! [](https://store.steampowered.com/app/4087640/) # Table of Contents
+  * **[Introduction](#introduction)** * **[Features](#Features)** * **[Hardware Requirements](#hardware-requirements)**
+  * **[Models](#models)** * [Interpolate Models](#interpolate-models) * [Upscale Models](#upscale-models)
+  * **[Backends](#backends)** * **[FAQ](#faq)** * [General App Usage](#general-application-usage)
+  * [TensorRT](#tensorrt-related-questions) * [ROCm](#rocm-related-questions) * [NCNN](#ncnn-related-questions)
+  * **[Cloning](#cloning)** * **[Building](#building)** * **[Colab Notebook](#colab-notebook)**
+  * **[Credits](#credits)** * [People](#people) * [Software](#software) # Introduction
+  REAL Video Enhancer is a redesigned and enhanced version of the original Rife ESRGAN
+  App for Linux. This program offers convenient access to frame interpolation and
+  upscaling functionalities on Windows, Linux and MacOS, and is an alternative to
+  outdated software like Flowframes or enhancr . Features: Windows support. !!! NOTICE
+  !!! The bin can be detected as a trojan. This is a false positive caused by pyinstaller.
+  Ubuntu 22.04+ support on Executable and Flatpak. (20.04 can work but is now legacy)
+  MacOS 15+ arm/x86 support Discord RPC support for Discord system package and Discord
+  flatpak. Scene change detection to preserve sharp transitions. Preview that shows
+  latest frame that has been rendered. TensorRT and NCNN for efficient inference across
+  many GPUs. # Hardware/Software Requirements | | Minimum | Recommended | |--|--|--|
+  | CPU | Dual Core x64 bit | Quad Core x64 bit | GPU | Vulkan 1.3 capable device
+  | Nvidia RTX GPU (20 series and up) | VRAM | 4 GB - NCNN | 8 GB - TensorRT (Nvidia,
+  why keep making 8gb cards?) | RAM | 16 GB | 32 GB | Storage | 1 GB free - NCNN |
+  16 GB free - TensorRT | Operating System | Windows 10/11 64bit / MacOS 14+ | Any
+  modern Linux distro (Ubuntu 22.04+) # Models: ### Interpolate Models: | Model |
+  Author | Link | |--|--|--| | RIFE 4.6,4.7,4.15,4.18,4.22,4.22-lite,4.25 | Hzwer
+  | [Practical-RIFE](https://github.com/hzwer/Practical-RIFE) | GMFSS | 98mxr | [GMFSS_Fortuna](https://github.com/98mxr/GMFSS_Fortuna)
+  | IFRNet | ltkong218 | [IFRnet](https://github.com/ltkong218/IFRNet) ### Upscale
+  Models: | Model | Author | Link | |--|--|--| | 4x-SPANkendata | Crustaceous D |
+  [4x-SPANkendata](https://openmodeldb.info/models/4x-SPANkendata) | 4x-Nomos8k-SPAN
+  series | Helaman | [4x-Nomos8k-SPAN series](https://openmodeldb.info/models/4x-Nomos8k-span-otf-strong)
+  | 2x-OpenProteus | SiroSky | [OpenProteus](https://github.com/Sirosky/Upscale-Hub/releases/tag/OpenProteus)
+  | 2x-AnimeJaNai V2 and V3 Sharp | The Database | [AnimeJanai](https://github.com/the-database/mpv-upscale-2x_animejanai)
+  | 2x-AniSD | SiroSky | [AniSD](https://github.com/Sirosky/Upscale-Hub/releases/tag/AniSD)
+  | AnimeSR | Tencent ARC | [AnimeSR](https://github.com/TencentARC/AnimeSR) ### Decompression
+  Models: | Model | Author | Link | |--|--|--| | DeH264 | Helaman | [1xDeH264_realplksr](https://github.com/Phhofm/models/releases/tag/1xDeH264_realplksr)
+  ### Denoise Models: | Model | Author | Link | |--|--|--| | DRUnet | cszn | [DRUnet](https://github.com/cszn/DPIR)
+  | DnCNN | czsn | [DnCNN](https://github.com/cszn/DPIR) # Backends | Backend | Hardware
+  | |--|--| | TensorRT | NVIDIA RTX GPUs | PyTorch | CUDA 12.6 and ROCm 6.2 capable
+  GPUs | NCNN | Vulkan 1.3 capable GPUs # FAQ ### General Application Usage | Question
+  | Answer | |--|--| | What does this program attempt to accomplish? | Fast, efficient
+  and easily accessable video interpolation (Ex: 24->48FPS) and video upscaling (Ex:
+  1920->3840) | Why is it failing to recognize installed backends? | REAL Video Enhancer
+  uses PIP and portable python for inference, this can sometimes have issues installing.
+  Please attempt reinstalling the app before creating an issue. ### TensorRT related
+  questions ||| |--|--| | Why does it take so long to begin inference? | TensorRT
+  uses advanced optimization at the beginning of inference based on your device, this
+  is only done once per resolution of video inputed. | Why does the optimization and
+  inference fail? | The most common way an optimization can fail is **Limited VRAM**
+  There is no fix to this except using CUDA or NCNN instead. ### ROCm related questions
+  ||| |--|--| | Why am I getting (Insert Error here)? | ROCM is buggy, please take
+  a look at ROCm Help . ### NCNN related questions ||| |--|--| | Why am I getting
+  (Insert Vulkan Error here)? | This usually is an OOM (Out Of Memory) error, this
+  can indicate a weak iGPU or very old GPU, I recommeding trying out the Colab Notebook
+  instead. # Cloning: ``` # Nightly git clone --recurse-submodules https://github.com/TNTwise/REAL-Video-Enhancer
+  # Stable git clone --recurse-submodules https://github.com/TNTwise/REAL-Video-Enhancer
+  --branch 2.4.1 ``` # Building: 3 supported build methods: - pyinstaller (recommended
+  for Win/Mac) - cx_freeze (recommended for Li"
 ---
 {% raw %}
 # REAL Video Enhancer

@@ -2,8 +2,70 @@
 layout: project
 name: Poixeai Proxify
 slug: poixeai-proxify
+category: File manager -Network-nmap
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/poixeai-proxify/web/public/x.svg
 repo_url: https://github.com/poixeai/proxify
+indexed_content: "Proxify An open-source, lightweight, and self-hosted reverse proxy
+  gateway for AI APIs English / [简体中文](./README_CN.md) Live Demo · Quick Start · Deployment
+  Guide · Supported Endpoints --- **Proxify** is a high-performance reverse proxy
+  gateway written in Go. It allows developers to access various large model APIs through
+  a unified entry point — solving problems such as regional restrictions and multi-service
+  configuration complexity. Proxify is deeply optimized for LLM streaming responses,
+  ensuring the best performance and smooth user experience. ## ✨ Features * \U0001F48E
+  **Powerful Extensibility**: More than just an AI gateway — Proxify is a universal
+  reverse proxy server with special optimizations for LLM APIs, including stream smoothing,
+  heartbeat keepalive, and tail acceleration. * \U0001F680 **Unified API Entry**:
+  Route to multiple upstreams through a single-level path — e.g., `/openai` → `api.openai.com`,
+  `/gemini` → `generativelanguage.googleapis.com`. All routes are defined in one configuration
+  file for simplicity and efficiency. * ⚡ **Lightweight & High Performance**: Built
+  with Golang and natively supports high concurrency with minimal memory usage. Runs
+  smoothly on servers with as little as 0.5 GB RAM. * \U0001F684 **Stream Optimization**:
+  * **Smooth Output**: Built-in flow controller ensures a \"typing effect\" by streaming
+  model responses smoothly. * **Heartbeat Keepalive**: Automatically inserts heartbeat
+  messages into SSE (Server-Sent Events) streams to prevent idle timeouts. * **Tail
+  Acceleration**: Keeps latency under control by accelerating the final part of the
+  response. * \U0001F6E1️ **Security & Privacy**: Fully self-hosted — all requests
+  and data remain under your control. No third-party servers are involved, ensuring
+  zero privacy risk. * \U0001F310 **Broad Compatibility**: Preconfigured routes for
+  major AI providers like OpenAI, Azure, Claude, Gemini, and DeepSeek. Easily extendable
+  to any HTTP API via configuration. * \U0001F527 **Easy Integration**: Switch from
+  your existing API service to Proxify simply by updating the `BaseURL` — no code
+  changes or request parameter modifications required. * \U0001F468‍\U0001F4BB **Open
+  Source & Professional**: Designed and maintained by a young and experienced AI engineering
+  team. 100% open-source, auditable, and community-driven (PRs and Issues are welcome).
+  ## \U0001F6E0️ Tech Stack * **Backend Gateway**: Golang + Gin * **Frontend Dashboard**:
+  React + Vite + TypeScript + Tailwind CSS ## \U0001F680 Quick Start Integrating your
+  existing services with Proxify only takes three steps. #### 1. Identify Target Service
+  Browse the [Supported API list](#-supported-endpoints) and find the proxy path prefix
+  (Path) for the desired service. #### 2. Replace the Base URL Replace the original
+  API base URL in your code with your Proxify deployment address, appending the route
+  prefix. * **Original**: `https://api.openai.com/v1/chat/completions` * **Replaced
+  with**: `http:// /openai/v1/chat/completions` #### 3. Send Requests Done! Use your
+  existing API key and parameters as usual. Your headers and request body remain unchanged.
+  #### Example (Node.js - OpenAI SDK) ```javascript import OpenAI from \"openai\";
+  const openai = new OpenAI({ apiKey: \"sk-...\", // your OpenAI API key baseURL:
+  \"http://127.0.0.1:7777/openai/v1\", // your Proxify address }); async function
+  main() { const stream = await openai.chat.completions.create({ model: \"gpt-5\",
+  messages: [{ role: \"user\", content: \"hi\" }], stream: true, }); for await (const
+  chunk of stream) { process.stdout.write(chunk.choices[0]?.delta?.content || \"\");
+  } } main(); ``` ## \U0001F5A5️ Deployment Guide Proxify offers multiple deployment
+  options. Before starting, make sure you’ve completed the setup steps below. ---
+  ### ⚙️ Step 1: Configure Environment & Routes Proxify includes `.env.example` and
+  `routes.json.example`. Copy and adjust them to your needs. #### **1. Environment
+  Variables (`.env`)** ```bash cp .env.example .env ``` Example: ```env # Mode: debug
+  | release MODE=debug # Server port PORT=7777 # Optional GitHub token GITHUB_TOKEN=ghp_xxxx
+  # Stream optimization STREAM_SMOOTHING_ENABLED=true STREAM_HEARTBEAT_ENABLED=true
+  # IP whitelist (optional) # Supports single IP, CIDR notation, and multiple entries
+  separated by commas AUTH_IP_WHITELIST=\"127.0.0.1,10.0.0.0/8,192.168.1.0/24,::1\"
+  # Token-based authentication (optional) AUTH_TOKEN_HEADER=\"X-API-Token\" AUTH_TOKEN_KEY=\"your-super-secret-token\"
+  ``` > \U0001F4A1 **Tips:** > > * For Docker, mount `.env` into `/app/.env` inside
+  the container. > > * For local binary, keep `.env` in the same directory as the
+  executable. > > * All configuration items marked as “optional” (such as `GITHUB_TOKEN`,
+  `AUTH_IP_WHITELIST`, `AUTH_TOKEN_*`) are **disabled when left empty or unset**.
+  --- #### **2. Route Configuration (`routes.json`)** ```bash cp routes.json.example
+  routes.json ``` Example: ```json { \"routes\": [ { \"name\": \"OpenAI\", \"description\":
+  \"OpenAI Official API Endpoint\", \"path\": \"/openai\", \"target\": \"https://api.openai.com/\",
+  \"model_map\": { \"gpt-4o\": \"gpt-4o-2024-11-20\" } }, { \"name\": \"D"
 ---
 {% raw %}
 <div align="center">

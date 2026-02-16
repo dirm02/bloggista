@@ -2,8 +2,60 @@
 layout: project
 name: Suitenumerique Meet
 slug: suitenumerique-meet
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/suitenumerique-meet/docs/assets/banner-meet-fr.png
 repo_url: https://github.com/suitenumerique/meet
+indexed_content: "LiveKit - Chat with us - Roadmap - Changelog - Bug reports ## La
+  Suite Meet: Simple Video Conferencing Powered by [LiveKit](https://livekit.io/),
+  La Suite Meet offers Zoom-level performance with high-quality video and audio. No
+  installation required—simply join calls directly from your browser. Check out LiveKit's
+  impressive optimizations in their [blog post](https://blog.livekit.io/livekit-one-dot-zero/).
+  ### Features - Optimized for stability in large meetings (+100 p.) - Support for
+  multiple screen sharing streams - Non-persistent, secure chat - End-to-end encryption
+  (coming soon) - Meeting recording - Meeting transcription & Summary (currently in
+  beta) - Telephony integration - Secure participation with robust authentication
+  and access control - Customizable frontend style - LiveKit Advances features including
+  : - speaker detection - simulcast - end-to-end optimizations - selective subscription
+  - SVC codecs (VP9, AV1) La Suite Meet is fully self-hostable and released under
+  the MIT License, ensuring complete control and flexibility. It's simple to [get
+  started](https://visio.numerique.gouv.fr/) or [request a demo](mailto:visio@numerique.gouv.fr).
+  We’re continuously adding new features to enhance your experience, with the latest
+  updates coming soon! ### \U0001F680 Major roll out to all French public servants
+  On the 25th of January 2026, David Amiel, France’s Minister for Civil Service and
+  State Reform, announced the full deployment of Visio—the French government’s dedicated
+  Meet platform—to all public servants. ([Source in French](https://www.latribune.fr/article/la-tribune-dimanche/politique/73157688099661/david-amiel-ministre-delegue-de-la-fonction-publique-nous-allons-sortir-de-la-dependance-aux-outils-americains))
+  ## Table of Contents - [Get started](#get-started) - [Docs](#docs) - [Self-host](#self-host)
+  - [Contributing](#contributing) - [Philosophy](#philosophy) - [Open source](#open-source)
+  ## Get started ## Docs We're currently working on both technical and user documentation
+  for La Suite Meet. In the meantime, many of the essential aspects are already well
+  covered by the [LiveKit documentation](https://docs.livekit.io/home/) and their
+  [self-hosting guide](https://docs.livekit.io/home/self-hosting/deployment/). Stay
+  tuned for more updates! ## Self-host ### La Suite Meet is easy to install on your
+  own servers We use Kubernetes for our [production instance](https://visio.numerique.gouv.fr/)
+  but also support Docker Compose. The community contributed a couple other methods
+  (Nix, YunoHost etc.) check out the [docs](/docs/installation/README.md) to get detailed
+  instructions and examples. **Questions?** Open an issue on [GitHub](https://github.com/suitenumerique/meet/issues/new?assignees=&labels=bug&template=Bug_report.md)
+  or join our [Matrix community](https://matrix.to/#/#meet-official:matrix.org). >
+  [!NOTE] > Some advanced features (ex: recording, transcription) lack detailed documentation.
+  We're working hard to provide comprehensive guides soon. #### Known instances We
+  hope to see many more, here is an incomplete list of public La Suite Meet instances.
+  Feel free to make a PR to add ones that are not listed below\U0001F64F | Url | Org
+  | Access | |---------------------------------------------------------------| ---
+  | ------- | | [visio.numerique.gouv.fr](https://visio.numerique.gouv.fr/) | DINUM
+  | French public agents working for the central administration and the extended public
+  sphere. ProConnect is required to login in or sign up| | [visio.suite.anct.gouv.fr](https://visio.suite.anct.gouv.fr/)
+  | ANCT | French public agents working for the territorial administration and the
+  extended public sphere. ProConnect is required to login in or sign up| | [visio.lasuite.coop](https://visio.lasuite.coop/)
+  | lasuite.coop | Free and open demo to all. Content and accounts are reset after
+  one month | | [mosacloud.cloud](https://mosa.cloud/) | mosa.cloud | Demo instance
+  of mosa.cloud, a dutch company providing services around La Suite apps. | ## Contributing
+  We ## Credits We're using the awesome [LiveKit](https://livekit.io/) implementation.
+  We're also thankful to the teams behind [Django Rest Framework](https://www.django-rest-framework.org/),
+  [Vite.js](https://vite.dev/), and [React Aria](https://github.com/adobe/react-spectrum)
+  — Thanks for your amazing work! This project is tested with BrowserStack. ## License
+  Code in this repository is published under the MIT license by DINUM (Direction interministériel
+  du numérique). Documentation (in the docs/) directory is released under the [Etalab-2.0
+  license](https://spdx.org/licenses/etalab-2.0.html)."
 ---
 {% raw %}
 <p align="center">

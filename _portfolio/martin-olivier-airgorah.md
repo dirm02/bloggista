@@ -2,8 +2,30 @@
 layout: project
 name: Martin Olivier Airgorah
 slug: martin-olivier-airgorah
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/martin-olivier-airgorah/.github/assets/illustration.png
 repo_url: https://github.com/aircrack-ng/aircrack-ng
+indexed_content: 'Airgorah A WiFi security auditing software mainly based on aircrack-ng
+  tools suite Installation &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Usage &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  Credits [](https://crates.io/crates/airgorah) [](https://aur.archlinux.org/packages/airgorah)
+  [](https://github.com/martin-olivier/airgorah/actions/workflows/CI.yml) `Airgorah`
+  is a WiFi security auditing software that can capture nearby WiFi traffic, discover
+  clients connected to access points, perform deauthentication attacks, capture handshakes,
+  and crack the password of access points. It is written in Rust and uses [GTK4](https://github.com/gtk-rs/gtk4-rs)
+  for the graphical part. `⭐ Don''t forget to put a star if you like the project!`
+  ## Legal ⚠️ Airgorah is designed to be used in testing and discovering flaws in
+  networks you are owner of. Performing attacks on WiFi networks you are not owner
+  of is illegal in almost all countries. I am not responsible for whatever damage
+  you may cause by using this software. ## Requirements This software only works on
+  `linux` and requires `root` privileges to run. You will also need a wireless network
+  card that supports `monitor mode` and `packet injection`. ## Installation The installation
+  instructions are available [here](https://github.com/martin-olivier/airgorah/wiki/Installation).
+  ## Usage The documentation about the usage of the application is available [here](https://github.com/martin-olivier/airgorah/wiki/Usage).
+  ## License This project is released under [MIT](LICENSE) license. ## Contributing
+  If you have any question about the usage of the application, do not hesitate to
+  open a [discussion](https://github.com/martin-olivier/airgorah/discussions) If you
+  want to report a bug or provide a feature, do not hesitate to open an [issue](https://github.com/martin-olivier/airgorah/issues)
+  or submit a [pull request](https://github.com/martin-olivier/airgorah/pulls)'
 ---
 {% raw %}
 <h1 align="center">

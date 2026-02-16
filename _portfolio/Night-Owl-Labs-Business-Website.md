@@ -2,8 +2,69 @@
 layout: project
 name: Night Owl Labs Business Website
 slug: Night-Owl-Labs-Business-Website
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Night-Owl-Labs-Business-Website/docs/images/banner_large_biz.png
 repo_url: https://github.com/Night-Owl-Labs/Business-Website)
+indexed_content: "[](https://bizwebsite.netlify.app) --------------- \U0001F4BC Business
+  Website \U0001F3E2 A dynamic and versatile static business website, expertly crafted
+  using Gatsby for optimal performance and hosted on Netlify for reliability. This
+  website comes with a multitude of menu options and features, catering to diverse
+  business needs. Additionally, it includes a dedicated section for a product or app
+  landing page, perfect for showcasing new releases, features, and driving user engagement.
+  - This site uses a fictional company, **Early Bird Labs**, a playful nod (and daytime
+  alter ego) to our real company, **[Night Owl Labs](https://nightowllabs.io)**. -
+  Visit the application to see it in action [here](https://bizwebsite.netlify.app).
+  Fully customizable business website. --------------- ## Table of Contents - [Features](#features)
+  - [Background Story](#background-story) - [Getting Started](#getting-started) -
+  [Installation & Set Up](#installation--set-up) - [Building and Running for Production](#building-and-running-for-production)
+  - [Configuration](#configuration) - [Customization](#customization) - [Brand](#brand)
+  - [Mascot](#mascot) - [Color Palette](#color-palette) - [Typefaces](#typefaces)
+  - [What's Inside?](#whats-inside) - [Closing](#closing) - [What's Next?](#whats-next)
+  - [Guidelines for Forking This Project](#guidelines-for-forking-this-project) -
+  [Contributing](#contributing) - [Resources](#resources) - [License](#license) -
+  [Credit](#credit) ## Features - [x] Fully customizable - [x] Display a product or
+  app landing page - [x] Mobile friendly - [x] Easy navigation - [x] Up arrow for
+  easy page scrolling - [x] Free to host and deploy using Netlify and GitHub ## Background
+  Story I wanted to create a **Business Website** that was easy to setup and use,
+  while also being fully customizable, and I think I've done just that. This project
+  is a culmination of my experience as a software developer and my passion for creating
+  useful applications. ## Getting Started ### Installation & Set Up 1. Install the
+  Gatsby CLI ```sh npm install -g gatsby-cli ``` 2. Run the development server ```sh
+  gastby develop ``` 3. View the website at `http://localhost:8000` ### Building and
+  Running for Production 1. Generate a full static production build ```sh gatsby build
+  ``` 2. Preview the site as it will appear once deployed ```sh gatsby serve ``` 3.
+  View the website at `http://localhost:9000` 4. Commit to GitHub 5. Create a new
+  site on Netlify 6. Connect your GitHub account 7. Select your repository 8. Click
+  `Deploy Site` 9. View your website at `https:// .netlify.app` 10. Optionally, you
+  can also setup a custom domain name for your website ### Configuration You can easily
+  configure this website to your liking by following the steps below, changing it
+  from a full website to a preview landing page for your product or app: 1. Open the
+  `src/components/config.js` file 2. Update the `config` object with your information
+  ```js export const CONFIG = { showLandingPage: false, // Set to false to hide the
+  landing page showHeader: true, // Set to false to hide the header showFooter: true,
+  // Set to false to hide the footer }; ``` 3. If you decide to use the app landing
+  page, open the `src/components/landing.js` file to edit it and use the `static/images/landing`
+  directory to store your images. 4. Optionally, you can also adjust the amount of
+  time the up arrow is displayed before fading out by adjusting the `newTimeout` value
+  in the `src/components/layout.js` file. ```js // Set a new timeout const newTimeout
+  = setTimeout(() => { setShowScroll(false) }, 7000) // Hide button 7 seconds after
+  scrolling stops setScrollTimeout(newTimeout) ``` ### Customization Below is a list
+  of the main files you can customize to your liking: 1. `config.js` contains the
+  site configuration (see above). 2. `src/components/layout.js` contains the site
+  layout. This is where the header, footer, and up arrow are displayed. 3. `src/components/layout.css`
+  contains the site layout CSS. This is where you can customize the styles and colors
+  of the site. 4. `src/components/seo.js` contains the site SEO. You can easily customize
+  the SEO by editing the `siteMetadata` tree. 5. `src/components/header.js` contains
+  the site header and navigation menu. You can easily customize the menu items by
+  editing the `menutabs` tree. 6. `src/components/footer.js` contains the site footer.
+  You can easily customize the footer items by editing the `pagefoot` tree. 7. `src/images`
+  directory contains the `icon.png` used for the site favicon and other places a small
+  icon is needed. 8. `src/pages` directory contains the site pages. You can easily
+  add, remove, or edit pages here. - Make sure you also update the `src/components/header.js`
+  file to include your new pages in the navigation menu. 9. In the root directory,
+  you can also edit the `gatsby-config.js` file to change the site metadata and other
+  settings. 10. Also in the root directory, you will find another directory called
+  `static`. This directory contains the `"
 ---
 {% raw %}
 <!-- Begin README -->

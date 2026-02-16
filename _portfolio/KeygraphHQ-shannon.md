@@ -2,8 +2,68 @@
 layout: project
 name: Keygraphhq Shannon
 slug: KeygraphHQ-shannon
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/KeygraphHQ-shannon/assets/shannon-action.gif
 repo_url: https://github.com/KeygraphHQ/shannon
+indexed_content: "> [!NOTE] > **[Shannon Lite achieves a 96.15% success rate on a
+  hint-free, source-aware XBOW benchmark. &rarr;](https://github.com/KeygraphHQ/shannon/tree/main/xben-benchmark-results/README.md)**
+  # Shannon is your fully autonomous AI pentester. Shannon’s job is simple: break
+  your web app before anyone else does. The Red Team to your vibe-coding Blue team.
+  Every Claude (coder) deserves their Shannon. --- [Website](https://keygraph.io)
+  • [Discord](https://discord.gg/KAqzSHHpRt) --- ## \U0001F3AF What is Shannon? Shannon
+  is an AI pentester that delivers actual exploits, not just alerts. Shannon's goal
+  is to break your web app before someone else does. It autonomously hunts for attack
+  vectors in your code, then uses its built-in browser to execute real exploits, such
+  as injection attacks, and auth bypass, to prove the vulnerability is actually exploitable.
+  **What Problem Does Shannon Solve?** Thanks to tools like Claude Code and Cursor,
+  your team ships code non-stop. But your penetration test? That happens once a year.
+  This creates a *massive* security gap. For the other 364 days, you could be unknowingly
+  shipping vulnerabilities to production. Shannon closes this gap by acting as your
+  on-demand whitebox pentester. It doesn't just find potential issues. It executes
+  real exploits, providing concrete proof of vulnerabilities. This lets you ship with
+  confidence, knowing every build can be secured. > [!NOTE] > **From Autonomous Pentesting
+  to Automated Compliance** > > Shannon is a core component of the **Keygraph Security
+  and Compliance Platform**. > > While Shannon automates the critical task of penetration
+  testing for your application, our broader platform automates your entire compliance
+  journey—from evidence collection to audit readiness. We're building the \"Rippling
+  for Cybersecurity,\" a single platform to manage your security posture and streamline
+  compliance frameworks like SOC 2 and HIPAA. > > ➡️ **[Learn more about the Keygraph
+  Platform](https://keygraph.io)** ## \U0001F3AC See Shannon in Action **Real Results**:
+  Shannon discovered 20+ critical vulnerabilities in OWASP Juice Shop, including complete
+  auth bypass and database exfiltration. [See full report →](sample-reports/shannon-report-juice-shop.md)
+  ## ✨ Features - **Fully Autonomous Operation**: Launch the pentest with a single
+  command. The AI handles everything from advanced 2FA/TOTP logins (including sign
+  in with Google) and browser navigation to the final report with zero intervention.
+  - **Pentester-Grade Reports with Reproducible Exploits**: Delivers a final report
+  focused on proven, exploitable findings, complete with copy-and-paste Proof-of-Concepts
+  to eliminate false positives and provide actionable results. - **Critical OWASP
+  Vulnerability Coverage**: Currently identifies and validates the following critical
+  vulnerabilities: Injection, XSS, SSRF, and Broken Authentication/Authorization,
+  with more types in development. - **Code-Aware Dynamic Testing**: Analyzes your
+  source code to intelligently guide its attack strategy, then performs live, browser
+  and command line based exploits on the running application to confirm real-world
+  risk. - **Powered by Integrated Security Tools**: Enhances its discovery phase by
+  leveraging leading reconnaissance and testing tools—including **Nmap, Subfinder,
+  WhatWeb, and Schemathesis**—for deep analysis of the target environment. - **Parallel
+  Processing for Faster Results**: Get your report faster. The system parallelizes
+  the most time-intensive phases, running analysis and exploitation for all vulnerability
+  types concurrently. ## \U0001F4E6 Product Line Shannon is available in two editions:
+  | Edition | License | Best For | |---------|---------|----------| | **Shannon Lite**
+  | AGPL-3.0 | Security teams, independent researchers, testing your own applications
+  | | **Shannon Pro** | Commercial | Enterprises requiring advanced features, CI/CD
+  integration, and dedicated support | > **This repository contains Shannon Lite,**
+  which utilizes our core autonomous AI pentesting framework. **Shannon Pro** enhances
+  this foundation with an advanced, LLM-powered data flow analysis engine (inspired
+  by the [LLMDFA paper](https://arxiv.org/abs/2402.10754)) for enterprise-grade code
+  analysis and deeper vulnerability detection. > [!IMPORTANT] > **White-box only.**
+  Shannon Lite is designed for **white-box (source-available)** application security
+  testing. > It expects access to your application's source code and repository layout.
+  [See feature comparison](./SHANNON-PRO.md) ## \U0001F4D1 Table of Contents - [What
+  is Shannon?](#-what-is-shannon) - [See Shannon in Action](#-see-shannon-in-action)
+  - [Features](#-features) - [Product Line](#-product-line) - [Setup & Usage Instructions](#-setup--usage-instructions)
+  - [Prerequisites](#prerequisites) - [Quick Start](#quick-start) - [Monitoring Progress](#monitoring-progress)
+  - [Stopping Shannon](#stopping-shannon) - [Usage Examples](#usage-examples) - [Configuration
+  (Optional)](#configuration-optional) - [[EXPERIMENTAL - UNSUPPORTE"
 ---
 {% raw %}
 > [!NOTE]

@@ -2,8 +2,36 @@
 layout: project
 name: Getumbrel Umbrel
 slug: getumbrel-umbrel
+category: Very important!!!!
 image: https://github.com/user-attachments/assets/cabf8af7-51ce-45df-ad3a-a664cc91c610
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://umbrel.com/umbrelos) umbrelOS A beautiful home server
+  OS for self-hosting umbrel.com » Get an Umbrel Pro or Umbrel Home for the full experience,
+  or install umbrelOS on a Raspberry Pi 5 or any x86 system for free. At Umbrel, we
+  believe that everyone should be able to enjoy the convenience and benefits of the
+  cloud, without giving up ownership and control of their data. To achieve our vision,
+  we're building a new kind of a home server OS. Instead of paying ransoms for storing
+  your data on someone else's computer while they auction it off to advertisers —
+  you can now easily spin up a server and self-host your data and services at home.
+  Just like the cloud, but one that you own and control. ## Installing umbrelOS umbrelOS
+  is designed for the [Umbrel Pro](https://umbrel.com/umbrel-pro) and [Umbrel Home](https://umbrel.com/umbrel-home),
+  where it includes first-class support for all features. On other devices (like Raspberry
+  Pi or x86 systems), it’s freely available with core functionality, but support and
+  feature availability are best-effort due to hardware differences. For a detailed
+  feature breakdown, see our [comparison guide](https://github.com/getumbrel/umbrel/wiki/umbrelOS-on-Umbrel-Home-vs.-DIY).
+  ### Installation guides - [Install umbrelOS on a Raspberry Pi 5](https://github.com/getumbrel/umbrel/wiki/Install-umbrelOS-on-a-Raspberry-Pi-5)
+  - [Install umbrelOS on any x86 system](https://github.com/getumbrel/umbrel/wiki/Install-umbrelOS-on-x86-Systems)
+  - [Install umbrelOS in a VM](https://github.com/getumbrel/umbrel/wiki/Install-umbrelOS-on-a-Linux-VM)
+  [](https://umbrel.com/umbrelos) [](https://apps.umbrel.com) [](https://umbrel.com/umbrelos)
+  [](https://umbrel.com/umbrelos) [](https://umbrel.com/umbrelos) [](https://umbrel.com/umbrelos)
+  ## Building apps for umbrelOS If you're interested in building an app for umbrelOS
+  or packaging an existing one, please refer to the [Umbrel App Framework documentation](https://github.com/getumbrel/umbrel-apps/blob/master/README.md).
+  ## License umbrelOS is licensed under the PolyForm Noncommercial 1.0.0 license.
+  TL;DR — You're free to use, fork, modify, and redistribute Umbrel for personal and
+  nonprofit use under the same license. If you're interested in using umbrelOS for
+  commercial purposes, such as selling plug-and-play home servers with umbrelOS, etc
+  — please reach out to us at partner@umbrel.com. [](https://github.com/getumbrel/umbrel/blob/master/LICENSE.md)
+  [umbrel.com](https://umbrel.com)"
 ---
 {% raw %}
 [![umbrelOS](https://github.com/user-attachments/assets/cabf8af7-51ce-45df-ad3a-a664cc91c610)](https://umbrel.com/umbrelos)

@@ -2,8 +2,66 @@
 layout: project
 name: Yusufkaraaslan Skill Seekers
 slug: yusufkaraaslan-Skill_Seekers
+category: API - Documentation
 image: https://mseep.net/pr/yusufkaraaslan-skill-seekers-badge.png
 repo_url: https://github.com/yusufkaraaslan/Skill_Seekers
+indexed_content: "[](https://mseep.ai/app/yusufkaraaslan-skill-seekers) # Skill Seeker
+  English | [简体中文](https://github.com/yusufkaraaslan/Skill_Seekers/blob/main/README.zh-CN.md)
+  [](https://github.com/yusufkaraaslan/Skill_Seekers/releases) [](https://opensource.org/licenses/MIT)
+  [](https://www.python.org/downloads/) [](https://modelcontextprotocol.io) [](tests/)
+  [](https://github.com/users/yusufkaraaslan/projects/2) [](https://pypi.org/project/skill-seekers/)
+  [](https://pypi.org/project/skill-seekers/) [](https://pypi.org/project/skill-seekers/)
+  [](https://skillseekersweb.com/) [](https://x.com/_yUSyUS_) [](https://github.com/yusufkaraaslan/Skill_Seekers)
+  **\U0001F680 v3.0.0 \"Universal Intelligence Platform\" - The universal preprocessor
+  for any AI system. Convert documentation, GitHub repos, and PDFs into 16 production-ready
+  formats: LangChain, LlamaIndex, Haystack, Pinecone, Cursor, Windsurf, Cline, Continue.dev,
+  Claude, and any RAG pipeline—in minutes, not hours.** > \U0001F310 **[Visit SkillSeekersWeb.com](https://skillseekersweb.com/)**
+  - Browse 24+ preset configs, share your configs, and access complete documentation!
+  > \U0001F4CB **[View Development Roadmap & Tasks](https://github.com/users/yusufkaraaslan/projects/2)**
+  - 134 tasks across 10 categories, pick any to contribute! ## \U0001F680 **NEW: Universal
+  RAG Preprocessor** **Skill Seekers is now the data layer for AI systems.** 70% of
+  RAG development time is spent on data preprocessing—scraping, cleaning, chunking,
+  and structuring documentation. **We automate all of it.** ```bash # One command
+  → Production-ready RAG data skill-seekers scrape --config configs/react.json skill-seekers
+  package output/react --target langchain # or llama-index, pinecone, cursor # 15
+  minutes → Ready for: LangChain, LlamaIndex, Haystack, Pinecone, Cursor, Custom RAG
+  ``` ### Supported Integrations | Integration | Format | Use Case | Guide | |------------|--------|----------|-------|
+  | **LangChain** | `Documents` | QA chains, agents, retrievers | [Guide](docs/integrations/LANGCHAIN.md)
+  | | **LlamaIndex** | `TextNodes` | Query engines, chat engines | [Guide](docs/integrations/LLAMA_INDEX.md)
+  | | **Haystack** | `Documents` | Enterprise RAG pipelines | [Guide](docs/integrations/HAYSTACK.md)
+  | | **Pinecone** | Ready for upsert | Production vector search | [Guide](docs/integrations/PINECONE.md)
+  | | **Cursor IDE** | `.cursorrules` | AI coding (VS Code fork) | [Guide](docs/integrations/CURSOR.md)
+  | | **Windsurf** | `.windsurfrules` | AI coding (Codeium IDE) | [Guide](docs/integrations/WINDSURF.md)
+  | | **Cline** | `.clinerules` + MCP | AI coding (VS Code ext) | [Guide](docs/integrations/CLINE.md)
+  | | **Continue.dev** | HTTP context | AI coding (any IDE) | [Guide](docs/integrations/CONTINUE_DEV.md)
+  | | **Claude AI** | Skills (ZIP) | Claude Code skills | Default | | **Gemini** |
+  tar.gz | Google Gemini skills | `--target gemini` | | **OpenAI** | ChatGPT format
+  | Custom GPTs | `--target openai` | **Why Skill Seekers for RAG?** - ⚡ **99% faster
+  preprocessing** - Days → 15-45 minutes - ✅ **Production quality** - 700+ tests,
+  battle-tested on 24+ frameworks - \U0001F3AF **Smart chunking** - Preserves code
+  blocks, maintains context - \U0001F4CA **Rich metadata** - Categories, sources,
+  types for filtering - \U0001F504 **Multi-source** - Combine docs + GitHub + PDFs
+  seamlessly - \U0001F310 **Platform-agnostic** - One preprocessing, export anywhere
+  **Read the full story:** [Blog: Universal RAG Preprocessor](docs/blog/UNIVERSAL_RAG_PREPROCESSOR.md)
+  ## Quick Start: RAG Pipeline ```bash # 1. Install pip install skill-seekers # 2.
+  Generate documentation (Django example) skill-seekers scrape --config configs/django.json
+  # 15 min # 3. Export for your RAG stack skill-seekers package output/django --target
+  langchain # For LangChain skill-seekers package output/django --target llama-index
+  # For LlamaIndex # 4. Use in your RAG pipeline python your_rag_pipeline.py # Load
+  and query! ``` **Complete examples:** - [LangChain RAG Pipeline](examples/langchain-rag-pipeline/)
+  - QA chain with Chroma - [LlamaIndex Query Engine](examples/llama-index-query-engine/)
+  - Chat with memory - [Pinecone Upsert](examples/pinecone-upsert/) - Production vector
+  search ## What is Skill Seeker? Skill Seeker is the **universal preprocessing layer
+  for AI systems**. It transforms documentation websites, GitHub repositories, and
+  PDF files into production-ready formats for: - **RAG Pipelines** - LangChain, LlamaIndex,
+  Pinecone, Weaviate, Chroma, FAISS - **AI Coding Assistants** - Cursor IDE, VS Code,
+  custom tools - **Claude AI Skills** - [Claude Code](https://www.anthropic.com/news/skills)
+  and Claude API - **Custom GPTs** - OpenAI, Gemini, and other LLM platforms Instead
+  of spending days on manual preprocessing, Skill Seeker: 1. **Scrapes** multiple
+  sources (docs, GitHub repos, PDFs) automatically 2. **Analyzes** code repositories
+  with deep AST parsing 3. **Detects** conflicts between documentation and code implementation
+  4. **Organizes** content into categorized reference files 5. **Enhances** with AI
+  to extract best examp"
 ---
 {% raw %}
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/yusufkaraaslan-skill-seekers-badge.png)](https://mseep.ai/app/yusufkaraaslan-skill-seekers)

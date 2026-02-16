@@ -2,8 +2,19 @@
 layout: project
 name: Trylinky Linky
 slug: trylinky-linky
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/trylinky-linky/.github/cover.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Linky An open-source dynamic personal page builder. Introduction
+  · Tech Stack · Self-hosting · License ## Hello Linky is an open-source dynamic personal
+  page builder. https://github.com/user-attachments/assets/d2c04b21-eb96-459b-8751-0c2bcb904da8
+  ## Tech Stack - [Next.js](https://nextjs.org/) – framework - [TypeScript](https://www.typescriptlang.org/)
+  – language - [Tailwind](https://tailwindcss.com/) – CSS - [NextAuth.js](https://next-auth.js.org/)
+  – auth - [Resend](https://resend.com/) – emails - [Vercel](https://vercel.com/)
+  – deployments ## Self-Hosting You can self-host Linky if you would like to run it
+  yourself. - [Local Development](./docs/local-development.md) - [Self-hosting](./docs/self-hosting.md)
+  ## License Please see the [LICENSE](https://github.com/tryglow/glow/blob/main/LICENSE)
+  file for more information.'
 ---
 {% raw %}
 <a href="https://lin.ky">

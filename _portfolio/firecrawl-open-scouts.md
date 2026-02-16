@@ -2,8 +2,69 @@
 layout: project
 name: Firecrawl Open Scouts
 slug: firecrawl-open-scouts
+category: Let's try this- Personal prefere
 image: https://github.com/user-attachments/assets/a1ff82ef-97e4-469b-9712-99d0367755a7
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '# Open Scouts Create AI scouts that continuously search the web
+  and notify you when they find what you''re looking for. ## About Open Scouts is
+  an AI-powered monitoring platform that lets you create "scouts" - automated tasks
+  that run on a schedule to continuously search for and track information. Whether
+  you''re looking for new restaurants near you, monitoring AI news, or tracking any
+  other updates, scouts work 24/7 to find what you need and notify you when they discover
+  it. ## Tech Stack - **Next.js 15** - **React 19** - **TypeScript** - **Tailwind
+  CSS v4** - **Supabase** (Database + Auth + Edge Functions) - **pgvector** (Vector
+  embeddings for semantic search) - **Firecrawl SDK** (@mendable/firecrawl-js) - **OpenAI
+  API** (AI Agent + Embeddings) - **Resend** (Email Notifications) ## Getting Started
+  ### Prerequisites - Node.js 18+ - bun (default), npm, or pnpm - Supabase account
+  ([supabase.com](https://supabase.com)) - OpenAI API key ([platform.openai.com](https://platform.openai.com))
+  - Firecrawl API key ([firecrawl.dev](https://firecrawl.dev)) - Resend API key ([resend.com](https://resend.com))
+  - for email notifications - Google Cloud Console account (for Google OAuth - optional)
+  ### 1. Clone and Install ```bash git clone https://github.com/firecrawl/open-scouts
+  cd open-scouts bun install # or: npm install / pnpm install ``` ### 2. Create Supabase
+  Project 1. Go to [supabase.com](https://supabase.com/dashboard) 2. Create a new
+  project 3. Wait for the project to finish provisioning ### 3. Enable Required Extensions
+  In your Supabase Dashboard: 1. Go to **Database → Extensions** 2. Search for and
+  enable: - `pg_cron` (for scheduled jobs) - `pg_net` (for HTTP requests from database)
+  - `vector` (for AI-powered semantic search on execution summaries) - `supabase_vault`
+  (for secure credential storage - usually enabled by default) ### 4. Set Up Environment
+  Variables Create a `.env` file in the root directory by copying the example file:
+  ```bash cp .env.example .env ``` Then fill in your actual values in the `.env` file.
+  **The `.env.example` file contains all required environment variables with detailed
+  instructions and direct links for where to obtain each API key.** ### 5. Run Database
+  Setup First, link your Supabase project (required for syncing secrets): ```bash
+  bunx supabase login # Login to Supabase CLI (one-time) bunx supabase link --project-ref
+  # Find ref in Supabase Dashboard URL ``` Then run the setup script: ```bash bun
+  run setup:db # or: npm run setup:db / pnpm run setup:db ``` This will: - Create
+  all required tables (`scouts`, `scout_executions`, `scout_execution_steps`, etc.)
+  - Add user authentication support (user_id columns, Row Level Security) - Enable
+  real-time subscriptions - Set up vector embeddings for AI-generated execution summaries
+  - Configure the **scalable dispatcher architecture** (pg_cron + pg_net + vault)
+  - Automatically store your Supabase URL and service role key in the vault - Set
+  up cron jobs for scout dispatching and cleanup - **Sync Edge Function secrets**
+  from your `.env` file (OPENAI_API_KEY, FIRECRAWL_API_KEY, RESEND_API_KEY) **Note:**
+  The setup script will check if the required extensions (`vector`, `pg_cron`, `pg_net`)
+  are enabled. If not, follow the on-screen instructions to enable them in the Supabase
+  Dashboard, then run the script again. ### 6. Set Up Authentication Open Scouts uses
+  Supabase Auth for user authentication, supporting both email/password and Google
+  OAuth. #### Enable Email/Password Auth (Enabled by Default) 1. Go to Supabase Dashboard
+  → **Authentication** → **Providers** → **Email** 2. Ensure "Enable Email Provider"
+  is toggled on 3. Configure email templates as needed in **Authentication** → **Email
+  Templates** #### Enable Google OAuth (Optional but Recommended) 1. **Create Google
+  OAuth Credentials:** - Go to [Google Cloud Console](https://console.cloud.google.com/)
+  - Create a new project or select existing one - Navigate to **APIs & Services**
+  → **Credentials** - Click **Create Credentials** → **OAuth client ID** - Choose
+  "Web application" as Application type - Add authorized JavaScript origins: - `http://localhost:3000`
+  (development) - `https://your-domain.com` (production) - Add authorized redirect
+  URIs: - `https:// .supabase.co/auth/v1/callback` - Copy the **Client ID** and **Client
+  Secret** 2. **Configure in Supabase:** - Go to Supabase Dashboard → **Authentication**
+  → **Providers** → **Google** - Toggle "Enable Google Provider" - Paste your Client
+  ID and Client Secret - Save ### 7. Deploy Edge Functions Deploy the scout execution
+  agent and email functions to Supabase Cloud: ```bash bunx supabase functions deploy
+  scout-cron bunx supabase functions deploy send-test-email ``` **Note:** Secrets
+  (OPENAI_API_KEY, FIRECRAWL_API_KEY, RESEND_API_KEY) are automatically synced when
+  you run `setup:db`. If you need to update them manually: ```bash bunx supabase secrets
+  set OPENAI_API_KEY=sk-proj-... ``` ### 8. Set Up Resend (Email Notifications) Email
+  notifications are'
 ---
 {% raw %}
 # Open Scouts

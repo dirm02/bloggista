@@ -2,8 +2,71 @@
 layout: project
 name: 9carlo6 E Paper
 slug: 9carlo6-E-Paper
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/version-1.0-blue
 repo_url: https://github.com/9carlo6/E-Paper.git
+indexed_content: "# \U0001F5BC️ E-Paper Photo Frame A modern web-based photo frame
+  controller for Waveshare 5.65\" 7-color e-paper displays. Upload and display images
+  wirelessly with an intuitive web interface featuring interactive cropping, multiple
+  dithering algorithms, and image rotation. ## \U0001F4F8 Screenshots | Boot Screen
+  | Web Interface | |:---:|:---:| | | | | *QR code for easy connection* | *Upload
+  interface* | | Crop Editor | Algorithm Selection | |:---:|:---:| | | | | *Drag,
+  zoom, rotate* | *5 conversion methods* | | Final Result | |:---:| | | | *Photo rendered
+  on e-paper* | ## ✨ Features ### Web Interface - **Interactive Crop Editor** - Drag
+  to reposition, pinch/scroll to zoom - **90° Rotation** - Rotate images to fit any
+  orientation - **Background Selection** - Choose white or black backgrounds - **5
+  Dithering Algorithms** - Preview and compare conversion methods: - Floyd-Steinberg
+  (balanced, natural look) - Atkinson (softer, less noise) - Ordered/Bayer (retro,
+  patterned) - No Dithering (pure colors, cartoon style) - Black & White (classic
+  2-color) - **Live Preview** - See exactly how your image will look before uploading
+  - **Touch-Friendly** - Works seamlessly on mobile devices ### Connectivity - **Access
+  Point Fallback** - Automatic AP mode if no network configured - **QR Code Display**
+  - Scan to connect instantly - **Web Configuration** - Save WiFi credentials through
+  browser ### Storage & Performance - **SPIFFS Storage** - No PSRAM required - **Optimized
+  Memory Usage** - ~64KB buffer for 600x448 display - **Fast Uploads** - Progress
+  tracking and efficient transfer ## \U0001F6E0️ Hardware Requirements ### Required
+  Components - **ESP32 Development Board** (any variant with SPI support) - **Waveshare
+  5.65\" 7-Color E-Paper Display** (600x448 pixels) - Model: GDEP0565D90 - Colors:
+  Black, White, Red, Green, Blue, Yellow, Orange ### Pin Connections | ESP32 Pin |
+  Display Pin | Function | |-----------|-------------|----------| | GPIO 4 | BUSY
+  | Busy Signal | | GPIO 5 | CS | Chip Select | | GPIO 16 | RST | Reset | | GPIO 17
+  | DC | Data/Command | | GPIO 18 | CLK | SPI Clock (SCK) | | GPIO 23 | DIN | SPI
+  MOSI (Data in) | | 3.3V | VCC | Power | | GND | GND | Ground | > **Note:** Modify
+  pin assignments in `display_config.h` if using different wiring. ## \U0001F4E6 Installation
+  ### Prerequisites Install the following libraries through Arduino IDE Library Manager:
+  ``` - GxEPD2 (by Jean-Marc Zingg) - QRCode (by Richard Moore) ``` ### Upload Steps
+  1. **Clone Repository** ```bash git clone https://github.com/9carlo6/E-Paper.git
+  cd E-Paper ``` 2. **Open in Arduino IDE** - Open `E-Paper_Photo_Frame.ino` 3. **Configure
+  Board** - Board: ESP32 Dev Module - Upload Speed: 921600 - Flash Size: 4MB (with
+  SPIFFS) - Partition Scheme: Default 4MB with spiffs 4. **Verify Pin Configuration**
+  - Check `display_config.h` matches your wiring 5. **Upload** - Click Upload and
+  wait for completion ## \U0001F680 Usage ### First Time Setup 1. **Power On** - ESP32
+  boots and displays welcome screen with QR code 2. **Connect to WiFi** - Connect
+  to `E-Paper WiFi` (password: `epaper2025`) 3. **Open Web Interface** - Scan QR code
+  on display ### Uploading Images 1. **Open Web Interface** - Go to `http://[IP-ADDRESS]`
+  2. **Upload Image** - Click or drag image (JPG, PNG, BMP supported) 3. **Crop &
+  Position** - Drag to move image - Use zoom controls or pinch to scale - Click \"Rotate\"
+  to rotate 90° - Select white or black background - Use \"Fit\" to auto-scale, \"Center\"
+  to center image 4. **Choose Algorithm** - Preview all conversion methods and select
+  preferred one 5. **Upload to Display** - Click \"Upload to Display\" and wait for
+  refresh ## \U0001F4C1 Project Structure ``` E-Paper/ ├── E-Paper_Photo_Frame.ino
+  # Main program file ├── display_config.h # Display hardware configuration ├── web_interface.h
+  # Complete web interface (HTML/CSS/JS) └── README.md # This file ``` ## ⚙️ Configuration
+  ### WiFi Settings Default AP credentials (modify in `E-Paper_Photo_Frame.ino`):
+  ```cpp #define AP_SSID \"E-Paper WiFi\" #define AP_PASS \"epaper2025\" ``` ### Display
+  Settings Pin configuration (modify in `display_config.h`): ```cpp #define EPD_CS
+  5 #define EPD_DC 17 #define EPD_RST 16 #define EPD_BUSY 4 ``` ### Image Settings
+  Resolution (modify in `E-Paper_Photo_Frame.ino`): ```cpp #define IMAGE_WIDTH 448
+  #define IMAGE_HEIGHT 600 ``` ## \U0001F527 Troubleshooting ### Display Not Updating
+  - Check pin connections - Verify SPIFFS is initialized (check Serial Monitor) -
+  Ensure image file size is correct (134,400 bytes) ### WiFi Connection Failed - Check
+  SSID and password - Verify signal strength ### Web Interface Not Loading - Confirm
+  correct IP address - Check ESP32 is powered and connected - Try accessing `/config`
+  endpoint ### Upload Errors - Ensure image file is valid format - Check SPIFFS has
+  available space - Verify network connection is stable ## \U0001F3A8 About Dithering
+  Algorithms The web interface offers 5 different algorithms to convert your photos
+  for the 7-color display: - **Floyd-Steinberg**: Best for photographs, provides natural
+  gradient"
 ---
 {% raw %}
 # 🖼️ E-Paper Photo Frame

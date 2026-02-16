@@ -2,8 +2,69 @@
 layout: project
 name: Ad Si Cai
 slug: ad-si-cai
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ad-si-cai/demos/2025-08-15t2052.png
 repo_url: https://github.com/Mozilla-Ocho/llamafile
+indexed_content: "# `cai` - User friendly CLI tool for AI tasks ## Features - High
+  level commands for great usability - `cai value capital of Australia` - `cai image
+  photo of a banana` (OpenAI image generation) - `cai google-image sunset over mountains`
+  (Google Gemini image generation) - `cai ocr page.png` - `pbpaste | cai rewrite 'more
+  professional'` - Check [usage section](./#usage) for all commands - Build with Rust
+  \U0001F980 for supreme performance and speed! \U0001F3CE️ - Support for models by
+  - [Anthropic] - [OpenAI] - [Google] - [Groq] - [Cerebras] - [Deepseek] - [xAI] -
+  Local LLMs via [Ollama] and [Llamafile] - Prompt several models at once. \U0001F93C
+  - Syntax highlighting for better readability of code snippets. \U0001F308 [Anthropic]:
+  https://docs.anthropic.com/en/docs/about-claude/models/all-models [Cerebras]: https://inference-docs.cerebras.ai/introduction
+  [Deepseek]: https://api-docs.deepseek.com/quick_start/pricing [Google]: https://ai.google.dev/gemini-api/docs/models
+  [Groq]: https://console.groq.com/docs/models [Llamafile]: https://github.com/Mozilla-Ocho/llamafile
+  [Ollama]: https://ollama.com [OpenAI]: https://platform.openai.com/docs/models [xAI]:
+  https://x.ai/api#pricing ## Installation ```sh $ cargo install cai ``` or install
+  via [Homebrew](https://brew.sh/): ```sh $ brew install cai ``` ## Usage Before using
+  Cai, an API key must be set up. Simply execute `cai` in your terminal and follow
+  the instructions. Cai supports the following APIs: - **Groq** - [Create new API
+  key](https://console.groq.com/keys). - **OpenAI** - [Create new API key](https://platform.openai.com/api-keys).
+  - **Anthropic** - [Create new API key](https://console.anthropic.com/settings/keys).
+  - **Llamafile** - Local [Llamafile] server running at http://localhost:8080. - **Ollama**
+  - Local [Ollama] server running at http://localhost:11434. Afterwards, you can use
+  `cai` to run prompts directly from the terminal: ```sh cai List 10 fast CLI tools
+  ``` Or a specific model, like Anthropic's Claude Opus: ```sh cai opus list 10 fast
+  CLI tools ``` Full help output: ```txt $ cai help Cai 0.12.0 User friendly CLI tool
+  for AI tasks Usage: cai [OPTIONS] [PROMPT]... [COMMAND] Commands: fast Shortcut
+  for `groq openai/gpt-oss-20b` local Shortcut for `ollama llama3.2` value Return
+  only the value/answer without explanations short Answer the prompt in a short, compact,
+  and focused manner rewrite Fix spelling, grammar, and wording issues in text passed
+  via standard input reply Reply to a conversation passed via standard input. Add
+  additional reply instructions as the prompt image Generate an image using GPT-image-1.5
+  [aliases: img] photo Generate a photorealistic image that looks like a camera photo
+  say Convert text to speech using OpenAI's TTS model [aliases: tts] transcribe Transcribe
+  an audio file ocr Extract text from an image google-ocr Extract text from an image
+  using Google Gemini with high resolution [aliases: gocr] rename Analyze and rename
+  files to timestamp + title (e.g. 2025-08-19t2041_invoice_car.pdf) changelog Generate
+  a changelog starting from a given commit commit Commit modified files with AI-generated
+  commit messages and group related changes into separate commits svg Generate an
+  SVG graphic from a textual description edit Open your editor to write the prompt
+  config Print the configuration settings loaded from the config file   \U0001F4DA
+  MODELS all Simultaneously send prompt to each provider's default model google Google
+  [aliases: go] gemini - Gemini Pro shortcut [aliases: ge] flash - Gemini Flash shortcut
+  [aliases: gf] google-image - Google Gemini Image shortcut [aliases: gimg] groq Groq
+  [aliases: gr] llama - Llama 3 shortcut [aliases: ll] cerebras Cerebras [aliases:
+  ce] deepseek DeepSeek [aliases: ds] openai OpenAI [aliases: op] gpt5 - GPT-5 shortcut
+  [aliases: gpt, gp] gpt5m - GPT-5 mini shortcut [aliases: gm] gpt5n - GPT-5 nano
+  shortcut [aliases: gn] gpt41 - gpt-4.1 shortcut gpt41m - gpt-4.1-mini shortcut gpt41n
+  - gpt-4.1-nano shortcut o1p - o1-pro shortcut anthropic Anthropic [aliases: an]
+  opus - Claude Opus [aliases: claude, cl] sonnet - Claude Sonnet [aliases: so] haiku
+  - Claude Haiku [aliases: ha] xai xAI grok - Grok perplexity Perplexity [aliases:
+  pe] son - Sonar sonpro - Sonar Pro [aliases: sp] sonreas - Sonar Reasoning [aliases:
+  sr] sonreaspro - Sonar Reasoning Pro [aliases: srp] sondeep - Sonar Deep Research
+  [aliases: sdr] llamafile Llamafile server hosted at http://localhost:8080 [aliases:
+  lf] ollama Ollama server hosted at http://localhost:11434 [aliases: ol]    \U0001F4BB
+  CODING bash Use Bash development as the prompt context c Use C development as the
+  prompt context cpp Use C++ development as the prompt context cs Use C# development
+  as the prompt context docker Use Docker development as the prompt context elm Use
+  Elm development as the prompt context fish Use Fish development as the prompt context
+  fs Use F# development as the prompt context gd Use Godot and GDScript development
+  as the prompt context git Use Git development as the prompt context gl Use Gleam
+  development as the"
 ---
 {% raw %}
 # `cai` - User friendly CLI tool for AI tasks

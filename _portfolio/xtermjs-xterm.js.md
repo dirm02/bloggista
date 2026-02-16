@@ -2,8 +2,59 @@
 layout: project
 name: Xtermjs Xterm.js
 slug: xtermjs-xterm.js
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/xtermjs-xterm.js/images/logo-full.png
 repo_url: https://github.com/microsoft/node-pty).
+indexed_content: "# [](https://xtermjs.org) Xterm.js is a frontend component that
+  enables applications to bring fully-featured terminals to their users in the browser.
+  It's used by popular projects such as [VS Code](https://code.visualstudio.com/)
+  (and its forks), [Tabby](https://tabby.sh/) and [Hyper](https://hyper.is/). ## Features
+  - **Terminal apps just work**: Xterm.js works with most terminal apps such as `bash`,
+  `vim`, and `tmux`, including support for curses-based apps and mouse events. - **Performant**:
+  Xterm.js is *really* fast and includes an optional GPU-accelerated renderer. - **Rich
+  Unicode support**: Supports CJK, emojis, and IMEs. - **Self-contained**: The core
+  library has zero dependencies. - **Accessible**: Screen reader mode and minimum
+  contrast ratio support can be turned on. - **And much more**: Links, theming, custom
+  glyphs, addons, well documented API, etc. ## What xterm.js is not - Xterm.js is
+  not a terminal application that you can download and use on your computer. - Xterm.js
+  is not `bash`. Xterm.js can be connected to processes like `bash` and let you interact
+  with them (provide input, receive output) through a library like [node-pty](https://github.com/microsoft/node-pty).
+  ## Getting Started First, you need to install the module. We ship exclusively through
+  [npm](https://www.npmjs.com), so you need that installed and then add [@xterm/xterm](https://www.npmjs.com/package/@xterm/xterm)
+  as a dependency by running: ```bash npm install --save @xterm/xterm ``` To start
+  using xterm.js on your browser, add the `xterm.js` and `xterm.css` to the head of
+  your HTML page. Then create a ` ` onto which xterm can attach itself. Finally, instantiate
+  the `Terminal` object and then call the `open` function with the DOM object of the
+  `div`. ```html var term = new Terminal(); term.open(document.getElementById('terminal'));
+  term.write('Hello from \\x1B[1;3;31mxterm.js\\x1B[0m $ ') ``` ### Importing The
+  recommended way to load xterm.js is via the ES6 module syntax: ```javascript import
+  { Terminal } from '@xterm/xterm'; ``` ### Addons Addons are separate modules that
+  extend the `Terminal` by building on the [xterm.js API](https://github.com/xtermjs/xterm.js/blob/master/typings/xterm.d.ts).
+  To use an addon, you first need to install it in your project: ```bash npm install
+  --save @xterm/addon-web-links ``` Then import the addon, instantiate it and call
+  `Terminal.loadAddon`: ```ts import { Terminal } from '@xterm/xterm'; import { WebLinksAddon
+  } from '@xterm/addon-web-links'; const terminal = new Terminal(); // Load WebLinksAddon
+  on terminal, this is all that's needed to get web links // working in the terminal.
+  terminal.loadAddon(new WebLinksAddon()); ``` The xterm.js team maintains the following
+  addons, but anyone can build them: - [`@xterm/addon-attach`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-attach):
+  Attaches to a server running a process via a websocket - [`@xterm/addon-clipboard`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-clipboard):
+  Access the browser's clipboard - [`@xterm/addon-fit`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-fit):
+  Fits the terminal to the containing element - [`@xterm/addon-image`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-image):
+  Adds image support - [`@xterm/addon-ligatures`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-ligatures):
+  Enables rendering of ligatures - [`@xterm/addon-progress`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-progress):
+  Adds support for the progress API (`OSC 9;4`) - [`@xterm/addon-search`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-search):
+  Adds search functionality - [`@xterm/addon-serialize`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-serialize):
+  Serializes the terminal's buffer to VT sequences or HTML - [`@xterm/addon-unicode-graphemes`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-unicode-graphemes):
+  Enhanced unicode support including grapheme clustering (experimental) - [`@xterm/addon-unicode11`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-unicode11):
+  Updates character widths to their unicode11 values - [`@xterm/addon-web-fonts`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-web-fonts):
+  Easily integrate web fonts - [`@xterm/addon-web-links`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-web-links):
+  Adds web link detection and interaction - [`@xterm/addon-webgl`](https://github.com/xtermjs/xterm.js/tree/master/addons/addon-webgl):
+  Renders xterm.js using a `canvas` element's webgl2 context ## Browser Support Since
+  xterm.js is typically implemented as a developer tool, generally only modern evergreen
+  browsers are supported officially. Specifically the latest versions of *Chrome*,
+  *Edge*, *Firefox*, and *Safari*. Xterm.js also works seamlessly in [Electron](https://electronjs.org/)
+  apps and may even work on earlier versions of the browsers. These are the versions
+  we "
 ---
 {% raw %}
 # [![xterm.js](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/xtermjs-xterm.js/images/logo-full.png)](https://xtermjs.org)

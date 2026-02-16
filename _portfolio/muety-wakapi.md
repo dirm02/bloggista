@@ -2,8 +2,66 @@
 layout: project
 name: Muety Wakapi
 slug: muety-wakapi
+category: database-backend baas
 image: https://grafana.com/api/dashboards/12790/images/8741/image
 repo_url: https://github.com/muety/wakapi
+indexed_content: "A minimalist, self-hosted WakaTime-compatible backend for coding
+  statistics. Website | Features | How to use | Issues | Contact > [!IMPORTANT] >
+  Upvote Wakapi on [AlternativeTo](https://alternativeto.net/software/wakapi/about/)
+  and [ProductHunt](https://www.producthunt.com/posts/wakapi-coding-statistics) to
+  support the project \U0001F308. ## \U0001F680 Features * ✅ Free and open-source
+  * ✅ Built by developers for developers * ✅ Statistics for projects, languages, editors,
+  hosts and operating systems * ✅ Badges * ✅ Weekly E-Mail reports * ✅ REST API *
+  ✅ Partially compatible with WakaTime * ✅ WakaTime integration * ✅ Support for Prometheus
+  exports * ✅ Lightning fast * ✅ Self-hosted ## ⌨️ How to use? There are different
+  options for how to use Wakapi, ranging from our hosted cloud service to self-hosting
+  it. Regardless of which option choose, you will always have to do the [client setup](#-client-setup)
+  in addition. ### ☁️ Option 1: Use [wakapi.dev](https://wakapi.dev) If you want to
+  try out a free, hosted cloud service, all you need to do is create an account and
+  then set up your client-side tooling (see below). ### \U0001F4E6 Option 2: Quick-run
+  a release ```bash $ curl -L https://wakapi.dev/get | bash ``` ### \U0001F433 Option
+  3: Use Docker ```bash # Create a persistent volume $ docker volume create wakapi-data
+  $ SALT=\"$(cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head
+  -n 1)\" # Run the container $ docker run -d \\ --init \\ -p 3000:3000 \\ -e \"WAKAPI_PASSWORD_SALT=$SALT\"
+  \\ -v wakapi-data:/data \\ --name wakapi \\ --restart unless-stopped \\ ghcr.io/muety/wakapi:latest
+  ``` **Note:** By default, SQLite is used as a database. To run Wakapi in Docker
+  with MySQL or Postgres, see [Dockerfile](https://github.com/muety/wakapi/blob/master/Dockerfile)
+  and [config.default.yml](https://github.com/muety/wakapi/blob/master/config.default.yml)
+  for further options. If you want to run Wakapi on **Kubernetes**, there is [wakapi-helm-chart](https://github.com/ricristian/wakapi-helm-chart)
+  for quick and easy deployment. #### Docker Compose Alternatively, you can use Docker
+  Compose for an even more straightforward deployment. See [compose.yml](https://github.com/muety/wakapi/blob/master/compose.yml)
+  for configuration details. Wakapi supports [Docker Secrets](https://docs.docker.com/compose/how-tos/use-secrets/)
+  for the following variables: `WAKAPI_PASSWORD_SALT`, `WAKAPI_DB_PASSWORD`, `WAKAPI_MAIL_SMTP_PASS`.
+  You can set these either by having them mounted as a secret file, or directly pass
+  them as environment variables. ##### Example ```bash export WAKAPI_PASSWORD_SALT=changeme
+  export WAKAPI_DB_PASSWORD=changeme export WAKAPI_MAIL_SMTP_PASS=changeme docker
+  compose up -d ``` If you prefer to persist data in a local directory while using
+  SQLite as the database, make sure to set the correct `user` option in the Docker
+  Compose configuration to avoid permission issues. ### \U0001F9D1‍\U0001F4BB Option
+  4: Compile and run from source ```bash # Build and install # Alternatively: go build
+  -o wakapi $ go install github.com/muety/wakapi@latest # Get default config and customize
+  $ curl -o wakapi.yml https://raw.githubusercontent.com/muety/wakapi/master/config.default.yml
+  $ vi wakapi.yml # Run it $ ./wakapi -config wakapi.yml ``` **Note:** Check the comments
+  in `config.yml` for best practices regarding security configuration and more. \U0001F4A1
+  When running Wakapi standalone (without Docker), it is recommended to run it as
+  a [SystemD service](etc/wakapi.service). ### \U0001F4BB Client setup Wakapi relies
+  on the open-source [WakaTime](https://github.com/wakatime/wakatime-cli) client tools.
+  In order to collect statistics for Wakapi, you need to set them up. 1. **Set up
+  WakaTime** for your specific IDE or editor. Please refer to the respective [plugin
+  guide](https://wakatime.com/plugins) 2. **Edit your local `~/.wakatime.cfg`** file
+  as follows. ```ini [settings] # Your Wakapi server URL or 'https://wakapi.dev/api'
+  when using the cloud server api_url = http://localhost:3000/api # Your Wakapi API
+  key (get it from the web interface after having created an account) api_key = 406fe41f-6d69-4183-a4cc-121e0c524c2b
+  ``` Optionally, you can set up a [client-side proxy](https://github.com/muety/wakapi/wiki/Advanced-Setup:-Client-side-proxy)
+  in addition. #### WakaTime integration You can use WakaTime and Wakapi in parallel,
+  that is, have your coding activity tracked in both systems. This can be configured
+  either on the **client-side (preferred)** on a system-wide- or per-project basis
+  or using Wakapi's **relay** functionality (__Settings → Integrations__) to forward
+  heartbeats to WakaTime. **Example:** ```ini [settings] api_key = defaults-to-this-api-key-when-not-defined-below
+  [api_urls] .* = https://wakapi.dev/api|wakapi-api-key .* = https://api.wakatime.com/api/v1|waka-api-key
+  ``` See [wakatime-cli usage](https://github.com/wakatime/wakatime-cli/blob/develop/USAGE.md#api-urls-section)
+  for details. ## \U0001F527 Configuration options You can specify configuration options
+  either via a config file (default: `config.y"
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,61 @@
 layout: project
 name: Ant Design Ant Design
 slug: ant-design-ant-design
+category: Uncategorized
 image: https://opencollective.com/ant-design/tiers/sponsors/badge.svg?label=Sponsors&color=brightgreen
 repo_url: https://github.com/ant-design/ant-design
+indexed_content: "Ant Design An enterprise-class UI design language and React UI library.
+  [![CI status][github-action-image]][github-action-url] [![codecov][codecov-image]][codecov-url]
+  [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
+  [![][bundlephobia-image]][bundlephobia-url] [![][jsdelivr-image]][jsdelivr-url]
+  [![Follow Twitter][twitter-image]][twitter-url] [![dumi][dumi-image]][dumi-url]
+  [![FOSSA Status][fossa-image]][fossa-url] [![Issues need help][help-wanted-image]][help-wanted-url]
+  [![LFX Active Contributors][lfx-image]][lfx-url] [Changelog](./CHANGELOG.en-US.md)
+  · [Report Bug][github-issues-url] · [Request Feature][github-issues-url] · English
+  · [中文](./README-zh_CN.md) ## ❤️ Sponsors [](https://opencollective.com/ant-design/contribute/sponsors-218)
+  [](https://tractian.com) [](https://lobehub.com/) [npm-image]: https://img.shields.io/npm/v/antd.svg?style=flat-square
+  [npm-url]: https://npmjs.org/package/antd [github-action-image]: https://github.com/ant-design/ant-design/actions/workflows/test.yml/badge.svg
+  [github-action-url]: https://github.com/ant-design/ant-design/actions/workflows/test.yml
+  [codecov-image]: https://img.shields.io/codecov/c/github/ant-design/ant-design/master.svg?style=flat-square
+  [codecov-url]: https://codecov.io/gh/ant-design/ant-design/branch/master [download-image]:
+  https://img.shields.io/npm/dm/antd.svg?style=flat-square [download-url]: https://npmjs.org/package/antd
+  [fossa-image]: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fant-design%2Fant-design.svg?type=shield
+  [fossa-url]: https://app.fossa.io/projects/git%2Bgithub.com%2Fant-design%2Fant-design?ref=badge_shield
+  [help-wanted-image]: https://img.shields.io/github/issues/ant-design/ant-design/help%20wanted?color=green&style=flat-square
+  [help-wanted-url]: https://github.com/ant-design/ant-design/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22
+  [twitter-image]: https://img.shields.io/twitter/follow/AntDesignUI.svg?label=Ant%20Design
+  [twitter-url]: https://twitter.com/AntDesignUI [jsdelivr-image]: https://data.jsdelivr.com/v1/package/npm/antd/badge
+  [jsdelivr-url]: https://www.jsdelivr.com/package/npm/antd [bundlephobia-image]:
+  https://img.shields.io/bundlephobia/minzip/antd?style=flat-square [bundlephobia-url]:
+  https://bundlephobia.com/package/antd [dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
+  [dumi-url]: https://github.com/umijs/dumi [github-issues-url]: https://new-issue.ant.design
+  [lfx-image]: https://insights.linuxfoundation.org/api/badge/active-contributors?project=ant-design-ant-design&repos=https://github.com/ant-design/ant-design
+  [lfx-url]: https://insights.linuxfoundation.org/project/ant-design-ant-design/repository/ant-design-ant-design
+  [](https://ant.design) ## ✨ Features - \U0001F308 Enterprise-class UI designed for
+  web applications. - \U0001F4E6 A set of high-quality React components out of the
+  box. - \U0001F6E1 Written in TypeScript with predictable static types. - ⚙️ Whole
+  package of design resources and development tools. - \U0001F30D Internationalization
+  support for dozens of languages. - \U0001F3A8 Powerful theme customization based
+  on CSS-in-JS. ## \U0001F5A5 Environment Support - Modern browsers - Server-side
+  Rendering - [Electron](https://www.electronjs.org/) | [ ](https://godban.github.io/browsers-support-badges/)
+  Edge | [ ](https://godban.github.io/browsers-support-badges/) Firefox | [ ](https://godban.github.io/browsers-support-badges/)
+  Chrome | [ ](https://godban.github.io/browsers-support-badges/) Safari | [ ](https://godban.github.io/browsers-support-badges/)
+  Electron | | --- | --- | --- | --- | --- | | Edge | last 2 versions | last 2 versions
+  | last 2 versions | last 2 versions | ## \U0001F4E6 Install ```bash npm install
+  antd ``` ```bash yarn add antd ``` ```bash pnpm add antd ``` ```bash bun add antd
+  ``` ## \U0001F528 Usage ```tsx import { Button, DatePicker } from 'antd'; export
+  default () => ( <> PRESS ME ); ``` ## \U0001F517 Links - [Home page](https://ant.design/)
+  - [Components Overview](https://ant.design/components/overview) - [Sponsor](https://ant.design/docs/react/sponsor)
+  - [Change Log](CHANGELOG.en-US.md) - [rc-components](https://react-component.github.io/)
+  - [\U0001F195 Ant Design X](https://x.ant.design/index-cn) - [Ant Design Pro](https://pro.ant.design/)
+  - [Pro Components](https://procomponents.ant.design) - [Ant Design Mobile](https://mobile.ant.design)
+  - [Ant Design Mini](https://mini.ant.design) - [Ant Design Charts](https://charts.ant.design)
+  - [Ant Design Web3](https://web3.ant.design) - [Landing Pages](https://landing.ant.design)
+  - [Ant Motion](https://motion.ant.design) - [Scaffold Market](https://scaffold.ant.design)
+  - [Developer Instruction](https://github.com/ant-design/ant-design/wiki/Development)
+  - [Versioning Release Note](https://github.com/ant-design/ant-design/wiki/%E8%BD%AE%E5%80%BC%E8%A7%84%E5%88%99%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B)
+  - [FAQ](https://ant.design/docs/react/faq) - [Online Playground](https://u.ant.design/reproduce)
+  for bug reports - [Customize "
 ---
 {% raw %}
 <div align="center"><a name="readme-top"></a>

@@ -2,8 +2,66 @@
 layout: project
 name: Crbnos Carbon
 slug: crbnos-carbon
+category: Platform -eCommerce
 image: https://github.com/user-attachments/assets/2e09b891-d5e2-4f68-b924-a1c8ea42d24d
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'The operating system for manufacturing Discord · Website · Documentation
+  ## Does the world need another ERP? We built Carbon after years of building end-to-end
+  manufacturing systems with off-the-shelf solutions. We realized that: - Modern,
+  API-first tooling didn''t exist - Vendor lock-in bordered on extortion - There is
+  no "perfect ERP" because each company is unique We built Carbon to solve these problems
+  ☝️ ## Architecture Carbon is designed to make it easy for you to extend the platform
+  by building your own apps through our API. We provide some examples to get you started
+  in the [examples](https://github.com/crbnos/carbon/blob/main/examples) folder. Features:
+  - [x] ERP - [x] MES - [x] QMS - [x] Custom Fields - [x] Nested BoM - [x] Traceability
+  - [x] MRP - [x] Configurator - [x] MCP Client/Server - [x] API - [x] Webhooks -
+  [ ] Accounting - [ ] Capacity Planning - [ ] Simulation - [ ] [Full Roadmap](https://github.com/orgs/crbnos/projects/1/views/1)
+  Technical highlights: - [x] Unified auth and permissions across apps - [x] Full-stack
+  type safety (Database → UI) - [x] Realtime database subscriptions - [x] Attribute-based
+  access control (ABAC) - [x] Role-based access control (Customer, Supplier, Employee)
+  - [x] Row-level security (RLS) - [x] Composable user groups - [x] Dependency graph
+  for operations - [x] Third-party integrations ## Techstack - [React Router](https://reactrouter.com)
+  – framework - [Typescript](https://www.typescriptlang.org/) – language - [Tailwind](https://tailwindcss.com)
+  – styling - [Radix UI](https://radix-ui.com) - behavior - [Supabase](https://supabase.com)
+  - database - [Supabase](https://supabase.com) – auth - [Upstash](https://upstash.com)
+  - cache - [Trigger](https://trigger.dev) - jobs - [Resend](https://resend.com) –
+  email - [Novu](https://novu.co) – notifications - [Vercel](https://vercel.com) –
+  hosting - [Stripe](https://stripe.com) - billing ## Codebase The monorepo follows
+  the Turborepo convention of grouping packages into one of two folders. 1. `/apps`
+  for applications 2. `/packages` for shared code ### `/apps` | Package Name | Description
+  | Local Command | | ------------ | --------------- | --------------------- | | `erp`
+  | ERP Application | `npm run dev` | | `mes` | MES | `npm run dev:mes` | | `academy`
+  | Academy | `npm run dev:academy` | | `starter` | Starter | `npm run dev:starter`
+  | ### `/packages` | Package Name | Description | | ------------------- | -----------------------------------------------------------------------
+  | | `@carbon/database` | Database schema, migrations and types | | `@carbon/documents`
+  | Transactional PDFs and email templates | | `@carbon/ee` | Integration definitions
+  and configurations | | `@carbon/jest` | Jest preset configuration shared across
+  apps and packages | | `@carbon/jobs` | Background jobs and workers | | `@carbon/logger`
+  | Shared logger used across apps | | `@carbon/react` | Shared web-based UI components
+  | | `@carbon/kv` | Redis cache client | | `@carbon/lib` | Third-party client libraries
+  (slack, resend) | | `@carbon/stripe` | Stripe integration | | `@carbon/tsconfig`
+  | Shared, extendable tsconfig configuration used across apps and packages | | `@carbon/utils`
+  | Shared utility functions used across apps and packages | ## Development ### Setup
+  1. Clone the repo into a public GitHub repository (or fork https://github.com/crbnos/carbon/fork).
+  If want to make the repo private, you should [acquire a commercial license](https://carbon.ms/sales)
+  to comply with the AGPL license. ```sh git clone https://github.com/crbnos/carbon.git
+  ``` 2. Go to the project folder ```sh cd carbon ``` Make sure that you have [Docker
+  installed](https://docs.docker.com/desktop/install/mac-install/) on your system
+  since this monorepo uses the Docker for local development. In addition you must
+  configure the following external services: | Service | Purpose | URL | | -----------
+  | -------------------------- | ----------------------------------------------------------------------
+  | | Upstash | Serverless Redis | [https://console.upstash.com/login](https://console.upstash.com/login)
+  | | Trigger.dev | Job runner | [https://cloud.trigger.dev/login](https://cloud.trigger.dev/login)
+  | | Posthog | Product analytics platform | [https://us.posthog.com/signup](https://us.posthog.com/signup)
+  | Each of these services has a free tier which should be plenty to support local
+  development. If you''re self hosting, and you don''t want to use Upstash or Posthog,
+  it''s pretty easy to replace upstash with a redis container in `@carbon/kv` and
+  remove the Posthog analytics. ### Installation First download and initialize the
+  repository dependencies. ```bash $ nvm use # use node v20 $ npm install # install
+  dependencies $ npm run db:start # pull and run the containers ``` Create an `.env`
+  file and copy the contents of `.env.example` file into it ```bash $ cp ./.env.example
+  ./.env ``` 1. Use the output of `npm run db:start` to set the supabase entries:
+  - `SUPABASE_SERVICE_ROLE_KEY=[service_role ke'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,69 @@
 layout: project
 name: Ardoviniandrea Viniplay
 slug: ardoviniandrea-ViniPlay
+category: Entertainment tools
 image: https://github.com/ardoviniandrea/ViniPlay/blob/main/images/viniplay-main%20ux-min.gif
 repo_url: https://github.com/ardoviniandrea/ViniPlay
+indexed_content: "# ViniPlay **A powerful, self-hosted IPTV player with a modern web
+  interface.** Stream your M3U playlists with EPG data, manage users, cast to your
+  TV, and watch multiple channels at once. Join my discord to talk with the community.
+  --- ViniPlay transforms your M3U and EPG files into a polished, high-performance
+  streaming experience. It's a full-featured IPTV solution that runs in a Docker container,
+  providing a robust Node.js backend to handle streams and a sleek, responsive frontend
+  for an exceptional user experience. The server-side backend resolves common CORS
+  and browser compatibility issues by proxying or transcoding streams with FFMPEG,
+  while the feature-rich frontend provides a user experience comparable to premium
+  IPTV services. ### Main User Interface Flow ### Feature Snapshots | TV Guide Page
+  | Multi-View Page | Direct Player | | :---: | :---: | :---: | | | [View Animation](https://github.com/ardoviniandrea/ViniPlay/blob/main/images/multiview.gif)
+  | | | DVR & Recording | Admin Activity Monitoring | Push Notifications | | :---:
+  | :---: | :---: | | [View Animation](https://github.com/ardoviniandrea/ViniPlay/blob/main/images/DVR.gif)
+  | | [View Animation](https://github.com/ardoviniandrea/ViniPlay/blob/main/images/notification.gif)
+  | | Powerful Settings | Responsive Mobile View | Favorite Manager | | :---: | :---:
+  | :---: | | | | [View Animation](https://github.com/ardoviniandrea/ViniPlay/blob/main/images/Favorites.gif)
+  | --- ## ✨ Features - \U0001F464 **Multi-User Management**: Secure the application
+  with a dedicated admin account. Create, edit, and manage standard user accounts.
+  - \U0001F4FA **Modern TV Guide**: A high-performance, virtualized EPG grid that
+  handles thousands of channels and programs smoothly. Features include advanced search,
+  channel favoriting, and a \"Recents\" category. - \U0001F5BC️ **Multi-View**: Drag,
+  drop, and resize players on a grid to watch multiple streams simultaneously. Save
+  and load custom layouts. \"Immersive view\" will hide all UI elements and only leave
+  the players on the page to maximize the watching experience. - \U0001F6DC **Chromecast
+  Support**: Cast your streams directly to any Google Cast-enabled device on your
+  network. (This will only work if your source signal is strong and correctly passed
+  without package missing, due to Cast framework) - \U0001F514 **Push Notifications**:
+  Set reminders for upcoming programs and receive push notifications in your browser,
+  even when the app is closed. - ⚙️ **Powerful Transcoding - even with GPUs**: The
+  backend uses FFMPEG to process streams, ensuring compatibility across all modern
+  browsers and devices. Create custom stream profiles to tailor transcoding settings.
+  GPU transcoding supported. (Nvidia, InterlQSV and Vaapi) - \U0001F4C2 **Flexible
+  Source Management**: Add M3U and EPG sources from either local files, XC code and
+  remote URLs. Set automatic refresh intervals for URL-based sources to keep your
+  guide data fresh. - \U0001F680 **High Performance UI**: The frontend is built with
+  performance in mind, using UI virtualization for the guide and efficient state management
+  to ensure a fast and responsive experience. - \U0001F433 **Dockerized Deployment**:
+  The entire application is packaged in a single Docker container for simple, one-command
+  deployment using Docker or Docker Compose. - ▶️ **Picture-in-Picture**: Pop out
+  the player to keep watching while you work on other things. - \U0001F3A5 **DVR**:
+  Record programs using FFMPEG. Schedule recording via the TV Guide, or set specific
+  channels and time with ease. - \U0001F4FD️ **Single player**: Play .m3u8 and .ts
+  links directly from the browser, with detailed console logs and recorded history
+  - \U0001F465 **Admin monitoring page**: Monitor users watch stream in real time,
+  store historical plays, and broadcast messages to all users. - \U0001F4FA **VODs
+  support**: Play your VODs from your provider, divided cleanly in the UI with a scalable
+  grid, with filters and tabs for Movies and Series (IMPORTANT: this only workd with
+  XC API log in) --- ## \U0001F680 Getting Started ViniPlay is designed for easy deployment
+  using Docker. ### Prerequisites - Docker - Docker Compose (Recommended) ### Method
+  1: Using `docker-compose` (Recommended) 1. **Create Project Files:** Create a directory
+  for your ViniPlay setup and add a `docker-compose.yml` and a `.env` file. - `docker-compose.yml`:
+  ``` version: \"3.8\" services: viniplay: image: ardovini/viniplay:latest container_name:
+  viniplay ports: - \"8998:8998\" restart: unless-stopped volumes: - ./viniplay-data:/data
+  env_file: - ./.env ``` - `.env`: ``` # Replace this with a long, random, and secret
+  string SESSION_SECRET=your_super_secret_session_key_here ``` > **Security Note:**
+  Your `SESSION_SECRET` should be a long, random string to properly secure user sessions.
+  2. **Build and Run the Container:** ``` docker-compose up --build -d ``` ### Method
+  2: Using `docker` 1. **Build the Image:** ``` docker build -t viniplay . ``` 2.
+  **Run the Container:** Create a volume directory (`mkdir viniplay-data`) and a `.env`
+  file first. Then run the container: ``` docker run -d \\ -p"
 ---
 {% raw %}
 <div align="center">

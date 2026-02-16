@@ -2,8 +2,69 @@
 layout: project
 name: Mathworks Robotics Awesome Matlab Robotics
 slug: mathworks-robotics-awesome-matlab-robotics
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/mathworks-robotics-awesome-matlab-robotics/images/ground.png
 repo_url: https://github.com/mathworks-robotics/Offroad-Navigation-for-Autonomous-Haul-Trucks
+indexed_content: "# Awesome MATLAB and Simulink Robotics This is a list of awesome
+  demos, tutorials, utilities and overall resources for the robotics community that
+  use MATLAB&reg; and Simulink&reg;. For more information and to get your projects
+  included in this list, reach out to - [**By Applications Areas**](#by-applications-areas)
+  * [Ground Vehicles and Mobile Robotics](#ground-vehicles-and-mobile-robotics) *
+  [Manipulation](#manipulation) * [Legged Locomotion](#legged-locomotion) * [Robot
+  Modeling](#robot-modeling) * [Perception](#perception) * [Mapping, Localization
+  and SLAM](#mapping--localization-and-slam) * [Motion Planning and Path Planning](#motion-planning-and-path-planning)
+  * [Motion Control](#motion-control) * [Unmanned Aerial Vehicles (UAV)](#unmanned-aerial-vehicles--uav-)
+  * [Marine Robotics & AUV](#marine-robotics--auv) * [Automated Driving](#automated-driving)
+  - [**By Common Tools**](#by-common-tools) * [Simulators](#simulators) * [ROS and
+  Middleware](#ros-and-middleware) * [Hardware and Connectivity](#hardware-and-connectivity)
+  - [**By Relevant MATLAB Toolboxes**](#by-relevant-matlab-toolboxes) v # By Applications
+  Areas ## Ground Vehicles and Mobile Robotics Off-Road Navigation for Autonomous
+  Vehicles Sprayer-Equipped Tractor Navigation in Vineyard in Unreal Engine Developing
+  Navigation Stacks for Mobile Robots and UGV Kinematic motion models for simulation
+  Control and simulation of warehouse robots Simulation and programming of robot swarm
+  (Video) Mapping, Localization and SLAM ( See Section Below ) Motion Planning and
+  Path Planning ( See Section Below ) Mobile Robotics Simulation Toolbox ( Video )
+  Robotics Playground (Robotics Education - Video ) ## Manipulation Tools for rigid
+  body tree dynamics and analysis Inverse Kinematics ( Blog and GitHub Repo ) Inverse
+  kinematics with spatial constraints Interactive Inverse Kinematics Collision checking
+  ( Self-Collisions ) Trajectory Generation ( Blog , GitHub Repo ) Safe trajectory
+  planning (Impedance based control) Pick and place workflows ( Using Gazebo ) Learning
+  Dual Quaternion Modeling and Control for Manipulators(GitHub) ## Legged Locomotion
+  Modeling and simulation of walking robots ( GitHub Repo ) Pattern Generation for
+  Walking Robots (Video) Linear Inverted Pendulum Model (LIPM)for humanoid walking
+  (Video) Deep Reinforcement Learning for Walking Robots (Video) Modeling of quadruped
+  robot running (Files) Quadruped Robot Locomotion Using DDPG Agent ## Robot Modeling
+  Simscape&trade; Tools for Modeling and Simulation of Physical Systems Simulate Manipulator
+  Actuators and Tune Control Parameters Algorithm Verification Using Robot Models
+  Import Robots to MATLAB from URDF Files Import Robots from CAD and URDF Files ##
+  Perception AI for Computer Vision Lidar and 3D Point Cloud Processing 3D Object
+  Detection with Point Clouds 3D Vision and Stereo Vision Feature Detection, Extraction,
+  and Matching Object Tracking and Motion Estimation Orientation Estimation from Inertial
+  Sensors Drift Reduction for Visual Odometry ## Mapping, Localization and SLAM 2D
+  Lidar SLAM Implementations ( Offline , Online ) 3D Lidar SLAM Implementation SLAM
+  Map Builder Application Occupancy Grid Utilities Monte Carlo Localization Ego-Centric
+  (Near Field) Occupancy Maps ## Motion Planning and Path Planning Motion Planners
+  (RRT, PRM, Hybrid A*) RRT Planners for Manipulators RRT Planners for Mobile Robots
+  Path Planning Using Probabilistic Road Maps Path Following with Obstacle Avoidance
+  Dynamic Re-planning of Paths Choosing Path Planning Algorithms ## Motion Control
+  Obstacle Avoidance for Mobile Robots Using Reinforcement Learning Deep Reinforcement
+  Learning for Walking Robots (Video) Model Predictive Control for collision-free
+  manipulation trajectories Model Predictive Control for holonomic robot navigation
+  Multi-Loop PI Control Tuning for Robotic Arm Actuators ## Unmanned Aerial Vehicles
+  (UAV) Simulation Library for Fixed-Wing and Multi-Rotor UAVs Tune Waypoint Follower
+  for Fixed-Wing UAV Approximate High-Fidelity UAV models Load and Playback MAVLink
+  TLOG Use a MAVLink Parameter Protocol for Tuning UAV Parameters in MATLAB Support
+  for Parrot Drones Support for PX4 Autopilots ## Marine Robotics & AUV AUV Development
+  with MATLAB and Simulink ( Webinar , Videos , GitHub ) Estimating Direction of Arrival
+  for AUV’s System Identification for Blue Robotics Thrusters LQR Control of an AUV
+  Dynamics and Control of AUV’s ( GitHub Repo ) Modeling Robotic Boats in Simulink
+  Controller Design for Autonomous Boats ## Automated Driving Lane Following Control
+  with Sensor Fusion and Lane Detection Automate Ground Truth Labeling for Semantic
+  Segmentation Track Vehicles Using Lidar: From Point Cloud to Track List Track-Level
+  Fusion of Radar and Lidar Data Visualize Automated Parking Valet Using 3D Simulation
+  Design Lidar SLAM Algorithm Using 3D Simulation Environment Implementing an Adaptive
+  Cruise Controller with Simulink # By Common Tools ## Simulators ROS \x96 Based Simulators
+  ( See Section Below ) Gazebo Co-Simul"
 ---
 {% raw %}
 # Awesome MATLAB and Simulink Robotics

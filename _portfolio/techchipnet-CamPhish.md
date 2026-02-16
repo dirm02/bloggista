@@ -2,8 +2,42 @@
 layout: project
 name: Techchipnet Camphish
 slug: techchipnet-CamPhish
+category: Uncategorized
 image: https://techchip.net/wp-content/uploads/2020/04/camphish.jpg
 repo_url: https://github.com/techchipnet/CamPhish
+indexed_content: "# CamPhish Grab cam shots from target's phone front camera or PC
+  webcam just sending a link. # What is CamPhish? CamPhish is techniques to take cam
+  shots of target's phone front camera or PC webcam. CamPhish Hosts a fake website
+  on in built PHP server and uses ngrok & CloudFlare Tunnel to generate a link which
+  we will forward to the target, which can be used on over internet. website asks
+  for camera permission and if the target allows it, this tool grab camshots of target's
+  device A GPS location capture feature has been added. ## Features In this tool I
+  added two automatic webpage templates for engaged target on webpage to get more
+  picture of cam Festival Wishing Live YouTube TV Online Meeting [Beta] GPS Location
+  Tracking A cleanup script has been added to remove all unnecessary files and logs.
+  ## This Tool Tested On : Kali Linux Termux MacOS Ubuntu Parrot Sec OS Windows (WSL)
+  # Installing and requirements This tool require PHP for webserver, and wget for
+  downloading dependencies. First run following command on your terminal ``` apt-get
+  -y install php wget unzip ``` ## Installing (Kali Linux/Termux): ``` git clone https://github.com/techchipnet/CamPhish
+  cd CamPhish bash camphish.sh ``` ## Clean logs & unnecessary files : ``` bash cleanup.sh
+  ``` The cam files and saved location will also be removed. ## Change Log: Version:
+  2.0: Added GPS Location Tracking Added: GPS location capturing functionality Added:
+  Google Maps integration for captured locations Added: Location accuracy reporting
+  Added: Improved loading screen with location request Version: 1.9: Enhanced architecture
+  detection Added: Improved architecture detection for all CPU types Added: Better
+  support for Apple Silicon (M1/M2/M3) Macs Added: Automatic detection of ARM, ARM64,
+  x86, and x86_64 architectures Fixed: Windows compatibility improvements Fixed: CloudFlare
+  Tunnel download issues Version: 1.8: Added CloudFlare Tunnel and removed Serveo
+  Added: CloudFlare Tunnel support for more reliable connections Removed: Serveo tunnel
+  (deprecated) Fixed: Various code improvements and bug fixes Version: 1.7: Fix and
+  add support fixed: termux failed to get home directory Add support for Apple sillicon
+  (M1/M2/M3 ARM64) Add support for arm64 like Raspberry Pi Version: 1.6: Fix ngrok
+  direct link generate Version: 1.5: Add new online meeting template Version: 1.4:
+  Ngrok authtoken update Version: 1.3: Fix ngrok direct link ### Important Notice
+  Unauthorized reuploading of this project is prohibited. #### For More Video subcribe
+  TechChip YouTube Channel CamPhish is created to help in penetration testing and
+  it's not responsible for any misuse or illegal purposes. CamPhish is inspired by
+  https://github.com/thelinuxchoice/ Big thanks to @thelinuxchoice"
 ---
 {% raw %}
 # CamPhish

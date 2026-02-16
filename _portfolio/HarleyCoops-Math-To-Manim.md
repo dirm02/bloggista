@@ -2,8 +2,67 @@
 layout: project
 name: Harleycoops Math To Manim
 slug: HarleyCoops-Math-To-Manim
+category: Very important!!!!
 image: https://img.shields.io/badge/python-3.10%2B-blue
 repo_url: https://github.com/HarleyCoops/Math-To-Manim)
+indexed_content: '# Math-To-Manim [](https://www.python.org/) [](LICENSE) [](https://ffmpeg.org/)
+  [](https://www.manim.community/) [](https://github.com/HarleyCoops/Math-To-Manim)
+  [](https://www.anthropic.com) [](https://deepmind.google/technologies/gemini/) [](https://kimi.moonshot.cn/)
+  [](https://www.deepseek.com/) [](https://x.ai/) [](https://www.star-history.com/#HarleyCoops/Math-To-Manim&type=date&legend=top-left)
+  --- > **January 29, 2026** - The **Kimi Agent pipeline has been upgraded from K2
+  Thinking to the K2.5 Swarm architecture**. This brings significant improvements
+  to chain-of-thought reasoning and multi-agent coordination. If you''ve used the
+  Kimi pipeline before, I encourage you to give this new version a try! --- ## CLaude
+  Code Learns Manim **Use Math-To-Manim directly in Claude Code** — no setup required.
+  Just install the skill and start creating animations with natural language. ###
+  Quick Install ```bash # Clone and run with the skill git clone https://github.com/HarleyCoops/Math-To-Manim.git
+  claude --plugin-dir ./Math-To-Manim/skill ``` ### What You Can Do Once installed,
+  just ask Claude: - *"Create a math animation about the Fourier transform"* - *"Animate
+  how neural networks learn"* - *"Generate Manim code explaining quantum entanglement"*
+  Claude will automatically use the **six-agent reverse knowledge tree pipeline**
+  to: 1. **Analyze** your concept and extract the core topic 2. **Discover** prerequisites
+  recursively (*"What must I understand BEFORE this?"*) 3. **Enrich** each concept
+  with LaTeX equations and definitions 4. **Design** visual specifications (colors,
+  animations, timing) 5. **Compose** a 2000+ token verbose prompt 6. **Generate**
+  working Manim Python code ### Why This Matters No training data. No examples needed.
+  Pure LLM reasoning builds pedagogically sound animations that flow from foundations
+  to advanced topics. Skill Directory Structure ``` skill/ ├── .claude-plugin/plugin.json
+  └── skills/math-to-manim/ ├── SKILL.md # Core workflow definition ├── references/
+  # Detailed documentation │ ├── reverse-knowledge-tree.md # Algorithm deep-dive │
+  ├── agent-system-prompts.md # All 6 agent prompts │ ├── verbose-prompt-format.md
+  # 2000+ token template │ └── manim-code-patterns.md # Code generation patterns └──
+  examples/ └── pythagorean-theorem/ # Complete workflow example ``` > **Requirements**:
+  [Claude Code CLI](https://claude.ai/code) + Python 3.10+ + Manim --- ## See It In
+  Action **Brownian Motion: From Pollen to Portfolio** *A journey from Robert Brown''s
+  microscope to Einstein''s heat equation, arriving at the Black-Scholes model for
+  financial options pricing.* --- **Recursive Rhombicosidodecahedron** *A fractal
+  Archimedean solid where every vertex spawns another complete rhombicosidodecahedron.*
+  --- **The Hopf Fibration** *Stereographic projection of S3 fibers creating nested
+  tori - pure topology rendered in 3D.* --- **The Whiskering Exchange** *Visualizing
+  the commutative property of 2-cell composition in higher category theory.* ## Three
+  AI Pipelines, One Goal Math-To-Manim offers **three distinct AI pipelines**. Choose
+  based on your API access and preferences: ### Pipeline Comparison | Feature | Gemini
+  3 (Google ADK) | Claude Sonnet 4.5 | Kimi K2.5 | |:--------|:---------------------|:------------------|:--------|
+  | **Framework** | Google Agent Development Kit | Anthropic Agent SDK | OpenAI-compatible
+  API | | **Architecture** | Six-Agent Swarm | Six-Agent Pipeline | Six-Agent Swarm
+  | | **Strengths** | Complex topology, physics reasoning | Reliable code generation,
+  recursion | Chain-of-thought, multi-agent coordination | | **Best For** | Advanced
+  3D math, Kerr metrics | General purpose, production use | LaTeX-heavy explanations,
+  structured reasoning | | **Setup Complexity** | Moderate | Simple | Simple | ---
+  ## Pipeline 1: Google Gemini 3 (ADK) **Location**: `Gemini3/` The Gemini pipeline
+  uses the **Google Agent Development Kit** with a six-agent swarm architecture. Each
+  agent is a specialist with a specific role in the animation generation process.
+  ### How It Works ### Quick Start ```bash # Set API key echo "GOOGLE_API_KEY=your_key_here"
+  >> .env # Run the pipeline python Gemini3/run_pipeline.py "Explain the Hopf Fibration"
+  ``` ### Key Files - `Gemini3/run_pipeline.py` - Entry point - `Gemini3/src/agents.py`
+  - Agent definitions with system prompts - `Gemini3/src/pipeline.py` - Orchestration
+  logic - `Gemini3/docs/GOOGLE_ADK_AGENTS.md` - Full documentation --- ## Pipeline
+  2: Claude Sonnet 4.5 (Anthropic SDK) **Location**: `src/` The Claude pipeline uses
+  the **Anthropic Agent SDK** with automatic context management and built-in tools.
+  ### How It Works ### Key Files - `src/app_claude.py` - Gradio UI entry point - `src/agents/prerequisite_explorer_claude.py`
+  - Claude SDK agent - `docs/ARCHITECTURE.md` - System design details --- ## Pipeline
+  3: Kimi K2.5 Swarm **Location**: `KimiK2Thinking/` The Kimi pipeline uses Moonshot
+  AI''s **K2.5 Swarm architecture** with an OpenAI-compatible API, six-agent coor'
 ---
 {% raw %}
 <p align="center">

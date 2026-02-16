@@ -2,8 +2,64 @@
 layout: project
 name: Juspay Hyperswitch
 slug: juspay-hyperswitch
+category: SDesk-Workflow- SaaS-PaaS-any!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/juspay-hyperswitch/docs/imgs/hyperswitch-logo-dark.svg#gh-dark-mode-only
 repo_url: https://github.com/juspay/hyperswitch
+indexed_content: "Composable Open-Source Payments Infrastructure \U0001F4C1 Table
+  of Contents - [What Can I Do with Hyperswitch?](#-what-can-i-do-with-hyperswitch)
+  - [Quickstart (Local Setup)](#-quickstart-local-setup) - [Cloud Deployment](#cloud-deployment)
+  - [Hosted Sandbox (No Setup Required)](#hosted-sandbox-no-setup-required) - [Why
+  Hyperswitch?](#-why-hyperswitch) - [Architectural Overview](#architectural-overview)
+  - [Our Vision](#our-vision) - [Community & Contributions](#community--contributions)
+  - [Feature Requests & Bugs](#feature-requests--bugs) - [Versioning](#versioning)
+  - [License](#copyright-and-license) - [Team Behind Hyperswitch](#team-behind-hyperswitch)
+  What Can I Do with Hyperswitch? Hyperswitch offers a modular, open-source payments
+  infrastructure designed for flexibility and control. Apart from our Payment Suite
+  offering, this solution allows businesses to pick and integrate only the modules
+  they need on top of their existing payment stack — without unnecessary complexity
+  or vendor lock-in. Each module is independent and purpose-built to optimize different
+  aspects of payment processing. Learn More About The Payment Modules - **Cost Observability**
+  Advanced observability tools to audit, monitor, and optimize your payment costs.
+  Detect hidden fees, downgrades, and penalties with self-serve dashboards and actionable
+  insights. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/ai-powered-cost-observability)_
+  - **Revenue Recovery** Combat passive churn with intelligent retry strategies tuned
+  by card bin, region, method, and more. Offers fine-grained control over retry algorithms,
+  penalty budgets, and recovery transparency. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/revenue-recovery)_
+  - **Vault** A PCI-compliant vault service to store cards, tokens, wallets, and bank
+  credentials. Provides a unified, secure, and reusable store of customer-linked payment
+  methods. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/vault)_
+  - **Intelligent Routing** Route each transaction to the PSP with the highest predicted
+  auth rate. Reduce retries, avoid downtime, and minimize latency while maximizing
+  first attempt success. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/intelligent-routing)_
+  - **Reconciliation** Automate 2-way and 3-way reconciliation with backdated support,
+  staggered scheduling, and customizable outputs. Reduces manual ops effort and increases
+  audit confidence. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/reconciliation)_
+  - **Alternate Payment Methods** Drop-in widgets for PayPal, Apple Pay, Google Pay,
+  Samsung Pay, Pay by Bank, and BNPL providers like Klarna. Maximizes conversions
+  with seamless one-click checkout. _[Read more](https://docs.hyperswitch.io/about-hyperswitch/payments-modules/enable-alternate-payment-method-widgets)_
+  ## Quickstart Local Setup via Docker ```bash # One-click local setup git clone --depth
+  1 --branch latest https://github.com/juspay/hyperswitch cd hyperswitch scripts/setup.sh
+  ``` This script: - Detects Docker/Podman - Offers multiple deployment profiles:
+  - **Standard**: App server + Control Center - **Full**: Includes monitoring + schedulers
+  - **Minimal**: Standalone App server - Provides access links when done If you need
+  further help, check out our [video tutorial](https://docs.hyperswitch.io/hyperswitch-open-source/overview/unified-local-setup-using-docker).
+  \U0001F449 After setup, [configure a connector](https://docs.hyperswitch.io/hyperswitch-open-source/account-setup/using-hyperswitch-control-center#add-a-payment-processor)
+  and [test a payment](https://docs.hyperswitch.io/hyperswitch-open-source/account-setup/test-a-payment).
+  Hosted Sandbox (No Setup Required) Hyperswitch offers a fully hosted sandbox environment
+  that requires no setup. You can explore the Control Center, configure payment connectors,
+  and test payments directly from the UI. What you can do in the Hosted Sandbox -
+  Access the full Control Center - Configure payment connectors - View logs, routing
+  rules, and retry strategies - Try payments directly from the UI Cloud Deployment
+  You can deploy to AWS, GCP, or Azure using Helm or CDK scripts. Fastest path: Click
+  to deploy via AWS: Cloud Deployment Instructions 1. Click the AWS deployment button
+  above to launch the stack. 2. Follow the guided steps in the AWS Console (approx.
+  30–45 mins). ✅ This setup provisions Hyperswitch on your cloud account using CloudFormation.
+  \U0001F4D8 For full instructions and Helm-based deployments, check out the Cloud
+  Install Guide . Architectural Overview ## Why Hyperswitch? Hyperswitch is a commercial
+  open-source payments stack purpose-built for scale, flexibility, and developer experience.
+  Designed with a modular architecture, Hyperswitch lets you pick only the components
+  you need—whether it’s routing, retries, vaulting, or observability—without vendor
+  lock-in or bloated integrations. Built in Rust for performance and rel"
 ---
 {% raw %}
 <p align="center">

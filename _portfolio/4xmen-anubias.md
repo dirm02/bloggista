@@ -2,8 +2,32 @@
 layout: project
 name: 4xmen Anubias
 slug: 4xmen-anubias
+category: iOS-imac
 image: https://snapcraft.io/anubias/badge.svg
 repo_url: https://github.com/4xmen/Anubias-Desktop
+indexed_content: "Anubias Desktop [](https://snapcraft.io/anubias) # Anubias-Desktop
+  Anubias is project help you to make your mobile apps so easy and native with GUI
+  : ) # Demo Free Templates Easy To Use Compile Fast # Downloads The latest version
+  is available for * [Windows](https://anubias.app/dl/wini) ([portable](https://anubias.app/dl/winp))
+  * [macOS](https://anubias.app/dl/mac) * [Linux](https://anubias.app/dl/linux) *
+  [WebApp](https://anubias.app/demo) ## \U0001F517 Links https://anubias.app/ http://4xmen.ir/
+  https://xstack.ir ## Features * \U0001F4F1 Mobile Apps ( Develop your app for :
+  Andriod , IOS ) * \U0001F5A5️ Desktop Apps ( Develop your app for : Windows , Linux
+  , MacOSX ) * \U0001F310 Web applications ( Develop your web app ) * \U0001F449 GUI
+  ( GUI drag and drop component ) * \U0001F468‍\U0001F4BB xScript ( xScript code look
+  like javascript ) * \U0001F4AF Free ( Totally Free ) ## Linux Installation Install
+  form linux Snapcraft Store ```bash snap install anubias --classic ``` ## Report
+  Some Bugs Find a Bug? Please, [create an issue](https://github.com/4xmen/Anubias-Desktop/issues)
+  and we'll fix it together for a better template. ## Contribution Contribution are
+  always welcome and recommended! Here is how: - Fork the repository ([here is the
+  guide](https://help.github.com/articles/fork-a-repo/)). - Clone to your machine
+  git clone https://github.com/YOUR_USERNAME/Anubias-Desktop.git - Make your changes
+  - Create a pull request ## Badges [](https://anubias.app/) [](https://GitHub.com/4xmen)
+  [](https://xstack.ir) [](https://4xmen.ir) [](https://Telegram.me/Devefun) ## Developing
+  Languages [](https://www.javascript.com/) [](https://vuejs.org/) [](https://webpack.js.org/)
+  [](https://eslint.org/) [](https://www.electronjs.org/) ## License [](https://opensource.org/licenses/GNU)
+  [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) ## Support [](https://www.paypal.me/swepc)
+  Developed With Love ! ❤️"
 ---
 {% raw %}
 <h1 align="center">

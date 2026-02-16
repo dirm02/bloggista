@@ -2,8 +2,41 @@
 layout: project
 name: Antvis X6
 slug: antvis-X6
+category: Serv&Prod-Tools
 image: https://gw.alipayobjects.com/zos/antfincdn/R8sN%24GNdh6/language.svg
 repo_url: https://github.com/antvis/X6
+indexed_content: "English | [简体中文](/README.zh-CN.md) X6: Graph Editing and Visualization
+  Engine Official Documentation • Quick Start • Graph Examples • FAQ • Demo Template
+  • Awesome X6 AntV `X6` is a graph editing engine based on HTML and SVG, providing
+  low-cost customization capabilities and out-of-the-box built-in extensions that
+  make it easy to quickly build applications such as DAG diagrams, ER diagrams, flowcharts,
+  lineage graphs, and more. We hope developers can use X6 to rapidly build various
+  graph editing applications they need, making process relationship data controllable,
+  interactive, and visualized. ## ✨ Features As a professional graph editing and visualization
+  engine, X6 has the following features: - \U0001F331 _Highly Customizable_: Supports
+  customizing node styles and interactions using SVG / HTML / React / Vue / Angular,
+  with a comprehensive `event system` that allows listening to any events occurring
+  within the chart. - \U0001F680 _Out-of-the-Box_: Built-in `10+` graph editing extensions,
+  such as lasso selection, alignment lines, minimap, etc. - \U0001F9F2 _Data-Driven_:
+  Based on the `MVC` architecture, allowing users to focus more on data logic and
+  business logic. - \U0001F4AF _Server-Side Rendering_: Supports server-side rendering
+  with good browser compatibility. ## \U0001F528 Getting Started You can install via
+  package managers like NPM or Yarn. ```bash # npm $ npm install @antv/x6 --save #
+  yarn $ yarn add @antv/x6 ``` After successful installation, you can import the `Graph`
+  object using import. ```html ``` ```ts import { Graph } from '@antv/x6' const graph
+  = new Graph({ container: document.getElementById('container'), grid: true, }) const
+  source = graph.addNode({ x: 300, y: 40, width: 80, height: 40, label: 'Hello', });
+  const target = graph.addNode({ x: 420, y: 180, width: 80, height: 40, label: 'World',
+  }); graph.addEdge({ source, target, }); ``` If everything goes smoothly, you will
+  get a simple flowchart canvas as shown below. ## \U0001F9D1\U0001F3FB‍\U0001F4BB
+  Local Development ```shell # Install project dependencies and initialize build $
+  pnpm install # Start examples to view results pnpm run start:examples ``` ## \U0001F4EE
+  Contribution Thank you to everyone who has contributed to this project and all supporters!
+  \U0001F64F - **Issue Feedback**: If you encounter any issues with X6 during use,
+  feel free to submit an Issue along with minimal reproducible code. - **Contribution
+  Guide**: How to participate in the [development and contribution](./CONTRIBUTING.md)
+  of X6. - **Discussion Ideas**: Discuss on GitHub Discussion or DingTalk group. ##
+  \U0001F4C4 License [MIT](./LICENSE)."
 ---
 {% raw %}
 <img src="https://gw.alipayobjects.com/zos/antfincdn/R8sN%24GNdh6/language.svg" width="18"> English | [简体中文](/README.zh-CN.md)

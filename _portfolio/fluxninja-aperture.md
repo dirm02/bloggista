@@ -2,8 +2,66 @@
 layout: project
 name: Fluxninja Aperture
 slug: fluxninja-aperture
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fluxninja-aperture/docs/content/assets/img/unified-load-management-light.svg#gh-light-mode-only
 repo_url: https://github.com/fluxninja/aperture
+indexed_content: "# \U0001F977 FluxNinja Aperture Aperture is a distributed load management
+  platform designed for rate limiting, caching, and prioritizing requests in cloud
+  applications. Built upon a foundation of distributed counters, observability, and
+  a global control plane, it provides a comprehensive suite of load management capabilities.
+  These capabilities enhance the reliability and performance of cloud applications,
+  while also optimizing cost and resource utilization. Integrating Aperture in your
+  application through SDKs is a simple 3-step process: - **Define labels**: Define
+  labels to identify users, entities, or features within your application. For example,
+  you can define labels to identify individual users, features, or API endpoints.
+  Example ```typescript // Tailor policies to get deeper insights into your workload
+  with labels that // capture business context. const labels = { // You can rate limit
+  each user individually. user: \"jack\", // And have different rate limits for different
+  tiers of users. tier: \"premium\", // You can also provide the tokens for each request.
+  // Tokens are flexible: LLM AI tokens in a prompt, complexity of a request, // number
+  of sub-actions, etc. tokens: \"200\", // When peak load exceeds external quotas
+  or infrastructure capacity, // requests can be throttled and prioritized. priority:
+  HIGH, // Get deep insights into your workload. You can slice and dice performance
+  // metrics by any label. workload: \"/chat\", }; ``` - **Wrap your workload**: Wrap
+  your workload with `startFlow` and `endFlow` calls to establish control points around
+  specific features or code sections inside your application. For example, you can
+  wrap your API endpoints with Aperture SDKs to limit the number of requests per user
+  or feature. Example ```typescript // Wrap your workload with startFlow and endFlow
+  calls, passing in the // labels you defined earlier. const flow = await apertureClient.startFlow(\"your_workload\",
+  { labels: labels, // Lookup result cache key to retrieve a cached result. resultCacheKey:
+  queryParams, }); // If rate or quota limit is not exceeded, the workload is executed.
+  if (flow.shouldRun()) { // Return a cached result or execute the workload. const
+  cachedResult = flow.resultCache(); const result = await yourWorkload(cachedResult);
+  flow.setResultCache({ value: result, ttl: { seconds: 86400, nanos: 0 }, }); } //
+  ``` - **Configure & monitor policies**: Configure policies to control the rate,
+  concurrency, and priority of requests. Policy YAML ```yaml blueprint: rate-limiting/base
+  uri: github.com/fluxninja/aperture/blueprints@latest policy: policy_name: rate_limit
+  rate_limiter: bucket_capacity: 60 fill_amount: 60 parameters: interval: 3600s limit_by_label_key:
+  user selectors: - control_point: your_workload label_matcher: match_list: - key:
+  tier operator: In values: - premium ``` In addition to language SDKs, Aperture also
+  integrates with existing control points such as API gateways, service meshes, and
+  application middlewares. ## ⚙️ Load management capabilities - ⏱️ [**Global Rate
+  and Concurrency Limiting**](https://docs.fluxninja.com/concepts/rate-limiter): Safeguard
+  APIs and features against excessive usage with Aperture's high-performance, distributed
+  rate limiter. Identify individual users or entities by fine-grained labels. Create
+  precise rate limiters controlling burst-capacity and fill-rate tailored to business-specific
+  labels. Limit per user or global concurrency of in-flight requests. Refer to the
+  [Rate Limiting](https://docs.fluxninja.com/guides/per-user-rate-limiting) and [Concurrency
+  Limiting](https://docs.fluxninja.com/guides/per-user-concurrency-limiting) guides
+  for more details. - \U0001F4CA [**API Quota Management**](https://docs.fluxninja.com/concepts/request-prioritization/quota-scheduler):
+  Maintain compliance with external API quotas with a global token bucket and smart
+  request queuing. This feature regulates requests aimed at external services, ensuring
+  that the usage remains within prescribed rate limits and avoids penalties or additional
+  costs. Refer to the [API Quota Management](https://docs.fluxninja.com/guides/api-quota-management/)
+  guide for more details. - \U0001F6A6 [**Concurrency Control and Prioritization**](https://docs.fluxninja.com/concepts/request-prioritization/concurrency-scheduler):
+  Safeguard against abrupt service overloads by limiting the number of concurrent
+  in-flight requests. Any requests beyond this limit are queued and let in based on
+  their priority as capacity becomes available. Refer to the [Concurrency Control
+  and Prioritization](https://docs.fluxninja.com/development/guides/concurrency-control-and-prioritization/)
+  guide for more details. - \U0001F3AF [**Workload Prioritization**](https://docs.fluxninja.com/concepts/scheduler/):
+  Safeguard crucial user experience pathways and ensure prioritized access to external
+  APIs by strategically prioritizing workloads. With [weighted fair queuing](https://en.wikipedia.org/wiki/Weighted_fair_queueing),
+  Aperture aligns resource distribution with business v"
 ---
 {% raw %}
 <!-- vale off -->

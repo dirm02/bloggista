@@ -2,8 +2,70 @@
 layout: project
 name: Punkpeye Awesome Mcp Servers
 slug: punkpeye-awesome-mcp-servers
+category: Very important!!!!
 image: https://awesome.re/badge.svg
 repo_url: https://github.com/punkpeye/awesome-mcp-clients
+indexed_content: "# Awesome MCP Servers [](https://awesome.re) [](README-th.md) [](README.md)
+  [](README-zh_TW.md) [](README-zh.md) [](README-ja.md) [](README-ko.md) [](README-pt_BR.md)
+  [](https://glama.ai/mcp/discord) [](https://www.reddit.com/r/mcp/) > [!IMPORTANT]
+  > Read [The State of MCP in 2025](https://glama.ai/blog/2025-12-07-the-state-of-mcp-in-2025)
+  report. > [!IMPORTANT] > [Awesome MCP Servers](https://glama.ai/mcp/servers) web
+  directory. > [!IMPORTANT] > Test servers using [MCP Inspector](https://glama.ai/mcp/inspector?servers=%5B%7B%22id%22%3A%22test%22%2C%22name%22%3A%22test%22%2C%22requestTimeout%22%3A10000%2C%22url%22%3A%22https%3A%2F%2Fmcp-test.glama.ai%2Fmcp%22%7D%5D).
+  A curated list of awesome Model Context Protocol (MCP) servers. * [What is MCP?](#what-is-mcp)
+  * [Clients](#clients) * [Tutorials](#tutorials) * [Community](#community) * [Legend](#legend)
+  * [Server Implementations](#server-implementations) * [Frameworks](#frameworks)
+  * [Tips & Tricks](#tips-and-tricks) ## What is MCP? [MCP](https://modelcontextprotocol.io/)
+  is an open protocol that enables AI models to securely interact with local and remote
+  resources through standardized server implementations. This list focuses on production-ready
+  and experimental MCP servers that extend AI capabilities through file access, database
+  connections, API integrations, and other contextual services. ## Clients Checkout
+  [awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients/) and [glama.ai/mcp/clients](https://glama.ai/mcp/clients).
+  > [!TIP] > [Glama Chat](https://glama.ai/chat) is a multi-modal AI client with MCP
+  support & [AI gateway](https://glama.ai/gateway). ## Tutorials * [Model Context
+  Protocol (MCP) Quickstart](https://glama.ai/blog/2024-11-25-model-context-protocol-quickstart)
+  * [Setup Claude Desktop App to Use a SQLite Database](https://youtu.be/wxCCzo9dGj0)
+  ## Community * [r/mcp Reddit](https://www.reddit.com/r/mcp) * [Discord Server](https://glama.ai/mcp/discord)
+  ## Legend * \U0001F396️ – official implementation * programming language * \U0001F40D
+  – Python codebase * \U0001F4C7 – TypeScript (or JavaScript) codebase * \U0001F3CE️
+  – Go codebase * \U0001F980 – Rust codebase * #️⃣ - C# Codebase * ☕ - Java codebase
+  * \U0001F30A – C/C++ codebase * \U0001F48E - Ruby codebase * scope * ☁️ - Cloud
+  Service * \U0001F3E0 - Local Service * \U0001F4DF - Embedded Systems * operating
+  system * \U0001F34E – For macOS * \U0001FA9F – For Windows * \U0001F427 - For Linux
+  > [!NOTE] > Confused about Local \U0001F3E0 vs Cloud ☁️? > * Use local when MCP
+  server is talking to a locally installed software, e.g. taking control over Chrome
+  browser. > * Use cloud when MCP server is talking to remote APIs, e.g. weather API.
+  ## Server Implementations > [!NOTE] > We now have a [web-based directory](https://glama.ai/mcp/servers)
+  that is synced with the repository. * \U0001F517 - [Aggregators](#aggregators) *
+  \U0001F3A8 - [Art & Culture](#art-and-culture) * \U0001F4D0 - [Architecture & Design](#architecture-and-design)
+  * \U0001F4C2 - [Browser Automation](#browser-automation) * \U0001F9EC - [Biology
+  Medicine and Bioinformatics](#bio) * ☁️ - [Cloud Platforms](#cloud-platforms) *
+  \U0001F468‍\U0001F4BB - [Code Execution](#code-execution) * \U0001F916 - [Coding
+  Agents](#coding-agents) * \U0001F5A5️ - [Command Line](#command-line) * \U0001F4AC
+  - [Communication](#communication) * \U0001F464 - [Customer Data Platforms](#customer-data-platforms)
+  * \U0001F5C4️ - [Databases](#databases) * \U0001F4CA - [Data Platforms](#data-platforms)
+  * \U0001F69A - [Delivery](#delivery) * \U0001F6E0️ - [Developer Tools](#developer-tools)
+  * \U0001F9EE - [Data Science Tools](#data-science-tools) * \U0001F4DF - [Embedded
+  system](#embedded-system) * \U0001F333 - [Environment & Nature](#environment-and-nature)
+  * \U0001F4C2 - [File Systems](#file-systems) * \U0001F4B0 - [Finance & Fintech](#finance--fintech)
+  * \U0001F3AE - [Gaming](#gaming) * \U0001F3E0 - [Home Automation](#home-automation)
+  * \U0001F9E0 - [Knowledge & Memory](#knowledge--memory) * ⚖️ - [Legal](#legal) *
+  \U0001F5FA️ - [Location Services](#location-services) * \U0001F3AF - [Marketing](#marketing)
+  * \U0001F4CA - [Monitoring](#monitoring) * \U0001F3A5 - [Multimedia Process](#multimedia-process)
+  * \U0001F52C - [Research](#research) * \U0001F50E - [Search & Data Extraction](#search)
+  * \U0001F512 - [Security](#security) * \U0001F310 - [Social Media](#social-media)
+  * \U0001F3C3 - [Sports](#sports) * \U0001F3A7 - [Support & Service Management](#support-and-service-management)
+  * \U0001F30E - [Translation Services](#translation-services) * \U0001F3A7 - [Text-to-Speech](#text-to-speech)
+  * \U0001F686 - [Travel & Transportation](#travel-and-transportation) * \U0001F504
+  - [Version Control](#version-control) * \U0001F3E2 - [Workplace & Productivity](#workplace-and-productivity)
+  * \U0001F6E0️ - [Other Tools and Integrations](#other-tools-and-integrations) ###
+  \U0001F517 Aggregators Servers for accessing many apps and tools through a single
+  MCP server. - [1mcp/agent](https://github.com/1mcp-app/agent) \U0001F4C7 ☁️ \U0001F3E0
+  \U0001F34E \U0001FA9F \U0001F427 - A unified Model Context Protocol server implementation
+  that aggregates multiple MCP servers into one. - [AgentHotspot](https://github.com/AgentHotspot/agenthotspot-mcp)
+  \U0001F40D ☁️ \U0001F3E0 \U0001F34E \U0001FA9F \U0001F427 - Search, integrate and
+  monetize MCP connectors on the AgentHotspot MCP marketplace - [askbudi/roundtable](https://github.com/askbudi/roundtable)
+  \U0001F4C7 ☁️ \U0001F3E0 \U0001F34E \U0001FA9F \U0001F427 - Meta-MCP server that
+  unifies multiple AI coding assistants (Codex, Claude"
 ---
 {% raw %}
 # Awesome MCP Servers [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)

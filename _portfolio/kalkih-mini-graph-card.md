@@ -2,8 +2,68 @@
 layout: project
 name: Kalkih Mini Graph Card
 slug: kalkih-mini-graph-card
+category: Home automation-IoT
 image: https://user-images.githubusercontent.com/457678/52977264-edf34980-33cc-11e9-903b-cee43b307ed8.png
 repo_url: https://github.com/home-assistant/home-assistant)
+indexed_content: '# Lovelace Mini Graph Card A minimalistic and customizable graph
+  card for [Home Assistant](https://github.com/home-assistant/home-assistant) Lovelace
+  UI. The card works with entities from within the **sensor** & **binary_sensor**
+  domain and displays the sensors current state as well as a line graph representation
+  of the history. ## Install ### HACS (recommended) This card is available in [HACS](https://hacs.xyz/)
+  (Home Assistant Community Store). *HACS is a third party community store and is
+  not included in Home Assistant out of the box.* [](https://my.home-assistant.io/redirect/hacs_repository/?owner=kalkih&repository=mini-graph-card)
+  ### Manual install 1. Download and copy `mini-graph-card-bundle.js` from the [latest
+  release](https://github.com/kalkih/mini-graph-card/releases/latest) into your `config/www`
+  directory. 2. Add the resource reference as decribed below. ### CLI install 1. Move
+  into your `config/www` directory. 2. Grab `mini-graph-card-bundle.js`: ```console
+  $ wget https://github.com/kalkih/mini-graph-card/releases/download/v0.13.0/mini-graph-card-bundle.js
+  ``` 3. Add the resource reference as decribed below. ### Add resource reference
+  If you configure Lovelace via YAML, add a reference to `mini-graph-card-bundle.js`
+  inside your `configuration.yaml`: ```yaml resources: - url: /local/mini-graph-card-bundle.js?v=0.13.0
+  type: module ``` Else, if you prefer the graphical editor, use the menu to add the
+  resource: 1. Make sure, advanced mode is enabled in your user profile (click on
+  your user name to get there) 2. Navigate to Configuration -> Lovelace Dashboards
+  -> Resources Tab. Hit orange (+) icon 3. Enter URL `/local/mini-graph-card-bundle.js`
+  and select type "JavaScript Module". (Use `/hacsfiles/mini-graph-card/mini-graph-card-bundle.js`
+  and select "JavaScript Module" for HACS install) 4. Restart Home Assistant. ## Updating
+  **If you have a version older than v0.0.8 installed, please delete the current files
+  and follow the installation instructions again.** 1. Find your `mini-graph-card-bundle.js`
+  file in `config/www` or wherever you ended up storing it. 2. Replace the local file
+  with the latest one attached in the [latest release](https://github.com/kalkih/mini-graph-card/releases/latest).
+  3. Add the new version number to the end of the cards reference url in your `ui-lovelace.yaml`
+  like below: ```yaml resources: - url: /local/mini-graph-card-bundle.js?v=0.13.0
+  type: module ``` *You may need to empty the browsers cache if you have problems
+  loading the updated card.* ## Using the card We recommend looking at the [Example
+  usage section](#example-usage) to understand the basics to configure this card.
+  (also) pay attention to the **required** options mentioned below. ### Options ####
+  Card options | Name | Type | Default | Since | Description | |------|:----:|:-------:|:-----:|-------------|
+  | type ***(required)*** | string | | v0.0.1 | `custom:mini-graph-card`. | entities
+  ***(required)*** | list | | v0.2.0 | One or more sensor entities in a list, see
+  [entities object](#entities-object) for additional entity options. | icon | string
+  | | v0.0.1 | Set a custom icon from any of the available mdi icons. | icon_image
+  | string | | v0.12.0 | Override icon with an image url | name | string | | v0.0.1
+  | Set a custom name which is displayed beside the icon. | unit | string | | v0.0.1
+  | Set a custom unit of measurement (`''''` value for an empty unit). | tap_action
+  | [action object](#action-object-options) | | v0.7.0 | Action on click/tap. | group
+  | boolean | `false` | v0.2.0 | Disable paddings and box-shadow, useful when nesting
+  the card. | hours_to_show | integer | `24` | v0.0.2 | Specify how many hours of
+  history the graph should present. | points_per_hour | number | `0.5` | v0.2.0 |
+  Specify amount of data points the graph should display for each hour, *(basically
+  the detail/accuracy/smoothing of the graph)*. | aggregate_func | string | `avg`
+  | v0.8.0 | Specify [aggregate function](#aggregate-functions) used to calculate
+  point/bar in the graph. | group_by | string | `interval` | v0.8.0 | Specify type
+  of grouping of data, dynamic `interval`, `date` or `hour`. | update_interval | number
+  | | v0.4.0 | Specify a custom update interval of the history data (in seconds),
+  instead of on every state change. | cache | boolean | `true` | v0.9.0 | Enable/disable
+  local caching of history data. | show | list | | v0.2.0 | List of UI elements to
+  display/hide, for available items see [available show options](#available-show-options).
+  | animate | boolean | `false` | v0.2.0 | Add a reveal animation to the graph. |
+  height | number | `150` | v0.0.1 | Set a custom height of the line graph. | bar_spacing
+  | number | `4` | v0.9.0 | Set the spacing between bars in bar graph. | line_width
+  | number | `5` | v0.0.1 | Set the thickness of the line. | line_color | string/list
+  | `var(--accent-color)` | v0.0.1 | Set a custom color for the graph line, provide
+  a list of colors for multiple graph entries. | color_thresholds | list | | v0.2.3
+  | Set t'
 ---
 {% raw %}
 # Lovelace Mini Graph Card

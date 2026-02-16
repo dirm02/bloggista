@@ -2,8 +2,68 @@
 layout: project
 name: Flowglad Flowglad
 slug: flowglad-flowglad
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/flowglad-flowglad/./public/fg-demo.gif
 repo_url: https://github.com/flowglad/flowglad
+indexed_content: 'Flowglad The easiest way to make internet money. Get Started · Quickstart
+  · Website · Events · Issues · Examples · Infinite pricing models, one source of
+  truth, zero webhooks. ## Features - **Default Stateless** Say goodbye to webhooks,
+  `"subscriptions"` db tables, `customer_id` columns, `PRICE_ID` env variables, or
+  manually mapping your plans to prices to features and back. - **Single Source of
+  Truth:** Read your latest customer billing state from Flowglad, including feature
+  access and usage meter credits - **Access Data Using Your Ids:** Query customer
+  state by your auth''s user ids. Refer to prices, features, and usage meters via
+  slugs you define. - **Full-Stack SDK:** Access your customer''s data on the backend
+  using `flowgladServer.getBilling()`, or in your React frontend using our `useBilling()`
+  hook - **Adaptable:** Iterate on new pricing models in testmode, and push them to
+  prod in a click. Seamlessly rotate pricing models in your app without any redeployment.
+  ## Set Up ### Installation First, install the packages necessary Flowglad packages
+  based on your project setup: ```bash # Next.js Projects bun add @flowglad/nextjs
+  # React + Express projects: bun add @flowglad/react @flowglad/express # All other
+  React + Node Projects bun add @flowglad/react @flowglad/server ``` Flowglad integrates
+  seamlessly with your authentication system and requires only a few lines of code
+  to get started in your Next.js app. Setup typically takes under a minute: ### Integration
+  1. **Configure Your Flowglad Server Client** Create a utility to generate your Flowglad
+  server instance. Pass your own customer/user/organization IDs—Flowglad never requires
+  its own customer IDs to be managed in your app: ```ts // lib/flowglad.ts import
+  { FlowgladServer } from ''@flowglad/nextjs/server'' export const flowglad = (customerExternalId:
+  string) => { return new FlowgladServer({ customerExternalId, getCustomerDetails:
+  async (externalId) => { // e.g. Fetch user info from your DB using your user/org/team
+  ID const user = await db.users.findOne({ id: externalId }) if (!user) throw new
+  Error(''User not found'') return { email: user.email, name: user.name } }, }) }
+  ``` 2. **Expose the Flowglad API Handler** Add an API route so the Flowglad client
+  can communicate securely with your backend: ```ts // app/api/flowglad/[...path]/route.ts
+  import { nextRouteHandler } from ''@flowglad/nextjs/server'' import { flowglad }
+  from ''@/utils/flowglad'' export const { GET, POST } = nextRouteHandler({ flowglad,
+  getCustomerExternalId: async (req) => { // Extract your user/org/team ID from session/auth.
+  // For B2C: return user.id from your DB // For B2B: return organization.id or team.id
+  const userId = await getUserIdFromRequest(req) if (!userId) throw new Error(''User
+  not authenticated'') return userId }, }) ``` 3. **Wrap Your App with the Provider**
+  In your root layout (App Router) or _app (Pages Router): ```tsx import { FlowgladProvider
+  } from ''@flowglad/nextjs'' // App Router example (app/layout.tsx) export default
+  function RootLayout({ children }) { return ( {children} ) } ``` That’s it—Flowglad
+  will use your app’s internal user IDs for all billing logic and integrate billing
+  status into your frontend in real time. **B2C apps:** Use `user.id` as the customer
+  ID. **B2B apps:** Use `organization.id` or `team.id` as the customer ID. _Flowglad
+  does not require you to change your authentication system or manage Flowglad customer
+  IDs. Just pass your own!_ 4. Use `useBilling` on your frontend, and `flowglad(userId).getBilling()`
+  on your backend ### Frontend Example: Checking Feature Access and Usage ```tsx ''use
+  client'' import { useBilling } from ''@flowglad/nextjs'' export function FeatureGate({
+  featureSlug, children }) { const { loaded, errors, checkFeatureAccess } = useBilling()
+  if (!loaded || !checkFeatureAccess) { return Loading billing state… } if (errors?.length)
+  { return Unable to load billing data right now. } return checkFeatureAccess(featureSlug)
+  ? children : You need to upgrade to unlock this feature. } ``` ```tsx import { useBilling,
+  usePricing } from ''@flowglad/nextjs'' export function PricingCards() { const pricingModel
+  = usePricing() const { createCheckoutSession } = useBilling() if (!pricingModel)
+  { return Loading pricing… } return ( {pricingModel.products.map((product) => { const
+  defaultPrice = product.defaultPrice ?? product.prices?.[0] if (!defaultPrice) return
+  null return ( {product.name} {product.description} createCheckoutSession({ priceSlug:
+  defaultPrice.slug, successUrl: window.location.href, cancelUrl: window.location.href,
+  autoRedirect: true, }) } > Choose {defaultPrice.name ?? product.name} ) })} ) }
+  ``` ### Backend Example: Server-side Feature and Usage Checks ```ts import { NextResponse
+  } from ''next/server'' import { flowglad } from ''@/utils/flowglad'' const hasFastGenerations
+  = async () => { // ... const user = await getUser() const billing = await flowglad(user.id).getBilling()
+  const hasAccess = billing.checkFeatureAccess(''fast_generations'') if (hasAcc'
 ---
 {% raw %}
 <p align="center">

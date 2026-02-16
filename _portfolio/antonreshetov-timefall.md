@@ -2,8 +2,63 @@
 layout: project
 name: Antonreshetov Timefall
 slug: antonreshetov-timefall
+category: WindowsTools- Linux
 image: https://img.shields.io/badge/donate-PayPal-blue.svg?style=popout&logo=paypal
 repo_url: https://github.com/antonreshetov/timefall
+indexed_content: 'Timefall Built with Electron & Vue. Inspired by Timemator. Latest
+  Release | Discussions > [!CAUTION] > Project is currently in an active development
+  stage. > We strongly recommend using our app for familiarization purposes only at
+  this time. This will allow you to get acquainted with the main features and capabilities
+  of our project, without risking the occurrence of unexpected situations. ## Support
+  Timefall is open source project and completely free to use. However, the amount
+  of effort needed to maintain and develop new features for the project is not sustainable
+  without proper financial backing. You can support Timefall development via the following
+  methods: [](https://paypal.me/antongithub) [](https://antonreshetov.gumroad.com/l/timefall)
+  ## About The Timefall project is an open-source software that is being developed
+  to provide users with an efficient and convenient time management tool. Created
+  with modern software trends in mind, Timefall is a tool accessible to anyone who
+  wants to better understand how they allocate their time and how it can be used most
+  productively. It''s a simple yet powerful tool capable of adapting to each user''s
+  needs. ## Features ### Task Creation with Hourly Rate The app allows you to create
+  tasks and specify an hourly rate for each task. This feature is useful for tracking
+  time and calculating payment. ### Task Organization You can organize your tasks
+  by grouping them into folders. This helps you easily find relevant tasks and manage
+  them efficiently. ### Time Entries with Hourly Rate Calculation Timefall displays
+  time entries grouped by days. You’ll see how much time was spent on each task, along
+  with the calculated hourly payment. ### Reports for Weeks, Months, and Years You
+  can analyze your productivity by viewing reports for different time periods. This
+  feature helps you understand how effectively you manage your time. ### Privacy Timefall
+  uses a simple JSON-based database stored locally on your computer, rather than in
+  the cloud. ## Who is Timefall Useful for? ### Freelancers and Self-Employed Professionals
+  Freelancers working on various projects can utilize Timefall to track their billable
+  hours accurately. Whether you’re a freelance writer, designer, developer, or consultant,
+  this app helps you manage your time and calculate earnings. ### Software Developers
+  and Designers Developers and designers often juggle multiple tasks simultaneously.
+  Timefall assists them in organizing their work, tracking time spent on coding, designing,
+  and debugging, and ensuring efficient project management. ### Consultants and Sales
+  Agents Consultants, sales representatives, and agents who bill clients based on
+  hours worked can benefit from Timefall. It simplifies time tracking, allowing them
+  to focus on client interactions and project delivery. ### Students and Researchers
+  Students working on research projects, assignments, or thesis writing can use Timefall
+  to allocate time effectively. It helps them stay on track and meet deadlines. ###
+  Project Managers and Teams Project managers can monitor team productivity by analyzing
+  time entries. Timefall’s reports provide insights into resource allocation, project
+  progress, and team performance. ### Personal Time Management Anyone seeking better
+  time management — whether for personal tasks, side projects, or hobbies — can leverage
+  Timefall. It’s a versatile tool for staying organized and productive. ## Installation
+  App are available for Windows & macOS. You can download the latest version from
+  the [Releases](https://github.com/antonreshetov/timefall/releases). ### macOS If
+  you encounter the error message `"Timefall" is damaged and can''t be opened. You
+  should move it to the Trash` while installing software on macOS, it may be due to
+  security settings restrictions in macOS. To solve this problem, please try the following
+  command in Terminal: ```bash sudo xattr -r -d com.apple.quarantine /Applications/Timefall.app
+  ``` ## Development ### Prerequisites The project uses Bun for building and running.
+  Please make sure you have [Bun](https://bun.sh/) installed. ``` # Install dependencies
+  bun install # Run the app bun run dev ``` ### Build ``` # Build the app bun run
+  make ``` ## Follow - News and updates on [Twitter](https://twitter.com/anton_reshetov).
+  - [Discussions](https://github.com/antonreshetov/timefall/discussions). ## License
+  [AGPL-3.0](https://github.com/antonreshetov/timefall/blob/master/LICENSE) Copyright
+  (c) 2024-present, [Anton Reshetov](https://github.com/antonreshetov).'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,24 @@
 layout: project
 name: Easyflow Live Easyflow
 slug: easyflow-live-easyflow
+category: Uncategorized
 image: https://avatars0.githubusercontent.com/u/56924174?s=400&u=8fb7ae1cdc2f64d7342cd267b8435428274b72ec&v=4
 repo_url: https://github.com/microsoft/TypeScript)
+indexed_content: "EasyFlow : Project Management Tool easyflow.live Easy Flow is a
+  real time collaborative project manager based on Kanban methodology. We make everything
+  easier so you and your team can focus on complete tasks and ship great products.
+  ### Tech stack - [Typescript](https://github.com/microsoft/TypeScript) - [React](https://github.com/facebook/react)
+  - [Next.js](https://github.com/zeit/next.js/) - [TailwindCSS](https://github.com/tailwindcss/tailwindcss)
+  - [MobX](https://github.com/mobxjs/mobx) - [Google Firebase](firebase.google.com/)
+  ### Development #### Simplified setup ```shell # Clone this reposittory cd easyflow
+  npm install npm run dev ``` The app will run on http://127.0.0.1:3000 You need to
+  create a file with the name `.env` in the root directory with the following variables:
+  ``` REACT_APP_API_KEY = REACT_APP_AUTH_DOMAIN = REACT_APP_DATABASE_URL = REACT_APP_PROJECT_ID
+  = REACT_APP_STORAGE_BUCKET = REACT_APP_MESSAGING_SENDER_ID = REACT_APP_ID = PORT
+  = 3000 ``` ## Contributors ✨ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+  Fellipe Pinheiro \U0001F4BB \U0001F3A8 \U0001F440 Erick Almeida \U0001F4BB \U0001F914
+  This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+  specification. Contributions of any kind welcome!"
 ---
 {% raw %}
 <p align="center">

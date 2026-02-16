@@ -2,8 +2,63 @@
 layout: project
 name: Pdfmathtranslate Pdfmathtranslate
 slug: PDFMathTranslate-PDFMathTranslate
+category: EE-kicad-3D-Robotic
 image: https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-02.png
 repo_url: https://github.com/warpdotdev/brand-assets
+indexed_content: "Special thanks to: Warp, built for coding with multiple AI agents
+  Available for macOS, Linux and Windows English | [简体中文](docs/README_zh-CN.md) |
+  [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md) | [한국어](docs/README_ko-KR.md)
+  PDFMathTranslate 1. What does this do? Scientific PDF document translation preserving
+  layouts. - \U0001F4CA Preserve formulas, charts, table of contents, and annotations.
+  - \U0001F310 Support [multiple languages](#usage), and diverse [translation services](#usage).
+  - \U0001F916 Provides [commandline tool](#usage), [interactive user interface](#install),
+  and [Docker](#install) 2. Recent Updates - [May 9, 2025] pdf2zh 2.0 Preview Version
+  [#586](https://github.com/Byaidu/PDFMathTranslate/issues/586): The Windows ZIP file
+  and Docker image are now available. > [!NOTE] > > 2.0 Moved to a new repository
+  under the organization: [PDFMathTranslate/PDFMathTranslate-next](https://github.com/PDFMathTranslate/PDFMathTranslate-next)
+  > > Version 2.0 official release has been published. - [Mar. 3, 2025] Experimental
+  support for the new backend [BabelDOC](https://github.com/funstory-ai/BabelDOC)
+  WebUI added as an experimental option (by [@awwaawwa](https://github.com/awwaawwa))
+  - [Feb. 22 2025] Better release CI and well-packaged windows-amd64 exe (by [@awwaawwa](https://github.com/awwaawwa))
+  3. Use \U0001F31F 3.1 Online Service \U0001F31F You can try our application out
+  using either of the following demos: - [Public free service](https://pdf2zh.com/)
+  online without installation _(recommended)_. - [Immersive Translate - BabelDOC](https://app.immersivetranslate.com/babel-doc/)
+  Free usage quota is available; please refer to the FAQ section on the page for details.
+  _(recommended)_ - [Demo hosted on HuggingFace](https://huggingface.co/spaces/reycn/PDFMathTranslate-Docker)
+  - [Demo hosted on ModelScope](https://www.modelscope.cn/studios/AI-ModelScope/PDFMathTranslate)
+  without installation. Note that the computing resources of the demo are limited,
+  so please avoid abusing them. 3.2 Local Installation For different use cases, we
+  provide distinct methods to use our program: 3.2.1 Python: Install using uv 1. Python
+  installed (3.10 3.2.2 Python: Install using pip 1. Python installed (3.10 3.3.3
+  Python: Graphic user interface 1. Python installed (3.10 See [documentation for
+  GUI](./docs/README_GUI.md) for more details. 3.2.4 Application: On Windows 1. Download
+  pdf2zh-version-win64.zip from [release page](https://github.com/Byaidu/PDFMathTranslate/releases)
+  2. Unzip and double-click `pdf2zh.exe` to run. > [!TIP] > > - If you're using Windows
+  and cannot open the file after downloading, please install [vc_redist.x64.exe](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+  and try again. > 3.2.5 Reference manager: Zotero Plugin See [Zotero PDF2zh](https://github.com/guaguastandup/zotero-pdf2zh)
+  for more details. 3.2.6 Docker: Containerized Deployment 1. Pull and run: ```bash
+  docker pull byaidu/pdf2zh docker run -d -p 7860:7860 byaidu/pdf2zh ``` 2. Open in
+  browser: ``` http://localhost:7860/ ``` For docker deployment on cloud service:
+  > [!TIP] > > - If you cannot access Docker Hub, please try the image on [GitHub
+  Container Registry](https://github.com/Byaidu/PDFMathTranslate/pkgs/container/pdfmathtranslate).
+  > ```bash > docker pull ghcr.io/byaidu/pdfmathtranslate > docker run -d -p 7860:7860
+  ghcr.io/byaidu/pdfmathtranslate > ``` 3.2.* Solutions for network issues in installation
+  Users in specific regions may encounter network difficulties when loading the AI
+  model. The current program relies on the AI model (`wybxc/DocLayout-YOLO-DocStructBench-onnx`),
+  and some users are unable to download it due to these network issues. To address
+  issues with downloading this model, use the following environment variable as a
+  workaround: ```shell set HF_ENDPOINT=https://hf-mirror.com ``` For PowerShell user:
+  ```shell $env:HF_ENDPOINT = https://hf-mirror.com ``` If the solution does not work
+  to you / you encountered other issues, please refer to [Frequently Asked Questions](https://github.com/Byaidu/PDFMathTranslate/wiki#-faq--%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98).
+  4. Technical Details ### 4.1 Advanced options Execute the translation command in
+  the command line to generate the translated document `example-mono.pdf` and the
+  bilingual document `example-dual.pdf` in the current working directory. Use Google
+  as the default translation service. More support translation services can find [HERE](https://github.com/Byaidu/PDFMathTranslate/blob/main/docs/ADVANCED.md#services).
+  In the following table, we list all advanced options for reference: | Option | Function
+  | Example | | --------------------- | -------------------------------------------------------------------------------------------------------------
+  | ---------------------------------------------- | | files | Local files | `pdf2zh
+  ~/local.pdf` | | links | Online files | `pdf2zh http://arxiv.org/paper.pdf` | |
+  `-i` | [Enter GUI](#gui) | `pdf2zh -i` | | `-p` | [Partial document translation](https://github.com/Byaidu/PDFMathTrans"
 ---
 {% raw %}
 <div align="center">

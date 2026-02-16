@@ -2,8 +2,63 @@
 layout: project
 name: Ggerganov Ggwave
 slug: ggerganov-ggwave
+category: EE-kicad-3D-Robotic
 image: https://github.com/ggerganov/ggwave/workflows/CI/badge.svg
 repo_url: https://github.com/ggerganov/ggwave
+indexed_content: "# ggwave [](https://github.com/ggerganov/ggwave/actions) [](https://opensource.org/licenses/MIT)
+  [![ggwave badge][changelog-badge]][changelog] [](https://pypi.org/project/ggwave/)
+  [](https://www.npmjs.com/package/ggwave/) Tiny data-over-sound library. Click on
+  the images below to hear what it sounds like: https://user-images.githubusercontent.com/1991296/166411509-5e1b9bcb-3655-40b1-9dc3-9bec72889dcf.mp4
+  https://user-images.githubusercontent.com/1991296/168469004-aeb9b9fe-cf81-4db7-b602-62e4ae659341.mp4
+  ## Details This library allows you to communicate small amounts of data between
+  air-gapped devices using sound. It implements a simple FSK-based transmission protocol
+  that can be easily integrated in various projects. The bandwidth rate is between
+  8-16 bytes/sec depending on the protocol parameters. Error correction codes (ECC)
+  are used to improve demodulation robustness. This library is used only to generate
+  and analyze the RAW waveforms that are played and captured from your audio devices
+  (speakers, microphones, etc.). You are free to use any audio backend (e.g. PulseAudio,
+  ALSA, etc.) as long as you provide callbacks for queuing and dequeuing audio samples.
+  Here is a list of possible applications of **ggwave** with a few examples: - **Serverless,
+  one-to-many broadcast** - [wave-share](https://github.com/ggerganov/wave-share)
+  - file sharing through sound - **Internet of Things** - [esp32-rx](https://github.com/ggerganov/ggwave/tree/master/examples/esp32-rx),
+  [arduino-rx](https://github.com/ggerganov/ggwave/tree/master/examples/arduino-rx),
+  [rp2040-rx](https://github.com/ggerganov/ggwave/tree/master/examples/rp2040-rx),
+  [arduino-tx](https://github.com/ggerganov/ggwave/tree/master/examples/arduino-tx)
+  - Send and receive sound data on microcontrollers - [r2t2](https://github.com/ggerganov/ggwave/tree/master/examples/r2t2)
+  - Transmit data with the PC speaker - [buttons](https://github.com/ggerganov/ggwave/tree/master/examples/buttons)
+  - Record and send commands via [Talking buttons](https://github.com/ggerganov/ggwave/discussions/27)
+  - **Audio QR codes** - [[Twitter]](https://twitter.com/ggerganov/status/1509558482567057417)
+  - Broadcast your clipboard to nearby devices - **Device pairing / Contact exchange**
+  - [PairSonic](https://github.com/seemoo-lab/pairsonic) - Exchange contact information
+  and public keys with nearby devices - **Authorization** ## Try it out You can easily
+  test the library using the free [waver](https://github.com/ggerganov/ggwave/tree/master/examples/waver)
+  application which is available on the following platforms: ### Browser demos - https://waver.ggerganov.com
+  - https://ggwave.ggerganov.com - https://ggwave-js.ggerganov.com ### [HTTP service](https://github.com/ggerganov/ggwave/blob/master/examples/ggwave-to-file/README.md#http-service)
+  ```bash # audible example curl -sS 'https://ggwave-to-file.ggerganov.com/?m=Hello%20world!'
+  --output hello.wav # ultrasound example curl -sS 'https://ggwave-to-file.ggerganov.com/?m=Hello%20world!&p=4'
+  --output hello.wav ``` ## Technical details Below is a short summary of the modulation
+  and demodulation algorithm used in `ggwave` for encoding and decoding data into
+  sound. ### Modulation (Tx) The current approach uses a multi-frequency [Frequency-Shift
+  Keying (FSK)](https://en.wikipedia.org/wiki/Frequency-shift_keying) modulation scheme.
+  The data to be transmitted is first split into 4-bit chunks. At each moment of time,
+  3 bytes are transmitted using 6 tones - one tone for each 4-bit chunk. The 6 tones
+  are emitted in a 4.5kHz range divided in 96 equally-spaced frequencies: | Freq,
+  [Hz] | Value, [bits] | Freq, [Hz] | Value, [bits] | ... | Freq, [Hz] | Value, [bits]
+  | | ------------ | --------------- | ------------ | --------------- | --- | ------------
+  | --------------- | | `F0 + 00*dF` | Chunk 0: `0000` | `F0 + 16*dF` | Chunk 1: `0000`
+  | ... | `F0 + 80*dF` | Chunk 5: `0000` | | `F0 + 01*dF` | Chunk 0: `0001` | `F0
+  + 17*dF` | Chunk 1: `0001` | ... | `F0 + 81*dF` | Chunk 5: `0001` | | `F0 + 02*dF`
+  | Chunk 0: `0010` | `F0 + 18*dF` | Chunk 1: `0010` | ... | `F0 + 82*dF` | Chunk
+  5: `0010` | | ... | ... | ... | ... | ... | ... | ... | | `F0 + 14*dF` | Chunk 0:
+  `1110` | `F0 + 30*dF` | Chunk 1: `1110` | ... | `F0 + 94*dF` | Chunk 5: `1110` |
+  | `F0 + 15*dF` | Chunk 0: `1111` | `F0 + 31*dF` | Chunk 1: `1111` | ... | `F0 +
+  95*dF` | Chunk 5: `1111` | For all protocols: `dF = 46.875 Hz`. For non-ultrasonic
+  protocols: `F0 = 1875.000 Hz`. For ultrasonic protocols: `F0 = 15000.000 Hz`. The
+  original data is encoded using [Reed-Solomon error codes](https://github.com/ggerganov/ggwave/blob/master/src/reed-solomon).
+  The number of ECC bytes is determined based on the length of the original data.
+  The encoded data is the one being transmitted. ### Demodulation (Rx) Beginning and
+  ending of the transmission are marked with special sound markers ([#13](https://github.com/ggerganov/ggwave/discussions/13)).
+  The receiver listens for these markers and records the in-between sound data"
 ---
 {% raw %}
 # ggwave

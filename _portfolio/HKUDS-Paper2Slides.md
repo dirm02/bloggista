@@ -2,8 +2,70 @@
 layout: project
 name: Hkuds Paper2slides
 slug: HKUDS-Paper2Slides
+category: Science -math-physics-chemistry
 image: https://img.shields.io/badge/Python-3.12+-FCE7D6.svg
 repo_url: https://github.com/HKUDS/Paper2Slides.git
+indexed_content: "# Paper2Slides: From Paper to Presentation in One Click [](https://www.python.org/)
+  [](https://opensource.org/licenses/MIT/) [](./COMMUNICATION.md) [](./COMMUNICATION.md)
+  ✨ **Never Build Slides from Scratch Again** ✨ | \U0001F4C4 **Universal File Support**
+  &nbsp;|&nbsp; \U0001F3AF **RAG-Powered Precision** &nbsp;|&nbsp; \U0001F3A8 **Custom
+  Styling** &nbsp;|&nbsp; ⚡ **Lightning Speed** | --- ## \U0001F3AF What is Paper2Slides?
+  Turns your **research papers**, **reports**, and **documents** into **professional
+  slides & posters** in **minutes**. ### ✨ Key Features - \U0001F4C4 **Universal Document
+  Support** Seamlessly process PDF, Word, Excel, PowerPoint, Markdown, and multiple
+  file formats simultaneously. - \U0001F3AF **Comprehensive Content Extraction** RAG-powered
+  mechanism ensures every critical insight, figure, and data point is captured with
+  precision. - \U0001F517 **Source-Linked Accuracy** Maintains direct traceability
+  between generated content and original sources, eliminating information drift. -
+  \U0001F3A8 **Custom Styling Freedom** Choose from professional built-in themes or
+  describe your vision in natural language for custom styling. - ⚡ **Lightning-Fast
+  Generation** Instant preview mode enables rapid experimentation and real-time refinements.
+  - \U0001F4BE **Seamless Session Management** Advanced checkpoint system preserves
+  all progress—pause, resume, or switch themes instantly without loss. - ✨ **Professional-Grade
+  Visuals** Deliver polished, presentation-ready slides and posters with publication-quality
+  design standards. ### ⚡ Easy as One Command ```bash # One command to generate slides
+  from a paper python -m paper2slides --input paper.pdf --output slides --style doraemon
+  --length medium --fast --parallel 2 ``` --- ## \U0001F525 News - **[2025.12.09]**
+  Added parallel slide generation (`--parallel`) for faster processing - **[2025.12.08]**
+  Paper2Slides is now open source! --- ## \U0001F3A8 Custom Styling Showcase doraemon
+  academic custom doraemon academic custom ✨ Multiple styles available — simply modify
+  the --style parameter Examples from DeepSeek-V3.2: Pushing the Frontier of Open
+  Large Language Models \U0001F4A1 Custom Style Example: Totoro Theme ``` --style
+  \"Studio Ghibli anime style with warm whimsical aesthetic. Use soft watercolor Morandi
+  tones with light cream background, muted sage green and dusty pink accents. Totoro
+  character can appear as a friendly guide relating to the content, with nature elements
+  like soft clouds or leaves.\" ``` --- ### \U0001F310 Paper2Slides Web Interface
+  --- ## \U0001F4CB Table of Contents - [\U0001F3AF Quick Start](#-quick-start) -
+  [\U0001F3D7️ Paper2Slides Framework](#%EF%B8%8F-paper2slides-framework) - [\U0001F527
+  Configuration](#%EF%B8%8F-configuration) - [\U0001F4C1 Code Structure](#-code-structure)
+  --- ## \U0001F3C3 Quick Start ### 1. Environment Setup ```bash # Clone repository
+  git clone https://github.com/HKUDS/Paper2Slides.git cd Paper2Slides # Create and
+  activate conda environment conda create -n paper2slides python=3.12 -y conda activate
+  paper2slides # Install dependencies pip install -r requirements.txt ``` > [!NOTE]
+  > Create a `.env` file in `paper2slides/` directory with your API keys. Refer to
+  `paper2slides/.env.example` for the required variables. ### 2. Command Line Usage
+  ```bash # Basic usage - generate slides from a paper python -m paper2slides --input
+  paper.pdf --output slides --length medium # Generate poster with custom style python
+  -m paper2slides --input paper.pdf --output poster --style \"minimalist with blue
+  theme\" --density medium # Fast mode python -m paper2slides --input paper.pdf --output
+  slides --fast # Enable parallel generation (2 workers by default) python -m paper2slides
+  --input paper.pdf --output slides --parallel 2 # List all processed outputs python
+  -m paper2slides --list ``` **CLI Options**: | Option | Description | Default | |--------|-------------|---------|
+  | `--input, -i` | Input file(s) or directory | Required | | `--output` | Output
+  type: `slides` or `poster` | `poster` | | `--content` | Content type: `paper` or
+  `general` | `paper` | | `--style` | Style: `academic`, `doraemon`, or custom | `doraemon`
+  | | `--length` | Slides length: `short`, `medium`, `long` | `short` | | `--density`
+  | Poster density: `sparse`, `medium`, `dense` | `medium` | | `--fast` | Fast mode:
+  skip RAG indexing | `false` | | `--parallel` | Enable parallel slide generation:
+  `--parallel` uses 2 workers, `--parallel N` uses N workers | `1` (sequential without
+  this option) | | `--from-stage` | Force restart from stage: `rag`, `summary`, `plan`,
+  `generate` | Auto-detect | | `--debug` | Enable debug logging | `false` | **\U0001F4BE
+  Checkpoint & Resume**: Paper2Slides intelligently saves your progress at every key
+  stage, allowing you to: | Scenario | Command | |----------|---------| | **Resume
+  after interruption** | Just run the same command again — it auto-detects and continues
+  | | **Change style only** | Add `--from-stage plan` to skip re-parsing | | **Regenerate
+  images** | Add `--from-stage generate` to keep the same plan | | **Full restart**
+  | Add `--from-stage rag` to start from scratch | > [!TIP] > Checkpoints are auto-saved"
 ---
 {% raw %}
 <div align="center">

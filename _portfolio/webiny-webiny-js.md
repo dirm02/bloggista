@@ -2,8 +2,16 @@
 layout: project
 name: Webiny Webiny Js
 slug: webiny-webiny-js
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/webiny-webiny-js/docs/static/webiny-logo.svg
 repo_url: https://github.com/webiny/webiny-js
+indexed_content: 'An open-source serverless enterprise CMS built for AWS. --- ## Documentation
+  For full documentation, visit [webiny.com/docs](https://www.webiny.com/docs). ##
+  Extensions Explore community extensions at [github.com/webiny/extensions](https://github.com/webiny/extensions).
+  ## Community For help, discussion about best practices, or feature ideas: [Join
+  our Slack community](https://www.webiny.com/slack) ## Contributing If you''re interested
+  in contributing to Webiny, please read our [contributing docs](/docs/CONTRIBUTING.md)
+  **before submitting a pull request**.'
 ---
 {% raw %}
 <p align="center">

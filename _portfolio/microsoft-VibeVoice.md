@@ -2,8 +2,66 @@
 layout: project
 name: Microsoft Vibevoice
 slug: microsoft-VibeVoice
+category: Uncategorized
 image: https://img.shields.io/badge/Project-Page-blue?logo=githubpages
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "## \U0001F399️ VibeVoice: Open-Source Frontier Voice AI [](https://microsoft.github.io/VibeVoice)
+  [](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
+  [](https://arxiv.org/pdf/2508.19205) [](https://arxiv.org/pdf/2601.18184) [](https://colab.research.google.com/github/microsoft/VibeVoice/blob/main/demo/VibeVoice_colab.ipynb)
+  [](https://aka.ms/vibevoice-asr) \U0001F4F0 News 2026-01-21: \U0001F4E3 We open-sourced
+  VibeVoice-ASR , a unified speech-to-text model designed to handle 60-minute long-form
+  audio in a single pass, generating structured transcriptions containing Who (Speaker),
+  When (Timestamps), and What (Content), with support for User-Customized Context.
+  Try it in [Playground](https://aka.ms/vibevoice-asr) . - ⭐️ VibeVoice-ASR is natively
+  multilingual, supporting over 50 languages — check the [supported languages](docs/vibevoice-asr.md#language-distribution)
+  for details. - \U0001F525 The VibeVoice-ASR [finetuning code](finetuning-asr/README.md)
+  is now available! - ⚡️ **vLLM inference** is now supported for faster inference;
+  see [vllm-asr](docs/vibevoice-vllm-asr.md) for more details. - \U0001F4D1 [VibeVoice-ASR
+  Technique Report](https://arxiv.org/pdf/2601.18184) is available. 2025-12-16: \U0001F4E3
+  We added experimental speakers to VibeVoice‑Realtime‑0.5B for exploration, including
+  multilingual voices in nine languages (DE, FR, IT, JP, KR, NL, PL, PT, ES) and 11
+  distinct English style voices. [Try it](docs/vibevoice-realtime-0.5b.md#optional-more-experimental-voices).
+  More speaker types will be added over time. 2025-12-03: \U0001F4E3 We open-sourced
+  VibeVoice‑Realtime‑0.5B , a real‑time text‑to‑speech model that supports streaming
+  text input and robust long-form speech generation. Try it on [Colab](https://colab.research.google.com/github/microsoft/VibeVoice/blob/main/demo/vibevoice_realtime_colab.ipynb).
+  2025-09-05: VibeVoice is an open-source research framework intended to advance collaboration
+  in the speech synthesis community. After release, we discovered instances where
+  the tool was used in ways inconsistent with the stated intent. Since responsible
+  use of AI is one of Microsoft’s guiding principles, we have removed the VibeVoice-TTS
+  code from this repository. 2025-08-25: \U0001F4E3 We open-sourced VibeVoice-TTS
+  , a long-form multi-speaker text-to-speech model that can synthesize speech up to
+  90 minutes long with up to 4 distinct speakers. ## Overview VibeVoice is a **family
+  of open-source frontier voice AI models** that includes both Text-to-Speech (TTS)
+  and Automatic Speech Recognition (ASR) models. A core innovation of VibeVoice is
+  its use of continuous speech tokenizers (Acoustic and Semantic) operating at an
+  ultra-low frame rate of **7.5 Hz**. These tokenizers efficiently preserve audio
+  fidelity while significantly boosting computational efficiency for processing long
+  sequences. VibeVoice employs a [next-token diffusion](https://arxiv.org/abs/2412.08635)
+  framework, leveraging a Large Language Model (LLM) to understand textual context
+  and dialogue flow, and a diffusion head to generate high-fidelity acoustic details.
+  For more information, demos, and examples, please visit our [Project Page](https://microsoft.github.io/VibeVoice).
+  | Model | Weight | Quick Try | |-------|--------------|---------| | VibeVoice-ASR-7B
+  | [HF Link](https://huggingface.co/microsoft/VibeVoice-ASR) | [Playground](https://aka.ms/vibevoice-asr)
+  | | VibeVoice-TTS-1.5B | [HF Link](https://huggingface.co/microsoft/VibeVoice-1.5B)
+  | Disabled | | VibeVoice-Realtime-0.5B | [HF Link](https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B)
+  | [Colab](https://colab.research.google.com/github/microsoft/VibeVoice/blob/main/demo/vibevoice_realtime_colab.ipynb)
+  | ## Models ### 1. \U0001F4D6 [VibeVoice-ASR](docs/vibevoice-asr.md) - Long-form
+  Speech Recognition **VibeVoice-ASR** is a unified speech-to-text model designed
+  to handle **60-minute long-form audio** in a single pass, generating structured
+  transcriptions containing **Who (Speaker), When (Timestamps), and What (Content)**,
+  with support for **Customized Hotwords**. - **\U0001F552 60-minute Single-Pass Processing**:
+  Unlike conventional ASR models that slice audio into short chunks (often losing
+  global context), VibeVoice ASR accepts up to **60 minutes** of continuous audio
+  input within 64K token length. This ensures consistent speaker tracking and semantic
+  coherence across the entire hour. - **\U0001F464 Customized Hotwords**: Users can
+  provide customized hotwords (e.g., specific names, technical terms, or background
+  info) to guide the recognition process, significantly improving accuracy on domain-specific
+  content. - **\U0001F4DD Rich Transcription (Who, When, What)**: The model jointly
+  performs ASR, diarization, and timestamping, producing a structured output that
+  indicates *who* said *what* and *when*. [\U0001F4D6 Documentation](docs/vibevoice-asr.md)
+  | [\U0001F917 Hugging Face](https://huggingface.co/microsoft/VibeVoice-ASR) | [\U0001F3AE
+  Playground](https://aka.ms/vibevoice-asr) | [\U0001F6E0️ Finetuning](finetuning-asr/README.md)
+  | [\U0001F4CA Paper](docs/VibeVoice-ASR-Report.pdf) https://gi"
 ---
 {% raw %}
 <div align="center">

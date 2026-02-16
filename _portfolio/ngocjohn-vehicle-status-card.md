@@ -2,8 +2,66 @@
 layout: project
 name: Ngocjohn Vehicle Status Card
 slug: ngocjohn-vehicle-status-card
+category: Home automation-IoT
 image: https://my.home-assistant.io/badges/hacs_repository.svg
 repo_url: https://github.com/ngocjohn/vehicle-status-card
+indexed_content: "[![hacs][hacs-default]][hacs-default-link] [![hacs][hacs-validate]][hacs-url]
+  ![Github last commit][git-last-commit-badge] ![git-download-all][git-download-all-badge]
+  ![git-download-latest][git-download-latest-badge] [![forum][forum-badge]][forum-url]
+  # \U0001F698 Vehicle status card --- This is a custom Home Assistant card designed
+  to display detailed status information about vehicles. It provides several features
+  such as indicators, range progress bars, buttons for interacting with the vehicle's
+  entities, and a mini map to track devices. The card is highly customizable with
+  options to display various types of data and layouts. ## Features - **Indicators**:
+  Display individual or grouped entity states on the header of the card. - **Range
+  Indicators**: Show progress bars for fuel, battery, or any entity with a range state.
+  - **Images**: Upload or add images for a slideshow display with customizable intervals.
+  - **Mini Map**: Track `device_tracker` entities using an integrated mini map. -
+  **Button Cards**: Set up primary/secondary buttons, icons, notifications, and default/custom
+  cards to interact with vehicle entities. - **Layout Configuration**: Customize the
+  layout, theme, rows, and swipe functionality for button grids. ## Table of contents
+  Table of contents - [Overview](#vehicle-status-card) - [Features](#features) - [Installation](#installation)
+  - [HACS Installation](#hacs-installation) - [Manual Installation](#manual-installation)
+  - [Configuration](#ui-editor) # Installation ## [HACS](https://hacs.xyz) (Home Assistant
+  Community Store) Vehicle status card is available in HACS. Use this link to directly
+  go to the repository in HACS [](https://my.home-assistant.io/redirect/hacs_repository/?owner=ngocjohn&repository=vehicle-status-card&category=plugin)
+  or 1. If HACS is not installed yet, download it following the instructions on [https://hacs.xyz/docs/use/#getting-started-with-hacs](https://hacs.xyz/docs/use/#getting-started-with-hacs)
+  2. Open HACS in Home Assistant 3. Search for `Vehicle status card` 4. Click the
+  download button. ⬇️ 1. Force refresh the Home Assistant page `Ctrl` + `F5` / `Shift`
+  + `⌘` + `R` 1. Add vehicle-status-card to your dashboard ## Manual 1. Download the
+  [vehicle-status-card.js](https://github.com/ngocjohn/vehicle-status-card/releases/latest).
+  2. Place the downloaded file on your Home Assistant machine in the `config/www`
+  folder (when there is no `www` folder in the folder where your `configuration.yaml`
+  file is, create it and place the file there). 3. In Home Assistant go to `Configuration->Lovelace
+  Dashboards->Resources` (When there is no `resources` tag on the `Lovelace Dashboard`
+  page, enable advanced mode in your account settings, and retry this step). 4. Add
+  a new resource: - Url = `/local/vehicle-status-card.js` - Resource type = `module`
+  5. Force refresh the Home Assistant page `Ctrl` + `F5` / `Shift` + `⌘` + `R`. 6.
+  Add vehicle-status-card to your page. # UI Editor ## Example Configuration The **Vehicle
+  Status Card** is fully configurable using Home Assistant's **UI card editor**, with
+  no need to manually edit YAML. When adding a new card, the editor provides a **\"Generate
+  Example\"** option that: - Selects random entities from your Home Assistant setup
+  - Creates a complete sample configuration of the card - Provides a functional preview
+  to help you get started quickly This feature makes it easy for both new and experienced
+  users to explore the card's capabilities and layout options. # Indicators Configuration
+  The **Indicator Rows** format introduces a new way to organize and display indicators
+  in the card. Instead of a flat list of items, indicators can now be grouped into
+  rows. Each row can contain individual entities or groups of entities, allowing for
+  more flexible layouts and better control over presentation. | Name | Type | Requirement
+  | Description | | ----------- | ----------- | ----------- | ----------------------------------------------------------------------------------------------
+  | | `row_items` | Object list | Required | An array of items with config types:
+  `entity`, `group`. | | `alignment` | String | Optional | Controls how the items
+  in the row are aligned (`default`, `start`, `center`, `end`, `justify`) | | `no_wrap`
+  | Boolean | Optional | Disable wrapping of items. Items will be in a single line
+  and can be scrolled horizontally. | ## `entity` Single indicators are used to display
+  the state of a single entity, such as a sensor or binary sensor, on the card's header.
+  These indicators are ideal for showcasing key information like vehicle battery level,
+  engine status, or lock state. Each single indicator displays the current state of
+  the entity with an optional icon for better visualization. For example, a single
+  indicator can be used to show whether a car door is locked or unlocked, or to display
+  the remaining battery percentage of the vehicle. ## `group` This is useful when
+  you want to track the status of related entities together, such as all door locks
+  or all tire "
 ---
 {% raw %}
 

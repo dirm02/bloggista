@@ -2,8 +2,70 @@
 layout: project
 name: Hkuds Nanobot
 slug: HKUDS-nanobot
+category: Bots-honeypots
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/HKUDS-nanobot/nanobot_logo.png
 repo_url: https://github.com/openclaw/openclaw)
+indexed_content: "nanobot: Ultra-Lightweight Personal AI Assistant \U0001F408 **nanobot**
+  is an **ultra-lightweight** personal AI assistant inspired by [OpenClaw](https://github.com/openclaw/openclaw)
+  ⚡️ Delivers core agent functionality in just **~4,000** lines of code — **99% smaller**
+  than Clawdbot's 430k+ lines. \U0001F4CF Real-time line count: **3,536 lines** (run
+  `bash core_agent_lines.sh` to verify anytime) ## \U0001F4E2 News - **2026-02-13**
+  \U0001F389 Released v0.1.3.post7 — includes security hardening and multiple improvements.
+  All users are recommended to upgrade to the latest version. See [release notes](https://github.com/HKUDS/nanobot/releases/tag/v0.1.3.post7)
+  for more details. - **2026-02-12** \U0001F9E0 Redesigned memory system — Less code,
+  more reliable. Join the [discussion](https://github.com/HKUDS/nanobot/discussions/566)
+  about it! - **2026-02-10** \U0001F389 Released v0.1.3.post6 with improvements! Check
+  the updates [notes](https://github.com/HKUDS/nanobot/releases/tag/v0.1.3.post6)
+  and our [roadmap](https://github.com/HKUDS/nanobot/discussions/431). - **2026-02-09**
+  \U0001F4AC Added Slack, Email, and QQ support — nanobot now supports multiple chat
+  platforms! - **2026-02-08** \U0001F527 Refactored Providers—adding a new LLM provider
+  now takes just 2 simple steps! Check [here](#providers). - **2026-02-07** \U0001F680
+  Released v0.1.3.post5 with Qwen support & several key improvements! Check [here](https://github.com/HKUDS/nanobot/releases/tag/v0.1.3.post5)
+  for details. - **2026-02-06** ✨ Added Moonshot/Kimi provider, Discord integration,
+  and enhanced security hardening! - **2026-02-05** ✨ Added Feishu channel, DeepSeek
+  provider, and enhanced scheduled tasks support! - **2026-02-04** \U0001F680 Released
+  v0.1.3.post4 with multi-provider & Docker support! Check [here](https://github.com/HKUDS/nanobot/releases/tag/v0.1.3.post4)
+  for details. - **2026-02-03** ⚡ Integrated vLLM for local LLM support and improved
+  natural language task scheduling! - **2026-02-02** \U0001F389 nanobot officially
+  launched! Welcome to try \U0001F408 nanobot! ## Key Features of nanobot: \U0001FAB6
+  **Ultra-Lightweight**: Just ~4,000 lines of core agent code — 99% smaller than Clawdbot.
+  \U0001F52C **Research-Ready**: Clean, readable code that's easy to understand, modify,
+  and extend for research. ⚡️ **Lightning Fast**: Minimal footprint means faster startup,
+  lower resource usage, and quicker iterations. \U0001F48E **Easy-to-Use**: One-click
+  to deploy and you're ready to go. ## \U0001F3D7️ Architecture ## ✨ Features \U0001F4C8
+  24/7 Real-Time Market Analysis \U0001F680 Full-Stack Software Engineer \U0001F4C5
+  Smart Daily Routine Manager \U0001F4DA Personal Knowledge Assistant Discovery •
+  Insights • Trends Develop • Deploy • Scale Schedule • Automate • Organize Learn
+  • Memory • Reasoning ## \U0001F4E6 Install **Install from source** (latest features,
+  recommended for development) ```bash git clone https://github.com/HKUDS/nanobot.git
+  cd nanobot pip install -e . ``` **Install with [uv](https://github.com/astral-sh/uv)**
+  (stable, fast) ```bash uv tool install nanobot-ai ``` **Install from PyPI** (stable)
+  ```bash pip install nanobot-ai ``` ## \U0001F680 Quick Start > [!TIP] > Set your
+  API key in `~/.nanobot/config.json`. > Get API keys: [OpenRouter](https://openrouter.ai/keys)
+  (Global) · [Brave Search](https://brave.com/search/api/) (optional, for web search)
+  **1. Initialize** ```bash nanobot onboard ``` **2. Configure** (`~/.nanobot/config.json`)
+  For OpenRouter - recommended for global users: ```json { \"providers\": { \"openrouter\":
+  { \"apiKey\": \"sk-or-v1-xxx\" } }, \"agents\": { \"defaults\": { \"model\": \"anthropic/claude-opus-4-5\"
+  } } } ``` **3. Chat** ```bash nanobot agent -m \"What is 2+2?\" ``` That's it! You
+  have a working AI assistant in 2 minutes. ## \U0001F5A5️ Local Models (vLLM) Run
+  nanobot with your own local models using vLLM or any OpenAI-compatible server. **1.
+  Start your vLLM server** ```bash vllm serve meta-llama/Llama-3.1-8B-Instruct --port
+  8000 ``` **2. Configure** (`~/.nanobot/config.json`) ```json { \"providers\": {
+  \"vllm\": { \"apiKey\": \"dummy\", \"apiBase\": \"http://localhost:8000/v1\" } },
+  \"agents\": { \"defaults\": { \"model\": \"meta-llama/Llama-3.1-8B-Instruct\" }
+  } } ``` **3. Chat** ```bash nanobot agent -m \"Hello from my local LLM!\" ``` >
+  [!TIP] > The `apiKey` can be any non-empty string for local servers that don't require
+  authentication. ## \U0001F4AC Chat Apps Talk to your nanobot through Telegram, Discord,
+  WhatsApp, Feishu, Mochat, DingTalk, Slack, Email, or QQ — anytime, anywhere. | Channel
+  | Setup | |---------|-------| | **Telegram** | Easy (just a token) | | **Discord**
+  | Easy (bot token + intents) | | **WhatsApp** | Medium (scan QR) | | **Feishu**
+  | Medium (app credentials) | | **Mochat** | Medium (claw token + websocket) | |
+  **DingTalk** | Medium (app credentials) | | **Slack** | Medium (bot + app tokens)
+  | | **Email** | Medium (IMAP/SMTP credentials) | | **QQ** | Easy (app credentials)
+  | Telegram (Recommended) **1. Create a bot** - Open Telegram, search `@BotFather`
+  - Send `/newbot`, follow prompts - Copy the token **2. Configure** ```json { \"channels\":
+  { \"telegram\": { \"enabled\": true, \"token\": \"YOUR_BOT_TOKEN\", \"allowFrom\":
+  [\"YOUR_USER_ID\"] }"
 ---
 {% raw %}
 <div align="center">

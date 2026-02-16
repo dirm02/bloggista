@@ -2,8 +2,66 @@
 layout: project
 name: Timothymiller Cloudflare Ddns
 slug: timothymiller-cloudflare-ddns
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/docker/image-size/timothyjmiller/cloudflare-ddns?style=flat-square
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/timothymiller-cloudflare-ddns
+indexed_content: "# \U0001F680 Cloudflare DDNS Access your home network remotely via
+  a custom domain name without a static IP! ## ⚡ Efficiency - ❤️ Easy config. List
+  your domains and you're done. - \U0001F501 The Python runtime will re-use existing
+  HTTP connections. - \U0001F5C3️ Cloudflare API responses are cached to reduce API
+  usage. - \U0001F90F The Docker image is small and efficient. - 0️⃣ Zero dependencies.
+  - \U0001F4AA Supports all platforms. - \U0001F3E0 Enables low cost self hosting
+  to promote a more decentralized internet. - \U0001F512 Zero-log IP provider ([cdn-cgi/trace](https://www.cloudflare.com/cdn-cgi/trace))
+  - \U0001F450 GPL-3.0 License. Open source for open audits. ## \U0001F4AF Complete
+  Support of Domain Names, Subdomains, IPv4 & IPv6, and Load Balancing - \U0001F310
+  Supports multiple domains (zones) on the same IP. - \U0001F4E0 Supports multiple
+  subdomains on the same IP. - \U0001F4E1 IPv4 and IPv6 support. - \U0001F30D Supports
+  all Cloudflare regions. - ⚖️ Supports [Cloudflare Load Balancing](https://developers.cloudflare.com/load-balancing/understand-basics/pools/).
+  - \U0001F1FA\U0001F1F8 Made in the U.S.A. ## \U0001F4CA Stats | Size | Downloads
+  | Discord | | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | ----------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | [](https://hub.docker.com/r/timothyjmiller/cloudflare-ddns 'cloudflare-ddns
+  docker image size') | [](https://hub.docker.com/r/timothyjmiller/cloudflare-ddns
+  'Total DockerHub pulls') | [](https://discord.gg/UgGmwMvNxm 'Official Discord Server')
+  | ## \U0001F6A6 Getting Started First copy the example configuration file into the
+  real one. ```bash cp config-example.json config.json ``` Edit `config.json` and
+  replace the values with your own. ### \U0001F511 Authentication methods You can
+  choose to use either the newer API tokens, or the traditional API keys To generate
+  a new API tokens, go to your [Cloudflare Profile](https://dash.cloudflare.com/profile/api-tokens)
+  and create a token capable of **Edit DNS**. Then replace the value in ```json \"authentication\":
+  \"api_token\": \"Your cloudflare API token, including the capability of **Edit DNS**\"
+  ``` Alternatively, you can use the traditional API keys by setting appropriate values
+  for: ```json \"authentication\": \"api_key\": \"api_key\": \"Your cloudflare API
+  Key\", \"account_email\": \"The email address you use to sign in to cloudflare\",
+  ``` ### \U0001F4CD Enable or disable IPv4 or IPv6 Some ISP provided modems only
+  allow port forwarding over IPv4 or IPv6. In this case, you would want to disable
+  any interface not accessible via port forward. ```json \"a\": true, \"aaaa\": true
+  ``` ### \U0001F39B️ Other values explained ```json \"zone_id\": \"The ID of the
+  zone that will get the records. From your dashboard click into the zone. Under the
+  overview tab, scroll down and the zone ID is listed in the right rail\", \"subdomains\":
+  \"Array of subdomains you want to update the A & where applicable, AAAA records.
+  IMPORTANT! Only write subdomain name. Do not include the base domain name. (e.g.
+  foo or an empty string to update the base domain)\", \"proxied\": \"Defaults to
+  false. Make it true if you want CDN/SSL benefits from cloudflare. This usually disables
+  SSH)\", \"ttl\": \"Defaults to 300 seconds. Longer TTLs speed up DNS lookups by
+  increasing the chance of cached results, but a longer TTL also means that updates
+  to your records take longer to go into effect. You can choose a TTL between 30 seconds
+  and 1 day. For more information, see [Cloudflare's TTL documentation](https://developers.cloudflare.com/dns/manage-dns-records/reference/ttl/)\",
+  ``` ## \U0001F4E0 Hosting multiple subdomains on the same IP? This script can be
+  used to update multiple subdomains on the same IP address. For example, if you have
+  a domain `example.com` and you want to host additional subdomains at `foo.example.com`
+  and `bar.example.com` on the same IP address, you can use this script to update
+  the DNS records for all subdomains. ### ⚠️ Note Please remove the comments after
+  `//` in the below example. They are only there to explain the config. Do not include
+  the base domain name in your `subdomains` config. Do not use the [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name).
+  ### \U0001F449 Example \U0001F680 ```bash { \"cloudflare\": [ { \"authentication\":
+  { \"api_token\": \"api_token_here\", // Either api_token or api_key \"api_key\":
+  { \"api_key\": \"api_key_here\", \"account_email\": \"your_email_here\" } }, \"zone_id\":
+  \"your_zone_id_here\", \"subdomains\": [ { \"name\": \"\", // Root domain (example.com)
+  \"proxied\": true }, { \"name\": \"foo\", // (foo.example.com) \"proxied\": true
+  }, { \"name\": \"bar\", // (bar.example.com) \"proxied\": true } ] } ], \"a\": true,
+  \"aaaa\": true, \"purgeUnknownRecords\": false, \"ttl\": 300 } ``` ## \U0001F310"
 ---
 {% raw %}
 <p align="center"><a href="https://timknowsbest.com/free-dynamic-dns" target="_blank" rel="noopener noreferrer"><img width="1024" src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/timothymiller-cloudflare-ddns/feature-graphic.jpg" alt="Cloudflare DDNS"/></a></p>

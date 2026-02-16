@@ -2,8 +2,55 @@
 layout: project
 name: Mercurjs B2c Marketplace Storefront
 slug: mercurjs-b2c-marketplace-storefront
+category: Platform -eCommerce
 image: https://cdn.prod.website-files.com/6790aeffc4b432ccaf1b56e5/67a21bd27b4ac8b812c1d84f_B2C%20Storefront%20Cover.png
 repo_url: https://github.com/mercurjs/mercur
+indexed_content: "B2C Storefront for Mercur - Open Source Marketplace Platform \U0001F6CD️
+  B2C Marketplace Storefront Demo · Mercur Website · \U0001F4C3 Explore the docs ##
+  B2C Storefront for Marketplace Customizable storefront designed for B2C with all
+  elements including browsing and buying products across multiple vendors at once.
+  Ready to go: - Home Page - \U0001F6CD️ Check demo - Listing - Product Page - Shopping
+  Cart - Seller Page - Selling Hub - Moved to external VendorPanel - Wishlist # Part
+  of Mercur Mercur is an open source marketplace platform that allows you to create
+  high-quality experiences for shoppers and vendors while having the most popular
+  Open Source commerce platform MedusaJS as a foundation. Mercur is a platform to
+  start, customize, manage, and scale your marketplace for every business model with
+  a modern technology stack. ## Quickstart ### Installation Clone the repository ```js
+  git clone https://github.com/mercurjs/b2c-marketplace-storefront.git ``` &nbsp;
+  Go to directory ```js cd b2c-marketplace-storefront ``` &nbsp; Install dependencies
+  ```js npm install ``` &nbsp; Make a .env.local file and copy the code below ```js
+  # API URL MEDUSA_BACKEND_URL=http://localhost:9000 # Your publishable key generated
+  in mercur admin panel NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY= # Your public url NEXT_PUBLIC_BASE_URL=http://localhost:3000
+  # Default region NEXT_PUBLIC_DEFAULT_REGION=pl # Stripe payment key. It can be random
+  string, don't leave it empty. NEXT_PUBLIC_STRIPE_KEY=supersecret # Backend cookie
+  secret REVALIDATE_SECRET=supersecret # Your site name in metadata NEXT_PUBLIC_SITE_NAME=\"Fleek
+  Marketplace\" # Your site description in metadata NEXT_PUBLIC_SITE_DESCRIPTION=\"Fleek
+  Markeplace\" # Algolia Application ID NEXT_PUBLIC_ALGOLIA_ID=supersecret # Algolia
+  Search API Key NEXT_PUBLIC_ALGOLIA_SEARCH_KEY=supersecret #TalkJS APP ID NEXT_PUBLIC_TALKJS_APP_ID=
+  ``` &nbsp; Start storefront ```js npm run dev ``` &nbsp; ### Guides #### How to
+  get Aloglia Keys #### How to get TalkJs App ID ### Configure Algolia index To work
+  Algolia correctly you need to configure facets and searchable attributes. You can
+  use import function to upload algolia-config.json file &nbsp; In Algolia dashboard
+  chose your index and select Import configuration from Manage index dropdown menu
+  &nbsp; &nbsp; algolia-config.json ```js { \"settings\": { \"minWordSizefor1Typo\":
+  4, \"minWordSizefor2Typos\": 8, \"hitsPerPage\": 20, \"maxValuesPerFacet\": 100,
+  \"searchableAttributes\": [ \"title\", \"subtitle\", \"brand.name\", \"tags.value\",
+  \"type.value\", \"categories.name\", \"collection.title\", \"variants.title\" ],
+  \"numericAttributesToIndex\": null, \"attributesToRetrieve\": null, \"unretrievableAttributes\":
+  null, \"optionalWords\": null, \"attributesForFaceting\": [ \"average_rating\",
+  \"filterOnly(categories.id)\", \"categories.name\", \"seller.handle\", \"seller.store_status\",
+  \"filterOnly(supported_countries)\", \"searchable(title)\", \"variants.color\",
+  \"variants.condition\", \"variants.prices.currency_code\", \"variants.size\" ],
+  \"attributesToSnippet\": null, \"attributesToHighlight\": null, \"paginationLimitedTo\":
+  1000, \"attributeForDistinct\": null, \"exactOnSingleWordQuery\": \"attribute\",
+  \"ranking\": [ \"typo\", \"geo\", \"words\", \"filters\", \"proximity\", \"attribute\",
+  \"exact\", \"custom\" ], \"customRanking\": null, \"separatorsToIndex\": \"\", \"removeWordsIfNoResults\":
+  \"none\", \"queryType\": \"prefixLast\", \"highlightPreTag\": \" \", \"highlightPostTag\":
+  \" \", \"alternativesAsExact\": [\"ignorePlurals\", \"singleWordSynonym\"], \"renderingContent\":
+  { \"facetOrdering\": { \"facets\": { \"order\": [\"variants.color\", \"variants.size\",
+  \"variants.condition\"] }, \"values\": { \"variants.color\": { \"sortRemainingBy\":
+  \"count\" }, \"variants.condition\": { \"sortRemainingBy\": \"count\" }, \"variants.size\":
+  { \"sortRemainingBy\": \"count\" } } } } }, \"rules\": [], \"synonyms\": [] } ```"
 ---
 {% raw %}
 ![B2C Storefront Cover](https://cdn.prod.website-files.com/6790aeffc4b432ccaf1b56e5/67a21bd27b4ac8b812c1d84f_B2C%20Storefront%20Cover.png)

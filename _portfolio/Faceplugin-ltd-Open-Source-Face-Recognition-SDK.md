@@ -2,8 +2,70 @@
 layout: project
 name: Faceplugin Ltd Open Source Face Recognition Sdk
 slug: Faceplugin-ltd-Open-Source-Face-Recognition-SDK
+category: Uncategorized
 image: https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue.svg
 repo_url: https://github.com/Faceplugin-ltd/FaceRecognition-Javascript
+indexed_content: "# Open Source Face Recognition SDK **The world's first completely
+  free and open-source face recognition SDK for Windows and Linux** [](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)
+  [](https://www.python.org/) [](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)
+  [](https://faceplugin.com/) --- ## \U0001F680 Overview The **Open Source Face Recognition
+  SDK** by [Faceplugin](https://faceplugin.com/) is a powerful, privacy-focused solution
+  for integrating face recognition capabilities into your applications. Built with
+  deep learning models, this SDK provides high-accuracy face detection and recognition
+  while ensuring complete data privacy through on-premise processing. ### ✨ Key Features
+  - \U0001F512 **100% On-Premise**: All processing happens locally - no data leaves
+  your device - \U0001F3AF **High Accuracy**: Powered by state-of-the-art deep learning
+  models - ⚡ **Real-Time Processing**: Fast face detection and recognition capabilities
+  - \U0001F527 **Easy Integration**: Simple Python APIs for seamless development -
+  \U0001F310 **Cross-Platform**: Compatible with Windows and Linux systems - \U0001F4F1
+  **GPU Optional**: Works efficiently on CPU-only systems - \U0001F193 **Completely
+  Free**: Open source with no licensing fees ### \U0001F3AF Current Capabilities -
+  Face detection and bounding box extraction - Facial landmark detection - Feature
+  embedding generation - Face similarity comparison - Support for multiple image formats
+  (JPG, PNG, etc.) --- ## \U0001F6E0️ Installation ### Prerequisites - **Python 3.9
+  or higher** - **Anaconda** (recommended for dependency management) - **Windows or
+  Linux** operating system ### Setup Instructions 1. **Install Anaconda** (if not
+  already installed) ```bash # Download from: https://www.anaconda.com/products/distribution
+  ``` 2. **Create and activate conda environment** ```bash conda create -n facesdk
+  python=3.9 conda activate facesdk ``` 3. **Install dependencies** ```bash pip install
+  -r requirements.txt ``` 4. **Test the installation** ```bash python run.py ``` ---
+  ## \U0001F4D6 Quick Start ### Basic Usage ```python from face_recognition_sdk import
+  FaceRecognition # Initialize the SDK face_sdk = FaceRecognition() # Process an image
+  image_path = \"path/to/your/image.jpg\" face_info = face_sdk.GetImageInfo(image_path,
+  faceMaxCount=10) # Compare two faces similarity = face_sdk.get_similarity(feature1,
+  feature2) ``` ### Example: Face Comparison ```python # Compare two images image1
+  = \"test/1.jpg\" image2 = \"test/2.png\" # Get face information from both images
+  faces1 = face_sdk.GetImageInfo(image1, faceMaxCount=1) faces2 = face_sdk.GetImageInfo(image2,
+  faceMaxCount=1) if faces1 and faces2: # Compare the first face from each image similarity
+  = face_sdk.get_similarity(faces1[0]['embedding'], faces2[0]['embedding']) print(f\"Similarity:
+  {similarity}%\") # Check if it's the same person (threshold = 75) is_same_person
+  = similarity >= 75 print(f\"Same person: {is_same_person}\") ``` --- ## \U0001F527
+  API Reference ### Core Functions #### `GetImageInfo(image_path, faceMaxCount)` Extracts
+  face information from an image. **Parameters:** - `image_path` (str): Path to the
+  input image - `faceMaxCount` (int): Maximum number of faces to detect **Returns:**
+  - List of dictionaries containing: - `bbox`: Face bounding box coordinates - `landmarks`:
+  Facial landmark points - `embedding`: Feature embedding vector #### `get_similarity(feature1,
+  feature2)` Compares two face feature embeddings. **Parameters:** - `feature1` (array):
+  First face embedding - `feature2` (array): Second face embedding **Returns:** -
+  Similarity score (0-100), where higher values indicate greater similarity ### Configuration
+  - **Default Threshold**: 75 (for determining if two faces belong to the same person)
+  - **Supported Formats**: JPG, PNG, BMP, TIFF - **Face Detection**: Automatic detection
+  of multiple faces per image --- ## \U0001F3AF Use Cases This SDK is ideal for various
+  applications: ### \U0001F510 Security & Authentication - **Access Control Systems**:
+  Secure entry points with face recognition - **User Authentication**: Biometric login
+  for applications - **Surveillance**: Real-time monitoring and alerting ### \U0001F465
+  Business Applications - **Time & Attendance**: Automated employee check-in/check-out
+  - **Customer Analytics**: Retail customer tracking and analytics - **Smart Offices**:
+  Automated visitor management ### \U0001F4F1 Mobile & IoT - **Smart Devices**: Integration
+  with IoT devices - **Mobile Apps**: Face recognition in mobile applications - **Augmented
+  Reality**: AR applications with facial recognition --- ## \U0001F3E2 Enterprise
+  Solutions For higher accuracy requirements and enterprise features, contact us for
+  our commercial SDK offerings: - **Enhanced Accuracy Models**: Superior recognition
+  performance - **Liveness Detection**: Anti-spoofing capabilities - **Multi-Platform
+  Support**: Android, iOS, Web, and more - **Technical Support**: Professional assistance
+  and documentation **Contact us at:** [info@faceplugin.com](mailto:info@faceplugin.com)
+  --- ## \U0001F4DA Related Products Explore our complete suite of face recognition
+  a"
 ---
 {% raw %}
 <div align="center">

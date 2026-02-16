@@ -2,8 +2,68 @@
 layout: project
 name: Appidea React Native Hce
 slug: appidea-react-native-hce
+category: Serv&Prod-Tools
 image: https://img.shields.io/github/v/tag/appidea/react-native-hce
 repo_url: https://github.com/sponsors/appidea
+indexed_content: "react-native-hce Adds Host card emulation (HCE) capabilities to
+  React Native react-native-hce.appidea.pl We’d love your support! \U0001F680 Enjoying
+  this project or using it in your tech stack? Consider becoming a sponsor \U0001F496
+  and help us keep building cool stuff. Every bit helps - thanks, friend! \U0001F913
+  --- [](https://github.com/appidea/react-native-hce/graphs/commit-activity) [](https://github.com/appidea/react-native-hce/graphs/commit-activity)
+  **Host Card Emulation** is the technology in Android Devices, that let the device
+  act as a host in the NFC communication. This technology can be used, e.g. to simulate
+  the passive smart cards or NFC tags. This package allows the `react-native` application
+  to use the adventages of this technology. For now, the only out-of-the-box solution
+  provided by this package is: - NFC Type 4 tag emulation _(Text and URI record types
+  supported)_ anyways, the module's architecture is ready to engage also the new,
+  other usages. ## Architectural overview Core part of the library (on the native
+  side) is a Service which implements [`HostApduService`](https://developer.android.com/reference/android/nfc/cardemulation/HostApduService)
+  Android interface. The key difference between usual Android services and `HostApduService`
+  is the initializer entity. `HostApduService` is initiated by OS - when phone taps
+  the NFC reader. Thus, the Service (and - in the big picture - the entire library)
+  has been prepared to the case, when the React Activity is in the background or even
+  not available at the time in time of card data transfer. Because of this special
+  behavior of `HostApduService`, we have chosen the _\"declarativeness over interactivity\"_
+  approach in the architecture design. To make the transactions stable and reliable,
+  library stores the state on the Native side (in Android, the data are stored in
+  `SharedPreferences`). The application can specify the available data in advance,
+  to store it to native memory right away and pass it efficiently to the Service,
+  if needed. Also, the Service can pass the data to a storage without considering
+  the presence of JS thread. React app can grab the saved data later on. Of course,
+  all of this synchronization operations are handled in the React part of the library,
+  so the end user can control the entire HCE session with convenient abstraction -
+  the `HCEService` class. The library also provides the convenient wrapper that binds
+  the HCEService with React application lifecycle using the \"Contexts\" feature of
+  React.js. ## Important notes - Currenlty supported **only on the Android platform**,
+  as there is no official support for HCE in Apple platform. - Required minimum SDK
+  version is **API 21** - Be careful **when using this library for transmission of
+  any sensitive data**. This library does not provide any built-it cryptographic layer,
+  the data are transmitted in plain form. Ensure that You know, what You are doing
+  and take care about any needed ensafements on Your own. ## Installation ```sh npm
+  install react-native-hce --save ``` or ```sh yarn add react-native-hce ``` ...up
+  to Your preferences and project configuration. Autolinking will take care about
+  the rest. ## Post-installation steps After the installation, following changes must
+  be made inside the ` /android`: ### aid_list.xml Create new file `aid_list.xml`
+  in ` /android/app/src/main/res/xml` directory. Create the directory, if it does
+  not exist yet. - Put the following content to the file: ```xml node for each NFC
+  application ID, that You intent to emulate/host. --> ``` ### AndroidManifest.xml
+  Open the app's manifest (` /android/app/src/main/AndroidManifest.xml`): - Add permission
+  to use NFC in the application, and add the declaration of usage the HCE feature:
+  ```xml ... ``` - HCE emulation on the Android platform works as a service. `react-native-hce`
+  module communicating with this service, so that's why we need to place the reference
+  in AndroidManifest. ```xml ``` That's it. ## Usage ### API documentation You can
+  find the generated documentation on the [project's website](https://react-native-hce.appidea.pl).
+  ### Example application You can try out the [example react-native app](example),
+  which presents the usage of this package in practice. The instructions regarding
+  starting up the example application are provided in [Contribution guide](CONTRIBUTING.md).
+  ### NFC Type 4 tag emulation feature Inspired by [underwindfall's](https://github.com/underwindfall)
+  NFC Type 4 tag communication handling used in [NFCAndroid](https://github.com/underwindfall/NFCAndroid).
+  **Note! If You want to use this feature, make sure that You added the proper aid
+  to Your `aid_list.xml`. Otherwise, the app will not handle any signal of NFC reader
+  related with NFC Tags v4.** This is how to enable the NFC Tag emulation: ```js import
+  { HCESession, NFCTagType4NDEFContentType, NFCTagType4, } from 'react-native-hce';
+  let session; const startSession = async () => { const tag = new NFCTagType4({ type:
+  NFCTagType4NDEFContentType.Text, content: 'Hello "
 ---
 {% raw %}
 <p align="center">

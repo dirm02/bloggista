@@ -2,8 +2,59 @@
 layout: project
 name: Anonaddy Anonaddy
 slug: anonaddy-anonaddy
+category: Mail services -server-chat apps
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/anonaddy/browser-extension)
+indexed_content: "# Anonymous Email Forwarding This is the source code for self-hosting
+  addy.io. ## FAQ - [Why is it called addy.io?](#why-is-it-called-addyio) - [Why did
+  you make this site?](#why-did-you-make-this-site) - [Why should I use addy.io?](#why-should-i-use-addyio)
+  - [Do you store emails?](#do-you-store-emails) - [What is a shared domain alias?](#what-is-a-shared-domain-alias)
+  - [What is a standard alias?](#what-is-a-standard-alias) - [Can I use my own domain?](#can-i-use-my-own-domain)
+  - [Can I add a domain and also use it as a recipient?](#can-i-add-a-domain-and-also-use-it-as-a-recipient)
+  - [Can I add a domain if I'm already using it for email somewhere else?](#can-i-add-a-domain-if-im-already-using-it-for-email-somewhere-else)
+  - [Why should I use this instead of a similar service?](#why-should-i-use-this-instead-of-a-similar-service)
+  - [Is there a browser extension?](#is-there-a-browser-extension) - [Is there an
+  Android app?](#is-there-an-android-app) - [Is there an iOS app?](#is-there-an-ios-app)
+  - [Is there a Raycast extension?](#is-there-a-raycast-extension) - [How do I add
+  my own GPG/OpenPGP key for encryption?](#how-do-i-add-my-own-gpgopenpgp-key-for-encryption)
+  - [Are attachments encrypted too?](#are-attachments-encrypted-too) - [Are forwarded
+  emails signed when encryption is enabled?](#are-forwarded-emails-signed-when-encryption-is-enabled)
+  - [Can I reply/send from aliases using encryption?](#can-i-replysend-from-aliases-using-encryption)
+  - [Is my public GPG/OpenPGP key removed when I reply/send from an alias?](#is-my-public-gpgopenpgp-key-removed-when-i-replysend-from-an-alias)
+  - [Can I mark emails forwarded to me by addy.io as spam?](#can-i-mark-emails-forwarded-to-me-by-addyio-as-spam)
+  - [Can I use aliases to create multiple accounts on other websites and services?](#can-i-use-aliases-to-create-multiple-accounts-on-other-websites-and-services)
+  - [Can I have multiple Free accounts?](#can-i-have-multiple-free-accounts) - [What
+  if I don't want anyone to link ownership of my aliases together?](#what-if-i-dont-want-anyone-to-link-ownership-of-my-aliases-together)
+  - [Where is the server located?](#where-is-the-server-located) - [What if I don't
+  trust you?](#what-if-i-dont-trust-you) - [What is the maximum number of recipients
+  I can add to an alias?](#what-is-the-maximum-number-of-recipients-i-can-add-to-an-alias)
+  - [What happens when I delete my account?](#what-happens-when-i-delete-my-account)
+  - [Does this work with any email provider?](#does-this-work-with-any-email-provider)
+  - [How do I reply to a forwarded email?](#how-do-i-reply-to-a-forwarded-email) -
+  [I'm trying to reply/send from an alias but the email keeps coming back to me, what's
+  wrong?](#im-trying-to-replysend-from-an-alias-but-the-email-keeps-coming-back-to-me-whats-wrong)
+  - [I'm trying to reply/send from an alias but it is rejected, what's wrong?](#im-trying-to-replysend-from-an-alias-but-it-is-rejected-whats-wrong)
+  - [I've been forwarded an email with a red warning banner saying it may have been
+  spoofed, what does it mean?](#ive-been-forwarded-an-email-with-a-red-warning-banner-saying-it-may-have-been-spoofed-what-does-it-mean)
+  - [Does addy.io strip out the banner information when I reply to an email?](#does-addyio-strip-out-the-banner-information-when-i-reply-to-an-email)
+  - [How do I send email from an alias?](#how-do-i-send-email-from-an-alias) - [Will
+  people see my real email if I reply to a forwarded one?](#will-people-see-my-real-email-if-i-reply-to-a-forwarded-one)
+  - [Can emails have attachments?](#can-emails-have-attachments) - [What is the max
+  email size limit?](#what-is-the-max-email-size-limit) - [What happens if I have
+  a subscription but then cancel it?](#what-happens-if-i-have-a-subscription-but-then-cancel-it)
+  - [If I subscribe will Stripe see my real email address?](#if-i-subscribe-will-stripe-see-my-real-email-address)
+  - [Do you offer student discount?](#do-you-offer-student-discount) - [How do you
+  prevent spammers?](#how-do-you-prevent-spammers) - [What do you use to do DNS lookups
+  on domain names?](#what-do-you-use-to-do-dns-lookups-on-domain-names) - [Is there
+  a limit to how many emails I can forward?](#is-there-a-limit-to-how-many-emails-i-can-forward)
+  - [Is there a limit to how many aliases I can create per hour?](#is-there-a-limit-to-how-many-aliases-i-can-create-per-hour)
+  - [How is my bandwidth calculated?](#how-is-my-bandwidth-calculated) - [How many
+  emails can I receive before I go over my bandwidth limit?](#how-many-emails-can-i-receive-before-i-go-over-my-bandwidth-limit)
+  - [What happens if I go over my bandwidth limit in a given month?](#what-happens-if-i-go-over-my-bandwidth-limit-in-a-given-month)
+  - [Can I login using an additional username?](#can-i-login-using-an-additional-username)
+  - [I'm not receiving any emails, what's wrong?](#im-not-receiving-any-emails-whats-wrong)
+  - [I'm having trouble logging in, what's wrong?](#im-having-trouble-logging-in-whats-wrong)
+  - [How do I know this site won't disappear next m"
 ---
 {% raw %}
 # Anonymous Email Forwarding

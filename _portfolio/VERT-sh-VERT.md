@@ -2,8 +2,23 @@
 layout: project
 name: Vert Sh Vert
 slug: VERT-sh-VERT
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/VERT-sh-VERT/docs/images/screenshot-home.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'VERT.sh VERT is a file conversion utility that uses WebAssembly
+  to convert files on your device instead of a cloud. Check out the live instance
+  at [vert.sh](https://vert.sh). VERT is built in Svelte and TypeScript. ## Screenshots
+  | Upload page | Conversion page | | :--------------------------------------------------:
+  | :------------------------------------------------------: | | | | ## Features -
+  Convert files directly on your device using WebAssembly\* - No file or file size
+  limits - Convert images, audio, documents, and video\* - Supports over **250+**
+  file formats - Conversion settings - User-friendly interface built with Svelte \*
+  Non-local video conversion is available with our official instance, but the [daemon](https://github.com/VERT-sh/vertd)
+  is easily self-hostable to maintain privacy and fully local functionality. ## Documentation
+  - [FAQ](./docs/FAQ.md) - [Getting Started](./docs/GETTING_STARTED.md) - [Using Docker](./docs/DOCKER.md)
+  - [Video Conversion](./docs/VIDEO_CONVERSION.md) ## License This project is licensed
+  under the AGPL-3.0 License, please see the [LICENSE](LICENSE) file for details.
+  ## Star History'
 ---
 {% raw %}
 <p align="center">

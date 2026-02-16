@@ -2,8 +2,60 @@
 layout: project
 name: Inventree Inventree
 slug: inventree-InvenTree
+category: Very important!!!!
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/inventree/inventree
+indexed_content: 'InvenTree Open Source Inventory Management System [](https://opensource.org/license/MIT)[](https://artifacthub.io/packages/search?repo=inventree)
+  [](https://inventree.readthedocs.io/en/latest/?badge=latest) [](https://app.netlify.com/sites/inventree/deploys)
+  [](https://dev.azure.com/InvenTree/InvenTree%20test%20statistics/_build/latest?definitionId=3&branchName=testing)
+  [](https://bestpractices.coreinfrastructure.org/projects/7179) [](https://securityscorecards.dev/viewer/?uri=github.com/inventree/InvenTree)
+  [](https://sonarcloud.io/summary/new_code?id=inventree_InvenTree) [](https://codecov.io/gh/inventree/InvenTree)
+  [](https://crowdin.com/project/inventree) [](https://hub.docker.com/r/inventree/inventree)
+  [](https://github.com/inventree/InvenTree/) [](https://twitter.com/inventreedb)
+  [](https://www.reddit.com/r/InvenTree/) [](https://chaos.social/@InvenTree) View
+  Demo · Documentation · Report Bug · Request Feature ## :star2: About the Project
+  InvenTree is an open-source Inventory Management System which provides powerful
+  low-level stock control and part tracking. The core of the InvenTree system is a
+  Python/Django database backend which provides an admin interface (web-based) and
+  a REST API for interaction with external interfaces and applications. A powerful
+  plugin system provides support for custom applications and extensions. Check out
+  [our website](https://inventree.org) for more details. ### :compass: Roadmap Want
+  to see what we are working on? Check out the [roadmap tag](https://github.com/inventree/InvenTree/issues?q=is%3Aopen+is%3Aissue+label%3Aroadmap)
+  and [horizon milestone](https://github.com/inventree/InvenTree/milestone/42). ###
+  :hammer_and_wrench: Integration InvenTree is designed to be **extensible**, and
+  provides multiple options for **integration** with external applications or addition
+  of custom plugins: * [InvenTree API](https://docs.inventree.org/en/latest/api/)
+  * [Python module](https://docs.inventree.org/en/latest/api/python/) * [Plugin interface](https://docs.inventree.org/en/latest/plugins/)
+  * [Third party tools](https://inventree.org/extend/integrate/) ### :space_invader:
+  Tech Stack Server Python Django DRF Django Q Django-Allauth Database PostgreSQL
+  MySQL SQLite Redis Client React Lingui React Router TanStack Query Zustand Mantine
+  Mantine Data Table CodeMirror DevOps Docker Crowdin Codecov SonarCloud Packager.io
+  ## :toolbox: Deployment / Getting Started There are several options to deploy InvenTree.
+  Docker · · Bare Metal Single line install - read [the docs](https://docs.inventree.org/en/latest/start/installer/)
+  for supported distros and details about the function: ```bash wget -qO install.sh
+  https://get.inventree.org && bash install.sh ``` Refer to the [getting started guide](https://docs.inventree.org/en/latest/start/install/)
+  for a full set of installation and setup instructions. ## :iphone: Mobile App InvenTree
+  is supported by a [companion mobile app](https://docs.inventree.org/en/latest/app/)
+  which allows users access to stock control information and functionality. Android
+  Play Store · Apple App Store ## :lock: Code of Conduct & Security Policy The InvenTree
+  project team is committed to providing a safe and welcoming environment for all
+  users. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) for more information.
+  InvenTree is following industry best practices for security. Our security policy
+  is included [in this repo](SECURITY.md). We provide dedicated security pages on
+  [our documentation site](https://docs.inventree.org/en/latest/security/). ## :wave:
+  Contributing Contributions are welcomed and encouraged. Please help to make this
+  project even better! Refer to the [contribution page](https://docs.inventree.org/en/latest/develop/contributing/).
+  ## :scroll: Translation Native language translation of the InvenTree web application
+  is [community contributed via crowdin](https://crowdin.com/project/inventree). **Contributions
+  are welcomed and encouraged**. ## :money_with_wings: Sponsor If you use InvenTree
+  and find it to be useful, please consider [sponsoring the project](https://github.com/sponsors/inventree).
+  ## :gem: Acknowledgements We want to acknowledge [PartKeepr](https://github.com/partkeepr/PartKeepr)
+  as a valuable predecessor and inspiration. Find a full list of used third-party
+  libraries in the license information dialog of your instance. ## :heart: Support
+  This project is supported by the following sponsors: With ongoing resources provided
+  by: ## :warning: License Distributed under the [MIT](https://choosealicense.com/licenses/mit/)
+  License. See [LICENSE.txt](https://github.com/inventree/InvenTree/blob/master/LICENSE)
+  for more information.'
 ---
 {% raw %}
 <div align="center">

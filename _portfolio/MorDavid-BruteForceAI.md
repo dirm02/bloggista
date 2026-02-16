@@ -2,8 +2,70 @@
 layout: project
 name: Mordavid Bruteforceai
 slug: MorDavid-BruteForceAI
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/badge/BruteForceAI-v1.0.0-red?style=for-the-badge&logo=security&logoColor=white
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/MorDavid-BruteForceAI
+indexed_content: "# \U0001F916 BruteForceAI - AI-Powered Login Brute Force Tool **Advanced
+  LLM-powered brute-force tool combining AI intelligence with automated login attacks**
+  [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Examples](#-examples)
+  • [Configuration](#️-configuration-options) • [License](#-license) --- ## \U0001F3AF
+  About BruteForceAI is an advanced penetration testing tool that revolutionizes traditional
+  brute-force attacks by integrating Large Language Models (LLM) for intelligent form
+  analysis. The tool automatically identifies login form selectors using AI, then
+  executes sophisticated multi-threaded attacks with human-like behavior patterns.
+  ### \U0001F9E0 LLM-Powered Form Analysis - **Stage 1 (AI Analysis)**: LLM analyzes
+  HTML content to identify login form elements and selectors - **Stage 2 (Smart Attack)**:
+  Executes intelligent brute-force attacks using AI-discovered selectors ### \U0001F680
+  Advanced Attack Features - **Multi-threaded execution** with synchronized delays
+  - **Bruteforce & Password Spray** attack modes - **Human-like timing** with jitter
+  and randomization - **User-Agent rotation** for better evasion - **Webhook notifications**
+  (Discord, Slack, Teams, Telegram) - **Comprehensive logging** with SQLite database
+  --- ## \U0001F31F Star History [](https://www.star-history.com/#MorDavid/BruteForceAI&Date)
+  --- ## ✨ Features ### \U0001F50D **Intelligent Analysis** - LLM-powered form selector
+  identification (Ollama/Groq) - Automatic retry with feedback learning - DOM change
+  detection for success validation - Smart HTML content extraction ### ⚡ **Advanced
+  Attacks** - **Bruteforce Mode**: Try all username/password combinations - **Password
+  Spray Mode**: Test each password against all usernames - Multi-threaded execution
+  (1-100+ threads) - Synchronized delays between attempts for same user ### \U0001F3AD
+  **Evasion Techniques** - Random User-Agent rotation - Configurable delays with jitter
+  - Human-like timing patterns - Proxy support - Browser visibility control ### \U0001F4CA
+  **Monitoring & Notifications** - Real-time webhook notifications on success - Comprehensive
+  SQLite logging - Verbose timestamped output - Success exit after first valid credentials
+  - Skip existing attempts (duplicate prevention) ### \U0001F6E0️ **Operational Features**
+  - Output capture to files - Colorful terminal interface - Network error retry mechanism
+  - Force retry existing attempts - Database management tools - **Automatic update
+  checking** from mordavid.com --- ## \U0001F527 Installation ### Prerequisites ```bash
+  # Python 3.8 or higher python --version # Install Playwright browsers playwright
+  install chromium ``` ### Install Dependencies ```bash pip install -r requirements.txt
+  ``` **Required packages:** - `playwright` - Browser automation - `requests` - HTTP
+  requests - `PyYAML` - YAML parsing for update checks ### LLM Setup #### Option 1:
+  Ollama (Local) ```bash # Install Ollama curl -fsSL https://ollama.ai/install.sh
+  | sh # Pull recommended model ollama pull llama3.2:3b ``` #### Option 2: Groq (Cloud)
+  1. Get API key from [Groq Console](https://console.groq.com/) 2. Use with `--llm-provider
+  groq --llm-api-key YOUR_KEY` ### \U0001F9E0 Model Selection & Performance #### Recommended
+  Models by Provider **Ollama (Local):** - `llama3.2:3b` - Default, good balance of
+  speed and quality - `llama3.2:1b` - Fastest, smaller model for quick analysis -
+  `qwen2.5:3b` - Alternative with good performance **Groq (Cloud):** - `llama-3.3-70b-versatile`
+  - **Default & Best** - Latest model with superior quality (1 attempt) - `llama3-70b-8192`
+  - Fast and reliable alternative (1 attempt) - `gemma2-9b-it` - Lightweight option,
+  good for simple forms (1 attempt) - `llama-3.1-8b-instant` - ⚠️ Not recommended
+  (rate limiting issues, 3+ attempts) #### Performance Tips ```bash # Best quality
+  (recommended for complex forms) python main.py analyze --urls targets.txt --llm-provider
+  groq --llm-model llama-3.3-70b-versatile --llm-api-key YOUR_KEY # Fast and reliable
+  python main.py analyze --urls targets.txt --llm-provider groq --llm-model llama3-70b-8192
+  --llm-api-key YOUR_KEY # Lightweight for simple forms python main.py analyze --urls
+  targets.txt --llm-provider groq --llm-model gemma2-9b-it --llm-api-key YOUR_KEY
+  # Local processing (no API key needed) python main.py analyze --urls targets.txt
+  --llm-provider ollama --llm-model llama3.2:3b ``` --- ## \U0001F4D6 Usage ### Basic
+  Commands #### Stage 1: Analyze Login Forms ```bash python main.py analyze --urls
+  urls.txt --llm-provider ollama ``` #### Stage 2: Execute Attack ```bash python main.py
+  attack --urls urls.txt --usernames users.txt --passwords passwords.txt --threads
+  10 ``` ### Command Structure ```bash python main.py [options] ``` #### Available
+  Commands - `analyze` - Analyze login forms with LLM - `attack` - Execute brute-force
+  attacks - `clean-db` - Clean database tables - `check-updates` - Check for software
+  updates --- ## \U0001F3AF Examples ### 1. Complete Workflow ```bash # Step 1: Analyze
+  forms python main.py analyze --urls targets.txt --llm-provider ollama --llm-model
+  llama3.2:3b # Ste"
 ---
 {% raw %}
 # 🤖 BruteForceAI - AI-Powered Login Brute Force Tool

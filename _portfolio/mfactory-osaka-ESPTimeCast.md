@@ -2,8 +2,66 @@
 layout: project
 name: Mfactory Osaka Esptimecast
 slug: mfactory-osaka-ESPTimeCast
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/mfactory-osaka-ESPTimeCast/assets/logo.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://hackaday.com/2025/10/02/building-a-desk-display-for-time-and-weather-data)
+  [](https://www.xda-developers.com/super-sleek-esp32-weather-station) [](https://www.hackster.io/news/the-perfect-minimalist-led-clock-49a4e4440518)
+  \U0001F389 **1,000+ GitHub stars - thank you to the community!** **ESPTimeCast™**
+  is a sleek, WiFi-connected LED matrix clock and weather display built on **ESP8266/ESP32**
+  and **MAX7219**. It combines real-time NTP time sync, live OpenWeatherMap updates,
+  and a modern web-based configuration interface — all in one compact design. &nbsp;
+  ## \U0001F4E6 3D Printable Case To help support the project’s development, the official
+  **ESPTimeCast™** case design is available as a **paid STL download** (see links
+  below). If you prefer a free option, there are many compatible **MAX7219 LED matrix
+  enclosures** shared by the community - you can find plenty by searching for “MAX7219
+  case” on Printables, Cults3D, or similar sites. &nbsp; ## \U0001F5BC️ Community
+  Builds Gallery A small selection of ESPTimeCast™ builds from the community ❤️ Huge
+  thanks to all the makers on Printables who shared their ESPTimeCast™ builds featured
+  here: Achduka, ChrisBalo_2103728, LazyManJoe_199553, LeoB_746630, Manni0605_464156,
+  Purduesi_774301, rhe_3695705, sardaukar_1942598, Stefan_37395, TO3IAS, thirddimensionlabs
+  You all made this community showcase possible - thank you! \U0001F64F Want your
+  build featured here? Share your photos on [r/ESPTimeCast](https://www.reddit.com/r/ESPTimeCast/comments/1p2vt16/show_your_esptimecast_build_post_your_photos_setup/)
+  - I’d love to showcase more builds! \U0001F4F8 &nbsp; ## \U0001F4F0 Press Mentions
+  ESPTimeCast™ has been featured on major maker and tech platforms highlighting its
+  design, usability, and open-source community. - [Hackaday](https://hackaday.com/2025/10/02/building-a-desk-display-for-time-and-weather-data)
+  - [XDA Developers](https://www.xda-developers.com/super-sleek-esp32-weather-station)
+  - [Hackster.io](https://www.hackster.io/news/the-perfect-minimalist-led-clock-49a4e4440518)
+  &nbsp; ## ✨ Features - **LED Matrix Display (8x32)** powered by MAX7219, with custom
+  font support - **Simple Web Interface** for all configuration (WiFi, weather, time
+  zone, display durations, and more) - **Automatic NTP Sync** with robust status feedback
+  and retries - **Weather Fetching** from OpenWeatherMap (every 5 minutes, temp/humidity/description)
+  - **Custom Scroll Messages** - fully persistent until manually cleared via the Web
+  UI - **Fallback AP Mode** for easy first-time setup or configuration - **Timezone
+  Selection** from IANA names (DST integrated on backend) - **Get My Location** button
+  to get your approximate Lat/Long - **Week Day and Weather Description display**
+  in multiple languages - **Persistent Config** stored in LittleFS, with backup/restore
+  system - **Status Animations** for WiFi connection, AP mode, time syncing - **Advanced
+  Settings** panel with: - Custom **Primary/Secondary NTP server** input - Display
+  **Day of the Week** toggle (default is on) - Display **Blinking Colon** toggle (default
+  is on) - Show **Date** toggle (default is off) - **24/12h clock mode** toggle (24-hour
+  default) - **Imperial Units (°F)** toggle (metric °C defaults) - Show **Humidity**
+  toggle (display Humidity besides Temperature) - **Weather description** toggle (displays:
+  heavy rain, scattered clouds, thunderstorm etc.) - **Flip display** (180 degrees)
+  - Adjustable display **brightness** - **Automatic Dimming** based on Sunrise/Sunset
+  from weather API - **Custom Dimming** select custom dimming hours - **Countdown**
+  function (Scroll / Dramatic) - **Optional:** ESPTimeCast supports displaying glucose
+  data from **Nightscout** servers every 5 minutes, alternating with weather information
+  - **Optional:** Export and Upload settings via `device-ip/export` and `device-ip/upload`
+  endpoints &nbsp; ## \U0001FA9B Wiring your ESPTimeCast ESPTimeCast uses a **single,
+  recommended wiring layout** across all supported boards to ensure consistent behavior,
+  stable power delivery, and reliable brightness. &nbsp; ### \U0001F4CC Current Pin
+  Assignment | Chip | Board / Module | CLK | CS | DIN | VCC | GND | |------------|------------------------------------|:---:|:--:|:---:|:---:|:---:|
+  | ESP8266 | D1 Mini (USB-C / Micro-USB) | 14 | 13 | 15 | 5V | GND | | ESP32 | D1
+  Mini (ESP32) | 18 | 23 | 5 | 5V | GND | | ESP32-S2 | S2 Mini | 7 | 11 | 12 | 5V
+  | GND | | ESP32-C3 | SuperMini | 7 | 20 | 8 | 5V | GND | | ESP32-S3 | WROOM-1 (Camera
+  / SD board) | 18 | 16 | 17 | 5V | GND | > The table lists **raw GPIO numbers**.
+  > MAX7219 modules are typically powered at **5V** but accept **3.3V logic** on DIN
+  / CLK / CS. > All ESP32 boards listed above have been **tested successfully** with
+  this wiring. > ESP8266 D1 Mini boards are often labeled using **D-pins** (D5 = GPIO14,
+  D7 = GPIO13, D8 = GPIO15). &nbsp; ### \U0001F9E9 Wiring Diagram > **Tip:** Double-check
+  the pin order on your MAX7219 module — labeling and orientation can vary between
+  manufacturers. &nbsp; ### \U0001F504 Upgrading from an older build? If your device "
 ---
 {% raw %}
 ![ESPTimeCast](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/mfactory-osaka-ESPTimeCast/assets/logo.svg)

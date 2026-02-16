@@ -2,8 +2,68 @@
 layout: project
 name: Nayafia Microgrants
 slug: nayafia-microgrants
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/nayafia/microgrants
+indexed_content: '# A list of microgrant programs for your good ideas. I started a
+  program called [Helium Grants](https://heliumgrant.org), which provided $1K no-strings-attached
+  grants to encourage people to do the things they want to do (now on hiatus). In
+  the process, I came across a bunch of other microgrant programs, which are documented
+  below. All amounts are listed in USD unless otherwise specified. If you''re interested
+  in starting your own microgrant program, I''ve also created [a few templates](/templates),
+  which you''re welcome to use. ## 1517 Medici Project https://www.1517fund.com/medici-project
+  _$1K grants for high school, college students, and dropouts to launch projects to
+  make humanity better, backed by 1517 Fund._ ## 5x5 Night http://5x5night.com/ _5x5
+  Night takes place once a month. The community votes on the ideas that will be presented
+  at the event. The selected creators explain a $5,000 step that will move the idea
+  forward, and will meet people who can help._ ## Arraig Grants (formerly Éire Ventures)
+  https://arraig.com/micro-grants/ _$500 microgrants for individuals and entrepreneurs
+  focused on international markets, revenue/profitability, and an exploratory approach._
+  ## ACX Grants https://www.astralcodexten.com/p/acx-grants-results-2024 _Grants program,
+  organized by Scott Alexander, for "good research and good projects with a minimum
+  of paperwork." Runs irregularly._ ## Atomic Fellowship https://www.gradcapital.in/atomicfellow/
+  _$5,000 no-strings-attached grant for students who want to work on science & engineering
+  projects, with an option of an additional $40k investment by gradCapital._ ## Awesome
+  Foundation http://www.awesomefoundation.org/ _The Awesome Foundation is a global
+  community advancing the interest of awesome in the universe, $1000 at a time. Each
+  fully autonomous chapter supports awesome projects through micro-grants, usually
+  given out monthly._ ## Bed-Stuy Create & Connect Fund https://laundromatproject.org/create-connect-fund/
+  _A community micro-grant fund launched by The Laundromat Project providing $1,000
+  grants to seed and support the creative ideas and civic actions of artists, cultural
+  practitioners, community builders, organizers, and makers in Bedford-Stuyvesant,
+  Brooklyn (New York City)._ ## Bellare Grants https://bellaregrants.netlify.app/
+  _Bellare Grants awards up to 1 lakh INR per year to Indian initiatives in education,
+  healthcare, research, and open source projects (hardware and software) through financial
+  contributions._ ## cache money grants https://cachemoney.xyz/grants/ _$5K grants,
+  paid in crypto (BTC, ETH, SOL), for "hackers and/or artists who want to tackle interesting
+  new ideas in the crypto space."_ ## Cactus Capital https://cactuscapital.org/ _$50-100
+  microgrants for student builders at any stage. Run by Nayel and Arhan, two high
+  schoolers from northern Virginia._ ## Clarity Health Fund https://www.clarityhealthfund.org/
+  _$1,000 USD microgrants for progress in psychedelics and drug policy. Clarity Health
+  Fund’s primary mission is to bring psychedelics into the wellness system. Larger
+  grants are also available._ ## Da Vinci Fellowship https://davincifellowship.com/
+  _An equity-free grant of €150,000 given to exceptional engineers, scientists, and
+  builders who want to shape the future of technology in Europe._ ## Echoing Green
+  Fellowship https://echoinggreen.org/fellowship/ _A two-year, full-time fellowship
+  for social sector leaders who challenge the status quo. $80,000 for individuals,
+  $90,000 for partnerships, in addition to a flexible benefit stipend._ ## Emergent
+  Ventures https://www.mercatus.org/emergentventures _Emergent Ventures, a new fellowship
+  and grant program from the Mercatus Center, seeks to support entrepreneurs and brilliant
+  minds with highly scalable, “zero to one” ideas for meaningfully improving society._
+  ## Forge Grants https://www.forgegrant.com/ _The Forge Grant Initiative provides
+  no-strings-attached grants up to $250 for young creator-engineers (13-25) who can
+  both dream up viral concepts and build the technical infrastructure to make them
+  reality._ ## Fortitude Fund https://fortitudefund.com/ _The Fortitude Fund provides
+  $1,000 grants to create a entrepreneurial culture in northeast Indiana that welcomes
+  new ideas and encourages them to dream bigger. Upon receiving an initial grant and
+  showing progress in their business, grantees are also eligible to receive a Next
+  Level Grant of $2,500._ ## Feather Grants https://www.gradcapital.in/feathergrants/
+  _INR 15,000 grant ($180) to students to bring their boldest ideas to life—no strings
+  attached. The project can be anything that sets your heart racing, whether it''s
+  creating a short film, conducting a science experiment, competing in a national
+  dance competition, or archiving local history._ ## Gumroad Creators Fund https://blog.gumroad.com/post/183876075758/introducing-the-first-batch-of-our-creators-fund
+  _Over the course of the year, Gumroad will allocate over $50,000 (10% of their profits)
+  to a var'
 ---
 {% raw %}
 # A list of microgrant programs for your good ideas.

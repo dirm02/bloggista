@@ -2,8 +2,69 @@
 layout: project
 name: Dreamfactorysoftware Dreamfactory
 slug: dreamfactorysoftware-dreamfactory
+category: API - Documentation
 image: https://raw.githubusercontent.com/dreamfactorysoftware/dreamfactory/master/readme/vertical-logo-fullcolor.png
 repo_url: https://github.com/dreamfactorysoftware/dreamfactory
+indexed_content: 'DreamFactory is a self-hosted platform providing governed API access
+  to any data source for enterprise apps and local LLMs. Documentation ∙ Getting Started
+  Guide ∙ Contribute ∙ Community Support &nbsp;&nbsp; &nbsp;&nbsp; --- ## Table of
+  Contents - [What is DreamFactory?](#what-is-dreamfactory) - [How It Works](#how-it-works)
+  - [Key Features](#key-features) - [Supported Data Sources](#supported-data-sources)
+  - [MCP Server for AI and LLM Integration](#mcp-server-for-ai-and-llm-integration)
+  - [Installation](#installation) - [Documentation](#documentation) - [Community and
+  Support](#community-and-support) - [Commercial Licenses](#commercial-licenses) -
+  [FAQ](#faq) - [Feedback and Contributions](#feedback-and-contributions) --- ## What
+  is DreamFactory? DreamFactory is a secure, self-hosted enterprise data access platform
+  that provides governed API access to any data source, connecting enterprise applications
+  and on-prem LLMs with role-based access and identity passthrough. DreamFactory is
+  built on the [Laravel framework](https://laravel.com/) and serves as a governed
+  AI data access layer between your applications and data sources. Whether you''re
+  building internal tools, mobile apps, or connecting AI models to enterprise data,
+  DreamFactory provides a single, secure AI data gateway. ### Use Cases - **API-first
+  development** — Generate REST APIs for existing databases without writing backend
+  code - **AI and LLM data access** — Connect ChatGPT, Claude, or local LLMs to enterprise
+  data via MCP or REST APIs with governed access controls - **Legacy database modernization**
+  — Wrap SQL Server stored procedures, Oracle databases, and mainframe data in modern
+  REST APIs - **Microservices backend** — Replace hand-coded CRUD APIs with auto-generated,
+  documented endpoints - **Mobile and web app backend** — Provide secure, role-based
+  data access for frontend applications - **Data integration** — Combine multiple
+  databases and services behind a single API gateway --- ## How It Works DreamFactory
+  connects to your database, introspects the schema, and generates a complete REST
+  API with full CRUD operations, relationship handling, stored procedure access, and
+  OpenAPI/Swagger documentation — all in minutes. See how DreamFactory connects AI
+  models, applications, databases, and file storage services through governed MCP
+  and REST API endpoints. **Quick Start:** 1. Install DreamFactory on [Linux](#installation),
+  [Windows](#installation), [Docker](https://github.com/dreamfactorysoftware/df-docker),
+  or [Kubernetes](https://github.com/dreamfactorysoftware/df-helm) 2. Connect a database
+  (MySQL, PostgreSQL, SQL Server, MongoDB, etc.) 3. DreamFactory auto-generates a
+  REST API with full OpenAPI documentation 4. Configure roles, API keys, and access
+  controls 5. Call your APIs from any application, script, or AI model --- ## Key
+  Features ### API Generation - **Automatic REST API creation** for SQL and NoSQL
+  databases — no code required - **OpenAPI/Swagger documentation** generated automatically
+  for every endpoint - **Stored procedure and function support** — expose database
+  logic as API endpoints - **Related data retrieval** — fetch parent/child records
+  in a single API call - **Server-side filtering, sorting, and pagination** built
+  into every endpoint - **Bulk insert, update, and delete** operations for high-throughput
+  data access ### Security and Access Control - **Role-based access control (RBAC)**
+  — granular permissions per table, endpoint, and HTTP verb - **API key management**
+  — issue, revoke, and rate-limit API keys per application - **SSO authentication**
+  — SAML 2.0, OAuth 2.0, OpenID Connect, Azure AD, LDAP/Active Directory - **API rate
+  limiting** — throttle requests per user, role, or service - **Audit logging** —
+  track every API call with user, timestamp, and payload - **Data masking and field-level
+  security** — control which columns are visible per role ### Extensibility - **Server-side
+  scripting** — customize API behavior with PHP, Python, or Node.js at any endpoint
+  - **Pre- and post-process event scripts** — transform requests and responses - **Custom
+  service creation** — build and register your own API services - **Webhook and event
+  broadcasting** — trigger external workflows on data changes ### MCP Server (Model
+  Context Protocol) - **Built-in MCP server** for connecting AI models (ChatGPT, Claude,
+  local LLMs) to your databases - **Governed AI data access** — AI queries go through
+  DreamFactory''s RBAC and audit logging - **Deterministic database queries** — AI
+  uses structured API calls, not raw SQL generation - **Tool definitions** — expose
+  database tables and stored procedures as MCP tools ### Administration - **Web-based
+  admin console** — manage services, roles, users, and API keys from a browser - **Multi-tenant
+  support** — host multiple isolated API environments on a single instance - **Database
+  schema management** — create, modify, and manage tables via API or admin UI - **API
+  usage dashboards** — monitor request volume, errors'
 ---
 {% raw %}
 <h1 align="center">

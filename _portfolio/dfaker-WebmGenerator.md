@@ -2,8 +2,69 @@
 layout: project
 name: Dfaker Webmgenerator
 slug: dfaker-WebmGenerator
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/dfaker/WebmGenerator/blob/master/DocumentationImages/UI_preview.gif
 repo_url: https://github.com/dfaker/WebmGenerator
+indexed_content: "# WebmGenerator ### Windows Downloads here: https://github.com/dfaker/WebmGenerator/releases
+  A tool for cutting, filtering and joining video clips, supports webm (VP8, VP9),
+  mp4 (x264, H.265, SVT AV1) and high quality gif outputs, includes realtime effect
+  filtering and transition effects between scenes. - \U0001F3A5 [Webm, Mp4 and Gif
+  outputs](https://github.com/dfaker/WebmGenerator/wiki/Output-Examples) - ⏱️ [Interactive
+  clip selection powered by mpv](https://github.com/dfaker/WebmGenerator/wiki/Simple-Clipping-Guide)
+  - \U0001F4FA Youtube-dlp integration to automatically download video from popular
+  sites, incluidng live streams. - \U0001F308 Full suite of filters from cropping
+  to tone mapping and VR to 2D projection. - \U0001F9F2 Keyframed filter adjustment,
+  shift hue to the beat, track objects in frame & reposition text or overlay images.
+  - \U0001F916 Automatic isolation of clips based on scene change or audio levels/silence
+  removal detection. - \U0001F4BE Automatic bitrate adjustment for file size targeting.
+  - ✂️ [Save single extracted clips or join multiple clips into custom edits with
+  transition effects.](https://github.com/dfaker/WebmGenerator/wiki/Output-Examples)
+  - \U0001F371 [Pack multiple videos into dynamically sized grids.](https://github.com/dfaker/WebmGenerator/wiki/How-to-make-grids)
+  - \U0001F913 [User extensible output formats and encoder parameters.](https://github.com/dfaker/WebmGenerator/wiki/Custom-Encoder-Specifications)
+  ### Some examples of the possible outputs are [in the wiki](https://github.com/dfaker/WebmGenerator/wiki/Output-Examples)
+  ## External dependencies: - mpv-2.dll - https://mpv.io/installation/ - ffmpeg -
+  https://www.ffmpeg.org/download.html - youtube-dlp - https://github.com/yt-dlp/yt-dlp
+  (optional) All of these should be placed into the same folder as the script or on
+  the PATH. ## Python dependencies: To run with python 3 directly these packages are
+  used: - python-mpv - pygubu - numpy - pathvalidate - tkinterdnd2 pip can install
+  them all for you with a single command: `pip3 install -r requirements.txt` For Linux
+  users tkinter may not be installed, to install it in ubuntu for example run: `sudo
+  apt-get install python3-tk` Alternatively **windows users may use one of the recent
+  bundled releases: https://github.com/dfaker/WebmGenerator/releases.** ## Usage to
+  start run `webmGenerator.py` or drop video files directly onto `webmGenerator.py`.
+  ### Starting up - Initial Interface Initially the application opens in the **Cuts**
+  tab, in the left-hand panel you have a Slice settings frame: - Set `Slice Length`
+  - To set the length of sub clips when they're initially added, you can always resize
+  them later. - Set the `Target Length` - The final duration you want to hit. - Set
+  the `Target Trim` - The expected overlap of clips if you use a transition effect
+  to cross-cut between them, if you expect to use hard cuts set this to zero. - Set
+  the `Drag offset` - The amount that the current playback location will be shifted
+  back from the end of the subclip (hold ctrl to shift forwards from the start instead)
+  when dragging a preview, large values can be useful in aligning an event between
+  videos. Below that are: - A volume control for playback. - A status line `00.00s
+  0.00% (-0.00s)` showing you how many combine seconds you have selected, the percentage
+  to your target duration you're at, and how many seconds are being deducted from
+  the total by the `Target Trim` what we expect adding a 0.25 second cross fade between
+  the clips will deduct. - A progress indicator to show you how far from hitting target
+  length you are, it turns red when the total of your selected clips exceeds your
+  target length. Below that is your source videos frame, you can click Load Videos
+  to load one or more source videos for cutting, or quickly clear all of your sub
+  clip selections to start your cut process again. ### Cutting the Clips - Subclip
+  Selection Once a clip is loaded the bottom dark gray panel changes into a video
+  timeline, you can left click anywhere in it or click and drag to scrub though the
+  video. Right clicking brings up a context menu that allows you to: - `Add new subclip`
+  - A new subclip to be cut out will be added to the timeline centered around the
+  point you right clicked, initially it will have the same duration as you set in
+  `Slice Length` - `Delete subclip` - Removes the subclip under where you right clicked.
+  - `Clone subclip` - Duplicates the subclip under where you right clicked. - `Copy
+  subclip` - Copies the timestamps of the subclip under where you right clicked into
+  an internal clipboard. - `Paste subclip` - Pastes the timestamps of the subclip
+  under where you right clicked from the internal clipboard, possibly onto a different
+  video. - `Expand to interest marks` - Extends the the subclip under where you right
+  clicked to that the start and end markers align with the next other interest or
+  scene change markers. - `Add interest mark` - Adds a visual indicator at a time
+  position, no effect on the output but is useful when watching through and decing
+  representative sc"
 ---
 {% raw %}
 # WebmGenerator

@@ -2,8 +2,66 @@
 layout: project
 name: Katspaugh Wavesurfer.js
 slug: katspaugh-wavesurfer.js
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/npm/v/wavesurfer.js
 repo_url: https://github.com/sponsors/katspaugh)
+indexed_content: "# wavesurfer.js [](https://www.npmjs.com/package/wavesurfer.js)
+  [](https://github.com/sponsors/katspaugh) **Wavesurfer.js** is an interactive waveform
+  rendering and audio playback library, perfect for web applications. It leverages
+  modern web technologies to provide a robust and visually engaging audio experience.
+  **Gold sponsor \U0001F496** [Closed Caption Creator](https://www.closedcaptioncreator.com)
+  # Table of contents 1. [Getting started](#getting-started) 2. [API reference](#api-reference)
+  3. [Plugins](#plugins) 4. [CSS styling](#css-styling) 5. [Frequent questions](#questions)
+  6. [Development](#development) 7. [Tests](#tests) 8. [Feedback](#feedback) ## Getting
+  started Install and import the package: ```bash npm install --save wavesurfer.js
+  ``` ```js import WaveSurfer from 'wavesurfer.js' ``` Alternatively, insert a UMD
+  script tag which exports the library as a global `WaveSurfer` variable: ```html
+  ``` Create a wavesurfer instance and pass various [options](http://wavesurfer.xyz/docs/options):
+  ```js const wavesurfer = WaveSurfer.create({ container: '#waveform', waveColor:
+  '#4F4A85', progressColor: '#383351', url: '/audio.mp3', }) ``` To import one of
+  the plugins, e.g. the [Regions plugin](https://wavesurfer.xyz/examples/?regions.js):
+  ```js import Regions from 'wavesurfer.js/dist/plugins/regions.esm.js' ``` Or as
+  a script tag that will export `WaveSurfer.Regions`: ```html ``` TypeScript types
+  are included in the package, so there's no need to install `@types/wavesurfer.js`.
+  See more [examples](https://wavesurfer.xyz/examples). ## API reference See the wavesurfer.js
+  documentation on our website: * [methods](https://wavesurfer.xyz/docs/methods) *
+  [options](http://wavesurfer.xyz/docs/options) * [events](http://wavesurfer.xyz/docs/events)
+  ## Plugins We maintain a number of official plugins that add various extra features:
+  * [Regions](https://wavesurfer.xyz/examples/?regions.js) – visual overlays and markers
+  for regions of audio * [Timeline](https://wavesurfer.xyz/examples/?timeline.js)
+  – displays notches and time labels below the waveform * [Minimap](https://wavesurfer.xyz/examples/?minimap.js)
+  – a small waveform that serves as a scrollbar for the main waveform * [Envelope](https://wavesurfer.xyz/examples/?envelope.js)
+  – a graphical interface to add fade-in and -out effects and control volume * [Record](https://wavesurfer.xyz/examples/?record.js)
+  – records audio from the microphone and renders a waveform * [Spectrogram](https://wavesurfer.xyz/examples/?spectrogram.js)
+  – visualization of an audio frequency spectrum (written by @akreal) * [Hover](https://wavesurfer.xyz/examples/?hover.js)
+  – shows a vertical line and timestmap on waveform hover ## CSS styling wavesurfer.js
+  v7 is rendered into a Shadow DOM tree. This isolates its CSS from the rest of the
+  web page. However, it's still possible to style various wavesurfer.js elements with
+  CSS via the `::part()` pseudo-selector. For example: ```css #waveform ::part(cursor):before
+  { content: '\U0001F3C4'; } #waveform ::part(region) { font-family: fantasy; } ```
+  You can see which elements you can style in the DOM inspector – they will have a
+  `part` attribute. See [this example](https://wavesurfer.xyz/examples/?styling.js)
+  to play around with styling. ## Questions Have a question about integrating wavesurfer.js
+  on your website? Feel free to ask in our [Discussions forum](https://github.com/wavesurfer-js/wavesurfer.js/discussions/categories/q-a).
+  However, please keep in mind that this forum is dedicated to wavesurfer-specific
+  questions. If you're new to JavaScript and need help with the general basics like
+  importing NPM modules, please consider asking ChatGPT or StackOverflow first. ###
+  FAQ I'm having CORS issues Wavesurfer fetches audio from the URL you specify in
+  order to decode it. Make sure this URL allows fetching data from your domain. In
+  browser JavaScript, you can only fetch data eithetr from the same domain or another
+  domain if and only if that domain enables CORS . So if your audio file is on an
+  external domain, make sure that domain sends the right Access-Control-Allow-Origin
+  headers. There's nothing you can do about it from the requesting side (i.e. your
+  JS code). Does wavesurfer support large files? Since wavesurfer decodes audio entirely
+  in the browser using Web Audio, large clips may fail to decode due to memory constraints.
+  We recommend using pre-decoded peaks for large files (see this example ). You can
+  use a tool like audiowaveform to generate peaks. What about streaming audio? Streaming
+  audio is supported only with pre-decoded peaks and duration . There is a mismatch
+  between my audio and the waveform. How do I fix it? If you're using a VBR (variable
+  bit rate) audio file, there might be a mismatch between the audio and the waveform.
+  This can be fixed by converting your file to CBR (constant bit rate). Alternatively,
+  you can use the Web Audio shim which is more accurate. How do I connect wavesurfer.js
+  to Web Audio effects? Generally, wavesurfer.js doesn't aim to be a"
 ---
 {% raw %}
 # <img src="https://user-images.githubusercontent.com/381895/226091100-f5567a28-7736-4d37-8f84-e08f297b7e1a.png" alt="logo" height="60" valign="middle" /> wavesurfer.js

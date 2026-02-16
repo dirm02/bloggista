@@ -2,8 +2,68 @@
 layout: project
 name: Dwmkerr Hacker Laws
 slug: dwmkerr-hacker-laws
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dwmkerr-hacker-laws/images/hicks_law.svg
 repo_url: https://github.com/dwmkerr/terminal-ai)
+indexed_content: "hacker-laws \U0001F9E0 Laws, Theories, Principles and Patterns for
+  developers and technologists. --- - \U0001F4D6 My new book [Effective Shell (Online
+  Version)](https://effective-shell.com) on [Amazon (Print/Kindle)](https://amzn.to/4ho0F91)
+  - \U0001F30D Try [hacker-laws.com](https://hacker-laws.com) - \U0001F9E0 Check out
+  my new project [Terminal AI](https://github.com/dwmkerr/terminal-ai) - ☕️ Like this
+  project? Consider [buying me a coffee with a one-off donation](https://github.com/sponsors/dwmkerr?frequency=one-time)
+  - \U0001F3A7 Listen to the podcast [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403)
+  - \U0001F4D6 Download the [PDF eBook](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf)
+  - \U0001F30F See the Translations: [\U0001F1E7\U0001F1F7](./translations/pt-BR.md)
+  [\U0001F1E8\U0001F1F3](https://github.com/nusr/hacker-laws-zh) [\U0001F1EB\U0001F1F7](./translations/fr.md)
+  [\U0001F1EE\U0001F1F9](./translations/it-IT.md) [\U0001F1F1\U0001F1FB](./translations/lv.md)
+  [\U0001F1F0\U0001F1F7](https://github.com/codeanddonuts/hacker-laws-kr) [\U0001F1F7\U0001F1FA](https://github.com/solarrust/hacker-laws)
+  [\U0001F1EA\U0001F1F8](./translations/es-ES.md) [\U0001F1F9\U0001F1F7](./translations/tr.md)
+  [\U0001F1EE\U0001F1E9](./translations/id.md) [\U0001F1EF\U0001F1F5](./translations/jp.md)
+  [\U0001F1F5\U0001F1F1](./translations/pl.md) [\U0001F1FB\U0001F1F3](./translations/vi.md)
+  --- - [Introduction](#introduction) - [Laws](#laws) - [90–9–1 Principle (1% Rule)](#9091-principle-1-rule)
+  - [90–90 Rule](#9090-rule) - [Amdahl's Law](#amdahls-law) - [The Broken Windows
+  Theory](#the-broken-windows-theory) - [Brooks' Law](#brooks-law) - [CAP Theorem
+  (Brewer's Theorem)](#cap-theorem-brewers-theorem) - [Clarke's three laws](#clarkes-three-laws)
+  - [Conway's Law](#conways-law) - [Cunningham's Law](#cunninghams-law) - [Dunbar's
+  Number](#dunbars-number) - [The Dunning-Kruger Effect](#the-dunning-kruger-effect)
+  - [Fitts' Law](#fitts-law) - [Gall's Law](#galls-law) - [Goodhart's Law](#goodharts-law)
+  - [Hanlon's Razor](#hanlons-razor) - [Hick's Law (Hick-Hyman Law)](#hicks-law-hick-hyman-law)
+  - [Hofstadter's Law](#hofstadters-law) - [Hutber's Law](#hutbers-law) - [The Hype
+  Cycle & Amara's Law](#the-hype-cycle--amaras-law) - [Hyrum's Law (The Law of Implicit
+  Interfaces)](#hyrums-law-the-law-of-implicit-interfaces) - [Jevons' Paradox](#jevons-paradox)
+  - [Input-Process-Output (IPO)](#input-process-output-ipo) - [Kernighan's Law](#kernighans-law)
+  - [Koomey's Law](#koomeys-law) - [Linus's Law](#linuss-law) - [Metcalfe's Law](#metcalfes-law)
+  - [Moore's Law](#moores-law) - [Murphy's Law / Sod's Law](#murphys-law--sods-law)
+  - [Occam's Razor](#occams-razor) - [Parkinson's Law](#parkinsons-law) - [Premature
+  Optimization Effect](#premature-optimization-effect) - [Putt's Law](#putts-law)
+  - [Reed's Law](#reeds-law) - [The Bitter Lesson](#the-bitter-lesson) - [The Ringelmann
+  Effect](#the-ringelmann-effect) - [The Law of Conservation of Complexity (Tesler's
+  Law)](#the-law-of-conservation-of-complexity-teslers-law) - [The Law of Demeter](#the-law-of-demeter)
+  - [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions) - [The Law of
+  the Instrument](#the-law-of-the-instrument) - [The Law of Triviality](#the-law-of-triviality)
+  - [The Unix Philosophy](#the-unix-philosophy) - [The Scout Rule](#the-scout-rule)
+  - [The Spotify Model](#the-spotify-model) - [The Two Pizza Rule](#the-two-pizza-rule)
+  - [Twyman's law](#twymans-law) - [Wadler's Law](#wadlers-law) - [Wheaton's Law](#wheatons-law)
+  - [Principles](#principles) - [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
+  - [Chesterton's Fence](#chestertons-fence) - [Kerckhoffs's principle](#kerckhoffss-principle)
+  - [The Dead Sea Effect](#the-dead-sea-effect) - [The Dilbert Principle](#the-dilbert-principle)
+  - [The Pareto Principle (The 80/20 Rule)](#the-pareto-principle-the-8020-rule) -
+  [The Shirky Principle](#the-shirky-principle) - [The Stochastic Parrot](#the-stochastic-parrot)
+  - [The Peter Principle](#the-peter-principle) - [The Robustness Principle (Postel's
+  Law)](#the-robustness-principle-postels-law) - [SOLID](#solid) - [The Single Responsibility
+  Principle](#the-single-responsibility-principle) - [The Open/Closed Principle](#the-openclosed-principle)
+  - [The Liskov Substitution Principle](#the-liskov-substitution-principle) - [The
+  Interface Segregation Principle](#the-interface-segregation-principle) - [The Dependency
+  Inversion Principle](#the-dependency-inversion-principle) - [The DRY Principle](#the-dry-principle)
+  - [The KISS principle](#the-kiss-principle) - [YAGNI](#yagni) - [The Fallacies of
+  Distributed Computing](#the-fallacies-of-distributed-computing) - [The Principle
+  of Least Astonishment](#the-principle-of-least-astonishment) - [Reading List](#reading-list)
+  - [Online Resources](#online-resources) - [PDF eBook](#pdf-ebook) - [Podcast](#podcast)
+  - [Contributors](#contributors) ## Introduction There are lots of laws which people
+  discuss when talking about development. This repository is a reference and overview
+  of some of the most common ones. Please share and submit PRs! Warning: This repo
+  contains an explanation of some laws, principles and patterns, but does not _advocate_
+  for any of the"
 ---
 {% raw %}
 <h1 align="center"><a href="https://hacker-laws.com" target="_blank">hacker-laws</a></h1>

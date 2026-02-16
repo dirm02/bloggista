@@ -2,8 +2,52 @@
 layout: project
 name: Amir1376 Ab Download Manager
 slug: amir1376-ab-download-manager
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/amir1376-ab-download-manager/assets/logo/app_logo_with_background.svg
 repo_url: https://github.com/amir1376/ab-download-manager
+indexed_content: "AB Download Manager ## Description [AB Download Manager](https://abdownloadmanager.com)
+  is a desktop app that helps you manage and organize your downloads more efficiently
+  than ever before. ## Features - ⚡️ Faster Download Speed - ⏰ Queues and Schedulers
+  - \U0001F310 Browser Extensions - \U0001F4BB Multiplatform (Android / Windows /
+  Linux / Mac) - \U0001F319 Multiple Themes (Dark/Light/Black and more) with modern
+  UI - ❤️ Free and Open Source Please visit [Project Website](https://abdownloadmanager.com)
+  for more info. ## Installation ### Download and Install the App #### Installation
+  script (Linux) ```bash bash ⚠️ **Warning:** This software is NOT on Google Play
+  or other app stores unless listed here. Any version **claiming to be or related
+  to this project** should be considered SCAM and UNSAFE. For alternative installation
+  methods, uninstallation instructions, and more details, please refer to the [wiki](https://github.com/amir1376/ab-download-manager/wiki/)
+  page. ### Browser Extensions You can download the browser extension to integrate
+  the app with your browser. ## Screenshots ## Project Status & Feedback Please keep
+  in mind that this project is in the beginning of its journey. **Lots of features**
+  are on the way! **But**, in the meantime you may face **Bugs or Problems**. If you
+  do, please report them to me via the [Community chat](#community) or through `GitHub
+  Issues`, and I'll do my best to fix them ASAP. ## Community You can join our [Telegram
+  Group](https://t.me/abdownloadmanager_discussion) to: - Report problems - Suggest
+  features - Get help with the app ## Repositories And Source Code There are multiple
+  repositories related to the **AB Download Manager** project: | Repository | Description
+  | |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+  | [Main Application](https://github.com/amir1376/ab-download-manager) (You are here)
+  | Contains the **Application** that runs on your **device** | | [Browser Integration](https://github.com/amir1376/ab-download-manager-browser-integration)
+  | Contains the **Browser Extension** to be installed on your **browser** | | [Website](https://github.com/amir1376/ab-download-manager-website)
+  | Contains the **AB Download Manager** [website](https://abdownloadmanager.com)
+  | I've spent a lot of time to create this project. If you like my work, please consider
+  giving it a ⭐ — thanks! ❤️ ## Bug Report If you notice any bugs in the source code,
+  please report them via the `GitHub Issues` section. ## Build From Source To compile
+  and test the desktop app on your local machine, follow these steps: 1. Clone the
+  project. 2. Download and extract the [JBR](https://github.com/JetBrains/JetBrainsRuntime/releases),
+  and make it available by either: - Adding it to your `PATH`, or - Setting the `JAVA_HOME`
+  environment variable to its installation path. 3. Navigate to the project directory,
+  open your terminal and execute the following command: ```bash ./gradlew createReleaseFolderForCi
+  ``` 4. The output will be available at: ``` /build/ci-release ``` > **Note**. This
+  project is compiled and published by GitHub actions [here](./.github/workflows/publish.yml),
+  so if you > faced any problem you can check that too. ## Translations If you’d like
+  to help translate AB Download Manager into another language, or improve existing
+  translations, you can do so on Crowdin. Here’s how: - Visit the project in [Crowdin](https://crowdin.com/project/ab-download-manager)
+  - Please DO NOT submit translations via pull requests. - If you want to add a new
+  language, please see [this](https://github.com/amir1376/ab-download-manager/issues/144).
+  ## Contribution If you want to contribute to this project, please read [Contributing
+  Guide](CONTRIBUTING.md) first. ## Support the Project If you'd like to support the
+  project, you can find details on how to donate in the [DONATE.md](DONATE.md) file."
 ---
 {% raw %}
 <div align="center">

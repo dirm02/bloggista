@@ -2,8 +2,15 @@
 layout: project
 name: Claudiabdm Cvfy
 slug: claudiabdm-cvfy
+category: Very important!!!!
 image: https://madewithvuejs.com/storage/repo-shields/3280-shield.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/claudiabdm-cvfy
+indexed_content: "# CvFy [](https://madewithvuejs.com/p/cvfy/shield-link) CvFy is
+  an open-sourced multilingual app that makes CV creation faster and easier. > [!NOTE]
+  > PDF creation is client-side only, so results may differ among browsers. Demo:
+  https://cvfy.xyz/ ## Features - Multilingual - Custom themes (layout and color)
+  - No login required - Responsive design - Accessible - SEO - PWA - Offline ## Tech
+  Stack - HTML - TypeScript - PostCSS - TailwindCSS - Nuxt 3 - Cloudflare Pages"
 ---
 {% raw %}
 # CvFy

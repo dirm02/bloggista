@@ -2,8 +2,32 @@
 layout: project
 name: Briehq Brie Extension
 slug: briehq-brie-extension
+category: Extension-Pluggin-Cron-Scrap
 image: https://github.com/briehq/.github/raw/main/profile/content/brie-icon-400x400.png
 repo_url: https://github.com/briehq/.github
+indexed_content: "⚡️ Capture screenshots, console errors, network issues, and user
+  actions, giving developers full context instantly. Website • Docs • Discord **\U0001F680
+  Capture & Share Instantly:** _Record exactly what went wrong, no more back-and-forth
+  emails or messy screenshots._ **\U0001F6E0️ Developer - Ready Reports:** _Brie auto-captures
+  console logs, network errors, and user actions so devs get full context instantly._
+  **\U0001F552 Save Time, Build Faster:** _No wasted hours on unclear bug reports,
+  just fast fixes and better software._ **\U0001F525 Join Thousands of Fast-Moving
+  Teams:** _Install Brie and start shipping bug-free software today!_ ## \U0001F4AB
+  Quickstart 1. Add Brie from the website , then pin it for quick access. 2. Click
+  the Brie icon to capture and annotate a screenshot. 3. Send the generated report
+  link via email, Slack, or any platform. documentation . --> ## \U0001F91D Contribute
+  Interested in contributing, even if you aren't a customer? Check out the [Good First
+  Issues](https://github.com/briehq/brie-extension/labels/good%20first%20issue) and
+  read the [Contributing Guide](./docs/CONTRIBUTING.md). Also, check [`docs`](./docs)
+  folder. ## \U0001F468‍\U0001F4BB Team - Ion - Luminita Questions or inquiries? Email
+  ask[at]brie[dot]io ## \U0001F310 Readme in other languages - [English](https://github.com/briehq/brie-extension)
+  - [Spanish](./docs/readme/es.md) - [French](./docs/readme/fr.md) - [Romanian](./docs/readme/ro.md)
+  - [Ukrainian](./docs/readme/ua.md) - [German](./docs/readme/de.md) - [Chinese](./docs/readme/zh-Hans.md)
+  - [Korean](./docs/readme/ko.md) - [Japanese](./docs/readme/ja.md) - [Italian](./docs/readme/it.md)
+  - [Russian](./docs/readme/ru.md) - [Arabic](./docs/readme/ar.md) - [Hindi](./docs/readme/hi.md)
+  - [Tagalog](./docs/readme/tl.md) Don't see your language? Just add a new language
+  to the [`i18n/locales`](./packages/i18n/locales) and [`docs/readme`](./docs/readme)
+  file and open a PR. P.S. Shout out to: - React - Vite - Turborepo - Extension Boilerplate"
 ---
 {% raw %}
 <p align="center">

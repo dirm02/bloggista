@@ -2,8 +2,50 @@
 layout: project
 name: Dominikmuellr Trudido
 slug: dominikmuellr-trudido
+category: iOS-imac
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dominikmuellr-trudido/assets/icon/2.png
 repo_url: https://github.com/dominikmuellr/trudido
+indexed_content: "Simple tasks. Secure notes. Made in Europe. Love Trudido? Support
+  its development &nbsp; ## Official Sources The links above are the only trusted
+  sources of Trudido. Any other websites or listings are not affiliated with me or
+  this project. ## \U0001F4CD Table of Contents - [\U0001F4CB Task Management](#-task-management)
+  - [\U0001F4DD Notes](#-notes) - [\U0001F510 Vault (Encrypted Notes)](#-vault-encrypted-notes)
+  - [\U0001F5C2️ Folder Templates](#️-folder-templates) - [\U0001F4BE Backup & Data
+  Ownership](#-backup--data-ownership) - [\U0001F4C5 Calendar Sync](#-calendar-sync)
+  - [\U0001F3A8 Design & Customization](#-design--customization) - [\U0001F512 Privacy](#-privacy)
+  - [\U0001F4F8 Screenshots](#-screenshots) - [\U0001F9E9 License](#-license) - [\U0001F4AC
+  Contributing](#-contributing) ## \U0001F4CB Task Management - Smart task creation:
+  title, notes, due date & time, and priority - Organize tasks into folders (with
+  colors/icons) - Recurring tasks: daily/weekly/monthly + custom patterns (e.g. every
+  2 weeks, specific weekdays) with optional end date - Multi-day tasks (start date
+  → due date) - Reminders with multiple reminder times (native Android scheduling)
+  - Multiple views: list + calendar (month / 2 weeks / week / day) - Advanced filtering,
+  sorting, and search - Quick actions: swipe actions, multi-select, and batch operations
+  - Progress insights: completion stats + streak tracking ## \U0001F4DD Notes - Markdown
+  notes with live preview + formatting helpers - Rich-text editor (WYSIWYG) with support
+  for media (images / audio / video) - Pin important notes, move notes between folders,
+  and manage note collections - Export notes (e.g. PDF / Markdown) ## \U0001F510 Vault
+  (Encrypted Notes) - Lock note folders as an AES-256 encrypted Vault - Secure access
+  with password/PIN and optional biometric unlock - Vault content stays local and
+  encrypted on-device ## \U0001F5C2️ Folder Templates - Built-in templates to instantly
+  create task folders with pre-filled workflows - Create your own templates (or generate
+  one from an existing folder) - Template suggestions when creating a new folder ##
+  \U0001F4BE Backup & Data Ownership - Export/import full app data (JSON) - Export
+  everything to a single PDF (tasks + notes) - Import/export notes as Markdown - Automatic
+  backups on a schedule (Android) + restore from auto backups ## \U0001F4C5 Calendar
+  Sync - Optional sync with your device calendars (import and/or export) - Calendar
+  diagnostics and per-calendar selection ## \U0001F3A8 Design & Customization - Material
+  3 interface - Dynamic color (Material You, Android 12+) - Light/Dark modes + custom
+  accent themes - Compact density + high-contrast option - UI preferences like swipe
+  behavior, FAB position, and layout tweaks ## \U0001F512 Privacy - 100% offline by
+  default — your data stays on your device - No tracking, ads, or analytics - Full
+  control over your data with import/export and backups - Lock the whole app with
+  PIN and optional biometric unlock ### Your tasks and notes stay with you. ## \U0001F4F8
+  Screenshots ## \U0001F9E9 License Licensed under the **GNU General Public License
+  v3.0 (GPL-3.0)**. You are free to use, modify, and distribute this software under
+  the same license. See the [LICENSE](LICENSE) file for details. ## \U0001F4AC Contributing
+  Pull requests are welcome. For major changes, please open an issue first to discuss
+  what you’d like to modify."
 ---
 {% raw %}
 <p align="center">

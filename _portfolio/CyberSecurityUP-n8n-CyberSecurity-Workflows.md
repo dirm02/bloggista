@@ -2,8 +2,68 @@
 layout: project
 name: Cybersecurityup N8n Cybersecurity Workflows
 slug: CyberSecurityUP-n8n-CyberSecurity-Workflows
+category: GreyHate-Cyber&Security
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/CyberSecurityUP-n8n-CyberSecurity-Workflows
+indexed_content: "# \U0001F680 100 n8n Cybersecurity Workflow Ideas Automation blueprints
+  for **Red Team & Pentest**, **Blue Team (SOC/DFIR/TI)**, **Application Security
+  (AppSec/DevSecOps)**, and **Platform/General Security** — all using **n8n**. > Each
+  idea lists **Purpose**, **Integrations**, and a **Flow Outline** you can translate
+  into n8n nodes (HTTP Request, Execute Command, IF/Switch, Function, Code, Split
+  In Batches, Merge, Set, Move Binary Data, Wait, Cron, Webhook, Email/Slack/Teams,
+  PostgreSQL/MongoDB/Redis, AWS, GCP, Azure, RabbitMQ, Kafka, etc.). --- ## Index
+  - [A. Red Team & Pentest (30)](#a-red-team--pentest-30) - [B. Blue Team / SOC /
+  DFIR (35)](#b-blue-team--soc--dfir-35) - [C. Application Security / DevSecOps (25)](#c-application-security--devsecops-25)
+  - [D. Platform & General Security (10)](#d-platform--general-security-10) - [E.
+  Reference Integrations](#e-reference-integrations) - [F. Import & Build Tips](#f-import--build-tips)
+  - [G. License](#g-license) --- ## A. Red Team & Pentest (30) 1) **Automated Subdomain
+  Recon Hub** **Purpose:** Consolidate subdomain intel continuously. **Integrations:**
+  Subfinder/Amass (Exec), DNSDB/PassiveTotal (HTTP), Shodan/Censys, Slack, PostgreSQL.
+  **Flow:** Cron → Exec(Subfinder/Amass) → HTTP(DNS/Passive) → HTTP(Shodan/Censys)
+  → Merge/Unique → DB upsert → Slack summary. 2) **Attack Surface Change Detector**
+  **Purpose:** Detect new hosts/ports/services vs last run. **Integrations:** Nmap/Naabu/Masscan
+  (Exec), Diff (Function), Jira/Slack. **Flow:** Cron → Exec(scan) → Compare with
+  last snapshot (DB) → Create Jira issues per delta → Slack alert. 3) **Cloud Bucket
+  Finder (S3/GCS/Azure)** **Purpose:** Enumerate public buckets & misconfigs. **Integrations:**
+  AWS/GCP/Azure APIs, HTTP HEAD/GET, Slack, CSV export. **Flow:** Cron → List buckets
+  → Check ACL/public URLs → IF public → notify Slack + write CSV to S3. 4) **Credential
+  Spraying Orchestrator (Lab/Test Only)** **Purpose:** Controlled spray against lab
+  IdP for detection tuning. **Integrations:** Custom IdP/API, Delay/Rate-limit, Secret
+  store. **Flow:** Webhook list → Split → Wait between attempts → HTTP(Auth) → Collect
+  results → Red/Blue joint report. 5) **GoPhish Campaign Launcher** **Purpose:** Spin
+  phishing tests end-to-end. **Integrations:** GoPhish API, Google Sheets (targets),
+  Slack/Email, S3 for evidence. **Flow:** Trigger → Fetch targets → GoPhish API(create
+  campaign) → Poll stats → Export CSV/PDF → Send digest. 6) **Malicious Macro Build
+  Conveyor (PoC)** **Purpose:** Generate PoC docs for awareness labs. **Integrations:**
+  Dockerized builder, Git repo, Hashing node, VT private sandbox (optional). **Flow:**
+  Webhook payload → Build (Docker) → Hash → Store to S3 → Share link + Slack. 7) **Payload
+  Inventory & Hash Tracker** **Purpose:** Track artifacts, hashes, and usage. **Integrations:**
+  S3, PostgreSQL, Slack. **Flow:** Upload webhook → Compute SHA256 → DB upsert (who/when/use)
+  → Notify Slack. 8) **C2 Beacon Event Forwarder** **Purpose:** Stream C2 events to
+  collab channels. **Integrations:** CS/Havoc/Sliver webhooks, Slack/Discord, TimescaleDB.
+  **Flow:** Webhook(C2) → Transform → Insert DB → Slack threaded updates per host.
+  9) **Initial Access Monitor (Decoy Links)** **Purpose:** Observe clicks, IPs, User-Agents.
+  **Integrations:** n8n Webhook, GeoIP, AbuseIPDB. **Flow:** Webhook click → Enrich(GeoIP/ASN)
+  → IF(bad reputation) → tag IOC → Push to TI DB. 10) **Exfiltration Simulation to
+  Cloud** **Purpose:** Test DLP detection. **Integrations:** S3/GDrive/Dropbox, Slack,
+  Timer. **Flow:** Cron → Upload decoy file → Verify receipt → Notify SOC channel.
+  11) **AV/EDR Evasion Test Matrix Runner (Lab)** **Purpose:** Run known OPSEC variations
+  against lab EDR. **Integrations:** Exec, Git repo of samples, Jira. **Flow:** Schedule
+  → Execute cases → Collect detections → Auto-create Jira tasks for misses. 12) **TLS/Cert
+  Recon Harvester** **Purpose:** Track cert issuance & SANs. **Integrations:** crt.sh,
+  Censys, DB, Email. **Flow:** Cron → Query certs → Diff vs history → Email changes.
+  13) **Shadow IT Finder (App Enumeration)** **Purpose:** Identify unmanaged domains/apps.
+  **Integrations:** SecurityTrails, Shodan, HTTP banner grabs. **Flow:** Fetch domains
+  → HTTP checks → Tag suspicious → Report. 14) **Vuln Exploit Window Notifier** **Purpose:**
+  Alert when a new PoC drops for in-scope CVE. **Integrations:** GitHub RSS, NVD,
+  Exploit-DB, Slack. **Flow:** Poll feeds → Filter by CVEs seen in scans → Slack “exploit
+  available” ping. 15) **Password Dump Honeytoken Telemetry** **Purpose:** Detect
+  credential reuse events. **Integrations:** Canarytokens, Webhook, TI DB. **Flow:**
+  Honeytoken fire → Enrich IP → Store IOC → Notify. 16) **Adversary Path Builder (ATT&CK)**
+  **Purpose:** Compose ordered technique runs. **Integrations:** JSON (technique sets),
+  Exec scripts, Confluence export. **Flow:** Select profile → Iterate techniques →
+  Log output → Publish runbook. 17) **Browser Exploit Canary (XSS)** **Purpose:**
+  Receive callbacks for injected beacons. **I"
 ---
 {% raw %}
 # 🚀 100 n8n Cybersecurity Workflow Ideas

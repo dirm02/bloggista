@@ -2,8 +2,70 @@
 layout: project
 name: Fleetbase Fleetbase
 slug: fleetbase-fleetbase
+category: Platform -eCommerce
 image: https://user-images.githubusercontent.com/58805033/191936702-fed04b0f-7966-4041-96d0-95e27bf98248.png
 repo_url: https://github.com/fleetbase/fleetbase
+indexed_content: "Modular logistics and supply chain operating system Documentation
+  · Cloud Version · Book a Demo · Discord ## What is Fleetbase? Fleetbase is a modular
+  logistics and supply chain operating system designed to streamline management, planning,
+  optimization, and operational control across various sectors of the supply chain
+  industry. ## \U0001F3AF Who Is Fleetbase For? Fleetbase is designed for organizations
+  that need powerful logistics and supply chain management: - **E-commerce & Retail**
+  - Manage deliveries, track orders, and optimize last-mile logistics - **Food & Beverage**
+  - Coordinate restaurant deliveries, manage drivers, and track real-time orders -
+  **Courier Services** - Dispatch drivers, optimize routes, and provide customer tracking
+  - **Field Services** - Schedule technicians, manage service areas, and track job
+  completion - **Enterprise Logistics** - Build custom supply chain solutions with
+  full API access - **Developers** - Extend and customize with a modular architecture
+  and comprehensive API ## Visual Feature Showcase | Feature | Screenshot | Description
+  | |---------|------------|-------------| | **Order Board** | | Visualize and manage
+  your orders with a dynamic Kanban board. | | **Workflow Builder** | | Create custom
+  order flows and automation with the intuitive workflow builder. | | **Order Tracking**
+  | | Track individual orders in real-time on an interactive map. | | **Live Fleet
+  Map** | | Get a complete overview of your fleet and active orders on a live map.
+  | | **Service Zones** | | Define and manage service areas and zones for your fleet.
+  | **Quickstart** ```bash git clone git@github.com:fleetbase/fleetbase.git cd fleetbase
+  && ./scripts/docker-install.sh ``` ## \U0001F4D6 Table of contents - [Features](#-features)
+  - [Install](#-install) - [Extensions](#-extensions) - [Apps](#-apps) - [Roadmap](#-roadmap)
+  - [Deployment Options](#-deployment-options) - [Bugs and Feature Requests](#-bugs-and--feature-requests)
+  - [Documentation](#-documentation) - [Contributing](#-contributing) - [Community](#-community)
+  - [Creators](#creators) - [License & Copyright](#license--copyright) ## \U0001F4E6
+  Features | Feature | Description | |---------|-------------| | \U0001F50C **Extensible**
+  | Build installable extensions and additional functionality directly into the OS
+  via modular architecture. | | \U0001F468‍\U0001F4BB **Developer Friendly** | RESTful
+  API, socket, and webhooks to seamlessly integrate with external systems or develop
+  custom applications. | | \U0001F4F1 **Native Apps** | Collection of open-source
+  and native apps designed for operations and customer facing. | | \U0001F91D **Collaboration**
+  | Dedicated chat and comments system for collaboration across your organization.
+  | | \U0001F512 **Security** | Secure data encryption, adherence to industry-standard
+  security practices, and a comprehensive dynamic Identity and Access Management (IAM)
+  system. | | \U0001F4E1 **Telematics** | Integrate and connect to hardware devices
+  and sensors to provide more feedback and visibility into operations. | | \U0001F310
+  **Internationalized** | Translate into multiple languages to accommodate diverse
+  user bases and global operations. | | ⚙️ **Framework** | PHP core built around logistics
+  and supply chain abstractions to streamline extension development. | | \U0001F504
+  **Dynamic** | Configurable rules, flows and logic to enable automation and customization.
+  | | \U0001F3A8 **UI/UX** | Clean, responsive user-friendly interface for efficient
+  management and operations from desktop or mobile. | | \U0001F4CA **Dashboards**
+  | Create custom dashboards and widgets to get full visibility into operations. |
+  | \U0001F4C8 **Scalability** | Uninterrupted growth with scalable infrastructure
+  and design, capable of handling increasing data volume and user demand as your business
+  expands. | | \U0001F504 **Continuous Improvements** | Commitment to continuous improvement,
+  providing regular updates that seamlessly introduce optimizations, new features,
+  and overall enhancements to the OS. | | \U0001F30D **Open Source** | Deploy it either
+  on-premise or in the cloud according to your organization's needs and preferences.
+  | ## \U0001F4BE Install Getting up and running with Fleetbase via Docker is the
+  quickest and most straightforward way. If you'd like to use Fleetbase without docker
+  read the [full install guide in the Fleetbase documentation](https://docs.fleetbase.io/getting-started/install).
+  Make sure you have both the latest versions of docker and docker-compose installed
+  on your system. ```bash git clone git@github.com:fleetbase/fleetbase.git cd fleetbase
+  && ./scripts/docker-install.sh ``` ### Accessing Fleetbase Once successfully installed
+  and running you can then access the Fleetbase console on port 4200 and the API will
+  be accessible from port 8000. Fleetbase Console: http://localhost:4200 Fleetbase
+  API: http://localhost:8000 ### Additional Configurations **CORS:** If you're installing
+  directly on a server you will need to configure the environment variables to the
+  application container: ``` CONSOLE_HOST=http://{yourhost}:4200 ``` If you have additional
+  applications or frontends you can use the"
 ---
 {% raw %}
 <div id="hero">

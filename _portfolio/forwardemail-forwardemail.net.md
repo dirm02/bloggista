@@ -2,8 +2,66 @@
 layout: project
 name: Forwardemail Forwardemail.net
 slug: forwardemail-forwardemail.net
+category: Mail services -server-chat apps
 image: https://starchart.cc/forwardemail/forwardemail.net.svg?variant=adaptive
 repo_url: https://github.com/forwardemail/forwardemail.net
+indexed_content: 'Forward Email is the 100% open-source and privacy-focused email
+  service @ https://forwardemail.net . ## Table of Contents * [Stargazers over time](#stargazers-over-time)
+  * [How do I get started](#how-do-i-get-started) * [For Consumers](#for-consumers)
+  * [For Developers](#for-developers) * [Requirements](#requirements) * [macOS](#macos)
+  * [Ubuntu](#ubuntu) * [Local Development Guide](#local-development-guide) * [Server
+  Infrastructure](#server-infrastructure) * [Naming Convention](#naming-convention)
+  * [Load Balancing](#load-balancing) * [Provisioning](#provisioning) * [Deployment](#deployment)
+  * [Deployment Advice](#deployment-advice) * [Bare Metal Advice](#bare-metal-advice)
+  * [Real-time Storage Mirroring](#real-time-storage-mirroring) * [Automated Setup
+  via Ansible](#automated-setup-via-ansible) * [Environment Variables](#environment-variables)
+  * [Manual Verification](#manual-verification) * [License](#license) ## Stargazers
+  over time [](https://starchart.cc/forwardemail/forwardemail.net) ## How do I get
+  started ### For Consumers Visit to get started! ### For Developers See [Requirements](#requirements)
+  and [Local Development Guide](#local-development-guide) below. ## Requirements ###
+  macOS 1. Install [n][] and Node v18.20.4: ```sh curl -L https://raw.githubusercontent.com/mklement0/n-install/stable/bin/n-install
+  | bash -s -- -y 18.20.4 ``` 2. Ensure that you are running on Node v18.20.4: ```sh
+  node --version v18.20.4 ``` 3. Install [brew][] and the following dependencies using
+  `brew` command: ```sh brew tap mongodb/brew brew install mongodb-community redis
+  libtool automake autoconf nasm brew services start mongodb-community brew services
+  start redis ``` 4. Install [pnpm][]: ```sh corepack enable corepack prepare pnpm@9.15.9
+  --activate ``` 5. [Fork the repository from GitHub](https://github.com/forwardemail/forwardemail.net/fork)
+  6. Clone your fork locally (replace `forwardemail` with your username): ```sh git
+  clone git@github.com:forwardemail/forwardemail.net.git cd forwardemail.net ``` 7.
+  Install [npm][] dependencies: ```sh pnpm install ``` 8. Install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html#stable)
+  (**optional:** only used for generating PDF receipts) ### Ubuntu 1. Install [n][]
+  and Node v18.20.4: ```sh curl -L https://raw.githubusercontent.com/mklement0/n-install/stable/bin/n-install
+  | bash -s -- -y 18.20.4 ``` 2. Ensure that you are running on Node v18.20.4: ```sh
+  node --version v18.20.4 ``` 3. Install [pnpm][]: ```sh corepack enable corepack
+  prepare pnpm@9.15.9 --activate ``` 4. [Fork the repository from GitHub](https://github.com/forwardemail/forwardemail.net/fork)
+  5. Clone your fork locally (replace `forwardemail` with your username): ```sh git
+  clone git@github.com:forwardemail/forwardemail.net.git cd forwardemail.net ``` 6.
+  Install [npm][] dependencies: ```sh pnpm install ``` 7. Install fonts: ```sh echo
+  ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true |
+  sudo debconf-set-selections ``` ```sh sudo apt-get install xfonts-75dpi fontconfig
+  libxrender1 xfonts-base ttf-mscorefonts-installer libfontconfig fonts-powerline
+  ``` 8. Install [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html#stable) (**optional:**
+  only used for generating PDF receipts): ```sh wget "https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.$(lsb_release
+  -c -s)_$(dpkg --print-architecture).deb" sudo dpkg -i "wkhtmltox_0.12.6.1-2.$(lsb_release
+  -c -s)_$(dpkg --print-architecture).deb" ``` 9. Install MongoDB by following the
+  guide at 10. Install Redis by following the guide at . ## Local Development Guide
+  Once you have followed [Requirements](#requirements), you should now have all the
+  dependencies, repository, and npm packages installed. You can start any of the services
+  using our pre-built commands to make it easy. Note that all of these pre-built commands
+  are using [nps](https://github.com/sezna/nps). | Service Name | Command | Default
+  Development Port | Development Preview URL | | ------------ | -------------------
+  | :----------------------: | ----------------------- | | Web | `npm start web` |
+  `3000` | | | API | `npm start api` | `4000` | | | Bree | `npm start bree` | None
+  | None | | SMTP | `npm start smtp` | `2432` | `telnet localhost 2432` | | MX | `npm
+  start mx` | `2525` | `telnet localhost 2525` | | IMAP | `npm start imap` | `2113`
+  | `telnet localhost 2113` | | POP3 | `npm start pop3` | `2115` | `telnet localhost
+  2115` | | SQLite | `npm start sqlite` | `3456` | `telnet localhost 3456` | | CalDAV
+  | `npm start caldav` | `5000` | | | CardDAV | `npm start carddav` | `6000` | | You
+  can test the local SMTP, IMAP, POP3, CalDAV, CardDAV servers using [Thunderbird](),
+  `telnet`, or `openssl`. Note that all local development servers do not require TLS
+  and are running with `{ rejectUnauthorized: true }` option passed to TLS server
+  configurations. Try running the local web server: ```sh npm start webAndWatch ```
+  It should open a new tab for you with the local w'
 ---
 {% raw %}
 <!-- 🐾 Rest in Peace, Jack (2014-2025) -->

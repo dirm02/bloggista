@@ -2,8 +2,70 @@
 layout: project
 name: Apenwarr Blip
 slug: apenwarr-blip
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/apenwarr-blip/qr.png
 repo_url: https://github.com/apenwarr/blip
+indexed_content: 'blip: a tool for seeing your Internet latency =============================================
+  Tip: ---- On your PC, laptop, tablet, phone, or iPod, try adding a bookmark to http://gfblip.appspot.com/
+  to your home screen for easy access. Too long, don''t read: ---------------------
+  - Go to http://gfblip.appspot.com/ - It should work on any PC, laptop, tablet, phone,
+  or iPod with javascript and HTML canvas support (which means almost everything nowadays).
+  - X axis is time. Y axis is milliseconds of latency. - Green blips are your ping
+  time to gstatic.com (a very fast site that should be close to you wherever you are).
+  - Blue blips are your ping time to apenwarr.ca ("a site on the Internet"). It should
+  be slower than gstatic.com. How much slower depends on how lucky you are. - Red
+  blips mean something sucks. - A good Internet+Wifi connection should have no red
+  blips. And lower latency is better than higher latency. - We send blips out as fast
+  as they come back, up to 100 per second, so you can notice very small variations.
+  - If you watch the blip output while you do different things (switch wifi networks,
+  start Youtube videos playing, walk around), you can immediately see what impact
+  that change has on the quality of your Internet connection. Even longer, don''t
+  read: ------------------------ People think more bandwidth will make your Internet
+  connection seem faster, but that isn''t even close to the whole story. There are
+  three interrelated things you need to care about: - bandwidth - latency - packet
+  loss. Bandwidth means, once things get going, how fast you can download. But "once
+  things get going" can take a really long time. In fact, it can take longer than
+  the whole download! This is especially true for simple web pages, or web pages made
+  up of a bunch of tiny pieces, which is very common on today''s web. That''s where
+  latency comes in. Latency is the time it takes to make a round trip to the server.
+  Really good web designers know how to minimize the number of round trips, or at
+  least do more round trips at the same time - which makes their pages load faster
+  on everyone''s connection. But every web page, whether optimized or not, automatically
+  benefits pretty much proportionally to your network latency. Cut latency in half,
+  and most pages will load about twice as fast. Packet loss is the third component,
+  and it''s often forgotten. If you run the ''ping'' program, which most people don''t
+  do and which is hard or impossible to do from many modern Internet devices (phones,
+  tablets, etc), it will show you how many packets are dropped, and how many got through.
+  Unfortunately, most people don''t run ping more than once per second, which gives
+  a pretty low resolution; if you have a really brief outage, you might not even see
+  it with ping. Plus, on the modern Internet, packet loss is hard to measure - you
+  can''t do it with a web browser. And it''s not that useful anyway, since real web
+  pages don''t see "packet loss." On the web (and any TCP-based protocol), packet
+  loss translates into packet retransmissions, which means latency in some cases is
+  2, 3, or more times higher than usual. If you have significant packet loss (say,
+  1% or more), your web performance will totally suck eggs even if your bandwidth
+  and latency are both fantastic. Blip is an end-to-end testing tool designed to let
+  you measure the latter two elements: latency and packet loss. These are the real
+  indicators of your web browsing performance. It doesn''t attempt to measure bandwidth;
+  for that there''s always good old http://speedtest.net/. (By the way, next time
+  you''re visiting speedtest.net, watch how the "download speedometer" dial starts
+  off low and increases over time. That''s what I mean when I say you might be done
+  downloading by the time "things get going.") How is blip an end-to-end tool? Simple.
+  It''s written in pure javascript, so it runs purely in your browser, without needing
+  a server-side component. It makes real requests to real http servers, rather than
+  using synthetic "ping" packets. Then it measures the turnaround time on those requests
+  and plots them on a graph. And it does this up to 100 times per second, so you can
+  see your network quality in high resolution. It''s the next best thing to actually
+  browsing the web, except you get a pretty graph instead of "hmm, that page loaded
+  kinda slowly today." Blip doesn''t attempt to interpret the results for you; it
+  just makes the plot in real time. If you try experimenting with it in a few different
+  conditions, you can get an intuitive feel for what those conditions mean to the
+  graph - and the graph can give you an intuitive feel for how sucky your web browsing
+  performance will be under those conditions. Here are some observations I''ve made
+  using blip: - If there''s a red blip more than once every minute or so, your web
+  browsing will be noticeably more annoying than if there isn''t. Yes, real wifi connections
+  exist, even in crowded buildings, with *zero* red blips. That should be your goal.
+  - One of my tablet d'
 ---
 {% raw %}
 blip: a tool for seeing your Internet latency

@@ -2,8 +2,23 @@
 layout: project
 name: Dnschanger Dnschanger Desktop
 slug: DnsChanger-dnsChanger-desktop
+category: WindowsTools- Linux
 image: https://github.com/DnsChanger/dnsChanger-desktop/assets/66132114/957ba956-af75-4c6f-b3a1-b604c9853e42
 repo_url: https://github.com/DnsChanger/dnsChanger-desktop
+indexed_content: "## \U0001F381 Donate Us https://reymit.ir/dnschanger # ✍ Introduction
+  This is an open-source DNS Changer for Windows, Mac, and Linux operating systems.
+  Its goal is to gather the best DNS servers in a secure application. - [✍ Introduction](#-introduction)
+  - [\U0001F4E5 Download](#-download) - [\U0001F9A0 Antivirus Result](#-antivirus-result)
+  - [\U0001F5BC Images](#-images) - [\U0001F4DD Changelog](#-changelog) - [\U0001F6E0
+  Collaboration](#-collaboration) ## \U0001F4E5 Download Please visit the [releases](https://github.com/DnsChanger/dnsChanger-desktop/releases)
+  section. | Platform | Status | |----------|----------| | Windows | ✅ Stable| | MacOS
+  | ✅ Stable | | Linux | ✅ Stable | ## \U0001F9A0 Antivirus Result You can check the
+  antivirus result [here](https://www.virustotal.com/gui/file/3d50c66394a4b620ce874b0520db73a5049ec42142f262c9460d6cdb72e74fe3?nocache=1).
+  ## \U0001F5BC Images ## \U0001F4DD Changelog You can view the [changelog](changelog.md)
+  for more information and recent changes. # \U0001F6E1️ Privacy This app has analytics
+  that will track the number of users and servers only and nothing more. ## \U0001F6E0
+  Collaboration [CONTRIBUTING.md](./CONTRIBUTING.md) ## ❤️ Donate - tether: `0x4BE63320940fe4190ea34d5D855E6261395ac836`
+  - or"
 ---
 {% raw %}
 ## 🎁 Donate Us

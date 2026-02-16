@@ -2,8 +2,63 @@
 layout: project
 name: Qdenka Awesome Software Design
 slug: QDenka-awesome-software-design
+category: Educational-map
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/QDenka-awesome-software-design/logo.png
 repo_url: https://github.com/QDenka/awesome-software-design
+indexed_content: 'Awesome Software Design > Organizing and structuring software through
+  patterns, decisions, and verified design rules. ## Contents - [Reference Implementations](#reference-implementations)
+  - [Design Patterns](#design-patterns) - [Architecture Decision Records (ADR)](#architecture-decision-records-adr)
+  - [System Design](#system-design) - [Design Documentation](#design-documentation)
+  - [Design Verification](#design-verification) - [Real-World Architecture Examples](#real-world-architecture-examples)
+  - [Books](#books) - [Community and Conferences](#community-and-conferences) ---
+  ## Reference Implementations - [ThreeDotsLabs/watermill](https://github.com/ThreeDotsLabs/watermill)
+  - Go library for building event-driven applications with Pub/Sub, CQRS, and middleware
+  support. - [ThreeDotsLabs/wild-workouts-go-ddd-example](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)
+  - Production-ready Go example combining Clean Architecture, CQRS, and gRPC with
+  detailed blog series. - [kgrzybek/modular-monolith-with-ddd](https://github.com/kgrzybek/modular-monolith-with-ddd)
+  - Full Modular Monolith with DDD, CQRS, and integration events in C# — reference
+  project. - [CodelyTV/php-ddd-example](https://github.com/CodelyTV/php-ddd-example)
+  - PHP DDD skeleton with Hexagonal Architecture, CQRS, and event bus using Symfony.
+  - [Serverless Patterns Collection](https://serverlessland.com/patterns) - AWS-curated
+  serverless architecture patterns with deployable SAM/CDK templates. - [Azure Cloud
+  Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+  - Microsoft''s 30+ cloud patterns for availability, data management, and resilience.
+  - [AWS Cloud Design Patterns](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/introduction.html)
+  - Amazon''s prescriptive guidance covering decomposition, messaging, and data patterns.
+  - [Microservices Patterns](https://microservices.io/) - Chris Richardson''s comprehensive
+  catalog of microservice patterns including Saga, API Gateway, and CQRS. - [patchlevel/event-sourcing](https://github.com/patchlevel/event-sourcing)
+  - Modern PHP Event Sourcing library with snapshots, projections, and Doctrine integration.
+  - [Event Modeling](https://www.eventmodeling.org/) - Visual method for designing
+  event-driven systems with a timeline of commands, events, and views. - [Cell-Based
+  Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md)
+  - WSO2''s reference architecture for building resilient distributed systems with
+  isolated cells. ## Design Patterns - [Refactoring.Guru](https://refactoring.guru/design-patterns)
+  - Visual catalog of all 23 GoF patterns with UML diagrams and code in 10+ languages.
+  - [DesignPatternsPHP](https://github.com/DesignPatternsPHP/DesignPatternsPHP) -
+  All known design patterns in PHP 8.1+ with real-world examples, UML diagrams, and
+  tests. - [kamranahmedse/design-patterns-for-humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+  - Guide explaining design patterns with real-world analogies, not academic jargon.
+  - [iluwatar/java-design-patterns](https://github.com/iluwatar/java-design-patterns)
+  - Collection of GoF, enterprise, and architectural patterns implemented in Java.
+  - [tmrts/go-patterns](https://github.com/tmrts/go-patterns) - Idiomatic Go implementations
+  of creational, structural, behavioral, and concurrency patterns. - [Source Making
+  — Design Patterns](https://sourcemaking.com/design_patterns) - Comprehensive reference
+  with UML diagrams, code examples, and anti-pattern explanations. - [Christopher
+  Okhravi — Design Patterns](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
+  - Video series walking through each GoF pattern with clear explanations and real-world
+  context. - [faif/python-patterns](https://github.com/faif/python-patterns) - Collection
+  of design patterns and idioms implemented in Python with concise examples. ## Architecture
+  Decision Records (ADR) - [joelparkerhenderson/architecture-decision-record](https://github.com/joelparkerhenderson/architecture-decision-record)
+  - Collection of ADR templates, examples, and best practices from real projects.
+  - [npryce/adr-tools](https://github.com/npryce/adr-tools) - Bash-based CLI for creating,
+  superseding, and managing ADR documents in a project. - [adr/madr](https://github.com/adr/madr)
+  - Markdown Any Decision Records — lean template capturing context, decision, and
+  consequences. - [Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+  - Michael Nygard''s original blog post that started the ADR movement and defined
+  the format. - [adr.github.io](https://adr.github.io/) - Central hub of the ADR GitHub
+  organization aggregating tools, templates, and examples. - [log4brains](https://github.com/thomvaill/log4brains)
+  - Docs-as-code knowledge base that auto-generates a searchable static site from
+  ADR files. - [adr/e-adr](https://github.com/ad'
 ---
 {% raw %}
 <p align="center">

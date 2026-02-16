@@ -2,8 +2,67 @@
 layout: project
 name: Intruder Io Autoswagger
 slug: intruder-io-autoswagger
+category: Uncategorized
 image: https://github.com/user-attachments/assets/e502abaf-426c-4fab-ad60-d7b5dcd730d8
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# [Autoswagger](https://www.intruder.io/research/broken-authorization-apis-autoswagger)
+  by [Intruder](https://intruder.io/) **[Autoswagger](https://www.intruder.io/research/broken-authorization-apis-autoswagger)**
+  is a command-line tool designed to discover, parse, and test for unauthenticated
+  endpoints using **Swagger/OpenAPI** documentation. It helps identify potential security
+  issues in unprotected endpoints of APIs, such as PII leaks and common secret exposures.
+  **Please note that this initial release of Autoswagger is by no means complete,
+  and there are some types of specification which the tool does not currently handle.
+  Please feel free to use it as you wish, and extend its detection capabilities or
+  add detection regexes to cover your specific use-case!** --- ## Table of Contents
+  1. [Introduction](#introduction) 2. [Key Features](#key-features) 3. [Installation
+  & Usage](#installation--usage) 4. [Discovery Phases](#discovery-phases) 5. [Endpoint
+  Testing](#endpoint-testing) 6. [PII Detection](#pii-detection) 7. [Output Examples](#output)
+  8. [Stats & Reporting](#stats--reporting) 9. [Acknowledgments](#acknowledgments)
+  --- ## Introduction Autoswagger automates the process of finding **OpenAPI/Swagger**
+  specifications, extracting API endpoints, and systematically testing them for **PII**
+  exposure, **secrets**, and large or interesting responses. It leverages **Presidio**
+  for PII recognition and **regex** for sensitive key/token detection. --- ## Key
+  Features - **Multiple Discovery Phases** Discovers OpenAPI specs in three ways:
+  1. **Direct Spec**: If a full URL with a path ending in `.json`, `.yaml`, or `.yml`
+  is provided, parse that file directly. 2. **Swagger UI**: Parse known paths of Swagger
+  UI (e.g. `/swagger-ui.html`), and extract spec from HTML or JavaScript. 3. **Direct
+  Spec by Bruteforce**: Attempt discovery using common OpenAPI schema locations (`/swagger.json`,
+  `/openapi.json`, etc.). Only attempt this if 1. and 2. did not yield a result. -
+  **Parallel Endpoint Testing** Multi-threaded concurrent testing of many endpoints,
+  respecting a configurable rate limit (`-rate`). - **Brute-Force of Parameter Values**
+  If `-b` or `--brute` is used, try using various data types with a few example values
+  in an attempt to bypass parameter-specific validations. - **Presidio PII Detection**
+  Check output for phone numbers, emails, addresses, and names (with context validation
+  to reduce false positives). Also parse CSV rows and naive “key: value” lines. -
+  **Secrets Detection** Leverages a set of regex patterns to detect tokens, keys,
+  and debugging artifacts (like environment variables). - **Command Line or JSON Output**
+  In default mode, displays results in a table. With `-json`, output a JSON structure.
+  `-product` mode filters output to only show those that contain PII, secrets, or
+  large responses. --- ## Installation & Usage 1. **Clone** or **download** the repository
+  containing Autoswagger. ```bash git clone git@github.com:intruder-io/autoswagger.git
+  ``` 2. **Install dependencies** (e.g., using Python 3.7+): ```bash pip install -r
+  requirements.txt ``` (It's recommended to use a virtual environment for this: `python3
+  -m venv venv;source venv/bin/activate`) 3. **Check installation, show help:** ```bash
+  python3 autoswagger.py -h ``` ## Flags | Flag | Description | |----------------------|-------------------------------------------------------------------------------------------------------------|
+  | `urls` | List of base URLs or direct spec URLs. | | `-v, --verbose` | Enables
+  verbose logging. Creates a log file under `~/.autoswagger/logs`. | | `-risk` | Includes
+  non-GET methods (POST, PUT, PATCH, DELETE) in testing. | | `-all` | Includes 200
+  and 404 endpoints in output (excludes 401/403). | | `-product` | Outputs only endpoints
+  with PII or large responses, in JSON format. | | `-stats` | Displays scan statistics
+  (e.g. requests, RPS, hosts with PII). | | `-rate ` | Throttles requests to N requests
+  per second. Default is 30. Use 0 to disable rate limiting. | | `-b, --brute` | Enables
+  brute-forcing of parameter values (multiple test combos). | | `-json` | Outputs
+  results in JSON format instead of a Rich table in default mode. | ## Help ``` /
+  | __ __/ /_____ ______ ______ _____ _____ ____ _____ / /| |/ / / / __/ __ \\/ ___/
+  | /| / / __ `/ __ `/ __ `/ _ \\/ ___/ / ___ / /_/ / /_/ /_/ (__ )| |/ |/ / /_/ /
+  /_/ / /_/ / __/ / /_/ |_\\__,_/\\__/\\____/____/ |__/|__/_\\__,_/\\__, /\\__, /\\___/_/
+  /____//____/ https://intruder.io Find unauthenticated endpoints usage: autoswagger.py
+  [-h] [-v] [-risk] [-all] [-product] [-stats] [-rate RATE] [-b] [-json] [urls ...]
+  Autoswagger: Detect unauthenticated access control issues via Swagger/OpenAPI documentation.
+  positional arguments: urls Base URL(s) or spec URL(s) of the target API(s) options:
+  -h, --help show this help message and exit -v, --verbose Enable verbose output -risk
+  Include non-GET requests in testing -all Include all HTTP status codes in the results,
+  excluding 401 and 403 -product Ou"
 ---
 {% raw %}
 # [Autoswagger](https://www.intruder.io/research/broken-authorization-apis-autoswagger) by [Intruder](https://intruder.io/)

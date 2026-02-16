@@ -2,8 +2,69 @@
 layout: project
 name: Hamzamix Loandash
 slug: hamzamix-LoanDash
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/hamzamix/LoanDash/refs/heads/main/screenshots/homedark01.png
 repo_url: https://github.com/hamzamix/LoanDash
+indexed_content: "# LoanDash - Personal Debt and Loan Tracker \U0001F4B0 A modern,
+  intuitive web application for tracking personal debts and loans ## \U0001F3AF About
+  LoanDash LoanDash is a comprehensive personal finance tracking application designed
+  to help you manage your financial obligations and assets with ease. Whether you're
+  tracking money you've borrowed (debts) or money you've lent to others (loans), LoanDash
+  provides an intuitive interface with powerful features to keep you organized and
+  informed. Built with modern web technologies including **React 18**, **TypeScript**,
+  **Tailwind CSS**, and **Node.js**, LoanDash offers a fast, reliable, and visually
+  appealing experience. All your data is stored securely in a local JSON file with
+  Docker volume persistence, ensuring privacy and data ownership without relying on
+  third-party cloud services. ## ✨ Key Features ### \U0001F4CA **Dashboard & Analytics**
+  - **Comprehensive Overview:** Visual dashboard with total debts, loans, and financial
+  summaries - **Interactive Charts:** Recharts-powered visualizations for better financial
+  insights - **Upcoming Payments:** Smart tracking of recurring payments and due dates
+  - **Overdue Alerts:** Visual notifications for overdue items in the header ### \U0001F4B3
+  **Debt & Loan Management** - **Flexible Tracking:** Support for various debt types
+  (Bank Loans, Friend/Family Credit) - **Detailed Records:** Track amounts, due dates,
+  descriptions, and interest rates - **Payment Logging:** Easy payment recording with
+  visual progress indicators - **Recurring Payments:** Automatic handling of monthly
+  subscriptions and recurring debts - **Auto-Archive:** Configurable automatic archiving
+  of completed items ### \U0001F504 **Advanced Features** - **Real-time Updates:**
+  Live data synchronization without page refreshes - **Interest Calculation:** Automatic
+  monthly interest accrual for bank-type loans - **Smart Scheduling:** Next payment
+  date calculation for recurring items - **Archive System:** Clean organization with
+  completed/defaulted item archiving - **Data Export:** CSV export functionality for
+  backup and analysis ### \U0001F3A8 **User Experience** - **Dark/Light Mode:** Comfortable
+  viewing in any lighting condition - **Responsive Design:** Seamless experience across
+  desktop, tablet, and mobile - **Search Functionality:** Quick filtering across all
+  debt and loan records - **Accessibility:** ARIA-compliant interactive elements for
+  better accessibility - **Multi-currency Support:** Dynamic currency display with
+  user preferences ### \U0001F512 **Data & Security** - **Local Storage:** JSON file-based
+  storage for complete data ownership - **Docker Persistence:** Secure volume mounting
+  for data persistence - **Privacy First:** No cloud dependencies or third-party data
+  sharing - **Backup Ready:** Easy data export and container-based deployment ## \U0001F4F8
+  Screenshots Here's a preview of the LoanDash application: * [View More Screenshots](https://github.com/hamzamix/LoanDash/tree/main/screenshots)
+  ## \U0001F680 Getting Started ### Prerequisites Before you begin, ensure you have
+  the following installed: - **Git:** For cloning the repository - **Docker & Docker
+  Compose:** For containerized deployment - [Install Docker Desktop](https://www.docker.com/products/docker-desktop)
+  (Windows/macOS) - [Install Docker Engine](https://docs.docker.com/engine/install/)
+  (Linux) - [Install Docker Compose](https://docs.docker.com/compose/install/) (Linux)
+  ### \U0001F433 Docker Deployment (Recommended) The fastest way to get LoanDash running
+  using the pre-built Docker image: 1. **Clone the Repository:** ```bash git clone
+  https://github.com/hamzamix/LoanDash.git cd LoanDash ``` 2. **Alternatively:** you
+  can manually download just the [docker-compose.yml](https://github.com/hamzamix/LoanDash/blob/main/docker-compose.yml)
+  file if you prefer 3. **Start the Application:** ```bash docker-compose up -d ```
+  This will: - Pull the latest `hamzamix/loandash` image from Docker Hub - Create
+  a persistent volume `loandash-data` for data storage - Start the container on port
+  8050 - Initialize the database at `/data/db.json` 4. **Access Your Application:**
+  ``` http:// :8050 ``` ### \U0001F504 Updating the Application When new versions
+  are available: ```bash cd /path/to/your/LoanDash docker-compose pull loandash docker-compose
+  up -d --force-recreate ``` Your data will be preserved during updates thanks to
+  Docker volume persistence. ### \U0001F6E0️ Development Setup For local development
+  and testing: 1. **Install Dependencies:** ```bash npm install ``` 2. **Start Development
+  Server:** ```bash npm run dev ``` Access at `http://localhost:5183` 3. **Build for
+  Production:** ```bash npm run build ``` 4. **Start Production Server:** ```bash
+  npm start ``` ## \U0001F3D7️ Architecture ### Technology Stack - **Frontend:** React
+  18, TypeScript, Tailwind CSS, Vite - **Backend:** Node.js 20.12, Express 4.19.2,
+  CORS - **Charts:** Recharts 2.12.7 - **Storage:** JSON file persistence - **Containerization:**
+  Docker with multi-stage builds ### System Architecture - **Client-Server Pattern:**
+  React SPA with Express API backen"
 ---
 {% raw %}
 # LoanDash - Personal Debt and Loan Tracker 💰

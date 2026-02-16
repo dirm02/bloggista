@@ -2,8 +2,68 @@
 layout: project
 name: Fossasia Led Name Badge Ls32
 slug: fossasia-led-name-badge-ls32
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fossasia-led-name-badge-ls32/photos/blueBadge.jpg
 repo_url: https://github.com/mcuee/libusb-win32
+indexed_content: '# Led-Badge-44x11 Upload tool for a LED name tag with USB-HID interface
+  Added Accentuated french Characters ## Hardware The types supported by this project
+  have an array of - 44 x 11 LEDs or - 48 x 12 LEDs. The manufacturer is probably
+  https://lesun-led.en.alibaba.com/ In both configurations, the badge identifies itself
+  on the USB as idVendor=0416, idProduct=5020 Mfr=1, Product=2, SerialNumber=0 LSicroelectronics
+  LS32 Custm HID ## Warning There are many different versions of LED Badges on the
+  market. This one uses a USB-HID interface, while others use USB-Serial (see references
+  below). ## Command Line Installation and Usage ### User access to badge on all Linuxes
+  The following will install a udev rule allowing anybody read/write access to the
+  badge via USB. sudo cp 99-led-badge-44x11.rules /etc/udev/rules.d/ sudo udevadm
+  control --reload-rules && sudo udevadm trigger ### Required dependencies on Arch
+  Linux sudo pacman -Syu python-pyusb python-hidapi ### Required dependencies on Debian/Ubuntu
+  Systems #### Using Debian/Ubuntu packages (recommended): sudo apt install python3-usb
+  python3-pil #### manually using a python virtual environment Using a venv will allow
+  to use pip to install dependencies without the danger that the installed modules
+  will interfere with the system installed ones. On some systems (esp. those with
+  Python 2 *and* 3 installed), you have to address Python 3 explicitly by using the
+  commands `python3` / `pip3` instead of `python` / `pip`. sudo apt install python3-venv
+  python -m venv ledtag source ledtag/bin/activate pip install pyhidapi pyusb pillow
+  # this should now work: # python led-badge-11x44.py -m 6 -s 8 "Hello" "World!" if
+  the udev rules are installed, you should be able to access the badge without sudo
+  / root privileges. To reuse the venv again at a later point: source ledtag/bin/activate
+  python led-badge-11x44.py … ### Required dependencies on Fedora Systems sudo dnf
+  install hidapi python3-hidapi python3-pillow python3-pyusb ### Manual link the HID
+  API lib for some Linuxes For some distributions there is a discrepancy in where
+  pyhidapi searches for the lib and where the package hidapi places it. A simple solution
+  is to link the library to the needed place, e.g. ln -s /usr/lib/libhidapi-hidraw.so.0
+  /usr/local/lib/ ### Required dependencies on Mac Systems On some systems (esp. those
+  with Python 2 *and* 3 installed), you have to address Python 3 explicitly by using
+  the command `pip3` instead of `pip`. sudo easy_install pip pip install pyhidapi
+  pip install pillow ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /dev/null brew install hidapi ### Required dependencies on Windows 7/10 For Windows,
+  we need to set up the libusb API for the LED badge device. The way described here,
+  uses [libusb-win32](https://github.com/mcuee/libusb-win32/wiki) in a quite low level
+  way and in a quite old version: - Please use version 1.2.6.0 of ''libusb-win32`.
+  It''s still available on the [old project repo on SourceForge](https://sourceforge.net/projects/libusb-win32/files/libusb-win32-releases/1.2.6.0/)
+  - Then - Extract the downloaded zip file and go to the directory `libusb-win32-bin-1.2.6.0\bin`
+  - Right click on `inf-wizard.exe` and `Run as Administrator` - `Next` -> Select
+  `0x0416 0x5020 LS32 Custm HID` (or similar with the same IDs) - `Next` -> `Next`
+  -> Save as dialog `LS32_Sustm_HID.inf` -> `Save` (just to proceed, we don''t need
+  that file) - `Install Now...` -> Driver Install Complete -> `OK` There are other
+  - meanwhile recommended, but untested here - ways to install and setup newer versions
+  of `libusb-win32`: use [Zadig](https://zadig.akeo.ie/) (it is also available from
+  the old libusb-win32 repo on [GitHub repo](https://github.com/mcuee/libusb-win32/releases)
+  of newer releases) or [libusbK](https://libusbk.sourceforge.net/UsbK3/index.html)
+  Of course, Python is needed: - Download latest python from [python.org](https://www.python.org/downloads/),
+  or specific versions from [here](https://www.python.org/downloads/windows/) - Checkmark
+  the following options - `[x]` install Launcher for all Users - `[x]` Add Python
+  X.Y to PATH - Click the `Install Now ...` text message. - Optionally click on the
+  ''Disable path length limit'' text message. This is always a good thing to do. Install
+  needed the Python packages. On some systems (esp. those with Python 2 *and* 3 installed),
+  you have to address Python 3 explicitly by using the command `pip3` instead of `pip`.
+  - Run cmd.exe as Administrator, enter: pip install pyusb pip install pillow ####
+  Examples: To run these examples on linux, you might have to prepend `sudo` for accessing
+  the USB device or install a udev rule as stated above. On Windows, maybe you have
+  to run the `cmd.exe`, where you enter the commands, with `Run as administrator`,
+  which is similar to the `sudo`on linux. On some systems (esp. those with Python
+  2 *and* 3 installed), you have to address Python 3 explicitly by using `python3`
+  instead of `python`. Run `pyth'
 ---
 {% raw %}
 # Led-Badge-44x11

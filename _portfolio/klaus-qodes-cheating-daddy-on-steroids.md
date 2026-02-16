@@ -2,8 +2,70 @@
 layout: project
 name: Klaus Qodes Cheating Daddy On Steroids
 slug: klaus-qodes-cheating-daddy-on-steroids
+category: Uncategorized
 image: https://github.com/user-attachments/assets/b25fff4d-043d-4f38-9985-f832ae0d0f6e
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Cheating Daddy On Steroids \U0001F680 > **This is an enhanced
+  fork of [sohzm/cheating-daddy](https://github.com/sohzm/cheating-daddy)** with significant
+  improvements including multi-provider AI support, advanced audio processing, intelligent
+  rate limiting, and a polished user experience. --- --- ## \U0001F31F What's New
+  in v0.5.7 - **Universal macOS Audio Pipeline** — Replaced `SystemAudioDump` with
+  `AudioTee` for reliable 100% system audio capture on Apple Silicon. - **Billing
+  Mode (Paid Keys)** — Bypass local rate limits for paid Gemini/Groq accounts with
+  the new \"Billing Enabled\" toggle. - **Enhanced Stealth** — Disguised process as
+  `systemcontainer` and added a **Unified Stealth Error Bar** at the bottom center.
+  - **Fixed macOS Permissions** — Corrected signing entitlements to prevent the \"Microphone
+  Permission Denied\" loop. --- ## \U0001F31F What's New in v0.5.6 - **Gemini 3.0
+  Flash** — Latest model with improved speed and accuracy - **Resizable Window** —
+  Freely resize; size/position saved between sessions - **Zombie Process Killer**
+  — Auto-cleanup of orphaned audio processes - **macOS Permissions Panel** — One-click
+  permission setup (Settings → Audio) - **Stealth Dropdowns** — Menus hidden from
+  screen share/recordings - **Bug Fixes** — Memory leaks, window persistence, audio
+  cleanup --- ## \U0001F31F What's New in v0.5.6 - **Conversation Memory** — AI remembers
+  recent Q&A for follow-ups - **Centralized IPC Gateway** — 58 channels across 5 subsystems
+  - **Encrypted API Keys** — OS keychain integration - **Production Cleanup** — Removed
+  ~700 lines of dead code --- ## \U0001F31F What's New in v0.5.4 ### Multi-Provider
+  AI Engine - **Groq Integration**: Added Groq (Llama 4 Maverick/Scout, Whisper) alongside
+  Gemini for task-specific optimization - **Provider Fallbacks**: Automatic fallback
+  between providers when rate limits are hit - **Flexible Model Selection**: Choose
+  your preferred primary and fallback models ### Advanced Audio Pipeline - **Audio-to-Text
+  Mode**: New Whisper + LLM workflow for precise transcription-based responses - **Voice
+  Activity Detection (VAD)**: Smart silence detection with configurable thresholds
+  - **Manual Trigger Support**: Use `Ctrl+/` to manually trigger audio processing
+  - **Dual Mode Support**: Switch between Live Conversation Mode and Audio-to-Text
+  Mode ### Intelligent Rate Limit Management - **Proactive Tracking**: Monitors API
+  usage per provider/model in real-time - **Automatic Fallbacks**: Seamlessly switches
+  to fallback provider at 90% threshold - **Usage Statistics**: View your current
+  usage and time until reset - **Persistent Storage**: Rate limits tracked across
+  sessions ### Enhanced User Experience - **Response Navigator Sidebar**: Browse through
+  responses and inline transcriptions - **Toast Notification System**: Non-intrusive
+  notifications for system events - **Deep Profile Customization**: More control over
+  AI behavior per profile - **Refined UI Aesthetics**: Polished interface with improved
+  visual hierarchy - **Detailed Answers Mode**: Toggle for comprehensive, formatted
+  responses ### Technical Improvements - **Modular Provider Registry**: Clean architecture
+  for adding new AI providers - **Improved Error Handling**: Better error messages
+  and graceful degradation - **Optimized Audio Capture**: Enhanced audio processing
+  pipeline - **Session History**: Browse and restore previous sessions --- ## \U0001F4E6
+  Original Features - **Live AI Assistance**: Real-time help powered by Google Gemini
+  2.0 Flash Live - **Screen & Audio Capture**: Analyzes what you see and hear for
+  contextual responses - **Multiple Profiles**: Interview, Sales Call, Business Meeting,
+  Presentation, Negotiation - **Transparent Overlay**: Always-on-top window that can
+  be positioned anywhere - **Click-through Mode**: Make window transparent to clicks
+  when needed - **Cross-platform**: Works on macOS, Windows, and Linux --- ## \U0001F34E
+  macOS Installation (Important!) > **Note:** This app is not signed with an Apple
+  Developer ID. macOS will block it by default. Follow these steps to install: ###
+  Step 1: Remove Quarantine Block After downloading and copying to Applications, open
+  **Terminal** and run: ```bash sudo xattr -dr com.apple.quarantine \"/Applications/Cheating
+  Daddy On Steroids.app\" ``` Then right-click the app → **Open** → Click **Open**
+  in the dialog. ### Step 2: Grant Permissions The app will guide you through granting
+  permissions. If permissions get stuck: | Issue | Terminal Command | |-------|------------------|
+  | Microphone not working | `tccutil reset Microphone` | | Screen recording stuck
+  | `tccutil reset ScreenCapture` | | Audio capture failing | Restart the app after
+  granting permissions | ### Step 3: Restart if Needed If microphone permission was
+  denied initially, you'll need to: 1. Open **System Settings → Privacy & Security
+  → Microphone** 2. Enable the app 3. Fully quit and restart the app --- ## \U0001F6E0️
+  Setup 1. **Get API Keys**: - **Gemini**: [Google AI Studio](https://aistudio.google.com/apikey)
+  - **Groq** (optional): [Groq Console](https://conso"
 ---
 {% raw %}
 # Cheating Daddy On Steroids 🚀

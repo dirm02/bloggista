@@ -2,8 +2,63 @@
 layout: project
 name: Juanmc2005 Diart
 slug: juanmc2005-diart
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/juanmc2005/diart/blob/main/table1.png?raw=true
 repo_url: https://github.com/juanmc2005/diart
+indexed_content: "\U0001F33F Build AI-powered real-time audio applications in a breeze
+  \U0001F33F \U0001F4BE Installation | \U0001F399️ Stream audio | \U0001F9E0 Models
+  \U0001F4C8 Tuning | \U0001F9E0\U0001F517 Pipelines | \U0001F310 WebSockets | \U0001F52C
+  Research ## ⚡ Quick introduction Diart is a python framework to build AI-powered
+  real-time audio applications. Its key feature is the ability to recognize different
+  speakers in real time with state-of-the-art performance, a task commonly known as
+  \"speaker diarization\". The pipeline `diart.SpeakerDiarization` combines a speaker
+  segmentation and a speaker embedding model to power an incremental clustering algorithm
+  that gets more accurate as the conversation progresses: With diart you can also
+  create your own custom AI pipeline, benchmark it, tune its hyper-parameters, and
+  even serve it on the web using websockets. **We provide pre-trained pipelines for:**
+  - Speaker Diarization - Voice Activity Detection - Transcription ([coming soon](https://github.com/juanmc2005/diart/pull/144))
+  - [Speaker-Aware Transcription](https://betterprogramming.pub/color-your-captions-streamlining-live-transcriptions-with-diart-and-openais-whisper-6203350234ef)
+  ([coming soon](https://github.com/juanmc2005/diart/pull/147)) ## \U0001F4BE Installation
+  **1) Make sure your system has the following dependencies:** ``` ffmpeg = 1.2.2
+  ``` Alternatively, we provide an `environment.yml` file for a pre-configured conda
+  environment: ```shell conda env create -f diart/environment.yml conda activate diart
+  ``` **2) Install the package:** ```shell pip install diart ``` ### Get access to
+  \U0001F3B9 pyannote models By default, diart is based on [pyannote.audio](https://github.com/pyannote/pyannote-audio)
+  models from the [huggingface](https://huggingface.co/) hub. In order to use them,
+  please follow these steps: 1) [Accept user conditions](https://huggingface.co/pyannote/segmentation)
+  for the `pyannote/segmentation` model 2) [Accept user conditions](https://huggingface.co/pyannote/segmentation-3.0)
+  for the newest `pyannote/segmentation-3.0` model 3) [Accept user conditions](https://huggingface.co/pyannote/embedding)
+  for the `pyannote/embedding` model 4) Install [huggingface-cli](https://huggingface.co/docs/huggingface_hub/quick-start#install-the-hub-library)
+  and [log in](https://huggingface.co/docs/huggingface_hub/quick-start#login) with
+  your user access token (or provide it manually in diart CLI or API). ## \U0001F399️
+  Stream audio ### From the command line A recorded conversation: ```shell diart.stream
+  /path/to/audio.wav ``` A live conversation: ```shell # Use \"microphone:ID\" to
+  select a non-default device # See `python -m sounddevice` for available devices
+  diart.stream microphone ``` By default, diart runs a speaker diarization pipeline,
+  equivalent to setting `--pipeline SpeakerDiarization`, but you can also set it to
+  `--pipeline VoiceActivityDetection`. See `diart.stream -h` for more options. ###
+  From python Use `StreamingInference` to run a pipeline on an audio source and write
+  the results to disk: ```python from diart import SpeakerDiarization from diart.sources
+  import MicrophoneAudioSource from diart.inference import StreamingInference from
+  diart.sinks import RTTMWriter pipeline = SpeakerDiarization() mic = MicrophoneAudioSource()
+  inference = StreamingInference(pipeline, mic, do_plot=True) inference.attach_observers(RTTMWriter(mic.uri,
+  \"/output/file.rttm\")) prediction = inference() ``` For inference and evaluation
+  on a dataset we recommend to use `Benchmark` (see notes on [reproducibility](#reproducibility)).
+  ## \U0001F9E0 Models You can use other models with the `--segmentation` and `--embedding`
+  arguments. Or in python: ```python import diart.models as m segmentation = m.SegmentationModel.from_pretrained(\"model_name\")
+  embedding = m.EmbeddingModel.from_pretrained(\"model_name\") ``` ### Pre-trained
+  models Below is a list of all the models currently supported by diart: | Model Name
+  | Model Type | CPU Time* | GPU Time* | |---------------------------------------------------------------------------------------------------------------------------|--------------|-----------|-----------|
+  | [\U0001F917](https://huggingface.co/pyannote/segmentation) `pyannote/segmentation`
+  (default) | segmentation | 12ms | 8ms | | [\U0001F917](https://huggingface.co/pyannote/segmentation-3.0)
+  `pyannote/segmentation-3.0` | segmentation | 11ms | 8ms | | [\U0001F917](https://huggingface.co/pyannote/embedding)
+  `pyannote/embedding` (default) | embedding | 26ms | 12ms | | [\U0001F917](https://huggingface.co/hbredin/wespeaker-voxceleb-resnet34-LM)
+  `hbredin/wespeaker-voxceleb-resnet34-LM` (ONNX) | embedding | 48ms | 15ms | | [\U0001F917](https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM)
+  `pyannote/wespeaker-voxceleb-resnet34-LM` (PyTorch) | embedding | 150ms | 29ms |
+  | [\U0001F917](https://huggingface.co/speechbrain/spkrec-xvect-voxceleb) `speechbrain/spkrec-xvect-voxceleb`
+  | embedding | 41ms | 15ms | | [\U0001F917](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb)
+  `speechbrain/spkrec-ecapa-voxceleb` | embedding | 41ms | 14ms | | [\U0001F917](https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb-mel-spec)
+  `speechbr"
 ---
 {% raw %}
 <p align="center">

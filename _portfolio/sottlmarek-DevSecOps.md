@@ -2,8 +2,62 @@
 layout: project
 name: Sottlmarek Devsecops
 slug: sottlmarek-DevSecOps
+category: Educational-map
 image: https://img.shields.io/github/stars/sottlmarek/DevSecOps?style=for-the-badge
 repo_url: 'https://github.com/awslabs/git-secrets](https:'
+indexed_content: "# Ultimate DevSecOps library ## Contribution rules If you want to
+  contribute to this library of knowledge please create proper PR (Pull Request) with
+  description what you are adding following these set of rules: * Clear description
+  of PR (which tool, why, number of stars, maturity and topic) * Keep it simple -
+  Fill the description properly * Fact over feelings or personal opinions * Add source
+  and follow the library style * Avoid duplicits - one tool, one topic * Try to make
+  bigger updates then on tool link * Currently open-source only * Add only active
+  projects * Add only security tools * Report typos as issue not via PR. _Note:_ Currently
+  this is an early version of the library. I recommend PR after first official release.
+  **DevSecOps library info:** This library contains list of tools and methodologies
+  accompanied with resources. The main goal is to provide to the engineers a guide
+  through opensource DevSecOps tooling. This repository covers only cyber security
+  in the cloud and the DevSecOps scope. # Table of Contents - [Ultimate DevSecOps
+  library](#ultimate-devsecops-library) - [Contribution rules](#contribution-rules)
+  - [Table of Contents](#table-of-contents) - [What is DevSecOps](#what-is-devsecops)
+  - [Tooling](#tooling) - [Pre-commit time tools](#pre-commit-time-tools) - [Secrets
+  management](#secrets-management) - [OSS and Dependency management](#oss-and-dependency-management)
+  - [Supply chain specific tools](#supply-chain-specific-tools) - [SAST](#sast) -
+  [DAST](#dast) - [Continuous deployment security](#continuous-deployment-security)
+  - [Kubernetes](#kubernetes) - [Containers](#containers) - [Multi-Cloud](#multi-cloud)
+  - [AWS](#aws) - [Google cloud platform](#google-cloud-platform) - [Microsoft Azure](#microsoft-azure)
+  - [Policy as code](#policy-as-code) - [Chaos engineering](#chaos-engineering) -
+  [Infrastructure as code security](#infrastructure-as-code-security) - [Orchestration](#orchestration)
+  - [Methodologies, whitepapers and architecture](#methodologies-whitepapers-and-architecture)
+  - [Other](#other) - [License](#license) # What is DevSecOps DevSecOps focuses on
+  security automation, testing and enforcement during DevOps - Release - SDLC cycles.
+  The whole meaning behind this methodology is connecting together Development, Security
+  and Operations. DevSecOps is methodology providing different methods, techniques
+  and processes backed mainly with tooling focusing on developer / security experience.
+  DevSecOps takes care that security is part of every stage of DevOps loop - Plan,
+  Code, Build, Test, Release, Deploy, Operate, Monitor. Various definitions: * https://www.redhat.com/en/topics/devops/what-is-devsecops
+  * https://www.ibm.com/cloud/learn/devsecops * https://snyk.io/series/devsecops/
+  * https://www.synopsys.com/glossary/what-is-devsecops.html * https://spacelift.io/blog/what-is-devsecops
+  # Tooling ## Pre-commit time tools In this section you can find lifecycle helpers,
+  precommit hook tools and threat modeling tools. Threat modeling tools are specific
+  category by themselves allowing you to simulate and discover potential gaps before
+  you start to develop the software or during the process. Modern DevSecOps tools
+  allow using Threat modeling as code or generation of threat models based on the
+  existing code annotations. | Name | URL | Description | Meta | | :---------- | :----------
+  | :---------- | :----------: | | **git-secrets** | [https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)
+  | AWS labs tool preventing you from committing secrets to a git repository | | |
+  **git-hound** | [https://github.com/tillson/git-hound](https://github.com/tillson/git-hound)
+  | Searchers secrets in git | | | **goSDL** | [https://github.com/slackhq/goSDL](https://github.com/slackhq/goSDL)
+  |Security Development Lifecycle checklist | | | **ThreatPlaybook** | [https://github.com/we45/ThreatPlaybook](https://github.com/we45/ThreatPlaybook)
+  |Threat modeling as code | | | **Threat Dragon** | [https://github.com/OWASP/threat-dragon](https://github.com/OWASP/threat-dragon)
+  | OWASP Threat modeling tool | | | **threatspec** | [https://github.com/threatspec/threatspec](https://github.com/threatspec/threatspec)
+  | Threat modeling as code | | | **pytm** | [https://github.com/izar/pytm](https://github.com/izar/pytm)
+  | A Pythonic framework for threat modeling | | | **Threagile** | [https://github.com/Threagile/threagile](https://github.com/Threagile/threagile)
+  | A Go framework for threat modeling | | | **MAL-lang** | [https://mal-lang.org/#what
+  ](https://mal-lang.org/#what ) | A language to create cyber threat modeling systems
+  for specific domains | | | **Microsoft Threat modeling tool** | [https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+  | Microsoft threat modeling tool | | | **Talisman** | [https://github.com/thoughtworks/talisman](https://github.com/thoughtworks/talisman)
+  | A tool to detect and preven"
 ---
 {% raw %}
 # Ultimate DevSecOps library

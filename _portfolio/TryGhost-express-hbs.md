@@ -2,8 +2,69 @@
 layout: project
 name: Tryghost Express Hbs
 slug: TryGhost-express-hbs
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/TryGhost/express-hbs
+indexed_content: '# express-hbs Express handlebars template engine with multiple layouts,
+  blocks and cached partials. ## v2.0.0 Version 2 was a rewrite and cleanup, with
+  no known breaking changes. Lots of bugs were fixed which may have subtly changed
+  behaviour. Full details: https://github.com/TryGhost/express-hbs/releases/tag/2.0.0
+  ## v1.0.0 Breaking Changes If you''re upgrading from v0.8.4 to v1.0.0 there are
+  some potentially breaking changes to be aware of: 1. Handlebars @v4.0.5 - please
+  see the [handlebars v4.0 compatibility notes](https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v400---september-1st-2015)
+  2. The file extension for partial files must now match the extension configured
+  in `extname` - please see [the PR](https://github.com/TryGhost/express-hbs/pull/88)
+  ## Usage To use with express 4. ```js var hbs = require(''express-hbs''); // Use
+  `.hbs` for extensions and find partials in `views/partials`. app.engine(''hbs'',
+  hbs.express4({ partialsDir: __dirname + ''/views/partials'' })); app.set(''view
+  engine'', ''hbs''); app.set(''views'', __dirname + ''/views''); ``` To use with
+  express 3 is the same as above, except use hbs.express3 ```js app.engine(''hbs'',
+  hbs.express3({ partialsDir: __dirname + ''/views/partials'' })); ``` Options for
+  `#express3` and `#express4` ```js hbs.express4({ partialsDir: "{String/Array} [Required]
+  Path to partials templates, one or several directories", // OPTIONAL settings restrictLayoutsTo:
+  "{String} Absolute path to a directory to restrict layout directive reading from",
+  blockHelperName: "{String} Override ''block'' helper name.", contentHelperName:
+  "{String} Override ''contentFor'' helper name.", defaultLayout: "{String} Absolute
+  path to default layout template", extname: "{String} Extension for templates & partials,
+  defaults to `.hbs`", handlebars: "{Module} Use external handlebars instead of express-hbs
+  dependency", i18n: "{Object} i18n object", layoutsDir: "{String} Path to layout
+  templates", templateOptions: "{Object} options to pass to template()", beautify:
+  "{Boolean} whether to pretty print HTML, see github.com/einars/js-beautify .jsbeautifyrc",
+  // override the default compile onCompile: function(exhbs, source, filename) { var
+  options; if (filename && filename.indexOf(''partials'') > -1) { options = {preventIndent:
+  true}; } return exhbs.handlebars.compile(source, options); } }); ``` ## Syntax To
+  mark where layout should insert page {{{body}}} To declare a block placeholder in
+  layout {{{block "pageScripts"}}} To define block content in a page {{#contentFor
+  "pageScripts"}} CONTENT HERE {{/contentFor}} ## Layouts There are three ways to
+  use a layout, listed in precedence order 1. Declarative within a page. Use handlebars
+  comment {{! " + text + " " ); }); ``` in markup ``` {{{link ''barc.com'' href=''http://barc.com''}}}
+  ``` ### Asynchronous helpers ```js hbs.registerAsyncHelper(''readFile'', function(filename,
+  cb) { fs.readFile(path.join(viewsDir, filename), ''utf8'', function(err, content)
+  { cb(new hbs.SafeString(content)); }); }); ``` in markup ``` {{{readFile ''tos.txt''}}}
+  ``` ## i18n support Express-hbs supports [i18n](https://github.com/mashpie/i18n-node)
+  ```js var i18n = require(''i18n''); // minimal config i18n.configure({ locales:
+  [''en'', ''fr''], cookie: ''locale'', directory: __dirname + "/locales" }); app.engine(''hbs'',
+  hbs.express3({ // ... options from above i18n: i18n, // registers __ and __n helpers
+  })); app.set(''view engine'', ''hbs''); app.set(''views'', viewsDir); // cookies
+  are needed app.use(express.cookieParser()); // init i18n module app.use(i18n.init);
+  ``` ## Engine Instances Create isolated engine instances with their own cache system
+  and handlebars engine. ```js var hbs = require(''express-hbs''); var instance1 =
+  hbs.create(); var instance2 = hbs.create(); ``` ## Template options The main use
+  case for template options is setting the handlebars "data" object - this creates
+  global template variables accessible with an `@` prefix. Template options can be
+  set in 3 ways. When setting global template options they can be [passed as config
+  on creation of an instance](https://github.com/barc/express-hbs#usage), and they
+  can also be updated used the `updateTemplateOptions(templateOptions)` method of
+  an instance. To set template options for an individual request they can be set on
+  `res.locals` using the helper method `updateLocalTemplateOptions(locals, templateOptions)`.
+  Both of these methods have a companion method `getTemplateOptions()` and `getLocalTemplateOptions(locals)`,
+  which should be used when extending or merging the current options. ## Example in
+  File `app.js` ```js // http://expressjs.com/api.html#app.locals app.locals({ ''PROD_MODE'':
+  ''production'' === app.get(''env'') }); ``` File `views/layout/default.hbs` ```html
+  {{title}} {{{block "pageStyles"}}} {{{body}}} {{> scripts}} {{#if PROD_MODE}} {{{block
+  ''googleAnalyticsScripts''}}} {{/if}} ``` File `views/index.hbs` ```html {{! .clicker
+  { color: blue; }; {{/contentFor}} {{title}} Click me! ``` To run example project
+  npm install -d node exam'
 ---
 {% raw %}
 # express-hbs

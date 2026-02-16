@@ -2,8 +2,28 @@
 layout: project
 name: Ephraimduncan Weekday
 slug: ephraimduncan-weekday
+category: Serv&Prod-Tools
 image: https://github.com/user-attachments/assets/d2a60978-eb45-4a21-8fd1-5d562073bd9b
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Weekday Calendar The open-source Google Calendar/Notion Calendar
+  alternative. Introduction · Tech Stack · Getting Started · Contributing ## Introduction
+  Weekday is the modern, open-source Google Calendar/Notion Calendar alternative powered
+  with AI ## Tech Stack - [Next.js](https://nextjs.org/) – framework - [TypeScript](https://www.typescriptlang.org/)
+  – language - [Tailwind](https://tailwindcss.com/) – CSS - [Drizzle ORM](https://orm.drizzle.team/)
+  – ORM - [PostgreSQL](https://www.postgresql.org/) – database - [Better Auth](https://better-auth.com/)
+  – authentication - [tRPC](https://trpc.io/) – API layer - [Turborepo](https://turbo.build/repo)
+  – monorepo - [Vercel](https://vercel.com/) – deployments ## Getting Started ###
+  Prerequisites - [Bun](https://bun.sh/) (recommended) or Node.js 18+ - PostgreSQL
+  database - Google Calendar API credentials - AI API keys (OpenAI, Anthropic, or
+  Google) ### Installation 1. Clone the repository: ```bash git clone https://github.com/ephraimduncan/weekday.git
+  cd weekday ``` 2. Install dependencies: ```bash bun install ``` 3. Set up environment
+  variables: ```bash cp .env.example .env ``` Fill in your database URL, authentication
+  secrets, and API keys. 4. Set up the database: ```bash bun run db:push ``` 5. Start
+  the development server: ```bash bun run dev ``` Visit [http://localhost:3000](http://localhost:3000)
+  to see your calendar application. ## Contributing Here''s how you can contribute:
+  - [Open an issue](https://github.com/ephraimduncan/weekday/issues) if you believe
+  you''ve encountered a bug. - Make a [pull request](https://github.com/ephraimduncan/weekday/pull)
+  to add new features/make quality-of-life improvements/fix bugs.'
 ---
 {% raw %}
 <a href="https://weekday.so">

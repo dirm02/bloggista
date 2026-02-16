@@ -2,8 +2,61 @@
 layout: project
 name: Store Craft Storecraft
 slug: store-craft-storecraft
+category: Uncategorized
 image: https://img.shields.io/npm/d18m/%40storecraft%2Fcore
 repo_url: https://github.com/store-craft/storecraft
+indexed_content: "Rapidly build AI-powered, Headless e-commerce backends with TypeScript
+  and Javascript ! [](https://github.com/store-craft/storecraft/actions/workflows/test.core.yml)
+  [](https://github.com/store-craft/storecraft/actions/workflows/test.database-mongodb.yml)[](https://github.com/store-craft/storecraft/actions/workflows/test.database-sql.yml)
+  [](https://github.com/store-craft/storecraft/actions/workflows/test.storage-s3-compatible.yml)
+  [](https://x.com/shalev_tomer) [](https://www.linkedin.com/company/store-craft)
+  # The mono-repo Hi \U0001F44B, `Storecraft` empowers developers to rapidly build
+  AI-powered, Headless e-commerce backends with TypeScript and Javascript. ⭐ AI first,
+  agentic, chat endpoint and similarity search that can serve your customers, and
+  your team. We Supports most of the popular LLMs, and vector stores for similarity
+  search. ⭐ Manage products, collections, orders, customers, auth, emails and more
+  with a powerful programmable api code, REST API, VQL (Virtual Query Language) for
+  powerful queries and similarity search. ⭐ Built in chat endpoint with an agent that
+  serves customers with carts, checkouts and more with PayPal and Stripe. ⭐ Runs on
+  any javascript [platform](https://storecraft.app/docs/backend/platforms/node) (deno,
+  bun, node, cloudflare workers, aws-lambda, google-functions), serverless / serverful
+  ⭐ Connects to any [database](https://storecraft.app/docs/backend/databases/sqlite)
+  (mongo, libsql, sqlite, postgres, mysql, neon, turso, d1, planetscale) ⭐ Uses [storage](https://storecraft.app/docs/backend/storage/s3)
+  (local, r2, s3 compatible, google and more) ⭐ It is [extensible and modular](https://storecraft.app/docs/backend/extensions/overview)
+  ⭐ It is [event based](https://storecraft.app/docs/backend/events) ⭐ Boasts an official
+  [Dashboard](https://storecraft.app/docs/dashboard/overview) ⭐ Well documented [REST-API](https://storecraft.app/docs/rest-api/api)
+  (can also be found in your `/api/reference` endpoint) ## **GET STARTED WITH CLI
+  NOW** \U0001F447 ```bash npx storecraft create ``` This is all the code you need
+  to get started with your own storecraft app. ```js const app = new App({ auth_admins_emails:
+  ['tomer.shalev@gmail.com'], general_store_name: 'Wush Wush Games', // ... MORE Mandatory
+  CONFIG }) .withPlatform(new NodePlatform()) .withDatabase(new LibSQL()) .withStorage(new
+  NodeLocalStorage('storage')) .withMailer(new Resend()) .withPaymentGateways({ paypal:
+  new Paypal({ env: 'test' }), stripe: new Stripe(), dummy_payments: new DummyPayments(),
+  }) .withExtensions({ postman: new PostmanExtension(), }) .withAI( new OpenAI({ model:
+  'gpt-4o-mini'}) ) .withVectorStore( new LibSQLVectorStore({ embedder: new OpenAIEmbedder(),
+  }) ) .withAuthProviders({ google: new GoogleAuth(), }) .on( 'order/checkout/complete',
+  async (event) => { // send a team slack message } ).init(); await migrateToLatest(app._.db,
+  false); await app._.vector_store?.createVectorIndex(); http .createServer(app.handler)
+  .listen( 8000, () => { app.print_banner('http://localhost:8000'); } ); ``` **Will
+  produce** a server # Chat with the `storeraft` AI agent Located at `/chat` # Dashboard
+  Located at `/dashboard` # API Reference Located at `/api` (powered by [Scalar](https://scalar.com))
+  # CLI (npx storecraft create) # As seen on MongoDB TV stream [](https://www.youtube.com/watch?v=OO4arXfO75U)
+  # Dvelopment This is a mono repo, where each folder in the `packages` folder is
+  a package, that is published `@npm`. It leverages the workspace feature of `npm`
+  To start developing a feature first ```bash npm install ``` The following is the
+  layout of the packages ### Core ([@storecraft/core](https://github.com/store-craft/storecraft/tree/main/packages/core/))
+  The core engine of storecraft - core types - core API - core database types - core
+  crypto types - core storage types - core mailer types - core payments types - core
+  platform types - core VQL types and logic - core REST API controller ### \U0001F310
+  Platforms [@storecraft/core/platform](https://github.com/store-craft/storecraft/tree/main/packages/core/platform)
+  Support for - Node - Deno - Bun - Cloudflare workers - AWS Lambda - Azure Functions
+  - Google Functions ### \U0001F4BE Databases Support for - MongoDB ([@storecraft/database-mongo-node](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-mongodb/))
+  - SQLite ([@storecraft/database-sqlite](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-sqlite/))
+  - Postgres ([@storecraft/database-postgres](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-postgres/))
+  - MySQL ([@storecraft/database-mysql](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-mysql/))
+  - SQL Base ([@storecraft/database-sql-base](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-sql-base/))
+  - Neon (Cloud Postgres, [@storecraft/database-neon](https://github.com/store-craft/storecraft/tree/main/packages/databases/database-neon/))
+  - PlanetScale (Cloud M"
 ---
 {% raw %}
 <div style="text-align:center">

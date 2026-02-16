@@ -2,8 +2,61 @@
 layout: project
 name: Bolajiayodeji Awesome Technical Writing
 slug: BolajiAyodeji-awesome-technical-writing
+category: Educational-map
 image: https://repository-images.githubusercontent.com/221308953/36034800-6311-11ea-8418-8a1a03c97d81
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome Technical Writing [](https://github.com/sindresorhus/awesome)
+  [](https://github.com/BolajiAyodeji/awesome-technical-writing) [](#contributors-)
+  *This list is inspired by the [awesome](https://github.com/sindresorhus/awesome)
+  and [awesome-jamstack](https://github.com/bolajiayodeji/awesome-jamstack) lists.*
+  --- > [!TIP] > Technical writing is the writing of technical content used in technical
+  and occupational fields, such as computer hardware and software, engineering, chemistry,
+  aeronautics, robotics, finance, medical, biotechnology, etc. ~ [Wikipedia](https://en.wikipedia.org/wiki/Technical_writing)
+  --- ## Table of Contents - [Community](#community) - [Courses](#courses) - [Books](#books)
+  - [Style Guides](#style-guides) - [Useful Tools](#useful-tools) - [Resources](#resources)
+  - [Videos](#videos) - [Podcasts](#podcasts) - [Conferences](#conferences) - [Speaker
+  Decks](#speaker-decks) - [Technical Writers to Follow](#some-technical-writers-to-follow)
+  --- ## Community * [Hashnode](https://hashnode.com) * [r/technicalwriting](https://reddit.com/r/technicalwriting)
+  * [Google's Season of Docs](https://developers.google.com/season-of-docs) * [freeCodeCamp
+  News](https://freecodecamp.org/news) * [ycombinator News](https://news.ycombinator.com)
+  * [DEV](https://dev.to) * [Hackernoon](https://hackernoon.com) * [Write the Docs](https://writethedocs.org)
+  * [The Good Docs Project](https://thegooddocsproject.dev) * [LinkedIn Technical
+  Writing Community](https://linkedin.com/groups/13705342) * [Society for Technical
+  Communication](https://stc.org) * [The Manuscript Academy](https://manuscriptacademy.com)
+  ## Courses * [Google Technical Writing Courses](https://developers.google.com/tech-writing/overview)
+  * [Tech Writing for Accessibility](https://developers.google.com/tech-writing/accessibility)
+  * [Writing Helpful Error Messages](https://developers.google.com/tech-writing/error-messages)
+  * [Technical Writing: Documentation on Software Projects](https://www.pluralsight.com/courses/technical-writing-software-documentation)
+  * [Coding for Writers: Basic Programming](https://udemy.com/course/coding-for-writers-1-basic-programming)
+  * [Class Central Technical Writing](https://classcentral.com/course/technical-writing-7117)
+  * [Professional Technical Writing: Advance Your Writing Skills](https://udemy.com/technical-writing-and-editing)
+  * [Technical Writing: Master Your Writing Career](https://udemy.com/technical-writing)
+  * [English 305: Advanced Technical Writing](https://study.com/academy/course/technical-writing-course.html)
+  * [Technical Communication Techniques and Principles for Project Managers](https://ce.uwec.edu/programs/technical-communication-techniques-and-principles-project-managers)
+  * [Documenting APIs: A Guide for Technical Writers](https://idratherbewriting.com/learnapidoc)
+  * [Technical Writing Certification Course](https://aptlearn.io/courses/technical-writing-certification-course)
+  * [Tech: Write & Earn](https://startuptrybe.trainercentralsite.com/course/techwriteearn)
+  ## Books * [Docs for Developers: An Engineer’s Field Guide to Technical Writing](https://amzn.to/3SjaMRR)
+  by Jared Bhatti, Zach Corleissen, Jen Lambourne, David Nuñez, and Heidi Waterhouse.
+  * [The Developer's Guide to Content Creation](https://developersguidetocontent.com)
+  by Stephanie Morillo. * [The Developer's Guide to Creating a Successful Blog](https://gumroad.com/l/successfulblog)
+  by Flavio Copes. * [Everybody Writes: Your New and Improved Go-To Guide to Creating
+  Ridiculously Good Content](https://amzn.to/3Z3EgVY) by Ann Handley. * [Technical
+  Writing for Dummies](https://amzn.to/3XU6Bx1) by Sheryl Lindsell-Roberts. * [The
+  Handbook of Technical Writing](https://amzn.to/3IHEXxN) by Gerald J. Alre, Walter
+  E. Oliu, and Charles T. Brusaw. * [How To Write Usable User Documentation](https://amzn.to/3KpJtDr)
+  by Edmond H. Weiss. * [Letting Go of the Words: Writing Web Content that Works](https://amzn.to/41tAV4C)
+  by Janice Redish. * [Docs Like Code: Collaborate and Automate to Improve Technical
+  Documentation](https://amzn.to/3kdNMHn) by Anne Gentle. * [The Product is Docs:
+  Writing Technical Documentation in a Product Development Group](https://amzn.to/3m19xKL)
+  by Christopher Gales and Splunk Documentation Team. * [Every Page Is Page One: Topic-Based
+  Writing for Technical Communication and the Web](https://amzn.to/3KtMx1e) by Mark
+  Baker. * [Modern Technical Writing: An Introduction to Software](https://amzn.to/3lYEq2H)
+  by Andrew Etter. * [Software Technical Writing: A Guidebook](https://jamesg.blog/book.pdf)
+  by James Gallagher. ## Style Guides * [Microsoft Manual of Style](https://ptgmedia.pearsoncmg.com/images/9780735648715/samplepages/9780735648715.pdf)
+  * [IBM Editorial Style Guide](http://ptgmedia.pearsoncmg.com/images/9780132101301/samplepages/0132101300.pdf)
+  * [The Red Hat Style Guide](https://stylepedia.net/style) * [Google Developer Documentation
+  Style Guide](https://developers.google.com/style) * [Chicago Manual of Style](https://chicagoman"
 ---
 {% raw %}
 <div align="center">

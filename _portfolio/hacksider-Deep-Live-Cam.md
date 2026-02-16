@@ -2,8 +2,68 @@
 layout: project
 name: Hacksider Deep Live Cam
 slug: hacksider-Deep-Live-Cam
+category: GreyHate-Cyber&Security
 image: https://github.com/user-attachments/assets/af825228-852c-411b-b787-ffd9aac72fc6
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Deep-Live-Cam 2.0.2c Real-time face swap and video deepfake with
+  a single click and only a single image. ## Disclaimer This deepfake software is
+  designed to be a productive tool for the AI-generated media industry. It can assist
+  artists in animating custom characters, creating engaging content, and even using
+  models for clothing design. We are aware of the potential for unethical applications
+  and are committed to preventative measures. A built-in check prevents the program
+  from processing inappropriate media (nudity, graphic content, sensitive material
+  like war footage, etc.). We will continue to develop this project responsibly, adhering
+  to the law and ethics. We may shut down the project or add watermarks if legally
+  required. - Ethical Use: Users are expected to use this software responsibly and
+  legally. If using a real person''s face, obtain their consent and clearly label
+  any output as a deepfake when sharing online. - Content Restrictions: The software
+  includes built-in checks to prevent processing inappropriate media, such as nudity,
+  graphic content, or sensitive material. - Legal Compliance: We adhere to all relevant
+  laws and ethical guidelines. If legally required, we may shut down the project or
+  add watermarks to the output. - User Responsibility: We are not responsible for
+  end-user actions. Users must ensure their use of the software aligns with ethical
+  standards and legal requirements. By using this software, you agree to these terms
+  and commit to using it in a manner that respects the rights and dignity of others.
+  Users are expected to use this software responsibly and legally. If using a real
+  person''s face, obtain their consent and clearly label any output as a deepfake
+  when sharing online. We are not responsible for end-user actions. ## Exclusive v2.6
+  Quick Start - Pre-built (Windows/Mac Silicon) ##### This is the fastest build you
+  can get if you have a discrete NVIDIA or AMD GPU or Mac Silicon, And you''ll receive
+  special priority support. ###### These Pre-builts are perfect for non-technical
+  users or those who don''t have time to, or can''t manually install all the requirements.
+  Just a heads-up: this is an open-source project, so you can also install it manually.
+  ## TLDR; Live Deepfake in just 3 Clicks 1. Select a face 2. Select which camera
+  to use 3. Press live! ## Features & Uses - Everything is in real-time ### Mouth
+  Mask **Retain your original mouth for accurate movement using Mouth Mask** ### Face
+  Mapping **Use different faces on multiple subjects simultaneously** ### Your Movie,
+  Your Face **Watch movies with any face in real-time** ### Live Show **Run Live shows
+  and performances** ### Memes **Create Your Most Viral Meme Yet** Created using Many
+  Faces feature in Deep-Live-Cam ### Omegle **Surprise people on Omegle** ## Installation
+  (Manual) **Please be aware that the installation requires technical skills and is
+  not for beginners. Consider downloading the quickstart version.** Click to see the
+  process ### Installation This is more likely to work on your computer but will be
+  slower as it utilizes the CPU. **1. Set up Your Platform** - Python (3.11 recommended)
+  - pip - git - [ffmpeg](https://www.youtube.com/watch?v=OlNWCpFdVMA) - ```iex (irm
+  ffmpeg.tc.ht)``` - [Visual Studio 2022 Runtimes (Windows)](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+  **2. Clone the Repository** ```bash git clone https://github.com/hacksider/Deep-Live-Cam.git
+  cd Deep-Live-Cam ``` **3. Download the Models** 1. [GFPGANv1.4](https://huggingface.co/hacksider/deep-live-cam/resolve/main/GFPGANv1.4.pth)
+  2. [inswapper\_128\_fp16.onnx](https://huggingface.co/hacksider/deep-live-cam/resolve/main/inswapper_128_fp16.onnx)
+  Place these files in the "**models**" folder. **4. Install Dependencies** We highly
+  recommend using a `venv` to avoid issues. For Windows: ```bash python -m venv venv
+  venv\Scripts\activate pip install -r requirements.txt ``` For Linux: ```bash # Ensure
+  you use the installed Python 3.10 python3 -m venv venv source venv/bin/activate
+  pip install -r requirements.txt ``` **For macOS:** Apple Silicon (M1/M2/M3) requires
+  specific setup: ```bash # Install Python 3.11 (specific version is important) brew
+  install python@3.11 # Install tkinter package (required for the GUI) brew install
+  python-tk@3.10 # Create and activate virtual environment with Python 3.11 python3.11
+  -m venv venv source venv/bin/activate # Install dependencies pip install -r requirements.txt
+  ``` ** In case something goes wrong and you need to reinstall the virtual environment
+  ** ```bash # Deactivate the virtual environment rm -rf venv # Reinstall the virtual
+  environment python -m venv venv source venv/bin/activate # install the dependencies
+  again pip install -r requirements.txt # gfpgan and basicsrs issue fix pip install
+  git+https://github.com/xinntao/BasicSR.git@master pip uninstall gfpgan -y pip install
+  git+https://github.com/TencentARC/GFPGAN.git@master ``` **Run:** If you don''t have
+  a GPU, you can run Deep-Live-Cam using `python run.'
 ---
 {% raw %}
 <h1 align="center">Deep-Live-Cam 2.0.2c</h1>

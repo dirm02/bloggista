@@ -2,8 +2,53 @@
 layout: project
 name: Bumbeishvili Org Chart
 slug: bumbeishvili-org-chart
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg
 repo_url: https://github.com/vshymanskyy/StandWithUkraine
+indexed_content: '[](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+  # Highly customizable d3 based organization chart [](https://npmjs.org/package/d3-org-chart)
+  [Medium article about this project](https://bumbeishvili.medium.com/introducing-a-new-v3-version-of-the-org-chart-ca1b63320a4b)
+  Highly customizable org chart built with d3 v7. ## Features Simple Data Custom Content
+  Nested Data Online JSON Data CSV Data Styled Tree Expand Node Collapse Node Add
+  Node Remove Node Fit Screen Change Layout Center Node Highlight Node Fullscreen
+  Zoom in and out Export Expand & Collapse All Multi Node Connections Paging Horizontal
+  View Active node centering Interactive Node Searching org chart Scrollable content
+  Data driven size Dropdown Multi Root Minimap ## Community Samples Drag & Drop Nodes
+  ## How to use Just copy this code and paste at - [https://realtimehtml.com/](https://realtimehtml.com#code=DwZwxgTglgDgLgAhBMBeARACznGIBcA9IQCYDMAViAHQD2EA5qWdQG4Ds1AtlAHbVV0APmCFw0eEIBQoSLETI0WHHiKEwJflRIBTADZRWEarx1xCvGF2YBaegxthMAQwhwAAmWGjx86bIkFFAxsXAJiDS0QXQMjEzMLK1sAMz0dAA84CB0ddwAmagBGajzCACMAVyg9EhS0zOydARBvMTlJGRJDBDA9ZxAQDCdXOEdaXjhnPh0IVq7WaRlfDoRWVx6XNwBuKQRyXYRqMBBWAAoDhGUwtQhnAHdqBig4TArKkBmwcbgdCaPaayVLhlHRQECYVjVKBiZxcGBpGwkZyTQhcKa8Qj2I4ndAHACUB2oL1+p1OSMmeIQqCECAA3hdhm4qQhTHc9iwAPKMADCmzgpzx-wm6Jmp3QRz5Y2F01mgvJzjJyOcguyvF0EAFOwQCAAvnidj52nAhEA)
+  ```html var chart; d3 .csv( "https://raw.githubusercontent.com/bumbeishvili/sample-data/main/org.csv"
+  ) .then((data) => { chart = new d3.OrgChart().container(".chart-container").data(data).render();
+  }); ``` ### Installing ``` npm i d3-org-chart ``` ```javascript import { OrgChart
+  } from ''d3-org-chart''; new OrgChart() .container( ) .data( ) // https://github.com/bumbeishvili/sample-data/blob/main/data-oracle.csv
+  .render(); ``` In general, we encourage to look into the source code to understand
+  how it works. The chart code is basically a single class. At the top of the class,
+  we have a state object called `attrs` which stores the state of the org chart and
+  each single property is overridable by the user. For example, one of the property
+  name inside `attrs` object is `duration`, which controls animation duration for
+  chart, when expanding or collapsing nodes. If we want to get the value, we can either
+  do ```javascript chart.getChartState().duration ``` or directly ```javascript chart.duration()
+  ``` `chart` in the above case is an instance of `OrgChart` class. We can get it
+  using `new OrgChart()` If we want to set property, we can pass argument to the same
+  function and it will automatically set the value ```javascript chart.duration(3000)
+  // This will become very slow moving chart ``` You can see list of all properties
+  , their description of what each property does in the actual source code. https://github.com/bumbeishvili/org-chart/blob/5be7e0962e46013b3a95dd19f41f829c3c853d1f/src/d3-org-chart.js#L41
+  Be aware that they are chainable, so if we wanted to set multiple properties, we
+  would do this ```javascript const chart = new OrgChart() .data(ourData) .container(ourDomElementOrCssSelector)
+  .duration(ourDuration) .render() // We can keep chaining values in runtime chart.data(updatedData).render()
+  ``` Have you impressively customized an organizational chart and want to be featured
+  on this page? Just email me at me@davidb.dev and include screenshot of your org
+  chart and it will be featured on this page (dimensions of image should be 500 X
+  500). ## Jump To Examples | | | | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+  | | Default | Sky | | Circles | Oval | | Clean (Design by [Anton](https://dribbble.com/shots/15480691-Org-chart))
+  | Futuristic - Full Functionality | | Prev version design | #### Featured customizations:
+  Check out several libraries and frameworks integrations - [Vue.js Integration](https://stackblitz.com/edit/vue-wx7syy?file=src%2FChart.js)
+  - [React integration](https://stackblitz.com/edit/d3-org-chart-react-integration-hooks)
+  - [Angular integration](https://stackblitz.com/edit/angular-ivy-gneris) Custom components
+  & algorithms I used - [Curved edges - vertical](https://observablehq.com/@bumbeishvili/curved-edges-compacty-vertical)
+  - [Curved edges - horizontal](https://observablehq.com/@bumbeishvili/curved-edges-compact-horizontal)
+  - [Flextree Algorithm](https://github.com/Klortho/d3-flextree) ### Quick Docs Check
+  the sample data here - https://github.com/bumbeishvili/sample-data/blob/main/data-oracle.csv
+  For the full functionality of exposed methods check [Futuristic Exampl'
 ---
 {% raw %}
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)

@@ -2,8 +2,67 @@
 layout: project
 name: Pcottle Learngitbranching
 slug: pcottle-learnGitBranching
+category: Uncategorized
 image: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?
 repo_url: https://github.com/pcottle/learnGitBranching
+indexed_content: '# LearnGitBranching [](https://github.com/pcottle/learnGitBranching/pulls)
+  LearnGitBranching is a git repository visualizer, sandbox, and a series of educational
+  tutorials and challenges. Its primary purpose is to help developers understand git
+  through the power of visualization (something that''s absent when working on the
+  command line). This is achieved through a game with different levels to get acquainted
+  with the different git commands. You can input a variety of commands into LearnGitBranching
+  (LGB) -- as commands are processed, the nearby commit tree will dynamically update
+  to reflect the effects of each command: This visualization combined with tutorials
+  and "levels" can help both beginners and intermediate developers polish their version
+  control skills. A quick demo is available here: https://pcottle.github.io/learnGitBranching/?demo
+  Or, you can launch the application normally here: https://pcottle.github.io/learnGitBranching/
+  ### Sandbox Mode By default the application launches in "sandbox mode" with a basic
+  repository already created. Here you can enter commands and mess around with a repository
+  as much as you like. Keep in mind you can * `undo` to undo the effects of the last
+  command * `reset` to start over with a clean slate (works in levels too) * `git
+  clone` to simulate remote repositories! Sandbox mode can be great for demonstrating
+  something to a friend, but the real learning is with levels... ## Levels Type `levels`
+  to see the available lessons / challenges (and which ones you have solved so far).
+  Each level series aims to teach some high-level git concept, and each tab of levels
+  separates major worlds of info (like remote repositories versus local). For some
+  added fun, there is a "git golf" concept where we keep track of how many commands
+  you use to solve each level. See if you can match all of our records! ### Sharing
+  permalinks You can share a link to LearnGitBranching with an arbitrary set of commands
+  that will execute upon load by using the `command` URL parameter. You will also
+  likely want to disable the intro dialog for this case with the `NODEMO` url param;
+  here is [an example](https://learngitbranching.js.org/?NODEMO&command=echo%20%22hello%22;%20git%20commit)
+  to get started. ### Level Builder You can build levels with the `build level` command.
+  A dialog will walk you through the process, and at the end it will show you a JSON
+  blob that represents the level you just created. Paste that in a [gist](https://gist.github.com)
+  or directly into an issue and I can check it out / merge in your changes! You can
+  also share this level directly with friends by having them run `import level` and
+  paste the JSON in the resulting text field, or simply send them a custom URL with
+  the the gist ID in the parameters, like so: https://pcottle.github.io/learnGitBranching/?gist_level_id=a84407351f9c9f0cb241
+  ## Reporting Bugs / Opening Issues When reporting bugs, try running the command
+  `debug_copyTree()` in your JS console when in a state just before reproducing a
+  bug. This can avoid having to copy all the commands you used to get into a specific
+  state. (I can then use the `importTreeNow` command to get to that exact state) ##
+  Building yourself / Contributing Functionality For contributing core functionality
+  in the app, you''ll probably want to test your changes at least once before submitting
+  a pull request. That means you''ll need the "gulp.js" build tool to build the app:
+  https://gulpjs.com/docs/en/getting-started/quick-start You''ll also need `yarn`
+  to download all the dependencies of the project. The general workflow / steps are
+  below: ```bash git clone cd learnGitBranching yarn install git checkout -b newAwesomeFeature
+  vim ./src/js/git/index.js # some changes yarn gulp fastBuild # skips tests and linting,
+  faster build # after building you can open up your browser to the index.html open
+  ./index.html # file generated and see your changes vim ./src/js/git/index.js # more
+  changes yarn gulp build # runs tests and lint git commit -am "My new sweet feature!"
+  git push # go online and request a pull ``` Alternatively, you can also build and
+  run the app in a pre-configured online workspace: [](https://gitpod.io/#https://github.com/pcottle/learnGitBranching/blob/main/src/js/git/index.js)
+  [](https://app.codeanywhere.com/#https://github.com/pcottle/learnGitBranching) ##
+  Other Technical Details LearnGitBranching is a pretty simple application (from a
+  technical perspective). There''s no backend database or any AJAX requests -- it''s
+  a 100% clientside application written in JavaScript. The production version (on
+  github.io) literally just serves up an HTML page with some JS and CSS. Here is the
+  high-level process of the build: * CSS is written into just one stylesheet (there
+  is not a whole ton of styling) * New HTML is written into a template HTML file (`template.index.html`).
+  This is only needed for new views * The app is "built", which outputs: * `index.html`
+  in the root directory * CSS and JS files in `./build` direc'
 ---
 {% raw %}
 # LearnGitBranching

@@ -2,8 +2,68 @@
 layout: project
 name: H M H Weylus
 slug: H-M-H-Weylus
+category: Uncategorized
 image: https://github.com/H-M-H/Weylus/workflows/Build/badge.svg
 repo_url: https://github.com/H-M-H/Weylus
+indexed_content: '# Weylus Weylus turns your tablet or smart phone into a graphic
+  tablet/touch screen for your computer! Weylus in action with [Xournal++](https://github.com/xournalpp/xournalpp):
+  ## Table of Contents * [Features](#features) * [Installation](#installation) * [Packages](#packages)
+  * [Running](#running) * [Fullscreen](#fullscreen) * [Keyboard Input](#keyboard-input)
+  * [Automation](#automation) * [Linux](#linux) * [Wayland](#wayland) * [Hardware
+  Acceleration](#hardware-acceleration) * [Weylus as Second Screen](#weylus-as-second-screen)
+  * [Intel GPU on Xorg with Intel drivers](#intel-gpu-on-xorg-with-intel-drivers)
+  * [Dummy Plugs](#dummy-plugs) * [Other Options](#other-options) * [Encryption](#encryption)
+  * [macOS](#macos) * [Hardware Acceleration](#hardware-acceleration-1) * [Windows](#windows)
+  * [Hardware Acceleration](#hardware-acceleration-2) * [Building](#building) * [Docker](#docker)
+  * [How does this work?](#how-does-this-work) * [Stylus/Touch](#stylustouch) * [Screen
+  mirroring & window capturing](#screen-mirroring--window-capturing) * [FAQ](#faq)
+  ## Features - Control your mouse with your tablet - Mirror your screen to your tablet
+  - Send keyboard input using physical keyboards - Hardware accelerated video encoding
+  The above features are available on all Operating Systems but Weylus works best
+  on Linux. Additional features on Linux are: - Support for a stylus/pen (supports
+  pressure and tilt) - Multi-touch: Try it with software that supports multi-touch,
+  like Krita, and see for yourself! - Capturing specific windows and only drawing
+  to them - Faster screen mirroring - Tablet as second screen ## Installation Just
+  grab the latest release for your OS from the [releases page](https://github.com/H-M-H/Weylus/releases)
+  and install it on your computer. No apps except a modern browser (Firefox 80+, iOS/iPadOS
+  13+) are required on your tablet. **If you run Linux make sure to follow the instructions
+  described [here](#linux) to enable uinput for features like pressure sensitivity
+  and multitouch!** ### Packages AUR packages for Weylus are available here: - From
+  source: [weylus](https://aur.archlinux.org/packages/weylus/) - Prebuilt binary:
+  [weylus-bin](https://aur.archlinux.org/packages/weylus-bin/) ## Running Start Weylus,
+  preferably set an access code in the access code box and press the Start button.
+  This will start a webserver running on your computer. To control your computer with
+  your tablet you need to open the url `http:// : `, if possible Weylus will display
+  to you the url you need to open and show a QR code with the encoded address. If
+  you have a firewall running make sure to open a TCP port for the webserver (1701
+  by default) and the websocket connection (9001 by default). On many Linux distributions
+  this is done with ufw: ``` sudo ufw allow 1701/tcp sudo ufw allow 9001/tcp ``` Please
+  only run Weylus in networks you trust as there is no encryption to enable minimal
+  latencies. ### Fullscreen You may want to add a bookmark to your home screen on
+  your tablet as this enables running Weylus in full screen mode (on iOS/iPadOS this
+  needs to be done with Safari). If you are not on iOS/iPadOS there is a button to
+  toggle full screen mode. ### Keyboard Input Weylus supports keyboard input for physical
+  keyboards, so if you have a Bluetooth keyboard, just connect it to your tablet and
+  start typing. Due to technical limitations onscreen keyboards are not supported.
+  ### Automation Weylus provides some features to make automation as convenient as
+  possible. There is a command-line interface; `--no-gui` for example starts Weylus
+  in headless mode without a gui. For more options see `weylus --help`. If you want
+  to run a specific script e.g., once a client connects to your computer you can do
+  so by parsing the log Weylus generates. You may want to enable more verbose logging
+  by setting the environment variable `WEYLUS_LOG_LEVEL` to `DEBUG` or `TRACE` as
+  well as `WEYLUS_LOG_JSON` to `true` to enable easily parseable JSON logging. ###
+  Linux Weylus uses the `uinput` interface to simulate input events on Linux. **To
+  enable stylus and multi-touch support `/dev/uinput` needs to be writable by Weylus.**
+  To make `/dev/uinput` permanently writable by your user, run: ```sh sudo groupadd
+  -r uinput sudo usermod -aG uinput $USER echo ''KERNEL=="uinput", MODE="0660", GROUP="uinput",
+  OPTIONS+="static_node=uinput"'' \ | sudo tee /etc/udev/rules.d/60-weylus.rules ```
+  Then, either reboot, or run ```sh sudo udevadm control --reload sudo udevadm trigger
+  ``` then log out and log in again. To undo this, run: ```sh sudo rm /etc/udev/rules.d/60-weylus.rules
+  ``` This allows your user to synthesize input events system-wide, even when another
+  user is logged in. Therefore, untrusted users should not be added to the uinput
+  group. #### Wayland Weylus offers experimental support for Wayland. Installing `pipewire`
+  and `xdg-desktop-portal` as well as one of: - `xdg-desktop-portal-gtk` for GNOME
+  - `xdg-desktop-portal-kde` for KDE - `xdg-desktop-portal-wlr` for wlro'
 ---
 {% raw %}
 # Weylus

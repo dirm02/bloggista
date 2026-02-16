@@ -2,8 +2,64 @@
 layout: project
 name: Pranshuparmar Witr
 slug: pranshuparmar-witr
+category: WindowsTools- Linux
 image: https://img.shields.io/github/go-mod/go-version/pranshuparmar/witr?style=flat-square
 repo_url: https://github.com/pranshuparmar/witr
+indexed_content: "# witr ### Why is this running? [](https://github.com/pranshuparmar/witr/blob/main/go.mod)
+  [](https://goreportcard.com/report/github.com/pranshuparmar/witr) [](https://github.com/pranshuparmar/witr/actions/workflows/release.yml)
+  [](https://github.com/pranshuparmar/witr) [](https://github.com/pranshuparmar/witr/releases/latest)
+  [](https://repology.org/project/witr/versions) --- [**Purpose**](#1-purpose) • [**Installation**](#2-installation)
+  • [**Flags**](#3-flags--options) • [**Examples**](#4-example-outputs) • [**Platforms**](#5-platform-support)
+  [**Goals**](#6-goals) • [**Core Concept**](#7-core-concept) • [**Output Behavior**](#8-output-behavior)
+  • [**Success Criteria**](#9-success-criteria) --- ## 1. Purpose **witr** exists
+  to answer a single question: > **Why is this running?** When something is running
+  on a system, whether it is a process, a service, or something bound to a port, there
+  is always a cause. That cause is often indirect, non-obvious, or spread across multiple
+  layers such as supervisors, containers, services, or shells. Existing tools (`ps`,
+  `top`, `lsof`, `ss`, `systemctl`, `docker ps`) expose state and metadata. They show
+  _what_ is running, but leave the user to infer _why_ by manually correlating outputs
+  across tools. **witr** makes that causality explicit. It explains **where a running
+  thing came from**, **how it was started**, and **what chain of systems is responsible
+  for it existing right now**, in a single, human-readable output. --- ## 2. Installation
+  witr is distributed as a single static binary for Linux, macOS, FreeBSD, and Windows.
+  witr is also independently packaged and maintained across multiple operating systems
+  and ecosystems. An up-to-date overview of packaging status is available on [Repology](https://repology.org/project/witr/versions).
+  Please note that community packages may lag GitHub releases due to independent review
+  and validation. > [!TIP] > If you use a package manager (Homebrew, Conda, Winget,
+  etc.), we recommend installing via that for easier updates. Otherwise, the install
+  script is the quickest way to get started. --- ### 2.1 Quick Install #### Unix (Linux,
+  macOS & FreeBSD) ```bash curl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh
+  | bash ``` Script Details The script will: - Detect your operating system (`linux`,
+  `darwin` or `freebsd`) - Detect your CPU architecture (`amd64` or `arm64`) - Download
+  the latest released binary and man page - Install it to `/usr/local/bin/witr` -
+  Install the man page to `/usr/local/share/man/man1/witr.1` - Pass INSTALL_PREFIX
+  to override default install path #### Windows (PowerShell) ```powershell irm https://raw.githubusercontent.com/pranshuparmar/witr/main/install.ps1
+  | iex ``` Script Details The script will: - Download the latest release (zip) and
+  verify checksum. - Extract `witr.exe` to `%LocalAppData%\\witr\\bin`. - Add the
+  bin directory to your User `PATH`. --- ### 2.2 Package Managers Homebrew (macOS
+  & Linux) You can install **witr** using [Homebrew](https://brew.sh/) on macOS or
+  Linux: ```bash brew install witr ``` Conda (macOS, Linux & Windows) You can install
+  **witr** using [conda](https://docs.conda.io/en/latest/), [mamba](https://mamba.readthedocs.io/en/latest/),
+  or [pixi](https://pixi.prefix.dev/latest/) on macOS, Linux, and Windows: ```bash
+  conda install -c conda-forge witr # alternatively using mamba mamba install -c conda-forge
+  witr # alternatively using pixi pixi global install witr ``` Arch Linux (AUR) On
+  Arch Linux and derivatives, install from the [AUR package](https://aur.archlinux.org/packages/witr-bin):
+  ```bash yay -S witr-bin # alternatively using paru paru -S witr-bin # or use your
+  preferred AUR helper ``` Winget (Windows) You can install **witr** via [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
+  ```powershell winget install -e --id PranshuParmar.witr ``` Chocolatey (Windows)
+  You can install **witr** using [Chocolatey](https://community.chocolatey.org): ```powershell
+  choco install witr ``` Scoop (Windows) You can install **witr** using [Scoop](https://scoop.sh):
+  ```powershell scoop install main/witr ``` FreeBSD Ports You can install **witr**
+  on FreeBSD from the [FreshPorts port](https://www.freshports.org/sysutils/witr/):
+  ```bash pkg install witr # or pkg install sysutils/witr ``` Or build from Ports:
+  ```bash cd /usr/ports/sysutils/witr/ make install clean ``` AOSC OS You can install
+  **witr** from the [AOSC OS repository](https://packages.aosc.io/packages/witr):
+  ```bash oma install witr ``` GNU Guix You can install **witr** from the [GNU Guix
+  repository](https://packages.guix.gnu.org/packages/witr/): ```bash guix install
+  witr ``` Uniget (Linux) You can install **witr** using [uniget](https://uniget.dev/):
+  ```bash uniget install witr ``` Brioche (Linux) You can install **witr** using [brioche](https://brioche.dev/):
+  ```bash brioche install -r witr ``` Aqua (macOS, Linux & Windows) You can install
+  **witr** using [aqua](https://aquaproj.github.io/): `"
 ---
 {% raw %}
 <div align="center">

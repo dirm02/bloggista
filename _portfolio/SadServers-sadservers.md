@@ -2,8 +2,66 @@
 layout: project
 name: Sadservers Sadservers
 slug: SadServers-sadservers
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/info%40sadservers.com-blue
 repo_url: https://github.com/czue/celery-progress).
+indexed_content: '# SadServers [SadServers](https://sadservers.com/) is a SaaS where
+  users can test their Linux and DevOps troubleshooting skills on real Linux servers
+  in a "Capture the Flag" fashion. [](mailto:info@sadservers.com)&nbsp;&nbsp;&nbsp;
+  [](https://bsky.app/profile/sadservers.com)&nbsp;&nbsp;&nbsp; [](https://twitter.com/sadservers_com)&nbsp;&nbsp;&nbsp;
+  [](https://mastodon.social/@sadservers)&nbsp;&nbsp;&nbsp; [](https://stats.uptimerobot.com/ZRGoBu7Kp9)
+  [Make Money Creating SadServers Scenarios](https://docs.sadservers.com/docs/make-money-creating-scenarios/)
+  **Table of Contents:** - [What](#what) - [Why](#why) - [When](#when) - [How Does
+  It Look](#how-does-it-look) - [Architecture](#architecture) - [Web Server](#web-server)
+  - [Task Queue](#task-queue) - [Permanent Storage: SQLite](#permanent-storage-sqlite)
+  - [Scenario Instances](#scenario-instances) - [Replay System](#replay-system) -
+  [Resumable VMs](#resumable-vms) - [API](#api) - [Scenario Command History Logging](#scenario-command-history-logging)
+  - [Other Infrastructure Services](#other-infrastructure--services) - [CI/CD](#cicd)
+  - [Linting And Formatting](#linting-and-formatting) - [Automated Testing](#automated-testing)
+  - [Automated Deployments](#automated-deployments) - [Development Practices](#development-practices)
+  - [Pull Requests](#pull-requests) - [Feature Flags](#feature-flags) - [Functions
+  and Comments](#functions-and-comments) - [Site Priorities](#site-priorities) - [User
+  Experience](#user-experience) - [Security](#security) - [Code License](#code-license)
+  - [Issues](#issues) - [Roadmap](#roadmap) - [Collaboration](#collaboration) - [Scenarios](#scenarios)
+  - [Contact](#contact) - [Stargazers over time](#stargazers-over-time) ## What [SadServers](https://sadservers.com/)
+  is a SaaS where users can test their Linux (Docker, Kubernetes...) troubleshooting
+  skills on real Linux servers in a "Capture the Flag" fashion. There''s a collection
+  of scenarios, a description of what''s wrong and a test to check if the issue has
+  been solved. The servers are spun up on the spot, users get an "SSH" shell via a
+  browser window to an ephemeral server (destroyed after the allotted time for solving
+  the challenge) and then they can try and solve the problem. Problems include common
+  software that run on Linux, like databases or web servers although knowledge of
+  the details for the specific application is not necessarily required. It also includes
+  scenarios where you do need to be familiar with the technology with the issue, for
+  example, a Docker scenario. The scenarios are for the most part real-world ones,
+  as in they are similar to issues that we have encountered. SadServers is aimed primarily
+  at users that are professional Software Developers (possibly), System Administrators,
+  DevOps engineers, SREs, and related positions that require server debugging and
+  troubleshooting skills. Particularly SadServers wants to test these professionals
+  (or people aspiring to these jobs) in a way that would be useful for the purpose
+  of a troubleshooting part of a job interview. ## Why To scratch a personal itch
+  and because there''s nothing like this that I''m aware of. There are/were some sandbox
+  solutions like Katacoda (shut down in May 2022) but nothing that gives you a specific
+  problem with a condition of victory on a real server. SadServers is also being used
+  by tech companies to automate or facilitate Linux troubleshooting interviews, as
+  well as for internal training. An annoyance I found during my interviews is that
+  sometimes instead of helping, the interviewer unintentionally misleads you, or you
+  feel like you are in a tv game where you have to maximize for some arbitrary points
+  and come up with an game strategy that doesn''t reflect real incident situations
+  (do I try to keep solving this problem or do I move to the next one, which one is
+  better?). ## When SadServers was "launched" in [Hacker News in October 2022](https://news.ycombinator.com/item?id=33344142),
+  reaching the #2 position that day and yes, it suffered from the ["HN hug of death"](https://medium.com/devops-dev/sadservers-and-the-hacker-news-hug-of-death-a-postmortem-af20ddc58526).
+  ## How does it look? ## Architecture See diagram: Users interact via HTTPS only
+  with a web server and a proxy server connecting to the scenario VMs. The rest of
+  the communications are internal between VPCs or AWS services. Each scenario VM resides
+  in a VPC with no Internet-facing incoming access and limited egress access. ###
+  Web server The website is powered by [Django](https://www.djangoproject.com/) and
+  Python3, with [Bootstrap](https://getbootstrap.com/) and plain Javascript at the
+  front. In front of Django there''s an [Nginx](https://www.nginx.com/) server and
+  [Gunicorn](https://gunicorn.org/) WSGI server. The SSL certificate is generously
+  provided by [Let''s Encrypt](https://letsencrypt.org/) and its certbot, the best
+  thing to happen to the Internet since Mosaic. ### Task Queue New server requests
+  are queued and processed in the background'
 ---
 {% raw %}
 # SadServers

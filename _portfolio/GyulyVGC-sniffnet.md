@@ -2,8 +2,67 @@
 layout: project
 name: Gyulyvgc Sniffnet
 slug: GyulyVGC-sniffnet
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/GyulyVGC/sniffnet/main/resources/repository/header_repository.png
 repo_url: https://github.com/GyulyVGC/sniffnet
+indexed_content: "Application to comfortably monitor your Internet traffic. Cross-platform.
+  Intuitive. Reliable. Translated in: \U0001F1E8\U0001F1F3 \U0001F1E9\U0001F1EA \U0001F1EB\U0001F1F7
+  \U0001F1F7\U0001F1FA \U0001F1F5\U0001F1F9 \U0001F1EA\U0001F1E6 \U0001F1EE\U0001F1F9
+  \U0001F1F5\U0001F1F1 [+&nbsp;16&nbsp;more&nbsp;languages](https://github.com/GyulyVGC/sniffnet/issues/60)
+  ## _Support Sniffnet's development_ \U0001F496 Sniffnet is completely free, open-source
+  software which needs lots of effort and time to develop and maintain. If you appreciate
+  Sniffnet, [consider sponsoring](https://github.com/sponsors/GyulyVGC): your support
+  will enable a constant growth with [new features and functionalities](https://github.com/GyulyVGC/sniffnet/blob/main/ROADMAP.md).
+  Do you want to help the project in an alternative way? You can also head to the
+  [official store](https://grindhouse.dev/collections/sniffnet) and put your hands
+  on some cool merchandise! A special mention goes to these awesome organizations
+  and folks who are sponsoring Sniffnet: &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+  &nbsp;&nbsp; &nbsp;&nbsp; ## Download x64 | arm64 | x86 Intel | Apple silicon AppImage:
+  amd64 | arm64 | i386 | armhf DEB: amd64 | arm64 | i386 | armhf RPM: x86_64 | aarch64
+  Links in the table above will download the latest version of Sniffnet directly from
+  [GitHub releases](https://github.com/GyulyVGC/sniffnet/releases). Not what you're
+  looking for? Check out [alternative installation methods](https://github.com/GyulyVGC/sniffnet/wiki/Alternative-installation-methods).
+  > [!NOTE] > > Remember to also install the [required dependencies](https://github.com/GyulyVGC/sniffnet/wiki/Required-dependencies)
+  for your operating system. ## Features - \U0001F4BB choose a **network adapter**
+  of your PC to inspect - \U0001F3F7️ select a set of **filters** to apply to the
+  observed traffic - \U0001F4D6 view overall **statistics** about your Internet traffic
+  - \U0001F4C8 view **real-time charts** about traffic intensity - \U0001F4CC keep
+  an eye on your network even when the application is **minimized** - \U0001F4C1 **import**
+  and **export** comprehensive capture reports as **PCAP files** - \U0001F50E identify
+  **6000+ upper layer services**, protocols, trojans, and worms - \U0001F310 find
+  out **domain name** and **ASN** of the hosts you are exchanging traffic with - \U0001F3E0
+  identify connections in your **local network** - \U0001F30D discover the **geographical
+  location** of remote hosts - ⭐ save your **favorite** network hosts - \U0001F575️‍♂️
+  search and **inspect** each of your network connections in real time - \U0001F509
+  set custom **notifications** to inform you when defined network events occur - \U0001F3A8
+  choose the **style** that fits you the most, including custom themes support - ...and
+  more! ## User manual Do you want to **learn more**? Check out the [**Sniffnet Wiki**](https://github.com/GyulyVGC/sniffnet/wiki),
+  a comprehensive manual to help you thoroughly master the application from a basic
+  setup to the most advanced functionalities. The Wiki includes step-by-step guides,
+  tips, examples of usage, and answers to frequent questions. ## Troubleshooting See
+  details ### Missing dependencies Most of the errors that may arise are likely due
+  to your system missing dependencies required to correctly analyze a network adapter.
+  Check the [required dependencies page](https://github.com/GyulyVGC/sniffnet/wiki/Required-dependencies)
+  for instructions on how to proceed depending on your operating system. ### Rendering
+  problems In some circumstances, especially if you are running on an old architecture
+  or your graphical drivers are not updated, the `wgpu` default renderer used by [iced](https://github.com/iced-rs/iced)
+  may manifest bugs (the interface glitches, color gradients are unsupported, or some
+  icons are completely black). In these cases you can set an environment variable
+  to switch to the `tiny-skia` renderer, a CPU-only software renderer that should
+  work properly on every environment: ```sh ICED_BACKEND=tiny-skia ``` ### ***In any
+  case, don't hesitate to [open an issue](https://github.com/GyulyVGC/sniffnet/issues/new/choose),
+  and I will do my best to help you!*** ## Acknowledgements - A big shout-out to [all
+  the contributors](https://github.com/GyulyVGC/sniffnet/blob/main/CONTRIBUTORS.md)
+  of Sniffnet! - The graphical user interface has been realized with [iced](https://github.com/iced-rs/iced),
+  a cross-platform GUI library for Rust focused on simplicity and type-safety - IP
+  geolocation and ASN data are provided by [MaxMind](https://www.maxmind.com) - Free
+  code signing for Windows Installer is provided by [SignPath.io](https://about.signpath.io/),
+  certificate by [SignPath Foundation](https://signpath.org/) - [Sniffnet](https://ads.fund/token/0xadfc251f8ef00ceaeca2b5c1882dabe5db0833df)
+  project is supported by ADS.FUND - Last but not least, thanks to [every single stargazer](https://github.com/GyulyVGC/sniffnet/stargazers):
+  all forms of support made it possible to keep improving Sniffnet! ## Stay in the
+  loop Wait... there's more! Sniffnet is rapidly evolving, and new features are added
+  on a regular basis. Follow the news and Sniffnet socials to never miss an update.
+  &nbsp; &nbsp; &nbsp; &nbsp;"
 ---
 {% raw %}
 <div align="center">

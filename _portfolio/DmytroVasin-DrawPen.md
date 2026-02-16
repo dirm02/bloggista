@@ -2,8 +2,29 @@
 layout: project
 name: Dmytrovasin Drawpen
 slug: DmytroVasin-DrawPen
+category: WindowsTools- Linux
 image: https://github.com/DmytroVasin/DrawPen/blob/main/assets/static/main.png?raw=true
 repo_url: https://github.com/DmytroVasin/DrawPen
+indexed_content: 'Draw Pen An open-source screen annotation tool --- ### Installation
+  You can download DrawPen for **free** from [releases](https://github.com/DmytroVasin/DrawPen/releases)
+  Or install via **package managers**: ```bash # macOS (Homebrew) brew install --cask
+  drawpen # Windows (Scoop) scoop bucket add extras scoop install extras/drawpen ```
+  ### Known issues On some Linux setups running **Wayland** (e.g. [Fedora KDE Plasma](https://github.com/DmytroVasin/DrawPen/issues/82),
+  [Zorin](https://github.com/DmytroVasin/DrawPen/issues/81)), DrawPen may start with
+  a **segmentation fault**. [Explanation In Details](https://github.com/IsmaelMartinez/teams-for-linux/blob/1c28e146ca78bcb0ec4df317d7f0684984adf205/docs-site/docs/development/research/wayland-x11-ozone-platform-investigation.md)
+  #### Workaround: - Run DrawPen with X11 backend: `drawpen --ozone-platform=x11`
+  - Use DrawPen `drawpen-x11` package available in [releases](https://github.com/DmytroVasin/DrawPen/releases/latest/)
+  ### Keybindings | Command | Keybindings | Comment | | ---------------------------------------
+  | ------------------------------------------------------------ | - | | Show/Hide
+  App | CMD/CTRL + SHIFT + A | Global shortcut | | Activate Pen | 1 | | | Activate/Switch
+  Shapes (Arrow/Square/etc.) | 2 | | | Activate Text | 3 | | | Activate Highlighter
+  | 4 | | | Activate Laser | 5 | | | Activate Eraser | 6 | | | Switch Color | 7 |
+  | | Switch Thickness (Width) | 8 | | | Show/Hide ToolBar | CMD/CTRL + T | | | Show/Hide
+  Whiteboard | CMD/CTRL + E | | | Clear Desk | CMD/CTRL + K | | | Settings Page |
+  CMD/CTRL + , | | | Reset to original | | Resets all app settings (keys, colors,
+  toolbar position, etc.) | ### Contributing Please read our [Contributing Guidelines](CONTRIBUTING.md)
+  for more information. ### License DrawPen is licensed under the MIT Open Source
+  license. For more information, see [LICENSE](LICENSE).'
 ---
 {% raw %}
 <p align="center">

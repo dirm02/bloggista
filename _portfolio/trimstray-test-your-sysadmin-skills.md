@@ -2,8 +2,68 @@
 layout: project
 name: Trimstray Test Your Sysadmin Skills
 slug: trimstray-test-your-sysadmin-skills
+category: Uncategorized
 image: https://github.com/trimstray/test-your-sysadmin-skills/blob/master/static/img/sysadmin_preview.png
 repo_url: https://github.com/trimstray/test-your-sysadmin-skills
+indexed_content: ':star: " A great Admin doesn''t need to know everything, but they
+  should be able to come up with amazing solutions to impossible projects. " - cwheeler33
+  (ServerFault) :star: " My skills are making things work, not knowing a billion facts.
+  [...] If I need to fix a system I’ll identify the problem, check the logs and look
+  up the errors. If I need to implement a solution I’ll research the right solution,
+  implement and document it, the later on only really have a general idea of how it
+  works unless I interact with it frequently... it’s why it’s documented. " - Sparcrypt
+  (Reddit) **** :information_source: &nbsp;This project contains **284** test questions
+  and answers that can be used as a test your knowledge or during an interview/exam
+  for position such as **Linux (\*nix) System Administrator**. :heavy_check_mark:
+  &nbsp;The answers are only **examples** and do not exhaust the whole topic. Most
+  of them contains **useful resources** for a deeper understanding. :warning: &nbsp;Questions
+  marked **`***`** don''t have answer yet or answer is incomplete - **make a pull
+  request to add them**! :traffic_light: &nbsp;If you find something which doesn''t
+  make sense, or something doesn''t seem right, **please make a pull request** and
+  please add valid and well-reasoned explanations about your changes or comments.
+  :books: &nbsp;In order to improve your knowledge/skills please see [devops-interview-questions](https://github.com/bregman-arie/devops-interview-questions).
+  It looks really interesting. » All suggestions are welcome « ## Table of Contents
+  | The type of chapter | Number of questions | Short description | | :--- | :---
+  | :--- | | [Introduction](#introduction) ||| | :small_orange_diamond: [Simple Questions](#simple-questions)
+  | 14 questions | Relaxed, fun and simple - are great for starting everything. |
+  | [General Knowledge](#general-knowledge) ||| | :small_orange_diamond: [Junior Sysadmin](#junior-sysadmin)
+  | 65 questions | Reasonably simple and straight based on basic knowledge. | | :small_orange_diamond:
+  [Regular Sysadmin](#regular-sysadmin) | 94 questions | The mid level of questions
+  if that you have sound knowledge. | | :small_orange_diamond: [Senior Sysadmin](#senior-sysadmin)
+  | 99 questions | Hard questions and riddles. Check it if you want to be good. |
+  | [Secret Knowledge](#secret-knowledge) || | :small_orange_diamond: [Guru Sysadmin](#guru-sysadmin)
+  | 12 questions | Really deep questions are to get to know Guru Sysadmin. | ## Introduction
+  ### :diamond_shape_with_a_dot_inside: Simple Questions - What did you learn this
+  week? - What excites or interests you about the sysadmin world? - What is a recent
+  technical challenge you experienced and how did you solve it? - Tell me about the
+  last major project you finished. - Do you contribute to any open source projects?
+  - Describe the setup of your homelab. - What personal achievement are you most proud
+  of? - Tell me about the biggest mistake you''ve made. How would you do it differently
+  today? - What software tools are you going to install on the first day at a new
+  job? - Tell me about how you manage your knowledge database (e.g. wikis, files,
+  portals). - What news sources do you check daily? (sysadmin, security-related or
+  other) - Your NOC team has a new budget for sysadmin certifications. What certificate
+  would you like and why? - How do you interact with developers: *us vs. them* or
+  *all pulling together with a different approach*? - Which sysadmin question would
+  you ask, if you were interviewing me, to know, how good I''m with non-standard situations?
+  ## General Knowledge ### :diamond_shape_with_a_dot_inside: Junior Sysadmin ######
+  System Questions (37) Give some examples of Linux distribution. What is your favorite
+  distro and why? - Red Hat Enterprise Linux - Fedora - CentOS - Debian - Ubuntu -
+  Mint - SUSE Linux Enterprise Server (SLES) - SUSE Linux Enterprise Desktop (SLED)
+  - Slackware - Arch - Kali - Backbox My favorite Linux distribution: - **Arch Linux**,
+  which offers a nice minimalist base system on which one can build a custom operating
+  system. The beauty of it too is that it has the Arch User Repository (AUR), which
+  when combined with its official binary repositories allows it to probably have the
+  largest repositories of any distribution. Its packaging process is also very simple,
+  which means if one wants a package not in its official repositories or the AUR,
+  it should be easy to make it for oneself. - **Linux Mint**, which is also built
+  from Ubuntu LTS releases, but features editions featuring a few different desktop
+  environments, including Cinnamon, MATE and Xfce. Mint is quite polished and its
+  aesthetics are rather appealing, I especially like its new icon theme, although
+  I do quite dislike its GTK+ theme (too bland to my taste). I’ve also found a bug
+  in its latest release Mint 19, that is getting quite irritating as I asked for with
+  it over a fortnight ago on their forums and I have received no replies so far and
+  it is a bug that makes my life on it more d'
 ---
 {% raw %}
 <p align="center">

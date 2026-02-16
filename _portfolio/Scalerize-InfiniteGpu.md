@@ -2,8 +2,70 @@
 layout: project
 name: Scalerize Infinitegpu
 slug: Scalerize-InfiniteGpu
+category: Serv&Prod-Tools
 image: https://github.com/user-attachments/assets/0e169d5f-3a19-43ed-93e6-607a1f1d12b6
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# \U0001F680 InfiniteGPU InfiniteGPU is a production-ready platform
+  that enables effortless exchange of compute resources for AI workloads. Requestors
+  can offload intensive AI inference & training tasks to a distributed network of
+  providers, while providers monetize their idle NPU/GPU/CPU capacity, orchestrated
+  through a web interface and native desktop application. ## \U0001F3AF Project Goal
+  Transform how compute power is accessed and shared by creating a frictionless marketplace
+  where: - **Requestors** can execute AI inference & training tasks without expensive
+  infrastructure - **Providers** earn passive income by sharing their device's computing
+  resources - **The platform** orchestrates task distribution, execution monitoring,
+  and automated payments ## ✨ Key Features - \U0001F9E0 **ONNX Model Execution** -
+  Run AI inference & training tasks using industry-standard ONNX models - \U000131F2
+  **Neural processing units** - Ability to target NPUs can accelerate AI inference
+  & training - \U0001F4C1 **Multiple input/outputs formats** - Input can be plain
+  text, images, videos, numpy tensors - \U0001F4B0 **Automated Payments** - Stripe
+  integration with platform commission, centralized - ⚡ **Real-time Updates** - SignalR-powered
+  live task status and progress tracking - \U0001F5A5️ **Native Desktop Client** -
+  WinUI 3 application for seamless and native background compute execution - \U0001F510
+  **Secure Authentication** - JWT-based auth with comprehensive user management -
+  \U0001F4CA **Financial Dashboard** - Track earnings, settlements, and payment history
+  - \U0001F3A8 **Modern UI** - Beautiful, responsive interface built with React and
+  TailwindCSS ## \U0001F3D7️ Architecture ### Backend **ASP.NET Core 10.0** minimal
+  API with clean architecture patterns - **CQRS Pattern** via MediatR for command/query
+  separation - **Entity Framework Core** with SQL Server for data persistence - **ASP.NET
+  Identity** for user management and authentication - **SignalR Hubs** for real-time
+  bidirectional communication - **FluentValidation** for robust input validation -
+  **Azure Blob Storage** for task data and model file storage - **Stripe API** for
+  payment processing and webhook handling ### Frontend **React 19** with modern tooling
+  and state management - **Vite** for lightning-fast development and optimized builds
+  - **TailwindCSS v4** for utility-first styling - **Radix UI** for accessible, unstyled
+  component primitives - **TanStack Query** for powerful async state management -
+  **Zustand** for lightweight client state - **React Hook Form + Zod** for type-safe
+  form handling - **Framer Motion** for smooth animations ### Desktop Application
+  **WinUI 3** native Windows application - **ONNX Runtime** for high-performance AI
+  inference execution & AI model training (on CPU, GPU and NPU) - **OpenCV Sharp**
+  for image processing and computer vision tasks - **SignalR Client** for task orchestration
+  and status updates - **System.Management** for hardware metrics collection - **Background
+  Services** for autonomous task execution ## \U0001F4C2 Project Structure ``` Scalerize.InfiniteGpu/
+  ├── backend/ │ └── InfiniteGPU.Backend/ │ ├── Features/ # Feature-based modules
+  (CQRS) │ │ ├── Auth/ # Authentication & user management │ │ ├── Tasks/ # Task creation
+  and orchestration │ │ ├── Subtasks/ # Provider task claiming & execution │ │ ├──
+  Finance/ # Payments, earnings, settlements │ │ └── Inference/ # AI inference endpoints
+  │ ├── Shared/ # Cross-cutting concerns │ │ ├── Services/ # JWT, Email, Task assignment
+  │ │ ├── Hubs/ # SignalR real-time hubs │ │ └── Models/ # Shared DTOs and enums │
+  ├── Data/ # EF Core DbContext & entities │ └── Migrations/ # Database migrations
+  │ ├── frontend/ │ └── src/ │ ├── features/ # Feature modules │ │ ├── auth/ # Login,
+  register, profile │ │ ├── requestor/ # Task requests and monitoring │ │ └── provider/
+  # Earnings and task execution │ ├── pages/ # Route-level components │ ├── shared/
+  # Shared utilities │ │ ├── components/ # Reusable UI components │ │ ├── layout/
+  # App shell and navigation │ │ ├── stores/ # Zustand stores │ │ └── utils/ # API
+  client, helpers │ └── assets/ # Static assets │ ├── desktop/ │ └── Scalerize.InfiniteGpu.Desktop/
+  │ └── Scalerize.InfiniteGpu.Desktop/ │ ├── Services/ # Background work, ONNX execution
+  │ ├── Assets/ # App icons and resources │ └── MainWindow.xaml # Main application
+  window │ └── docs/ # Architecture documentation ``` ## \U0001F680 Quick Start ###
+  Prerequisites - **.NET 8.0 SDK** or later - **Node.js 18+** and npm - **SQL Server**
+  (LocalDB or full instance) - **Visual Studio 2022** (for desktop app development)
+  ### 1. Backend Setup ```bash cd backend/InfiniteGPU.Backend # Restore dependencies
+  dotnet restore # Update database (creates schema) dotnet ef database update # Run
+  the backend (starts on http://localhost:5000) dotnet watch run ``` **API Documentation:**
+  Navigate to `http://localhost:5000/swagger` when running ### 2. Frontend Setup ```bash
+  cd frontend # Install dependencies npm install # Start development server (http://localhost:5173)
+  npm run dev ``` ### 3. Desktop Application Setup ```bash cd deskt"
 ---
 {% raw %}
 # 🚀 InfiniteGPU

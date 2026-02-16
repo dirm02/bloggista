@@ -2,8 +2,65 @@
 layout: project
 name: Shopware Shopware
 slug: shopware-shopware
+category: Platform -eCommerce
 image: https://github.com/shopware/shopware/actions/workflows/nightly.yml/badge.svg?event=schedule&branch=trunk
 repo_url: https://github.com/shopware/shopware
+indexed_content: "[](https://github.com/shopware/shopware/actions/workflows/nightly.yml?query=event%3Aschedule+branch%3Atrunk)
+  [](https://scrutinizer-ci.com/g/shopware/platform/) [](https://packagist.org/packages/shopware/platform)
+  [](https://packagist.org/packages/shopware/platform) [](https://translate.shopware.com/project/shopware6)
+  [](https://github.com/shopware/shopware/blob/trunk/LICENSE) [](https://github.com/shopware/shopware/pulls)
+  [](https://chat.shopware.com/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+  Shopware Modern open source e-Commerce Shopware 6 is an open headless commerce platform
+  powered by [Symfony 7](https://symfony.com) and [Vue.js 3](https://vuejs.org) that
+  is used by thousands of shops and supported by a huge, [worldwide community](https://chat.shopware.com/)
+  of developers, agencies, and merchants. If you like Shopware 6, give us a&nbsp;⭐️
+  &nbsp;on GitHub! * \U0001F64B‍♂️ &nbsp;[Be part of shopware!](https://www.shopware.com/en/jobs/)
+  ‍&nbsp;We are hiring! \U0001F64B * \U0001F30E &nbsp;Discover our [website](https://www.shopware.com/en/)
+  * \U0001F9E9 &nbsp;Browse more than [3,100 extensions](https://store.shopware.com/en/)
+  in our community store * \U0001F4D6 &nbsp;Learn how to [develop extensions](https://developer.shopware.com)
+  and everything else about the tech behind Shopware via our developer docs. * \U0001F250
+  &nbsp;[Translate](https://translate.shopware.com) Shopware or help by contributing
+  to existing languages * \U0001F6E0 &nbsp;[Report bugs](https://github.com/shopware/shopware/issues)
+  in our issue tracker * \U0001F4A1 &nbsp;Give us [feedback](https://feedback.shopware.com/)
+  or vote existing ideas * \U0001F46A &nbsp;Exchange with other Shopware developers
+  in our own [Community Hub](https://hub.shopware.com/) or the [Discord community](https://chat.shopware.com/)
+  * \U0001F5E8 &nbsp;Help and get helped on [Stack Overflow](https://stackoverflow.com/questions/tagged/shopware6?tab=Newest)
+  or in our [Community forum](https://forum.shopware.com/) ## Table of contents -
+  [Table of contents](#table-of-contents) - [Project overview](#project-overview)
+  - [Platform and Framework](#platform-and-framework) - [Installation](#installation)
+  - [Production setup](#production-setup) - [Code Contribution](#code-contribution)
+  - [Contribution setup](#contribution-setup) - [The Shopware CLA](#the-shopware-cla)
+  - [Authors \\& Contributors](#authors--contributors) - [License](#license) - [Bugs
+  \\& Feedback](#bugs--feedback) - [Reporting security issues](#reporting-security-issues)
+  - [Extending Shopware](#extending-shopware) ## Project overview To discover the
+  features of Shopware and what sets us apart from other ecommerce systems, take the
+  [feature tour](https://www.shopware.com/en/products/product-tour/) on the Shopware
+  home page. From a developer's perspective, here are some highlights that make Shopware
+  easy and fun to work with: ### Platform and Framework Shopware is primarily based
+  on [Symfony](https://symfony.com/what-is-symfony) and [Vue.js](https://vuejs.org/).
+  It is a fully functional ecommerce platform, but it also serves as an **ecommerce
+  framework**. Shopware is: - a ready-to-use [shopping cart system](https://docs.shopware.com/en/shopware-6-en/getting-started).
+  - a vendor dependency in your [flex project](https://developer.shopware.com/docs/guides/installation/template).
+  - [API-first](https://developer.shopware.com/docs/guides/integrations-api). - [extensible
+  through plugins](https://developer.shopware.com/docs/guides/plugins/plugins/plugin-base-guide):
+  - Harness the full power of Symfony by creating bundles and loading them as part
+  of the application. - [extensible through apps](https://developer.shopware.com/docs/guides/plugins/apps/app-base-guide):
+  - A modern, lightweight but powerful way to add functionality, requiring very little
+  Shopware-specific knowledge. - headless if you need it to be. ## Installation ###
+  Production setup The easiest way to run a Shopware shop is by booking a commercial
+  plan in the [Shopware cloud](https://www.shopware.com/en/shopware-cloud/), a fully
+  managed setup, ready to use. The recommended way for on-premise shops is to install
+  Shopware [through the flex template](https://developer.shopware.com/docs/guides/installation/template).
+  To unlock the full potential Shopware has to offer, [commercial plans](https://www.shopware.com/en/pricing/)
+  are also available for on-premise. These plans enrich your shop with unique functionality,
+  giving you an additional advantage over your competition. There is a list of [hosting
+  partners](https://www.shopware.com/en/partner/hosting/), who offer a pre-installed
+  shop, making your start a lot faster. We also provide a [web-based installer](https://www.shopware.com/en/download/),
+  [installation instructions](https://developer.shopware.com/docs/guides/installation/)
+  on docs, and the [course](https://hub.shopware.com/learn/course/shopware-setup)
+  walks you through the necessary steps. ### Code Contribution If you have decided
+  to contribute code to Shopware and become a member of the Shopware community, We
+  appreciate your hard"
 ---
 {% raw %}
 <div align="center">

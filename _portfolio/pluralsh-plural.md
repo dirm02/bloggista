@@ -2,8 +2,69 @@
 layout: project
 name: Pluralsh Plural
 slug: pluralsh-plural
+category: ServerTools-ProxMox-CICD
 image: https://img.youtube.com/vi/W8KCaiZRV3M/0.jpg
 repo_url: https://github.com/pluralsh/plural
+indexed_content: "The fastest way to build great infrastructure and deploy your software
+  Plural empowers you to build and maintain cloud-native and production-ready infrastructure
+  on Kubernetes. \U0001F680\U0001F528☁️ ## ✨ Features Plural will deploy open-source
+  applications and proprietary services on Kubernetes in your cloud using common standards
+  like Helm and Terraform. The Plural platform provides the following: * Fleet-Scale
+  GitOps Engine to deploy any helm/kustomize or yaml based service into your fleet,
+  securely and seamlessly scalable. * Full visibility of your fleet and all deployed
+  services via our secure Auth Proxy. * Kubernetes CRD-native Infrastructure As Code
+  Management, supporting Terraform, Ansible and Pulumi, to allow you to scale usage
+  of best practices tools without labor intensive CI/CD and branching strategies.
+  Get the scaling promise of Crossplane with the configuration language of terraform.
+  * Automated Pull Request Generation to provide full ui-based self-service while
+  still maintaining the rigor and auditability of GitOps * 360 Degree AI Integration,
+  leveraging the fully integrated, all-in-one Plural platform to generate uniquely
+  accurate AI insights into the state of your fleet and how to fix inevitable misconfigurations
+  that might have arisen. In addition, the Plural api also provides: * A DNS service
+  to register fully-qualified domains under onplural.sh to eliminate the hassle of
+  DNS registration for users. * Being an OIDC provider to enable zero touch login
+  security for all deployed Plural Console applications or any other application managed
+  by it. We think it's pretty cool! \U0001F60E Some other nice things: ## ✨ 360-degree
+  AI Powered Insights Use Plural's accumulated knowledge of the state of your infrastructure
+  from metadata gathered from GitOps deployments, IaC management and the Kubernetes
+  API's rich REST API to give AI insights that actually work. We'll know what's going
+  on, and let AI explain it back to you in accessible natural language, in an automated
+  way so your devops engineers don't have to. This includes: * provide natural language
+  explanations why any service or terraform stack is currently failing * provide suggested
+  code changes using context from the GitOps manifests associated with any failing
+  service * explain any kubernetes or terraform UI page to blunt the sharp edges of
+  the Platform Engineering learning curve ### \U0001F513 Secure by default Plural
+  is fully self-hosted within your own environment, meaning we don't touch your credentials
+  or sensitive information. Cluster setup includes deploying our Plural deployment
+  operator, which efficiently polls the control plane for any changes that need to
+  be applied. This ensures that our control plane doesn’t reach into these workload
+  clusters, providing a more secure setup than push-based models and removing the
+  need for credentials to be centralized in a single major attack-vector. All Plural
+  deployments are also fully customizable with our centralized secrets management.
+  Additionally, we natively support deploying to brand new clusters or adopting existing
+  K8s clusters. ## \U0001F4FD Check out a video Demo [](https://www.youtube.com/watch?v=W8KCaiZRV3M&ab_channel=Plural)
+  ## \U0001F3C1 Getting Started 1. Go to https://app.plural.sh to create an account.
+  *Note: This is simply to track your open-source installations and deploy your Console.*
+  2. [Install the Plural CLI](https://docs.plural.sh/getting-started/getting-started#install-plural-cli)
+  3. [Deploy your Plural Console](https://docs.plural.sh/how-to/set-up/mgmt-cluster).
+  Once you have your Plural Console running, feel free to walk through our how-to
+  guide to see more of the core functionality of Plural: https://docs.plural.sh/how-to
+  ## \U0001F4DA Documentation Full documentation is available on our [Documentation
+  site](https://docs.plural.sh/). It covers both our mainline Fleet Management platform,
+  and our legacy open source marketplace (soon to be merged into the mainline product).
+  Feel free to browse either, but we'd recommend any new users start with Plural's
+  fleet management suite of solutions. ## \U0001F4AC Community For general help, please
+  refer to the Plural documentation. For additional help you can use the following
+  channels: * [Discord](https://discord.gg/pluralsh) (For live discussions with the
+  Plural team). * [GitHub](https://github.com/pluralsh/plural/) (Bug reports, feature
+  requests, contributions). * [Twitter](https://twitter.com/plural_sh) (For our latest
+  news). Plural is dedicated to providing a welcoming, diverse, and harassment-free
+  experience for everyone. We expect everyone in the community to abide by our [Code
+  of Conduct](CODE_OF_CONDUCT.md). *Please read it.* ## \U0001F697 Roadmap See what
+  we're working on in these GitHub projects. Help us prioritize issues by reacting
+  with an emoji on the issue! * Application Onboarding Roadmap: https://github.com/orgs/pluralsh/projects/2/views/2
+  * Plural Core Issues: https://github.com/pluralsh/plural/issues * Plural CLI Issues:
+  https://github.com/pluralsh/plural-cli/issues ## \U0001F64C Contributing to P"
 ---
 {% raw %}
 <p align="center">

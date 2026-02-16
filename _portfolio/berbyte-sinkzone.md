@@ -2,8 +2,68 @@
 layout: project
 name: Berbyte Sinkzone
 slug: berbyte-sinkzone
+category: File manager -Network-nmap
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/berbyte-sinkzone/examples/demo-tui.gif
 repo_url: https://github.com/berbyte/sinkzone
+indexed_content: "Sinkzone: Block-by-default DNS tool for deep focus The internet
+  is infinite. Your focus isn’t. Sinkzone helps you reclaim control by flipping the
+  default: everything is blocked , unless you explicitly allow it. No feeds. No pings.
+  No surprise connections. Just a quiet, intentional internet. Learn More » &middot;
+  Quick Start &middot; Report a Bug &middot; Usage Guide --- \U0001F4DA Table of Contents
+  - [What is Sinkzone?](#what-is-sinkzone) - [Motivation](#motivation) - [Why use
+  Sinkzone?](#why-use-sinkzone) - [Key Features](#key-features) - [Demos](#demos)
+  - [Terminal User Interface (TUI)](#terminal-user-interface-tui) - [Command Line
+  Interface (CLI)](#command-line-interface-cli) - [Quick Start](#quick-start) - [Installation
+  by Platform](#installation-by-platform) - [Documentation](#documentation) - [Manual
+  Page](#manual-page) - [Usage](#usage) - [Common Commands](#common-commands) - [Wildcard
+  Patterns](#wildcard-patterns) - [TUI Navigation](#tui-navigation) - [How It Works](#how-it-works)
+  - [Architecture](#architecture) - [API Endpoints](#api-endpoints) - [Normal Mode](#normal-mode)
+  - [Focus Mode](#focus-mode) - [Configuration](#configuration) - [Development](#development)
+  - [License](#license) - [Contact](#contact) --- ## What is Sinkzone? Sinkzone is
+  a local DNS resolver that helps you eliminate distractions and get deep work done.
+  It blocks all domains by default — only the ones you explicitly allow can get through.
+  This means notifications, social media, news, and other time-sinks are unreachable
+  at the network level — not just in your browser. It features a modern HTTP API,
+  wildcard pattern support, and a beautiful terminal UI for real-time monitoring and
+  control. It's lightweight, cross-platform, and built for hackers, makers, and anyone
+  serious about focus. ## Motivation Most tools make you list what you want to block.
+  But the internet is infinite — that list never ends. It's much easier to list the
+  few things you actually want to allow. Sinkzone was born from that insight. I was
+  tired of coding sessions interrupted by Slack pings and email alerts. I needed something
+  stronger than a browser plugin — a system-level kill switch for distractions. Now
+  I can code for hours uninterrupted. Even my son uses Sinkzone during chess practice
+  to stay focused. **Sinkzone exists because I needed it. Maybe you do too.** ---
+  ## Why use Sinkzone? - Avoid distraction without browser extensions or hacks - Run
+  locally on macOS, Linux and Windows — no cloud, no telemetry - Perfect for deep
+  work sessions, writing, coding, or child safety - Terminal UI included — toggle
+  modes, view logs, edit allowlist --- ## Key Features - **DNS-level blocking**: Stops
+  distractions before they reach your apps - **Focus Mode**: Block all but allowlisted
+  domains for a set duration - **Wildcard Support**: Use patterns like `*github*`
+  or `*.google.com` for flexible domain matching - **HTTP API**: RESTful API for monitoring
+  and control - **Terminal UI**: Real-time DNS traffic viewer with tabbed interface
+  - **Memory-backed rules**: Focus mode expires automatically - **Cross-platform**:
+  Works on macOS and Linux --- ## Demos ### Terminal User Interface (TUI) The TUI
+  provides real-time DNS monitoring and allowlist management: *Real-time DNS traffic
+  monitoring, allowlist management, and focus mode control* ### Command Line Interface
+  (CLI) The CLI offers powerful command-line tools for system management: *Command-line
+  allowlist management, focus mode control, and system status monitoring* --- ## Quick
+  Start ### Installation by Platform \U0001F449 macOS Installation **Homebrew (Recommended):**
+  ```bash brew tap berbyte/ber brew install sinkzone ``` **Manual Setup:** ```bash
+  # 1. Start the DNS Resolver (default port 53, requires admin privileges) sudo sinkzone
+  resolver # 2. Launch the UI (in another terminal) sinkzone tui # 3. Enable Focus
+  Mode sinkzone focus start ``` **Configure System DNS (Required):** ```bash sudo
+  networksetup -setdnsservers \"Wi-Fi\" 127.0.0.1 ``` **Direct Download:** ```bash
+  # Apple Silicon (M1/M2) curl -L -o sinkzone https://github.com/berbyte/sinkzone/releases/latest/download/sinkzone-darwin-arm64
+  chmod +x sinkzone sudo mv sinkzone /usr/local/bin/ # Intel Mac curl -L -o sinkzone
+  https://github.com/berbyte/sinkzone/releases/latest/download/sinkzone-darwin-amd64
+  chmod +x sinkzone sudo mv sinkzone /usr/local/bin/ ``` --- \U0001F449 Linux Installation
+  **Package Managers (Recommended):** **Debian/Ubuntu:** ```bash # Download and install
+  the .deb package curl -L -O https://github.com/berbyte/sinkzone/releases/latest/download/sinkzone-linux-amd64.deb
+  sudo dpkg -i sinkzone-linux-amd64.deb ``` **Red Hat/Fedora/CentOS:** ```bash # Download
+  and install the .rpm package curl -L -O https://github.com/berbyte/sinkzone/releases/latest/download/sinkzone-linux-amd64.rpm
+  sudo rpm -i sinkzone-linux-amd64.rpm ``` **Alpine Linux:** ```bash # Download and
+  install the .apk package curl -L -O https://github.com/berbyte/sinkzone/releases/latest/download/sinkzone-linux-amd64.apk
+  sud"
 ---
 {% raw %}
 <a id="readme-top"></a>

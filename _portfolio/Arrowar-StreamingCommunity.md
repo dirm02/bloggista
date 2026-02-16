@@ -2,8 +2,66 @@
 layout: project
 name: Arrowar Streamingcommunity
 slug: Arrowar-StreamingCommunity
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/pypi/v/streamingcommunity?logo=pypi&logoColor=white&labelColor=2d3748&color=3182ce&style=for-the-badge
 repo_url: https://github.com/Arrowar/StreamingCommunity
+indexed_content: "[](https://pypi.org/project/streamingcommunity/) [](https://ko-fi.com/arrowar)
+  [](https://github.com/Arrowar/StreamingCommunity/releases/latest/download/StreamingCommunity_win_2025_x64.exe)
+  [](https://github.com/Arrowar/StreamingCommunity/releases/latest/download/StreamingCommunity_mac_15_x64)
+  [](https://github.com/Arrowar/StreamingCommunity/releases/latest/download/StreamingCommunity_linux_24_04_x64)
+  *⚡ **Quick Start:** `pip install StreamingCommunity && StreamingCommunity`* ## \U0001F4D6
+  Table of Contents - [Installation](#installation) - [Quick Start](#quick-start)
+  - [DNS Configuration](#dns-configuration) - [Downloaders](#downloaders) - [Configuration](#configuration)
+  - [Usage Examples](#usage-examples) - [Global Search](#global-search) - [Advanced
+  Features](#advanced-features) - [Docker](#docker) - [TO DO](#todo) - [Related Projects](#related-projects)
+  --- ## Installation ### Manual Clone ```bash git clone https://github.com/Arrowar/StreamingCommunity.git
+  cd StreamingCommunity pip install -r requirements.txt python test_run.py ``` ###
+  Update ```bash python update.py ``` ### Additional Documentation - \U0001F4DD [Login
+  Guide](.github/doc/login.md) - Authentication for supported services --- ## Quick
+  Start ```bash # If installed via PyPI StreamingCommunity # If cloned manually python
+  test_run.py ``` --- ## DNS Configuration **Required for optimal functionality and
+  reliability.** Use one of these DNS providers: - **Cloudflare DNS**: `1.1.1.1` -
+  [Setup guide](https://developers.cloudflare.com/1.1.1.1/setup/) - **Quad9 DNS**:
+  `9.9.9.9` - [Setup guide](https://quad9.net/) --- ## Downloaders | Type | Description
+  | Example | |------|-------------|---------| | **HLS** | HTTP Live Streaming (m3u8)
+  | [View example](./Test/Downloads/HLS.py) | | **MP4** | Direct MP4 download | [View
+  example](./Test/Downloads/MP4.py) | | **DASH** | MPEG-DASH with DRM bypass* | [View
+  example](./Test/Downloads/DASH.py) | | **MEGA** | MEGA.nz downloads | [View example](./Test/Downloads/MEGA.py)
+  | **\\*DASH with DRM bypass:** Requires a valid L3 CDM (Content Decryption Module).
+  This project does not provide or facilitate obtaining CDMs. Users must ensure compliance
+  with applicable laws. --- ## Configuration Key configuration parameters in `config.json`:
+  ### Output Directories ```json { \"OUT_FOLDER\": { \"root_path\": \"Video\", \"movie_folder_name\":
+  \"Movie\", \"serie_folder_name\": \"Serie\", \"anime_folder_name\": \"Anime\", \"map_episode_name\":
+  \"%(episode_name) S%(season)E%(episode)\", \"add_siteName\": false } } ``` - **`root_path`**:
+  Base directory where videos are saved - Windows: `C:\\\\MyLibrary\\\\Folder` or
+  `\\\\\\\\MyServer\\\\Share` - Linux/MacOS: `Desktop/MyLibrary/Folder` - **`movie_folder_name`**:
+  Subfolder name for movies (default: `\"Movie\"`) - **`serie_folder_name`**: Subfolder
+  name for TV series (default: `\"Serie\"`) - **`anime_folder_name`**: Subfolder name
+  for anime (default: `\"Anime\"`) - **`map_episode_name`**: Episode filename template
+  - `%(tv_name)`: TV Show name - `%(season)`: Season number (zero-padded) - `%(episode)`:
+  Episode number (zero-padded) - `%(episode_name)`: Episode title - Example: `\"%(episode_name)
+  S%(season)E%(episode)\"` → `\"Pilot S01E01\"` - **`add_siteName`**: Append site
+  name to root path (default: `false`) ### M3U8 Download Settings ```json { \"M3U8_DOWNLOAD\":
+  { \"auto_select\": true, \"thread_count\": 12, \"retry_count\": 40, \"concurrent_download\":
+  true, \"max_speed\": \"30MB\", \"check_segments_count\": true, \"select_video\":
+  \"res=.*1080.*:for=best\", \"select_audio\": \"lang='ita|Ita':for=all\", \"select_subtitle\":
+  \"lang='ita|eng|Ita|Eng':for=all\", \"cleanup_tmp_folder\": true } } ``` #### Performance
+  Settings - **`skip_download`**: Skip the download step and process existing files
+  (default: `false`) - **`thread_count`**: Number of parallel download threads (default:
+  `12`) - **`retry_count`**: Maximum retry attempts for failed segments (default:
+  `40`) - **`concurrent_download`**: Download video and audio simultaneously (default:
+  `true`) - **`max_speed`**: Speed limit per stream (e.g., `\"30MB\"`, `\"10MB\"`)
+  - **`real_time_decryption`**: Decrypt segments in real-time during download instead
+  of post-processing (default: `false`) - **`check_segments_count`**: Verify segment
+  count matches manifest (default: `true`) - **`cleanup_tmp_folder`**: Remove temporary
+  files after download (default: `true`) #### Stream Selection **- `select_video`**
+  ``` OPTIONS: id=REGEX:lang=REGEX:name=REGEX:codecs=REGEX:res=REGEX:frame=REGEX:
+  segsMin=number:segsMax=number:ch=REGEX:range=REGEX:url=REGEX: plistDurMin=hms:plistDurMax=hms:bwMin=int:bwMax=int:role=string:for=FOR
+  for=FOR: Selection type - best (default), best[number], worst[number], all ``` ```json
+  \"select_video\": \"for=best\" // Select best video \"select_video\": \"res=3840*:codecs=hvc1:for=best\"
+  // Select 4K HEVC video \"select_video\": \"res=1080:for=best\" // Select 1080p
+  video \"select_video\": \"plistDurMin=1h20m30s:for=best\" // Duration > 1h 20m 30s
+  \"select_video\": \"role=main:for=best\" // Main video role \"select_video\": \"bwMin=800:bwMax=1"
 ---
 {% raw %}
 <div align="center">

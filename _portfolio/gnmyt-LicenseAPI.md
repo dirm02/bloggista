@@ -2,8 +2,18 @@
 layout: project
 name: Gnmyt Licenseapi
 slug: gnmyt-LicenseAPI
+category: Serv&Prod-Tools
 image: https://i.imgur.com/FhhBu5h.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/gnmyt-LicenseAPI
+indexed_content: "--- A free, self-hosted licensing system for your software ## Features
+  - **Permission System** - **Group Management** - **Assign Metadata to Licenses**
+  - **Offline License Validation** - **Collaborate with your team** - **Integrate
+  using the REST API or SDKs** ## Get Started LicenseAPI allows you to generate licenses
+  for your software and validate them. It is built with security in mind and is easy
+  to use. ### Quick Start Guide ```shell curl -sSL https://get.docker.com | sh wget
+  https://raw.githubusercontent.com/gnmyt/LicenseAPI/main/docker-compose.yml docker
+  compose up -d ``` ## Screenshots ### Licenses ### Permissions ### Groups ### Metadata
+  ### Access keys ### Members ### Projects"
 ---
 {% raw %}
 <br/>

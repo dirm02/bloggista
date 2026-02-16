@@ -2,8 +2,61 @@
 layout: project
 name: Rwaldron Johnny Five
 slug: rwaldron-johnny-five
+category: Uncategorized
 image: https://github.com/rwaldron/johnny-five/raw/main/assets/sgier-johnny-five.png
 repo_url: https://github.com/rwaldron/johnny-five
+indexed_content: '# Johnny-Five ### The JavaScript Robotics Programming Framework
+  _Artwork by [Mike Sgier](http://msgierillustration.com)_ [](https://github.com/rwaldron/johnny-five/actions)
+  [](https://ci.appveyor.com/project/rwaldron/johnny-five) [](https://coveralls.io/github/rwaldron/johnny-five?branch=main)
+  [](https://packagephobia.now.sh/result?p=johnny-five) [](https://gitter.im/rwaldron/johnny-five)
+  **Johnny-Five is an Open Source, Firmata Protocol based, IoT and Robotics programming
+  framework, developed by the [Nodebots](https://twitter.com/nodebots) Community.
+  Johnny-Five programs can be written for Arduino (all models), Electric Imp, Beagle
+  Bone, Intel Galileo & Edison, Linino One, Pinoccio, pcDuino3, Raspberry Pi, Particle/Spark
+  Core & Photon, Tessel 2, TI Launchpad and more!** Johnny-Five has grown from a passion
+  project into a tool for inspiring learning and creativity for people of all ages,
+  backgrounds, and from all across the world. Just interested in learning and building
+  awesome things? You might want to start with the official [Johnny-Five website](http://johnny-five.io).
+  * If you want to find the API documentation, [that’s right here](http://johnny-five.io/api/).
+  * Need to figure out what platform to use for a project? We put that stuff [here](http://johnny-five.io/platform-support/).
+  * Need inspiration for your next NodeBot? Check out the [examples](http://johnny-five.io/examples/).
+  * Want to stay up-to-date with projects in the community? [Check this out](http://johnny-five.io/articles/).
+  * Need NodeBots community or Johnny-Five project updates and announcements? [This](http://johnny-five.io/news/)
+  is what you’re looking for. Johnny-Five does not attempt to provide "all the things",
+  but instead focuses on delivering robust, reality tested, highly composable APIs
+  that behave consistently across all supported hardware platforms. Johnny-Five wants
+  to be a baseline control kit for hardware projects, allowing you the freedom to
+  build, grow and experiment with diverse JavaScript libraries of your own choice.
+  Johnny-Five couples comfortably with: - Popular application libraries such as [Express.js](http://expressjs.com/)
+  and [Socket.io](http://socket.io/). - Fellow hardware projects like [ar-drone](https://github.com/felixge/node-ar-drone),
+  [Aerogel](https://github.com/ceejbot/aerogel) and [Spheron](https://github.com/alchemycs/spheron)
+  - Bluetooth game controllers like [XBox Controller](https://github.com/andrew/node-xbox-controller)
+  and [DualShock](https://github.com/rdepena/node-dualshock-controller) - IoT frameworks,
+  such as [Octoblu](http://www.octoblu.com/) ...And that''s only a few of the many
+  explorable possibilities. Check out these exciting projects: [node-pulsesensor](https://www.npmjs.org/package/node-pulsesensor),
+  [footballbot-workshop-ui](https://www.npmjs.org/package/footballbot-workshop-ui),
+  [nodebotui](https://www.npmjs.org/package/nodebotui), [dublin-disco](https://www.npmjs.org/package/dublin-disco),
+  [node-slot-car-bot](https://www.npmjs.org/package/node-slot-car-bot), [servo-calibrator](https://www.npmjs.org/package/servo-calibrator),
+  [node-ardx](https://www.npmjs.org/package/node-ardx), [nodebot-workshop](https://www.npmjs.org/package/nodebot-workshop),
+  [phone-home](https://www.npmjs.org/package/phone-home), [purple-unicorn](https://www.npmjs.org/package/purple-unicorn),
+  [webduino](https://www.npmjs.org/package/webduino), [leapduino](https://www.npmjs.org/package/leapduino),
+  [lasercat-workshop](https://www.npmjs.org/package/lasercat-workshop), [simplesense](https://www.npmjs.org/package/simplesense),
+  [five-redbot](https://www.npmjs.org/package/five-redbot), [robotnik](https://www.npmjs.org/package/robotnik),
+  [the-blender](https://www.npmjs.org/package/the-blender) **Why JavaScript?** [NodeBots:
+  The Rise of JavaScript Robotics](http://www.voodootikigod.com/nodebots-the-rise-of-js-robotics)
+  ## Hello Johnny The ubiquitous "Hello World" program of the microcontroller and
+  SoC world is "blink an LED". The following code demonstrates how this is done using
+  the Johnny-Five framework. ```javascript const { Board, Led } = require("johnny-five");
+  const board = new Board(); board.on("ready", () => { // Create an Led on pin 13
+  const led = new Led(13); // Blink every half second led.blink(500); }); ``` > Note:
+  Node will crash if you try to run johnny-five in the node REPL, but board instances
+  will create their own contextual REPL. Put your script in a file. ## Supported Hardware
+  Johnny-Five has been tested on a variety of Arduino-compatible [Boards](https://github.com/rwaldron/johnny-five/wiki/Board).
+  For non-Arduino based projects, a number of platform-specific [IO Plugins](https://github.com/rwaldron/johnny-five/wiki/IO-Plugins)
+  are available. IO Plugins allow Johnny-Five code to communicate with any non-Arduino
+  based hardware in whatever language that platforms speaks! ## Documentation Documentation
+  for the Johnny-Five API can be found [here](http://johnny-five.io/api/) and [example
+  programs here](htt'
 ---
 {% raw %}
 ![](https://github.com/rwaldron/johnny-five/raw/main/assets/sgier-johnny-five.png)

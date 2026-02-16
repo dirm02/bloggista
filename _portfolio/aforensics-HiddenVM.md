@@ -2,8 +2,69 @@
 layout: project
 name: Aforensics Hiddenvm
 slug: aforensics-HiddenVM
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/aforensics-HiddenVM/misc/hiddenvm-logo-full.svg
 repo_url: https://github.com/aforensics/HiddenVM
+indexed_content: "|foo| .. |foo| raw:: html &nbsp; &nbsp; &nbsp; .. raw:: html HiddenVM
+  PLEASE NOTE: If at any time Tails pushes an unexpected update, and HiddenVM is not
+  yet updated for it, and you are stuck with a new Tails and no working HiddenVM version,
+  you can re-download and temporarily use an earlier version of Tails until HiddenVM
+  is updated. There are `archived direct HTTP download mirrors of Tails images `_,
+  `archived official torrents with PGP signatures `_, or third party archives at linuxtracker.org
+  or fosstorrents.com etc. (Always verify third party torrents with archived official
+  PGP sigs for safety.) Unless there is a known security vulnerability patched by
+  the new Tails which actually affects how you use Tails, doing a temporary downgrade
+  is not unsafe. You aren't necessarily unsafe by using older-than-one-month-old Tails
+  software for a short time. Thank you for your patience, and stay safe. .. contents::
+  About ---------------------- **HiddenVM** is an innovation in computing privacy.
+  Imagine you're entering a country at the airport. The border agents seize your laptop
+  and force you to unlock it so that they can violate your privacy, treat you like
+  a criminal, and `insult your humanity `_. Is that the world you want to live in?
+  Whether you use Windows, macOS or Linux, now there's a tech solution for better
+  privacy: **HiddenVM**. **HiddenVM** is a simple, one-click, free and open-source
+  Linux application that allows you to run Oracle's open-source `VirtualBox software
+  `_ on the `Tails operating system `_. This means you can run almost any OS as a
+  VM inside the most anti-forensic computing environment in the world. Works where
+  Tails does. The VM will even connect to full-speed pre-Tor Internet by default,
+  while leaving the Tor connection in Tails undisturbed. To ensure anti-forensic deniability
+  of your VMs, you can place your persistent HiddenVM installation - containing all
+  VirtualBox binaries, VMs, and HiddenVM itself - in a `hidden VeraCrypt volume `_\\
+  , and only mount it in the amnesic Tails. If you set it up correctly, when your
+  computer is turned off all anyone can plausibly see is a blank Tails USB and a 'wiped'
+  hard drive full of meaningless data, or a default booting decoy OS in a partition
+  that you can create. How does it feel to have *no* trace of your entire operating
+  system - whether it's Windows, macOS or Linux - ever touch your hard drive? Now
+  you can find out. HiddenVM: *insanely private!* Installation and usage ----------------------
+  **Before you install:** * Always have two Tails USB sticks, with one as a backup
+  of the latest working Tails for your current HiddenVM. * Always upgrade Tails on
+  your second stick, in case the new Tails doesn't work with your current HiddenVM.
+  * Always give us time to troubleshoot and fix our code to make it work with a new
+  Tails version. Thank you for your patience. * This will give you stability and prevent
+  you from being locked out of your HiddenVM at any point due to a Tails upgrade.
+  **Install:** * Boot into `Tails `_ on your computer and set an `admin password `_
+  for your session. * `Do NOT use `_ Tails' `persistent volume feature `_. * Create
+  and mount a deniable, secure storage environment on internal or external media such
+  as a `VeraCrypt `_ volume. * \\ `Download our latest release ZIP `_\\ and extract
+  the archive. * Run our AppImage file in the Files browser. * Choose to store HiddenVM
+  in your secure storage and it will download all binaries to launch VirtualBox. **Usage:**
+  * After initially installing HiddenVM you can use it offline where each VirtualBox
+  launch takes about 2 minutes. How can I trust the HiddenVM AppImage file? -------------------------------------------
+  **You don't have to. Inspect the AppImage code:** * Open a Terminal and ``cd`` to
+  the folder containing our AppImage. * Run ``mkdir inspect && sudo mount HiddenVM-*-x86_64.AppImage
+  inspect -o offset=188456`` * Every file in the mounted folder can be inspected with
+  a text editor. To search for IP addresses or web domains that HiddenVM could try
+  to phone home to and violate your privacy, use `Searchmonkey `_ (\\ ``sudo apt install
+  searchmonkey``\\ ) to recursively search for ``\\.\\S`` in the mounted folder's
+  files. * Once you trust the current version of HiddenVM, when new releases arrive
+  you can track code changes by using `Meld `_ (\\ ``sudo apt install meld``\\ ).
+  Drag and drop the old and new folders together into *Meld*\\ , and any code differences
+  will be highlighted. **Also you can check the integrity of our ZIP release file:**
+  * Download both our ZIP and the SHA512. * Extract our AppImage and place it next
+  to the SHA512. * Do ``sha512sum -c HiddenVM-*-x86_64.sha512`` and it will check
+  both the ZIP and the AppImage. **Or generate your own AppImage from our source code
+  once you trust it:** #. ``git clone https://github.com/aforensics/HiddenVM.git``
+  #. ``cd HiddenVM/appimage`` #. ``./make-appimage.sh`` (The script will download
+  **appimagetool** from `AppImageKit `_ if it needs to.) See your "
 ---
 {% raw %}
 |foo|

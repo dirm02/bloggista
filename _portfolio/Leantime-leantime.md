@@ -2,8 +2,69 @@
 layout: project
 name: Leantime Leantime
 slug: Leantime-leantime
+category: Management- Engineering- SocialM
 image: https://img.shields.io/github/license/leantime/leantime?style=flat-square
 repo_url: https://github.com/Leantime/leantime
+indexed_content: "# Leantime&reg; ⭐ If you find Leantime useful, please star us on
+  GitHub! ⭐ Leantime is an open source project management system for non-project managers.
+  We combine strategy, planning and execution while making it easy for everyone on
+  the team to use. Built with ADHD, dyslexia and autism in mind. \U0001F9E0 \U0001F4AA
+  As simple as Trello but as feature-rich as Jira \U0001F504 A perfect alternative
+  to ClickUp, Monday, or Asana \U0001F310 [https://leantime.io](https://leantime.io)
+  [](https://www.gnu.org/licenses/agpl-3.0.en.html) [](https://hub.docker.com/r/leantime/leantime)
+  [](https://discord.gg/4zMzJtAq9z) [](https://crowdin.com/project/leantime) ## \U0001F680
+  Features* ## | Task Management | Project Planning | Information/Knowledge Management
+  | Administration | | --------------------------------------------------------------------
+  | -------------------------------------------- | ---------------------------------------
+  |-------------------------------------------------| | Task management via kanban
+  boards, gantt, table, list and calendar views | Project Dashboards, reports & status
+  updates | Wikis / Docs | Easy installation | | Unlimited subtasks and dependencies
+  | Goal & metrics tracking | Idea Boards | Multiple user roles and per project permissions
+  | | Milestone management | Lean & Business Model Canvas | Retrospectives | Two factor
+  authentication | | Sprint Management | SWOT Analysis canvas | File Storage via S3
+  or local filesystem | LDAP, OIDC integration | | Timetracking & timesheets | Risk
+  Analysis | Screen & webcam recording | Extendable via plugins and API | | | ...
+  and more | Comments/discussions on everything | Integrates with Slack, Mattermost,
+  Discord | | | ... and more | | Available in over 20 languages | *yes, all of these
+  features are included in the OSS version ### \U0001F4F8 Screenshots ### ### ❗System
+  Requirements ### * PHP 8.2+ * MySQL 8.0+ or MariaDB 10.6+ * Apache or Nginx (IIS
+  works with some modifications) * PHP Extensions: * BC Math (bcmath) * Ctype * cURL
+  * DOM * Exif * Fileinfo * Filter * GD * Hash * LDAP * Multibyte String (mbstring)
+  * MySQL * OPcache * OpenSSL * PCNTL * PCRE * PDO * Phar * Session * Tokenizer *
+  Zip * SimpleXML ### ️⚡️ Installation (Production) ### There are two main ways to
+  install LeanTime for production. The first of which is to install all needed pieces
+  of the system locally. The second is to use the officially supported Docker image.
+  #### Local Production Installation #### * Download latest release package (file
+  is called: Leantime-vx.x.x.zip) from the release page * Create an empty MySQL database
+  * Upload the entire directory to your server * Point your domain root to the `public/`
+  directory * Rename `config/sample.env` to `config/.env` * Fill in your database
+  credentials (username, password, host, dbname) in `config/.env` * Navigate to `
+  /install` * Follow instructions to install database and set up first user account
+  ##### IIS Installation Notes ##### Whilst the steps above are applicable to Internet
+  Information Services (IIS), there is an additional configuration change that may
+  be required in IIS to ensure full functionality - you need to allow the PATCH method:
+  * Open IIS * Expand the server and sites on the left and select the LeanTime site
+  * Double click on `Handler Mappings` * Double click on the PHP handler mapping that
+  is used by the site * Click `Request Restrictions…` * Click the `Verbs` tab * In
+  the `One of the following verbs` text box, add `PATCH` - for example: `GET,HEAD,POST,PATCH`
+  * Click `OK` * In the `Executable (optional)` text box, put a double quote character
+  (`“`) at the start and at the end of the path to the `php-cgi.exe` file (_this isn't
+  needed if the path doesn't have a space in it_) * Click `OK` * A popup will appear
+  asking if you want to create a FastCGI application - click `Yes` Note: You may need
+  to repeat this when you upgrade PHP. #### Production Installation via Docker ####
+  We maintain an official Docker image on dockerhub . To run the image enter your
+  MySQL credentials and execute. You can pass in all the configuration variables from
+  .env ``` docker run -d --restart unless-stopped -p 8080:8080 --network leantime-net
+  \\ -e LEAN_DB_HOST=mysql_leantime \\ -e LEAN_DB_USER=admin \\ -e LEAN_DB_PASSWORD=321.qwerty
+  \\ -e LEAN_DB_DATABASE=leantime \\ -e LEAN_EMAIL_RETURN=changeme@local.local \\
+  --name leantime leantime/leantime:latest ``` Unless you have a database defined
+  somewhere else you should use our [docker-compose file](https://github.com/Leantime/docker-leantime/blob/master/docker-compose.yml).
+  Once started you can go to ` /install` and run the installation script. **Important:
+  If you are planning to use plugins you need to mount the plugin folder `plugins:/var/www/html/app/Plugins`
+  and ensure the www-data user has access to it. Otherwise installation may fail or
+  plugins will be removed after a restart** ##### Docker Installation Notes #####
+  If you intend to place Leantime behind a reverse proxy (nginx, etc.) to handle custom
+  domain name resolution and SSL offloading, you will n"
 ---
 {% raw %}
 

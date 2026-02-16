@@ -2,8 +2,26 @@
 layout: project
 name: Joyceql Magic Resume
 slug: JOYCEQL-magic-resume
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/License-Apache_2.0-blue.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# ✨ Magic Resume ✨ [](https://opensource.org/licenses/Apache-2.0)
+  简体中文 | [English](./README.en-US.md) Magic Resume 是一个现代化的在线简历编辑器，让创建专业简历变得简单有趣。基于
+  Next.js 和 Motion 构建，支持实时预览和自定义主题。 ## \U0001F4F8 项目截图 ## ✨ 特性 - \U0001F680 基于 Next.js
+  16+ 构建 - \U0001F4AB 流畅的动画效果 (Motion) - \U0001F3A8 自定义主题支持 - \U0001F319 深色模式 - \U0001F4E4
+  导出为 PDF - \U0001F504 实时预览 - \U0001F4BE 自动保存 - \U0001F512 硬盘级存储 ## \U0001F6E0️ 技术栈
+  - Next.js 16+ - TypeScript - Motion - Tiptap - Tailwind CSS - Zustand - Shadcn/ui
+  - Lucide Icons ## \U0001F680 快速开始 1. 克隆项目 ```bash git clone git@github.com:JOYCEQL/magic-resume.git
+  cd magic-resume ``` 2. 安装依赖 ```bash pnpm install ``` 3. 启动开发服务器 ```bash pnpm dev
+  ``` 4. 打开浏览器访问 `http://localhost:3000` ## \U0001F4E6 构建打包 ```bash pnpm build ```
+  ## \U0001F433 Docker 部署 ### Docker Compose 1. 确保你已经安装了 Docker 和 Docker Compose 2.
+  在项目根目录运行： ```bash docker compose up -d ``` 这将会： - 自动构建应用镜像 - 在后台启动容器 ## \U0001F4DD
+  开源协议 本项目采用 Apache 2.0 协议，但有一些自定义的部分 - 查看 [LICENSE](LICENSE) 了解详情 ## \U0001F5FA️
+  路线图 - [x] AI 辅助编写 - [x] 多语言支持 - [ ] 支持更多简历模板 - [ ] 更多格式导出 - [x] 自定义模型 - [ ] 智能一页
+  - [ ] 导入 PDF, Markdown 等 - [ ] 在线简历托管 ## \U0001F4C8 Star History ## \U0001F4DE 联系方式
+  可以通过以下方式关注最新动态: - 作者：SiYue - X: @GuangzhouY81070 - Discord: 欢迎加入群组 https://discord.gg/9mWgZrW3VN
+  - 邮箱：18806723365@163.com - 项目主页：https://github.com/JOYCEQL/magic-resume ## \U0001F31F
+  支持项目"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,67 @@
 layout: project
 name: Exadel Inc Compreface
 slug: exadel-inc-CompreFace
+category: Uncategorized
 image: https://user-images.githubusercontent.com/3736126/147130206-17234c47-8d40-490f-8d93-57014fa6d87e.png
 repo_url: https://github.com/exadel-inc/CompreFace
+indexed_content: 'Exadel CompreFace is a leading free and open-source face recognition
+  system Exadel CompreFace is a free and open-source face recognition service that
+  can be easily integrated into any system without prior machine learning skills.
+  CompreFace provides REST API for face recognition, face verification, face detection,
+  landmark detection, mask detection, head pose detection, age, and gender recognition
+  and is easily deployed with docker. Official website Contributing · Submit an Issue
+  · Blog · Community chat &nbsp; &nbsp; # Table Of Contents * [Overview](#overview)
+  * [Screenshots](#screenshots) * [Video tutorials](#videos) * [News and updates](#news-and-updates)
+  * [Features](#features) * [Functionalities](#functionalities) * [Getting Started
+  with CompreFace](#getting-started-with-compreface) * [CompreFace SDKs](#compreface-sdks)
+  * [Documentation](/docs) * [How to Use CompreFace](/docs/How-to-Use-CompreFace.md)
+  * [Face Services and Plugins](/docs/Face-services-and-plugins.md) * [Rest API Description](/docs/Rest-API-description.md)
+  * [Postman documentation and collection](https://documenter.getpostman.com/view/17578263/UUxzAnde)
+  * [Face Recognition Similarity Threshold](/docs/Face-Recognition-Similarity-Threshold.md)
+  * [Configuration](/docs/Configuration.md) * [Architecture and Scalability](/docs/Architecture-and-scalability.md)
+  * [Custom Builds](/docs/Custom-builds.md) * [Face data migration](/docs/Face-data-migration.md)
+  * [User Roles System](/docs/User-Roles-System.md) * [Face Mask Detection Plugin](/docs/Mask-detection-plugin.md)
+  * [Kubernetes configuration](https://github.com/exadel-inc/compreface-kubernetes)
+  * [Gathering Anonymous Statistics](/docs/Gathering-anonymous-statistics.md) * [Installation
+  Options](/docs/Installation-options.md) * [Contributing](#contributing) * [License
+  info](#license-info) # Overview Exadel CompreFace is a free and open-source face
+  recognition GitHub project. Essentially, it is a docker-based application that can
+  be used as a standalone server or deployed in the cloud. You don’t need prior machine
+  learning skills to set up and use CompreFace. The system provides REST API for face
+  recognition, face verification, face detection, landmark detection, mask detection,
+  head pose detection, age, and gender recognition. The solution also features a role
+  management system that allows you to easily control who has access to your Face
+  Recognition Services. CompreFace is delivered as a docker-compose config and supports
+  different models that work on CPU and GPU. Our solution is based on state-of-the-art
+  methods and libraries like FaceNet and InsightFace. # Screenshots More Screenshots
+  # Videos More Videos # News and updates [Subscribe](https://info.exadel.com/en/compreface-news-and-updates)
+  to CompreFace News and Updates to never miss new features and product improvements.
+  # Features The system can accurately identify people even when it has only “seen”
+  their photo once. Technology-wise, CompreFace has several advantages over similar
+  free face recognition solutions. CompreFace: - Supports both CPU and GPU and is
+  easy to scale up - Is open source and self-hosted, which gives you additional guarantees
+  for data security - Can be deployed either in the cloud or on premises - Can be
+  set up and used without machine learning expertise - Uses FaceNet and InsightFace
+  libraries, which use state-of-the-art face recognition methods - Starts quickly
+  with just one docker command # Functionalities - Supports many face recognition
+  services: - [face detection](/docs/Face-services-and-plugins.md#face-detection)
+  - [face recognition](/docs/Face-services-and-plugins.md#face-recognition) - [face
+  verification](/docs/Face-services-and-plugins.md#face-verification) - [landmark
+  detection plugin](/docs/Face-services-and-plugins.md#face-plugins) - [age recognition
+  plugin](/docs/Face-services-and-plugins.md#face-plugins) - [gender recognition plugin](/docs/Face-services-and-plugins.md#face-plugins)
+  - [face mask detection plugin](/docs/Face-services-and-plugins.md#face-plugins)
+  - [head pose plugin](/docs/Face-services-and-plugins.md#face-plugins) - Use the
+  CompreFace UI panel for convenient user roles and access management # Getting Started
+  with CompreFace ### Requirements 1. Docker and Docker compose (or Docker Desktop)
+  2. CompreFace could be run on most modern computers with [x86 processor](https://en.wikipedia.org/wiki/X86)
+  and [AVX support](https://en.wikipedia.org/wiki/Advanced_Vector_Extensions). To
+  check AVX support on Linux run `lscpu | grep avx` command ### To get started (Linux,
+  MacOS): 1. Install Docker and Docker Compose 2. Download the archive from our latest
+  release: https://github.com/exadel-inc/CompreFace/releases 3. Unzip the archive
+  4. Open the terminal in this folder and run this command: `docker-compose up -d`
+  5. Open the service in your browser: http://localhost:8000/login ### To get started
+  (Windows): 1. Install Docker Desktop 2. Download the archive from our latest release:
+  https://github.com/exadel-'
 ---
 {% raw %}
 

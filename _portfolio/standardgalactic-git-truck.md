@@ -2,8 +2,30 @@
 layout: project
 name: Standardgalactic Git Truck
 slug: standardgalactic-git-truck
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/license-MIT-blue.svg
 repo_url: https://github.com/git-truck/git-truck
+indexed_content: "# Git Truck \U0001F69B &middot; [](https://github.com/git-truck/git-truck/blob/main/LICENSE)
+  [](https://www.npmjs.com/git-truck) Git Truck is a tool that provides you with a
+  truckload of visualizations of your git repository. With Git Truck you can: - See
+  who worked on different parts of the project - Get an overview of the file structure
+  - See where there is the most activity in your project - See how your project has
+  looked at different points in time | | | | -----------------------------------------------------------------------------------------
+  | ---------------------------------------------------------------------------------------------
+  | | | | You can read more about the features in the [feature overview](https://git-truck.github.io/git-truck/GitTruckTeaser),
+  [in papers about Git Truck](https://github.com/git-truck/papers/blob/master/README.md),
+  or just try it and start exploring your projects! ## [Get started](#get-started)
+  1. In your terminal, navigate to a git repository or a folder containing several
+  repositories 2. Run the command `npm install -g git-truck@latest` to install or
+  update Git Truck. 3. Now you can run Git Truck using the command `git truck` 4.
+  The application will now open in your default browser. Happy trucking! > [!NOTE]
+  > To use Git Truck, you will need to have the following programs installed: > >
+  - [Node.js](https://nodejs.org/en/) 22.0.0 or newer and npm 10.0 or newer > - [git](https://git-scm.com/downloads)
+  2.29 or newer > > Check your installed versions using `node --version`, `npm --version`
+  and `git --version`. ## [What makes Git Truck different?](#what-makes-git-truck-different)
+  \U0001F512 Private by design \U0001F3DD️ Works offline \U0001F937 Git provider agnostic
+  - works with any git repository \U0001F60A No tracking, no ads, no cloud, no servers,
+  no subscription"
 ---
 {% raw %}
 # Git Truck 🚛 &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/git-truck/git-truck/blob/main/LICENSE) [![Git Truck on NPM](https://img.shields.io/npm/v/git-truck)](https://www.npmjs.com/git-truck)

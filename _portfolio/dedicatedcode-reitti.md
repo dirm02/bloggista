@@ -2,8 +2,68 @@
 layout: project
 name: Dedicatedcode Reitti
 slug: dedicatedcode-reitti
+category: Educational-map
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dedicatedcode-reitti/.github/banner.png
 repo_url: https://github.com/rtuszik/photon-docker
+indexed_content: 'Reitti is a comprehensive personal location tracking and analysis
+  application that helps you understand your movement patterns and significant places.
+  The name "Reitti" comes from Finnish, meaning "route" or "path". ## Features ###
+  Main View ### Multiple Users View ### Live View Mode ### Statistics View ### Login
+  page ### Core Location Analysis - **Visit Detection**: Automatically identify places
+  where you spend time - **Trip Analysis**: Track your movements between locations
+  with transport mode detection (walking, cycling, driving) - **Significant Places**:
+  Recognize and categorize frequently visited locations with custom naming - **Timeline
+  View**: Interactive daily timeline showing visits and trips with duration and distance
+  information - **Raw Location Tracking**: Visualize your complete movement path with
+  detailed GPS tracks - **Multi-User-View**: Visualize all your family and friends
+  on a single map - **Live-Mode**: Visualize incoming data automatically without having
+  to reload the map - **Fullscreen-Mode**: Display the map in fullscreen. Combined
+  with the Live-Mode you got a nice kiosk-display ### Data Import & Integration -
+  **Multiple Import Formats**: Support for GPX files, Google Takeout JSON, Google
+  Timeline Exports and GeoJSON files - **Real-time Data Ingestion**: Live location
+  updates via OwnTracks and GPSLogger mobile apps - **Batch Processing**: Efficient
+  handling of large location datasets with direct processing - **API Integration**:
+  RESTful API for programmatic data access and ingestion ### Photo Management - **Immich
+  Integration**: Connect with self-hosted Immich photo servers - **Location-based
+  Photos**: View photos taken at specific locations and dates on your timeline - **Interactive
+  Photo Viewer**: Full-screen photo modal with keyboard navigation - **Photo Grid
+  Display**: Organized photo galleries for locations with multiple images ### User
+  Management & Security - **Multi-user Support**: Multiple user accounts with individual
+  data isolation - **API Token Management**: Secure API access with token-based authentication
+  - **User Profile Management**: Customizable display names and secure password management
+  ### Geocoding & Address Resolution - **Multiple Geocoding Services**: Support for
+  custom geocoding providers (Nominatim, etc.) - **Automatic Address Resolution**:
+  Convert coordinates to human-readable addresses - **Service Management**: Configure
+  multiple geocoding services with automatic failover ### Customization & Localization
+  - **Multi-language Support**: Available in English, Finnish, German, and French
+  - **Unit System**: Display distances in the Imperial or Metric system - **Queue
+  Monitoring**: Real-time job status and processing queue visibility - **Custom Tiles-Server**:
+  Ability to use your own tiles-server ### Privacy & Self-hosting - **Complete Data
+  Control**: Your location data never leaves your server - **Self-hosted Solution**:
+  Deploy on your own infrastructure - **Asynchronous Processing**: Handle large datasets
+  efficiently with direct processing and RabbitMQ-based task scheduling ## Getting
+  Started ### Prerequisites - Java 24 or higher - Maven 3.6 or higher - Docker and
+  Docker Compose - PostgreSQL database with spatial extensions (PostGIS) - RabbitMQ
+  - Redis for caching ### Quick Start with Docker The easiest way to get started is
+  using Docker Compose: 1. Get the docker compose file ```bash mkdir reitti cd reitti
+  wget https://raw.githubusercontent.com/dedicatedcode/reitti/refs/heads/main/docker-compose.yml
+  ``` or manually downloading it [here](https://raw.githubusercontent.com/dedicatedcode/reitti/refs/heads/main/docker-compose.yml)
+  2. Adjust the compose file to your needs Pay special attention to the Photon `REGION`.
+  This should match your main location,see [available-regions](https://github.com/rtuszik/photon-docker?tab=readme-ov-file#available-regions)
+  for all available regions. 4. Start all services (PostgreSQL, RabbitMQ, Redis and
+  Reitti) ```bash docker compose up -d ``` 5. Access the application at `http://localhost:8080`
+  6. Login with admin:admin **Note for ARM64 users (Apple Silicon, etc.):** Until
+  [postgis/docker-postgis#216](https://github.com/postgis/docker-postgis/issues/216)
+  is fixed by the PostGIS team, users wanting to run Reitti on ARM64 platforms need
+  to change the PostGIS image in the docker-compose file from `image: postgis/postgis:17-3.5-alpine`
+  to `image: imresamu/postgis:17-3.5-alpine`. ### Development Setup For development
+  or custom deployments: 1. Start infrastructure services ```bash docker compose up
+  -d postgis rabbitmq ``` 2. Build and run the application ```bash mvn spring-boot:run
+  ``` 3. Access the application at `http://localhost:8080` Default username and password
+  is `admin` ### Building Docker Image ```bash # Build the application mvn clean package
+  # Build the Docker image docker build -t reitti/reitti:latest . ``` ### Initial
+  Configuration After starting the application: 1. **Generate API Token**: Create
+  an API token in Settings → API To'
 ---
 {% raw %}
 ![](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dedicatedcode-reitti/.github/banner.png)

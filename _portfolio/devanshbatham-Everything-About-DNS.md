@@ -2,8 +2,59 @@
 layout: project
 name: Devanshbatham Everything About Dns
 slug: devanshbatham-Everything-About-DNS
+category: Educational-map
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/devanshbatham/Everything-About-DNS
+indexed_content: '# DNS Explained : Everything About DNS This repo aims to explain
+  the basics of DNS at different levels of complexity for readers with various technical
+  backgrounds. # List of Contents - [What is DNS](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
+  - [Explain like I am a College student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student)
+  - [Types of servers invloved in DNS resolution process](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-servers-invloved-in-dns-resolution-process-1)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-1)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-1)
+  - [Explain like I am a College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-a-college-student)
+  - [Types of DNS queries](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#types-of-dns-queries)
+  - [Explain like I am five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-2)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-2)
+  - [Explain like I am a College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-a-college-student-1)
+  - [What is DNS caching? Where does DNS caching occur?](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#what-is-dns-caching-where-does-dns-caching-occur)
+  - [Explain like I am Five](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-five-3)
+  - [Explain like I am Eleven](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-eleven-3)
+  - [Explain like I am College Student](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#explain-like-i-am-college-student)
+  - [DNS Glossary](https://github.com/devanshbatham/Everything-About-DNS/blob/main/README.md#dns-glossary)
+  # What is DNS ## Explain like I am Five Imagine the Internet is a big zoo. All the
+  animals in the zoo have numbers like 1, 2, 3, 4 instead of names. When you want
+  to see an animal, you have to remember its number and go find it. That would be
+  hard to remember! Instead, the zoo has a special directory. The people who work
+  at the zoo give all the animals fun names that are easy to remember, like "elephant"
+  or "giraffe". But the animals still have numbers too. The directory helps you find
+  the number for any animal name you type in. The DNS is like the zoo directory. When
+  you type a website name like "google.com" in your browser, DNS looks up the number
+  for that website name. The number is called an "IP address" and it helps your computer
+  find the right website. DNS works by asking different servers. It first asks a "root
+  server" which tells it to ask a ".com server". The ".com server" then tells it to
+  ask the "google server". The "google server" knows Google''s IP address and sends
+  that back. Then your computer can use that IP address to load Google''s website.
+  Your browser and your computer each have a little directory too, so next time you
+  want to go to Google they can remember the IP address and load the website faster
+  without asking all the servers again. So in summary, DNS is like a directory that
+  turns easy-to-remember website names into hard-to-remember numbers (IP addresses)
+  that your computer actually uses to find and connect to websites on the Internet.
+  ## Explain like I am Eleven Imagine the Internet is a massive library with billions
+  of books. Each book has a call number like 753.8 or 910.4 instead of a title. When
+  you want to find a book, you need to remember its call number and go search on that
+  shelf. That would be difficult so the library has something called a card catalog.
+  The card catalog lets you search by book title. Under each title in the card catalog
+  is the call number of that book. The DNS is like the Internet''s card catalog. When
+  you type a website address like "google.com" in your browser, DNS looks up the "call
+  number" for that website, which is called an IP address. The IP address tells your
+  computer exactly where to find that website on the Internet. DNS works by asking
+  a series of computers called nameservers. It first asks a "root nameserver" which
+  directs it to the ".com nameserver". The ".com nameserver" then tells it the nameserver
+  for "google.com". Finally, the "google.com" nameserver provides Google''s IP address.
+  Your'
 ---
 {% raw %}
 # DNS Explained : Everything About DNS

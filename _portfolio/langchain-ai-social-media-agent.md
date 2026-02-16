@@ -2,8 +2,68 @@
 layout: project
 name: Langchain Ai Social Media Agent
 slug: langchain-ai-social-media-agent
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/langchain-ai-social-media-agent/static/agent_flow.png
 repo_url: https://github.com/langchain-ai/social-media-agent.git
+indexed_content: "# Social Media Agent This repository contains an 'agent' which can
+  take in a URL, and generate a Twitter & LinkedIn post based on the content of the
+  URL. It uses a human-in-the-loop (HITL) flow to handle authentication with different
+  social media platforms, and to allow the user to make changes, or accept/reject
+  the generated post. ## Table of contents - [Quickstart](#quickstart) - [Environment
+  variables](#set-environment-variables) - [LangGraph Server](#start-the-langgraph-server)
+  - [Full setup](#advanced-setup) - [Environment variables](#set-environment-variables-1)
+  - [Authentication](#setup-authentication) - [Supabase](#setup-supabase) - [Slack](#setup-slack)
+  - [GitHub](#setup-github) - [Usage](#usage) - [Generate Post](#generate-post) -
+  [Setup Crons](#setup-crons) - [Prebuilt Scripts](#prebuilt-scripts) - [Setup Agent
+  Inbox](#setup-agent-inbox) - [Using the deployed inbox](#using-the-deployed-inbox)
+  - [Using the local inbox](#using-the-local-inbox) - [Customization](#customization)
+  - [Prompts](#prompts) - [Post Style](#post-style) # Quickstart > [!TIP] > \U0001F3A5
+  For a visual guide, check out our [step-by-step video tutorial](https://youtu.be/TmTl5FMgkCQ)
+  that walks you through the account setup process and project configuration. This
+  quickstart covers how to setup the Social Media Agent in a basic setup mode. This
+  is the quickest way to get up and running, however it will lack some of the features
+  of the full setup mode. See [here](#advanced-setup) for the full setup guide. Running
+  in basic setup mode will lack the following features: - Parsing content from GitHub,
+  Twitter or YouTube URLs - Ingesting data from Slack, or sending updates to Slack
+  - Image selection & uploads To get started, you'll need the following API keys/software:
+  - [Anthropic API](https://console.anthropic.com/) - General LLM - [LangSmith](https://smith.langchain.com/)
+  - LangSmith API key required to run the LangGraph server locally (free) - [FireCrawl
+  API](https://www.firecrawl.dev/) - Web scraping. New users get 500 credits for free
+  - [Arcade](https://www.arcade.dev/) - Easy authentication for reading & writing
+  to social media platforms ## Setup Instructions ### Clone the repository: ```bash
+  git clone https://github.com/langchain-ai/social-media-agent.git ``` ```bash cd
+  social-media-agent ``` ### Install dependencies: ```bash yarn install ``` ### Set
+  environment variables. Copy the values of the quickstart `.env.quickstart.example`
+  to `.env`, then add the values: ```bash cp .env.quickstart.example .env ``` Once
+  done, ensure you have the following environment variables set: ```bash # For LangSmith
+  tracing (optional) LANGSMITH_API_KEY= LANGSMITH_TRACING_V2=true # For LLM generations
+  ANTHROPIC_API_KEY= # For web scraping FIRECRAWL_API_KEY= # Arcade API key - used
+  for fetching Tweets, and scheduling LinkedIn/Twitter posts ARCADE_API_KEY= ``` If
+  you plan to post to LinkedIn as an organization (rather than as yourself), you'll
+  also need to set: ```bash # Get the organization ID from the URL of the company
+  page when you're logged in as an admin. # For example, if the URL is `https://www.linkedin.com/company/12345678/admin/dashboard/`,
+  the organization ID would be `12345678`. POST_TO_LINKEDIN_ORGANIZATION=true LINKEDIN_ORGANIZATION_ID=
+  ``` ### Install LangGraph CLI ```bash pip install langgraph-cli ``` Then run the
+  following command to check the CLI is installed: ```bash langgraph --version ```
+  Click [here](https://langchain-ai.github.io/langgraph/cloud/reference/cli/) to read
+  the full download instructions for the LangGraph CLI. ### Start the LangGraph server:
+  To start the LangGraph server, run this script: ```bash yarn langgraph:in_mem:up
+  ``` Under the hood, this will execute the following command: ```bash npx @langchain/langgraph-cli
+  dev --port 54367 ``` > [!NOTE] > The first time running this command (or if a new
+  version of `@langchain/langgraph-cli` has been released), it will ask you to accept
+  an install for the CLI. Enter `y` to accept. Once the server is ready, you can execute
+  the following command to generate a post: ```bash yarn generate_post ``` You may
+  also modify this script to pass different URLs to generate posts for other content.
+  This will kick off a new run to generate a post on a [LangChain blog post](https://blog.langchain.dev/customers-appfolio/).
+  To view the output, either inspect it in LangSmith, or use Agent Inbox. > [!TIP]
+  > Follow these steps to setup & configure the Agent Inbox: [Setup Agent Inbox Guide](#setup-agent-inbox)
+  # Advanced Setup To use all of the features of the Social Media Agent, you'll need
+  the following: - [Anthropic API](https://console.anthropic.com/) - General LLM -
+  [Google Vertex AI](https://cloud.google.com/vertex-ai) - For dealing with YouTube
+  video content - [LangSmith](https://smith.langchain.com/) - LangSmith API key required
+  to run the LangGraph server locally (free) - [FireCrawl API](https://www.firecrawl.dev/)
+  - Web scraping - [Arcade](https://www.arcade.dev) - Social media authentication
+  and"
 ---
 {% raw %}
 # Social Media Agent

@@ -2,8 +2,69 @@
 layout: project
 name: Jagalite Superseedr
 slug: Jagalite-superseedr
+category: Entertainment tools
 image: https://github.com/Jagalite/superseedr/actions/workflows/rust.yml/badge.svg
 repo_url: https://github.com/Jagalite/superseedr
+indexed_content: "# A BitTorrent Client in your Terminal [](https://github.com/Jagalite/superseedr/actions/workflows/rust.yml)
+  [](https://github.com/Jagalite/superseedr/actions/workflows/nightly.yml) [](https://crates.io/crates/superseedr)
+  [](https://ratatui.rs/) Superseedr is a modern Rust BitTorrent client featuring
+  a high-performance terminal UI, real-time swarm observability, secure VPN-aware
+  Docker setups, and zero manual network configuration. It is fast, privacy-oriented,
+  and built for both desktop users and homelab/server workflows. ## \U0001F680 Features
+  at a Glance | **Experience** | **Networking** | **Engineering** | | :--- | :---
+  | :--- | | \U0001F3A8 **60 FPS TUI** Fluid, animated interface with heatmaps. |
+  \U0001F433 **Docker + VPN** Gluetun integration out of the box. | \U0001F9EC **BitTorrent
+  v2** Hybrid swarms & Merkle tree verification. | | \U0001F4CA **Deep Analytics**
+  Real-time bandwidth graphs & peer metrics. | ⚓ **Auto-Bind** Dynamic port reloading
+  without restarts. | \U0001F9E0 **Self-Tuning** Adaptive limits control for max speed
+  and I/O Stability. | | \U0001F9F2 **Magnet Links** Native OS-level handler support.
+  | \U0001F47B **Private Mode** Optional builds disabling DHT/PEX. | \U0001F3A8 **Themes**
+  Large built-in theme library with live switching. | ### Terminal Torrenting With
+  Superseedr * **Pushing TUI Boundaries:** Experience a fluid, 60 FPS interface that
+  feels like a native GUI, featuring smooth animations, high-density visualizations,
+  and 40 built-in themes rarely seen in terminal apps. * **See What's Happening:**
+  Diagnose slow downloads instantly with deep swarm analytics, heatmaps, and live
+  bandwidth graphs. * **Set It and Forget It:** Automatic port forwarding and dynamic
+  listener reloading in Docker ensure your connection stays alive, even if your VPN
+  resets. * **Crash-Proof Design:** Leverages Rust's memory safety guarantees to run
+  indefinitely on low-resource servers without leaks or instability. ## Installation
+  Download platform-specific installers from the [releases page](https://github.com/Jagalite/superseedr/releases)
+  **(includes browser magnet link support)**: - Windows: `.msi` installer - macOS:
+  `.pkg` installer - Debian/Ubuntu: `.deb` package ### Package Managers - **Cargo:**
+  `cargo install superseedr` - **Brew:** `brew install superseedr` - **Arch Linux:**
+  `yay -S superseedr` (via AUR) [](https://repology.org/project/superseedr/versions)
+  ## Usage Open a terminal ```bash superseedr ``` ### ⌨️ Key Controls | Key | Action
+  | | :--- | :--- | | `m` | **Open full manual / help** | | `q` | Quit | | `↑` `↓`
+  `←` `→` | Navigate | | `c` | Configure Settings | > [!TIP] > Add torrents by clicking
+  magnet links in your browser or opening .torrent files. > Copying and pasting (ctrl
+  + v) magnet links or paths to torrent files will also work. ## Troubleshooting **Connection
+  or Disk issues?** - Check your firewall allows outbound connections - Increase file
+  descriptor limit: `ulimit -n 65536` - For VPN users: Verify Gluetun is running and
+  connected **Slow downloads?** - Enable port forwarding in your VPN settings - Check
+  the swarm health in the TUI's analytics view **More help:** See the [FAQ](FAQ.md)
+  or [open an issue](https://github.com/Jagalite/superseedr/issues) ## More Info -
+  \U0001F91D[Contributing](CONTRIBUTING.md): How you can contribute to the project
+  (technical and non-technical). - ❓[FAQ](FAQ.md): Find answers to common questions
+  about Superseedr. - \U0001F4DC[Changelog](CHANGELOG.md): See what's new in recent
+  versions of Superseedr. - \U0001F5FA️[Roadmap](ROADMAP.md): Discover upcoming features
+  and future plans for Superseedr. - \U0001F9D1‍\U0001F91D‍\U0001F9D1[Code of Conduct](CODE_OF_CONDUCT.md):
+  Understand the community standards and expectations. ## Running with Docker Superseedr
+  offers a fully secured Docker setup using Gluetun. All BitTorrent traffic is routed
+  through a VPN tunnel with dynamic port forwarding and zero manual network configuration.
+  If you want privacy and simplicity, Docker is the recommended way to run Superseedr.
+  Follow steps below to create .env and .gluetun.env files to configure OpenVPN or
+  WireGuard. ```bash # Docker (No VPN): # Uses internal container storage. Data persists
+  until the container is removed. docker run -it jagatranvo/superseedr:latest # Docker
+  Compose (Gluetun with your VPN): # Requires .env and .gluetun.env configuration
+  (see below). docker compose up -d && docker compose attach superseedr ``` Click
+  to expand Docker Setup ### Setup 1. **Get the Docker configuration files:** You
+  only need the Docker-related files to run the pre-built image, not the full source
+  code. **Option A: Clone the repository (Simple)** This gets you everything, including
+  the source code. ```bash git clone https://github.com/Jagalite/superseedr.git cd
+  superseedr ``` **Option B: Download only the necessary files (Minimal)** This is
+  ideal if you just want to run the Docker image. ```bash mkdir superseedr cd superseedr
+  # Download all compose and example config files curl -sL \\ -O https://raw.githubusercontent.com/Jagalite/superseedr/main/docker-compose.yml
+  \\ -O https://raw.githubusercontent.com/Jagalite/supers"
 ---
 {% raw %}
 <picture>

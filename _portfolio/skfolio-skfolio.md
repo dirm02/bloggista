@@ -2,8 +2,62 @@
 layout: project
 name: Skfolio Skfolio
 slug: skfolio-skfolio
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/skfolio/skfolio
+indexed_content: ".. -*- mode: rst -*- |Licence| |Codecov| |Black| |PythonVersion|
+  |PyPi| |CI/CD| |Downloads| |Ruff| |Contribution| |Website| |JupyterLite| |Discord|
+  |DOI| .. |Licence| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
+  :target: https://github.com/skfolio/skfolio/blob/main/LICENSE .. |Codecov| image::
+  https://codecov.io/gh/skfolio/skfolio/graph/badge.svg?token=KJ0SE4LHPV :target:
+  https://codecov.io/gh/skfolio/skfolio .. |PythonVersion| image:: https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg
+  :target: https://pypi.org/project/skfolio/ .. |PyPi| image:: https://img.shields.io/pypi/v/skfolio
+  :target: https://pypi.org/project/skfolio .. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+  :target: https://github.com/psf/black .. |CI/CD| image:: https://img.shields.io/github/actions/workflow/status/skfolio/skfolio/release.yml.svg?logo=github
+  :target: https://github.com/skfolio/skfolio/raw/main/LICENSE .. |Downloads| image::
+  https://static.pepy.tech/badge/skfolio :target: https://pepy.tech/project/skfolio
+  .. |Ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
+  :target: https://github.com/astral-sh/ruff .. |Contribution| image:: https://img.shields.io/badge/Contributions-Welcome-blue
+  :target: https://github.com/skfolio/skfolio/blob/main/CONTRIBUTING.md .. |Website|
+  image:: https://img.shields.io/website.svg?down_color=red&down_message=down&up_color=53cc0d&up_message=up&url=https://skfolio.org
+  :target: https://skfolio.org .. |JupyterLite| image:: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg
+  :target: https://skfolio.org/lite .. |Discord| image:: https://img.shields.io/badge/Discord-Join%20Chat-5865F2?logo=discord&logoColor=white
+  :target: https://discord.gg/Bu7EtNYugS .. |DOI| image:: https://zenodo.org/badge/731792488.svg
+  :target: https://doi.org/10.5281/zenodo.16148630 .. |PythonMinVersion| replace::
+  3.10 .. |NumpyMinVersion| replace:: 1.23.4 .. |ScipyMinVersion| replace:: 1.8.0
+  .. |PandasMinVersion| replace:: 1.4.1 .. |CvxpyBaseMinVersion| replace:: 1.5.0 ..
+  |ClarabelMinVersion| replace:: 0.9.0 .. |SklearnMinVersion| replace:: 1.6.0 .. |JoblibMinVersion|
+  replace:: 1.3.2 .. |PlotlyMinVersion| replace:: 5.22.0 =============== |icon| skfolio
+  =============== .. |icon| image:: https://raw.githubusercontent.com/skfolio/skfolio/master/docs/_static/logo_animate.svg
+  :width: 100 :alt: skfolio documentation :target: https://skfolio.org/ **skfolio**
+  is a Python library for portfolio optimization and risk management built on top
+  of scikit-learn. It offers a unified interface and tools compatible with scikit-learn
+  to build, fine-tune, cross-validate and stress-test portfolio models. It is distributed
+  under the open-source 3-Clause BSD license. **skfolio** is backed by `Skfolio Labs
+  `_, which provides enterprise support and SLAs for institutions. .. image:: https://raw.githubusercontent.com/skfolio/skfolio/master/docs/_static/expo.jpg
+  :target: https://skfolio.org/auto_examples/ :alt: examples Important links ~~~~~~~~~~~~~~~
+  - `Documentation `_ - `Examples `_ - `User Guide `_ - `GitHub Repo `_ - `Enterprise
+  Support `_ Featured in ~~~~~~~~~~~ * `Portfolio Optimization: Theory and Application
+  `_ by Daniel P. Palomar, includes Python code examples using skfolio. Installation
+  ~~~~~~~~~~~~ `skfolio` is available on PyPI and can be installed with:: pip install
+  -U skfolio Dependencies ~~~~~~~~~~~~ `skfolio` requires: - python (>= |PythonMinVersion|)
+  - numpy (>= |NumpyMinVersion|) - scipy (>= |ScipyMinVersion|) - pandas (>= |PandasMinVersion|)
+  - cvxpy-base (>= |CvxpyBaseMinVersion|) - clarabel (>= |ClarabelMinVersion|) - scikit-learn
+  (>= |SklearnMinVersion|) - joblib (>= |JoblibMinVersion|) - plotly (>= |PlotlyMinVersion|)
+  Docker ~~~~~~ You can also spin up a reproducible JupyterLab environment using Docker:
+  Build the image:: docker build -t skfolio-jupyterlab . Run the container:: docker
+  run -p 8888:8888 -v :/app/data -it skfolio-jupyterlab Browse: Open localhost:8888/lab
+  and start using `skfolio` Key Concepts ~~~~~~~~~~~~ Since the development of modern
+  portfolio theory by Markowitz (1952), mean-variance optimization (MVO) has received
+  considerable attention. Unfortunately, it faces a number of shortcomings, including
+  high sensitivity to the input parameters (expected returns and covariance), weight
+  concentration, high turnover, and poor out-of-sample performance. It is well-known
+  that naive allocation (1/N, inverse-vol, etc.) tends to outperform MVO out-of-sample
+  (DeMiguel, 2007). Numerous approaches have been developed to alleviate these shortcomings
+  (shrinkage, additional constraints, regularization, uncertainty set, higher moments,
+  Bayesian approaches, coherent risk measures, left-tail risk optimization, distributionally
+  robust optimization, factor model, risk-parity, hierarchical clustering, ensemble
+  methods, pre-selection, etc.). Given the large number of methods, and t"
 ---
 {% raw %}
 .. -*- mode: rst -*-

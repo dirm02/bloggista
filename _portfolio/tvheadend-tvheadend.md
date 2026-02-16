@@ -2,8 +2,31 @@
 layout: project
 name: Tvheadend Tvheadend
 slug: tvheadend-tvheadend
+category: WindowsTools- Linux
 image: https://github.com/tvheadend/tvheadend/actions/workflows/build-cloudsmith.yml/badge.svg?branch=master
 repo_url: https://github.com/tvheadend/tvheadend
+indexed_content: "[](https://github.com/tvheadend/tvheadend/actions/workflows/build-cloudsmith.yml)
+  [](https://scan.coverity.com/projects/2114) [](https://github.com/tvheadend/tvheadend)
+  [](https://github.com/tvheadend/tvheadend/releases) [](./LICENSE.md) [](https://github.com/tvheadend/tvheadend/commits)
+  [](https://cloudsmith.io/~tvheadend/repos/tvheadend/packages/) Tvheadend =========
+  Tvheadend is the leading TV streaming server and Digital Video Recorder for Linux.
+  It supports the following inputs: * ATSC * DVB-C(2) * DVB-S(2) * DVB-T(2) * HDHomeRun
+  * IPTV * UDP * HTTP * SAT>IP * Unix Pipe It supports the following outputs: * HTSP
+  (native protocol) * HTTP * SAT>IP Documentation ------------- Tvheadend documentation
+  can be found here: [https://docs.tvheadend.org](https://docs.tvheadend.org). Support
+  ------- Please triage issues and ask questions in the forum: [https://tvheadend.org](https://tvheadend.org)
+  or use the `#hts` IRC channel on Libera.Chat to speak with project staff: [https://web.libera.chat/#hts](https://web.libera.chat/#hts).
+  Please report triaged bugs via GitHub Issues. Building for Linux ------------------
+  First you need to configure: $ ./configure If build dependencies are missing the
+  configure script will complain or attempt to disable optional features. To build
+  the binary: $ make After compiling the Tvheadend binary is in the `build.linux`
+  directory. To run the Tvheadend binary: $ ./build.linux/tvheadend Settings are stored
+  in `$HOME/.hts/tvheadend`. To install the newly compiled Tvheadend binary and associated
+  files onto your system: $ sudo make install Running on Linux ---------------- Instructions
+  for popular distributions are in our public [documentation](https://docs.tvheadend.org/documentation/installation/linux).
+  Running in Docker ----------------- Running in Docker can be as simple as: $ docker
+  run --rm ghcr.io/tvheadend/tvheadend:latest See [README.Docker.md](README.Docker.md)
+  for more details."
 ---
 {% raw %}
 <div align="center">

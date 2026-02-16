@@ -2,8 +2,11 @@
 layout: project
 name: Vyrx Dev Wallpapers
 slug: vyrx-dev-Wallpapers
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/vyrx-dev-Wallpapers/calm/a_beach_with_trees_on_the_side.jpg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/vyrx-dev-Wallpapers
+indexed_content: "# Wallpaper Collection A curated collection of wallpapers organized
+  by theme and style. ## Calm ## Gruvbox ## Monochrome ## Nord ## Digital ## Others"
 ---
 {% raw %}
 # Wallpaper Collection

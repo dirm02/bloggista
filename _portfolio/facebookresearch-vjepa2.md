@@ -2,8 +2,66 @@
 layout: project
 name: Facebookresearch Vjepa2
 slug: facebookresearch-vjepa2
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/facebookresearch-vjepa2/assets/flowchart.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '# V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction
+  and Planning ### [Meta FAIR](https://ai.meta.com/research/) Mahmoud Assran∗, Adrien
+  Bardes∗, David Fan∗, Quentin Garrido∗, Russell Howes∗, Mojtaba Komeili∗, Matthew
+  Muckley∗, Ammar Rizvi∗, Claire Roberts∗, Koustuv Sinha∗, Artem Zholus*, Sergio Arnaud*,
+  Abha Gejji*, Ada Martin*, Francois Robert Hogan*, Daniel Dugas*, Piotr Bojanowski,
+  Vasil Khalidov, Patrick Labatut, Francisco Massa, Marc Szafraniec, Kapil Krishnakumar,
+  Yong Li, Xiaodong Ma, Sarath Chandar, Franziska Meier*, Yann LeCun*, Michael Rabbat*,
+  Nicolas Ballas* *Core Team [[`Paper`](https://arxiv.org/abs/2506.09985)] [[`Blog`](https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks)]
+  [[`BibTex`](#Citation)] Official Pytorch codebase for V-JEPA 2 and V-JEPA 2-AC.
+  V-JEPA 2 is a self-supervised approach to training video encoders, using internet-scale
+  video data, that attains state-of-the-art performance on motion understanding and
+  human action anticipation tasks. V-JEPA 2-AC is a latent action-conditioned world
+  model post-trained from V-JEPA 2 (using a small amount of robot trajectory interaction
+  data) that solves robot manipulation tasks without environment-specific data collection
+  or task-specific training or calibration. ## V-JEPA 2 Pre-training **(Top)** The
+  encoder and predictor are pre-trained through self-supervised learning from video
+  using a masked latent feature prediction objective, leveraging abundant natural
+  videos to bootstrap physical world understanding and prediction. **(Bottom)** Performance
+  of V-JEPA 2 on downstream understanding and prediction tasks. &nbsp; Benchmark VJEPA
+  2 Previous Best EK100 39.7% 27.6% (PlausiVL) SSv2 (Probe) 77.3% 69.7% (InternVideo2-1B)
+  Diving48 (Probe) 90.2% 86.4% (InternVideo2-1B) MVP (Video QA) 44.5% 39.9% (InternVL-2.5)
+  TempCompass (Video QA) 76.9% 75.3% (Tarsier 2) ## V-JEPA 2-AC Post-training **(Top)**
+  After post-training with a small amount of robot data, we can deploy the model on
+  a robot arm in new environments, and tackle foundational tasks like reaching, grasping,
+  and pick-and-place by planning from image goals. **(Bottom)** Performance on robot
+  manipulation tasks using a Franka arm, with input provided through a monocular RGB
+  camera. &nbsp; Grasp Pick-and-Place Method Reach Cup Box Cup Box Octo 100% 10% 0%
+  10% 10% Cosmos 80% 0% 20% 0% 0% VJEPA 2-AC 100% 60% 20% 80% 50% ## Models ### V-JEPA
+  2 #### HuggingFace See our [HuggingFace collection](https://huggingface.co/collections/facebook/v-jepa-2-6841bad8413014e185b497a6)
+  for V-JEPA 2. #### Pretrained Checkpoints Model #Parameters Resolution Download
+  Link Pretraining Config ViT-L/16 300M 256 checkpoint configs ViT-H/16 600M 256 checkpoint
+  configs ViT-g/16 1B 256 checkpoint configs ViT-g/16 384 1B 384 checkpoint configs
+  #### Pretrained backbones (via PyTorch Hub) Please install [Pytorch](https://pytorch.org/get-started/locally/),
+  [timm](https://pypi.org/project/timm/) and [einops](https://pypi.org/project/einops/)
+  locally, then run the following to load each model. Installing Pytorch with CUDA
+  support is strongly recommended. ```python import torch # preprocessor processor
+  = torch.hub.load(''facebookresearch/vjepa2'', ''vjepa2_preprocessor'') # models
+  vjepa2_vit_large = torch.hub.load(''facebookresearch/vjepa2'', ''vjepa2_vit_large'')
+  vjepa2_vit_huge = torch.hub.load(''facebookresearch/vjepa2'', ''vjepa2_vit_huge'')
+  vjepa2_vit_giant = torch.hub.load(''facebookresearch/vjepa2'', ''vjepa2_vit_giant'')
+  vjepa2_vit_giant_384 = torch.hub.load(''facebookresearch/vjepa2'', ''vjepa2_vit_giant_384'')
+  ``` #### Pretrained checkpoints on Huggingface You can also use our pretrained checkpoints
+  on [Huggingface](https://huggingface.co/collections/facebook/v-jepa-2-6841bad8413014e185b497a6).
+  ```python from transformers import AutoVideoProcessor, AutoModel hf_repo = "facebook/vjepa2-vitg-fpc64-256"
+  # facebook/vjepa2-vitl-fpc64-256 # facebook/vjepa2-vith-fpc64-256 # facebook/vjepa2-vitg-fpc64-256
+  # facebook/vjepa2-vitg-fpc64-384 model = AutoModel.from_pretrained(hf_repo) processor
+  = AutoVideoProcessor.from_pretrained(hf_repo) ``` #### Evaluation Attentive Probes
+  We share the trained attentive probes for two of our visual understanding evals
+  (Something-Something v2 and Diving48) and the action anticipation eval EPIC-KITCHENS-100.
+  Model SSv2 Diving48 EK100 Checkpoint Training Config Inference Config Result Checkpoint
+  Training Config Inference Config Result Checkpoint Training Config Inference Config
+  Result ViT-L/16 checkpoint config config 73.7% checkpoint config config 89.0% checkpoint
+  config config 32.7 R@5 ViT-g/16 384 checkpoint config config 77.3% checkpoint config
+  config 90.2% checkpoint config config 39.7 R@5 ### V-JEPA 2-AC Our action-conditioned
+  checkpoint was trained from the ViT-g encoder. Model Download Link Training Config
+  ViT-g/16 checkpoint config #### Pretrained action-conditioned backbone (via PyTorch
+  Hub) Please install [Pytorch](https://pytorch.org/get-started/locally/), [timm](https://pypi.org/proje'
 ---
 {% raw %}
 # V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning

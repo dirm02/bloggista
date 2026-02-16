@@ -2,8 +2,65 @@
 layout: project
 name: Onlyoffice Docker Communityserver
 slug: ONLYOFFICE-Docker-CommunityServer
+category: Serv&Prod-Tools
 image: https://static-www.onlyoffice.com/images/logo_small.svg
 repo_url: https://github.com/ONLYOFFICE/CommunityServer
+indexed_content: 'Website | ONLYOFFICE Workspace | Documentation | API | About * [Overview](#overview)
+  * [Functionality](#functionality) * [Recommended System Requirements](#recommended-system-requirements)
+  * [Installing Prerequisites](#installing-prerequisites) * [Installing MySQL](#installing-mysql)
+  * [Installing Community Server](#installing-community-server) * [Configuring Docker
+  Image](#configuring-docker-image) - [Storing Data](#storing-data) - [Running ONLYOFFICE
+  Community Server on Different Port](#running-onlyoffice-community-server-on-different-port)
+  - [Exposing Additional Ports](#exposing-additional-ports) - [Running ONLYOFFICE
+  Community Server using HTTPS](#running-onlyoffice-community-server-using-https)
+  + [Using the automatically generated Let''s Encrypt SSL Certificates](#using-the-automatically-generated-lets-encrypt-ssl-certificates)
+  + [Generation of Self Signed Certificates](#generation-of-self-signed-certificates)
+  + [Strengthening the Server Security](#strengthening-the-server-security) + [Installation
+  of the SSL Certificates](#installation-of-the-ssl-certificates) + [Available Configuration
+  Parameters](#available-configuration-parameters) * [Installing ONLYOFFICE Workspace](#installing-onlyoffice-workspace)
+  * [Upgrading ONLYOFFICE Community Server](#upgrading-onlyoffice-community-server)
+  * [Connecting Your Own Modules](#connecting-your-own-modules) * [Project Information](#project-information)
+  * [User Feedback and Support](#user-feedback-and-support) ## Overview ONLYOFFICE
+  Community Server is a free open-source collaborative system developed to manage
+  documents, projects, customer relationship and email correspondence, all in one
+  place. Starting from version 11.0 Community Server, is distributed as ONLYOFFICE
+  Groups on terms of Apache License. ## Functionality * Cross platform solution: Linux,
+  Windows * Document management * Integration with Google Drive, Box, Dropbox, OneDrive,
+  OwnCloud * File sharing * Document embedding * Access rights management * Customizable
+  CRM * Web-to-lead form * Invoicing system * Project Management * Gantt Chart * Milestones,
+  task dependencies and subtasks * Time tracking * Automated reports * Blogs, forums,
+  polls, wiki * Calendar * Email Aggregator * People module (employee database) *
+  Support of more than 20 languages Community Server (distributed as ONLYOFFICE Groups)
+  is a part of **ONLYOFFICE Workspace** that also includes [Document Server (distributed
+  as ONLYOFFICE Docs)](https://github.com/ONLYOFFICE/DocumentServer), [Mail Server](https://github.com/ONLYOFFICE/Docker-MailServer),
+  [Talk (instant messaging app)](https://github.com/ONLYOFFICE/XMPPServer). Control
+  Panel for administrating **ONLYOFFICE Workspace** can be found in [this repo](https://github.com/ONLYOFFICE/ControlPanel).
+  ## Recommended System Requirements * **RAM**: 4 GB or more * **CPU**: dual-core
+  2 GHz or higher * **Swap file**: at least 2 GB * **HDD**: at least 2 GB of free
+  space * **Distributive**: 64-bit Red Hat, CentOS or other compatible distributive
+  with kernel version 3.8 or later, 64-bit Debian, Ubuntu or other compatible distributive
+  with kernel version 3.8 or later * **Docker**: version 1.9.0 or later ## Installing
+  Prerequisites Before you start **ONLYOFFICE Community Server**, you need to create
+  the following folders: 1. For MySQL server ``` sudo mkdir -p "/app/onlyoffice/mysql/conf.d";
+  sudo mkdir -p "/app/onlyoffice/mysql/data"; sudo mkdir -p "/app/onlyoffice/mysql/initdb";
+  ``` 2. For **Community Server** data and logs ``` sudo mkdir -p "/app/onlyoffice/CommunityServer/data";
+  sudo mkdir -p "/app/onlyoffice/CommunityServer/logs"; sudo mkdir -p "/app/onlyoffice/CommunityServer/letsencrypt";
+  ``` 3. For **Document server** data and logs ``` sudo mkdir -p "/app/onlyoffice/DocumentServer/data";
+  sudo mkdir -p "/app/onlyoffice/DocumentServer/logs"; ``` 4. And for **Mail Server**
+  data and logs ``` sudo mkdir -p "/app/onlyoffice/MailServer/data/certs"; sudo mkdir
+  -p "/app/onlyoffice/MailServer/logs"; ``` 5. For **Control Panel**: ``` sudo mkdir
+  -p "/app/onlyoffice/ControlPanel/data"; sudo mkdir -p "/app/onlyoffice/ControlPanel/logs";
+  ``` Then create the `onlyoffice` network: ``` sudo docker network create --driver
+  bridge onlyoffice ``` ## Installing MySQL After that you need to create MySQL server
+  Docker container. Create the configuration file: ``` echo "[mysqld] sql_mode = ''NO_ENGINE_SUBSTITUTION''
+  max_connections = 1000 max_allowed_packet = 1048576000 group_concat_max_len = 2048"
+  > /app/onlyoffice/mysql/conf.d/onlyoffice.cnf ``` Create the SQL script which will
+  generate the users and issue the rights to them. The `onlyoffice_user` is required
+  for **ONLYOFFICE Community Server**, and the `mail_admin` is required for **ONLYOFFICE
+  Mail Server** in case it is going to be installed: ``` echo "ALTER USER ''root''@''%''
+  IDENTIFIED WITH mysql_native_password BY ''my-secret-pw''; CREATE USER IF NOT EXISTS
+  ''onlyoffice_user''@''%'' IDENTIFIED WITH mysql_native_password BY ''onlyoffice_pass'';
+  CREATE USER IF NOT EXISTS ''mail_adm'
 ---
 {% raw %}
 <p align="center">

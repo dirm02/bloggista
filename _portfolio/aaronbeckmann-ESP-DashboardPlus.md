@@ -2,8 +2,69 @@
 layout: project
 name: Aaronbeckmann Esp Dashboardplus
 slug: aaronbeckmann-ESP-DashboardPlus
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/badge/PlatformIO-Library-orange?logo=platformio
 repo_url: https://github.com/mathieucarbou/ESPAsyncWebServer)
+indexed_content: "# ESP-DashboardPlus [](https://platformio.org/lib/show/ESP-DashboardPlus)
+  [](LICENSE) [](https://www.espressif.com/en/products/socs/esp32) [](https://www.espressif.com/en/products/socs/esp32-s3)
+  [](https://www.espressif.com/en/products/socs/esp32-c3) A real-time, on-device web
+  dashboard library for ESP32 microcontrollers. Create beautiful, responsive dashboards
+  with minimal code using WebSocket-based communication. ## ✨ Features - **✏️ Customizabe**
+  - Adjust to your brand / product with own themes / custom titles. - **\U0001F50C
+  Real-time Updates** - WebSocket-based communication for instant UI updates - **\U0001F4CA
+  16 Card Types** - Stats, charts, gauges, toggles, sliders, buttons, time/location
+  pickers, and more - **\U0001F3A8 Modern Dark & Light Theme** - Industrial IoT aesthetic
+  with light/dark mode support - **\U0001F4F1 Responsive Design** - Works on desktop
+  and mobile browsers - **\U0001F5C2️ Tabbed Interface** - Dashboard, Console, and
+  OTA tabs in a single HTML file - **\U0001F504 OTA Updates** - Dedicated firmware
+  update tab with device info - **\U0001F4DD Console Logging** - Full-page console
+  tab with filtering, export, and command input - **⚡ Optimized** - Gzip-compressed
+  HTML stored in PROGMEM (~22KB) - **\U0001F4C8 Multi-Series Charts** - Display multiple
+  data lines per chart with legends - **\U0001F4E6 Card Groups** - Organize cards
+  into collapsible groups with headers - **⚖️ Card Ordering** - Control display order
+  with weight property - **\U0001F4D0 Card Sizing** - Span cards across multiple grid
+  columns/rows - **\U0001F6E0️ Easy Integration** - Simple C++ API with minimal boilerplate
+  > **Note**: OTA and Console are available as **tabs only**, not dashboard cards.
+  Configure visibility with `enableOTA` and `enableConsole` parameters in `begin()`.
+  ## \U0001F4E6 Installation ### PlatformIO (Recommended) Add to your `platformio.ini`:
+  ```ini lib_deps = ESP-DashboardPlus ``` Or install via PlatformIO CLI: ```bash pio
+  lib install \"ESP-DashboardPlus\" ``` ### Manual Installation 1. Download the latest
+  release 2. Extract to your project's `lib/` folder 3. Include the library in your
+  code ## \U0001F680 Quick Start ```cpp #include #include #include \"ESPDashboardPlus.h\"
+  \"dashboard_html.h\" // Auto-generated AsyncWebServer server(80); ESPDashboardPlus
+  dashboard(\"My Device\"); void setup() { Serial.begin(115200); WiFi.begin(\"SSID\",
+  \"PASSWORD\"); while (WiFi.status() != WL_CONNECTED) delay(500); // Initialize dashboard
+  dashboard.begin(&server, DASHBOARD_HTML_DATA, DASHBOARD_HTML_SIZE); // Add a temperature
+  display StatCard* temp = dashboard.addStatCard(\"temp\", \"Temperature\", \"25.0\",
+  \"°C\"); // Add a toggle switch ToggleCard* led = dashboard.addToggleCard(\"led\",
+  \"LED\", \"Status\", false); led->onChange = [](bool state) { digitalWrite(LED_BUILTIN,
+  state); }; server.begin(); Serial.printf(\"Dashboard: http://%s\\n\", WiFi.localIP().toString().c_str());
+  } void loop() { dashboard.loop(); // Update values periodically static unsigned
+  long lastUpdate = 0; if (millis() - lastUpdate > 2000) { lastUpdate = millis();
+  dashboard.updateStatCard(\"temp\", String(random(20, 30))); } } ``` ## \U0001F4CA
+  Available Card Types | Card | Description | Use Case | |------|-------------|----------|
+  | **StatCard** | Display numeric values with units | Temperature, humidity, voltage
+  | | **GaugeCard** | Circular gauge with thresholds | CPU usage, battery level |
+  | **ChartCard** | Line/area/bar/scatter/step charts | Historical data visualization
+  | | **ToggleCard** | On/off switch | LED control, relay control | | **SliderCard**
+  | Range slider | Brightness, volume, PWM | | **ButtonCard** | Simple clickable button
+  | Trigger actions | | **ActionButton** | Button with confirmation popup | Restart,
+  factory reset | | **LinkCard** | URL redirect button | External links, documentation
+  | | **InputCard** | Text/number input field | WiFi SSID, configuration | | **DropdownCard**
+  | Select menu | Mode selection, options | | **ColorPickerCard** | Color picker with
+  presets | RGB LED control | | **DateCard** | Date/time picker | Scheduling, alarms
+  | | **TimeCard** | Time picker (HH:MM or HH:MM:SS) | Alarm time, schedule time |
+  | **TimezoneCard** | Browser timezone detection | Time synchronization | | **LocationCard**
+  | GPS/browser geolocation | Position tracking, geofencing | | **StatusCard** | Icon
+  + status message | Connection status, system health | ### Tabs (not cards) | Tab
+  | Description | |-----|-------------| | **Console** | Timestamped logging with filtering,
+  export, and command input | | **OTA Update** | Firmware update via drag-and-drop
+  with progress display | ## \U0001F4D6 Documentation Full documentation is available
+  at: **[https://aaronbeckmann.github.io/ESP-DashboardPlus](https://aaronbeckmann.github.io/ESP-DashboardPlus)**
+  - [Getting Started](https://aaronbeckmann.github.io/ESP-DashboardPlus/getting-started)
+  - [Card Reference](https://aaronbeckmann.github.io/ESP-DashboardPlus/cards) - [API
+  Reference](https://aaronbeckmann.github.io/ESP-DashboardPlus/api) - [Examples](https://aaronbeckmann.github.io/ESP-DashboardPlus/examples)
+  ## \U0001F4C1 Library Structure ``` ESP-DashboardPlus/ ├── librar"
 ---
 {% raw %}
 # ESP-DashboardPlus

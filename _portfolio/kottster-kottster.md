@@ -2,8 +2,36 @@
 layout: project
 name: Kottster Kottster
 slug: kottster-kottster
+category: database-backend baas
 image: https://img.shields.io/npm/dm/%40kottster%2Fcli
 repo_url: https://github.com/kottster/kottster
+indexed_content: "# Instant admin panel for your app Get a custom Node.js admin panel.
+  Create pages to **view and manage data in your database tables**, **compose dashboards**,
+  or build fully custom pages. Secure, self-hosted, and easy to set up. [](https://www.npmjs.com/package/@kottster/server)
+  [](https://opensource.org/licenses/Apache-2.0) [Get Started](https://kottster.app/docs/)
+  • [Live Demo](https://demo.kottster.app) • [Our Website](https://kottster.app) •
+  [Docs](https://kottster.app/docs/) [](https://youtu.be/JBpLVgkoj-k?si=GJ3IIBmzlgrCLKWs)
+  --- ## Getting started #### To create a new project, run: ```bash npx @kottster/cli@latest
+  new ``` > Make sure you have **Node.js (v20 or above)** installed on your system.
+  Alternatively, you can use Docker to run Kottster. For more details, check out the
+  [Docker Quickstart](https://kottster.app/docs/quickstart-docker). ## Next steps
+  #### 1. Inside your project, run the app locally: ```bash npm run dev ``` This will
+  run the app locally in development mode. You can access it at [http://localhost:5480](http://localhost:5480).
+  #### 2. Create an account. After running the project, you'll need to log in to your
+  account or create a new one. #### 3. Connect the app to your database. #### 4. Start
+  building your app: - Add pages for viewing and managing data in your database table.
+  - Or, build fully custom pages from scratch (dashboards, charts, forms, etc.). ####
+  5. [Deploy your app](https://kottster.app/docs/deploying) when it's ready. ## Resources
+  - [Docs](https://kottster.app/docs/) - [Quickstart](https://kottster.app/docs/)
+  - [Quickstart with Docker](https://kottster.app/docs/quickstart-docker) - [Tutorial
+  (5 min)](https://kottster.app/docs/tutorial/) - [Deploying](https://kottster.app/docs/deploying)
+  ## Contribute We welcome feedback and contributions! - \U0001F41B [Report a bug](https://github.com/kottster/kottster/issues/new?template=bug_report.md)
+  - \U0001F4A1 [Suggest a feature](https://github.com/kottster/kottster/issues/new?template=feature_request.md)
+  - \U0001F4DA [Improve the docs](https://github.com/kottster/kottster/issues/new?template=docs_improvement.md)
+  See [CONTRIBUTING.md](https://github.com/kottster/kottster/blob/main/CONTRIBUTING.md)
+  for guidelines. ## Need Help? - \U0001F4AC [Join our Discord](https://discord.com/invite/Qce9uUqK98)
+  - \U0001F4EC [Contact us](https://kottster.app/contact-us) - ✉️ [team@kottster.app](mailto:team@kottster.app)
+  ## License Kottster is licensed under the terms of [Apache License 2.0](https://github.com/kottster/kottster/blob/main/LICENSE)."
 ---
 {% raw %}
 <div align="center" style="border-bottom: none">

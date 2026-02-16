@@ -2,8 +2,66 @@
 layout: project
 name: Luong Komorebi Awesome Linux Software
 slug: luong-komorebi-Awesome-Linux-Software
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/luong-komorebi-Awesome-Linux-Software/img/tux.png
 repo_url: https://github.com/luong-komorebi/Awesome-Linux-Software
+indexed_content: "# Awesome Linux Software ## News - **May 2025:** A new web app for
+  browsing Awesome Linux Software has been released! Check it out at [luong-komorebi.github.io
+  slash Awesome Linux Software](https://luong-komorebi.github.io/Awesome-Linux-Software/).
+  \U0001F427 This repo is a collection of **AWESOME** Linux applications and tools
+  for **any users/developers**. \U0001F427 Feel free to **contribute** / **star**
+  / **fork** / **pull request** . Any **recommendations** and **suggestions** are
+  welcome. **Acknowledgement:** _Everything written below is from my own experience
+  in college and after reading various materials. I am neither a professional nor
+  an expert, but a passionate user. Anyone can open a discussion in the issue section,
+  or a pull request if something should be modified or added._ - Arabic version :
+  [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_ar-AR.md).
+  - Brazilian Portuguese version : [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_pt-BR.md).
+  - Chinese version : [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_zh-CN.md)
+  or [here](https://github.com/eniqiz/Awesome-Linux-Software-zh_CN). - French version
+  : [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_fr-FR.md).
+  - Spanish version : [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_es-ES.md)
+  or [here](https://github.com/SaintFenix/Awesome-Linux-Software/blob/master/README_es-ES.md).
+  - Thai version : [here](https://github.com/luong-komorebi/Awesome-Linux-Software/blob/master/README_th-TH.md).
+  - [Applications](#applications) - [3D Printing](#3d-printing) - [Audio](#audio)
+  - [Edit-Mix-Record](#edit-mix-record) - [Music Player](#music-player) - [Radio](#radio)
+  - [Utilities](#utilities) - [Chat Clients](#chat-clients) - [3rd Party Client](#3rd-party-client)
+  - [All-in-One Client](#all-in-one-client) - [Chat Client Utilities](#chat-client-utilities)
+  - [IRC Client](#irc-client) - [Official Client](#official-client) - [Data Backup
+  and Recovery](#data-backup-and-recovery) - [Desktop Customization](#desktop-customization)
+  - [Desktop Icon Packs](#desktop-icon-packs) - [Desktop Themes](#desktop-themes)
+  - [Desktop Widgets and Theme Utilities](#desktop-widgets-and-theme-utilities) -
+  [Development](#development) - [Android](#android) - [C++](#c) - [Database](#database)
+  - [Game Engines](#game-engines) - [Git](#git) - [Golang](#golang) - [Java](#java)
+  - [Javascript](#javascript) - [Microcomputer and Embedded Devices](#microcomputer-and-embedded-devices)
+  - [Multiple Languages Support](#multiple-languages-support) - [PHP](#php) - [Python](#python)
+  - [Ruby](#ruby) - [Rust](#rust) - [Shell](#shell) - [Supporting Tools](#supporting-tools)
+  - [E-Book Utilities](#e-book-utilities) - [Electronic](#electronic) - [Education](#education)
+  - [Email](#email) - [File Manager](#file-manager) - [Games](#games) - [City Building
+  Simulation](#city-building-simulation) - [Command Line](#command-line) - [Engine
+  Re-creations (require the actual game)](#engine-re-creations-require-the-actual-game)
+  - [FPS](#fps) - [Miscellaneous](#miscellaneous) - [Puzzle](#puzzle) - [Racing](#racing)
+  - [RPG](#rpg) - [RTS](#rts) - [Sandbox](#sandbox) - [Shooter](#shooter) - [Turn
+  Based Strategy](#turn-based-strategy) - [Gaming Applications](#gaming-applications)
+  - [Launchers](#launchers) - [Tools](#tools) - [W.I.N.E.](#wine) - [Machine Emulators](#machine-emulators)
+  - [All-in-One](#all-in-one) - [Atari](#atari) - [Emulation Frontends/Configurators](#emulation-frontends/configurators)
+  - [Microsoft](#microsoft) - [Nintendo](#nintendo) - [Sega](#sega) - [Sony](#sony)
+  - [ZX Spectrum](#zx-spectrum) - [Graphics](#graphics) - [Graphic Creation](#graphic-creation)
+  - [Image Editor](#image-editor) - [Image Management](#image-management) - [Miscellaneous](#miscellaneous-1)
+  - [PSD, Sketch Inspection](#psd-sketch-inspection) - [Screen Recorder](#screen-recorder)
+  - [Screenshot](#screenshot) - [Streaming](#streaming) - [Video Editor](#video-editor)
+  - [Internet](#internet) - [Browser](#browser) - [Supportive Tool](#supportive-tool)
+  - [Web Service Client](#web-service-client) - [Office](#office) - [Accounting](#accounting)
+  - [Office Suites](#office-suites) - [LaTeX](#latex) - [Markdown](#markdown) - [Novel
+  Writing](#novel-writing) - [Productivity](#productivity) - [Automation](#automation)
+  - [Dock](#dock) - [Local Search](#local-search) - [Miscellaneous](#miscellaneous-2)
+  - [Note Taking](#note-taking) - [Time and Task](#time-and-task) - [Time and Usage
+  Tracker](#time-and-usage-tracker) - [Widget and Indicator](#widget-and-indicator)
+  - [Proxy](#proxy) - [Security](#security) - [Boot Integrity](#boot-integrity) -
+  [Compartmentalization](#compartmentalization) - [Firewall](#firewall) - [Network
+  Analysis](#network-analysis) - [Password Manager](#password-manager) - [Reverse
+  Engineering](#reverse-engineering) - [Other](#other) - [Sharing Files](#sharing-files)
+  - [Cloud Drive](#cl"
 ---
 {% raw %}
 # Awesome Linux Software

@@ -2,8 +2,64 @@
 layout: project
 name: Xpixelgroup Diffbir
 slug: XPixelGroup-DiffBIR
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://visitor-badge.laobi.icu/badge?page_id=XPixelGroup/DiffBIR
 repo_url: https://github.com/XPixelGroup/HYPIR)!
+indexed_content: "## DiffBIR: Towards Blind Image Restoration with Generative Diffusion
+  Prior [Paper](https://arxiv.org/abs/2308.15070) | [Project Page](https://0x3f3f3f3fun.github.io/projects/diffbir/)
+  [](https://openxlab.org.cn/apps/detail/linxinqi/DiffBIR-official) [](https://colab.research.google.com/github/camenduru/DiffBIR-colab/blob/main/DiffBIR_colab.ipynb)
+  [](https://replicate.com/zsxkib/diffbir) [Xinqi Lin](https://0x3f3f3f3fun.github.io/)
+  1,\\* , [Jingwen He](https://github.com/hejingwenhejingwen) 2,3,\\* , [Ziyan Chen](https://orcid.org/0000-0001-6277-5635)
+  1 , [Zhaoyang Lyu](https://scholar.google.com.tw/citations?user=gkXFhbwAAAAJ&hl=en)
+  2 , [Bo Dai](http://daibo.info/) 2 , [Fanghua Yu](https://github.com/Fanghua-Yu)
+  1 , [Wanli Ouyang](https://wlouyang.github.io/) 2 , [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao)
+  2 , [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html) 1,2 1 Shenzhen Institute
+  of Advanced Technology, Chinese Academy of Sciences 2 Shanghai AI Laboratory 3 The
+  Chinese University of Hong Kong --- :star:If DiffBIR is helpful for you, please
+  help star this repo. Thanks!:hugs: ## :book:Table Of Contents - [Update](#update)
+  - [Visual Results On Real-world Images](#visual_results) - [TODO](#todo) - [Installation](#installation)
+  - [Quick Start](#quick_start) - [Pretrained Models](#pretrained_models) - [Inference](#inference)
+  - [Train](#train) ## :new:Update - **2025.07.29**: ✅ We've released our new work
+  [HYPIR](https://github.com/XPixelGroup/HYPIR)! It **significantly outperforms DiffBIR**\U0001F525\U0001F525\U0001F525,
+  while also being **tens of times faster**\U0001F525\U0001F525\U0001F525. We welcome
+  you to try it out. - **2024.11.27**: ✅ Release DiffBIR v2.1, including a **new model**
+  trained on unsplash dataset with [LLaVA]()-generated captions, more samplers, better
+  tiled-sampling support and so on. Check [release note](https://github.com/XPixelGroup/DiffBIR/releases/tag/v2.1.0)
+  for details. - **2024.04.08**: ✅ Release everything about our [updated manuscript](https://arxiv.org/abs/2308.15070),
+  including (1) a **new model** trained on subset of laion2b-en and (2) a **more readable
+  code base**, etc. DiffBIR is now a general restoration pipeline that could handle
+  different blind image restoration tasks with a unified generation module. - **2023.09.19**:
+  ✅ Add support for Apple Silicon! Check [installation_xOS.md](assets/docs/installation_xOS.md)
+  to work with **CPU/CUDA/MPS** device! - **2023.09.14**: ✅ Integrate a patch-based
+  sampling strategy ([mixture-of-diffusers](https://github.com/albarji/mixture-of-diffusers)).
+  [**Try it!**](#tiled-sampling) Here is an [example](https://imgsli.com/MjA2MDA1)
+  with a resolution of 2396 x 1596. GPU memory usage will continue to be optimized
+  in the future and we are looking forward to your pull requests! - **2023.09.14**:
+  ✅ Add support for background upsampler (DiffBIR/[RealESRGAN](https://github.com/xinntao/Real-ESRGAN))
+  in face enhancement! :rocket: [**Try it!**](#inference_fr) - **2023.09.13**: :rocket:
+  Provide online demo (DiffBIR-official) in [OpenXLab](https://openxlab.org.cn/apps/detail/linxinqi/DiffBIR-official),
+  which integrates both general model and face model. Please have a try! [camenduru](https://github.com/camenduru)
+  also implements an online demo, thanks for his work.:hugs: - **2023.09.12**: ✅ Upload
+  inference code of latent image guidance and release [real47](inputs/real47) testset.
+  - **2023.09.08**: ✅ Add support for restoring unaligned faces. - **2023.09.06**:
+  :rocket: Update [colab demo](https://colab.research.google.com/github/camenduru/DiffBIR-colab/blob/main/DiffBIR_colab.ipynb).
+  Thanks to [camenduru](https://github.com/camenduru)!:hugs: - **2023.08.30**: This
+  repo is released. ## :eyes:Visual Results On Real-world Images ### Blind Image Super-Resolution
+  [ ](https://imgsli.com/MTk5ODI3) [ ](https://imgsli.com/MTk5ODI4) [ ](https://imgsli.com/MTk5ODI1)
+  ](https://imgsli.com/MTk5ODIy) [ ](https://imgsli.com/MTk5ODIz) [ ](https://imgsli.com/MTk5ODI0)
+  [ ](https://imgsli.com/MjAxMjM0) --> ](https://imgsli.com/MTk5ODIy) [ ](https://imgsli.com/MjAxMjM0)
+  --> ### Blind Face Restoration ](https://imgsli.com/MTk5ODI5) [ ](https://imgsli.com/MTk5ODMw)
+  [ ](https://imgsli.com/MTk5ODM0) --> [ ](https://imgsli.com/MjA2MTU0) [ ](https://imgsli.com/MjA2MTQ4)
+  :star: Face and the background enhanced by DiffBIR. ### Blind Image Denoising [
+  ](https://imgsli.com/MjUzNzkz) [ ](https://imgsli.com/MjUzNzky) [ ](https://imgsli.com/MjUzNzkx)
+  ### 8x Blind Super-Resolution With Tiled Sampling > I often think of Bag End. I
+  miss my books and my arm chair, and my garden. See, that's where I belong. That's
+  home. --- Bilbo Baggins [ ](https://imgsli.com/MjUzODE4) ## :climbing:TODO - [x]
+  Release code and pretrained models :computer:. - [x] Update links to paper and project
+  page :link:. - [x] Release real47 testset :minidisc:. - [ ] Provide webui. - [x]
+  Reduce the vram usage of DiffBIR :fire::fire::fire:. - [ ] Provide HuggingFace demo
+  :notebook:. - [x] Add a patch-based sampling schedule :mag:. - [x] Upload inference
+  code of latent "
 ---
 {% raw %}
 <p align="center">

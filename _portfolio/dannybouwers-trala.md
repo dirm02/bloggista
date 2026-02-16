@@ -2,8 +2,68 @@
 layout: project
 name: Dannybouwers Trala
 slug: dannybouwers-trala
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dannybouwers-trala/.assets/trala-dashboard.png
 repo_url: https://github.com/dannybouwers/trala.git
+indexed_content: "# TraLa - Traefik Landing Page A simple, modern, and dynamic dashboard
+  for your Traefik services. This application automatically discovers services via
+  the Traefik API and displays them in a clean, responsive grid. It's designed to
+  be run as a lightweight, multi-arch Docker container. ## ✨ Features ### Automation
+  first - **Auto-Discovery:** Automatically fetches and displays all HTTP routers
+  from your Traefik instance. - **Icon Auto-Detection:** Intelligently finds the best
+  icon for each service using selfh.st/icons as the main source. - **Smart Grouping:**
+  Automatically group services based on tags from selfh.st/apps. - **Light/Dark Mode:**
+  Automatic Light/Dark mode based on your OS settings. ### Configuration Overrides
+  Everything automatic can be overwritten with a single YAML configuration file, providing
+  ultimate customization control. ### Additional Features - **Manual Services:** Add
+  custom services to your dashboard that aren't managed by Traefik. - **Service Exclusion:**
+  Hide specific services from the dashboard using router and entry point name exclusions.
+  - **Live Search & Sort:** Instantly filter and sort your services by name, URL,
+  or priority. - **External Search:** Use the search bar to quickly search the web
+  with your configured search engine. - **Lightweight & Multi-Arch:** Built with Go
+  and a minimal Alpine base, the Docker image is small and compatible with `amd64`
+  and `arm64` architectures. - **Multi-Language Support:** Available in English, German,
+  and Dutch. --- ## \U0001F680 Getting Started The easiest way to get started is by
+  using the pre-built Docker image from the GitHub Container Registry (primary) or
+  Docker Hub (secondary). ### `docker-compose.yml` (Recommended) This is the recommended
+  approach. Add this service to your existing `docker-compose.yml` file. ```yaml services:
+  traefik: image: \"traefik:v3.0\" # ... your existing traefik configuration ... command:
+  # ... - \"--api.insecure=true\" # Required for the dashboard to access the API networks:
+  - traefik-net # A shared network trala: # Use either GitHub Container Registry (primary)
+  or Docker Hub (secondary) image: ghcr.io/dannybouwers/trala:latest # Primary source
+  # image: dannybouwers/trala:latest # Secondary source (Docker Hub) container_name:
+  trala restart: unless-stopped networks: - traefik-net # Must be on the same network
+  as Traefik volumes: # Optional: Mount a configuration file. See \"Configuration\"
+  section below. - ./configuration.yml:/config/configuration.yml:ro # Optional: Mount
+  a directory with custom icons. See \"Configuration\" section below. - ./icons:/icons:ro
+  environment: # Required: The internal Docker network address for the Traefik API
+  - TRAEFIK_API_HOST=http://traefik:8080 # Optional: Change refresh interval - REFRESH_INTERVAL_SECONDS=30
+  # Optional: Change the search engine - SEARCH_ENGINE_URL=https://duckduckgo.com/?q=
+  # Optional: Set to \"debug\" for verbose icon-finding logs - LOG_LEVEL=info labels:
+  # --- Traefik Labels to expose TraLa itself --- - \"traefik.enable=true\" - \"traefik.http.routers.trala.rule=Host(`trala.your-domain.com`)\"
+  - \"traefik.http.routers.trala.entrypoints=websecure\" - \"traefik.http.routers.trala.tls=true\"
+  - \"traefik.http.services.trala.loadbalancer.server.port=8080\" - \"traefik.http.services.trala.loadbalancer.server.scheme=http\"
+  networks: traefik-net: driver: bridge ``` --- ## \U0001F527 Configuration The application
+  can be configured with a configuration file and with environment variables. Environment
+  variables override settings from the configuration file. To view the effective configuration
+  after startup, enable debug logging. A sample configuration file is shown below:
+  ```yaml # TraLa Configuration File # Version 3.3 version: 3.3 # Environment settings
+  (optional, environment variables take precedence) environment: selfhst_icon_url:
+  https://cdn.jsdelivr.net/gh/selfhst/icons/ # Base URL of the Selfhst icon endpoint
+  (default: https://cdn.jsdelivr.net/gh/selfhst/icons/) search_engine_url: https://duckduckgo.com/?q=
+  # The URL for the external search engine (default: https://www.google.com/search?q=)
+  refresh_interval_seconds: 30 # The interval in seconds at which the service list
+  automatically refreshes (default: 30) log_level: info # Set to `debug` for verbose
+  logging (default: info) language: nl # The language of the application (default:
+  en) grouping: enabled: true # Enable or disable the smart grouping feature (default:
+  true) columns: 3 # Number of columns in grouped view for xl (1280px) screen size
+  (1-6) (default: 3) tag_frequency_threshold: 0.9 # Threshold for excluding tags present
+  in more than this percentage of services (0.0-1.0) (default: 0.9) min_services_per_group:
+  2 # Minimum number of services required for a tag to form a group (default: 2) traefik:
+  api_host: http://traefik:8080 # The full base URL of your Traefik API (default:
+  (none), required) enable_basic_auth: true # Enable basic auth for Traefik API (default:
+  false) insecure_skip_verify: false # Skip SSL certificate verification for Traefik
+  A"
 ---
 {% raw %}
 # TraLa - Traefik Landing Page

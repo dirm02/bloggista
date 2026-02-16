@@ -2,8 +2,34 @@
 layout: project
 name: Experiencelovelace Ha Floorplan
 slug: ExperienceLovelace-ha-floorplan
+category: EE-kicad-3D-Robotic
 image: https://user-images.githubusercontent.com/3549445/293683009-196cd771-7d29-4975-a741-0a5c8a76e095.png
 repo_url: https://github.com/ExperienceLovelace/ha-floorplan
+indexed_content: "ha-floorplan Floorplan for Home Assistant - your imagination (almost)
+  defines the limits • Floorplan Documentation • Discussion (Ask for help, feedback
+  & support) • Home Assistant Community • > [!TIP] > For the best experience, we highly
+  recommend installing ha-floorplan through HACS. Alternatively, you can download
+  the latest version directly from the [Releases](https://github.com/ExperienceLovelace/ha-floorplan/releases)
+  page, where the `floorplan.js` file is also available as an asset. ## Draw it and
+  bring it to life This tool expands way beyond creating just floorplans. If you can
+  draw it in an SVG file, you can bring it to life with ha-floorplan. Explore endless
+  possibilities and customize your home automation experience to your liking. ## Getting
+  started We'll suggest you to visit our [Installation](https://experiencelovelace.github.io/ha-floorplan/docs/quick-start/)
+  guide. If you're unsure on where to start in the creation process, we'll suggest
+  you to check our [Live Examples](https://experiencelovelace.github.io/ha-floorplan/docs/examples/).
+  Find more documentation on how to use each action and functions, by visiting the
+  [Usage](https://experiencelovelace.github.io/ha-floorplan/docs/usage/) page. ##
+  Features - Make Floorplan(s) based on SVG-files - Trigger states, visualize states
+  and more - Call services and more, for even more options - Use as Lovelace-card,
+  or as a panel - _It's hard to mention everything in a list like this, so **give
+  it a try**_ \U0001F973 #### Resource template for Home Assistant ```yaml resources:
+  - url: /hacsfiles/ha-floorplan/floorplan.js type: module ``` Would you like to play
+  around with the code behind HA Floorplan? _There's many ways to build HA Floorplan.
+  The question is, what you're going to do?_ Just execute `npm install` to install
+  the dependencies. Use `npm run build` for the production-env. Are you going to test
+  something, use `npm run build:dev` instead. For other options, check [package.json](https://github.com/ExperienceLovelace/ha-floorplan/blob/master/package.json).
+  Use `npm run start` to serve our example-suite. Testing can be done with `npm run
+  test`."
 ---
 {% raw %}
 <h1 align="center">

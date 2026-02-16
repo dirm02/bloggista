@@ -239,3 +239,31 @@ pre.highlight {
     background-color: hsl(0, 0%, 15%);
   }
 }
+
+// Portfolio filter controls
+.portfolio-filters {
+  .form-control, .form-select {
+    border-radius: 0.25rem;
+    border: 1px solid hsl(0, 0%, 88%);
+    
+    &:focus {
+      border-color: hsl(0, 0%, 60%);
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .portfolio-filters {
+    .form-control, .form-select {
+      background-color: hsl(0, 0%, 15%);
+      border-color: hsl(0, 0%, 25%);
+      color: #e1e1e1;
+      
+      &:focus {
+        border-color: hsl(0, 0%, 40%);
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

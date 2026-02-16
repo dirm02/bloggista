@@ -2,8 +2,66 @@
 layout: project
 name: Technitiumsoftware Dnsserver
 slug: TechnitiumSoftware-DnsServer
+category: WindowsTools- Linux
 image: https://technitium.com/img/logo.png
 repo_url: https://github.com/TechnitiumSoftware/DnsServer).
+indexed_content: 'Technitium DNS Server Self host a DNS server for privacy & security
+  Block ads & malware at DNS level for your entire network! Technitium DNS Server
+  is an open source authoritative as well as recursive DNS server that can be used
+  for self hosting a DNS server for privacy & security. It works out-of-the-box with
+  no or minimal configuration and provides a user friendly web console accessible
+  using any modern web browser. Nobody really bothers about domain name resolution
+  since it works automatically behind the scenes and is complex to understand. Most
+  computer software use the operating system''s DNS resolver that usually query the
+  configured ISP''s DNS server using UDP protocol. This way works well for most people
+  but, your ISP can see and control what website you can visit even when the website
+  employ HTTPS security. Not only that, some ISPs can redirect, block or inject content
+  into websites you visit even when you use a different DNS provider like Google DNS
+  or Cloudflare DNS. Having Technitium DNS Server configured to use [DNS-over-TLS](https://en.wikipedia.org/wiki/DNS_over_TLS),
+  [DNS-over-HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS), or [DNS-over-QUIC](https://www.ietf.org/rfc/rfc9250.html)
+  forwarders, these privacy & security issues can be mitigated very effectively. Be
+  it a home network or an organization''s network, having a locally running DNS server
+  gives you more insights into your network and helps to understand it better using
+  the DNS logs and stats. It improves overall performance since most queries are served
+  from the DNS cache making web sites load faster by not having to wait for frequent
+  DNS resolutions. It also gives you an additional control over your network allowing
+  you to block domain names network wide and also allows you to route your DNS traffic
+  securely using encrypted DNS protocols. # Sponsored By # Features - Works on Windows,
+  Linux, macOS and Raspberry Pi. - Docker image available on [Docker Hub](https://hub.docker.com/r/technitium/dns-server).
+  - Installs in just a minute and works out-of-the-box with zero configuration. -
+  Block ads & malware using one or more block list URLs. - Supports working as an
+  authoritative as well as a recursive DNS server. - Includes built-in Clustering
+  feature to allow managing two or more DNS server instances from a single admin web
+  console. - High performance DNS server based on async IO that can serve millions
+  of requests per minute even on a commodity desktop PC hardware (load tested on Intel
+  i7-8700 CPU with more than 100,000 request/second over Gigabit Ethernet). - Self
+  host [DNS-over-TLS](https://www.rfc-editor.org/rfc/rfc7858.html), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.html),
+  and [DNS-over-QUIC](https://www.ietf.org/rfc/rfc9250.html) DNS services on your
+  network. - DNS-over-HTTPS implementation supports HTTP/1.1, HTTP/2, and HTTP/3 transport
+  protocols. - Supports DNS over [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt)
+  version 1 and 2 for both UDP and TCP transports. - Use public DNS resolvers like
+  Cloudflare, Google, Quad9, and AdGuard with [DNS-over-TLS](https://www.rfc-editor.org/rfc/rfc7858.html),
+  [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.html), or [DNS-over-QUIC](https://www.ietf.org/rfc/rfc9250.html)
+  protocols as forwarders. - Support for latency based name server selection algorithm
+  that works with concurrency feature for both recursive resolution and forwarders.
+  - Advanced caching with features like serve stale, prefetching and auto prefetching.
+  - Persistent caching feature that saves cache to disk when DNS server restarts.
+  - DNS rebinding attack protection feature available with DNS Rebinding Protection
+  App. - DNSSEC validation support with RSA, ECDSA & EdDSA algorithms for recursive
+  resolver, forwarders, and conditional forwarders with NSEC and NSEC3 support. -
+  DNSSEC support for all supported DNS transport protocols including encrypted DNS
+  protocols. - DANE TLSA [RFC 6698](https://datatracker.ietf.org/doc/html/rfc6698)
+  record type support. This includes support for automatically generating the hash
+  values using certificates in PEM format. - SVCB & HTTPS [draft-ietf-dnsop-svcb-https](https://www.ietf.org/archive/id/draft-ietf-dnsop-svcb-https-12.html)
+  record type support. - URI [RFC 7553](https://www.rfc-editor.org/rfc/rfc7553.html)
+  record type support. - SSHFP [RFC 4255](https://www.rfc-editor.org/rfc/rfc4255.html)
+  record type support. - CNAME cloaking feature to block domain names that resolve
+  to CNAME which are blocked. - QNAME minimization support in recursive resolver [RFC
+  9156](https://www.rfc-editor.org/rfc/rfc9156.html). - QNAME case randomization support
+  for UDP transport protocol [draft-vixie-dnsext-dns0x20-00](https://datatracker.ietf.org/doc/html/draft-vixie-dnsext-dns0x20-00).
+  - DNAME record [RFC 6672](https://datatracker.ietf.org/doc/html/rfc6672) support.
+  - ANAME proprietary record support to allow using CNAME like feature at zone apex
+  (CNAME flattenin'
 ---
 {% raw %}
 <p align="center">

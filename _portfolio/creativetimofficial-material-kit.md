@@ -2,8 +2,58 @@
 layout: project
 name: Creativetimofficial Material Kit
 slug: creativetimofficial-material-kit
+category: Frontend Framework
 image: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter
 repo_url: https://github.com/creativetimofficial/material-kit
+indexed_content: "# [Material Kit 2](http://demos.creative-tim.com/material-kit/presentation?ref=readme-mk2)
+  [](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit&text=Check%20Material%20Kit%202%20made%20by%20@CreativeTim%20#webdesign%20#designSystem%20#uiKit%20#materialDesign%20#html%20https://www.creative-tim.com/product/material-kit)
+  [](https://discord.gg/FhCJCaHdQa) [](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aopen+is%3Aissue)
+  [](https://github.com/creativetimofficial/material-kit/issues?q=is%3Aissue+is%3Aclosed)
+  **Material Kit** is a **Free Bootstrap 5 UI Kit** with a fresh, new design inspired
+  by Google's material design. You asked for it, so we built it. It's a great pleasure
+  to introduce to you the material concepts in an easy to use and beautiful set of
+  components. Along with the restyling of the Bootstrap elements, you will find three
+  fully-coded example pages, to help you design your next project. **Material Kit**
+  makes use of light, surface, and movement. It uses a deliberate color choice, edge-to-edge
+  imagery, and large scale typography. The general layout resembles sheets of paper
+  following multiple different layers so that the depth and order are obvious. The
+  navigation stays mainly on the left and the actions on the right. This new design
+  has elements that have been the result of research regarding ink and paper and the
+  way objects and materials interact in real life. The result is a beautiful and consistent
+  set of elements that can get you started with your next project. Material Kit is
+  a great tool if you are looking to create a web presence for your Android application
+  and need to be consistent, leaving the impression of visually similar elements.
+  It is also a great resource in its own right, looking gorgeous and helping you build
+  your web pages. Special thanks go to: - [Nepcha Analytics](https://nepcha.com?ref=readme)
+  for the analytics tool. Nepcha is already integrated with Material Dashboard. You
+  can use it to gain insights into your sources of traffic. ## Table of Contents -
+  [Material Kit 2 ](#material-kit-2--) - [Table of Contents](#table-of-contents) -
+  [Versions](#versions) - [Demo](#demo) - [Quick start](#quick-start) - [Deploy](#deploy)
+  - [Documentation](#documentation) - [File Structure](#file-structure) - [Browser
+  Support](#browser-support) - [Resources](#resources) - [Reporting Issues](#reporting-issues)
+  - [Upgrade to PRO Version](#upgrade-to-pro-version) - [Licensing](#licensing) -
+  [Useful Links](#useful-links) - [Social Media](#social-media) - [Backend logic provided
+  by genezio](#backend-logic-provided-by-genezio) ## Versions [ ](https://www.creative-tim.com/product/material-kit)[
+  ](https://www.creative-tim.com/product/vue-material-kit)[ ](https://www.creative-tim.com/product/material-kit-react)[
+  ](https://www.creative-tim.com/product/material-kit-react-native)[ ](https://demos.creative-tim.com/material-kit-figma/presentation.html)[
+  ](https://themeisle.com/themes/hestia/?ref=creativetim)[ ](https://github.com/creativetimofficial/material-kit/tree/photoshop)[
+  ](https://github.com/creativetimofficial/material-kit/tree/sketch) | HTML | React
+  | Vue | | --- | --- | --- | | [](https://www.creative-tim.com/product/material-kit)
+  | [](https://www.creative-tim.com/product/material-kit-react) | [](https://www.creative-tim.com/product/vue-material-kit)
+  | React Native | Figma | WordPress | | --- | --- | --- | | [](https://www.creative-tim.com/product/material-kit-react-native)
+  | [](https://demos.creative-tim.com/material-kit-figma/presentation.html) | [](https://themeisle.com/themes/hestia/?ref=creativetim)
+  ## Demo | Buttons | Inputs | Navbars | | --- | --- | --- | | [](https://demos.creative-tim.com/material-kit/index.html#buttons)
+  | [](https://demos.creative-tim.com/material-kit/index.html#inputs) | [](https://demos.creative-tim.com/material-kit/index.html#navigation)
+  | Login Page | Landing Page | Profile Page | | --- | --- | --- | | [](https://demos.creative-tim.com/material-kit/index.html#carousel)
+  | [](https://demos.creative-tim.com/material-kit/examples/landing-page.html) | [](https://demos.creative-tim.com/material-kit/examples/profile-page.html)
+  [View More](https://demos.creative-tim.com/material-kit/index.html) ## Quick start
+  - `npm i material-kit` - [Download from Github](https://github.com/creativetimofficial/material-kit/archive/master.zip).
+  - [Download from Creative Tim](https://www.creative-tim.com/product/material-kit).
+  - Install with [Bower](https://bower.io/): ```bower install material-kit```. - Clone
+  the repo: `git clone https://github.com/creativetimofficial/material-kit.git`. ##
+  Deploy :rocket: You can deploy your own version of the template to Genezio with
+  one click: [](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/material-kit&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
+  ## Documentation The documentation for the Ma"
 ---
 {% raw %}
 # [Material Kit 2](http://demos.creative-tim.com/material-kit/presentation?ref=readme-mk2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit&text=Check%20Material%20Kit%202%20made%20by%20@CreativeTim%20#webdesign%20#designSystem%20#uiKit%20#materialDesign%20#html%20https://www.creative-tim.com/product/material-kit) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/FhCJCaHdQa)

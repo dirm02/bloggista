@@ -2,8 +2,64 @@
 layout: project
 name: Instantx Research Instantid
 slug: instantX-research-InstantID
+category: Uncategorized
 image: https://img.shields.io/github/stars/InstantID/InstantID?style=social
 repo_url: https://github.com/InstantID/InstantID)
+indexed_content: "InstantID: Zero-shot Identity-Preserving Generation in Seconds [**Qixun
+  Wang**](https://github.com/wangqixun) 12 · [**Xu Bai**](https://huggingface.co/baymin0220)
+  12 · [**Haofan Wang**](https://haofanwang.github.io/) 12* · [**Zekui Qin**](https://github.com/ZekuiQin)
+  12 · [**Anthony Chen**](https://antonioo-c.github.io/) 123 Huaxia Li 2 · Xu Tang
+  2 · Yao Hu 2 1 InstantX Team · 2 Xiaohongshu Inc · 3 Peking University * corresponding
+  authors [](https://github.com/InstantID/InstantID) [](https://modelscope.cn/studios/instantx/InstantID/summary)
+  [](https://openxlab.org.cn/apps/detail/InstantX/InstantID) InstantID is a new state-of-the-art
+  tuning-free method to achieve ID-Preserving generation with only single image, supporting
+  various downstream tasks. ## Release - [2024/07/18] \U0001F525 We are training InstantID
+  for [Kolors](https://huggingface.co/Kwai-Kolors/Kolors-diffusers). The weight requires
+  significant computational power, which is currently in the process of iteration.
+  After the model training is completed, it will be open-sourced. The latest checkpoint
+  results are referenced in [Kolors Version](#kolors-version). - [2024/04/03] \U0001F525
+  We release our recent work [InstantStyle](https://github.com/InstantStyle/InstantStyle)
+  for style transfer, compatible with InstantID! - [2024/02/01] \U0001F525 We have
+  supported LCM acceleration and Multi-ControlNets on our [Huggingface Spaces Demo](https://huggingface.co/spaces/InstantX/InstantID)!
+  Our depth estimator is supported by [Depth-Anything](https://github.com/LiheYoung/Depth-Anything).
+  - [2024/01/31] \U0001F525 [OneDiff](https://github.com/siliconflow/onediff?tab=readme-ov-file#easy-to-use)
+  now supports accelerated inference for InstantID, check [this](https://github.com/siliconflow/onediff/blob/main/benchmarks/instant_id.py)
+  for details! - [2024/01/23] \U0001F525 Our pipeline has been merged into [diffusers](https://github.com/huggingface/diffusers/blob/main/examples/community/pipeline_stable_diffusion_xl_instantid.py)!
+  - [2024/01/22] \U0001F525 We release the [pre-trained checkpoints](https://huggingface.co/InstantX/InstantID),
+  [inference code](https://github.com/InstantID/InstantID/blob/main/infer.py) and
+  [gradio demo](https://huggingface.co/spaces/InstantX/InstantID)! - [2024/01/15]
+  \U0001F525 We release the [technical report](https://arxiv.org/abs/2401.07519).
+  - [2023/12/11] \U0001F525 We launch the [project page](https://instantid.github.io/).
+  ## Demos ### Stylized Synthesis ### Comparison with Previous Works Comparison with
+  existing tuning-free state-of-the-art techniques. InstantID achieves better fidelity
+  and retain good text editability (faces and styles blend better). Comparison with
+  pre-trained character LoRAs. We don't need multiple images and still can achieve
+  competitive results as LoRAs without any training. Comparison with InsightFace Swapper
+  (also known as ROOP or Refactor). However, in non-realistic style, our work is more
+  flexible on the integration of face and background. ### Kolors Version We have adapted
+  InstantID for [Kolors](https://huggingface.co/Kwai-Kolors/Kolors-diffusers). Leveraging
+  Kolors' robust text generation capabilities \U0001F44D\U0001F44D\U0001F44D, InstantID
+  can be integrated with Kolors to simultaneously generate **ID** and **text**. |
+  demo | demo | demo | |:-----:|:-----:|:-----:| | | | ## Download You can directly
+  download the model from [Huggingface](https://huggingface.co/InstantX/InstantID).
+  You also can download the model in python script: ```python from huggingface_hub
+  import hf_hub_download hf_hub_download(repo_id=\"InstantX/InstantID\", filename=\"ControlNetModel/config.json\",
+  local_dir=\"./checkpoints\") hf_hub_download(repo_id=\"InstantX/InstantID\", filename=\"ControlNetModel/diffusion_pytorch_model.safetensors\",
+  local_dir=\"./checkpoints\") hf_hub_download(repo_id=\"InstantX/InstantID\", filename=\"ip-adapter.bin\",
+  local_dir=\"./checkpoints\") ``` Or run the following command to download all models:
+  ```python pip install -r gradio_demo/requirements.txt python gradio_demo/download_models.py
+  ``` If you cannot access to Huggingface, you can use [hf-mirror](https://hf-mirror.com/)
+  to download models. ```python export HF_ENDPOINT=https://hf-mirror.com huggingface-cli
+  download --resume-download InstantX/InstantID --local-dir checkpoints --local-dir-use-symlinks
+  False ``` For face encoder, you need to manually download via this [URL](https://github.com/deepinsight/insightface/issues/1896#issuecomment-1023867304)
+  to `models/antelopev2` as the default link is invalid. Once you have prepared all
+  models, the folder tree should be like: ``` . ├── models ├── checkpoints ├── ip_adapter
+  ├── pipeline_stable_diffusion_xl_instantid.py └── README.md ``` ## Usage If you
+  want to reproduce results in the paper, please refer to the code in [infer_full.py](infer_full.py).
+  If you want to compare the results with other methods, even without using depth-controlnet,
+  it is recommended that you use this code. If you are pursuing better results, it
+  is recommended to follow [InstantID-Rome](https://github.com/instantX-research/InstantID-Rome).
+  T"
 ---
 {% raw %}
 <div align="center">

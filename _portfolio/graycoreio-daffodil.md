@@ -2,8 +2,60 @@
 layout: project
 name: Graycoreio Daffodil
 slug: graycoreio-daffodil
+category: Platform -eCommerce
 image: https://img.shields.io/npm/v/%40daffodil%2Fanalytics/latest.svg
 repo_url: https://github.com/graycoreio/daffodil
+indexed_content: 'Daffodil - Storefront that can connect to any ecommerce backend.
+  Daffodil is an ecommerce development framework for building high-quality storefronts
+  that can connect to any ecommerce backend. daff.io | demo.daff.io ## Demo Wanna
+  see what we''re trying to do? [Check out the demo.][demo] ## Quickstart From a new
+  Angular app, simply run ```bash npx ng add @daffodil/commerce ``` ## Documentation
+  Get started with Daffodil, learn the fundamentals and explore advanced topics on
+  our documentation website. - [Getting Started][quickstart] - [Learn about drivers][drivers]
+  ## Contributing ### Contributing Guidelines Read through our [contributing guidelines][contributing]
+  to learn about our submission process, coding rules, and more. ### Want to Help?
+  Want to report a bug, contribute some code, or improve the documentation? Excellent!
+  Read up on our guidelines for [contributing][contributing] and then check out one
+  of our issues labeled as [good first issue](https://github.com/graycoreio/daffodil/labels/good%20first%20issue)
+  or [good first challenge](https://github.com/graycoreio/daffodil/issues?q=state%3Aopen%20label%3A%22good%20first%20challenge%22)
+  . ### Code of Conduct Please read and follow our [Code of Conduct][codeofconduct].
+  ## Community Join the conversation and help the community. - [Discord][discord]
+  - [YouTube][youtube] ## Packages Below is a table of currently available Daffodil
+  packages. | Package | Version | Stability | |---|---|---| | [@daffodil/analytics](/libs/analytics/README.md)
+  | [](https://npmjs.com/package/@daffodil/analytics) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/auth](/libs/auth/README.md) | [](https://npmjs.com/package/@daffodil/auth)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/authorizenet](/libs/authorizenet/README.md)
+  | [](https://npmjs.com/package/@daffodil/authorizenet) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/cart](/libs/cart/README.md) | [](https://npmjs.com/package/@daffodil/cart)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/cart-customer](/libs/cart-customer/README.md)
+  | [](https://npmjs.com/package/@daffodil/cart-customer) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/cart-store-credit](/libs/cart-store-credit/README.md) | [](https://npmjs.com/package/@daffodil/cart-store-credit)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/category](/libs/category/README.md)
+  | [](https://npmjs.com/package/@daffodil/category) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/checkout](/libs/checkout/README.md) | [](https://npmjs.com/package/@daffodil/checkout)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/contact](/libs/contact/README.md)
+  | [](https://npmjs.com/package/@daffodil/contact) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/content](/libs/content/README.md) | [](https://npmjs.com/package/@daffodil/content)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/core](/libs/core/README.md)
+  | [](https://npmjs.com/package/@daffodil/core) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/customer](/libs/customer/README.md) | [](https://npmjs.com/package/@daffodil/customer)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/customer-auth](/libs/customer-auth/README.md)
+  | [](https://npmjs.com/package/@daffodil/customer-auth) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/customer-order](/libs/customer-order/README.md) | [](https://npmjs.com/package/@daffodil/customer-order)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/customer-payment](/libs/customer-payment/README.md)
+  | [](https://npmjs.com/package/@daffodil/customer-payment) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/customer-payment-authorizenet](/libs/customer-payment-authorizenet/README.md)
+  | [](https://npmjs.com/package/@daffodil/customer-payment-authorizenet) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/customer-store-credit](/libs/customer-store-credit/README.md) | [](https://npmjs.com/package/@daffodil/customer-store-credit)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/design](/libs/design/README.md)
+  | [](https://npmjs.com/package/@daffodil/design) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/dev-tools](/libs/dev-tools/README.md) | [](https://npmjs.com/package/@daffodil/dev-tools)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/driver](/libs/driver/README.md)
+  | [](https://npmjs.com/package/@daffodil/driver) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/external-router](/libs/external-router/README.md) | [](https://npmjs.com/package/@daffodil/external-router)
+  | [](https://www.github.com/graycoreio/daffodil) | [@daffodil/forms](/libs/forms/README.md)
+  | [](https://npmjs.com/package/@daffodil/forms) | [](https://www.github.com/graycoreio/daffodil)
+  | [@daffodil/geography](/libs/geography/README.md) | [](https://npmjs.com/package/@d'
 ---
 {% raw %}
 

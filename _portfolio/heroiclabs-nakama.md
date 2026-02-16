@@ -2,8 +2,65 @@
 layout: project
 name: Heroiclabs Nakama
 slug: heroiclabs-nakama
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/heroiclabs-nakama/.github/nakama.png
 repo_url: https://github.com/heroiclabs/nakama
+indexed_content: '## Features * **Users** - Register/login new users via social networks,
+  email, or device ID. * **Storage** - Store user records, settings, and other objects
+  in collections. * **Social** - Users can connect with friends, and join groups.
+  Builtin social graph to see how users can be connected. * **Chat** - 1-on-1, group,
+  and global chat between users. Persist messages for chat history. * **Multiplayer**
+  - Realtime, or turn-based active and passive multiplayer. * **Leaderboards** - Dynamic,
+  seasonal, get top members, or members around a user. Have as many as you need. *
+  **Tournaments** - Invite players to compete together over prizes. Link many together
+  to create leagues. * **Parties** - Add team play to a game. Users can form a party
+  and communicate with party members. * **Purchase Validation** - Validate in-app
+  purchases and subscriptions. * **In-App Notifications** - Send messages and notifications
+  to connected client sockets. * **Runtime code** - Extend the server with custom
+  logic written in Lua, TypeScript/JavaScript, or native Go code. * **Matchmaker**,
+  **dashboard**, **metrics**, and [more](https://heroiclabs.com/docs). Build scalable
+  games and apps with a production ready server used by ambitious game studios and
+  app developers [all around the world](https://heroiclabs.com/customers/). Have a
+  look at the [documentation](https://heroiclabs.com/docs) and join the [developer
+  community](https://forum.heroiclabs.com) for more info. ## Getting Started The server
+  is simple to setup and run for local development and can be deployed to any cloud
+  provider. See the [deployment notes](#deployment) for recommendations on how to
+  deploy the project for production. Nakama server requires CockroachDB or another
+  Postgres wire-compatible server as it''s database. ### Docker The fastest way to
+  run the server and the database is with Docker. Setup Docker and start the daemon.
+  1. Set up a [docker-compose file](https://heroiclabs.com/docs/nakama/getting-started/install/docker/#running-nakama)
+  and place it in a folder for your project. 2. Run `docker-compose -f ./docker-compose.yml
+  up` to download container images and run the servers. For more detailed instructions
+  have a look at our [Docker quickstart](https://heroiclabs.com/docs/nakama/getting-started/install/docker)
+  guide. Nakama Docker images are maintained on [Docker Hub](https://hub.docker.com/r/heroiclabs/nakama/tags)
+  and [prerelease](https://hub.docker.com/r/heroiclabs/nakama-prerelease/tags) images
+  are occasionally published for cutting edge features of the server. ### Binaries
+  You can run the servers with native binaries for your platform. 1. Download the
+  server from our [releases](https://github.com/heroiclabs/nakama/releases) page and
+  the [database](https://www.cockroachlabs.com/docs/stable/install-cockroachdb.html).
+  2. Follow the database [instructions](https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html#before-you-begin)
+  to start it. 3. Run a migration which will setup or upgrade the database schema:
+  ```shell nakama migrate up --database.address "root@127.0.0.1:26257" ``` 4. Start
+  Nakama and connect to the database: ```shell nakama --database.address "root@127.0.0.1:26257"
+  ``` When connected you''ll see server output which describes all settings the server
+  uses for [configuration](https://heroiclabs.com/docs/nakama/getting-started/configuration).
+  > {"level":"info","ts":"2018-04-29T10:14:41.249+0100","msg":"Node","name":"nakama","version":"2.0.0+7e18b09","runtime":"go1.10.1","cpu":4}
+  > {"level":"info","ts":"2018-04-29T10:14:41.249+0100","msg":"Database connections","dsns":["root@127.0.0.1:26257"]}
+  > ... ## Usage Nakama supports a variety of protocols optimized for various gameplay
+  or app use cases. For request/response it can use GRPC or the HTTP1.1+JSON fallback
+  (REST). For realtime communication you can use WebSockets or rUDP. For example with
+  the REST API to authenticate a user account with a device identifier. ```shell curl
+  "127.0.0.1:7350/v2/account/authenticate/device?create=true" \ --user "defaultkey:"
+  \ --data ''{"id": "someuniqueidentifier"}'' ``` Response: > { > "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ5OTU2NDksInVpZCI6Ijk5Y2Q1YzUyLWE5ODgtNGI2NC04YThhLTVmMTM5YTg4MTgxMiIsInVzbiI6InhBb1RxTUVSdFgifQ.-3_rXNYx3Q4jKuS7RkxeMWBzMNAm0vl93QxzRI8p_IY"
+  > } There''s a number of official [client libraries](https://github.com/heroiclabs)
+  available on GitHub with [documentation](https://heroiclabs.com/docs). The current
+  platform/language support includes: .NET (in C#), Unity engine, JavaScript, Java
+  (with Android), Unreal engine, Godot, Defold, and Swift (with iOS). If you''d like
+  to contribute a client or request one let us know. ## Nakama Console The server
+  provides a web UI which teams can use to inspect various data stored through the
+  server APIs, view lightweight service metrics, manage player data, update storage
+  objects, restrict access to production with permission profiles, and gain visibility
+  into realtime features like active '
 ---
 {% raw %}
 <p align="center">

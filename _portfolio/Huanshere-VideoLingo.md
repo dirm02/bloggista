@@ -2,8 +2,67 @@
 layout: project
 name: Huanshere Videolingo
 slug: Huanshere-VideoLingo
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://api.star-history.com/svg?repos=Huanshere/VideoLingo&type=Timeline
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Connect the World, Frame by Frame [**English**](/README.md)｜[**简体中文**](/translations/README.zh.md)｜[**繁體中文**](/translations/README.zh-TW.md)｜[**日本語**](/translations/README.ja.md)｜[**Español**](/translations/README.es.md)｜[**Русский**](/translations/README.ru.md)｜[**Français**](/translations/README.fr.md)
+  ## \U0001F31F Overview ([Try VL Now!](https://videolingo.io)) VideoLingo is an all-in-one
+  video translation, localization, and dubbing tool aimed at generating Netflix-quality
+  subtitles. It eliminates stiff machine translations and multi-line subtitles while
+  adding high-quality dubbing, enabling global knowledge sharing across language barriers.
+  Key features: - \U0001F3A5 YouTube video download via yt-dlp - **\U0001F399️ Word-level
+  and Low-illusion subtitle recognition with WhisperX** - **\U0001F4DD NLP and AI-powered
+  subtitle segmentation** - **\U0001F4DA Custom + AI-generated terminology for coherent
+  translation** - **\U0001F504 3-step Translate-Reflect-Adaptation for cinematic quality**
+  - **✅ Netflix-standard, Single-line subtitles Only** - **\U0001F5E3️ Dubbing with
+  GPT-SoVITS, Azure, OpenAI, and more** - \U0001F680 One-click startup and processing
+  in Streamlit - \U0001F30D Multi-language support in Streamlit UI - \U0001F4DD Detailed
+  logging with progress resumption Difference from similar projects: **Single-line
+  subtitles only, superior translation quality, seamless dubbing experience** ## \U0001F3A5
+  Demo ### Dual Subtitles --- https://github.com/user-attachments/assets/a5c3d8d1-2b29-4ba9-b0d0-25896829d951
+  ### Cosy2 Voice Clone --- https://github.com/user-attachments/assets/e065fe4c-3694-477f-b4d6-316917df7c0a
+  ### GPT-SoVITS with my voice --- https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
+  ### Language Support **Input Language Support(more to come):** \U0001F1FA\U0001F1F8
+  English \U0001F929 | \U0001F1F7\U0001F1FA Russian \U0001F60A | \U0001F1EB\U0001F1F7
+  French \U0001F929 | \U0001F1E9\U0001F1EA German \U0001F929 | \U0001F1EE\U0001F1F9
+  Italian \U0001F929 | \U0001F1EA\U0001F1F8 Spanish \U0001F929 | \U0001F1EF\U0001F1F5
+  Japanese \U0001F610 | \U0001F1E8\U0001F1F3 Chinese* \U0001F60A > *Chinese uses a
+  separate punctuation-enhanced whisper model, for now... **Translation supports all
+  languages, while dubbing language depends on the chosen TTS method.** ## Installation
+  Meet any problem? Chat with our free online AI agent [**here**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh)
+  to help you. > **Note:** For Windows users with NVIDIA GPU, follow these steps before
+  installation: > 1. Install [CUDA Toolkit 12.6](https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.76_windows.exe)
+  > 2. Install [CUDNN 9.3.0](https://developer.download.nvidia.com/compute/cudnn/9.3.0/local_installers/cudnn_9.3.0_windows.exe)
+  > 3. Add `C:\\Program Files\\NVIDIA\\CUDNN\\v9.3\\bin\\12.6` to your system PATH
+  > 4. Restart your computer > **Note:** FFmpeg is required. Please install it via
+  package managers: > - Windows: ```choco install ffmpeg``` (via [Chocolatey](https://chocolatey.org/))
+  > - macOS: ```brew install ffmpeg``` (via [Homebrew](https://brew.sh/)) > - Linux:
+  ```sudo apt install ffmpeg``` (Debian/Ubuntu) 1. Clone the repository ```bash git
+  clone https://github.com/Huanshere/VideoLingo.git cd VideoLingo ``` 2. Install dependencies(requires
+  `python=3.10`) ```bash conda create -n videolingo python=3.10.0 -y conda activate
+  videolingo python install.py ``` 3. Start the application ```bash streamlit run
+  st.py ``` ### Docker Alternatively, you can use Docker (requires CUDA 12.4 and NVIDIA
+  Driver version >550), see [Docker docs](/docs/pages/docs/docker.en-US.md): ```bash
+  docker build -t videolingo . docker run -d -p 8501:8501 --gpus all videolingo ```
+  ## APIs VideoLingo supports OpenAI-Like API format and various TTS interfaces: -
+  LLM: `claude-3-5-sonnet`, `gpt-4.1`, `deepseek-v3`, `gemini-2.0-flash`, ... (sorted
+  by performance, be cautious with gemini-2.5-flash...) - WhisperX: Run whisperX (large-v3)
+  locally or use 302.ai API - TTS: `azure-tts`, `openai-tts`, `siliconflow-fishtts`,
+  **`fish-tts`**, `GPT-SoVITS`, `edge-tts`, `*custom-tts`(You can modify your own
+  TTS in custom_tts.py!) > **Note:** VideoLingo works with **[302.ai](https://gpt302.saaslink.net/C2oHR9)**
+  - one API key for all services (LLM, WhisperX, TTS). Or run locally with Ollama
+  and Edge-TTS for free, no API needed! For detailed installation, API configuration,
+  and batch mode instructions, please refer to the documentation: [English](/docs/pages/docs/start.en-US.md)
+  | [中文](/docs/pages/docs/start.zh-CN.md) ## Current Limitations 1. WhisperX transcription
+  performance may be affected by video background noise, as it uses wav2vac model
+  for alignment. For videos with loud background music, please enable Voice Separation
+  Enhancement. Additionally, subtitles ending with numbers or special characters may
+  be truncated early due to wav2vac's inability to map numeric characters (e.g., \"1\")
+  to their spoken form (\"one\"). 2. Using weaker models can lead to errors during
+  processes due to strict JSON format requirements for responses (tried my best to
+  prompt llm\U0001F60A). If this error occurs, please delete the `output` folder and
+  retry with a different LLM, otherwise repeated execution will read the previous
+  erron"
 ---
 {% raw %}
 <div align="center">

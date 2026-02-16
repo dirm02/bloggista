@@ -2,8 +2,67 @@
 layout: project
 name: Gurugio Lowlevelprogramming University
 slug: gurugio-lowlevelprogramming-university
+category: Educational-map
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/jwasham/coding-interview-university).
+indexed_content: '**I''m getting so much spam that I''ve changed this repo to read-only
+  for a while.** NOTICE1: Please do not copy the contents of this page to your blog.
+  You can share this page but please share with the original link. That is how we
+  compliment the authors of good documents and open source projects. NOTICE2: Please
+  notice that low-level programming is out of trend and currently there are not many
+  companies hiring low-level developer. It is getting harder for me to find a job.
+  If you haven''t started a professional career yet, I would like to recommend you
+  consider other fields either carefully. NOTICE3: If you want a quick start, go to
+  "How to start?". * [Low-Level Programming University](#low-level-programming-university)
+  * [What is it?](#what-is-it) * [What is the Low Level](#what-is-the-low-level) *
+  [Theory](#theory) * [Languages](#languages) * [Assembly](#assembly) * [C language](#c-language)
+  * [Rust language](#rust-language) * [Applications](#applications) * [Hardware and
+  Firmware](#hardware-and-firmware) * [Linux kernel and device driver](#linux-kernel-and-device-driver)
+  * [References](#references) * [Other applications](#other-applications) * [Future
+  of low-level programming](#future-of-low-level-programming) * [How to start?](#how-to-start)
+  * [Translations](#translations) * [Who am I?](#who-am-i) # Low-Level Programming
+  University ## What is it? I''m inspired by [google-interview-university](https://github.com/jwasham/coding-interview-university).
+  I''d like to share my experience and show a roadmap to becoming a low-level programmer
+  because I have found that these skills are not as common as they once were. In addition,
+  many students and beginners ask me how they could become low-level programmers and
+  Linux kernel engineers. This page cannot include every link/book/course. For example,
+  this page introduces Arduino but there is not detailed information about Arduino
+  and embedded systems. You should go further yourself. You have the keyword "Arduino"
+  with which you can start. So your next step is probably googling Arduino, buying
+  a kit, and doing something for yourself, not collecting links or free books. Please
+  remember this page is just a roadmap for beginners. Low-level programming is a part
+  of computer science. Absolutely it would be much better to get education in computer
+  science first. * [Path to a free self-taught education in Computer Science!](https://github.com/ossu/computer-science)
+  ## What is the Low-Level? I classify low-level programming as programming that is
+  very close to the machine, using a lower level programming language like C or assembly.
+  This is in contrast to higher-level programming, typical of user-space applications,
+  using high level languages (e.g. Python, Java). * [Wikipedia: Low-level programming
+  language](https://en.wikipedia.org/wiki/Low-level_programming_language) Yes, systems
+  programming is a very close concept to low-level programming. This page includes
+  the hardware design and firmware development that is not included in systems programming.
+  * [Wikipedia: System programming](https://en.wikipedia.org/wiki/System_programming)
+  Finally, this page includes topics ranging from hardware components to the Linux
+  kernel. That is a huge range of layers. A one page document can never cover the
+  details of all the layers, so the aim of this document is to serve as a starting
+  point for low-level programming. ## Theory There are two background theories to
+  low-level programming: * Computer Architecture * Operating Systems I think the best
+  way to learn theory is by taking a course. Reading books is not bad but takes too
+  much time and effort. You can find many good classes on online universities, for
+  instance, Coursera.org and edx.org. Theory is theory. I don''t think you need to
+  get an A+ in the class, just understand the big picture. You''ll get better and
+  better with experience. Let me introduce several books that I''ve read. They are
+  commonly used as textbooks in universities. If there is no class with these books
+  in your university, it''s worth spending some time reading them. * Computer Architecture
+  * Computer Architecture, Fifth Edition: A Quantitative Approach * Computer Systems:
+  A Programmer''s Perspective * Computer Organization and Design, Fourth Edition:
+  The Hardware/Software Interface * Operating Systems * The Magic Garden Explained:
+  The Internals of UNIX System V Release 4 an Open Systems Design * The Design of
+  the UNIX Operating System * Operating Systems: Internals and Design Principles by
+  William Stallings * Recommended Courses * [CS401: Operating Systems from saylor.org](https://learn.saylor.org/course/view.php?id=94)
+  * General Programming Skill * [Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
+  * It''s about how to be a good Software programmer. You need not only theory but
+  only technique because programming is a kind of craftwork. * If you learn Lisp/Scheme,
+  you should be able to learn any oth'
 ---
 {% raw %}
 **I'm getting so much spam that I've changed this repo to read-only for a while.**

@@ -2,8 +2,79 @@
 layout: project
 name: Carbon Design System Carbon
 slug: carbon-design-system-carbon
+category: Uncategorized
 image: https://user-images.githubusercontent.com/3901764/57545698-ce5f2380-7320-11e9-8682-903df232d7b0.png
 repo_url: https://github.com/carbon-design-system/carbon
+indexed_content: "Carbon Design System > Carbon is an open-source design system built
+  by IBM. With the IBM Design > Language as its foundation, the system consists of
+  working code, design tools > and resources, human interface guidelines, and a vibrant
+  community of > contributors. ## Getting started If you're just getting started,
+  check out [`@carbon/react`](./packages/react) or [`@carbon/web-components`](./packages/web-components).
+  We also have community-contributed components for the following technologies: -
+  [Angular](https://github.com/IBM/carbon-components-angular) - [Svelte](https://github.com/IBM/carbon-components-svelte)
+  - [Vue](https://github.com/carbon-design-system/carbon-components-vue) If you're
+  trying to find something specific, here's a full list of packages that we support!
+  | Package name | Description | | -----------------------------------------------------
+  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | [`@carbon/react`](./packages/react) | React components and styles | | [`@carbon/web-components`](./packages/web-components)
+  | Web Components | | [`@carbon/styles`](./packages/styles) | Sass styles for components
+  | | [`@carbon/elements`](./packages/elements) | IBM Design Language elements like
+  colors, type, iconography, and more | | [`@carbon/colors`](./packages/colors) |
+  Work with IBM Design Language colors | | [`@carbon/grid`](./packages/grid) | Build
+  layouts using the new 16 column grid system | | [`@carbon/icons`](./packages/icons)
+  | Iconography assets. We also offer support in: [React](./packages/icons-react),
+  [Angular](https://github.com/carbon-design-system/carbon-icons-angular), [Vue](./packages/icons-vue),
+  and [Svelte](https://github.com/IBM/carbon-icons-svelte) | | [`@carbon/pictograms`](./packages/pictograms)
+  | Pictogram assets. We also offer support in: [React](./packages/pictograms-react)
+  and [Svelte](https://github.com/IBM/carbon-pictograms-svelte) | | [`@carbon/layout`](./packages/layout)
+  | Layout-based units and spacing scale | | [`@carbon/motion`](./packages/motion)
+  | Productive and expressive motion curves | | [`@carbon/themes`](./packages/themes)
+  | Color tokens available in the Carbon Design System, like `$interactive-01` | |
+  [`@carbon/type`](./packages/type) | New type tokens used alongside IBM Plex | >
+  [!NOTE] > > The code for https://carbondesignsystem.com/ is in > https://github.com/carbon-design-system/carbon-website.
+  Any issues or pull > requests related to the website should be made there. ## :books:
+  Documentation - See our documentation site [here](https://www.carbondesignsystem.com/developing/frameworks/react/)
+  for full how-to docs and guidelines - [Contributing](/.github/CONTRIBUTING.md):
+  Guidelines for making contributions to this repo. - \U0001F3C3‍♀️ Migration Guides
+  - [v10 to v11](./docs/migration/v11.md) - [v9 to v10 (vanilla)](./packages/carbon-components/docs/migration/migrate-to-10.x.md)
+  - [v9 to v10 (v6 to v7 React)](./packages/react/docs/migration/migrate-to-7.x.md)
+  ## \U0001F64C Contributing We're always looking for contributors to help us fix
+  bugs, build new features, or help us improve the project documentation. If you're
+  interested, definitely check out our [Contributing Guide](/.github/CONTRIBUTING.md)
+  and our [Developer Guide](./docs/developer-handbook.md)! \U0001F440 ## Contributors
+  Taylor Jones \U0001F4BB \U0001F4D6 ️️️️♿️ TJ Egan \U0001F4BB \U0001F4D6 \U0001F687
+  \U0001F440 ️️️️♿️ Alessandra Davila \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Andrea
+  N. Cardona \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Francine Lucca \U0001F4BB \U0001F4D6
+  \U0001F440 ️️️️♿️ Scott Strubberg \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Alison
+  Joseph \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Anna Gonzales \U0001F3A8 \U0001F440
+  Lauren Rice \U0001F3A8 \U0001F440 Josh Black \U0001F4BB \U0001F4D6 \U0001F687 \U0001F440
+  ️️️️♿️ DAK \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Josefina Mancilla \U0001F4BB
+  \U0001F4D6 \U0001F440 ️️️️♿️ emyarod \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ Preeti
+  Bansal \U0001F4BB ️️️️♿️ Eric Marcoux \U0001F4BB Vince Picone \U0001F4BB \U0001F4D6
+  \U0001F440 ️️️️♿️ jillianhowarth \U0001F58B \U0001F3A8 \U0001F440 Ricardo Henriquez
+  \U0001F4BB \U0001F4D6 \U0001F440 ️️️️♿️ johnbister \U0001F3A8 \U0001F440 Dominik
+  Brugger \U0001F4BB \U0001F6A7 Jan Hassel \U0001F4BB \U0001F4D6 ️️️️♿️ \U0001F3A8
+  Alexander Lyon \U0001F4BB Rosie Z \U0001F4BB Nishith P \U0001F4D6 Eric Charpentier
+  \U0001F4BB Luiza Mendes \U0001F4BB \U0001F6A7 Akmal Hakimi Mohd Zamri \U0001F4BB
+  sanjitbauli \U0001F4D6 Laszlo Moczo \U0001F4BB LMapes \U0001F58B \U0001F4D6 conradennis
+  \U0001F3A8 Eric Liu \U0001F4BB \U0001F4D6 Richard Všianský \U0001F4BB Lee Chase
+  \U0001F4BB \U0001F4D6 Anton \U0001F4BB Panpan Lin \U0001F4D6 Ashley Harrison \U0001F4BB
+  Jen Downs \U0001F4BB \U0001F4D6 ️️️️♿️ Abdul Rehman \U0001F4BB MIchael Dudley \U0001F3A8
+  David Bradshaw \U0001F4BB Simon Finney \U0001F4BB ️️️️♿️ Attila Bartha \U0001F4BB
+  배하람 \U0001F4BB Yohanna Gadelrab \U0001F4D6 Akira Sudoh \U0001F4BB \U0001F4D6 ️️️️♿️
+  \U0001F687 Oyinkan Oyetunmibi \U0001F4D6 pbenson322 \U0001F4D6 Abbey Hart \U0001F4BB
+  \U0001F4D6 ️️️️♿️ Lucas \U0001F4BB Dylan Klohr \U0001F4D6 Gilli Sigurdsson \U0001F3A8
+  kennylam \U0001F4BB ️️️️♿️ Sébastien \U0001F4BB Dusan Milko \U0001F4BB Taras Polovyi
+  \U0001F4BB Chris Connors \U0001F3A8 \U0001F4D6 David Conner \U0001F4BB ️️️️♿️ Harish
+  Mohanani \U0001F4BB Frivalszky-Mayer Péter \U0001F4BB ️️️️♿️ s100 \U0001F4BB Taranveer
+  Virk \U0001F4BB Niall Cargill \U0001F4D6 Matt Chapman \U0001F4BB Boston Cartwright
+  \U0001F4BB DavidSCChen \U0001F4BB molyholy \U0001F4BB Scott Dickerson \U0001F4BB
+  Evgeniy Podgaetskiy \U0001F4BB CassidyJensen \U0001F4BB ️️️️♿️ Zsolt Lattmann \U0001F4BB
+  Conrad Schmidt \U0001F4BB Ignacio Becerra \U0001F4BB Swapnil Patil \U0001F4D6 Fei
+  Z \U0001F4BB Ignas Ausiejus \U0001F4D6 Ryan O. Mackey \U0001F4BB Dávid Halász \U0001F4BB
+  Bill Guigue \U0001F4BB szymonbrandys \U0001F4BB Adam Alston \U0001F4D6 Krithika
+  S Udupa \U0001F4D6 Eshin Griffith \U0001F4BB @RianTavaresOn \U0001F4BB \U0001F3A8
+  ColbyJohnIBM \U0001F4BB "
 ---
 {% raw %}
 <p align="center">

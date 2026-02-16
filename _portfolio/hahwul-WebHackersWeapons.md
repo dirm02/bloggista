@@ -2,8 +2,61 @@
 layout: project
 name: Hahwul Webhackersweapons
 slug: hahwul-WebHackersWeapons
+category: GreyHate-Cyber&Security
 image: https://img.shields.io/github/stars/hahwul/WebHackersWeapons?label=WebHackersWeapons
 repo_url: https://github.com/hahwul/WebHackersWeapons
+indexed_content: 'A collection of awesome tools used by Web hackers. Happy hacking
+  , Happy bug-hunting! ## Family project [](https://github.com/hahwul/WebHackersWeapons)
+  [](https://github.com/hahwul/MobileHackersWeapons) ## Table of Contents - [Weapons](#weapons)
+  - [Tools](#tools) - [Bookmarklets](#bookmarklets) - [Browser Addons](#browser-addons)
+  - [Burpsuite, Caido and ZAP Addons](#burpsuite-caido-and-zap-addons) - [Contribute](CONTRIBUTING.md)
+  - [Thanks to contributor](#thanks-to-contributor) ## Weapons *Attributes* | | Attributes
+  | |-------|---------------------------------------------------| | Types | `Army-Knife`
+  `Proxy` `Recon` `Fuzzer` `Scanner` `Exploit` `Env` `Utils` `Etc`| | Tags | [`infra`](/categorize/tags/infra.md)
+  [`live-audit`](/categorize/tags/live-audit.md) [`pentest`](/categorize/tags/pentest.md)
+  [`mitmproxy`](/categorize/tags/mitmproxy.md) [`crawl`](/categorize/tags/crawl.md)
+  [`recon`](/categorize/tags/recon.md) [`exploit`](/categorize/tags/exploit.md) [`http`](/categorize/tags/http.md)
+  [`repeater`](/categorize/tags/repeater.md) [`js-analysis`](/categorize/tags/js-analysis.md)
+  [`subdomains`](/categorize/tags/subdomains.md) [`url`](/categorize/tags/url.md)
+  [`dns`](/categorize/tags/dns.md) [`param`](/categorize/tags/param.md) [`apk`](/categorize/tags/apk.md)
+  [`endpoint`](/categorize/tags/endpoint.md) [`asn`](/categorize/tags/asn.md) [`network-mapping`](/categorize/tags/network-mapping.md)
+  [`osint`](/categorize/tags/osint.md) [`takeover`](/categorize/tags/takeover.md)
+  [`portscan`](/categorize/tags/portscan.md) [`online`](/categorize/tags/online.md)
+  [`wordlist`](/categorize/tags/wordlist.md) [`permutation`](/categorize/tags/permutation.md)
+  [`csp`](/categorize/tags/csp.md) [`ssl`](/categorize/tags/ssl.md) [`tls`](/categorize/tags/tls.md)
+  [`certificates`](/categorize/tags/certificates.md) [`port`](/categorize/tags/port.md)
+  [`attack-surface`](/categorize/tags/attack-surface.md) [`favicon`](/categorize/tags/favicon.md)
+  [`cloud`](/categorize/tags/cloud.md) [`asset-discovery`](/categorize/tags/asset-discovery.md)
+  [`graphql`](/categorize/tags/graphql.md) [`domain`](/categorize/tags/domain.md)
+  [`ssrf`](/categorize/tags/ssrf.md) [`jwt`](/categorize/tags/jwt.md) [`path-traversal`](/categorize/tags/path-traversal.md)
+  [`header`](/categorize/tags/header.md) [`ssti`](/categorize/tags/ssti.md) [`cache-vuln`](/categorize/tags/cache-vuln.md)
+  [`smuggle`](/categorize/tags/smuggle.md) [`fuzz`](/categorize/tags/fuzz.md) [`crlf`](/categorize/tags/crlf.md)
+  [`prototypepollution`](/categorize/tags/prototypepollution.md) [`prototype-pollution`](/categorize/tags/prototype-pollution.md)
+  [`vulnerability-scanner`](/categorize/tags/vulnerability-scanner.md) [`dependency-scanning`](/categorize/tags/dependency-scanning.md)
+  [`sqli`](/categorize/tags/sqli.md) [`403`](/categorize/tags/403.md) [`xss`](/categorize/tags/xss.md)
+  [`nosqli`](/categorize/tags/nosqli.md) [`dependency-confusion`](/categorize/tags/dependency-confusion.md)
+  [`broken-link`](/categorize/tags/broken-link.md) [`web-scanner`](/categorize/tags/web-scanner.md)
+  [`s3`](/categorize/tags/s3.md) [`aaa`](/categorize/tags/aaa.md) [`sast`](/categorize/tags/sast.md)
+  [`code-analysis`](/categorize/tags/code-analysis.md) [`cors`](/categorize/tags/cors.md)
+  [`secret-scanning`](/categorize/tags/secret-scanning.md) [`credentials`](/categorize/tags/credentials.md)
+  [`container-security`](/categorize/tags/container-security.md) [`sbom`](/categorize/tags/sbom.md)
+  [`oast`](/categorize/tags/oast.md) [`lfi`](/categorize/tags/lfi.md) [`open-redirect`](/categorize/tags/open-redirect.md)
+  [`rfi`](/categorize/tags/rfi.md) [`xxe`](/categorize/tags/xxe.md) [`RMI`](/categorize/tags/RMI.md)
+  [`rop`](/categorize/tags/rop.md) [`authentication`](/categorize/tags/authentication.md)
+  [`deserialize`](/categorize/tags/deserialize.md) [`blind-xss`](/categorize/tags/blind-xss.md)
+  [`json`](/categorize/tags/json.md) [`browser-record`](/categorize/tags/browser-record.md)
+  [`race-condition`](/categorize/tags/race-condition.md) [`darkmode`](/categorize/tags/darkmode.md)
+  [`diff`](/categorize/tags/diff.md) [`zipbomb`](/categorize/tags/zipbomb.md) [`dom`](/categorize/tags/dom.md)
+  [`documents`](/categorize/tags/documents.md) [`nuclei-templates`](/categorize/tags/nuclei-templates.md)
+  [`note`](/categorize/tags/note.md) [`package-manager`](/categorize/tags/package-manager.md)
+  [`tools-management`](/categorize/tags/tools-management.md) [`web3`](/categorize/tags/web3.md)
+  [`payload`](/categorize/tags/payload.md) [`notify`](/categorize/tags/notify.md)
+  [`cookie`](/categorize/tags/cookie.md) [`encode`](/categorize/tags/encode.md) [`cidr`](/categorize/tags/cidr.md)
+  [`network`](/categorize/tags/network.md) [`ip-manipulation`](/categorize/tags/ip-manipulation.md)
+  [`gRPC-Web`](/categorize/tags/gRPC-Web.md) [`clipboard`](/categorize/tags/clipboard.md)
+  [`report`](/categorize/tags/report.md) | | Langs | [`Shell`](/categorize/langs/Shell.md)
+  [`Go`](/categorize/langs/Go.md) [`Ruby`](/categorize/langs/Ruby.md) [`Java`](/categorize/langs/Java.md)
+  [`Pyt'
 ---
 {% raw %}
 

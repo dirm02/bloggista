@@ -2,8 +2,68 @@
 layout: project
 name: Zhao Kun Vibevoicefusion
 slug: zhao-kun-VibeVoiceFusion
+category: Uncategorized
 image: https://img.shields.io/badge/license-MIT-blue.svg
 repo_url: https://github.com/zhao-kun/vibevoicefusion.git
+indexed_content: "# VibeVoiceFusion **A Complete Web Application for Multi-Speaker
+  Voice Generation** *Built on Microsoft's VibeVoice Model* [](LICENSE) [](https://www.python.org/)
+  [](https://www.typescriptlang.org/) [](Dockerfile) [](https://hub.docker.com/r/zhaokundev/vibevoicefusion)
+  [](https://hub.docker.com/r/zhaokundev/vibevoicefusion) [](https://hub.docker.com/r/zhaokundev/vibevoicefusion)
+  [English](README.md) | [简体中文](README_zh.md) [Features](#features) • [Demo Samples](#demo-samples)
+  • [Get Started](#get-started) • [Documentation](#documentation) • [Community](#community)
+  • [Contributing](#contributing) --- ## Overview ### Purpose VibeVoiceFusion is a
+  **web application** for generating high-quality, multi-speaker synthetic speech
+  with voice cloning capabilities. Built on Microsoft's VibeVoice model (AR + diffusion
+  architecture), this project provides a complete full-stack solution with voice generation,
+  LoRA fine-tuning, dataset management, batch generation, and advanced VRAM optimization
+  features. **Key Goals:** - Provide a user-friendly interface for voice generation
+  without requiring coding knowledge - Enable efficient multi-speaker dialog synthesis
+  with distinct voice characteristics - Support LoRA fine-tuning for custom voice
+  adaptation and style transfer - Generate multiple audio variations in batch with
+  different random seeds - Optimize memory usage for consumer-grade GPUs (10GB+ VRAM)
+  - Support bilingual workflows (English/Chinese) - Offer both web UI and CLI interfaces
+  for different use cases ### Principle VibeVoice combines **autoregressive (AR)**
+  and **diffusion** techniques for text-to-speech synthesis: 1. **Text Processing**:
+  Input text is tokenized and processed through a Qwen-based language model backbone
+  2. **Voice Encoding**: Reference voice samples are encoded into acoustic and semantic
+  embeddings 3. **AR Generation**: The model autoregressively generates speech tokens
+  conditioned on text and voice embeddings 4. **Diffusion Refinement**: A DPM-Solver-based
+  diffusion head converts tokens to high-quality audio waveforms 5. **Voice Cloning**:
+  The unified processor preserves speaker characteristics from reference audio samples
+  **Technical Highlights:** - **Model Architecture**: Qwen backbone + VAE acoustic
+  tokenizer + semantic encoder + diffusion head - **Quantization**: Float8 (FP8 E4M3FN)
+  support for ~50% VRAM reduction with minimal quality loss - **Layer Offloading**:
+  Dynamic CPU/GPU memory management for running on limited VRAM - **Attention Mechanism**:
+  PyTorch native SDPA for maximum compatibility ### Features #### Quick Generation
+  - **One-Click Generation**: Generate voice without creating projects, speakers,
+  or sessions - **Voice Source Options**: - Upload custom audio files (WAV, MP3, M4A,
+  FLAC, WebM) - up to 4 files - Select from preset voice samples with language/gender
+  filters - **Auto Mode Detection**: Automatically detects dialogue vs narration format
+  - **Multi-Voice Support**: Use up to 4 voice prompts for generation - **Generation
+  History**: Persistent history with expandable details, bulk delete - **Per-Item
+  Progress**: Real-time progress tracking for each generating voice #### Complete
+  Web Application - **Project Management**: Organize voice generation projects with
+  metadata and descriptions - **Speaker/Voice Management**: - Upload and manage reference
+  voice samples (WAV, MP3, M4A, FLAC, WebM) - Audio preview with playback controls
+  - Voice file replacement with automatic cache-busting - Audio trimming functionality
+  - **Dialog Editor**: - Visual editor with drag-and-drop line reordering - Text editor
+  mode for bulk editing - Support for multi-speaker dialogs (up to 4+ speakers) -
+  **Narration mode** for single-speaker content (audiobooks, articles, podcasts) -
+  Real-time preview and validation - **Generation System**: - Queue-based task management
+  (prevents GPU conflicts) - Real-time progress monitoring with live updates - Configurable
+  parameters (CFG scale, random seed, model precision) - **Multi-Generation**: Generate
+  2-20 audio variations in a single batch with different seeds - LoRA model support
+  with configurable weight (0-1] - Generation history with filtering, sorting, and
+  pagination - Audio playback and download for completed generations #### LoRA Fine-Tuning
+  - **Dataset Management**: - Create and manage training datasets with audio/text
+  pairs - Import datasets from ZIP archives or local folders - JSONL format for efficient
+  data handling - Pagination and search for large datasets - Export datasets for backup
+  or sharing - **Training System**: - LoRA (Low-Rank Adaptation) fine-tuning for voice
+  customization - Configurable training parameters (epochs, learning rate, LoRA rank,
+  batch size) - Layer offloading support for training on consumer GPUs - Real-time
+  training progress with tqdm-style progress bar - Live training metrics charts (Loss,
+  Learning Rate, Timing) - TensorBoard integration for detailed metrics - Training
+  history with status tracking (Prepare, Training, Completed, Faile"
 ---
 {% raw %}
 # VibeVoiceFusion

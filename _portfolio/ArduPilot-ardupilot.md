@@ -2,8 +2,59 @@
 layout: project
 name: Ardupilot Ardupilot
 slug: ArduPilot-ardupilot
+category: Uncategorized
 image: https://img.shields.io/discord/674039678562861068.svg
 repo_url: https://github.com/ArduPilot/ardupilot
+indexed_content: "# ArduPilot Project [](https://ardupilot.org/discord) [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_copter.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_plane.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_rover.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_sub.yml) [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_tracker.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_sitl_periph.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_chibios.yml) [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_linux_sbc.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_replay.yml) [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_unit_tests.yml)[](https://github.com/ArduPilot/ardupilot/actions/workflows/test_size.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_environment.yml)
+  [](https://github.com/ArduPilot/ardupilot/actions/workflows/cygwin_build.yml) [](https://github.com/ArduPilot/ardupilot/actions/workflows/macos_build.yml)
+  [](https://scan.coverity.com/projects/ardupilot-ardupilot) [](https://github.com/ArduPilot/ardupilot/actions/workflows/test_coverage.yml)
+  [](https://autotest.ardupilot.org/) [](https://www.bestpractices.dev/projects/10598)
+  ArduPilot is the most advanced, full-featured, and reliable open source autopilot
+  software available. It has been under development since 2010 by a diverse team of
+  professional engineers, computer scientists, and community contributors. Our autopilot
+  software is capable of controlling almost any vehicle system imaginable, from conventional
+  airplanes, quad planes, multi-rotors, and helicopters to rovers, boats, balance
+  bots, and even submarines. It is continually being expanded to provide support for
+  new emerging vehicle types. ## The ArduPilot project is made up of - ArduCopter:
+  [code](https://github.com/ArduPilot/ardupilot/tree/master/ArduCopter), [wiki](https://ardupilot.org/copter/index.html)
+  - ArduPlane: [code](https://github.com/ArduPilot/ardupilot/tree/master/ArduPlane),
+  [wiki](https://ardupilot.org/plane/index.html) - Rover: [code](https://github.com/ArduPilot/ardupilot/tree/master/Rover),
+  [wiki](https://ardupilot.org/rover/index.html) - ArduSub : [code](https://github.com/ArduPilot/ardupilot/tree/master/ArduSub),
+  [wiki](http://ardusub.com/) - Antenna Tracker : [code](https://github.com/ArduPilot/ardupilot/tree/master/AntennaTracker),
+  [wiki](https://ardupilot.org/antennatracker/index.html) ## User Support & Discussion
+  Forums - Support Forum: - Community Site: ## Developer Information - Github repository:
+  - Main developer wiki: - Developer discussion: - Developer chat: ## Top Contributors
+  - [Flight code contributors](https://github.com/ArduPilot/ardupilot/graphs/contributors)
+  - [Wiki contributors](https://github.com/ArduPilot/ardupilot_wiki/graphs/contributors)
+  - [Most active support forum users](https://discuss.ardupilot.org/u?order=post_count&period=quarterly)
+  - [Partners who contribute financially](https://ardupilot.org/about/Partners) ##
+  How To Get Involved - The ArduPilot project is open source and we encourage participation
+  and code contributions: [guidelines for contributors to the ardupilot codebase](https://ardupilot.org/dev/docs/contributing.html)
+  - We have an active group of Beta Testers to help us improve our code: [release
+  procedures](https://ardupilot.org/dev/docs/release-procedures.html) - Desired Enhancements
+  and Bugs can be posted to the [issues list](https://github.com/ArduPilot/ardupilot/issues).
+  - Help other users with log analysis in the [support forums](https://discuss.ardupilot.org/)
+  - Improve the wiki and chat with other [wiki editors on Discord #documentation](https://discord.com/channels/ardupilot)
+  - Contact the developers on one of the [communication channels](https://ardupilot.org/copter/docs/common-contact-us.html)
+  ## License The ArduPilot project is licensed under the GNU General Public License,
+  version 3. - [Overview of license](https://ardupilot.org/dev/docs/license-gplv3.html)
+  - [Full Text](https://github.com/ArduPilot/ardupilot/blob/master/COPYING.txt) ##
+  Maintainers ArduPilot is comprised of several parts, vehicles and boards. The list
+  below contains the people that regularly contribute to the project and are responsible
+  for reviewing patches on their specific area. - [Andrew Tridgell](https://github.com/tridge):
+  - ***Vehicle***: Plane, AntennaTracker - ***Board***: Pixhawk, Pixhawk2, PixRacer
+  - [Francisco Ferreira](https://github.com/oxinarf): - ***Bug Master*** - [Grant
+  Morphett](https://github.com/gmorph): - ***Vehicle***: Rover - [Willian Galvani](https://github.com/williangalvani):
+  - ***Vehicle***: Sub - ***Board***: Navigator - [Michael du Breuil](https://github.com/WickedShell):
+  - ***Subsystem***: Batteries - ***Subsystem***: GPS - ***Subsystem***: Scripting
+  - [Peter Barker](https://github.com/p"
 ---
 {% raw %}
 # ArduPilot Project

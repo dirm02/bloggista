@@ -2,8 +2,68 @@
 layout: project
 name: Rennf93 Fastapi Guard
 slug: rennf93-fastapi-guard
+category: API - Documentation
 image: https://rennf93.github.io/fastapi-guard/latest/assets/big_logo.svg
 repo_url: https://github.com/rennf93/fastapi-guard
+indexed_content: "--- fastapi-guard is a security library for FastAPI that provides
+  middleware to control IPs, log requests, detect penetration attempts and more. It
+  integrates seamlessly with FastAPI to offer robust protection against various security
+  threats. --- Documentation ============= \U0001F310 **[Website](https://fastapi-guard.com)**
+  - Check out the website! \U0001F3AE **[Join our Discord Community](https://discord.gg/ZW7ZJbjMkK)**
+  - Connect with other developers! \U0001F4DA **[Documentation](https://rennf93.github.io/fastapi-guard)**
+  - Full technical documentation and deep dive into its inner workings. \U0001F579️
+  **[Live Playground](https://playground.fastapi-guard.com)** - Testing playground
+  for FastAPI Guard's features in action. \U0001F916 **[Monitoring Agent Integration](https://github.com/rennf93/fastapi-guard-agent)**
+  - Monitor your FastAPI Guard instance with a monitoring agent. ___ Features --------
+  - **IP Whitelisting and Blacklisting**: Control access based on IP addresses. -
+  **User Agent Filtering**: Block requests from specific user agents. - **Rate Limiting**:
+  Limit the number of requests from a single IP. - **Automatic IP Banning**: Automatically
+  ban IPs after a certain number of suspicious requests. - **Penetration Attempt Detection**:
+  Detect and log potential penetration attempts. - **HTTP Security Headers**: Comprehensive
+  security headers management (CSP, HSTS, X-Frame-Options, etc.) - **Custom Logging**:
+  Log security events to a custom file. - **CORS Configuration**: Configure CORS settings
+  for your FastAPI application. - **Cloud Provider IP Blocking**: Block requests from
+  cloud provider IPs (AWS, GCP, Azure). - **IP Geolocation**: Use a service like IPInfo.io
+  API to determine the country of an IP address. - **Distributed State Management**:
+  (Optional) Redis integration for shared security state across instances - **Flexible
+  Storage**: Redis-enabled distributed storage or in-memory storage for single instance
+  deployments ___ Installation ------------ To install `fastapi-guard`, use pip: ```bash
+  pip install fastapi-guard ``` ___ Usage ----------- Basic Setup ----------- To use
+  `fastapi-guard`, you need to configure the middleware in your FastAPI application.
+  Here's a basic example: ```python from fastapi import FastAPI from guard.middleware
+  import SecurityMiddleware from guard.models import SecurityConfig from guard.handlers.ipinfo_handler
+  import IPInfoManager app = FastAPI() # Define your security configuration config
+  = SecurityConfig( ipinfo_token=\"your_ipinfo_token_here\", # Optional: IPInfo token
+  required for IP geolocation ipinfo_db_path=\"custom/ipinfo.db\", # Optional custom
+  database path whitelist=[\"192.168.1.1\", \"2001:db8::1\"], blacklist=[\"10.0.0.1\",
+  \"2001:db8::2\"], blocked_countries=[\"AR\", \"IT\"], blocked_user_agents=[\"curl\",
+  \"wget\"], auto_ban_threshold=5, auto_ban_duration=86400, custom_log_file=\"security.log\",
+  rate_limit=100, enforce_https=True, enable_cors=True, cors_allow_origins=[\"*\"],
+  cors_allow_methods=[\"GET\", \"POST\"], cors_allow_headers=[\"*\"], cors_allow_credentials=True,
+  cors_expose_headers=[\"X-Custom-Header\"], cors_max_age=600, block_cloud_providers={\"AWS\",
+  \"GCP\", \"Azure\"}, ) # Add the security middleware app.add_middleware(SecurityMiddleware,
+  config=config) @app.get(\"/\") async def read_root(): return {\"message\": \"Hello,
+  World!\"} ``` IP Whitelisting and Blacklisting ---------------------------------
+  You can control access based on IP addresses using the `whitelist` and `blacklist`
+  options in the `SecurityConfig`. ```python config = SecurityConfig( whitelist=[\"192.168.1.1\",
+  \"2001:db8::1\"], blacklist=[\"10.0.0.1\", \"2001:db8::2\"], ) ``` User Agent Filtering
+  -------------------- Block requests from specific user agents by adding patterns
+  to the `blocked_user_agents` list. ```python config = SecurityConfig( blocked_user_agents=[\"curl\",
+  \"wget\"], ) ``` Rate Limiting ------------- Limit the number of requests from a
+  single IP using the `rate_limit` option. ```python config = SecurityConfig( rate_limit=100,
+  # Maximum 100 requests per minute ) ``` Automatic IP Banning --------------------
+  Automatically ban IPs after a certain number of suspicious requests using the `auto_ban_threshold`
+  and `auto_ban_duration` options. ```python config = SecurityConfig( auto_ban_threshold=5,
+  # Ban IP after 5 suspicious requests auto_ban_duration=86400, # Ban duration in
+  seconds (1 day) ) ``` Penetration Attempt Detection -----------------------------
+  Enable penetration attempt detection using the `enable_penetration_detection` option.
+  ```python config = SecurityConfig( enable_penetration_detection=True, # True by
+  default ) ``` Optional: Enable `passive mode` to log suspicious activity without
+  blocking requests. ```python config = SecurityConfig( passive_mode=True, # False
+  by default ) ``` Custom Penetration Detection ---------------------------- Detect
+  and log potential penetration attempts using the `detect_penetration_attempt` function.
+  ```python from fastapi import Request, Response, status from fastapi.responses import
+  JSONResponse from guard.utils "
 ---
 {% raw %}
 <p align="center">

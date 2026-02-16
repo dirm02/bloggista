@@ -2,8 +2,61 @@
 layout: project
 name: Hieventsdev Hi.events
 slug: HiEventsDev-Hi.Events
+category: Platform -eCommerce
 image: https://img.shields.io/badge/License-AGPL_v3-blue.svg
 repo_url: https://github.com/HiEventsDev/Hi.Events
+indexed_content: "# Hi.Events ### Open-source event ticketing and management platform
+  Sell tickets online for conferences, nightlife events, concerts, club nights, workshops,
+  and festivals. Self-hosted or cloud. Your events, your brand, your data. [Try Cloud
+  →](https://app.hi.events/auth/register?utm_source=gh-readme) · [Live Demo](https://app.hi.events/event/2/hievents-conference-2030?utm_source=gh-readme)
+  · [Documentation](https://hi.events/docs?utm_source=gh-readme) · [Website](https://hi.events?utm_source=gh-readme)
+  [](https://github.com/HiEventsDev/Hi.Events/blob/develop/LICENCE) [](https://github.com/HiEventsDev/hi.events/releases)
+  [](https://github.com/HiEventsDev/hi.events/actions/workflows/unit-tests.yml) [](https://hub.docker.com/r/daveearley/hi.events-all-in-one)
+  Deutsch · Português · Français · Italiano · Nederlands · Español · 中文 · 繁體中文 · 日本語
+  · Tiếng Việt · Türkçe · Magyar · Polski ## Why Hi.Events? Most ticketing platforms
+  charge per-ticket fees and lock your data into their ecosystem. **Hi.Events is a
+  modern, open-source alternative to Eventbrite, Tickettailor, Dice.fm, and other
+  ticketing platforms** for organizers who want full control over branding, checkout,
+  data, and infrastructure. Built for nightlife promoters, festival organizers, venues,
+  community groups, and conference hosts. ## Features ### \U0001F39F️ Ticketing &
+  Sales - Flexible ticket types (free, paid, donation, tiered) - Hidden and locked
+  tickets behind promo codes - Promo codes and pre-sale access - Product add-ons (merch,
+  upgrades, extras) - Product categories for organization - Full tax and fee support
+  (VAT, service fees) - Capacity management and shared limits ### \U0001F3A8 Branding
+  & Customization - Beautiful, conversion-optimized checkout - Customizable PDF ticket
+  designs - Branded organizer homepage - Drag-and-drop event page builder - Embeddable
+  ticket widget - SEO tools (meta tags, Open Graph) ### \U0001F465 Attendee Management
+  - Custom checkout questions - Advanced search, filtering, and export (CSV/XLSX)
+  - Full and partial refunds - Bulk messaging by ticket type - QR code check-in with
+  scan logs - Access-controlled check-in lists ### \U0001F4CA Analytics & Growth -
+  Real-time sales dashboard - Affiliate and referral tracking - Advanced reporting
+  (sales, tax, promos) - Webhooks (Zapier, Make, CRMs) ### ⚙️ Operations Multi-user
+  roles and permissions · Stripe Connect instant payouts · Offline payment methods
+  · Offline event support · Automatic invoicing · Event archive · Multi-language support
+  · Full REST API ## Compare | Feature | Hi.Events | Eventbrite | Tickettailor | Dice
+  | |:---------------------------------|:----------|:-----------|:-------------|:--------|
+  | Self-hosted option | ✅ | ❌ | ❌ | ❌ | | Open source | ✅ | ❌ | ❌ | ❌ | | No per-ticket
+  fees (self-hosted) | ✅ | ❌ | ❌ | ❌ | | Full custom branding | ✅ | Limited | ✅ |
+  Limited | | Affiliate tracking | ✅ | ✅ | ❌ | ❌ | | API access | ✅ | ✅ | ✅ | Limited
+  | | Own your data | ✅ | ❌ | ❌ | ❌ | ## Quick Start ### One-Click Deploy [](https://github.com/HiEventsDev/hi.events-digitalocean)
+  [](https://github.com/HiEventsDev/hi.events-render.com) [](https://railway.app/template/8CGKmu?referralCode=KvSr11)
+  [](https://zeabur.com/templates/8DIRY6) ### Docker ```bash git clone git@github.com:HiEventsDev/hi.events.git
+  cd hi.events/docker/all-in-one # Generate keys (Linux/macOS) echo \"APP_KEY=base64:$(openssl
+  rand -base64 32)\" >> .env echo \"JWT_SECRET=$(openssl rand -base64 32)\" >> .env
+  docker compose up -d ``` > [!TIP] > **Windows users:** See `./docker/all-in-one/README.md`
+  for key generation instructions. Open `http://localhost:8123` and create your account.
+  \U0001F4D6 [Full installation guide](https://hi.events/docs/getting-started?utm_source=gh-readme)
+  ## Hi.Events Cloud Prefer not to self-host? **[Hi.Events Cloud](https://app.hi.events/auth/register?utm_source=gh-readme)**
+  is a fully managed option with zero setup, automatic updates, and managed infrastructure.
+  [Get started →](https://app.hi.events/auth/register?utm_source=gh-readme) ## Contributing
+  We welcome contributions. See the [contributing guide](CONTRIBUTING.md) for details.
+  ## Support \U0001F4D6 [Documentation](https://hi.events/docs?utm_source=gh-readme)
+  · \U0001F4E7 [hello@hi.events](mailto:hello@hi.events) · \U0001F41B [GitHub Issues](https://github.com/HiEventsDev/hi.events/issues)
+  ## Changelog Stay updated with new features and improvements on the [releases page](https://github.com/HiEventsDev/hi.events/releases).
+  ## License Hi.Events is licensed under **AGPL-3.0 with additional terms**. Commercial
+  licensing available. [Learn more](https://hi.events/licensing). **[Website](https://hi.events)**
+  · **[Documentation](https://hi.events/docs)** · * *[Twitter/X](https://x.com/HiEventsTickets)**
+  Made with ☘️ in Ireland"
 ---
 {% raw %}
 <div align="center">

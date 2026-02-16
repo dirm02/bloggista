@@ -2,8 +2,37 @@
 layout: project
 name: Darkmoonight Zest
 slug: darkmoonight-Zest
+category: Serv&Prod-Tools
 image: https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white
 repo_url: https://github.com/darkmoonight/Zest
+indexed_content: "\U0001F4DD Zest A beautiful, feature-rich task management app built
+  with Flutter English • Русский Tired of task chaos? Zest keeps you in control with
+  powerful features, beautiful design, and cross-platform support. \U0001F4F1\U0001F4C5✅
+  \U0001F30D Available in 15 languages • \U0001F3A8 Material You support • \U0001F4CA
+  Advanced statistics • \U0001F514 Smart notifications --- ## ✨ Features **\U0001F3AF
+  Task Management** - Categories with custom colors • Hierarchical subtasks • Priority
+  levels • Tags system • Quick actions **\U0001F4CA Advanced Statistics** - 365-day
+  heatmap • Completion streaks • Weekly/hourly charts • Productivity insights **\U0001F514
+  Smart Notifications** - Timezone-aware reminders • Snooze functionality • Quick
+  actions • Background processing **\U0001F4BE Backup & Data** - Auto backups (daily/weekly/monthly)
+  • GZip compression • Easy restore • Data export **\U0001F3A8 Beautiful Design**
+  - Material You theming • AMOLED theme • Light/Dark/System modes • Edge-to-edge UI
+  **\U0001F30D Localization** - 15 languages: English, Русский, 中文, العربية, فارسی,
+  Español, Français, Deutsch, Italiano, Türkçe, Tiếng Việt, 한국어, Português, Polski
+  --- ## \U0001F4F8 Screenshots --- ## \U0001F4E5 Download ### Android [](https://play.google.com/store/apps/details?id=com.yoshi.todark)
+  [](https://apt.izzysoft.de/packages/com.yoshi.todark) ### Other Platforms Get the
+  latest APK or builds for other platforms from the [Releases Section](https://github.com/DarkMooNight/Zest/releases/latest).
+  --- ## \U0001F6E0️ Building from Source ### Prerequisites - Flutter SDK 3.41.0 or
+  higher - Dart SDK 3.11.0 or higher ### Steps ```bash # Clone the repository git
+  clone https://github.com/darkmoonight/Zest.git cd Zest # Install dependencies flutter
+  pub get # Generate code (for Isar database) dart run build_runner build # Run the
+  app flutter run # Build for production flutter build apk --release # Android ```
+  --- ## \U0001F91D Contributing We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md)
+  for guidelines. --- ## \U0001F4B0 Support the Project If Zest has become an indispensable
+  part of your life, consider supporting development: [](https://yoomoney.ru/to/4100117672775961)
+  --- ## \U0001F4C3 License This project is licensed under the [MIT License](./LICENSE).
+  --- ## \U0001F468‍\U0001F4BB Contributors Thanks to all our amazing contributors!
+  --- Made with ❤️ using Flutter"
 ---
 {% raw %}
 <div align='center'>

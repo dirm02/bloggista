@@ -2,8 +2,58 @@
 layout: project
 name: Yt Dlp Yt Dlp
 slug: yt-dlp-yt-dlp
+category: Uncategorized
 image: https://raw.githubusercontent.com/yt-dlp/yt-dlp/master/.github/banner.svg
 repo_url: https://github.com/yt-dlp/yt-dlp
+indexed_content: '[](#readme) [](#installation "Installation") [](https://pypi.org/project/yt-dlp
+  "PyPI") [](Maintainers.md#maintainers "Donate") [](https://discord.gg/H5MNcFW63r
+  "Discord") [](supportedsites.md "Supported Sites") [](LICENSE "License") [](https://github.com/yt-dlp/yt-dlp/actions
+  "CI Status") [](https://github.com/yt-dlp/yt-dlp/commits "Commit History") [](https://github.com/yt-dlp/yt-dlp/pulse/monthly
+  "Last activity") yt-dlp is a feature-rich command-line audio/video downloader with
+  support for [thousands of sites](supportedsites.md). The project is a fork of [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+  based on the now inactive [youtube-dlc](https://github.com/blackjack4494/yt-dlc).
+  * [INSTALLATION](#installation) * [Detailed instructions](https://github.com/yt-dlp/yt-dlp/wiki/Installation)
+  * [Release Files](#release-files) * [Update](#update) * [Dependencies](#dependencies)
+  * [Compile](#compile) * [USAGE AND OPTIONS](#usage-and-options) * [General Options](#general-options)
+  * [Network Options](#network-options) * [Geo-restriction](#geo-restriction) * [Video
+  Selection](#video-selection) * [Download Options](#download-options) * [Filesystem
+  Options](#filesystem-options) * [Thumbnail Options](#thumbnail-options) * [Internet
+  Shortcut Options](#internet-shortcut-options) * [Verbosity and Simulation Options](#verbosity-and-simulation-options)
+  * [Workarounds](#workarounds) * [Video Format Options](#video-format-options) *
+  [Subtitle Options](#subtitle-options) * [Authentication Options](#authentication-options)
+  * [Post-processing Options](#post-processing-options) * [SponsorBlock Options](#sponsorblock-options)
+  * [Extractor Options](#extractor-options) * [Preset Aliases](#preset-aliases) *
+  [CONFIGURATION](#configuration) * [Configuration file encoding](#configuration-file-encoding)
+  * [Authentication with netrc](#authentication-with-netrc) * [Notes about environment
+  variables](#notes-about-environment-variables) * [OUTPUT TEMPLATE](#output-template)
+  * [Output template examples](#output-template-examples) * [FORMAT SELECTION](#format-selection)
+  * [Filtering Formats](#filtering-formats) * [Sorting Formats](#sorting-formats)
+  * [Format Selection examples](#format-selection-examples) * [MODIFYING METADATA](#modifying-metadata)
+  * [Modifying metadata examples](#modifying-metadata-examples) * [EXTRACTOR ARGUMENTS](#extractor-arguments)
+  * [PLUGINS](#plugins) * [Installing Plugins](#installing-plugins) * [Developing
+  Plugins](#developing-plugins) * [EMBEDDING YT-DLP](#embedding-yt-dlp) * [Embedding
+  examples](#embedding-examples) * [CHANGES FROM YOUTUBE-DL](#changes-from-youtube-dl)
+  * [New features](#new-features) * [Differences in default behavior](#differences-in-default-behavior)
+  * [Deprecated options](#deprecated-options) * [CONTRIBUTING](CONTRIBUTING.md#contributing-to-yt-dlp)
+  * [Opening an Issue](CONTRIBUTING.md#opening-an-issue) * [Developer Instructions](CONTRIBUTING.md#developer-instructions)
+  * [WIKI](https://github.com/yt-dlp/yt-dlp/wiki) * [FAQ](https://github.com/yt-dlp/yt-dlp/wiki/FAQ)
+  # INSTALLATION [](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)
+  [](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) [](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos)
+  [](https://pypi.org/project/yt-dlp) [](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.tar.gz)
+  [](#release-files) [](https://github.com/yt-dlp/yt-dlp/releases) You can install
+  yt-dlp using [the binaries](#release-files), [pip](https://pypi.org/project/yt-dlp)
+  or one using a third-party package manager. See [the wiki](https://github.com/yt-dlp/yt-dlp/wiki/Installation)
+  for detailed instructions ## RELEASE FILES #### Recommended File|Description :---|:---
+  [yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp)|Platform-independent
+  [zipimport](https://docs.python.org/3/library/zipimport.html) binary. Needs Python
+  (recommended for **Linux/BSD**) [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe)|Windows
+  (Win8+) standalone x64 binary (recommended for **Windows**) [yt-dlp_macos](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_macos)|Universal
+  MacOS (10.15+) standalone executable (recommended for **MacOS**) #### Alternatives
+  File|Description :---|:--- [yt-dlp_linux](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux)|Linux
+  (glibc 2.17+) standalone x86_64 binary [yt-dlp_linux.zip](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux.zip)|Unpackaged
+  Linux (glibc 2.17+) x86_64 executable (no auto-update) [yt-dlp_linux_aarch64](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux_aarch64)|Linux
+  (glibc 2.17+) standalone aarch64 binary [yt-dlp_linux_aarch64.zip](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux_aarch64.zip)|Unpackaged
+  Linux (glibc 2.17+) aarch64 executable (no auto-update) [yt-dlp_linux_armv7l.zip](https://github.com/yt-dlp/yt-dlp/rele'
 ---
 {% raw %}
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->

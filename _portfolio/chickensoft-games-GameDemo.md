@@ -2,8 +2,69 @@
 layout: project
 name: Chickensoft Games Gamedemo
 slug: chickensoft-games-GameDemo
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/chickensoft-games-GameDemo/docs/app.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# \U0001F579 GameDemo [![Chickensoft Badge][chickensoft-badge]][chickensoft-website]
+  [![Discord][discord-badge]][discord] [![Read the docs][read-the-docs-badge]][docs]
+  ![branch coverage][branch-coverage] The Chickensoft Game Demo — a fully tested,
+  third-person 3D game built with Godot and C#. _Now with [saving and loading][save-load],
+  including full game state preservation!_ > [!IMPORTANT] > Be sure to run [`git lfs
+  pull`][lfs] to resolve the binary files. --- ## ⏯️ Gameplay > Most 3D assets are
+  from the fine folks at [GDQuest] — go check out their stuff and support them! You'll
+  notice that this project is loosely inspired by GDQuest's [ThirdPersonController],
+  but completely rewritten using Chickensoft's best practice recommendations in C#
+  (and with state machines)! > > Music from [FreePD] — go check them out, too! > Other
+  sound effects are licensed under CC0. ## \U0001F3AE How to Play You'll need to setup
+  your [Godot C# development environment][setup-docs]. This should work with the current
+  .NET LTS release and stable Godot version. You'll need to open the project in Godot
+  once before you attempt to launch it from your code editor. Use WASD to move around.
+  Bounce with spacebar. Hold down spacebar while falling to bounce as soon as you
+  hit the ground. Jump on the mushrooms, collect all the coins, and don't fall off
+  the world! ## \U0001F3C6 Game Architecture Chickensoft's packages are designed to
+  make building games easier while following an opinionated architecture that takes
+  a lot of work out of the decision-making. Following a highly opinionated architecture
+  has a few advantages: mainly, the code is easier to learn, fully testable, more
+  consistent, and other people can learn the architecture rules and get up to speed
+  fairly quickly. On the other hand, it does result in a little bit of boilerplate,
+  but that's going to be true whenever you make code modular enough to be fully unit-tested.
+  Personally, I believe the benefits outweigh the little bit of additional boilerplate,
+  especially for studios that have more than one person contributing to the codebase.
+  This project is a result of two and a half years of learning, [the other dozen or
+  so open source Chickensoft packages][chickensoft-website], and a ton of help and
+  support I've received from the Godot community. - ✅ Saving and loading using [Serialization],
+  [Serialization.Godot], and [SaveFileBuilder]. You can read all about how to implement
+  a save system like this one over at [Serialization for C# Games](https://chickensoft.games/blog/serialization-for-csharp-games).
+  - ✅ Testing with [GoDotTest]. GoDotTest is designed for use with CI/CD, as well
+  as local testing and compatibility with VSCode's debug launch profiles, allowing
+  us to easily hook into and debug tests during development. - ✅ Node mixins using
+  [Introspection]: we can add additional code to node scripts at build time using
+  C# source generation, which makes up for the lack of mixin support in C#. Using
+  mixins is a [data-driven technique][mixins-ecs]. By combining data-driven techniques
+  with object-oriented programming, we can leverage the best of both worlds to make
+  that code is exceptionally clean and easy to maintain. - ✅ Dependency provisioning
+  via [AutoInject]: node dependencies are resolved in a tree-based manner by looking
+  through a node's ancestors until it finds one that provides what the dependent node
+  is looking for. Supplying dependencies in a tree-based manner mirrors Godot's node-based
+  approach and solves the age-old problem of needing something higher-up in the scene
+  tree before the parent node has had a chance to initialize it. Under the hood, AutoInject
+  temporarily subscribes to the parent and calls the child back once the dependency
+  is available. Finally, AutoInject provides mechanisms for faking dependencies easily
+  in unit tests. - ✅ Two-phase initialization, accomplished with AutoInject's [Enhanced
+  Lifecycles]. Splitting a node's initialization up into two steps make it easier
+  to write testable node scripts. The first phase allows the node to create the values
+  it wants to use, and the second phase allows it to consume those values for initial
+  setup. AutoInject adds a property to each node script it's used on, `IsTesting`,
+  that allows it to discern whether or not it's running in-game or in a test environment,
+  skipping the first phase during testing so that mock or fake objects can be used
+  instead. - ✅ Faking node trees during unit tests using [GodotNodeInterfaces]. GodotNodeInterfaces
+  provides generated interfaces and adapters for every object in GodotSharp that extends
+  `GodotObject`, allowing us to access these objects in a way that makes it easy to
+  mock for unit tests. Note that AutoInject requires that we add GodotNodeInterfaces
+  to our project, even if we don't actually use it (and most games won't ever need
+  to use it — this game just happens to be fully unit tested). GodotNodeInterfaces
+  also provides alternative methods for manipulating a node's children that accept
+  interfaces rather than concrete node"
 ---
 {% raw %}
 # 🕹 GameDemo

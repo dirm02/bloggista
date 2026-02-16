@@ -2,8 +2,69 @@
 layout: project
 name: Arthelokyo Astrowind
 slug: arthelokyo-astrowind
+category: Frontend Framework
 image: https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/screenshot-astrowind-1.0.png
 repo_url: https://github.com/arthelokyo/astrowind
+indexed_content: "# \U0001F680 AstroWind \U0001F31F _Most *starred* & *forked* Astro
+  theme in 2022, 2023 & 2024_. \U0001F31F **AstroWind** is a free and open-source
+  template to make your website using **[Astro 5.0](https://astro.build/) + [Tailwind
+  CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking
+  into account web best practices. - ✅ **Production-ready** scores in **PageSpeed
+  Insights** reports. - ✅ Integration with **Tailwind CSS** supporting **Dark mode**
+  and **_RTL_**. - ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX**
+  support, **Categories & Tags**, **Social Share**, ... - ✅ **Image Optimization**
+  (using new **Astro Assets** and **Unpic** for Universal image CDN). - ✅ Generation
+  of **project sitemap** based on your routes. - ✅ **Open Graph tags** for social
+  media sharing. - ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+  [](https://github.com/arthelokyo) [](https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md)
+  [](https://github.com/arthelokyo) [](https://github.com/arthelokyo/astrowind#contributing)
+  [](https://snyk.io/test/github/arthelokyo/astrowind) [](https://github.com/arthelokyo/astrowind)
+  [](https://github.com/arthelokyo/astrowind) Table of Contents - [Demo](#demo) -
+  [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
+  - [TL;DR](#tldr) - [Getting started](#getting-started) - [Project structure](#project-structure)
+  - [Commands](#commands) - [Configuration](#configuration) - [Deploy](#deploy) -
+  [Frequently Asked Questions](#frequently-asked-questions) - [Related Projects](#related-projects)
+  - [Contributing](#contributing) - [Acknowledgements](#acknowledgements) - [License](#license)
+  ## Demo \U0001F4CC [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+  ## \U0001F514 Upcoming: AstroWind 2.0 – We Need Your Vision! We're embarking on
+  an exciting journey with **AstroWind 2.0**, and we want you to be a part of it!
+  We're currently taking the first steps in developing this new version and your insights
+  are invaluable. Join the discussion and share your feedback, ideas, and suggestions
+  to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better,
+  together! [Share Your Feedback in Our Discussion!](https://github.com/arthelokyo/astrowind/discussions/392)
+  ## TL;DR ```shell npm create astro@latest -- --template arthelokyo/astrowind ```
+  ## Getting started **AstroWind** tries to give you quick access to creating a website
+  using [Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/).
+  It's a free theme which focuses on simplicity, good practices and high performance.
+  Very little vanilla javascript is used only to provide basic functionality so that
+  each developer decides which framework (React, Vue, Svelte, Solid JS...) to use
+  and how to approach their goals. In this version the template supports all the options
+  in the `output` configuration, `static`, `hybrid` and `server`, but the blog only
+  works with `prerender = true`. We are working on the next version and aim to make
+  it fully compatible with SSR. ### Project structure Inside **AstroWind** template,
+  you'll see the following folders and files: ``` / ├── public/ │ ├── _headers │ └──
+  robots.txt ├── src/ │ ├── assets/ │ │ ├── favicons/ │ │ ├── images/ │ │ └── styles/
+  │ │ └── tailwind.css │ ├── components/ │ │ ├── blog/ │ │ ├── common/ │ │ ├── ui/
+  │ │ ├── widgets/ │ │ │ ├── Header.astro │ │ │ └── ... │ │ ├── CustomStyles.astro
+  │ │ ├── Favicons.astro │ │ └── Logo.astro │ ├── content/ │ │ ├── post/ │ │ │ ├──
+  post-slug-1.md │ │ │ ├── post-slug-2.mdx │ │ │ └── ... │ │ └-- config.ts │ ├── layouts/
+  │ │ ├── Layout.astro │ │ ├── MarkdownLayout.astro │ │ └── PageLayout.astro │ ├──
+  pages/ │ │ ├── [...blog]/ │ │ │ ├── [category]/ │ │ │ ├── [tag]/ │ │ │ ├── [...page].astro
+  │ │ │ └── index.astro │ │ ├── index.astro │ │ ├── 404.astro │ │ ├-- rss.xml.ts │
+  │ └── ... │ ├── utils/ │ ├── config.yaml │ └── navigation.js ├── package.json ├──
+  astro.config.ts └── ... ``` Astro looks for `.astro` or `.md` files in the `src/pages/`
+  directory. Each page is exposed as a route based on its file name. There's nothing
+  special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact
+  components. Any static assets, like images, can be placed in the `public/` directory
+  if they do not require any transformation or in the `assets/` directory if they
+  are imported directly. [](https://githubbox.com/arthelokyo/astrowind/tree/main)
+  [](https://gitpod.io/?on=gitpod#https://github.com/arthelokyo/astrowind) [](https://stackblitz.com/github/arthelokyo/astrowind)
+  > \U0001F9D1‍\U0001F680 **Seasoned astronaut?** Delete this file `README.md`. Update
+  `src/config.yaml` and contents. Have fun! ### Commands All commands are run from
+  the root of the project, from a terminal: | Command | Action | | :------------------
+  | :------------------------------------------------- | | `npm install` | Installs
+  dependencies | | `npm run dev` | Starts local dev server at `localhost:4321` | |
+  `npm run "
 ---
 {% raw %}
 # 🚀 AstroWind

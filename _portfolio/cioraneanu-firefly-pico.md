@@ -2,8 +2,65 @@
 layout: project
 name: Cioraneanu Firefly Pico
 slug: cioraneanu-firefly-pico
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/cioraneanu-firefly-pico/docs/images/logo2.png
 repo_url: https://github.com/cioraneanu/firefly-pico
+indexed_content: "A delightful Firefly III companion web app for effortless transaction
+  tracking Installation · Suggestion or bug? · Architecture · Contribution ## \U0001F4A1About
+  For several years I've enjoyed tracking my expenses in proprietary mobile apps but
+  after getting into self-hosting I've wondered if there is an alternative that gives
+  me the same functionality without losing control over my data. I've came across
+  Firefly III and I instantly fell in love with all of its features. Seeing that it
+  offers a REST API I've decided to play with it and make a web app that feels mobile
+  native. I also wanted to convince my significant other to use it and so I had to
+  go for the extremely challenging “Wife Approval Certification”. That meant making
+  the expense tracking process as short as possible all while still using tags and
+  categories because who doesn't love some nice reports :innocent: Several (bad) ideas
+  later I've come to this version. A transaction assistant :tophat: | Action | Result
+  | |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | - Partially write the name of a \"tag\" + \"amount\". - Hit \"Save\". You're done!
+  (Ex. \"elctr 28\") | - Source account is preselected in Settings. - Date is automatically
+  set to \"now\" - Fuzzy search found a tag with name close to what you typed (\"electricity\").
+  It also selected all of its parent tags. - Category is selected by matching it to
+  one of the tags above. - The description field is copied from the child tag. [Assistant
+  tutorial](./docs/assistant.md) | ## \U0001F680 Features - ✅ Beautiful clean minimalistic
+  UI :fire: subtle animations and dark-theme support :first_quarter_moon_with_face:
+  - ✅ Optimized for mobile, with PWA support for a native feel :iphone: - ✅ The Assistant
+  makes recording an expense feel like magic :sparkles: - ✅ Expand Firefly data with
+  icons for all resources :art: - ✅ Expand Firefly \"tags\" with the option of subtags
+  for better granularity - ✅ Add \"templates\" to make auto-completing fields a breeze
+  :loudspeaker: - ✅ Beautiful dashboard making it easy to keep an eye on everything
+  that matters :chart_with_upwards_trend: - ✅ Lots of tweaks and settings :wrench:
+  - ✅ Free and open-source ## \U0001F527 My setup **Firefly** is very flexible and
+  that can leave people unsure about how they should organise things. This is by no
+  means the only / best way to do, but it's what works for me: ``` - Create asset
+  accounts for everything (ex. one for every family member, one for each savings account).
+  It's easier to not use any revenue/expense accounts; that way they will be threated
+  as \"cash\" and you'll have one less field to fill inside transactions - Create
+  your big, general \"Categories\" (ex. Bills, Food, Fun, Transportation etc.) - Create
+  your root tags with names identical to the \"Categories\" above (ex. Bills, Food,
+  Fun, Transportation etc.) (This is useful because selecting a \"Tg\" will automatically
+  select the \"Category\".) - Create your child tags for granularity (ex. Electricity,
+  Heating, Internet with the parent tag Bills). It's a good idea to remember these
+  names and use them with the assistant for super fast expense tracking - Create a
+  tag, name it \"todo\", and set the \"Mark as to-do\" field to Yes. Add this tag
+  to any transaction that will be edited later. Ex. You paid dinner for multiple people
+  and some will give you the money back later. Or you buy multiple shoes and return
+  some of them. All these transactions will show up on your dashboard. - Go to Settings
+  -> New transaction defaults -> Set your default source account. - (Optionally) If
+  there are multiple users sharing an account you can create separate \"tags\" with
+  their names. Then everyone can select their own for the \"Auto tags\" field. - Identify
+  any transactions that you perform often but cannot be turned into \"Reapeating transactions\"
+  because of irregularities. Create \"templates\" for them. The assistant can easily
+  handle them as well. - For budgets you can setup \"Rules\" inside Firefly III. When
+  a transaction is created, if it has a list of tags, asign it to your desiered budget.
+  - Finally make the process of starting the app faster: - [iOS] Create a home screen
+  shortcut: open the app in Safari -> Share icon -> Add to Homescreen. The app will
+  also show up in you iOS global search - [iOS] [Optional] Add double tap shortcut:
+  - Open Shortcuts app -> + -> Add action -> search for \"Open URLs\" -> Enter the
+  pico deployment URL -> Tap toolbar and rename it to \"Open Pico\" - Open Settings
+  -> Accesibility -> Touch -> Back tap -> Double tap -> Select the shortcut created
+  above. ``` ## \U0001F4D1 Notes - Split transactions will show up as read-only, and"
 ---
 {% raw %}
 

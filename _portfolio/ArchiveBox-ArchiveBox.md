@@ -2,8 +2,68 @@
 layout: project
 name: Archivebox Archivebox
 slug: ArchiveBox-ArchiveBox
+category: ServerTools-ProxMox-CICD
 image: https://archivebox.io/icon.png
 repo_url: https://github.com/ArchiveBox/ArchiveBox
+indexed_content: "ArchiveBox Open-source self-hosted web archiving. ▶️ Quickstart
+  | Demo | GitHub | Documentation | Info & Motivation | Community --> &nbsp; &nbsp;
+  curl -fsSL 'https://get.archivebox.io' | bash # (or see pip/brew/Docker instructions
+  below) --> **ArchiveBox is a self-hosted app that lets you preserve content from
+  websites in a variety of formats.** We aim to make your data immediately useful,
+  and kept in formats that other programs can read directly. As output, we save standard
+  HTML, PNG, PDF, TXT, JSON, WARC, SQLite, all guaranteed to be readable for decades
+  to come. ArchiveBox also has a CLI, REST API, and webhooks so you can set up integrations
+  with other services. Without active preservation effort, everything on the internet
+  eventually disappears or degrades. *ArchiveBox is an open source tool that lets
+  organizations & individuals archive both public & private web content while retaining
+  control over their data. It can be used to save copies of bookmarks, preserve evidence
+  for legal cases, backup photos from FB/Insta/Flickr or media from YT/Soundcloud/etc.,
+  save research papers, and more...* > ➡️ Get ArchiveBox with `pip install archivebox`
+  on [Linux](#quickstart)/[macOS](#quickstart), or via **[Docker](#quickstart)** ⭐️
+  on any OS. *Once installed, you can interact with it through the: [Browser Extension](https://github.com/ArchiveBox/archivebox-browser-extension),
+  [CLI](#usage), [self-hosted web interface](https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive),
+  [Python API](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#python-shell-usage),
+  or [filesystem](#static-archive-exporting).* \U0001F4E5 **You can feed ArchiveBox
+  URLs one at a time, or schedule regular imports** from your bookmarks or history,
+  social media feeds or RSS, link-saving services like Pocket/Pinboard, our [Browser
+  Extension](https://github.com/ArchiveBox/archivebox-browser-extension), and more.
+  See Input Formats for a full list of supported input formats... **It saves snapshots
+  of the URLs you feed it in several redundant formats.** It also detects any content
+  featured *inside* pages & extracts it out into a folder: - \U0001F310 **HTML**/**Any
+  websites** ➡️ `original HTML+CSS+JS`, `singlefile HTML`, `screenshot PNG`, `PDF`,
+  `WARC`, `title`, `article text`, `favicon`, `headers`, ... - \U0001F3A5 **Social
+  Media**/**News** ➡️ `post content TXT`, `comments`, `title`, `author`, `images`,
+  ... - \U0001F3AC **YouTube**/**SoundCloud**/etc. ➡️ `MP3/MP4`s, `subtitles`, `metadata`,
+  `thumbnail`, ... - \U0001F4BE **Github**/**Gitlab**/etc. links ➡️ `clone of GIT
+  source code`, `README`, `images`, ... - ✨ *and more, see [Output Formats](#output-formats)
+  below...* You can run ArchiveBox as a Docker web app to manage these snapshots,
+  or continue accessing the same collection using the `pip`-installed CLI, Python
+  API, and SQLite3 APIs. All the ways of using it are equivalent, and provide matching
+  features like adding tags, scheduling regular crawls, viewing logs, and more...
+  \U0001F6E0️ ArchiveBox uses [standard tools](#dependencies) like Chrome, [`wget`](https://www.gnu.org/software/wget/),
+  & [`yt-dlp`](https://github.com/yt-dlp/yt-dlp), and stores data in [ordinary files
+  & folders](#archive-layout). *(no complex proprietary formats, all data is readable
+  without needing to run ArchiveBox)* The goal is to sleep soundly knowing the part
+  of the internet you care about will be automatically preserved in durable, easily
+  accessible formats [for decades](#background--motivation) after it goes down. **\U0001F4E6&nbsp;
+  Install ArchiveBox using your preferred method: `docker` / `pip` / `apt` / etc.
+  ([see full Quickstart below](#quickstart)).** &nbsp; Expand for quick copy-pastable
+  install commands... &nbsp; ⤵️ # Option A: Get ArchiveBox with Docker Compose (recommended):
+  mkdir -p ~/archivebox/data && cd ~/archivebox curl -fsSL 'https://docker-compose.archivebox.io'
+  > docker-compose.yml # edit options in this file as-needed docker compose run archivebox
+  init --setup # docker compose run archivebox add 'https://example.com' # docker
+  compose run archivebox help # docker compose up # Option B: Or use it as a plain
+  Docker container: mkdir -p ~/archivebox/data && cd ~/archivebox/data docker run
+  -it -v $PWD:/data archivebox/archivebox init --setup # docker run -it -v $PWD:/data
+  archivebox/archivebox add 'https://example.com' # docker run -it -v $PWD:/data archivebox/archivebox
+  help # docker run -it -v $PWD:/data -p 8000:8000 archivebox/archivebox # Option
+  C: Or install it with your preferred pkg manager (see Quickstart below for apt,
+  brew, and more) pip install archivebox mkdir -p ~/archivebox/data && cd ~/archivebox/data
+  archivebox init --setup # archivebox add 'https://example.com' # archivebox help
+  # archivebox server 0.0.0.0:8000 # Option D: Or use the optional auto setup script
+  to install it curl -fsSL 'https://get.archivebox.io' | bash Open http://web.archivebox.localhost:8000
+  for the public UI and http://admin.archivebox.localhost:8000 for the admin UI ➡️
+  Set LISTEN_HOST to change the base domain; web. a"
 ---
 {% raw %}
 <div align="center" style="text-align: center; width: 100%">

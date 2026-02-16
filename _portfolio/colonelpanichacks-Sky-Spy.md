@@ -2,8 +2,67 @@
 layout: project
 name: Colonelpanichacks Sky Spy
 slug: colonelpanichacks-Sky-Spy
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/colonelpanichacks-Sky-Spy/eagle.png
 repo_url: https://github.com/colonelpanichacks/OUI-SPY).
+indexed_content: '# Sky-Spy **Official OUI-SPY firmware for drone RemoteID detection
+  and mapping** Sky-Spy is one of the official firmware options for the [OUI-SPY hardware
+  platform](https://github.com/colonelpanichacks/OUI-SPY). This specialized firmware
+  detects and tracks drones broadcasting RemoteID via WiFi and Bluetooth Low Energy,
+  outputting real-time JSON data for visualization with mesh-mapper.py. ## OUI-SPY
+  Firmware Family Sky-Spy is part of the OUI-SPY firmware ecosystem: - **[OUI-SPY
+  Detector](https://github.com/colonelpanichacks/ouispy-detector)** - Multi-target
+  BLE scanner with OUI filtering - **[OUI-SPY Foxhunter](https://github.com/colonelpanichacks/ouispy-foxhunter)**
+  - Precision proximity tracker for radio direction finding - **[OUI-SPY UniPwn](https://github.com/colonelpanichacks/Oui-Spy-UniPwn)**
+  - Unitree robot exploitation system - **[Flock You](https://github.com/colonelpanichacks/flock-you)**
+  - Flock Safety surveillance camera detection - **[Sky-Spy](https://github.com/colonelpanichacks/Sky-Spy)**
+  - Drone RemoteID detection (this firmware) - **[Remote-ID-Spoofer](https://github.com/colonelpanichacks/Remote-ID-Spoofer)**
+  - WiFi Remote ID spoofer and simulator with swarm mode **What Makes Sky-Spy Different:**
+  - Targets OpenDroneID protocol (ASTM F3411) instead of general BLE devices - WiFi
+  promiscuous mode scanning for WiFi-based RemoteID broadcasts - JSON output format
+  for mesh-mapper.py real-time visualization - Extracts GPS coordinates, altitude,
+  speed, heading from drone telemetry - Tracks operator/pilot location and drone identification
+  - Multi-drone tracking (up to 8 simultaneous) Like all OUI-SPY firmware, Sky-Spy
+  features audio alerts with a non-blocking buzzer implementation running on a dedicated
+  FreeRTOS task. ## Hardware Requirements ### OUI-SPY Board (Recommended) **Get the
+  official hardware:** [Tindie](https://www.tindie.com) | [colonelpanic.tech](https://colonelpanic.tech)
+  The OUI-SPY board is a ready-to-use ESP32-S3 platform with: - Integrated buzzer
+  with PWM control - Built-in antenna with external antenna option - USB-C power and
+  programming - Compact PCB design with sick artwork - No additional components required
+  ### Compatible Development Boards - **Seeed Studio XIAO ESP32-S3** (Primary) - ESP32-S3
+  dual-core MCU @ 240MHz - 8MB Flash, 8MB PSRAM - WiFi & Bluetooth 5.0 (LE) - USB-C
+  connectivity - **Seeed Studio XIAO ESP32-C6** (Alternative) - ESP32-C6 RISC-V MCU
+  - WiFi 6 & Bluetooth 5.3 (LE) ### Buzzer Connection - **Pin:** GPIO3 (D2) - PWM
+  capable - **Type:** Passive buzzer (requires PWM signal) - **Connection:** Buzzer
+  positive to GPIO3, negative to GND - **Optional:** Add 100Ω resistor in series for
+  volume control ## Features ### Drone Detection - **Dual-Protocol Scanning:** - WiFi
+  promiscuous mode (802.11 beacon/probe frames) - Bluetooth Low Energy (BLE) advertisements
+  - **OpenDroneID Protocol Support:** - Basic ID (drone serial/CAA registration) -
+  Location data (GPS coordinates, altitude, speed, heading) - System data (operator
+  location) - Operator ID - **Multi-Drone Tracking:** Simultaneously track up to 8
+  drones ### Audio Alerts (Non-Blocking) - **Detection Alert:** 3 quick high-pitched
+  beeps (1000 Hz) on first detection - **Heartbeat:** Double beep (600 Hz) every 5
+  seconds while drone is in range - **Auto-Stop:** Heartbeat stops after 7 seconds
+  with no drone detected - **Zero Latency:** Dedicated FreeRTOS task ensures buzzer
+  never delays detection ### Thread-Safe Architecture - **ISR-Safe Design:** All callbacks
+  use critical sections for atomic flag updates - **Race-Free Operation:** Mutex protection
+  for all shared variables - **Dual-Core Utilization:** - **Core 0:** WiFi promiscuous
+  mode packet processing - **Core 1:** BLE scanning, JSON output, buzzer control ##
+  Installation ### Prerequisites 1. **PlatformIO IDE** (VS Code extension) or **PlatformIO
+  Core** 2. **USB-C cable** for programming and serial communication 3. **Passive
+  buzzer** (optional, for audio alerts) ### Setup Steps 1. **Clone or download this
+  repository** ```bash cd /path/to/remoteid-mesh-dualcore ``` 2. **Install dependencies**
+  (automatic via PlatformIO) ```bash pio pkg install ``` 3. **Build firmware** ```bash
+  # For ESP32-S3 (recommended) pio run -e seeed_xiao_esp32s3 # For ESP32-C6 pio run
+  -e seeed_xiao_esp32c6 ``` 4. **Flash to device** ```bash # Auto-detects USB port
+  pio run -e seeed_xiao_esp32s3 -t upload ``` 5. **Monitor serial output** ```bash
+  pio device monitor -e seeed_xiao_esp32s3 ``` ## Usage ### Serial Output Format The
+  device outputs JSON data at **115200 baud** via USB serial. Each detected drone
+  generates: ```json { "mac": "aa:bb:cc:dd:ee:ff", "rssi": -45, "drone_lat": 37.7749,
+  "drone_long": -122.4194, "drone_altitude": 120, "pilot_lat": 37.7750, "pilot_long":
+  -122.4195, "basic_id": "1234567890ABCDEF" } ``` ### Field Descriptions - `mac`:
+  Drone''s MAC address (WiFi or BLE) - `rssi`: Signal strength in dBm (closer = higher)
+  - `drone_lat/drone_long`: Current drone GPS coordinates - `drone_altitude`'
 ---
 {% raw %}
 # Sky-Spy

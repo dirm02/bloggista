@@ -2,8 +2,54 @@
 layout: project
 name: Zeyi Lin Hivisionidphotos
 slug: Zeyi-Lin-HivisionIDPhotos
+category: Uncategorized
 image: "https://img.shields.io/badge/\U0001F917-Open%20in%20Spaces-blue"
 repo_url: https://github.com/SwanHubX/SwanLab)：一个开源、现代化设计的深度学习训练跟踪与可视化工具，同时支持云端
+indexed_content: "HivisionIDPhoto [English](README_EN.md) / 中文 / [日本語](README_JP.md)
+  / [한국어](README_KO.md) [![][release-shield]][release-link] [![][dockerhub-shield]][dockerhub-link]
+  [![][github-stars-shield]][github-stars-link] [![][github-issues-shield]][github-issues-link]
+  [![][github-contributors-shield]][github-contributors-link] [![][github-forks-shield]][github-forks-link]
+  [![][license-shield]][license-link] [![][wechat-shield]][wechat-link] [![][spaces-shield]][spaces-link]
+  [![][swanhub-demo-shield]][swanhub-demo-link] [![][modelscope-shield]][modelscope-link]
+  [![][modelers-shield]][modelers-link] [![][compshare-shield]][compshare-link] [![][trendshift-shield]][trendshift-link]
+  [![][hellogithub-shield]][hellogithub-link] > **相关项目**： > > - [SwanLab](https://github.com/SwanHubX/SwanLab)：一个开源、现代化设计的深度学习训练跟踪与可视化工具，同时支持云端/离线使用，国内好用的Wandb平替；适配30+主流框架（PyTorch、HuggingFace
+  Transformers、LLaMA Factory、Lightning等），欢迎使用！ # 目录 - [最近更新](#-最近更新) - [项目简介](#-项目简介)
+  - [社区](#-社区) - [准备工作](#-准备工作) - [Demo启动](#-运行-gradio-demo) - [Python推理](#-python-推理)
+  - [API服务部署](#️-部署-api-服务) - [Docker部署](#-docker-部署) - [联系我们](#-联系我们) - [FAQ](#faq)
+  - [感谢支持](#-感谢支持) - [License](#-lincese) - [引用](#-引用) # \U0001F929 最近更新 - 在线体验： [](https://huggingface.co/spaces/TheEeeeLin/HivisionIDPhotos)、[![][modelscope-shield]][modelscope-link]、[![][modelers-shield]][modelers-link]、[![][compshare-shield]][compshare-link]
+  - 2024.11.20: Gradio Demo增加**打印排版**选项卡，支持六寸、五寸、A4、3R、4R五种排版尺寸 - 2024.11.16: API接口增加美颜参数
+  - 2024.09.25: 增加**五寸相纸**和**JPEG下载**选项｜默认照片下载支持300DPI - 2024.09.24: API接口增加base64图像传入选项
+  | Gradio Demo增加**排版照裁剪线**功能 - 2024.09.22: Gradio Demo增加**野兽模式**，可设置内存加载策略 | API接口增加**dpi、face_alignment**参数
+  - 2024.09.18: Gradio Demo增加**分享模版照**功能、增加**美式证件照**背景选项 - 2024.09.17: Gradio Demo增加**自定义底色-HEX输入**功能
+  | **（社区贡献）C++版本** - [HivisionIDPhotos-cpp](https://github.com/zjkhahah/HivisionIDPhotos-cpp)
+  贡献 by [zjkhahah](https://github.com/zjkhahah) - 2024.09.16: Gradio Demo增加**人脸旋转对齐**功能，自定义尺寸输入支持**毫米**单位
+  # 项目简介 > \U0001F680 谢谢你对我们的工作感兴趣。您可能还想查看我们在图像领域的其他成果，欢迎来信:zeyi.lin@swanhub.co. HivisionIDPhoto
+  旨在开发一种实用、系统性的证件照智能制作算法。 它利用一套完善的AI模型工作流程，实现对多种用户拍照场景的识别、抠图与证件照生成。 **HivisionIDPhoto
+  可以做到：** 1. 轻量级抠图（纯离线，仅需 **CPU** 即可快速推理） 2. 根据不同尺寸规格生成不同的标准证件照、六寸排版照 3. 支持 纯离线 或
+  端云 推理 4. 美颜 5. 智能换正装（waiting） --- 如果 HivisionIDPhoto 对你有帮助，请 star 这个 repo 或推荐给你的朋友，解决证件照应急制作问题！
+  # \U0001F3E0 社区 我们分享了一些由社区构建的HivisionIDPhotos的有趣应用和扩展： | [HivisionIDPhotos-ComfyUI][community-hivision-comfyui]
+  | [HivisionIDPhotos-wechat-weapp][community-hivision-wechat] | | :----------------------------------------------------------------------------------------------------------------------------------------------:
+  | :------------------------------------------------------------------------------------------------------------------------------:
+  | | | | |ComfyUI证件照处理工作流 | 证件照微信小程序（JAVA后端+原生前端） | | [HivisionIDPhotos-Uniapp][community-hivision-uniapp]
+  | [HivisionIDPhotos-web](https://github.com/jkm199/HivisionIDPhotos-web)| | :------------------------------------------------------------------------------------------------------------------------------:
+  | :------------------------------------------------------------------------------------------------------------------------------:
+  | | | | | 证件照微信小程序（uniapp）| 证件照应用网页版 | - [HivisionIDPhotos-cpp](https://github.com/zjkhahah/HivisionIDPhotos-cpp):
+  HivisionIDphotos C++版本，由 [zjkhahah](https://github.com/zjkhahah) 构建 - [ai-idphoto](https://github.com/wmlcjj/ai-idphoto):
+  [HivisionIDPhotos-wechat-weapp](https://github.com/no1xuan/HivisionIDPhotos-wechat-weapp)
+  的uniapp多端兼容版，由 [wmlcjj](https://github.com/wmlcjj) 贡献 - [HivisionIDPhotos-uniapp-WeChat-gpto1](https://github.com/jkm199/HivisionIDPhotos-uniapp-WeChat-gpto1/):
+  由gpt-o1辅助完成开发的证件照微信小程序，由 [jkm199](https://github.com/jkm199) 贡献 - [HivisionIDPhotos-windows-GUI](https://github.com/zhaoyun0071/HivisionIDPhotos-windows-GUI)：Windows客户端应用，由
+  [zhaoyun0071](https://github.com/zhaoyun0071) 构建 - [HivisionIDPhotos-NAS](https://github.com/ONG-Leo/HivisionIDPhotos-NAS):
+  群晖NAS部署中文教程，由 [ONG-Leo](https://github.com/ONG-Leo) 贡献 # \U0001F527 准备工作 环境安装与依赖：
+  - Python >= 3.7（项目主要测试在 python 3.10） - OS: Linux, Windows, MacOS ## 1. 克隆项目 ```bash
+  git clone https://github.com/Zeyi-Lin/HivisionIDPhotos.git cd HivisionIDPhotos ```
+  ## 2. 安装依赖环境 > 建议 conda 创建一个 python3.10 虚拟环境后，执行以下命令 ```bash pip install -r requirements.txt
+  pip install -r requirements-app.txt ``` ## 3. 下载人像抠图模型权重文件 **方式一：脚本下载** ```bash
+  python scripts/download_model.py --models all # 如需指定下载某个模型 # python scripts/download_model.py
+  --models modnet_photographic_portrait_matting ``` **方式二：直接下载** 模型均存到项目的`hivision/creator/weights`目录下：
+  | 人像抠图模型 | 介绍 | 下载 | | -- | -- | -- | | MODNet | [MODNet](https://github.com/ZHKKKe/MODNet)官方权重
+  | [下载](https://github.com/Zeyi-Lin/HivisionIDPhotos/releases/download/pretrained-model/modnet_photographic_portrait_matting.onnx)(24.7MB)|
+  | hivision_modnet | 对纯色换底适配性更好的抠图模型 | [下载](https://github.com/Zeyi-Lin/HivisionIDPhotos/releases/download/pretrained-model/hivision_modnet.onnx)(24.7MB)
+  | | rmbg-1.4 | [BRIA AI](https://hu"
 ---
 {% raw %}
 <div align="center">

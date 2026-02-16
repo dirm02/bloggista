@@ -2,8 +2,64 @@
 layout: project
 name: Drewthomasson Ebook2audiobook
 slug: DrewThomasson-ebook2audiobook
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://dcbadge.limes.pink/api/server/https://discord.gg/63Tv3F65k6
 repo_url: https://github.com/DrewThomasson/ebook2audiobook
+indexed_content: "# \U0001F4DA ebook2audiobook CPU/GPU Converter from E-Book to audiobook
+  with chapters and metadata using XTTSv2, Piper-TTS, Vits, Fairseq, Tacotron2, YourTTS
+  and much more. Supports voice cloning and 1158 languages! > [!IMPORTANT] **This
+  tool is intended for use with non-DRM, legally acquired eBooks only.** The authors
+  are not responsible for any misuse of this software or any resulting legal consequences.
+  Use this tool responsibly and in accordance with all applicable laws. [](https://discord.gg/63Tv3F65k6)
+  ### Thanks to support ebook2audiobook developers! [](https://ko-fi.com/athomasson2)
+  ### Run locally [](#launching-gradio-web-interface) [](https://github.com/DrewThomasson/ebook2audiobook/actions/workflows/Docker-Build.yml)
+  [](https://github.com/DrewThomasson/ebook2audiobook/releases/latest) ### Run Remotely
+  [](https://huggingface.co/spaces/drewThomasson/ebook2audiobook) [](https://colab.research.google.com/github/DrewThomasson/ebook2audiobook/blob/main/Notebooks/colab_ebook2audiobook.ipynb)
+  [](https://github.com/Rihcus/ebook2audiobookXTTS/blob/main/Notebooks/kaggle-ebook2audiobook.ipynb)
+  #### GUI Interface Click to see images of Web GUI ## Demos **New Default Voice Demo**
+  https://github.com/user-attachments/assets/750035dc-e355-46f1-9286-05c1d9e88cea
+  More Demos **ASMR Voice** https://github.com/user-attachments/assets/68eee9a1-6f71-4903-aacd-47397e47e422
+  **Rainy Day Voice** https://github.com/user-attachments/assets/d25034d9-c77f-43a9-8f14-0d167172b080
+  **Scarlett Voice** https://github.com/user-attachments/assets/b12009ee-ec0d-45ce-a1ef-b3a52b9f8693
+  **David Attenborough Voice** https://github.com/user-attachments/assets/81c4baad-117e-4db5-ac86-efc2b7fea921
+  **Example** ## README.md ## Table of Contents - [ebook2audiobook](#-ebook2audiobook)
+  - [Features](#features) - [GUI Interface](#gui-interface) - [Demos](#demos) - [Supported
+  Languages](#supported-languages) - [Minimum Requirements](#hardware-requirements)
+  - [Usage](#launching-gradio-web-interface) - [Run Locally](#instructions) - [Launching
+  Gradio Web Interface](#instructions) - [Basic Headless Usage](#basic--usage) - [Headless
+  Custom XTTS Model Usage](#example-of-custom-model-zip-upload) - [Help command output](#help-command-output)
+  - [Run Remotely](#run-remotely) - [Docker](#docker) - [Steps to Run](#docker) -
+  [Common Docker Issues](#common-docker-issues) - [Fine Tuned TTS models](#fine-tuned-tts-models)
+  - [Collection of Fine-Tuned TTS Models](#fine-tuned-tts-collection) - [Train XTTSv2](#fine-tune-your-own-xttsv2-model)
+  - [Supported eBook Formats](#supported-ebook-formats) - [Output Formats](#output-and-process-formats)
+  - [Updating to Latest Version](#updating-to-latest-version) - [Revert to older Version](#reverting-to-older-versions)
+  - [Common Issues](#common-issues) - [Special Thanks](#special-thanks) - [Table of
+  Contents](#table-of-contents) ## Features - \U0001F4DA **Convert multiple file formats**:
+  `.epub`, `.mobi`, `.azw3`, `.fb2`, `.lrf`, `.rb`, `.snb`, `.tcr`, `.pdf`, `.txt`,
+  `.rtf`, `.doc`, `.docx`, `.html`, `.odt`, `.azw`, `.tiff`, `.tif`, `.png`, `.jpg`,
+  `.jpeg`, `.bmp` - \U0001F50D **OCR scanning** for files with text pages as images
+  - \U0001F50A **High-quality text-to-speech** from near realtime to near real voice
+  - \U0001F5E3️ **Optional voice cloning** using your own voice file - \U0001F310
+  **Supports 1158 languages** ([supported languages list](https://dl.fbaipublicfiles.com/mms/tts/all-tts-languages.html))
+  - \U0001F4BB **Low-resource friendly** — runs on **2 GB RAM / 1 GB VRAM (minimum)**
+  - \U0001F3B5 **Audiobook output formats**: mono or stereo `aac`, `flac`, `mp3`,
+  `m4b`, `m4a`, `mp4`, `mov`, `ogg`, `wav`, `webm` - \U0001F9E0 **SML tags supported**
+  — fine-grained control of breaks, pauses, voice switching and more ([see below](#sml-tags-available))
+  - \U0001F9E9 **Optional custom model** using your own trained model (XTTSv2 only,
+  other on request) - \U0001F39B️ **Fine-tuned preset models** trained by the E2A
+  Team (Contact us if you need additional fine-tuned models, or if you’d like to share
+  yours to the official preset list) ## Hardware Requirements - 2GB RAM min, 8GB recommended.
+  - 1GB VRAM min, 4GB recommended. - Virtualization enabled if running on windows
+  (Docker only). - CPU, XPU (intel, AMD, ARM)*. - CUDA, ROCm, JETSON - MPS (Apple
+  Silicon CPU) * Modern TTS engines are very slow on CPU, so use lower quality TTS
+  like YourTTS, Tacotron2 etc.. ## Supported Languages | **Arabic (ar)** | **Chinese
+  (zh)** | **English (en)** | **Spanish (es)** | |:------------------:|:------------------:|:------------------:|:------------------:|
+  | **French (fr)** | **German (de)** | **Italian (it)** | **Portuguese (pt)** | |
+  **Polish (pl)** | **Turkish (tr)** | **Russian (ru)** | **Dutch (nl)** | | **Czech
+  (cs)** | **Japanese (ja)** | **Hindi (hi)** | **Bengali (bn)** | | **Hungarian (hu)**
+  | **Korean (ko)** | **Vietnamese (vi)**| **Swedish (sv)** | | **Persian (fa)** |
+  **Yoruba (yo)** | **Swahili (sw)** | **Indonesian (id)**| | **Slovak (sk)** | **Croatian
+  (hr)** | **Tamil (ta)** | **Danish (da)** | - [**+1130 languages and dialects here**]"
 ---
 {% raw %}
 # 📚 ebook2audiobook

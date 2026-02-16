@@ -2,8 +2,68 @@
 layout: project
 name: Cjpais Handy
 slug: cjpais-Handy
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white
 repo_url: https://github.com/cjpais/Handy
+indexed_content: "# Handy [](https://discord.com/invite/WVBeWsNXK4) **A free, open
+  source, and extensible speech-to-text application that works completely offline.**
+  Handy is a cross-platform desktop application built with Tauri (Rust + React/TypeScript)
+  that provides simple, privacy-focused speech transcription. Press a shortcut, speak,
+  and have your words appear in any text field—all without sending your voice to the
+  cloud. ## Why Handy? Handy was created to fill the gap for a truly open source,
+  extensible speech-to-text tool. As stated on [handy.computer](https://handy.computer):
+  - **Free**: Accessibility tooling belongs in everyone's hands, not behind a paywall
+  - **Open Source**: Together we can build further. Extend Handy for yourself and
+  contribute to something bigger - **Private**: Your voice stays on your computer.
+  Get transcriptions without sending audio to the cloud - **Simple**: One tool, one
+  job. Transcribe what you say and put it into a text box Handy isn't trying to be
+  the best speech-to-text app—it's trying to be the most forkable one. ## How It Works
+  1. **Press** a configurable keyboard shortcut to start/stop recording (or use push-to-talk
+  mode) 2. **Speak** your words while the shortcut is active 3. **Release** and Handy
+  processes your speech using Whisper 4. **Get** your transcribed text pasted directly
+  into whatever app you're using The process is entirely local: - Silence is filtered
+  using VAD (Voice Activity Detection) with Silero - Transcription uses your choice
+  of models: - **Whisper models** (Small/Medium/Turbo/Large) with GPU acceleration
+  when available - **Parakeet V3** - CPU-optimized model with excellent performance
+  and automatic language detection - Works on Windows, macOS, and Linux ## Quick Start
+  ### Installation 1. Download the latest release from the [releases page](https://github.com/cjpais/Handy/releases)
+  or the [website](https://handy.computer) - **macOS**: Also available via [Homebrew
+  cask](https://formulae.brew.sh/cask/handy): `brew install --cask handy` 2. Install
+  the application 3. Launch Handy and grant necessary system permissions (microphone,
+  accessibility) 4. Configure your preferred keyboard shortcuts in Settings 5. Start
+  transcribing! ### Development Setup For detailed build instructions including platform-specific
+  requirements, see [BUILD.md](BUILD.md). ## Architecture Handy is built as a Tauri
+  application combining: - **Frontend**: React + TypeScript with Tailwind CSS for
+  the settings UI - **Backend**: Rust for system integration, audio processing, and
+  ML inference - **Core Libraries**: - `whisper-rs`: Local speech recognition with
+  Whisper models - `transcription-rs`: CPU-optimized speech recognition with Parakeet
+  models - `cpal`: Cross-platform audio I/O - `vad-rs`: Voice Activity Detection -
+  `rdev`: Global keyboard shortcuts and system events - `rubato`: Audio resampling
+  ### Debug Mode Handy includes an advanced debug mode for development and troubleshooting.
+  Access it by pressing: - **macOS**: `Cmd+Shift+D` - **Windows/Linux**: `Ctrl+Shift+D`
+  ## Known Issues & Current Limitations This project is actively being developed and
+  has some [known issues](https://github.com/cjpais/Handy/issues). We believe in transparency
+  about the current state: ### Major Issues (Help Wanted) **Whisper Model Crashes:**
+  - Whisper models crash on certain system configurations (Windows and Linux) - Does
+  not affect all systems - issue is configuration-dependent - If you experience crashes
+  and are a developer, please help to fix and provide debug logs! **Wayland Support
+  (Linux):** - Limited support for Wayland display server - Requires [`wtype`](https://github.com/atx/wtype)
+  or [`dotool`](https://sr.ht/~geb/dotool/) for text input to work correctly (see
+  [Linux Notes](#linux-notes) below for installation) ### Linux Notes **Text Input
+  Tools:** For reliable text input on Linux, install the appropriate tool for your
+  display server: | Display Server | Recommended Tool | Install Command | | --------------
+  | ---------------- | -------------------------------------------------- | | X11
+  | `xdotool` | `sudo apt install xdotool` | | Wayland | `wtype` | `sudo apt install
+  wtype` | | Both | `dotool` | `sudo apt install dotool` (requires `input` group)
+  | - **X11**: Install `xdotool` for both direct typing and clipboard paste shortcuts
+  - **Wayland**: Install `wtype` (preferred) or `dotool` for text input to work correctly
+  - **dotool setup**: Requires adding your user to the `input` group: `sudo usermod
+  -aG input $USER` (then log out and back in) Without these tools, Handy falls back
+  to enigo which may have limited compatibility, especially on Wayland. **Other Notes:**
+  - **Runtime library dependency (`libgtk-layer-shell.so.0`)**: - Handy links `gtk-layer-shell`
+  on Linux. If startup fails with `error while loading shared libraries: libgtk-layer-shell.so.0`,
+  install the runtime package for your distro: | Distro | Package to install | Example
+  command | | ------------- | --------------------- | -----------------------------"
 ---
 {% raw %}
 # Handy

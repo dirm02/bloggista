@@ -2,8 +2,66 @@
 layout: project
 name: Omarsalah26 Awesome Arabic Ai
 slug: OmarSalah26-Awesome-Arabic-AI
+category: Very important!!!!
 image: https://awesome.re/badge.svg
 repo_url: 'https://github.com/Oddadmix/youtube-audio-extractor)**:'
+indexed_content: "# Awesome Arabic AI \U0001F680 Awesome Arabic AI هنا يلتقي الذكاء
+  الاصطناعي بجمال لغتنا لغة الضاد Democratizing Arabic AI by centralizing the world's
+  best open-source LLMs, Speech models, and Datasets. [](https://awesome.re) [](LICENSE)
+  [](CONTRIBUTING.md) --- ## \U0001F4D6 Introduction **Awesome-Arabic-AI** is the
+  definitive hub for advancements in Arabic Large Language Models (LLMs), Text-to-Speech
+  (TTS), and Speech-to-Text (STT) technologies. Arabic, spoken by over 400 million
+  people, presents unique computational challenges—from its complex morphology and
+  lack of diacritics to the profound state of **diglossia** (the gap between MSA and
+  spoken dialects). Our mission is to centralize high-quality, open-weight models
+  and research benchmarks to provide a strategic foundation for developers navigating
+  the burgeoning Arabic AI ecosystem. We aim to foster a community where state-of-the-art
+  speech and language technologies are accessible and optimized for the linguistic
+  richness of the Arab world. --- ## \U0001F525 New & Trending The latest and most
+  significant breakthroughs in the Arabic AI space: - \U0001F6E0️ **[YouTube Audio
+  Extractor](https://github.com/Oddadmix/youtube-audio-extractor)**: A powerful tool
+  for building Egyptian ASR datasets from YouTube, featuring AI transcription (Gemini
+  2.0 Flash) and VAD filtering. - \U0001F5E3️ **[Chatterbox-Egyptian](https://huggingface.co/oddadmix/chatterbox-egyptian-v0)**:
+  A specialized model fine-tuned specifically for **Egyptian Arabic (Masri)** synthesis.
+  - \U0001F4CA **[Silma Open-Source Benchmark](https://huggingface.co/spaces/silma-ai/opensource-arabic-tts-benchmark)**:
+  A foundational benchmark for direct auditory assessment of Arabic TTS. - \U0001F4B0
+  **[Hamsa](https://media.tryhamsa.com)**: Premium commercial Arabic voice synthesis
+  platform. - \U0001F4B0 **[SILMA TTS Voice](https://app.silma.ai)**: Professional
+  Arabic text-to-speech services. --- ## \U0001F5FA️ Table of Contents - [\U0001F52C
+  Research Spotlight: NAMAA Space](#-research-spotlight-namaa-space) - [\U0001F399️
+  Arabic TTS Excellence](#-arabic-tts-excellence) - [\U0001F4B0 Commercial Arabic
+  Voice](#-commercial-arabic-voice) - [\U0001F399️ Speech-to-Text (STT)](#-speech-to-text-stt)
+  - [\U0001F9E0 Large Language Models (LLMs)](#-large-language-models-llms) - [\U0001F6E0️
+  Tools & Utilities](#-tools--utilities) - [\U0001F30D Dialectal AI & Community Hubs](#-dialectal-ai--community-hubs)
+  - [\U0001F4CA Datasets & Benchmarks](#-datasets--benchmarks) - [\U0001F4C4 Research
+  & Publications](#-research--publications) - [\U0001F465 Key Researchers & Organizations](#-key-researchers--organizations)
+  - [\U0001F91D Contributing](#-contributing) --- ## \U0001F52C Research Spotlight:
+  NAMAA Space *Network for Advancing Modern ArabicNLP & AI* | Model / Project | Type
+  | Description | Link | | :--- | :--- | :--- | :--- | | **AraModernBERT** | LLM (Encoder)
+  | SOTA Arabic ModernBERT (Base V1.0), optimized for 8K context length. | [HuggingFace](https://huggingface.co/NAMAA-Space/AraModernBert-Base-V1.0)
+  | | **Qari-OCR v0.3** | Vision/OCR | High-fidelity Arabic OCR based on Qwen2-VL,
+  supports diacritics & complex layouts. | [HuggingFace](https://huggingface.co/NAMAA-Space/Qari-OCR-v0.3-VL-2B-Instruct)
+  | | **NAMAA-MT-Saudi** | Translation | Saudi Dialect (Najdi, Hijazi) to English
+  translation system. | [HuggingFace](https://huggingface.co/NAMAA-Space/NAMAA-MT-Saudi2English)
+  | | **Namaa-Reranker** | RAG Tool | High-performance reranker fine-tuned on mMARCO
+  for Arabic IR. | [HuggingFace](https://huggingface.co/NAMAA-Space/Namaa-Reranker-v1)
+  | | **SaudiSpell-AraT5** | Spelling Correction | SOTA sequence-to-sequence spelling
+  correction for Saudi dialects (Najdi, Hijazi) and MSA. | [HuggingFace](https://huggingface.co/NAMAA-Space/SaudiSpell-AraT5)
+  | ## \U0001F399️ Arabic TTS Excellence These models represent the cutting edge of
+  open-source Arabic speech synthesis. | Model Name | Developer/Author | Links | Notes
+  | | :--- | :--- | :--- | :--- | | **Arabic-F5-TTS-v2** | Ibrahim Salah | [Model](https://huggingface.co/IbrahimSalah/Arabic-F5-TTS-v2)
+  | Advanced F5-based Arabic TTS | | **Arabic-TTS-Spark** | Ibrahim Salah | [Space](https://huggingface.co/spaces/IbrahimSalah/Arabic-TTS-Spark)
+  | Spark-based Arabic synthesis | | **Chatterbox-Egyptian** | oddadmix | [Model](https://huggingface.co/oddadmix/chatterbox-egyptian-v0)
+  / [Demo](https://huggingface.co/spaces/oddadmix/Chatterbox-Egyptian) | Focus on
+  Egyptian Dialect | | **Habibi-TTS** | SWivid | [Model/Dataset](https://huggingface.co/datasets/SWivid/Habibi)
+  | High-quality Arabic speech dataset & model | | **XTTS-v2 (Arabic)** | Coqui/Community
+  | [Link](https://huggingface.co/lucasnewman/xtts-v2-arabic) | Multi-lingual support
+  with Arabic fine-tuning | ## \U0001F4B0 Commercial Arabic Voice Premium Arabic voice
+  synthesis and AI services. | Service Name | Developer | Links | Notes | | :--- |
+  :--- | :--- | :--- | | **Hamsa** | Hamsa AI | [Try it out](https://media.tryhamsa.com)
+  | Commercial Arabic voice platform | | **SILMA TTS Voice** | Silma AI | [App](https://app.silma.ai)
+  | Provide a Commercial Arabic voice| ## \U0001F399️ Speech-to-Text (STT) ### Foundational
+  & Fine-tuned Models - **[ArTST v2]"
 ---
 {% raw %}
 # Awesome Arabic AI 🚀

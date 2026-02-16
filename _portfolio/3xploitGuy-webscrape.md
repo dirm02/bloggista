@@ -2,8 +2,23 @@
 layout: project
 name: 3xploitguy Webscrape
 slug: 3xploitGuy-webscrape
+category: Extension-Pluggin-Cron-Scrap
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/3xploitGuy/webscrape.git
+indexed_content: "# WebScrape It is a web scraper written in bash with all possible
+  error handling which scrapes mail ID's and phone numbers from the websites. **What
+  is Web Scraping ?** Web Scraping also termed Web Data Extraction or Web Harvesting
+  it is a technique employed to extract large amounts of data from websites whereby
+  the data is extracted and saved to a local file in your computer for many uses.
+  ## Screenshot ## Installing and requirements - Linux or Unix-based system ### Installing
+  ``` ~ ❯❯❯ git clone https://github.com/3xploitGuy/webscrape.git ~ ❯❯❯ cd webscrape
+  ~/webscrape ❯❯❯ chmod +x webscrape.sh ~/webscrape ❯❯❯ ./webscrape.sh ``` ## Contact
+  [Gmail](mailto:sandeshyadavm46@gmail.com) [Instagram](https://instagram.com/1n_only_sandy)
+  [Blog](https://virtualprivacy.blogspot.com) [Website](https://sandeshyadav.000webhostapp.com)
+  [YouTube](https://www.youtube.com/channel/UCAdDJn4yWzQMJyKyRWne3qg) ## Disclaimer
+  Webscrape is created to help in data scraping from the Internet and it's not responsible
+  for any misuse or illegal purposes. ## License This work by [3xplotGuy](https://github.com/3xploitGuy)
+  is licensed under the terms of the [MIT License](https://www.tldrlegal.com/l/mit)."
 ---
 {% raw %}
 # WebScrape ![License](https://img.shields.io/badge/License-MIT-yellow.svg) ![Version](https://img.shields.io/badge/Version-1.0-red.svg)

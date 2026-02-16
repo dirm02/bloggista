@@ -2,8 +2,72 @@
 layout: project
 name: Nathangtg Legal Guard Regtech
 slug: nathangtg-legal-guard-regtech
+category: Very important!!!!
 image: https://img.youtube.com/vi/v11iNBuYcpY/maxresdefault.jpg
 repo_url: https://github.com/your-repo/legal-guard-regtech
+indexed_content: "# \U0001F6E1️ Legal Guard RegTech > **IBM TechXchange Hackathon
+  2025 Submission** > *Democratizing Legal Intelligence Through AI-Powered Document
+  Analysis* ## \U0001F3A5 Demo Video **Watch our project demo below:** [](https://youtu.be/v11iNBuYcpY)
+  *Click the image above to watch our full demonstration on YouTube* --- ## \U0001F680
+  Tech Stack [](https://fastapi.tiangolo.com/) [](https://reactjs.org/) [](https://www.typescriptlang.org/)
+  [](https://www.ibm.com/watson) [](https://python.org/) --- ## \U0001F3AF Project
+  Vision **Legal Guard RegTech** transforms how businesses navigate complex legal
+  landscapes by providing AI-powered document analysis, compliance checking, and regulatory
+  intelligence. Built for the IBM TechXchange Hackathon, this platform makes legal
+  expertise accessible to organizations of all sizes. ### \U0001F3C6 Why This Matters
+  - **70%** of businesses struggle with compliance due to complex legal language -
+  **$14.8 billion** lost annually due to regulatory non-compliance - **Small businesses**
+  can't afford dedicated legal teams - **Legal documents** are getting more complex
+  every year --- ## ✨ Key Features ### \U0001F916 **AI-Powered Document Intelligence**
+  - **Smart Summarization**: Convert complex legal jargon into plain English - **Clause
+  Explanation**: Real-time explanation of contract terms and implications - **Risk
+  Assessment**: Automated identification of potential compliance issues - **Multi-format
+  Support**: PDF, DOCX, TXT document processing ### \U0001F4CA **Compliance Engine**
+  - **Multi-Jurisdiction Support**: GDPR (EU), PDPA (MY/SG), CCPA (US), Employment
+  Act (MY) - **Real-time Compliance Checking**: Instant validation against regulatory
+  frameworks - **Risk Scoring**: Quantified compliance risk assessment (0-100 scale)
+  - **Regulatory Alerts**: Proactive identification of compliance gaps ### \U0001F4BC
+  **Enterprise-Grade Features** - **Export Capabilities**: PDF reports for stakeholder
+  sharing - **RESTful API**: Easy integration with existing systems - **Comprehensive
+  Documentation**: Auto-generated API docs with OpenAPI/Swagger ### \U0001F30D **Regional
+  Legal Intelligence** - **Malaysia**: PDPA 2010, Employment Act 1955 - **Singapore**:
+  PDPA 2012 - **European Union**: GDPR 2018 - **United States**: CCPA 2020 --- ##
+  \U0001F3D7️ Technical Architecture ### **Backend Stack** ``` \U0001F40D Python 3.12+
+  with FastAPI \U0001F9E0 IBM Watson X.ai (Granite Models) \U0001F4C4 Advanced Document
+  Processing (PDFPlumber, python-docx) \U0001F50D Intelligent Text Analysis & NLP
+  \U0001F5C4️ JSON-based Regulatory Database ``` ### **Frontend Stack** ``` ⚛️ React
+  18 with TypeScript \U0001F3A8 Modern UI with Tailwind CSS & Radix UI Components
+  \U0001F4F1 Responsive Design for All Devices \U0001F4CA Interactive Data Visualizations
+  (Recharts) \U0001F504 Real-time API Integration with Axios \U0001F3AF React Router
+  for SPA Navigation \U0001F4BE Zustand for State Management \U0001F4C2 React Dropzone
+  for File Uploads \U0001F3A8 Lucide React Icons ``` ### **AI & Machine Learning**
+  ``` \U0001F916 IBM Watson X.ai Integration \U0001F9EC Granite Foundation Models
+  \U0001F524 Natural Language Processing \U0001F4CA Semantic Analysis & Understanding
+  \U0001F3AF Context-Aware Risk Assessment ``` --- ## \U0001F3A8 Frontend & User Experience
+  ### **Modern Web Application Architecture** Our frontend is built as a sophisticated
+  Single Page Application (SPA) that delivers a seamless, responsive experience across
+  all devices. The application leverages modern React patterns and TypeScript for
+  type safety and maintainability. ### **\U0001F5A5️ User Interface Highlights** ####
+  **Professional Dashboard** - **Real-time Analytics**: Live compliance statistics
+  and document processing metrics - **Interactive Charts**: Visual representation
+  of risk scores and compliance trends using Recharts - **Quick Actions**: One-click
+  access to document analysis and AI insights - **Activity Feed**: Recent analysis
+  history and compliance alerts #### **Intelligent Document Analysis Interface** -
+  **Dual-Mode Processing**: Switch between file upload and direct text input - **Drag
+  & Drop Upload**: Modern file upload with progress indicators and validation - **Multi-Format
+  Support**: PDF, DOCX, TXT with real-time file validation - **Live Progress Tracking**:
+  Visual feedback during document processing #### **AI-Powered Insights Panel** -
+  **Smart Summarization**: Three summary types (Plain Language, Executive, Risk Analysis)
+  - **Clause Explanation**: Real-time legal clause interpretation with risk assessment
+  - **Interactive Results**: Expandable sections with detailed explanations and recommendations
+  - **Export Capabilities**: PDF report generation for sharing and documentation ###
+  **\U0001F3AF Key UI Components** | Component | Purpose | Features | |-----------|---------|----------|
+  | **Landing Page** | First impression & onboarding | Hero section, feature showcase,
+  call-to-action | | **Authentication** | Secure user management | Login/signup with
+  protected routes | | **Dashboard** | Central hub | Analytics, quick stats, recent
+  activities | | **Document Analyzer** | Core functionality | File upload, text input,
+  real-time analysis | | **AI Insights** | Intelligence layer | Summarization, clause
+  explanation, risk assessment | | **C"
 ---
 {% raw %}
 # 🛡️ Legal Guard RegTech

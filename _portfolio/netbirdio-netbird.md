@@ -2,8 +2,65 @@
 layout: project
 name: Netbirdio Netbird
 slug: netbirdio-netbird
+category: Very important!!!!
 image: https://img.youtube.com/vi/bZAgpT6nzaQ/0.jpg
 repo_url: https://github.com/netbirdio/netbird
+indexed_content: "Start using NetBird at netbird.io See Documentation Join our Slack
+  channel or our Community forum \U0001F680 We are hiring! Join us at careers.netbird.io
+  New: NetBird terraform provider **NetBird combines a configuration-free peer-to-peer
+  private network and a centralized access control system in a single platform, making
+  it easy to create secure private networks for your organization or home.** **Connect.**
+  NetBird creates a WireGuard-based overlay network that automatically connects your
+  machines over an encrypted tunnel, leaving behind the hassle of opening ports, complex
+  firewall rules, VPN gateways, and so forth. **Secure.** NetBird enables secure remote
+  access by applying granular access policies while allowing you to manage them intuitively
+  from a single place. Works universally on any infrastructure. ### Open Source Network
+  Security in a Single Platform https://github.com/user-attachments/assets/10cec749-bb56-4ab3-97af-4e38850108d2
+  ### Self-Host NetBird (Video) [](https://youtu.be/bZAgpT6nzaQ) ### Key features
+  | Connectivity | Management | Security | Automation| Platforms | |----|----|----|----|----|
+  | - \\[x] Kernel WireGuard | - \\[x] [Admin Web UI](https://github.com/netbirdio/dashboard)
+  | - \\[x] [SSO & MFA support](https://docs.netbird.io/how-to/installation#running-net-bird-with-sso-login)
+  | - \\[x] [Public API](https://docs.netbird.io/api) | - \\[x] Linux | | - \\[x]
+  Peer-to-peer connections | - \\[x] Auto peer discovery and configuration | - \\[x]
+  [Access control - groups & rules](https://docs.netbird.io/how-to/manage-network-access)
+  | - \\[x] [Setup keys for bulk network provisioning](https://docs.netbird.io/how-to/register-machines-using-setup-keys)
+  | - \\[x] Mac | | - \\[x] Connection relay fallback | - \\[x] [IdP integrations](https://docs.netbird.io/selfhosted/identity-providers)
+  | - \\[x] [Activity logging](https://docs.netbird.io/how-to/audit-events-logging)
+  | - \\[x] [Self-hosting quickstart script](https://docs.netbird.io/selfhosted/selfhosted-quickstart)
+  | - \\[x] Windows | | - \\[x] [Routes to external networks](https://docs.netbird.io/how-to/routing-traffic-to-private-networks)
+  | - \\[x] [Private DNS](https://docs.netbird.io/how-to/manage-dns-in-your-network)
+  | - \\[x] [Device posture checks](https://docs.netbird.io/how-to/manage-posture-checks)
+  | - \\[x] IdP groups sync with JWT | - \\[x] Android | | - \\[x] NAT traversal with
+  BPF | - \\[x] [Multiuser support](https://docs.netbird.io/how-to/add-users-to-your-network)
+  | - \\[x] Peer-to-peer encryption || - \\[x] iOS | ||| - \\[x] [Quantum-resistance
+  with Rosenpass](https://netbird.io/knowledge-hub/the-first-quantum-resistant-mesh-vpn)
+  || - \\[x] OpenWRT | ||| - \\[x] [Periodic re-authentication](https://docs.netbird.io/how-to/enforce-periodic-user-authentication)
+  || - \\[x] [Serverless](https://docs.netbird.io/how-to/netbird-on-faas) | |||||
+  - \\[x] Docker | ### Quickstart with NetBird Cloud - Download and install NetBird
+  at [https://app.netbird.io/install](https://app.netbird.io/install) - Follow the
+  steps to sign-up with Google, Microsoft, GitHub or your email address. - Check NetBird
+  [admin UI](https://app.netbird.io/). - Add more machines. ### Quickstart with self-hosted
+  NetBird > This is the quickest way to try self-hosted NetBird. It should take around
+  5 minutes to get started if you already have a public domain and a VM. Follow the
+  [Advanced guide with a custom identity provider](https://docs.netbird.io/selfhosted/selfhosted-guide#advanced-guide-with-a-custom-identity-provider)
+  for installations with different IDPs. **Infrastructure requirements:** - A Linux
+  VM with at least **1CPU** and **2GB** of memory. - The VM should be publicly accessible
+  on TCP ports **80** and **443** and UDP port: **3478**. - **Public domain** name
+  pointing to the VM. **Software requirements:** - Docker installed on the VM with
+  the docker-compose plugin ([Docker installation guide](https://docs.docker.com/engine/install/))
+  or docker with docker-compose in version 2 or higher. - [jq](https://jqlang.github.io/jq/)
+  installed. In most distributions Usually available in the official repositories
+  and can be installed with `sudo apt install jq` or `sudo yum install jq` - [curl](https://curl.se/)
+  installed. Usually available in the official repositories and can be installed with
+  `sudo apt install curl` or `sudo yum install curl` **Steps** - Download and run
+  the installation script: ```bash export NETBIRD_DOMAIN=netbird.example.com; curl
+  -fsSL https://github.com/netbirdio/netbird/releases/latest/download/getting-started.sh
+  | bash ``` - Once finished, you can manage the resources via `docker-compose` ###
+  A bit on NetBird internals - Every machine in the network runs [NetBird Agent (or
+  Client)](client/) that manages WireGuard. - Every agent connects to [Management
+  Service](management/) that holds network state, manages peer IPs, and distributes
+  network updates to agents (peers). - NetBird agent uses WebRTC ICE implemented in
+  [pion/ice library](https://github.com/pion/ice) to discover connection "
 ---
 {% raw %}
 

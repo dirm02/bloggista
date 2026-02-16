@@ -2,8 +2,70 @@
 layout: project
 name: Gemini Cli Extensions Nanobanana
 slug: gemini-cli-extensions-nanobanana
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/google-gemini/gemini-cli
+indexed_content: "> [!NOTE] > Nano Banana Pro (`gemini-3-pro-image-preview`) is now
+  supported in this extension (v1.0.10+)! > > Set the `NANOBANANA_MODEL` environment
+  variable to `gemini-3-pro-image-preview` to use it. # Nano Banana - Gemini CLI Extension
+  A professional Gemini CLI extension for generating and manipulating images using
+  the Nano Banana models. ## ✨ Features - **\U0001F3A8 Text-to-Image Generation**:
+  Create stunning images from descriptive prompts - **✏️ Image Editing**: Modify existing
+  images with natural language instructions - **\U0001F527 Image Restoration**: Restore
+  and enhance old or damaged photos - **\U0001F4C1 Smart File Management**: User-friendly
+  filenames with automatic duplicate prevention ## \U0001F4CB Prerequisites 1. **Gemini
+  CLI** installed and configured 2. **Node.js 20+** and npm 3. **API Key**: Set one
+  of these environment variables: - `NANOBANANA_GEMINI_API_KEY` (recommended for Gemini
+  API key users who normally authenticate to Gemini CLI using the \"Login with Google\"
+  option) - `NANOBANANA_GOOGLE_API_KEY` (recommended for Vertex API key users who
+  normally authenticate to Gemini CLI using the \"Login with Google\" option) - `GEMINI_API_KEY`
+  (fallback) - `GOOGLE_API_KEY` (fallback) For authentication setup, see the [official
+  Gemini CLI documentation](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/authentication.md).
+  ### Key Components - **`index.ts`**: MCP server using `@modelcontextprotocol/sdk`
+  for professional protocol handling - **`imageGenerator.ts`**: Handles all Gemini
+  API interactions and response processing - **`fileHandler.ts`**: Manages file I/O,
+  smart filename generation, and file searching - **`types.ts`**: Shared TypeScript
+  interfaces for type safety ## \U0001F34C Model Selection There are two different
+  Nano Banana models supported by this extension: - `gemini-2.5-flash-image` (default)
+  - `gemini-3-pro-image-preview` (Nano Banana Pro) The `gemini-2.5-flash-image` model
+  is the default model. To use the new Gemini 3 Pro powered model set the `NANOBANANA_MODEL`
+  environment variable to `gemini-3-pro-image-preview`. ```bash export NANOBANANA_MODEL=gemini-3-pro-image-preview
+  ``` ## \U0001F680 Installation ### 1. Install Extension Install the extension using
+  the `gemini extensions install` command: ```bash gemini extensions install https://github.com/gemini-cli-extensions/nanobanana
+  ``` ### 2. Activate Restart the Gemini CLI. The following commands will be available:
+  - `/generate` - Single or multiple image generation with style/variation options
+  - `/edit` - Image editing - `/restore` - Image restoration - `/icon` - Generate
+  app icons, favicons, and UI elements in multiple sizes - `/pattern` - Generate seamless
+  patterns and textures for backgrounds - `/story` - Generate sequential images that
+  tell a visual story or process - `/diagram` - Generate technical diagrams, flowcharts,
+  and architectural mockups - `/nanobanana` - Natural language interface ## \U0001F4A1
+  Usage The extension provides multiple command options for different use cases: ###
+  \U0001F3AF Specific Commands (Recommended) **Generate Images:** ```bash # Single
+  image /generate \"a watercolor painting of a fox in a snowy forest\" # Multiple
+  variations with preview /generate \"sunset over mountains\" --count=3 --preview
+  # Style variations /generate \"mountain landscape\" --styles=\"watercolor,oil-painting\"
+  --count=4 # Specific variations with auto-preview /generate \"coffee shop interior\"
+  --variations=\"lighting,mood\" --preview ``` **Edit Images:** ```bash /edit my_photo.png
+  \"add sunglasses to the person\" /edit portrait.jpg \"change background to a beach
+  scene\" --preview ``` **Restore Images:** ```bash /restore old_family_photo.jpg
+  \"remove scratches and improve clarity\" /restore damaged_photo.png \"enhance colors
+  and fix tears\" --preview ``` **Generate Icons:** ```bash # App icon in multiple
+  sizes /icon \"coffee cup logo\" --sizes=\"64,128,256\" --type=\"app-icon\" --preview
+  # Favicon set /icon \"company logo\" --type=\"favicon\" --sizes=\"16,32,64\" # UI
+  elements /icon \"settings gear icon\" --type=\"ui-element\" --style=\"minimal\"
+  ``` **Create Patterns:** ```bash # Seamless pattern /pattern \"geometric triangles\"
+  --type=\"seamless\" --style=\"geometric\" --preview # Background texture /pattern
+  \"wood grain texture\" --type=\"texture\" --colors=\"mono\" # Wallpaper pattern
+  /pattern \"floral design\" --type=\"wallpaper\" --density=\"sparse\" ``` **Generate
+  Stories:** ```bash # Visual story sequence /story \"a seed growing into a tree\"
+  --steps=4 --type=\"process\" --preview # Step-by-step tutorial /story \"how to make
+  coffee\" --steps=6 --type=\"tutorial\" # Timeline visualization /story \"evolution
+  of smartphones\" --steps=5 --type=\"timeline\" ``` **Create Diagrams:** ```bash
+  # System flowchart /diagram \"user login process\" --type=\"flowchart\" --style=\"professional\"
+  --preview # Architecture diagram /diagram \"microservices architecture\" --type=\"architecture\"
+  --complexity=\"detailed\" # Database schema /diagram \"e-commerce database design\"
+  --type=\"database\" --layout=\"hierarchical\" ``` ### \U0001F31F Natural Language
+  Command (Flexible) **Open-ended pro"
 ---
 {% raw %}
 > [!NOTE]  

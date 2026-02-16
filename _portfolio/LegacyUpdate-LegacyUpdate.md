@@ -2,8 +2,67 @@
 layout: project
 name: Legacyupdate Legacyupdate
 slug: LegacyUpdate-LegacyUpdate
+category: WindowsTools- Linux
 image: https://wakatime.com/badge/user/b9fcf8ba-3fce-41a4-a480-d3fe6074a1ad/project/c9516ff1-10b9-41da-82fb-b86b24b0acc8.svg
 repo_url: https://github.com/LegacyUpdate/LegacyUpdate
+indexed_content: "# [ ](http://legacyupdate.net/) [](https://wakatime.com/badge/user/b9fcf8ba-3fce-41a4-a480-d3fe6074a1ad/project/c9516ff1-10b9-41da-82fb-b86b24b0acc8)
+  [](https://github.com/LegacyUpdate/LegacyUpdate/actions/workflows/build.yml) Since
+  Windows XP was discontinued in 2014, followed by Windows 7 in 2020, Microsoft has
+  closed services they depend on, such as Windows Update. There are also design flaws
+  with these earlier versions of Windows Update, which make them difficult to get
+  working on new installations. Legacy Update can install all relevant updates necessary
+  to fix access to the Windows Update service on unsupported versions of Windows.
+  These versions of Windows may display the error “Windows could not search for new
+  updates: Windows Update encountered an unknown error” with error code **80072EFE**,
+  or may simply never finish checking for updates. Legacy Update identifies the updates
+  your system lacks, and installs them automatically, restoring the Windows Update
+  service to full functionality. Windows Update provides many optional and recommended
+  updates, in addition to drivers for your system, but Windows XP and 2000 can only
+  install critical security updates through the built-in Automatic Updates feature.
+  **Legacy Update** revives the original Windows Update website - the only way to
+  see and install every update available for your system. Legacy Update also restores
+  access to **Windows Ultimate Extras** on Windows Vista Ultimate. Legacy Update also
+  restores connectivity to some websites in Internet Explorer, and other programs
+  that use the Windows built-in networking functionality. This includes **Windows
+  Product Activation** on Windows XP and Windows Server 2003, allowing you to activate
+  these versions of Windows online in seconds (a legitimate product key is [still
+  required](https://legacyupdate.net/faq/security)). Just want to appreciate the nostalgia
+  of the classic Windows Update website? Legacy Update can also be installed on Windows
+  10 and 11. This works even on versions of these OSes that have removed Internet
+  Explorer. Legacy Update won’t modify your Windows 10 or 11 installation. > *If this
+  website helped you to update your old PCs, please consider [leaving a tip](https://ko-fi.com/adamdemasi)
+  to help me pay for the server costs. Thank you!* ## Download Download the latest
+  version from the [Releases](https://github.com/LegacyUpdate/LegacyUpdate/releases)
+  page of this repo, or from [**legacyupdate.net**](https://legacyupdate.net/). You
+  can also download the [latest nightly build](https://nightly.link/LegacyUpdate/LegacyUpdate/workflows/build/main/artifact.zip),
+  based on the current development work. Nightly builds are not guaranteed to be stable.
+  You may also need to accept extra SmartScreen and other security warnings since
+  these executables are unique to each build. If you’re not sure what to download,
+  you probably want the [stable release](https://legacyupdate.net/). ## The ActiveX
+  Control This repo hosts an ActiveX control used as a replica of the original one
+  developed by Microsoft for the official Windows Update website. The original version
+  of Legacy Update required using a proxy autoconfiguration file (.pac) and some additional
+  configuration of Internet Explorer security settings to intercept requests to the
+  **update.microsoft.com** domain, because the Microsoft Wuweb.dll control has safety
+  measures ensuring it can only be used by the official update.microsoft.com domain.
+  With the custom Legacy Update ActiveX control, proxying is no longer required, because
+  we have full control over the validation logic. This also allows us to extend it
+  with convenient features not possible with JavaScript alone. Particularly, we have
+  “forward-ported” the control to add support for Windows Vista and later, which introduces
+  extra challenges such as User Account Control (UAC) and Internet Explorer’s Protected
+  Mode. ### Building The project is built using [MinGW-w64](https://www.mingw-w64.org/)
+  on Linux. You can test much of the project using your running version of Windows,
+  although for best results you should test using a virtual machine of Windows XP,
+  Windows Vista, and Windows 7. Take snapshots of your VMs - this will make it far
+  easier to test update scenarios. You will need to install: * [MinGW-w64](https://www.mingw-w64.org/)
+  for i686 and x86_64 * [NSIS](https://nsis.sourceforge.io/) * [UPX](https://upx.github.io/)
+  * [Wine](https://www.winehq.org/) development tools Run the following command to
+  install build dependencies. This command specific to Ubuntu - if you use a different
+  distro, you will need to find and install the equivalent packages from your package
+  manager. ```bash sudo apt install libwine-dev make mingw-w64-i686-dev mingw-w64-x86-64-dev
+  nsis upx-ucl ``` If you use Debian/Ubuntu’s build of NSIS, please note that it is
+  compiled for Pentium II and later, and will fail to launch on Pentium, AMD K6, and
+  other CPUs lacking SSE instructions. If you want to support these CPUs, run `./build/fix-ns"
 ---
 {% raw %}
 # [<img src="https://legacyupdate.net/socialbanner.png" alt="Legacy Update">](http://legacyupdate.net/)

@@ -2,8 +2,68 @@
 layout: project
 name: Tonyantony300 Alt Sendme
 slug: tonyantony300-alt-sendme
+category: File manager -Network-nmap
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tonyantony300-alt-sendme/assets/header.png
 repo_url: https://github.com/sponsors/tonyantony300)
+indexed_content: "# File transfer doesn't need to be complicated ![Version][badge-version]
+  ![Website][badge-website] ![Platforms][badge-platforms] [![Sponsor][badge-sponsor]](https://github.com/sponsors/tonyantony300)
+  A free and open-source file transfer tool that harnesses the power of [cutting-edge
+  peer-to-peer networking](https://www.iroh.computer), letting you transfer files
+  directly without storing them on cloud servers. Why rely on WeTransfer, Dropbox,
+  or Google Drive when you can reliably and easily transfer files directly, end-to-end
+  encrypted and without revealing any personal information? [Receive major project
+  updates \U0001F4EB](https://tally.so/r/ob2Vkx) ## Features - **Send anywhere** –
+  Works seamlessly on local networks or across continents. - **Peer-to-peer direct
+  transfer** – Send files straight between devices, with no cloud storage in between.
+  - **End-to-end encryption** – Always-on protection with QUIC + TLS 1.3 for forward
+  and backward secrecy. - **No accounts or personal info** – Transfer files without
+  sign-ups or exposing personal info. - [**Transfer anything**](https://www.iroh.computer/proto/iroh-blobs)
+  – Send files or directories of any size or any format, verified with BLAKE3-based
+  integrity checks. - **Resumable transfers** – Interrupted downloads automatically
+  resume where they left off. - **Fast & reliable** – Capable of saturating multi-gigabit
+  connections for lightning-fast transfers. - [**NAT traversal via QUIC**](https://www.iroh.computer/docs/faq#does-iroh-use-relay-servers)
+  – Secure, low-latency connections using QUIC hole punching with encrypted relay
+  fallback. - **CLI integration** – Interoperable with the [Sendme CLI](https://www.iroh.computer/sendme).
+  - **Mobile & web** – Coming soon. - **Free & open source** – No upload costs, no
+  size limits, and fully community-driven. ## Installation The easiest way to get
+  started is by downloading one of the following versions for your respective operating
+  system: Platform Download Windows AltSendme.exe macOS AltSendme.dmg Linux AltSendme.deb
+  **Windows (Scoop)** ```bash scoop bucket add extras scoop install extras/altsendme
+  ``` More download options in [GitHub Releases](https://github.com/tonyantony300/alt-sendme/releases).
+  ## How it works 1. Drop your file or folder - AltSendme creates a one-time share
+  code (called a \"ticket\"). 2.  Share the ticket via chat, email, or text. 3. Your
+  friend pastes the ticket in their app, and the transfer begins. ## Under the hood
+  ⚙️\U0001F6E0️ AltSendme uses [Iroh](https://www.iroh.computer) under the hood to
+  enable peer-to-peer file transfer. It is a modern modular alternative to technologies
+  like WebRTC and libp2p. ### Important concepts - *Blobs* - *Tickets* - *Peer Discovery*,
+  *Hole-punching* & *NAT traversal* - *QUIC* & *End-to-end encryption* - *Relays*
+  ### 1. Blobs Content-addressed blob storage and transfer. `iroh-blobs` implements
+  request/response and streaming transfers of arbitrary-sized byte blobs, using BLAKE3-verified
+  streams and content-addressed links. - Blob: an opaque sequence of bytes (no embedded
+  metadata). - Link: a 32-byte BLAKE3 hash that identifies a blob. - HashSeq: a blob
+  that contains a sequence of links (useful for chunking/trees). - Provider / Requester:
+  provider serves data; requester fetches it. An endpoint can be both. ### 2. Tickets
+  Tickets are a way to share dialing information between iroh endpoints. They're a
+  single token that contains everything needed to connect to another endpoint, or
+  to fetch a blob in this case. Contains Ed25519 NodeIds: Your device's cryptographic
+  identity for authentication.They're also very powerful. It's worth pointing out
+  this setup is considerably better than full peer-2-peer systems, which broadcast
+  your IP to peers. Instead in iroh, tickets are used to form a \"cozy network\" between
+  peers you explicitly want to connect with. It's possible to go \"full p2p\" & configure
+  your app to broadcast dialing details, but tickets represent a better middle-ground
+  default. ### 3. Peer Discovery, NAT Traversal & Hole Punching Peers register with
+  an open-source public relay servers at startup to help traverse firewalls and NATs,
+  enabling connection setup. Once connected, Iroh uses QUIC hole punching to try and
+  establish a direct peer-to-peer connection, bypassing the relay. If direct connection
+  is possible, communication happens directly between peers with end-to-end encryption;
+  otherwise, the relay operates only temporarily as a fallback. This enables smooth
+  reliable connections between peers within local-network and across the internet.
+  ### 4. QUIC & Encryption QUIC is a modern transport protocol built on UDP, designed
+  to reduce latency and improve web performance over TCP. Developed originally by
+  Google and now standardized by the IETF as HTTP/3's foundation, it integrates TLS
+  1.3 encryption directly into the protocol. QUIC allows following super-powers: *
+  encryption & authentication * stream multiplexing * no head-of-line blocking issues
+  * stream priorities * one shared congestion "
 ---
 {% raw %}
 <div align="center">

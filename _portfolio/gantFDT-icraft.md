@@ -2,8 +2,69 @@
 layout: project
 name: Gantfdt Icraft
 slug: gantFDT-icraft
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/gantFDT/icraft/main/public/images/banner.jpg
 repo_url: https://github.com/gantFDT/icraft
+indexed_content: "# iCraft Editor iCraft Editor - Help you easily create stunning
+  3D architecture diagrams International： [https://icraft.design](https://icraft.design)
+  China: [https://icraft.gantcloud.com](https://icraft.gantcloud.com) In this rapidly
+  developing digital age, architecture diagrams serve as key tools for understanding
+  and designing complex systems, and their presentation methods continue to evolve.
+  Traditionally, we created architecture diagrams in 2D, showing system components
+  only on a flat plane, which sometimes made it difficult to display hierarchical
+  relationships. iCraft Editor is our carefully crafted product designed to meet this
+  need, focusing on 3D architectural design with three-dimensional visual effects
+  that capture attention, improve communication efficiency, and bring you a new visual
+  experience with convenient operations. ## Features ### Easy Design - Provides exquisite
+  3D model elements to inspire your creativity - Offers example templates to accelerate
+  your design process - One-click switch between 2D and 3D views - Automatic grid
+  snapping for convenient connection operations - Automatic stacking and magnetic
+  attraction of drawing elements ### Immersive Presentation - 3D panoramic presentation
+  of your ideas with freely transformable multi-angle views - Supports animation playback
+  to convey your design concepts more precisely - Seamless switching between sub-scene
+  states to clearly express complex design concepts in layers ### Digital Twin - Provides
+  easily embeddable Web rendering components to control 3D element states through
+  APIs - Visualizes real-time synchronization between Web system information and 3D
+  architecture diagrams - 3D scenes intuitively display server, network device, and
+  technical component status - Supports custom data integration for flexible connection
+  with various monitoring systems #### Opening a New 3D Perspective Traditional 2D
+  architecture diagrams sometimes lack intuitive information presentation and make
+  it difficult to grasp the overall system architecture. Through iCraft Editor's 3D
+  design, every element and layer is presented in three dimensions. You can freely
+  rotate, zoom, and examine your architecture from various angles, easily discovering
+  details and relationships. If you have structured ideas to express, iCraft Editor
+  can help you present them in three dimensions. With its intuitive interface, rich
+  graphics library, and powerful features, you can get started without professional
+  knowledge. Through iCraft Editor, you can freely build, modify, and optimize scenes.
+  Features like free viewpoint control and external model embedding ensure you can
+  perfectly present your ideas from every angle. #### Simple and User-Friendly Interface
+  We understand that good tools need to be both powerful and easy to use. iCraft Editor
+  is designed for quick adoption by all users, featuring a clean, friendly, and intuitive
+  interface. Through simple layouts and clear icons, you can quickly find the tools
+  and functions you need. Even as a beginner, without complex learning processes,
+  you can get started in just minutes and begin your creative journey. It allows you
+  to fully express your creativity and customize unique 3D architecture diagrams according
+  to your needs. Our goal is to enable every user to achieve complex designs through
+  simple operations. #### Rich Built-in Graphics iCraft Editor provides a rich graphics
+  library to meet your diverse design needs. Whether it's basic geometric shapes or
+  complex 3D models, you can find them in our graphics library. We continuously expand
+  and update the library to ensure you always have access to the latest and most comprehensive
+  design elements. #### Nestable Sub-scenes iCraft Editor features powerful element
+  nesting capabilities for sub-scenes, adding depth and flexibility to your designs.
+  Through this functionality, you can nest multiple sub-scenes within the main scene,
+  enabling modular management and editing of complex designs. Each sub-scene can be
+  independently edited, previewed, and adjusted, allowing you to freely add and modify
+  elements within sub-scenes without affecting the overall layout of the main scene.
+  #### External Model Integration iCraft Editor supports seamless integration of external
+  models, further expanding your design possibilities. You can easily import various
+  common 3D file formats such as GLB and GLTF, directly incorporating externally created
+  models into your projects. This not only allows you to utilize existing design assets
+  but also enables you to create more complex and refined works through the integration
+  of various resources. #### Clear Presentation of Complex Architectures iCraft Editor
+  enables you to clearly present complex architectural designs. Whether it's detailed
+  structural elements or macro-level layout planning, iCraft Editor helps you perfectly
+  showcase every aspect. Through high-precision rendering and free viewpoint control,
+  you can clearly observe and adjust your design from different angl"
 ---
 {% raw %}
 # iCraft Editor

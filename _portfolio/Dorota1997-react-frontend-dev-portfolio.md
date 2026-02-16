@@ -2,8 +2,48 @@
 layout: project
 name: Dorota1997 React Frontend Dev Portfolio
 slug: Dorota1997-react-frontend-dev-portfolio
+category: Uncategorized
 image: https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/portfolio_mockup.png
 repo_url: https://github.com/Dorota1997/react-frontend-dev-portfolio
+indexed_content: 'Portfolio Template ⭐ Easy to adapt and deploy portfolio project
+  covering most important sections(about, exp, skills, projects), inspired with solutions
+  found at GitHub. Check live preview(link below). :crown: advantages &nbsp; &nbsp;
+  &nbsp; &nbsp; &nbsp; :eye_speech_bubble: Live demo Check live demonstration here
+  :books: Getting started 1. Clone or fork project. 2. Install required dependencies
+  with `npm install`. 3. Remove `homepage` entirely from `package.json` or set it
+  to single dot. ``` // package.json { "name": "react-frontend-dev-portfolio", "homepage":
+  "https://dorota1997.github.io/react-frontend-dev-portfolio/", ⚠️ Note that: - if
+  you want to have portfolio on different repository than `{username}.github.io`,
+  set `homepage` in `package.json` to `https://{username}.github.io/{repository-name}/`
+  before deploying portfolio. - if you want to run it locally with npm run start ,
+  make sure that you have edited homepage property or json data won''t load. :star:
+  Inspirations React Vertical Timeline React Awesome Slider React Switch React Typical
+  Iconify Design Polaroid effect GitHub Ref Corner :memo: Changelog [ 05.03.2022,
+  contributor: @mangelarilla ] - update DevIcon stylesheet to latest one [ 03.10.2021,
+  contributor: @shahednasser ] - updated sass dependency. [ 26.05.2021, contributor:
+  @DavidMatalik ] - removed nonexisting logos references: logo192 and logo512. [ 17.01.2021,
+  contributor: @igorperic17 ] - wrapped the Typical component into a fixed height
+  div due to the bad transitions for a brief moment between two titles when the string
+  is empty (the content bellow jumps up-down very quickly). - removed the title from
+  the page document.title due to the increased title length. [ 30.11.2020, contributor:
+  @dorota1997 ] - updated readme section - fixed problem of json files not being read
+  [ 29/30.11.2020, contributor: @trolit ] - changed resume files names to more "universal"
+  - moved languages names to global variables - moved section names to json files
+  - added target="_blank" for footer links - added startDate property for projects
+  - excluded common json data to portfolio_shared_data file - added header section
+  height calculation based on formula: window.innerHeight - 140 - small changes to
+  vertical timeline item (color/font-size) - project link in modal is not shown if
+  empty - changed slider preloader bar color - wrapped each skill into tile - footer
+  fullname is fetched from json now - added mising "px" for avatar in About.js component
+  - updated json files content - page title is fetched from json data - added GitHub
+  reference corner "label" - edited page meta - added margin, padding 0 for html tag
+  - excluded light theme ref from theme-dark file - slightly changed Header.js section
+  look - made some changes to App.js to apply global variables/shared json etc. -
+  centered fullname/pos/theme toggler in Header section :gear: Contribution If you
+  have any suggestions on what to improve in react-frontend-dev-portfolio and would
+  like to share them, feel free to leave an issue or fork project to implement your
+  own ideas :slightly_smiling_face: :camera: Credits(images) Images used in portfolio
+  template come from Pixabay, references: p1 , p2 , p3 , p4 , p5 , p6'
 ---
 {% raw %}
 <img width="80%" align="center" src="https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/portfolio_mockup.png" alt="portfolio template mockup" /> <br/>

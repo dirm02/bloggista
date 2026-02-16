@@ -2,8 +2,51 @@
 layout: project
 name: Bluegrams Vividl
 slug: Bluegrams-Vividl
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/github/license/bluegrams/vividl.svg
 repo_url: https://github.com/bluegrams/vividl
+indexed_content: "# Vividl [](https://github.com/bluegrams/vividl/blob/master/LICENSE.txt)
+  [](https://github.com/bluegrams/vividl) [](https://sourceforge.net/projects/vividl/files/)
+  > Free video downloader for Windows [](https://sourceforge.net/projects/vividl/files/)
+  Vividl is a Windows app that lets you download videos from various websites, including
+  YouTube, Soundcloud, Vimeo, Dailymotion and various media channels. It uses the
+  popular downloader [youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html)/
+  [yt-dlp](https://github.com/yt-dlp/yt-dlp) to extract videos from [several hundred
+  websites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md). Just
+  copy a video URL, paste it in Vividl and download the video in different qualities,
+  convert it to other formats or to an audio track. You can also manage the parallel
+  download of multiple videos and retrieve additonal meta information using the simple
+  UI. ## Features - Download videos from all important websites with the help of youtube-dl/
+  yt-dlp (see [all sites supported by yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md))
+  - Select between all provided download formats - Convert videos to MP4, AVI, WebM...
+  - Extract audio track as MP3, M4A... - Download multiple videos in parallel - Auto-import
+  & download URLs from clipboard - See additional information before downloading a
+  video - Modern UI for Windows with dark and light mode ## Setup ### Installer/ Portable
+  1. **Requirements:** Vividl requires Windows 7 or newer with the following components
+  installed: - .NET Framework v.4.8 or higher: [Download here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
+  - Microsoft Visual C++ 2010 Redistributable Package (x86): [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+  2. **Download:** Get the [latest release from SourceForge](https://sourceforge.net/projects/vividl/files/).
+  ### From Chocolatey You can find the Vividl Chocolatey package [here](https://community.chocolatey.org/packages/vividl).
+  ``` choco install vividl ``` This will automatically install required dependencies.
+  ## Version History Read [the changelog](https://github.com/bluegrams/vividl/blob/master/Changelog.md)
+  to see changes in each version. ## Feedback and Support _Please leave a feedback
+  on [SourceForge](https://sourceforge.net/p/vividl/reviews) and recommend Vividl
+  if you like it. Thank you!_ Places to get help: - Ask on [SourceForge](https://sourceforge.net/p/vividl/discussion)
+  (General help, ideas etc.) - Open an issue on [GitHub](https://github.com/bluegrams/vividl/issues)
+  (Bugs, feature requests etc.) ## Contribute You are very welcome to contribute fixes
+  and new features by opening a [pull request on GitHub](https://github.com/bluegrams/vividl/pulls).
+  See all the great people that have contributed in the [list of contributors](https://github.com/bluegrams/vividl/blob/master/CONTRIBUTORS.md).
+  Make sure to add yourself in your pull request! ## License This software is published
+  under the [BSD-3-clause license](LICENSE.txt) by Bluegrams. ## Credits - [youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html)
+  and [yt-dlp](https://github.com/yt-dlp/yt-dlp) are licensed under The Unlicense
+  - [FFmpeg](https://www.ffmpeg.org/) is licensed under GNU LGPL v2.1 - [Adonis UI](https://github.com/benruehl/adonis-ui)
+  is licensed under MIT license - [MVVM Light](http://www.mvvmlight.net/) is licensed
+  under MIT license - [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks)
+  is licensed under MIT license - [Wpf.Notifications](https://github.com/Enterwell/Wpf.Notifications)
+  is licensed under MIT license - [YoutubeDLSharp](https://github.com/bluegrams/YoutubeDLSharp)
+  is licensed under BSD-3-clause license - [SharpClipboard](https://github.com/Willy-Kimura/SharpClipboard)
+  - Icons by @templarian, [ModernUIIcons.com](http://modernuiicons.com/), licensed
+  under CC BY-ND 3.0"
 ---
 {% raw %}
 # Vividl

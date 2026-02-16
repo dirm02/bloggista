@@ -2,8 +2,60 @@
 layout: project
 name: Infisical Infisical
 slug: Infisical-infisical
+category: Management- Engineering- SocialM
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Infisical-infisical/img/logoname-white.svg#gh-dark-mode-only
 repo_url: https://github.com/Infisical/infisical
+indexed_content: 'The open-source secret management platform : Sync secrets/configs
+  across your team/infrastructure and prevent secret leaks. Slack | Infisical Cloud
+  | Self-Hosting | Docs | Website | Hiring (Remote/SF) ## Introduction **[Infisical](https://infisical.com)**
+  is the open source secret management platform that teams use to centralize their
+  application configuration and secrets like API keys and database credentials as
+  well as manage their internal PKI. We''re on a mission to make security tooling
+  more accessible to everyone, not just security teams, and that means redesigning
+  the entire developer experience from ground up. ## Features ### Secrets Management:
+  - **[Dashboard](https://infisical.com/docs/documentation/platform/project)**: Manage
+  secrets across projects and environments (e.g. development, production, etc.) through
+  a user-friendly interface. - **[Secret Syncs](https://infisical.com/docs/integrations/secret-syncs/overview)**:
+  Sync secrets to platforms like [GitHub](https://infisical.com/docs/integrations/cicd/githubactions),
+  [Vercel](https://infisical.com/docs/integrations/cloud/vercel), [AWS](https://infisical.com/docs/integrations/cloud/aws-secret-manager),
+  and use tools like [Terraform](https://infisical.com/docs/integrations/frameworks/terraform),
+  [Ansible](https://infisical.com/docs/integrations/platforms/ansible), and more.
+  - **[Secret versioning](https://infisical.com/docs/documentation/platform/secret-versioning)**
+  and **[Point-in-Time Recovery](https://infisical.com/docs/documentation/platform/pit-recovery)**:
+  Keep track of every secret and project state; roll back when needed. - **[Secret
+  Rotation](https://infisical.com/docs/documentation/platform/secret-rotation/overview)**:
+  Rotate secrets at regular intervals for services like [PostgreSQL](https://infisical.com/docs/documentation/platform/secret-rotation/postgres-credentials),
+  [MySQL](https://infisical.com/docs/documentation/platform/secret-rotation/mysql),
+  [AWS IAM](https://infisical.com/docs/documentation/platform/secret-rotation/aws-iam),
+  and more. - **[Dynamic Secrets](https://infisical.com/docs/documentation/platform/dynamic-secrets/overview)**:
+  Generate ephemeral secrets on-demand for services like [PostgreSQL](https://infisical.com/docs/documentation/platform/dynamic-secrets/postgresql),
+  [MySQL](https://infisical.com/docs/documentation/platform/dynamic-secrets/mysql),
+  [RabbitMQ](https://infisical.com/docs/documentation/platform/dynamic-secrets/rabbit-mq),
+  and more. - **[Secret Scanning and Leak Prevention](https://infisical.com/docs/cli/scanning-overview)**:
+  Prevent secrets from leaking to git. - **[Infisical Kubernetes Operator](https://infisical.com/docs/documentation/getting-started/kubernetes)**:
+  Deliver secrets to your Kubernetes workloads and automatically reload deployments.
+  - **[Infisical Agent](https://infisical.com/docs/infisical-agent/overview)**: Inject
+  secrets into applications without modifying any code logic. ### Certificate Management
+  - **[Internal CA](https://infisical.com/docs/documentation/platform/pki/private-ca)**:
+  Create and manage a private CA hierarchy directly within Infisical. - **[External
+  CA](https://infisical.com/docs/documentation/platform/pki/ca/external-ca)**: Integrate
+  with third-party certificate authorities such as Let’s Encrypt, DigiCert, Microsoft
+  AD CS, and more to leverage existing PKI infrastructure or issue publicly trusted
+  certificates. - **[Certificate Lifecycle Management](https://infisical.com/docs/documentation/platform/pki/certificates/overview)**:
+  Create certificate [profiles](https://infisical.com/docs/documentation/platform/pki/certificates/profiles)
+  and [policies](https://infisical.com/docs/documentation/platform/pki/certificates/policies)
+  to control how certificates are issued, including [enrollment methods](https://infisical.com/docs/documentation/platform/pki/enrollment-methods/overview)
+  such as API, ACME, or EST. Manage the full lifecycle from issuance to renewal and
+  [revocation](https://infisical.com/docs/documentation/platform/pki/certificates/certificates#guide-to-revoking-certificates)
+  with CRL and inventory tracking. - **[Certificate Syncs](https://infisical.com/docs/documentation/platform/pki/certificate-syncs/overview)**:
+  Sync certificates to external platforms like [AWS Certificate Manager](https://infisical.com/docs/documentation/platform/pki/certificate-syncs/aws-certificate-manager)
+  and [Azure Key Vault](https://infisical.com/docs/documentation/platform/pki/certificate-syncs/azure-key-vault).
+  - **[Alerting](https://infisical.com/docs/documentation/platform/pki/alerting)**:
+  Configure alerting for expiring CA and end-entity certificates. ### Infisical Key
+  Management System (KMS): - **[Cryptographic Keys](https://infisical.com/docs/documentation/platform/kms)**:
+  Centrally manage keys across projects through a user-friendly interface or via the
+  API. - **[Encrypt and Decrypt Data](https://infisical.com/docs/documentation/platform/kms#guide-to-encrypting-data)**:
+  Use symmetri'
 ---
 {% raw %}
 <h1 align="center">

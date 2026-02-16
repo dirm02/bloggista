@@ -2,8 +2,68 @@
 layout: project
 name: Aborruso Alice Pdf
 slug: aborruso-alice-pdf
+category: Serv&Prod-Tools
 image: https://img.shields.io/pypi/v/alice-pdf.svg
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/aborruso-alice-pdf
+indexed_content: '# Alice PDF [](https://pypi.org/project/alice-pdf/) CLI tool to
+  extract tables from PDFs using **Camelot** (default, free), **Mistral OCR** (Pixtral
+  vision model), **AWS Textract**, or **pdfplumber** and convert them to machine-readable
+  CSV files. Dedicated to Alice Corona e Marco Corona, and the entire onData community.
+  ## Features - **Four extraction engines**: Camelot (free, local, native PDFs), Mistral
+  (schema-driven, scanned PDFs), AWS Textract (managed service), or pdfplumber (robust,
+  works on both native and scanned PDFs) - Extract tables from multi-page PDFs - Support
+  page selection (ranges or lists) - Optional YAML schema for improved extraction
+  accuracy (Mistral only) - CSV output per page or merged into single file - Configurable
+  DPI and engine-specific options ## Installation Prerequisites: Python 3.8+. Quick
+  install (pip): `pip install -U alice-pdf` Install globally from PyPI (choose one):
+  - `pip install alice-pdf` - `uv tool install alice-pdf` (requires [`uv`](https://docs.astral.sh/uv/getting-started/installation/))
+  Upgrade to the latest release at any time: ```bash pip install -U alice-pdf # or
+  uv tool upgrade alice-pdf ``` ## Requirements **For Camelot engine:** - Python 3.8+
+  - camelot-py library (included in install) - Works with native PDFs (not scanned
+  images) **For Mistral engine:** - Python 3.8+ - Mistral API key (https://console.mistral.ai/)
+  - Best for scanned PDFs and complex tables **For pdfplumber engine:** - Python 3.8+
+  - pdfplumber library (included in install) - Works on both native and scanned PDFs
+  - Handles complex table structures better than Camelot - Free and local extraction
+  **For Textract engine:** - Python 3.8+ - AWS credentials with Textract permissions
+  - boto3 library (included in install) ## Usage ### Setup **Camelot (default, no
+  setup needed):** No API key required! Just install and use. **Mistral:** Option
+  1 - Environment variables (recommended for `uv run`): ```bash export MISTRAL_API_KEY="your-api-key"
+  ``` Option 2 - CLI parameters (recommended for `uv tool install`): ```bash alice-pdf
+  input.pdf output/ --engine mistral --api-key "your-api-key" # alias: --mistral-api-key
+  ``` Option 3 - .env file (only works with `uv run`, not with `uv tool install`):
+  ```bash # Create .env file in project directory echo ''MISTRAL_API_KEY="your-api-key"''
+  > .env uv run alice-pdf input.pdf output/ --engine mistral ``` **Textract:** Option
+  1 - Environment variables (recommended): ```bash export AWS_ACCESS_KEY_ID="your-key-id"
+  export AWS_SECRET_ACCESS_KEY="your-secret-key" export AWS_DEFAULT_REGION="eu-west-1"
+  ``` Option 2 - CLI parameters: ```bash alice-pdf input.pdf output/ --engine textract
+  \ --aws-region eu-west-1 \ --aws-access-key-id "your-key-id" \ --aws-secret-access-key
+  "your-secret-key" ``` Costi: il motore Textract qui usa solo `FeatureTypes=["TABLES"]`
+  per tenere il costo a ~0,015 USD/pagina. Il feature FORMS (~0,050 USD/pagina) non
+  è abilitato. **Note:** `.env` file support is only available for Mistral and only
+  when running with `uv run`. For Textract, always use environment variables or CLI
+  parameters. ### Basic commands ```bash # Extract with Camelot (default, free, no
+  API) alice-pdf input.pdf output/ # Extract with Mistral (for scanned PDFs) alice-pdf
+  input.pdf output/ --engine mistral # Extract with Textract alice-pdf input.pdf output/
+  --engine textract --aws-region eu-west-1 # Extract with pdfplumber (robust, works
+  on both native and scanned PDFs) alice-pdf input.pdf output/ --engine pdfplumber
+  # Extract with pdfplumber with minimum table size constraints alice-pdf input.pdf
+  output/ --engine pdfplumber --pdfplumber-min-rows 2 --pdfplumber-min-cols 3 # Extract
+  with Camelot (local, fast for native PDFs) alice-pdf input.pdf output/ --engine
+  camelot --camelot-flavor stream # Camelot: fix for tables with merged cells alice-pdf
+  input.pdf output/ --engine camelot --camelot-split-text --merge # Specific pages
+  alice-pdf input.pdf output/ --pages "1-3,5" # Merge all tables into one CSV alice-pdf
+  input.pdf output/ --merge # With table schema for better accuracy (Mistral only)
+  alice-pdf input.pdf output/ --schema table_schema.yaml # Debug mode alice-pdf input.pdf
+  output/ --debug ``` ### Options **Common:** - `--engine {mistral,textract,camelot,pdfplumber}`:
+  Extraction engine (default: camelot) - `--pages`: Pages to process (default: all).
+  Examples: "1", "1-3", "1,3,5" - `--dpi`: Image resolution (default: 150) - `-m,
+  --merge`: Merge all tables into single CSV - `--no-resume`: Clear output and reprocess
+  all pages - `-d, --debug`: Enable debug logging **Mistral-specific:** - `--model`:
+  Mistral model (default: pixtral-12b-2409) - `--schema`: Path to YAML/JSON schema
+  file for custom prompt generation - `--prompt`: Custom prompt (overrides --schema)
+  - `--api-key`: Mistral API key (alternative to env var) - `--timeout-ms`: HTTP timeout
+  in milliseconds (default: 60000) **Textract-specific:** - `--aws-region`: AWS region
+  (or set AWS_DEFAULT_REGION) - `--aws-access-key-id`: AWS access key '
 ---
 {% raw %}
 # Alice PDF

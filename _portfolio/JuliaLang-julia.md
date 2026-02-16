@@ -2,8 +2,65 @@
 layout: project
 name: Julialang Julia
 slug: JuliaLang-julia
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/JuliaLang-julia/doc/src/assets/logo.svg
 repo_url: https://github.com/JuliaLang/julia
+indexed_content: 'Documentation Continuous integration Code coverage ## The Julia
+  Language Julia is a high-level, high-performance dynamic language for technical
+  computing. The main homepage for Julia can be found at [julialang.org](https://julialang.org/).
+  This is the GitHub repository of Julia source code, including instructions for compiling
+  and installing Julia, below. ## Resources - **Homepage:** - **Install:** - **Source
+  code:** - **Documentation:** - **Packages:** - **Discussion forum:** - **Zulip:**
+  - **Slack:** (get an invite from ) - **YouTube:** - **Code coverage:** ## Contributing
+  to Julia We welcome contributions from developers of all experience levels, including
+  bug fixes, documentation improvements, tests, and performance enhancements. New
+  contributors are encouraged to start by reading [CONTRIBUTING.md](https://github.com/JuliaLang/julia/blob/master/CONTRIBUTING.md).
+  > [!IMPORTANT] > If your pull request contains substantial contributions from a
+  generative AI tool, please disclose so with details, and review all changes before
+  opening. ### Learning Julia - [**Learning resources**](https://julialang.org/learning/)
+  ## Binary Installation The recommended way of installing Julia is to use `juliaup`
+  which will install the latest stable `julia` for you and help keep it up to date.
+  It can also let you install and run different Julia versions simultaneously. Instructions
+  for this can be found [here](https://julialang.org/downloads/). If you want to manually
+  download specific Julia binaries, you can find those on the [Manual Downloads page](https://julialang.org/downloads/manual-downloads/).
+  The downloads page also provides details on the [different tiers of support](https://julialang.org/downloads/support)
+  for OS and platform combinations. If everything works correctly, you will get a
+  `julia` program and when you run it in a terminal or command prompt, you will see
+  a Julia banner and an interactive prompt into which you can enter expressions for
+  evaluation. You can read about [getting started](https://docs.julialang.org/en/v1/manual/getting-started/)
+  in the manual. **Note**: Although some OS package managers provide Julia, such installations
+  are neither maintained nor endorsed by the Julia project. They may be outdated,
+  broken and/or unmaintained. We recommend you use the official Julia binaries instead.
+  ## Building Julia First, make sure you have all the [required dependencies](https://github.com/JuliaLang/julia/blob/master/doc/src/devdocs/build/build.md#required-build-tools-and-external-libraries)
+  installed. Then, acquire the source code by cloning the git repository: git clone
+  https://github.com/JuliaLang/julia.git and then use the command prompt to change
+  into the resulting julia directory. By default, you will be building the latest
+  unstable version of Julia. However, most users should use the [most recent stable
+  version](https://github.com/JuliaLang/julia/releases) of Julia. You can get this
+  version by running: git checkout v1.12.2 To build the `julia` executable, run `make`
+  from within the julia directory. Building Julia requires 2GiB of disk space and
+  approximately 4GiB of virtual memory. **Note:** The build process will fail badly
+  if any of the build directory''s parent directories have spaces or other shell meta-characters
+  such as `$` or `:` in their names (this is due to a limitation in GNU make). Once
+  it is built, you can run the `julia` executable. From within the julia directory,
+  run ./julia Your first test of Julia determines whether your build is working properly.
+  From the julia directory, type `make testall`. You should see output that lists
+  a series of running tests; if they complete without error, you should be in good
+  shape to start using Julia. You can read about [getting started](https://docs.julialang.org/en/v1/manual/getting-started/)
+  in the manual. Detailed build instructions, should they be necessary, are included
+  in the [build documentation](https://github.com/JuliaLang/julia/blob/master/doc/src/devdocs/build/build.md).
+  ### Uninstalling Julia By default, Julia does not install anything outside the directory
+  it was cloned into and `~/.julia`. Julia and the vast majority of Julia packages
+  can be completely uninstalled by deleting these two directories. ## Source Code
+  Organization The Julia source code is organized as follows: | Directory | Contents
+  | | - | - | | `base/` | source code for the Base module (part of Julia''s standard
+  library) | | `cli/` | source for the command line interface/REPL | | `contrib/`
+  | miscellaneous scripts | | `deps/` | external dependencies | | `doc/src/` | source
+  for the user manual | | `etc/` | contains `startup.jl` | | `src/` | source for Julia
+  language core | | `stdlib/` | source code for other standard library packages |
+  | `test/` | test suites | ## Terminal, Editors and IDEs The Julia REPL is quite
+  powerful. See the section in the manual on [the Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/)
+  for more details. On Windows, we highly recommend running '
 ---
 {% raw %}
 <a name="logo"/>

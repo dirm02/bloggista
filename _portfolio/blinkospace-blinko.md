@@ -2,8 +2,47 @@
 layout: project
 name: Blinkospace Blinko
 slug: blinkospace-blinko
+category: Platform -eCommerce
 image: https://img.shields.io/docker/pulls/blinkospace/blinko?color=ff4444&labelColor=black&logo=docker&logoColor=white&style=flat-square
 repo_url: https://github.com/blinko-space/blinko
+indexed_content: "Blinko [Live Demo](https://demo.blinko.space) • [Official Site](https://blinko.space)
+  • [Documents](https://docs.blinko.space/) • [Telegram Chinese](https://t.me/blinkoChinese)
+  • [Telegram English](https://t.me/blinkoEnglish) • [中文](README.zh-CN.md) > Live
+  Demo: username:blinko password:blinko Blinko is an AI-powered card note-taking project.
+  Designed for individuals who want to quickly capture and organize their fleeting
+  thoughts. Blinko allows users to seamlessly jot down ideas the moment they strike,
+  ensuring that no spark of creativity is lost. [](https://www.pikapods.com/pods?run=blinko)
+  ## \U0001F680Main Features - \U0001F916**AI-Enhanced Note Retrieval** ：With Blinko's
+  advanced AI-powered RAG (Retrieval-Augmented Generation), you can quickly search
+  and access your notes using natural language queries, making it effortless to find
+  exactly what you need. - \U0001F512**Data Ownership** :Your privacy matters. All
+  your notes and data are stored securely in your self-hosted environment, ensuring
+  complete control over your information. - \U0001F680**Efficient and Fast** :Capture
+  ideas instantly and store them as plain text for easy access, with full Markdown
+  support for quick formatting and seamless sharing. - \U0001F4A1**Lightweight architecture
+  with multi-platform support** :Built with Tauri, Blinko features a clean and lightweight
+  architecture that delivers robust performance while maintaining exceptional speed
+  and efficiency, with native support for multi-platform deployment including macOS,
+  Windows, Android, and Linux. - \U0001F513**Open for Collaboration** :As an open-source
+  project, Blinko invites contributions from the community. All code is transparent
+  and available on GitHub, fostering a spirit of collaboration and constant improvement.
+  ## \U0001F4E6Start with Docker in seconds ```bash curl -s https://raw.githubusercontent.com/blinko-space/blinko/main/install.sh
+  | bash ``` ## \U0001F468\U0001F3FC‍\U0001F4BBContribution Contributions are the
+  heart of what makes the open-source community so dynamic, creative, and full of
+  learning opportunities. Your involvement helps drive innovation and growth. We deeply
+  value any contribution you make, and we're excited to have you as part of our community.
+  Thank you for your support! \U0001F64C []([...](https://github.com/blinko-space/blinko/graphs/contributors))
+  ## Sponsorship If you find Blinko valuable, consider supporting us! Your contribution
+  will enable us to continue enhancing and maintaining the project for everyone. Thank
+  you for helping us grow. If you'd like to deploy Blinko, you can also use PikaPods
+  to support Blinko. 20% of the deployment fees generated on PikaPods will be contributed
+  to Blinko. [](https://www.pikapods.com/pods?run=blinko) [https://ko-fi.com/blinkospace](https://ko-fi.com/blinkospace)
+  [https://afdian.com/a/blinkospace/plan](https://afdian.com/a/blinkospace/plan) ##
+  Star History [](https://star-history.com/#blinko-space/blinko&Date) ## FAQ Q: Why
+  does the MacOS device installation show as damaged? A: macOS adds an attribute called
+  com.apple.quarantine to apps that are not notarized when downloading or installing
+  them. This command is used to manually remove that attribute. Run sudo xattr -rd
+  com.apple.quarantine /Applications/blinko.app"
 ---
 {% raw %}
 

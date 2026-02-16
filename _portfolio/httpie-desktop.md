@@ -2,8 +2,24 @@
 layout: project
 name: Httpie Desktop
 slug: httpie-desktop
+category: API - Documentation
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/httpie-desktop/.github/httpie-desktop.png
 repo_url: https://github.com/httpie/httpie)
+indexed_content: "# HTTPie Desktop [](https://httpie.org/docs/desktop) [](https://httpie.io/product)
+  [](https://httpie.io/app) [](https://github.com/httpie/httpie) [](https://httpie.io/discord)
+  [](https://twitter.com/httpie) In this repository, we publish [releases](https://github.com/httpie/desktop/releases)
+  of [HTTPie Desktop](https://httpie.io/product) for Mac, Windows, and Linux. The
+  app continuously auto-updates after the initial installation. Open HTTPie Desktop
+  web app: [httpie.io/app](https://httpie.io/app) or [req.new](https://req.new) [What’s
+  new →](https://httpie.io/blog) ## Mac & Windows [httpie.io/download →](https://httpie.io/download)
+  ## Linux Please follow the instructions below to install HTTPie for Desktop on Linux.
+  ⚠️ The Linux package uses [AppImage](https://appimage.org/), and you need to install
+  it using [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) for
+  the app to work: 1. Install [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)
+  ([instructions](https://github.com/TheAssassin/AppImageLauncher/wiki)) 2. Download
+  `HTTPie-*.AppImage` (or `HTTPie-*arm64.AppImage` for ARM64 architecture) from [the
+  latest release](https://github.com/httpie/desktop/releases/latest) page 3. Run `$
+  AppImageLauncher HTTPie-*.AppImage`"
 ---
 {% raw %}
 # HTTPie Desktop

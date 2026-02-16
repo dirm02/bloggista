@@ -2,8 +2,68 @@
 layout: project
 name: Lightdash Lightdash
 slug: lightdash-lightdash
+category: Management- Engineering- SocialM
 image: https://assets.website-files.com/62a9ae93cf7542032ae55b9c/62c5c71252b090df3224c706_gh-cover%20(2).png
 repo_url: https://github.com/lightdash/lightdash
+indexed_content: "The open-source Looker alternative. Website • Watch demo • Docs
+  • Join Slack Community ### Enable everybody in your company to answer their own
+  questions using data connect your dbt project --> add metrics into dbt --> share
+  insights with your team If you're a fan, star the repo ⭐️ (we [plant a tree](#the-lightdash-forest)
+  for every GitHub star we get \U0001F331). Come join the team, [we're hiring](https://lightdash.notion.site/Lightdash-Job-Board-a2c7d872794b45deb7b76ad68701d750).
+  ## Features: - [x] \U0001F64F Familiar interface for your users to self-serve using
+  pre-defined metrics - [x] \U0001F469‍\U0001F4BB Declare dimensions and metrics in
+  yaml alongside your dbt project - [x] \U0001F916 Automatically creates dimensions
+  from your dbt models - [x] \U0001F4D6 dbt descriptions and metadata synced for your
+  users - [x] \U0001F50D Easily access to underlying records of charts as well as
+  ability to data drill-down - [x] \U0001F9EE Table calculations make it easy to dig
+  into your data, on the fly - [x] \U0001F575️‍♀️ Lineage lets you see the upstream
+  and downstream dependencies of a model - [x] \U0001F4CA Comprehensive and intuitive
+  data visualisation library for your metrics - [x] \U0001F477‍♂️ Save charts & build
+  dashboards to share your insights with your team - [x] \U0001F4BB Powerful developer
+  experience including Preview BI Environments and automated content validation via
+  CI/CD - [x] \U0001F504 Explore version history of all your charts and roll-back
+  at any point - [x] \U0001F680 Easily share your work via URL or schedule deliveries
+  via Slack or Email Something missing? Check out our [open issues](https://github.com/lightdash/lightdash/issues)
+  to see if what you're looking for already exists (and give it a \U0001F44D). Otherwise,
+  we'd love it if you'd [open a new issue with your request](https://github.com/lightdash/lightdash/issues/new/choose)
+  \U0001F60A ## Demo Play with our [demo app](https://demo.lightdash.com)! ## Quick
+  start ### Start with Lightdash Cloud You can avoid the hassle of hosting and configuring
+  Lightdash yourself by [signing up for a free trial of Lightdash Cloud](https://app.lightdash.cloud/register).
+  More details on pricing [available](https://www.lightdash.com/pricing). ### 1-click
+  deploy Deploy Lightdash with 1-click on [Render](https://render.com) for free. ###
+  Run locally Take advantage of our installation script to easily run Lightdash locally.
+  ```bash git clone https://github.com/lightdash/lightdash cd lightdash ./scripts/install.sh
+  ``` ### Deploy to production Follow our [kubernetes guide](https://docs.lightdash.com/self-host/self-host-lightdash)
+  to deploy Lightdash to production using our [community helm charts](https://github.com/lightdash/helm-charts).
+  ## Getting started Step 1 - ⚡️ [Self-host Lightdash (optional)](https://docs.lightdash.com/self-host/self-host-lightdash)
+  Step 2 - \U0001F50C [Connect a project](https://docs.lightdash.com/get-started/setup-lightdash/connect-project)
+  Step 3 - \U0001F469‍\U0001F4BB [Create your first metric](https://docs.lightdash.com/get-started/setup-lightdash/intro-metrics-dimensions)
+  ## Community Support \U0001F4E3 If you want something a bit more, then [head on
+  over to our Slack Community](https://join.slack.com/t/lightdash-community/shared_invite/zt-2wgtavou8-VRhwXI%7EQbjCAHQs0WBac3w)
+  where you’ll be able to chat directly with all of us at Lightdash and all the other
+  amazing members of our community. We’re happy to talk about anything from feature
+  requests, implementation details or dbt quirks to memes and SQL jokes! You can also
+  keep up to date with Lightdash by following us here: - [Twitter](https://twitter.com/lightdash_devs)
+  - [LinkedIn](https://www.linkedin.com/company/lightdash) ## About Lightdash ###
+  \U0001F5C2 **Keep all of your business logic in one place.** We let you define your
+  metrics and dimensions directly in your dbt project, keeping all of your business
+  logic in one place and increasing the context around your analytics. No more deciding
+  which of the four different values for total revenue is the **_right_** one (you
+  can thank us later \U0001F609). ### \U0001F91D **Build trust in your data.** We
+  want everyone at your company to feel like they can trust the data. So, why not
+  **_show_** them that they can? We bring the context you want around data quality
+  _into_ your BI tool so people know that they can trust the data. ### \U0001F9F1
+  **Give users meaningful building blocks to answer their own data questions.** With
+  Lightdash, you can leave the SQL to the experts. We give your data team the tools
+  they need to build metrics and dimensions that everyone else can use. So, anybody
+  in the business can combine, segment, and filter these metrics and dimensions to
+  answer their own questions. ### \U0001F4D6 **Open source, now and forever** **Lightdash
+  is built with our community, for our community.** We think that a BI tool should
+  be affordable, configurable, and secure - and being open source lets us be all three
+  \U0001F642 ### \U0001F911 **Affordable analytics** Love Looker, but don't love Looker's
+  price tag? With Lightdash, we offer a free self-hosted service (it's all just open
+  source!), or an affordable cloud-service option if you're looking for an easy analytics
+  se"
 ---
 {% raw %}
 <h1 align="center">

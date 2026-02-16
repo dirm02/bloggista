@@ -2,8 +2,68 @@
 layout: project
 name: Fabriziosalmi Certmate
 slug: fabriziosalmi-certmate
+category: Platform -eCommerce
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/fabriziosalmi/certmate
+indexed_content: "# CertMate - SSL Certificate Management System **CertMate** is a
+  powerful SSL certificate management system designed for modern infrastructure. Built
+  with multi-DNS provider support, Docker containerization, and comprehensive REST
+  API, it's the perfect solution for managing certificates across multiple datacenters
+  and cloud environments. [](https://opensource.org/licenses/MIT) [](https://www.python.org/downloads/)
+  [](https://hub.docker.com/) [](http://localhost:8000/docs/) [](https://github.com/fabriziosalmi/certmate/actions/workflows/ci.yml)
+  [](https://github.com/fabriziosalmi/certmate/actions/workflows/docker-multiplatform.yml)
+  [Quick Start](#quick-start-with-docker) • [Documentation](#documentation) • [Installation](#installation-methods)
+  • [DNS Providers](#supported-dns-providers) • [CA Providers](CA_PROVIDERS.md) •
+  [Storage Backends](#certificate-storage-configuration) • [Backup & Recovery](#backup--recovery)
+  • [API Reference](#api-usage) --- ## Why CertMate? CertMate solves the complexity
+  of SSL certificate management in modern distributed architectures. Whether you're
+  running a single application or managing certificates across multiple datacenters,
+  CertMate provides: - **Zero-Downtime Automation** - Certificates renew automatically
+  30 days before expiry - **Multi-Cloud Support** - Works with **22 DNS providers**
+  (Cloudflare, AWS, Azure, GCP, Hetzner, Porkbun, GoDaddy, and more) - **Enterprise-Ready**
+  - Docker, Kubernetes, REST API, and monitoring built-in - **Simple Integration**
+  - One-URL certificate downloads for easy automation - **Security-First** - Bearer
+  token authentication, secure file permissions, audit logging - **Unified Backup
+  System** - Atomic backups of settings and certificates ensuring data consistency
+  ## Key Features ### **Certificate Management** - **Multiple CA Providers** - Support
+  for Let's Encrypt, DigiCert ACME, and Private CAs - **Let's Encrypt Integration**
+  - Free, automated SSL certificates with staging/production environments - **DigiCert
+  ACME Support** - Enterprise-grade certificates with External Account Binding (EAB)
+  - **Private CA Support** - Internal/corporate CAs with custom trust bundles and
+  ACME compatibility - **Wildcard Support** - Single certificate for `*.example.com`
+  and `example.com` - **Multi-Domain Certificates** - SAN certificates for multiple
+  domains - **Domain Alias Support** - Use alternative domains for DNS validation
+  (e.g., centralized validation domain) - **Automatic Renewal** - Smart renewal 30
+  days before expiry - **Certificate Validation** - Real-time SSL certificate status
+  checking - **Per-Certificate CA Selection** - Choose different CAs for different
+  certificates ### **Multi-DNS Provider Support** - **Multi-Account Support** - Manage
+  multiple accounts per provider for enterprise environments - **Cloudflare** - Global
+  CDN with edge locations worldwide (Multi-Account) - **AWS Route53** - Amazon's scalable
+  DNS service (Multi-Account) - **Azure DNS** - Microsoft's cloud DNS solution (Multi-Account)
+  - **Google Cloud DNS** - Google's high-performance DNS (Multi-Account) - **DigitalOcean**
+  - Cloud infrastructure DNS (Multi-Account) - **PowerDNS** - Open-source DNS server
+  with REST API (Multi-Account) ### **Enterprise Features** - **Multi-Account Management**
+  - Support multiple accounts per DNS provider for enterprise workflows - **REST API**
+  - Complete programmatic control with Swagger/OpenAPI docs - **Web Dashboard** -
+  Modern, responsive UI built with Tailwind CSS - **Docker Ready** - Full containerization
+  with Docker Compose - **Kubernetes Compatible** - Deploy in any Kubernetes cluster
+  - **High Availability** - Stateless design for horizontal scaling - **Monitoring
+  Integration** - Health checks and structured logging ### **Backup & Recovery** -
+  **Unified Backups** - Atomic snapshots of both settings and certificates ensuring
+  data consistency - **Automatic Backups** - Settings and certificates backed up automatically
+  on changes - **Manual Backup Creation** - On-demand backup creation via web UI or
+  API - **Comprehensive Coverage** - Backs up DNS configurations, certificates, and
+  application settings - **Retention Management** - Configurable retention policies
+  with automatic cleanup - **Easy Restore** - Simple restore process from any backup
+  point with atomic consistency - **Download Support** - Export backups for external
+  storage and disaster recovery ### **Certificate Storage Backends** - **Local Filesystem**
+  - Default secure local storage with proper file permissions (600/700) - **Azure
+  Key Vault** - Enterprise-grade secret management with Azure integration and HSM
+  protection - **AWS Secrets Manager** - Scalable secret storage with AWS ecosystem
+  integration and cross-region replication - **HashiCorp Vault** - Industry-standard
+  secret management with versioning, audit logging, and fine-grained policies - **Infisical**
+  - Modern open-source secret management with team collaboration and end-to-end encryption
+  - **Pluggable Architecture** - Easy to exten"
 ---
 {% raw %}
 # CertMate - SSL Certificate Management System

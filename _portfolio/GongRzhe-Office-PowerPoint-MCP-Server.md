@@ -2,8 +2,68 @@
 layout: project
 name: Gongrzhe Office Powerpoint Mcp Server
 slug: GongRzhe-Office-PowerPoint-MCP-Server
+category: WindowsTools- Linux
 image: https://smithery.ai/badge/@GongRzhe/Office-PowerPoint-MCP-Server
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Office-PowerPoint-MCP-Server [](https://smithery.ai/server/@GongRzhe/Office-PowerPoint-MCP-Server)
+  A comprehensive MCP (Model Context Protocol) server for PowerPoint manipulation
+  using python-pptx. **Version 2.0** provides 32 powerful tools organized into 11
+  specialized modules, offering complete PowerPoint creation, management, and professional
+  design capabilities. The server features a modular architecture with enhanced parameter
+  handling, intelligent operation selection, and comprehensive error handling. ----
+  # **Not so ugly anymore with new slide_layout_templates** ---- ### Example ####
+  Prompt #### Output #### Demo's GIF -> (./public/demo.mp4) ## Features ### Core PowerPoint
+  Operations - **Round-trip support** for any Open XML presentation (.pptx file) including
+  all elements - **Template support** with automatic theme and layout preservation
+  - **Multi-presentation management** with global state tracking - **Core document
+  properties** management (title, subject, author, keywords, comments) ### Content
+  Creation & Management - **Slide management** with flexible layout selection - **Text
+  manipulation** with placeholder population and bullet point creation - **Advanced
+  text formatting** with font, color, alignment, and style controls - **Text validation**
+  with automatic fit checking and optimization suggestions ### Visual Elements - **Image
+  handling** with file and base64 input support - **Image enhancement** using Pillow
+  with brightness, contrast, saturation, and filter controls - **Professional image
+  effects** including shadows, reflections, glows, and soft edges - **Shape creation**
+  with 20+ auto shape types (rectangles, ovals, flowchart elements, etc.) - **Table
+  creation** with advanced cell formatting and styling ### Charts & Data Visualization
+  - **Chart support** for column, bar, line, and pie charts - **Data series management**
+  with categories and multiple series support - **Chart formatting** with legends,
+  data labels, and titles ### Professional Design Features - **4 professional color
+  schemes** (Modern Blue, Corporate Gray, Elegant Green, Warm Red) - **Professional
+  typography** with Segoe UI font family and size presets - **Theme application**
+  with automatic styling across presentations - **Gradient backgrounds** with customizable
+  directions and color schemes - **Slide enhancement** tools for existing content
+  - **25 built-in slide templates** with dynamic sizing and visual effects - **Advanced
+  template features** including auto-wrapping, dynamic font sizing, and professional
+  animations ### Advanced Features - **Font analysis and optimization** using FontTools
+  - **Picture effects** with 9 different visual effects (shadow, reflection, glow,
+  bevel, etc.) - **Comprehensive validation** with automatic error fixing - **Template
+  search** with configurable directory paths - **Professional layout calculations**
+  with margin and spacing management ## Installation ### Installing via Smithery To
+  install PowerPoint Manipulation Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@GongRzhe/Office-PowerPoint-MCP-Server):
+  ```bash npx -y @smithery/cli install @GongRzhe/Office-PowerPoint-MCP-Server --client
+  claude ``` ### Prerequisites - Python 3.6 or higher (as specified in pyproject.toml)
+  - pip package manager - Optional: uvx for package execution without local installation
+  ### Installation Options #### Option 1: Using the Setup Script (Recommended) The
+  easiest way to set up the PowerPoint MCP Server is using the provided setup script,
+  which automates the installation process: ```bash python setup_mcp.py ``` This script
+  will: - Check prerequisites - Offer installation options: - Install from PyPI (recommended
+  for most users) - Set up local development environment - Install required dependencies
+  - Generate the appropriate MCP configuration file - Provide instructions for integrating
+  with Claude Desktop The script offers different paths based on your environment:
+  - If you have `uvx` installed, it will configure using UVX (recommended) - If the
+  server is already installed, it provides configuration options - If the server is
+  not installed, it offers installation methods #### Option 2: Manual Installation
+  1. Clone the repository: ```bash git clone https://github.com/GongRzhe/Office-PowerPoint-MCP-Server.git
+  cd Office-PowerPoint-MCP-Server ``` 2. Install dependencies: ```bash pip install
+  -r requirements.txt ``` 3. Make the server executable: ```bash chmod +x ppt_mcp_server.py
+  ``` ## Usage Display help text: ```bash python ppt_mcp_server.py -h ``` ### Starting
+  the Stdio Server Run the stdio server: ```bash python ppt_mcp_server.py ``` ###
+  Starting the Streamable-Http Server Run the streamable-http server on port 8000:
+  ```bash python ppt_mcp_server.py --transport http --port 8000 ``` Run in Docker
+  ```bash docker build -t ppt_mcp_server . docker run -d --rm -p 8000:8000 ppt_mcp_server
+  -t http ``` ### MCP Configuration #### Option 1: Local Python Server Add the server
+  to your MCP settings con"
 ---
 {% raw %}
 # Office-PowerPoint-MCP-Server

@@ -2,8 +2,67 @@
 layout: project
 name: Mobilefirstllc Social Media Hacker List
 slug: MobileFirstLLC-social-media-hacker-list
+category: Management- Engineering- SocialM
 image: https://socialify.git.ci/mobilefirstllc/social-media-hacker-list/image?description=1&font=Inter&pattern=Circuit%20Board&theme=Light
 repo_url: https://github.com/MobileFirstLLC/social-media-hacker-list
+indexed_content: "Facebook &bull; Instagram &bull; LinkedIn &bull; Mastodon &bull;
+  Reddit Snapchat &bull; Threads &bull; TikTok &bull; X/Twitter &bull; Youtube &bull;
+  Multi-platform #### Inclusion criteria These are apps and projects made by unaffiliated
+  developers. This list features alternative clients, SDKs, tools, bots and datasets
+  to improve or build upon the default user experience across various social media
+  platforms. Also included are solutions that repurpose social media platforms and
+  their content in elevated ways. **No dead or broken projects** - all apps in this
+  list are checked automatically weekly for OK response and will be removed following
+  failure. Open source projects must not be archived and must show recent commit activity
+  (<= 12 months) to be included. No sketchy extensions that must be run in dev mode.
+  #### Contributing If you would like to add a project or suggest some other correction,
+  edit this readme and submit a PR. * * * ### Legend \U0001F7EA Alternative client
+  &nbsp; &nbsp; \U0001F7E7 Analytics & Data &nbsp; &nbsp; ⬛ Bots &nbsp; &nbsp; \U0001F7E6
+  Content creation &nbsp; &nbsp; \U0001F7EB For Developers &nbsp; &nbsp; \U0001F7E9
+  Image &nbsp; &nbsp; \U0001F7E8 Productivity & Tools &nbsp; &nbsp; \U0001F7E5 Video
+  &nbsp; &nbsp; **❋** = Open source * * * ### Facebook | # | | | Name | Platform |
+  Description | |:--:| --- | --- | --- | --- | --- | | 1. | \U0001F7E5 | | [FDOWN.net](https://fdown.net)
+  | [Web](https://fdown.net), [Chrome](https://chromewebstore.google.com/detail/video-downloader-plus/njgehaondchbmjmajphnhlojfnbfokng)
+  | Facebook video downloader | | 2. | \U0001F7E8 | [❋](https://github.com/ArnaudLigny/F-Notifier)
+  | [F-notifier](https://dev.ligny.org/F-Notifier/) | Extension | Displays Facebook
+  notifications unread count | | 3. | \U0001F7EA | | [Messenger for Desktop](https://messengerfordesktop.com/)
+  | MacOS, Windows | Desktop client for Messenger | | 4. | \U0001F7EB | [❋](https://github.com/restfb/restfb)
+  | [RestFB](https://restfb.com/) | Java | Open source FB Graph API client | | 5.
+  | \U0001F7E5 | | [FBTake.com](https://fbtake.com/) | [Web](https://fbtake.com) Facebook
+  video downloader | | 6. | \U0001F7E5 | | [FVDownloader.net](https://fvdownloader.net/)
+  | Web | Facebook Reels, Video, Profile Picture Downloader | * * * ### Instagram
+  | # | | | Name | Platform | Description | |:---:| --- | --- | --- | --- | --- |
+  | 1. | \U0001F7E9 | | [Heepsy](https://www.heepsy.com/) | Web | Uncover ideal influencers
+  effortlessly | | 2. | \U0001F7E6 | | [Caption Writer](https://www.captionwriter.app/)
+  | iOS, Android | Write captions with spaces & line breaks | | 3. | \U0001F7E7 |
+  | [HypeAuditor](https://hypeauditor.com/) | Web | Analyze any Instagram account
+  for fake followers and likes | | 4. | \U0001F7EB | [❋](https://github.com/ramtinak/InstagramApiSharp)
+  | [InstagramApiSharp](https://github.com/ramtinak/InstagramApiSharp) | C# | Private
+  Instagram API for .NET | | 5. | \U0001F7EB | [❋](https://github.com/adw0rd/instagrapi)
+  | [instagrapi](https://github.com/adw0rd/instagrapi) | Python | Unofficial Instagram
+  private API for Python | | 6. | \U0001F7EB | [❋](https://github.com/instaloader/instaloader)
+  | [Instaloader](https://instaloader.github.io) | Python | Download pictures, video
+  and metadata from Instagram | | 7. | \U0001F7E6 | | [Kards](https://apps.apple.com/us/app/apple-store/id1448729099)
+  | iOS | Instagram stories editor | | 8. | \U0001F7E8 | | [Later](https://later.com/auto-publish/)
+  | Web | Auto Publish for Instagram | | 9. | \U0001F7E6 | | [Line Break Generator](https://pallyy.com/tools/instagram-line-break)
+  | Web | Instagram Line Break Generator | | 10. | \U0001F7E5 | | [Turn](https://www.turn.audio/)
+  | Web | Turn your audio into videos you can share on Instagram | | 11. | \U0001F7E6
+  | | Unfold | [iOS](https://apps.apple.com/us/app/unfold-create-stories/id1247275033),
+  [Android](https://play.google.com/store/apps/details?id=com.moonlab.unfold) | Create
+  beautiful stories for Instagram | | 12. | \U0001F7E8 | | [INDownloader](https://indownloader.app/)
+  | Web | Instagram Downloader | * * * ### LinkedIn | # | | | Name | Platform | Description
+  | |:---:| --- | --- | --- | --- | --- | | 1. | \U0001F7E6 | | [CommenTron](https://chromewebstore.google.com/detail/commentron-%E2%80%94-ai-booster-f/hdappgahcgpifoabanfifjicfllpokgo)
+  | Extension | Auto-Comment on LinkedIn Posts | | 2. | \U0001F7EB | [❋](https://github.com/ebx/ebx-linkedin-sdk)
+  | [ebx-linkedin-sdk](https://github.com/ebx/ebx-linkedin-sdk) | Java | A pure Java
+  LinkedIn API client which implements the v2 API | | 3. | \U0001F7E8 | [❋](https://github.com/CalvinWu4/inDoors)
+  | [InDoors](https://chromewebstore.google.com/detail/indoors-show-glassdoor-ra/eapcedpgnlmgkigiieacngkpdjikfgci)
+  | Extension | Displays companies' Glassdoor ratings on LinkedIn | | 4. | \U0001F7E6
+  | | [Inksprout](https://inksprout.co/) | Extension | Use AI to summarize links |
+  | 5. | \U0001F7EB | [❋](https://github.com/joeyism/linkedin_scraper) | [Linkedin
+  Scraper](https://github.com/joeyism/linkedin_scraper) | Python | Scrape Linkedin
+  for user data | | 6. | \U0001F7EB | [❋](https://github.com/eracle/linkedin) | [Linkedin
+  Scraper](https://github.com/eracle/linkedin) | Python | Linkedin Scraper using Selenium
+  Web Driver | | 7. | \U0001F7E8 | [❋](https://github.com/JM"
 ---
 {% raw %}
 <p align="center">

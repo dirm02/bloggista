@@ -2,8 +2,69 @@
 layout: project
 name: Meshery Meshery
 slug: meshery-meshery
+category: ServerTools-ProxMox-CICD
 image: https://raw.githubusercontent.com/meshery/meshery/master/.github/assets/images/readme/meshery-logo-dark-text-side.svg
 repo_url: https://github.com/meshery/meshery
+indexed_content: "--> If you like Meshery, please ★ this repository to show your support!
+  \U0001F929 MESHERY IS A CLOUD NATIVE COMPUTING FOUNDATION PROJECT A self-service
+  engineering platform, Meshery , is the open source, cloud native manager that enables
+  the design and management of all Kubernetes-based infrastructure and applications
+  (multi-cloud). Among other features, As an extensible platform, Meshery offers visual
+  and collaborative GitOps, freeing you from the chains of YAML while managing Kubernetes
+  multi-cluster deployments. Try Meshery in your browser using the Cloud Native Playground
+  ( teaser video ) Open Meshery extension, Kanvas, in your browser: https://kanvas.new
+  &nbsp; Project Overview Presentation --> &nbsp; # Functionality ## Infrastructure
+  Lifecycle Management Meshery manages the configuration, deployment, and operation
+  of your Cloud services and Kubernetes clusters while supporting hundreds of different
+  types of cloud native infrastructure integrations. Meshery supports [300+ integrations](https://meshery.io/integrations).
+  --> Find infrastructure configuration patterns in Meshery's catalog of curated design
+  templates filled with configuration best practices. ### Multiple Kubernetes Clusters
+  and Multiple Clouds Meshery provides a single pane of glass to manage multiple Kubernetes
+  clusters across any infrastructure, including various cloud providers. Meshery enables
+  consistent configuration, operation, and observability across your entire Kubernetes
+  landscape. Dry-run your deployments Meshery leverages Kubernetes' built-in dry-run
+  capabilities to allow you to simulate deployments without actually applying the
+  changes to your cluster. This enables you to: - Validate configurations: Ensure
+  your deployment specifications (e.g., YAML manifests, Helm charts, Meshery Designs)
+  are syntactically correct and will be accepted by the Kubernetes API server.   -
+  Identify potential issues: Detect errors in your configurations, such as invalid
+  resource definitions, missing fields, or API version mismatches, before they impact
+  your live environment. - Preview changes: Understand the objects that Kubernetes
+  would create or modify during a real deployment. - Integrate with CI/CD: Incorporate
+  dry-run as a step in your continuous integration and continuous delivery pipelines
+  to automate pre-deployment checks and prevent faulty deployments. By providing this
+  dry-run functionality, Meshery helps you increase the reliability and stability
+  of your Kubernetes deployments by catching potential problems early in the development
+  and deployment process. ### Visually and collaboratively manage your infrastructure
+  Using a GitOps-centric approach, visually and collaboratively design and manage
+  your infrastructure and microservices. Meshery intelligently infers the manner in
+  which each resource [interrelates](https://docs.meshery.io/concepts/logical/relationships)
+  with each other. Meshery supports a broad variety of built-in relationships between
+  components, which you can use to create your own custom relationships. Context-Aware
+  Policies For Applications Leverage built-in relationships to enforce configuration
+  best practices consistently from code to Kubernetes. Customize Configure your infrastructure
+  with confidence without needing to know or write Open Policy Agent's Rego query
+  language. ## Workspaces: Your team's Google Drive for cloud native projects Workspaces
+  let you organize your work and serve as the central point of collaboration for you
+  and your teams and point of access control to Environments and their resources.
+  Manage your connections with Environments Environments make it easier for you to
+  manage, share, and work with a collection of resources as a group, instead of dealing
+  with all your Connections and Credentials on an individual basis. See changes to
+  your infra before you merge Get snapshots of your infrastructure directly in your
+  PRs. Preview your deployment, view changes pull request-to-pull request and get
+  infrastructure snapshots within your PRs by connecting Kanvas to your GitHub repositories.
+  Operate with configuration best practices Assess your configurations against deployment
+  and operational best practices with Meshery's configuration validator. Control all
+  of your infrastructure with mesheryctl Whether managing multiple Meshery deployments,
+  importing designs, discoverying Kubernetes clusters, do so with ease using Meshery
+  CLI in your terminal. --> ## Platform Engineering with Meshery's Extension Points
+  Extend Meshery as your self-service engineering platform by taking advantage of
+  its [vast set of extensibility features](https://docs.meshery.io/extensibility),
+  including gRPC adapters, hot-loadable Reactjs packages and Golang plugins, subscriptions
+  on NATS topics, consumable _and_ extendable API interfaces via REST and GraphQL.The
+  great number of extension points in Meshery make it ideal as the foundation of your
+  internal developer platform. Access the Cloud Native Patterns for Kubernetes Design
+  and manage all of your cl"
 ---
 {% raw %}
 

@@ -2,8 +2,66 @@
 layout: project
 name: Ainfosec Fissure
 slug: ainfosec-FISSURE
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/badge/NEW-Feature-brightgreen
 repo_url: https://github.com/ainfosec/FISSURE.git
+indexed_content: "# FISSURE - The RF Framework **Frequency Independent SDR-based Signal
+  Understanding and Reverse Engineering** ## Overview Videos FISSURE Operational Overview
+  FISSURE Overview (Slides) ## Introduction FISSURE is an **open-source RF framework**
+  that supports both **operational deployments** and **research and education**. -
+  For **operators**, it provides a rapidly deployable toolkit for signal detection,
+  classification, protocol discovery, fuzzing, vulnerability analysis, and real-time
+  integration with TAK. - For **educators and researchers**, it lowers the barrier
+  to entry for SDR and reverse engineering, offering a shared environment for learning,
+  experimentation, and publishing new methods. FISSURE streamlines complex SDR workflows
+  by centralizing software, libraries, and reference material into one consistent
+  framework that runs on desktops, laptops, single-board computers, and ruggedized
+  systems, or scales to distributed tactical nodes networked in the field. ## Key
+  Capabilities - Detect, classify, and analyze RF signals - Collect, replay, and manipulate
+  IQ data - Discover protocols and craft custom packets - Execute fuzzing and vulnerability
+  testing - Automate workflows with AI and ML integration - Archive signals and build
+  playlists for testing - Integrate alerts and data into TAK for team awareness &nbsp;&nbsp;&nbsp;&nbsp;
+  ## Deployment Options - Desktop GUI for visualization and prototyping - Headless
+  nodes for remote sensing and autonomous operations - Containerized services for
+  scalable and repeatable installs - TAK integration for mission relevance and shared
+  situational awareness --- --- ## Dual-Use Relevance - **Operators:** Detect, geolocate,
+  and respond to RF activity in the field - **Researchers:** Test new algorithms,
+  automation, and AI and ML approaches - **Educators:** Teach SDR, DSP, RF security,
+  real-time processing, and reverse engineering in the classroom - **Students and
+  Hobbyists:** Explore SDR workflows and learn about technology without steep setup
+  overhead ## Roadmap and Development FISSURE’s roadmap evolves with customer demand
+  and community feedback. For the most up-to-date view, explore the interactive roadmap:
+  - [View Interactive Roadmap](https://ainfosec.github.io/FISSURE/Roadmap/) ### Current
+  Priorities - **Plugin Ecosystem:** Redefining plugin boundaries and execution, developing
+  a standalone plugin editor, converting existing flow graph libraries into plugins,
+  and improving how plugins are deployed on sensor nodes and loaded into TAK. - **TAK
+  Integration:** Creating a WinTAK application, enhancing the bridge between TAK and
+  FISSURE’s hub, enabling plugin/action selection directly in TAK, and strengthening
+  alerting and coordination features. - **Installer & Packaging:** Breaking out installers
+  by operating system, improving error logging, delivering prebuilt ISOs and VM images
+  for popular platforms, and exploring Docker and Apptainer for deployable FISSURE
+  components. - **Tactical Node Orchestration:** Expanding plugin support on nodes,
+  integrating new sensor types, laying the foundation for multi-node coordination,
+  and improving artifact recording/synchronization and networking resilience. - **Electronic
+  Support / Monitoring:** Extending direction-finding and monitoring capabilities,
+  with emphasis on practical electronic support workflows. ## Videos - [FISSURE Videos](https://www.youtube.com/playlist?list=PLs4a-ctXntfjpmc_hrvI0ngj4ZOe_5xm_)
+  - [AIS YouTube](https://www.youtube.com/@assuredinformationsecurity/featured) ##
+  White Papers FISSURE is supported by a series of white papers that explore both
+  technical and operational applications across different domains. 1. [FISSURE Overview](/docs/White_Papers/FISSURE_Overview.pdf)
+  2. [FISSURE for Counter-UAS](/docs/White_Papers/FISSURE_CUAS.pdf) 3. [FISSURE for
+  UAS Payloads & Aerial Operations](/docs/White_Papers/FISSURE_UAS_Payload_Aerial_Ops.pdf)
+  4. [FISSURE for Maritime](/docs/White_Papers/FISSURE_Maritime.pdf) 5. [FISSURE for
+  Vehicle & Mobility Systems](/docs/White_Papers/FISSURE_Vehicle_Mobility_Systems.pdf)
+  6. [FISSURE for Perimeter & Infrastructure Defense](/docs/White_Papers/FISSURE_Perimeter_Infrastructure_Defense.pdf)
+  7. [FISSURE for TAK & Mobile](/docs/White_Papers/FISSURE_TAK_Mobile_Integration.pdf)
+  8. [FISSURE for Training & Education](/docs/White_Papers/FISSURE_Training_Education.pdf)
+  9. [FISSURE Technical Details & Architecture](/docs/White_Papers/FISSURE_Technical_Details_Architecture.pdf)
+  ## Blog Posts AIS has published several articles highlighting FISSURE’s applications,
+  updates, and use cases: - [Demonstrating FISSURE as a Drone Payload at Northern
+  Strike 2025](https://www.ainfosec.com/fissure-demo-at-northern-strike) - [A Recap
+  of My DEF CON 2024 Presentation on FISSURE Updates](https://www.ainfosec.com/a-recap-of-my-def-con-2024-presentation-on-fissure-updates)
+  - [FISSURE: Navigating the Open-Source Realm](https://www.ainfosec.com/fissure-navigating-the-open-source-realm)
+  - [FISSURE: The RF Framework for Eve"
 ---
 {% raw %}
 # FISSURE - The RF Framework 

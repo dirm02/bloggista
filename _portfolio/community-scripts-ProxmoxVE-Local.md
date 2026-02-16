@@ -2,8 +2,69 @@
 layout: project
 name: Community Scripts Proxmoxve Local
 slug: community-scripts-ProxmoxVE-Local
+category: Uncategorized
 image: https://github.com/user-attachments/assets/75323765-7375-4346-a41e-08d219275248
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# PVE Scripts Local \U0001F680 A modern web-based management interface
+  for Proxmox VE (PVE) helper scripts. This tool provides a user-friendly way to discover,
+  download, and execute community-sourced Proxmox scripts locally with real-time terminal
+  output streaming. No more need for curl -> bash calls, it all happens in your enviroment.
+  ## \U0001F3AF Deployment Options This application can be deployed in multiple ways
+  to suit different environments: - **\U0001F4E6 Debian LXC Container**: Deploy inside
+  a Debian LXC container for better isolation - **\U0001F527 Helper Script**: Use
+  the automated helper script for easy setup All deployment methods provide the same
+  functionality and web interface. ## \U0001F31F Features - **Web-based Interface**:
+  Modern React/Next.js frontend with real-time terminal emulation - **Script Discovery**:
+  Browse and search through community Proxmox scripts from GitHub - **One-Click Execution**:
+  Run scripts directly from the web interface with live output - **Real-time Terminal**:
+  Full terminal emulation with xterm.js for interactive script execution - **Script
+  Management**: Download, update, and manage local script collections - **Security**:
+  Sandboxed script execution with path validation and time limits - **Database Integration**:
+  PostgreSQL backend for script metadata and execution history - **WebSocket Communication**:
+  Real-time bidirectional communication for script execution - ## \U0001F3D7️ Architecture
+  ### Frontend - **Next.js 15** with React 19 - **TypeScript** for type safety - **Tailwind
+  CSS** for styling - **xterm.js** for terminal emulation - **tRPC** for type-safe
+  API communication ### Backend - **Node.js** server with WebSocket support - **WebSocket
+  Server** for real-time script execution - **Script Downloader Service** for GitHub
+  integration ### Scripts - **Core Functions**: Shared utilities and build functions
+  - **Container Scripts**: Pre-configured LXC container setups - **Installation Scripts**:
+  System setup and configuration tools ### Database - **SQLite Database**: Local database
+  stored at `data/settings.db` - **Server Management**: Stores Proxmox server configurations
+  and credentials - **Automatic Setup**: Database and tables are created automatically
+  on first run - **Data Persistence**: Settings persist across application restarts
+  ## \U0001F4CB Prerequisites ### For All Deployment Methods - **Node.js** 22+ and
+  npm - **Git** for cloning the repository - **Proxmox VE environment** (host or access
+  to Proxmox cluster) - **SQLite** (included with Node.js better-sqlite3 package)
+  ### For Debian LXC Container Installation - **Debian LXC container** (Debian 11+
+  recommended) - **build-essentials**: `apt install build-essential` - Container with
+  sufficient resources (2GB RAM, 4GB storage minimum) - Network access from container
+  to Proxmox host - Optional: Privileged container for full Proxmox integration ##
+  \U0001F680 Installation Choose the installation method that best fits your environment:
+  ### Option 1: Debian LXC Container Installation For better isolation and security,
+  you can run PVE Scripts Local inside a Debian LXC container: #### Step 1: Create
+  Debian LXC Container ```bash bash -c \"$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/debian.sh)\"
+  ``` #### Step 2: Install Dependencies in Container ```bash # Enter the container
+  pct enter 100 # Update and install dependencies apt update && apt install -y build-essential
+  git curl # Install Node.js 24.x curl -fsSL https://deb.nodesource.com/setup_24.x
+  | bash - apt install -y nodejs ``` #### Step 3: Clone and Setup Application ```bash
+  # Clone the repository git clone https://github.com/community-scripts/ProxmoxVE-Local.git
+  /opt/PVESciptslocal cd /opt/PVESciptslocal # Install dependencies and build npm
+  install cp .env.example .env npm run build # Create database directory mkdir -p
+  data chmod 755 data ``` #### Step 4: Start the Application ```bash # Start in production
+  mode npm start # Or create a systemd service (optional) # Create systemd service
+  for easy management ``` **Access the application:** - \U0001F310 Container IP: `http://
+  :3000` - \U0001F527 Container management: `pct start 100`, `pct stop 100`, `pct
+  status 100` ### Option 2: Use the helper script This creates the LXC and installs
+  the APP for you. ```bash bash -c \"$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pve-scripts-local.sh)\"
+  ``` ## \U0001F3AF Usage ### 1. Access the Web Interface The web interface is accessible
+  regardless of your deployment method: - **LXC Container Installation**: `http://
+  :3000` - **Custom Installation**: `http:// :3000` ### 2. Service Management ####
+  For helper-script installations (systemd service): ```bash # Start the service systemctl
+  start pvescriptslocal # Stop the service systemctl stop pvescriptslocal # Check
+  service status systemctl status pvescriptslocal # Enable auto-start on boot systemctl
+  enable pvescriptslocal # View service logs journalctl -u pvescriptslocal -f ```
+  #### For manual installations: ```bash # Start application npm start # Development
+  mod"
 ---
 {% raw %}
 # PVE Scripts Local 🚀

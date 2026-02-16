@@ -2,8 +2,62 @@
 layout: project
 name: Amusi Awesome Ai Awesomeness
 slug: amusi-awesome-ai-awesomeness
+category: AI-automation-web2-3SmartC-Agent
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/owainlewis/awesome-artificial-intelligence)
+indexed_content: "# Awesome AI Awesomeness A curated list of awesome awesomeness about
+  artificial intelligence(AI). If you want to contribute to this list (please do),
+  send me a pull request. # Table of Contents - [Artificial Intelligence(AI)](#AI)
+  - [Machine Learning(ML)](#ML) - [Deep Learning(DL)](#DL) - [Computer Vision(CV)](#CV)
+  - [Natural Language Processing(NLP)](#NLP) - [Speech Recognition](#SR) - [Other
+  Research Topics](#ORT) - [Programming Languages](#PL) - [Framework](#Framework)
+  - [Datasets](#Datasets) - [AI Career](#AI Career) # Artificial Intelligence(AI)
+  - [AI](https://github.com/owainlewis/awesome-artificial-intelligence) - [AI-Use-Cases](https://github.com/faktionai/awesome-ai-usecases)
+  - [AI residency programs information](https://github.com/ankitshah009/all-about-ai-residency)
+  - [Explainable AI](https://github.com/wangyongjie-ntu/Awesome-explainable-AI) #
+  Machine Learning(ML) - [ML](https://github.com/josephmisiti/awesome-machine-learning)
+  - [ML-Source-Code](https://github.com/src-d/awesome-machine-learning-on-source-code)
+  - [ML-CN](https://github.com/jobbole/awesome-machine-learning-cn) - [Adversarial-ML](https://github.com/yenchenlin/awesome-adversarial-machine-learning)
+  - [Quantum-ML](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning)
+  - [3D-Machine-Learning](https://github.com/timzhang642/3D-Machine-Learning) - [Machine
+  Learning Interpretability](https://github.com/jphall663/awesome-machine-learning-interpretability)
+  - [Machine Learning System](https://github.com/HuaizhengZhang/Awesome-System-for-Machine-Learning)
+  - [Mobile Machine Learning](https://github.com/fritzlabs/Awesome-Mobile-Machine-Learning)
+  - [Machine Learning Problems](https://github.com/RedditSota/state-of-the-art-result-for-machine-learning-problems)
+  - [Gradient Boosting](https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers)
+  - [Decision Tree](https://github.com/benedekrozemberczki/awesome-decision-tree-papers)
+  # Deep Learning(DL) - [DL](https://github.com/ChristosChristofidis/awesome-deep-learning)
+  - [DL-Papers](https://github.com/terryum/awesome-deep-learning-papers) - [DL-Resources](https://github.com/guillaume-chevalier/Awesome-Deep-Learning-Resources)
+  - [DeepLearning-500-questions](https://github.com/scutan90/DeepLearning-500-questions)
+  - [Deep-Learning-in-Production](https://github.com/ahkarami/Deep-Learning-in-Production)
+  - [DNN Compression and Acceleration](https://github.com/MingSun-Tse/EfficientDNNs)
+  - [Architecture Search](https://github.com/markdtw/awesome-architecture-search)
+  - [Deep Learning for Graphs](https://github.com/DeepGraphLearning/LiteratureDL4Graph)
+  - [Real-time Network](https://github.com/wpf535236337/real-time-network) - [Deep
+  Learning Interpretability](https://github.com/oneTaken/awesome_deep_learning_interpretability)
+  - [Graph-based Deep Learning](https://github.com/naganandy/graph-based-deep-learning-literature)
+  # Computer Vision(CV) - [CV](https://github.com/jbhuang0604/awesome-computer-vision)
+  - [CV2](https://github.com/kjw0612/awesome-deep-vision) - [CV-People](Awesome-People-in-Computer-Vision)
+  - [DeepFakes](https://github.com/datamllab/awesome-deepfakes-materials) - [Event-based
+  Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources) - [Embodied
+  Vision](https://github.com/ChanganVR/awesome-embodied-vision) - Research Topics
+  - [Action Recognition](https://github.com/jinwchoi/awesome-action-recognition) -
+  [Colorization](https://github.com/MarkMoHR/Awesome-Image-Colorization) - [Image
+  Classification](https://github.com/weiaicunzai/awesome-image-classification) - [imgclsmob](https://github.com/osmr/imgclsmob)
+  - [Image Registration](https://github.com/Awesome-Image-Registration-Organization/awesome-image-registration)
+  - Object Detection - [amusi/Object Detection](https://github.com/amusi/awesome-object-detection)
+  - [hoya012/Object Detection]( https://github.com/hoya012/deep_learning_object_detection
+  ) - [Tiny Object Detection](https://github.com/kuanhungchen/awesome-tiny-object-detection)
+  - [Small Object Detection](https://github.com/tjtum-chenlab/SmallObjectDetectionList)
+  - [Video Object Detection](https://github.com/huanglianghua/video-detection-paper-list)
+  - [Anchor Free Object Detection](https://github.com/XinZhangNLPR/awesome-anchor-free-object-detection)
+  - Face - [Face Detection & Recognition](https://github.com/ChanChiChoi/awesome-Face_Recognition)
+  - [awesome-face](https://github.com/polarisZhao/awesome-face) - [Facial Expression
+  Recognition (FER)](https://github.com/EvelynFan/AWESOME-FER) - [Face Landmark Detection](https://github.com/mrgloom/Face-landmarks-detection-benchmark)
+  - [Landmark Detection](https://github.com/D-X-Y/landmark-detection) - [Face Anti-spoofing](https://github.com/ZitongYu/DeepFAS)
+  - [Gaze Estimation](https://github.com/WuZhuoran/awesome-gaze) - [HDR Image Synthesis](https://github.com/vinthony/awesome-deep-hdr)
+  - Image Segmentation - [Semantic Segmentation](https://github.com/mrgloom/awesome-semantic-segmentation)
+  - [Segment"
 ---
 {% raw %}
 # Awesome AI Awesomeness

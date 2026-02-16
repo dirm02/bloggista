@@ -2,8 +2,59 @@
 layout: project
 name: Seifrajhi Awesome Platform Engineering Tools
 slug: seifrajhi-awesome-platform-engineering-tools
+category: Uncategorized
 image: https://awesome.re/badge-flat.svg
 repo_url: https://github.com/seifrajhi/awesome-platform-engineering-tools
+indexed_content: "# Awesome Platform Engineering Tools [](https://awesome.re) A curated
+  list of Platform and Production Engineering tools - Maintained by [Saif Rajhi](https://twitter.com/RajhiSaifeddine)
+  ## Contents - [Awesome Platform Engineering Tools](#awesome-platform-engineering-tools-)
+  - [Contents](#contents) - [Articles and Presentations and Books](#articles-and-presentations-and-books)
+  - [Newsletters, Chats and Podcasts](#newsletters-chats-and-podcasts) - [Specifications](#specifications)
+  - [Reference Architecture](#reference-architecture) - [AI powered platform tools](#ai-powered-platform-tools)
+  - [Development](#development) - [Source Code Management](#source-code-management)
+  - [Feature flags and change management](#feature-flags-and-change-management) -
+  [Project Management \\& Issue Tracking Software](#project-management--issue-tracking-software)
+  - [Bug / Defect Tracking Software](#bug--defect-tracking-software) - [Code Editors
+  and IDE's](#code-editors-and-ides) - [Continuous Testing](#continuous-testing) -
+  [Continuous Integration](#continuous-integration) - [Build](#build) - [Integration](#integration)
+  - [Continuous Delivery](#continuous-delivery) - [Deployment](#deployment) - [Automation
+  and Collaboration](#automation-and-collaboration) - [Infrastructure orchestration](#infrastructure-orchestration)
+  - [Container](#container) - [Container Registry](#container-registry) - [Container
+  Orchestration](#container-orchestration) - [Continuous Monitoring](#continuous-monitoring)
+  - [Incident Management / Incident Response / IT Alerting / On-Call](#incident-management--incident-response--it-alerting--on-call)
+  - [IT Service Management](#it-service-management) - [Incident Communication](#incident-communication)
+  - [Security](#security) - [Internal Developer Portal](#internal-developer-portal)
+  - [Path to senior platform engineer handbook](#path-to-senior-platform-engineer-handbook)
+  - [Miscellaneous and Related](#miscellaneous-and-related) - [Notions and concepts](#notions-and-concepts)
+  - [Stargazers over time](#stargazers-over-time) - [Licence](#licence) ## Articles
+  and Presentations and Books - [Chances are you don't need a platform team](https://theprogressivearchitect.substack.com/p/chances-are-you-dont-need-a-platform)
+  - How to minimize your platform and maximize user value by [@bschaatsbergen](https://github.com/bschaatsbergen)
+  . - [How To Create A Complete Internal Developer Platform (IDP)?](https://www.youtube.com/watch?v=Rg98GoEHBd4)
+  - It's time to build an internal developer platform (IDO) with Crossplane, Argo
+  CD, SchemaHero, External Secrets Operator (ESO), GitHub Actions, Port, and a few
+  others by [@vfarcic](https://gist.github.com/vfarcic) . - [What does it take to
+  become a Platform Engineer?](https://www.youtube.com/watch?v=1RInP-77iyE) . - [Platform
+  Engineering How Did We Get Here ](https://www.youtube.com/watch?v=p6D-NYkVp9E) .
+  - [Can we say that Platform Engineering is DevSec(Rel)Ops?](https://www.youtube.com/watch?v=DhtYf05dvQY)
+  . - [The Practical Guide to Internal Developer Portals](https://www.getport.io/guide)
+  - The next big thing in DevOps is platform engineering, and the main tool it uses
+  is the internal developer portal. Read this guide to understand what can be done
+  with portals and why they matter . - [Platform Engineering on Kubernetes](https://www.manning.com/books/platform-engineering-on-kubernetes)
+  - A book that teaches how to build custom platforms on top of Kubernetes using open-source
+  tools such as Dapr, Knative, Argo CD and Rollouts, and Tekton. It explores the tools
+  and techniques needed to overcome common cloud-native challenges and is suitable
+  for readers with different expertise levels . - [Build Your IDP at Light Speed with
+  a Platform Reference Architecture](https://thenewstack.io/build-your-idp-at-light-speed-with-a-platform-reference-architecture/)
+  - Now organizations have a standard, proven, scalable, and repeatable pattern for
+  internal developer platforms that’s applicable to any tooling choice . - [What Is
+  Platform Engineering? Role, Principles & Benefits](https://spacelift.io/blog/what-is-platform-engineering).
+  - [How to Design an Internal Developer Platform](https://blog.container-solutions.com/how-to-design-an-internal-developer-platform).
+  - [A Platform Team Product Manager Determines DevOps Success](https://thenewstack.io/a-platform-team-product-manager-determines-devops-success/).
+  - [Platform Engineering KPIs](https://medium.com/wise-engineering/platform-engineering-kpis-6a3215f0ee14).
+  - [Platform Engineering: Creating your Internal Developer Platform](https://medium.com/contino-engineering/creating-your-internal-developer-platform-part-2-65ff217cecd6).
+  - [The 10 Platform Engineering Tools To Use in 2022](https://medium.com/@rphilogene/the-10-platform-engineering-tools-to-use-in-2022-c2cbf2561f77).
+  - [Platform Engineering at Palo Alto Networks](https://medium.com/engineering-at-palo-alto-networks/platform-engineering-at-palo-alto-networks-part-2-315bd7b0fbfa).
+  - [Platform Engineer"
 ---
 {% raw %}
 # Awesome Platform Engineering Tools [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)

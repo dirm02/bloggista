@@ -2,8 +2,50 @@
 layout: project
 name: Lucide Icons Lucide
 slug: lucide-icons-lucide
+category: Uncategorized
 image: https://img.shields.io/npm/v/lucide
 repo_url: https://github.com/lucide-icons/lucide
+indexed_content: "Icons · Guide · Packages · License · Showcase # Lucide Lucide is
+  an open-source icon library that provides 1000+ vector (svg) files for displaying
+  icons and symbols in digital and non-digital projects. The library aims to make
+  it easier for designers and developers to incorporate icons into their projects
+  by providing several official [packages](https://lucide.dev/packages) to make it
+  easier to use these icons in your project. ## Packages | Logo | Package | Version
+  | Downloads | Links | | ---- | ------- | ------- | --------- | ----- | | | **`lucide`**
+  | [](https://www.npmjs.com/package/lucide) | | [Docs](https://lucide.dev/guide/packages/lucide)
+  · [Source](./packages/lucide) | | | **`lucide-react`** | [](https://www.npmjs.com/package/lucide-react)
+  | | [Docs](https://lucide.dev/guide/packages/lucide-react) · [Source](./packages/lucide-react)
+  | | | **`lucide-vue-next`** | [](https://www.npmjs.com/package/lucide-vue-next)
+  | | [Docs](https://lucide.dev/guide/packages/lucide-vue-next) · [Source](./packages/lucide-vue-next)
+  | | | **`lucide-svelte`** | [](https://www.npmjs.com/package/lucide-svelte) | |
+  [Docs](https://lucide.dev/guide/packages/lucide-svelte) · [Source](./packages/lucide-svelte)
+  | | | **`lucide-solid`** | [](https://www.npmjs.com/package/lucide-solid) | | [Docs](https://lucide.dev/guide/packages/lucide-solid)
+  · [Source](./packages/lucide-solid) | | | **`lucide-preact`** | [](https://www.npmjs.com/package/lucide-preact)
+  | | [Docs](https://lucide.dev/guide/packages/lucide-preact) · [Source](./packages/lucide-preact)
+  | | | **`lucide-react-native`** | [](https://www.npmjs.com/package/lucide-react-native)
+  | | [Docs](https://lucide.dev/guide/packages/lucide-react-native) · [Source](./packages/lucide-react-native)
+  | | | **`lucide-angular`** | [](https://www.npmjs.com/package/lucide-angular) |
+  | [Docs](https://lucide.dev/guide/packages/lucide-angular) · [Source](./packages/lucide-angular)
+  | | | **`@lucide/astro`** | [](https://www.npmjs.com/package/@lucide/astro) | |
+  [Docs](https://lucide.dev/guide/packages/lucide-astro) · [Source](./packages/astro)
+  | | | **`lucide-static`** | [](https://www.npmjs.com/package/lucide-static) | |
+  [Docs](https://lucide.dev/guide/packages/lucide-static) · [Source](./packages/lucide-static)
+  | ### Figma The lucide figma plugin. Visit [Figma community page](https://www.figma.com/community/plugin/939567362549682242/Lucide-Icons)
+  to install the plugin. ## Contributing For more info on how to contribute please
+  see the [contribution guidelines](https://github.com/lucide-icons/lucide/blob/main/CONTRIBUTING.md).
+  Caught a mistake or want to contribute to the documentation? [Edit this page on
+  Github](https://github.com/lucide-icons/lucide/blob/main/README.md) ## About brand
+  logos Lucide **does not accept** brand logos, and we do not plan to add them in
+  the future. This is due to a combination of **legal restrictions**, **design consistency
+  concerns**, and **practical maintenance reasons**. [Click here to read our official
+  statement about brand logos in Lucide.](./BRAND_LOGOS_STATEMENT.md) ## Community
+  Join the community on our [Discord](https://discord.gg/EH6nSts) server! ## License
+  Lucide is totally free for commercial use and personal use, this software is licensed
+  under the [ISC License](https://github.com/lucide-icons/lucide/blob/main/LICENSE).
+  ## Credits Thank you to all the people who contributed to Lucide! ## Sponsors [//]:
+  <> (Open Collective backers) ### Awesome backers \U0001F37A ### Backers ☕ ### Other
+  contributors \U0001F4B8 You can find all our past and non-recurring financial contributors
+  at [our Open Collective page](https://opencollective.com/lucide-icons)."
 ---
 {% raw %}
 <p align="center">

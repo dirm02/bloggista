@@ -2,8 +2,58 @@
 layout: project
 name: Frankiefab100 Blockchain Development Resources
 slug: frankiefab100-Blockchain-Development-Resources
+category: Educational-map
 image: https://user-images.githubusercontent.com/46662771/132558872-9fb63b1d-5c15-470a-8a84-23464519ff15.jpg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "[](https://github.com/sindresorhus/awesome) [](https://twitter.com/intent/tweet?text=Blockchain%20Development%20Resources%20-%20A%20collection%20of%20FREE%20blockchain%20development%20learning%20resources%20by%20@frankiefab100&url=https://github.com/frankiefab100/Blockchain-Development-Resources&hashtags=blockchaindevelopment,web3,ethereum,smartcontract,blockchaindeveloper,solidity)
+  [](https://twitter.com/frankiefab100) # Blockchain Development Resources A curated
+  list of FREE resources for learning blockchain development and Web3 in general.
+  Featuring free learning platforms, websites, online courses, tutorials, documentation,
+  games, project starter templates, articles, and books; useful for blockchain enthusiasts,
+  engineers, crypto enthusiasts, developers, designers, and stakeholders in the web3
+  space. It comprises of links to a range of topics like Introduction to Blockchain
+  technology, Web3 and revolution of the Internet, deployment of smart contracts on
+  Ethereum, Solana, Aeternity, Polygon, Celo and other EVM-compatible Blockchain networks,
+  Minting of NFTs, building decentralized applications (DApps), lending protocols
+  and tokens, creating decentralized autonomous organizations (DAOs), fundamentals
+  of cryptography and distributed ledger technology, smart contract security, zero
+  knowledge proof, understanding decentralized finance, How-to-use tutorials on Blockchain
+  development tools and technologies - **RemixIDE, Metamask, Hardhat, Web3js, Ganache,
+  Ethersjs, Web3py, Truffle, OpenZeppelin, Infura, IPFS**; including programming languages
+  for writing smart contracts - **Solidity, Vyper, Rust, Golang, Sophia**. #### Please
+  carefully read [`Contributing guidelines`](./CONTRIBUTING.md) before opening a pull
+  request or issue. _If you really appreciate the content of this repository, don't
+  forget to give it a Star⭐ and/or Tweet about it_. --- ## Table of Contents - [Websites](#websites)
+  - [Gamified Tutorials](#gamified-tutorials) - [Youtube Channels](#youtube-channels)
+  - [Free Online Courses](#free-online-courses) - [Github Repositories](#github-repositories)
+  - [Tutorial Docs](#tutorial-docs) - [Development Tools](#development-tools) - [Node
+  Providers](#node-providers) - [Project Starter](#project-starter) - [Articles](#articles)
+  - [Recommended Books](#recommended-books) --- ## Websites | | | --------------------------------------------------------------------------------------------------------------
+  | | [Ethereum.org](https://ethereum.org/en/developers/tutorials/) | | [Web3Learn](https://web3learn.io/)
+  | | [The Blockchain School](https://theblockchainschool.io) | | [Blockchain at Berkeley](https://blockchain.berkeley.edu/)
+  | | [ProtoSchool](https://proto.school/tutorials) | | [Dacade](https://dacade.org)
+  | | [Finematics](https://finematics.com) | | [Near University](https://www.near.university/learn/by-yourself)
+  | | [Kerala Blockchain Academy](https://kba.ai) | | [DApp University](https://www.dappuniversity.com/)
+  | | [Ethereum Blockchain Dev](https://ethereum-blockchain-developer.com/) | | [EthereumDev](https://ethereumdev.io/)
+  | | [UseWeb3](https://useweb3.xyz) | | [Web3 University](https://www.web3.university/)
+  | | [Metaschool](https://metaschool.so/) | | [LearnWeb3 DAO](https://www.learnweb3.io)
+  | | [Althash University](https://www.althash.university/colleges-schools/blockchain-internship-youth-program-biyp)
+  | | [We teach Blockchain](https://weteachblockchain.org/courses) | | [Cadena](https://cadena.dev)
+  | | [Learn Web3](https://learnweb3.io/) | | [Tacode](https://tacode.dev) | | [CryptoLectures](https://cryptolectures.teachable.com/)
+  | | [Snakecharmers](https://snakecharmers.ethereum.org/) | | [Codiesalert](https://www.codiesalert.com/)
+  | | [Cryptopedia](https://www.gemini.com/cryptopedia) | | [Learn NEAR Club](https://learnnear.club/)
+  | | [Teach yourself Web3](https://www.teachyourselfweb3.com) | | [Web3 Freecodecamp](https://web3.freecodecamp.org/)
+  | | [MetaMask Learn](https://learn.metamask.io/) | | [Alchemy university](https://university.alchemy.com/)
+  | | [Buidlguidl](https://buidlguidl.com/) | | [DApp World](https://dapp-world.com/)
+  | | [Cyfrin Updraft](https://updraft.cyfrin.io) | ↥ Back To Top ## Gamified Tutorials
+  | | | ----------------------------------------------------------------------------
+  | | [Cryptozombies](https://cryptozombies.io) | | [Ethernaut](https://ethernaut.openzeppelin.com/)
+  | | [Damnvulnerable DeFi](https://www.damnvulnerabledefi.xyz/) | | [Vyper.fun](https://vyper.fun/lessons.html#)
+  | | [Capture the Ether](https://capturetheether.com/) | | [Space Doggos](https://www.bitdegree.org/course/learn-solidity-space-doggos)
+  | | [Crypto Hack](https://cryptohack.org) | ↥ Back To Top ## Youtube Channels |
+  | | ------------------------------------------------------------------------------------------------------
+  | | [DApp University](https://www.youtube.com/@DAppuniversity) | | [Eat the blocks](https://www.youtube.com/@eattheblocks)
+  | | [Ivan on Tech](https://www.youtube.com/@ivanontech) | "
 ---
 {% raw %}
 ![BDR header](https://user-images.githubusercontent.com/46662771/132558872-9fb63b1d-5c15-470a-8a84-23464519ff15.jpg)

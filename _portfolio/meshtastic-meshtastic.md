@@ -2,8 +2,16 @@
 layout: project
 name: Meshtastic Meshtastic
 slug: meshtastic-meshtastic
+category: Let's try this- Personal prefere
 image: https://img.shields.io/github/actions/workflow/status/meshtastic/meshtastic/ci.yml?branch=master&label=actions&logo=github&color=yellow
 repo_url: https://github.com/meshtastic/meshtastic
+indexed_content: 'Meshtastic Documentation Website and documentation source for the
+  Meshtastic project. [](https://github.com/meshtastic/meshtastic/actions/workflows/ci.yml)
+  [](https://cla-assistant.io/meshtastic/repo) [](https://opencollective.com/meshtastic/)
+  [](https://vercel.com?utm_source=meshtastic&utm_campaign=oss) ## Development & Building
+  For complete instructions on setting up your development environment and for building
+  and running the docs project locally, please refer to our [Local Development Guide](https://meshtastic.org/docs/development/documentation/local-dev/).
+  ## Stats'
 ---
 {% raw %}
 <div align="center" markdown="1">

@@ -2,8 +2,24 @@
 layout: project
 name: Ahmet Cetinkaya Whph
 slug: ahmet-cetinkaya-whph
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ahmet-cetinkaya-whph/fastlane/metadata/android/en-GB/images/featureGraphic.png
 repo_url: https://github.com/ahmet-cetinkaya/whph
+indexed_content: "# `WHPH` [](https://ahmetcetinkaya.me/donate) [](https://github.com/ahmet-cetinkaya/whph/stargazers)
+  [](https://github.com/ahmet-cetinkaya/whph/blob/main/LICENSE) WHPH is a comprehensive
+  productivity app designed to help you manage tasks, develop new habits, and optimize
+  your time. It tracks application usage to enhance focus, allowing you to analyze
+  your progress, celebrate achievements, and stay motivated. Available for , , platforms.
+  ## ⏬ Installation ### \U0001F4F1 Android Install WHPH on Android through these stores
+  or download the APK directly: [](https://play.google.com/store/apps/details?id=me.ahmetcetinkaya.whph)
+  [](https://f-droid.org/packages/me.ahmetcetinkaya.whph) [](https://github.com/ahmet-cetinkaya/whph/releases)
+  ### \U0001F4BB Desktop (Windows & Linux) Download the latest release for your desktop
+  platform: [](https://github.com/ahmet-cetinkaya/whph/releases) > [!TIP] Linux users
+  > Please check the [Linux Dependencies Guide](docs/LINUX-DEPENDENCIES.md) > to ensure
+  you have all required system libraries installed before > running the application.
+  ## \U0001F4F1 Screenshots ## \U0001F91D Contributing See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
+  for comprehensive contribution guidelines, including environment setup, code style,
+  pull request process, issue reporting, and testing requirements."
 ---
 {% raw %}
 <!-- markdownlint-disable-file MD041 -->

@@ -2,8 +2,67 @@
 layout: project
 name: Madelena Hass Config Public
 slug: Madelena-hass-config-public
+category: Home automation-IoT
 image: https://ko-fi.com/img/githubbutton_sm.svg
 repo_url: https://github.com/Madelena/Metrology-for-Hass),
+indexed_content: '# Madelena''s Home Assistant Configs ## The Maximalist Dashboard
+  + The Ambient Smart Display This is a redacted version of my personal dashboard
+  configuration for [Home Assistant](https://www.home-assistant.io/), an open source
+  home automation server that integrates nearly 2000 existing IoT services into one
+  powerful, private, and unified user interface. [](https://ko-fi.com/madelena) My
+  design is based on these principles: - **Expressive**: The design should display
+  the information clearly and boldly. - **Contextual**: The design should adapt to
+  the environment where it is used. - **Information First**: The design should focus
+  on the information, not the ornaments. There are mainly two types of dashboards
+  in this configuration: - **Maximalist Dashboards**: Intentionally dense with information.
+  Used for control centers. - **Ambient Dashboards**: Succinct and sparse with information.
+  Used for smart displays. It uses my own [Metrology theme](https://github.com/Madelena/Metrology-for-Hass),
+  based on Metro design system, to reduce visual clutter, create a sense of visual
+  hierarchy, and focus on the data. ## Table of Contents - [The Maximalist Dashboard](#the-maximalist-dashboard)
+  - [Screenshots Tour ↗](https://github.com/Madelena/hass-config-public/wiki/Views-and-Cards)
+  - [The Ambient Dashboard](#the-ambient-dashboard) - [Screenshots Tour ↗](https://github.com/Madelena/hass-config-public/wiki/Ambient-Dashboard-Views)
+  - [How it works ↗](https://github.com/Madelena/hass-config-public/wiki/Ambient-Dashboard:-How-It-Works)
+  - [Features](#features) - [How to Install](#how-to-install) - [Specifications ↗](https://github.com/Madelena/hass-config-public/wiki/Specifications)
+  - Hardware, Ecosystem, List of Integrations, etc. - [Tools Used](#tools-used) -
+  [Credits](#credits) ## The Maximalist Dashboard Contrary to conventional UX design,
+  the dashboard is intentionally dense with information and not minimalist, because
+  it is designed for only one power user: me. My goal is to create a sense of awareness
+  of my surroundings and my resources through information, while my second priority
+  is to be able to control and fine-tune all aspects of my living space. This is not
+  designed for convenience since I already have physical buttons and switches for
+  such purpose. The dashboard is designed to maximize the amount of information displayed
+  without additional user interactions, acting as an ambient display in the background.
+  Information is not hidden or tucked away from view but is instead shown in its full
+  glory for those who love to look at real-time data visualizations. Animation is
+  toned down so that it still feels responsive but not distracting. Colors are used
+  to draw attention to things that I need to attend to, and the monochromatic color
+  scheme keeps the visual priority clear. The wireframe aesthetic for illustrations
+  and flat icons keeps visual noise to the minimum. ## The Ambient Dashboard It started
+  as a thought experiment: How little information can I show on a screen and the design
+  will still be useful? The other extreme of maximalism bequeaths an ultraminimalist
+  layout that only shows just *one* sensor at a time. This layout is perfect as a
+  replacement for the ad-filled slideshows of smart home displays such as Amazon Echo
+  Show devices and Google Home devices. With Home Assistant as its backbone, the main
+  slideshow is infinitely customizable and the controls are tailored for my home,
+  unlike their corporate counterparts. Designed to achieve the “pre-attentiveness”
+  of the human brain, ambient displays make it possible for the user to process information
+  without diverting the attention toward background tasks. There are two main components
+  to the dashboard: the "Slides" and the "Apps". The Slides acts as the home screen
+  that constantly and leisurely rotates each sensor information on a relaxing video
+  backdrop. The Apps each act as a hub for controlling or monitoring a particular
+  aspect of my home with touch-friendly and clean UI elements. ## Features ### Data
+  Visualizations - Make it Expressive Data is beautiful! Data in HA is used to render
+  some unique, eye-catching, and informative graphs as the visual focus of each page.
+  Axonometric Floor Plan Network Rail Map Energy Use Sankey Diagram Psychrometry Chart
+  Weather History + Forecast Chart Last.fm Music Charts All visualizations adhere
+  to theme colors and light/dark modes. Additional visualizations are embedded from
+  third-party sources. The Weekendest Subway Map Bing Traffic Static Map Weather Underground
+  Radar Map jsOrrery Solar System Map Astropheric Weather Chart ### Responsive Design
+  - Make it Versatile Grid columns reflow depending on screen width and device type.
+  Since I use the dashboard in multiple form factors, the design needs to fit everything.
+  ### Live Tiles - Make it Tidy Perfect square grid with tiles in all sizes Rotating
+  cube animation to subtly catch the right amount of attention Variations based on
+  states Layouts for cameras, pictures, media players, etc. '
 ---
 {% raw %}
 # Madelena's Home Assistant Configs

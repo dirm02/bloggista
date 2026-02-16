@@ -2,8 +2,64 @@
 layout: project
 name: Gosom Google Maps Scraper
 slug: gosom-google-maps-scraper
+category: Extension-Pluggin-Cron-Scrap
 image: https://github.com/gosom/google-maps-scraper/actions/workflows/build.yml/badge.svg
 repo_url: https://github.com/gosom/google-maps-scraper
+indexed_content: "# Google Maps Scraper [](https://github.com/gosom/google-maps-scraper/actions/workflows/build.yml)
+  [](https://goreportcard.com/report/github.com/gosom/google-maps-scraper) [](https://godoc.org/github.com/gosom/google-maps-scraper)
+  [](https://opensource.org/licenses/MIT) [](https://discord.gg/fpaAVhNCCu) **A powerful,
+  free, and open-source Google Maps scraper** for extracting business data at scale.
+  Available as CLI, Web UI, REST API, or deployable to Kubernetes/AWS Lambda. > \U0001F4A1
+  **New:** Export leads directly to [LeadsDB](https://getleadsdb.com/) - manage via
+  API, AI/MCP integration, or UI with custom filtering and exports. > **Love this
+  project?** A star helps others discover it and motivates continued development.
+  [Become a sponsor](https://github.com/sponsors/gosom) to directly support new features
+  and maintenance. --- ## Sponsored By This project is made possible by our amazing
+  sponsors ### [Scrap.io](https://scrap.io?utm_medium=ads&utm_source=github_gosom_gmap_scraper)
+  - Extract ALL Google Maps listings at country-scale [](https://scrap.io?utm_medium=ads&utm_source=github_gosom_gmap_scraper)
+  No keywords needed. No limits. Export millions of businesses in 2 clicks. [**Try
+  it free →**](https://scrap.io?utm_medium=ads&utm_source=github_gosom_gmap_scraper)
+  --- ### [G Maps Extractor](https://gmapsextractor.com?utm_source=github&utm_medium=banner&utm_campaign=gosom)
+  - No-code Google Maps scraper [](https://gmapsextractor.com?utm_source=github&utm_medium=banner&utm_campaign=gosom)
+  Chrome extension that extracts emails, social profiles, phone numbers, reviews &
+  more. [**Get 1,000 free leads →**](https://gmapsextractor.com?utm_source=github&utm_medium=banner&utm_campaign=gosom)
+  --- ### [SerpApi](https://serpapi.com/?utm_source=google-maps-scraper) - Google
+  Maps API and 30+ search engine APIs [](https://serpapi.com/?utm_source=google-maps-scraper)
+  Fast, reliable, and scalable. Used by Fortune 500 companies. [**View all APIs →**](https://serpapi.com/search-api)
+  --- ### [HasData](https://hasdata.com/scrapers/google-maps?utm_source=github&utm_medium=sponsorship&utm_campaign=gosom)
+  - No-code Google Maps Scraper & Email Extraction [](https://hasdata.com/scrapers/google-maps?utm_source=github&utm_medium=sponsorship&utm_campaign=gosom)
+  Extract business leads, emails, addresses, phones, reviews and more. [**Get 1,000
+  free credits →**](https://hasdata.com/scrapers/google-maps?utm_source=github&utm_medium=sponsorship&utm_campaign=gosom)
+  --- ### [LeadsDB](https://getleadsdb.com/) - Your Central Database for Business
+  Leads [](https://getleadsdb.com/) Push leads via API or AI agent, remove duplicates
+  automatically, and export when ready. [**Start free →**](https://getleadsdb.com/)
+  --- View all sponsors | Become a sponsor --- ## Why Use This Scraper? | | | |---|---|
+  | **Completely Free & Open Source** | MIT licensed, no hidden costs or usage limits
+  | | **Multiple Interfaces** | CLI, Web UI, REST API - use what fits your workflow
+  | | **High Performance** | ~120 places/minute with optimized concurrency | | **33+
+  Data Points** | Business details, reviews, emails, coordinates, and more | | **Production
+  Ready** | Scale from a single machine to Kubernetes clusters | | **Flexible Output**
+  | CSV, JSON, PostgreSQL, S3, LeadsDB, or custom plugins | | **Proxy Support** |
+  Built-in SOCKS5/HTTP/HTTPS proxy rotation | --- ## What's Next After Scraping? Once
+  you've collected your data, you'll need to manage, deduplicate, and work with your
+  leads. **[LeadsDB](https://getleadsdb.com/)** is a companion tool designed exactly
+  for this: - **Automatic Deduplication** - Import from multiple scrapes without worrying
+  about duplicates - **AI Agent Ready** - Query and manage leads with natural language
+  via MCP - **Advanced Filtering** - Combine filters with AND/OR logic on any field
+  - **Export Anywhere** - CSV, JSON, or use the REST API The scraper has [built-in
+  LeadsDB integration](#export-to-leadsdb) - just add your API key and leads flow
+  directly into your database. **[Start free with 500 leads](https://getleadsdb.com/)**
+  --- ## Table of Contents - [Quick Start](#quick-start) - [Web UI](#web-ui) - [Command
+  Line](#command-line) - [REST API](#rest-api) - [Installation](#installation) - [Features](#features)
+  - [Extracted Data Points](#extracted-data-points) - [Configuration](#configuration)
+  - [Command Line Options](#command-line-options) - [Using Proxies](#using-proxies)
+  - [Email Extraction](#email-extraction) - [Fast Mode](#fast-mode) - [Export to LeadsDB](#export-to-leadsdb)
+  - [Advanced Usage](#advanced-usage) - [PostgreSQL Database Provider](#postgresql-database-provider)
+  - [Kubernetes Deployment](#kubernetes-deployment) - [Custom Writer Plugins](#custom-writer-plugins)
+  - [Performance](#performance) - [Support the Project](#support-the-project) - [Sponsors](#sponsors)
+  - [Community](#community) - [Contributing](#contributing) - [License](#license)
+  --- ## Quick Start ### Web UI Start the web interface with a single command: ```bash
+  mkdir -p gmapsdata && "
 ---
 {% raw %}
 # Google Maps Scraper

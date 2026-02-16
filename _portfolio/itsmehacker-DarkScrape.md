@@ -2,8 +2,15 @@
 layout: project
 name: Itsmehacker Darkscrape
 slug: itsmehacker-DarkScrape
+category: Uncategorized
 image: https://i.imgur.com/XlgFleT.png?1
 repo_url: https://github.com/itsmehacker/DarkScrape.git
+indexed_content: "=====The Dark-Scrape===== OSINT Tool to find the Media Links in
+  Tor Sites Available in ## Tested On * Kali Linux 2019.2 * Ubuntu 18.04 * Nethunter
+  * Arc Linux ## Installation ```bash git clone https://github.com/itsmehacker/DarkScrape.git
+  pip3 install -r requirements.txt ``` ## Features * Download Media * Scrape From
+  Single Url * Face Recognition * Scraping From Files * Txt * Csv * Excel ## Contributor
+  thewhiteh4t @thewhiteh4t ## Inspired By: Jake Creps @jakecreps"
 ---
 {% raw %}
                                         =====The Dark-Scrape=====

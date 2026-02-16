@@ -2,8 +2,32 @@
 layout: project
 name: X1xhlol System Prompts And Models Of Ai Tools
 slug: x1xhlol-system-prompts-and-models-of-ai-tools
+category: EE-kicad-3D-Robotic
 image: https://app.cloudback.it/badge/x1xhlol/system-prompts-and-models-of-ai-tools
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/x1xhlol-system-prompts-and-models-of-ai-tools
+indexed_content: "Support my work here: Bags.fm • Jupiter • Photon • DEXScreener Official
+  CA: DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS (on Solana) --- Special thanks
+  to Put any coding agent to work while you sleep Tembo – The Background Coding Agents
+  Company [Get started for free] Make your LLM predictable in production Open Source
+  AI Engineering Platform &nbsp; --- \U0001F4DC Over **30,000+ lines** of insights
+  into their structure and functionality. [](https://cloudback.it) [](https://deepwiki.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+  --- ## ❤️ Support the Project If you find this collection valuable and appreciate
+  the effort involved in obtaining and sharing these insights, please consider supporting
+  the project. You can show your support via: - **Cryptocurrency:** - **BTC:** `bc1q7zldmzjwspnaa48udvelwe6k3fef7xrrhg5625`
+  - **LTC:** `LRWgqwEYDwqau1WeiTs6Mjg85NJ7m3fsdQ` - **ETH:** `0x3f844B2cc3c4b7242964373fB0A41C4fdffB192A`
+  - **Patreon:** https://patreon.com/lucknite - **Ko-fi:** https://ko-fi.com/lucknite
+  \U0001F64F Thank you for your support! --- # Sponsors Sponsor the most comprehensive
+  repository of AI system prompts and reach thousands of developers. [Get Started](mailto:lucknitelol@proton.me)
+  --- ## \U0001F6E0 Roadmap & Feedback > Open an issue. > **Latest Update:** 08/01/2026
+  --- ## \U0001F517 Connect With Me - **X:** [NotLucknite](https://x.com/NotLucknite)
+  - **Discord**: `x1xhlol` - **Email**: `lucknitelol@pm.me` --- ## \U0001F6E1️ Security
+  Notice for AI Startups > ⚠️ **Warning:** If you're an AI startup, make sure your
+  data is secure. Exposed prompts or AI models can easily become a target for hackers.
+  > \U0001F510 **Important:** Interested in securing your AI systems? > Check out
+  **[ZeroLeaks](https://zeroleaks.ai/)**, a service designed to help startups **identify
+  and secure** leaks in system instructions, internal tools, and model configurations.
+  **Get a free AI security audit** to ensure your AI is protected from vulnerabilities.
+  --- ## \U0001F4CA Star History ⭐ **Drop a star if you find this useful!**"
 ---
 {% raw %}
 <p align="center">

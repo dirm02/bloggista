@@ -2,8 +2,70 @@
 layout: project
 name: Di Sukharev Opencommit
 slug: di-sukharev-opencommit
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/di-sukharev-opencommit/.github/logo-grad.svg
 repo_url: https://github.com/di-sukharev/opencommit
+indexed_content: "OpenCommit Author Auto-generate meaningful commits in a second Killing
+  lame commits with AI \U0001F92F\U0001F52B \U0001FAA9 Winner of GitHub 2023 hackathon
+  \U0001FAA9 --- All the commits in this repo are authored by OpenCommit — look at
+  [the commits](https://github.com/di-sukharev/opencommit/commit/eae7618d575ee8d2e9fff5de56da79d40c4bc5fc)
+  to see how OpenCommit works. Emojis and long commit descriptions are configurable,
+  basically everything is. ## Setup OpenCommit as a CLI tool You can use OpenCommit
+  by simply running it via the CLI like this `oco`. 2 seconds and your staged changes
+  are committed with a meaningful message. 1. Install OpenCommit globally to use in
+  any repository: ```sh npm install -g opencommit ``` 2. Get your API key from [OpenAI](https://platform.openai.com/account/api-keys)
+  or other supported LLM providers (we support them all). Make sure that you add your
+  OpenAI payment details to your account, so the API works. 3. Set the key to OpenCommit
+  config: ```sh oco config set OCO_API_KEY= ``` Your API key is stored locally in
+  the `~/.opencommit` config file. ## Usage You can call OpenCommit with `oco` command
+  to generate a commit message for your staged changes: ```sh git add oco ``` Running
+  `git add` is optional, `oco` will do it for you. ### Running locally with Ollama
+  You can also run it with local model through ollama: - install and start ollama
+  - run `ollama run mistral` (do this only once, to pull model) - run (in your project
+  directory): ```sh git add oco config set OCO_AI_PROVIDER='ollama' OCO_MODEL='llama3:8b'
+  ``` Default model is `mistral`. If you have ollama that is set up in docker/ on
+  another machine with GPUs (not locally), you can change the default endpoint url.
+  You can do so by setting the `OCO_API_URL` environment variable as follows: ```sh
+  oco config set OCO_API_URL='http://192.168.1.10:11434/api/chat' ``` where 192.168.1.10
+  is example of endpoint URL, where you have ollama set up. #### Troubleshooting Ollama
+  IPv6/IPv4 Connection Fix If you encounter issues with Ollama, such as the error
+  ```sh ✖ local model issues. details: connect ECONNREFUSED ::1:11434 ``` It's likely
+  because Ollama is not listening on IPv6 by default. To fix this, you can set the
+  OLLAMA_HOST environment variable to 0.0.0.0 before starting Ollama: ```bash export
+  OLLAMA_HOST=0.0.0.0 ``` This will make Ollama listen on all interfaces, including
+  IPv6 and IPv4, resolving the connection issue. You can add this line to your shell
+  configuration file (like `.bashrc` or `.zshrc`) to make it persistent across sessions.
+  ### Flags There are multiple optional flags that can be used with the `oco` command:
+  #### Use Full GitMoji Specification Link to the GitMoji specification: https://gitmoji.dev/
+  This flag can only be used if the `OCO_EMOJI` configuration item is set to `true`.
+  This flag allows users to use all emojis in the GitMoji specification, By default,
+  the GitMoji full specification is set to `false`, which only includes 10 emojis
+  (\U0001F41B✨\U0001F4DD\U0001F680✅♻️⬆️\U0001F527\U0001F310\U0001F4A1). This is due
+  to limit the number of tokens sent in each request. However, if you would like to
+  use the full GitMoji specification, you can use the `--fgm` flag. ``` oco --fgm
+  ``` #### Skip Commit Confirmation This flag allows users to automatically commit
+  the changes without having to manually confirm the commit message. This is useful
+  for users who want to streamline the commit process and avoid additional steps.
+  To use this flag, you can run the following command: ``` oco --yes ``` ## Configuration
+  ### Local per repo configuration Create a `.env` file and add OpenCommit config
+  variables there like this: ```env ... OCO_AI_PROVIDER= OCO_API_KEY= // or other
+  LLM provider API token OCO_API_URL= OCO_API_CUSTOM_HEADERS= OCO_TOKENS_MAX_INPUT=
+  OCO_TOKENS_MAX_OUTPUT= OCO_DESCRIPTION= OCO_EMOJI= OCO_MODEL= OCO_LANGUAGE= OCO_MESSAGE_TEMPLATE_PLACEHOLDER=
+  OCO_PROMPT_MODULE= OCO_ONE_LINE_COMMIT= ``` Global configs are same as local configs,
+  but they are stored in the global `~/.opencommit` config file and set with `oco
+  config set` command, e.g. `oco config set OCO_MODEL=gpt-4o`. ### Global config for
+  all repos Local config still has more priority than Global config, but you may set
+  `OCO_MODEL` and `OCO_LOCALE` globally and set local configs for `OCO_EMOJI` and
+  `OCO_DESCRIPTION` per repo which is more convenient. Simply set any of the variables
+  above like this: ```sh oco config set OCO_MODEL=gpt-4o-mini ``` To see all available
+  configuration parameters and their accepted values: ```sh oco config describe ```
+  To see details for a specific parameter: ```sh oco config describe OCO_MODEL ```
+  Configure [GitMoji](https://gitmoji.dev/) to preface a message. ```sh oco config
+  set OCO_EMOJI=true ``` To remove preface emojis: ```sh oco config set OCO_EMOJI=false
+  ``` Other config options are behaving the same. ### Output WHY the changes were
+  done (WIP) You can set the `OCO_WHY` config to `true` to have OpenCommit output
+  a short description of WHY the changes were done after the commit message. Default
+  is `false`. To make this perf"
 ---
 {% raw %}
 <div align="center">

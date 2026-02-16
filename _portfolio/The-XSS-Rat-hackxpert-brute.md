@@ -2,8 +2,69 @@
 layout: project
 name: The Xss Rat Hackxpert Brute
 slug: The-XSS-Rat-hackxpert-brute
+category: Uncategorized
 image: https://github.com/user-attachments/assets/cd73ac17-fa15-4643-9b02-9202c7dcf8be
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# HackXpert BRUTE HackXpert API Surface Explorer is a hybrid GUI/CLI
+  recon assistant purpose-built for quickly enumerating API endpoints, collecting
+  live response context, and exporting results in formats your blueprints or reports
+  can use. It fuses the speed of threaded brute-forcing with recursive discovery smarts
+  inside a polished dark UI, while still offering a scriptable command line for pipelines
+  and servers. ## Why choose HackXpert over other API discovery tools? * **Surface
+  Drift Radar** – HackXpert baselines every environment locally, then live-flags brand
+  new, status-changed, or vanished endpoints so you spot release drift before it lands
+  in prod. * * **High-signal previews** – Every hit in the GUI streams a syntax-aware
+  preview, letting you triage JSON/text responses in seconds without juggling a separate
+  HTTP client. * **Recursive intelligence** – Responses that look like HTML get parsed
+  automatically so newly uncovered paths, forms, scripts, and inline URLs are scheduled
+  without you lifting a finger. * **Rapid iteration controls** – Fine-tune threads,
+  timeouts, recursion depth, status filters, and extension permutations, then persist
+  the profile for your next engagement. * **Command center workflow** – Run multiple
+  scans at once, rename tabs, monitor the neon recon HUD and console feed, colour-code
+  statuses at a glance, export to CSV/JSON, or copy hits directly for follow-up testing.
+  * **Headless ready** – The CLI mirrors the GUI logic so you can bake recon sweeps
+  into CI, cron jobs, or containerised playbooks with identical output. * **OffSec
+  preflight** – The engine auto-hunts `robots.txt`, `.well-known/security.txt`, Swagger/OpenAPI
+  docs, and GraphQL introspection targets before the main brute-force wave so you
+  never miss low-hanging intel. ## Ten power features ethical hackers asked for 1.
+  **Multi-method blasting** – Supply `GET,HEAD,POST` (or any combo) and the explorer
+  will cycle through each verb per path so you can spot sneaky behaviour differences
+  or method-specific exposures. 2. **Header loadouts** – Drop custom headers (auth
+  tokens, API keys, experimental Origins) into the Settings tab once and every request—GUI,
+  CLI, and preflight—will reuse them. 3. **Recon jitter control** – Add a random delay
+  between requests to mimic human traffic and side-step fragile rate-limiters while
+  still leveraging concurrency. 4. **CORS misconfiguration radar** – Optional probing
+  highlights endpoints that reflect hostile Origins or serve wildcard CORS policies,
+  surfacing juicy pivot points immediately. 5. **Intel path extraction** – JSON and
+  text previews are parsed for `/api/...` style paths, JavaScript asset calls, and
+  inline `fetch`/`axios` endpoints which are automatically queued for follow-up enumeration
+  inside scope and depth limits. 6. **Latency radar** – Each response is timed, highlighted,
+  and graphed in the HUD so lethargic endpoints (≥1.2s) stand out for DoS and performance
+  investigations. 7. **Header intel analyzer** – Server, X-Powered-By, authentication,
+  and proxy headers are called out automatically to accelerate tech fingerprinting
+  and perimeter mapping. 8. **Secret sniffer** – The preview pane flags JWTs, AWS
+  keys, API tokens, and other credential patterns as soon as they appear so you can
+  escalate quickly. 9. **Directory exposure watch** – Classic “Index of /” listings
+  and other directory disclosures are labelled the moment they appear. 10. **Rate-limit
+  and auth mapping** – 401/403/429/500 responses receive contextual notes so you can
+  chart the access boundaries while the scan runs. ### New: API forensics engine HackXpert
+  now ships with a deep API forensics engine to map the entire surface effortlessly:
+  * **Automatic parameter harvesting** – Query strings, JSON bodies, and form payloads
+  are analysed to build living parameter dictionaries per endpoint. * **Response schema
+  mining** – JSON field names, discovered paths, and nested objects are catalogued
+  so you can understand entity relationships instantly. * **Tech fingerprinting &
+  auth intelligence** – Stack hints, auth schemes, rate-limit headers, and other signals
+  are compiled into per-endpoint dossiers. * **GraphQL & spec detection** – GraphQL
+  operations, introspection data, Swagger/OpenAPI documents, and other spec artefacts
+  are highlighted as soon as they surface. * **One-click export** – Every scan tab
+  exposes an **Export Forensics Map** action that saves a structured JSON map of all
+  observations for reporting or replay. ### New: Burp chaining & passive discovery
+  arsenal * **Burp Suite proxy chaining** – Route every GUI/CLI request (preflight,
+  recon sweeps, parameter fuzzing, manual requests) through your Burp listener via
+  the Settings toggle. The neon header surfaces a live proxy status badge so you know
+  when traffic is flowing through Burp. * **TLS intelligence hub** – HTTPS targets
+  now stream certificate subject, issuer, expiry, and SAN inventory into the Recon
+  Lab panel and console so you can pivot to alternate hostnames instant"
 ---
 {% raw %}
 # HackXpert BRUTE

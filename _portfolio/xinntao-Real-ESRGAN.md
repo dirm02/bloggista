@@ -2,8 +2,59 @@
 layout: project
 name: Xinntao Real Esrgan
 slug: xinntao-Real-ESRGAN
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://img.shields.io/github/downloads/xinntao/Real-ESRGAN/total.svg
 repo_url: https://github.com/xinntao/Real-ESRGAN
+indexed_content: "## English | 简体中文 \U0001F440[**Demos**](#-demos-videos) **|** \U0001F6A9[**Updates**](#-updates)
+  **|** ⚡[**Usage**](#-quick-inference) **|** \U0001F3F0[**Model Zoo**](docs/model_zoo.md)
+  **|** \U0001F527[Install](#-dependencies-and-installation) **|** \U0001F4BB[Train](docs/Training.md)
+  **|** ❓[FAQ](docs/FAQ.md) **|** \U0001F3A8[Contribution](docs/CONTRIBUTING.md) [](https://github.com/xinntao/Real-ESRGAN/releases)
+  [](https://pypi.org/project/realesrgan/) [](https://github.com/xinntao/Real-ESRGAN/issues)
+  [](https://github.com/xinntao/Real-ESRGAN/issues) [](https://github.com/xinntao/Real-ESRGAN/blob/master/LICENSE)
+  [](https://github.com/xinntao/Real-ESRGAN/blob/master/.github/workflows/pylint.yml)
+  [](https://github.com/xinntao/Real-ESRGAN/blob/master/.github/workflows/publish-pip.yml)
+  \U0001F525 **AnimeVideo-v3 model (动漫视频小模型)**. Please see [[*anime video models*](docs/anime_video_model.md)]
+  and [[*comparisons*](docs/anime_comparisons.md)] \U0001F525 **RealESRGAN_x4plus_anime_6B**
+  for anime images **(动漫插图模型)**. Please see [[*anime_model*](docs/anime_model.md)]
+  1. :boom: **Update** online Replicate demo: [](https://replicate.com/xinntao/realesrgan)
+  1. Online Colab demo for Real-ESRGAN: [](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing)
+  **|** Online Colab demo for for Real-ESRGAN (**anime videos**): [](https://colab.research.google.com/drive/1yNl9ORUxxlL4N0keJa2SEPB61imPQd1B?usp=sharing)
+  1. Portable [Windows](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-windows.zip)
+  / [Linux](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-ubuntu.zip)
+  / [MacOS](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-macos.zip)
+  **executable files for Intel/AMD/Nvidia GPU**. You can find more information [here](#portable-executable-files-ncnn).
+  The ncnn implementation is in [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan)
+  Real-ESRGAN aims at developing **Practical Algorithms for General Image/Video Restoration**.
+  We extend the powerful ESRGAN to a practical restoration application (namely, Real-ESRGAN),
+  which is trained with pure synthetic data. \U0001F30C Thanks for your valuable feedbacks/suggestions.
+  All the feedbacks are updated in [feedback.md](docs/feedback.md). --- If Real-ESRGAN
+  is helpful, please help to ⭐ this repo or recommend it to your friends \U0001F60A
+  Other recommended projects: ▶️ [GFPGAN](https://github.com/TencentARC/GFPGAN): A
+  practical algorithm for real-world face restoration ▶️ [BasicSR](https://github.com/xinntao/BasicSR):
+  An open-source image and video restoration toolbox ▶️ [facexlib](https://github.com/xinntao/facexlib):
+  A collection that provides useful face-relation functions. ▶️ [HandyView](https://github.com/xinntao/HandyView):
+  A PyQt5-based image viewer that is handy for view and comparison ▶️ [HandyFigure](https://github.com/xinntao/HandyFigure):
+  Open source of paper figures --- ### \U0001F4D6 Real-ESRGAN: Training Real-World
+  Blind Super-Resolution with Pure Synthetic Data > [[Paper](https://arxiv.org/abs/2107.10833)]
+  &emsp; [[YouTube Video](https://www.youtube.com/watch?v=fxHWoDSSvSc)] &emsp; [[B站讲解](https://www.bilibili.com/video/BV1H34y1m7sS/)]
+  &emsp; [[Poster](https://xinntao.github.io/projects/RealESRGAN_src/RealESRGAN_poster.pdf)]
+  &emsp; [[PPT slides](https://docs.google.com/presentation/d/1QtW6Iy8rm8rGLsJ0Ldti6kP-7Qyzy6XL/edit?usp=sharing&ouid=109799856763657548160&rtpof=true&sd=true)]
+  > [Xintao Wang](https://xinntao.github.io/), Liangbin Xie, [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ),
+  [Ying Shan](https://scholar.google.com/citations?user=4oXBp9UAAAAJ&hl=en) > [Tencent
+  ARC Lab](https://arc.tencent.com/en/ai-demos/imgRestore); Shenzhen Institutes of
+  Advanced Technology, Chinese Academy of Sciences --- ## \U0001F6A9 Updates - ✅ Add
+  the **realesr-general-x4v3** model - a tiny small model for general scenes. It also
+  supports the **-dn** option to balance the noise (avoiding over-smooth results).
+  **-dn** is short for denoising strength. - ✅ Update the **RealESRGAN AnimeVideo-v3**
+  model. Please see [anime video models](docs/anime_video_model.md) and [comparisons](docs/anime_comparisons.md)
+  for more details. - ✅ Add small models for anime videos. More details are in [anime
+  video models](docs/anime_video_model.md). - ✅ Add the ncnn implementation [Real-ESRGAN-ncnn-vulkan](https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan).
+  - ✅ Add [*RealESRGAN_x4plus_anime_6B.pth*](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth),
+  which is optimized for **anime** images with much smaller model size. More details
+  and comparisons with [waifu2x](https://github.com/nihui/waifu2x-ncnn-vulkan) are
+  in [**anime_model.md**](docs/anime_model.md) - ✅ Support finetuning on your own
+  data or paired data (*i.e.*, finetuning ESRGAN). See [here](docs/Training.md#Finetune-Real-ESRGAN-on-your-own-dataset)
+  - ✅ Integrate [GFPGAN](https://github.com/Tence"
 ---
 {% raw %}
 <p align="center">

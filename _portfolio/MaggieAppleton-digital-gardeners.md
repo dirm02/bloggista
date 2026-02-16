@@ -2,8 +2,64 @@
 layout: project
 name: Maggieappleton Digital Gardeners
 slug: MaggieAppleton-digital-gardeners
+category: Educational-map
 image: https://res.cloudinary.com/dg3gyk0gu/image/upload/c_scale,w_850/v1590401937/maggieappleton.com/notes/garden-history/garden-wide.png
 repo_url: https://github.com/MaggieAppleton/digital-gardeners
+indexed_content: '# Digital Gardening Tools and Resources This collection of apps,
+  tools and articles is here to help you learn more about digital gardening. Ideally,
+  it''s here to help you start your own garden. ## What is "digital gardening"? A
+  garden is something inbetween a personal blog and a wiki. It''s a collection of
+  evolving notes, essays, and ideas that aren''t strictly organised by their publication
+  date. They''re inherently exploratory – posts are linked through contextual associations.
+  They aren''t refined or complete - posts can be published as half-finished thoughts
+  that will grow and evolve over time. They''re less rigid, less performative, and
+  less perfect than the personal "blogs" we''re used to encountering on the web. See
+  the [Theory, Philosophy, and Navel-gazing](https://github.com/MaggieAppleton/digital-gardeners#theory-philosophy-and-navel-gazing)
+  section for more on the ''what'' of gardens. ## Gardening Tools #### Building a
+  Public Garden - [Roam Research](https://roamresearch.com/) - A personal notes system
+  for interconnected thought - See the following resources for converting your private
+  garden in Roam to a public garden: - [Roam Garden](https://roam.garden/) a service
+  that does all the setup for you based on JSON export - [Gatsby Theme Garden](https://github.com/mathieudutour/gatsby-digital-garden/)
+  Gatsby theme that supports using Roam as a source - [Roam-to-Garden](https://github.com/DoomHammer/roam-to-git/tree/roam-to-garden)
+  Jekyll based converter for your Roam Data - [Obsidian](https://obsidian.md/) - a
+  Roam-like knowledge base that works on top of a local folder of plain text Markdown
+  files. Also allows you to publish selections of your graph to the open web. - [TiddlyWiki](https://tiddlywiki.com/)
+  - A no-code personal wiki system - [Stroll](https://giffmex.org/stroll/stroll.html)
+  a TiddlyWiki plugin with bi-directional links and other Roam-like features - [TiddlyMap](http://tiddlymap.org/)
+  - a mind-map plugin that shows visualizations for TiddlyWiki. - [Gitbook](https://www.gitbook.com/)
+  - [React-Notion](https://github.com/splitbee/react-notion/) - allows you to publish
+  a React-based website sources from your Notion notes - "Notion as a CMS" - [Gatsby
+  Brain Theme](https://github.com/aengusmcmillin/gatsby-theme-brain) - Roam-like bidirectional
+  links in Gatsby.js - [Gatsby Andy Theme](https://github.com/aravindballa/gatsby-theme-andy)
+  - [Gatsby Theme Garden](https://github.com/mathieudutour/gatsby-digital-garden/)
+  - A set of tools to build a digital garden with Gatsby.js. Pull data from Roam Research
+  or markdown. - [Simply Jekyll](https://simply-jekyll.netlify.app/posts/introduction-to-simply-jekyll)
+  - A Jekyll theme with bidirectional links, sidenotes, and transclusion - [Digital
+  Garden Jekyll Template](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
+  - A simple, clean jekyll template with bi-directional links - [Jekyll-Bonsai](https://github.com/manunamz/jekyll-bonsai)
+  - A modern jekyll theme for semantically inclined digital gardeners. - [Jekyll Garden](https://github.com/Jekyll-Garden/jekyll-garden.github.io)
+  - Clean Jekyll theme supporting bidirectional links. - [Eleventy Garden](https://github.com/b3u/eleventy-garden)
+  - A minimal template with backlinks, built in [Eleventy](https://11ty.dev) - [Foam](https://foambubble.github.io/foam/)
+  - Roam-like personal note management and publishing system built inside VSCode -
+  [Foamy NextJS](https://github.com/yenly/foamy-nextjs) - Basic Foam + NextJS with
+  MDX starter for building a digital garden - [Dendron](https://www.dendron.so/) -
+  A structured note taking tool that merges the freedom of Roam-like linking with
+  the order hierarchical organization - [Hyperdraft](https://hyperdraft.rosano.ca)
+  - Turns plain markdown notes into a website as you write. Easy to setup and doesn''t
+  require builds or deploys. - [Neuron](https://github.com/srid/neuron) - Managing
+  and publishing system for plain-text Zettelkasten-style notes. - [Innos Notes](https://innos.io/)
+  – Features include parallel pages, content blocks, and knowledge graph visualisations.
+  - [Trilium Notes](https://github.com/zadam/trilium) - A hierarchical note taking
+  application with focus on building large personal knowledge bases. - [Quartz](https://quartz.jzhao.xyz/)
+  - Publish your Obsidian or Roam digital garden to the web for free. Includes full-text
+  search, graph visualization, and backlinks. #### Building a Private Garden - [Bangle.io](https://bangle.io)
+  - A simple, markdown-based notetaking app that runs locally on your machine. - [Org
+  Roam](https://www.orgroam.com/) - non-hierarchical note-taking with org-mode in
+  emacs - [TheBrain](https://www.thebrain.com/) - A tool for taking interconnected
+  notes with an interactive graph. - [The Archive](https://zettelkasten.de/the-archive)
+  - A fast plain text Markdown note-taking app with Zettelkasten features like linking
+  and tagging. #### Extra Gardening Tools - [Webmentions](https://indieweb.org/Webmention)
+  - About the Webmentions system'
 ---
 {% raw %}
 # Digital Gardening Tools and Resources

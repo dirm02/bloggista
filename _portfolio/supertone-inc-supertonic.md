@@ -2,8 +2,65 @@
 layout: project
 name: Supertone Inc Supertonic
 slug: supertone-inc-supertonic
+category: Uncategorized
 image: "https://img.shields.io/badge/\U0001F917%20v2-Demo-yellow"
 repo_url: https://github.com/inisis/OnnxSlim)
+indexed_content: "# Supertonic — Lightning Fast, On-Device TTS [](https://huggingface.co/spaces/Supertone/supertonic-2)
+  [](https://huggingface.co/Supertone/supertonic-2) [-Demo-lightgrey)](https://huggingface.co/spaces/Supertone/supertonic#interactive-demo)
+  [-Models-lightgrey)](https://huggingface.co/Supertone/supertonic) **Supertonic**
+  is a lightning-fast, on-device text-to-speech system designed for **extreme performance**
+  with minimal computational overhead. Powered by ONNX Runtime, it runs entirely on
+  your device—no cloud, no API calls, no privacy concerns. ### \U0001F4F0 Update News
+  - **2026.01.22** - **[Voice Builder](https://supertonic.supertone.ai/voice_builder)**
+  is now live! Turn your voice into a deployable, edge-native TTS with permanent ownership.
+  - **2026.01.06** - \U0001F389 **Supertonic 2** released with multilingual support!
+  Now supports English (`en`), Korean (`ko`), Spanish (`es`), Portuguese (`pt`), and
+  French (`fr`). [Demo](https://huggingface.co/spaces/Supertone/supertonic-2) | [Models](https://huggingface.co/Supertone/supertonic-2)
+  - **2025.12.10** - Added `supertonic` PyPI package! Install via `pip install supertonic`.
+  For details, visit [supertonic-py documentation](https://supertone-inc.github.io/supertonic-py)
+  - **2025.12.10** - Added [6 new voice styles](https://huggingface.co/Supertone/supertonic/tree/b10dbaf18b316159be75b34d24f740008fddd381)
+  (M3, M4, M5, F3, F4, F5). See [Voices](https://supertone-inc.github.io/supertonic-py/voices/)
+  for details - **2025.12.08** - Optimized ONNX models via [OnnxSlim](https://github.com/inisis/OnnxSlim)
+  now available on [Hugging Face Models](https://huggingface.co/Supertone/supertonic)
+  - **2025.11.24** - Added Flutter SDK support with macOS compatibility ### Table
+  of Contents - [Demo](#demo) - [Why Supertonic?](#why-supertonic) - [Language Support](#language-support)
+  - [Getting Started](#getting-started) - [Performance](#performance) - [Built with
+  Supertonic](#built-with-supertonic) - [Citation](#citation) - [License](#license)
+  ## Demo ### Raspberry Pi Watch Supertonic running on a **Raspberry Pi**, demonstrating
+  on-device, real-time text-to-speech synthesis: https://github.com/user-attachments/assets/ea66f6d6-7bc5-4308-8a88-1ce3e07400d2
+  ### E-Reader Experience Supertonic on an **Onyx Boox Go 6** e-reader in airplane
+  mode, achieving an average RTF of 0.3× with zero network dependency: https://github.com/user-attachments/assets/64980e58-ad91-423a-9623-78c2ffc13680
+  ### Chrome Extension Turns any webpage into audio in under one second, delivering
+  lightning-fast, on-device text-to-speech with zero network dependency—free, private,
+  and effortless: https://github.com/user-attachments/assets/cc8a45fc-5c3e-4b2c-8439-a14c3d00d91c
+  --- > \U0001F3A7 **Try it now**: Experience Supertonic in your browser with our
+  [**Interactive Demo**](https://huggingface.co/spaces/Supertone/supertonic-2), or
+  get started with pre-trained models from [**Hugging Face Hub**](https://huggingface.co/Supertone/supertonic-2)
+  ## Why Supertonic? - **⚡ Blazingly Fast**: Generates speech up to **167× faster
+  than real-time** on consumer hardware (M4 Pro)—unmatched by any other TTS system
+  - **\U0001FAB6 Ultra Lightweight**: Only **66M parameters**, optimized for efficient
+  on-device performance with minimal footprint - **\U0001F4F1 On-Device Capable**:
+  **Complete privacy** and **zero latency**—all processing happens locally on your
+  device - **\U0001F3A8 Natural Text Handling**: Seamlessly processes numbers, dates,
+  currency, abbreviations, and complex expressions without pre-processing - **⚙️ Highly
+  Configurable**: Adjust inference steps, batch processing, and other parameters to
+  match your specific needs - **\U0001F9E9 Flexible Deployment**: Deploy seamlessly
+  across servers, browsers, and edge devices with multiple runtime backends. ## Language
+  Support We provide ready-to-use TTS inference examples across multiple ecosystems:
+  | Language/Platform | Path | Description | |-------------------|------|-------------|
+  | [**Python**](py/) | `py/` | ONNX Runtime inference | | [**Node.js**](nodejs/)
+  | `nodejs/` | Server-side JavaScript | | [**Browser**](web/) | `web/` | WebGPU/WASM
+  inference | | [**Java**](java/) | `java/` | Cross-platform JVM | | [**C++**](cpp/)
+  | `cpp/` | High-performance C++ | | [**C#**](csharp/) | `csharp/` | .NET ecosystem
+  | | [**Go**](go/) | `go/` | Go implementation | | [**Swift**](swift/) | `swift/`
+  | macOS applications | | [**iOS**](ios/) | `ios/` | Native iOS apps | | [**Rust**](rust/)
+  | `rust/` | Memory-safe systems | | [**Flutter**](flutter/) | `flutter/` | Cross-platform
+  apps | > For detailed usage instructions, please refer to the README.md in each
+  language directory. ## Getting Started First, clone the repository: ```bash git
+  clone https://github.com/supertone-inc/supertonic.git cd supertonic ``` ### Prerequisites
+  Before running the examples, download the ONNX models and preset voices, and place
+  them in the `assets` directory: > **Note:** The Hugging Face repository uses Git
+  LFS. Please ensure Git LFS is installed and initialized before cloning or "
 ---
 {% raw %}
 # Supertonic — Lightning Fast, On-Device TTS

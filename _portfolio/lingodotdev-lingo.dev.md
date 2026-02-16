@@ -2,8 +2,69 @@
 layout: project
 name: Lingodotdev Lingo.dev
 slug: lingodotdev-lingo.dev
+category: EE-kicad-3D-Robotic
 image: https://api.star-history.com/svg?repos=lingodotdev/lingo.dev&type=Date
 repo_url: https://github.com/lingodotdev/lingo.dev
+indexed_content: 'Lingo.dev - Open-source i18n toolkit for LLM-powered localization
+  MCP • CLI • CI/CD • SDK • Compiler --- ## Quick Start | Tool | Use Case | Quick
+  Command | | ---------------------------------- | ---------------------------------------------------
+  | ---------------------------------- | | [**MCP**](#lingodev-mcp) | AI-assisted
+  i18n setup for React apps | Prompt: `Set up i18n` | | [**CLI**](#lingodev-cli) |
+  Translate JSON, YAML, markdown, CSV, PO files | `npx lingo.dev@latest run` | | [**CI/CD**](#lingodev-cicd)
+  | Automated translation pipeline in GitHub Actions | `uses: lingodotdev/lingo.dev@main`
+  | | [**SDK**](#lingodev-sdk) | Runtime translation for dynamic content | `npm install
+  lingo.dev` | | [**Compiler**](#lingodev-compiler) | Build-time React localization
+  without i18n wrappers | `withLingo()` plugin | --- ### Lingo.dev MCP Setting up
+  i18n in React apps is notoriously error-prone - even for experienced developers.
+  AI coding assistants make it worse: they hallucinate non-existent APIs, forget middleware
+  configurations, break routing, or implement half a solution before getting lost.
+  The problem is that i18n setup requires a precise sequence of coordinated changes
+  across multiple files (routing, middleware, components, configuration), and LLMs
+  struggle to maintain that context. Lingo.dev MCP solves this by giving AI assistants
+  structured access to framework-specific i18n knowledge. Instead of guessing, your
+  assistant follows verified implementation patterns for Next.js, React Router, and
+  TanStack Start. **Supported IDEs:** - Claude Code - Cursor - GitHub Copilot Agents
+  - Codex (OpenAI) **Supported frameworks:** - Next.js (App Router & Pages Router
+  v13-16) - TanStack Start (v1) - React Router (v7) **Usage:** After configuring the
+  MCP server in your IDE ([see quickstart guides](https://lingo.dev/en/mcp)), prompt
+  your assistant: ``` Set up i18n with the following locales: en, es, and pt-BR. The
+  default locale is ''en''. ``` The assistant will: 1. Configure locale-based routing
+  (e.g., `/en`, `/es`, `/pt-BR`) 2. Set up language switching components 3. Implement
+  automatic locale detection 4. Generate necessary configuration files **Note:** AI-assisted
+  code generation is non-deterministic. Review generated code before committing. [Read
+  the docs →](https://lingo.dev/en/mcp) --- ### Lingo.dev CLI Keeping translations
+  in sync is tedious. You add a new string, forget to translate it, ship broken UI
+  to international users. Or you send JSON files to translators, wait days, then manually
+  merge their work back. Scaling to 10+ languages means managing hundreds of files
+  that constantly drift out of sync. Lingo.dev CLI automates this. Point it at your
+  translation files, run one command, and every locale updates. A lockfile tracks
+  what''s already translated, so you only pay for new or changed content. Supports
+  JSON, YAML, CSV, PO files, and markdown. **Setup:** ```bash # Initialize project
+  npx lingo.dev@latest init # Run translations npx lingo.dev@latest run ``` **How
+  it works:** 1. Extracts translatable content from configured files 2. Sends content
+  to LLM provider for translation 3. Writes translated content back to filesystem
+  4. Creates `i18n.lock` file to track completed translations (avoids redundant processing)
+  **Configuration:** The `init` command generates an `i18n.json` file. Configure locales
+  and buckets: ```json { "$schema": "https://lingo.dev/schema/i18n.json", "version":
+  "1.10", "locale": { "source": "en", "targets": ["es", "fr", "de"] }, "buckets":
+  { "json": { "include": ["locales/[locale].json"] } } } ``` The `provider` field
+  is optional (defaults to Lingo.dev Engine). For custom LLM providers: ```json {
+  "provider": { "id": "openai", "model": "gpt-4o-mini", "prompt": "Translate from
+  {source} to {target}" } } ``` **Supported LLM providers:** - Lingo.dev Engine (recommended)
+  - OpenAI - Anthropic - Google - Mistral - OpenRouter - Ollama [Read the docs →](https://lingo.dev/en/cli)
+  --- ### Lingo.dev CI/CD Translations are the feature that''s always "almost done."
+  Engineers merge code without updating locales. QA catches missing translations in
+  staging - or worse, users catch them in production. The root cause: translation
+  is a manual step that''s easy to skip under deadline pressure. Lingo.dev CI/CD makes
+  translations automatic. Every push triggers translation. Missing strings get filled
+  before code reaches production. No discipline required - the pipeline handles it.
+  **Supported platforms:** - GitHub Actions - GitLab CI/CD - Bitbucket Pipelines **GitHub
+  Actions setup:** Create `.github/workflows/translate.yml`: ```yaml name: Translate
+  on: push: branches: [main] permissions: contents: write jobs: translate: runs-on:
+  ubuntu-latest steps: - uses: actions/checkout@v4 - name: Lingo.dev uses: lingodotdev/lingo.dev@main
+  with: api-key: ${{ secrets.LINGODOTDEV_API_KEY }} ``` **Setup requirements:** 1.
+  Add `LINGODOTDEV_API_KEY` to repository secrets (Settings > Secrets and variables
+  > Actions) 2. For PR workflows: Enable "Allow'
 ---
 {% raw %}
 <p align="center">

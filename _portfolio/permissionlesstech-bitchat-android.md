@@ -2,8 +2,69 @@
 layout: project
 name: Permissionlesstech Bitchat Android
 slug: permissionlesstech-bitchat-android
+category: Let's try this- Personal prefere
 image: https://github.com/user-attachments/assets/188c42f8-d249-4a72-b27a-e2b4f10a00a8
 repo_url: https://github.com/user-attachments/assets
+indexed_content: '> [!WARNING] > This software has not received external security
+  review and may contain vulnerabilities and may not necessarily meet its stated security
+  goals. Do not use it for sensitive use cases, and do not rely on its security until
+  it has been reviewed. Work in progress. # bitchat for Android A secure, decentralized,
+  peer-to-peer messaging app that works over Bluetooth mesh networks. No internet
+  required for mesh chats, no servers, no phone numbers - just pure encrypted communication.
+  Bitchat also supports geohash channels, which use an internet connection to connect
+  you with others in your geographic area. This is the **Android port** of the original
+  [bitchat iOS app](https://github.com/jackjackbits/bitchat), maintaining 100% protocol
+  compatibility for cross-platform communication. ## Install bitchat You can download
+  the latest version of bitchat for Android from the [GitHub Releases page](https://github.com/permissionlesstech/bitchat-android/releases).
+  Or you can: [ ](https://play.google.com/store/apps/details?id=com.bitchat.droid)
+  **Instructions:** 1. **Download the APK:** On your Android device, navigate to the
+  link above and download the latest `.apk` file. Open it. 2. **Allow Unknown Sources:**
+  On some devices, before you can install the APK, you may need to enable "Install
+  from unknown sources" in your device''s settings. This is typically found under
+  **Settings > Security** or **Settings > Apps & notifications > Special app access**.
+  3. **Install:** Open the downloaded `.apk` file to begin the installation. ## License
+  This project is released into the public domain. See the [LICENSE](LICENSE.md) file
+  for details. ## Features - **✅ Cross-Platform Compatible**: Full protocol compatibility
+  with iOS bitchat - **✅ Decentralized Mesh Network**: Automatic peer discovery and
+  multi-hop message relay over Bluetooth LE - **✅ End-to-End Encryption**: X25519
+  key exchange + AES-256-GCM for private messages - **✅ Channel-Based Chats**: Topic-based
+  group messaging with optional password protection - **✅ Store & Forward**: Messages
+  cached for offline peers and delivered when they reconnect - **✅ Privacy First**:
+  No accounts, no phone numbers, no persistent identifiers - **✅ IRC-Style Commands**:
+  Familiar `/join`, `/msg`, `/who` style interface - **✅ Message Retention**: Optional
+  channel-wide message saving controlled by channel owners - **✅ Emergency Wipe**:
+  Triple-tap logo to instantly clear all data - **✅ Modern Android UI**: Jetpack Compose
+  with Material Design 3 - **✅ Dark/Light Themes**: Terminal-inspired aesthetic matching
+  iOS version - **✅ Battery Optimization**: Adaptive scanning and power management
+  ## Android Setup ### Prerequisites - **Android Studio**: Arctic Fox (2020.3.1) or
+  newer - **Android SDK**: API level 26 (Android 8.0) or higher - **Kotlin**: 1.8.0
+  or newer - **Gradle**: 7.0 or newer ### Build Instructions 1. **Clone the repository:**
+  ```bash git clone https://github.com/permissionlesstech/bitchat-android.git cd bitchat-android
+  ``` 2. **Open in Android Studio:** ```bash # Open Android Studio and select "Open
+  an Existing Project" # Navigate to the bitchat-android directory ``` 3. **Build
+  the project:** ```bash ./gradlew build ``` 4. **Install on device:** ```bash ./gradlew
+  installDebug ``` ### Development Build For development builds with debugging enabled:
+  ```bash ./gradlew assembleDebug adb install -r app/build/outputs/apk/debug/app-debug.apk
+  ``` ### Release Build For production releases: ```bash ./gradlew assembleRelease
+  ``` ## Android-Specific Requirements ### Permissions The app requires the following
+  permissions (automatically requested): - **Bluetooth**: Core BLE functionality -
+  **Location**: Required for BLE scanning on Android - **Network**: Expand your mesh
+  through public internet relays - **Notifications**: Message alerts and background
+  updates ### Hardware Requirements - **Bluetooth LE (BLE)**: Required for mesh networking
+  - **Android 8.0+**: API level 26 minimum - **RAM**: 2GB recommended for optimal
+  performance ## Usage ### Basic Commands - `/j #channel` - Join or create a channel
+  - `/m @name message` - Send a private message - `/w` - List online users - `/channels`
+  - Show all discovered channels - `/block @name` - Block a peer from messaging you
+  - `/block` - List all blocked peers - `/unblock @name` - Unblock a peer - `/clear`
+  - Clear chat messages - `/pass [password]` - Set/change channel password (owner
+  only) - `/transfer @name` - Transfer channel ownership - `/save` - Toggle message
+  retention for channel (owner only) ### Getting Started 1. **Install the app** on
+  your Android device (requires Android 8.0+) 2. **Grant permissions** for Bluetooth
+  and location when prompted 3. **Launch bitchat** - it will auto-start mesh networking
+  4. **Set your nickname** or use the auto-generated one 5. **Connect automatically**
+  to nearby iOS and Android bitchat users 6. **Join a channel** with `/j #general`
+  or start chatting in public 7. **Messages relay** through the mesh network to reach
+  dis'
 ---
 {% raw %}
 <p align="center">

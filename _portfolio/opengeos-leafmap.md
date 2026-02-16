@@ -2,8 +2,63 @@
 layout: project
 name: Opengeos Leafmap
 slug: opengeos-leafmap
+category: Educational-map
 image: https://studiolab.sagemaker.aws/studiolab.svg
 repo_url: https://github.com/conda-forge/leafmap-feedstock)
+indexed_content: "# Welcome to leafmap [](https://studiolab.sagemaker.aws/import/github/opengeos/leafmap/blob/master/examples/notebooks/00_key_features.ipynb)
+  [](https://colab.research.google.com/github/opengeos/leafmap/blob/master) [](https://notebook.link/github/opengeos/leafmap/tree/master/lab/?path=docs%2Fnotebooks%2F00_key_features.ipynb)
+  [](https://mybinder.org/v2/gh/opengeos/leafmap/HEAD) [](https://pypi.python.org/pypi/leafmap)
+  [](https://pepy.tech/project/leafmap) [](https://github.com/conda-forge/leafmap-feedstock)
+  [](https://anaconda.org/conda-forge/leafmap) [](https://anaconda.org/conda-forge/leafmap)
+  [](https://leafmap.org) [](https://results.pre-commit.ci/latest/github/opengeos/leafmap/master)
+  [](https://opensource.org/licenses/MIT) [](https://youtube.com/@giswqs) [](https://doi.org/10.21105/joss.03414)
+  [](https://github.com/opengeos/leafmap/blob/master/docs/assets/logo.png) **A Python
+  package for geospatial analysis and interactive mapping in a Jupyter environment.**
+  - GitHub repo: - Documentation: - PyPI: - Conda-forge: - Leafmap tutorials on YouTube:
+  - Free software: [MIT license](https://opensource.org/licenses/MIT) Join our Discord
+  server \U0001F447 [](https://discord.gg/UgZecTUq5P) ## Introduction **Leafmap**
+  is a Python package for interactive mapping and geospatial analysis with minimal
+  coding in a Jupyter environment. It is a spin-off project of the [geemap](https://geemap.org)
+  Python package, which was designed specifically to work with [Google Earth Engine](https://earthengine.google.com)
+  (GEE). However, not everyone in the geospatial community has access to the GEE cloud
+  computing platform. Leafmap is designed to fill this gap for non-GEE users. It is
+  a free and open-source Python package that enables users to analyze and visualize
+  geospatial data with minimal coding in a Jupyter environment, such as Google Colab,
+  Jupyter Notebook, JupyterLab, and [marimo](https://github.com/marimo-team/marimo).
+  Leafmap is built upon several open-source packages, such as [folium](https://github.com/python-visualization/folium)
+  and [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet) (for creating interactive
+  maps), [WhiteboxTools](https://github.com/jblindsay/whitebox-tools) and [whiteboxgui](https://github.com/opengeos/whiteboxgui)
+  (for analyzing geospatial data), and [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
+  (for designing interactive graphical user interface [GUI]). Leafmap has a toolset
+  with various interactive tools that allow users to load vector and raster data onto
+  the map without coding. In addition, users can use the powerful analytical backend
+  (i.e., WhiteboxTools) to perform geospatial analysis directly within the leafmap
+  user interface without writing a single line of code. The WhiteboxTools library
+  currently contains **500+** tools for advanced geospatial analysis, such as [GIS
+  Analysis](https://jblindsay.github.io/wbt_book/available_tools/gis_analysis.html),
+  [Geomorphometric Analysis](https://jblindsay.github.io/wbt_book/available_tools/geomorphometric_analysis.html),
+  [Hydrological Analysis](https://jblindsay.github.io/wbt_book/available_tools/hydrological_analysis.html),
+  [LiDAR Data Analysis](https://jblindsay.github.io/wbt_book/available_tools/lidar_tools.html),
+  [Mathematical and Statistical Analysis](https://jblindsay.github.io/wbt_book/available_tools/mathand_stats_tools.html),
+  and [Stream Network Analysis](https://jblindsay.github.io/wbt_book/available_tools/stream_network_analysis.html).
+  ## Statement of Need There is a plethora of Python packages for geospatial analysis,
+  such as [geopandas](https://geopandas.org) for vector data analysis and [xarray](https://docs.xarray.dev)
+  for raster data analysis. As listed at [pyviz.org](https://pyviz.org), there are
+  also many options for plotting data on a map in Python, ranging from libraries focused
+  specifically on maps like [ipyleaflet](https://ipyleaflet.readthedocs.io) and [folium](https://python-visualization.github.io/folium)
+  to general-purpose plotting tools that also support geospatial data types, such
+  as [hvPlot](https://hvplot.pyviz.org), [bokeh](http://bokeh.org), and [plotly](https://plotly.com/python).
+  While these tools provide powerful capabilities, displaying geospatial data from
+  different file formats on an interactive map and performing basic analyses can be
+  challenging, especially for users with limited coding skills. Furthermore, many
+  tools lack bi-directional communication between the frontend (browser) and the backend
+  (Python), limiting their interactivity and usability for exploring map data. Leafmap
+  addresses these challenges by leveraging the bidirectional communication provided
+  by ipyleaflet, enabling users to load and visualize geospatial datasets with just
+  one line of code. Leafmap also provides an interactive graphical user interface
+  (GUI) for loading geospatial datasets without any coding. It is designed for anyone
+  who wants to analyze and visualize geospatial data interactively in a Jupyter environment,
+  making "
 ---
 {% raw %}
 # Welcome to leafmap

@@ -2,8 +2,13 @@
 layout: project
 name: Wigggle Ui Ui
 slug: wigggle-ui-ui
+category: Uncategorized
 image: https://api.star-history.com/svg?repos=wigggle-ui/ui&type=date&legend=top-left
 repo_url: https://github.com/wigggle-ui/ui
+indexed_content: "# Wigggle UI ## Demo Visit https://wigggle-ui.vercel.app ## License
+  Licensed under the [MIT license](https://github.com/wigggle-ui/ui/blob/main/LICENSE.md).
+  ## Community Have questions, comments or feedback? [File an Issue](https://github.com/wigggle-ui/ui/issues/new).
+  ## Sponsors This project is proudly supported by: ## Star History [](https://www.star-history.com/#wigggle-ui/ui&type=date&legend=top-left)"
 ---
 {% raw %}
 # Wigggle UI

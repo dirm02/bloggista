@@ -2,8 +2,68 @@
 layout: project
 name: Neutree Comtool
 slug: Neutree-COMTool
+category: EE-kicad-3D-Robotic
 image: https://img.shields.io/github/license/neutree/comtool
 repo_url: https://github.com/Neutree/COMTool
+indexed_content: 'COMTool ======== English | [中文](./README_ZH.MD) [](https://pypi.python.org/pypi/comtool/)
+  [](https://github.com/Neutree/COMTool/releases) [](https://pypi.org/project/COMTool/)
+  [](https://sourceforge.net/projects/comtool) A cross platform serial debug tools
+  written by python -------- | Windows | Linux | Raspberry Pi | macOS | | -------
+  | ----- | ------------ | ----- | | | | | | | White theme | Dark theme | protocol
+  plugin | TCP/UDP | Terminal | Graph | | ----------- | ---------- | ---------------
+  | ------- | -------- | ----- | | | | | | | | > screenshot maybe the old version,
+  the latest may not the same totally! But better performance、more easy to use and
+  more elegant ## Features - [x] cross platform (Windows, Linux, macOS, Raspberry
+  Pi)(code with python, only if your platform support python) - [x] reliable stability,
+  no UI freeze - [x] multiple language support - [x] configs save and auto load(auto
+  save settings when exit) - [x] multiple character encode support(`ASII,GBK(Chinese),UTF-8,UTF-16`
+  etc.) - [x] multiple language support - [x] multiple connection type support, and
+  support add connection plugin - [x] serial port - [x] serial auto detect, and remember
+  last selected support - [x] serial offline auto reconnect support - [x] port baudrate(any
+  value) bytesize parity stopbits flow control etc. settings - [x] rts & dtr control
+  by hand - [x] TCP/UDP support, include client and server mode - [x] SSH client support
+  - [x] plugin support(Create plugin see [docs/plugins.md](./docs/plugins.md)), built-in
+  plugin: - [x] dbg plugin, support basic send receive debug operation - [x] basic
+  send/receive data (ascii and hex) - [x] send and receive data count - [x] clear
+  received data area - [x] auto linefeed - [x] scheduled auto send - [x] send history
+  and select send again - [x] custom most usage data items and one click to send -
+  [x] CR LF(\r\n) or LF(\n) support - [x] key shortcuts like Ctrl+Enter to send etc.
+  More see help - [x] receive and send record support add timestamp and save log to
+  file - [x] send file - [x] unix terminal style color support(e.g.`\x1b[33;42mhello\x1b[0mhello2`)
+  - [x] escape character support, like `\r \n \t \x` etc. - [x] protocol plugin, customize
+  your own protocol - [x] customize encoding and decoding method - [x] customize shortcut
+  key - [x] escape character support, like `\r \n \t \x` etc. - [x] terminal plugin,
+  basic terminal interaction - [x] graph plugin - [x] support dynamicly add graph
+  widgets, add graph widgets you need - [x] display line chart in realtime, support
+  customize protocol header(support escape characters) - [x] customable button to
+  send data, support shortcut key ## Installation There are two ways to install COMTool:
+  * [Download binary files and run](#Install-binary) : For Windows or macOS, and simple
+  usage users * [Install as python package(source code)](#Install-python-package)
+  : For Linux, or need to use plugins'' user, or users who know about python ## Install
+  binary ### Windows * Download the latest bin file at the [release page](https://github.com/Neutree/COMTool/releases)
+  or [sourceforge](https://sourceforge.net/projects/comtool/files/) * Unzip `.zip`
+  file, and click `comtool.exe` to run > And you can install by scoop, maintained
+  by [StudentWeis](https://github.com/Neutree/COMTool/issues/50) > ``` > scoop bucket
+  add Nightly https://github.com/StudentWeis/Nightly > scoop install comtool > ```
+  ### Linux Linux has too much version, so we only compile binary for ubuntu. Other
+  distribution please [install from pypi or source code](#Install-python-package).
+  If you have any idea to pack cross platform binary like flatpak or appimage, you
+  can contribute a pull request or add an issue to tell me how to > Arch Linux and
+  its derivative distributions can install from AUR(maintained by [taotieren](https://github.com/Neutree/COMTool/issues/44))：
+  > ```bash > # Release version > yay -S python-comtool > # Development version >
+  yay -S python-comtool-git > ``` * Download release at [release](https://github.com/Neutree/COMTool/releases)
+  page, and extract files from `.zip` file, and click `comtool` to run * Add current
+  user to dialout group to avoid `sudo` command ```shell sudo usermod -a -G dialout
+  $USER grep ''dialout'' /etc/group reboot #must reboot to take effect ``` ### Rasberry
+  Pi Open terminal, install dependencies with package manager: ```shell sudo apt install
+  git python3-pyqt5 python3-numpy ``` > Use package manager to install pyqt5 numpy
+  etc. This way makes install easier. > If you meet some error when install with `pip`,
+  you can try to install with package manager first. > To find the package name, the
+  trick is to use `sudo apt-cache search package_name | grep package_name` to search
+  package name, then install it. Then install other packages with `pip`: ``` git clone
+  https://github.com/Neutree/COMTool.git --depth=1 cd COMTool pip3 install . --verbose
+  # 或者 # python setup.py bdist_wheel # sudo pip3 install dist/COMTool-*.*.*-py3-none-any.whl
+  --verbose ``` * Add current user t'
 ---
 {% raw %}
 COMTool

@@ -2,8 +2,59 @@
 layout: project
 name: Gorvgoyl Clone Wars
 slug: GorvGoyl-Clone-Wars
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/GorvGoyl-Clone-Wars/img/og.png
 repo_url: https://github.com/GorvGoyl/Clone-Wars
+indexed_content: "# Clone Wars - Open source clones of popular sites > 100+ open-source
+  clones and alternatives of popular sites like Airbnb, Amazon, Instagram, Netflix,
+  TikTok, Spotify, WhatsApp, YouTube, etc. List contains source code, tutorials, demo
+  links, tech stack, and GitHub stars count. Great for learning purpose! _-Made by
+  Gourav Goyal _ ## See full tables with better view \U0001F449 [gourav.io/clone-wars](https://gourav.io/clone-wars)
+  --- I need your help to maintain this list up to date \U0001F64F. See [contribution
+  Guide](#contribution-guide). [I'm also looking for a maintainer to merge PRs of
+  new clones](https://github.com/GorvGoyl/Clone-Wars/issues/209). ### There are 2
+  tables: 1. [Clones with Tutorials Table](#clones-with-tutorials) Full-stack clones
+  with link to free tutorials. 2. [Clones / Alternatives Table](#clones-and-alternatives)
+  Two kinds of projects on this list: 1. Clones: look quite similar (UI-wise) but
+  aren't fully-functional, mostly made for learning purposes. 2. Alternatives: fully-functional
+  open-source alternatives of popular software. Seeing GitHub stars will give you
+  a rough idea about which one is which. > Read the story behind this project: [My
+  simple GitHub project went viral \U0001F680](https://gourav.io/blog/my-simple-github-project-went-viral)
+  ## Clones with Tutorials | Clone of | Demo | Tutorial / Course Site | Repo | Tech
+  Stack | | --------- | ------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------------------------------------------------------------------------------
+  | --------------------------------------------------------------- | | Airbnb | [YouTube](https://www.youtube.com/watch?v=mx1dbMzd3tU&ab_channel=CodewithAniaKub%C3%B3w&t=9039s)
+  | [YouTube](https://www.youtube.com/watch?v=mx1dbMzd3tU&ab_channel=CodewithAniaKub%C3%B3w)
+  | [GitHub backend](https://github.com/kubowania/airbnb-sanity-backend), [frontend](https://github.com/kubowania/airbnb-sanity-frontend)
+  | Sanity SDK, Next.js, React Hooks | | Instagram | [YouTube](https://www.youtube.com/watch?v=1hPgQWbWmEk&t=5h2902s)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/build-an-instagram-clone-with-react-native-firebase-firestore-redux-and-expo/)
+  | [GitHub](https://github.com/SimCoderYoutube/InstagramClone) | React Native, Firebase
+  Firestore, Firebase storage, Redux, Expo | | Moodle | [YouTube](https://www.youtube.com/watch?v=JIFqqdRxmVo&t=45s)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/django-rest-framework-react-tutorial/)
+  | [GitHub](https://github.com/justdjango/teach-me-django) | React, Django Rest Framework
+  | | Netflix | [YouTube](https://www.youtube.com/watch?v=g8COh40v2jU&t=8241s) | [YouTube](https://www.youtube.com/watch?v=g8COh40v2jU)
+  | [GitHub](https://github.com/kubowania/netflix-clone-graphql-datastax) | React,
+  Apollo GraphQL, DataStax Astra, Netlify | | Todoist | [todoist-preview.png](https://raw.githubusercontent.com/karlhadwen/todoist/master/todoist-preview.png)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/react-firebase-todoist-clone/)
+  | [GitHub](https://github.com/karlhadwen/todoist) | React, Firebase, React, SCSS,
+  BEM naming methodology | | Twitter | [YouTube](https://www.youtube.com/watch?v=la-0ulfn0_M&t=8864s)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/create-a-cross-platform-twitter-clone-with-vue-js/)
+  | [GitHub](https://github.com/dannyconnell/qwitter) | Vue.js, Quasar Framework,
+  Firebase | | WhatsApp | [YouTube](https://www.youtube.com/watch?v=988UZFB0heA&t=5h274s)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/native-android-app-tutorial-whatsapp-clone/)
+  | [GitHub](https://github.com/SimCoderYoutube/WhatsAppClone) | Android Studio, Firebase,
+  Genymotion | | Discord | [YouTube](https://www.youtube.com/watch?v=PtQiiknWUcI)
+  | [Youtube (Traversy Media)](https://www.youtube.com/watch?v=PtQiiknWUcI) | [GitHub](https://github.com/divanov11/StudyBud/)
+  | Django | | YouTube | [YouTube](https://youtu.be/FHTbsZEJspU?t=6) | [Youtube (JavaScript
+  Mastery)](https://www.youtube.com/watch?v=FHTbsZEJspU) | [GitHub](https://github.com/adrianhajdin/project_youtube_clone)
+  | React JS, Rapid API, Material UI 5 | | YouTube | [YouTube](https://www.youtube.com/watch?v=whuIf33v2Ug&t=189s)
+  | [freeCodeCamp](https://www.freecodecamp.org/news/learn-how-to-use-the-yii2-php-framework-to-create-a-youtube-clone/)
+  | [GitHub](https://github.com/thecodeholic/Yii2-YouTube-Clone) | Yii2 PHP Framework
+  | | YouTube | [YouTube](https://www.youtube.com/watch?v=WBlScMZgn3w&t=9086s) | [YouTube](https://www.youtube.com/playlist?list=PLA7YMGupLhlF0N0eQfJKAq1j9Xa3xuiM8)
+  | [GitHub](https://github.com/Breens-Mbaka/Youtube-Clone) | Android Studio, Kotlin,
+  XML, YouTube API | --- ## Clones and Alternatives _(scroll right on table to see
+  all 5 columns)_ | Clone/Alt of | Demo | Repo | Tech stack | Repo Stars | | ----------"
 ---
 {% raw %}
 ![clone wars](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/GorvGoyl-Clone-Wars/img/og.png)

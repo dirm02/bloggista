@@ -2,8 +2,60 @@
 layout: project
 name: Kubero Dev Kubero
 slug: kubero-dev-kubero
+category: Uncategorized
 image: https://raw.githubusercontent.com/kubero-dev/docs/refs/heads/main/static/assets/logo/kubero-logo-horizontal.png
 repo_url: https://github.com/kubero-dev/kubero
+indexed_content: "--- [](https://github.com/kubero-dev/kubero/blob/main/LICENSE) [](https://github.com/kubero-dev/kubero/releases/latest)
+  [](https://discord.gg/tafRPMWS4r) [](https://github.com/kubero-dev/kubero/releases/latest)
+  [](https://demo.kubero.dev) [中文翻译](README.zh-CN.md) [日本語訳](README.ja.md) Kubero
+  [pronounced: Kube Hero] is a self-hosted PaaS (Platform as a Service) that allows
+  any developer to deploy their application on Kubernetes without specialized knowledge.
+  Kubero follows the principles of 12-factor apps. It is possible to run apps based
+  on existing containers or from source code. More [Screenshots](https://www.kubero.dev/docs/screenshots)
+  and a full video on [YouTube](https://www.youtube.com/watch?v=kmqhddc6UlI) ## Features
+  ([DEMO](https://demo.kubero.dev)) - **Docker Deployments** Deploy Docker containers
+  on Kubernetes without needing Helm charts. - **App Templates (+160)** Deploy popular
+  applications like WordPress and Grafana with ready-to-use [templates](https://www.kubero.dev/templates/).
+  - **CI/CD Pipelines** Create unlimited pipelines with up to 4 separate staging environments
+  for all your applications. - **GitOps Review Apps** Automatically build, start,
+  and clean up review apps when opening or closing pull requests. - **Automatic Redeployments**
+  Trigger app redeployments on pushes to branches or tags. - **Add-ons Integration**
+  Seamlessly deploy add-ons such as PostgreSQL and Redis alongside your applications.
+  - **API & CLI** Integrate seamlessly with existing tools and CI/CD workflows. -
+  **Metrics & Monitoring** Access integrated metrics to monitor application health.
+  - **Notifications** Get build and deployment updates via Discord, Slack, or Webhooks.
+  - **Vulnerability Scans** Perform scheduled or triggered scans for running applications.
+  - **Application Logs** View logs directly from the web UI for easy monitoring. -
+  **Safe Restarts** Restart applications safely and easily through the web UI. - **Web
+  Console** Use the built-in container web console for direct access. - **Scheduled
+  Tasks** Easily create and manage cronjobs. - **Multi-Tenancy** Support for managing
+  multiple tenants. - **Single Sign-On (SSO)** Authenticate securely with GitHub and
+  OAuth2. - **Basic Auth** Configure Basic Auth for your applications with ease. ##
+  Basic Concept Kubero is Kubernetes native and runs with two containers on any Kubernetes
+  instance (kubero-ui and Operator). All data is stored on your Kubernetes etcd without
+  an extra database. ## Add-ons | | Addon | Maintainer | Built in* | |-------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------------------------------------------------------------------------|-----------|
+  | | MySQL | [groundhog2k](https://github.com/groundhog2k/helm-charts/tree/master/charts/mysql)
+  | ✅ | | | PostgreSQL | [groundhog2k](https://github.com/groundhog2k/helm-charts/tree/master/charts/postgres)
+  | ✅ | | | Redis | [groundhog2k](https://github.com/groundhog2k/helm-charts/tree/master/charts/redis)
+  | ✅ | | | MongoDB | [groundhog2k](https://github.com/groundhog2k/helm-charts/tree/master/charts/mongodb)
+  | ✅ | | | RabbitMQ | [groundhog2k](https://github.com/groundhog2k/helm-charts/tree/master/charts/rabbitmq)
+  | ✅ | | | CouchDB | [Apache](https://apache.github.io/couchdb-helm) | ✅ | | | Haraka
+  Mail Server | [Kubero](https://github.com/kubero-dev/haraka-docker) | ✅ | | | MySQL
+  | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/mysql) | ⚠️ (deprecated)
+  | | | PostgreSQL | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
+  | ⚠️ (deprecated) | | | Redis | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/redis)
+  | ⚠️ (deprecated) | | | MongoDB | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/mongodb)
+  | ⚠️ (deprecated) | | | Elasticsearch | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch)
+  | ⚠️ (deprecated) | | | Kafka | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/kafka)
+  | ⚠️ (deprecated) | | | Memcache | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/memcached)
+  | ⚠️ (deprecated) | | | RabbitMQ | [Bitnami](https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq)
+  | ⚠️ (deprecated) | | | PostgreSQL HA | [CloudNative](https://github.com/cloudnative-pg/cloudnative-pg)
+  | | | | Cludflare Tunnels | [Adianth](https://github.com/adyanth/cloudflare-operator)
+  | | | | Minio | [Minio](https://artifacthub.io/packages/olm/community-operators/minio-operator)
+  | | | | Percona MongoDB Cluster | [Percona](https://artifacthub.io/packages/olm/community-operators/mongodb-operator)
+  | | | | Crunchy Postgres Cluster | [Crunchy Data](https://artifacthub.io/packages/olm/community-operators/postgresql)
+  | | | | Redis Cluster | [Opstree](https://artifacthub.io/packages/olm/community-operators/redis-operator)
+  | | | | CockroachDB | [CockroachDB](https://artifacthub.io/packages/olm/community-operators/cockroachd"
 ---
 {% raw %}
 ![](https://raw.githubusercontent.com/kubero-dev/docs/refs/heads/main/static/assets/logo/kubero-logo-horizontal.png)

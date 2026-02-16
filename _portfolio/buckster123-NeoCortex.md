@@ -2,8 +2,68 @@
 layout: project
 name: Buckster123 Neocortex
 slug: buckster123-NeoCortex
+category: AI-automation-web2-3SmartC-Agent
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/buckster123-NeoCortex/assets/neo-cortex-banner.jpg
 repo_url: https://github.com/buckster123/NeoCortex
+indexed_content: 'Neo-Cortex Unified Memory System for AI Agents Give your AI persistent
+  memory, multi-agent collaboration, and session continuity Features • Quick Start
+  • Installation • Usage • API • Contributing --- ## Why Neo-Cortex? AI agents forget
+  everything between sessions. They can''t share knowledge with other agents. They
+  don''t know what they were working on yesterday. **Neo-Cortex fixes this.** ```
+  ┌─────────────────────────────────────────────────────────────────┐ │ NEO-CORTEX
+  │ ├───────────────┬───────────────┬───────────────┬────────────────┤ │ SHARED │
+  SESSION │ MEMORY │ UNIFIED │ │ MEMORY │ CONTINUITY │ HEALTH │ STORAGE │ │ │ │ │
+  │ │ Multi-agent │ Session │ Decay & │ Local or │ │ memory with │ continuity │ promotion
+  │ Cloud │ │ convergence │ tracking │ system │ backends │ └───────────────┴───────────────┴───────────────┴────────────────┘
+  ``` ### Key Features - **Knowledge Base** - Ingest markdown docs, search 920+ chunks
+  across 20+ topics - **Shared Memory** - Multi-agent memory with private, shared,
+  and thread realms - **Session Continuity** - Leave session notes for your future
+  self across sessions - **Memory Health** - Automatic decay, promotion, and deduplication
+  - **Convergence Detection** - Know when multiple agents agree (HARMONY/CONSENSUS)
+  - **Web Dashboard** - Visual UI for browsing knowledge, memory, sessions, agents,
+  and health - **Dual Backend** - ChromaDB for local, pgvector for cloud deployments
+  - **Multiple Interfaces** - CLI, MCP Server, REST API, Python SDK, Web Dashboard
+  --- ## Quick Start ### 30-Second Setup ```bash # Clone the repo git clone https://github.com/buckster123/NeoCortex.git
+  cd NeoCortex # Install dependencies pip install chromadb sentence-transformers fastapi
+  uvicorn mcp # Run the CLI ./cortex stats ``` ### Your First Memory ```bash # Post
+  a memory to shared space ./cortex post "Neo-Cortex is operational!" --visibility
+  shared # Search your memories ./cortex search "operational" # Save a session note
+  for next time ./cortex session leave "Set up Neo-Cortex successfully" --priority
+  HIGH # Check health ./cortex health ``` --- ## Installation ### Requirements - Python
+  3.10+ - ChromaDB (local) or PostgreSQL with pgvector (cloud) ### From Source ```bash
+  git clone https://github.com/buckster123/NeoCortex.git cd NeoCortex pip install
+  -r requirements.txt ``` ### Dependencies ```bash # Core pip install chromadb sentence-transformers
+  # For REST API pip install fastapi uvicorn # For MCP Server pip install mcp # For
+  cloud (pgvector) pip install asyncpg pgvector openai ``` --- ## Usage ### CLI ```bash
+  # Statistics ./cortex stats # Memory operations ./cortex post "Your message" --visibility
+  shared --tags memory,important ./cortex search "query" --agent CLAUDE ./cortex agents
+  ./cortex convergence "topic to check" # Session notes ./cortex session leave "Session
+  summary" --priority HIGH ./cortex session get # Memory health ./cortex health ./cortex
+  export > backup.json ./cortex import backup.json ``` ### Python SDK ```python from
+  service.cortex_engine import CortexEngine # Initialize cortex = CortexEngine(backend=''chroma'')
+  # Shared Memory cortex.memory_store("Hello world!", visibility="shared", tags=["greeting"])
+  results = cortex.memory_search("hello", n_results=5) # Session Continuity cortex.session_save(
+  session_summary="Completed the setup", key_discoveries=["Neo-Cortex works great"],
+  unfinished_business=["Add more features"], priority="HIGH" ) sessions = cortex.session_recall(limit=5)
+  # Memory Health report = cortex.health_report() cortex.run_promotions("cortex_shared")
+  # Stats stats = cortex.stats() print(f"Total memories: {stats[''total_memories'']}")
+  ``` ### MCP Server (Claude Code) Add to your `~/.claude.json`: ```json { "mcpServers":
+  { "neo-cortex": { "command": "/path/to/NeoCortex/cortex-mcp" } } } ``` Then in Claude
+  Code, you''ll have access to 16 memory tools. See [INTEGRATE.md](INTEGRATE.md) for
+  a complete guide on adding neo-cortex session continuity to any project. ### REST
+  API ```bash # Start the server ./cortex-api # Or with uvicorn uvicorn service.api_server:app
+  --host 0.0.0.0 --port 8766 ``` - OpenAPI docs at `http://localhost:8766/docs` -
+  Web dashboard at `http://localhost:8766/ui` #### Endpoints | Method | Endpoint |
+  Description | |--------|----------|-------------| | GET | `/stats` | Memory statistics
+  | | POST | `/memory/store` | Store a memory | | GET | `/memory/search?q=...` | Search
+  memories | | POST | `/memory/convergence` | Detect convergence | | GET | `/knowledge/search?q=...`
+  | Search knowledge base | | GET | `/knowledge/topics` | List topics with counts
+  | | GET | `/knowledge/stats` | Knowledge base stats | | POST | `/knowledge/ingest`
+  | Upload & ingest markdown file | | POST | `/knowledge/ingest-text` | Ingest raw
+  text content | | DELETE | `/knowledge/topic/{topic}` | Delete a topic | | GET |
+  `/agents` | List agents | | POST | `/agents/register` | Register new agent | | POST
+  | `/sessions/save` | Save session note | | GET | `/sessions` | Get recent sessions
+  | | GET | `/me'
 ---
 {% raw %}
 <p align="center">

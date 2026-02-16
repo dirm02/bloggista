@@ -2,8 +2,60 @@
 layout: project
 name: Bobbyiliev 101 Linux Commands
 slug: bobbyiliev-101-linux-commands
+category: Educational-map
 image: https://api.star-history.com/svg?repos=bobbyiliev/101-linux-commands&type=date&legend=top-left
 repo_url: https://github.com/bobbyiliev/101-linux-commands
+indexed_content: "## \U0001F4BB ++101 Linux commands Open-source eBook This is an
+  open-source eBook with 101 Linux commands that everyone should know. No matter if
+  you are a DevOps/SysOps engineer, developer, or just a Linux enthusiast, you will
+  most likely have to use the terminal at some point in your career. **Make sure to
+  star the repository** ⭐ If you need a Linux virtual machine to test these commands
+  on, use the following referral link to get a [free $200 Credit For DigitalOcean](https://m.do.co/c/2a9bba940f39)!
+  ## Introduction to Linux eBook If you are looking for a comprehensive guide for
+  beginners, check out this eBook: [Introduction to Linux eBook](https://leanpub.com/introduction-to-linux)
+  ## \U0001F4D9 Online eBook An online copy :zap:\U0001F310 of this ebook is available
+  [**here** \U0001F4D9](https://bobbyiliev.github.io/101-linux-commands/). ## \U0001F53D
+  Download links ### \U0001F4DA Multiple Formats Available This eBook is now available
+  in multiple formats to suit different reading preferences: - **\U0001F4C4 PDF (Light
+  Theme)**: [Download PDF](https://github.com/bobbyiliev/101-linux-commands/releases/latest/download/101-linux-commands-light.pdf)
+  - Perfect for printing and desktop reading - **\U0001F319 PDF (Dark Theme)**: [Download
+  PDF](https://github.com/bobbyiliev/101-linux-commands/releases/latest/download/101-linux-commands-dark.pdf)
+  - Ideal for dark mode readers - **\U0001F4F1 EPUB**: [Download EPUB](https://github.com/bobbyiliev/101-linux-commands/releases/latest/download/101-linux-commands.epub)
+  - Compatible with e-readers, tablets, and mobile devices - **\U0001F310 HTML**:
+  [Download HTML](https://github.com/bobbyiliev/101-linux-commands/releases/latest/download/101-linux-commands.html)
+  - Single-page web version ### \U0001F504 Latest Releases Visit our [Releases page](https://github.com/bobbyiliev/101-linux-commands/releases)
+  to download the latest versions or browse previous releases. ## Star History [](https://www.star-history.com/#bobbyiliev/101-linux-commands&type=date&legend=top-left)
+  --- # Content - [Basics](#basics) - [File Hierarchy Standard (FHS)](#file-hierarchy-standard-fhs)
+  - [Commands](#commands) - [Disk and File System Management](#disk-and-file-system-management)
+  - [General Disk Manipulation (non-LVM)](#general-disk-manipulation-non-lvm) - [Globs
+  (Wildcards)](#globs-wildcards) - [Regex](#regex) - [Stream redirection](#stream-redirection)
+  - [Text Readers & Editors](#text-readers--editors) - [Less](#less) - [VI](#vi) -
+  [User and Group Management](#user-and-group-management) - [File System Permissions](#file-system-permissions)
+  - [SSH](#ssh) - [Cronjobs](#cronjobs) - [Package Management](#package-management)
+  - [RPM](#rpm) - [YUM](#yum) - [\U0001F4C3 List of commands by category:](#-list-of-commands-by-category)
+  - [Directory Navigation](#directory-navigation) - [File Commands](#file-commands)
+  - [File and Directory Manipulation](#file-and-directory-manipulation) - [Package
+  archive and compression tools](#package-archive-and-compression-tools) - [System
+  commands](#system-commands) - [Networking Commands](#networking-commands) - [Package
+  Management](#package-management-1) - [User Information commands](#user-information-commands)
+  - [Session commands](#session-commands) - [Getting Help](#getting-help) - [Applications](#applications)
+  - [\U0001F4C3 List of commands by chapter:](#-list-of-commands-by-chapter) - [\U0001F517Links](#links)
+  - [\U0001F4D6Other eBooks](#other-ebooks) - [\U0001F932Contributing](#contributing)
+  --- # Basics ## File Hierarchy Standard (FHS) | Path | Content | | -------- | -----------------------------------
+  | | `/bin` | Binaries (User) | | `/boot` | Static boot loader files | | `/etc` |
+  Host specific configs | | `/lib` | Shared libraries and kernel modules | | `/sbin`
+  | Binaries (System/root) | | `/var` | Varying files (e.g. Logs) | | `/usr` | 3rd
+  party software | | `/proc` | Pseudo file system | | `/sys` | Pseudo file system
+  | | `/mnt` | Mountpoint for internal drives | | `/media` | Mountpoint for external
+  drives | | `/home` | User homes | | `/run` | PID files of running processes | ---
+  ## Commands **File System Commands** | Command | Options | Description | | ---------------------------------------------------------------------------------------------------------------
+  | ---------------- | ------------------------------------------------- | | [`cd`](https://github.com/bobbyiliev/101-linux-commands/blob/main/ebook/en/content/002-the-cd-command.md)
+  | `-` | Navigate to last dir | | | `~` | Navigate to home | | | `~username` | Navigate
+  to home of specified user | | [`pwd`](https://github.com/bobbyiliev/101-linux-commands/blob/main/ebook/en/content/006-the-pwd-command.md)
+  | | Print working dir | | [`ls`](https://github.com/bobbyiliev/101-linux-commands/blob/main/ebook/en/content/001-the-ls-command.md)
+  | | Print dir content | | | `-l` | Format as list | | | `-a` | Show hidden items
+  (`-A` without `.` and `..`) | | | `-r` | Invert order | | | `-R` | Recurse | | |
+  `-S` | Sort by size | | | `-t` | Sort by date modified | | [`mkdir`](https://github.com/bobbyiliev/101-linux-commands/blob/main/ebook/en/content/014-the-mkdir-c"
 ---
 {% raw %}
 <p align="center"><img src="https://raw.githubusercontent.com/bobbyiliev/101-linux-commands/main/ebook/en/assets/cover.jpg" height="450" width="auto"></p>

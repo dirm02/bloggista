@@ -2,8 +2,71 @@
 layout: project
 name: Drytrix Timetracker
 slug: DRYTRIX-TimeTracker
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/DRYTRIX-TimeTracker/assets/screenshots/Dashboard.png
 repo_url: https://github.com/drytrix/TimeTracker.git
+indexed_content: "# TimeTracker ### Professional Time Tracking & Project Management
+  for Teams **Track time. Manage projects. Generate invoices. All in one place.**
+  [\U0001F195 What's New](#-whats-new) • [\U0001F680 Quick Start](#-quick-start) •
+  [✨ Features](#-features) • [\U0001F4F8 Screenshots](#-screenshots) • [\U0001F4D6
+  Getting Started](docs/GETTING_STARTED.md) • [\U0001F4DA Documentation](docs/) •
+  [\U0001F4CB Changelog](CHANGELOG.md) • [\U0001F433 Deploy](#-deployment) --- ##
+  \U0001F3AF What is TimeTracker? TimeTracker is a **self-hosted, web-based time tracking
+  application** designed for freelancers, teams, and businesses who need professional
+  time management with complete control over their data. **Perfect for:** - \U0001F4BC
+  **Freelancers** tracking billable hours across multiple clients - \U0001F465 **Small
+  Teams** managing projects and tracking productivity - \U0001F3E2 **Agencies** needing
+  detailed reporting and client billing - \U0001F512 **Privacy-focused organizations**
+  wanting self-hosted solutions You can [support the project and purchase a key](https://timetracker.drytrix.com/support.html)
+  to hide donate prompts in your instance. --- ## \U0001F6E0️ Technology Stack TimeTracker
+  is built with modern, reliable technologies: ### Backend - **Python 3.11+** — Core
+  programming language - **Flask 3.0.0** — Web framework - **SQLAlchemy 2.0.23** —
+  ORM and database toolkit - **Flask-SocketIO 5.3.6** — WebSocket support for real-time
+  updates - **Flask-Migrate 4.0.5** — Database migrations - **Flask-Babel 4.0.0**
+  — Internationalization (i18n) ### Frontend - **HTML5, JavaScript (ES6+)** — Modern
+  web standards - **Tailwind CSS 3.3.5** — Utility-first CSS framework - **Chart.js**
+  — Interactive data visualization - **Command Palette (cmdk)** — Keyboard-driven
+  navigation - **Framer Motion** — Smooth animations and transitions ### Database
+  - **PostgreSQL** — Production database (recommended) - **SQLite** — Development
+  and testing database ### Deployment & Infrastructure - **Docker & Docker Compose**
+  — Containerization and orchestration - **Nginx** — Reverse proxy and HTTPS termination
+  - **Gunicorn** — Production WSGI server - **Eventlet** — Async networking library
+  ### Key Libraries & Tools - **WeasyPrint** — PDF generation for invoices - **Flask-WTF**
+  — Form handling and CSRF protection - **Authlib** — OAuth/OIDC authentication -
+  **APScheduler** — Background task scheduling - **Prometheus Client** — Metrics collection
+  - **Sentry SDK** — Error monitoring (optional) - **PostHog** — Product analytics
+  (optional) ### Development & Testing - **pytest** — Testing framework - **black**
+  — Code formatting - **flake8** — Linting - **coverage** — Test coverage analysis
+  **\U0001F4D6 For detailed architecture information, see [Project Structure](docs/development/PROJECT_STRUCTURE.md)**
+  --- ## \U0001F195 What's New TimeTracker has been continuously enhanced with powerful
+  new features! Here's what's been added recently: > **\U0001F4CB For complete release
+  history, see [CHANGELOG.md](CHANGELOG.md)** **Latest Release: v4.19.0** (February
+  2025). Version is defined in `setup.py` (single source of truth). - \U0001F4F1 **Native
+  Mobile & Desktop Apps** — Flutter mobile app (iOS/Android) and Electron desktop
+  app with time tracking, offline support, and API integration ([Build Guide](BUILD.md),
+  [Docs](docs/mobile-desktop-apps/README.md)) - \U0001F4CB **Project Analysis & Documentation**
+  — Comprehensive project analysis and documentation updates - \U0001F527 **Version
+  Consistency** — Fixed version inconsistencies across documentation files **Previous
+  Releases:** - **v4.14.0** (January 2025) — Documentation and technology stack updates
+  - **v4.6.0** (December 2025) — Comprehensive Issue/Bug Tracking System **Recent
+  Releases:** - **v4.5.1** — Performance optimizations and version management improvements
+  - **v4.5.0** — Advanced Report Builder, quick task creation, Kanban enhancements,
+  and PWA improvements - **v4.4.1** — Dashboard cache fixes and custom reports enhancements
+  - **v4.4.0** — Project custom fields, file attachments, and salesman-based report
+  splitting ### \U0001F3AF **Major Feature Additions** #### \U0001F9FE **Complete
+  Invoicing System** - **Professional Invoice Generation** — Convert tracked time
+  directly into polished invoices - **PDF Export** — Generate beautiful, branded PDF
+  invoices with your company logo - **Multi-Currency Support** — Invoice clients in
+  their preferred currency - **Tax Calculations** — Automatic tax computation with
+  configurable rates - **Invoice Status Tracking** — Monitor draft, sent, paid, and
+  overdue invoices - **Recurring Invoices** — Automate regular billing cycles - **Email
+  Integration** — Send invoices directly to clients from the platform - **Peppol e-Invoicing
+  (BIS Billing 3.0)** — Send invoices via Peppol through your access point ([setup
+  guide](docs/admin/configuration/PEPPOL_EINVOICING.md)) #### \U0001F4CB **Advanced
+  Task Management** - **Full Task System** — Create, assign, and track tasks with
+  priorities and due dates - **Kanban Board** — Visual drag-and-drop task management
+  with customizable columns - **Task Comments** — Collaborate with threaded comments
+  on tasks - **Task Activity Tracking** — See"
 ---
 {% raw %}
 # TimeTracker

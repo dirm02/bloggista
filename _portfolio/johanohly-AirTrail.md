@@ -2,8 +2,42 @@
 layout: project
 name: Johanohly Airtrail
 slug: johanohly-AirTrail
+category: Serv&Prod-Tools
 image: https://img.shields.io/github/actions/workflow/status/JohanOhly/AirTrail/build.yml?logo=github&style=for-the-badge
 repo_url: https://github.com/johanohly/AirTrail
+indexed_content: "AirTrail A web application that allows users to track their flights
+  and view their flight history. ## ✨ Features - **World Map**: View all your flights
+  on an interactive world map. - **Flight History**: Keep track of all your flights
+  in one place. - **Statistics**: Get insights into your flight history with statistics.
+  - **Multiple Users**: Manage multiple users, share flights among them, secure your
+  data with user authentication and integrate with your OAuth provider. - **Responsive
+  Design**: Use the application on any device with a responsive design. - **Dark Mode**:
+  Switch between light and dark mode. - **Import Flights**: Import flights from various
+  sources including MyFlightRadar24, App in the Air, JetLog, TripIt, Flighty and byAir.
+  ## \U0001F680 Getting Started - [Documentation](https://airtrail.johan.ohly.dk/docs/overview/introduction)
+  - [Installation](https://airtrail.johan.ohly.dk/docs/overview/quick-start) - [About](https://airtrail.johan.ohly.dk/docs/overview/introduction)
+  - [Demo](https://demo.airtrail.johan.ohly.dk) - [Contributing](https://airtrail.johan.ohly.dk/docs/overview/contributing)
+  ## \U0001F91D Contributing Want to contribute to AirTrail? Awesome! Check out the
+  [contributing documentation](CONTRIBUTING.md) to get started. If you find an issue,
+  please report it on the [issue tracker](https://github.com/johanohly/AirTrail/issues/new/choose).
+  ## Build Status [](https://github.com/JohanOhly/AirTrail/releases/latest) #### Sonarcloud
+  Quality metrics [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail)
+  [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail) [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail)
+  [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail) [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail)
+  [](https://sonarcloud.io/summary/new_code?id=johanohly_AirTrail) #### FOSSA license
+  and security scans [](https://app.fossa.com/projects/git%2Bgithub.com%2Fjohanohly%2FAirTrail?ref=badge_shield&issueType=license)
+  [](https://app.fossa.com/projects/git%2Bgithub.com%2Fjohanohly%2FAirTrail?ref=badge_shield&issueType=security)
+  [](https://app.fossa.com/projects/git%2Bgithub.com%2Fjohanohly%2FAirTrail?ref=badge_small)
+  #### OpenSSF best practices [](https://bestpractices.coreinfrastructure.org/projects/9689)
+  [](https://scorecard.dev/viewer/?uri=github.com/johanohly/AirTrail) ## Star History
+  ## Acknowledgements ### Data Sources > [Airport Data](https://ourairports.com) >
+  [Country Borders](https://gisco-services.ec.europa.eu/distribution/v2/countries/geojson/CNTR_RG_01M_2024_4326.geojson)
+  > [Country Flags](https://flagpedia.net) ### Airline Icons The airline icon list
+  ([`static/airlines`](static/airlines)) is based on [Soaring Symbols](https://github.com/anhthang/soaring-symbols)
+  by Anh Thang, licensed under the MIT License. ### Logo The logo is from Lucide,
+  which is a free icon pack that can be found [here](https://www.lucide.dev/). > Copyright
+  (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT).
+  All other copyright ( > c) for Lucide are held by Lucide Contributors 2022."
 ---
 {% raw %}
 <div align="center">

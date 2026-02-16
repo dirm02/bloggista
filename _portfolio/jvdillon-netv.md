@@ -2,8 +2,70 @@
 layout: project
 name: Jvdillon Netv
 slug: jvdillon-netv
+category: Entertainment tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/jvdillon-netv/screenshots/epg.png
 repo_url: https://github.com/jvdillon/netv
+indexed_content: "# neTV A minimal, self-hosted web interface for IPTV streams. ##
+  Why This Exists We built neTV because we couldn't find a clean, lightweight interface
+  for Xtream IPTV services. Existing solutions were either bloated media centers or
+  clunky apps that didn't work well across devices. **neTV is intentionally minimal.**
+  It does one thing: play your IPTV streams with a clean UI that works on desktop,
+  tablet, mobile, and Chromecast. We also prioritize **keyboard navigation** throughout
+  (though still rough around the edges). The entire app is theoretically usable with
+  just arrow keys, Enter, and Escape -- perfect for media PCs, HTPCs, or anyone who
+  prefers keeping hands on the keyboard (like me). ### Disclaimer This is a **player
+  only** -- it does not provide any content. You must have your own IPTV subscription
+  that provides Xtream Codes API access or M3U playlists. Users are responsible for
+  ensuring they have legal rights to access any content through their IPTV providers.
+  ## Features - **Live TV** with EPG grid guide - **Movies & Series** with metadata,
+  seasons, episodes - **AI Upscale** - Real-time 4x upscaling via TensorRT (720p →
+  4K @ 85fps) - **Chromecast** support (HTTPS required) - **Closed captions** with
+  style customization - **Search** across all content (supports regex) - **Favorites**
+  with drag-and-drop ordering - **Resume playback** for VOD content - **Responsive**
+  - works on desktop, tablet, mobile - **Keyboard navigation** - 10-foot UI friendly
+  ### Transcoding Extensively optimized for minimal latency and CPU usage: - **Smart
+  passthrough** - h264+aac streams remux without re-encoding (zero CPU) - **Full GPU
+  pipeline** - NVDEC decode → NVENC/VAAPI encode, CPU stays idle - **Probe caching**
+  - Streams probed once, series episodes share probe data - **Interlace detection**
+  - Auto-deinterlaces OTA/cable, skips progressive - **Smart seeking** - Reuses segments
+  for backward seeks, only transcodes gaps - **Session recovery** - VOD sessions survive
+  restarts, resume where you left off - **HTTPS passthrough** - Auto-proxies HTTP
+  streams when behind HTTPS ### 4K AI Upscaling Real-time 4x upscaling using Real-ESRGAN
+  via TensorRT. Transforms 480p/720p/1080p content to pristine 4K at 85fps (RTX 5090).
+  Perfect for older shows and low-bitrate streams. | Before (720p source) | After
+  (4K AI Upscale) | |---|---| | | | | | | | | | Requires Nvidia GPU and the [AI Upscale
+  Docker image](#ai-upscale-image-nvidia-gpu). The Settings page shows AI Upscale
+  options when TensorRT engines are available. ## Alternatives If you want a full-featured
+  media center, you might be happier with: - **[Jellyfin](https://jellyfin.org/)**
+  - Free, open-source media system - **[Emby](https://emby.media/)** - Media server
+  with IPTV support - **[Plex](https://plex.tv/)** - Popular media platform with live
+  TV These are excellent, mature projects with large communities. neTV exists for
+  users who find them overkill and just want a simple IPTV player. | | neTV | [nodecast-tv]
+  | [Jellyfin] | [Emby] | [Plex] | |---|---|---|---|---|---| | **Focus** | IPTV |
+  IPTV | General media | General media | General media | | **Xtream Codes** | ✅ |
+  ✅ | ❌ | ❌ | ❌ | | **M3U playlists** | ✅ | ✅ | ✅ | ✅ | ⚠️ Via [xTeVe] | | **XMLTV
+  EPG** | ✅ | ⚠️ Via provider | ✅ | ✅ | ✅ | | **Local media** | ❌ | ❌ | ✅ | ✅ | ✅
+  | | **Live TV** | ✅ | ✅ | ✅ | ✅ | ✅ | | **VOD (movies/series)** | ✅ | ✅ | ✅ | ✅
+  | ✅ | | **DVR recording** | ❌ | ❌ | ✅ | ✅ | ⚠️ Pass | | **Catchup/timeshift** |
+  ❌ | ❌ | ⚠️ Plugin | ⚠️ Plugin | ❌ | | **Live rewind buffer** | ✅ | ❌ | ⚠️ Via DVR
+  | ⚠️ Via DVR | ⚠️ Via DVR | | **Resume playback** | ✅ | ❌ | ✅ | ✅ | ✅ | | **Multi-user**
+  | ✅ | ✅ | ✅ | ✅ | ✅ | | **User roles** | ⚠️ Admin/viewer | ⚠️ Admin/viewer | ✅ Granular
+  | ✅ Granular | ✅ Granular | | **Stream limits** | ✅ Per-user, per-source | ❌ | ⚠️
+  Per-user | ⚠️ Per-user | ⚠️ Per-user | | **Library permissions** | N/A | N/A | ✅
+  Per-library | ✅ Per-library | ✅ Per-library | | **Favorites** | ✅ Drag-and-drop
+  | ✅ | ✅ | ✅ | ✅ | | **Search** | ✅ Regex | ✅ Basic | ✅ Basic | ✅ Basic | ✅ Basic
+  | | **Video transcoding** | ✅ | ❌ | ✅ | ✅ | ✅ | | **Audio transcoding** | ✅ | ✅
+  | ✅ | ✅ | ✅ | | **Transcode only if needed** | ✅ Auto mode | ❌ | ⚠️ Per-library
+  | ⚠️ Per-library | ⚠️ Per-client | | **NVENC** | ✅ | ❌ | ✅ | ✅ | ⚠️ Pass | | **VAAPI**
+  | ✅ | ❌ | ✅ | ✅ | ⚠️ Pass | | **QSV** | ✅ | ❌ | ✅ | ✅ | ⚠️ Pass | | **AI Upscale
+  (4x)** | ✅ TensorRT | ❌ | ⚠️ Plugin | ❌ | ❌ | | **Software fallback** | ✅ | ❌ Browser
+  | ✅ | ✅ | ✅ | | **Legacy GPU** | ✅ Any | ❌ No (browser) | ✅ Any | ✅ Any | ⚠️ Driver
+  450+ | | **ffprobe caching** | ✅ Dynamic | ❌ None | ⚠️ Offline | ⚠️ Offline | ⚠️
+  Offline | | **Episode probe reuse** | ✅ MRU | ❌ No | ⚠️ Per-file | ⚠️ Per-file |
+  ⚠️ Per-file | | **Session recovery** | ✅ Yes | ❌ No | ⚠️ Via DB | ⚠️ Via DB | ⚠️
+  Via DB | | **Auto deinterlace** | ✅ Yes | ❌ No | ⚠️ Manual | ⚠️ Manual | ⚠️ Manual
+  | | **Subtitles** | ⚠️ WebVTT | ❌ No | ✅ Full | ✅ Full | ✅ Full | | **Chromecast**
+  | ✅ Yes | ❌ No | ✅ Yes | ✅ Yes | ✅ Yes | "
 ---
 {% raw %}
 # neTV

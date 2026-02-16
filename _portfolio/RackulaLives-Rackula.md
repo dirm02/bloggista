@@ -2,8 +2,34 @@
 layout: project
 name: Rackulalives Rackula
 slug: RackulaLives-Rackula
+category: ServerTools-ProxMox-CICD
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/RackulaLives-Rackula/assets/Rackula-lockup-dark.svg#gh-dark-mode-only
 repo_url: https://github.com/RackulaLives/Rackula
+indexed_content: 'Drag and drop rack visualizer --- ## What _Is_ This Plan your rack
+  layout. Drag your devices in, move them around, export it. It runs in your browser.
+  You can close the tab whenever you want. ## What It _Do_ - **Drag and drop devices**
+  into your rack so you can frown at them - **Real device images** so it actually
+  looks like your gear, not sad grey boxes - **Export to PNG, PDF, SVG** for your
+  documentation or for printing and staring at - **QR code sharing** - your layout
+  lives in a URL, scan it and it just shows up ## But _Why?_ You might ask, why should
+  I make an imaginary rack like some sort of IT cosplay? And to that I would say,
+  "fine then! don''t! SCRAM!" but also, consider: - **Plan your layouts** before you
+  build them. It''s a lot easier to move your mouse than that 4U server full of hard
+  drives. Your shoulder will thank you. - **Document existing layouts** so you know
+  what is where. - **Because you can** ## Get Started ### **Use it right now:** [count.racku.la](https://count.racku.la)
+  ### Selfhost with Docker #### Docker Run ```bash docker run -d -p 8080:8080 ghcr.io/rackulalives/rackula:latest
+  ``` #### Docker Compose ```bash curl -O https://raw.githubusercontent.com/rackulalives/rackula/main/docker-compose.yml
+  docker compose up -d ``` Then open `http://localhost:8080` and get after it. ###
+  Persistent Storage (Self-Hosted) For layouts that persist across sessions: ```bash
+  git clone https://github.com/RackulaLives/Rackula.git cd Rackula curl -fsSL https://raw.githubusercontent.com/RackulaLives/Rackula/main/deploy/docker-compose.persist.yml
+  -o docker-compose.yml mkdir -p data sudo chown 1001:1001 data docker compose up
+  -d ``` See [Self-Hosting Guide](docs/guides/SELF-HOSTING.md) for details. For production/self-hosted
+  API security: - `CORS_ORIGIN` should be your real app URL (restricts which browser
+  origins can call the API). - `RACKULA_API_WRITE_TOKEN` protects API `PUT`/`DELETE`
+  routes (optional, strongly recommended). If unset, write routes remain open. Generate
+  a strong token: ```bash openssl rand -hex 32 ``` Set values in a `.env` file beside
+  `docker-compose.yml`: ```bash cat > .env ## Licence [MIT](LICENSE) - Copyright (c)
+  2025 Gareth Evans'
 ---
 {% raw %}
 <p align="center">

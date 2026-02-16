@@ -2,8 +2,66 @@
 layout: project
 name: Asbru Cm Asbru Cm
 slug: asbru-cm-asbru-cm
+category: Uncategorized
 image: https://github.com/asbru-cm/asbru-cm/actions/workflows/docs.yml/badge.svg
 repo_url: https://github.com/asbru-cm/asbru-cm
+indexed_content: '# Ásbrú Connection Manager [](https://github.com/asbru-cm/asbru-cm/actions/workflows/docs.yml)
+  [](https://github.com/asbru-cm/asbru-cm/actions/workflows/build-snapshots.yml) [![License][license-badge]][license-url]
+  [![RPM Packages][rpm-badge]][rpm-url] [![Debian Packages][deb-badge]][deb-url] [![Liberapay][liberapay-badge]][liberapay-url]
+  [![Donate Bitcoins][bitcoin-badge]][bitcoin-url] [ ](https://asbru-cm.net) ## A
+  free and open-source connection manager **Ásbrú Connection Manager** is a user interface
+  that helps organizing remote terminal sessions and automating repetitive tasks.
+  ### Features - Simple GUI to manage/launch connections to remote machines - Scripting
+  possibilities, ''ala'' SecureCRT - Configurable pre or post connection local commands
+  execution - Configurable list of macros (commands) to execute locally when connected
+  or to send to connected client - Configurable list of conditional executions on
+  connected machine via ''Expect'': - forget about SSH certificates - chain multiple
+  SSH connections - automate tunnels creation - with line-send delay capabilities
+  - [KeePassXC](https://keepassxc.org/) integration - Ability to connect to machines
+  through a Proxy server - Cluster connections - Tabbed/Windowed terminals - Wake
+  On LAN capabilities - Local and global variables, eg.: write down a password once,
+  use it ANY where, centralizing its modification for faster changes! use them for:
+  - password vault - reusing connection strings - Seamless Gnome/Gtk integration -
+  Tray icon for ''right button'' quick launching of managed connections. Screenshots
+  and statistics. - DEB, RPM and .TAR.GZ packages available ### Installation We recommend
+  installing Ásbrú Connection Manager using our latest pre-built packages hosted on
+  [cloudsmith.io](https://cloudsmith.io/). To do so, execute the following commands:
+  - Debian / Ubuntu ```` curl -1sLf ''https://dl.cloudsmith.io/public/asbru-cm/release/cfg/setup/bash.deb.sh''
+  | sudo -E bash sudo apt-get install asbru-cm ```` - Fedora ```` curl -1sLf ''https://dl.cloudsmith.io/public/asbru-cm/release/cfg/setup/bash.rpm.sh''
+  | sudo -E bash sudo dnf install asbru-cm ```` - Pacman-based (e.g. Arch Linux, Manjaro)
+  ```` git clone https://aur.archlinux.org/asbru-cm-git.git && cd asbru-cm-git makepkg
+  -si ```` - MX Linux Ásbrú Connection Manager can be installed through the MX Package
+  Installer under the Test Repo tab or by enabling the Test Repo and running ````
+  sudo apt-get install asbru-cm ```` - Windows - Windows 10 Build 19044 and later,
+  or Windows 11 See https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+  tl;dr: 1. Install or update WSL. 2. Follow the installation instructions for Ubuntu
+  above. 3. Ásbrú Connection Manager will then be available in the start menu. - Windows
+  10 before Build 19044, or running older WSL It is possible to run Asbru-CM on Windows
+  10 by enabling WSL and using the application [Asbru-CM Runner](https://github.com/SegiH/Asbru-CM-Runner).
+  If you do not have [WSLG](https://github.com/microsoft/wslg) support, you will need
+  to install [Xming](http://www.straightrunning.com/XmingNotes/). The GitHub page
+  for [Asbru-CM Runner](https://github.com/SegiH/Asbru-CM-Runner) has detailed instructions
+  on how to do this and allows you to run Asbru-CM on Windows 10 without a console
+  window open in the background. Once installed on your system, type ````asbru-cm````
+  in your terminal. ### Testing new features Our master and the snapshots are being
+  kept as stable as possible. New features for new major releases are being developed
+  inside the "loki" branch. Beware that [Loki](https://en.wikipedia.org/wiki/Loki)
+  can sometimes behave in an unexpected manner to you. This is somehow the same concept
+  as the "[Debian sid](https://www.debian.org/releases/sid/)" release. You are welcome
+  to contribute and test by checking out "loki" or by installing our builds. If you
+  do not wish to run third party scripts on your systems, you can always access manual
+  install instructions at https://cloudsmith.io/~asbru-cm/repos/loki/setup/ - Debian
+  / Ubuntu ```` curl -1sLf ''https://dl.cloudsmith.io/public/asbru-cm/loki/cfg/setup/bash.deb.sh''
+  | sudo -E bash ```` - Fedora ```` curl -1sLf ''https://dl.cloudsmith.io/public/asbru-cm/loki/cfg/setup/bash.rpm.sh''
+  | sudo -E bash ```` ### Installation of legacy 5.x - Debian / Ubuntu ```` $ curl
+  -s https://packagecloud.io/install/repositories/asbru-cm/v5/script.deb.sh | sudo
+  bash $ sudo apt-get install asbru-cm ```` - Fedora ```` $ curl -s https://packagecloud.io/install/repositories/asbru-cm/v5/script.rpm.sh
+  | sudo bash $ sudo dnf install asbru-cm ```` ### Frequenty Asked Questions - Why
+  did you call that project "Ásbrú" ? In Norse mythology, [Ásbrú](https://en.wikipedia.org/wiki/Bifr%C3%B6st)
+  refers to a burning rainbow bridge that connects Midgard (Earth) and Asgard, the
+  realm of the gods. - Is this a fork of PAC (Perl Auto Connector) Manager ? Yes.
+  As [David Torrejon Vaquerizas](https://github.com/perseo22), the author of PAC Manager,
+  could not find ti'
 ---
 {% raw %}
 # Ásbrú Connection Manager

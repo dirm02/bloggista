@@ -2,8 +2,54 @@
 layout: project
 name: Themeselection Best Chrome Extensions
 slug: themeselection-best-chrome-extensions
+category: Extension-Pluggin-Cron-Scrap
 image: https://github.com/themeselection/best-chrome-extensions/assets/105908323/508ef9ac-a6c5-4a6d-827c-e3053a225d7c
 repo_url: https://github.com/themeselection/best-chrome-extensions
+indexed_content: "# Best Chrome Extensions Welcome to the Curated List of Best Awesome
+  Chrome Extensions Repository! Discover our curated list of the finest Chrome extensions
+  tailored for developers and designers. Organized into specialized categories, this
+  repository curates top-notch tools to enhance your browsing experience and boost
+  productivity. Whether you're seeking powerful code editors, creative design utilities,
+  writing aids, or robust security solutions, you'll find them all here. Explore,
+  install, and elevate your Chrome-based browser to new heights!\U0001F680\U0001F929
+  Don't forget to show your appreciation by giving this repository a ⭐! Enjoy :) ---
+  ## Table of Contents - [**Best Chrome Extensions**](https://github.com/themeselection/best-chrome-extensions#best-chrome-extensions)
+  - [**Best Chrome Extensions Useful for Developers**](https://github.com/themeselection/best-chrome-extensions#best-chrome-extensions-useful-for-developers)
+  - [**\U0001F468\U0001F3FB‍\U0001F4BBCode Editors and IDEs**](https://github.com/themeselection/best-chrome-extensions#-code-editors-and-ides)
+  - [**\U0001F9EA Debugging and Testing**](https://github.com/themeselection/best-chrome-extensions#-debugging-and-testing)
+  - [**\U0001F58C️ CSS Tools**](https://github.com/themeselection/best-chrome-extensions#%EF%B8%8F-css-tools)
+  - [**\U0001F5C2️ Version Control**](https://github.com/themeselection/best-chrome-extensions#%EF%B8%8F-version-control)
+  - [**\U0001F4C8 Workflow**](https://github.com/themeselection/best-chrome-extensions#-workflow)
+  - [**\U0001F6E1️ Password Manager & Security**](https://github.com/themeselection/best-chrome-extensions#%EF%B8%8F-password-manager--security)
+  - [**\U0001F4DA Frameworks and Libraries**](https://github.com/themeselection/best-chrome-extensions#-frameworks-and-libraries)
+  - [**\U0001F680 Automation and Productivity Tools**](https://github.com/themeselection/best-chrome-extensions#automation-and-productivity-tools)
+  - [**\U0001F310\U0001F512 Virtual Private Network (VPN) Extensions**](https://github.com/themeselection/best-chrome-extensions#-virtual-private-network-vpn-extensions)
+  - [**\U0001F30D\U0001F50E Web Scrapping**](https://github.com/themeselection/best-chrome-extensions#-web-scrapping)
+  - [**\U0001F3A8 Chrome Extensions Useful for Designers**](https://github.com/themeselection/best-chrome-extensions#-chrome-extensions-useful-for-designers)
+  - [**\U0001F308 Best Color Pickers and Palettes Chrome Extensions**](https://github.com/themeselection/best-chrome-extensions#-best-color-pickers-and-palettes-chrome-extensions)
+  - [**\U0001F18E Typography Tools**](https://github.com/themeselection/best-chrome-extensions#-typography-tools)
+  - [**All-time Best Chrome Extensions**](https://github.com/themeselection/best-chrome-extensions#all-time-best-chrome-extensions)
+  - [**\U0001F4C2 Tab Management**](https://github.com/themeselection/best-chrome-extensions#-tab-management)
+  - [**\U0001F3A5 Screen Capture and Recording**](https://github.com/themeselection/best-chrome-extensions#-screen-capture-and-recording)
+  - [**\U0001F58B️ Text Generator**](https://github.com/themeselection/best-chrome-extensions#%EF%B8%8F-text-generator)
+  - [**✏ Writing and Grammar**](https://github.com/themeselection/best-chrome-extensions#-writing-and-grammar)
+  - [**⬇ Image and Video Downloaders**](https://github.com/themeselection/best-chrome-extensions#-image-and-video-downloaders)
+  - [**\U0001F6AB Ad-Blockers**](https://github.com/themeselection/best-chrome-extensions#-ad-blockers)
+  - [**\U0001F916 AI Copilots and Productivity Tools**](https://github.com/themeselection/best-chrome-extensions#-ai-copilots-and-productivity-tools)
+  - [**\U0001F4CA SEO and Web Analysis Tools**](https://github.com/themeselection/best-chrome-extensions#-seo-and-web-analysis-tools)
+  --- ## Best Chrome Extensions Useful for Developers ### \U0001F468\U0001F3FB‍\U0001F4BB
+  Code Editors and IDEs --- | No | Extension | Description | | ------ | ------------------------------------------------------
+  |---------------------| | 1 | [**Liquify - Shopify Code Search & Editor**](https://chrome.google.com/webstore/detail/liquify-shopify-code-sear/edekihmjmpkkkaolmojnajojfgphccma?utm_content=Best&Chrome&Extension)
+  | Liquify is a browser extension to enhance the Shopify theme code editor and add
+  some quality-of-life functions that a traditional code editor would have. | | 2
+  | [**Text Editor**](https://chrome.google.com/webstore/detail/text-editor/demheclfdlemkkpadenmajhjbdhbjjml?utm_content=Best&Chrome&Extension)
+  | A free, highly customizable text and code editor extension for your browser. This
+  add-on has plenty of options to adjust and is built on top of the famous CodeMirror
+  open-source JavaScript library | | 3 | [**XML Editor**](https://chrome.google.com/webstore/detail/xml-editor/offpnjldifddbopdmimolhcjniloicin)
+  | Edit your file XML directly on your Chrome browser with advanced search and replace
+  with XML Code Editor and Validator. | | 4 | [**Markdown Editor for Chrome**](https://chrome.google.com/webstore/detail/markdown-editor-for-chrom/dkpldbigkfcgpamifjimiejipmodkigk?hl=en)
+  | Introducing a powerful and easy-to-use Markdown editor where you can create and
+  view markdown files from anywhere. Simple and easy. A Github Flavored Markd"
 ---
 {% raw %}
 # Best Chrome Extensions

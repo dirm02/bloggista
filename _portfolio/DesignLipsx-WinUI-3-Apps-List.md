@@ -2,8 +2,66 @@
 layout: project
 name: Designlipsx Winui 3 Apps List
 slug: DesignLipsx-WinUI-3-Apps-List
+category: WindowsTools- Linux
 image: https://i.postimg.cc/Y0dvCh7P/winui3.webp
 repo_url: https://github.com/DesignLipsx/WinUI-3-Apps-List
+indexed_content: "WinUI Apps List The following is a curated list of applications
+  designed in alignment with the Windows 11 design language, whether built with WinUI
+  3, UWP, WPF, or related frameworks. Please the repo if you like. WinUI 3 Apps Showcase
+  Discord discussion • Newly Added Apps • Contributing --- ## \U0001F4D1 Table Of
+  Contents - [Disclaimer](#-disclaimer) - [Abbreviations](#abbreviations) - [Best
+  Implementation of WinUI 3](#-best-implementation-of-winui) - [Apps List](#-apps-list)
+  - [Newly Added Apps](#-newly-added-apps) - [Artificial Intelligence (AI)](#-artificial-intelligence-ai)
+  - [Application Store](#-application-store) - [Books & Reference](#-books--reference)
+  - [Browser](#-browser) - [Developer Tools](#%E2%80%8D-developer-tools) - [GitHub
+  Client](#-github-client) - [Other](#-other) - [Download Managers](#%EF%B8%8F-download-managers)
+  - [Education](#-education) - [Email Clients](#-email-clients) - [Entertainment](#-entertainment)
+  - [File Manager](#-file-manager) - [Finance](#%EF%B8%8F-finance) - [Games](#-games)
+  - [Game Tools](#game-tools) - [Lifestyle](#%E2%80%8D%EF%B8%8F-lifestyle) - [Media](#-media)
+  - [Music Players](#-music-players) - [Spotify Client](#-spotify-client) - [PDF Viewer](#-pdf-viewer)
+  - [Photo Viewer](#%EF%B8%8F-photo-viewer) - [Podcast](#%EF%B8%8F-podcast) - [Streaming
+  Services](#-streaming-services) - [Tracking Services](#-tracking-services) - [Video
+  Players](#%EF%B8%8F-video-players) - [Other Players](#%EF%B8%8F-other-players) -
+  [Multimedia & Design](#-multimedia--design) - [News & Weather](#-news--weather)
+  - [Notes/To-do/Wish-lists](#-notes--to-do--wish-lists) - [Draw Board](#-draw-board)
+  - [Notes](#-notes) - [Reminders](#-reminders) - [To-Do / Task](#-to-do--task) -
+  [Personalization](#-personalization) - [Productivity](#-productivity) - [Social
+  Media](#%E2%80%8D-social-media) - [Discord](#-discord) - [Mastodon](#-mastodon)
+  - [Reddit](#-reddit) - [Telegram](#-telegram) - [Twitter](#-twitter) - [VK](#-vk)
+  - [System](#-system) - [Calculators](#-calculators) - [Device Info/Monitors](#-device-info--monitors)
+  - [Optimizer/Cleaners](#-optimizer--cleaners) - [Security & Privacy](#-security--privacy)
+  - [Translators](#-translators) - [Transcribe](#-transcribe) - [Windows Apps](#-windows-apps)
+  - [WinUI 3 Catalogs](#-winui-3-catalogs) - [Miscellaneous](#-miscellaneous) - [Contributing
+  to the WinUI Apps List](#-contributing-to-the-winui-apps-list) --- ### \U0001F4C4
+  Disclaimer This list is solely a compilation of apps that adopt the WinUI 3 Design
+  guidelines and does not consider the functionality or utility of the listed apps
+  (the listed apps may or may not be useful). There may be other apps that follow
+  WinUI 3 Design guidelines. - ❗ Some indicators might be wrong as I interpreted whether
+  they're WD/WM/WDM or not by the screenshots. Please report wrong indicators. - \U0001F517
+  The provided links might be from GitHub, GitLab, Telegram, XDA, the Official website
+  of the app and other various sources (I always try to provide GitHub links but some
+  apps are not available on GitHub). Please report any broken links.* #### Abbreviations
+  - **`WD`** Apps that follow WinUI 3 Design Only. - **`WDM`** Apps that have both
+  WinUI 3 design and Mica Material. - **`WDA`** Apps that have both WinUI 3 design
+  and Acrylic Material. #### Other abbreviations - `\U0001F4B0` Paid Apps! - `\U0001F3A8`
+  Theme! - `\U0001F4C6 Planned` Apps that are in development - `❎ Discontinued` App
+  is discontinued/paused indefinitely #### Contributing to the WinUI Apps List Thank
+  you for being so interested in contributing to the WinUI Apps List! Here's how you
+  can add your app: 1. Fork this repository. 2. Add your app to the appropriate section
+  in the README.md file, following the existing format and alphabetical order. 3.
+  Create a pull request to suggest your changes. 4. I will review your submission
+  and merge it if it meets our criteria. Please ensure your app fits the WinUI 3 category
+  and provide a brief description and link. Don't forget to add your apps to the [Newly
+  Added Apps](#-newly-added-apps) section. [\U0001F4D1 Table Of Contents](#-table-of-contents)
+  --- ## Best Implementation of WinUI - `WDM` [Eagle-Calculator](https://apps.microsoft.com/detail/Eagle-Calculator/9MX92VG2G7NS)
+  - `WDM` [Files App](https://github.com/files-community/files) - `WDM` [Fluent Emoji
+  Gallery](https://github.com/michalleptuch/fluent-emoji-gallery) - `WDM` [FluentWeather](https://apps.microsoft.com/store/detail/fluentweather/9PFD136M8457)
+  - `WDM` [Odyssey](https://github.com/deadw00d/OdysseyWebBrowser) - `WDM` [Radiograph](https://apps.microsoft.com/store/detail/radiograph/9NH1P86H06CG)
+  - `WDM` [S Files Pro X - Shrestha File Explorer](https://apps.microsoft.com/detail/s-files-pro-x-shrestha-file-explorer/9NPNFFSV2HQM)
+  - `WDM` [Wintoys](https://apps.microsoft.com/store/detail/wintoys/9P8LTPGCBZXD)
+  - `WDM` [Wino Mail](https://apps.microsoft.com/store/detail/wino-mail-preview/9NCRCVJC50WL)
+  [\U0001F4D1 Table Of Contents](#-table-of-contents) --- ## \U0001F4D1 Apps List
+  ### \U0001F195 Newly Added Apps! - `WDM` [Blip](https://blip.net/) - `WDA` [cli"
 ---
 {% raw %}
 <h1 align="center">WinUI Apps List</h1>

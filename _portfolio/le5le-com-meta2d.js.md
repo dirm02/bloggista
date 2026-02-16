@@ -2,8 +2,17 @@
 layout: project
 name: Le5le Com Meta2d.js
 slug: le5le-com-meta2d.js
+category: Uncategorized
 image: https://cdn.nlark.com/yuque/0/2021/gif/12382170/1623210619545-5fca920c-bb57-4e52-9569-49dd0d9d331f.gif
 repo_url: https://github.com/le5le-com/meta2d.js
+indexed_content: 'English | [简体中文](./README.CN.md) # Meta2d.js The meta2d.js is real-time
+  data exchange and interactive web 2D engine. Developers are able to build Web SCADA,
+  IoT, Digital twins and so on. # Use online https://2ds.le5le.com/ # Why Faster,
+  better, smart, more productive. # Highlight - Data-driven view - Rich interactive
+  events - Subscribe message - Animation - Real-time data monitoring - Lifecycle hooks
+  - Video play - Extensible # Documents https://doc.le5le.com/document/136 # Get Started
+  https://github.com/le5le-com/meta2d.js/tree/main/examples/diagram-editor-vue3 #
+  License MIT © le5le.com'
 ---
 {% raw %}
 English | [简体中文](./README.CN.md)

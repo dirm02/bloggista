@@ -2,8 +2,66 @@
 layout: project
 name: Getmaxun Maxun
 slug: getmaxun-maxun
+category: API - Documentation
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/getmaxun-maxun/src/assets/maxunlogo.png
 repo_url: https://github.com/user-attachments/assets
+indexed_content: 'Maxun Turn Any Website Into A Structured API ✨ The unified open-source
+  no-code platform for real-time web scraping, crawling, search and AI data extraction
+  ✨ Go To App • Documentation • Website • Discord • Watch Tutorials ## What is Maxun?
+  Maxun is an open-source no-code web data platform for turning the web into structured,
+  reliable data. It supports extraction, crawling, scraping, and search — designed
+  to scale from simple use cases to complex, automated workflows. ### Ecosystem 1.
+  **[Extract](https://docs.maxun.dev/category/extract)** – Emulate real user behavior
+  and collect structured data from any website. * **[Recorder Mode](https://docs.maxun.dev/robot/extract/robot-actions)**
+  - Record your actions as you browse; Maxun turns them into a reusable extraction
+  robot. * **[AI Mode](https://docs.maxun.dev/robot/extract/llm-extraction)** - Describe
+  what you want in natural language and let LLM-powered extraction do the rest. 2.
+  **[Scrape](https://docs.maxun.dev/robot/scrape/scrape-robots)** – Convert full webpages
+  into clean Markdown or HTML and capture screenshots. 3. **[Crawl](https://docs.maxun.dev/robot/crawl/crawl-introduction)**
+  - Crawl entire websites and extract content from every relevant page, with full
+  control over scope and discovery. 4. **[Search](https://docs.maxun.dev/robot/search/search-introduction)**
+  - Run automated web searches to discover or scrape results, with support for time-based
+  filters. 5. **[SDK](https://docs.maxun.dev/sdk/sdk-overview)** – A complete developer
+  toolkit for scraping, extraction, scheduling, and end-to-end data automation. ##
+  How Does It Work? Maxun robots are automated tools that help you collect data from
+  websites without writing any code. Think of them as your personal web assistants
+  that can navigate websites, extract information, and organize data just like you
+  would manually - but faster and more efficiently. There are four types of robots,
+  each designed for a different job. ### 1. Extract Extract emulates real user behavior
+  and captures structured data. - Recorder Mode - Record your actions as you browse;
+  Maxun turns them into a reusable extraction robot. ### Example: Extract 10 Property
+  Listings from Airbnb [https://github.com/user-attachments/assets/recorder-mode-demo-video](https://github.com/user-attachments/assets/c6baa75f-b950-482c-8d26-8a8b6c5382c3)
+  - AI Mode - Describe what you want in natural language and let LLM-powered extraction
+  do the rest. ### Example: Extract Names, Rating & Duration of Top 50 Movies from
+  IMDb https://github.com/user-attachments/assets/f714e860-58d6-44ed-bbcd-c9374b629384
+  Learn more here . ### 2. Scrape Scrape converts full webpages into clean Markdown,
+  HTML and can capture screenshots. Ideal for AI workflows, agents, and document processing.
+  Learn more here . ### 3. Crawl Crawl entire websites and extract content from every
+  relevant page, with full control over scope and discovery. Learn more here . ###
+  4. Search Run automated web searches to discover or scrape results, with support
+  for time-based filters. Learn more here . ## Quick Start ### Getting Started The
+  simplest & fastest way to get started is to use the hosted version: https://app.maxun.dev.
+  You can self-host if you prefer! ### Installation Maxun can run locally with or
+  without Docker 1. [Setup with Docker Compose](https://docs.maxun.dev/installation/docker)
+  2. [Setup without Docker](https://docs.maxun.dev/installation/local) 3. [Environment
+  Variables](https://docs.maxun.dev/installation/environment_variables) 4. [SDK](https://github.com/getmaxun/node-sdk)
+  ### Upgrading & Self Hosting 1. [Self Host Maxun With Docker & Portainer](https://docs.maxun.dev/self-host)
+  2. [Upgrade Maxun With Docker Compose Setup](https://docs.maxun.dev/installation/upgrade#upgrading-with-docker-compose)
+  3. [Upgrade Maxun Without Docker Compose Setup](https://docs.maxun.dev/installation/upgrade#upgrading-with-local-setup)
+  ## Sponsors TestMu AI The Native AI-Agentic Cloud Platform to Supercharge Quality
+  Engineering. Test Intelligently and Ship Faster. ## Features - ✨ **Extract Data
+  With No-Code** – Point and click interface - ✨ **LLM-Powered Extraction** – Describe
+  what you want; use LLMs to scrape structured data - ✨ **Developer SDK** – Programmatic
+  extraction, scheduling, and robot management - ✨ **Handle Pagination & Scrolling**
+  – Automatic navigation - ✨ **Run Robots On Schedules** – Set it and forget it -
+  ✨ **Turn Websites to APIs** – RESTful endpoints from any site - ✨ **Turn Websites
+  to Spreadsheets** – Direct data export to Google Sheets & Airtable - ✨ **Adapt To
+  Website Layout Changes** – Auto-recovery from site updates - ✨ **Extract Behind
+  Login** – Handle authentication seamlessly - ✨ **Integrations** – Connect with your
+  favorite tools - ✨ **MCP Support** – Model Context Protocol integration - ✨ **LLM-Ready
+  Data** – Clean Markdown for AI applications - ✨ **Self-Hostable** – Full control
+  over your infrastructure - ✨ **Open Source** – Transparent and community-driven
+  ## Demos Maxun '
 ---
 {% raw %}
 <h2 align="center">

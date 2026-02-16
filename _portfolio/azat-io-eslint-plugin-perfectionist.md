@@ -2,8 +2,59 @@
 layout: project
 name: Azat Io Eslint Plugin Perfectionist
 slug: azat-io-eslint-plugin-perfectionist
+category: Uncategorized
 image: https://img.shields.io/npm/v/eslint-plugin-perfectionist.svg?color=4a32c3&labelColor=26272b
 repo_url: https://github.com/azat-io/eslint-plugin-perfectionist
+indexed_content: "# ESLint Plugin Perfectionist [](https://npmjs.com/package/eslint-plugin-perfectionist)
+  [](https://npmjs.com/package/eslint-plugin-perfectionist) [](https://npmjs.com/package/eslint-plugin-perfectionist)
+  [](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/license.md)
+  An ESLint plugin that sets rules to format your code and make it consistent. This
+  plugin defines rules for sorting various data, such as objects, imports, TypeScript
+  types, enums, JSX props, Svelte attributes, etc. alphabetically, naturally, or by
+  line length. All rules are automatically fixable. It's safe! ## Why Sorting imports
+  and properties in software development offers numerous benefits: - **Readability**:
+  Finding declarations in a sorted, large list is a little faster. Remember that you
+  read the code much more often than you write it. - **Maintainability**: Sorting
+  imports and properties is considered a good practice in software development, contributing
+  to code quality and consistency across the codebase. - **Code Review and Collaboration**:
+  If you set rules that say you can only do things one way, no one will have to spend
+  time thinking about how to do it. - **Code Uniformity**: When all code looks exactly
+  the same, it is very hard to see who wrote it, which makes achieving the lofty goal
+  of _collective code ownership_ easier. - **Aesthetics**: This not only provides
+  functional benefits, but also gives the code an aesthetic appeal, visually pleasing
+  and harmonious structure. Take your code to a beauty salon! ## Documentation See
+  [docs](https://perfectionist.dev). ### Alphabetical Sorting ### Sorting by Line
+  Length ## Installation You'll first need to install [ESLint](https://eslint.org)
+  v8.45.0 or greater: ```sh npm install --save-dev eslint ``` Next, install `eslint-plugin-perfectionist`:
+  ```sh npm install --save-dev eslint-plugin-perfectionist ``` ## Usage Add `eslint-plugin-perfectionist`
+  to the plugins section of the ESLint configuration file and define the list of rules
+  you will use. ### Flat Config ([`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files))
+  ```js import perfectionist from 'eslint-plugin-perfectionist' export default [ {
+  plugins: { perfectionist, }, rules: { 'perfectionist/sort-imports': [ 'error', {
+  type: 'natural', order: 'asc', }, ], }, }, ] ``` ### Legacy Config ([`.eslintrc.js`](https://eslint.org/docs/latest/use/configure/configuration-files-deprecated))
+  ```js module.exports = { plugins: [ 'perfectionist', ], rules: { 'perfectionist/sort-imports':
+  [ 'error', { type: 'natural', order: 'asc', } ] } } ``` ## Configs The easiest way
+  to use `eslint-plugin-perfectionist` is to use ready-made configs. Config files
+  use all the rules of the current plugin, but you can override them. ### Flat Config
+  ([`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files))
+  ```js import perfectionist from 'eslint-plugin-perfectionist' export default [ perfectionist.configs['recommended-natural'],
+  ] ``` ### Legacy Config ([`.eslintrc.js`](https://eslint.org/docs/latest/use/configure/configuration-files-deprecated))
+  ```js module.exports = { extends: [ 'plugin:perfectionist/recommended-natural-legacy',
+  ], } ``` ### List of Configs | Name | Description | | :-------------------------------------------------------------------------------------
+  | :--------------------------------------------------------------- | | [recommended-alphabetical](https://perfectionist.dev/configs/recommended-alphabetical)
+  | All plugin rules with alphabetical sorting in ascending order | | [recommended-natural](https://perfectionist.dev/configs/recommended-natural)
+  | All plugin rules with natural sorting in ascending order | | [recommended-line-length](https://perfectionist.dev/configs/recommended-line-length)
+  | All plugin rules with sorting by line length in descending order | | [recommended-custom](https://perfectionist.dev/configs/recommended-custom)
+  | All plugin rules with sorting by your own custom order | ## Rules \U0001F527 Automatically
+  fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+  | Name | Description | \U0001F527 | | :---------------------------------------------------------------------------------------
+  | :-------------------------------------------- | :-- | | [sort-array-includes](https://perfectionist.dev/rules/sort-array-includes)
+  | Enforce sorted arrays before include method | \U0001F527 | | [sort-classes](https://perfectionist.dev/rules/sort-classes)
+  | Enforce sorted classes | \U0001F527 | | [sort-decorators](https://perfectionist.dev/rules/sort-decorators)
+  | Enforce sorted decorators | \U0001F527 | | [sort-enums](https://perfectionist.dev/rules/sort-enums)
+  | Enforce sorted TypeScript enums | \U0001F527 | | [sort-export-attributes](https://perfectionist.dev/rules/sort-export-attributes)
+  | Enforce sorted export attributes | \U0001F527 | | [sort-exports](https://perfectionist.dev/rules/sort-exports)
+  | Enforce sorted exports | \U0001F527 | | [sort-heritage-clauses](https://perfectionist.dev/rul"
 ---
 {% raw %}
 # ESLint Plugin Perfectionist

@@ -2,8 +2,67 @@
 layout: project
 name: Linkwarden Linkwarden
 slug: linkwarden-linkwarden
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/linkwarden-linkwarden/assets/app_store.png
 repo_url: https://github.com/linkwarden/linkwarden
+indexed_content: "Linkwarden Bookmarks, Evolved [« LAUNCH DEMO »](https://demo.linkwarden.app)
+  [Cloud](https://cloud.linkwarden.app) · [Website](https://linkwarden.app) · [Features](https://github.com/linkwarden/linkwarden#features)
+  · [Docs](https://docs.linkwarden.app) ## Intro & motivation **Linkwarden is a self-hosted,
+  open-source collaborative bookmark manager to collect, read, annotate, and fully
+  preserve what matters, all in one place.** The objective is to organize useful webpages
+  and articles you find across the web in one place, and since useful webpages can
+  go away (see the inevitability of [Link Rot](https://en.wikipedia.org/wiki/Link_rot)),
+  Linkwarden also saves a copy of each webpage as a Screenshot and PDF, ensuring accessibility
+  even if the original content is no longer available. In addition to preservation,
+  Linkwarden provides a user-friendly reading and annotation experience that blends
+  the simplicity of a “read-it-later” tool with the reliability of a web archive.
+  Whether you’re highlighting key ideas, jotting down thoughts, or revisiting content
+  long after it’s disappeared from the web, Linkwarden keeps your knowledge accessible
+  and organized. Linkwarden is also designed with collaboration in mind, enabling
+  you to share links with the public and/or collaborate seamlessly with multiple users.
+  > [!TIP] > Our official [Cloud](https://linkwarden.app/#pricing) offering provides
+  the simplest way to begin using Linkwarden and it's the preferred choice for many
+  due to its time-saving benefits. Your subscription supports our hosting infrastructure
+  and ongoing development. Alternatively, if you prefer self-hosting Linkwarden, you
+  can do so by following our [Installation documentation](https://docs.linkwarden.app/self-hosting/installation).
+  ## Features - \U0001F4F8 Auto capture a screenshot, PDF, and single html file of
+  each webpage - \U0001F4D6 Reader view of the webpage, with the ability to highlight
+  and annotate text - \U0001F3DB️ Send your webpage to Wayback Machine ([archive.org](https://archive.org))
+  for a snapshot (optional) - ✨ Local AI Tagging to automatically tag your links based
+  on their content (optional) - \U0001F4C2 Organize links by collection, sub-collection,
+  name, description and multiple tags - \U0001F465 Collaborate on gathering links
+  in a collection - \U0001F39B️ Customize the permissions of each member - \U0001F310
+  Share your collected links and preserved formats with the world - \U0001F4F1 Native
+  iOS and android mobile apps - \U0001F50D Full text search, filter and sort for easy
+  retrieval - \U0001F313 Dark/Light mode support - \U0001F9E9 Browser extension (star
+  it [here](https://github.com/linkwarden/browser-extension)!) - \U0001F504 Browser
+  Synchronization (using [Floccus](https://floccus.org)!) - ⬆️ Upload from SingleFile
+  (check out the [guide](https://docs.linkwarden.app/Usage/upload-from-singlefile))
+  - \U0001F510 SSO integration (Enterprise and Self-hosted users only) - \U0001F34E
+  iOS Shortcut to save links to Linkwarden - \U0001F511 API keys - ✅ Bulk actions
+  - \U0001F465 User administration - \U0001F310 Support for other languages (i18n)
+  - \U0001F4C1 Image and PDF uploads - \U0001F3A8 Custom icons for links and collections
+  - \U0001F514 RSS feed subscription - ✨ And many more features (literally!) ## Get
+  Our Official Mobile App > [!IMPORTANT] > To use the app you’ll first need a Linkwarden
+  account. To create an account, you can choose between: - [**Linkwarden Cloud**](https://linkwarden.app/#pricing)
+  – instant setup, and your subscription directly supports ongoing development. -
+  [**Self-hosted Linkwarden**](https://docs.linkwarden.app/self-hosting/installation)
+  – free, but you’ll need to deploy and maintain a Linkwarden instance on a server.
+  After creating an account, download the app from your preferred store: [](https://apps.apple.com/app/linkwarden/id6752550960)
+  [](https://play.google.com/store/apps/details?id=app.linkwarden) (To get the app
+  as an APK outside Google Play, check out our [builds](https://github.com/linkwarden/builds)
+  repository.) ## Like what we're doing? Give us a Star ⭐ ## We're building our Community
+  \U0001F310 Join and follow us in the following platforms to stay up to date about
+  the most recent features and for support: ## Suggestions We _usually_ go after the
+  [popular suggestions](https://github.com/linkwarden/linkwarden/issues?q=is%3Aissue%20is%3Aopen%20sort%3Areactions-%2B1-desc).
+  Feel free to open a [new issue](https://github.com/linkwarden/linkwarden/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=)
+  to suggest one - others might be interested too! :) ## Roadmap Make sure to check
+  out our [public roadmap](https://github.com/orgs/linkwarden/projects/1). ## Community
+  Projects Here are some community-maintained projects that are built around Linkwarden:
+  - [My Links](https://apps.apple.com/ca/app/my-links-for-linkwarden/id6504573402)
+  - iOS and MacOS Apps, maintained by [JGeek00](https://github.com/JGeek00). - [LinkDroid](https://fossdroid.com/a/linkdroid-for-linkwarden.html)
+  - Android App with share sheet integration, [source code](https://github.com/Dacid99/LinkDroid-for-Linkwarden).
+  - [LinkGuardian](https://github."
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,37 @@
 layout: project
 name: Samolego Canta
 slug: samolego-Canta
+category: Uncategorized
 image: https://raw.githubusercontent.com/samolego/Canta/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
 repo_url: https://github.com/thedjchi/Shizuku)).
+indexed_content: "# Canta [](https://samolego.github.io/Canta/) Uninstall any\\* app
+  without root! Powered by [Shizuku](https://shizuku.rikka.app/) ([Android 16 fork](https://github.com/thedjchi/Shizuku)).
+  ## Download [](https://f-droid.org/en/packages/io.github.samolego.canta/) [](https://apt.izzysoft.de/fdroid/index/apk/io.github.samolego.canta)
+  [](https://github.com/samolego/Canta/releases/latest/) [](https://github.com/samolego/Canta/releases/)
+  [ ](https://shields.rbtlog.dev/io.github.samolego.canta) [](https://www.paypal.com/donate/?hosted_button_id=FD4R46ZZ5EWME)
+  --- > [!Warning] > **DISCLAIMER:** ⛔ Use at your own risk. I am not responsible
+  for any data loss or damage caused by this app ⛔. --- ## \U0001F4D6 About Canta
+  allows you to **uninstall pre-installed or user apps without root**, by leveraging
+  [Shizuku](https://shizuku.rikka.app/). It integrates with the [Universal Debloat
+  List](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/)
+  to provide safe recommendations. - ✅ No root required - ✅ Detects previously uninstalled
+  apps (even across reinstalls) - ✅ Works on Android **9.0+ (SDK 28+)** - ⚠️ No *permanent*
+  bricking (If you uninstall **critical apps**, you can experience bootloop and have
+  to **factory reset**!) \\* **Some oplus apps** are known to be stubborn and don't
+  allow uninstallations. See [tracking issue](https://github.com/samolego/Canta/issues/338).
+  --- ## Screenshots | | | | |:---:|:---:|:---:| | Home | Search | Uninstall | | |
+  | | | [App descriptions](https://github.com/Universal-Debloater-Alliance/universal-android-preinstalled-lists/)
+  | See uninstalled | | ### Verification You can verify the authenticity of downloaded
+  APKs using this SHA-256 certificate fingerprint: ``` 0A:26:40:31:7C:43:27:21:88:C3:E1:31:94:C1:54:60:69:1F:12:C3:9E:A1:9B:BA:72:7D:D6:7F:B5:62:89:D4
+  ``` ## How-to * install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+  & [activate it](https://shizuku.rikka.app/guide/setup/) * you can follow [this Android
+  Police guide for more in-depth explanation](https://www.androidpolice.com/how-to-use-shizuku-for-adb-rootless-mods-on-any-android-device/)
+  * note: **Android 16** might need [forked version](https://github.com/thedjchi/Shizuku)
+  * install Canta * select an app and click the trash button ## Translations Do you
+  want to help translate Canta? You can help us at [Crowdin](https://crowdin.com/project/canta)!
+  Thank you \U0001F642! https://crowdin.com/project/canta ## Thanks * [Universal-Debloater-Alliance](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/)
+  for the debloat list * @RikkaApps for Shizuku * Icon created on [icon kitchen](https://icon.kitchen)
+  ## Star History [](https://star-history.com/#samolego/Canta&Date)"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,61 @@
 layout: project
 name: Deroverda Recommended Radio Streams
 slug: deroverda-recommended-radio-streams
+category: Let's try this- Personal prefere
 image: https://img.shields.io/github/stars/deroverda/recommended-radio-streams?style=flat-square&color=yellow
 repo_url: https://github.com/deroverda/recommended-radio-streams
+indexed_content: "[](https://github.com/deroverda/recommended-radio-streams/stargazers)
+  [](https://github.com/deroverda/recommended-radio-streams) [](https://github.com/deroverda/recommended-radio-streams)
+  # Recommended Radio Streams A list of internet radio stations across 40+ genres.
+  Includes notes on apps, discovery tools, and guides for finding direct stream URLs.
+  --- ## Table of Contents - [Apps & Players](#apps-players) - [The Station Directory](#station-directory)
+  - [The Starter Pack](#starter-pack) - [Ambient, Lo-Fi & Chill](#ambient-lo-fi-chill)
+  - [Classical & Opera](#classical-opera) - [College, Freeform & Community](#college-freeform-community)
+  - [Decades, Oldies & Nostalgia](#decades-oldies-nostalgia) - [Electronic](#electronic)
+  - [Funk, Soul & Disco](#funk-soul-disco) - [Hip-Hop & Rap](#hip-hop-rap) - [Jazz
+  & Blues](#jazz-blues) - [Metal & Heavy](#metal-heavy) - [News & Spoken Word](#news-spoken-word)
+  - [Reggae & Dub](#reggae-dub) - [Rock, Indie, Alternative, Country & Folk](#rock-indie-alternative-country-folk)
+  - [Video Game & Chiptune](#video-game-chiptune) - [Soundtracks & Movie Scores](#soundtracks-scores)
+  - [World & Regional](#world-regional) - [Christmas Music & Holiday](#christmas-music-holiday)
+  - [HiRes Stations](#hires-lossless) - [Multi-Station Networks](#multi-station) -
+  [Experimental, Nerdy & Scanners](#experimental) - [Directories & Discovery Tools](#directories)
+  - [Finding Direct Stream URLs](#finding-urls) - [Contributing](#contributing) ---
+  ## Apps & Players ### Mobile | App Name | OS | License | Notes | | :--- | :---:
+  | :---: | :--- | | [Broadcasts](https://apps.apple.com/us/app/broadcasts/id1469995354)
+  | iOS | `Freemium` | Native UI; syncs across iPhone, Mac, Watch, and Apple TV. |
+  | [CuterDio](https://cuterdio.com/en) | iOS | `Open Source` | Free and privacy-focused.
+  | | [Eter](https://apps.apple.com/se/app/eter-streaming-internet-radio/id1523221566)
+  | iOS | `Freemium` | Native UI with a free version. | | ⭐ [Frog Radio](https://apps.apple.com/us/app/frogradio/id1442306286)
+  | iOS | `Paid` | 50k+ station database with iCloud sync. | | [Triode](https://triode.app/)
+  | iOS | `Freemium` | Focuses on artwork and interface handling. | | [Open Radio](https://play.google.com/store/apps/details?id=com.yuriy.openradio)
+  | Android | `Open Source` | Simple interface; supports Android Auto. | | ⭐ [RadioDroid](https://github.com/segler-alex/RadioDroid)
+  | Android | `Open Source` | Supports recording and Chromecast. | | [Transistor](https://codeberg.org/y20k/transistor)
+  | Android | `Open Source` | Minimalist and low battery usage. | ### Desktop | App
+  Name | OS | License | Notes | | :--- | :---: | :---: | :--- | | [CuterDio](https://cuterdio.com/en)
+  | macOS | `Open Source` | Open-source alternative for Mac. | | ⭐ [Foobar2000](https://www.foobar2000.org/)
+  | Win/Mac | `Freeware` | Modular player for large libraries. | | ⭐ [Frog Radio](https://frogradio.net/)
+  | macOS | `Paid` | Native Mac app with iCloud sync. | | [QMPlay2](https://github.com/zaps166/QMPlay2)
+  | Win/Mac/Lin| `Open Source` | Supports most stream URL formats. | | ⭐ [Shortwave](https://flathub.org/en/apps/de.haeckerfelix.Shortwave)
+  | Linux | `Open Source` | Integrated with GNOME/GTK. | | [Tuner](https://github.com/louis77/tuner)
+  | Linux | `Open Source` | Minimalist Linux player. | ### Web & Utilities | Tool
+  Name | Type | License | Notes | | :--- | :---: | :---: | :--- | | ⭐ [Radiolise](https://radiolise.com)
+  | Web App | `Free` | Web-based player for TV and radio. | | [ScrobbleRadio](https://scrobblerad.io)
+  | Utility | `Free` | Track listening to Last.fm, Libre.fm, or ListenBrainz. | ---
+  ## The Station Directory > [!NOTE] > Most links point to the official station website
+  to ensure reliability. Direct stream URLs change frequently. If you need raw links
+  for custom players, see the [Finding Stream URLs](#finding-urls) & [Directories
+  & Discovery Tools](#directories). ### The Starter Pack - [BBC Radio 6 Music](https://gist.github.com/bpsib/67089b959e4fa898af69fea59ad74bc3):
+  Alternative music, new releases, and deep cuts. - [dublab](https://dublab.com):
+  Non-profit community collective for experimental and underground music. - [FIP](https://www.radiofrance.fr/fip):
+  French public radio mixing jazz, rock, and world music. Ad-free. - [KEXP](https://www.kexp.org/listen/):
+  Indie rock from Seattle. Features live in-studio sessions. - [Nightwave Plaza](https://plaza.one/):
+  24/7 vaporwave, future funk, and city pop. - [NTS Radio](https://www.nts.live/):
+  Underground radio with diverse shows from London and globally. - [Radio Paradise](https://radioparadise.com/):
+  Mixed rock, world, and electronic. Ad-free. - [SomaFM](https://somafm.com/): Independent
+  internet radio specializing in ambient and downtempo. - [WFMU](https://wfmu.org):
+  Freeform radio from New Jersey; independent and non-commercial. - [Worldwide FM](https://worldwidefm.net/):
+  Platform for underground music and culture. - [WWOZ 90.7](https://www.wwoz.org/):
+  New Orleans jazz, funk, and soul. ### Ambient, Lo-F"
 ---
 {% raw %}
 <a id="top"></a>

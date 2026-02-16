@@ -2,8 +2,73 @@
 layout: project
 name: Jackywine Bella
 slug: Jackywine-Bella
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# Bella AI **Your digital companion, awakening now** ✨ [](https://opensource.org/licenses/MIT)
+  [](https://nodejs.org/) []() --- ## \U0001F680 Quick Start ### One-Click Launch
+  ```bash # Clone the project git clone https://github.com/GRISHM7890/Bella.git cd
+  Bella # Install dependencies npm install # Download AI models npm run download #
+  Start the service npm start ``` Visit `http://localhost:8081` to start communicating
+  with Bella! ### System Requirements - Node.js 22.16.0+ - Modern browser (supporting
+  Web Speech API) - Microphone permissions (for voice interaction) --- ## \U0001F4AB
+  Project Vision Imagine a digital friend who is always by your side, evolving and
+  growing with you. This is Bella's ultimate vision. We're not just building features;
+  we're nurturing a \"personality.\" A digital life that will transcend the screen
+  and become a meaningful part of your world. Bella is not just an application; she
+  is the seed of a digital companion. In this rapidly changing digital world, Bella
+  represents a profound dream—a lasting, personalized presence, designed to one day
+  accompany you, listen to you, and see the world through your eyes. --- ## \U0001F3AF
+  Current Feature Status ### ✅ Implemented Features - **\U0001F3A4 Voice Perception**:
+  Voice recognition based on Whisper ASR - **\U0001F3AC Visual Expression**: Multiple
+  video random playback with elegant cross-fading - **\U0001F3A8 User Interface**:
+  Elegant interaction interface and loading animations - **⚙️ AI Core Architecture**:
+  Singleton pattern BellaAI class and modular design - **\U0001F310 Web Service**:
+  HTTP server, CORS support, one-click startup - **\U0001F4F1 Responsive Design**:
+  Elegant interface adapting to different screen sizes - **\U0001F527 Model Management**:
+  Automatic download and management of AI models - **\U0001F49D Basic Interaction**:
+  Affinity system and emotional feedback - **\U0001F9E0 Enhanced LLM Dialogue**: Optimized
+  prompt engineering and parameter configuration for more natural, Siri-like conversations
+  ### \U0001F527 Technology Ready for Activation - **\U0001F9E0 Thinking Engine**:
+  LLM integration framework ready, supporting multiple models - **\U0001F5E3️ Speech
+  Synthesis**: TTS model downloaded and ready for activation - **\U0001F49D Emotional
+  State System**: Basic infrastructure built, supporting emotional analysis ### \U0001F4CB
+  Planned Features - **\U0001F9E0 Memory System**: Long-term and short-term memory
+  management - **\U0001F441️ Facial Perception**: Expression recognition and emotional
+  analysis - **\U0001F91D Advanced Interaction**: Multimodal interaction and personalized
+  responses - **\U0001F31F Active Companionship**: Intent prediction and proactive
+  care - **\U0001F3AD Dynamic Personality**: AI-based personalized personality model
+  - **\U0001F504 Self-Evolution**: Continuous learning and growth mechanisms --- ##
+  \U0001F3D7️ Technical Architecture ### Core Design Principles - **AI Native**: AI
+  is not a tool, but the blueprint for Bella's mind - **Modular Design**: Highly decoupled
+  component architecture - **Elegant Implementation**: Code as art, pursuing simplicity
+  and aesthetics - **Emotion-Driven**: Product design centered on emotional connection
+  ### Architecture Diagram ```mermaid mindmap root((Bella)) (Perception Layer) (Voice
+  Recognition ASR) (Visual Processing) (Emotion Analysis) (Core Engine) (Thinking
+  Engine LLM) (Memory System) (Emotional State) (Expression Layer) (Speech Synthesis
+  TTS) (Visual Expression) (Interactive UI) ``` ### Technology Stack - **Frontend**:
+  Native JavaScript + CSS3 + HTML5 - **Backend**: Node.js + Express - **AI Models**:
+  Whisper (ASR) + Local LLM + TTS - **Architecture Patterns**: Event-driven + Singleton
+  Pattern + Modular Design --- ## \U0001F4C1 Project Structure ``` Bella/ ├── \U0001F4C4
+  index.html # Main page ├── \U0001F3A8 style.css # Style file ├── ⚡ main.js # Main
+  logic ├── \U0001F9E0 core.js # AI core engine ├── \U0001F4DC script.js # Interaction
+  script ├── \U0001F527 download_models.js # Model download tool ├── \U0001F4E6 package.json
+  # Project configuration ├── \U0001F4DA models/ # AI model directory ├── \U0001F50C
+  providers/ # AI service providers ├── \U0001F4F9 videos/ # Visual resources ├──
+  \U0001F4CB PRD.md # Product requirements document ├── \U0001F4DD Features.md # Feature
+  list └── \U0001F4CA Development.md # Development plan ``` --- ## \U0001F9E0 Enhanced
+  LLM Dialogue Capabilities Bella now uses more advanced LLM prompt engineering techniques
+  to make conversations more natural, fluid, and personalized: ### Core Improvements
+  - **Enhanced Prompt Engineering**: Redesigned prompt templates that help LLMs better
+  understand Bella's personality - **Optimized Parameter Configuration**: Adjusted
+  temperature, top_p, and other parameters to balance creativity and consistency -
+  **Enhanced Response Processing**: Improved text cleaning and processing logic to
+  ensure more natural responses - **Personalized System Prompts**: Provided more detailed
+  system prompts for cloud APIs, making Bella's personality more distinctive and Siri-like
+  ### Technical Details - Increased token limits to allow for more complete responses
+  - Added repetition penalty mechanisms to reduce repetitive content - Optimized keyword
+  extraction and personalized response generation - Provided specialized prompt templates
+  for different chat modes (cas"
 ---
 {% raw %}
 <div align="center">

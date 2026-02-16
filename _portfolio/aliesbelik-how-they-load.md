@@ -2,8 +2,59 @@
 layout: project
 name: Aliesbelik How They Load
 slug: aliesbelik-how-they-load
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/how%20they-load%20test-orange?color=dd7c2f&style=flat-square
 repo_url: https://github.com/abhivaikar/howtheytest),
+indexed_content: "# How They Load Test [](#other-how-they-collections) [](CONTRIBUTING.md)
+  > A curated collection of publicly available resources on how technology and tech-savvy
+  organizations around the world plan/organize/perform/analyze load testing and related
+  acitivities for their products. ## Introduction Inspired by [howtheytest](https://github.com/abhivaikar/howtheytest),
+  **How They Load Test** is a curated knowledge collection on different aspects of
+  performance engineering, foremost, **performance and load testing** and related
+  topics, by leading technology companies around the world. ## Topics * Application
+  Performance Management * Architecture * Automation * Benchmarking * Capacity Planning
+  * CI/CD * Incidents * Monitoring, Observability, Alerting * Non-Functional Requirements
+  Elicitation and Analysis * Performance Engineering * Scalability * Test Environments
+  * Testing in Production * Tools ## Organizations > In alphabetical order. Ably ####
+  Blogs & Articles * [Squid game: how we load-tested Ably’s Control API](https://ably.com/blog/how-we-load-tested-control-api)
+  - 2022 #### Tools * [ably-boomer](https://github.com/ably/ably-boomer) - Ably load
+  generator for Locust, based on the [boomer](https://github.com/myzhan/boomer) library.
+  * [ably-locust](https://github.com/ably-labs/ably-locust) - A JavaScript load generator
+  for Locust. Airbnb #### Blogs & Articles * [Load Testing with Impulse at Airbnb](https://medium.com/airbnb-engineering/load-testing-with-impulse-at-airbnb-f466874d03d2)
+  - 2025 * [Improving Performance with HTTP Streaming](https://medium.com/airbnb-engineering/improving-performance-with-http-streaming-ba9e72c66408)
+  - 2023 * [Measuring Web Performance at Airbnb](https://medium.com/airbnb-engineering/measuring-web-performance-at-airbnb-122da8d3ea3f)
+  - 2021 Airtasker #### Blogs & Articles * [How Airtasker uses Ruby JMeter and Flood
+  for their load testing](https://nicolevanderhoeven.com/blog/20200224-airtasker/)
+  - 2020 #### Talks * [How much pressure can your app handle - Performance testing
+  with Ruby](https://www.youtube.com/watch?v=Q09wJm4P8Xw) - Nancy Cai @ RubyConf 2020
+  Amazon #### Talks * [UI, Load and Performance testing at Amazon](https://www.youtube.com/watch?v=UVS4CQvO4_M)
+  - Leo Zhadanovsky, Dave Mozealous @ AWS re:Invent 2014 * [Best Practices for Benchmarking
+  and Performance Analysis in the Cloud](https://www.youtube.com/watch?v=__tT5de64cI)
+  - Robert Barnes @ AWS re:Invent 2013 * [Large Scale Load Testing Amazon.com's Traffic
+  on AWS](https://www.youtube.com/watch?v=pgnQQoTMBhI) - Carlos Arguelles @ AWS re:Invent
+  2013 Atlassian #### Blogs & Articles * [Performance and scale testing](https://confluence.atlassian.com/adminjiraserver/performance-and-scale-testing-1483246093.html)
+  * [Jira Performance Testing - Available Tools](https://confluence.atlassian.com/enterprise/jira-performance-testing-available-tools-729743538.html)
+  #### Tools * [Jira Performance Tests (JPT)](https://bitbucket.org/atlassian/jira-performance-tests/)
+  * [Atlassian Performance Testing Framework](https://confluence.atlassian.com/enterprise/atlassian-performance-testing-framework-935575100.html)
+  * [Atlassian Data Center App Performance Toolkit](https://github.com/atlassian/dc-app-performance-toolkit)
+  Bedrock Streaming #### Blogs & Articles * [Scaling Bedrock video delivery to 50
+  million users](https://tech.bedrockstreaming.com/2021/12/15/scaling-bedrock-video-delivery-to-50-million-users.html)
+  - 2021 * [Benchmarking WebSockets with NodeJs](https://tech.bedrockstreaming.com/benchmarking-websockets-avec-nodejs)
+  - 2013 #### Talks * [Let’s load test M6+ to prepare for Euro 2024!](https://www.youtube.com/watch?v=NUwYlJjY3g4)
+  - Paul-Henri Pillet, Benoit Colin @ Devoxx France 2025 #### Tools * [websocket-bench](https://github.com/BedrockStreaming/websocket-bench)
+  - Node.js tool to benchmark Socket.IO and Faye websocket servers. BigPanda ####
+  Blogs & Articles * [Load Testing WebSockets](https://medium.com/bigpanda-engineering/load-testing-web-sockets-2c5a499e447e)
+  - 2017 Capital One #### Blogs & Articles * [Performance Testing of Event-Driven
+  Microservices](https://medium.com/capital-one-tech/performance-testing-of-event-driven-microservices-f5de74305985)
+  - 2017 Cloud Posse #### Tools * [Load Testing Stack](https://github.com/cloudposse-archives/load-testing)
+  - A collection of best practices, workflows, scripts and scenarios used for load
+  and performance testing. Cloudflare #### Blogs & Articles * [How to receive a million
+  packets per second](https://blog.cloudflare.com/how-to-receive-a-million-packets/)
+  - 2015 * [Optimizing Your Linux Stack for Maximum Mobile Web Performance](https://blog.cloudflare.com/optimizing-the-linux-stack-for-mobile-web-per/)
+  - 2012 CloudStory #### Blogs & Articles * [Running Load Testing at scale on shoestring
+  budget](https://medium.com/cloudstory/running-load-testing-at-scale-on-shoestring-budget-b7ea34e4d5db)
+  - 2020 Confluent #### Talks * [Ducktape: Keeping System Testing Simple in a Distributed
+  World](http"
 ---
 {% raw %}
 <p align="center">

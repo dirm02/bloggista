@@ -2,8 +2,62 @@
 layout: project
 name: Moonwalker440 Telebotlist
 slug: MoonWalker440-TeleBotList
+category: Bots-honeypots
 image: https://graph.org//file/a8989d31179c07165fc6f.jpg
 repo_url: https://github.com/MoonWalker440/TeleBotList)
+indexed_content: "[](https://github.com/MoonWalker440/TeleBotList) Tele Bot List This
+  repository is a curated list of open source Telegram bots, with links to their source
+  code on GitHub. The purpose of this list is to help developers find and learn from
+  open-source Telegram bots, and to encourage the sharing of knowledge and best practices
+  among the Telegram bot developer community. The list is frequently updated with
+  new bots and improvements. All programming languages are listed by alphabetical
+  order. Tele Bot List ### Table Of Contents\U0001F9FE ➤ Languages - [Bash](#-bash)
+  - [C#](https://github.com/MoonWalker440/TeleBotList#-c) - [Fluent](#-fluent) - [Go](https://github.com/MoonWalker440/TeleBotList#-go)
+  - [Java](https://github.com/MoonWalker440/TeleBotList#-java) - [JavaScript](https://github.com/MoonWalker440/TeleBotList#-javaScript)
+  - [Lua](https://github.com/MoonWalker440/TeleBotList#-lua) - [Nim](#-nim) - [php](https://github.com/MoonWalker440/TeleBotList#-php)
+  - [Python](https://github.com/MoonWalker440/TeleBotList#-python) - [Ruby](https://github.com/MoonWalker440/TeleBotList#-ruby)
+  - [Rust](https://github.com/MoonWalker440/TeleBotList#-rust) - [Shell](#-shell)
+  - [TypeScript](https://github.com/MoonWalker440/TeleBotList#-typeScript) ➤ [Tools](#-tools)
+  ➤ [Disclaimer](https://github.com/MoonWalker440/TeleBotList#-disclaimer) ➤ [Contribution](https://github.com/MoonWalker440/TeleBotList#-contribution)
+  ### ➤ Bash - [Watermark bot](https://github.com/eyaadh/Watermark-Bash-Telegram-Bot)
+  - This is an opensource Telegram Bot built based on bash ### ➤ C# - [DalleTelegramBot](https://github.com/dev-kian/DalleTelegramBot)
+  - Telegram Bot for Image Generation with DALL-E OpenAI - [@tthemebot](https://t.me/tthemebot)
+  - Open source theme bot. [GitHub](https://github.com/GreyWolfDev/Telegram-Theme-Bot)
+  ### ➤ Fluent - [@ChannelActionsBot](https://t.me/ChannelActionsBot) - Telegram bot
+  to auto approve chat join requests. [GitHub](https://github.com/xditya/ChannelActionsBot)
+  ### ➤ Go - [tg-spam](https://github.com/umputun/tg-spam) - Anti-Spam bot for Telegram
+  - [CSUBOT](https://github.com/cjh0613/csubot) - Anti-Spam bot, Telegram Web APP
+  CAPTCHA Bot to verify if incoming group users are real humans. - [@Alita_Robot](https://t.me/Alita_Robot)
+  - Alita is a Telegram Group management bot made using Gotgbot and Go, which makes
+  it modern and faster than most of the Telegram chat managers. [GitHub](https://github.com/divideprojects/Alita_Robot)
+  - [@prgitrelbot](https://t.me/prgitrelbot) - A Telegram Bot (@prgitrelbot) that
+  notifies you of new Github releases. [GitHub](https://github.com/chofnar/release-bot)
+  - [@tenXoffer_bot](https://t.me/tenXoffer_bot) ❌ - The telegram bot will check if
+  the user is subscribed to channels, if so it will grant access to the website. [GitHub](https://github.com/habibulloxon/check-sub-bot)
+  - [@iruncode_bot](https://t.me/iruncode_bot) - A Telegram bot that will run code
+  for you. [GitHub](https://github.com/tusharsadhwani/piston_bot) - [@the_rms_bot](https://t.me/the_rms_bot)
+  - A very simple bot that responds to a command by a random meme. [GitLab](https://gitlab.com/albandewilde/ris)
+  - [@wayback_machine_bot](https://t.me/wayback_machine_bot) - Wayback Machine Bot.
+  [GitHub](https://github.com/tgbot-collection/archiver) - [@notion_echo_bot](https://t.me/notion_echo_bot)
+  - A telegram bot to write your thoughts in Notion from Telegram. [GitHub](https://github.com/fulviodenza/notion-echo)
+  - [@the_peche_bot](https://t.me/the_peche_bot) - A telegram bot that spontaneously
+  send images at random time in a channel. [GitLab](https://gitlab.com/albandewilde/peche)
+  ### ➤ Java - [@userinfobot](https://t.me/userinfobot) - Simple Java Telegram bot
+  displaying user info when a message is forwarded to it. [GitHub](https://github.com/nadam/userinfobot)
+  - [@trashemail_bot](https://t.me/trashemail_bot) - A hosted disposable email telegram
+  bot; Extremely privacy friendly; Proudly hosted for community. [GitHub](https://github.com/rosehgal/TrashEmail)
+  - [@chatbridgebot](https://.me/chatbridgebot) - Bot that lets Telegram users chat
+  with each other even if they are reported. [GitHub](https://github.com/nadam/chatbridgebot)
+  - [@AvandyNewsBot](https://t.me/AvandyNewsBot) - With this bot you will be aware
+  of all the latest news. [GitHub](https://github.com/mrprogre/avandy-news-bot) ###
+  ➤ JavaScript - [@ExpenseBot](https://t.me/ExpenseBot) - A bot that helps you manage
+  and track your daily expenses. [GitHub](https://github.com/n1try/telegram-expense-bot)
+  - [@instaa_saver_bot](https://t.me/instaa_saver_bot) ❌ - Effortlessly download Instagram
+  Reels, posts, and images, along with captions, using this Telegram bot. [GitHub](https://github.com/akashvaghela09/insta-saver-bot)
+  - [@beetube_bot](https://t.me/beetube_bot) ❌ - A telegram bot for music, movies,
+  anime, torrent, EDM tracks, series downloads, files, and more. [GitHub](https://github.com/kodjunkie/beetube-bot)
+  - [@terabox_dl_arman_bot](https://t.me/terabox_dl_arman_bot) ❌ - Download files
+  of ter"
 ---
 {% raw %}
 [![GitHub Logo](https://graph.org//file/a8989d31179c07165fc6f.jpg)](https://github.com/MoonWalker440/TeleBotList)

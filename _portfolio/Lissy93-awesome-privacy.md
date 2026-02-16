@@ -2,8 +2,65 @@
 layout: project
 name: Lissy93 Awesome Privacy
 slug: Lissy93-awesome-privacy
+category: Educational-map
 image: https://img.shields.io/github/stars/bitwarden/server?style=flat&logo=github&label=server&color=%235f53f4&cacheSeconds=3600
 repo_url: https://github.com/Lissy93/awesome-privacy
+indexed_content: "\U0001F310 awesome-privacy.xyz A curated list of privacy & security-focused
+  apps, software, and providers \U0001F510 ## Intro Large data-hungry corporations
+  dominate the digital world but with little, or no respect for your privacy. Migrating
+  to open-source applications with a strong emphasis on privacy and security will
+  help stop corporations, governments, and hackers from logging, storing or selling
+  your personal data. > ⚠️ **Note**: Remember that [no software is perfect](#important-considerations),
+  and it is important to follow good [security practices](https://github.com/Lissy93/personal-security-checklist/blob/HEAD/CHECKLIST.md)
+  > > \U0001FA9E **Mirror**: This repo is mirrored to [codeberg.org/alicia/awesome-privacy](https://codeberg.org/alicia/awesome-privacy)
+  > > \U0001F4BC **Repo Admin**: [Website Docs](#the-website) | [API Docs](#the-api)
+  | [Contributing](#contributing) | [Acknowledgment](#acknowledgements) | [License](#license)
+  \U0001F4CB Contents - **Essentials** - [Password Managers](#password-managers) (6)
+  - [2-Factor Authentication](#2-factor-authentication) (9) - [File Encryption](#file-encryption)
+  (4) - [Browsers](#browsers) (5) - [Search Engines](#search-engines) (5) - **Communication**
+  - [Encrypted Messaging](#encrypted-messaging) (5) - [P2P Messaging](#p2p-messaging)
+  (5) - [Encrypted Email](#encrypted-email) (5) - [Email Clients](#email-clients)
+  (6) - [Mail Forwarding](#mail-forwarding) (6) - [Email Security Tools](#email-security-tools)
+  (3) - [VOIP Clients](#voip-clients) (2) - [Virtual Phone Numbers](#virtual-phone-numbers)
+  (5) - [Team Collaboration](#team-collaboration) (5) - **Security Tools** - [Browser
+  Extensions](#browser-extensions) (26) - [Mobile Apps](#mobile-apps) (25) - [Online
+  Tools](#online-tools) (18) - **Networking** - [Virtual Private Networks](#virtual-private-networks)
+  (6) - [Self-Hosted Network Security](#self-hosted-network-security) (8) - [Mix Networks](#mix-networks)
+  (3) - [Proxies](#proxies) (2) - [DNS Providers](#dns-providers) (3) - [DNS Clients](#dns-clients)
+  (6) - [Firewalls](#firewalls) (14) - [Ad Blockers](#ad-blockers) (8) - [Host Block
+  Lists](#host-block-lists) (5) - [Router Firmware](#router-firmware) (2) - [Network
+  Analysis](#network-analysis) (4) - [Intrusion Detection](#intrusion-detection) (5)
+  - [Cloud Hosting](#cloud-hosting) (3) - [Domain Registrars](#domain-registrars)
+  (2) - [DNS Hosting](#dns-hosting) (1) - [Mail Servers](#mail-servers) (3) - **Productivity**
+  - [Digital Notes](#digital-notes) (8) - [Calendar](#calendar) (0) - [Backup and
+  Sync](#backup-and-sync) (3) - [Cloud Productivity Suites](#cloud-productivity-suites)
+  (5) - [Encrypted Cloud Storage](#encrypted-cloud-storage) (7) - [File Drop](#file-drop)
+  (2) - [Browser Sync](#browser-sync) (5) - [Secure Conference Calls](#secure-conference-calls)
+  (2) - **Utilities** - [Virtual Machines](#virtual-machines) (3) - [PGP Managers](#pgp-managers)
+  (9) - [Metadata Removal](#metadata-removal) (3) - [Data Erasers](#data-erasers)
+  (9) - **Operating Systems** - [Mobile Operating Systems](#mobile-operating-systems)
+  (4) - [Desktop Operating Systems](#desktop-operating-systems) (6) - [Linux Defenses](#linux-defenses)
+  (6) - [Windows Defences](#windows-defences) (22) - [Mac OS Defences](#mac-os-defences)
+  (3) - [Anti-Malware](#anti-malware) (2) - **Development** - [Code Hosting](#code-hosting)
+  (5) - [IDEs](#ides) (0) - [Terminal Emulators](#terminal-emulators) (0) - **Smart
+  Home & IoT** - [Voice Assistants](#voice-assistants) (2) - [Smart Home](#smart-home)
+  (1) - **Finance** - [Cryptocurrencies](#cryptocurrencies) (2) - [Crypto Wallets](#crypto-wallets)
+  (8) - [Crypto Exchanges](#crypto-exchanges) (4) - [Virtual Credit Cards](#virtual-credit-cards)
+  (3) - [Other Payment Methods](#other-payment-methods) (3) - [Secure Budgeting](#secure-budgeting)
+  (3) - **Social** - [Social Networks](#social-networks) (5) - [Video Platforms](#video-platforms)
+  (3) - [Blogging Platforms](#blogging-platforms) (6) - [News Readers](#news-readers)
+  (3) - [Proxy Sites](#proxy-sites) (4) - **Media** - [Gaming](#gaming) (0) - [Media
+  Servers](#media-servers) (0) - [Music Players](#music-players) (0) - [Video Players](#video-players)
+  (0) - [Photo Viewers](#photo-viewers) (0) - [E-Book Readers](#e-book-readers) (0)
+  - [Podcast Players](#podcast-players) (0) - [Torrent Downloaders](#torrent-downloaders)
+  (0) - [File Converters](#file-converters) (0) - **Creativity** - [Image Editors](#image-editors)
+  (8) - [Video Editors](#video-editors) (7) - [Audio Editors & Recorders](#audio-editors--recorders)
+  (1) - [Casting & Streaming](#casting--streaming) (1) - [Screenshot Tools](#screenshot-tools)
+  (0) - [3D Graphics](#3d-graphics) (2) - [Animation](#animation) (1) ## Essentials
+  ### Password Managers - **[ Bitwarden](https://bitwarden.com)** - Fully-featured,
+  open source password manager with cloud-sync. Bitwarden is easy-to-use with a clean
+  UI and client apps for desktop, web and mobile. See also [Vaultwarden](https://github.com/dani-garcia/vaultwarden),
+  a self-hosted, Rust implementation of the Bitward"
 ---
 {% raw %}
 <p align="center" id="top"><a href="https://github.com/Lissy93/awesome-privacy"><img src="https://i.ibb.co/80Y5x2T/Awesome-Privacy.png" /></a></p>

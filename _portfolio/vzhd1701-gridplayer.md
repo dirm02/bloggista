@@ -2,8 +2,62 @@
 layout: project
 name: Vzhd1701 Gridplayer
 slug: vzhd1701-gridplayer
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/logo.svg
 repo_url: https://github.com/vzhd1701/gridplayer
+indexed_content: '[](https://pypi.python.org/pypi/gridplayer) [](https://github.com/vzhd1701/gridplayer/releases/latest)
+  [](https://crowdin.com/project/gridplayer) ## Screenshots [](https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/screenshot-001.png)
+  [](https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/screenshot-002.png)
+  [](https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/screenshot-003.png)
+  [](https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/screenshot-004.png)
+  ## About Simple VLC-based media player that can play multiple videos at the same
+  time. You can play as many videos as you like, the only limit is your hardware.
+  It supports all video formats that VLC supports (which is all of them). You can
+  save your playlist retaining information about the position, sound volume, loops,
+  aspect ratio, etc. ## Features - Cross-platform (Linux, Mac, and Windows) - Support
+  for any video and audio format (VLC) - Support for (almost) any streaming URLs ([streamlink](https://streamlink.github.io/plugins.html)
+  + [yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)) - Hardware
+  & software video decoding - Control video aspect, playback speed, zoom - Set loop
+  fragments with frame percision - Configurable grid layout - Easy swap videos with
+  drag-n-drop - Playlist retains settings for each video ## Translation GridPlayer
+  now supports internationalization! Anyone with a handful of free time and desire
+  to support this project is [welcome to contribute](https://crowdin.com/project/gridplayer).
+  No coding skills or special software required, all dialogs are well documented and
+  there are not many strings to translate. Huge thanks to [every contributor](https://github.com/vzhd1701/gridplayer#translations)!
+  ## Installation ### Windows [](https://github.com/vzhd1701/gridplayer/releases/download/v0.5.4/GridPlayer-0.5.4-win64-install.exe)
+  [](https://github.com/vzhd1701/gridplayer/releases/download/v0.5.4/GridPlayer-0.5.4-win64-portable.zip)
+  Via [scoop](https://scoop.sh/): ```shell $ scoop install gridplayer ``` **Compatible
+  with Windows 7, 8, 10, 11.** ### Linux [](https://flathub.org/apps/details/com.vzhd1701.gridplayer)
+  [](https://snapcraft.io/gridplayer) [](https://github.com/vzhd1701/gridplayer/releases/download/v0.5.4/GridPlayer-0.5.4-x86_64.AppImage)
+  **For better system integration install via Flathub.** #### Note on AppImage The
+  AppImage was built using Ubuntu Focal Fossa libraries, so compatibility is Ubuntu
+  20+. You may need to set execute permissions on AppImage file in order to run it:
+  ```shell $ chmod +x GridPlayer-0.5.4-x86_64.AppImage ``` ### MacOS [](https://github.com/vzhd1701/gridplayer/releases/download/v0.5.4/GridPlayer.0.5.4.dmg)
+  **DMG image is not signed.** You will have to add an exception to run this app.
+  - [How to open an app that hasn’t been notarized or is from an unidentified developer](https://support.apple.com/en-euro/HT202491)
+  - [Open a Mac app from an unidentified developer](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac)
+  If you get "GridPlayer is damaged and can''t be opened" error, run this command
+  in the Terminal app: ```shell $ sudo xattr -rd com.apple.quarantine /Applications/GridPlayer.app
+  ``` ### Install with [UV](https://docs.astral.sh/uv/) ```shell $ uv tool install
+  gridplayer ``` **Python 3.10 or later required.** This type of installation will
+  also require VLC installed (Windows & Mac) or a `vlc` package (Linux) present in
+  your system. Please refer to [VLC official page](https://www.videolan.org/vlc/)
+  for instructions on how to install it. Some distros (e.g. Ubuntu) might also require
+  `libxcb-xinerama0` package. ### From source ```shell $ uv tool install git+https://github.com/vzhd1701/gridplayer.git
+  ``` The same notes about the Python version and external packages from above apply
+  here. ## Video Decoder settings GridPlayer supports two video output modes: - Hardware
+  (default) mode uses available GPU to render video. This mode offers high performance
+  and is a recommended mode. - Software mode is entirely independent of GPU and only
+  uses the CPU to render video. This mode may cause a high CPU load with high-resolution
+  videos. Due to libvlc software library limitations, video decoding is split into
+  parallel processes. You can control how many videos are handled by a single decoder
+  process using the "Videos per process" setting. Setting this option too high may
+  cause a high CPU load and application freeze. The optimal value is 4 videos per
+  process. There is also "Hardware SP" mode. It handles video decoding within the
+  same process in which GridPlayer runs. It is not recommended to use with many videos
+  (>4-6) because it may cause high CPU load and application freeze. Due to OS inter-process
+  restrictions, "Hardware SP" is the only available hardware mode in macOS. ## Known
+  issues #### Linux (Snap): Error when opening a file from the mou'
 ---
 {% raw %}
 ![GridPlayer](https://raw.githubusercontent.com/vzhd1701/gridplayer/master/resources/public/logo.svg)

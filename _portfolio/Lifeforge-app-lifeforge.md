@@ -2,8 +2,71 @@
 layout: project
 name: Lifeforge App Lifeforge
 slug: Lifeforge-app-lifeforge
+category: Uncategorized
 image: https://raw.githubusercontent.com/LifeForge-app/lifeforge-docs-media/main/assets/mockup-new.webp
 repo_url: https://github.com/lifeforge-app/lifeforge
+indexed_content: "> [!CAUTION] > > ## ⚠️ Development Paused – Critical CSS Architecture
+  Issue > > **Progress on the entire system was temporarily blocked** due to a severe
+  CSS layering conflict between the host application and federated modules. > > **Root
+  Cause:** When both the host and federated modules bundle Tailwind CSS independently,
+  CSS cascade layer conflicts occur. This leads to unpredictable style overrides across
+  module boundaries, breaking responsive utilities (for example `flex md:grid`) and
+  causing module styles to unintentionally override host styles. This issue is inherent
+  to utility-driven global CSS in a module federation environment and cannot be reliably
+  mitigated with configuration alone. > > **Resolution Direction:** > PR **#93** introduces
+  an enhanced version of the internal UI library designed to **replace Tailwind entirely**.
+  The new system is token-driven, component-based, and avoids global utility CSS,
+  eliminating cross-boundary cascade conflicts by design. This change establishes
+  a single, predictable styling contract across the host and all federated modules.
+  > > **Important:** > This migration involves **breaking changes** and represents
+  a deliberate architectural shift. While disruptive in the short term, it is necessary
+  to ensure long-term stability and correctness of the module federation system. Please
+  refer to the [issue](https://github.com/lifeforge-app/lifeforge/issues/93) for ongoing
+  updates and migration details. A self-hosted solution to streamline and organize
+  all aspects of your life. \U0001F1EC\U0001F1E7 English \U0001F1E8\U0001F1F3 简体中文
+  \U0001F1F9\U0001F1FC 繁體中文 \U0001F1F2\U0001F1FE Bahasa Malaysia THIS PROJECT IS STILL
+  IN EARLY DEVELOPMENT. FEATURES AND MODULES ARE SUBJECT TO CHANGE. PLEASE CHECK THE
+  DOCUMENTATION FOR THE LATEST UPDATES. ## \U0001F4CB Table of Contents - [\U0001F4CB
+  Table of Contents](#-table-of-contents) - [\U0001F525 Support the Author](#-support-the-author)
+  - [\U0001F914 The Problem](#-the-problem) - [✅ The Solution](#-the-solution) - [\U0001F9F1
+  Modules](#-modules) - [\U0001F5A5 Screenshots](#-screenshots) - [⌨️ Setup](#️-setup)
+  - [Contributing](#contributing) - [Contributing to Core](#contributing-to-core)
+  - [Creating Modules](#creating-modules) - [Feature Requests \\& Bug Reports](#feature-requests--bug-reports)
+  - [Translation](#translation) - [\U0001F4A1 Credits](#-credits) - [\U0001F4C4 License](#-license)
+  ## \U0001F525 Support the Author ## \U0001F914 The Problem People nowadays having
+  tons of different apps to increase their productivity, but [using too much apps
+  distracts your focus](https://theunfilteredreport.com/why-productivity-apps-are-making-people-less-productive/).
+  Most software-as-a-service (SaaS) solutions are subscription-based, leading to recurring
+  costs that can add up over time. Additionally, many of these services collect user
+  data for advertising or analytics purposes, and even using those data for AI training,
+  raising privacy concerns. ## ✅ The Solution LifeForge is a **personal management
+  system** designed to help you manage your life efficiently. Whether it's keeping
+  track of tasks, organizing projects, setting personal goals, or managing financial
+  statuses, LifeForge has got you covered. With its modular architecture, you can
+  customize LifeForge to fit your unique needs. Activate only the modules you require,
+  **keep yourself from a pile of unused features**, and create a streamlined experience
+  tailored just for you. Built with privacy in mind, your data is stored locally on
+  your own server or device (we do not host any servers too), which means you are
+  in full control of your data. **No telemetry, no data mining, just pure privacy**.
+  ## \U0001F9F1 Modules LifeForge’s modular system is designed to empower users by
+  providing a diverse range of tools and features tailored to their unique needs.
+  Each module focuses on a specific aspect of life, such as productivity, finance,
+  lifestyle, and learning, offering flexibility and customization. Whether you’re
+  organizing your tasks, managing finances, or exploring creative pursuits, LifeForge’s
+  modular design allows you to activate only the features you need, creating a personalized
+  and streamlined experience. Key highlights of the modules include: - Productivity
+  Tools: Boost efficiency with modules like the Todo List, Projects, Idea Box, and
+  the Pomodoro Timer. These tools help users manage tasks, brainstorm ideas, and stay
+  focused on their goals. - Finance Management: Take control of finances using the
+  Wallet, Wishlist, and Budget modules, offering tools for tracking expenses, saving
+  for future goals, and planning budgets. - Lifestyle Enhancements: Reflect and grow
+  with the Journal and Achievements modules, or stay active with features like Workout
+  tracking. - Study Aids: Improve learning with the Flashcards, Notes, and CFOP Algorithms
+  modules, ideal for students and lifelong learners. - Storage Solutions: Organize
+  books, photos, music, and more with modules like Books Library, Photos, and Guitar
+  Tabs. - Information Management: Stay informed and efficient with tools like the
+  Mail Inbox and Changi Airport for specialized insights. - Customization: Tailor
+  the pla"
 ---
 {% raw %}
 > [!CAUTION]

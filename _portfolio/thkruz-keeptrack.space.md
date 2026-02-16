@@ -2,8 +2,68 @@
 layout: project
 name: Thkruz Keeptrack.space
 slug: thkruz-keeptrack.space
+category: Serv&Prod-Tools
 image: https://img.shields.io/badge/version-11.0.3-darkgreen?style=flat-square
 repo_url: https://github.com/thkruz/ootk))
+indexed_content: "[](https://discord.gg/G4tJfSkmzx) # KeepTrack.space™ > Professional
+  satellite tracking for everyone **KeepTrack™** brings real orbital mechanics to
+  students and educators. Used by [EPFL’s Cosmos Archaeology](https://keeptrack.space/projects/cosmos-archeology),
+  [StarTalk](https://www.youtube.com/watch?v=H0jLiGAGtyg&t=130s), the [18th Space
+  Defense Squadron](https://keeptrack.space/projects/operations-centers), and [ethicallyHackingspace](https://start.ethicallyhacking.space/),
+  among many others. **Key Features:** - \U0001F680 Track 50,000+ satellites in real-time
+  - ⚡ 5 MB core app, loads in under 2 seconds - \U0001F3AE Simulate 2.5M debris objects
+  at 60fps - \U0001F4F1 Works on mobile, tablet, and desktop - \U0001F193 Free, open
+  source, runs offline [Try it live](https://app.keeptrack.space) | [Installation](#installation)
+  | [Join Discord](https://discord.gg/G4tJfSkmzx) | [Screenshots](#screenshots) ---
+  # Table of Contents - [Project Overview](#project-overview) - [Who Is KeepTrack
+  For?](#who-is-keeptrack-for) - [Technology Stack](#technology-stack) - [Installation](#installation)
+  - [Architecture](#architecture) - [Contributing](#contributing) - [Features](#features)
+  - [Screenshots](#screenshots) - [Deployment](#deployment) - [Release Notes](#release-notes)
+  - [Contributors](#contributors) - [Trademarks](#trademarks) - [License](#license)
+  - [Use of AI](#use-of-ai) - [Additional Resources](#additional-resources) --- #
+  Project Overview Welcome to KeepTrack, an ambitious project aiming to make orbital
+  analysis tools accessible to all. KeepTrack provides a simplified and streamlined
+  experience for learning and interacting with satellites and space debris. Built
+  from the ground up with custom WebGL 2.0 shaders, an internal orbital mechanics
+  library, and a high-performance render loop, this is a lot more than just dots around
+  a globe. **What makes KeepTrack unique:** - Built with performance-first architecture
+  - No installation required—runs in any modern browser - Offline capability for operations
+  in restricted environments - See satellites up close in 3D, or zoom all the way
+  out to the entire solar system --- ## Who is KeepTrack For? KeepTrack is used in
+  operations centers, classrooms, and outreach programs around the world. ### Operations
+  Centers - Get popup alerts when satellites pass through sensor coverage - Find when
+  sensors can see priority satellites in seconds - Simulate new launches for mission
+  planning - Model satellite breakups and debris fields ### Education - Learn through
+  hands-on interaction - Use Xbox controllers for classroom demonstrations - Experience
+  AAA video game quality graphics - Visualize complex orbital mechanics ### Outreach
+  - Embed KeepTrack on your website for free - Show satellite designs in orbit before
+  launch - Explain space sustainability and the debris problem - Create custom demos
+  for public engagement --- # Technology Stack - **TypeScript** - Type-safe development
+  with ES6+ modules - **WebGL 2.0** - Hardware-accelerated 3D rendering - **OOTK**
+  ([ootk](https://github.com/thkruz/ootk)) - Orbital Mechanics library - **Web Workers**
+  - Background orbit calculations (non-blocking UI) - **Webpack** - Module bundling
+  and optimization - **Materialize CSS** - UI framework (being modernized) **Browser
+  Requirements:** WebGL 2.0 support - Chrome 56+ | Firefox 51+ | Safari 15+ | Edge
+  79+ --- # Installation KeepTrack is automatically deployed to production and development
+  environments: - **Production:** - **Development:** ## Prerequisites To build KeepTrack
+  locally, you need: - [Node.js](https://nodejs.org/) 18+ (`node --version` to check)
+  - [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.io/) - [git](https://git-scm.com/)
+  ## Quick Start ```bash # Clone the repository git clone https://github.com/thkruz/keeptrack.space
+  cd keeptrack.space # Install dependencies npm install # Build the project npm run
+  build # Start development server npm start ``` **Then open:** `http://localhost:5544`
+  in your browser. > **First time setup?** The app will download the satellite catalog
+  (~5 MB) on first load. This takes approximately 30 seconds. ### Development Commands
+  | Command | Description | |---------|-------------| | `npm start` | Start dev server
+  at `localhost:5544` | | `npm run build` | Production build to `/dist` | | `npm run
+  lint` | Check code style | | `npm run lint:fix` | Auto-fix linting issues | | `npm
+  test` | Run test suite | ### Troubleshooting **Port 5544 already in use?** The development
+  server will automatically select an alternative port and display it in the terminal.
+  **Build errors?** - Ensure Node.js 18+ is installed: `node --version` - Clear npm
+  cache: `npm cache clean --force` - Delete `node_modules` and reinstall: `rm -rf
+  node_modules && npm install` - Still having problems? Open an issue and I will address
+  it as soon as possible. **Blank screen or WebGL errors?** - Check browser console
+  (F12) for error messages - Verify WebGL 2.0 support: Visit - Update graphics drivers
+  - Try a different browser (Chromium based brow"
 ---
 {% raw %}
 ![Latest Version](https://img.shields.io/badge/version-11.0.3-darkgreen?style=flat-square) 

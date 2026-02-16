@@ -2,8 +2,49 @@
 layout: project
 name: Tombursch Kitchenowl
 slug: TomBursch-kitchenowl
+category: Platform -eCommerce
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/TomBursch-kitchenowl/docs/docs/img/logo.png
 repo_url: https://github.com/TomBursch/kitchenowl
+indexed_content: "A smart grocery list and recipe manager. Website | Docs | Self-Hosting
+  | Matrix \U0001F36B \U0001F958 \U0001F37D KitchenOwl is a smart self-hosted grocery
+  list and recipe manager. Easily add items to your shopping list before you go shopping.
+  You can also create recipes and get suggestions on what you want to cook. Track
+  your expenses so you know how much you've spent. - Native Mobile/Web/Desktop apps
+  with a great design - Add items to your shopping list and sync them in real-time
+  with multiple users - Partial offline support, so you don't lose track of what to
+  buy even when there is no signal - Manage recipes and add them to your shopping
+  list - Share recipes with friends and family - Create a meal plan to always know
+  what you'll be eating - Manage balances and track expenses of your household Please
+  keep in mind that this project is still in development. For a full list check out
+  the [website](https://kitchenowl.org). For a list of planned features, take a look
+  at the [Roadmap](https://github.com/users/TomBursch/projects/1)! ## \U0001F4F1 Screenshots
+  ## \U0001F916 App Install Get it in your favorite store or find the current release
+  for your operating system on the [releases page](https://github.com/TomBursch/kitchenowl/releases).
+  ## \U0001F680 Get started Please take a look at the [get started guide](https://docs.kitchenowl.org/latest/self-hosting/).
+  ## \U0001F64C Contributing From opening a bug report to creating a pull request:
+  every contribution is appreciated and welcomed. If you're planning to implement
+  a new feature or change the API please create an issue first. This way, we can ensure
+  your work is not in vain. For more information see [Contributing](CONTRIBUTING.md)
+  or get in contact by joining our [Matrix space](https://matrix.to/#/#kitchenowl:matrix.org).
+  ### \U0001F30D Translations You can help translate the App into your language by
+  using [Weblate](https://hosted.weblate.org/engage/kitchenowl/)! ## \U0001F6CE️ Stay
+  Up-to-Date KitchenOwl is moving fast, to stay updated consider starring and watching
+  the releases of this repository. ### \U0001F4AC Status - [x] Public Alpha: Still
+  working on stuff (rarely things might break) - [ ] Public Beta: Stable and most
+  planned features complete - [ ] Public: Production-ready ## \U0001F4DA Related -
+  [Website](https://kitchenowl.org) - [Docs](https://docs.kitchenowl.org) - [KitchenOwl
+  Backend](https://github.com/TomBursch/kitchenowl-backend) Repository - [KitchenOwl
+  Website](https://github.com/TomBursch/kitchenowl-website) Repository - [KitchenOwl
+  Python Client](https://github.com/TomBursch/kitchenowl-python) Repository - [KitchenOwl
+  Home Assistant Integration](https://github.com/TomBursch/kitchenowl-ha) Repository
+  - [DockerHub](https://hub.docker.com/r/tombursch/kitchenowl) - [Recipe scrapers](https://github.com/hhursev/recipe-scrapers)
+  used for scraping recipes from the web - [Weblate](https://weblate.org/) is helping
+  with continuous localization as part of their ongoing support for open-source software
+  projects. ### \U0001F528 Built With - [Flask](https://flask.palletsprojects.com/)
+  - [Flutter](https://flutter.dev/) - [Docker](https://docs.docker.com/) ## \U0001F340
+  Contributors ## \U0001F4DC License KitchenOwl is Free Software: You can use, study
+  share and improve it at your will. Specifically you can redistribute and/or modify
+  it under the terms of the AGPL-3.0 License."
 ---
 {% raw %}
 <h1 align="center">

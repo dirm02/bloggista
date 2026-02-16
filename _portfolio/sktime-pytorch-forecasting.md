@@ -2,8 +2,64 @@
 layout: project
 name: Sktime Pytorch Forecasting
 slug: sktime-pytorch-forecasting
+category: Science -math-physics-chemistry
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sktime-pytorch-forecasting/docs/source/_static/logo.svg
 repo_url: https://github.com/sktime/pytorch-forecasting
+indexed_content: '_PyTorch Forecasting_ is a PyTorch-based package for forecasting
+  with state-of-the-art deep learning architectures. It provides a high-level API
+  and uses [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/) to scale
+  training on GPU or CPU, with automatic logging. | | **[Documentation](https://pytorch-forecasting.readthedocs.io)**
+  · **[Tutorials](https://pytorch-forecasting.readthedocs.io/en/latest/tutorials.html)**
+  · **[Release Notes](https://pytorch-forecasting.readthedocs.io/en/latest/CHANGELOG.html)**
+  | |---|---| | **Open&#160;Source** | [](https://github.com/sktime/pytorch-forecasting/blob/master/LICENSE)
+  [](https://gc-os-ai.github.io/) | | | **Community** | [](https://discord.com/invite/54ACzaFsn7)
+  [](https://www.linkedin.com/company/scikit-time/) | | **CI/CD** | [](https://github.com/sktime/pytorch-forecasting/actions/workflows/pypi_release.yml)
+  [](https://pytorch-forecasting.readthedocs.io) [](https://github.com/sktime/pytorch-forecasting)
+  [![Code Coverage][coverage-image]][coverage-url] | | **Code** | [](https://pypi.org/project/pytorch-forecasting/)
+  [](https://anaconda.org/conda-forge/pytorch-forecasting) [](https://www.python.org/)
+  [](https://github.com/psf/black) | | **Downloads** | [)](https://pepy.tech/project/pytorch-forecasting)
+  | [coverage-image]: https://codecov.io/gh/sktime/pytorch-forecasting/branch/main/graph/badge.svg
+  [coverage-url]: https://codecov.io/github/sktime/pytorch-forecasting?branch=main
+  --- Our article on [Towards Data Science](https://towardsdatascience.com/introducing-pytorch-forecasting-64de99b9ef46)
+  introduces the package and provides background information. PyTorch Forecasting
+  aims to ease state-of-the-art timeseries forecasting with neural networks for real-world
+  cases and research alike. The goal is to provide a high-level API with maximum flexibility
+  for professionals and reasonable defaults for beginners. Specifically, the package
+  provides - A timeseries dataset class which abstracts handling variable transformations,
+  missing values, randomized subsampling, multiple history lengths, etc. - A base
+  model class which provides basic training of timeseries models along with logging
+  in TensorBoard and generic visualizations such as actual vs predictions and dependency
+  plots - Multiple neural network architectures for timeseries forecasting that have
+  been enhanced for real-world deployment and come with in-built interpretation capabilities
+  - Multi-horizon timeseries metrics - Hyperparameter tuning with [optuna](https://optuna.readthedocs.io/)
+  The package is built on [pytorch-lightning](https://pytorch-lightning.readthedocs.io/)
+  to allow training on CPUs, single and multiple GPUs out-of-the-box. # Installation
+  If you are working on windows, you need to first install PyTorch with `pip install
+  torch -f https://download.pytorch.org/whl/torch_stable.html`. Otherwise, you can
+  proceed with `pip install pytorch-forecasting` Alternatively, you can install the
+  package via conda `conda install pytorch-forecasting pytorch -c pytorch>=1.7 -c
+  conda-forge` PyTorch Forecasting is now installed from the conda-forge channel while
+  PyTorch is install from the pytorch channel. To use the MQF2 loss (multivariate
+  quantile loss), also install `pip install pytorch-forecasting[mqf2]` # Documentation
+  Visit [https://pytorch-forecasting.readthedocs.io](https://pytorch-forecasting.readthedocs.io)
+  to read the documentation with detailed tutorials. # Available models The documentation
+  provides a [comparison of available models](https://pytorch-forecasting.readthedocs.io/en/latest/models.html).
+  - [Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting](https://arxiv.org/pdf/1912.09363.pdf)
+  which outperforms DeepAR by Amazon by 36-69% in benchmarks - [N-BEATS: Neural basis
+  expansion analysis for interpretable time series forecasting](http://arxiv.org/abs/1905.10437)
+  which has (if used as ensemble) outperformed all other methods including ensembles
+  of traditional statical methods in the M4 competition. The M4 competition is arguably
+  the most important benchmark for univariate time series forecasting. - [N-HiTS:
+  Neural Hierarchical Interpolation for Time Series Forecasting](http://arxiv.org/abs/2201.12886)
+  which supports covariates and has consistently beaten N-BEATS. It is also particularly
+  well-suited for long-horizon forecasting. - [DeepAR: Probabilistic forecasting with
+  autoregressive recurrent networks](https://www.sciencedirect.com/science/article/pii/S0169207019301888)
+  which is the one of the most popular forecasting algorithms and is often used as
+  a baseline - Simple standard networks for baselining: LSTM and GRU networks as well
+  as a MLP on the decoder - A baseline model that always predicts the latest known
+  value To implement new models or other custom components, see the [How to implement
+  new models tutorial](https://pytorch-forecasting.readthedocs.io/en/latest/tutorials/building.html).
+  It covers basic as well as advanced architectures. # Usage example Networ'
 ---
 {% raw %}
 ![PyTorch Forecasting](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/sktime-pytorch-forecasting/docs/source/_static/logo.svg)

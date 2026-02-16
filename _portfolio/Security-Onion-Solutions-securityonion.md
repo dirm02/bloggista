@@ -2,8 +2,14 @@
 layout: project
 name: Security Onion Solutions Securityonion
 slug: Security-Onion-Solutions-securityonion
+category: Uncategorized
 image: https://raw.githubusercontent.com/Security-Onion-Solutions/securityonion-docs/2.4/images/50_alerts.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/Security-Onion-Solutions-securityonion
+indexed_content: "## Security Onion 2.4 Security Onion 2.4 is here! ## Screenshots
+  Alerts Dashboards Hunt Detections PCAP Grid Config ### Release Notes https://docs.securityonion.net/en/2.4/release-notes.html
+  ### Requirements https://docs.securityonion.net/en/2.4/hardware.html ### Download
+  https://docs.securityonion.net/en/2.4/download.html ### Installation https://docs.securityonion.net/en/2.4/installation.html
+  ### FAQ https://docs.securityonion.net/en/2.4/faq.html ### Feedback https://docs.securityonion.net/en/2.4/community-support.html"
 ---
 {% raw %}
 ## Security Onion 2.4

@@ -2,8 +2,67 @@
 layout: project
 name: Goekdeniz Guelmez Local Notebooklm
 slug: Goekdeniz-Guelmez-Local-NotebookLM
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Goekdeniz-Guelmez-Local-NotebookLM/logo.jpeg
 repo_url: https://github.com/Goekdeniz-Guelmez/Local-NotebookLM.git
+indexed_content: '# Local-NotebookLM A local AI-powered tool that converts PDF documents
+  into engaging audio''s such as podcasts, using local LLMs and TTS models. ## Features
+  - PDF text extraction and processing - Customizable podcast generation with different
+  styles and lengths - Support for various LLM providers (OpenAI, Groq, LMStudio,
+  Ollama, Azure) - Text-to-Speech conversion with voice selection - Fully configurable
+  pipeline - Preference-based content focus - Programmatic API for integration in
+  other projects - FastAPI server for web-based access - Example podcast included
+  for demonstration #### Here is a quick example, can you guess what paper they''re
+  talking about? Your browser does not support the audio element. You can manualy
+  download the file here ''./examples/podcast.wav''. ## Prerequisites - Python 3.12+
+  - Local LLM server (optional, for local inference) - Local TTS server (optional,
+  for local audio generation) - At least 8GB RAM (16GB+ recommended for local models)
+  - 10GB+ free disk space ## Installation ### From PyPI ```bash pip install local-notebooklm
+  ``` ### From source 1. Clone the repository: ```bash git clone https://github.com/Goekdeniz-Guelmez/Local-NotebookLM.git
+  cd Local-NotebookLM ``` 2. Create and activate a virtual environment (conda works
+  too): ```bash python -m venv venv source venv/bin/activate # On Windows, use: venv\Scripts\activate
+  ``` 3. Install the required packages: ```bash pip install -r requirements.txt ```
+  ## Running with Docker Compose You can also run both the Gradio Web UI and FastAPI
+  server using Docker Compose. ### Prerequisites - Docker and Docker Compose installed
+  on your system ### Steps 1. Open a terminal and navigate to the `docker/` folder
+  inside the project: ```bash cd docker ``` 2. Build and start the containers: ```bash
+  docker-compose up --build ``` This command will: - Start the Gradio Web UI at [http://localhost:7860](http://localhost:7860)
+  - Start the FastAPI server at [http://localhost:8000](http://localhost:8000) You
+  can access the web interface or use the API endpoints after running the command.
+  To stop the services, press `CTRL+C` and then run: ```bash docker-compose down ```
+  ## Optional pre requisites ### Local TTS server - Follow one installation type (docker,
+  docker-compose, uv) at https://github.com/remsky/Kokoro-FastAPI - Test in your browser
+  that http://localhost:8880/v1 return the json: {"detail":"Not Found"} ## Example
+  Output The repository includes an example podcast in `examples/podcast.wav` to demonstrate
+  the quality and format of the output. The models used are: gpt4o and Mini with tts-hs
+  on Azure. You can listen to this example to get a sense of what Local-NotebookLM
+  can produce before running it on your own PDFs. ## Configuration You can use the
+  default configuration or create a custom JSON config file with the following structure:
+  ```json { "Co-Host-Speaker-1-Voice": "af_sky+af_bella", "Co-Host-Speaker-2-Voice":
+  "af_echo", "Co-Host-Speaker-3-Voice": "af_nova", "Co-Host-Speaker-4-Voice": "af_shimmer",
+  "Host-Speaker-Voice": "af_alloy", "Small-Text-Model": { "provider": { "name": "groq",
+  "key": "your-api-key" }, "model": "llama-3.2-90b-vision-preview" }, "Big-Text-Model":
+  { "provider": { "name": "groq", "key": "your-api-key" }, "model": "llama-3.2-90b-vision-preview"
+  }, "Text-To-Speech-Model": { "provider": { "name": "custom", "endpoint": "http://localhost:8880/v1",
+  "key": "not-needed" }, "model": "kokoro", "audio_format": "wav" }, "Step1": { "system":
+  "", "max_tokens": 1028, "temperature": 0.7, "chunk_size": 1000, "max_chars": 100000
+  }, "Step2": { "system": "", "max_tokens": 8126, "temperature": 1, "chunk_token_limit":
+  2000, "overlap_percent": 10 }, "Step3": { "system": "", "max_tokens": 8126, "temperature":
+  1, "chunk_token_limit": 2000, "overlap_percent": 20 } } ``` ### Provider Options
+  The following provider options are supported: - **OpenAI**: Use OpenAI''s API ```json
+  "provider": { "name": "openai", "key": "your-openai-api-key" } ``` - **Groq**: Use
+  Groq''s API for faster inference ```json "provider": { "name": "groq", "key": "your-groq-api-key"
+  } ``` - **Azure OpenAI**: Use Azure''s OpenAI service ```json "provider": { "name":
+  "azure", "key": "your-azure-api-key", "endpoint": "your-azure-endpoint", "version":
+  "api-version" } ``` - **LMStudio**: Use a local LMStudio server ```json "provider":
+  { "name": "lmstudio", "endpoint": "http://localhost:1234/v1", "key": "not-needed"
+  } ``` - **Ollama**: Use a local Ollama server ```json "provider": { "name": "ollama",
+  "endpoint": "http://localhost:11434", "key": "not-needed" } ``` - **Google generative
+  AI**: Use Google''s API ```json "provider": { "name": "google", "key": "your-google-genai-api-key"
+  } ``` - **Anthropic**: Use Anthropic''s API ```json "provider": { "name": "anthropic",
+  "key": "your-anthropic-api-key" } ``` - **Elevenlabs**: Use Elevenlabs''s API ```json
+  "provider": { "name": "elevenlabs", "key": "your-elevenlabs-api-key" } ``` - **Custom**:
+  Use any OpenAI-compatible API ```json "provider": { "name": "'
 ---
 {% raw %}
 # Local-NotebookLM

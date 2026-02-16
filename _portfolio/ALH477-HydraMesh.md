@@ -2,8 +2,67 @@
 layout: project
 name: Alh477 Hydramesh
 slug: ALH477-HydraMesh
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ALH477-HydraMesh/hydramesh.svg
 repo_url: https://github.com/ALH477/DeMoD-Communication-Framework.git
+indexed_content: "# HydraMesh **Version 5.0.1 | Oct 10, 2025** **Developed by DeMoD
+  LLC** **Contact:** alh477@demod.ltd **License:** [](https://www.gnu.org/licenses/lgpl-3.0)
+  ## Overview HydraMesh is a free and open-source software (FOSS) framework evolved
+  from the DeMoD Secure Protocol, designed for low-latency, modular, and interoperable
+  data exchange. It supports applications like IoT messaging, real-time gaming synchronization,
+  distributed computing, and edge networking. HydraMesh features a handshakeless design,
+  efficient Protocol Buffers serialization, and a compatibility layer for UDP, TCP,
+  WebSocket, and gRPC transports, enabling seamless peer-to-peer (P2P) networking
+  with self-healing redundancy. HydraMesh is hardware and language agnostic, supporting
+  embedded devices (e.g., Raspberry Pi), cloud servers, and mobile platforms (Android/iOS)
+  with bindings in Perl, Python, C, C++, JavaScript (Node.js), Go, Rust, Java/Kotlin,
+  Swift, and Lisp. Version 5.0.0 introduces a plugin system for custom modules and
+  transports, an AUTO mode for dynamic role assignment managed by a master node, and
+  enhanced extensibility. Licensed under GPL-3.0, HydraMesh ensures open-source derivatives.
+  It includes CLI, TUI, server/client logic, P2P, and AUTO modes, making it versatile
+  for standalone tools, libraries, or networked services. SDKs (e.g., C SDK, HydraMesh-Lisp
+  SDK) are developed as submodules for streamlined integration. The bash scripts are
+  there to help you set up your environment. There are Nix and Docker presets. You're
+  welcome. ### HYDRA Acronym The name **HydraMesh** reflects its core strengths: a
+  self-healing, decentralized mesh with proxy-like adaptability. The acronym **HYDRA**
+  stands for: | Letter | Meaning | Feature | Description | |--------|---------|---------|-------------|
+  | **H** | **Highly** | Performance | Sub-millisecond latency with **Important**:
+  HydraMesh complies with U.S. export regulations (EAR and ITAR). It avoids encryption
+  to remain export-control-free. Users must ensure custom extensions comply; consult
+  legal experts for specific use cases. DeMoD LLC disclaims liability for non-compliant
+  modifications. ## Features - **Modularity**: Independent components with standardized
+  APIs; plugin system for custom extensions. - **Interoperability**: Protocol Buffers
+  and gRPC ensure cross-language (Perl, Python, C, C++, JS, Go, Rust, Java, Swift,
+  Lisp) and cross-platform compatibility. - **Low Latency**: Sub-millisecond exchanges
+  with B[CLI] A --> C[TUI] A --> D[Networking Layer] D --> E[Server Mode] D --> F[Client
+  Mode] D --> G[P2P Mode] D --> H[AUTO Mode] H --> I[Master Node] I --> J[Role Assignment]
+  I --> K[Config Management] I --> L[Metrics Collection] G --> M[Self-Healing Redundancy]
+  M --> N[Peer Discovery] M --> O[Failure Detection] M --> P[RTT-Based Grouping] D
+  --> Q[Transport Layer] Q --> R[WebSocket] Q --> S[UDP] Q --> T[TCP] Q --> U[gRPC]
+  Q --> V[Custom Plugins] D --> W[Protocol Buffers] W --> X[Serialization/Deserialization]
+  A --> Y[Language Bindings] Y --> Z[Perl] Y --> AA[Python] Y --> AB[C/C++] Y -->
+  AC[Node.js] Y --> AD[Go] Y --> AE[Rust] Y --> AF[Java/Kotlin] Y --> AG[Swift] Y
+  --> AH[Lisp] A --> AI[Platform Support] AI --> AJ[Embedded Devices] AI --> AK[Cloud
+  Servers] AI --> AL[Mobile: Android/iOS] A --> AM[SDKs] AM --> AN[C SDK] AM --> AO[HydraMesh-Lisp
+  SDK] AM --> AP[Future SDKs: Python, Perl, etc.] A --> AQ[Persistence Layer] AQ -->
+  AR[StreamDB] ``` ## Installation Clone the repository with submodules: ```bash git
+  clone --recurse-submodules https://github.com/ALH477/DeMoD-Communication-Framework.git
+  cd DeMoD-Communication-Framework ``` ### Prerequisites - **Perl**: CPAN modules:
+  `JSON`, `IO::Socket::INET`, `Getopt::Long`, `Curses::UI`, `Google::ProtocolBuffers::Dynamic`,
+  `Grpc::XS`, `Module::Pluggable`. - **Python**: `pip install protobuf grpcio grpcio-tools
+  importlib`. - **C SDK**: `libprotobuf-c`, `libuuid`, `libdl`, `libcjson`, `cmake`,
+  `ncurses`. - **C++**: `grpc`, `protobuf`. - **Node.js**: `grpc`, `protobufjs`. -
+  **Go**: `go get google.golang.org/grpc`, `go get google.golang.org/protobuf`. -
+  **Rust**: `tonic`, `prost` (for gRPC/Protobuf). - **Java/Kotlin (Android)**: `io.grpc:grpc-okhttp`,
+  `com.google.protobuf:protobuf-java`. - **Swift (iOS)**: `GRPC-Swift`, `SwiftProtobuf`.
+  - **Lisp**: SBCL with Quicklisp; dependencies: `cl-protobufs`, `cl-grpc`, `cffi`,
+  etc. (see `lisp/src/hydramesh.lisp`). - **StreamDB**: Build `libstreamdb.so` from
+  `streamdb/` using Cargo for persistence in HydraMesh-Lisp SDK. ### Generating Protobuf/gRPC
+  Use `protoc` to generate bindings for each language: - **Perl/Python**: `protoc
+  --perl_out=perl/lib --python_out=python/dcf --grpc_out=python/dcf --plugin=protoc-gen-grpc_python=python
+  -m grpc_tools.protoc messages.proto services.proto` - **C SDK**: `protoc --c_out=c_sdk/src
+  messages.proto` - **C++**: `protoc --cpp_out=cpp/src --grpc_out=cpp/src --plugin=protoc-gen-grpc=grpc_cpp_plugin
+  messages.proto services.proto` - **Node.js**: `protoc --js_out=import_style=commonjs:node"
 ---
 {% raw %}
 # HydraMesh

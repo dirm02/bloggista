@@ -2,8 +2,70 @@
 layout: project
 name: Open Dev Society Openstock
 slug: Open-Dev-Society-OpenStock
+category: Uncategorized
 image: https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=5c4337a9e2dd4a8ba8aba87a88f04b8b&claim_uid=07HezcXv9puSGKQ&theme=neutral
 repo_url: https://github.com/Open-Dev-Society/OpenStock.git
+indexed_content: "Checkout new amazing projects also, OpenReadme is live © Open Dev
+  Society. This project is licensed under AGPL-3.0; if you modify, redistribute, or
+  deploy it (including as a web service), you must release your source code under
+  the same license and credit the original authors. # OpenStock OpenStock is an open-source
+  alternative to expensive market platforms. Track real-time prices, set personalized
+  alerts, and explore detailed company insights — built openly, for everyone, forever
+  free. Note: OpenStock is community-built and not a brokerage. Market data may be
+  delayed based on provider rules and your configuration. Nothing here is financial
+  advice. ## \U0001F4CB Table of Contents 1. ✨ [Introduction](#introduction) 2. \U0001F30D
+  [Open Dev Society Manifesto](#manifesto) 3. ⚙️ [Tech Stack](#tech-stack) 4. \U0001F50B
+  [Features](#features) 5. \U0001F938 [Quick Start](#quick-start) 6. \U0001F433 [Docker
+  Setup](#docker-setup) 7. \U0001F510 [Environment Variables](#environment-variables)
+  8. \U0001F9F1 [Project Structure](#project-structure) 9. \U0001F4E1 [Data & Integrations](#data--integrations)
+  10. \U0001F9EA [Scripts & Tooling](#scripts--tooling) 11. \U0001F91D [Contributing](#contributing)
+  12. \U0001F6E1️ [Security](#security) 13. \U0001F4DC [License](#license) 14. \U0001F64F
+  [Acknowledgements](#acknowledgements) ## ✨ Introduction OpenStock is a modern stock
+  market app powered by Next.js (App Router), shadcn/ui and Tailwind CSS, Better Auth
+  for authentication, MongoDB for persistence, Finnhub for market data, and TradingView
+  widgets for charts and market views. ## \U0001F30D Open Dev Society Manifesto We
+  live in a world where knowledge is hidden behind paywalls. Where tools are locked
+  in subscriptions. Where information is twisted by bias. Where newcomers are told
+  they’re not “good enough” to build. We believe there’s a better way. - Our Belief:
+  Technology should belong to everyone. Knowledge should be open, free, and accessible.
+  Communities should welcome newcomers with trust, not gatekeeping. - Our Mission:
+  Build free, open-source projects that make a real difference: - Tools that professionals
+  and students can use without barriers. - Knowledge platforms where learning is free,
+  forever. - Communities where every beginner is guided, not judged. - Resources that
+  run on trust, not profit. - Our Promise: We will never lock knowledge. We will never
+  charge for access. We will never trade trust for money. We run on transparency,
+  donations, and the strength of our community. - Our Call: If you’ve ever felt you
+  didn’t belong, struggled to find free resources, or wanted to build something meaningful
+  — you belong here. Because the future belongs to those who build it openly. ## ⚙️
+  Tech Stack Core - Next.js 15 (App Router), React 19 - TypeScript - Tailwind CSS
+  v4 (via @tailwindcss/postcss) - shadcn/ui + Radix UI primitives - Lucide icons Auth
+  & Data - Better Auth (email/password) with MongoDB adapter - MongoDB + Mongoose
+  - Finnhub API for symbols, profiles, and market news - TradingView embeddable widgets
+  Automation & Comms - Inngest (events, cron, AI inference via Gemini) - Nodemailer
+  (Gmail transport) - next-themes, cmdk (command palette), react-hook-form Language
+  composition - TypeScript (~93.4%), CSS (~6%), JavaScript (~0.6%) ## \U0001F50B Features
+  - Authentication - Email/password auth with Better Auth + MongoDB adapter - Protected
+  routes enforced via Next.js middleware - Global search and Command + K palette -
+  Fast stock search backed by Finnhub - Popular stocks when idle; debounced querying
+  - Watchlist - Per-user watchlist stored in MongoDB (unique symbol per user) - Stock
+  details - TradingView symbol info, candlestick/advanced charts, baseline, technicals
+  - Company profile and financials widgets - Market overview - Heatmap, quotes, and
+  top stories (TradingView widgets) - Personalized onboarding - Collects country,
+  investment goals, risk tolerance, preferred industry - Email & automation - AI-personalized
+  welcome email (Gemini via Inngest) - Daily news summary emails (cron) personalized
+  using user watchlists - Polished UI - shadcn/ui components, Radix primitives, Tailwind
+  v4 design tokens - Dark theme by default - Keyboard shortcut - Cmd/Ctrl + K for
+  quick actions/search ## \U0001F938 Quick Start Prerequisites - Node.js 20+ and pnpm
+  or npm - MongoDB connection string (MongoDB Atlas or local via Docker Compose) -
+  Finnhub API key (free tier supported; real-time may require paid) - Gmail account
+  for email (or update Nodemailer transport) - Optional: Google Gemini API key (for
+  AI-generated welcome intros) Clone and install ```bash git clone https://github.com/Open-Dev-Society/OpenStock.git
+  cd OpenStock # choose one: pnpm install # or npm install ``` Configure environment
+  - Create a `.env` file (see [Environment Variables](#environment-variables)). -
+  Verify DB connectivity: ```bash pnpm test:db # or npm run test:db ``` Run development
+  ```bash # Next.js dev (Turbopack) pnpm dev # or npm run dev ``` Run Inngest locally
+  (workflows, cron, AI) ```bash npx inngest-cli@latest dev ``` Build & start (production)
+  ```bash pnpm build && pnpm start # or npm run build && np"
 ---
 {% raw %}
 <div align="center">

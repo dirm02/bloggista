@@ -2,8 +2,67 @@
 layout: project
 name: Interceptsuite Interceptsuite
 slug: InterceptSuite-InterceptSuite
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/InterceptSuite-InterceptSuite/Images/Prxoy-History.png
 repo_url: https://github.com/anof-cyber/InterceptSuite
+indexed_content: "# InterceptSuite ### TCP/UDP/DTLS/TLS Traffic Interception & Analysis
+  *MITM proxy for IoT devices, thick clients, and real-time applications* [](https://github.com/anof-cyber/InterceptSuite/releases)
+  [](https://github.com/anof-cyber/InterceptSuite) [](https://doc.interceptsuite.com)
+  [](https://interceptsuite.com/pricing) --- ## Overview **InterceptSuite** is a cross-platform
+  network traffic interception tool for TCP, UDP, DTLS, and TLS protocols. Operating
+  at the transport layer, it provides comprehensive visibility into encrypted traffic
+  from IoT devices, thick clients, databases, gaming applications, and custom protocols.
+  ### Key Capabilities - **Any Protocol** - Intercepts traffic from any TCP/UDP/TLS/DTLS
+  application - **IoT & Embedded Devices** - Perfect for analyzing IoT device TCP/UDP
+  communications - **Custom Protocols** - Works with thick clients, games, and proprietary
+  protocols - **Python Extensions** - Add custom protocol dissection capabilities
+  - **Cross-Platform** - Native support for Windows, Linux, and macOS ## Table of
+  Contents - [Overview](#overview) - [Features](#features) - [Getting Started](#getting-started)
+  - [Usage](#usage) - [Upgrade to Professional](#upgrade-to-professional) - [When
+  to Use InterceptSuite](#when-to-use-interceptsuite-vs-other-specific-tools) - [Screenshots](#screenshots--interface)
+  - [Python Extensions](#protocol-dissection--python-extensions) - [Contributing](#contributing)
+  - [License](#license) --- ## Features | Feature | Standard (Free) | Professional
+  | |:--------|:---------------:|:------------:| | **Core Features** | | | | TLS/SSL
+  Interception | ✅ | ✅ | | TCP & UDP Support | ✅ | ✅ | | SOCKS5 Proxy | ✅ | ✅ | |
+  Real-time Traffic Analysis | ✅ | ✅ | | Connection Management | ✅ | ✅ | | CA Certificate
+  Management | ✅ | ✅ | | Traffic Manipulation | ✅ | ✅ | | Python Extension API | ✅
+  | ✅ | | Cross-Platform GUI | ✅ | ✅ | | High-Performance C Core | ✅ | ✅ | | **Professional
+  Features** | | | | DTLS Support (IoT & Real-time) | ❌ | ✅ | | ANY TCP to TLS like
+  STARTTLS | ❌ | ✅ | | PCAP Export | ❌ | ✅ | | Project File Management | ❌ | ✅ | |
+  **Licensing** | | | | System Limit | Unlimited | Up to 2 | | Support | Community
+  | Email | | Price | Free & Open Source | [$300/One-Time](https://interceptsuite.com/pricing)
+  | ## Getting Started ### System Requirements - Windows 10/11 (64-bit), Linux (x64),
+  or macOS 13+ (Apple Silicon) ### Installation 1. Download the installer from the
+  [Releases page](https://github.com/anof-cyber/InterceptSuite/releases) - Windows:
+  `.exe` installer - Linux: `.deb` or `.rpm` package - macOS: `.pkg` installer 2.
+  Run the installer and follow the setup wizard 3. Launch InterceptSuite from your
+  applications menu ## Usage For installation guides, configuration tutorials, and
+  detailed usage instructions: - \U0001F4DA **[Documentation](https://doc.interceptsuite.com)**
+  - Complete setup and usage guides - \U0001F3A5 **[YouTube Channel](https://www.youtube.com/@InterceptSuite)**
+  - Video tutorials and demonstrations --- ## Upgrade to Professional Unlock advanced
+  features for professional security testing and IoT analysis: ### Professional Features
+  - ✅ **DTLS Support** - Decrypt IoT and real-time communication protocols - ✅ **Universal
+  TLS Upgrade Detection** - Automatic STARTTLS for any TCP protocol (SMTP, IMAP, PostgreSQL,
+  MySQL, etc.) - ✅ **PCAP Export** - Export captured traffic for Wireshark analysis
+  - ✅ **Project File Management** - Save and organize your capture sessions - ✅ **Multi-System
+  License** - Use on up to 3 systems simultaneously ### Pricing - **One Time**: $300
+  ### Get Professional [](https://interceptsuite.com/pricing) [View Pricing Details
+  →](https://interceptsuite.com/pricing) --- ## When to Use InterceptSuite vs Other
+  Specific Tools While InterceptSuite can handle HTTP/HTTPS traffic, **use HTTP-focused
+  tools like Burp Suite, ZAP, Fiddler, Caido, or HTTP Toolkit for web application
+  testing**. These tools provide specialized features optimized for HTTP protocols.
+  ### Use InterceptSuite for: - **IoT Devices** - MQTT, CoAP, custom IoT protocols
+  over TCP/UDP/DTLS - **Thick Client Applications** - Desktop apps with custom protocols
+  - **Database Connections** - PostgreSQL, MySQL, MSSQL over TLS - **Real-time Applications**
+  - Gaming protocols, VoIP, video streaming - **Custom Protocols** - Proprietary TLS/DTLS
+  encrypted protocols - **Embedded Systems** - Low-level TCP/UDP traffic analysis
+  ### Use HTTP-Focused Tools for: - Web applications and REST APIs - Mobile app HTTP/HTTPS
+  traffic - HTTP-specific features (scanner, repeater, intruder) - Web security assessments
+  ### Decision Matrix | Use Case | InterceptSuite | HTTP Tools (Burp/ZAP/Fiddler/etc)
+  | |:---------|:--------------:|:---------------------------------:| | Web Application
+  Testing | Limited | ✅ | | Mobile App API (HTTP) | Limited | ✅ | | IoT Device Communications
+  | ✅ | ❌ | | Thick Client Applications | ✅ | ❌ | | Database TLS Connections | ✅ |
+  ❌ | | Gaming Protocols | ✅ | ❌ | | DTLS Traffic | ✅ (Pro) | ❌ | ## \U0001F5BC️ Scree"
 ---
 {% raw %}
 <div align="center">

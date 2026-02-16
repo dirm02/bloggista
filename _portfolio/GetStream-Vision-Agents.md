@@ -2,8 +2,64 @@
 layout: project
 name: Getstream Vision Agents
 slug: GetStream-Vision-Agents
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://github.com/GetStream/Vision-Agents/actions/workflows/ci.yml/badge.svg
 repo_url: https://github.com/GetStream/Vision-Agents
+indexed_content: '# Open Vision Agents by Stream [](https://github.com/GetStream/Vision-Agents/actions)
+  [](http://badge.fury.io/py/vision-agents) [](https://github.com/GetStream/Vision-Agents/blob/main/LICENSE)
+  [](https://discord.gg/RkhX9PxMS6) --- ## Build Real-Time Vision AI Agents https://github.com/user-attachments/assets/d9778ab9-938d-4101-8605-ff879c29b0e4
+  ### Multi-modal AI agents that watch, listen, and understand video. Vision Agents
+  give you the building blocks to create intelligent, low-latency video experiences
+  powered by your models, your infrastructure, and your use cases. ### Key Highlights
+  - **Video AI:** Built for real-time video AI. Combine YOLO, Roboflow, and others
+  with Gemini/OpenAI in real-time. - **Low Latency:** Join quickly (500ms) and maintain
+  audio/video latency under 30ms using [Stream''s edge network](https://getstream.io/video/).
+  - **Open:** Built by Stream, but works with any video edge network. - **Native APIs:**
+  Native SDK methods from OpenAI (`create response`), Gemini (`generate`), and Claude
+  ( `create message`) — always access the latest LLM capabilities. - **SDKs:** SDKs
+  for React, Android, iOS, Flutter, React Native, and Unity, powered by Stream''s
+  ultra-low-latency network. https://github.com/user-attachments/assets/d66587ea-7af4-40c4-9966-5c04fbcf467c
+  --- ## See It In Action ### Sports Coaching https://github.com/user-attachments/assets/d1258ac2-ca98-4019-80e4-41ec5530117e
+  This example shows you how to build golf coaching AI with YOLO and Gemini Live.
+  Combining a fast object detection model (like YOLO) with a full realtime AI is useful
+  for many different video AI use cases. For example: Drone fire detection, sports/video
+  game coaching, physical therapy, workout coaching, just dance style games etc. ```python
+  # partial example, full example: examples/02_golf_coach_example/golf_coach_example.py
+  agent = Agent( edge=getstream.Edge(), agent_user=agent_user, instructions="Read
+  @golf_coach.md", llm=gemini.Realtime(fps=10), # llm=openai.Realtime(fps=1), # Careful
+  with FPS can get expensive processors=[ultralytics.YOLOPoseProcessor(model_path="yolo11n-pose.pt",
+  device="cuda")], ) ``` ### Security Camera with Package Theft Detection https://github.com/user-attachments/assets/92a2cdd8-909c-46d8-aab7-039a90efc186
+  This example shows a security camera system that detects faces, tracks packages
+  and detects when a package is stolen. It automatically generates "WANTED" posters,
+  posting them to X in real-time. It combines face recognition, YOLOv11 object detection,
+  Nano Banana and Gemini for a complete security workflow with voice interaction.
+  ```python # partial example, full example: examples/04_security_camera_example/security_camera_example.py
+  security_processor = SecurityCameraProcessor( fps=5, model_path="weights_custom.pt",
+  # YOLOv11 for package detection package_conf_threshold=0.7, ) agent = Agent( edge=getstream.Edge(),
+  agent_user=User(name="Security AI", id="agent"), instructions="Read @instructions.md",
+  processors=[security_processor], llm=gemini.LLM("gemini-2.5-flash-lite"), tts=elevenlabs.TTS(),
+  stt=deepgram.STT(), ) ``` ### Cluely style Invisible Assistant (coming soon) Apps
+  like Cluely offer realtime coaching via an invisible overlay. This example shows
+  you how you can build your own invisible assistant. It combines Gemini realtime
+  (to watch your screen and audio), and doesn''t broadcast audio (only text). This
+  approach is quite versatile and can be used for: Sales coaching, job interview cheating,
+  physical world/ on the job coaching with glasses Demo video ```python agent = Agent(
+  edge=StreamEdge(), # low latency edge. clients for React, iOS, Android, RN, Flutter
+  etc. agent_user=agent_user, # the user object for the agent (name, image etc) instructions="You
+  are silently helping the user pass this interview. See @interview_coach.md", # gemini
+  realtime, no need to set tts, or sst (though that''s also supported) llm=gemini.Realtime()
+  ) ``` ## Quick Start **Step 1: Install via uv** `uv add vision-agents` **Step 2:
+  (Optional) Install with extra integrations** `uv add "vision-agents[getstream, openai,
+  elevenlabs, deepgram]"` **Step 3: Obtain your Stream API credentials** Get a free
+  API key from [Stream](https://getstream.io/). Developers receive **333,000 participant
+  minutes** per month, plus extra credits via the Maker Program. ## Features | **Feature**
+  | **Description** | |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | **True real-time via WebRTC** | Stream directly to model providers that support
+  it for instant visual understanding. | | **Interval/processor pipeline** | For providers
+  without WebRTC, process frames with pluggable video processors (e.g., YOLO, Roboflow,
+  or custom PyTorch/ONNX) before/after model calls. | | **Turn detection & diarization**
+  | Keep conversations natural; know when the agent should speak or stay quiet and
+  who''s talking. | |'
 ---
 {% raw %}
 <img width="1280" height="360" alt="Readme" src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/GetStream-Vision-Agents/assets/repo_image.png" />

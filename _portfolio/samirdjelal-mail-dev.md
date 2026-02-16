@@ -2,8 +2,18 @@
 layout: project
 name: Samirdjelal Mail Dev
 slug: samirdjelal-mail-dev
+category: Mail services -server-chat apps
 image: https://raw.githubusercontent.com/samirdjelal/mail-dev/main/src-tauri/icons/Square107x107Logo.png
 repo_url: https://github.com/samirdjelal/mail-dev
+indexed_content: "# Mail-Dev ### Local SMTP Server For Email Testing/Debugging Built
+  on top of [React](https://reactjs.org/) and [Tauri](https://tauri.studio/en). ---
+  Give it a try, [Download now](https://github.com/samirdjelal/mail-dev/releases).
+  ## Todo: - [x] Custom SMTP server port - [x] Frameworks configuration snippets -
+  [x] Attachment support - [x] Forward emails - [x] Notification - [ ] Auto update
+  - [ ] Persistent configuration - [ ] SMTP Authentication ## Requirement: - Tauri
+  CLI - NodeJS (npm/yarn) ### Dev ```text npm install npm run tailwind:dev npm run
+  tauri dev ``` ### Build ```text npm install npm run tailwind:dev npm run tauri build
+  ```"
 ---
 {% raw %}
 # Mail-Dev

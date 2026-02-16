@@ -2,8 +2,33 @@
 layout: project
 name: Jaypyles Scraperr
 slug: jaypyles-Scraperr
+category: Very important!!!!
 image: https://github.com/jaypyles/www-scrape/blob/master/docs/logo_picture.png
 repo_url: https://github.com/jaypyles/www-scrape
+indexed_content: "**A powerful self-hosted web scraping solution** ## \U0001F4CB Overview
+  Scrape websites without writing a single line of code. > \U0001F4DA **[Check out
+  the docs](https://scraperr-docs.pages.dev)** for a comprehensive quickstart guide
+  and detailed information. ## ✨ Key Features - **XPath-Based Extraction**: Precisely
+  target page elements - **Queue Management**: Submit and manage multiple scraping
+  jobs - **Domain Spidering**: Option to scrape all pages within the same domain -
+  **Custom Headers**: Add JSON headers to your scraping requests - **Media Downloads**:
+  Automatically download images, videos, and other media - **Results Visualization**:
+  View scraped data in a structured table format - **Data Export**: Export your results
+  in markdown and csv formats - **Notifcation Channels**: Send completion notifcations,
+  through various channels ## \U0001F680 Getting Started ### Docker ```bash make up
+  ``` ### Helm > Refer to the docs for helm deployment: https://scraperr-docs.pages.dev/guides/helm-deployment
+  ## ⚖️ Legal and Ethical Guidelines When using Scraperr, please remember to: 1. **Respect
+  `robots.txt`**: Always check a website's `robots.txt` file to verify which pages
+  permit scraping 2. **Terms of Service**: Adhere to each website's Terms of Service
+  regarding data extraction 3. **Rate Limiting**: Implement reasonable delays between
+  requests to avoid overloading servers > **Disclaimer**: Scraperr is intended for
+  use only on websites that explicitly permit scraping. The creator accepts no responsibility
+  for misuse of this tool. ## \U0001F4AC Join the Community Get support, report bugs,
+  and chat with other users and contributors. \U0001F449 [Join the Scraperr Discord](https://discord.gg/89q7scsGEK)
+  ## \U0001F4C4 License This project is licensed under the MIT License. See the [LICENSE](LICENSE)
+  file for details. ## \U0001F44F Contributions Development made easier with the [webapp
+  template](https://github.com/jaypyles/webapp-template). To get started, simply run
+  `make build up-dev`."
 ---
 {% raw %}
 <div align="center">

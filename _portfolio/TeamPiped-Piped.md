@@ -2,8 +2,64 @@
 layout: project
 name: Teampiped Piped
 slug: TeamPiped-Piped
+category: Video-audio-Imae-manga-TTS-Voice
 image: https://shields.io/badge/License-AGPL%20v3-blue.svg
 repo_url: https://github.com/TeamPiped/Piped
+indexed_content: "# Piped [](https://www.gnu.org/licenses/agpl-3.0.en.html) [](https://matrix.to/#/#piped:matrix.org)
+  [](https://feddit.rocks/c/piped) [](https://piped.video/register) [](https://piped-ipfs.kavin.rocks/)
+  [](https://github.com/TeamPiped/Piped/stargazers) [](https://github.com/TeamPiped/Piped/commits)
+  [](https://hosted.weblate.org/projects/piped/frontend/) An open-source alternative
+  frontend for YouTube which is efficient by design. A list of public instances can
+  be found at the documentation [here](https://github.com/TeamPiped/documentation/blob/main/content/docs/public-instances/index.md).
+  # The Problem YouTube has an extremely invasive privacy policy which relies on using
+  user data in unethical ways. You give them a lot of data - ranging from ideas, music
+  taste, content, political opinions, and much more than you think. By using Piped,
+  you can freely watch and listen to content without the fear of prying eyes watching
+  everything you are doing. ## Features: **User Features** - [x] No Ads - [x] No Tracking
+  - [x] Lightweight on server and client - [x] Infinite Scrolling - [x] Light/Dark
+  themes - [x] Login - [x] Feeds - [x] Playlists - [x] Integration with [SponsorBlock](https://github.com/ajayyy/SponsorBlock)
+  - [x] Integration with [LBRY](https://lbry.com/) for streaming - [x] Integration
+  with [Return YouTube Dislike](https://returnyoutubedislike.com/) via [RYD-Proxy](https://github.com/TeamPiped/RYD-Proxy)
+  - [x] 4K support - [x] No connections to Google's servers - [x] Playing just audio
+  - [x] PWA support - [x] Locally saved Preferences - [x] [Available in many languages](src/locales),
+  thanks to [our translators](https://hosted.weblate.org/projects/piped/frontend/)
+  - [x] Embedded video support - [x] No age restriction - [x] Bypasses Geo restrictions
+  if possible through a federated network **Technical Features** - [x] Multi-region
+  load-balancing - [x] Performant by design, designed to handle 1000s of users concurrently
+  - [x] Does not use official YouTube APIs - [x] Uses [NewPipeExtractor](https://github.com/TeamNewPipe/NewPipeExtractor)
+  to extract information - [x] Public [JSON API](https://docs.piped.video/docs/api-documentation/)
+  - [x] Federated protocol on Matrix to let instances collaborate with each other
+  ## Having trouble? If you have any general questions regarding how Piped works or
+  trouble setting up your own instance, please consult the following public chat rooms
+  and documentation for help. Please use these platforms exclusively for such cases
+  and do NOT open an issue. ### Public Chat Rooms/Communities - You can join us via
+  Matrix at [#piped](https://matrix.to/#/#piped:matrix.org). - You can join us on
+  Lemmy on the [!piped@feddit.rocks](https://feddit.rocks/c/piped) community. ###
+  Self-Hosting See https://docs.piped.video/docs/self-hosting/ for more details. The
+  source code of the documentation website is available at https://github.com/TeamPiped/Documentation.
+  ### Documentation The documentation can be found at https://docs.piped.video (accessible
+  via IPNS as well). The API specification is located at https://github.com/TeamPiped/OpenAPI.
+  ## Extensions To redirect all YouTube links to Piped, you are highly recommended
+  to use either [Piped-Redirects](https://github.com/TeamPiped/Piped-Redirects), [Libredirect](https://github.com/libredirect/libredirect)
+  or [Predirect](https://github.com/libreom/predirect). ## Contributing ### Translations
+  You can help by translating the project to a language you speak at https://hosted.weblate.org/projects/piped/frontend/
+  ### Mirrors - Cloudflare Pages - [cf.piped.video](https://cf.piped.video/) - Vercel
+  - [vc.piped.video](https://vc.piped.video/) - Render - [re.piped.video](https://re.piped.video/)
+  - Fleek - [fl.piped.video](https://fl.piped.video/) - DigitalOcean - [do.piped.video](https://do.piped.video/)
+  - Netlify - [nf.piped.video](https://nf.piped.video/) - Azure - [az.piped.video](https://az.piped.video/)
+  ### Forking, and contributing - Fork the repository on GitHub: https://github.com/TeamPiped/Piped/fork
+  - Create your feature branch: `git checkout -b my-awesome-feature` - Stage your
+  files `git add .` - Commit your changes `git commit -am 'Add awesome new feature'`
+  - Push to the branch `git push origin my-awesome-feature` - Create a new pull request:
+  https://github.com/TeamPiped/Piped/compare ### Development Setup ``` pnpm install
+  ``` ### Compiles and hot-reloads for development ``` pnpm dev ``` You can now make
+  changes and view then in realtime! ## Donations Donations (to Kavin) can be made
+  at: - bc1qhq8zjxmu405nvp37njj6zv3s980zg400pu9jfe (BTC) - 0x1D77D4cfB1a947514241bcf19B1F04738495e2fD
+  (ETH) - 84wyyeGTrg4U1daJufi78bAFrBQgdRhmxJZvgYv8dAFeFVwkJaBEmw5C7fNniUM9n4jfrz3NeG32Agxtp7JNAcCUFPACfwA
+  (XMR, aka Monero) - nano_1ngejzydncche4rdua3iebhj7sa95pw5geq4pb8phugtjf3tku933ktjb4pq
+  (Nano) - XpzgouDTKCUuE8a92XqjX9b43gKL8oLihw (Dash) FIAT donations can be made at:
+  - https://liberapay.com/kavin (Initial author) - https://liberapay.com/Bnyro (Project
+  maintainer) Contri"
 ---
 {% raw %}
 # Piped

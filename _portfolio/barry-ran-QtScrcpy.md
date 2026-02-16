@@ -2,8 +2,67 @@
 layout: project
 name: Barry Ran Qtscrcpy
 slug: barry-ran-QtScrcpy
+category: Uncategorized
 image: https://opencollective.com/QtScrcpy/all/badge.svg?label=financial+contributors
 repo_url: https://github.com/barry-ran/QtScrcpy
+indexed_content: "# QtScrcpy [](https://opencollective.com/QtScrcpy) [中文用户？点我查看中文介绍](README_zh.md)
+  QtScrcpy supports displaying and controlling Android devices via USB or over network.
+  It does NOT require root privileges. It supports three major platforms: GNU/Linux,
+  Windows and macOS. It focuses on: - **lightness** (displays only the device screen)
+  - **performance** (30~60 fps) - **quality** (1920×1080 or above) - **low latency**
+  ([35~70ms][lowlatency]) - **low startup time** (only about 1 second to display the
+  first frame) - **non-intrusiveness** (nothing will be installed on the device) [lowlatency]:
+  https://github.com/Genymobile/scrcpy/pull/646 ## The author has developed a more
+  professional screen casting software called `QuickMirror` QuickMirror function&features:
+  - Equipment screen casting&control: batch screen casting, individual control, batch
+  control - Group management - WiFi screen mirroring/OTG screen mirroring - Adb shell
+  shortcut command - File transfer, apk installation - Multiple screen mirroring:
+  In OTG mirroring mode, with low resolution and smoothness settings, a single computer
+  can manage 500+phones simultaneously - Low latency: USB screen mirroring 1080p latency
+  is within 30ms, which is lower than all screen mirroring software on the market
+  in terms of latency at the same resolution and smoothness - Low CPU usage: pure
+  C++development, high-performance GPU video rendering - High resolution: adjustable,
+  maximum support for native resolution of Android terminals - Perfect Chinese input:
+  Supports Xianyu app, supports Samsung phones - The free version can cast up to 10
+  screens, with unlimited functionality (except for automatic screen mirroring) -
+  QuickMirror tutorial: https://lrbnfell4p.feishu.cn/docx/EMkvdfIvDowy3UxsXUCcpPV8nDh
+  - QuickMirror Telegram communication group: https://t.me/+EnQNmb47C_liYmRl - Preview
+  of QuickMirror Interface: ## Mapping Keys You can write your script to map keyboard
+  and mouse actions to touches and clicks of the mobile phone according to your needs.
+  [Here](docs/KeyMapDes.md) are the script writing rules. Script for TikTok and some
+  other games are provided by default. Once enabled, you can play the game with your
+  keyboard and mouse. The default key mapping for PUBG Mobile is as follows: Instruction
+  for adding new customized mapping files. - Write a customized script and put it
+  in the `keymap` directory - Click `refresh script` to show it - Select your script
+  - Connect to your phone, start service and click `apply` - Press `~` key (the SwitchKey
+  in the key map script) to switch to custom mapping mode - Press the ~ key again
+  to switch back to normal mode - (For games such as PUBG Mobile) If you want to move
+  vehicles with the STEER_WHEEL keys, you need to set the move mode to `single rocker
+  mode`. If you don't know how to manually write mapping rules, you can also use the
+  `QuickAssistant` developed by the author QuickAssistant Features&Functions: - Play
+  Android mobile games smoothly through keyboard and mouse - Interface based editing
+  of key mapping script - Support pausing the computer screen and using only keyboard
+  and mouse operations - Screenshot&Recording of Mobile Screen - Simple batch control
+  - Android 11+supports playing mobile audio on computers (under development...) -
+  Mobile app installation free - Fast and instant connection - Low latency: USB screen
+  mirroring 1080p latency is within 30ms, which is lower than all screen mirroring
+  software on the market in terms of latency at the same resolution and smoothness
+  - Low CPU usage: pure C++development, high-performance GPU video rendering - High
+  resolution: adjustable, maximum support for native resolution of Android terminals
+  - Telegram Group：https://t.me/+Ylf_5V_rDCMyODQ1 - [QuickAssistant](https://lrbnfell4p.feishu.cn/drive/folder/Hqckfxj5el1Wjpd9uezcX71lnBh)
+  ## Group control You can control all your phones at the same time. ## Star History
+  [](https://star-history.com/#barry-ran/QtScrcpy&Date) ## Thanks QtScrcpy is based
+  on [Genymobile](https://github.com/Genymobile)'s [scrcpy](https://github.com/Genymobile/scrcpy)
+  project. Thanks a lot! The difference between QtScrcpy and the original scrcpy is
+  as follows: key points|scrcpy|QtScrcpy --|:--:|:--: ui|sdl|qt video encode|ffmpeg|ffmpeg
+  video render|sdl|opengl cross-platform|self implemented|provided by Qt language|C|C++
+  style|sync|async keymap|no custom keymap|support custom keymap build|meson+gradle|qmake
+  or CMake - It's very easy to customize your GUI with Qt - Asynchronous programming
+  of Qt-based signal slot mechanism improves performance - Easy to learn - Add support
+  for multi-touch ## Learn If you are interested in it and want to learn how it works
+  but do not know how to get started, you can choose to purchase my recorded video
+  lessons. It details the development architecture and the development process of
+  the entire software and helps you develop QtScrcpy from scratch. Course introduction：[https://blog.csdn.net/rankun1/article/details/87970523](https://blog.csdn.net/ranku"
 ---
 {% raw %}
 # QtScrcpy 

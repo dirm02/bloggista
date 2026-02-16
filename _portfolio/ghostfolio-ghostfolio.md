@@ -2,8 +2,66 @@
 layout: project
 name: Ghostfolio Ghostfolio
 slug: ghostfolio-ghostfolio
+category: Finance-selfapp-healthapp-Improv
 image: https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-yellow?logo=buymeacoffee
 repo_url: https://github.com/bigbeartechworld/big-bear-casaos),
+indexed_content: "[ ](https://ghostfol.io) # Ghostfolio **Open Source Wealth Management
+  Software** [**Ghostfol.io**](https://ghostfol.io) | [**Live Demo**](https://ghostfol.io/en/demo)
+  | [**Ghostfolio Premium**](https://ghostfol.io/en/pricing) | [**FAQ**](https://ghostfol.io/en/faq)
+  | [**Blog**](https://ghostfol.io/en/blog) | [**LinkedIn**](https://www.linkedin.com/company/ghostfolio)
+  | [**Slack**](https://join.slack.com/t/ghostfolio/shared_invite/zt-vsaan64h-F_I0fEo5M0P88lP9ibCxFg)
+  | [**X**](https://x.com/ghostfolio_) [](https://www.buymeacoffee.com/ghostfolio)
+  [](#contributing) [](https://hub.docker.com/r/ghostfolio/ghostfolio) [](https://www.gnu.org/licenses/agpl-3.0)
+  **Ghostfolio** is an open source wealth management software built with web technology.
+  The application empowers busy people to keep track of stocks, ETFs or cryptocurrencies
+  and make solid, data-driven investment decisions. The software is designed for personal
+  use in continuous operation. [ ](https://www.youtube.com/watch?v=yY6ObSQVJZk) ##
+  Ghostfolio Premium Our official **[Ghostfolio Premium](https://ghostfol.io/en/pricing)**
+  cloud offering is the easiest way to get started. Due to the time it saves, this
+  will be the best option for most people. Revenue is used to cover operational costs
+  for the hosting infrastructure and professional data providers, and to fund ongoing
+  development. If you prefer to run Ghostfolio on your own infrastructure, please
+  find further instructions in the [Self-hosting](#self-hosting) section. ## Why Ghostfolio?
+  Ghostfolio is for you if you are... - \U0001F4BC trading stocks, ETFs or cryptocurrencies
+  on multiple platforms - \U0001F3E6 pursuing a buy & hold strategy - \U0001F3AF interested
+  in getting insights of your portfolio composition - \U0001F47B valuing privacy and
+  data ownership - \U0001F9D8 into minimalism - \U0001F9FA caring about diversifying
+  your financial resources - \U0001F193 interested in financial independence - \U0001F645
+  saying no to spreadsheets - \U0001F60E still reading this list ## Features - ✅ Create,
+  update and delete transactions - ✅ Multi account management - ✅ Portfolio performance:
+  Return on Average Investment (ROAI) for `Today`, `WTD`, `MTD`, `YTD`, `1Y`, `5Y`,
+  `Max` - ✅ Various charts - ✅ Static analysis to identify potential risks in your
+  portfolio - ✅ Import and export transactions - ✅ Dark Mode - ✅ Zen Mode - ✅ Progressive
+  Web App (PWA) with a mobile-first design ## Technology Stack Ghostfolio is a modern
+  web application written in [TypeScript](https://www.typescriptlang.org) and organized
+  as an [Nx](https://nx.dev) workspace. ### Backend The backend is based on [NestJS](https://nestjs.com)
+  using [PostgreSQL](https://www.postgresql.org) as a database together with [Prisma](https://www.prisma.io)
+  and [Redis](https://redis.io) for caching. ### Frontend The frontend is built with
+  [Angular](https://angular.dev) and uses [Angular Material](https://material.angular.io)
+  with utility classes from [Bootstrap](https://getbootstrap.com). ## Self-hosting
+  We provide official container images hosted on [Docker Hub](https://hub.docker.com/r/ghostfolio/ghostfolio)
+  for `linux/amd64`, `linux/arm/v7` and `linux/arm64`. [ ](https://www.buymeacoffee.com/ghostfolio)
+  ### Supported Environment Variables | Name | Type | Default Value | Description
+  | | --------------------------- | --------------------- | ---------------------
+  | -----------------------------------------------------------------------------------------------------------------------------------
+  | | `ACCESS_TOKEN_SALT` | `string` | | A random string used as salt for access tokens
+  | | `API_KEY_COINGECKO_DEMO` | `string` (optional) |   | The _CoinGecko_ Demo API
+  key | | `API_KEY_COINGECKO_PRO` | `string` (optional) | | The _CoinGecko_ Pro API
+  key | | `DATABASE_URL` | `string` | | The database connection URL, e.g. `postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}?sslmode=prefer`
+  | | `ENABLE_FEATURE_AUTH_TOKEN` | `boolean` (optional) | `true` | Enables authentication
+  via security token | | `HOST` | `string` (optional) | `0.0.0.0` | The host where
+  the Ghostfolio application will run on | | `JWT_SECRET_KEY` | `string` | | A random
+  string used for _JSON Web Tokens_ (JWT) | | `LOG_LEVELS` | `string[]` (optional)
+  | | The logging levels for the Ghostfolio application, e.g. `[\"debug\",\"error\",\"log\",\"warn\"]`
+  | | `PORT` | `number` (optional) | `3333` | The port where the Ghostfolio application
+  will run on | | `POSTGRES_DB` | `string` | | The name of the _PostgreSQL_ database
+  | | `POSTGRES_PASSWORD` | `string` | | The password of the _PostgreSQL_ database
+  | | `POSTGRES_USER` | `string` | | The user of the _PostgreSQL_ database | | `REDIS_DB`
+  | `number` (optional) | `0` | The database index of _Redis_ | | `REDIS_HOST` | `string`
+  | | The host where _Redis_ is running | | `REDIS_PASSWORD` | `string` | | The password
+  of _Redis_ | | `REDIS_PORT` | `number` | | The port where _Redis_ is running | |
+  `REQUEST_TIMEOUT` | `number` (optional) | `2000` | The timeout of network requests
+  to data providers in milliseconds | | `ROOT_URL` | "
 ---
 {% raw %}
 <div align="center">

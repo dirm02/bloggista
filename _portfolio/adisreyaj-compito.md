@@ -2,8 +2,63 @@
 layout: project
 name: Adisreyaj Compito
 slug: adisreyaj-compito
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/adisreyaj-compito/assets/compito-full-logo.png
 repo_url: https://github.com/adi.sreyaj/compito
+indexed_content: 'Compito - Tasks Done Right ✔️ A simple and user friendly project
+  management application with support for multiple Orgs and RBAC View Demo · Report
+  Bug · Request Feature · Blog Compito is a simple and easy to use project management
+  application with support for Multiple orgs. Each org can have multiple projects
+  in it. Users can be then given access to the org or the project by assigning them
+  different roles. Each project can have multiple boards to manages different parts
+  of the project. Making it easy to maintain. ### Home Page The home page gives you
+  an overview of the tasks, and projects the user has access to. The user can see
+  tasks that were recently created and the high priority tasks as well. There are
+  quick links to get to projects and boards from the home page. ### Boards Page With
+  a simple Kanban board, you can easily track your tasks and assign it to different
+  users within the project. You can create new tasks with ease. Cards can be dragged
+  and dropped as you progress. ### Add attachments to task Attachment can be added
+  to task by just dragging and dropping in to the modal. ### Orgs Page User can be
+  part of multiple orgs. User can view all the orgs he/she is part of. The user can
+  only access the data of an org. When the user logs in, If they are part of multiple
+  orgs, they will be asked to select an org to log in to. ### Users Page List the
+  members in the org/project based on the role. Admin users can invite new users to
+  the org. The list of pending user invites are also shown in the users page. ###
+  Projects Page Shows the list of projects in the org the user have access to. Clicking
+  on the project would take you to the detail page where the boards, and members within
+  the project can be seen. Users with admin access will be able to update the project
+  details and add/remove members to/from the project. ### Role Hierarchy Users are
+  assigned Admin role when they signup to the application. While inviting other users
+  to the org, a role can be specified. The role will be deciding the level of access
+  that particular user have. ## Built With - [Angular](https://angular.io/) - [Tailwind](https://tailwindcss.com/)
+  - [NestJS](https://nestjs.com/) - [Prisma](https://www.prisma.io/) - [PostgreSQL](https://www.postgresql.org/)
+  - [Nx](https://nx.dev/) ## Bundle Size The bundle size is pretty slim for the kind
+  of application we have. You can also see that the styles css is around ~50KB thanks
+  to Tailwind ## Lighthouse Score The scores are pretty good too with a lot of room
+  for improvements. ## Getting Started To get a local copy up and running follow these
+  simple steps. ### Installation 1. Clone the repo ```sh git clone https://github.com/adisreyaj/compito.git
+  ``` 1. Install NPM packages ```sh npm install ``` 1. Run the docker-compose script
+  to initialize the local db ```sh sudo docker-compose up -d ``` 1. Configure the
+  environment variables ``` DATABASE_URL=postgresql:// : @localhost/compito ADMIN_PASS=
+  AUTH0_AUDIENCE= AUTH0_ISSUER_URL=https:// .us.auth0.com/ AUTH0_DB= AUTH0_DOMAIN=
+  .us.auth0.com AUTH0_CLIENT_ID= AUTH0_CLIENT_SECRET= # for dev env AUTH0_MANAGEMENT_TOKEN=
+  # secret used to encode the session token in Auth Action SESSION_TOKEN_SECRET= ```
+  1. Run the UI ```sh npm start ``` 1. Run the API server ```sh npm start api ```
+  ## Setting up Auth0 Auth0 is used for authenticating the users. You''ll need to
+  setup few things in Auth0 before running the application. 1. Login/Signup to Auth0
+  1. Create two applications: - A Single Page application - A Machine to Machine application
+  1. In the Single page application make sure to provide the urls: - `Allowed Callback
+  URLs` ```sh http://localhost:4200 ``` - `Allowed Web Origins` ```sh http://localhost:4200
+  ``` - `Allowed Logout URLs` ```sh http://localhost:4200/auth/login ``` 1. Create
+  an API in Auth0 1. The identifier that of the API will be the `audience` 1. Under
+  the `Machine to Machine Applications` tab, make sure our M-M application is enabled.
+  1. Under `Authentication` > `Database`, make sure in the `Applications` tab, both
+  the Application has been enabled. ## Blog Read more about this project and how to
+  setup here: https://blog.sreyaj.dev/compito-project-management-app-angular-nestjs-auth0
+  ## Roadmap See the [open issues](https://github.com/adisreyaj/compito/issues) for
+  a list of proposed features (and known issues). ## License Distributed under the
+  MIT License. See `LICENSE` for more information. ## Show your support Please ⭐️
+  this repository if this project helped you!'
 ---
 {% raw %}
 <!-- PROJECT LOGO -->

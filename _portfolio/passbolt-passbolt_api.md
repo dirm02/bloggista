@@ -2,8 +2,62 @@
 layout: project
 name: Passbolt Passbolt Api
 slug: passbolt-passbolt_api
+category: Very important!!!!
 image: https://img.shields.io/github/license/passbolt/passbolt
 repo_url: https://github.com/passbolt/passbolt_styleguide
+indexed_content: 'The open source password manager for teams. [](LICENSE.txt) [](https://github.com/phpstan/phpstan)
+  [](https://psalm.dev/) Table of Contents - [Introducing Passbolt](#introducing-passbolt)
+  - [Get Started](#get-started) - [Run it on your own server, natively](#run-it-on-your-own-server-natively)
+  - [Available Clients & Apps](#available-clients-and-apps) - [Browser Extensions](#browser-extensions)
+  - [Mobile Apps](#mobile-apps) - [CLI](#cli) - [Desktop App](#desktop-app) - [Contributing](#contributing)
+  - [Reporting a security issue](#reporting-a-security-issue) - [License](#license)
+  --- # Introducing Passbolt Passbolt is a security-first, open source password manager
+  for teams. It helps organizations centralize, organize and share passwords and secrets
+  securely. What makes passbolt different? - **Security:** Passbolt security model
+  features user-owned secret keys and end-to-end encryption. It is audited multiple
+  times annually, and [findings](https://help.passbolt.com/faq/security/code-review)
+  are made public. - **Collaboration:** Securely share and audit credentials, with
+  powerful and dependable policies for power users. - **Privacy:** Passbolt is headquartered
+  in the EU :european_union: specifically in Luxembourg. Passbolt doesn''t collect
+  personal data or telemetry, and can be deployed in an air-gapped environment. #
+  Get Started &nbsp; &nbsp; &nbsp; &nbsp; ### Run it on your own server, natively
+  |[](https://www.passbolt.com/ce/docker) | [](https://www.passbolt.com/ce/kubernetes)
+  | [](https://www.passbolt.com/ce/ubuntu) |[](https://www.passbolt.com/ce/debian)
+  | [](https://www.passbolt.com/ce/redhat) | [](https://www.passbolt.com/ce/raspberry)
+  | [](https://www.passbolt.com/ce/rockylinux) | |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+  | [](https://www.passbolt.com/ce/almalinux) | [](https://www.passbolt.com/ce/oracle)
+  | [](https://www.passbolt.com/ce/fedora) | [](https://www.passbolt.com/ce/opensuse)
+  | [](https://www.passbolt.com/ce/aws) | [](https://www.passbolt.com/ce/digitalocean)
+  | [](https://www.passbolt.com/ce/centos) | ## Available Clients And Apps ### Browser
+  Extensions - [Chrome](https://chrome.google.com/webstore/detail/passbolt-open-source-pass/didegimhafipceonhjepacocaffmoppf)
+  - Brave, Opera, Vivaldi, & other Chromium browsers - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/passbolt/)
+  - [Edge](https://microsoftedge.microsoft.com/addons/detail/passbolt-open-source-pa/ljeppgjhohmhpbdhjjjbiflabdgfkhpo)
+  ### Mobile Apps - [App Store](https://apps.apple.com/nz/app/passbolt-password-manager/id1569629432)
+  - [Google Play Store](https://play.google.com/store/apps/details?id=com.passbolt.mobile.android)
+  ### CLI Install passbolt CLI tool: [go-passbolt-CLI](https://github.com/passbolt/go-passbolt-cli)
+  ### Desktop App Coming soon [see the pre-alpha version here](https://github.com/passbolt/passbolt-windows).
+  # Contributing Contributing to passbolt with code starts by reading [Contributing.md](https://github.com/passbolt/passbolt_api/blob/master/CONTRIBUTING.md).
+  Join the [community forum](https://community.passbolt.com) to join discussions about
+  feature requests, translations, development, and more. # Reporting a security issue
+  If you''ve found a security-related issue with passbolt, please email [security@passbolt.com](mailto:security@passbolt.com).
+  Submitting to GitHub makes the vulnerability public, making it easy to exploit.
+  We''ll do a public disclosure of the security issue once it''s been fixed. After
+  receiving a report, passbolt will take the following steps: - Confirmation that
+  the issue has been received and that it''s in the process of being addressed. -
+  Attempt to reproduce the problem and confirm the vulnerability. - Prepare a patch/fix
+  and associated automated tests. - Release a new version of all the affected versions.
+  - Prominently announce the problem in the release notes. - If requested, give credit
+  to the reporter. # License This program is free software: you can redistribute it
+  and/or modify it under the terms of the GNU Affero General Public License (AGPL)
+  as published by the Free Software Foundation version 3. The name "Passbolt" is a
+  registered trademark of Passbolt SA, and Passbolt SA hereby declines to grant a
+  trademark license to "Passbolt" pursuant to the GNU Affero General Public License
+  version 3 Section 7(e), without a separate agreement with Passbolt SA. This program
+  is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+  even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  See GNU Affero General Public License for more details. You should have received
+  a copy of the GNU Affero General Public License along with this program. If not,
+  see [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.html).'
 ---
 {% raw %}
 <picture>

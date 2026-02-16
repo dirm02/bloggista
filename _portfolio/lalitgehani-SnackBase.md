@@ -2,8 +2,67 @@
 layout: project
 name: Lalitgehani Snackbase
 slug: lalitgehani-SnackBase
+category: database-backend baas
 image: https://img.shields.io/badge/Python-3.12+-blue.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# SnackBase > Open-source Backend-as-a-Service (BaaS) - A self-hosted
+  alternative to Supabase [](https://www.python.org/) [](https://fastapi.tiangolo.com/)
+  [](https://react.dev/) [](LICENSE) SnackBase is a Python/FastAPI-based BaaS providing
+  auto-generated REST APIs, multi-tenancy, row-level security, authentication, enterprise
+  OAuth/SAML, and comprehensive admin UI. ## Project Statistics | Category | Count
+  | Lines | | ----------------- | ---------- | -------- | | **Backend Code** | ~350
+  files | ~120,000 | | **Frontend Code** | ~100 files | ~25,000 | | **Tests** | 153
+  files | ~30,000 | | **Documentation** | 25+ files | ~20,000 | | **Total** | ~525
+  files | ~195,000 | --- ## Status **Phase 1: Foundation & MVP** (100% Complete) [](https://railway.app/template/new?template=https%3A%2F%2Fgithub.com%2Flalitgehani%2Fsnackbase&envs=SNACKBASE_SECRET_KEY%2CSNACKBASE_ENCRYPTION_KEY&optionalEnvs=SNACKBASE_SUPERADMIN_EMAIL%2CSNACKBASE_SUPERADMIN_PASSWORD)
+  > **Note**: For the button above to work, you must fork this repository and update
+  the URL in the button link to point to your fork. - [x] F1.1: Project Scaffolding
+  & Architecture Setup - [x] F1.2: Database Schema & Core System Tables - [x] F1.3:
+  Account Registration - [x] F1.4: Account Login - [x] F1.5: JWT Token Management
+  - [x] F1.6: Dynamic Collection Creation - [x] F1.7-F1.10: Dynamic Record CRUD -
+  [x] F1.11: User Invitation System - [x] F1.12: Hook System Infrastructure (STABLE
+  API v1.0) - [x] F1.13: Account ID Generator - [x] Full React Admin UI with Dashboard
+  - [x] Rule Engine & Permission System - [x] Group Management - [x] User Management
+  UI - [x] GxP-compliant audit logging - [x] Real-time subscriptions (WebSocket/SSE)
+  **Phase 2: Security & Authorization** (100% Complete) - [x] F2.1-F2.5: Permission
+  System V2 (SQL-native RLS) - [x] F2.6-F2.7: SQL Macros & Group-Based Permissions
+  - [x] F2.8: Authorization Middleware & Repository Integration - [x] F2.10: Collection-centric
+  Rule Management - [x] F2.11-F2.13: Field-Level Access Control - [x] F2.14: GxP-compliant
+  Audit Logging for Permissions **Phase 3: Operations** (100% Complete) - [x] F3.1-F3.5:
+  Dashboard & Management UIs (Dashboard, Accounts, Collections, Roles, Rules) - [x]
+  F3.6-F3.8: Audit Log Storage, Capture & Query API - [x] F3.9-F3.12: Alembic Infrastructure
+  & Migration Management UI **Phase 4: Advanced Features** (60% Complete) - [x] F4.1-F4.2:
+  Real-time Subscriptions (WebSocket/SSE) - [x] F4.3: PostgreSQL Support (SQLite +
+  PostgreSQL with dialect-aware queries) - [x] F4.5: File Storage Engine (Local filesystem
+  with account-scoped storage) - [x] F4.6: Basic Query Filters (Pagination, sorting,
+  equality filters) - [ ] F4.7: Advanced Query Filters (LIKE, IN, range queries, complex
+  boolean logic) - [ ] Cloud Storage Providers (S3, Azure Blob, GCS) **Phase 5: Enterprise
+  Features** (40% Complete) - [x] Rate Limiting (IP-based and user-based, configurable
+  per endpoint) - [x] Security Headers (HSTS, CSP, Permissions-Policy) - [ ] Advanced
+  Monitoring (Prometheus metrics, distributed tracing) - [ ] APM Integration (DataDog,
+  New Relic) --- ## Quick Start **New to SnackBase?** Start with the [5-minute Quick
+  Start Tutorial](docs/quick-start.md) with screenshots and step-by-step instructions.
+  ```bash # Clone and install git clone https://github.com/yourusername/snackbase.git
+  cd SnackBase uv sync # Initialize database and create superadmin uv run python -m
+  snackbase init-db uv run python -m snackbase create-superadmin # Start server uv
+  run python -m snackbase serve # Access the UI open http://localhost:8000 ``` ---
+  ## Features ### Core Platform - **Clean Architecture** - Domain, application, and
+  infrastructure layer separation (~120K LOC) - **Multi-Tenancy** - Row-level isolation
+  with account-scoped data - **Single-Tenant Mode** - Support for dedicated instances
+  where all users join a pre-configured account (optional account identifier for login/registration)
+  - **Configuration Management** - Environment variables and `.env` file support -
+  **Structured JSON Logging** - Correlation ID tracking for request tracing - **Health
+  Checks** - `/health`, `/ready`, `/live` endpoints ### Authentication System - **Account
+  Registration** - Multi-tenant account creation with unique `XX####` ID format -
+  **User Registration** - Per-account user registration with email/password - **Login**
+  - Timing-safe password verification with account resolution - **JWT Token Management**
+  - Access tokens (1 hour) and refresh tokens (7 days) with rotation - **Password
+  Hashing** - Argon2id (OWASP recommended) - **Multi-Account Support** - Users can
+  belong to multiple accounts - **OAuth 2.0** - Google, GitHub, Microsoft, Apple -
+  **SAML 2.0** - Okta, Azure AD, Generic SAML ### Dynamic Collections & Records -
+  **Collection Management** - Create, read, update, delete collections with custom
+  schemas - **Auto-Generated CRUD APIs** - RESTful endpoints for any collection -
+  **Field Types** - Text, number, boolean, datetime, email, url, json, reference,
+  file - *"
 ---
 {% raw %}
 <img width="2816" height="1536" alt="SnackBase" src="https://github.com/user-attachments/assets/71d1b9b7-1b31-44c7-8520-eb748f788190" />

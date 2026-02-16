@@ -2,8 +2,71 @@
 layout: project
 name: Streamyfin Streamyfin
 slug: streamyfin-streamyfin
+category: iOS-imac
 image: https://badges.crowdin.net/streamyfin/localized.svg
 repo_url: https://github.com/streamyfin/jellyfin-plugin-streamyfin)
+indexed_content: "**Streamyfin is a user-friendly Jellyfin video streaming client
+  built with Expo. Designed as an alternative to other Jellyfin clients, it aims to
+  offer a smooth and reliable streaming experience. We hope you'll find it a valuable
+  addition to your media streaming toolbox.** --- &nbsp; &nbsp; &nbsp; ## \U0001F31F
+  Features - \U0001F680 **Skip Intro / Credits Support**: Lets you quickly skip intros
+  and credits during playback - \U0001F5BC️ **Trickplay images**: The new golden standard
+  for chapter previews when seeking - \U0001F4E5 **Download media**: Save your media
+  locally and watch it offline - ⚙️ **Settings management**: Manage app configurations
+  for all users through our plugin - \U0001F916 **Seerr (formerly Jellyseerr) integration**:
+  Request media directly in the app - \U0001F441️ **Sessions view:** View all active
+  sessions currently streaming on your server - \U0001F4E1 **Chromecast**: Cast your
+  media to any Chromecast-enabled device ## \U0001F9EA Experimental Features Streamyfin
+  offers exciting experimental features such as media downloading and Chromecast support.
+  These features are under active development, and your feedback and patience help
+  us make them even better. ### \U0001F4E5 Downloading Downloading works by using
+  FFmpeg to convert an HLS stream into a video file on your device. This lets you
+  download and watch any content that you can stream. The conversion is handled in
+  real time by Jellyfin on the server during the download. While this may take a bit
+  longer, it ensures compatibility with any file your server can transcode. ### \U0001F9E9
+  Streamyfin Plugin The Jellyfin Plugin for Streamyfin is a plugin you install into
+  Jellyfin that holds all settings for the client Streamyfin. This allows you to synchronize
+  settings across all your users, like for example: - Automatic Seerr login with no
+  user input required - Set your preferred default languages - Configure download
+  method and search provider - Personalize your home screen - And much more [Streamyfin
+  Plugin](https://github.com/streamyfin/jellyfin-plugin-streamyfin) ### \U0001F4E1
+  Chromecast Chromecast support is currently under development. Video casting is already
+  available, and we're actively working on adding subtitle support and additional
+  features. ### \U0001F3AC MPV Player Streamyfin uses [MPV](https://mpv.io/) as its
+  primary video player on all platforms, powered by [MPVKit](https://github.com/mpvkit/MPVKit).
+  MPV is a powerful, open-source media player known for its wide format support and
+  high-quality playback. Thanks to [@Alexk2309](https://github.com/Alexk2309) for
+  the hard work building the native MPV module in Streamyfin. ### \U0001F50D Jellysearch
+  [Jellysearch](https://gitlab.com/DomiStyle/jellysearch) works with Streamyfin >
+  A fast full-text search proxy for Jellyfin. Integrates seamlessly with most Jellyfin
+  clients. ## \U0001F6E3️ Roadmap Check out our [Roadmap](https://github.com/users/fredrikburmester/projects/5)
+  To see what we're working on next, we are always open to feedback and suggestions.
+  Please let us know if you have any ideas or feature requests. ## \U0001F4E5 Download
+  Streamyfin ### \U0001F9EA Beta Testing To access the Streamyfin beta, you need to
+  subscribe to the Member tier (or higher) on [Patreon](https://www.patreon.com/streamyfin).
+  This grants you immediate access to the ⁠\U0001F9EA-beta-releases channel on Discord
+  and lets me know you’ve subscribed. This is where I share APKs and IPAs. It does
+  not provide automatic TestFlight access, so please send me a DM (Cagemaster) with
+  the email you use for Apple so we can add you manually. **Note**: Anyone actively
+  contributing to Streamyfin’s source code will receive automatic access to beta releases.
+  ## \U0001F680 Getting Started ### ⚙️ Prerequisites - Your device is on the same
+  network as the Jellyfin server (for local connections) - Your Jellyfin server is
+  up and running with remote access enabled if you plan to connect from outside your
+  local network - Your server version is up to date (older versions may cause compatibility
+  issues) - You have a valid Jellyfin user account with access to the media libraries
+  you want to view - If using features such as **downloads** or **Seerr integration**,
+  confirm the required plugins are installed and configured on your Jellyfin server
+  ## \U0001F64C Contributing We welcome contributions that improve Streamyfin. Start
+  by forking the repository and submitting a pull request. For major changes or new
+  features, please open an issue first to discuss your ideas and ensure alignment
+  with the project. ## \U0001F30D Translations [](https://crowdin.com/project/streamyfin)
+  Streamyfin is available in multiple languages, and we’re always looking for contributors
+  to help make the app accessible worldwide. You can contribute translations directly
+  on our [Crowdin project page](https://crowdin.com/project/streamyfin). ### \U0001F468‍\U0001F4BB
+  Development Info 1. Use node `>20` 2. Install dependencies `bun i && bun run submodule-reload`
+  3. Make sure you have xcode and/or android studio installed. (follow the guides
+  for expo: https://docs.expo.dev/workflow/android-studio-emulator/) - If iOS builds
+  fail with `missing Metal Toolchain` (KSPlaye"
 ---
 {% raw %}
 <a href="https://www.buymeacoffee.com/fredrikbur3" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>

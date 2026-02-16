@@ -2,8 +2,64 @@
 layout: project
 name: Eidam Cf Workers Status Page
 slug: eidam-cf-workers-status-page
+category: ServerTools-ProxMox-CICD
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/eidam-cf-workers-status-page/.gitbook/assets/status_page_screenshot.png
 repo_url: https://github.com/eidam/cf-workers-status-page)
+indexed_content: "# Cloudflare Worker - Status Page Monitor your websites, showcase
+  status including daily history, and get Slack notification whenever your website
+  status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**.
+  Check [my status page](https://status-page.eidam.dev) out! \U0001F680 ## Pre-requisites
+  You'll need a [Cloudflare Workers account](https://dash.cloudflare.com/sign-up/workers)
+  with - A workers domain set up - The Workers Bundled subscription \\($5/mo\\) -
+  [It works with Workers Free!](https://blog.cloudflare.com/workers-kv-free-tier/)
+  Check [more info](#workers-kv-free-tier) on how to run on Workers Free. - Some websites/APIs
+  to watch \U0001F642 Also, prepare the following secrets - Cloudflare API token with
+  `Edit Cloudflare Workers` permissions - Slack incoming webhook \\(optional\\) -
+  Discord incoming webhook \\(optional\\) ## Getting started You can either deploy
+  with **Cloudflare Deploy Button** using GitHub Actions or deploy on your own. ###
+  Deploy with Cloudflare Deploy Button [](https://deploy.workers.cloudflare.com/?url=https://github.com/eidam/cf-workers-status-page)
+  1. Click the button and follow the instructions, you should end up with a clone
+  of this repository 2. Navigate to your new **GitHub repository &gt; Settings &gt;
+  Secrets** and add the following secrets: ```yaml - Name: CF_API_TOKEN (should be
+  added automatically) - Name: CF_ACCOUNT_ID (should be added automatically) - Name:
+  SECRET_SLACK_WEBHOOK_URL (optional) - Value: your-slack-webhook-url - Name: SECRET_DISCORD_WEBHOOK_URL
+  (optional) - Value: your-discord-webhook-url ``` 3. Navigate to the **Actions**
+  settings in your repository and enable them 4. Edit [config.yaml](./config.yaml)
+  to adjust configuration and list all of your websites/APIs you want to monitor ```yaml
+  settings: title: 'Status Page' url: 'https://status-page.eidam.dev' # used for Slack
+  & Discord messages logo: logo-192x192.png # image in ./public/ folder daysInHistogram:
+  90 # number of days you want to display in histogram collectResponseTimes: false
+  # experimental feature, enable only for /getUpdates | jq '.result[0] .message .chat
+  .id'` 5. Set the retrieved chat id in the `SECRET_TELEGRAM_CHAT_ID` secret variable
+  6. Redeploy the status page using the github action ### Deploy on your own You can
+  clone the repository yourself and use Wrangler CLI to develop/deploy, extra list
+  of things you need to take care of: - create KV namespace and add the `KV_STATUS_PAGE`
+  binding to [wrangler.toml](./wrangler.toml) - create Worker secrets _\\(optional\\)_
+  - `SECRET_SLACK_WEBHOOK_URL` - `SECRET_DISCORD_WEBHOOK_URL` ## Workers KV free tier
+  The Workers Free plan includes limited KV usage, but the quota is sufficient for
+  2-minute checks only - Change the CRON trigger to 2 minutes interval (`crons = [\"*/2
+  * * * *\"]`) in [wrangler.toml](./wrangler.toml) ## Known issues - **Max 25 monitors
+  to watch in case you are using Slack notifications**, due to the limit of subrequests
+  Cloudflare Worker can make \\(50\\). The plan is to support up to 49 by sending
+  only one Slack notification per scheduled run. - **KV replication lag** - You might
+  get Slack notification instantly, however it may take couple of more seconds to
+  see the change on your status page as [Cron Triggers are usually running on underutilized
+  quiet hours machines](https://blog.cloudflare.com/introducing-cron-triggers-for-cloudflare-workers/#how-are-you-able-to-offer-this-feature-at-no-additional-cost).
+  - **Initial delay (no data)** - It takes couple of minutes to schedule and run CRON
+  Triggers for the first time ## Future plans WIP - Support for Durable Objects -
+  Cloudflare's product for low-latency coordination and consistent storage for the
+  Workers platform. There is a working prototype, however, we are waiting for at least
+  open beta. There is also a managed version of this project, currently in beta. Feel
+  free to check it out https://statusflare.com (https://twitter.com/statusflare_com).
+  ## Running project locally **Requirements** - Linux or WSL - Yarn (`npm i -g yarn`)
+  - Node 14+ ### Steps to get server up and running **Install wrangler** ``` npm i
+  -g wrangler ``` **Login With Wrangler to Cloudflare** ``` wrangler login ``` **Create
+  your KV namespace in cloudflare** ``` On the workers page navigate to KV, and create
+  a namespace ``` **Update your wrangler.toml with** ``` kv-namespaces = [{binding=\"KV_STATUS_PAGE\",
+  id=\" \", preview_id=\" \"}] ``` _Note: you may need to change `kv-namespaces` to
+  `kv_namespaces`_ **Install packages** ``` yarn install ``` **Create CSS** ``` yarn
+  run css ``` **Run** ``` yarn run dev ``` _Note: If the styles do not come through
+  try using `localhost:8787` instead of `localhost:8080`_"
 ---
 {% raw %}
 # Cloudflare Worker - Status Page

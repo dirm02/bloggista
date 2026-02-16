@@ -2,8 +2,38 @@
 layout: project
 name: Haiderabasi Ros2 Path Planning And Maze Solving
 slug: HaiderAbasi-ROS2-Path-Planning-and-Maze-Solving
+category: EE-kicad-3D-Robotic
 image: https://github.com/HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving/blob/master/images/cover.png
 repo_url: https://github.com/HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving
+indexed_content: "# Maze Solving using Computer Vision In ROS2 [](https://youtu.be/Ejl4ZLKo3Cc
+  \"Click to Watch Intro Video on Youtube\") ## Repository contents Table of Contents
+  \U0001F91DRepository's About ⚡ Using this Repository ⛲Features \U0001F9CAPre-Course
+  Requirments \U0001F4D7 Notes \U0001F464Instructors \U0001F31FStar History \U0001F4B0Coupon
+  \U0001F4DDLicense ## \U0001F91DRepository's About --- This course is focus on Maze
+  Solving behavior of robot In a Simulation based on ROS2. Computer Vision is the
+  key focus with integrated important robotics algorithms of Motion Planning . The
+  type of robot we will be using is Differential Drive Robot with a caster wheel .
+  Course is structured with below main headings . - Custom Robot Creation - Gazebo
+  and Rviz Integrations - Localization - Navigation - Path Planning From our robot
+  to last computer vision Node ,we will create every thing from scratch . Python Object
+  Oriented programming practices will be utilized for better development. ## ⚡ Using
+  this Repository ---- **Docker**: [](https://github.com/HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving/wiki/Docker-(Linux)
+  \"Follow the guide to setup docker on Linux\")&nbsp;&nbsp; [](https://github.com/HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving/wiki/Docker-(Windows-10)
+  \"Follow the guide to setup docker on Windows 10\")&nbsp;&nbsp; **Ubuntu-20.04**:
+  - Follow along the [Wiki](https://github.com/HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving/wiki/Ubuntu-20.04-Setup-Guide)
+  guide to setup the project. ## ⛲ Features --- * **Custom Robot Integeration** -
+  * **Drive to Goal Nodes** - * **Custom World Setup** - * **Mapping** - * **Path
+  Planning** - * **Maze Solving** - ## \U0001F9CA Pre-Course Requirments: --- - Ubuntu
+  20.04 (LTS) - ROS2 - Foxy Fitzroy - Python 3.6 - Opencv 4.2 ## \U0001F4D7 Notes
+  --- You can access section wise notes here -> **[PDFs](./notes)** - **Computer Vision
+  ->** [**PDFs**](https://drive.google.com/drive/folders/11renHlg9sQuMGml9-ANPKC-R6sBTVSyP?usp=share_link)
+  ## Star History --- [](https://star-history.com/#HaiderAbasi/ROS2-Path-Planning-and-Maze-Solving&Date)
+  ## \U0001F4B0 Coupon ---- ✨ Enroll Now with Special Discount ✨ **[[Discounted Link]](https://www.udemy.com/course/ros2-path-planning-and-maze-solving-with-computer-vision/?couponCode=STARTON)**
+  ## \U0001F464 Instructors --- **Muhammad Luqman** - Website: [Robotisim](https://robotisim.com)
+  - Github: [Luqman.git](https://github.com/noshluk2) - LinkedIn: [Luqman.in](https://www.linkedin.com/in/muhammad-luqman-9b227a11b/)
+  **Haider Abbasi** - Github: [Haider.git](https://github.com/HaiderAbasi) - LinkedIn:
+  [Haider.in](https://www.linkedin.com/in/haider-najeeb-68812516a/) ## \U0001F4DD
+  License ---- Distributed under the GNU-GPL License. See `LICENSE` for more information."
 ---
 {% raw %}
 # Maze Solving using Computer Vision In ROS2

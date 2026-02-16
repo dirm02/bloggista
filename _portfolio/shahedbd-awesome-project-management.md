@@ -2,8 +2,65 @@
 layout: project
 name: Shahedbd Awesome Project Management
 slug: shahedbd-awesome-project-management
+category: Management- Engineering- SocialM
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome Project Management [](https://github.com/sindresorhus/awesome)
+  This Awesome list about [Project Management](https://en.wikipedia.org/wiki/Project_management)
+  interesting and useful topics. ## Table of Contents 1. [Top Project Management Tool](#Top-Project-Management-Tool)
+  1. [Free Template](#Free-Template) 1. [Design and Documentation Tool](#Design-and-Documentation-Tool)
+  1. [Communication Tool](#Communication-Tool) 1. [Productivity Tool](#Productivity-Tool)
+  1. [Password Management Tool](#Password-Management-Tool) 1. [Cloud Storage](#Cloud-Storage)
+  1. [Version Control Tool](#Version-Control-Tool) 1. [Estimation](#Estimation) 1.
+  [Requirements](#Requirements) 1. [Software Development Methodologies](#Software-Development-Methodologies)
+  1. [Software Development Life Cycle-SDLC](#Software-Development-Life-Cycle-SDLC)
+  1. [Books](#Books) 1. [Download Book](#Download-Book) 1. [Video and Online Courses](#Video-and-Online-Courses)
+  1. [Tutorial](#Tutorial) 1. [Articles and Post](#Articles-and-Post) 1. [Best Practices](#Best-Practices)
+  1. [Communication](#Communication) 1. [Community](#Community) 1. [Conference and
+  Seminar](#Conference-and-Seminar) 1. [People](#People) 1. [Certification](#Certification)
+  1. [Essential Website](#Essential-Website) 1. [Cheat Sheets](#cheat-sheets) 1. [Interview](#Interview)
+  ## Top Project Management Tool 1. [ClickUp](https://clickup.com/?fp_ref=bp09x) -
+  The productivity platform. Create. Plan. Organize. Everything. It's Free for limited
+  usages Get dedicated help for your entire implementation; requirements definition,
+  solutions tailored to your business processes, data migration, and more. You'll
+  also have a Success Manager dedicated to your account to ensure your teams get the
+  most out of [ClickUp.](https://clickup.com/?fp_ref=bp09x) 1. [Monday](https://mondaycom.grsm.io/rmshahidulislamshahed9288)
+  - A new way to manage your work. It's Free for limited usages Bring teams together
+  over one shared platform to break communication barriers, move projects forward,
+  and align everyone involved. [Monday.com](https://mondaycom.grsm.io/rmshahidulislamshahed9288)
+  1. [Backlog](https://backlog.com/?ref=rmshahidulislamshahed) - Online project management
+  tool for developers. Free and starting from $35 for 30 users per / month 1. [Jira](https://jira.com)
+  - Jira Software is built for every member of your software team to plan, track,
+  and release great software. Starting from $10 / month. Flat rate For 1 - 10 users
+  1. [Redmine](http://www.redmine.org/) - Redmine is a flexible project management
+  web application. Written using the Ruby on Rails framework, it is cross-platform
+  and cross-database. Free. Open Source. Simple to use. 1. [Trello](https://trello.com/)
+  - Trello’s boards, lists, and cards enable you to organize and prioritize your projects
+  in a fun, flexible, and rewarding way. It's Free 1. [Wrike](https://www.wrike.com)
+  - Leading Work Management Solution to Streamline Workflow to Gain Visibility to
+  Simplify Planningy. It's Free for limited usages 1. [Hive](https://hive.com) - The
+  productivity platform. It's Free for limited usages 1. [TeamGantt](https://www.teamgantt.com/)
+  - Meet deadlines, streamline team communication, and keep everyone updated and happy.
+  It's Free for limited usages 1. [Airtable](https://airtable.com/) - Part spreadsheet,
+  part database, and entirely flexible, teams use Airtable to organize their work,
+  their way. It's Free for limited usages 1. [zipBoard](https://zipboard.co) - Bug
+  tracking and website annotation tool, free for 1 project, pricing starts at $39/month
+  1. [Microsoft Project](https://products.office.com/en/project/project-and-portfolio-management-software)
+  - Streamline project, resource, and portfolio management with Microsoft Project
+  to help you keep track of projects successfully. Starting from $7.00 (user/month),
+  Project Online Essentials 1. [Freedcamp](https://freedcamp.com/) - Whether you have
+  wedding plans, organizing a camping trip or leading a work project. Working from
+  home or at the office. Freedcamp is in the center of it all. Free and starting from
+  $1.49 per user / month 1. [Taiga](https://taiga.io/) - Taiga is a project management
+  platform for agile developers & designers and project managers who want a beautiful
+  tool that makes work truly enjoyable. Free. Open Source. Simple to use. 1. [Asana](https://asana.com/)
+  - Asana is the work management platform teams use to stay focused on the goals,
+  projects, and daily tasks that grow business. Starting from $9.9 (user/month), Premium
+  1. [Clubhouse](https://clubhouse.io/) - Clubhouse is the first project management
+  platform for software development that brings everyone on every team together to
+  build better products. Starting from $8.33 monthly, Small (1 - 10 users) 1. [Harvest](https://www.getharvest.com/)
+  - Time tracking software for those who value insight. Starting from free 1. [Hitask](https://hitask.com/)
+  - Task Management Made Delightfully Simple. Starting from free 1. [Pinitto](https://pinitto."
 ---
 {% raw %}
 # Awesome Project Management [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)

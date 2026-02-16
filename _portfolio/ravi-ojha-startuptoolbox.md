@@ -2,8 +2,64 @@
 layout: project
 name: Ravi Ojha Startuptoolbox
 slug: ravi-ojha-startuptoolbox
+category: Uncategorized
 image: https://github.com/alexanderisora/startuptoolbox/blob/master/media/startup-toolbox-header.png
 repo_url: https://github.com/alexanderisora/startuptoolbox
+indexed_content: "# StartupToolbox The curated crowdsourced collection of 700+ tools
+  for startups makers. Created by Alexander Isora ([Telegram](https://t.me/serene_startup),
+  [Twitter](https://twitter.com/alexanderisorax)). Fillied in by the community. #
+  Table of contents - [Website](#website) - [Hosted website builders](#hosted-website-builders)
+  - [Static generators](#static-generators) - [Lead generation](#lead-generation)
+  - [Design](#design) - [Prototypes and wireframes (UX and user flow)](#prototypes-and-wireframes-ux-and-user-flow)
+  - [Logo and branding](#logo-and-branding) - [Graphics](#graphics) - [UI libraries](#ui-libraries)
+  - [Data Visualisation, diagrams and infographics](#data-visualisation-diagrams-and-infographics)
+  - [Presentations and slides](#presentations-and-slides) - [Stocks](#stocks) - [Images
+  stocks](#images-stocks) - [Icons stocks](#icons-stocks) - [Videos stocks](#videos-stocks)
+  - [Other stocks](#other-stocks) - [Mockups](#mockups) - [Other design tools](#other-design-tools)
+  - [Support and customer communication](#support-and-customer-communication) - [Live
+  customer chats](#live-customer-chats) - [Helpdesk](#helpdesk) - [Onboarding](#onboarding)
+  - [Other](#other) - [Payments, billing and distribution](#payments-billing-and-distribution)
+  - [User Analytics and Reporting](#user-analytics-and-reporting) - [Mobile only](#mobile-only)
+  - [Business Analytics](#business-analytics) - [Finance](#finance) - [Automation](#automation)
+  - [HR and Payroll](#hr-and-payroll) - [Forms and Surveys](#forms-and-surveys) -
+  [Endpoints](#endpoints) - [Other forms](#other-forms) - [Tech](#tech) - [Status,
+  Monitoring and Ping](#status-monitoring-and-ping) - [Bug tracking](#bug-tracking)
+  - [Log inspectors](#log-inspectors) - [Cloud Hosting](#cloud-hosting) - [Scapping
+  check each](#scapping-check-each) - [Email services (SMTP and Transactional)](#email-services-smtp-and-transactional)
+  - [Deploy](#deploy) - [Tech stack explorer](#tech-stack-explorer) - [Site performance](#site-performance)
+  - [Other tech tools](#other-tech-tools) - [Product building](#product-building)
+  - [Drag-and-drop programming tools](#drag-and-drop-programming-tools) - [Comments
+  as a sevice](#comments-as-a-sevice) - [Voice and speech recognition](#voice-and-speech-recognition)
+  - [Files uploading and processing](#files-uploading-and-processing) - [User testing](#user-testing)
+  - [Marketing and growth](#marketing-and-growth) - [Email](#email) - [Mailing services](#mailing-services)
+  - [Email validators (list verification)](#email-validators-list-verification) -
+  [Email templates](#email-templates) - [Other email services](#other-email-services)
+  - [Blogging](#blogging) - [SEO](#seo) - [Keyword research tools](#keyword-research-tools)
+  - [Content Marketing](#content-marketing) - [Growth and marketing automation](#growth-and-marketing-automation)
+  - [Paid promotion](#paid-promotion) - [Copy](#copy) - [Video and animation creation](#video-and-animation-creation)
+  - [Social media management (SMM)](#social-media-management-smm) - [Planners (content
+  managers and schedulers)](#planners-content-managers-and-schedulers) - [Instagram
+  tools](#instagram-tools) - [Track mentions](#track-mentions) - [affiliate](#affiliate)
+  - [referral](#referral) - [market research](#market-research) - [Paid ads](#paid-ads)
+  - [Affiliates](#affiliates) - [Other marketing tools](#other-marketing-tools) -
+  [Collaboration](#collaboration) - [project and task management](#project-and-task-management)
+  - [Product Roadmaps](#product-roadmaps) - [Todo lists](#todo-lists) - [team communication](#team-communication)
+  - [Video calls, meetings and screen sharing](#video-calls-meetings-and-screen-sharing)
+  - [file sharing](#file-sharing) - [Screen shots and video capture and sharing](#screen-shots-and-video-capture-and-sharing)
+  - [Bug tracking](#bug-tracking-1) - [Data, knowledge base, notes and documents](#data-knowledge-base-notes-and-documents)
+  - [Email inbox](#email-inbox) - [Collective coding](#collective-coding) - [Git](#git)
+  - [Time tracking](#time-tracking) - [Other collaboration tools](#other-collaboration-tools)
+  - [Build a chatbot](#build-a-chatbot) - [Domains and naming](#domains-and-naming)
+  - [Find a domain name](#find-a-domain-name) - [Naming](#naming) - [Other](#other-1)
+  - [Legal, Account and Invoicing](#legal-account-and-invoicing) - [GDPR](#gdpr) -
+  [Invoicing](#invoicing) - [Documents](#documents) - [Funding](#funding) - [Investors
+  and Accelerators](#investors-and-accelerators) - [Crowdfunding](#crowdfunding) -
+  [Sales](#sales) - [CRM](#crm) - [Communities](#communities) - [Learn](#learn) -
+  [Books](#books) - [Video](#video) - [A/B testing](#ab-testing) - [Launch](#launch)
+  - [Other](#other-2) - [Sponsors](#sponsors) - [Contribute](#contribute) - [License](#license)
+  # Website ## Hosted website builders * [Unicorn Platform](https://unicornplatform.com)
+  [_[PH]_](https://www.producthunt.com/posts/unicorn-platform-v2-0) - Modern landing
+  page builder for startups. Founded by the author of this list \U0001F499 * [ProductH"
 ---
 {% raw %}
 # StartupToolbox

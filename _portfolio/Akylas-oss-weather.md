@@ -2,8 +2,43 @@
 layout: project
 name: Akylas Oss Weather
 slug: Akylas-oss-weather
+category: Let's try this- Personal prefere
 image: https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
 repo_url: https://github.com/Akylas/oss-weather
+indexed_content: '[](COC.md) [](https://github.com/Akylas/oss-weather/stargazers)
+  [](https://github.com/Akylas/oss-weather/blob/master/COPYING) [](https://github.com/Akylas/oss-weather/releases/)
+  [](https://github.com/Akylas/oss-weather/releases/latest) [](https://hosted.weblate.org/engage/oss-weather/?utm_source=widget)
+  Scan all your documents --> ## Installation | || |:-:|:-:| |[ ](https://apt.izzysoft.de/packages/com.akylas.weather)|[
+  ](https://play.google.com/store/apps/details?id=com.akylas.weather)| |[ ](https://github.com/Akylas/oss-weather/releases)|
+  | #### AppVerifier hashes **OSS Weather**: ``` com.akylas.weather 68:70:80:D4:CF:6F:CF:FE:8D:82:FD:1D:78:3C:90:C2:95:94:80:AA:13:C3:8A:D8:D0:4E:C3:40:66:FC:13:F1
+  ``` You can get the latest release on GitHub --> Enjoying OSS Weather? Please consider
+  making a small donation to help fund the project. Developing an application, especially
+  one that is open source and completely free, takes a lot of time and effort. :heart:
+  Sponsor Open Source app to access detailed weather data from OpenWeather, Open-Meteo
+  and Meteo France. Weather radar provided by RainViewer. You can create a free OWM
+  key to access OpenWeather weather data. There is a default key included in the app
+  but the access is limited and you could get errors related to rate limits. ## Screenshots
+  ### Having issues, suggestions and feedback? You can, - [Create an issue here](https://github.com/farfromrefug/oss-weather/issues)
+  ### Languages: [ ](https://hosted.weblate.org/engage/oss-weather/?utm_source=widget)
+  [ ](https://hosted.weblate.org/engage/oss-weather/) The Translations are hosted
+  by [Weblate.org](https://hosted.weblate.org/engage/oss-weather/). Feature Graphic
+  generated with [hotpot.ai](https://hotpot.ai/design/google-play-feature-graphic)
+  ## Building Setup ### Nativescript First [setup Nativescript](https://docs.nativescript.org/setup/linux)
+  This project is optimized to be built with [Akylas Fork](https://github.com/Akylas/NativeScript).
+  Though it would work with main it is best to use this fork. The `package.json` defines
+  a resolution to `../NativeScript/dist/packages/core` so clone the fork and build
+  it using `npm run setup:yarn && npm run ui-mobile-base:build && npm run core:build`
+  ### Yarn You need to use yarn with this project as it uses the `portal:` protocol
+  for some dependencies. Note that the project has some `yarn link` for easy local
+  dev for me. The best is for you to remove the `resolutions` part of the `package.json`
+  ### dotenv The app uses `.env` file to set up needed environment variables. `.env`
+  is not commited as it contains sensitive data Simply create a `.env` file with:
+  ``` source .env.ci ``` Then "source" the file in the terminal so that variable are
+  exported and available to nativescript cli. I use dotenv plugin for zsh which automatically
+  loads the `.env` file ### Building Now that all is setup and that you prepared the
+  3rd party libraries you can actually build and run the app: * `yarn` * `ns run android
+  --no-hmr --env.devlog` (replace by `ios` for iOS...) This should run the app on
+  the first discovered device or emulator.'
 ---
 {% raw %}
 

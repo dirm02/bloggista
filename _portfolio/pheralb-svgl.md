@@ -2,8 +2,61 @@
 layout: project
 name: Pheralb Svgl
 slug: pheralb-svgl
+category: Uncategorized
 image: https://img.shields.io/badge/Sveltekit-FF3E00?logo=svelte&logoColor=fff&style=flat
 repo_url: https://github.com/sponsors/pheralb
+indexed_content: "Explore &nbsp;✦&nbsp; Sponsor this project &nbsp;✦&nbsp; Getting
+  Started &nbsp;✦&nbsp; Extensions &nbsp;✦&nbsp; Stack &nbsp;✦&nbsp; Contributing
+  &nbsp;✦&nbsp; License [](https://actions-badge.atrox.dev/pheralb/svgl/goto?ref=main)
+  ## \U0001F4E6 Extensions A list of extensions that use the [**SVGL API**](https://svgl.app/docs/api),
+  created by the community: | | Extension | Description | Created by | Link | | ----------------------------------------------------------------------------------------------------------
+  | ---------------------- | ----------------------------------------------------------------------------------------------------------
+  | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------
+  | | | SVGL CLI | A CLI for easily adding SVG icons to your project. | [sujjeee](https://twitter.com/sujjeeee)
+  | [GitHub Repository](https://github.com/sujjeee/svgls) | | | SVGL for Framer |
+  Our SVGL plugin for Framer simplifies the use of SVG-based colourful logos. Easily
+  import and easy to use. | [Krishna Singh](https://x.com/krishnasinghdev) | [Framer
+  Marketplace](https://www.framer.com/marketplace/plugins/svgl/) | | | SVGL for React
+  | An open-source NPM package that offers a SVGL Logos for React. | [ridemountainpig](https://x.com/ridemountainpig)
+  | [GitHub Repository](https://github.com/ridemountainpig/svgl-react?tab=readme-ov-file#svgl-react)
+  | | | SVGL for Vue | An open-source NPM package that offers a SVGL Logos for Vue.
+  | [selemondev](https://x.com/selemondev) | [GitHub Repository](https://github.com/selemondev/svgl-vue?tab=readme-ov-file#--svgl-vue--)
+  | | | SVGL for Svelte | An open-source NPM package that offers a SVGL Logos for
+  Svelte. | [selemondev](https://x.com/selemondev) | [GitHub Repository](https://github.com/selemondev/svgl-svelte#--svgl-svelte--)
+  | | | SVGL for Figma | Add svgs from svgl to your Figma project. | [quilljou](https://twitter.com/quillzhou)
+  | [Figma Plugin](https://www.figma.com/community/plugin/1320306989350693206/svgl)
+  | | | SVGL for PowerToys | Search & copy SVG logos in PowerToys Run. | [SameerJS6](https://x.com/Sameerjs6)
+  | [Website](https://svgl.sameerjs.com/) | | | SVGL for Raycast | Search SVG logos
+  via svgl. | [1weiho](https://twitter.com/1weiho) | [Raycast Store](https://www.raycast.com/1weiho/svgl)
+  | | | SVGL for VSCode | SVGL directly in your VSCode. | [girlazote](https://twitter.com/girlazote)
+  | [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=EsteveSegura.svgl)
+  | | | SVGL Badge | A beautiful badges with svgl SVG logos. | [ridemountainpig](https://twitter.com/ridemountainpig)
+  | [Website](https://svgl-badge.vercel.app/) | | | Magic | AI extension for Cursor
+  & other IDEs | [serafimcloud](https://x.com/serafimcloud) | [Website](https://21st.dev/magic)
+  | | | SVGL for PowerShell | PowerShell extension to quickly get svgl logos anywhere
+  | [Bart Spaans](https://bsky.app/profile/bartspaans.bsky.social) | [GitHub Repository](https://github.com/spaansba/SVGL-PowerShell)
+  | | | SVGL for Flow Launcher | Search & copy SVG logos in Flow Launcher | [AF_Askar](https://x.com/Askar_AF)
+  | [GitHub Repository](https://github.com/abo3skr2019/SVGl-plugin) | ## \U0001F6E0️
+  Stack - [**Sveltekit** + **Svelte 5**](https://kit.svelte.dev/) - Web development,
+  streamlined. - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with
+  syntax for types. - [**Content-Collections**](https://www.content-collections.dev/)
+  - Transform your content into type-safe data collections and say goodbye to manual
+  data fetching and parsing. - [**Shiki**](https://github.com/shikijs/shiki) - A beautiful
+  Syntax Highlighter. - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first
+  CSS framework for rapidly building custom designs. - [**bits-ui**](https://www.bits-ui.com)
+  - A collection of headless components for Svelte. - [**clsx**](https://github.com/lukeed/clsx)
+  + [**tailwind-merge**](https://github.com/dcastil/tailwind-merge) inspired by [shadcn/ui](https://ui.shadcn.com)
+  - A tiny utility for constructing `className` strings conditionally. - [**Prettier**](https://prettier.io/)
+  + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+  - An opinionated code formatter. - [**Lucide Icons**](https://lucide.dev/) - Beautiful
+  & consistent icons. - [**svelte-sonner**](https://github.com/wobsoriano/svelte-sonner)
+  - An opinionated toast component for Svelte. - [**Hono**](https://hono.dev/) - Fast,
+  lightweight, built on Web Standards. Support for any JavaScript runtime. - [**@upstash/redis**
+  + **@upstash/ratelimit**](https://upstash.com/) - Serverless Redis for developers.
+  ## \U0001F680 Getting Started > [!IMPORTANT] > Before submitting an SVG, ensure
+  you have the right to use it and that its license permits adding it to svgl. If
+  you are uncertain, please contact the author or the company. You will need: - [Node.js
+  20+](https://nodejs.org/en/). - [Git](https://git-scm.com/)."
 ---
 {% raw %}
 <div align="center">

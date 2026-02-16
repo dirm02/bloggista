@@ -2,8 +2,45 @@
 layout: project
 name: Tryghost Ghost
 slug: TryGhost-Ghost
+category: Very important!!!!
 image: https://user-images.githubusercontent.com/65487235/157884383-1b75feb1-45d8-4430-b636-3f7e06577347.png
 repo_url: https://github.com/TryGhost/Ghost
+indexed_content: "&nbsp; &nbsp; Ghost.org • Forum • Docs • Contributing • Twitter
+  &nbsp; > [!NOTE] > Love open source? We're hiring! Ghost is looking staff engineers
+  to [join the team](https://careers.ghost.org) and work with us full-time &nbsp;
+  The easiest way to get a production instance deployed is with our official **[Ghost(Pro)](https://ghost.org/pricing/)**
+  managed service. It takes about 2 minutes to launch a new site with worldwide CDN,
+  backups, security and maintenance all done for you. For most people this ends up
+  being the best value option because of [how much time it saves](https://ghost.org/docs/hosting/)
+  — and 100% of revenue goes to the Ghost Foundation; funding the maintenance and
+  further development of the project itself. So you’ll be supporting open source software
+  *and* getting a great service! &nbsp; # Quickstart install If you want to run your
+  own instance of Ghost, in most cases the best way is to use our **CLI tool** ```
+  npm install ghost-cli -g ``` &nbsp; Then, if installing locally add the `local`
+  flag to get up and running in under a minute - [Local install docs](https://ghost.org/docs/install/local/)
+  ``` ghost install local ``` &nbsp; or on a server run the full install, including
+  automatic SSL setup using LetsEncrypt - [Production install docs](https://ghost.org/docs/install/ubuntu/)
+  ``` ghost install ``` &nbsp; Check out our [official documentation](https://ghost.org/docs/)
+  for more information about our [recommended hosting stack](https://ghost.org/docs/hosting/)
+  & properly [upgrading Ghost](https://ghost.org/docs/update/), plus everything you
+  need to develop your own Ghost [themes](https://ghost.org/docs/themes/) or work
+  with [our API](https://ghost.org/docs/content-api/). ### Contributors & advanced
+  developers For anyone wishing to contribute to Ghost or to hack/customize core files
+  we recommend following our full development setup guides: [Contributor guide](https://ghost.org/docs/contributing/)
+  • [Developer setup](https://ghost.org/docs/install/source/) &nbsp; # Ghost sponsors
+  A big thanks to our sponsors and partners who make Ghost possible. If you're interested
+  in sponsoring Ghost and supporting the project, please check out our profile on
+  [GitHub sponsors](https://github.com/sponsors/TryGhost) :heart: **[DigitalOcean](https://m.do.co/c/9ff29836d717)**
+  • **[Fastly](https://www.fastly.com/)** • **[Tinybird](https://tbrd.co/ghost)**
+  &nbsp; # Getting help Everyone can get help and support from a large community of
+  developers over on the [Ghost forum](https://forum.ghost.org/). **Ghost(Pro)** customers
+  have access to 24/7 email support. To stay up to date with all the latest news and
+  product updates, make sure you [subscribe to our changelog newsletter](https://ghost.org/changelog/)
+  — or follow us [on Twitter](https://twitter.com/Ghost), if you prefer your updates
+  bite-sized and facetious. :saxophone::turtle: &nbsp; # License & trademark Copyright
+  (c) 2013-2026 Ghost Foundation - Released under the [MIT license](LICENSE). Ghost
+  and the Ghost Logo are trademarks of Ghost Foundation Ltd. Please see our [trademark
+  policy](https://ghost.org/trademark/) for info on acceptable usage."
 ---
 {% raw %}
 &nbsp;

@@ -2,8 +2,70 @@
 layout: project
 name: Edoardottt Cariddi
 slug: edoardottt-cariddi
+category: GreyHate-Cyber&Security
 image: https://asciinema.org/a/415989.svg
 repo_url: https://github.com/edoardottt/images
+indexed_content: "Take a list of domains, crawl urls and scan for endpoints, secrets,
+  api keys, file extensions, tokens and more Coded with \U0001F499 by edoardottt Share
+  on Twitter! Install • Usage • Get Started • Changelog • Contributing • License Installation
+  \U0001F4E1 ---------- #### Homebrew ```console brew install cariddi ``` #### Snap
+  ```console sudo snap install cariddi ``` #### Golang ```console go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest
+  ``` #### Pacman ```console pacman -Syu cariddi ``` #### NixOS ```console nix-shell
+  -p cariddi ``` #### Building from source You need [Go](https://go.dev/) (>=1.24.0)
+  Building from source for Linux and Windows #### Linux ```console git clone https://github.com/edoardottt/cariddi.git
+  cd cariddi go get ./... make linux # (to install) make unlinux # (to uninstall)
+  ``` One-liner: `git clone https://github.com/edoardottt/cariddi.git && cd cariddi
+  && go get ./... && make linux` #### Windows Note that the executable works only
+  in cariddi folder. ```console git clone https://github.com/edoardottt/cariddi.git
+  cd cariddi go get ./... .\\make.bat windows # (to install) .\\make.bat unwindows
+  # (to uninstall) ``` Usage \U0001F4A1 ---------- If you want to scan only a single
+  target you can use ```console echo https://edoardottt.com/ | cariddi ``` With multiple
+  targets you can use a file instead, e.g. urls.txt containing: ```console https://edoardottt.com/
+  http://testphp.vulnweb.com/ ``` For Windows: - use `powershell.exe -Command \"cat
+  urls.txt | .\\cariddi.exe\"` inside the Command prompt - or just `cat urls.txt |
+  cariddi.exe` using PowerShell ### Basics - `cariddi -version` (Print the version)
+  - `cariddi -h` (Print the help) - `cariddi -examples` (Print the examples) ### Scan
+  options - `cat urls.txt | cariddi -intensive` (Crawl searching also subdomains,
+  same as `*.target.com`) - `cat urls.txt | cariddi -s` (Hunt for secrets) - `cat
+  urls.txt | cariddi -err` (Hunt for errors in websites) - `cat urls.txt | cariddi
+  -e` (Hunt for juicy endpoints) - `cat urls.txt | cariddi -info` (Hunt for useful
+  informations in websites) - `cat urls.txt | cariddi -ext 2` (Hunt for juicy (level
+  2 out of 7) files) - `cat urls.txt | cariddi -e -ef endpoints_file` (Hunt for custom
+  endpoints) - `cat urls.txt | cariddi -s -sf secrets_file` (Hunt for custom secrets)
+  - `cat urls.txt | cariddi -ie pdf,png,jpg` (Ignore these extensions while scanning)
+  Default: png, svg, jpg, jpeg, bmp, jfif, gif, webp, woff, woff2, ttf, tiff, tif
+  are ignored while scanning for secrets, info and errors. ### Configuration - `cat
+  urls.txt | cariddi -proxy http://127.0.0.1:8080` (Set a Proxy, http and socks5 supported)
+  - `cat urls.txt | cariddi -d 2` (2 seconds between a page crawled and another) -
+  `cat urls.txt | cariddi -c 200` (Set the concurrency level to 200) - `cat urls.txt
+  | cariddi -i forum,blog,community,open` (Ignore urls containing these words) - `cat
+  urls.txt | cariddi -it ignore_file` (Ignore urls containing at least one line in
+  the input file) - `cat urls.txt | cariddi -cache` (Use the .cariddi_cache folder
+  as cache) - `cat urls.txt | cariddi -t 5` (Set the timeout for the requests) - `cat
+  urls.txt | cariddi -headers \"Cookie: auth=admin;type=2;; X-Custom: customHeader\"`
+  - `cat urls.txt | cariddi -headersfile headers.txt` (Read from an external file
+  custom headers) - `cat urls.txt | cariddi -ua \"Custom User Agent\"` (Use a custom
+  User Agent) - `cat urls.txt | cariddi -rua` (Use a random browser user agent on
+  every request) ### Output - `cat urls.txt | cariddi -plain` (Print only results)
+  - `cat urls.txt | cariddi -ot target_name` (Results in txt file) - `cat urls.txt
+  | cariddi -oh target_name` (Results in html file) - `cat urls.txt | cariddi -json`
+  (Print the output as JSON in stdout) - `cat urls.txt | cariddi -sr` (Store HTTP
+  responses) - `cat urls.txt | cariddi -debug` (Print debug information while crawling)
+  - `cat urls.txt | cariddi -md 3` (Max 3 depth levels) Get Started \U0001F389 ----------
+  `cariddi -h` prints the help. ```console Usage of cariddi: -c int Concurrency level.
+  (default 20) -cache Use the .cariddi_cache folder as cache. -d int Delay between
+  a page crawled and another. -debug Print debug information while crawling. -e Hunt
+  for juicy endpoints. -ef string Use an external file (txt, one per line) to use
+  custom parameters for endpoints hunting. -err Hunt for errors in websites. -examples
+  Print the examples. -ext int Hunt for juicy file extensions. Integer from 1(juicy)
+  to 7(not juicy). -h Print the help. -headers string Use custom headers for each
+  request E.g. -headers \"Cookie: auth=yes;;Client: type=2\". -headersfile string
+  Read from an external file custom headers (same format of headers flag). -json Print
+  the output as JSON in stdout. -md Maximum depth level the crawler will follow from
+  the initial target URL. -i string Ignore the URL containing at least one of the
+  elements of this array. -ie value Comma-separated list of extensions to ignore while
+  scanning. -info Hunt for useful informations in websites. -intensive Crawl searching
+  for "
 ---
 {% raw %}
 <p align="center">

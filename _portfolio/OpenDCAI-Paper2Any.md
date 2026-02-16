@@ -2,8 +2,72 @@
 layout: project
 name: Opendcai Paper2any
 slug: OpenDCAI-Paper2Any
+category: Science -math-physics-chemistry
 image: https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white
 repo_url: https://github.com/OpenDCAI/Paper2Any)
+indexed_content: "# Paper2Any [](https://www.python.org/) [](LICENSE) [](https://github.com/OpenDCAI/Paper2Any)
+  [](https://github.com/OpenDCAI/Paper2Any/stargazers) English | [中文](README_CN.md)
+  ✨ **Focus on paper multimodal workflows: from paper PDFs/screenshots/text to one-click
+  generation of model diagrams, technical roadmaps, experimental plots, and slide
+  decks** ✨ | \U0001F4C4 **Universal File Support** &nbsp;|&nbsp; \U0001F3AF **AI-Powered
+  Generation** &nbsp;|&nbsp; \U0001F3A8 **Custom Styling** &nbsp;|&nbsp; ⚡ **Lightning
+  Speed** | ## \U0001F4D1 Table of Contents - [\U0001F525 News](#-news) - [✨ Core
+  Features](#-core-features) - [\U0001F4F8 Showcase](#-showcase) - [\U0001F9E9 Drawio](#-drawio)
+  - [\U0001F680 Quick Start](#-quick-start) - [\U0001F4C2 Project Structure](#-project-structure)
+  - [\U0001F5FA️ Roadmap](#️-roadmap) - [\U0001F91D Contributing](#-contributing)
+  --- ## \U0001F525 News > [!TIP] > \U0001F195 2026-02-02 · Paper2Rebuttal > Added
+  rebuttal drafting support with structured response guidance and image-aware revision
+  prompts. > [!TIP] > \U0001F195 2026-01-28 · Drawio Update > Added Drawio support
+  for visual diagram creation and showcase-ready outputs in the workflow. > KB updates
+  in one line: multi-file PPT generation with doc convert/merge, optional image injection,
+  and embedding-assisted retrieval. > [!TIP] > \U0001F195 2026-01-25 · New Features
+  > Added **AI-assisted outline editing**, **three-layer model configuration system**
+  for flexible model selection, and **user points management** with daily quota allocation.
+  > \U0001F310 Online Demo: http://dcai-paper2any.nas.cpolar.cn/ > [!TIP] > \U0001F195
+  2026-01-20 · Bug Fixes > Fixed bugs in experimental plot generation (image/text)
+  and resolved the missing historical files issue. > \U0001F310 Online Demo: http://dcai-paper2any.nas.cpolar.cn/
+  > [!TIP] > \U0001F195 2026-01-14 · Feature Updates & Backend Architecture Upgrade
+  > 1. **Feature Updates**: Added **Image2PPT**, optimized **Paper2Figure** interaction,
+  and improved **PDF2PPT** effects. > 2. **Standardized API**: Refactored backend
+  interfaces with RESTful `/api/v1/` structure, removing obsolete endpoints for better
+  maintainability. > 3. **Dynamic Configuration**: Supported dynamic model selection
+  (e.g., GPT-4o, Qwen-VL) via API parameters, eliminating hardcoded model dependencies.
+  > \U0001F310 Online Demo: http://dcai-paper2any.nas.cpolar.cn/ - 2025-12-12 · Paper2Figure
+  Web public beta is live - 2025-10-01 · Released the first version 0.1.0 --- ## ✨
+  Core Features > From paper PDFs / images / text to **editable** scientific figures,
+  slide decks, video scripts, academic posters, and other multimodal content in one
+  click. Paper2Any currently includes the following sub-capabilities: - **\U0001F4CA
+  Paper2Figure - Editable Scientific Figures**: Model architecture diagrams, technical
+  roadmaps (PPT + SVG), and experimental plots with editable PPTX output. - **\U0001F9E9
+  Paper2Diagram / Image2Drawio - Editable Diagrams**: Generate draw.io diagrams from
+  paper/text or images, with drawio/png/svg export and chat-based edits. - **\U0001F3AC
+  Paper2PPT - Editable Slide Decks**: Paper/text/topic to PPT, long-doc support, and
+  built-in table/figure extraction. - **\U0001F4DD Paper2Rebuttal**: Draft structured
+  rebuttals and revision responses with claims-to-evidence grounding. - **\U0001F5BC️
+  PDF2PPT - Layout-Preserving Conversion**: Accurate layout retention for PDF → editable
+  PPTX. - **\U0001F5BC️ Image2PPT - Image to Slides**: Convert images or screenshots
+  into structured slides. - **\U0001F3A8 PPTPolish - Smart Beautification**: AI-based
+  layout optimization and style transfer. - **\U0001F3AC Paper2Video**: Generate video
+  scripts and narration assets. - **\U0001F4DD Paper2Technical**: Produce technical
+  reports and method summaries. - **\U0001F4DA Knowledge Base (KB)**: Ingest/embedding,
+  semantic search, and KB-driven PPT/podcast/mindmap generation. --- ## \U0001F4F8
+  Showcase ### \U0001F9E9 Drawio ✨ Diagram generation (mindmap / flowchart / ER ...)
+  ✨ Model diagrams from PDF or text (research figure generation) ✨ Image to editable
+  DrawIO diagram --- ### \U0001F4DD Paper2Rebuttal: Rebuttal Drafting ✨ Rebuttal drafting
+  and revision support --- ### \U0001F4CA Paper2Figure: Scientific Figure Generation
+  ✨ Model Architecture Diagram Generation ✨ Model Architecture Diagram Generation
+  ✨ Technical Roadmap Generation ✨ Experimental Plot Generation (Multiple Styles)
+  --- ### \U0001F3AC Paper2PPT: Paper to Presentation ✨ PPT Generation Demo ✨ Paper
+  / Text / Topic → PPT ✨ Long Document Support (40+ Slides) ✨ Intelligent Table Extraction
+  & Insertion ✨ AI-Assisted Outline Editing ✨ Version History Management --- ### \U0001F3A8
+  PPT Smart Beautification ✨ AI-based Layout Optimization ✨ AI-based Layout Optimization
+  & Style Transfer --- ### \U0001F5BC️ PDF2PPT: Layout-Preserving Conversion ✨ Intelligent
+  Cutout & Layout Preservation ✨ Image2PPT --- ## \U0001F680 Quick Start ### Requirements
+  \U0001F433 Docker (Recommended) — Deployment & Updates ```bash # 1. Clone git clone
+  https://github.com/OpenDCAI/Paper2Any.git cd Paper2Any # 2. Backend env (required
+  for your API keys/models) cp fastapi_app/.env.example fastapi_app/.env # 3. Build
+  + run docker compose up -d --build ``` Open: - Frontend: http://localhost:3000 -
+  Backend health: http://localhost:8000/health Modify & update: - After chan"
 ---
 {% raw %}
 <div align="center">

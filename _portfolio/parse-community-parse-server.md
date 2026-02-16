@@ -2,8 +2,64 @@
 layout: project
 name: Parse Community Parse Server
 slug: parse-community-parse-server
+category: Uncategorized
 image: https://user-images.githubusercontent.com/5673677/138278489-7d0cebc5-1e31-4d3c-8ffb-53efcda6f29d.png
 repo_url: https://github.com/parse-community/parse-server
+indexed_content: "--- [](https://github.com/parse-community/parse-server/actions/workflows/ci.yml?query=workflow%3Aci+branch%3Aalpha)
+  [](https://github.com/parse-community/parse-server/actions/workflows/ci.yml?query=workflow%3Aci+branch%3Arelease)
+  [](https://snyk.io/test/github/parse-community/parse-server) [](https://app.codecov.io/github/parse-community/parse-server/tree/alpha)
+  [](https://github.com/parse-community/parse-dashboard/releases) [](https://nodejs.org)
+  [](https://www.mongodb.com) [](https://www.postgresql.org) [](https://www.npmjs.com/package/parse-server)
+  [](https://www.npmjs.com/package/parse-server) [][open-collective-link] [][open-collective-link]
+  [](https://community.parseplatform.org/c/parse-server) [](https://twitter.com/intent/follow?screen_name=ParsePlatform)
+  [](https://chat.parseplatform.org) --- Parse Server is an open source backend that
+  can be deployed to any infrastructure that can run Node.js. Parse Server works with
+  the Express web application framework. It can be added to existing web applications,
+  or run by itself. The full documentation for Parse Server is available in the [wiki](https://github.com/parse-community/parse-server/wiki).
+  The [Parse Server guide](http://docs.parseplatform.org/parse-server/guide/) is a
+  good place to get started. An [API reference](http://parseplatform.org/parse-server/api/)
+  and [Cloud Code guide](https://docs.parseplatform.org/cloudcode/guide/) are also
+  available. If you're interested in developing for Parse Server, the [Development
+  guide](http://docs.parseplatform.org/parse-server/guide/#development-guide) will
+  help you get set up. --- A big _thank you_ \U0001F64F to our [sponsors](#sponsors)
+  and [backers](#backers) who support the development of Parse Platform! #### Bronze
+  Sponsors [](https://opencollective.com/parse-server/contribute/bronze-sponsor-10559)
+  --- - [Flavors \\& Branches](#flavors--branches) - [Long Term Support](#long-term-support)
+  - [Getting Started](#getting-started) - [Running Parse Server](#running-parse-server)
+  - [Compatibility](#compatibility) - [Node.js](#nodejs) - [MongoDB](#mongodb) - [PostgreSQL](#postgresql)
+  - [Locally](#locally) - [Docker Container](#docker-container) - [Saving and Querying
+  Objects](#saving-and-querying-objects) - [Connect an SDK](#connect-an-sdk) - [Running
+  Parse Server elsewhere](#running-parse-server-elsewhere) - [Sample Application](#sample-application)
+  - [Parse Server + Express](#parse-server--express) - [Parse Server Health](#parse-server-health)
+  - [Status Values](#status-values) - [Configuration](#configuration) - [Basic Options](#basic-options)
+  - [Client Key Options](#client-key-options) - [Access Scopes](#access-scopes) -
+  [Email Verification and Password Reset](#email-verification-and-password-reset)
+  - [Password and Account Policy](#password-and-account-policy) - [Custom Routes](#custom-routes)
+  - [Example](#example) - [Reserved Paths](#reserved-paths) - [Parameters](#parameters)
+  - [Custom Pages](#custom-pages) - [Using Environment Variables](#using-environment-variables)
+  - [Available Adapters](#available-adapters) - [Configuring File Adapters](#configuring-file-adapters)
+  - [Restricting File URL Domains](#restricting-file-url-domains) - [Idempotency Enforcement](#idempotency-enforcement)
+  - [Localization](#localization) - [Pages](#pages) - [Localization with Directory
+  Structure](#localization-with-directory-structure) - [Localization with JSON Resource](#localization-with-json-resource)
+  - [Dynamic placeholders](#dynamic-placeholders) - [Reserved Keys](#reserved-keys)
+  - [Parameters](#parameters-1) - [Logging](#logging) - [Deprecations](#deprecations)
+  - [Live Query](#live-query) - [GraphQL](#graphql) - [Running](#running) - [Using
+  the CLI](#using-the-cli) - [Using Docker](#using-docker) - [Using Express.js](#using-expressjs)
+  - [Checking the API health](#checking-the-api-health) - [Creating your first class](#creating-your-first-class)
+  - [Using automatically generated operations](#using-automatically-generated-operations)
+  - [Customizing your GraphQL Schema](#customizing-your-graphql-schema) - [Learning
+  more](#learning-more) - [Contributing](#contributing) - [Contributors](#contributors)
+  - [Sponsors](#sponsors) - [Backers](#backers) # Flavors & Branches Parse Server
+  is available in different flavors on different branches: - The main branches are
+  [release][log_release] and [alpha][log_alpha]. See the [changelog overview](CHANGELOG.md)
+  for details. - The long-term-support (LTS) branches are named `release- .x.x`, for
+  example `release-5.x.x`. LTS branches do not have pre-release branches. ## Long
+  Term Support Long-Term-Support (LTS) is provided for the previous Parse Server major
+  version. For example, Parse Server 5.x will receive security updates until Parse
+  Server 6.x is superseded by Parse Server 7.x and becomes the new LTS version. While
+  the current major version is published on branch `release`, a LTS version is published
+  on branch `release-#.x.x`, for example `release-5.x.x` for the Parse Server 5.x
+  LTS branch. ⚠️ LTS version"
 ---
 {% raw %}
 ![parse-repository-header-server](https://user-images.githubusercontent.com/5673677/138278489-7d0cebc5-1e31-4d3c-8ffb-53efcda6f29d.png)

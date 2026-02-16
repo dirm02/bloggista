@@ -2,8 +2,69 @@
 layout: project
 name: Kitoweeknd Rfuav
 slug: kitoweeknd-RFUAV
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/kitoweeknd-RFUAV/abstract/profile.png
 repo_url: https://github.com/kitoweeknd/RFUAV
+indexed_content: "The RFUAV DATASET \U0001F4D6 中文版 / Chinese Version ## Abstract The
+  official repository for our paper, *\"[RFUAV: A Benchmark Dataset for Unmanned Aerial
+  Vehicle Detection and Identification](https://arxiv.org/abs/2503.09033)\"*, can
+  be accessed here. RFUAV offers a comprehensive benchmark dataset for Radio-Frequency
+  (RF)-based drone detection and identification. In addition to the dataset, we provide
+  the raw data used to generate the spectral information, which includes recordings
+  from 35 different types of drones under high signal-to-noise ratio (SNR) conditions.
+  This dataset is available to all researchers working with RF data for drone analysis.
+  Researchers can apply the deep learning methods we have provided, or use traditional
+  signal processing techniques such as decoding, demodulation, and FFT. Detailed information
+  about the dataset, including file sizes (total data volume for each drone), SNR
+  (the highest SNR for each dataset), and the middle frequency (the central frequency
+  used during data collection for each drone), is provided in the figure below. We
+  analyzed the properties of each drone in the dataset, including Frequency Hopping
+  Signal Bandwidth (FHSBW), Frequency Hopping Signal Duration Time (FHSDT), Video
+  Transmitted Signal Bandwidth (VSBW), Frequency Hopping Signal Duty Cycle (FHSDC),
+  and Frequency Hopping Signal Pattern Period (FHSPP). The distributions of these
+  properties are plotted below. More detailed information can be found in our paper.
+  With RFUAV, you can achieve drone signal detection and identification directly on
+  raw IQ data, as demonstrated below: ## 1. Quick Start Installation ```bash pip install
+  -r requirements.txt ``` Run inference for drone classification ```bash python inference.py
+  ``` Quick training using ResNet50 on a small dataset ```bash python train.py ```
+  ## 2. Usage ### SDR Playback Since our data was directly collected using USRP devices,
+  it is fully compatible with USRP and GNU Radio for signal replay. You can use our
+  raw data to broadcast signals through radio equipment to achieve your desired outcomes.
+  Additionally, we provide the replay results observed during our experiments using
+  an oscilloscope for reference. ### 2.1 Converting Raw Frequency Signal Data to Spectrograms
+  #### Python Pipeline We provide a signal processing pipeline to convert binary raw
+  frequency signal data into spectrogram format using both MATLAB and Python toolboxes.
+  **Visualize Spectrograms** You can easily visualize the spectrogram of a specific
+  data pack using the following code. The `oneside` parameter controls whether to
+  display the half-plane or full-plane spectrogram. ```python from graphic.RawDataProcessor
+  import RawDataProcessor datapack = 'Your datapack path' test = RawDataProcessor()
+  test.ShowSpectrogram(data_path=datapack, drone_name='DJ FPV COMBO', sample_rate=100e6,
+  stft_point=2048, duration_time=0.1, oneside=False, Middle_Frequency=2400e6) ```
+  **Batch Conversion to Images** To automatically convert raw frequency signal data
+  into spectrograms and save them as PNG images: ```python from graphic.RawDataProcessor
+  import RawDataProcessor data_path = 'Your datapack path' save_path = 'Your save
+  path' test = RawDataProcessor() test.TransRawDataintoSpectrogram(fig_save_path=save_path,
+  data_path=data_path, sample_rate=100e6, stft_point=1024, duration_time=0.1) ```
+  **Save as Video** You can use the `TransRawDataintoVideo()` method to save the spectrogram
+  as a video, which provides better visualization of temporal signal evolution: ```python
+  from graphic.RawDataProcessor import RawDataProcessor data_path = 'Your datapack
+  path' save_path = 'Your save path' test = RawDataProcessor() test.TransRawDataintoVideo(save_path=save_path,
+  data_path=data_path, sample_rate=100e6, stft_point=1024, duration_time=0.1, fps=5)
+  ``` **Waterfall Spectrogram** The `waterfall_spectrogram()` function converts raw
+  data into a waterfall spectrogram video, visually displaying how the signal evolves
+  over time: ```python from graphic.RawDataProcessor import waterfall_spectrogram
+  datapack = 'Your datapack path' save_path = 'Your save path' images = waterfall_spectrogram(datapack=datapack,
+  fft_size=256, fs=100e6, location='buffer', time_scale=39062) ``` #### MATLAB Pipeline
+  You can use the `check.m` program to visualize the spectrogram of a specific data
+  pack: ```matlab data_path = 'Your datapack path'; nfft = 512; fs = 100e6; duration_time
+  = 0.1; datatype = 'float32'; check(data_path, nfft, fs, duration_time, datatype);
+  ``` ### 2.2 SNR Estimation and Adjustment We provide SNR estimation and adjustment
+  tools using the MATLAB toolbox to help you analyze and process binary raw frequency
+  signal data. **SNR Estimation** First, locate the signal position and estimate the
+  SNR: ```matlab [idx1, idx2, idx3, idx4, f1, f2] = positionFind(dataIQ, fs, bw, NFFT);
+  snr_esti = snrEsti(dataIQ, fs, NFFT, f1, f2, idx1, idx2, idx3, idx4); ``` **SNR
+  Adjustment** The `awgn1` function adjusts the noise level of raw signal data based
+  on the SNR estimati"
 ---
 {% raw %}
 <h1 style="text-align:center;"> The RFUAV DATASET </h1>

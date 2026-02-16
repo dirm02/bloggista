@@ -2,8 +2,68 @@
 layout: project
 name: Aicrowd Global Chess Challenge 2025 Starter Kit
 slug: AIcrowd-global-chess-challenge-2025-starter-kit
+category: Very important!!!!
 image: https://images.aicrowd.com/raw_images/challenges/social_media_image_file/1166/a4a6aaf8ab15af56cc81.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/AIcrowd-global-chess-challenge-2025-starter-kit
+indexed_content: "# Global Chess Challenge - Starter Kit [](https://www.aicrowd.com/challenges/global-chess-challenge-2025)
+  # [Global Chess Challenge](https://www.aicrowd.com/challenges/global-chess-challenge-2025)
+  This repository is the **Submission template and Starter kit** for the Global Chess
+  Challenge! Clone the repository to compete now! **This repository contains**: *
+  **Documentation** on how to submit your agent to the leaderboard * **The procedure**
+  for best practices and information on how we evaluate your agent * **Starter code**
+  for you to get started! # Table of Contents 1. [Competition Overview](#-competition-overview)
+  2. [Challenge Description](#-challenge-description) 3. [Tracks](#-tracks) 4. [Evaluation
+  Metrics](#-evaluation-metrics) 5. [Getting Started](#-getting-started) - [How to
+  write your own agent?](#️-how-to-write-your-own-agent) - [How to start participating?](#-how-to-start-participating)
+  - [Setup](#setup) - [How to make a submission?](#-how-to-make-a-submission) - [What
+  hardware does my code run on?](#-what-hardware-does-my-code-run-on) - [Baseline](#baseline)
+  6. [Frequently Asked Questions](#-frequently-asked-questions) 7. [Important Links](#-important-links)
+  # \U0001F4D6 Competition Overview Most chess players don't have regular access to
+  a top coach. What they do have are their own games and a recurring question: \"What
+  should I have played here?\" The Global Chess Challenge imagines a tool that looks
+  at those positions, suggests a strong move, and explains the idea in simple language,
+  so players can coach themselves using the games they already play. This challenge
+  asks you to build models that play legal chess moves and briefly explain their choices
+  in natural language, while a world-class engine checks how well those moves hold
+  up on the board. The challenge turns a familiar game into a testbed to see whether
+  reasoning models can think clearly, play good moves, and talk about them in a way
+  humans can follow. # ♟️ Challenge Description The Global Chess Challenge asks participants
+  to build a **text-only chess agent** that does two things at once: play a legal
+  move and explain the idea behind it in simple language. On each turn, your model
+  receives a chess position as text and must respond with: - A one-sentence rationale
+  explaining the idea behind the move - A legal move in UCI format The environment
+  verifies legality, evaluates move quality using Stockfish, and runs full games in
+  tournaments to measure overall playing strength. ## Input Format For every turn,
+  your agent receives: - Position encoded as a FEN string - Side to move (White or
+  Black) - List of legal moves in UCI format ## Output Format Your agent must return:
+  - A one-sentence rationale: ` ... ` - Exactly one move in UCI format: ` ... ` #
+  \U0001F3C1 Getting Started 1. **Sign up** to join the competition [on the AIcrowd
+  website](https://www.aicrowd.com/challenges/global-chess-challenge-2025/). 2. **Clone**
+  this repo and start developing your agent. 3. **Develop** your agent(s) following
+  the template in [how to write your own agent](#-how-to-write-your-own-agent) section.
+  4. [**Submit**](#-how-to-make-a-submission) your trained models using huggingface
+  for evaluation. # ✍️ How to write your own agent? Please follow the instructions
+  in [player_agents/README.md](player_agents/README.md) for instructions and examples
+  on how to write your own chess agent for this competition. # \U0001F6B4 How to start
+  participating? **Clone** the repository recursively: ```bash git clone --recursive
+  git@github.com:aicrowd/global-chess-challenge-2025-starter-kit.git cd global-chess-challenge-2025-starter-kit
+  ``` In case you didn't clone with `--recursive`, you can do the following ```bash
+  cd global-chess-challenge-2025-starter-kit git submodule update --init --recursive
+  ``` **Install** competition specific dependencies ```bash pip install -r requirements.txt
+  ``` ## Running LLM locally Before running local evaluation, you need to start either
+  a vLLM server or a Flask server in a **separate terminal** from the `player_agents`
+  directory. ### Option 1: Using vLLM (for LLM-based agents) ```bash cd player_agents
+  pip install vllm bash run_vllm.sh ``` ### Option 2: Using Flask for rule-based agents
+  - (Note that rule based agents cannot be submitted, its only for local testing)
+  ```bash cd player_agents # For random agent python random_agent_flask_server.py
+  # OR for Stockfish agent python stockfish_agent_flask_server.py ``` Keep this server
+  running in the background while you run local evaluation. ## Local testing Test
+  your agent locally using `python local_evaluation.py`. **Note:** Make sure you have
+  started either the vLLM server or Flask server (see [Running LLM locally](#running-llm-locally))
+  in a separate terminal before running local evaluation. ## Before you submit Accept
+  the Challenge Rules on the main [challenge page](https://www.aicrowd.com/challenges/global-chess-challenge-2025)
+  by clicking on the **Participate** button. # \U0001F4EE How to Make a Submission
+  This guide walks you through the "
 ---
 {% raw %}
 # Global Chess Challenge - Starter Kit

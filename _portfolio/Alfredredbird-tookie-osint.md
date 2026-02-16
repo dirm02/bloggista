@@ -2,8 +2,67 @@
 layout: project
 name: Alfredredbird Tookie Osint
 slug: Alfredredbird-tookie-osint
+category: GreyHate-Cyber&Security
 image: https://github.com/Alfredredbird/tookie-osint/assets/105014217/67bab5b4-f537-4f05-8a7b-c9fc3a16d256
 repo_url: https://github.com/Alfredredbird/tookie-osint
+indexed_content: "[](https://github.com/psf/black) # (Tookie-OSINT V4 is here!) Tookie-OSINT
+  has been re-written 100% from scratch for ultimate performance! Translations are
+  still not ready yet. ## \U0001F310 Language > Select your language / 言語を選択してください
+  / 选择你的语言 / Sélectionnez votre langue / Seleccione su idioma / Wählen Sie Ihre Sprache
+  / Выберите язык / اختر لغتك / زبان خود را انتخاب کنید / Selecione seu idioma / Scegli
+  la tua lingua / 선택 언어 / Pilih bahasa Anda / בחר את השפה שלך / अपनी भाषा चुनें /
+  Valitse kieli / 選擇您的語言 | [English](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.en.md)
+  | [日本語](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.ja.md)
+  | [简体中文](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.zh-cn.md)
+  | [繁體中文](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.zh-tw.md)
+  | [Français](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.fr.md)
+  | [Español](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.es.md)
+  | [Deutsch](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.de.md)
+  | [Русский](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.ru.md)
+  | [Português](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.pt.md)
+  | [Italiano](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.it.md)
+  | [فارسی](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.fa.md)
+  | [العربية](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.ar.md)
+  | [हिन्दी](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.hi.md)
+  | [Suomi](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.fi.md)
+  | [עברית](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.he.md)
+  | | [Bahasa Indonesia](https://github.com/Alfredredbird/tookie-osint/blob/main/docs/readmelang/README.id.md)
+  | # \U0001F50E Overview Tookie-osint has a simple-to-use UI and is really straightforward.
+  The main idea of Tookie-osint is to discover usernames that are requested from an
+  input. Tookie-osint is similar to the tool called Sherlock. It discovers all the
+  user accounts across different websites and Tookie-osint is successful at this task
+  almost 80% of the time. Our tool was created by me and the community and is available
+  for your use. I do not take responsibility for any malicious actions and/or responsibility
+  caused by my tool. :( Please note that Tookie-osint was created to help new programmers
+  or pentesters get into the world of OSINT. My end term goal is to make Tookie-osint
+  as perfect as I can and make it easy for new programmers to understand. Also take
+  note that Tookie-osint is optimized for Python 3.12. If you want to contribute,
+  make a fork and make a pull request to submit your changes. :D # \U0001F4E6 Linux
+  Installation The requirements will be automatically installed. git clone https://github.com/alfredredbird/tookie-osint.git
+  cd tookie-osint chmod +x install.sh sudo ./install.sh # \U0001F4E6 Manual Install
+  download the latest release from: https://github.com/alfredredbird/tookie-osint/releases.
+  then extract the zip or tar.gz cd tookie-osint chmod +x install.sh sudo ./install.sh
+  tookie-osint # \U0001F4E6 Other Installations You can find more install instructions
+  on the Wiki. git clone https://github.com/alfredredbird/tookie-osint cd tookie-osint
+  python3 -m venv venv source venv/bin/activate pip3 install -r requirements.txt python3
+  brib.py # \U0001F4BB Tested OS Operative system Version MacOS Monterey 12.6.7 Windows
+  11/10 Termux 0.118.0 Kali linux Rolling / Sana Parrot OS 3.1 Ubuntu 22.04/20.04
+  Debian 10.00 Alpine 3.10 Fedora v33 Arch Linux 2021.07.01 Manjaro 21 Void Rolling
+  Release # \U0001F4D6 Requirements There Is A Lot Lol - colorama - requests - argparse
+  - selenium - webdriver-manager # \U0001F5E3️Supported Wiki Languages (we need translators
+  \U0001F62D) - [x] English - [ ] Italian - [ ] Hebrew - [ ] Spanish - [ ] French
+  - [ ] Arabic - [ ] German - [ ] Hindi - [ ] Russian - [ ] Portuguese - [ ] Indonesian
+  - [ ] Finnish - [ ] Chinese traditional - [ ] Chinese Simplified - [ ] Japanese
+  - [ ] Farsi # \U0001F4D5 Upcoming Features (They Are Great First Issues :D) - [
+  ] Tor Searching (planned) - [ ] WebUi (planned) - [X] Webscraper - [ ] Phone Number
+  OSINT - [ ] Custom Plugins - [ ] Detailed Reports (in beta) - [ ] Email OSINT (in
+  beta) - [x] CSV - [ ] Url Brute Forcing - [ ] GUI - [X] More Accurate Results -
+  [ ] Auto Open Discovered URLs - [ ] Web Hooks - [x] Headless mode - [x] Automation
+  - [X] Threading # \U0001F37F Showcase Tookie-osint has a wide variety of options
+  to use. Using `-h` shows the help menu. # ⁉️ Need Help? Check out https://github.com/alfredredbird/tookie-osint/issues
+  or the WiKi for help. Still Need Help? Contact And Discord Server Below :D # \U0001F914
+  Cant Find The WebSite Your Looking For? Make a pull request or a bug report with
+  the site"
 ---
 {% raw %}
 ![Tookie-osint-logo-newtext-480x480](https://github.com/Alfredredbird/tookie-osint/assets/105014217/67bab5b4-f537-4f05-8a7b-c9fc3a16d256)

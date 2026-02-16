@@ -2,8 +2,68 @@
 layout: project
 name: Megamansec Ssh Snake
 slug: MegaManSec-SSH-Snake
+category: GreyHate-Cyber&Security
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/MegaManSec-SSH-Snake/tools/SSH-Snake-Screenshot.png
 repo_url: https://github.com/MegaManSec/SSH-Snake
+indexed_content: "# SSH-Snake: Automated SSH-Based Network Traversal \U0001F40D SSH-Snake
+  is a powerful tool designed to perform automatic network traversal using SSH private
+  keys discovered on systems, with the objective of creating a comprehensive map of
+  a network and its dependencies, identifying to what extent a network can be compromised
+  using SSH and SSH private keys starting from a particular system. SSH-Snake can
+  automatically reveal the relationship between systems which are connected via SSH,
+  which would normally take a tremendous amount of time and effort to perform manually.
+  In other words, SSH-Snake performs the following tasks automatically and recursively:
+  1. On the current system, find any SSH private keys, 2. On the current system, find
+  any hosts or destinations (`user@host`) that the private keys may be accepted, 3.
+  Attempt to SSH into all of the destinations using all of the private keys discovered,
+  4. If a destination is successfully connected to, repeats steps #1 - #4 on the connected-to
+  system. It's completely self-replicating and self-propagating -- and completely
+  fileless. In many ways, SSH-Snake is actually a [worm](https://en.wikipedia.org/wiki/Computer_worm):
+  It replicates itself and spreads itself from one system to another as far as it
+  can. Instead of manually jumping between systems with SSH keys like it's a Super
+  Mario game, let SSH-Snake do the work for you. Although this tool is intended for
+  hacking purposes, sysadmins can also use it to better understand their infrastructure
+  and network. If you want to disable the printing of private keys discovered, [comment
+  out this line of code](https://github.com/MegaManSec/SSH-Snake/blob/7ae7ef0afe0e067a1b96f69e508df52831a08b8b/Snake.sh#L964).
+  An in-depth look at how this script actually works, technical details, interesting
+  discoveries, design decisions, benchmarking, and lessons learnt, check out [this
+  blog post](https://joshua.hu/ssh-snake-ssh-network-traversal-discover-ssh-private-keys-network-graph).
+  # Screenshots |A reduced screenshot from the output of SSH-Snake in a very small
+  network.| |:-:| --- |The blue nodes indicate the _destination_ can connect to itself
+  (user@host user@host). The red edges indicate that the connection is bi-directional
+  (user1@host1 user2@host2).| |:-:| --- |The green nodes indicate a _host_ (without
+  a username) that can connect to itself (host1 host1). The green edges indicate that
+  the connection is bi-directional (host1 host2). The gray host in the top right corner
+  is the host that the script was initially executed on.| |:-:| --- |The blue nodes
+  indicate the _destination_ can connect to itself (user@host user@host). The red
+  edges indicate that the connection is bi-directional (user1@host1 user2@host2).|
+  |:-:| # Using and Running SSH-Snake SSH-Snake can either be downloaded or piped
+  into bash: ```bash wget https://raw.githubusercontent.com/MegaManSec/SSH-Snake/main/Snake.nocomments.sh
+  bash ./Snake.nocomments.sh ``` or ```bash curl https://raw.githubusercontent.com/MegaManSec/SSH-Snake/main/Snake.nocomments.sh
+  | bash ``` # About SSH-Snake SSH-Snake seamlessly emulates what a human adversary
+  would do to discover SSH private keys and destinations where they can be used to
+  connect to. Written entirely in Bash, it operates with a minimal set of dependencies
+  commonly available on major Linux (and MacOS) systems: `bash`, `ssh`, `coreutils`,
+  `awk`, `uniq`, `sort`, `grep`, `tr`, `find`, and `cat`. `getent` OR `dscacheutil`
+  is required. `sed` is required for only the very first system. Likewise, `sudo`,
+  `hostname`, `ip`, `timeout`, `arp`, `ifconfig`, `ipconfig`, and `xargs` may also
+  be used, but they are not required (and the script gracefully handles cases where
+  they are not present). If a system is discovered without any of the required packages,
+  it gracefully fails, alerting the user that the scan could not continue on that
+  particular system (and backtracks, continuing from the previous system.) SSH-Snake
+  is completely fileless: after the user runs the script, it is passed to destinations'
+  bash via stdin and bash arguments (via SSH). No material evidence of the script
+  exists on any of the systems scanned: the only evidence of the script running is
+  in the process tree, and the substantial amount of invalid SSH attempts which will
+  inevitably occur. SSH-Snake takes a [depth-first approach](https://en.wikipedia.org/wiki/Depth-first_search)
+  to discovery: once it connects to one system, it tries to connect further from that
+  system before backtracking. The name SSH-Snake comes from the fact that the output
+  of the script looks like a snake slithering up and down the network. However unlike
+  the game Snake, SSH-Snake will not die when it bites its own tail (connects to a
+  systems it has already scanned or is currently scanning): it will simply print how
+  it connected there as normal, but return and not re-scan the destination (in order
+  to avoid infinite recursion). SSH-Snake has been tested on various flavors of Linux,
+  and MacOS (with Homebrew Bash "
 ---
 {% raw %}
 

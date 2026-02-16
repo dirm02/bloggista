@@ -2,8 +2,25 @@
 layout: project
 name: Linagora Twake Workplace
 slug: linagora-twake-workplace
+category: SDesk-Workflow- SaaS-PaaS-any!
 image: https://github.com/linagora/twake-workplace/assets/146178981/3fd30709-678d-4b01-8ed7-59b005890c4e
 repo_url: https://github.com/linagora/twake-workplace
+indexed_content: 'twake.app The open-source alternative to Microsoft Teams. Learn
+  more » Website | Issues | Roadmap ## Privacy-First Open Source Workplace Improve
+  your effeciency with truly Open Source, all-in-one digital suite. Enhance the security
+  in every aspect of your professional and private life ## Access all Twake Workplace
+  products with a single account Use your Twake account and discover the power of
+  single ID. Get access to every product in our ecosystem with the high standards
+  of privacy ## Twake Chat ### Free and Open Source messenger for any professional
+  need Maximize the level of security for your communication, collaboration and workflow
+  between clients, team members and partners - Twake Chat Client GitHub Repo - Twake
+  Chat Server GitHub Repo ## Twake Mail ### The new Open Source standard for secure
+  professional e-mail Manage your data and keep your e-mail private with advanced
+  encryption - Twake Mail Client GitHub Repo - Twake Mail Server GitHub Repo ## Twake
+  Drive ### Secure by design Open Source encrypted data storage Store all your files
+  securely, whether in the cloud or your server, and share them with your partners
+  and team. All that you expect from drive, plus privacy and elegant interface - Twake
+  Drive GitHub Repo'
 ---
 {% raw %}
 

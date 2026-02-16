@@ -2,8 +2,65 @@
 layout: project
 name: Microsoft Iot For Beginners
 slug: microsoft-IoT-For-Beginners
+category: Home automation-IoT
 image: https://img.shields.io/github/license/microsoft/IoT-For-Beginners.svg
 repo_url: https://github.com/microsoft/IoT-For-Beginners
+indexed_content: "[](https://github.com/microsoft/IoT-For-Beginners/blob/master/LICENSE)
+  [](https://GitHub.com/microsoft/IoT-For-Beginners/graphs/contributors/) [](https://GitHub.com/microsoft/IoT-For-Beginners/issues/)
+  [](https://GitHub.com/microsoft/IoT-For-Beginners/pulls/) [](http://makeapullrequest.com)
+  [](https://GitHub.com/microsoft/IoT-For-Beginners/watchers/) [](https://GitHub.com/microsoft/IoT-For-Beginners/network/)
+  [](https://GitHub.com/microsoft/IoT-For-Beginners/stargazers/) ### Join the Azure
+  AI Foundry Community If you get stuck or have any questions about building AI apps.
+  Join fellow learners and experienced developers in discussions about MCP. It's a
+  supportive community where questions are welcome and knowledge is shared freely.
+  [](https://discord.gg/nTYy5BXMWG) If you have product feedback or errors while building
+  visit: [](https://aka.ms/foundry/forum) Follow these steps to get started using
+  these resources: 1. **Fork the Repository**: Click [](https://GitHub.com/microsoft/IoT-For-Beginners/fork)
+  2. **Clone the Repository**: `git clone https://github.com/microsoft/IoT-For-Beginners.git`
+  3. [**Join The Microsot Foundry Discord and meet experts and fellow developers**](https://discord.com/invite/ByRwuEEgH4)
+  ### \U0001F310 Multi-Language Support #### Supported via GitHub Action (Automated
+  & Always Up-to-Date) [Arabic](./translations/ar/README.md) | [Bengali](./translations/bn/README.md)
+  | [Bulgarian](./translations/bg/README.md) | [Burmese (Myanmar)](./translations/my/README.md)
+  | [Chinese (Simplified)](./translations/zh-CN/README.md) | [Chinese (Traditional,
+  Hong Kong)](./translations/zh-HK/README.md) | [Chinese (Traditional, Macau)](./translations/zh-MO/README.md)
+  | [Chinese (Traditional, Taiwan)](./translations/zh-TW/README.md) | [Croatian](./translations/hr/README.md)
+  | [Czech](./translations/cs/README.md) | [Danish](./translations/da/README.md) |
+  [Dutch](./translations/nl/README.md) | [Estonian](./translations/et/README.md) |
+  [Finnish](./translations/fi/README.md) | [French](./translations/fr/README.md) |
+  [German](./translations/de/README.md) | [Greek](./translations/el/README.md) | [Hebrew](./translations/he/README.md)
+  | [Hindi](./translations/hi/README.md) | [Hungarian](./translations/hu/README.md)
+  | [Indonesian](./translations/id/README.md) | [Italian](./translations/it/README.md)
+  | [Japanese](./translations/ja/README.md) | [Kannada](./translations/kn/README.md)
+  | [Korean](./translations/ko/README.md) | [Lithuanian](./translations/lt/README.md)
+  | [Malay](./translations/ms/README.md) | [Malayalam](./translations/ml/README.md)
+  | [Marathi](./translations/mr/README.md) | [Nepali](./translations/ne/README.md)
+  | [Nigerian Pidgin](./translations/pcm/README.md) | [Norwegian](./translations/no/README.md)
+  | [Persian (Farsi)](./translations/fa/README.md) | [Polish](./translations/pl/README.md)
+  | [Portuguese (Brazil)](./translations/pt-BR/README.md) | [Portuguese (Portugal)](./translations/pt-PT/README.md)
+  | [Punjabi (Gurmukhi)](./translations/pa/README.md) | [Romanian](./translations/ro/README.md)
+  | [Russian](./translations/ru/README.md) | [Serbian (Cyrillic)](./translations/sr/README.md)
+  | [Slovak](./translations/sk/README.md) | [Slovenian](./translations/sl/README.md)
+  | [Spanish](./translations/es/README.md) | [Swahili](./translations/sw/README.md)
+  | [Swedish](./translations/sv/README.md) | [Tagalog (Filipino)](./translations/tl/README.md)
+  | [Tamil](./translations/ta/README.md) | [Telugu](./translations/te/README.md) |
+  [Thai](./translations/th/README.md) | [Turkish](./translations/tr/README.md) | [Ukrainian](./translations/uk/README.md)
+  | [Urdu](./translations/ur/README.md) | [Vietnamese](./translations/vi/README.md)
+  > **Prefer to Clone Locally?** > This repository includes 50+ language translations
+  which significantly increases the download size. To clone without translations,
+  use sparse checkout: > ```bash > git clone --filter=blob:none --sparse https://github.com/microsoft/IoT-For-Beginners.git
+  > cd IoT-For-Beginners > git sparse-checkout set --no-cone '/*' '!translations'
+  '!translated_images' > ``` > This gives you everything you need to complete the
+  course with a much faster download. # IoT for Beginners - A Curriculum Azure Cloud
+  Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all
+  about IoT basics. Each lesson includes pre- and post-lesson quizzes, written instructions
+  to complete the lesson, a solution, an assignment and more. Our project-based pedagogy
+  allows you to learn while building, a proven way for new skills to 'stick'. The
+  projects cover the journey of food from farm to table. This includes farming, logistics,
+  manufacturing, retail and consumer - all popular industry areas for IoT devices.
+  > Sketchnote by [Nitya Narasimhan](https://github.com/nitya). Click the image for
+  a larger version. **Hearty thanks to our authors [Jen Fox](https://github.com/jenfoxbot),
+  [Jen Looper](https://github.com/jlooper), [Jim Bennett](https://github.com/jimbobbennett),
+  and our sketchnote artist"
 ---
 {% raw %}
 [![GitHub license](https://img.shields.io/github/license/microsoft/IoT-For-Beginners.svg)](https://github.com/microsoft/IoT-For-Beginners/blob/master/LICENSE)

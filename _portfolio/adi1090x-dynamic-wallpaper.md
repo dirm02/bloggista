@@ -2,8 +2,68 @@
 layout: project
 name: Adi1090x Dynamic Wallpaper
 slug: adi1090x-dynamic-wallpaper
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/main.gif
 repo_url: https://github.com/adi1090x/files
+indexed_content: 'A simple bash script to set wallpapers according to current time,
+  using cron job scheduler . ### Overview + 25+[(more)](https://github.com/adi1090x/files/tree/master/dynamic-wallpaper/wallpapers)
+  different types of wallpaper set (HD/UHD/4K/5K). + Added `pywal` support. + Users
+  can add their own wallpapers. + With `Cron`, Wallpaper changes according to time,
+  throughout the day. + Tested on : - **`Window Managers`** : Works on all window
+  managers (tested on all WMs Archcraft have) - **`Wayland Compositors`** : `sway`,
+  `wayfire`, `river`, `newm`, `hyprland` - **`Desktop Environments`** : `KDE`, `Pantheon`,
+  `Gnome`, `Deepin`, `Cinnamon`, `XFCE`, `LXDE`, `MATE`, `Zorin`, `Budgie` ### Dependencies
+  Install Following programs on your system before using `dwall` - - **`feh`** : To
+  set wallpapers on WMs - **`cron`** : To set a job for dwall - **`xrandr`** : Only
+  if you''re using XFCE desktop - **`pywal`** : for pywal support (optional) Install
+  `feh`, `cron` and `xrandr` - ```bash # On Archlinux $ sudo pacman -Sy xorg-xrandr
+  feh cronie # On Ubuntu or Debian $ sudo apt-get install x11-xserver-utils feh cron
+  ``` > For swaywm support users must install [oguri](https://github.com/vilhalmer/oguri).
+  The `oguri` daemon must be started for the script to work. `Oguri` can be installed
+  on Arch linux via [AUR](https://aur.archlinux.org/packages/oguri-git/). ### Installation
+  Follow the step below to install `dwall` on your system - > You can run `test.sh`
+  to test it before installing it on your system. + Clone this repository - ``` $
+  git clone https://github.com/adi1090x/dynamic-wallpaper.git ``` + Change to cloned
+  directory and run `install.sh` - ``` $ cd dynamic-wallpaper $ chmod +x install.sh
+  $ ./install.sh ``` ### Run the program + Open the terminal and execute `dwall` -
+  ``` $ dwall ╺┳┓╻ ╻┏┓╻┏━┓┏┳┓╻┏━╸ ╻ ╻┏━┓╻ ╻ ┏━┓┏━┓┏━┓┏━╸┏━┓ ┃┃┗┳┛┃┗┫┣━┫┃┃┃┃┃ ┃╻┃┣━┫┃
+  ┃ ┣━┛┣━┫┣━┛┣╸ ┣┳┛ ╺┻┛ ╹ ╹ ╹╹ ╹╹ ╹╹┗━╸ ┗┻┛╹ ╹┗━╸┗━╸╹ ╹ ╹╹ ┗━╸╹┗╸ Dwall V3.0 : Set
+  wallpapers according to current time. Developed By : Aditya Shakya (@adi1090x) Usage
+  : test.sh [-h] [-p] [-s style] Options: -h Show this help message -p Use pywal to
+  set wallpaper -s Name of the style to apply Available styles: aurora beach bitday
+  chihuahuan cliffs colony desert earth exodus factory firewatch forest gradient home
+  island lake lakeside market mojave moon mountains room sahara street tokyo Examples:
+  test.sh -s beach Set wallpaper from ''beach'' style test.sh -p -s sahara Set wallpaper
+  from ''sahara'' style using pywal ``` + Select the style you like and run - ```
+  $ dwall -s firewatch [*] Using style : firewatch ``` ### Setup cron job This program
+  is specifically created to use with a time-based job scheduler such as **cron**
+  or **systemd/Timers**. So, After installing this program you need to set up a cron
+  job using `crontab` on your system. Follow the step below to set a job for this
+  program - > I''m using `cronie` on Arch Linux here. - After installing `cron`, enable
+  and start the cron service - ```bash # On Arch Linux $ sudo systemctl enable cronie.service
+  --now ``` - Make sure the service is enabled and running - ``` $ systemctl status
+  cronie.service ● cronie.service - Periodic Command Scheduler Loaded: loaded (/usr/lib/systemd/system/cronie.service;
+  enabled; vendor preset: disabled) Active: active (running) since Sat 2020-12-26
+  14:39:31 IST; 5h 22min ago Main PID: 779 (crond) ``` - Cron does not run under the
+  Xorg server therefore it cannot know the environmental variable necessary to be
+  able to start an Xorg server application so they will have to be defined. Find out
+  the values of following environment variables - `SHELL, PATH, DISPLAY, DESKTOP_SESSION,
+  DBUS_SESSION_BUS_ADDRESS, XDG_RUNTIME_DIR` ``` $ echo "$SHELL | $PATH | $DISPLAY
+  | $DESKTOP_SESSION | $DBUS_SESSION_BUS_ADDRESS | $XDG_RUNTIME_DIR" /usr/bin/zsh
+  | /usr/local/bin:/usr/bin | :0 | Openbox | unix:path=/run/user/1000/bus | /run/user/1000
+  ``` - Now, Create an hourly cron job for **dwall** using `crontab` - ```bash # export
+  editor for crontab $ export EDITOR=vim # Edit your crontab and add a job $ crontab
+  -e # Add this line replacing the values of env variable and style with yours 0 *
+  * * * env PATH=/usr/local/bin:/usr/bin DISPLAY=:0 DESKTOP_SESSION=Openbox DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+  /usr/bin/dwall -s firewatch # check if job is created on your crontab $ crontab
+  -l 0 * * * * env PATH=/usr/local/bin:/usr/bin DISPLAY=:0 DESKTOP_SESSION=Openbox
+  DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus" /usr/bin/dwall -s firewatch
+  ``` - That''s it, **dwall** added to your crontab and will change the wallpaper
+  every hour. If you want to change the wallpaper style, just remove previous job
+  and add new with another style. ```bash # delete previous job $ crontab -r # Add
+  new job with different style $ crontab -e 0 * * * * env PATH=/usr/local/bin:/usr/bin
+  DISPLAY=:0 DESKTOP_SESSION=Openbox DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+  /usr/bin/dwall -s bitday ``` ### How to add own wallpapers + Dow'
 ---
 {% raw %}
 <!-- Dynamic Wallpaper -->

@@ -2,8 +2,66 @@
 layout: project
 name: Mindverse Second Me
 slug: mindverse-Second-Me
+category: AI-automation-web2-3SmartC-Agent
 image: https://github.com/mindverse/Second-Me/blob/master/images/cover.png
 repo_url: https://github.com/mindverse/Second-Me
+indexed_content: "[](https://home.second.me/) [](https://arxiv.org/abs/2406.18312)
+  [](https://arxiv.org/abs/2503.08102) [](https://discord.gg/GpWHQNUwrg) [](https://x.com/SecondMe_AI1)
+  [](https://www.reddit.com/r/SecondMeAI/) [](https://secondme.gitbook.io/secondme/faq)
+  ## Our Vision Companies like OpenAI built \"Super AI\" that threatens human independence.
+  We crave individuality: AI that amplifies, not erases, **YOU**. We’re challenging
+  that with \"**Second Me**\": an open-source prototype where you craft your own **AI
+  self**—a new AI species that preserves you, delivers your context, and defends your
+  interests. It’s **locally trained and hosted**—your data, your control—yet **globally
+  connected**, scaling your intelligence across an AI network. Beyond that, it’s your
+  AI identity interface—a bold standard linking your AI to the world, sparks collaboration
+  among AI selves, and builds tomorrow’s truly native AI apps. Tech enthusiasts, AI
+  pros, domain experts, Join us! Second Me is your launchpad to extend your mind into
+  the digital horizon. ## Key Features ### **Train Your AI Self** with AI-Native Memory
+  ([Paper](https://arxiv.org/abs/2503.08102)) Start training your Second Me today
+  with your own memories! Using Hierarchical Memory Modeling (HMM) and the Me-Alignment
+  Algorithm, your AI self captures your identity, understands your context, and reflects
+  you authentically. ### **Scale Your Intelligence** on the Second Me Network Launch
+  your AI self from your laptop onto our decentralized network—anyone or any app can
+  connect with your permission, sharing your context as your digital identity. ###
+  Build Tomorrow’s Apps with Second Me **Roleplay**: Your AI self switches personas
+  to represent you in different scenarios. **AI Space**: Collaborate with other Second
+  Mes to spark ideas or solve problems. ### 100% **Privacy and Control** Unlike traditional
+  centralized AI systems, Second Me ensures that your information and intelligence
+  remain local and completely private. ## Getting started & staying tuned with us
+  Star and join us, and you will receive all release notifications from GitHub without
+  any delay! ## Quick Start ### \U0001F4CA Model Size vs. Memory (Reference Guide)
+  *Note: \"B\" in the table represents \"billion parameters model\". Data shown are
+  examples only; actual supported model sizes may vary depending on system optimization,
+  deployment environment, and other hardware/software conditions.* | Memory (GB) |
+  Docker Deployment (Windows/Linux) | Docker Deployment (Mac) | Integrated Setup (Windows/Linux)
+  | Integrated Setup (Mac) | |--------------|-----------------------------|-------------------|--------------------------|----------------|
+  | 8 | ~0.8B (example) | ~0.4B (example) | ~1.0B (example) | ~0.6B (example) | |
+  16 | 1.5B (example) | 0.5B (example) | ~2.0B (example) | ~0.8B (example) | | 32
+  | ~2.8B (example) | ~1.2B (example) | ~3.5B (example) | ~1.5B (example) | > **Note**:
+  Models below 0.5B may not provide satisfactory performance for complex tasks. And
+  we're continuously improving cross-platform support - please [submit an issue](https://github.com/mindverse/Second-Me/issues/new)
+  for feedback or compatibility problems on different operating systems. > **MLX Acceleration**:
+  Mac M-series users can use [MLX](https://github.com/mindverse/Second-Me/tree/master/lpm_kernel/L2/mlx_training)
+  to run larger models (CLI-only). ### ⚡ Get your Second Me running in just 3 steps:
+  ```bash # 1. Clone the repository git clone https://github.com/mindverse/Second-Me.git
+  cd Second-Me # 2. Start Docker containers make docker-up # 3. Access the web interface
+  # Open your browser and visit: http://localhost:3000 ``` \U0001F449 For detailed
+  instructions — including integrated (non-Docker) setup, model selection, memory
+  requirements, and platform-specific tips, check the full [Deployment Guide on GitBook](https://secondme.gitbook.io/secondme/guides/deployment).
+  ❓ Got questions about setup, models, or any troubleshooting? [Check our FAQ](https://secondme.gitbook.io/secondme/faq).
+  ## Tutorial and Use Cases \U0001F6E0️ Feel free to follow [User tutorial](https://secondme.gitbook.io/secondme/getting-started)
+  to build your Second Me. \U0001F4A1 Check out the links below to see how Second
+  Me can be used in real-life scenarios: - [Felix AMA (Roleplay app)](https://app.secondme.io/example/ama)
+  - [Brainstorming a 15-Day European City Itinerary (Network app)](https://app.secondme.io/example/brainstorming)
+  - [Icebreaking as a Speed Dating Match (Network app)](https://app.secondme.io/example/Icebreaker)
+  ## What's Next: May 2025 Second Me continues to evolve as the open-source identity
+  infrastructure for AI. Here's what's on deck for May: - \U0001F5C2️ **Version Control**:
+  Smarter versioning of memory and identity states - \U0001F9E0 **Continuous Training
+  Pipelines**: Keep your AI self evolving over time, with ongoing updates based on
+  new memory inputs. - ⚙️ **Performance & Stability Improvements**: Enhancements across
+  inference ability, model alignment, and base model upgrades - ☁️ **Cloud Solutions**:
+  Explore clou"
 ---
 {% raw %}
 ![Second Me](https://github.com/mindverse/Second-Me/blob/master/images/cover.png)

@@ -2,8 +2,71 @@
 layout: project
 name: Activepieces Activepieces
 slug: activepieces-activepieces
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/badge/dynamic/json?color=blue&label=fr&style=for-the-badge&logo=crowdin&query=%24.progress[?(@.data.languageId==%27fr%27
 repo_url: https://github.com/activepieces/activepieces
+indexed_content: "&nbsp; &nbsp; An open source replacement for Zapier Documentation
+  &nbsp;&nbsp;&nbsp;\U0001F32A️&nbsp;&nbsp;&nbsp; Create a Piece &nbsp;&nbsp;&nbsp;\U0001F589&nbsp;&nbsp;&nbsp;
+  Deploy &nbsp;&nbsp;&nbsp;\U0001F525&nbsp;&nbsp;&nbsp; Join Discord # \U0001F92F
+  Welcome to Activepieces All-in-one AI automation designed to be **extensible** through
+  a **type-safe** pieces framework written in **TypeScript**. When you contribute
+  pieces to Activepieces they become automatically available as MCP servers that you
+  can use with LLMs through Claude Desktop, Cursor or Windsurf! ## \U0001F525 Why
+  Activepieces is Different: - **\U0001F496 Loved by Everyone**: Intuitive interface
+  and great experience for both technical and non-technical users with a quick learning
+  curve. - **\U0001F310 Open Ecosystem:** All pieces are open source and available
+  on npmjs.com, **60% of the pieces are contributed by the community**. - **\U0001F6E0️
+  Largest open source MCP toolkit**: All our pieces (280+) are available as MCP that
+  you can use with LLMs on Claude Desktop, Cursor or Windsurf. - **\U0001F6E0️ Pieces
+  are written in Typescript**: Pieces are npm packages in TypeScript, offering full
+  customization with the best developer experience, including **hot reloading** for
+  **local** piece development on your machine. \U0001F60E - **\U0001F916 AI-First**:
+  Native AI pieces let you experiment with various providers, or create your own agents
+  using our AI SDK to help you build flows inside the builder. - **\U0001F3E2 Enterprise-Ready**:
+  Developers set up the tools, and anyone in the organization can use the no-code
+  builder. Full customization from branding to control. - **\U0001F512 Secure by Design**:
+  Self-hosted and network-gapped for maximum security and control over your data.
+  - **\U0001F9E0 Human in the Loop**: Delay execution for a period of time or require
+  approval. These are just pieces built on top of the piece framework, and you can
+  build many pieces like that. \U0001F3A8 - **\U0001F4BB Human Input Interfaces**:
+  Built-in support for human input triggers like \"Chat Interface\" \U0001F4AC and
+  \"Form Interface\" \U0001F4DD ## \U0001F6E0️ Builder Features: - [x] Loops - [x]
+  Branches - [x] Auto Retries - [x] HTTP - [x] Code with **NPM** - [x] ASK AI in Code
+  Piece (Non technical user can clean data without knowing to code) - [x] Flows are
+  fully versioned. - [x] Languages Translations - [x] Customizable Templates - [X]
+  200+ Pieces, check https://www.activepieces.com/pieces **We release updates frequently.
+  Check the product changelog for the latest features.** ## \U0001F50C Create Your
+  Own Piece Activepieces supports integrations with Google Sheets, OpenAI, Discord,
+  RSS, and over 200 other services. [Check out the full list of supported integrations](https://www.activepieces.com/pieces),
+  which is constantly expanding thanks to our community's contributions. As an **open
+  ecosystem**, all integration source code is accessible in our repository. These
+  integrations are versioned and [published](https://www.npmjs.com/search?q=%40activepieces)
+  directly to npmjs.com upon contribution. You can easily create your own integration
+  using our TypeScript framework. For detailed instructions, please refer to our [Contributor's
+  Guide](https://www.activepieces.com/docs/build-pieces/building-pieces/overview).
+  # License Activepieces' Community Edition is released as open source under the [MIT
+  license](https://github.com/activepieces/activepieces/blob/main/LICENSE) and enterprise
+  features are released under [Commercial License](https://github.com/activepieces/activepieces/blob/main/packages/ee/LICENSE)
+  Read more about the feature comparison here https://www.activepieces.com/docs/about/editions
+  # \U0001F4AD Join Our Community # \U0001F310 Contributions We welcome contributions
+  big or small and in different directions. The best way to do this is to check this
+  [document](https://www.activepieces.com/docs/build-pieces/building-pieces/create-action)
+  and we are always up to talk on [our Discord Server](https://discord.gg/2jUXBKDdP8).
+  ## \U0001F4DA Translations Not into coding but still interested in contributing?
+  Come join our [Discord](https://discord.gg/2jUXBKDdP8) and visit https://www.activepieces.com/docs/about/i18n
+  for more information. ].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-16093902-626364-update.json)
+  ].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-16093902-626364-update.json)
+  ].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-16093902-626364-update.json)
+  ].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-16093902-626364-update.json)
+  ].data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-16093902-626364-update.json)
+  ## \U0001F9AB Contributors ShahedAlMashni \U0001F50C AbdulTheActivePiecer \U0001F6A7
+  Khaled Mashaly \U0001F6A7 Mohammed Abu Aboud \U0001F6A7 Abdulrahman Zeineddin \U0001F50C
+  ahmad jaber \U0001F50C ashrafsamhouri \U0001F50C Mohammad Abu Musa \U0001F4C6 Mukewa
+  Wekalao \U0001F50C Osama Abdallah Essa Haikal \U0001F50C Arman \U0001F6E1️ Oskar
+  Krämer \U0001F4D6 Thibaut Patel \U0001F914 \U0001F50C Applesaucesomer \U0001F914
+  crazyTweek \U0001F914 Muhammad Tabaza \U0001F50C Shay Punter \U0001F4D6 \U0001F50C
+  abaza738 \U0001F50C Jona Boeddinghaus \U0001F50C fomojola \U0001F4BB Alexander Storozhevsky
+  \U0001F4BB J0LGER \U0001F6E1️ Patrick Ve"
 ---
 {% raw %}
 

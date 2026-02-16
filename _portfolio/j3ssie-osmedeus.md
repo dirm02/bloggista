@@ -2,8 +2,68 @@
 layout: project
 name: J3ssie Osmedeus
 slug: j3ssie-osmedeus
+category: GreyHate-Cyber&Security
 image: https://raw.githubusercontent.com/osmedeus/assets/refs/heads/main/demo-images/cli-run-with-verbose-output.png
 repo_url: https://github.com/j3ssie/osmedeus
+indexed_content: '# Osmedeus Osmedeus - A Modern Orchestration Engine for Security
+  ## What is Osmedeus? [Osmedeus](https://www.osmedeus.org) is a security focused
+  declarative orchestration engine that simplifies complex workflow automation into
+  auditable YAML definitions, complete with encrypted data handling, secure credential
+  management, and sandboxed execution. Built for both beginners and experts, it delivers
+  powerful, composable automation without sacrificing the integrity and safety of
+  your infrastructure. ## Features - **Declarative YAML Workflows** - Define reconnaissance
+  pipelines using simple, readable YAML syntax - **Multiple Runners** - Execute on
+  local host, Docker containers, or remote machines via SSH - **Event-Driven Triggers**
+  - Cron scheduling, file watching, and event-based workflow triggers with deduplication
+  and filter functions - **Template Engine** - Powerful variable interpolation with
+  built-in and custom variables - **Utility Functions** - Rich function library with
+  event generation, bulk processing, and JSON operations - **REST API Server** - Manage,
+  trigger, and cancel workflows programmatically - **Distributed Execution** - Scale
+  with Redis-based master-worker pattern for parallel scanning - **Notifications**
+  - Telegram bot and webhook integrations - **Cloud Storage** - S3-compatible storage
+  for artifact management - **LLM Integration** - AI-powered workflow steps with chat
+  completions, embeddings, and agentic tool-calling loops - **Agent Step Type** -
+  Agentic LLM execution with tool calling, sub-agents, and memory management - **SAST
+  Integration** - SARIF parsing for Semgrep, Trivy, Kingfisher, Bearer with database
+  import and markdown reporting - **Language Detection** - Auto-detect dominant programming
+  language of source repositories (26+ languages) - **Preset Installation** - Reproducible
+  deployments from curated preset repositories See [Documentation Page](https://docs.osmedeus.org/)
+  for more details. ## Installation ```bash curl -sSL http://www.osmedeus.org/install.sh
+  | bash ``` See [Quickstart](https://docs.osmedeus.org/quickstart/) for quick setup
+  and [Installation](https://docs.osmedeus.org/installation/) for advanced configurations.
+  | CLI Usage | Web UI Assets | Workflow Visualization | |-----------|--------------|-----------------|
+  | | | | ## Quick Start ```bash # Run a module workflow osmedeus run -m recon -t
+  example.com # Run a flow workflow osmedeus run -f general -t example.com # Multiple
+  targets with concurrency osmedeus run -m recon -T targets.txt -c 5 # Dry-run mode
+  (preview) osmedeus run -f general -t example.com --dry-run # Start API server osmedeus
+  serve # List available workflows osmedeus workflow list # Query database tables
+  osmedeus db list --table runs osmedeus db list --table event_logs --search "nuclei"
+  # Evaluate utility functions osmedeus func eval ''log_info("hello")'' osmedeus func
+  eval -e ''http_get("https://example.com")'' -T targets.txt -c 10 # Platform variables
+  available in eval osmedeus func eval ''log_info("OS: " + PlatformOS + ", Arch: "
+  + PlatformArch)'' # Install from preset repositories osmedeus install base --preset
+  osmedeus install workflow --preset # Show all usage examples osmedeus --usage-example
+  ``` ## Docker ```bash # Show help docker run --rm j3ssie/osmedeus:latest --help
+  # Run a scan docker run --rm -v $(pwd)/output:/root/workspaces-osmedeus \ j3ssie/osmedeus:latest
+  run -f general -t example.com ``` For more CLI usage and example commands, refer
+  to the [CLI Reference](https://docs.osmedeus.org/getting-started/cli). ## High-Level
+  Architecture ```plaintext ┌───────────────────────────────────────────────────────────────────────────┐
+  │ OSMEDEUS WORKFLOW ENGINE │ ├───────────────────────────────────────────────────────────────────────────┤
+  │ ENTRY POINTS │ │ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌─────────────┐ │ │ │
+  CLI │ │ REST API │ │Scheduler │ │ Distributed │ │ │ └────┬─────┘ └────┬─────┘ └────┬─────┘
+  └─────┬───────┘ │ │ └─────────────┴─────────────┴──────────────┘ │ │ │ │ │ ▼ │ │
+  ┌─────────────────────────────────────────────────────────────────────┐ │ │ │ CONFIG
+  ──▶ PARSER ──▶ EXECUTOR ──▶ STEP DISPATCHER ──▶ RUNNER │ │ │ │ │ │ │ │ │ Step Executors:
+  bash | function | parallel | foreach | remote-bash │ │ │ │ http | llm | agent |
+  SARIF/SAST integration │ │ │ │ │ │ │ │ │ Runners: HostRunner | DockerRunner | SSHRunner
+  │ │ │ └─────────────────────────────────────────────────────────────────────┘ │
+  └───────────────────────────────────────────────────────────────────────────┘ ```
+  For more information about the architecture, refer to the [Architecture Documentation](https://docs.osmedeus.org/architecture).
+  ## Roadmap and Status The high-level ambitious plan for the project, in order: |
+  # | Step | Status | | :-: | -----------------------------------------------------------------------------
+  | :----: | | 1 | Osmedeus Engine reforged with a next-generation architecture |
+  ✅ | | 2 | Flexible workflows and step types | ✅ | | 3 | Event-driven architectural
+  model an'
 ---
 {% raw %}
 # Osmedeus

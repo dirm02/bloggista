@@ -2,8 +2,66 @@
 layout: project
 name: Faker Ruby Faker
 slug: faker-ruby-faker
+category: Uncategorized
 image: https://user-images.githubusercontent.com/36028424/40263395-4318481e-5b44-11e8-92e5-3dcc1ce169b3.png
 repo_url: https://github.com/faker-ruby/faker
+indexed_content: "# Faker [![Gem Version][version-badge]][rubygems] [![Build Status][github-actions-badge]][github-actions]
+  [![Total Downloads][downloads-total]][rubygems] [![Downloads][downloads-badge]][rubygems]
+  Generate (almost) realistic fake data for testing, demos, and populating your database
+  during development. [version-badge]: https://img.shields.io/gem/v/faker.svg [rubygems]:
+  https://rubygems.org/gems/faker [github-actions-badge]: https://img.shields.io/github/actions/workflow/status/faker-ruby/faker/.github/workflows/ruby.yml?branch=main
+  [github-actions]: https://github.com/faker-ruby/faker/actions [downloads-total]:
+  https://img.shields.io/gem/dt/faker.svg [downloads-badge]: https://img.shields.io/gem/dtv/faker.svg
+  [downloads-badge]: https://img.shields.io/gem/dtv/faker.svg ## Quick links - \U0001F4D6
+  **[Read the documentation for the latest version][rubydocs].** - \U0001F4E2 **[See
+  what's changed in recent versions][changelog].** [rubydocs]: https://www.rubydoc.info/gems/faker/
+  [changelog]: CHANGELOG.md ## Features - Internet: Email addresses, Passwords, Domains,
+  etc. - Date and Time: Travel back in time or to the future. - Person: Names, Genders,
+  Bios, Job titles, and more. - Number and String: Random numbers and strings. - Location:
+  Addresses, Zip Codes, Street Names, States, and Countries. - Finance: Account Details,
+  Transactions, and Crypto Addresses. - Localization - Customize faker with over 40
+  locales to generate realistic-looking Names, Addresses, and Phone Numbers. > **Note:**
+  The generated names, addresses, emails, phone numbers, and/or other data might return
+  valid information. Please be careful when using faker in your tests. For a complete
+  list of the generators, see [Generators](./GENERATORS.md). ## Getting Started Start
+  by including `faker` in your Gemfile: ```ruby gem 'faker' ``` Then run `bundle install`.
+  ## Usage ```ruby require 'faker' Faker::Name.name #=> \"Christophe Bartell\" Faker::Internet.password
+  #=> \"Vg5mSvY1UeRg7\" Faker::Internet.email #=> \"eliza@mann.test\" Faker::Address.full_address
+  #=> \"5479 William Way, East Sonnyhaven, LA 63637\" Faker::Markdown.emphasis #=>
+  \"Quo qui aperiam. Amet corrupti distinctio. Sit quia *dolor.*\" Faker::Lorem.paragraph
+  #=> \"Recusandae minima consequatur. Expedita sequi blanditiis. Ut fuga et.\" Faker::Alphanumeric.alpha(number:
+  10) #=> \"zlvubkrwga\" Faker::ProgrammingLanguage.name #=> \"Ruby\" ``` ## Table
+  of Contents - [Faker ](#faker----) - [Quick links](#quick-links) - [Features](#features)
+  - [Getting Started](#getting-started) - [Usage](#usage) - [Table of Contents](#table-of-contents)
+  - [Notes](#notes) - [Ensuring unique values](#ensuring-unique-values) - [Deterministic
+  Random](#deterministic-random) - [Localization](#localization) - [Minitest and Faker
+  \\>= 2.22](#minitest-and-faker--222) - [Generators](#generators) - [Contributing](#contributing)
+  - [Versioning](#versioning) - [Inspiration](#inspiration) - [In the media](#in-the-media)
+  - [License](#license) ### Notes * While Faker generates data at random, returned
+  values are not guaranteed to be unique by default. To explicitly specify when you
+  require unique values, see [Ensuring Unique Values](#ensuring-unique-values). *
+  Values also can be deterministic if you use the deterministic feature, see [Deterministic
+  Random](#deterministic-random). * This is the `main` branch of Faker and may contain
+  changes that are not yet released. The list of all versions is [available here](https://github.com/stympy/faker/releases).
+  ### Ensuring unique values To ensure Faker generates unique values, prefix your
+  method call with `unique`: ```ruby Faker::Name.unique.name # This will return a
+  unique name every time it is called ``` If too many unique values are requested
+  from a generator that has a limited number of potential values, a `Faker::UniqueGenerator::RetryLimitExceeded`
+  exception may be raised. It is possible to clear the record of unique values that
+  have been returned, for example between tests. ```ruby Faker::Name.unique.clear
+  # Clears used values for Faker::Name Faker::UniqueGenerator.clear # Clears used
+  values for all generators ``` You can also give some already-used values to the
+  unique generator if you have collisions with the generated data (i.e., using FactoryBot
+  with random and manually set values). ```ruby # Faker:: .unique.exclude(method,
+  arguments, list) # Add 'azerty' and 'wxcvbn' to the string generator with 6 char
+  length Faker::Lorem.unique.exclude :string, [number: 6], %w[azerty wxcvbn] ``` ###
+  Deterministic Random Faker supports seeding of its pseudo-random number generator
+  (PRNG) to provide deterministic output of repeated method calls. ```ruby Faker::Config.random
+  = Random.new(42) Faker::Lorem.word #=> \"velit\" Faker::Lorem.word #=> \"quisquam\"
+  Faker::Config.random = Random.new(42) Faker::Lorem.word #=> \"velit\" Faker::Lorem.word
+  #=> \"quisquam\" Faker::Config.random = nil # seeds the PRNG using default entropy
+  sources Faker::Config.random.seed #=> 185180369676275068918401850258677722187 Faker::Lorem.word
+  #=> \"ipsam\" ``` "
 ---
 {% raw %}
 # Faker [![Gem Version][version-badge]][rubygems] [![Build Status][github-actions-badge]][github-actions] [![Total Downloads][downloads-total]][rubygems] [![Downloads][downloads-badge]][rubygems]

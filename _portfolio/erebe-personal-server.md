@@ -2,8 +2,69 @@
 layout: project
 name: Erebe Personal Server
 slug: erebe-personal-server
+category: WindowsTools- Linux
 image: https://github.com/erebe/personal-server/raw/master/logo.jpeg
 repo_url: https://github.com/erebe/personal-server
+indexed_content: '# Managing my personal server in ~~2020~~ 2023 ### Updates: * 29
+  July 2023 - Replaced iptables config by nftables * 31 october 2022 - feedback from
+  2 years old insights [2023 update](#2023) * 9 september 2021 - Added dns over https
+  for pihole * 22 December 2020 - Added [https://healthchecks.io](https://healthchecks.io)
+  for backups to ping me on whatsapp * 20 November 2020 - Mention of gpg key to sign
+  git commits * 12 November 2020 - Add automatic deployment # Summary This document
+  is going to describe how I manage my personal server in 2020. It will talk about
+  * Management of secrets with SOPS and a GPG key * Automatic management of DNS record
+  * Configuration of Debian and installation of Kubernetes k3s * Setup Nginx ingress
+  with let''s encrypt for automatic TLS certificate * Deployment of postfix + dovecot
+  for deploying an email server * Install Nextcloud to get your personal cloud in
+  the sky * Putting backup in place * Using Wireguard to create a private network
+  and WsTunnel to bypass firewalls * Adding a Raspberry Pi to the K3s cluster My goals
+  for this setup are: * Simple to deploy, manage and update * Everything should live
+  inside the git repository * Automating as much as possible with free tier service
+  (GitHub actions) but reproducible locally * Package and deploy the same way system
+  application and my own projects # Table of Contents 1. [The road so far](#background)
+  **PART I**: The Setup 2. [Creating GPG key](#gpg) 3. [Encrypting secrets with Sops](#sops)
+  4. [Generating a new ssh key](#ssh) 5. [Automating installation with a Makefile](#makefile)
+  6. [Chose a server provider](#provider) 7. [Secure and Automate installation of
+  the base machine](#secure) 8. [Chose your registrar for DNS](#dns) 9. [Automate
+  your DNS record update](#dnsupdate) 10. [Installing Kubernetes K3S](#k3s) 11. [Nginx
+  as Ingress controller for Kubernetes](#ingress) 12. [CertManager with let''s encrypt
+  for issuing TLS certificates](#letsencrypt) **PART II**: Build, Deploy and Automate
+  13. [Mail Server with Postfix + Dovecot + Fetchmail + SpamAssassin](#mail) 14. [Automating
+  build and push of our images with GitHub actions](#build) 15. [Automatic deployment
+  with Webhook](#deployment) 16. [Hosting your own cloud with nextcloud](#cloud) **PART
+  III**: Reliability and Observability 17. [Backups](#backup) 18. [TODO] [Monitoring
+  with netdata](#monitoring) **PART IV**: Scale with RaspberryPI 19. [VPN with Wireguard](#wireguard)
+  20. [Bypass firewalls with WsTunnel](#wstunnel) 21. [Raspberry Pi as k8S node using
+  your Wireguard VPN](#raspberry) 22. [Deploying PiHole on your Raspberry Pi](#pihole)
+  **PART V**: The end 23. [Conclusion](#conclusion) 24. [If you want more freedom](#freedom)
+  **EPILOGUE**: [2023 - feedbacks from 2 years insights](#2023) 25. [Security](#2023_security)
+  26. [Maintainability](#2023_maintainability) 27. [Extensibility](#2023_extensibility)
+  28. [Observability](#2023_observability) 28. [2023 Conclusion](#2023_conclusion)
+  # The road so far It has been more than 15 years now that I manage my own dedicated
+  server, I am in my thirties, and it all started thanks to a talk from Benjamin Bayart
+  [Internet libre, ou minitel 2.0](https://www.youtube.com/watch?v=AoRGoQ76PK8) or
+  for the non-French "Free internet or minitel 2.0". For those who don''t know what
+  is a minitel, let me quote for you Wikipedia. > The Minitel was a videotex online
+  service accessible through telephone lines, and was the world''s most successful
+  online service prior to the World Wide Web. It was invented in Cesson-Sévigné, near
+  Rennes in Brittany, France. In the essence, the talk is about creating awareness
+  in 2007 that the internet is starting to lose its decentralized nature and look
+  like more to a minitel 2.0 due to our reliance on centralized big corp for about
+  everything on the Web. This warning ring even louder nowadays with the advent of
+  the Cloud where our computers are now just a fancy screen for accessing data/compute
+  remotely. I went from hardcore extremist, by hosting a server made from scrap materials
+  behind my parent house telephone line, using Gentoo to recompile everything, control
+  every USE flags and have the satisfying pleasure of adding `-mtune=native` to the
+  compilation command line. Some years later, after being fed up with having to spend
+  nights to recompile everything on an old Intel Pentium 3 because I missed a USE
+  flag that was mandatory to try this new software, I switched to Debian. At that
+  point I thought I had the perfect setup, just do an `apt-get install` and you have
+  your software installed in a few minutes, is there anything more than that really
+  ? It was at that time also that I switched from hosting my server at my parent house
+  to a hosting company. I was out for college and calling my parents to ask them to
+  reboot the machine because it froze due to aging components was taking too much
+  time. I was living in the constant fear of losing some emails and friends on IRC
+  were complaining that the archive/history of the channel that my '
 ---
 {% raw %}
 # Managing my personal server in ~~2020~~ 2023

@@ -2,8 +2,62 @@
 layout: project
 name: Fanghua Yu Supir
 slug: Fanghua-Yu-SUPIR
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Fanghua-Yu-SUPIR/assets/teaser.png
 repo_url: https://github.com/Fanghua-Yu/SUPIR.git
+indexed_content: "## (CVPR2024) Scaling Up to Excellence: Practicing Model Scaling
+  for Photo-Realistic Image Restoration In the Wild > [[Paper](https://arxiv.org/abs/2401.13627)]
+  &emsp; [[Project Page](http://supir.xpixel.group/)] &emsp; [[Online App]](https://supir.suppixel.ai/home)
+  > Fanghua, Yu, [Jinjin Gu](https://www.jasongt.com/), Zheyuan Li, Jinfan Hu, Xiangtao
+  Kong, [Xintao Wang](https://xinntao.github.io/), [Jingwen He](https://scholar.google.com.hk/citations?user=GUxrycUAAAAJ),
+  [Yu Qiao](https://scholar.google.com.hk/citations?user=gFtI-8QAAAAJ), [Chao Dong](https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ)
+  > Shenzhen Institute of Advanced Technology; Shanghai AI Laboratory; University
+  of Sydney; The Hong Kong Polytechnic University; ARC Lab, Tencent PCG; The Chinese
+  University of Hong Kong --- #### \U0001F680 We're thrilled to announce the official
+  launch of SupPixel AI! Experience the next level of image processing and upscaling
+  with our cutting-edge AI technology based on SUPIR. Explore now at [suppixel.ai](https://supir.suppixel.ai/home).
+  --- ## \U0001F527 Dependencies and Installation 1. Clone repo ```bash git clone
+  https://github.com/Fanghua-Yu/SUPIR.git cd SUPIR ``` 2. Install dependent packages
+  ```bash conda create -n SUPIR python=3.8 -y conda activate SUPIR pip install --upgrade
+  pip pip install -r requirements.txt ``` 3. Download Checkpoints For users who can
+  connect to huggingface, please setting `LLAVA_CLIP_PATH, SDXL_CLIP1_PATH, SDXL_CLIP2_CKPT_PTH`
+  in `CKPT_PTH.py` as `None`. These CLIPs will be downloaded automatically. #### Dependent
+  Models * [SDXL CLIP Encoder-1](https://huggingface.co/openai/clip-vit-large-patch14)
+  * [SDXL CLIP Encoder-2](https://huggingface.co/laion/CLIP-ViT-bigG-14-laion2B-39B-b160k)
+  * [SDXL base 1.0_0.9vae](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors)
+  * [LLaVA CLIP](https://huggingface.co/openai/clip-vit-large-patch14-336) * [LLaVA
+  v1.5 13B](https://huggingface.co/liuhaotian/llava-v1.5-13b) * (optional) [Juggernaut-XL_v9_RunDiffusionPhoto_v2](https://huggingface.co/RunDiffusion/Juggernaut-XL-v9/blob/main/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors)
+  * Replacement of `SDXL base 1.0_0.9vae` for Photo Realistic * (optional) [Juggernaut_RunDiffusionPhoto2_Lightning_4Steps](https://huggingface.co/RunDiffusion/Juggernaut-XL-Lightning/blob/main/Juggernaut_RunDiffusionPhoto2_Lightning_4Steps.safetensors)
+  * Distilling model used in `SUPIR_v0_Juggernautv9_lightning.yaml` #### Models we
+  provided: * `SUPIR-v0Q`: [Baidu Netdisk](https://pan.baidu.com/s/1lnefCZhBTeDWijqbj1jIyw?pwd=pjq6),
+  [Google Drive](https://drive.google.com/drive/folders/1yELzm5SvAi9e7kPcO_jPp2XkTs4vK6aR?usp=sharing)
+  Default training settings with paper. High generalization and high image quality
+  in most cases. * `SUPIR-v0F`: [Baidu Netdisk](https://pan.baidu.com/s/1AECN8NjiVuE3hvO8o-Ua6A?pwd=k2uz),
+  [Google Drive](https://drive.google.com/drive/folders/1yELzm5SvAi9e7kPcO_jPp2XkTs4vK6aR?usp=sharing)
+  Training with light degradation settings. Stage1 encoder of `SUPIR-v0F` remains
+  more details when facing light degradations. 4. Edit Custom Path for Checkpoints
+  ``` * [CKPT_PTH.py] --> LLAVA_CLIP_PATH, LLAVA_MODEL_PATH, SDXL_CLIP1_PATH, SDXL_CLIP2_CACHE_DIR
+  * [options/SUPIR_v0.yaml] --> SDXL_CKPT, SUPIR_CKPT_Q, SUPIR_CKPT_F ``` --- ## ⚡
+  Quick Inference ### Val Dataset RealPhoto60: [Baidu Netdisk](https://pan.baidu.com/s/1CJKsPGtyfs8QEVCQ97voBA?pwd=aocg),
+  [Google Drive](https://drive.google.com/drive/folders/1yELzm5SvAi9e7kPcO_jPp2XkTs4vK6aR?usp=sharing)
+  ### Usage of SUPIR ```Shell Usage: -- python test.py [options] -- python gradio_demo.py
+  [interactive options] --img_dir Input folder. --save_dir Output folder. --upscale
+  Upsampling ratio of given inputs. Default: 1 --SUPIR_sign Model selection. Default:
+  'Q'; Options: ['F', 'Q'] --seed Random seed. Default: 1234 --min_size Minimum resolution
+  of output images. Default: 1024 --edm_steps Numb of steps for EDM Sampling Scheduler.
+  Default: 50 --s_stage1 Control Strength of Stage1. Default: -1 (negative means invalid)
+  --s_churn Original hy-param of EDM. Default: 5 --s_noise Original hy-param of EDM.
+  Default: 1.01 --s_cfg Classifier-free guidance scale for prompts. Default: 4.0 --s_stage2
+  Control Strength of Stage2. Default: 1.0 --num_samples Number of samples for each
+  input. Default: 1 --a_prompt Additive positive prompt for all inputs. Default: 'Cinematic,
+  High Contrast, highly detailed, taken using a Canon EOS R camera, hyper detailed
+  photo - realistic maximum detail, 32k, Color Grading, ultra HD, extreme meticulous
+  detailing, skin pore detailing, hyper sharpness, perfect without deformations.'
+  --n_prompt Fixed negative prompt for all inputs. Default: 'painting, oil painting,
+  illustration, drawing, art, sketch, oil painting, cartoon, CG Style, 3D render,
+  unreal engine, blurring, dirty, messy, worst quality, low quality, frames, watermark,
+  signature, jpeg artifacts, deformed, lowres, over-smooth' --color_fix_type Color
+  Fixing "
 ---
 {% raw %}
 ## (CVPR2024) Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild

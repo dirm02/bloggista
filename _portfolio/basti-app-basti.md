@@ -2,8 +2,69 @@
 layout: project
 name: Basti App Basti
 slug: basti-app-basti
+category: Uncategorized
 image: https://img.shields.io/npm/v/basti?color=blue
 repo_url: https://github.com/basti-app/basti
+indexed_content: "Basti Basti (from Basti on Host ) is a CLI tool for securely accessing
+  your DB instances and other AWS resources in private networks at almost no cost.
+  \U0001F4B5 No idle costs. \U0001F511 No SSH keys. \U0001F512 Fully IAM-driven. ##
+  Table of contents - [\U0001F4A1 Why Basti?](#-why-basti) - [⚙️ How it works](#️-how-it-works)
+  - [\U0001F4BB Installation](#-installation) - [\U0001F3C4 Basic usage](#-basic-usage)
+  - [☝️ Initialize connection target](#️-initialize-connection-target) - [✌️ Connect
+  to the target](#️-connect-to-the-target) - [\U0001F389 Use the target on _localhost_](#-use-the-target-on-localhost)
+  - [Cleanup (optional)](#cleanup-optional) - [\U0001F9F6 Reference documentation](#-reference-documentation)
+  - [\U0001F4A0 Custom connection targets](#-custom-connection-targets) - [\U0001F39B️
+  Advanced initialization options](#️-advanced-initialization-options) - [Resource
+  tags](#resource-tags) - [Bastion instance type](#bastion-instance-type) - [Assign
+  public IP address](#assign-public-ip-address) - [\U0001F9BE Automatic mode](#-automatic-mode)
+  - [\U0001F4DD Configuration file](#-configuration-file) - [\U0001F4AB Infrastructure
+  as code (IaC)](#-infrastructure-as-code-iac) - [\U0001F3E2 Basti in teams and organizations](#-basti-in-teams-and-organizations)
+  - [Minimal IAM permissions](#minimal-iam-permissions) - [Usage audit](#usage-audit)
+  - [Shared configuration](#shared-configuration) - [\U0001F510 Security](#-security)
+  - [Network](#network) - [Access control](#access-control) - [Software](#software)
+  - [❤️ Development](#️-development) - [Build](#build) - [Run](#run) - [Test](#test)
+  - [License](#license) ## \U0001F4A1 Why Basti? With [Basti](https://github.com/basti-app/basti),
+  you can securely connect to RDS, Aurora, Elasticache, or any other AWS resources
+  in private VPC subnets from a local machine or a CI/CD pipeline almost for free!
+  [AWS Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+  is a fantastic tool! But Basti makes it even better: - \U0001F9BE With Session Manager,
+  you need to oversee an EC2 bastion instance for connecting to managed resources
+  such as RDS or Elasticache. Basti handles bastion instance setup, shutdown, and
+  updates for you! - \U0001F485 Basti provides a convenient way to store and reuse
+  connection configuration across your team. - \U0001F4F6 Basti improves stability
+  of the Session Manager sessions by automatically restarting failed or expired sessions.
+  ## ⚙️ How it works - \U0001F3F0 Basti sets up a so called _bastion EC2 instance_
+  in the connection target's VPC. - \U0001F9D1‍\U0001F4BB The bastion instance is
+  used with [AWS Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+  port forwarding capability to make the target available on your _localhost_. - \U0001F4B5
+  Basti takes care of keeping the bastion instance stopped when it's not used to make
+  the solution cost as low as **≈ 0.01 USD** per hour of connection plus **≈ 0.80
+  USD** per month of maintaining the instance in a stopped state. - \U0001F512 [Security](#security)
+  completely relies on AWS Session Manager and IAM policies. The bastion instance
+  is not accessible from the Internet and no SSH keys are used. ## \U0001F4BB Installation
+  Using homebrew ```sh brew install basti ``` Using npm ```sh npm install --global
+  basti ``` Other, NodeJS-independent, installation options are coming soon! ## \U0001F3C4
+  Basic usage Basti uses AWS SDK and relies on credentials to be configured in your
+  system. You can use any of [the methods](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-credentials-node.html)
+  supported by AWS SDK to configure credentials. > \U0001F4A1 You can expect Basti
+  to work if you can use AWS CLI in your terminal. ### ☝️ Initialize connection target
+  First, initialize your connection target. It could be an RDS instance, an Elasticache
+  cluster or any other target residing in a VPC. The following command will set up
+  all the infrastructure required to start a connection. _You only need to do this
+  once_. ```sh basti init ``` You will be prompted for a target to initialize and
+  a **public** VPC subnet to create the bastion EC2 instance in. ### ✌️ Connect to
+  the target Now, you can start the connection. This command will establish a secure
+  port forwarding session and make the target available on your _localhost_. ```sh
+  basti connect ``` You will be prompted for the target to connect to as well as the
+  local port to forward the connection to. ### \U0001F389 Use the target on _localhost_
+  Finally, you can use the target same way as it was running on your _localhost_ and
+  port you specified in the previous step. ```sh psql -h localhost -p 5432 ``` > \U0001F4A1
+  _psql_, the PostgreSQL client, is used as an example here. Basti can be used to
+  connect to any type of database or other services as long as the communication is
+  done over TCP. ### Cleanup (optional) You can remove all the resources created by
+  Basti in you AWS account. ```sh basti cleanup ``` The list of resources will be
+  displayed and you will be prompted to confirm the cleanup. ## \U0001F9F6 Reference
+  documentation Please, refer to the [reference documentation](https://github.com/basti-app/basti/tree/main/docs/reference)"
 ---
 {% raw %}
 <h1 align="center">Basti</h1>

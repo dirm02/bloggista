@@ -2,8 +2,69 @@
 layout: project
 name: Yorkeccak Bio
 slug: yorkeccak-bio
+category: Science -math-physics-chemistry
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/yorkeccak-bio/public/bio-screenshot.png
 repo_url: https://github.com/yorkeccak/bio.git
+indexed_content: "# Bio Try the hosted version [here](https://bio.valyu.ai) \U0001F64C
+  Then fork and get building... > **Enterprise-grade biomedical research behind a
+  chat interface** - Access PubMed, clinical trials, FDA drug labels, and run complex
+  Python analyses through natural language. Powered by specialized biomedical data
+  APIs. ## Why Bio? Traditional biomedical research is fragmented across dozens of
+  databases and platforms. Bio changes everything by providing: - **Comprehensive
+  Medical Data** - PubMed articles, ClinicalTrials.gov data, FDA drug labels, and
+  more - **One Unified Search** - Powered by Valyu's specialized biomedical data API
+  - **Advanced Analytics** - Execute Python code in secure Daytona sandboxes for statistical
+  analysis, pharmacokinetic modeling, and custom calculations - **Interactive Visualizations**
+  - Beautiful charts and dashboards for clinical data - **Real-Time Intelligence**
+  - Web search integration for breaking medical news - **Local AI Models** - Run with
+  Ollama or LM Studio for unlimited, private queries using your own hardware - **Natural
+  Language** - Just ask questions like you would to a colleague ## Key Features ###
+  Powerful Biomedical Tools - **PubMed & ArXiv Search** - Access to millions of scientific
+  papers and biomedical research - **Clinical Trials Database** - Search ClinicalTrials.gov
+  for active and completed trials - **FDA Drug Labels** - Access comprehensive drug
+  information from DailyMed - **Drug Information** - Detailed medication data, warnings,
+  and contraindications - **Interactive Charts** - Visualize clinical data, drug efficacy,
+  patient outcomes - **Python Code Execution** - Run pharmacokinetic calculations,
+  statistical analyses, and ML models ### Advanced Tool Calling - **Python Code Execution**
+  - Run complex biomedical calculations, statistical tests, and data analysis - **Interactive
+  Charts** - Create publication-ready visualizations of clinical data - **Multi-Source
+  Research** - Automatically aggregates data from multiple biomedical sources - **Export
+  & Share** - Download results, share analyses, and collaborate ## Quick Start (Self-Hosted)
+  Self-hosted mode is the recommended way to run Bio. It provides a complete local
+  environment with: - **No authentication required** - Auto-login as dev user - **Local
+  SQLite database** - No external database setup needed - **Unlimited queries** -
+  No rate limits - **Ollama/LM Studio support** - Use local LLMs for privacy and unlimited
+  usage ### Prerequisites - Node.js 18+ - npm or yarn - Valyu API key (get one at
+  [platform.valyu.ai](https://platform.valyu.ai)) - Daytona API key (for code execution)
+  - [Ollama](https://ollama.com) or [LM Studio](https://lmstudio.ai) installed (optional
+  but recommended) ### Installation 1. **Clone the repository** ```bash git clone
+  https://github.com/yorkeccak/bio.git cd bio ``` 2. **Install dependencies** ```bash
+  npm install ``` 3. **Set up environment variables** Create a `.env.local` file in
+  the root directory: ```env # Enable Self-Hosted Mode NEXT_PUBLIC_APP_MODE=self-hosted
+  # Valyu API Configuration (Required) VALYU_API_KEY=your-valyu-api-key # Daytona
+  Configuration (Required for Python execution) DAYTONA_API_KEY=your-daytona-api-key
+  DAYTONA_API_URL=https://api.daytona.io DAYTONA_TARGET=latest # Local LLM Configuration
+  (Optional - for unlimited, private queries) OLLAMA_BASE_URL=http://localhost:11434
+  # Default Ollama URL LMSTUDIO_BASE_URL=http://localhost:1234 # Default LM Studio
+  URL # OpenAI Configuration (Optional - fallback if local models unavailable) OPENAI_API_KEY=your-openai-api-key
+  ``` 4. **Run the development server** ```bash npm run dev ``` 5. **Open your browser**
+  Navigate to [http://localhost:3000](http://localhost:3000) You'll be automatically
+  logged in as `dev@localhost` with full access to all features. ## Self-Hosted Mode
+  Guide ### What is Self-Hosted Mode? Self-hosted mode provides a complete local environment
+  without any external dependencies beyond the core APIs (Valyu, Daytona). It's perfect
+  for: - **Local Development** - No Supabase setup required - **Offline Work** - All
+  data stored locally in SQLite - **Testing Features** - Unlimited queries without
+  billing - **Privacy** - Use local Ollama models, no cloud LLM needed - **Quick Prototyping**
+  - No authentication or rate limits ### How It Works When `NEXT_PUBLIC_APP_MODE=self-hosted`:
+  1. **Local SQLite Database** (`/.local-data/dev.db`) - Automatically created on
+  first run - Stores chat sessions, messages, charts, and CSVs - Full schema matching
+  production tables - Easy to inspect with `sqlite3 .local-data/dev.db` 2. **Mock
+  Authentication** - Auto-login as dev user (`dev@localhost`) - No sign-up/sign-in
+  required - Unlimited tier access with all features 3. **No Rate Limits** - Unlimited
+  chat queries - No usage tracking - No billing integration 4. **LLM Selection** -
+  **Ollama models** (if installed) - Used first, unlimited and free - **LM Studio
+  models** (if installed) - Alternative local option with GUI - **OpenAI** (if API
+  key provid"
 ---
 {% raw %}
 # Bio

@@ -2,8 +2,27 @@
 layout: project
 name: Amit9838 Mousam
 slug: amit9838-mousam
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/amit9838-mousam/data/icons/hicolor/scalable/apps/io.github.amit9838.mousam.svg?raw=true
 repo_url: https://github.com/amit9838/mousam
+indexed_content: 'Mousam Weather at a Glance ## Features - Displays real-time temperature,
+  humidity, wind speed, UV index, pressure and more - Utilizes graphical representations,
+  such as temperature , precipitation graphs and wind-speed with direction to provide
+  an hourly forecast for the next 24 hours - Also shows tomorrow and 7-day forcasts
+  - See conditions in metric or imperial systems ## Installation ### **Flatpak:**
+  - Or you can use the terminal: ``` flatpak install flathub io.github.amit9838.mousam
+  ``` ### **Snap:** - Or you can use the terminal: ``` sudo snap install mousam ```
+  ### **Debian** (Unofficial) Thanks to @hsbasu for maintaining Debian package [Installation
+  Instruction](https://github.com/amit9838/mousam/discussions/68) ## Build ### Dependances
+  - python3-requests - build-essential - meson ### Build ``` rm -rf builddir meson
+  setup -Dprefix=$HOME/.local builddir meson compile -C builddir --verbose ``` ###
+  Install ``` meson install -C builddir ``` ### Run ``` mousam ``` ## Contribution
+  Thanks to all the contributors have helped in the development project so that open-source
+  community can enjoy best tools with best features. ## Credits - Thanks to [Open
+  Meteo](https://open-meteo.com/) from providing weather data for free of cost. -
+  Thanks to [@basmilius](https://github.com/basmilius) for making beautiful weather
+  icons. Support I hope you ❤️ Mousam , if you think it is worth supporting you can
+  do so using below methods'
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,25 @@
 layout: project
 name: Schej It Timeful.app
 slug: schej-it-timeful.app
+category: Uncategorized
 image: https://img.shields.io/badge/License-AGPL_v3-orange.svg
 repo_url: https://github.com/vuejs/vue),
+indexed_content: '[](https://www.gnu.org/licenses/agpl-3.0) [](https://www.paypal.com/donate/?hosted_button_id=KWCH6LGJCP6E6)
+  [](https://x.com/timeful_app) [](https://discord.gg/v6raNqYxx3) [](https://www.reddit.com/r/schej/)
+  Timeful is a scheduling platform helps you find the best time for a group to meet.
+  It is a free availability poll that is easy to use and integrates with your calendar.
+  Hosted version of the site: https://timeful.app Built with [Vue 2](https://github.com/vuejs/vue),
+  [MongoDB](https://github.com/mongodb/mongo), [Go](https://github.com/golang/go),
+  and [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) ## Demo [](https://www.youtube.com/watch?v=vFkBC8BrkOk)
+  ## Features - See when everybody''s availability overlaps - Easily specify date
+  + time ranges to meet between - Google calendar, Outlook, Apple calendar integration
+  - "Available" vs. "If needed" times - Determine when a subset of people are available
+  - Schedule across different time zones - Email notifications + reminders - Duplicating
+  polls - Availability groups - stay up to date with people''s real-time calendar
+  availability - Export availability as CSV - Only show responses to event creator
+  ## Plugin API Read these docs to design your own browser plugins to get + set availability
+  on Timeful events programmatically! [Plugin API Docs](./PLUGIN_API_README.md) ##
+  Self-hosting Coming soon...'
 ---
 {% raw %}
 <div align="center">

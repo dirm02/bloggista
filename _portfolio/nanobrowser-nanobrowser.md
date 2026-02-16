@@ -2,8 +2,68 @@
 layout: project
 name: Nanobrowser Nanobrowser
 slug: nanobrowser-nanobrowser
+category: Extension-Pluggin-Cron-Scrap
 image: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://github.com/nanobrowser) [](https://x.com/nanobrowser_ai)
+  [](https://discord.gg/NN3ABHggMK) [ ](https://deepwiki.com/nanobrowser/nanobrowser)
+  [](https://github.com/sponsors/alexchenzl) ## \U0001F310 Nanobrowser Nanobrowser
+  is an open-source AI web automation tool that runs in your browser. A free alternative
+  to OpenAI Operator with flexible LLM options and multi-agent system. ⬇️ Get [Nanobrowser
+  from Chrome Web Store](https://chromewebstore.google.com/detail/nanobrowser/imbddededgmcgfhfpcjmijokokekbkal)
+  for free \U0001F44F Join the community in [Discord](https://discord.gg/NN3ABHggMK)
+  | [X](https://x.com/nanobrowser_ai) \U0001F31F Loving Nanobrowser? Give us a star
+  and help spread the word! ❤️ Support the project by [sponsoring us](https://github.com/sponsors/alexchenzl)
+  - every contribution helps keep Nanobrowser free and open source! Nanobrowser's
+  multi-agent system analyzing HuggingFace in real-time, with the Planner intelligently
+  self-correcting when encountering obstacles and dynamically instructing the Navigator
+  to adjust its approach—all running locally in your browser. ## \U0001F525Why Nanobrowser?
+  Looking for a powerful AI browser agent without the $200/month price tag of OpenAI
+  Operator? **Nanobrowser** , as a chrome extension, delivers premium web automation
+  capabilities while keeping you in complete control: - **100% Free** - No subscription
+  fees or hidden costs. Just install and use your own API keys, and you only pay what
+  you use with your own API keys. - **Privacy-Focused** - Everything runs in your
+  local browser. Your credentials stay with you, never shared with any cloud service.
+  - **Flexible LLM Options** - Connect to your preferred LLM providers with the freedom
+  to choose different models for different agents. - **Fully Open Source** - Complete
+  transparency in how your browser is automated. No black boxes or hidden processes.
+  > **Note:** We currently support OpenAI, Anthropic, Gemini, Ollama, Groq, Cerebras,
+  Llama and custom OpenAI-Compatible providers, more providers will be supported.
+  ## \U0001F4CA Key Features - **Multi-agent System**: Specialized AI agents collaborate
+  to accomplish complex web workflows - **Interactive Side Panel**: Intuitive chat
+  interface with real-time status updates - **Task Automation**: Seamlessly automate
+  repetitive web automation tasks across websites - **Follow-up Questions**: Ask contextual
+  follow-up questions about completed tasks - **Conversation History**: Easily access
+  and manage your AI agent interaction history - **Multiple LLM Support**: Connect
+  your preferred LLM providers and assign different models to different agents ##
+  \U0001F310 Browser Support **Officially Supported:** - **Chrome** - Full support
+  with all features - **Edge** - Full support with all features **Not Supported:**
+  - Firefox, Safari, and other Chromium variants (Opera, Arc, etc.) > **Note**: While
+  Nanobrowser may function on other Chromium-based browsers, we recommend using Chrome
+  or Edge for the best experience and guaranteed compatibility. ## \U0001F680 Quick
+  Start 1. **Install from Chrome Web Store** (Stable Version): * Visit the [Nanobrowser
+  Chrome Web Store page](https://chromewebstore.google.com/detail/nanobrowser/imbddededgmcgfhfpcjmijokokekbkal)
+  * Click \"Add to Chrome\" button * Confirm the installation when prompted > **Important
+  Note**: For latest features, install from [\"Manually Install Latest Version\"](#-manually-install-latest-version)
+  below, as Chrome Web Store version may be delayed due to review process. 2. **Configure
+  Agent Models**: * Click the Nanobrowser icon in your toolbar to open the sidebar
+  * Click the `Settings` icon (top right) * Add your LLM API keys * Choose which model
+  to use for different agents (Navigator, Planner) ## \U0001F527 Manually Install
+  Latest Version To get the most recent version with all the latest features: 1. **Download**
+  * Download the latest `nanobrowser.zip` file from the official Github [release page](https://github.com/nanobrowser/nanobrowser/releases).
+  2. **Install**: * Unzip `nanobrowser.zip`. * Open `chrome://extensions/` in Chrome
+  * Enable `Developer mode` (top right) * Click `Load unpacked` (top left) * Select
+  the unzipped `nanobrowser` folder. 3. **Configure Agent Models** * Click the Nanobrowser
+  icon in your toolbar to open the sidebar * Click the `Settings` icon (top right).
+  * Add your LLM API keys. * Choose which model to use for different agents (Navigator,
+  Planner) 4. **Upgrading**: * Download the latest `nanobrowser.zip` file from the
+  release page. * Unzip and replace your existing Nanobrowser files with the new ones.
+  * Go to `chrome://extensions/` in Chrome and click the refresh icon on the Nanobrowser
+  card. ## \U0001F6E0️ Build from Source If you prefer to build Nanobrowser yourself,
+  follow these steps: 1. **Prerequisites**: * [Node.js](https://nodejs.org/) (v22.12.0
+  or higher) * [pnpm](https://pnpm.io/installation) (v9.15.1 or higher) 2. **Clone
+  the Repository**: ```bash git clone https://github.com/nanobrowser/nanobrowser.git
+  cd nanobrowser ``` 3. **Install Dependencies**: ```bash pnpm in"
 ---
 {% raw %}
 <h1 align="center">

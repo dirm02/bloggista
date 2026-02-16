@@ -2,8 +2,22 @@
 layout: project
 name: Libresign Libresign
 slug: LibreSign-libresign
+category: Serv&Prod-Tools
 image: https://github.com/LibreSign/libresign/actions/workflows/behat.yml/badge.svg?branch=main
 repo_url: https://github.com/LibreSign/libresign
+indexed_content: "[](https://coveralls.io/github/LibreSign/libresign?branch=main)
+  [](https://api.reuse.software/info/github.com/LibreSign/libresign) [](https://github.com/LibreSign/libresign/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22)
+  Nextcloud app to sign PDF documents. [](https://github.com/LibreSign/libresign/issues/new?template=feature_request.yml)
+  [](https://github.com/LibreSign/libresign/issues/new?template=bug_report.yml) ##
+  Star History [](https://www.star-history.com/#libresign/libresign&Date) ## Contributing
+  There are many ways to contribute, including writing code, filing issues on GitHub,
+  helping people Overflow, helping to triage, reproduce, or fix bugs that people have
+  filed, adding to our documentation. To get more details go to our [contributing
+  guide](CONTRIBUTING.md). ## Integrations * [GLPI](https://github.com/LibreSign/libresign-glpi):
+  Plugin to sign GLPI tickets * [Approval](https://github.com/nextcloud/approval):
+  Approve/reject files based on workflows defined by admins ## API Documentation [API
+  Documentation](https://libresign.github.io/) ## Contributors ✨ Thanks go to these
+  wonderful people:"
 ---
 {% raw %}
 <!--

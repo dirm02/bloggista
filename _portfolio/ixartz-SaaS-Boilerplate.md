@@ -2,8 +2,67 @@
 layout: project
 name: Ixartz Saas Boilerplate
 slug: ixartz-SaaS-Boilerplate
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/ixartz-SaaS-Boilerplate/public/assets/images/nextjs-boilerplate-saas-landing-page.png
 repo_url: https://github.com/ixartz/SaaS-Boilerplate
+indexed_content: "# Free and Open Source SaaS Boilerplate with Tailwind CSS and Shadcn
+  UI \U0001F680 **SaaS Boilerplate** is a powerful and fully customizable template
+  to kickstart your SaaS applications. Built with **Next.js** and **Tailwind CSS**,
+  and the modular UI components of **Shadcn UI**. This **Next.js SaaS Template** helps
+  you to quickly build and launch SaaS with minimal effort. Packed with essential
+  features like built-in **Authentication**, **Multi-Tenancy** with Team support,
+  **Role & Permission**, Database, I18n (internationalization), Landing Page, User
+  Dashboard, Form handling, SEO optimization, Logging, Error reporting with [Sentry](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo),
+  Testing, Deployment, Monitoring, and **User Impersonation**, this SaaS template
+  provides everything you need to get started. Designed with developers in mind, this
+  **Next.js Starter Kit** uses TypeScript for type safety and integrates ESLint to
+  maintain code quality, along with Prettier for consistent code formatting. The testing
+  suite combines Vitest and React Testing Library for robust unit testing, while Playwright
+  handles integration and E2E testing. Continuous integration and deployment are managed
+  via GitHub Actions. For user management, authentication is handled by [Clerk](https://go.clerk.com/zGlzydF).
+  For database operations, it uses Drizzle ORM for type-safe database management across
+  popular databases like PostgreSQL, SQLite, and MySQL. One recommended option is
+  to use [Prisma PostgreSQL](https://www.prisma.io/?via=saasboilerplatetop), which
+  provides a free PostgreSQL database that is compatible and has been tested with
+  SaaS Boilerplate. Whether you're building a new SaaS app or looking for a flexible,
+  **production-ready SaaS template**, this boilerplate has you covered. This free,
+  open-source starter kit has everything you need to accelerate your development and
+  scale your product with ease. Clone this project and use it to create your own SaaS.
+  You can check the live demo at [SaaS Boilerplate](https://react-saas.com), which
+  is a demo with a working authentication and multi-tenancy system. ## Sponsors Add
+  your logo here ### Demo **Live demo: [SaaS Boilerplate](https://react-saas.com)**
+  | Landing Page | User Dashboard | | --- | --- | | [](https://react-saas.com) | [](https://react-saas.com/dashboard)
+  | | Team Management | User Profile | | --- | --- | | [](https://react-saas.com/dashboard/organization-profile/organization-members)
+  | [](https://react-saas.com/dashboard/user-profile) | | Sign Up | Sign In | | ---
+  | --- | | [](https://react-saas.com/sign-up) | [](https://react-saas.com/sign-in)
+  | | Landing Page with Dark Mode (Pro Version) | User Dashboard with Dark Mode (Pro
+  Version) | | --- | --- | | [](https://pro-demo.nextjs-boilerplate.com) | [](https://pro-demo.nextjs-boilerplate.com/dashboard)
+  | | User Dashboard with Sidebar (Pro Version) | | --- | | [](https://pro-demo.nextjs-boilerplate.com)
+  | ### Features Developer experience first, extremely flexible code structure and
+  only keep what you need: - ⚡ [Next.js](https://nextjs.org) with App Router support
+  - \U0001F525 Type checking [TypeScript](https://www.typescriptlang.org) - \U0001F48E
+  Integrate with [Tailwind CSS](https://tailwindcss.com) and Shadcn UI - ✅ Strict
+  Mode for TypeScript and [React](https://react.dev) - \U0001F512 Authentication with
+  [Clerk](https://go.clerk.com/zGlzydF): Sign up, Sign in, Sign out, Forgot password,
+  Reset password, and more. - \U0001F464 Passwordless Authentication with Magic Links,
+  Multi-Factor Auth (MFA), Social Auth (Google, Facebook, Twitter, GitHub, Apple,
+  and more), Passwordless login with Passkeys, User Impersonation - \U0001F465 Multi-tenancy
+  & team support: create, switch, update organization and invite team members - \U0001F4DD
+  Role-based access control and permissions - \U0001F464 Multi-Factor Auth (MFA),
+  Social Auth (Google, Facebook, Twitter, GitHub, Apple, and more), User Impersonation
+  - \U0001F4E6 Type-safe ORM with DrizzleORM, compatible with PostgreSQL, SQLite,
+  and MySQL - \U0001F4BD Offline and local development database with PGlite - ☁️ Remote
+  and production database with [Prisma Postgres](https://www.prisma.io/?via=saasboilerplate)
+  - \U0001F310 Multi-language (i18n) with [next-intl](https://next-intl-docs.vercel.app/)
+  and [Crowdin](https://l.crowdin.com/next-js) - ♻️ Type-safe environment variables
+  with T3 Env - ⌨️ Form with [React Hook Form](https://react-hook-form.com) - \U0001F534
+  Validation library with [Zod](https://zod.dev) - \U0001F4CF Linter with [ESLint](https://eslint.org)
+  (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Antfu configuration) -
+  \U0001F496 Code Formatter with [Prettier](https://prettier.io) - \U0001F98A Husky
+  for Git Hooks - \U0001F6AB Lint-staged for running linters on Git staged files -
+  \U0001F693 Lint git commit with Commitlint - \U0001F4D3 Write standard compliant
+  commit messages with Commitizen - \U0001F9BA Unit Testing with [Vitest](https://vitest.dev)
+  and React Testing Library - \U0001F9EA Integration and E2E Testing with [Playwright](https://"
 ---
 {% raw %}
 # Free and Open Source SaaS Boilerplate with Tailwind CSS and Shadcn UI

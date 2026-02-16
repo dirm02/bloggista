@@ -2,8 +2,70 @@
 layout: project
 name: Hedge Dev Xenonrecomp
 slug: hedge-dev-XenonRecomp
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/N64Recomp/N64Recomp),
+indexed_content: '# XenonRecomp XenonRecomp is a tool that converts Xbox 360 executables
+  into C++ code, which can then be recompiled for any platform. This project was heavily
+  inspired by [N64: Recompiled](https://github.com/N64Recomp/N64Recomp), a similar
+  tool for N64 executables. **DISCLAIMER:** This project does not provide a runtime
+  implementation. It only converts the game code to C++, which is not going to function
+  correctly without a runtime backing it. **Making the game work is your responsibility.**
+  ## Implementation Details ### Instructions The instructions are directly converted
+  without any effort to make them resemble decompiled code, meaning the output is
+  not very human-readable. The CPU state is passed as an argument to every PPC function,
+  which includes definitions for every PPC register and their current values at the
+  time of execution. The second argument is the base address pointer, as the Xbox
+  360 CPU uses 32-bit pointers. A good amount of PPC instructions are implemented,
+  with missing ones primarily being variants of already implemented instructions.
+  Some instructions, like the D3D unpack/pack instructions, do not support all operand
+  types. When a missing case is encountered, a warning is generated, or a debug break
+  is inserted into the converted C++ code. The instruction implementations operate
+  on little-endian values. However, since the Xbox 360 is a big-endian machine, the
+  memory load instructions swap endianness when reading values, and memory store instructions
+  reverse it to big-endian before writing. All the memory loads and stores are marked
+  volatile to prevent Clang from doing unsafe code reordering. Vector registers''
+  endianness handling is more complicated. Instead of swapping individual 32-bit elements,
+  the recompiler chooses to reverse the entire 16-byte vector. Instructions must account
+  for this reversed order, such as using the WZY components instead of XYZ in dot
+  products or requiring reversed arguments for vector pack instructions. The FPU expects
+  denormalized numbers to remain unmodified, while VMX instructions always flush them.
+  This is managed by storing the current floating-point state in the CPU state struct
+  and enabling or disabling denormal flushing as necessary before executing each instruction.
+  Most VMX instructions are implemented using x86 intrinsics. Support for ARM64 is
+  implemented using [SIMD Everywhere](https://github.com/simd-everywhere/simde). ###
+  MMIO MMIO, which is typically used for hardware operations such as XMA decoding,
+  is currently unimplemented. There is an unfinished attempt to implement MMIO, but
+  supporting it may be non-trivial and could require advanced analysis of instructions.
+  ### Indirect Functions Virtual function calls are resolved by creating a "perfect
+  hash table" at runtime, where dereferencing a 64-bit pointer (using the original
+  instruction address multiplied by 2) gives the address of the recompiled function.
+  This was previously implemented by creating an 8 GB virtual allocation, but it had
+  too much memory pressure. Now it relies on function addresses being placed after
+  the valid XEX memory region in the base memory pointer. These regions are exported
+  as macros in the output `ppc_config.h` file. ### Jump Tables Jump tables, at least
+  in older Xbox 360 binaries, often have predictable assembly patterns, making them
+  easy to detect statically without needing a virtual machine. XenonAnalyse has logic
+  for detecting jump tables in Sonic Unleashed, though variations in other games (likely
+  due to updates in the Xbox 360 compiler) may require modifications to the detection
+  logic. Currently, there is no fully generic solution for handling jump tables, so
+  updates to the detection logic may be needed for other games. The typical way to
+  find jump tables is by searching for the `mtctr r0` instruction. It will almost
+  always be followed with a `bctr`, with the previous instructions computing the jump
+  address. XenonAnalyse generates a TOML file containing detected jump tables, which
+  can be referenced in the main TOML config file. This allows the recompiler to generate
+  real switch cases for these jump tables. ### Function Boundary Analysis XenonAnalyse
+  includes a function boundary analyzer that works well in most cases. Functions with
+  stack space have their boundaries defined in the `.pdata` segment of the XEX. For
+  functions not found in this segment, the analyzer detects the start of functions
+  by searching for branch link instructions, and determines their length via static
+  analysis. However, the analyzer struggles with functions containing jump tables,
+  since they look like tail calls without enough information. While there is currently
+  no solution for this, it might be relatively simple to extend the function analyzer
+  to account for jump tables defined in the TOML file. As a workaround, the recompiler
+  TOML file allows users to manually define function boundaries. ### Exceptions The
+  recompiler currently does not support exceptions. This is challenging due to the
+  use o'
 ---
 {% raw %}
 # XenonRecomp

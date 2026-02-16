@@ -2,8 +2,70 @@
 layout: project
 name: Rustmailer Rustmailer
 slug: rustmailer-rustmailer
+category: Mail services -server-chat apps
 image: https://deepwiki.com/badge.svg
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "RustMailer A self-hosted Email Middleware for IMAP, SMTP, and Gmail
+  API — built for developers [](https://deepwiki.com/rustmailer/rustmailer) [](https://hub.docker.com/r/rustmailer/rustmailer)
+  [](https://github.com/rustmailer/rustmailer/actions/workflows/release.yml) [](https://discord.gg/3R4scWCsxK)
+  ## \U0001F3AF Use Cases RustMailer is designed to be seamlessly integrated into
+  your applications, helping you save development time and improve efficiency by providing
+  a robust, self-hosted email synchronization and delivery backend supporting **IMAP/SMTP,
+  and Gmail API**. Typical use cases and industries include: - SaaS platforms requiring
+  multi-account email synchronization (IMAP or Gmail) - CRM systems with automated
+  transactional email sending - Marketing automation tools supporting dynamic email
+  templates - Customer support software integrating real-time email notifications
+  - Enterprise applications needing reliable IMAP, SMTP, or Gmail API handling - E-commerce
+  platforms managing order confirmation and promotional emails - Data analytics solutions
+  tracking email opens and clicks via webhooks - Fintech and healthcare systems demanding
+  secure and auditable email workflows RustMailer enables developers to focus on core
+  application logic without building complex mail infrastructure from scratch. ##
+  \U0001F4A1 Why RustMailer? While many programming languages provide IMAP, SMTP,
+  or Gmail API client libraries, building a reliable, scalable, and feature-rich mail
+  synchronization and delivery system from scratch remains complex and time-consuming.
+  RustMailer abstracts these challenges by offering a unified, self-hosted middleware
+  service that: - Handles multi-account IMAP polling and caching efficiently - Provides
+  robust SMTP sending capabilities with template support - Manages event dispatch
+  (webhooks, message queues) out of the box - Simplifies integration across diverse
+  application stacks regardless of language This allows development teams to focus
+  on core business logic, accelerating time-to-market and reducing maintenance overhead
+  compared to assembling disparate mail client libraries individually. ## ✨ Features
+  - \U0001F310 **Modern APIs** – Offers both gRPC and OpenAPI interfaces with multi-version
+  API documentation. - \U0001F680 **High Performance & Cost-Efficient** – Written
+  in Rust for safety and speed. Runs with low memory usage, no Redis or external dependencies
+  required — ideal for production at minimal cost. - \U0001F4EC **Multi-account IMAP
+  support** – Incremental sync using UID-based strategy, supports folder selection,
+  windowed or date-range sync. - \U0001F4E4 **SMTP Sending** – Manage outgoing email
+  via SMTP with connection pooling. - \U0001F4EE **Gmail API Support** – Native integration
+  with Gmail API for account authentication, incremental synchronization, and message
+  sending. Ideal for modern Google Workspace environments. - \U0001F9FE **Email Template
+  Support** – Supports dynamic email templates for transactional and marketing messages.
+  - \U0001F4E1 **Flexible MTA Integration** – Send via account-specific SMTP servers,
+  self-hosted MTA services, or third-party providers. - \U0001F4C8 **Open & Click
+  Tracking** – Built-in support for tracking email opens and link clicks. - \U0001F504
+  **Webhooks with VRL** – Send webhook payloads to external systems and process them
+  with VRL scripts for filtering and transformation. - \U0001F50C **NATS Integration**
+  – Push real-time events to NATS for seamless integration with downstream systems.
+  - \U0001F5A5️ **Web UI & Client** – Includes a built-in web-based email client and
+  admin dashboard. - \U0001F510 **OAuth2 Support** – Built-in OAuth2 flow with web-based
+  authorization UI. Automatically manages access and refresh tokens. - \U0001F30D
+  **Proxy Support** – Supports proxies for IMAP, SMTP, and OAuth2 connections in restricted
+  environments. ## \U0001F4F8 Snapshot | | | |-------------------------------------|--------------------------------|
+  | | | ## API Reference https://rustmailer.com/redoc ## \U0001F4E6 Installation ###
+  \U0001F527 Build from Source To build RustMailer from source, you need the following
+  prerequisites: - **Rust** ≥ 1.88 (recommended: latest stable) - **Node.js** ≥ 20
+  - **pnpm** (for building Web UI) #### Step 1: Clone the repository ```bash git clone
+  https://github.com/rustmailer/rustmailer.git cd rustmailer ``` #### Step 2: Build
+  the Web UI ```bash cd web pnpm install pnpm run build cd .. ``` ### Step 3: Build
+  the Rust backend ```bash cargo build --release ``` ✅ You can now run the binary
+  from ./target/release/rustmailer. ```bash ./target/release/rustmailer --rustmailer-root-dir
+  /tmp/data ``` ### \U0001F433 Prefer Docker? If you don’t want to build manually,
+  you can follow the Docker-based installation guide here: \U0001F4C4 [Install via
+  Docker](https://rustmailer.com/docs/install/docker) ```shell docker run -d --name
+  rustmailer -p 15630:15630 -p 16630:16630 -e RUSTMAILER_ROOT_DIR=/data -v /sourcecode/rustmailer_data/:/data
+  rustmailer/rustmailer:latest ``` > \U0001F510 RustMailer offers a free 14-day trial
+  with unlimited email accounts during the trial period. See License for details.
+  > A valid license key is required for co"
 ---
 {% raw %}
 <h1 align="center">

@@ -2,8 +2,62 @@
 layout: project
 name: Practical Tutorials Project Based Learning
 slug: practical-tutorials-project-based-learning
+category: Uncategorized
 image: https://badges.gitter.im/practical-tutorials/community.svg
 repo_url: https://github.com/tuhdo/os01)
+indexed_content: "# Project Based Learning [](https://gitter.im/practical-tutorials/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+  A list of programming tutorials in which aspiring software developers learn how
+  to build an application from scratch. These tutorials are divided into different
+  primary programming languages. Tutorials may involve multiple technologies and languages.
+  To get started, simply fork this repo. Please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
+  for contribution guidelines. ## Table of Contents: - [C#](#c) - [C/C++](#cc) - [Clojure](#clojure)
+  - [Dart](#dart) - [Elixir](#elixir) - [Erlang](#erlang) - [F#](#f) - [Go](#go) -
+  [Haskell](#haskell) - [HTML/CSS](#html-and-css) - [Java](#java) - [JavaScript](#javascript)
+  - [Kotlin](#kotlin) - [Lua](#lua) - [OCaml](#ocaml) - [PHP](#php) - [Python](#python)
+  - [R](#r) - [Ruby](#ruby) - [Rust](#rust) - [Scala](#scala) - [Swift](#swift) -
+  [Additional resources](#additional-resources) ## C/C++: - [Build an Interpreter](http://www.craftinginterpreters.com/)
+  (Chapter 14 on is written in C) - [Memory Allocators 101 - Write a simple memory
+  allocator](https://arjunsreedharan.org/post/148675821737/memory-allocators-101-write-a-simple-memory)
+  - [Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/) - [Write
+  a FUSE Filesystem](https://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/) - [Build Your
+  Own Text Editor](http://viewsourcecode.org/snaptoken/kilo/) - [Build Your Own Lisp](http://www.buildyourownlisp.com/)
+  - [How to Program an NES Game in C](https://nesdoug.com/) - [Write an OS from scratch](https://github.com/tuhdo/os01)
+  - [How to create an OS from scratch ](https://github.com/cfenollosa/os-tutorial)
+  - [Building a CHIP-8 Emulator](https://austinmorlan.com/posts/chip8_emulator/) -
+  [Beginning Game Programming with C++ and SDL](http://lazyfoo.net/tutorials/SDL/)
+  - [Implementing a Key-Value Store](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
+  - Tiny 3D graphics projects - [Tiny Renderer or how OpenGL works: software rendering
+  in 500 lines of code](https://github.com/ssloy/tinyrenderer/wiki) - [Understandable
+  RayTracing in 256 lines of bare C++](https://github.com/ssloy/tinyraytracer/wiki)
+  - [KABOOM! in 180 lines of bare C++](https://github.com/ssloy/tinykaboom/wiki) -
+  [486 lines of C++: old-school FPS in a weekend](https://github.com/ssloy/tinyraycaster/wiki)
+  - Writing a minimal x86-64 JIT compiler in C++ - [Part 1](https://solarianprogrammer.com/2018/01/10/writing-minimal-x86-64-jit-compiler-cpp/)
+  - [Part 2](https://solarianprogrammer.com/2018/01/12/writing-minimal-x86-64-jit-compiler-cpp-part-2/)
+  - [Build a Live Code-reloader Library for C++](http://howistart.org/posts/cpp/1/index.html)
+  - [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table)
+  - [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/) - [Let's
+  Write a Kernel](http://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel)
+  - [Write a Bootloader in C](http://3zanders.co.uk/2017/10/13/writing-a-bootloader/)
+  - [Linux Container in 500 Lines of Code](https://blog.lizzie.io/linux-containers-in-500-loc.html)
+  - [Write Your Own Virtual Machine](https://justinmeiners.github.io/lc3-vm/) - [Learning
+  KVM - Implement Your Own Linux Kernel](https://david942j.blogspot.com/2018/10/note-learning-kvm-implement-your-own.html)
+  - [Build Your Own Redis with C/C++](https://build-your-own.org/redis/) - Write a
+  C compiler - [Part 1: Integers, Lexing and Code Generation](https://norasandler.com/2017/11/29/Write-a-Compiler.html)
+  - [Part 2: Unary Operators](https://norasandler.com/2017/12/05/Write-a-Compiler-2.html)
+  - [Part 3: Binary Operators](https://norasandler.com/2017/12/15/Write-a-Compiler-3.html)
+  - [Part 4: Even More Binary Operators](https://norasandler.com/2017/12/28/Write-a-Compiler-4.html)
+  - [Part 5: Local Variables](https://norasandler.com/2018/01/08/Write-a-Compiler-5.html)
+  - [Part 6: Conditionals](https://norasandler.com/2018/02/25/Write-a-Compiler-6.html)
+  - [Part 7: Compound Statements](https://norasandler.com/2018/03/14/Write-a-Compiler-7.html)
+  - [Part 8: Loops](https://norasandler.com/2018/04/10/Write-a-Compiler-8.html) -
+  [Part 9: Functions](https://norasandler.com/2018/06/27/Write-a-Compiler-9.html)
+  - [Part 10: Global Variables](https://norasandler.com/2019/02/18/Write-a-Compiler-10.html)
+  - [Implementing a Language with LLVM](https://llvm.org/docs/tutorial/#kaleidoscope-implementing-a-language-with-llvm)
+  - [Meta Crush Saga: a C++17 compile-time game](https://jguegant.github.io//jguegant.github.io/blogs/tech/meta-crush-saga.html)
+  - [High-Performance Matrix Multiplication](https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0)
+  - Space Invaders from Scratch - [Part 1](http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html)
+  - [Part 2](http://nicktasios.nl/posts/space-invaders-from-scratch-part-2.html) -
+  [Part 3](http://nicktasios.nl/posts/space-invaders-from-scratch-part-3.htm"
 ---
 {% raw %}
 # Project Based Learning

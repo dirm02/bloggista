@@ -2,8 +2,64 @@
 layout: project
 name: Telekom Security Tpotce
 slug: telekom-security-tpotce
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/telekom-security-tpotce/doc/tpotsocial.png
 repo_url: https://github.com/telekom-security/tpotce
+indexed_content: "# T-Pot - The All In One Multi Honeypot Platform T-Pot is the all
+  in one, optionally distributed, multiarch (amd64, arm64) honeypot plattform, supporting
+  20+ honeypots and countless visualization options using the Elastic Stack, animated
+  live attack maps and lots of security tools to further improve the deception experience.
+  # TL;DR 1. Meet the [system requirements](#system-requirements). The T-Pot installation
+  needs at least 8-16 GB RAM, 128 GB free disk space as well as a working (outgoing
+  non-filtered) internet connection. 2. [Download](#choose-your-distro) or use a running,
+  supported distribution. 3. Install the ISO with as minimal packages / services as
+  possible (`ssh` required) 4. Install `curl`: `$ sudo [apt, dnf, zypper] install
+  curl` if not installed already 5. Run installer as non-root from `$HOME`: ``` env
+  bash -c \"$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)\"
+  ``` * Follow instructions, read messages, check for possible port conflicts and
+  reboot - [T-Pot - The All In One Multi Honeypot Platform](#t-pot---the-all-in-one-multi-honeypot-platform)
+  - [TL;DR](#tldr) - [Disclaimer](#disclaimer) - [Technical Concept](#technical-concept)
+  - [Honeypots and Tools](#honeypots-and-tools) - [Technical Architecture](#technical-architecture)
+  - [Services](#services) - [User Types](#user-types) - [System Requirements](#system-requirements)
+  - [Running in a VM](#running-in-a-vm) - [Running on Hardware](#running-on-hardware)
+  - [Running in a Cloud](#running-in-a-cloud) - [Required Ports](#required-ports)
+  - [LLM-Based Honeypots](#llm-based-honeypots) - [Ollama](#ollama) - [ChatGPT](#chatgpt)
+  - [System Placement](#system-placement) - [Installation](#installation) - [Choose
+  your distro](#choose-your-distro) - [Raspberry Pi 4 (8GB) Support](#raspberry-pi-4-8gb-support)
+  - [Get and install T-Pot](#get-and-install-t-pot) - [macOS \\& Windows](#macos--windows)
+  - [Red Hat Enterprise Linux](#red-hat-enterprise-linux) - [Installation Types](#installation-types)
+  - [Standard / Hive](#standard--hive) - [Distributed](#distributed) - [Uninstall
+  T-Pot](#uninstall-t-pot) - [First Start](#first-start) - [Standalone First Start](#standalone-first-start)
+  - [Distributed Deployment](#distributed-deployment) - [Planning and Certificates](#planning-and-certificates)
+  - [Deploying Sensors](#deploying-sensors) - [Removing Sensors](#removing-sensors)
+  - [Community Data Submission](#community-data-submission) - [Opt-In HPFEEDS Data
+  Submission](#opt-in-hpfeeds-data-submission) - [Remote Access and Tools](#remote-access-and-tools)
+  - [SSH](#ssh) - [T-Pot Landing Page](#t-pot-landing-page) - [Kibana Dashboard](#kibana-dashboard)
+  - [Attack Map](#attack-map) - [Cyberchef](#cyberchef) - [Elasticvue](#elasticvue)
+  - [Spiderfoot](#spiderfoot) - [Configuration](#configuration) - [T-Pot Config File](#t-pot-config-file)
+  - [Customize T-Pot Honeypots and Services](#customize-t-pot-honeypots-and-services)
+  - [Maintenance](#maintenance) - [General Updates](#general-updates) - [Update Script](#update-script)
+  - [Daily Reboot](#daily-reboot) - [Known Issues](#known-issues) - [Docker Images
+  Fail to Download](#docker-images-fail-to-download) - [T-Pot Networking Fails](#t-pot-networking-fails)
+  - [Start T-Pot](#start-t-pot) - [Stop T-Pot](#stop-t-pot) - [T-Pot Data Folder](#t-pot-data-folder)
+  - [Log Persistence](#log-persistence) - [Factory Reset](#factory-reset) - [Show
+  Containers](#show-containers) - [Blackhole](#blackhole) - [Add Users to Nginx (T-Pot
+  WebUI)](#add-users-to-nginx-t-pot-webui) - [Import and Export Kibana Objects](#import-and-export-kibana-objects)
+  - [Export](#export) - [Import](#import) - [Troubleshooting](#troubleshooting) -
+  [Logs](#logs) - [RAM and Storage](#ram-and-storage) - [Contact](#contact) - [Issues](#issues)
+  - [Discussions](#discussions) - [Licenses](#licenses) - [Credits](#credits) - [The
+  developers and development communities of](#the-developers-and-development-communities-of)
+  - [**The following companies and organizations**](#the-following-companies-and-organizations)
+  - [**And of course ***YOU*** for joining the community!**](#and-of-course-you-for-joining-the-community)
+  - [Testimonials](#testimonials) - [Thank you \U0001F496](#thank-you-) # Disclaimer
+  - You install and run T-Pot within your responsibility. Choose your deployment wisely
+  as a system compromise can never be ruled out. - For fast help research the [Issues](https://github.com/telekom-security/tpotce/issues)
+  and [Discussions](https://github.com/telekom-security/tpotce/discussions). - The
+  software is designed and offered with best effort in mind. As a community and open
+  source project it uses lots of other open source software and may contain bugs and
+  issues. Report responsibly. - Honeypots - by design - should not host any sensitive
+  data. Make sure you don't add any. - By default, your data is submitted to [Sicherheitstacho](https://www.sicherheitstacho.eu/start/main).
+  You can disable this in the config (`~/tpotce/docker-compose.yml`) by [removing](#community-"
 ---
 {% raw %}
 # T-Pot - The All In One Multi Honeypot Platform

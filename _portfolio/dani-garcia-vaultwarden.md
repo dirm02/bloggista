@@ -2,8 +2,55 @@
 layout: project
 name: Dani Garcia Vaultwarden
 slug: dani-garcia-vaultwarden
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dani-garcia-vaultwarden/resources/vaultwarden-logo-auto.svg
 repo_url: https://github.com/dani-garcia/vaultwarden
+indexed_content: 'An alternative server implementation of the Bitwarden Client API,
+  written in Rust and compatible with [official Bitwarden clients](https://bitwarden.com/download/)
+  [[disclaimer](#disclaimer)], perfect for self-hosted deployment where running the
+  official resource-heavy service might not be ideal. --- [](https://github.com/dani-garcia/vaultwarden/releases/latest)
+  [](https://github.com/dani-garcia/vaultwarden/pkgs/container/vaultwarden) [](https://hub.docker.com/r/vaultwarden/server)
+  [](https://quay.io/repository/vaultwarden/server) [](https://github.com/dani-garcia/vaultwarden/graphs/contributors)
+  [](https://github.com/dani-garcia/vaultwarden/network/members) [](https://github.com/dani-garcia/vaultwarden/stargazers)
+  [](https://github.com/dani-garcia/vaultwarden/issues) [](https://github.com/dani-garcia/vaultwarden/issues?q=is%3Aissue+is%3Aclosed)
+  [](https://github.com/dani-garcia/vaultwarden/blob/main/LICENSE.txt) [%3D''svg''%5D%2F*%5Blocal-name()%3D''g''%5D%5B2%5D%2F*%5Blocal-name()%3D''text''%5D%5B4%5D&style=flat-square&logo=rust&label=dependencies&color=005AA4)](https://deps.rs/repo/github/dani-garcia/vaultwarden)
+  [](https://github.com/dani-garcia/vaultwarden/actions/workflows/release.yml) [](https://github.com/dani-garcia/vaultwarden/actions/workflows/build.yml)
+  [](https://matrix.to/#/#vaultwarden:matrix.org) [](https://github.com/dani-garcia/vaultwarden/discussions)
+  [](https://vaultwarden.discourse.group/) > [!IMPORTANT] > **When using this server,
+  please report any bugs or suggestions directly to us (see [Get in touch](#get-in-touch)),
+  regardless of whatever clients you are using (mobile, desktop, browser...). DO NOT
+  use the official Bitwarden support channels.** ## Features A nearly complete implementation
+  of the Bitwarden Client API is provided, including: * [Personal Vault](https://bitwarden.com/help/managing-items/)
+  * [Send](https://bitwarden.com/help/about-send/) * [Attachments](https://bitwarden.com/help/attachments/)
+  * [Website icons](https://bitwarden.com/help/website-icons/) * [Personal API Key](https://bitwarden.com/help/personal-api-key/)
+  * [Organizations](https://bitwarden.com/help/getting-started-organizations/) - [Collections](https://bitwarden.com/help/about-collections/),
+  [Password Sharing](https://bitwarden.com/help/sharing/), [Member Roles](https://bitwarden.com/help/user-types-access-control/),
+  [Groups](https://bitwarden.com/help/about-groups/), [Event Logs](https://bitwarden.com/help/event-logs/),
+  [Admin Password Reset](https://bitwarden.com/help/admin-reset/), [Directory Connector](https://bitwarden.com/help/directory-sync/),
+  [Policies](https://bitwarden.com/help/policies/) * [Multi/Two Factor Authentication](https://bitwarden.com/help/bitwarden-field-guide-two-step-login/)
+  - [Authenticator](https://bitwarden.com/help/setup-two-step-login-authenticator/),
+  [Email](https://bitwarden.com/help/setup-two-step-login-email/), [FIDO2 WebAuthn](https://bitwarden.com/help/setup-two-step-login-fido/),
+  [YubiKey](https://bitwarden.com/help/setup-two-step-login-yubikey/), [Duo](https://bitwarden.com/help/setup-two-step-login-duo/)
+  * [Emergency Access](https://bitwarden.com/help/emergency-access/) * [Vaultwarden
+  Admin Backend](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page)
+  * [Modified Web Vault client](https://github.com/dani-garcia/bw_web_builds) (Bundled
+  within our containers) ## Usage > [!IMPORTANT] > The web-vault requires the use
+  a secure context for the [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API).
+  > That means it will only work via `http://localhost:8000` (using the port from
+  the example below) or if you [enable HTTPS](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-HTTPS).
+  The recommended way to install and use Vaultwarden is via our container images which
+  are published to [ghcr.io](https://github.com/dani-garcia/vaultwarden/pkgs/container/vaultwarden),
+  [docker.io](https://hub.docker.com/r/vaultwarden/server) and [quay.io](https://quay.io/repository/vaultwarden/server).
+  See [which container image to use](https://github.com/dani-garcia/vaultwarden/wiki/Which-container-image-to-use)
+  for an explanation of the provided tags. There are also [community driven packages](https://github.com/dani-garcia/vaultwarden/wiki/Third-party-packages)
+  which can be used, but those might be lagging behind the latest version or might
+  deviate in the way Vaultwarden is configured, as described in our [Wiki](https://github.com/dani-garcia/vaultwarden/wiki).
+  Alternatively, you can also [build Vaultwarden](https://github.com/dani-garcia/vaultwarden/wiki/Building-binary)
+  yourself. While Vaultwarden is based upon the [Rocket web framework](https://rocket.rs)
+  which has built-in support for TLS our recommendation would be that you setup a
+  reverse proxy (see [proxy examples](https://github.com/dani-garcia/vaultwarden/wiki/Proxy-examples)).
+  > [!TIP] >**For more detailed examples on how to install, use and configure Vaultwarden
+  you can check our [Wiki](https://g'
 ---
 {% raw %}
 ![Vaultwarden Logo](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/dani-garcia-vaultwarden/resources/vaultwarden-logo-auto.svg)

@@ -2,8 +2,57 @@
 layout: project
 name: Sidequestjs Sidequest
 slug: sidequestjs-sidequest
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/npm/v/sidequest.svg
 repo_url: https://github.com/sidequestjs/sidequest
+indexed_content: "# Sidequest [](https://www.npmjs.com/package/sidequest) [](LICENSE.md)
+  [](https://www.typescriptlang.org/) [](https://docs.sidequestjs.com) **Sidequest**
+  is a modern, scalable background job processor for Node.js applications. Built with
+  TypeScript and designed for production use, it provides reliable job processing
+  with multiple database backends, a beautiful web dashboard, and comprehensive monitoring
+  capabilities. For the complete documentation, visit [docs.sidequestjs.com](https://docs.sidequestjs.com).
+  For a comprehensive FAQ, visit [docs.sidequestjs.com/faq](https://docs.sidequestjs.com/faq).
+  ## ✨ Features - \U0001F680 **High Performance** - Worker threads for non-blocking
+  job processing - \U0001F5C4️ **Multiple Backends** - PostgreSQL, MySQL, SQLite,
+  MongoDB support out of the box - ✅ **ESM and CJS support** - Fully compatible with
+  modern JavaScript - \U0001F4DD **Support for Typescript** - Supports TypeScript
+  jobs by default if you are using [Node.js >= v23.6.0](https://nodejs.org/en/learn/typescript/run-natively)
+  - \U0001F4CA **Web Dashboard** - Beautiful, responsive dashboard for monitoring
+  jobs and queues - \U0001F3AF **Queue Management** - Multiple queues with configurable
+  workers and priorities - \U0001FAC0 **Job Lifecycle Management** - Configurable
+  retry with exponential backoff, snooze, and fail mechanisms - ⏰ **Scheduled Jobs**
+  - Support for scheduling jobs to run at specific times - \U0001F512 **Job Uniqueness**
+  - Prevent duplicate jobs with flexible uniqueness constraints - \U0001F6E0️ **CLI
+  Tools** - Command-line interface for database migrations and management - \U0001F3D7️
+  **Monorepo Architecture** - Modular packages for flexible deployment ## \U0001F4E6
+  Installation To get started with Sidequest, first install the main package: ```bash
+  npm install sidequest # or yarn add sidequest ``` Make sure you are using Node.js
+  >= 22.6.0. Also, [Sidequest does not run with Bun yet](https://github.com/sidequestjs/sidequest/issues/72).
+  To keep the application minimal, the main package does _not_ include the backend
+  drivers. Thus you need to install only the driver you will use: **PostgreSQL (recommended)**
+  ```bash npm install @sidequest/postgres-backend # or yarn add @sidequest/postgres-backend
+  ``` MySQL ```bash npm install @sidequest/mysql-backend # or yarn add @sidequest/mysql-backend
+  ``` SQLite (default - not recommended for production) ```bash npm install @sidequest/sqlite-backend
+  # or yarn add @sidequest/sqlite-backend ``` MongoDB ```bash npm install @sidequest/mongo-backend
+  # or yarn add @sidequest/mongo-backend ``` ## ⚙️ Usage ### 1. Create a Job class
+  ```typescript // jobs/EmailJob.js import { Job } from \"sidequest\"; export class
+  EmailJob extends Job { async run(to, subject, body) { console.log(`Sending email
+  to ${to}: ${subject}`); // Your email sending logic here return { sent: true, timestamp:
+  new Date() }; } } ``` ### 2. Configure and Start Sidequest ```typescript // app.js
+  import { Sidequest } from \"sidequest\"; // Start Sidequest await Sidequest.start({
+  // You can leave the config empty to use the default SQLite backend. // Make sure
+  to install the SQLite backend driver if you want to use it. backend: { driver: \"@sidequest/postgres-backend\",
+  config: \"postgres://postgres:postgres@localhost:5432\", }, }); console.log(\"Sidequest
+  started! Dashboard: http://localhost:8678\"); ``` ### 3. Enqueue Jobs ```typescript
+  // Somewhere in your application import { Sidequest } from \"sidequest\"; import
+  { EmailJob } from \"./jobs/EmailJob.js\"; // Simple job await Sidequest.build(EmailJob).enqueue(\"user@example.com\",
+  \"Welcome!\", \"Thanks for signing up!\"); ``` ## \U0001F91D Contributing We welcome
+  contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+  ## \U0001F4C4 License This project is licensed under the [LGPL-3.0-or-later](LICENSE.md)
+  license. ## \U0001F198 Support - \U0001F4D6 [Documentation](https://docs.sidequestjs.com)
+  - \U0001F41B [Issue Tracker](https://github.com/sidequestjs/sidequest/issues) -
+  \U0001F4AC [Discussions](https://github.com/sidequestjs/sidequest/discussions) ---
+  Made with ❤️ by [Lucas Merencia](https://github.com/merencia) and [Giovani Guizzo](https://github.com/GiovaniGuizzo)"
 ---
 {% raw %}
 # Sidequest

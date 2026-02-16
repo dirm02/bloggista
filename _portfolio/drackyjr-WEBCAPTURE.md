@@ -2,8 +2,51 @@
 layout: project
 name: Drackyjr Webcapture
 slug: drackyjr-WEBCAPTURE
+category: GreyHate-Cyber&Security
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/your-username/advanced-osint-tool.git
+indexed_content: "# \U0001F6F0️ webcapture - The OSINT Tool **An elite command-line
+  reconnaissance framework for automated Open Source Intelligence gathering.** Crafted
+  for cybersecurity professionals, red teamers, and digital investigators who walk
+  the line between shadows and signals. --- ## \U0001F680 Overview This project is
+  an **Advanced OSINT Tool** designed to gather and analyze publicly available intelligence
+  from a given website or domain. It automates key reconnaissance and scanning tasks
+  such as: - Email, phone number, and hyperlink extraction - WHOIS information retrieval
+  - IP address intelligence - Subdomain enumeration - Exposure to info-stealer malware
+  (Cavalier check) Built for efficiency, modularity, and stealth. --- ## \U0001F9E9
+  Project Structure ``` . ├── main.py # Entry point of the tool ├── core/ # Core modules
+  │ ├── banner.py # Displays fancy ASCII banner │ ├── connection.py # Internet connectivity
+  checker │ ├── validation.py # URL validation │ ├── scraper.py # Scrapes emails,
+  phones, and links │ ├── save.py # Saves results locally ├── osint/ # OSINT-specific
+  modules │ ├── whois\\_lookup.py # WHOIS data retrieval │ ├── ip\\_info.py # IP info
+  extraction │ ├── subdomain\\_enum.py # Subdomain enumeration │ ├── cavalier\\_check.py
+  # Checks for info-stealer exposure ├── test/ # Placeholder for test scripts ├──
+  requirements.txt # Python dependencies ```` --- ## ⚙️ Installation Clone the repository
+  and install dependencies: ```bash git clone https://github.com/your-username/advanced-osint-tool.git
+  cd advanced-osint-tool pip install -r requirements.txt ```` --- ## \U0001F4A1 Usage
+  Run the tool from the terminal with desired flags: ```bash python main.py --url
+  https://example.com \\ --emails \\ --phones \\ --links \\ --whois \\ --ipinfo \\
+  --subdomains \\ --check-stealer \\ --save output_folder ``` ### \U0001F50D Available
+  Flags | Flag | Description | | ----------------- | --------------------------------------
+  | | `--url` | Target domain or website | | `--emails` | Extract email addresses
+  | | `--phones` | Extract phone numbers | | `--links` | Extract hyperlinks | | `--whois`
+  | Perform WHOIS lookup | | `--ipinfo` | Fetch IP address details | | `--subdomains`
+  | Enumerate subdomains | | `--check-stealer` | Check exposure to info-stealer malware
+  | | `--save` | Save results to specified folder | --- ## \U0001F6E1️ Features *
+  \U0001F50D Deep scraping of targets * \U0001F310 WHOIS + IP intelligence * \U0001F575️
+  Subdomain discovery * ☣️ Info-stealer threat exposure checks * \U0001F4C1 Output
+  saving to local storage * \U0001F4BB CLI-native with modular architecture --- ##
+  \U0001F9E0 Ideal For * Security Analysts * Red Team Operators * OSINT Investigators
+  * Threat Intelligence Researchers --- ## \U0001F4E6 Dependencies * `requests` *
+  `beautifulsoup4` * `python-whois` Install all via: ```bash pip install -r requirements.txt
+  ``` --- ## ⚔️ Future Enhancements * [ ] Integration with Shodan or Censys API *
+  [ ] Passive DNS collection * [ ] PDF & CSV reporting * [ ] GUI frontend (optional)
+  --- ## \U0001F468‍\U0001F4BB Author Built by **Dracky** — Crafted with stealth,
+  precision, and code. *“Think like a hacker. Act like a ghost.”* --- ## \U0001F4DC
+  License This project is licensed under the MIT License. --- ## \U0001F9ED Disclaimer
+  This tool is intended for **educational and authorized penetration testing** only.
+  Unauthorized use against targets without explicit permission is **strictly prohibited**.
+  ---"
 ---
 {% raw %}
 

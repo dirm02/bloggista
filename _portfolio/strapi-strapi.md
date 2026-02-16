@@ -2,8 +2,68 @@
 layout: project
 name: Strapi Strapi
 slug: strapi-strapi
+category: API - Documentation
 image: https://strapi.io/assets/strapi-logo-dark.svg
 repo_url: https://github.com/strapi/strapi
+indexed_content: "Open-source headless CMS, self-hosted or Cloud you’re in control.
+  The leading open-source headless CMS, 100% JavaScript/TypeScript, flexible and fully
+  customizable. Cloud · Try live demo Strapi Community Edition is a free and open-source
+  headless CMS enabling you to manage any content, anywhere. - **Self-hosted or Cloud**:
+  You can host and scale Strapi projects the way you want. You can save time by deploying
+  to [Strapi Cloud](https://cloud.strapi.io/signups?source=github1) or deploy to the
+  hosting platform you want\\*\\*: AWS, Azure, Google Cloud, DigitalOcean. - **Modern
+  Admin Panel**: Elegant, entirely customizable and a fully extensible admin panel.
+  - **Multi-database support**: You can choose the database you prefer: PostgreSQL,
+  MySQL, MariaDB, and SQLite. - **Customizable**: You can quickly build your logic
+  by fully customizing APIs, routes, or plugins to fit your needs perfectly. - **Blazing
+  Fast and Robust**: Built on top of Node.js and TypeScript, Strapi delivers reliable
+  and solid performance. - **Front-end Agnostic**: Use any front-end framework (React,
+  Next.js, Vue, Angular, etc.), mobile apps or even IoT. - **Secure by default**:
+  Reusable policies, CORS, CSP, P3P, Xframe, XSS, and more. - **Powerful CLI**: Scaffold
+  projects and APIs on the fly. ## Getting Started Read the Getting Started tutorial
+  or follow the steps below: ### ⏳ Installation Use the **Quickstart** command below
+  to create a new Strapi project instantly: - We recommend using **yarn** to create
+  a Strapi project. [View yarn installation docs](https://yarnpkg.com/lang/en/docs/install/).
+  ```bash yarn create strapi ``` **or** (Using npx to install the Latest Version Strapi
+  project.) ```bash npx create-strapi@latest ``` This command generates a brand new
+  project with the default features (authentication, permissions, content management,
+  content type builder & file upload). Enjoy \U0001F389 ### \U0001F590 Requirements
+  Complete installation requirements can be found in the documentation under Installation
+  Requirements . **Supported operating systems**: | OS | Recommended | Minimum | |
+  --------------- | ----------- | ---------- | | Ubuntu | 24.04 | LTS | | Debian |
+  11 | LTS | | RHEL | 9 | LTS | | macOS | 14 | 12 | | Windows Desktop | 11 | 10 |
+  | Windows Server | No Support | No Support | | Docker | N/A | N/A | (Please note
+  that Strapi may work on other operating systems, but these are not tested nor officially
+  supported at this time.) **Node:** Strapi only supports maintenance and LTS versions
+  of Node.js. Please refer to the Node.js release schedule for more information. NPM
+  versions installed by default with Node.js are supported. Generally it's recommended
+  to use yarn over npm where possible. | Strapi Version | Recommended | Minimum |
+  | --------------- | ----------- | ------- | | 5.31.0 and up | 24.x | 20.x | | 5.0.0
+  to 5.30.1 | 20.x | 18.x | | 4.14.5 and up | 20.x | 18.x | | 4.11.0 and up | 18.x
+  | 16.x | | 4.3.9 to 4.10.x | 18.x | 14.x | | 4.0.x to 4.3.8 | 16.x | 14.x | **Database:**
+  | Database | Recommended | Minimum | | ---------- | ----------- | ------- | | MySQL
+  | 8.0 | 8.0 | | MariaDB | 11.2 | 10.3 | | PostgreSQL | 16.0 | 14.0 | | SQLite |
+  3 | 3 | **We recommend always using the latest version of Strapi stable to start
+  your new projects**. ## Features - **Content Types Builder**: Build the most flexible
+  publishing experience for your content managers, by giving them the freedom to create
+  any page on the go with [fields](https://docs.strapi.io/user-docs/content-manager/writing-content#filling-up-fields),
+  components and [Dynamic Zones](https://docs.strapi.io/user-docs/content-manager/writing-content#dynamic-zones).
+  - **Media Library**: Upload your images, videos, audio or documents to the media
+  library. Easily find the right asset, edit and reuse it. - **Internationalization**:
+  The Internationalization (i18n) plugin allows Strapi users to create, manage and
+  distribute localized content in different languages, called \"locales\" - **Role
+  Based Access Control**: Create an unlimited number of custom roles and permissions
+  for admin and end users. - **GraphQL or REST**: Consume the API using REST or GraphQL
+  You can unlock additional features such as SSO, Audit Logs, Review Workflows in
+  [Strapi Cloud](https://cloud.strapi.io/login?source=github1) or [Strapi Enterprise](https://strapi.io/enterprise?source=github1).
+  **[See more on our website](https://strapi.io/overview)**. ## Contributing Please
+  read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request
+  to the project. ## Community support For general help using Strapi, please refer
+  to [the official Strapi documentation](https://docs.strapi.io). For additional help,
+  you can use one of these channels to ask a question: - [Discord](https://discord.strapi.io)
+  (For live discussion with the Community and Strapi team) - [GitHub](https://github.com/strapi/strapi)
+  (Bug reports, Contributions) - [Community Forum](https://forum.strapi.io) (Questions
+  and Discussions) - [Feedback section](https://fee"
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,65 @@
 layout: project
 name: Deathsec Instagram Py
 slug: deathsec-instagram-py
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/deathsec/instagram-py
+indexed_content: "============== Instagram-Py ============== | Instagram-py performs
+  slick brute force attack on Instagram without any type of password limiting | and
+  also resumes your attack in ease. --DeathSec .. image:: https://img.shields.io/github/issues/deathsec/instagram-py.svg?style=flat-square
+  :target: https://github.com/deathsec/instagram-py/issues .. image:: https://img.shields.io/github/forks/deathsec/instagram-py.svg?style=flat-square
+  :target: https://github.com/deathsec/instagram-py/network .. image:: https://img.shields.io/github/stars/deathsec/instagram-py.svg?style=flat-square
+  :target: https://github.com/deathsec/instagram-py/stargazers .. image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+  :target: https://raw.githubusercontent.com/deathsec/instagram-py/master/LICENSE
+  .. image:: https://img.shields.io/pypi/v/instagram-py.svg?style=flat-square :target:
+  # .. image:: https://raw.githubusercontent.com/deathsec/instagram-py/v2.x.x/preview.gif
+  .. image:: http://forthebadge.com/images/badges/built-with-love.svg :target: # ..
+  image:: http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg
+  :target: # .. image:: http://forthebadge.com/images/badges/made-with-python.svg
+  :target: # ------- Why? ------- | **I Actually** started this **project** for **proof
+  of concept** that we can brute force **Instagram** forever. | When I created the
+  prototype and posted on **Twitter** , I got a **lot of people** who wanted a simple
+  slick tool to execute | brute force attack on **Instagram** , So I thought why reinvent
+  the wheel?.... | So I searched **Github** and found nothing worth value , some were
+  fake or poorly engineered! | And here it is **a Authentic brute force tool for Instagram**
+  ------ How? ------ | We use , **tor** to change our ip once blocked for many tries
+  and continue attack. | Since the official api is not a hacker wants, So we use the
+  **InstagramAPK signature** to stay **anonymous!** | And we also **save** the **progress**
+  so that even in network interruption we can avoid breaking the computer! **See the
+  'Algorimthm' section down below for more hackery!** ------- What? ------- | **Instagram-Py**
+  is a slick python script to perform **brute force** attack against **Instagram**
+  , | this script can **bypass** login limiting on wrong passwords , so basically
+  it can test **infinite number of passwords**. | Instagram-Py is **proved** and can
+  test **over 6M** passwords on a single instagram account with **less resource**
+  as possible | This script mimics the activities of the official **instagram android
+  app** and sends request over **tor** so you are secure , | but if your **tor** installation
+  is **misconfigured** then the blame is on you. ------------ Features ------------
+  * Instagram-Py Scripting Craft your own python script which will embed into Instagram-Py
+  for Maximum Customization of your brute force attack , example: What if you want
+  a message sent to your phone when an account is hacked? * Resumes Attacks when the
+  same wordlist is used on the same Username * Dumps successfully cracked accounts
+  in the dump * Maximum Customization! ( This includes multiple attack vectors! )
+  * Fast and Clean Code , no ugly selenum drivers! ( Pure Requests ) * Elegant Tor
+  Identity Change with Stem ( Tor's Official Library for Python ) **Depends on**:
+  python3 , tor , requests , requests[socks] , stem ============== Installation ==============
+  --------------------------------- Upgrading Instagram-Py with pip ---------------------------------
+  :: $ sudo pip3 install instagram-py --upgrade ------------------------------- using
+  pip to get Instagram-py ------------------------------- **Make sure you have got
+  the latest version of pip(>= 9.0 and python(>= 3.6)** :: $ sudo easy_install3 -U
+  pip # you have to install python3-setuptools , update pip $ sudo pip3 install requests
+  --upgrade $ sudo pip3 install requests[socks] $ sudo pip3 install stem $ sudo pip3
+  install instagram-py $ instagram-py # installed successfully $ # Configuration is
+  Super Important so Lets Create One $ instagram-py --create-configuration # follow
+  the steps... -------------------------------- Configuring Instagram-Py --------------------------------
+  **As of v2.0.0 Configuration is Simply done by Passing an Argument to Instagram-Py**
+  :: $ instagram-py --create-configuration $ # OR $ instagram-py -cc **Or if you just
+  want the default settings without the annoying questions then** :: $ instagram-py
+  --create-configuration --default-configuration $ # OR $ instagram-py -cc -dc --------------------------------------------------
+  Configuring Tor server to open control port --------------------------------------------------
+  open your **tor configuration** file usually located at **/etc/tor/torrc** :: $
+  sudo vim /etc/tor/torrc # open it with your text editor **search** for the file
+  for this **specific section** :: ## The port on which Tor will listen for local
+  connections from Tor ## controller applications, as documented in control-spec."
 ---
 {% raw %}
 ==============

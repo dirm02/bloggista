@@ -2,8 +2,68 @@
 layout: project
 name: Landing Ai Vision Agent
 slug: landing-ai-vision-agent
+category: Uncategorized
 image: https://dcbadge.vercel.app/api/server/wPdN8RCYew?compact=true&style=flat
 repo_url: https://github.com/landing-ai/vision-agent
+indexed_content: '_Prompt with an image/video → Get runnable vision code → Build Visual
+  AI App in minutes_ [](https://discord.gg/wPdN8RCYew) [](https://badge.fury.io/py/vision-agent)
+  Discord · Architecture · YouTube **VisionAgent** is the Visual AI pilot from LandingAI.
+  Give it a prompt and an image, and it automatically picks the right vision models
+  and outputs ready‑to‑run code—letting you build vision‑enabled apps in minutes.
+  You can play around with VisionAgent using our local webapp in `examples/chat` and
+  following the directions in the `README.md`: ## Steps to Set Up the Library ###
+  Get Your VisionAgent API Key The most important step is to [create an account](https://va.landing.ai/home)
+  and obtain your [API key](https://va.landing.ai/settings/api-key). ### Other Prerequisites
+  - Python version 3.9 or higher - [Anthropic API key](#get-an-anthropic-api-key)
+  - [Google API key](#get-a-google-api-key) ### Why do I need Anthropic and Google
+  API Keys? VisionAgent uses models from Anthropic and Google to respond to prompts
+  and generate code. When you run VisionAgent, the app will need to use your API keys
+  to access the Anthropic and Google models. This ensures that any projects you run
+  with VisionAgent aren’t limited by the rate limits in place with the LandingAI accounts,
+  and it also prevents many users from overloading the LandingAI rate limits. Anthropic
+  and Google each have their own rate limits and paid tiers. Refer to their documentation
+  and pricing to learn more. > **_NOTE:_** In VisionAgent v1.0.2 and earlier, VisionAgent
+  was powered by Anthropic Claude-3.5 and OpenAI o1. If using one of these VisionAgent
+  versions, you get an OpenAI API key and set it as an environment variable. ### Get
+  an Anthropic API Key 1. If you don’t have one yet, create an [Anthropic Console
+  account](https://console.anthropic.com/). 2. In the Anthropic Console, go to the
+  [API Keys](https://console.anthropic.com/settings/keys) page. 3. Generate an API
+  key. ### Get a Google API Key 1. If you don’t have one yet, create a [Google AI
+  Studio account](https://aistudio.google.com/). 2. In Google AI Studio, go to the
+  [Get API Key](https://aistudio.google.com/app/apikey) page. 3. Generate an API key.
+  ## Installation Install with uv: ```bash uv add vision-agent ``` Install with pip:
+  ```bash pip install vision-agent ``` ## Quickstart: Prompt VisionAgent Follow this
+  quickstart to learn how to prompt VisionAgent. After learning the basics, customize
+  your prompt and workflow to meet your needs. 1. Get your Anthropic, Google, and
+  VisionAgent API keys. 2. [Set the Anthropic, Google, and VisionAgent API keys as
+  environment variables](#set-api-keys-as-environment-variables). 3. [Install VisionAgent](#installation).
+  4. Create a folder called `quickstart`. 5. Find an image you want to analyze and
+  save it to the `quickstart` folder. 6. Copy the [Sample Script](#sample-script-prompt-visionagent)
+  to a file called `source.py`. Save the file to the `quickstart` folder. 7. Run `source.py`.
+  8. VisionAgent creates a file called `generated_code.py` and saves the generated
+  code there. ### Set API Keys as Environment Variables Before running VisionAgent
+  code, you must set the Anthropic, Google, and VisionAgent API keys as environment
+  variables. Each operating system offers different ways to do this. Here is the code
+  for setting the variables: ```bash export VISION_AGENT_API_KEY="your-api-key" export
+  ANTHROPIC_API_KEY="your-api-key" export GOOGLE_API_KEY="your-api-key" ``` ### Sample
+  Script: Prompt VisionAgent To use VisionAgent to generate code, use the following
+  script as a starting point: ```python # Import the classes you need from the VisionAgent
+  package from vision_agent.agent import VisionAgentCoderV2 from vision_agent.models
+  import AgentMessage # Enable verbose output agent = VisionAgentCoderV2(verbose=True)
+  # Add your prompt (content) and image file (media) code_context = agent.generate_code(
+  [ AgentMessage( role="user", content="Describe the image", media=["friends.jpg"]
+  ) ] ) # Write the output to a file with open("generated_code.py", "w") as f: f.write(code_context.code
+  + "\n" + code_context.test) ``` ### What to Expect When You Prompt VisionAgent When
+  you submit a prompt, VisionAgent performs the following tasks. 1. Generates a plan
+  for the code generation task. If verbose output is on, the numbered steps for this
+  plan display. 2. Generates code and a test case based on the plan. 3. Tests the
+  generated code with the test case. If the test case fails, VisionAgent iterates
+  on the code generation process until the test case passes. ## Example: Count Cans
+  in an Image Check out how to use VisionAgent in this Jupyter Notebook to learn how
+  to count the number of cans in an image: [Count Cans in an Image](https://github.com/landing-ai/vision-agent/blob/main/examples/notebooks/counting_cans.ipynb)
+  ## Use Specific Tools from VisionAgent The VisionAgent library includes a set of
+  [tools](vision_agent/tools), which are standalone models or functions that complete
+  specific tasks'
 ---
 {% raw %}
 <div align="center">

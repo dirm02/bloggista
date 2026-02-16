@@ -2,8 +2,68 @@
 layout: project
 name: Victordibia Handtrack.js
 slug: victordibia-handtrack.js
+category: Serv&Prod-Tools
 image: https://badge.fury.io/js/handtrackjs.svg
 repo_url: https://github.com/victordibia/handtracking
+indexed_content: "## Handtrack.js [](https://badge.fury.io/js/handtrackjs) [](https://www.jsdelivr.com/package/npm/handtrackjs)
+  > View a live demo in your [browser here](https://victordibia.github.io/handtrack.js/).
+  ](https://victordibia.github.io/handtrack.js/) --> [ ](https://victordibia.github.io/handtrack.js/)
+  > Note: Version `0.0.13` is the old version of handtrack.js which tracks only hands
+  and was trained on the egohands dataset. It is slightly more stable than the recent
+  version v `0.1.x` which is trained on a new dataset (still in active development)
+  and supports more classes (open, closed, pinch, point, zoom etc.). You might see
+  some issues with the new version (feel free to downgrade to `0.0.13` as needed)
+  and also report the issues you see. Handtrack.js is a library for prototyping realtime
+  hand detection (bounding box), directly in the browser. It frames handtracking as
+  an object detection problem, and uses a trained convolutional neural network to
+  predict bounding boxes for the location of hands in an image. ## Whats New? v0.1.x
+  Handtrack.js is currently being updated (mostly around optimizations for speed/accuracy
+  and functionality). Here is a list of recent changes: - **New dataset curation**:
+  A new dataset (~2000 images, 6000 labels) has been curated to cover new hand poses
+  (discussed below) and focuses on the viewpoint of a user facing a webcam. Note that
+  the dataset is not released (mostly because it contains personal information on
+  the participants and effort is still underway to extract a subset that is free of
+  PII). In the meantime, the project can still be reproduced using the [egohands](http://vision.soic.indiana.edu/projects/egohands/)
+  dataset which is public. - **New Classes**: Following a review of the use cases
+  that developers have created so far with handtrack.js (e.g. game controls, detect
+  face touching to minimize covid spread, air guitar etc), a new set of hand pose
+  labels have been curated: - Open: All fingers are extended in an open palm position.
+  This represents an open hand which can be the drop mode of a drag and drop operation.
+  - Closed: All fingers are contracted in a ball in a closed fist position. The closed
+  hand is similar to the drag mode for a drag and drop operation. - Pinch: The thumb
+  and index finger are are together in an picking gesture. This can also double as
+  a grab or drag mode in a drag and drop operation. - Point: Index finger is extended
+  in a pointing gesture. - Face: To help disambiguate between the face and hands (a
+  failure point for the previous version of handtrack.js), and to also enable face
+  tracking applications in the same library, a face label has been added. - **Reduced
+  Model size**: Handtrack.js now supports multiple models (e.g. ssd320fpnlite, ssd640fpnlite)
+  with multiple sizes (large, medium and small). The large size is the default fp32
+  version of the each model while medium and small are fp16 and Int8 quantized versions
+  respectively. In my experiments, the small version yields comparable accuracy but
+  with a much smaller model weight size. For example, ssd320fpnlite sizes (large ->
+  12MB, medium -> 6MB, small -> 3MB!) > Note that smaller models don't translate to
+  faster inference speed - all three sizes yield about the same FPS. - **Model Accuracy**:
+  Early testing shows the new model to be more accurate for the front facing web cam
+  viewpoint detection. The inclusion of face labels also reduces the earlier face
+  misclassifications - **Javascript Library**: The handtrack.js library has been updated
+  to fix issues with correct input image resolutions, upgrade the underlying tensorflowjs
+  models, provide more customization options (e.g. use of small medium or large base
+  models etc) The underlying models are trained using the tensorflow object detection
+  api ([see here](https://github.com/victordibia/handtracking/issues)). | FPS | Image
+  Size | Device | Browser | Comments | |-----|------------|------------------------------------|--------------------------|----------|
+  | 26 | 450 * 380 | Macbook Pro (i7, 2.2GHz, 2018) | Chrome Version 72.0.3626 | --
+  | | 14 | 450 * 380 | Macbook Pro (i7, 2.2GHz, mid 2014) | Chrome Version 72.0.3626
+  | -- | > Note: Handtrack.js has not been extensively tested on mobile browsers.
+  There have been some known inconsistencies still being investigated. ## Documentation
+  Handtrack.js is provided as a useful wrapper to allow you prototype hand/gesture
+  based interactions in your web applications. without the need to understand machine
+  learning. It takes in a html image element (`img`, `video`, `canvas` elements, for
+  example) and returns an array of bounding boxes, class names and confidence scores.
+  ### Import the Handtrack.js Library > Note that the current version of the handtrack.js
+  library is designed to work in the browser (frontend Javascript) and not Node.js.
+  > Handtrack.js can be imported into your application either via a `script tag` or
+  via `npm`. Once imported, handtrack.js provides an asynchronous `load(`) method
+  which returns a promise "
 ---
 {% raw %}
 ## Handtrack.js

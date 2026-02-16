@@ -2,8 +2,32 @@
 layout: project
 name: Stirling Tools Stirling Pdf
 slug: Stirling-Tools-Stirling-PDF
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Stirling-Tools-Stirling-PDF/images/home-light.png
 repo_url: https://github.com/Stirling-Tools/stirling-pdf
+indexed_content: 'Stirling PDF - The Open-Source PDF Platform Stirling PDF is a powerful,
+  open-source PDF editing platform. Run it as a personal desktop app, in the browser,
+  or deploy it on your own servers with a private API. Edit, sign, redact, convert,
+  and automate PDFs without sending documents to external services. ## Key Capabilities
+  - **Everywhere you work** - Desktop client, browser UI, and self-hosted server with
+  a private API. - **50+ PDF tools** - Edit, merge, split, sign, redact, convert,
+  OCR, compress, and more. - **Automation & workflows** - No-code pipelines direct
+  in UI with APIs to process millions of PDFs. - **Enterprise‑grade** - SSO, auditing,
+  and flexible on‑prem deployments. - **Developer platform** - REST APIs available
+  for nearly all tools to integrate into your existing systems. - **Global UI** -
+  Interface available in 40+ languages. For a full feature list, see the docs: **https://docs.stirlingpdf.com**
+  ## Quick Start ```bash docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf
+  ``` Then open: http://localhost:8080 For full installation options (including desktop
+  and Kubernetes), see our [Documentation Guide](https://docs.stirlingpdf.com/#documentation-guide).
+  ## Resources - [**Documentation**](https://docs.stirlingpdf.com) - [**Homepage**](https://stirling.com)
+  - [**API Docs**](https://registry.scalar.com/@stirlingpdf/apis/stirling-pdf-processing-api/)
+  - [**Server Plan & Enterprise**](https://docs.stirlingpdf.com/Paid-Offerings) ##
+  Support - **Community** [Discord](https://discord.gg/HYmhKj45pU) - **Bug Reports**:
+  [Github issues](https://github.com/Stirling-Tools/Stirling-PDF/issues) ## Contributing
+  We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+  For development setup, see the [Developer Guide](DeveloperGuide.md). For adding
+  translations, see the [Translation Guide](devGuide/HowToAddNewLanguage.md). ## License
+  Stirling PDF is open-core. See [LICENSE](LICENSE) for details.'
 ---
 {% raw %}
 <p align="center">

@@ -2,8 +2,67 @@
 layout: project
 name: Nottelabs Notte
 slug: nottelabs-notte
+category: AI-automation-web2-3SmartC-Agent
 image: https://img.shields.io/github/stars/nottelabs/notte?style=social
 repo_url: https://github.com/nottelabs/open-operator-evals
+indexed_content: "# Rapidly build reliable web automation agents The web agent framework
+  built for speed , cost-efficiency , scale , and reliability → Read more at: open-operator-evals
+  • X • LinkedIn • Landing • Console [](https://github.com/nottelabs/notte/stargazers)
+  [](https://spdx.org/licenses/SSPL-1.0.html) [](https://www.python.org/downloads/)
+  [](https://pypi.org/project/notte/) [](https://pepy.tech/projects/notte) --- # What
+  is Notte? Notte provides all the essential tools for building and deploying AI agents
+  that interact seamlessly with the web. Our full-stack framework combines AI agents
+  with traditional scripting for maximum efficiency - letting you script deterministic
+  parts and use AI only when needed, cutting costs by 50%+ while improving reliability.
+  We allow you to develop, deploy, and scale your own agents and web automations,
+  all with a single API. Read more in our documentation [here](https://docs.notte.cc)
+  \U0001F525 **Opensource Core:** - **[Run web agents](#using-python-sdk-recommended)**
+  → Give AI agents natural language tasks to complete on websites - **[Structured
+  Output](#structured-output)** → Get data in your exact format with Pydantic models
+  - **[Site Interactions](#scraping)** → Observe website states, scrape data and execute
+  actions using Playwright compatible primitives and natural language commands **API
+  service (Recommended)** - **[Stealth Browser Sessions](#session-features)** → Browser
+  instances with built-in CAPTCHA solving, proxies, and anti-detection - **[Hybrid
+  Workflows](#workflows)** → Combine scripting and AI agents to reduce costs and improve
+  reliability - **[Secrets Vaults](#agent-vault)** → Enterprise-grade credential management
+  to store emails, passwords, MFA tokens, SSO, etc. - **[Digital Personas](#agent-persona)**
+  → Create digital identities with unique emails, phones, and automated 2FA for account
+  creation workflows # Quickstart ``` pip install notte patchright install --with-deps
+  chromium ``` ### Run in local mode Use the following script to spinup an agent using
+  opensource features (you'll need your own LLM API keys): ```python import notte
+  from dotenv import load_dotenv load_dotenv() with notte.Session(headless=False)
+  as session: agent = notte.Agent(session=session, reasoning_model='gemini/gemini-2.5-flash',
+  max_steps=30) response = agent.run(task=\"doom scroll cat memes on google images\")
+  ``` ### Using Python SDK (Recommended) We also provide an effortless API that hosts
+  the browser sessions for you - and provide plenty of premium features. To run the
+  agent you'll need to first sign up on the [Notte Console](https://console.notte.cc)
+  and create a free Notte API key \U0001F511 ```python from notte_sdk import NotteClient
+  import os client = NotteClient(api_key=os.getenv(\"NOTTE_API_KEY\")) with client.Session(open_viewer=True)
+  as session: agent = client.Agent(session=session, reasoning_model='gemini/gemini-2.5-flash',
+  max_steps=30) response = agent.run(task=\"doom scroll cat memes on google images\")
+  ``` Our setup allows you to experiment locally, then drop-in replace the import
+  and prefix `notte` objects with `cli` to switch to SDK and get hosted browser sessions
+  plus access to premium features! # Benchmarks | Rank | Provider | Agent Self-Report
+  | LLM Evaluation | Time per Task | Task Reliability | | ---- | -----------------------------------------------------------
+  | ----------------- | -------------- | ------------- | ---------------- | | \U0001F3C6
+  | [Notte](https://github.com/nottelabs/notte) | **86.2%** | **79.0%** | **47s**
+  | **96.6%** | | 2️⃣ | [Browser-Use](https://github.com/browser-use/browser-use)
+  | 77.3% | 60.2% | 113s | 83.3% | | 3️⃣ | [Convergence](https://github.com/convergence-ai/proxy-lite)
+  | 38.4% | 31.4% | 83s | 50% | Read the full story here: [https://github.com/nottelabs/open-operator-evals](https://github.com/nottelabs/open-operator-evals)
+  # Agent features ## Structured output Structured output is a feature of the agent's
+  run function that allows you to specify a Pydantic model as the `response_format`
+  parameter. The agent will return data in the specified structure. ```python from
+  notte_sdk import NotteClient from pydantic import BaseModel class HackerNewsPost(BaseModel):
+  title: str url: str points: int author: str comments_count: int class TopPosts(BaseModel):
+  posts: list[HackerNewsPost] client = NotteClient() with client.Session(open_viewer=True,
+  browser_type=\"firefox\") as session: agent = client.Agent(session=session, reasoning_model='gemini/gemini-2.5-flash',
+  max_steps=15) response = agent.run( task=\"Go to Hacker News (news.ycombinator.com)
+  and extract the top 5 posts with their titles, URLs, points, authors, and comment
+  counts.\", response_format=TopPosts, ) print(response.answer) ``` ## Agent vault
+  Vaults are tools you can attach to your Agent instance to securely store and manage
+  credentials. The agent automatically uses these credentials when needed. ```python
+  from notte_sdk import NotteClient client = NotteClient() with client.Vault() as
+  vault, client.Session(open_viewer=Tr"
 ---
 {% raw %}
 # Rapidly build reliable web automation agents

@@ -2,8 +2,67 @@
 layout: project
 name: Benitomartin Biomedical Graphrag
 slug: benitomartin-biomedical-graphrag
+category: Science -math-physics-chemistry
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/benitomartin-biomedical-graphrag/static/image.png
 repo_url: https://github.com/astral-sh/uv)
+indexed_content: "# Biomedical GraphRAG [](https://opensource.org/licenses/MIT) [](https://www.python.org/downloads/)
+  [](https://github.com/astral-sh/uv) [](https://qdrant.tech/) [](https://neo4j.com/)
+  [](https://openai.com/) ## Table of Contents - [Biomedical GraphRAG](#biomedical-graphrag)
+  - [Table of Contents](#table-of-contents) - [Overview](#overview) - [Project Structure](#project-structure)
+  - [Prerequisites](#prerequisites) - [Installation](#installation) - [Usage](#usage)
+  - [Configuration](#configuration) - [Data Collection](#data-collection) - [Infrastructure
+  Setup](#infrastructure-setup) - [Neo4j Graph Database](#neo4j-graph-database) -
+  [Qdrant Vector Database](#qdrant-vector-database) - [Query Commands](#query-commands)
+  - [Qdrant Vector Search](#qdrant-vector-search) - [Hybrid Neo4j + Qdrant Queries](#hybrid-neo4j--qdrant-queries)
+  - [Available Query Types](#available-query-types) - [Sample Queries](#sample-queries)
+  - [Testing](#testing) - [Quality Checks](#quality-checks) - [License](#license)
+  ## Overview A comprehensive GraphRAG (Graph Retrieval-Augmented Generation) system
+  designed for biomedical research. It combines knowledge graphs with vector search
+  to provide intelligent querying and analysis of biomedical literature and genomic
+  data. Article: [Building a Biomedical GraphRAG: When Knowledge Graphs Meet Vector
+  Search](https://aiechoes.substack.com/p/building-a-biomedical-graphrag-when) **Key
+  Features:** - **Hybrid Query System**: Combines Neo4j graph database with Qdrant
+  vector search for comprehensive biomedical insights - **Data Integration**: Processes
+  PubMed papers, gene data, and research citations - **Intelligent Querying**: Uses
+  LLM-powered tool selection for graph enrichment and semantic search - **Biomedical
+  Schema**: Specialized graph schema for papers, authors, institutions, genes, and
+  MeSH terms - **Async Processing**: High-performance async data collection and processing
+  ## Project Structure ```text biomedical-graphrag-pipeline/ ├── .github/ # GitHub
+  workflows and templates ├── data/ # Dataset storage (PubMed, Gene data) ├── docs/
+  # Documentation ├── src/ │ └── biomedical_graphrag/ │ ├── application/ # Application
+  layer │ │ ├── cli/ # Command-line interfaces │ │ └── services/ # Business logic
+  services │ ├── config.py # Configuration management │ ├── data_sources/ # Data collection
+  modules │ ├── domain/ # Domain models and entities │ ├── infrastructure/ # Database
+  and external service adapters │ └── utils/ # Utility functions ├── static/ # Static
+  assets (images, etc.) ├── tests/ # Test suite ├── LICENSE # MIT License ├── Makefile
+  # Build and development commands ├── pyproject.toml # Project configuration and
+  dependencies ├── README.md # This file └── uv.lock # Dependency lock file ``` ##
+  Prerequisites | Requirement | Description | | ------------------------------------------------------
+  | --------------------------------------- | | [Python 3.13+](https://www.python.org/downloads/)
+  | Programming language | | [uv](https://docs.astral.sh/uv/) | Package and dependency
+  manager | | [Neo4j](https://neo4j.com/) | Graph database for knowledge graphs |
+  | [Qdrant](https://qdrant.tech/) | Vector database for embeddings | | [OpenAI](https://openai.com/)
+  | LLM provider for queries and embeddings | | [PubMed](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  | Biomedical literature database | ## Installation 1. Clone the repository: ```bash
+  git clone git@github.com:benitomartin/biomedical-graphrag.git cd biomedical-graphrag
+  ``` 1. Create a virtual environment: ```bash uv venv ``` 1. Activate the virtual
+  environment: ```bash source .venv/bin/activate ``` 1. Install the required packages:
+  ```bash uv sync --all-groups --all-extra ``` 1. Create a `.env` file in the root
+  directory: ```bash cp env.example .env ``` ## Usage ### Configuration Configure
+  API keys, model names, and other settings by editing the `.env` file: ```bash #
+  OpenAI Configuration OPENAI__API_KEY=your_openai_api_key_here OPENAI__MODEL=gpt-4o-mini
+  OPENAI__TEMPERATURE=0.0 OPENAI__MAX_TOKENS=1500 # Neo4j Configuration NEO4J__URI=bolt://localhost:7687
+  NEO4J__USERNAME=neo4j NEO4J__PASSWORD=your_neo4j_password NEO4J__DATABASE=neo4j
+  # Qdrant Configuration QDRANT__URL=http://localhost:6333 QDRANT__API_KEY=your_qdrant_api_key
+  QDRANT__COLLECTION_NAME=biomedical_papers QDRANT__EMBEDDING_MODEL=text-embedding-3-small
+  QDRANT__EMBEDDING_DIMENSION=1536 # PubMed Configuration (optional) PUBMED__EMAIL=your_email@example.com
+  PUBMED__API_KEY=your_pubmed_api_key # Data Paths JSON_DATA__PUBMED_JSON_PATH=data/pubmed_dataset.json
+  JSON_DATA__GENE_JSON_PATH=data/gene_dataset.json ``` ### Data Collection The system
+  includes data collectors for biomedical and gene datasets: ```bash # Collect PubMed
+  papers and metadata make pubmed-data-collector-run ``` ```bash # Collect gene information
+  related to the pubmed dataset make gene-data-collector-run ``` ### Infrastructure
+  Setup #### Neo4j Graph Database ```bash # Create the knowledge graph from datasets
+  make create-graph # Delete all "
 ---
 {% raw %}
 # Biomedical GraphRAG

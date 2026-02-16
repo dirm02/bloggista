@@ -2,8 +2,31 @@
 layout: project
 name: Mhss1 Mybrain
 slug: mhss1-MyBrain
+category: Uncategorized
 image: https://github.com/user-attachments/assets/4dabc54e-5925-4fd5-a940-fef4b2741787
 repo_url: https://github.com/mhss1/MyBrain
+indexed_content: 'My Brain All-in-one productivity app and AI assistant with Tasks,
+  Notes, Calendar, Diary and Bookmarks. [screenshots made by previewed](https://previewed.app/template/00CBF3F6)
+  [ ](https://f-droid.org/packages/com.mhss.app.mybrain) [ ](https://github.com/mhss1/MyBrain/releases/latest)
+  ## Features - Local and Private with no data collection at all. - Create tasks with
+  priority, sub-tasks, due date and reminders. - Create Notes that supports markdown
+  which enables you to use Headers, lists, links etc.. - Record your mood daily and
+  view your mood summary with beautiful graphs. - Save bookmarks for later by using
+  the share menu from any other app. - View your calendar events in a modern list
+  and monthly views with a beautiful home screen widget. - Dashboard screen to see
+  your tasks, calendar events, and more to see your day at a glance. - AI assistant
+  and Agent to help you with your daily workflow. You can chat and attach objects
+  and also ask the AI to create and find items for you. ## Technologies - 100% Kotlin.
+  - Multi-module project. - Made Using Jetpack Compose. - Widgets made with Jetpack
+  Glance. - Following Clean Architecture approach. - MVI Design Pattern. - Room DB
+  - Koin - Ktor - Preferences DataStore - Kotlin coroutines - Kotlin Flows - Alarm
+  Manager - Content Provider - Biometric Authentication - Koog ## Translation Project
+  localisation is managed via [Crowdin](https://crowdin.com/project/my-brain-app)
+  [](https://crowdin.com/project/my-brain-app) ## Contributing To get started, take
+  a look at [CONTRIBUTING.md](CONTRIBUTING.md). --- Icons Attribution: Document icons
+  created by Freepik - Flaticon List icons created by Freepik - Flaticon 3d calendar
+  icons created by Freepik - Flaticon Bookmark icons created by Freepik - Flaticon
+  Book icons created by Freepik - Flaticon Chatbot icons created by HideMaru - Flaticon'
 ---
 {% raw %}
 <p align="center">

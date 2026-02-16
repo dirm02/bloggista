@@ -2,8 +2,32 @@
 layout: project
 name: Aashu Dubey React Native Ui Templates
 slug: Aashu-Dubey-React-Native-UI-Templates
+category: Uncategorized
 image: https://repository-images.githubusercontent.com/329723227/62ff9135-2763-4fba-ae7f-0b1eefa0ea56
 repo_url: https://github.com/Aashu-Dubey/React-Native-UI-Templates.git
+indexed_content: "# React Native UI Templates Free UI templates created in react-native.
+  ## \U0001F9EC Samples | Project | | | :--- | --- | | **[> Expo Snack](https://snack.expo.io/@ashu_dubey/react-native-ui-templates)**
+  (Not handled for web yet). | | | 1. Hotel Booking Shows the list of hotels nearby
+  with their ratings and other details, filter UI and custom calendar view etc. **[>
+  Browse](./src/hotel_booking#readme)** **> Demo: [twitter](https://twitter.com/aashudubey_ad/status/1576292697173766145)
+  \\| [youtube](https://youtube.com/shorts/ioFcve0rYnc)** | | | 2. Design Course A
+  minimal UI showing list of courses related to UI design. **[> Browse](./src/design_course#readme)**
+  **> Demo: [twitter](https://twitter.com/aashudubey_ad/status/1578846092694720512)
+  \\| [youtube](https://youtube.com/shorts/5G0obPHAdyc)** | | | 3. Animated Onboarding
+  An onboarding UI flow with smooth animations, for a Mental Wellness App. **[> Browse](./src/introduction_animation#readme)**
+  **> Demo: [twitter](https://twitter.com/aashudubey_ad/status/1580260456215695360)
+  \\| [youtube](https://youtube.com/shorts/AOD9FyiSR3U)** | | ## \U0001F4AA\U0001F3FC
+  Getting Started This project is built on react-native CLI, so make sure you've [set
+  up development environment](https://reactnative.dev/docs/environment-setup). ```bash
+  # clone the project and cd into it git clone https://github.com/Aashu-Dubey/React-Native-UI-Templates.git
+  cd ./React-Native-UI-Templates # install dependencies yarn install # iOS only npx
+  pod-install ios # or cd ios && pod install && cd .. # Run iOS npx react-native run-ios
+  # Run Android npx react-native run-android ``` ## \U0001F33B Motivation This was
+  initially started as my learning project and is inspired from the Flutter project
+  [Best-Flutter-UI-Templates](https://github.com/mitesh77/Best-Flutter-UI-Templates).
+  ## \U0001F517 Links - [Original Flutter project](https://github.com/mitesh77/Best-Flutter-UI-Templates)
+  - [Ionic-UI-Templates](https://github.com/Aashu-Dubey/Ionic-UI-Templates): Ionic
+  version of this project. - [Twitter Post](https://twitter.com/aashudubey_ad/status/1484571529644212224)"
 ---
 {% raw %}
 # React Native UI Templates

@@ -2,8 +2,68 @@
 layout: project
 name: Alexandreborges Malwoverview
 slug: alexandreborges-malwoverview
+category: GreyHate-Cyber&Security
 image: https://static.pepy.tech/personalized-badge/malwoverview?period=month&units=international_system&left_color=grey&right_color=orange&left_text=Last%2030%20days
 repo_url: https://github.com/alexandreborges/malwoverview
+indexed_content: '# Malwoverview [ ](https://github.com/alexandreborges/malwoverview/releases/tag/v7.0)
+  [ ](https://github.com/alexandreborges/malwoverview/releases) [ ](https://github.com/alexandreborges/malwoverview/releases)
+  [ ](https://github.com/alexandreborges/malwoverview/blob/master/LICENSE) [ ](https://github.com/alexandreborges/malwoverview/stargazers)
+  [ ](https://twitter.com/ale_sp_brazil) [ ](https://pypistats.org/packages/malwoverview)
+  [](https://pepy.tech/project/malwoverview) [ ](https://pepy.tech/project/malwoverview)
+  [](https://www.buymeacoffee.com/alexandreborges) Copyright (C) 2018-2026 Alexandre
+  Borges (https://exploitreversing.com) This program is free software: you can redistribute
+  it and/or modify it under the terms of the GNU General Public License as published
+  by the Free Software Foundation, either version 3 of the License, or (at your option)
+  any later version. This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  See GNU Public License on . ## Current Version: 7.0 Important note: Malwoverview
+  does NOT submit samples to any endpoint by default, so it respects possible Non-Disclosure
+  Agreements (NDAs). There''re specific options that explicitly submit samples, but
+  these options are explained in the help. ## ABOUT Malwoverview.py is a first response
+  tool for threat hunting, which performs an initial and quick triage of malware samples,
+  URLs, IP addresses, domains, malware families, IOCs and hashes. Additionally, Malwoverview
+  is able to get dynamic and static behavior reports, submit and download samples
+  from several endpoints. In few words, it works as a client to main existing sandboxes.
+  This tool aims to : 01. Determine similar executable malware samples (PE/PE+) according
+  to the import table (imphash) and group them by different colors (pay attention
+  to the second column from output). Thus, colors matter! 02. Show hash information
+  on Virus Total, Hybrid Analysis, Malshare, Polyswarm, URLhaus, Alien Vault, Malpedia
+  and ThreatCrowd engines. 03. Determining whether the malware samples contain overlay
+  and, if you want, extract it. 04. Check suspect files on Virus Total, Hybrid Analysis
+  and Polyswarm. 05. Check URLs on Virus Total, Malshare, Polyswarm, URLhaus engines
+  and Alien Vault. 06. Download malware samples from Hybrid Analysis, Malshare, URLHaus,
+  Polyswarm and Malpedia engines. 07. Submit malware samples to VirusTotal, Hybrid
+  Analysis and Polyswarm. 08. List last suspected URLs from URLHaus. 09. List last
+  payloads from URLHaus. 10. Search for specific payloads on the Malshare. 11. Search
+  for similar payloads (PE32/PE32+) on Polyswarm engine. 12. Classify all files in
+  a directory searching information on Virus Total and Hybrid Analysis. 13. Make reports
+  about a suspect domain using different engines such as VirusTotal, Malpedia and
+  ThreatCrowd. 14. Check APK packages directly from Android devices against Hybrid
+  Analysis and Virus Total. 15. Submit APK packages directly from Android devices
+  to Hybrid Analysis and Virus Total. 16. Show URLs related to an user provided tag
+  from URLHaus. 17. Show payloads related to a tag (signature) from URLHaus. 18. Show
+  information about an IP address from Virus Total, Alien Vault, Malpedia and ThreatCrowd.
+  19. Show IP address, domain and URL information from Polyswarm. 21. Perform meta-search
+  on Polyswarm Network using several criteria: imphash, IPv4, domain, URL and malware
+  family. 22. Gather threat hunting information from AlienVault using different criteria.
+  23. Gather threat hunting information from Malpedia using different criteria. 24.
+  Gather threat hunting information from Malware Bazaar using different criteria.
+  25. Gather IOC information from ThreatFox using different criteria. 26. Gather threat
+  hunting information from Triage using different criteria. 27. Get evaluation to
+  hashes from a given file against Virus Total. 28. Submit large files (>= 32 MB)
+  to Virus Total. 29. Malwoverview uses Virus Total API v.3, so there isn''t longer
+  any option using v.2. 30. Retrieve information about a given IP address from IPInfo
+  service. 31. Retrieve information about a given IP address from BGPView service.
+  32. Retrieve combined information about a given IP address from multiple services.
+  33. Offer extra option to save any downloaded file to a central location. 34. List
+  and search vulnerabilities from NIST through different criterias. ## CONTRIBUTORS
+  Alexandre Borges (https://github.com/alexandreborges) | project owner and main developer
+  Artur Marzano (https://github.com/Macmod) | co-main developer Corey Forman (https://github.com/digitalsleuth)
+  | responsible for REMnux integration Christian Clauss (https://github.com/cclauss)
+  ## HOW TO CONTRIBUTE TO THIS PROJECT Since version 6.0.0, there is a new branch
+  named "dev". All contributions and proposals must be done into this "dev" branch.
+  Profess'
 ---
 {% raw %}
 # Malwoverview

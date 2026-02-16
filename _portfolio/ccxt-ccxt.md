@@ -2,8 +2,52 @@
 layout: project
 name: Ccxt Ccxt
 slug: ccxt-ccxt
+category: API - Documentation
 image: https://img.shields.io/npm/dy/ccxt.svg
 repo_url: https://github.com/ccxt/ccxt
+indexed_content: "# CCXT – CryptoCurrency eXchange Trading Library [](https://www.npmjs.com/package/ccxt)
+  [](https://npmjs.com/package/ccxt) [](https://pypi.python.org/pypi/ccxt) [](https://www.nuget.org/packages/ccxt)
+  [](https://godoc.org/github.com/ccxt/ccxt/go/v4) [](https://discord.gg/ccxt) [](https://github.com/ccxt/ccxt/wiki/Exchange-Markets)
+  [](https://x.com/ccxt_official) A cryptocurrency trading API with more than 100
+  exchanges in JavaScript / TypeScript / Python / C# / PHP / Go. ### [Install](#install)
+  · [Usage](#usage) · [Manual](https://github.com/ccxt/ccxt/wiki) · [FAQ](https://github.com/ccxt/ccxt/wiki/FAQ)
+  · [Examples](https://github.com/ccxt/ccxt/tree/master/examples) · [Contributing](https://github.com/ccxt/ccxt/blob/master/CONTRIBUTING.md)
+  · [Disclaimer](#disclaimer) · [Social](#social) The **CCXT** library is used to
+  connect and trade with cryptocurrency exchanges and payment processing services
+  worldwide. It provides quick access to market data for storage, analysis, visualization,
+  indicator development, algorithmic trading, strategy backtesting, bot programming,
+  and related software engineering. It is intended to be used by **coders, developers,
+  technically-skilled traders, data-scientists and financial analysts** for building
+  trading algorithms. Current feature list: - support for many cryptocurrency exchanges
+  — more coming soon - fully implemented public and private APIs - optional normalized
+  data for cross-exchange analytics and arbitrage - an out of the box unified API
+  that is extremely easy to integrate - works in Node 10.4+, Python 3, PHP 8.1+, netstandard2.0/2.1,
+  Go 1.20+ and web browsers ## See Also - [](https://www.freqtrade.io) **[Freqtrade](https://www.freqtrade.io)**
+  – leading opensource cryptocurrency algorithmic trading software! - [](https://www.octobot.online)
+  **[OctoBot](https://www.octobot.online)** – cryptocurrency trading bot with an advanced
+  web interface. - [](https://tokenbot.com/?utm_source=github&utm_medium=ccxt&utm_campaign=algodevs)
+  **[TokenBot](https://tokenbot.com/?utm_source=github&utm_medium=ccxt&utm_campaign=algodevs)**
+  – discover and copy the best algorithmic traders in the world. ## Certified Cryptocurrency
+  Exchanges |logo |id |name |ver |type |certified |pro |discount | |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | [](https://accounts.binance.com/register?ref=CCXTCOM) | binance | [Binance](https://accounts.binance.com/register?ref=CCXTCOM)
+  | [](https://developers.binance.com/en) | | [](https://github.com/ccxt/ccxt/wiki/Certification)
+  | [](https://ccxt.pro) | [](https://accounts.binance.com/register?ref=CCXTCOM) |
+  | [](https://accounts.binance.com/register?ref=CCXTCOM) | binanceusdm | [Binance
+  USDⓈ-M](https://accounts.binance.com/register?ref=CCXTCOM) | [](https://binance-docs.github.io/apidocs/futures/en/)
+  | | [](https://github.com/ccxt/ccxt/wiki/Certification) | [](https://ccxt.pro) |
+  [](https://accounts.binance.com/register?ref=CCXTCOM) | | [](https://accounts.binance.com/register?ref=CCXTCOM)
+  | binancecoinm | [Binance COIN-M](https://accounts.binance.com/register?ref=CCXTCOM)
+  | [](https://binance-docs.github.io/apidocs/delivery/en/) | | [](https://github.com/ccxt/ccxt/wiki/Certification)
+  | [](https://ccxt.pro) | [](https://accounts.binance.com/register?ref=CCXTCOM) |
+  | [](https://www.bybit.com/invite?ref=XDK12WP) | bybit | [Bybit](https://www.bybit.com/invite?ref=XDK12WP)
+  | [](https://bybit-exchange.github.io/docs/inverse/) | | [](https://github.com/ccxt/ccxt/wiki/Certification)
+  | [](https://ccxt.pro) | | | [](https://www.okx.com/join/CCXTCOM) | okx | [OKX](https://www.okx.com/join/CCXTCOM)
+  | [](https://www.okx.com/docs-v5/en/) | | [](https://github.com/ccxt/ccxt/wiki/Certification)
+  | [](https://ccxt.pro) | [](https://www.okx.com/join/CCXTCOM) | | [](https://www.gate.com/share/CCXTGATE)
+  | gate | [Gate](https://www.gate.com/share/CCXTGATE) | [](https://www.gate.com/docs/developers/apiv4/en/)
+  | | [](https://github.com/ccxt/ccxt/wiki/Certification) | [](https://ccxt.pro) |
+  [](https://www.gate.com/share/CCXTGATE) | | [](https://www.kucoin.com/ucenter/signup?rcode=E5wkqe)
+  | kucoin | [KuCoin](https://www"
 ---
 {% raw %}
 # CCXT – CryptoCurrency eXchange Trading Library

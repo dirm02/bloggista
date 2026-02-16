@@ -2,8 +2,66 @@
 layout: project
 name: Chatgptbox Dev Chatgptbox
 slug: ChatGPTBox-dev-chatGPTBox
+category: Uncategorized
 image: https://img.shields.io/badge/minified%20size-390%20kB-blue
 repo_url: https://github.com/ChatGPTBox-dev/chatGPTBox
+indexed_content: "ChatGPT Box Deep ChatGPT integrations in your browser, completely
+  for free. [![license][license-image]][license-url] [![release][release-image]][release-url]
+  [][release-url] [![verfiy][verify-image]][verify-url] English &nbsp;&nbsp;|&nbsp;&nbsp;
+  [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp;
+  [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md) ### Install
+  [![Chrome][Chrome-image]][Chrome-url] [![Edge][Edge-image]][Edge-url] [![Firefox][Firefox-image]][Firefox-url]
+  [![Safari][Safari-image]][Safari-url] [![Android][Android-image]][Android-url] [![Github][Github-image]][Github-url]
+  [Guide](https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp;
+  [Preview](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Development&Contributing][dev-url]
+  &nbsp;&nbsp;|&nbsp;&nbsp; [Video Demonstration](https://www.youtube.com/watch?v=E1smDxJvTRs)
+  &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#Credit) [dev-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Development&Contributing
+  [license-image]: http://img.shields.io/badge/license-MIT-blue.svg [license-url]:
+  https://github.com/ChatGPTBox-dev/chatGPTBox/blob/master/LICENSE [release-image]:
+  https://img.shields.io/github/release/ChatGPTBox-dev/chatGPTBox.svg [release-url]:
+  https://github.com/ChatGPTBox-dev/chatGPTBox/releases/latest [verify-image]: https://github.com/ChatGPTBox-dev/chatGPTBox/workflows/verify-configs/badge.svg
+  [verify-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/actions/workflows/verify-configs.yml
+  [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
+  [Chrome-url]: https://chrome.google.com/webstore/detail/chatgptbox/eobbhoofkanlmddnplfhnmkfbnlhpbbo
+  [Edge-image]: https://img.shields.io/badge/-Edge-blue?logo=microsoft-edge&logoColor=white
+  [Edge-url]: https://microsoftedge.microsoft.com/addons/detail/fission-chatbox-best/enjmfilpkbbabhgeoadmdpjjpnahkogf
+  [Firefox-image]: https://img.shields.io/badge/-Firefox-orange?logo=firefox-browser&logoColor=white
+  [Firefox-url]: https://addons.mozilla.org/firefox/addon/chatgptbox/ [Safari-image]:
+  https://img.shields.io/badge/-Safari-blue?logo=safari&logoColor=white [Safari-url]:
+  https://apps.apple.com/app/fission-chatbox/id6446611121 [Android-image]: https://img.shields.io/badge/-Android-brightgreen?logo=android&logoColor=white
+  [Android-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Install#install-to-android
+  [Github-image]: https://img.shields.io/badge/-Github-black?logo=github&logoColor=white
+  [Github-url]: https://github.com/ChatGPTBox-dev/chatGPTBox/wiki/Install ## News
+  - This extension does **not** collect your data. You can verify it by conducting
+  a global search for `fetch(` and `XMLHttpRequest(` in the code to find all network
+  request calls. The amount of code is not much, so it's easy to do that. - This tool
+  will not transmit any data to ChatGPT unless you explicitly ask it to. By default,
+  the extension must be activated manually. It will only send a request to ChatGPT
+  if you specifically click \"Ask ChatGPT\" or trigger the selection floating tools
+  — and this is applicable only when you're using GPT API modes. (issue #407) - You
+  can use projects like https://github.com/BerriAI/litellm / https://github.com/songquanpeng/one-api
+  to convert LLM APIs into OpenAI format and use them in conjunction with ChatGPTBox's
+  `Custom Model` mode - You can also use [Ollama](https://github.com/ChatGPTBox-dev/chatGPTBox/issues/616#issuecomment-1975186467)
+  / https://openrouter.ai/docs#models with ChatGPTBox's `Custom Model` mode ## ✨ Features
+  - \U0001F308 Call up the chat dialog box on any page at any time. ( Ctrl + B ) -
+  \U0001F4F1 Support for mobile devices. - \U0001F4D3 Summarize any page with right-click
+  menu. ( Alt + B ) - \U0001F4D6 Independent conversation page. ( Ctrl + Shift + H
+  ) - \U0001F517 Multiple API support (Web API for Free and Plus users, GPT-3.5, GPT-4,
+  Claude, New Bing, Moonshot, Self-Hosted, Azure etc.). - \U0001F4E6 Integration for
+  various commonly used websites (Reddit, Quora, YouTube, GitHub, GitLab, StackOverflow,
+  Zhihu, Bilibili). (Inspired by [wimdenherder](https://github.com/wimdenherder))
+  - \U0001F50D Integration to all mainstream search engines, and custom queries to
+  support additional sites. - \U0001F9F0 Selection tool and right-click menu to perform
+  various tasks, such as translation, summarization, polishing, sentiment analysis,
+  paragraph division, code explain and queries. - \U0001F5C2️ Static cards support
+  floating chat boxes for multi-branch conversations. - \U0001F5A8️ Easily save your
+  complete chat records or copy them partially. - \U0001F3A8 Powerful rendering support,
+  whether for code highlighting or complex mathematical formulas. - \U0001F30D Language
+  preference support. - \U0001F4DD Custom API address support. - ⚙️ All site adaptations
+  and selection tools(bubble) can be freely switched on or off, disable modules you
+  don't need. - \U0001F4A1 Selection tools and site adaptation are easy to develop
+  and extend, see the [Development&Contributing][dev-url] section. - \U0001F609 Chat
+  to improve the answer "
 ---
 {% raw %}
 <p align="center">

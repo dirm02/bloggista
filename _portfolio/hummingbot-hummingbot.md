@@ -2,8 +2,66 @@
 layout: project
 name: Hummingbot Hummingbot
 slug: hummingbot-hummingbot
+category: Uncategorized
 image: https://github.com/user-attachments/assets/3213d7f8-414b-4df8-8c1b-a0cd142a82d8
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "---- [](https://github.com/hummingbot/hummingbot/blob/master/LICENSE)
+  [](https://twitter.com/_hummingbot) [](https://www.youtube.com/@hummingbot) [](https://discord.gg/hummingbot)
+  Hummingbot is an open-source framework that helps you design and deploy automated
+  trading strategies, or **bots**, that can run on many centralized or decentralized
+  exchanges. Over the past year, Hummingbot users have generated over $34 billion
+  in trading volume across 140+ unique trading venues. The Hummingbot codebase is
+  free and publicly available under the Apache 2.0 open-source license. Our mission
+  is to **democratize high-frequency trading** by creating a global community of algorithmic
+  traders and developers that share knowledge and contribute to the codebase. ## Quick
+  Links * [Website and Docs](https://hummingbot.org): Official Hummingbot website
+  and documentation * [Installation](https://hummingbot.org/installation/docker/):
+  Install Hummingbot on various platforms * [Discord](https://discord.gg/hummingbot):
+  The main gathering spot for the global Hummingbot community * [YouTube](https://www.youtube.com/c/hummingbot):
+  Videos that teach you how to get the most out of Hummingbot * [Twitter](https://twitter.com/_hummingbot):
+  Get the latest announcements about Hummingbot * [Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52):
+  Reported trading volumes across all Hummingbot instances * [Newsletter](https://hummingbot.substack.com):
+  Get our newsletter whenever we ship a new release ## Getting Started The easiest
+  way to get started with Hummingbot is using Docker: * To install the Telegram Bot
+  [Condor](https://github.com/hummingbot/condor), follow the instructions in the [Hummingbot
+  Docs](https://hummingbot.org/condor/installation/) site. * To install the CLI-based
+  Hummingbot client, follow the instructions below. Alternatively, if you are building
+  new connectors/strategies or adding custom code, see the [Install from Source](https://hummingbot.org/client/installation/#source-installation)
+  section in the documentation. ### Install Hummingbot with Docker Install [Docker
+  Compose website](https://docs.docker.com/compose/install/). Clone the repo and use
+  the provided `docker-compose.yml` file: ```bash # Clone the repository git clone
+  https://github.com/hummingbot/hummingbot.git cd hummingbot # Run Setup & Deploy
+  make setup make deploy # Attach to the running instance docker attach hummingbot
+  ``` ### Install Hummingbot + Gateway DEX Middleware Gateway provides standardized
+  connectors for interacting with automatic market maker (AMM) decentralized exchanges
+  (DEXs) across different blockchain networks. To run Hummingbot with Gateway, clone
+  the repo and answer `y` when prompted after running `make setup` ```yaml # Clone
+  the repository git clone https://github.com/hummingbot/hummingbot.git cd hummingbot
+  ``` ```bash make setup # Answer `y` when prompted Include Gateway? [y/N] ``` Then
+  run: ```bash make deploy # Attach to the running instance docker attach hummingbot
+  ``` By default, Gateway will start in development mode with unencrypted HTTP endpoints.
+  To run in production model with encrypted HTTPS, use the `DEV=false` flag and run
+  `gateway generate-certs` in Hummingbot to generate the certificates needed. See
+  [Development vs Production Modes](http://hummingbot.org/gateway/installation/#development-vs-production-modes)
+  for more information. --- For comprehensive installation instructions and troubleshooting,
+  visit our [Installation](https://hummingbot.org/installation/) documentation. ##
+  Getting Help If you encounter issues or have questions, here's how you can get assistance:
+  * Consult our [FAQ](https://hummingbot.org/faq/), [Troubleshooting Guide](https://hummingbot.org/troubleshooting/),
+  or [Glossary](https://hummingbot.org/glossary/) * To report bugs or suggest features,
+  submit a [Github issue](https://github.com/hummingbot/hummingbot/issues) * Join
+  our [Discord community](https://discord.gg/hummingbot) and ask questions in the
+  #support channel We pledge that we will not use the information/data you provide
+  us for trading purposes nor share them with third parties. ## Exchange Connectors
+  Hummingbot connectors standardize REST and WebSocket API interfaces to different
+  types of exchanges, enabling you to build sophisticated trading strategies that
+  can be deployed across many exchanges with minimal changes. ### Connector Types
+  We classify exchange connectors into three main categories: * **CLOB CEX**: Centralized
+  exchanges with central limit order books that take custody of your funds. Connect
+  via API keys. - **Spot**: Trading spot markets - **Perpetual**: Trading perpetual
+  futures markets * **CLOB DEX**: Decentralized exchanges with on-chain central limit
+  order books. Non-custodial, connect via wallet keys. - **Spot**: Trading spot markets
+  on-chain - **Perpetual**: Trading perpetual futures on-chain * **AMM DEX**: Decentralized
+  exchanges using Automated Market Maker protocols. Non-custodial, connect vi"
 ---
 {% raw %}
 ![Hummingbot](https://github.com/user-attachments/assets/3213d7f8-414b-4df8-8c1b-a0cd142a82d8)

@@ -2,8 +2,59 @@
 layout: project
 name: Alexxit Go2rtc
 slug: AlexxIT-go2rtc
+category: WindowsTools- Linux
 image: https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg
 repo_url: https://github.com/AlexxIT/go2rtc
+indexed_content: 'Ultimate camera streaming application with support for dozens formats
+  and protocols. - zero-dependency [small app](#go2rtc-binary) for all OS (Windows,
+  macOS, Linux, FreeBSD) - zero-delay for many [supported protocols](#codecs-madness)
+  (lowest possible streaming latency) - [streaming input](#streaming-input) from dozens
+  formats and protocols - [streaming output](#streaming-output) in all popular formats
+  - [streaming ingest](#streaming-ingest) in a number of popular formats - [publish](#publish-stream)
+  any source to popular streaming services (YouTube, Telegram) - on-the-fly transcoding
+  only if necessary via [FFmpeg](internal/ffmpeg/README.md) - [two-way audio](#two-way-audio)
+  support for many formats - [streaming audio](#stream-to-camera) to all cameras with
+  [two-way audio](#two-way-audio) support - mixing tracks from different sources to
+  single stream - [auto-match](www/README.md#javascript-api) client-supported streaming
+  formats and codecs - [streaming stats](#streaming-stats) for all active connections
+  - can be [integrated to any project](#projects-using-go2rtc) or be used as [standalone
+  app](#go2rtc-binary) #### Inspired by - series of streaming projects from [@deepch](https://github.com/deepch)
+  - [webrtc](https://github.com/pion/webrtc) go library and whole [@pion](https://github.com/pion)
+  team - [rtsp-simple-server](https://github.com/aler9/rtsp-simple-server) idea from
+  [@aler9](https://github.com/aler9) - [GStreamer](https://gstreamer.freedesktop.org/)
+  framework pipeline idea - [MediaSoup](https://mediasoup.org/) framework routing
+  idea - HomeKit Accessory Protocol from [@brutella](https://github.com/brutella/hap)
+  - creator of the project''s logo [@v_novoseltsev](https://www.instagram.com/v_novoseltsev)
+  Table of Contents - [Installation](#installation) - [go2rtc: Binary](#go2rtc-binary)
+  - [go2rtc: Docker](#go2rtc-docker) - [go2rtc: Home Assistant add-on](#go2rtc-home-assistant-add-on)
+  - [go2rtc: Home Assistant Integration](#go2rtc-home-assistant-integration) - [go2rtc:
+  Master version](#go2rtc-master-version) - [Configuration](#configuration) - [Features](#features)
+  - [Streaming input](#streaming-input) - [Streaming output](#streaming-output) -
+  [Streaming ingest](#streaming-ingest) - [Two-way audio](#two-way-audio) - [Stream
+  to camera](#stream-to-camera) - [Publish stream](#publish-stream) - [Preload stream](#preload-stream)
+  - [Streaming stats](#streaming-stats) - [Codecs](#codecs) - [Codecs filters](#codecs-filters)
+  - [Codecs madness](#codecs-madness) - [Built-in transcoding](#built-in-transcoding)
+  - [Codecs negotiation](#codecs-negotiation) - [Security](#security) - [Projects
+  using go2rtc](#projects-using-go2rtc) - [Camera experience](#camera-experience)
+  - [Tips](#tips) ## Installation 1. Download [binary](#go2rtc-binary) or use [Docker](#go2rtc-docker)
+  or Home Assistant [add-on](#go2rtc-home-assistant-add-on) or [integration](#go2rtc-home-assistant-integration)
+  2. Open web interface: `http://localhost:1984/` 3. Add [streams](#streaming-input)
+  to [config](#configuration) **Developers:** integrate [HTTP API](internal/api/README.md)
+  into your smart home platform. ### go2rtc: Binary Download binary for your OS from
+  [latest release](https://github.com/AlexxIT/go2rtc/releases/): | name | description
+  | |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+  | [go2rtc_win64.zip](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_win64.zip)
+  | Windows 10+ 64-bit | | [go2rtc_win32.zip](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_win32.zip)
+  | Windows 10+ 32-bit | | [go2rtc_win_arm64.zip](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_win_arm64.zip)
+  | Windows ARM 64-bit | | [go2rtc_linux_amd64](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_amd64)
+  | Linux 64-bit | | [go2rtc_linux_i386](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_i386)
+  | Linux 32-bit | | [go2rtc_linux_arm64](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_arm64)
+  | Linux ARM 64-bit (ex. Raspberry 64-bit OS) | | [go2rtc_linux_arm](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_arm)
+  | Linux ARM 32-bit (ex. Raspberry 32-bit OS) | | [go2rtc_linux_armv6](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_armv6)
+  | Linux ARMv6 (for old Raspberry 1 and Zero) | | [go2rtc_linux_mipsel](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_linux_mipsel)
+  | Linux MIPS (ex. [Xiaomi Gateway 3](https://github.com/AlexxIT/XiaomiGateway3),
+  [Wyze cameras](https://github.com/gtxaspec/wz_mini_hacks)) | | [go2rtc_mac_amd64.zip](https://github.com/AlexxIT/go2rtc/releases/latest/download/go2rtc_mac_amd64.zip)
+  | macOS 11+ Intel 64-bit | | [go2rtc_mac_arm64.zip](https://github.com/AlexxIT/g'
 ---
 {% raw %}
 <h1 align="center">

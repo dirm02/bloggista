@@ -2,8 +2,68 @@
 layout: project
 name: Trimstray The Book Of Secret Knowledge
 slug: trimstray-the-book-of-secret-knowledge
+category: Uncategorized
 image: https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/static/img/the-book-of-secret-knowledge-preview.png
 repo_url: https://github.com/trimstray/the-book-of-secret-knowledge
+indexed_content: '" Knowledge is powerful, be careful how you use it! " A collection
+  of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools,
+  and more. **** ## :notebook_with_decorative_cover: &nbsp;What is it? This repository
+  is a collection of various materials and tools that I use every day in my work.
+  It contains a lot of useful information gathered in one piece. It is an invaluable
+  source of knowledge for me that I often look back on. ## :restroom: &nbsp;For whom?
+  For everyone, really. Here everyone can find their favourite tastes. But to be perfectly
+  honest, it is aimed towards System and Network administrators, DevOps, Pentesters,
+  and Security Researchers. ## :information_source: &nbsp;Contributing If you find
+  something which doesn''t make sense, or something doesn''t seem right, please make
+  a pull request and please add valid and well-reasoned explanations about your changes
+  or comments. A few simple rules for this project: - inviting and clear - not tiring
+  - useful These below rules may be better: - easy to contribute to (Markdown + HTML
+  ...) - easy to find (simple TOC, maybe it''s worth extending them?) Url marked **\***
+  is temporary unavailable. Please don''t delete it without confirming that it has
+  permanently expired. Before adding a pull request, please see the **[contributing
+  guidelines](.github/CONTRIBUTING.md)**. You should also remember about this: ```diff
+  + This repository is not meant to contain everything but only good quality stuff.
+  ``` All **suggestions/PR** are welcome! ### Code Contributors This project exists
+  thanks to all the people who contribute. ### Financial Contributors ## :newspaper:
+  &nbsp;RSS Feed & Updates GitHub exposes an [RSS/Atom](https://github.com/trimstray/the-book-of-secret-knowledge/commits.atom)
+  feed of the commits, which may also be useful if you want to be kept informed about
+  all changes. ## :ballot_box_with_check: &nbsp;ToDo - [ ] Add new stuff... - [ ]
+  Add useful shell functions - [ ] Add one-liners for collection tools (eg. CLI Tools)
+  - [ ] Sort order in lists New items are also added on a regular basis. ## :anger:
+  &nbsp;Table of Contents Only main chapters: - **[CLI Tools](#cli-tools-toc)** -
+  **[GUI Tools](#gui-tools-toc)** - **[Web Tools](#web-tools-toc)** - **[Systems/Services](#systemsservices-toc)**
+  - **[Networks](#networks-toc)** - **[Containers/Orchestration](#containersorchestration-toc)**
+  - **[Manuals/Howtos/Tutorials](#manualshowtostutorials-toc)** - **[Inspiring Lists](#inspiring-lists-toc)**
+  - **[Blogs/Podcasts/Videos](#blogspodcastsvideos-toc)** - **[Hacking/Penetration
+  Testing](#hackingpenetration-testing-toc)** - **[Your daily knowledge and news](#your-daily-knowledge-and-news-toc)**
+  - **[Other Cheat Sheets](#other-cheat-sheets-toc)** - **[Shell One-liners](#shell-one-liners-toc)**
+  - **[Shell Tricks](#shell-tricks-toc)** - **[Shell Functions](#shell-functions-toc)**
+  ## :trident: &nbsp;The Book of Secret Knowledge (Chapters) #### CLI Tools &nbsp;[
+  [TOC] ](#anger-table-of-contents) ##### :black_small_square: Shells &nbsp;&nbsp;
+  GNU Bash - is an sh-compatible shell that incorporates useful features from the
+  Korn shell and C shell. &nbsp;&nbsp; Zsh - is a shell designed for interactive use,
+  although it is also a powerful scripting language. &nbsp;&nbsp; tclsh - is a very
+  powerful cross-platform shell, suitable for a huge range of uses. &nbsp;&nbsp; bash-it
+  - is a framework for using, developing and maintaining shell scripts and custom
+  commands. &nbsp;&nbsp; Oh My ZSH! - is the best framework for managing your Zsh
+  configuration. &nbsp;&nbsp; Oh My Fish - the Fishshell framework. &nbsp;&nbsp; Starship
+  - the cross-shell prompt written in Rust. &nbsp;&nbsp; powerlevel10k - is a fast
+  reimplementation of Powerlevel9k ZSH theme. ##### :black_small_square: Shell plugins
+  &nbsp;&nbsp; z - tracks the folder you use the most and allow you to jump, without
+  having to type the whole path. &nbsp;&nbsp; fzf - is a general-purpose command-line
+  fuzzy finder. &nbsp;&nbsp; zsh-autosuggestions - Fish-like autosuggestions for Zsh.
+  &nbsp;&nbsp; zsh-syntax-highlighting - Fish shell like syntax highlighting for Zsh.
+  &nbsp;&nbsp; Awesome ZSH Plugins - A list of frameworks, plugins, themes and tutorials
+  for ZSH. ##### :black_small_square: Managers &nbsp;&nbsp; Midnight Commander - is
+  a visual file manager, licensed under GNU General Public License. &nbsp;&nbsp; ranger
+  - is a VIM-inspired filemanager for the console. &nbsp;&nbsp; nnn - is a tiny, lightning
+  fast, feature-packed file manager. &nbsp;&nbsp; screen - is a full-screen window
+  manager that multiplexes a physical terminal. &nbsp;&nbsp; tmux - is a terminal
+  multiplexer, lets you switch easily between several programs in one terminal. &nbsp;&nbsp;
+  tmux-cssh - is a tool to set comfortable and easy to use functionality tmux-sessions.
+  ##### :black_small_square: Text editors &nbsp;&nbsp; vi - is one of the most common
+  text editors on Unix. &nbsp;&nbsp; vim - is a highly configurable text editor. &nbsp;&nbsp;
+  emacs - is '
 ---
 {% raw %}
 <p align="center">

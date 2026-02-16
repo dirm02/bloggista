@@ -2,8 +2,64 @@
 layout: project
 name: Jaywcjlove Awesome Swift Macos Apps
 slug: jaywcjlove-awesome-swift-macos-apps
+category: iOS-imac
 image: https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee
 repo_url: https://github.com/jaywcjlove/vidwall-hub
+indexed_content: 'Using my app is also a way to support me: Awesome open-source Swift
+  macOS Apps === [](https://jaywcjlove.github.io/#/sponsor) [](https://github.com/jaywcjlove/awesome-mac)
+  [](README.zh.md) is list features a curated selection of open-source macOS applications
+  developed with `Swift`, covering a wide range of tools from productivity to utilities.
+  For macOS developers, these applications demonstrate various `Swift` implementations
+  and provide high-quality code samples and best practices, helping you master macOS-specific
+  skills like UI design, performance optimization, and menu bar integration. It’s
+  a valuable resource for enhancing development skills. ## Contents - [Audio](#audio)
+  - [Backup](#backup) - [Browser](#browser) - [Chat](#chat) - [Local LLM](#local-llm)
+  - [AI](#ai) - [Cryptocurrency](#cryptocurrency) - [Database](#database) - [Development](#development)
+  - [Git](#git) - [JSON Parsing](#json-parsing) - [Other Development](#other-development)
+  - [Web Development](#web-development) - [iOS / macOS](#ios--macos) - [Downloader](#downloader)
+  - [Editors](#editors) - [Markdown](#markdown) - [Text](#text) - [Extensions](#extensions)
+  - [Finder](#finder) - [Games](#games) - [Virtual Machines](#virtual-machine) - [Graphics](#graphics)
+  - [IDE](#ide) - [Images](#images) - [Keyboard](#keyboard) - [Mail](#mail) - [Menubar](#menubar)
+  - [Notch App](#notch-app) - [Compression tool](#compression-tool) - [Color Picker](#color-picker)
+  - [Music](#music) - [News](#news) - [Notes](#notes) - [Other](#other) - [Player](#player)
+  - [Podcast](#podcast) - [Launchpad](#launchpad) - [Productivity](#productivity)
+  - [Screensaver](#screensaver) - [Security](#security) - [Sharing Files](#sharing-files)
+  - [Social Networking](#social-networking) - [Streaming](#streaming) - [System](#system)
+  - [Clipboard](#clipboard) - [Terminal](#terminal) - [Touch Bar](#touch-bar) - [Utilities](#utilities)
+  - [VPN & Proxy](#vpn--proxy) - [Video](#video) - [Wallpaper](#wallpaper) - [Window
+  Management](#window-management) ## Audio - [AUHost](https://github.com/vgorloff/AUHost)
+  - Host AudioUnits v3 plugins. - [Aural Player](https://github.com/kartik-venugopal/aural-player)
+  - Winamp-style audio player. - [BetterAudio](https://github.com/rokartur/BetterAudio/)
+  - A better way to manage audio on macOS. - [Fmusic](https://github.com/wandercn/fmusic)
+  - macOS music player with multi-format playback and lyrics display. - [FluidVoice](https://github.com/altic-dev/FluidVoice)
+  - Voice-to-text app with AI enhancement. - [HiFidelity](https://github.com/rvarunrathod/HiFidelity)
+  - An offline audiophile music player built with the BASS audio library and TagLib.
+  - [LyricsX](https://github.com/ddddxxx/LyricsX) - Display lyrics for iTunes/Spotify.
+  - [MonitorControl](https://github.com/MonitorControl/MonitorControl) - Adjust external
+  monitor settings. - [NoiseBuddy](https://github.com/insidegui/NoiseBuddy) - Quickly
+  toggle AirPods modes. - [PlayStatus](https://github.com/nbolar/PlayStatus) - Menu
+  bar Spotify/iTunes controller. - [Plug](https://github.com/wulkano/Plug) - Hype
+  Machine music player. - [Radiola](https://github.com/SokoloffA/radiola) - Lightweight
+  internet radio player. - [Scope](https://github.com/billthefarmer/audiotools/tree/master/Scope/swift)
+  - Audio oscilloscope tool. - [Spotify4BigSur](https://github.com/fabiusBile/Spotify4BigSur)
+  - Spotify widget for Notification Center. - [Suohai](https://github.com/Sunnyyoung/Suohai)
+  - Audio device lock for macOS. - [Tuner](https://github.com/billthefarmer/ctuner)
+  - Instrument tuner. - [Typester](https://github.com/nickustinov/typester-macos)
+  - Enables speech-to-text dictation using Soniox or Deepgram. - [jmc](https://github.com/jcm93/jmc)
+  - macOS media organizer. - [waveSDR](https://github.com/getoffmyhack/waveSDR) -
+  Software-defined radio app. - [VoiceInk](https://github.com/Beingpax/VoiceInk) -
+  Real-time speech-to-text app. ## Backup - [Arco](https://github.com/loomi-labs/arco)
+  - An incremental backup tool designed with simplicity in mind. - [Syncalicious](https://github.com/zenangst/Syncalicious)
+  - Sync macOS preferences. ## Browser - [Finicky](https://github.com/johnste/finicky)
+  - Always opens the right browser. - [Ora Browser](https://github.com/the-ora/browser)
+  - Less noise, more browsing. - [Plash](https://github.com/sindresorhus/Plash) -
+  Make any website your desktop wallpaper. - [Privacy Redirect for Safari](https://github.com/smmr-software/privacy-redirect-safari)
+  - Redirect to privacy-friendly alternatives. - [Web](https://github.com/nuance-dev/Web)
+  - A tiny AI-powered browser built with SwiftUI, fast, private, and Apple Silicon
+  only. ## Chat - [Beagle IM](https://github.com/tigase/beagle-im) - Powerful XMPP
+  client with support for file transfer, VoIP and end-to-end encryption. - [CopilotForXcode](https://github.com/github/CopilotForXcode)
+  - Xcode extension for GitHub Copilot - [MessagesHistoryBrowser](https://github.com/glaurent/MessagesHistoryBrowser)
+  - Browse and search Messages.app history. - [HuggingChat](ht'
 ---
 {% raw %}
 <div markdown="1">

@@ -2,8 +2,68 @@
 layout: project
 name: Srbhr Resume Matcher
 slug: srbhr-Resume-Matcher
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/srbhr-Resume-Matcher/assets/header.png
 repo_url: https://github.com/sponsors/srbhr)
+indexed_content: "[](https://www.resumematcher.fyi) # Resume Matcher [\U0001D679\U0001D698\U0001D692\U0001D697
+  \U0001D673\U0001D692\U0001D69C\U0001D68C\U0001D698\U0001D69B\U0001D68D](https://dsc.gg/resume-matcher)
+  ✦ [\U0001D686\U0001D68E\U0001D68B\U0001D69C\U0001D692\U0001D69D\U0001D68E](https://resumematcher.fyi)
+  ✦ [\U0001D677\U0001D698\U0001D6A0 \U0001D69D\U0001D698 \U0001D678\U0001D697\U0001D69C\U0001D69D\U0001D68A\U0001D695\U0001D695](https://resumematcher.fyi/docs/installation)
+  ✦ [\U0001D672\U0001D698\U0001D697\U0001D69D\U0001D69B\U0001D692\U0001D68B\U0001D69E\U0001D69D\U0001D698\U0001D69B\U0001D69C](#contributors)
+  ✦ [\U0001D682\U0001D699\U0001D698\U0001D697\U0001D69C\U0001D698\U0001D69B](#sponsor-resume-matcher)
+  ✦ [\U0001D683\U0001D6A0\U0001D692\U0001D69D\U0001D69D\U0001D68E\U0001D69B/\U0001D687](https://twitter.com/srbhrai)
+  ✦ [\U0001D67B\U0001D692\U0001D697\U0001D694\U0001D68E\U0001D68D\U0001D678\U0001D697](https://www.linkedin.com/company/resume-matcher/)
+  ✦ [\U0001D672\U0001D69B\U0001D68E\U0001D68A\U0001D69D\U0001D698\U0001D69B](https://srbhr.com)
+  **English** | [Español](README.es.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+  Create tailored resumes for each job application with AI-powered suggestions. Works
+  locally with Ollama or connect to your favorite LLM provider via API. [](https://dsc.gg/resume-matcher)
+  [](https://resumematcher.fyi) [](https://www.linkedin.com/company/resume-matcher/)
+  > \\[!IMPORTANT] > > This project is in active development. New features are being
+  added continuously, and we welcome contributions from the community. If you have
+  any suggestions or feature requests, please feel free to open an issue on GitHub
+  or discuss it on our [Discord](https://dsc.gg/resume-matcher) server. ## Getting
+  Started Resume Matcher works by creating a master resume that you can use to tailor
+  for each job application. Installation instructions here: [How to Install](#how-to-install)
+  ### How It Works 1. **Upload** your master resume (PDF or DOCX) 2. **Paste** a job
+  description you're targeting 3. **Review** AI-generated improvements and tailored
+  content 4. **Cover Letter & Email** generator for the job application 5. **Customize**
+  the layout and sections to fit your style 6. **Export** as a professional PDF with
+  your preferred template ### Stay Connected [](https://dsc.gg/resume-matcher) Join
+  our [Discord](https://dsc.gg/resume-matcher) for discussions, feature requests,
+  and community support. [](https://www.linkedin.com/company/resume-matcher/) Follow
+  us on [LinkedIn](https://www.linkedin.com/company/resume-matcher/) for updates.
+  Star the repo to support development and get notified of new releases. ## Sponsors
+  We are grateful to our sponsors who help keep this project going. If you find Resume
+  Matcher helpful, please consider [**sponsoring us**](https://github.com/sponsors/srbhr)
+  to ensure continued development and improvements. | Sponsor | Description | |---------|-------------|
+  | [APIDECK](https://apideck.com?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | One API to connect your app to 200+ SaaS platforms (accounting, HRIS, CRM, file
+  storage). Build integrations once, not 50 times. \U0001F310 [apideck.com](https://apideck.com?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | | [Vercel](https://vercel.com?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | Resume Matcher is a part of Vercel OSS // Summer 2025 Program \U0001F310 [vercel.com](https://vercel.com?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | | [Cubic.dev](https://cubic.dev?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | Cubic provides PR reviews for Resume Matcher \U0001F310 [cubic.dev](https://cubic.dev?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | | [Kilo Code](https://kilo.ai?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | Kilo Code provides AI code reviews and coding credits to Resume Matcher \U0001F310
+  [kilo.ai](https://kilo.ai?utm_source=resumematcher&utm_medium=github&utm_campaign=sponsors)
+  | ## Sponsor Resume Matcher Please read our [Sponsorship Guide]([docs/agent/80-sponsorship/sponsorship-guide.md](https://resumematcher.fyi/docs/sponsoring))
+  for details on how your sponsorship helps the project. You will receive a special
+  thank you in the ReadME and on our website. | Platform | Link | |-----------|----------------------------------------|
+  | GitHub | [](https://github.com/sponsors/srbhr) | | Buy Me a Coffee | [](https://www.buymeacoffee.com/srbhr)
+  | ## Creators' Note [](https://srbhr.com) Thank you for checking out Resume Matcher.
+  If you want to connect, collaborate, or just say hi, feel free to reach out! ~ **Saurabh
+  Rai** ✨ You can follow me on: - Website: [https://srbhr.com](https://srbhr.com)
+  - Linkedin: [https://www.linkedin.com/in/srbhr/](https://www.linkedin.com/in/srbhr/)
+  - Twitter: [https://twitter.com/srbhrai](https://twitter.com/srbhrai) - GitHub:
+  [https://github.com/srbhr](https://github.com/srbhr) ## Key Features ### Core Features
+  **Master Resume**: Create a comprehensive master resume to draw from your existing
+  one. ### Resume Builder Paste in a job description and get AI-powered resume tailored
+  for that specific role. You can: - Modify suggested content - Add/remove sections
+  - Rearrange sections via drag-and-drop - Choose from multiple resume templates ###
+  Cover Letter & Email Generator Generate tailored cover letters and email templates
+  based on the job description and your resume. ### Resume Scoring (In development
+  feature) We are working on a resume scoring feature that will analyze your resume
+  against the job description and provide a match score along "
 ---
 {% raw %}
 <div align="center">

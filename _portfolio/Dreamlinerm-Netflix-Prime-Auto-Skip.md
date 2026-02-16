@@ -2,8 +2,67 @@
 layout: project
 name: Dreamlinerm Netflix Prime Auto Skip
 slug: Dreamlinerm-Netflix-Prime-Auto-Skip
+category: Extension-Pluggin-Cron-Scrap
 image: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FDreamlinerm%2FNetflix-Prime-Auto-Skip%2Fmain%2Fpackage.json&query=version&label=Version
 repo_url: https://github.com/Dreamlinerm/Netflix-Prime-Auto-Skip
+indexed_content: "# Streaming enhanced ## Automatically skip Ads, Intros, Recaps,
+  Credits, etc. --- ## Download & Install ## Install on Android Download [Firefox](https://addons.mozilla.org/firefox/addon/netflix-prime-auto-skip/),
+  [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
+  or similar to be able to install the firefox/chrome extension. The DRM for each
+  streaming service will be installed automatically when a video started for the first
+  time and you may need to reload the page once. ### Supported Streaming Services
+  The above table in markdown | Netflix | Prime Video | Disney+ (Hotstar, STAR+) |
+  Crunchyroll | HBO | | ------- | ----------- | ------------------------ | -----------
+  | --- | | ✅ | ✅ | ✅ | ✅ | ✅ | ## Table of Contents - [Android Compatibility](#android-compatibility)
+  - [Contributing to Translation](#contributing-to-translation) - [Features](#-features)
+  - [Ratings explanation](#ratings) - [Implemented Feature Overview](#implemented-feature-overview)
+  - [Develop the Extension](#develop-the-extension) - [Changelog](./CHANGELOG.md)
+  ## Android Compatibility | Netflix | Prime Video | Disney+ (Hotstar, STAR+) | Crunchyroll
+  | HBO | | ------- | --------------------------- | --------------------------- |
+  ----------- | --- | | ❌ | ✅(tweaked Desktop Website) | ✅(default Desktop Website)
+  | ✅ | ✅ | ## Contributing to Translation We welcome contributions to the translation
+  of the extension. If you're interested in helping us translate the extension to
+  your language look [here](https://github.com/Dreamlinerm/Netflix-Prime-Auto-Skip/wiki/Add-or-Fix-Language-Localization).
+  ## ✨ Features Features in other supported languages: | [Deutsch](docs/storeDescriptions/de.md)
+  | | [Français](docs/storeDescriptions/fr.md) | | [Español](docs/storeDescriptions/es.md)
+  | | [Português](docs/storeDescriptions/pt.md) | | [Português (Brasil)](docs/storeDescriptions/pt_br.md)
+  | | [Italiano](docs/storeDescriptions/it.md) | | [日本語](docs/storeDescriptions/ja.md)
+  | | [Polski](docs/storeDescriptions/pl.md) | | [Svenska](docs/storeDescriptions/sv.md)
+  | | [汉语](docs/storeDescriptions/zh_CN.md) | | [한국어](docs/storeDescriptions/ko.md)
+  | | [Türkçe](docs/storeDescriptions/tr.md) | Supported Streaming Services: - Netflix
+  - Prime Video - Disney+ (Hotstar, STAR+) - Crunchyroll - HBO Max - Paramount+ ✨
+  Features You can customize which features are enabled in the Settings. This extension
+  enhances your streaming experience by automatically: - Block Ads - Skipping Intros
+  & Recaps - Skipping Credits - Displaying TMDB ratings for all shows - Hide Movie
+  button - Adding customizable playback speed control (keyboard shortcuts: s, d) -
+  Automatically start to play videos in fullscreen - Go fullscreen on double click
+  - Scroll to change the volume Platform-Specific Features: - Netflix: - Remembers
+  and selects your last-used profile automatically - Blocks the “Are you still watching?”
+  inactivity warning - Remove games from Netflix - Amazon Prime Video: - Skips self-promotional
+  ads (for Prime Video productions) - Filters out paid content (movies, series) from
+  the home page - Moves the category \"Continue\" to the top of the page - Hide the
+  Xray Quick View over a video - Removes the blur effect when hovering over videos
+  - Disney+ (Hotstar, STAR+): - Skips self-promotional ads - firefox: add feature
+  disney arrow keys fast forward - Crunchyroll: - Remembers and selects your last-used
+  profile automatically - Adds filters to the release calendar, so it is useable -
+  Video size expanded to entire window - Disable the numpad controls Android Support
+  in Desktop mode: - Prime Video - Disney+ (Hotstar, STAR+) - Crunchyroll - HBO Max
+  To use the extension on an Android phone, download Firefox. Broken Features: - At
+  any time the websites can update their UI, which may break various features of the
+  extension. - If you encounter any issues, please report them on the [Github issue
+  tracker](https://github.com/Dreamlinerm/Netflix-Prime-Auto-Skip/issues). - You can
+  also write a review to report issues. Please avoid giving a bad rating, as I will
+  always respond regardless of the rating, since I receive an E-mail. - Since I am
+  a single developer, I may not be able to fix issues immediately. Please be patient
+  and I will do my best to resolve them as soon as possible. ## ☔ Safe & Open Source
+  This extension is open-source! Feel free to contribute or explore the code on [Github](https://github.com/Dreamlinerm/Netflix-Prime-Auto-Skip).
+  ## \U0001F495 Enjoying Streaming enhanced? If you'd like to support further development,
+  you can buy me a [coffee](https://github.com/sponsors/Dreamlinerm). If you’re enjoying
+  the enhanced streaming experience, please consider leaving a 5-star review! ## Disclaimer
+  Netflix, Prime Video, Disney+ (Hotstar, STAR+), Crunchyroll and HBO max are trademarks
+  and the author of this addon is not affiliated with these companies. ### Skip Credits,
+  Watch Credits Skip Credits and Watch Credits are mutally exclusive, but you can
+  turn both of the off. One allways s"
 ---
 {% raw %}
 <div align="center">

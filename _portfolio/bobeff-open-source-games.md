@@ -2,8 +2,62 @@
 layout: project
 name: Bobeff Open Source Games
 slug: bobeff-open-source-games
+category: Uncategorized
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/TeamHypersomnia/Hypersomnia)
+indexed_content: "# Open source games This is a list of different open-source video
+  games and commercial video games open-source remakes. ## Table of contents - [Action
+  games](#action-games) - [Adventure games](#adventure-games) - [Business and Tycoon
+  games](#business-and-tycoon-games) - [City-Building games](#city-building-games)
+  - [First-Person games](#first-person-games) - [Platformers](#platformers) - [Puzzle
+  games](#puzzle-games) - [Racing games](#racing-games) - [Real-Time strategies](#real-time-strategies)
+  - [Roguelikes](#roguelikes) - [Role-Playing games](#role-playing-games) - [Sandbox
+  games](#sandbox-games) - [Shoot 'em up games](#shoot-em-up-games) - [Sport games](#sport-games)
+  - [Third-Person games](#third-person-games) - [Tower Defense games](#tower-defence-games)
+  - [Turn-Based strategies](#turn-based-strategies) - [Other lists](#other-lists)
+  ## Action games - **[Hypersomnia](https://hypersomnia.io)** - Competitive top-down
+  shooter with extreme dynamics and pixely nostalgia. Comes with a built-in map Editor.
+  [[source]](https://github.com/TeamHypersomnia/Hypersomnia) ## Adventure games -
+  **[Endless Sky](https://endless-sky.github.io)** - Space exploration, trading, and
+  combat game. [[source]](https://github.com/endless-sky/endless-sky) - **[Pioneer](https://pioneerspacesim.net)**
+  - A space adventure game set in our galaxy at the turn of the 33rd century. [[source]](https://github.com/pioneerspacesim/pioneer)
+  - **[ScummVM](https://www.scummvm.org)** - A program which allows you to run certain
+  classic graphical adventure and role-playing games. [[source]](https://github.com/scummvm/scummvm)
+  - **[The Legend of Zelda: Twilight Princess](https://zsrtp.link)** - A reverse engineering
+  project to decompile *[Twilight Princess](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Twilight_Princess)*
+  into human-readable and modifiable source code. [[source]](https://github.com/zeldaret/tp)
+  - **Zelda 3** - A reverse engineered clone of *[The Legend of Zelda: A Link to the
+  Past](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past)*. [[source]](https://github.com/snesrev/zelda3)
+  ## Business and Tycoon games - **[CorsixTH](https://corsixth.com)** - Open source
+  clone of [Theme Hospital](https://en.wikipedia.org/wiki/Theme_Hospital). [[source]](https://github.com/CorsixTH/CorsixTH)
+  - **[Hurry Curry!](https://hurrycurry.org)** - Cooperative fast-paced multiplayer
+  cooking game. [[source]](https://codeberg.org/hurrycurry/hurrycurry) - **[OpenLoco](https://openloco.io)**
+  - An open source re-implementation of [Chris Sawyer](https://en.wikipedia.org/wiki/Chris_Sawyer)'s
+  [Locomotion](https://en.wikipedia.org/wiki/Chris_Sawyer%27s_Locomotion). [[source]](https://github.com/OpenLoco/OpenLoco)
+  - **[OpenRCT2](https://openrct2.org)** - An open-source re-implementation of *[RollerCoaster
+  Tycoon 2](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_2)*. [[source]](https://github.com/OpenRCT2/OpenRCT2)
+  - **[OpenTTD](https://www.openttd.org)** - An open source simulation game based
+  upon *[Transport Tycoon Deluxe](https://en.wikipedia.org/wiki/Transport_Tycoon)*.
+  [[source]](https://github.com/OpenTTD/OpenTTD) ## City-Building games - **[Akhenaten](https://dalerank.itch.io/akhenaten)**
+  - A strategic city-building game, based on assets and gameplay mechanics from *[Pharaoh
+  + Cleopatra](https://en.wikipedia.org/wiki/Pharaoh_(video_game))* title, where players
+  take on the role of a ruler and mayor of ancient Egyptian civilization. [[source]](https://github.com/dalerank/Akhenaten)
+  - **[Citybound](https://aeplay.org/citybound)** - A city building game that uses
+  microscopic models to vividly simulate the organism of a city arising from the interactions
+  of millions of individuals. [[source]](https://github.com/citybound/citybound) -
+  **[Cytopia](https://cytopia.itch.io/cytopia)** - A free, open source retro pixel-art
+  city building game. [[source]](https://github.com/CytopiaTeam/Cytopia) - **Egregoria**
+  - Egregoria is an indie city builder, mostly inspired by *[Cities: Skylines](https://en.wikipedia.org/wiki/Cities:_Skylines)*.
+  [[source]](https://github.com/Uriopass/Egregoria) - **[IsoCity](iso-city.com)**
+  - Isometric city-building simulation game built with NextJS, TypeScript and TailwindCSS.
+  [[source]](https://github.com/amilich/isometric-city) - **Julius** - An open source
+  re-implementation of *[Caesar III](https://en.wikipedia.org/wiki/Caesar_III)*. [[source]](https://github.com/bvschaik/julius)
+  - **[micropolisJS](http://www.graememcc.co.uk/micropolisJS)** - A handmade Javascript
+  port of the open-source city simulator *[Micropolis](https://mvolution.itch.io/micropolis)*.
+  [[source]](https://github.com/graememcc/micropolisJS) - **[Unknown Horizons](https://unknown-horizons.org)**
+  - A 2D realtime strategy simulation with an emphasis on economy and city building.
+  - **Original:** [[source]](https://github.com/unknown-horizons/unknown-horizons)
+  **Engine: [FIFE](https://www.fifengine.net/)** [[source]](https://github.com/fifengine/fifengine) "
 ---
 {% raw %}
 # Open source games

@@ -2,8 +2,52 @@
 layout: project
 name: Moamal 2000 E Commerce
 slug: Moamal-2000-e-commerce
+category: Uncategorized
 image: https://placehold.co/1x1/000000/000000.png
 repo_url: https://github.com/Moamal-2000/e-commerce
+indexed_content: 'E-Commerce Website Designed by: mdrimel15 , Design on Figma > [!Note]
+  > This project was featured on CodeWithRandom . Please give credit to the original
+  repository: https://github.com/Moamal-2000/e-commerce ## 1. Installation **1. Clone
+  the repository:** ```bash git clone git@github.com:Moamal-2000/e-commerce.git ```
+  **2. Install dependencies:** ```bash npm install ``` **3. Start the development
+  server:** ```bash npm run dev ``` ## 2. Copyright You are welcome to use and modify
+  the codebase for personal and educational purposes. However, please respect the
+  original designer''s work and do not use this project for commercial purposes without
+  appropriate permissions. © 2024 Moamal Alaa Kareem | All rights reserved. ## 3.
+  Technologies Used - [Progressive Web App](https://vite-pwa-org.netlify.app) for
+  web app features - [Postcss plugin](https://www.npmjs.com/package/postcss) for auto
+  prefix CSS properties - [CSS modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
+  with [SASS](https://sass-lang.com/documentation) for styling - [Redux/Toolkit](https://redux-toolkit.js.org)
+  for state management - [React js](https://react.dev) for better development - [React
+  Router Dom v6](https://reactrouter.com) for SPA - [React helmet async](https://www.npmjs.com/package/react-helmet-async)
+  for better SEO - [Swiper](https://swiperjs.com/react) for carousel slider - [React-i18next](https://react.i18next.com)
+  for multi language website ## 4. Features 1. **User Authentication and Account Management:**
+  Secure user registration and login functionalities. 2. **Local Storage for Changes:**
+  All user actions and changes are stored locally to ensure seamless browsing and
+  continuity. 3. **Shopping Cart and Checkout Process:** Easily add items to your
+  cart and proceed through a streamlined checkout process. 4. **Order Tracking and
+  History:** Track the status of your orders and view past order history. 5. **Product
+  Details Page with Zoom-In Feature:** View detailed product information with the
+  ability to zoom in on product images. 6. **Search Functionality:** Search for products
+  by name, or category, or browse all available products. 7. **Save to Favorites/Wishlist/Cart:**
+  Save products to your preferred list for future reference or purchase. 8. **Fully
+  Responsive Design:** Enjoy a responsive and user-friendly experience across all
+  devices, including desktops, tablets, and mobile phones. ## 5. Style helper ####
+  1. Colors | Color Name | Hex Code | | ---------------- | ----------------------------------------------------------------
+  | | Black | `#000000` | | Charcoal | `#252525` | | Dark Slate Gray | `#2d2d2d` |
+  | Granite | `#363738` | | Coffee | `#504242` | | Battleship Gray | `#4c5355` | |
+  Dolphin Gray | `#7d8184` | | Silver | `#999999` | | Slate Gray | `#848d97` | | Baby
+  Blue | `#a0bce0` | | Pale Silver | `#cbcbcb` | | Platinum | `#ededed` | | White
+  Smoke | `#f5f5f5` | | White | `#fafafa` | | Gainsboro | `#f6f7f8` | | Ice Blue |
+  `#edeef1` | | Anti-Flash White | `#fdfdfd` | | White | `#ffffff` | | Dark Crimson
+  | `#a22f2f` | | Tomato | `#b40404` | | Fire Engine Red | `#db4444` | | Red | `#ff0000`
+  | | Salmon Pink | `#e07575` | | Dark Green | `#078639` | | Dodger Blue | `#4493f8`
+  | | Light Blue | `#4ac2e8` | | Sunny Yellow | `#fffb19` | #### 2. Fonts | Font |
+  Weights | | ---------------------------------------------------- | --------------------------------------
+  | | [Inter](https://fonts.google.com/specimen/Inter) | Light, Medium, Regular, Bold,
+  SemiBold | | [Poppins](https://fonts.google.com/specimen/Poppins) | Light, Medium,
+  Regular, Bold, SemiBold | | [Rubik](https://fonts.google.com/specimen/Rubik) | Black
+  Light, Medium, Regular, Bold, SemiBold, ExtraBold |'
 ---
 {% raw %}
 <p align="center">

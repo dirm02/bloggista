@@ -2,8 +2,68 @@
 layout: project
 name: Nicholas Fedor Watchtower
 slug: nicholas-fedor-watchtower
+category: Uncategorized
 image: https://dl.circleci.com/status-badge/img/gh/nicholas-fedor/watchtower/tree/main.svg?style=shield
 repo_url: https://github.com/nicholas-fedor/watchtower
+indexed_content: "# Watchtower Automate Docker container image updates [](https://dl.circleci.com/status-badge/redirect/gh/nicholas-fedor/watchtower/tree/main)
+  [](https://codecov.io/gh/nicholas-fedor/watchtower) [](https://godoc.org/github.com/nicholas-fedor/watchtower)
+  [](https://goreportcard.com/report/github.com/nicholas-fedor/watchtower) [](https://github.com/nicholas-fedor/watchtower/releases)
+  [](https://www.apache.org/licenses/LICENSE-2.0) [](https://www.codacy.com/gh/nicholas-fedor/watchtower/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nicholas-fedor/watchtower&amp;utm_campaign=Badge_Grade)
+  [](#contributors) [](https://hub.docker.com/r/nickfedor/watchtower) ## Quick Start
+  With watchtower you can update the running version of your containerized app simply
+  by pushing a new image to the Docker Hub or your own image registry. Watchtower
+  will pull down your new image, gracefully shut down your existing container and
+  restart it with the same options that were used when it was deployed initially.
+  Run the watchtower container with the following command: ```console $ docker run
+  --detach \\ --name watchtower \\ --volume /var/run/docker.sock:/var/run/docker.sock
+  \\ nickfedor/watchtower ``` Watchtower is intended to be used in homelabs, media
+  centers, local dev environments, and similar. We do **not** recommend using Watchtower
+  in a commercial or production environment. If that is you, you should be looking
+  into using Kubernetes enabled with CI/CD, such as onedr0p's Talos Linux with FluxCD
+  setup [here](https://github.com/onedr0p/cluster-template). **⚠️ Note:** It is recommended
+  to use the latest version of Docker. You can check your host's Docker version using
+  the [CLI command](https://docs.docker.com/reference/cli/docker/version/) `docker
+  version`. This version of Watchtower has been tested to support v1.43 and higher;
+  however, don't be surprised if you experience unexpected behavior when attempting
+  to use newer features on older versions of Docker. This version autonegotiates the
+  API version by default. If the `DOCKER_API_VERSION` [variable](https://watchtower.nickfedor.com/configuration/arguments/#docker_api_version)
+  is explicitly set, Watchtower validates the version and falls back to autonegotiation
+  on failure. ## Supported Architectures Watchtower supports the following architectures
+  for its Docker images: - amd64 - i386 - armhf - arm64v8 - riscv64 ## Documentation
+  The full documentation is available at . ## Star History ## Contributors Thanks
+  goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+  Nicholas Fedor \U0001F4BB \U0001F4D6 \U0001F6A7 \U0001F440 Dirk Kok \U0001F4BB nils
+  måsén \U0001F4BB \U0001F4D6 \U0001F440 Simon Aronsson \U0001F4BB \U0001F4D6 \U0001F440
+  James ⚠️ \U0001F914 Florian \U0001F440 \U0001F4D6 Brian DeHamer \U0001F4BB Austin
+  \U0001F4D6 David Gardner \U0001F440 \U0001F4D6 Tanguy ⧓ Herrmann \U0001F4BB Rodrigo
+  Damazio Bovendorp \U0001F4BB \U0001F4D6 Ryan Kuba \U0001F687 cnrmck \U0001F4D6 Harry
+  Walter \U0001F4BB Robotex \U0001F4D6 Gerald Pape \U0001F4D6 fomk \U0001F4BB Sven
+  Gottwald \U0001F687 techknowlogick \U0001F4BB waja \U0001F4D6 Scott Albertson \U0001F4D6
+  Jason Huddleston \U0001F4D6 Napster \U0001F4BB Maxim \U0001F4BB \U0001F4D6 Max Schmitt
+  \U0001F4D6 cron410 \U0001F4D6 Paulo Henrique \U0001F4D6 Kaleb Elwert \U0001F4D6
+  Bill Butler \U0001F4D6 Mario Tacke \U0001F4BB Mark Woodbridge \U0001F4BB Ansem93
+  \U0001F4D6 Luka Peschke \U0001F4BB \U0001F4D6 Zois Pagoulatos \U0001F4BB \U0001F440
+  Alexandre Menif \U0001F4BB Andrey \U0001F4D6 Armando Lüscher \U0001F4D6 Ryan Budke
+  \U0001F4D6 Kaloyan Raev \U0001F4BB ⚠️ sixth \U0001F4D6 Gina Häußge \U0001F4BB Max
+  H. \U0001F4BB Jungkook Park \U0001F4D6 Jan Kristof Nidzwetzki \U0001F4D6 lukas \U0001F4BB
+  Ameya Shenoy \U0001F4BB Raymon de Looff \U0001F4BB John Clayton \U0001F4BB Germs2004
+  \U0001F4D6 Lukas Willburger \U0001F4BB Oliver Cervera \U0001F4D6 Victor Moura ⚠️
+  \U0001F4BB \U0001F4D6 Maximilian Brandau \U0001F4BB ⚠️ Andrew \U0001F4D6 sixcorners
+  \U0001F4D6 Arne Jørgensen ⚠️ \U0001F440 PatSki123 \U0001F4D6 Valentine Zavadsky
+  \U0001F4BB \U0001F4D6 ⚠️ Alexander Voronin \U0001F4BB \U0001F41B Oliver Mueller
+  \U0001F4D6 Sebastiaan Tammer \U0001F4BB miosame \U0001F4D6 Andrew Metzger \U0001F41B
+  \U0001F4A1 Pierre Grimaud \U0001F4D6 Matt Doran \U0001F4D6 MihailITPlace \U0001F4BB
+  bugficks \U0001F4BB \U0001F4D6 Michael \U0001F4BB D. Domig \U0001F4D6 Ben Osheroff
+  \U0001F4BB David H. \U0001F4BB Chander Ganesan \U0001F4D6 yrien30 \U0001F4BB ksurl
+  \U0001F4D6 \U0001F4BB \U0001F687 rg9400 \U0001F4BB Turtle Kalus \U0001F4BB Srihari
+  Thalla \U0001F4D6 Thomas Gaudin \U0001F4D6 hydrargyrum \U0001F4D6 Reinout van Rees
+  \U0001F4D6 DasSkelett \U0001F4BB zenjabba \U0001F4D6 Dan Quan \U0001F4D6 modem7
+  \U0001F4D6 Igor Zibarev \U0001F4BB Patrice \U0001F4BB James White \U0001F4D6 EDIflyer
+  \U0001F4D6 Jauder Ho \U0001F4BB Tamal Das \U0001F4D6 guangwu \U0001F4D6 Florian
+  Hübner \U0001F4D6 \U0001F4BB Andrii Bratanin \U0001F4D6 Ross Cadogan \U0001F4BB
+  stffabi \U0001F4BB yubiuser \U0001F4BB RoboMagus \U0001F687 AzariasB \U0001F4D6
+  ApprenticeofEnder \U0001F4BB skylenet \U0001F4BB This project follows the [all-contributors](https://github.com/all-contributors/all-contributors)
+  specification. Contributions of any kind welcome!"
 ---
 {% raw %}
 <div align="center">

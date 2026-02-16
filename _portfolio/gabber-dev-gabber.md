@@ -2,8 +2,69 @@
 layout: project
 name: Gabber Dev Gabber
 slug: gabber-dev-gabber
+category: Uncategorized
 image: https://readme-assets.gabber.dev/banner.png
 repo_url: https://github.com/ggml-org/llama.cpp)
+indexed_content: '# Gabber - Real-time AI Engine [Gabber](https://gabber.dev) is an
+  engine for building real-time AI across all modalities — voice, text, video, and
+  more. It supports graph-based apps with multiple participants and simultaneous media
+  streams. Our goal is to give developers the **most powerful, developer-friendly
+  AI app builder** available. If you found this interesting, please consider leaving
+  a star ⭐️. We will be updating this repo frequently with new nodes and functionality.
+  **[Getting Started Video](https://youtu.be/8ZNxZLmr9XY)** - Watch a walkthrough
+  of building your first app with Gabber ## Quickstart ### Start Gabber Using Make
+  #### Install Dependencies LiveKit is a WebRTC server that the frontend uses to send/receive
+  media to/from the Gabber Engine. ```bash brew install livekit ``` UV for python
+  dependency management. ```bash curl -LsSf https://astral.sh/uv/install.sh | sh ```
+  Create your secret file ```bash cp .secret.example .secret ``` #### Run Everything
+  ```bash make all ``` ### Start Gabber Using Docker Compose Create your secret file
+  ```bash cp .secret.example .secret ``` ```bash docker compose up ``` ### Running
+  a Local LLM If you are using the `LocalLLM` node, you''ll need to start an LLM server.
+  LLM scripts are provided for convenience in the `services/local-llm` directory.
+  On MacOS, make sure [llama.cpp](https://github.com/ggml-org/llama.cpp) is installed
+  and use llama.cpp scripts. As of making this, the brew package for llama.cpp didn''t
+  seem to be built with Metal support (GPU acceleration for MacOS), therefore it''s
+  recommended you build from source. On Linux or WSL you can use the vllm scripts.
+  ```bash cd services/local-llm ``` #### e.g. MacOS: ```bash LLAMA_SERVER_PATH=/path/to/llama.cpp/build/bin/llama-server
+  ./qwen-omni-7b-q4km_llamacpp.sh ``` #### e.g. Linux: ```bash ./qwen-omni-7b-awq_vllm.sh
+  ``` ### Secrets Some nodes need to make use of secrets. For example, the OpenAICompatibleLLM
+  node would need your LLM provider''s API key to make requests. Place your secrets
+  in a file called `.secret`. Once your secrets are in place, you will be able to
+  see them in a a dropdown for any node that needs them. Importantly, the actual secret
+  values are not stored in the graph data. This ensures safe sharing of graphs with
+  the community without risk of leaking your secrets. ## High-level Concepts ### App
+  An App is a graph consisting of nodes and their Pad connections. It''s the highest
+  level object in Gabber. ### Node A Node is a functional building block within a
+  Gabber app or subgraph. Each node performs a specific operation — like ingesting
+  media, transcribing audio, analyzing emotions, calling an external API, or generating
+  a response. Nodes can be composed into flows that define how your AI app behaves
+  in real time. Nodes have Inputs and Outputs called pads. Some pads have configurable
+  properties that effect the behavior of the node. ### Pad A Pad is a connection point
+  on a node that allows it to send or receive data. There are two types of pads: -
+  Sink Pads: Receive data from upstream nodes - Source Pads: Send data to downstream
+  nodes And two "modes": - Property: Always has a value, either an initial value or
+  the last value streamed - Stateless: Streams values as they happen Pads are typed,
+  so only compatible typed pads can be linked. When a node emits output on a pad,
+  any downstream nodes connected to that pad can process the result in real time.
+  ### SubGraph A SubGraph is very similar to an App — it’s a collection of nodes and
+  their pad connections. However, unlike an App, a SubGraph is designed to be embedded
+  within other apps as a single node. By using Proxy nodes, you can create entry and
+  exit points from your subgraph that appear in your parent app. This makes it easy
+  to pass data in and out of the SubGraph just like any other node. ### State Machine
+  A State Machine defines how your app moves between states using branching and conditional
+  logic. State Machines are made up of: - **Parameters** — variables that the state
+  machine listens to - **States** — distinct phases in your application flow, starting
+  from an initial state - **State Transitions** — nodes that determine when to move
+  from one state to another based on Parameters - **Transition Logic** — transitions
+  act as AND gates, and can be combined in parallel to create OR logic ## Anatomy
+  Gabber consists of a frontend and three backend services: engine, editor, repository.
+  ### Frontend The frontend is a NextJS app and is the user interface for interacting
+  with the backend services. The frontend can be accessed `http://localhost:3000`.
+  ### Editor The editor is a backend service. It''s the server for the frontend. ###
+  Engine The engine is the service responsible for running apps. ### Repository The
+  repository service is a very thin local http server reponsible for fetching and
+  saving apps and subgraphs. All entities are stored in the `.gabber` directory. It
+  runs on port `8001`. ## SDKs Gabber provides SDKs to help you integrate these servi'
 ---
 {% raw %}
 

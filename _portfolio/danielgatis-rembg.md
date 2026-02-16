@@ -2,8 +2,68 @@
 layout: project
 name: Danielgatis Rembg
 slug: danielgatis-rembg
+category: AI-automation-web2-3SmartC-Agent
 image: https://api.star-history.com/svg?repos=danielgatis/rembg&type=Date
 repo_url: https://github.com/danielgatis/rembg
+indexed_content: 'Rembg is a tool to remove image backgrounds. It can be used as a
+  CLI, Python library, HTTP server, or Docker container. ## Sponsors PhotoRoom Remove
+  Background API https://photoroom.com/api Fast and accurate background remover API
+  **If this project has helped you, please consider making a [donation](https://www.buymeacoffee.com/danielgatis).**
+  ## Requirements ```text python: >=3.11, If your system is compatible, run: ```bash
+  pip install "rembg[gpu]" # for library pip install "rembg[gpu,cli]" # for library
+  + cli ``` > **Note:** NVIDIA GPUs may require `onnxruntime-gpu`, CUDA, and `cudnn-devel`.
+  See [#668](https://github.com/danielgatis/rembg/issues/668#issuecomment-2689830314)
+  for details. If `rembg[gpu]` doesn''t work and you can''t install CUDA or `cudnn-devel`,
+  use `rembg[cpu]` with `onnxruntime` instead. ### GPU support (AMD/ROCm) ROCm support
+  requires the `onnxruntime-rocm` package. Install it by following [AMD''s documentation](https://rocm.docs.amd.com/projects/radeon/en/latest/docs/install/native_linux/install-onnx.html).
+  Once `onnxruntime-rocm` is installed and working, install rembg with ROCm support:
+  ```bash pip install "rembg[rocm]" # for library pip install "rembg[rocm,cli]" #
+  for library + cli ``` ## Usage as a CLI After installation, you can use rembg by
+  typing `rembg` in your terminal. The `rembg` command has 4 subcommands, one for
+  each input type: - `i` - single files - `p` - folders (batch processing) - `s` -
+  HTTP server - `b` - RGB24 pixel binary stream You can get help about the main command
+  using: ```shell rembg --help ``` You can also get help for any subcommand: ```shell
+  rembg --help ``` ### rembg `i` Used for processing single files. **Remove background
+  from a remote image:** ```shell curl -s http://input.png | rembg i > output.png
+  ``` **Remove background from a local file:** ```shell rembg i path/to/input.png
+  path/to/output.png ``` **Specify a model:** ```shell rembg i -m u2netp path/to/input.png
+  path/to/output.png ``` **Return only the mask:** ```shell rembg i -om path/to/input.png
+  path/to/output.png ``` **Apply alpha matting:** ```shell rembg i -a path/to/input.png
+  path/to/output.png ``` **Pass extra parameters (SAM example):** ```shell rembg i
+  -m sam -x ''{ "sam_prompt": [{"type": "point", "data": [724, 740], "label": 1}]
+  }'' examples/plants-1.jpg examples/plants-1.out.png ``` **Pass extra parameters
+  (custom model):** ```shell rembg i -m u2net_custom -x ''{"model_path": "~/.u2net/u2net.onnx"}''
+  path/to/input.png path/to/output.png ``` ### rembg `p` Used for batch processing
+  entire folders. **Process all images in a folder:** ```shell rembg p path/to/input
+  path/to/output ``` **Watch mode (process new/changed files automatically):** ```shell
+  rembg p -w path/to/input path/to/output ``` ### rembg `s` Used to start an HTTP
+  server. ```shell rembg s --host 0.0.0.0 --port 7000 --log_level info ``` For complete
+  API documentation, visit: `http://localhost:7000/api` **Remove background from an
+  image URL:** ```shell curl -s "http://localhost:7000/api/remove?url=http://input.png"
+  -o output.png ``` **Remove background from an uploaded image:** ```shell curl -s
+  -F file=@/path/to/input.jpg "http://localhost:7000/api/remove" -o output.png ```
+  ### rembg `b` Process a sequence of RGB24 images from stdin. This is intended to
+  be used with programs like FFmpeg that output RGB24 pixel data to stdout. ```shell
+  rembg b -o ``` **Arguments:** | Argument | Description | |----------|-------------|
+  | `width` | Width of input image(s) | | `height` | Height of input image(s) | |
+  `output_specifier` | Printf-style specifier for output filenames (e.g., `output-%03u.png`
+  produces `output-000.png`, `output-001.png`, etc.). Omit to write to stdout. | **Example
+  with FFmpeg:** ```shell ffmpeg -i input.mp4 -ss 10 -an -f rawvideo -pix_fmt rgb24
+  pipe:1 | rembg b 1280 720 -o folder/output-%03u.png ``` > **Note:** The width and
+  height must match FFmpeg''s output dimensions. The flags `-an -f rawvideo -pix_fmt
+  rgb24 pipe:1` are required for FFmpeg compatibility. ## Usage as a Library **Input
+  and output as bytes:** ```python from rembg import remove with open(''input.png'',
+  ''rb'') as i: with open(''output.png'', ''wb'') as o: input = i.read() output =
+  remove(input) o.write(output) ``` **Input and output as a PIL image:** ```python
+  from rembg import remove from PIL import Image input = Image.open(''input.png'')
+  output = remove(input) output.save(''output.png'') ``` **Input and output as a NumPy
+  array:** ```python from rembg import remove import cv2 input = cv2.imread(''input.png'')
+  output = remove(input) cv2.imwrite(''output.png'', output) ``` **Force output as
+  bytes:** ```python from rembg import remove with open(''input.png'', ''rb'') as
+  i: with open(''output.png'', ''wb'') as o: input = i.read() output = remove(input,
+  force_return_bytes=True) o.write(output) ``` **Batch processing with session reuse
+  (recommended for performance):** ```python from pathlib import Path from rembg import
+  remove, new_session session = new_session() for file in Path(''path/to/fo'
 ---
 {% raw %}
 <p align="center">

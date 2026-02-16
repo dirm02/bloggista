@@ -2,8 +2,55 @@
 layout: project
 name: The Pocket Pocketflow
 slug: The-Pocket-PocketFlow
+category: Uncategorized
 image: https://img.shields.io/badge/License-MIT-yellow.svg
 repo_url: https://github.com/The-Pocket/.github
+indexed_content: "English | [中文](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_CHINESE.md)
+  | [Español](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_SPANISH.md)
+  | [日本語](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_JAPANESE.md)
+  | [Deutsch](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_GERMAN.md)
+  | [Русский](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_RUSSIAN.md)
+  | [Português](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_PORTUGUESE.md)
+  | [Français](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_FRENCH.md)
+  | [한국어](https://github.com/The-Pocket/PocketFlow/blob/main/cookbook/pocketflow-batch/translations/README_KOREAN.md)
+  [](https://the-pocket.github.io/PocketFlow/) Pocket Flow is a [100-line](https://github.com/The-Pocket/PocketFlow/blob/main/pocketflow/__init__.py)
+  minimalist LLM framework - **Lightweight**: Just 100 lines. Zero bloat, zero dependencies,
+  zero vendor lock-in. - **Expressive**: Everything you love—([Multi-](https://the-pocket.github.io/PocketFlow/design_pattern/multi_agent.html))[Agents](https://the-pocket.github.io/PocketFlow/design_pattern/agent.html),
+  [Workflow](https://the-pocket.github.io/PocketFlow/design_pattern/workflow.html),
+  [RAG](https://the-pocket.github.io/PocketFlow/design_pattern/rag.html), and more.
+  - **[Agentic Coding](https://zacharyhuang.substack.com/p/agentic-coding-the-most-fun-way-to)**:
+  Let AI Agents (e.g., Cursor AI) build Agents—10x productivity boost! Get started
+  with Pocket Flow: - To install, ```pip install pocketflow```or just copy the [source
+  code](https://github.com/The-Pocket/PocketFlow/blob/main/pocketflow/__init__.py)
+  (only 100 lines). - To learn more, check out the [video tutorial](https://youtu.be/0Zr3NwcvpA0)
+  and [documentation](https://the-pocket.github.io/PocketFlow/) - \U0001F389 Join
+  our [Discord](https://discord.gg/hUHHE9Sa6T) to connect with other developers building
+  with Pocket Flow! - \U0001F389 Pocket Flow now has [Typescript](https://github.com/The-Pocket/PocketFlow-Typescript),
+  [Java](https://github.com/The-Pocket/PocketFlow-Java), [C++](https://github.com/The-Pocket/PocketFlow-CPP),
+  [Go](https://github.com/The-Pocket/PocketFlow-Go), [Rust](https://github.com/The-Pocket/PocketFlow-Rust)
+  and [PHP](https://github.com/The-Pocket/PocketFlow-PHP) versions! ## Why Pocket
+  Flow? Current LLM frameworks are bloated... You only need 100 lines for LLM Framework!
+  | | **Abstraction** | **App-Specific Wrappers** | **Vendor-Specific Wrappers** |
+  **Lines** | **Size** | |----------------|:-----------------------------: |:-----------------------------------------------------------:|:------------------------------------------------------------:|:---------------:|:----------------------------:|
+  | LangChain | Agent, Chain | Many (e.g., QA, Summarization) | Many (e.g., OpenAI,
+  Pinecone, etc.) | 405K | +166MB | | CrewAI | Agent, Chain | Many (e.g., FileReadTool,
+  SerperDevTool) | Many (e.g., OpenAI, Anthropic, Pinecone, etc.) | 18K | +173MB |
+  | SmolAgent | Agent | Some (e.g., CodeAgent, VisitWebTool) | Some (e.g., DuckDuckGo,
+  Hugging Face, etc.) | 8K | +198MB | | LangGraph | Agent, Graph | Some (e.g., Semantic
+  Search) | Some (e.g., PostgresStore, SqliteSaver, etc.) | 37K | +51MB | | AutoGen
+  | Agent | Some (e.g., Tool Agent, Chat Agent) | Many [Optional] (e.g., OpenAI, Pinecone,
+  etc.) | 7K (core-only) | +26MB (core-only) | | **PocketFlow** | **Graph** | **None**
+  | **None** | **100** | **+56KB** | ## How does Pocket Flow work? The [100 lines](https://github.com/The-Pocket/PocketFlow/blob/main/pocketflow/__init__.py)
+  capture the core abstraction of LLM frameworks: Graph! From there, it's easy to
+  implement popular design patterns like ([Multi-](https://the-pocket.github.io/PocketFlow/design_pattern/multi_agent.html))[Agents](https://the-pocket.github.io/PocketFlow/design_pattern/agent.html),
+  [Workflow](https://the-pocket.github.io/PocketFlow/design_pattern/workflow.html),
+  [RAG](https://the-pocket.github.io/PocketFlow/design_pattern/rag.html), etc. ✨ Below
+  are basic tutorials: | Name | Difficulty | Description | | :-------------: | :-------------:
+  | :--------------------- | | [Chat](https://github.com/The-Pocket/PocketFlow/tree/main/cookbook/pocketflow-chat)
+  | ☆☆☆ *Dummy* | A basic chat bot with conversation history | | [Structured Output](https://github.com/The-Pocket/PocketFlow/tree/main/cookbook/pocketflow-structured-output)
+  | ☆☆☆ *Dummy* | Extracting structured data from resumes by prompting | | [Workflow](https://github.com/The-Pocket/PocketFlow/tree/main/cookbook/pocketflow-workflow)
+  | ☆☆☆ *Dummy* | A writing workflow that outlines, writes content, and applies styling
+  | | [Agent](https://github.com/The-Pocket/PocketFlow/tree/main/cookbook/pocketflow-agen"
 ---
 {% raw %}
 <div align="center">

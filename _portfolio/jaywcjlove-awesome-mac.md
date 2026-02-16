@@ -2,8 +2,65 @@
 layout: project
 name: Jaywcjlove Awesome Mac
 slug: jaywcjlove-awesome-mac
+category: ServerTools-ProxMox-CICD
 image: https://img.shields.io/badge/Buy_Me_a_Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: 'Special thanks to: Warp, the intelligent terminal for developers!
+  Available for MacOS, Linux, & Windows ZenQuery Instant Q/A on your data files (CSV,
+  JSON, Excel, Parquet) Tuple, the premier screen sharing app for developers on macOS
+  and Windows. Awesome Mac === [](https://jaywcjlove.github.io/#/sponsor) [](https://npmjs.org/package/awesome-mac)
+  [](https://github.com/sindresorhus/awesome) [](https://hub.docker.com/r/wcjiang/awesome-mac)
+  [](README-zh.md) [](./README-ko.md) This project is now very large, and is very
+  different from the original idea. Here, we collect awesome macOS software and arrange
+  them into various categories. Feel free to **star** and **fork**. Any comments,
+  suggestions? [Let us know!](https://github.com/jaywcjlove/awesome-mac/issues) We
+  love PRs :) Please take a look at the [contributing](https://github.com/jaywcjlove/awesome-mac/blob/master/CONTRIBUTING.md)
+  guidelines before opening one. Follow the [awesome](https://github.com/sindresorhus/awesome)
+  list. **Explanation** [English](README.md) | [中文](README-zh.md) | [한국어](README-ko.md)
+  | [Awesome Command Line Apps](./command-line-apps.md) ![Open-Source Software][OSS
+  Icon] means **open source**. click the icon to see the item''s repository;\ ![Freeware][Freeware
+  Icon] means **free** to use, or **free** personal license;\ ![App Store][app-store
+  Icon] means **App store** hyperlink;\ ![Awesome List][awesome-list Icon] means hyperlink
+  to a corresponding **Awesome list** for the item; ✦ My macOS application: ## Contents
+  - [Awesome Mac](#awesome-mac) - [Contents](#contents) - [Reading and Writing Tools](#reading-and-writing-tools)
+  - [Text Editors](#text-editors) - [Office](#office) - [Markdown Tools](#markdown-tools)
+  - [Note-taking](#note-taking) - [Journaling](#journaling) - [Writing](#writing)
+  - [Ebooks](#ebooks) - [RSS](#rss) - [Others](#others) - [Developer Tools](#developer-tools)
+  - [IDEs](#ides) - [Developer Utilities](#developer-utilities) - [Regular Expression
+  Editors](#regular-expression-editors) - [API Development and Analysis](#api-development-and-analysis)
+  - [Network Analysis](#network-analysis) - [Frameworks For Hybrid Applications](#frameworks-for-hybrid-applications)
+  - [Version Control](#version-control) - [Virtualization](#virtualization) - [Databases](#databases)
+  - [Terminal Apps](#terminal-apps) - [Design and Product](#design-and-product) -
+  [Design Tools](#design-tools) - [Prototyping and Mind-Mapping Tools](#prototyping-and-mind-mapping-tools)
+  - [Screenshot Tools](#screenshot-tools) - [Screen Recording](#screen-recording)
+  - [Other Tools](#other-tools) - [AI Client](#ai-client) - [Communication](#communication)
+  - [Collaboration and Team Tools](#collaboration-and-team-tools) - [Email Clients](#email-clients)
+  - [File Sharing](#file-sharing) - [Data Recovery Tools](#data-recovery-tools) -
+  [Audio and Video Tools](#audio-and-video-tools) - [Audio Record and Process](#audio-record-and-process)
+  - [Download Management Tools](#download-management-tools) - [Cloud Storage](#cloud-storage)
+  - [Input Methods](#input-methods) - [Voice-to-Text](#voice-to-text) - [Browsers](#browsers)
+  - [Translation Tools](#translation-tools) - [Education](#education) - [Finance](#finance)
+  - [Encryption](#encryption) - [Security Tools](#security-tools) - [Proxy and VPN
+  Tools](#proxy-and-vpn-tools) - [Utilities](#utilities) - [Clipboard Tools](#clipboard-tools)
+  - [Menu Bar Tools](#menu-bar-tools) - [File Organization Tools](#file-organization-tools)
+  - [General Tools](#general-tools) - [To-Do Lists](#to-do-lists) - [Productivity](#productivity)
+  - [Window Management](#window-management) - [Password Management](#password-management)
+  - [Finder Tools](#finder-tools) - [Quality of Life Improvements](#quality-of-life-improvements)
+  - [System Related Tools](#system-related-tools) - [Gaming Software](#gaming-software)
+  - [Remote Login Software](#remote-login-software) - [QuickLook Plugins](#quicklook-plugins)
+  - [Third Party App Markets](#third-party-app-markets) - [Package Managers](#package-managers)
+  - [Mac App Download Sites](#mac-app-download-sites) - [Genuine Sites](#genuine-sites)
+  - [Pirated software download site blocklist](#pirated-software-download-site-blocklist)
+  - [Podcasts](#podcasts) - [Contributors](#contributors) - [License](#license) ##
+  Reading and Writing Tools *Applications to edit text, I suggest the open-source
+  editors* ### Text Editors * [Aurora Editor](https://auroraeditor.com/) - Lightweight
+  Code Editor (IDE) for macOS. [![Open-Source Software][OSS Icon]](https://github.com/AuroraEditor/AuroraEditor)
+  * [Bootstrap Studio](https://bootstrapstudio.io/) - A powerful desktop app for creating
+  responsive websites using the Bootstrap framework. * [Brackets](http://brackets.io)
+  - A modern, open source text editor that understands web design. [![Open-Source
+  Software][OSS Icon]](https://github.com/brackets-cont/brackets/) ![Freeware][Freeware
+  Icon] * [CodeEdit](https://www.codeedit.app/) - A lightweight, natively-built editor.
+  Open source. Free forever. [![Open-S'
 ---
 {% raw %}
 <div align="center" markdown="1">

@@ -2,8 +2,34 @@
 layout: project
 name: Tastyigniter Tastyigniter
 slug: tastyigniter-TastyIgniter
+category: Very important!!!!
 image: https://tastyigniter.com/images/mockups/v4/Menus.png
 repo_url: https://github.com/tastyigniter/TastyIgniter
+indexed_content: "[TastyIgniter](https://tastyigniter.com/) provides a professional
+  and reliable platform for restaurants wanting to offer online food ordering and
+  table reservation to their customers. ### Documentation The best place to learn
+  TastyIgniter is by reading the [documentation](https://tastyigniter.com/docs) ###
+  Installation Please read the [Installation Guide](https://tastyigniter.com/docs/installation)
+  for more information. ### Questions For questions and support please use the [Community
+  Forum](https://forum.tastyigniter.com) or [Join us on Discord](https://tastyigniter.com/discord).
+  ### Issues Please report bugs using the [GitHub issue tracker](https://github.com/tastyigniter/TastyIgniter/issues)
+  ### Stay in touch - [Follow us on Twitter](https://twitter.com/tastyigniter/) for
+  announcements and updates. - [Blog](https://tastyigniter.com/blog) for tips and
+  latest developments in the food industry. ## Contributing We would love your help
+  building TastyIgniter! Please read the [Contributing Guidelines](.github/CONTRIBUTING.md)
+  to learn how you can help. Thank you to all the people who already contributed to
+  TastyIgniter! ## Supporting TastyIgniter TastyIgniter is an MIT-licensed community-driven
+  project with its continuous development made possible by the support of these awesome
+  [backers](#contributing). If you'd like to help support the future of the project,
+  please consider: 1. Donating development time to the project. 2. Spreading the word
+  about TastyIgniter. 3. Becoming a sponsor by donating funds (see below). ## Sponsors
+  Become a sponsor and get your logo on our README on Github with a link to your site.
+  ### via Open Collective ### via Patreon [[Become a Patreon sponsor](https://www.patreon.com/sampoyigi)]
+  ## Built With :heart: - Laravel full-stack PHP framework - Bootstrap 5 front-end
+  framework ## Author TastyIgniter was created by [Samuel Adepoyigi](https://github.com/sampoyigi).
+  ## Security Vulnerabilities If you discover a security vulnerability within TastyIgniter,
+  please send an e-mail to support@tastyigniter.com. ## License TastyIgniter is open-source
+  software licensed under the [MIT license](https://tastyigniter.com/licence/)."
 ---
 {% raw %}
 <p align="center"><a href="https://tastyigniter" target="_blank"><img src="https://tastyigniter.com/images/logos/logo-padded.png" width="400"></a></p>

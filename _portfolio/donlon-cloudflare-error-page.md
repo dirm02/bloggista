@@ -2,8 +2,69 @@
 layout: project
 name: Donlon Cloudflare Error Page
 slug: donlon-cloudflare-error-page
+category: Very important!!!!
 image: https://github.com/donlon/cloudflare-error-page/blob/images/editor.png?raw=true
 repo_url: https://github.com/donlon/cloudflare-error-page
+indexed_content: "# Cloudflare Error Page Generator \U0001F4E2 **Update (2025/12/09)**:
+  All icons used in the error page have been fully redrawn as vector assets. These
+  icons along with the stylesheet are also inlined into a single file of the error
+  page, eliminating any need of hosting additional resources, and ensuring better
+  experience for you and your end users. ## What does this project do? This project
+  creates customized error pages that mimic the well-known Cloudflare error page.
+  You can also embed it into your own website. ## Online Editor Here's an online editor
+  to create customized error pages and example server apps. Try it out [here](https://virt.moe/cferr/editor/).
+  ## Quickstart for Programmers ### Python Install `cloudflare-error-page` using pip.
+  ``` Bash # Install from PyPI pip install cloudflare-error-page # Or, install the
+  latest version from this repo pip install git+https://github.com/donlon/cloudflare-error-page.git
+  ``` Then an error page can be generated using the `render` function provided by
+  the package. ([example.py](examples/example.py)) ``` Python import webbrowser from
+  cloudflare_error_page import render as render_cf_error_page # This function renders
+  an error page based on the input parameters error_page = render_cf_error_page({
+  # Browser status is ok 'browser_status': { \"status\": 'ok', }, # Cloudflare status
+  is error 'cloudflare_status': { \"status\": 'error', \"status_text\": 'Error', },
+  # Host status is also ok 'host_status': { \"status\": 'ok', \"location\": 'example.com',
+  }, # Position of the error indicator, valid options are 'browser', 'cloudflare',
+  and 'host' 'error_source': 'cloudflare', # Texts shown in the bottom of the page
+  'what_happened': ' There is an internal server error on Cloudflare\\'s network.
+  ', 'what_can_i_do': ' Please try again in a few minutes. ', }) # Write generated
+  webpage to file with open('error.html', 'w') as f: f.write(error_page) # Open the
+  generated page in browser webbrowser.open('error.html') ``` You can also see live
+  demo [here](https://virt.moe/cferr/examples/default). A demo server using Flask
+  is also available in [flask_demo.py](examples/flask_demo.py). ### JavaScript/NodeJS
+  Install the `cloudflare-error-page` package using npm: ``` Bash npm install cloudflare-error-page
+  ``` The following example demonstrates how to create an Express application that
+  automatically handles server errors. ``` JavaScript import express from 'express';
+  import { render as render_cf_error_page } from 'cloudflare-error-page'; const app
+  = express(); app.get('/', (req, res) => { /* Some code that break prod. Pushed by
+  a new employee recently. */ let [feature_values, _] = features .append_with_names(self.config.feature_names)
+  .unwrap(); } app.use((err, req, res) => { /* Handle the error intelligently by using
+  a custom handler */ res.status(500).send(render_cf_error_page({ \"title\": \"Internal
+  server error\", \"error_code\": \"500\", \"what_happened\": err.toString(), \"what_can_i_do\":
+  \"Please try again in a few minutes.\", })); }); app.listen(3000); ``` (Thanks [@junduck](https://github.com/junduck)
+  for creating the original NodeJS version.) ### PHP ``` PHP /* Coming soon! */ ```
+  ## More Examples ### Catastrophic infrastructure failure ``` Python params = { \"title\":
+  \"Catastrophic infrastructure failure\", \"more_information\": { \"for\": \"no information\",
+  }, \"browser_status\": { \"status\": \"error\", \"status_text\": \"Out of Memory\",
+  }, \"cloudflare_status\": { \"status\": \"error\", \"location\": \"Everywhere\",
+  \"status_text\": \"Error\", }, \"host_status\": { \"status\": \"error\", \"location\":
+  \"example.com\", \"status_text\": \"On Fire\", }, \"error_source\": \"cloudflare\",
+  \"what_happened\": \" There is a catastrophic failure. \", \"what_can_i_do\": \"
+  Please try again in a few years. \", } ``` [Demo](https://virt.moe/cferr/examples/catastrophic)
+  ### Web server is working ``` Python params = { \"title\": \"Web server is working\",
+  \"error_code\": \"200\", \"more_information\": { \"hidden\": True, }, \"browser_status\":
+  { \"status\": \"ok\", \"status_text\": \"Seems Working\", }, \"cloudflare_status\":
+  { \"status\": \"ok\", \"status_text\": \"Often Working\", }, \"host_status\": {
+  \"status\": \"ok\", \"location\": \"example.com\", \"status_text\": \"Almost Working\",
+  }, \"error_source\": \"host\", \"what_happened\": \" This site is still working.
+  And it looks great. \", \"what_can_i_do\": \" Visit the site before it crashes someday.
+  \", } ``` [Demo](https://virt.moe/cferr/examples/working) ## FAQ ### How to show
+  real user IP / Cloudflare Ray ID / data center location in the error page so that
+  it looks more realistic? Ray ID and user IP field in the error page can be set by
+  `ray_id` and `client_ip` properties in the `params` argument passed to the render
+  function. The real Cloudflare Ray ID and the data center location of current request
+  can be extracted from the `Cf-Ray` request header (e.g. `Cf-Ray: 230b030023ae2822-SJC`).
+  Detailed description of this header can be found at [Cloudflare documentation](https://developers.cloudflare.com/fundamentals/reference/http-headers/#cf-ray).
+  To lookup the city name of the d"
 ---
 {% raw %}
 # Cloudflare Error Page Generator

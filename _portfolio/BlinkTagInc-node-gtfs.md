@@ -2,8 +2,67 @@
 layout: project
 name: Blinktaginc Node Gtfs
 slug: BlinkTagInc-node-gtfs
+category: Future RAG ressources
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/BlinkTagInc-node-gtfs/docs/images/node-gtfs-logo.svg
 repo_url: https://github.com/BlinkTagInc/node-gtfs
+indexed_content: "➡️ Installation | Quick Start | TypeScript Support | Configuration
+  | Query Methods ⬅️ Import and Export GTFS transit data into SQLite. Query or change
+  routes, stops, times, fares and more. `node-GTFS` loads transit data in [GTFS format](https://developers.google.com/transit/)
+  into a SQLite database and provides some methods to query for agencies, routes,
+  stops, times, fares, calendars and other GTFS data. It also offers spatial queries
+  to find nearby stops, routes and agencies and can convert stops and shapes to geoJSON
+  format. Additionally, this library can export data from the SQLite database back
+  into GTFS (csv) format. The library also supports importing GTFS-Realtime data into
+  the same database. In order to keep the realtime database fresh, it uses `SQLITE
+  REPLACE` which makes it very effective. You can use it as a [command-line tool](#command-line-examples)
+  or as a [node.js module](#code-example). This library has four parts: the [GTFS
+  import script](#gtfs-import-script), [GTFS export script](#gtfs-export-script) and
+  [GTFS-Realtime update script](#gtfsrealtime-update-script) and the [query methods](#query-methods)
+  ## Installation To use this library as a command-line utility, install it globally
+  with [npm](https://npmjs.org): npm install gtfs -g This will add the `gtfs-import`
+  and `gtfs-export` scripts to your path. If you are using this as a node module as
+  part of an application, include it in your project's `package.json` file. npm install
+  gtfs ## Quick Start ### Command-line examples gtfs-import --gtfsUrl http://www.bart.gov/dev/schedules/google_transit.zip
+  or gtfs-import --gtfsPath /path/to/your/gtfs.zip or gtfs-import --gtfsPath /path/to/your/unzipped/gtfs
+  or gtfs-import --configPath /path/to/your/custom-config.json gtfs-export --configPath
+  /path/to/your/custom-config.json ### Code example ```js import { importGtfs } from
+  'gtfs'; import { readFile } from 'fs/promises'; import path from 'node:path'; const
+  config = JSON.parse( await readFile(path.join(import.meta.dirname, 'config.json'),
+  'utf8') ); try { await importGtfs(config); } catch (error) { console.error(error);
+  } ``` ### Example Applications GTFS-to-HTML uses `node-gtfs` for downloading, importing
+  and querying GTFS data. It provides a good example of how to use this library and
+  is used by over a dozen transit agencies to generate the timetables on their websites.
+  GTFS-to-geojson creates geoJSON files for transit routes for use in mapping. It
+  uses `node-gtfs` for downloading, importing and querying GTFS data. It provides
+  a good example of how to use this library. GTFS-to-chart generates a stringline
+  chart in D3 for all trips for a specific route using data from an agency's GTFS.
+  It uses `node-gtfs` for downloading, importing and querying GTFS data. GTFS Accessibility
+  Validator checks for accessiblity-realted fields and files and flags any issues.
+  It uses `node-gtfs` for downloading, importing and querying GTFS data. GTFS-Text-to-Speech
+  app tests GTFS stop name pronunciation for text-to-speech. It uses `node-gtfs` for
+  loading stop names from GTFS data. Transit Departures Widget creates a realtime
+  transit departures widget from GTFS and GTFS-Realtime data. GTFS-to-Blocks reads
+  transit data from GTFS and exports all trip segments sorted by block_id and their
+  departure times in CSV format. ## Command-Line Usage The `gtfs-import` command-line
+  utility will import GTFS into SQLite3. The `gtfs-export` command-line utility will
+  create GTFS from data previously imported into SQLite3. ### gtfs-import Command-Line
+  options `configPath` Allows specifying a path to a configuration json file. By default,
+  `node-gtfs` will look for a `config.json` file in the directory it is being run
+  from. Using a config.json file allows you specify more options than CLI arguments
+  alone - see below. gtfs-import --configPath /path/to/your/custom-config.json `gtfsPath`
+  Specify a local path to GTFS, either zipped or unzipped. gtfs-import --gtfsPath
+  /path/to/your/gtfs.zip or gtfs-import --gtfsPath /path/to/your/unzipped/gtfs `gtfsUrl`
+  Specify a URL to a zipped GTFS file. gtfs-import --gtfsUrl http://www.bart.gov/dev/schedules/google_transit.zip
+  ## TypeScript Support Basic TypeScript typings are included with this library. Please
+  [open an issue](https://github.com/blinktaginc/node-gtfs/issues) if you find any
+  inconsistencies between the declared types and underlying code. ## Configuration
+  Copy `config-sample.json` to `config.json` and then add your projects configuration
+  to `config.json`. cp config-sample.json config.json | option | type | description
+  | | ----------------------------------------------------------------- | -----------------
+  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | | [`agencies`](#agencies) | array | An array of GTFS files to be imported, and
+  which files to exclude. | | [`csvOptions`](#csvoptions) | object | Options passed
+  to `csv-parse` fo"
 ---
 {% raw %}
 <p align="center">

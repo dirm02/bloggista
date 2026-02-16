@@ -2,8 +2,64 @@
 layout: project
 name: Francescopace Espectre
 slug: francescopace-espectre
+category: Uncategorized
 image: https://img.shields.io/badge/license-GPLv3-blue.svg
 repo_url: https://github.com/francescopace/espectre
+indexed_content: "[](https://github.com/francescopace/espectre/blob/main/LICENSE)
+  [](https://esphome.io/) [](https://www.espressif.com/en/products/socs) [](https://github.com/francescopace/espectre/releases/latest)
+  [](https://github.com/francescopace/espectre/actions/workflows/ci.yml?query=branch%3Amain)
+  [](https://codecov.io/gh/francescopace/espectre) # \U0001F6DC ESPectre \U0001F47B
+  **Motion detection system based on Wi-Fi spectre analysis (CSI), with native Home
+  Assistant integration via ESPHome.** **Featured on Medium**: \"How I Turned My Wi-Fi
+  Into a Motion Sensor\" - [Part 1](https://medium.com/@francesco.pace/how-i-turned-my-wi-fi-into-a-motion-sensor-61a631a9b4ec?sk=c7f79130d78b0545fce4a228a6a79af3&utm_source=github&utm_medium=readme&utm_campaign=espectre)
+  | [Part 2](https://medium.com/@francesco.pace/how-i-turned-my-wi-fi-into-a-motion-sensor-part-2-62038130e530?sk=7c8b6f11cf3fcb8d279648016ebff72a&utm_source=github&utm_medium=readme&utm_campaign=espectre)
+  --- ## Table of Contents - [In 3 Points](#in-3-points) - [Mathematical Approach](#mathematical-approach)
+  - [What You Need](#what-you-need) - [Quick Start](#quick-start) - [How It Works](#how-it-works-simple-version)
+  - [What You Can Do With It](#what-you-can-do-with-it) - [Sensor Placement Guide](#where-to-place-the-sensor)
+  - [System Architecture](#system-architecture) - [FAQ](#faq-for-beginners) - [Security
+  and Privacy](#security-and-privacy) - [Technical Deep Dive](#technical-deep-dive)
+  - [Two-Platform Strategy](#two-platform-strategy) - [Future Evolution](#future-evolution)
+  - [Documentation](#documentation) - [Acknowledgments](#acknowledgments) - [License](#license)
+  - [Author](#author) --- ## In 3 Points 1. **What it does**: Detects movement using
+  Wi-Fi (no cameras, no microphones) 2. **What you need**: A ~€10 ESP32 device (S3
+  and C6 recommended, other variants supported) 3. **Setup time**: 10-15 minutes ---
+  ## Mathematical Approach **This project uses a pure mathematical approach** with
+  two detection algorithms: | Algorithm | Method | Best For | |-----------|--------|----------|
+  | **MVS** (default) | Moving Variance Segmentation | Most environments (>90% recall)
+  | | **ML** | Neural Network (MLP) | Higher accuracy, fixed subcarriers | - **No
+  ML training required**: Works out-of-the-box with mathematical algorithms (MVS default)
+  - **ML option available**: Pre-trained neural network for enhanced accuracy - **Real-time
+  processing**: Low latency detection on ESP32 hardware - **Production-ready**: Focused
+  on reliable motion detection for smart home - **R&D platform available**: [Micro-ESPectre](micro-espectre/)
+  provides feature extraction for ML research For algorithm details (MVS, NBVI calibration,
+  Hampel filter), see [ALGORITHMS.md](micro-espectre/ALGORITHMS.md). --- ## What You
+  Need ### Hardware - **2.4GHz Wi-Fi Router** - the one you already have at home works
+  fine - **ESP32 with CSI support** - ESP32-C6, ESP32-S3, ESP32-C3, ESP32 (original)
+  or other variants. See [SETUP.md](SETUP.md) for the complete platform comparison
+  table. *ESP32-S3 DevKit with external antennas* ### Software (All Free) - **Home
+  Assistant** (on Raspberry Pi, PC, NAS, or cloud) - **ESPHome** (integrated in Home
+  Assistant or standalone) ### Required Skills - **Basic YAML knowledge** for configuration
+  - **Home Assistant familiarity** (optional but recommended) - **NO** programming
+  required - **NO** router configuration needed --- ## Quick Start **Setup time**:
+  ~10-15 minutes **Difficulty**: Easy (YAML configuration only) 1. **Setup & Installation**:
+  Follow the complete guide in [SETUP.md](SETUP.md) 2. **Tuning**: Optimize for your
+  environment with [TUNING.md](TUNING.md) *Home Assistant dashboard with real-time
+  motion detection, threshold control, and debug sensors* --- ## How It Works (Simple
+  Version) When someone moves in a room, they \"disturb\" the Wi-Fi waves traveling
+  between the router and the sensor. It's like when you move your hand in front of
+  a flashlight and see the shadow change. The ESP32 device \"listens\" to these changes
+  and understands if there's movement. ### Advantages - **No cameras** (total privacy)
+  - **No wearables needed** (no bracelets or sensors to wear) - **Works through walls**
+  (Wi-Fi passes through walls) - **Very cheap** (~€10 total) Want to understand the
+  technical details? See [ALGORITHMS.md](micro-espectre/ALGORITHMS.md) for CSI explanation
+  and signal processing documentation. --- ## What You Can Do With It ### Practical
+  Examples - **Home security**: Get an alert if someone enters while you're away -
+  **Elderly care**: Monitor activity to detect falls or prolonged inactivity - **Smart
+  automation**: Turn on lights/heating only when someone is present - **Energy saving**:
+  Automatically turn off devices in empty rooms - **Child monitoring**: Alert if they
+  leave the room during the night - **Climate control**: Heat/cool only occupied zones
+  --- ## Where to Place the Sensor Optimal sensor placement is crucial for reliable
+  movement detection. ### Recommended Distance from Router **Optimal range:"
 ---
 {% raw %}
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/francescopace/espectre/blob/main/LICENSE)

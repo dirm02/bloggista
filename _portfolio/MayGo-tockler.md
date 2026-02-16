@@ -2,8 +2,37 @@
 layout: project
 name: Maygo Tockler
 slug: MayGo-tockler
+category: WindowsTools- Linux
 image: https://github.com/MayGo/tockler/raw/master/screenshots/tockler-logo-light.svg
 repo_url: https://github.com/MayGo/tockler
+indexed_content: "## Overview Tockler is a free application that automatically tracks
+  your computer usage and working time. It provides detailed insights into: - Application
+  usage and window titles - Computer state (idle, offline, online) - Interactive timeline
+  visualization - Daily, weekly, and monthly usage statistics - Calendar views and
+  charts ## Features - **Time Tracking**: Go back in time and see what you were working
+  on - **Application Monitoring**: Track which apps were used and their window titles
+  - **Usage Analytics**: View total online time, application usage patterns, and trends
+  - **Interactive Timeline**: Visualize your computer usage with an interactive chart
+  - **Cross-Platform**: Available for Windows, macOS, and Linux ## Support Tockler
+  Tockler is free and open-source software. If you find it useful, please consider
+  supporting its development: ## Download ### Windows ### macOS ### Linux ## Screenshots
+  ### Light Theme ### Dark Theme ## Technologies Tockler is built with modern web
+  technologies: - **Framework**: [Electron](https://electron.atom.io/) with [Webpack](https://webpack.github.io/)
+  and [TypeScript](https://www.typescriptlang.org/) - **Frontend**: [React](https://reactjs.org/)
+  with [Chakra UI](https://chakra-ui.com/) - **Data Visualization**: [D3.js](https://d3js.org/)
+  and [Victory Chart](http://formidable.com/open-source/victory/docs/victory-chart/)
+  - **Package Manager**: [pnpm](https://pnpm.io/) ## Development ### Prerequisites
+  - Node.js - Git - pnpm ### Quick Start 1. Clone the repository: ```bash git clone
+  https://github.com/Maygo/tockler.git cd tockler ``` 2. Enable pnpm: ```bash corepack
+  enable pnpm ``` 3. Install dependencies and start the application: For the React
+  client (renderer): ```bash cd client/ pnpm install pnpm start ``` For the Electron
+  main process: ```bash cd electron/ pnpm install pnpm start ``` ### Logs Logs are
+  stored in the following locations: - Linux: `~/.config/tockler/logs/main.log` -
+  macOS: `~/Library/Logs/tockler/main.log` - Windows: `%USERPROFILE%\\AppData\\Roaming\\tockler\\logs\\main.log`
+  ## Feedback Feel free to: - Create issues for feature requests - Star this project
+  - Share your feedback ## License Tockler is licensed under the GNU General Public
+  License v2.0. See the [LICENSE](LICENSE) file for details. MayGo (https://github.com/MayGo)
+  Created by Maigo Erit @ trimatech.dev"
 ---
 {% raw %}
 <p align="center">

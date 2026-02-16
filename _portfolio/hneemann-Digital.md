@@ -2,8 +2,64 @@
 layout: project
 name: Hneemann Digital
 slug: hneemann-Digital
+category: EE-kicad-3D-Robotic
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/hneemann-Digital/distribution/Download.svg
 repo_url: https://github.com/hneemann/Digital
+indexed_content: '[](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)
+  # Digital # Digital is an easy-to-use digital logic designer and circuit simulator
+  designed for educational purposes. ## [Download](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)
+  and Installation ## There is no installation required, just unpack the *Digital.zip*
+  file, which is available for [download](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip).
+  On Linux start the shell script and on Windows and MacOS the JAR file can be started
+  directly. A Java Runtime Environment (at least JRE 8) is required to run Digital.
+  On Windows the easiest way to get Java is to install the binaries provided by the
+  [Eclipse Temurin](https://adoptium.net/) project. If there are any problems starting
+  Digital on your system, please try to run Digital from a command line within the
+  *Digital* folder: ``` java -jar Digital.jar ``` ## Features ## These are the main
+  features of Digital: - Visualization of signal states with measurement graphs. -
+  Single gate mode to analyze oscillations. - Analysis and synthesis of combinatorial
+  and sequential circuits. - Simple testing of circuits: You can create test cases
+  and execute them to verify your design. - Many examples: From a transmission gate
+  D-flip-flop to a complete (simple) MIPS-like single cycle CPU. - Includes a simple
+  editor for finite state machines (FSM). A FSM can then be converted to a state transition
+  table and a circuit implementing the FSM (See [screenshot](#additional-screenshots)).
+  - Contains a library with the most commonly used 74xx series integrated circuits.
+  - Supports generic circuits. This allows the creation of circuits that can be parameterized
+  when used. In this way, it is possible, for e.g., to create a barrel shifter with
+  a selectable bit width. - Good performance: The example processor can be clocked
+  at 120 kHz. - Supports large circuits: The "Conway''s Game of Life" example consists
+  of about 2400 active components and works just fine. - It is possible to use custom
+  components which are implemented in Java and packed in a jar file. See this [example](https://github.com/hneemann/digitalCustomComponents)
+  for details. - Simple remote [TCP interface](https://github.com/hneemann/Assembler/blob/master/src/main/java/de/neemann/assembler/gui/RemoteInterface.java)
+  which e.g. allows an [assembler IDE](https://github.com/hneemann/Assembler) to control
+  the simulator. - Components can be described using VHDL or Verilog. The open source
+  VHDL simulator [ghdl](http://ghdl.free.fr/) needs to be installed to simulate a
+  VHDL defined component, and the open source Verilog simulator [Icarus Verilog](http://iverilog.icarus.com/)
+  is required to simulate a Verilog defined component. - A circuit can be exported
+  to VHDL or Verilog. There is also direct support for the [BASYS3 Board](https://reference.digilentinc.com/reference/programmable-logic/basys-3/start)
+  and the [TinyFPGA BX](https://tinyfpga.com/) board. See the documentation for details.
+  The examples folder contains a variant of the example CPU, which runs on a BASYS3
+  board. - Direct export of JEDEC files which you can flash to a [GAL16v8](https://www.microchip.com/wwwproducts/en/ATF16V8C)
+  or a [GAL22v10](https://www.microchip.com/wwwproducts/en/ATF22V10C). These chips
+  are somewhat outdated (introduced in 1985!) but sufficient for beginners exercises,
+  easy to understand and well documented. Also the [ATF150x](https://www.microchip.com/design-centers/programmable-logic/spld-cpld/cpld-atf15xx-family)
+  chips are supported which offer up to 128 macro-cells and in system programming.
+  See the [documentation](https://github.com/hneemann/Digital/releases/latest) for
+  details. - SVG export of circuits, including a LaTeX/Inkscape compatible SVG version
+  (see [ctan](https://www.ctan.org/tex-archive/info/svg-inkscape)) - No legacy code.
+  - Good test coverage (about 80%; Neither the GUI tests nor the HDL simulator integration
+  tests are running on the Travis-CI build servers, so CodeCov measures only about
+  50%). Almost all examples contain test cases which ensure that they work correctly.
+  The latest changes that have not yet been released are listed in the [release notes](distribution/ReleaseNotes.txt).
+  ## Documentation ## The [documentation](https://github.com/hneemann/Digital/releases/latest)
+  is available in English, German, Spanish, Portuguese, French, Italian and simplified
+  Chinese. It is still very incomplete but it contains a chapter "First Steps" which
+  explains the basic usage of Digital. The documentation also contains a list of available
+  74xx chips and a list of available keyboard shortcuts. ## Translations ## So far
+  Digital is available in English, German, Spanish, Portuguese, French, Italian and
+  simplified Chinese. If someone wants to add a new translation, please let me [know](mailto:digital-simulator@web.de).
+  I can provide you with a special file for translation. This file is much easier
+  to translate than the ['
 ---
 {% raw %}
 [![Download](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/hneemann-Digital/distribution/Download.svg)](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)

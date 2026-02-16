@@ -2,8 +2,66 @@
 layout: project
 name: Benbusby Whoogle Search
 slug: benbusby-whoogle-search
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/benbusby-whoogle-search/docs/banner.png
 repo_url: https://github.com/benbusby/shoogle
+indexed_content: '>[!WARNING] > >Since 16 January, 2025, Google has been attacking
+  the ability to perform search queries without JavaScript enabled. This is a fundamental
+  part of how Whoogle >works -- Whoogle requests the JavaScript-free search results,
+  then filters out garbage from the results page and proxies all external content
+  for the user. > >This is possibly a breaking change that may mean the end for Whoogle.
+  We''ll continue fighting back and releasing workarounds until all workarounds are
+  >exhausted or a better method is found. If you know of a better way, please review
+  and comment in our Way Forward Discussion ___ [](https://github.com/benbusby/shoogle/releases)
+  [](https://opensource.org/licenses/MIT) [](https://github.com/benbusby/whoogle-search/actions/workflows/tests.yml)
+  [](https://github.com/benbusby/whoogle-search/actions/workflows/buildx.yml) [](https://hub.docker.com/r/benbusby/whoogle-search)
+  SourceHut GitHub Get Google search results, but without any ads, JavaScript, AMP
+  links, cookies, or IP address tracking. Easily deployable in one click as a Docker
+  app, and customizable with a single config file. Quick and simple to implement as
+  a primary search engine replacement on both desktop and mobile. Contents 1. [Features](#features)
+  3. [Install/Deploy Options](#install) 1. [Heroku Quick Deploy](#heroku-quick-deploy)
+  1. [Render.com](#render) 1. [Repl.it](#replit) 1. [Fly.io](#flyio) 1. [Koyeb](#koyeb)
+  1. [pipx](#pipx) 1. [pip](#pip) 1. [Manual](#manual) 1. [Docker](#manual-docker)
+  1. [Arch/AUR](#arch-linux--arch-based-distributions) 1. [Helm/Kubernetes](#helm-chart-for-kubernetes)
+  4. [Environment Variables and Configuration](#environment-variables) 5. [Google
+  Custom Search (BYOK)](#google-custom-search-byok) 6. [Usage](#usage) 7. [Extra Steps](#extra-steps)
+  1. [Set Primary Search Engine](#set-whoogle-as-your-primary-search-engine) 2. [Custom
+  Redirecting](#custom-redirecting) 2. [Custom Bangs](#custom-bangs) 3. [Prevent Downtime
+  (Heroku Only)](#prevent-downtime-heroku-only) 4. [Manual HTTPS Enforcement](#https-enforcement)
+  5. [Using with Firefox Containers](#using-with-firefox-containers) 6. [Reverse Proxying](#reverse-proxying)
+  1. [Nginx](#nginx) 8. [Contributing](#contributing) 9. [FAQ](#faq) 10. [Public Instances](#public-instances)
+  11. [Screenshots](#screenshots) ## Features - No ads or sponsored content - No JavaScript\*
+  - No cookies\*\* - No tracking/linking of your personal IP address\*\*\* - No AMP
+  links - No URL tracking tags (i.e. utm=%s) - No referrer header - Tor and HTTP/SOCKS
+  proxy support - Autocomplete/search suggestions - POST request search and suggestion
+  queries (when possible) - View images at full res without site redirect (currently
+  mobile only) - Light/Dark/System theme modes (with support for [custom CSS theming](https://github.com/benbusby/whoogle-search/wiki/User-Contributed-CSS-Themes))
+  - Auto-generated Opera User Agents with random rotation - 10 unique Opera-based
+  UAs generated on startup from 115 language variants - Randomly rotated for each
+  search request to avoid detection patterns - Cached across restarts with configurable
+  refresh options - Fallback to safe default UA if generation fails - Optional display
+  of current UA in search results footer - Easy to install/deploy - DDG-style bang
+  (i.e. `! `) searches - User-defined [custom bangs](#custom-bangs) - Optional location-based
+  searching (i.e. results near \ ) - Optional NoJS mode to view search results in
+  a separate window with JavaScript blocked - JSON output for results via content
+  negotiation (see "JSON results (API)") *No third party JavaScript. Whoogle can be
+  used with JavaScript disabled, but if enabled, uses JavaScript for things like presenting
+  search suggestions. **No third party cookies. Whoogle uses server side cookies (sessions)
+  to store non-sensitive configuration settings such as theme, language, etc. Just
+  like with JavaScript, cookies can be disabled and not affect Whoogle''s search functionality.
+  ***If deployed to a remote server, or configured to send requests through a VPN,
+  Tor, proxy, etc. ## Install ### Supported Platforms Official Docker images are built
+  for: - **linux/amd64** (x86_64) - **linux/arm64** (ARM 64-bit, Raspberry Pi 3/4/5,
+  Apple Silicon) **Note**: ARMv7 support (32-bit ARM, Raspberry Pi 2) was dropped
+  in v1.2.0 due to incompatibility with modern security libraries on Alpine Linux.
+  Users with ARMv7 devices can either: - Use an older version (v1.1.x or earlier)
+  - Build locally with pinned dependencies (see notes in Dockerfile) - Upgrade to
+  a 64-bit OS if hardware supports it (Raspberry Pi 3+) There are a few different
+  ways to begin using the app, depending on your preferences: ___ ### [Heroku Quick
+  Deploy](https://heroku.com/about) [](https://heroku.com/deploy?template=https://github.com/benbusby/whoogle-search/tree/main)
+  Provides: - Easy Deployment of App - A HTTPS url (https://\ .herokuapp.com) Notes:
+  - Requires a **PAID** Heroku Account. - Sometimes has issues with auto-redirecting
+  to `https`. Make'
 ---
 {% raw %}
 >[!WARNING]

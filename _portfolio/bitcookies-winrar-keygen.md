@@ -2,8 +2,67 @@
 layout: project
 name: Bitcookies Winrar Keygen
 slug: bitcookies-winrar-keygen
+category: Science -math-physics-chemistry
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/bitcookies-winrar-keygen/assets/fork-light.png#gh-light-mode-only
 repo_url: https://github.com/bitcookies/winrar-keygen
+indexed_content: 'WinRAR Keygen Principle of WinRAR key generation 简体中文 | English
+  ## 1. What is WinRAR? WinRAR is a trialware file archiver utility for Windows, developed
+  by Eugene Roshal of win.rar GmbH. It can create and view archives in RAR or ZIP
+  file formats and unpack numerous archive file formats. WinRAR is not a free software.
+  If you want to use it, you should pay to [__RARLAB__](https://www.rarlab.com/) and
+  then you will get a license file named `rarreg.key`. This repository will tell you
+  how WinRAR license file `"rarreg.key"` is generated. ## 2. How is "rarreg.key" generated?
+  See [here](README.HOW_DOES_IT_WORK.md). ## 3. How to use? There are several ways
+  to use it. - [Use Github Actions](#4-Use-Github-Actions) - [Use Github Actions with
+  secrets](#5-Use-Github-Actions-with-secrets) - [Build in Visual Studio](#6-Build-in-Visual-Studio)
+  ### 3.1 Encoding WinRAR Keygen supports `ASCII`, `ANSI` and `UTF8NoBOM` encoding
+  types, the corresponding supported characters are listed in the table below. > [!NOTE]
+  > The default is `utf8`, but you can specify the encoding as `ascii` or `ansi`.
+  | Encoding | Supported Characters | Character Examples | | --------------------------------------------
+  | ------------------------------------------------------------ | ------------------------------------------------------------
+  | | [ascii](https://en.wikipedia.org/wiki/ASCII) | Only full ASCII characters are
+  supported. | | | ansi | There is no one fixed ANSI code, usually [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252),
+  but other local codes are also possible. | | | [utf8](https://en.wikipedia.org/wiki/UTF-8)
+  | Supports UTF-8 without BOM. | ASCII characters, English, 简体中文, 繁體中文, Deutsch,
+  Français, Русский, Italiano, 日本語, 한국어, Lengua española, Ελληνική γλώσσα, et al.
+  | ### 3.2 License type There are two types of WinRAR licenses, `rarreg.key` and
+  `rarkey.rar`, which differ only in their import. | rarreg.key | rarkey.rar | | :--------------------------------------------:
+  | :----------------------------------------------: | | | | | Drag to import or place
+  in a location | Double-click to run automatic import | If you are unable to drag,
+  you can try to put the `rarreg.key` in the following directory. ```shell C:\Users\yourname\AppData\Roaming\WinRAR\rarreg.key
+  ``` You can also compress `rarreg.key` into `rarkey.rar` and double-click it to
+  run it, and the license import will take place automatically. ## 4. Use Github Actions
+  Click to expand The new workflow can easily help you generate a license, you just
+  need to follow these steps. > Your `Username` and `License Name` will appear in
+  the actions log, if you don''t want to give out this information, see [5. Using
+  Github Actions with secrets](#5-Use-Github-Actions-with-secrets). ### 4.1 Fork **Fork**
+  this repo. ### 4.2 Allow fork repo to run workflows Go back to the repo you just
+  forked and click **Actions** to allow Workflows to run in your forked repo. ###
+  4.3 Run workflow After allowing the workflow, go to **Actions > WinRAR Keygen >
+  Run workflow** and fill in the information to start generating. > For the difference
+  of license encoding, please refer to [3.1 Encoding](#31-Encoding). After running
+  successfully, open the corresponding task and select **rarreg_file** to download.
+  > File retention 90 days. Extract rarreg_file.zip to get `rarreg.key` and drag to
+  import into WinRAR. You can also compress `rarreg.key` into `rarkey.rar`, then double-click
+  it to run it, and the license import will be done automatically. If you get an invalid
+  key, please check [the specific solution](#7-invalid-key). ## 5. Use Github Actions
+  with secrets Click to expand Using [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+  can help you hide license information. ### 5.1 Fork **Fork** this repo. ### 5.2
+  Allow fork repo to run workflows Go back to the repo you just forked and click **Actions**
+  to allow Workflows to run in your forked repo. ### 5.3 Create secrets After allowing
+  the workflow, go to **Settings > Secrets and variables > Actions > New repository
+  secret** to create a secret. Create three secrets with the names `TEXT1`, `TEXT2`
+  and `PWD` and fill in the relevant values. > The value filled in should be consistent
+  with the type of code you have chosen. | Secrets Name | Explanation | | -------------------------------
+  | ------------------------------ | | TEXT1 | Your Name | | TEXT2 | Your License
+  Name | | PWD | 7-Zip Password | Once created, you will see it. ### 5.4 Run workflow
+  Go to **Actions** and select **WinRAR Keygen with secrets** to run workflow manually.
+  For the difference of license encoding, please refer to [3.1 Encoding](#31-Encoding).
+  After running successfully, open the corresponding task and select **rarreg_file**
+  to download. > File retained for **1 day** only. Extract `rarreg_file.zip` to get
+  `rarreg.7z`, unzip it with the password to get `rarreg.key`, then drag and drop
+  to import into WinRAR. You can also compress `rarreg.key` into `rarkey.rar`, then
+  double-cl'
 ---
 {% raw %}
 <p align="center">

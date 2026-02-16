@@ -2,8 +2,67 @@
 layout: project
 name: Appwrite Appwrite
 slug: appwrite-appwrite
+category: Very important!!!!
 image: https://img.shields.io/travis/com/appwrite/appwrite?style=flat-square
 repo_url: https://github.com/appwrite/appwrite
+indexed_content: '> We just announced DB operators for Appwrite Databases - [Learn
+  more](https://appwrite.io/blog/post/announcing-db-operators) > Appwrite Cloud is
+  now Generally Available - [Learn more](https://appwrite.io/cloud-ga) > [Get started
+  with Appwrite](https://apwr.dev/appcloud) Appwrite is a best-in-class, developer-first
+  platform that gives builders everything they need to create scalable, stable, and
+  production-ready software, fast. [](https://appwrite.io/company/careers) [](https://hacktoberfest.appwrite.io)
+  [](https://appwrite.io/discord?r=Github) [](https://github.com/appwrite/appwrite/actions)
+  [](https://twitter.com/appwrite) English | [简体中文](README-CN.md) Appwrite is an end-to-end
+  platform for building Web, Mobile, Native, or Backend apps, packaged as a set of
+  Docker microservices. It includes both a backend server and a fully integrated hosting
+  solution for deploying static and server-side rendered frontends. Appwrite abstracts
+  the complexity and repetitiveness required to build modern apps from scratch and
+  allows you to build secure, full-stack applications faster. Using Appwrite, you
+  can easily integrate your app with user authentication and multiple sign-in methods,
+  a database for storing and querying users and team data, storage and file management,
+  image manipulation, Cloud Functions, messaging, and [more services](https://appwrite.io/docs).
+  Find out more at: [https://appwrite.io](https://appwrite.io). Table of Contents:
+  - [Installation \& Setup](#installation--setup) - [Self-Hosting](#self-hosting)
+  - [Unix](#unix) - [Windows](#windows) - [CMD](#cmd) - [PowerShell](#powershell)
+  - [Upgrade from an Older Version](#upgrade-from-an-older-version) - [One-Click Setups](#one-click-setups)
+  - [Getting Started](#getting-started) - [Products](#products) - [SDKs](#sdks) -
+  [Client](#client) - [Server](#server) - [Community](#community) - [Architecture](#architecture)
+  - [Contributing](#contributing) - [Security](#security) - [Follow Us](#follow-us)
+  - [License](#license) ## Installation & Setup The easiest way to get started with
+  Appwrite is by [signing up for Appwrite Cloud](https://cloud.appwrite.io/). While
+  Appwrite Cloud is in public beta, you can build with Appwrite completely free, and
+  we won''t collect your credit card information. ## Self-Hosting Appwrite is designed
+  to run in a containerized environment. Running your server is as easy as running
+  one command from your terminal. You can either run Appwrite on your localhost using
+  docker-compose or on any other container orchestration tool, such as [Kubernetes](https://kubernetes.io/docs/home/),
+  [Docker Swarm](https://docs.docker.com/engine/swarm/), or [Rancher](https://rancher.com/docs/).
+  Before running the installation command, make sure you have [Docker](https://www.docker.com/products/docker-desktop)
+  installed on your machine: ### Unix ```bash docker run -it --rm \ --volume /var/run/docker.sock:/var/run/docker.sock
+  \ --volume "$(pwd)"/appwrite:/usr/src/code/appwrite:rw \ --entrypoint="install"
+  \ appwrite/appwrite:1.8.0 ``` ### Windows #### CMD ```cmd docker run -it --rm ^
+  --volume //var/run/docker.sock:/var/run/docker.sock ^ --volume "%cd%"/appwrite:/usr/src/code/appwrite:rw
+  ^ --entrypoint="install" ^ appwrite/appwrite:1.8.0 ``` #### PowerShell ```powershell
+  docker run -it --rm ` --volume /var/run/docker.sock:/var/run/docker.sock ` --volume
+  ${pwd}/appwrite:/usr/src/code/appwrite:rw ` --entrypoint="install" ` appwrite/appwrite:1.8.0
+  ``` Once the Docker installation is complete, go to http://localhost to access the
+  Appwrite console from your browser. Please note that on non-Linux native hosts,
+  the server might take a few minutes to start after completing the installation.
+  For advanced production and custom installation, check out our Docker [environment
+  variables](https://appwrite.io/docs/environment-variables) docs. You can also use
+  our public [docker-compose.yml](https://appwrite.io/install/compose) and [.env](https://appwrite.io/install/env)
+  files to manually set up an environment. ### Upgrade from an Older Version If you
+  are upgrading your Appwrite server from an older version, you should use the Appwrite
+  migration tool once your setup is completed. For more information regarding this,
+  check out the [Installation Docs](https://appwrite.io/docs/self-hosting). ## One-Click
+  Setups In addition to running Appwrite locally, you can also launch Appwrite using
+  a pre-configured setup. This allows you to get up and running quickly with Appwrite
+  without installing Docker on your local machine. Choose from one of the providers
+  below: DigitalOcean Akamai Compute AWS Marketplace ## Getting Started Getting started
+  with Appwrite is as easy as creating a new project, choosing your platform, and
+  integrating its SDK into your code. You can easily get started with your platform
+  of choice by reading one of our Getting Started tutorials. | Platform | Technology
+  | | --------------------- | ----------------------------------------------------------------------------------
+  | | **'
 ---
 {% raw %}
 > We just announced DB operators for Appwrite Databases - [Learn more](https://appwrite.io/blog/post/announcing-db-operators)

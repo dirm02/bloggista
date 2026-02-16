@@ -2,8 +2,35 @@
 layout: project
 name: Basarsubasi Simplefitnessapp
 slug: basarsubasi-simplefitnessapp
+category: iOS-imac
 image: https://img.shields.io/badge/Discord-Join_Our_Community-5865F2?style=for-the-badge&logo=discord&logoColor=white
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "[](https://discord.gg/A38Ny7UggP) [](https://github.com/user-attachments/assets/cc2c2281-73c1-4df6-b574-54678806ae03)
+  [](mailto:basarsubasi@protonmail.com) # **Simple.** Welcome to **Simple.** An easy
+  to use fitness app that lets you create, schedule and track your workouts locally.
+  ## \U0001F4F8 **Screenshots** ## \U0001F680 **Features** \U0001F3CB️ **Create a
+  Workout** - Choose a featured workout or easily create customized workouts with
+  exercises, sets, and reps of your own ✏️ **Edit Your Workouts** - Modify your existing
+  workouts to update exercises, sets, or reps as your fitness goals evolve. \U0001F4C5
+  **Schedule Your Workouts** - Plan your fitness journey by scheduling workouts on
+  specific days. \U0001F4CA **Track Your Progress** - Log your weights and reps to
+  monitor your progress over time with graphical data. \U0001F4C6 **Customizable Date
+  and Weight Formats** - Choose between `dd-mm-yyyy` or `mm-dd-yyyy` date formats
+  and toggle between `kg` or `lbs` for weights. ## \U0001F30D **Languages** \U0001F1E8\U0001F1FF
+  \U0001F1E9\U0001F1EA \U0001F1E9\U0001F1F0 \U0001F1EC\U0001F1F7 \U0001F1EC\U0001F1E7
+  \U0001F1EA\U0001F1F8 \U0001F1EB\U0001F1EE \U0001F1EB\U0001F1F7 \U0001F1EE\U0001F1F9
+  \U0001F1EF\U0001F1F5 \U0001F1F0\U0001F1F7 \U0001F1F3\U0001F1F1 \U0001F1F3\U0001F1F4
+  \U0001F1F5\U0001F1F1 \U0001F1F5\U0001F1F9 \U0001F1F7\U0001F1FA \U0001F1F8\U0001F1EE
+  \U0001F1F8\U0001F1EA \U0001F1F9\U0001F1F7 \U0001F1FA\U0001F1E6 \U0001F1E8\U0001F1F3
+  _(If you want to translate the app to your language or improve the existing translations
+  but don't know how, please join our discord server or contact me at basarsubasi@protonmail.com)_
+  ## \U0001F6E0️ **How It Works** 1. **Adjust Settings**: Change the Date and Weight
+  Formats to your liking. 2. **Create Workouts**: Start by adding days, exercises,
+  sets, and reps. 3. **Schedule Workouts**: Plan your fitness routine by selecting
+  a date. 4. **Track Progress**: Log weights and reps you have done during your workouts
+  to see your improvement. ## ⬇️ **Installation Methods** *(Notification functionality
+  is not available on the F-Droid builds due to package incompatibility with F-Droid
+  policies.)*"
 ---
 {% raw %}
 <div align="center">

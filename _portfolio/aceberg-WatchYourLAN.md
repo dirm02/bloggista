@@ -2,8 +2,65 @@
 layout: project
 name: Aceberg Watchyourlan
 slug: aceberg-WatchYourLAN
+category: Let's try this- Personal prefere
 image: https://github.com/aceberg/WatchYourLAN/actions/workflows/main-docker-all.yml/badge.svg
 repo_url: https://github.com/aceberg/WatchYourLAN
+indexed_content: 'WatchYourLAN [](https://github.com/aceberg/WatchYourLAN/actions/workflows/main-docker-all.yml)
+  [](https://goreportcard.com/report/github.com/aceberg/WatchYourLAN) [](https://hub.docker.com/r/aceberg/watchyourlan)
+  [](https://github.com/aceberg/WatchYourLAN/discussions) Lightweight network IP scanner
+  with web GUI. Features: - Send notification when new host is found - Monitor hosts
+  online/offline history - Keep a list of all hosts in the network - Send data to
+  `InfluxDB2` or `Prometheus` to make a `Grafana` dashboard > [!IMPORTANT] > Please,
+  consider making a [donation](https://github.com/aceberg#donate). Even $10 will make
+  a difference to me. ## More screenshots Expand ## Quick start Expand Replace `$YOURTIMEZONE`
+  with correct time zone and `$YOURIFACE` with network interface you want to scan.
+  Network mode must be `host`. Set `$DOCKERDATAPATH` for container to save data: ```sh
+  docker run --name wyl \ -e "IFACES=$YOURIFACE" \ -e "TZ=$YOURTIMEZONE" \ --network="host"
+  \ -v $DOCKERDATAPATH/wyl:/data/WatchYourLAN \ aceberg/watchyourlan ``` Web GUI should
+  be at http://localhost:8840 ## Auth Expand **WatchYourLAN** does not have built-in
+  auth option. But you can use it with SSO tools like Authelia, or my simple auth
+  app [ForAuth](https://github.com/aceberg/ForAuth). Here is an example [docker-compose-auth.yml](https://github.com/aceberg/WatchYourLAN/blob/main/docker-compose-auth.yml).
+  > :warning: **WARNING!** > Please, don''t forget that WYL needs `host` network mode
+  to work. So, WYL port will be exposed in this setup. You need to limit access to
+  it with firewall or other measures. ## Install on Linux Expand All binary packages
+  can be found in [latest](https://github.com/aceberg/WatchYourLAN/releases/latest)
+  release. There are `.deb`, `.rpm`, `.apk` (Alpine Linux) and `.tar.gz` files. Supported
+  architectures: `amd64`, `i386`, `arm_v5`, `arm_v6`, `arm_v7`, `arm64`. Dependencies:
+  `arp-scan`, `tzdata`. For `amd64` there is a `deb` repo [available](https://github.com/aceberg/ppa)
+  ## Config Expand Configuration can be done through config file, GUI or environment
+  variables. Variable names is `config_v2.yaml` file are the same, but in lowcase.
+  ### Basic config | Variable | Description | Default | | -------- | ----------- |
+  ------- | | TZ | Set your timezone for correct time | | | HOST | Listen address
+  | 0.0.0.0 | | PORT | Port for web GUI | 8840 | | THEME | Any theme name from https://bootswatch.com
+  in lowcase or [additional](https://github.com/aceberg/aceberg-bootswatch-fork) |
+  sand | | COLOR | Background color: light or dark | dark | | NODEPATH | Path to local
+  node modules | | | SHOUTRRR_URL | WatchYourLAN uses [Shoutrrr](https://github.com/nicholas-fedor/shoutrrr)
+  to send notifications. It is already integrated, just needs a correct URL. Examples
+  for Discord, Email, Gotify, Matrix, Ntfy, Pushover, Slack, Telegram, Generic Webhook
+  and etc are [here](https://nicholas-fedor.github.io/shoutrrr/) | | ### Scan settings
+  | Variable | Description | Default | | -------- | ----------- | ------- | | IFACES
+  | Interfaces to scan. Could be one or more, separated by space. See [docs/VLAN_ARP_SCAN.md](https://github.com/aceberg/WatchYourLAN/blob/main/docs/VLAN_ARP_SCAN.md).
+  | | | TIMEOUT | Time between scans (seconds) | 120 | | ARP_ARGS | Arguments for
+  `arp-scan`. Enable `debug` log level to see resulting command. (Example: `-r 1`).
+  See [docs/VLAN_ARP_SCAN.md](https://github.com/aceberg/WatchYourLAN/blob/main/docs/VLAN_ARP_SCAN.md).
+  | | | ARP_STRS ARP_STRS_JOINED | See [docs/VLAN_ARP_SCAN.md](https://github.com/aceberg/WatchYourLAN/blob/main/docs/VLAN_ARP_SCAN.md).
+  | | | LOG_LEVEL | Log level: `debug`, `info`, `warn` or `error` | info | | TRIM_HIST
+  | Remove history after (hours) | 48 | | HIST_IN_DB | DEPRECATED since 2.1.3. Now
+  History is always stored in DB. Use TRIM_HIST to reduce DB size | | | USE_DB | Either
+  `sqlite` or `postgres` | sqlite | | PG_CONNECT | Address to connect to PostgreSQL.
+  (Example: `postgres://username:password@192.168.0.1:5432/dbname?sslmode=disable`).
+  Full list of URL parameters [here](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters)
+  | | ### InfluxDB2 config This config matches Grafana''s config for InfluxDB data
+  source | Variable | Description | Default | Example | | -------- | ----------- |
+  ------- | ------- | | INFLUX_ENABLE | Enable export to InfluxDB2 | false | true
+  | | INFLUX_SKIP_TLS | Skip TLS Verify | false | true | | INFLUX_ADDR | Address:port
+  of InfluxDB2 server | | https://192.168.2.3:8086/ | | INFLUX_BUCKET | InfluxDB2
+  bucket | | test | | INFLUX_ORG | InfluxDB2 org | | home | | INFLUX_TOKEN | Secret
+  token, generated by InfluxDB2 | | | ### Prometheus config This config configures
+  the Prometheus data source | Variable | Description | Default | Example | | --------
+  | ----------- | ------- | ------- | | PROMETHEUS_ENABLE | Enable the Prometheus
+  `/metrics` endpoint | false | true | ## Config file Expand Config file name is `config_v2.yaml`.
+  Example: ```yaml arp_args: "" color: dark ho'
 ---
 {% raw %}
 <h1><a href="https://github.com/aceberg/WatchYourLAN">

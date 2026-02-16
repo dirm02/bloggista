@@ -2,8 +2,65 @@
 layout: project
 name: Aandrew Me Ytdownloader
 slug: aandrew-me-ytDownloader
+category: Uncategorized
 image: https://img.shields.io/flathub/downloads/io.github.aandrew_me.ytdn?label=Flathub%20downloads
 repo_url: https://github.com/aandrew-me/ytDownloader
+indexed_content: "# ytDownloader [](https://flathub.org/apps/details/me.aandrew.ytdownloader)
+  [](https://github.com/aandrew-me/ytDownloader/releases) [](https://github.com/aandrew-me/ytDownloader/releases/latest)
+  [](https://flathub.org/apps/io.github.aandrew_me.ytdn) [](https://snapcraft.io/ytdownloader)
+  A modern GUI video and audio downloader supporting [hundreds of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+  [](https://snapcraft.io/ytdownloader) [](https://github.com/aandrew-me/ytDownloader/releases/latest/download/YTDownloader_Linux.AppImage)
+  ## Features \U0001F680 ✅ Supports hundreds of sites including Youtube, Facebook,
+  Instagram, Tiktok, Twitter and so on. ✅ Multiple themes ✅ Video Compressor with
+  Hardware Acceleration ✅ Advanced options like Range Selection, Subtitles ✅ Download
+  playlists ✅ Available on Linux, Windows & macOS ✅ Fast download speeds ✅ And of-course
+  no trackers or ads ## Screenshots # Installation ## Windows \U0001FA9F - **Traditional
+  way** Download and install the exe or msi file. Exe file lets you choose custom
+  download location, msi file doesn't ask for location. Windows defender may show
+  a popup saying **Windows Protected Your PC**. Just click on **More info** and click
+  on **Run Anyway** - **Chocolatey** App can be installed from [Chocolatey](https://community.chocolatey.org/packages/ytdownloader)
+  using the following command ``` choco install ytdownloader ``` - **Scoop** App can
+  be installed with [Scoop](https://scoop.sh) using the following command ``` scoop
+  install https://raw.githubusercontent.com/aandrew-me/ytDownloader/main/ytdownloader.json
+  ``` - **Winget** App can be installed with [Winget](https://github.com/microsoft/winget-cli)
+  using the following command ``` winget install aandrew-me.ytDownloader ``` ## Linux
+  \U0001F427 Linux has several options available - Flatpak, AppImage and Snap. Flatpak
+  is recommended. For arm processors, download from flathub. - ### AppImage **AppImage**
+  format is supported on most Linux distros and has Auto-Update support. It just needs
+  to be executed after downloading. See more about [AppImages here](https://appimage.org/).
+  [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) is recommended
+  for integrating AppImages. - ### Flatpak ``` flatpak install flathub io.github.aandrew_me.ytdn
+  ``` - ### Snapcraft ``` sudo snap install ytdownloader ``` ## macOS \U0001F34E Since
+  the app is not signed, when you will try to open the app, macOS will not allow you
+  to open it. You need to open terminal and execute: ``` sudo xattr -r -d com.apple.quarantine
+  /Applications/YTDownloader.app ``` You will also need to install `yt-dlp` with [homebrew](https://brew.sh/)
+  ``` brew install yt-dlp ``` ## Internationalization (Localization) \U0001F30D Translations
+  into other languages would be highly appreciated. If you want to help translating
+  the app to other languages, you can join from [here](https://crwd.in/ytdownloader).
+  Open a new issue and that language will be added to Crowdin. Please don't make pull
+  requests with json files, instead use Crowdin. [](https://crowdin.com/project/ytdownloader)
+  ### ✅ Available languages | Name | Status | | ------------------- | ------ | | Arabic
+  | ✔️ | | Bengali | ✔️ | | English | ✔️ | | Chinese Simplified | ✔️ | | Chinese Traditional
+  | ✔️ | | Finnish | ✔️ | | Hindi | ✔️ | | French | ✔️ | | Finnish | ✔️ | | German
+  | ✔️ | | Greek | ✔️ | | Hungarian | ✔️ | | Italian | ✔️ | | Japanese | ✔️ | | Persian
+  | ✔️ | | Polish | ✔️ | | Portuguese (Brazil) | ✔️ | | Russian | ✔️ | | Spanish |
+  ✔️ | | Turkish | ✔️ | | Ukrainian | ✔️ | | Vietnamese | ✔️ | Thanks to [nxjosephofficial](https://github.com/nxjosephofficial),
+  [LINUX-SAUNA](https://t.me/linuxsauna), [Proxycon](https://github.com/proxycon),
+  [albanobattistella](https://github.com/albanobattistella), [TheBlueQuasar](https://github.com/TheBlueQuasar),
+  [MrQuerter](https://github.com/MrQuerter), [KotoWhiskas](https://github.com/KotoWhiskas),
+  [André](https://github.com/andre1828), [haggen88](https://github.com/haggen88),
+  [XfedeX](https://github.com/XfedeX), [Jok3r](https://github.com/th3knv), [TitouanReal](https://github.com/TitouanReal),
+  [soredake](https://github.com/soredake), [yoi](https://github.com/thiennguyenqn),
+  [HowlingWerewolf](https://github.com/HowlingWerewolf), [Kum](https://github.com/kum4423),
+  [Mohammed Bakry](https://crowdin.com/profile/m7md_b4kry), [Huang Bingfeng](https://github.com/jackiotyu),
+  [Abhinav](https://github.com/abhixdd), [CodWiz](https://github.com/C0dwiz) and others
+  for helping. ## Used technologies - [yt-dlp](https://github.com/yt-dlp/yt-dlp) -
+  [Electron](https://www.electronjs.org/) - [ffmpeg](https://ffmpeg.org/) - [nodeJS](https://nodejs.org/en/)
+  - [flaticon](https://www.flaticon.com/) ## For building or running from source code
+  [Nodejs](https://nodejs.org/) (along with npm) needs to be installed. Required commands
+  to get started. ``` git clone https://github.com/aandrew-me/ytDownloader.git cd
+  ytDownloader npm i ``` To run with [Electron](https://www.electronjs.org/) : ```
+  npm start ``` "
 ---
 {% raw %}
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/66430340/238887646-33b4cba9-3c45-4042-83d1-b79e94a3a769.png" style="width:80px;">

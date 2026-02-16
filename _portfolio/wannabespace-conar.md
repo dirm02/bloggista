@@ -2,8 +2,30 @@
 layout: project
 name: Wannabespace Conar
 slug: wannabespace-conar
+category: Uncategorized
 image: https://conar.app/github-demo.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/wannabespace-conar
+indexed_content: "# Conar.app Conar is an AI-powered open-source project that simplifies
+  database interactions. Built for PostgreSQL, MySQL, MSSQL, Clickhouse with support
+  for other databases coming in the near future. Store your connections securely in
+  our cloud and ask AI to help you write and optimize SQL queries. ## Features - **\U0001F510
+  Secure & Open** - Open-source codebase - Encrypted connection strings - Password
+  protection - **\U0001F4BE Multi-Database Support** - PostgreSQL - MySQL - MSSQL
+  - Clickhouse - Sqlite (coming soon) - MongoDB (coming soon) - **\U0001F916 AI-Powered
+  Features** - Intelligent SQL assistance - Ability to change AI model - More coming
+  soon.. ## Stack - React with TypeScript - Electron - TailwindCSS and shadcn/ui -
+  Vite - TanStack Start/Router/Query/Form/Virtual - Arktype - Bun - Hono - oRPC -
+  Drizzle ORM - Better Auth - AI SDK with Anthropic, OpenAI, Gemini and XAI - Railway
+  - PostHog - Resend - ToDesktop - Stripe ## Development Setup - **\U0001F4E6 Package
+  Installation** ```bash pnpm install ``` - **\U0001F433 Start Database with Docker
+  Compose** This will start the PostgreSQL database & Redis in the background. ```bash
+  pnpm run docker:start ``` - **\U0001F5C4️ Prepare Database** This will run database
+  migrations to set up the required tables and schema. ```bash pnpm run drizzle:migrate
+  ``` - **\U0001F680 Run the Project** This will start all development servers using
+  Turbo. ```bash pnpm run dev ``` ## Testing - **Unit Tests** ```bash pnpm run test:unit
+  ``` > Before running E2E tests, make sure to start the test server: `pnpm run test:start`
+  and db `postgresql://postgres:postgres@localhost:5432/conar` - **E2E Tests** ```bash
+  pnpm run test:e2e ``` Built with ❤️"
 ---
 {% raw %}
 # <img src="https://conar.app/logo.png" alt="Conar Logo" width="25"/> Conar.app

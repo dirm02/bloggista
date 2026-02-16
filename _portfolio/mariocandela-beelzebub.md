@@ -2,8 +2,67 @@
 layout: project
 name: Mariocandela Beelzebub
 slug: mariocandela-beelzebub
+category: GreyHate-Cyber&Security
 image: https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml/badge.svg
 repo_url: https://github.com/mariocandela/beelzebub
+indexed_content: '# Beelzebub [](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml)
+  [](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml)
+  [](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml) [](https://goreportcard.com/report/github.com/mariocandela/beelzebub/v3)
+  [](https://codecov.io/gh/mariocandela/beelzebub) [](https://pkg.go.dev/github.com/mariocandela/beelzebub/v3)
+  [](https://archestra.ai/mcp-catalog/mariocandela__beelzebub) [](https://github.com/avelino/awesome-go)
+  ## Overview Beelzebub is an advanced honeypot framework designed to provide a highly
+  secure environment for detecting and analyzing cyber attacks. It offers a low code
+  approach for easy implementation and uses AI to mimic the behavior of a high-interaction
+  honeypot. ## Table of Contents - [Global Threat Intelligence Community](#global-threat-intelligence-community)
+  - [Key Features](#key-features) - [Architecture](#architecture) - [Quick Start](#quick-start)
+  - [Configuration](#configuration) - [Core Configuration](#core-configuration) -
+  [Service Configuration](#service-configuration) - [Protocol Examples](#protocol-examples)
+  - [MCP Honeypot](#mcp-honeypot) - [HTTP Honeypot](#http-honeypot) - [SSH Honeypot](#ssh-honeypot)
+  - [TELNET Honeypot](#telnet-honeypot) - [TCP Honeypot](#tcp-honeypot) - [Observability](#observability)
+  - [Prometheus Metrics](#prometheus-metrics) - [RabbitMQ Integration](#rabbitmq-integration)
+  - [Beelzebub Cloud](#beelzebub-cloud) - [Testing](#testing) - [Code Quality](#code-quality)
+  - [Contributing](#contributing) - [License](#license) ## Global Threat Intelligence
+  Community Our mission is to establish a collaborative ecosystem of security researchers
+  and white hat professionals worldwide, dedicated to creating a distributed honeypot
+  network that identifies emerging malware, discovers zero-day vulnerabilities, and
+  neutralizes active botnets. [](https://github.com/beelzebub-labs/white-paper/) The
+  white paper includes information on how to join our Discord community and contribute
+  to the global threat intelligence network. ## Key Features Beelzebub offers a wide
+  range of features to enhance your honeypot environment: - **Low-code configuration**:
+  YAML-based, modular service definition - **LLM integration**: The LLM convincingly
+  simulates a real system, creating high-interaction honeypot experiences, while actually
+  maintaining low-interaction architecture for enhanced security and easy management
+  - **Multi-protocol support**: SSH, HTTP, TCP, TELNET, MCP (detect prompt injection
+  against LLM agents) - **Prometheus metrics & observability**: Built-in metrics endpoint
+  for monitoring - **Event tracing**: Multiple output strategies (stdout, RabbitMQ,
+  Beelzebub Cloud) - **Docker & Kubernetes ready**: Deploy anywhere with provided
+  configurations - **ELK stack ready**: Official integration available at [Elastic
+  docs](https://www.elastic.co/docs/reference/integrations/beelzebub) ## LLM Honeypot
+  Demo ## Quick Start You can run Beelzebub via Docker, Go compiler(cross device),
+  or Helm (Kubernetes). ### Using Docker Compose 1. Build the Docker images: ```bash
+  $ docker compose build ``` 2. Start Beelzebub in detached mode: ```bash $ docker
+  compose up -d ``` ### Using Go Compiler 1. Download the necessary Go modules: ```bash
+  $ go mod download ``` 2. Build the Beelzebub executable: ```bash $ go build ```
+  3. Run Beelzebub: ```bash $ ./beelzebub ``` ### Deploy on kubernetes cluster using
+  helm 1. Install helm 2. Deploy beelzebub: ```bash $ helm install beelzebub ./beelzebub-chart
+  ``` 3. Next release ```bash $ helm upgrade beelzebub ./beelzebub-chart ``` ## Configuration
+  Beelzebub uses a two-tier configuration system: 1. **Core configuration** (`beelzebub.yaml`)
+  - Global settings for logging, tracing, and Prometheus 2. **Service configurations**
+  (`services/*.yaml`) - Individual honeypot service definitions ### Core Configuration
+  The core configuration file controls global behavior: ```yaml core: logging: debug:
+  false debugReportCaller: false logDisableTimestamp: true logsPath: ./logs tracings:
+  rabbit-mq: enabled: false uri: "amqp://guest:guest@localhost:5672/" prometheus:
+  path: "/metrics" port: ":2112" beelzebub-cloud: enabled: false uri: "" auth-token:
+  "" ``` ### Service Configuration Each honeypot service is defined in a separate
+  YAML file in the `services/` directory. To run Beelzebub with custom paths: ```bash
+  ./beelzebub --confCore ./configurations/beelzebub.yaml --confServices ./configurations/services/
+  ``` Additional flags: - `--memLimitMiB ` - Set memory limit in MiB (default: 100,
+  use -1 to disable) ## Protocol Examples Below are example configurations for each
+  supported protocol. ### MCP Honeypot MCP (Model Context Protocol) honeypots are
+  decoy tools designed to detect prompt injection attacks against LLM agents. ####
+  Why Use an MCP Honeypot? An MCP honeypot is a **decoy tool** that the agent should
+  never invoke under normal circumstances. Integrating this strategy into your agent
+  pipeli'
 ---
 {% raw %}
 # Beelzebub

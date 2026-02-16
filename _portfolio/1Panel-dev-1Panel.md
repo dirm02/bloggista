@@ -2,8 +2,40 @@
 layout: project
 name: 1panel Dev 1panel
 slug: 1Panel-dev-1Panel
+category: Uncategorized
 image: https://resource.1panel.pro/img/1panel.png
 repo_url: https://github.com/1Panel-dev/1Panel
+indexed_content: "------------------------------ ## What is 1Panel? 1Panel is a modern,
+  open-source Linux server management panel that streamlines administration through
+  an intuitive, clean web interface. ## Key Features \U0001F539 **AI Integration**
+  Seamlessly deploy OpenClaw agents, host local LLMs via Ollama, and monitor GPU utilization—all
+  within a unified workspace engineered for efficient AI development and inference.
+  \U0001F539 **One-Click Website Deployment** Launch production-ready websites instantly
+  with automatic domain binding, SSL certificate provisioning, and configuration—zero
+  manual setup required. \U0001F539 **Curated App Marketplace** Discover, install,
+  and update trusted open-source applications (WordPress, MySQL, Redis, and more)
+  with a single click. \U0001F539 **Centralized Server Management** Monitor system
+  resources and manage files, databases, containers, and services effortlessly through
+  a unified, intuitive dashboard. \U0001F539 **Enterprise-Grade Security** Strengthen
+  defenses with container isolation, firewall controls, audit logging, and secure
+  deployment practices—ensuring compliance and peace of mind. \U0001F539 **Intelligent
+  Backup & Restore** Schedule automated backups or perform instant restores to local
+  storage or leading cloud platforms (AWS S3, Cloudflare R2, and more), with flexible
+  retention and destination options. ## Quick Start Execute the script below and follow
+  the prompts to install 1Panel: ```bash bash -c \"$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)\"
+  ``` ## Screenshot ## Star History [](https://star-history.com/#1Panel-dev/1Panel&Date)
+  ## Pro Edition Compared to the OSS Edition, 1Panel Pro Edition provides users with
+  a wealth of enhanced features and technical support services. Enhanced features
+  include WAF enhancement, website tamper protection, website monitoring, GPU monitoring,
+  custom logo and theme color, etc. [Click to view the detailed introduction of the
+  Pro Edition](https://1panel.pro/pricing). ## Security Information If you discover
+  any security issues, please refer to [SECURITY.md](/SECURITY.md). ## License Licensed
+  under The GNU General Public License version 3 (GPLv3) (the \"License\"); you may
+  not use this file except in compliance with the License. You may obtain a copy of
+  the License at Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES
+  OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+  language governing permissions and limitations under the License."
 ---
 {% raw %}
 <p align="center"><a href="https://1panel.pro"><img src="https://resource.1panel.pro/img/1panel-logo.png" alt="1Panel" width="300" /></a></p>

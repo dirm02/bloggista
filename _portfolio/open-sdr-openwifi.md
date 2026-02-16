@@ -2,8 +2,60 @@
 layout: project
 name: Open Sdr Openwifi
 slug: open-sdr-openwifi
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/open-sdr-openwifi/openwifi-arch.jpg
 repo_url: https://github.com/open-sdr/openwifi
+indexed_content: "# openwifi **openwifi:** Linux mac80211 compatible full-stack IEEE802.11/Wi-Fi
+  design based on SDR (Software Defined Radio). - We remain committed to open source,
+  which is our foundation. To access advanced features and dedicated support, consider
+  a **SUBSCRIPTION**. More info on https://openwifi.tech [[Download img and Quick
+  start](#Download-img-and-Quick-start)] [[known issue](doc/known_issue/notter.md)]
+  [[**Tips for Windows users**](https://github.com/open-sdr/openwifi/discussions/341)]
+  This repository includes Linux driver and software. **openwifi-hw** repository has
+  the FPGA design. It is **YOUR RESPONSIBILITY** to follow your **LOCAL SPECTRUM REGULATION**
+  or use **CABLE** to avoid potential interference over the air. [[Project document](doc/README.md)]
+  [[Application notes](doc/app_notes/README.md)] [[Videos](doc/videos.md)] [[Publications
+  and How to Cite](doc/publications.md)] [[maillist](https://lists.ugent.be/wws/subscribe/openwifi)]
+  Openwifi code has dual licenses. [AGPLv3](https://github.com/open-sdr/openwifi/blob/master/LICENSE)
+  is the opensource license. For non-opensource and advanced feature license, please
+  fill a contact form on https://openwifi.tech. Openwifi project also leverages some
+  3rd party modules. It is user's duty to check and follow licenses of those modules
+  according to the purpose/usage. You can find [an example explanation from Analog
+  Devices](https://github.com/analogdevicesinc/hdl/blob/master/LICENSE) for this compound
+  license conditions. [[How to contribute]](https://github.com/open-sdr/openwifi/blob/master/CONTRIBUTING.md).
+  **Features:** - 802.11a/g/n [[IEEE 802.11n (Wi-Fi 4)](doc/app_notes/ieee80211n.md)]
+  - 20MHz bandwidth; [70 MHz to 6 GHz frequency range](doc/README.md#let-openwifi-work-at-arbitrary-frequency)
+  - Mode tested: [Ad-hoc](doc/app_notes/ad-hoc-two-sdr.md); [Station; AP](doc/app_notes/ap-client-two-sdr.md),
+  Monitor - [DCF (CSMA/CA) low MAC layer in FPGA (10us SIFS is achieved)](doc/app_notes/frequent_trick.md)
+  - [802.11 packet injection and fuzzing](doc/app_notes/inject_80211.md) - [CSI](doc/app_notes/csi.md):
+  Channel State Information, freq offset, equalizer to computer - [CSI fuzzer](doc/app_notes/csi_fuzzer.md):
+  Create artificial channel response in WiFi transmitter - [CSI radar](doc/app_notes/radar-self-csi.md):
+  Moving detection. Joint radar and communication - [[IQ capture](doc/app_notes/iq.md)]:
+  real-time AGC, RSSI, IQ sample to computer. [[Dual antenna version](doc/app_notes/iq_2ant.md)]
+  - [Configurable channel access priority parameters](doc/app_notes/frequent_trick.md):
+  - CCA threshold, receiver sensitivity, etc - duration of RTS/CTS, CTS-to-self -
+  SIFS/DIFS/xIFS/slot-time/CW/etc - [Time slicing based on MAC address (time gated/scheduled
+  FPGA queues)](https://doc.ilabt.imec.be/ilabt/wilab/tutorials/openwifi.html#sdr-tx-time-slicing)
+  - Easy to change bandwidth and [frequency](doc/README.md#let-openwifi-work-at-arbitrary-frequency):
+  - 2MHz for 802.11ah in sub-GHz - 10MHz for 802.11p/vehicle in 5.9GHz - **802.11ax**
+  and more advanced features, check: https://openwifi.tech **Performance (best case:
+  aggregation/AMPDU on):** - iperf: TCP 40~50Mbps; UDP 50Mbps - EVM -38dB; MCS0 sensitivity
+  -92dBm; MCS7 -73dBm. (FMCOMMS2 2.4GHz; cable and OTA test) **Supported SDR platforms:**
+  board_name|Description|Vivado license ----------|-----------|-------------- zc706_fmcs2|[Xilinx
+  ZC706 board](https://www.xilinx.com/products/boards-and-kits/ek-z7-zc706-g.html)
+  + [FMCOMMS2/3/4](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad-fmcomms2.html)|Need
+  zed_fmcs2|[Xilinx zed board](https://www.xilinx.com/products/boards-and-kits/1-8dyf-11.html)
+  + [FMCOMMS2/3/4](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad-fmcomms2.html)|**NO**
+  need adrv9364z7020|[ADRV9364-Z7020 + ADRV1CRR-BOB](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/adrv9364-z7020.html)|**NO**
+  need adrv9361z7035|[ADRV9361-Z7035 + ADRV1CRR-BOB/FMC](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/ADRV9361-Z7035.html)|Need
+  zc702_fmcs2|[Xilinx ZC702 board](https://www.xilinx.com/products/boards-and-kits/ek-z7-zc702-g.html)
+  + [FMCOMMS2/3/4](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad-fmcomms2.html)|**NO**
+  need antsdr|[MicroPhase](https://github.com/MicroPhase/) enhanced ADALM-PLUTO [Notes](kernel_boot/boards/antsdr/notes.md)|**NO**
+  need e310v2|[MicroPhase](https://github.com/MicroPhase/) new antsdr [Notes](kernel_boot/boards/e310v2/README.md)|**NO**
+  need antsdr_e200|[MicroPhase](https://github.com/MicroPhase/) enhanced ADALM-PLUTO
+  (smaller/cheaper) [Notes](kernel_boot/boards/antsdr_e200/README.md)|**NO** need
+  sdrpi|[HexSDR](https://github.com/HexSDR/) SDR in Raspberry Pi size [Notes](kernel_boot/boards/sdrpi/notes.md)|**NO**
+  need zcu102_fmcs2|[Xilinx ZCU102 boar"
 ---
 {% raw %}
 <!--

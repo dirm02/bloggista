@@ -2,8 +2,64 @@
 layout: project
 name: Quentinfuxa Whisperlivekit
 slug: QuentinFuxa-WhisperLiveKit
+category: Very important!!!!
 image: https://raw.githubusercontent.com/QuentinFuxa/WhisperLiveKit/refs/heads/main/demo.png
 repo_url: https://github.com/QuentinFuxa/WhisperLiveKit
+indexed_content: 'WLK WhisperLiveKit: Ultra-low-latency, self-hosted speech-to-text
+  with speaker identification #### Powered by Leading Research: - Simul-[Whisper](https://arxiv.org/pdf/2406.10052)/[Streaming](https://arxiv.org/abs/2506.17077)
+  (SOTA 2025) - Ultra-low latency transcription using [AlignAtt policy](https://arxiv.org/pdf/2305.11408)
+  - [NLLW](https://github.com/QuentinFuxa/NoLanguageLeftWaiting) (2025), based on
+  [distilled](https://huggingface.co/entai2965/nllb-200-distilled-600M-ctranslate2)
+  [NLLB](https://arxiv.org/abs/2207.04672) (2022, 2024) - Simulatenous translation
+  from & to 200 languages. - [WhisperStreaming](https://github.com/ufal/whisper_streaming)
+  (SOTA 2023) - Low latency transcription using [LocalAgreement policy](https://www.isca-archive.org/interspeech_2020/liu20s_interspeech.pdf)
+  - [Streaming Sortformer](https://arxiv.org/abs/2507.18446) (SOTA 2025) - Advanced
+  real-time speaker diarization - [Diart](https://github.com/juanmc2005/diart) (SOTA
+  2021) - Real-time speaker diarization - [Silero VAD](https://github.com/snakers4/silero-vad)
+  (2024) - Enterprise-grade Voice Activity Detection > **Why not just run a simple
+  Whisper model on every audio batch?** Whisper is designed for complete utterances,
+  not real-time chunks. Processing small segments loses context, cuts off words mid-syllable,
+  and produces poor transcription. WhisperLiveKit uses state-of-the-art simultaneous
+  speech research for intelligent buffering and incremental processing. ### Architecture
+  *The backend supports multiple concurrent users. Voice Activity Detection reduces
+  overhead when no voice is detected.* ### Installation & Quick Start ```bash pip
+  install whisperlivekit ``` > You can also clone the repo and `pip install -e .`
+  for the latest version. #### Quick Start 1. **Start the transcription server:**
+  ```bash wlk --model base --language en ``` 2. **Open your browser** and navigate
+  to `http://localhost:8000`. Start speaking and watch your words appear in real-time!
+  > - See [here](https://github.com/QuentinFuxa/WhisperLiveKit/blob/main/whisperlivekit/simul_whisper/whisper/tokenizer.py)
+  for the list of all available languages. > - Check the [troubleshooting guide](docs/troubleshooting.md)
+  for step-by-step fixes collected from recent GPU setup/env issues. > - The CLI entry
+  point is exposed as both `wlk` and `whisperlivekit-server`; they are equivalent.
+  > - For HTTPS requirements, see the **Parameters** section for SSL configuration
+  options. #### Use it to capture audio from web pages. Go to `chrome-extension` for
+  instructions. #### Optional Dependencies | Optional | `pip install` | |-----------|-------------|
+  | **Windows/Linux optimizations** | `faster-whisper` | | **Apple Silicon optimizations**
+  | `mlx-whisper` | | **Translation** | `nllw` | | **Speaker diarization** | `git+https://github.com/NVIDIA/NeMo.git@main#egg=nemo_toolkit[asr]`
+  | | OpenAI API | `openai` | | *[Not recommanded]* Speaker diarization with Diart
+  | `diart` | See **Parameters & Configuration** below on how to use them. ### Usage
+  Examples **Command-line Interface**: Start the transcription server with various
+  options: ```bash # Large model and translate from french to danish wlk --model large-v3
+  --language fr --target-language da # Diarization and server listening on */80 wlk
+  --host 0.0.0.0 --port 80 --model medium --diarization --language fr ``` **Python
+  API Integration**: Check [basic_server](https://github.com/QuentinFuxa/WhisperLiveKit/blob/main/whisperlivekit/basic_server.py)
+  for a more complete example of how to use the functions and classes. ```python import
+  asyncio from contextlib import asynccontextmanager from fastapi import FastAPI,
+  WebSocket, WebSocketDisconnect from fastapi.responses import HTMLResponse from whisperlivekit
+  import AudioProcessor, TranscriptionEngine, parse_args transcription_engine = None
+  @asynccontextmanager async def lifespan(app: FastAPI): global transcription_engine
+  transcription_engine = TranscriptionEngine(model="medium", diarization=True, lan="en")
+  yield app = FastAPI(lifespan=lifespan) async def handle_websocket_results(websocket:
+  WebSocket, results_generator): async for response in results_generator: await websocket.send_json(response)
+  await websocket.send_json({"type": "ready_to_stop"}) @app.websocket("/asr") async
+  def websocket_endpoint(websocket: WebSocket): global transcription_engine # Create
+  a new AudioProcessor for each connection, passing the shared engine audio_processor
+  = AudioProcessor(transcription_engine=transcription_engine) results_generator =
+  await audio_processor.create_tasks() results_task = asyncio.create_task(handle_websocket_results(websocket,
+  results_generator)) await websocket.accept() while True: message = await websocket.receive_bytes()
+  await audio_processor.process_audio(message) ``` **Frontend Implementation**: The
+  package includes an HTML/JavaScript implementation [here](https://github.com/QuentinFuxa/WhisperLiveKit/blob/main/whisperlivekit/web/live_transcription.html).
+  You can also import it using `fro'
 ---
 {% raw %}
 <h1 align="center">WLK</h1>

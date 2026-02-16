@@ -2,8 +2,74 @@
 layout: project
 name: Kugelaudio Kugelaudio Open
 slug: Kugelaudio-kugelaudio-open
+category: Uncategorized
 image: "https://img.shields.io/badge/\U0001F917-Hugging_Face_Model-blue"
 repo_url: https://github.com/Kugelaudio/kugelaudio-open
+indexed_content: "\U0001F399️ KugelAudio Open-source text-to-speech for European languages
+  Powered by an AR + Diffusion architecture --- ## Motivation **Open-source text-to-speech
+  models for European languages are significantly lagging behind.** While English
+  TTS has seen remarkable progress, speakers of German, French, Spanish, Polish, and
+  dozens of other European languages have been underserved by the open-source community.
+  KugelAudio aims to change this. Building on the excellent foundation laid by the
+  [VibeVoice team at Microsoft](https://github.com/microsoft/VibeVoice), we've trained
+  a model specifically focused on European language coverage, using approximately
+  **200,000 hours** of highly pre-processed and enhanced speech data from the [YODAS2
+  dataset](https://huggingface.co/datasets/espnet/yodas). ## \U0001F3C6 Benchmark
+  Results: Outperforming ElevenLabs **KugelAudio achieves state-of-the-art performance**,
+  beating industry leaders including ElevenLabs in rigorous human preference testing.
+  This breakthrough demonstrates that open-source models can now rival - and surpass
+  - the best commercial TTS systems. ### Human Preference Benchmark (A/B Testing)
+  We conducted extensive A/B testing with **339 human evaluations** to compare KugelAudio
+  against leading TTS models. Participants listened to a reference voice sample, then
+  compared outputs from two models and selected which sounded more human and closer
+  to the original voice. ### German Language Evaluation The evaluation specifically
+  focused on **German language samples** with diverse emotional expressions and speaking
+  styles: * **Neutral Speech**: Standard conversational tones * **Shouting**: High-intensity,
+  elevated volume speech * **Singing**: Melodic and rhythmic speech patterns * **Drunken
+  Voice**: Slurred and irregular speech characteristics These diverse test cases demonstrate
+  the model's capability to handle a wide range of speaking styles beyond standard
+  narration. ### OpenSkill Ranking Results | Rank | Model | Score | Record | Win Rate
+  | |------|-------|-------|--------|----------| | \U0001F947 1 | **KugelAudio** |
+  **26** | 71W / 20L / 23T | **78.0%** | | \U0001F948 2 | ElevenLabs Multi v2 | 25
+  | 56W / 34L / 22T | 62.2% | | \U0001F949 3 | ElevenLabs v3 | 21 | 64W / 34L / 16T
+  | 65.3% | | 4 | Cartesia | 21 | 55W / 38L / 19T | 59.1% | | 5 | VibeVoice | 10 |
+  30W / 74L / 8T | 28.8% | | 6 | CosyVoice v3 | 9 | 15W / 91L / 8T | 14.2% | _Based
+  on 339 evaluations using Bayesian skill-rating system (OpenSkill)_ ## Audio Samples
+  Listen to KugelAudio's diverse voice capabilities across different speaking styles
+  and languages: ### German Voice Samples | Sample | Description | Audio Player |
+  |--------|-------------|--------------| | **Whispering** | Soft whispering voice
+  | | | **Female Narrator** | Professional female reader voice | | | **Angry Voice**
+  | Irritated and frustrated speech | | | **Radio Announcer** | Professional radio
+  broadcast voice | | *All samples are generated using pre-encoded voice embeddings.*
+  ### Training Details - **Base Model**: [Microsoft VibeVoice](https://github.com/microsoft/VibeVoice)
+  - **Training Data**: ~200,000 hours from [YODAS2](https://huggingface.co/datasets/espnet/yodas)
+  - **Hardware**: 8x NVIDIA H100 GPUs - **Training Duration**: 5 days ### Supported
+  Languages KugelAudio supports **24 major European languages** with varying levels
+  of quality based on dataset representation: | Language | Code | Flag | Language
+  | Code | Flag | Language | Code | Flag | |----------|------|------|----------|------|------|----------|------|------|
+  | English | en | \U0001F1FA\U0001F1F8 | German | de | \U0001F1E9\U0001F1EA | French
+  | fr | \U0001F1EB\U0001F1F7 | | Spanish | es | \U0001F1EA\U0001F1F8 | Italian |
+  it | \U0001F1EE\U0001F1F9 | Portuguese | pt | \U0001F1F5\U0001F1F9 | | Dutch | nl
+  | \U0001F1F3\U0001F1F1 | Polish | pl | \U0001F1F5\U0001F1F1 | Russian | ru | \U0001F1F7\U0001F1FA
+  | | Ukrainian | uk | \U0001F1FA\U0001F1E6 | Czech | cs | \U0001F1E8\U0001F1FF |
+  Romanian | ro | \U0001F1F7\U0001F1F4 | | Hungarian | hu | \U0001F1ED\U0001F1FA |
+  Swedish | sv | \U0001F1F8\U0001F1EA | Danish | da | \U0001F1E9\U0001F1F0 | | Finnish
+  | fi | \U0001F1EB\U0001F1EE | Norwegian | no | \U0001F1F3\U0001F1F4 | Greek | el
+  | \U0001F1EC\U0001F1F7 | | Bulgarian | bg | \U0001F1E7\U0001F1EC | Slovak | sk |
+  \U0001F1F8\U0001F1F0 | Croatian | hr | \U0001F1ED\U0001F1F7 | | Serbian | sr | \U0001F1F7\U0001F1F8
+  | Turkish | tr | \U0001F1F9\U0001F1F7 | | | | > **\U0001F4CA Language Coverage Disclaimer**:
+  Quality varies significantly by language. Spanish, French, English, and German have
+  the strongest representation in our training data (~200,000 hours from YODAS2).
+  Other languages may have reduced quality, prosody, or vocabulary coverage depending
+  on their availability in the training dataset. ## \U0001F4D6 Start Here Get started
+  with KugelAudio quickly using our documentation: | | | |---|---| | \U0001F4E5 [**Installation**](#installation)
+  | Set up KugelAudio on your machine | | \U0001F3AF [**Quick Start**](#quick-start)
+  | Generate your first speech in minutes | | \U0001F3AD [**Voices**](#voices) | Use
+  pre-encoded voices for different speakers | | ☁️ [**Hosted API**](#hosted-api) |
+  Use our cloud API for zero-setup inference | | \U0001F512 [**Watermarking**](#audio-watermarking)
+  | Verify AI-generated audio | | \U0001F4E6 [**Models**](#models) | Available model
+  variants and benchmarks | --- ## Features - \U0001F3C6 **State-of-the-Art Performance**:
+  Outperforms ElevenLabs and other leading TTS models in human evaluat"
 ---
 {% raw %}
 <h1 align="center">🎙️ KugelAudio</h1>

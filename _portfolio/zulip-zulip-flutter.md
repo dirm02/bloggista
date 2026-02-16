@@ -2,8 +2,65 @@
 layout: project
 name: Zulip Zulip Flutter
 slug: zulip-zulip-flutter
+category: Mail services -server-chat apps
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/zulip/zulip-mobile
+indexed_content: '# Zulip Flutter The official Zulip app for Android and iOS, built
+  with Flutter. This app [was launched][] as the main Zulip mobile app in June 2025.
+  It replaced the [previous Zulip mobile app][] built with React Native. [was launched]:
+  https://blog.zulip.com/flutter-mobile-app-launch [previous Zulip mobile app]: https://github.com/zulip/zulip-mobile#readme
+  ## Get the app Release versions of the app are available here: * [Zulip for iOS](https://apps.apple.com/app/zulip/id1203036395)
+  on Apple''s App Store * [Zulip for Android](https://play.google.com/store/apps/details?id=com.zulipmobile)
+  on the Google Play Store * Or if you don''t use Google Play, you can [download an
+  APK](https://github.com/zulip/zulip-flutter/releases/latest) from the official build
+  we post on GitHub. ## Contributing Contributions to this app are welcome. If you''re
+  looking to participate in Google Summer of Code with Zulip, this was among the projects
+  we accepted [GSoC applications][gsoc] for in 2024 and 2025. [gsoc]: https://zulip.readthedocs.io/en/latest/outreach/gsoc.html#mobile-app
+  ### Picking an issue to work on First, see the Zulip project guide to [your first
+  codebase contribution][]. Follow the instructions there for joining the Zulip community
+  server, reading about [what makes a great Zulip contributor][], browsing through
+  recent commits and the codebase, and the Zulip guide to Git. To find possible issues
+  to work on, see our [project board][]. Look for issues in the earliest milestone,
+  and that aren''t already assigned. Follow the Zulip guide to [picking an issue to
+  work on][], trying several issues until you find one you''re confident you''ll be
+  able to take on effectively. *After you''ve done that*, claim the issue by posting
+  a comment on the issue thread, saying you''d like to work on it and describing your
+  progress. [your first codebase contribution]: https://zulip.readthedocs.io/en/latest/contributing/contributing.html#your-first-codebase-contribution
+  [what makes a great Zulip contributor]: https://zulip.readthedocs.io/en/latest/contributing/contributing.html#what-makes-a-great-zulip-contributor
+  [project board]: https://github.com/orgs/zulip/projects/5/views/4 [picking an issue
+  to work on]: https://zulip.readthedocs.io/en/latest/contributing/contributing.html#picking-an-issue-to-work-on
+  ### Asking questions, getting help To ask for help with working on this codebase,
+  use the [`#mobile-dev-help`][mobile-dev-help] channel on chat.zulip.org. Before
+  participating there for the first time, be sure to take a minute to read our [community
+  norms][norms-getting-help]. For more in-depth advice on how to go beyond the minimum
+  represented by our community norms, see Zulip''s [guide to asking great questions][]
+  and the resources linked from there. [mobile-dev-help]: https://chat.zulip.org/#narrow/stream/516-mobile-dev-help
+  [norms-getting-help]: https://zulip.com/development-community/#getting-help [guide
+  to asking great questions]: https://zulip.readthedocs.io/en/latest/contributing/asking-great-questions.html
+  ### Submitting a pull request Follow the Zulip project''s guide to your first codebase
+  contribution for [working on an issue][] and [submitting a pull request][]. It''s
+  important to take the time to make your work as easy as possible for others to review.
+  Two specific points to expand on: * Before we can review your PR in detail, your
+  changes will need tests. See ["Writing tests"](#writing-tests) below. It will also
+  need all new and existing tests to be passing. See ["Tests"](#tests) below about
+  running the tests. * Your changes will need to be organized into [clear and coherent
+  commits][commit-style], following [Zulip''s commit style guide][commit-style]. (Use
+  Greg''s ["secret" to using `git log -p`][git-log-p-secret] and/or a graphical Git
+  client to see examples of mergeable commits.) This is always required before we
+  can merge your PR. Depending on your changes'' complexity, it may also be required
+  before we can review it in detail. (The main exception is that if the change should
+  be a single commit, we can review it even with a messier commit structure.) [working
+  on an issue]: https://zulip.readthedocs.io/en/latest/contributing/contributing.html#working-on-an-issue
+  [submitting a pull request]: https://zulip.readthedocs.io/en/latest/contributing/review-process.html
+  [commit-style]: https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html
+  [git-log-p-secret]: https://github.com/zulip/zulip-mobile/blob/main/docs/howto/git.md#git-log-secret
+  ## Getting started in developing ### Setting up Running the app requires only a
+  standard Flutter setup, using the Flutter `main` channel: 1. Follow the [Flutter
+  installation guide](https://docs.flutter.dev/get-started/install) for your platform
+  of choice. 2. Switch to the latest version of Flutter by running `flutter channel
+  main` and `flutter upgrade` (see [Flutter version](#flutter-version) below). 3.
+  Ensure Flutter is correctly configured by running `flutter doctor`. 4. Start the
+  app with '
 ---
 {% raw %}
 # Zulip Flutter

@@ -2,8 +2,66 @@
 layout: project
 name: Organicmaps Organicmaps
 slug: organicmaps-organicmaps
+category: iOS-imac
 image: https://api.reuse.software/badge/github.com/organicmaps/organicmaps
 repo_url: https://github.com/organicmaps/organicmaps
+indexed_content: 'Organic Maps **Organic Maps** is a privacy-first offline maps &
+  GPS app for hiking, cycling, biking, and driving. Absolutely free. No ads. No tracking.
+  Created and maintained by MapsWithMe (MAPS.ME) founders, developed with love by
+  the open-source community. Powered by [OpenStreetMap](https://www.openstreetmap.org)
+  data. Installed by [over 6 million users worldwide](https://organicmaps.app/news/2025-12-31/organic-maps-2025-year-in-review/).
+  [ ](https://apps.apple.com/app/organic-maps/id1567437057) [ ](https://play.google.com/store/apps/details?id=app.organicmaps)
+  [ ](https://appgallery.huawei.com/#/app/C104325611) [ ](https://github.com/organicmaps/organicmaps/wiki/Installing-Organic-Maps-from-GitHub-using-Obtainium)
+  [ ](https://f-droid.org/en/packages/app.organicmaps/) [ ](https://accrescent.app/app/app.organicmaps)
+  ## Features Organic Maps is the ultimate companion app for travellers, tourists,
+  hikers, and cyclists: - Detailed offline maps with places that don''t exist on other
+  maps, thanks to [OpenStreetMap](https://openstreetmap.org) - Cycling routes, hiking
+  trails, and walking paths - Contour lines, elevation profiles, peaks, and slopes
+  - Turn-by-turn walking, cycling, and car navigation with voice guidance - Subway
+  maps and public transport routes - Fast offline search on the map - Bookmarks and
+  tracks import and export in KML, KMZ, GPX, GeoJSON formats - Dark Mode to protect
+  your eyes - Countries and regions don''t take a lot of space - Wikipedia articles
+  for places of interest - Free and open-source ## Why Organic? Organic Maps is pure
+  and organic, made with love: - Respects your privacy - Saves your battery - No unexpected
+  mobile data charges - Offline and fast - Open-source alternative to Google Maps,
+  Apple Maps, and MAPS.ME Organic Maps is free from trackers and other bad stuff:
+  - No ads - No tracking - No data collection - No phoning home - No annoying registration
+  - No mandatory tutorials - No noisy email spam - No push notifications - No crapware
+  - ~~No pesticides~~ Purely organic! The Android application is verified by the Exodus
+  Privacy Project: The iOS application is verified by TrackerControl for iOS: Organic
+  Maps doesn''t request excessive permissions to spy on you: At Organic Maps, we believe
+  that privacy is a fundamental human right: - Organic Maps is an indie community-driven
+  open-source project - We protect your privacy from Big Tech''s prying eyes - Stay
+  safe no matter where you are Reject surveillance - embrace your freedom. [**Give
+  Organic Maps a try!**](#install) ## Who is paying for the development? The app is
+  free for everyone, so we rely on your donations. Please donate at [organicmaps.app/donate](https://organicmaps.app/donate/)
+  to support the project! Beloved institutional sponsors below have provided targeted
+  grants to cover some infrastructure costs and fund development of new selected features:
+  The Search & Fonts improvement project has been funded through NGI0 Entrust Fund.
+  NGI0 Entrust Fund is established by the NLnet Foundation with financial support
+  from the European Commission''s Next Generation Internet programme , under the aegis
+  of DG Communications Networks, Content and Technology under grant agreement No 101069594.
+  Google backed 5 student''s projects in the Google Summer of Code program during
+  2022 and 2023 programs. Noteworthy projects included Android Auto and Wikipedia
+  Dump Extractor. Mythic Beasts ISP provides us two virtual servers with 400 TB/month
+  of free bandwidth to host and serve maps downloads and updates. 44+ Technologies
+  is providing us with a free dedicated server worth around $12,000/year to serve
+  maps across Vietnam & Southeast Asia. FUTO has awarded $1000 micro-grant to Organic
+  Maps in February 2023. The majority of all expenses have been funded by founders
+  of the project since its inception. The project is far from achieving any sort of
+  financial sustainability. The current level of voluntary donations falls significantly
+  short of covering efforts needed to sustain the app. Any new developments of features
+  are beyond the scope of possibility due to the absence of the necessary financial
+  resources. Please consider [donating](https://organicmaps.app/donate/) if you want
+  to see this open-source project thriving, not dying. There are [other ways how to
+  support the project](#contributing). No coding skills required. ## Governance See
+  [docs/GOVERNANCE.md](docs/GOVERNANCE.md). ## Contributing If you want to build the
+  project, check [docs/INSTALL.md](docs/INSTALL.md). If you want to help the project,
+  see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). You can [help in many ways](https://organicmaps.app/support-us/),
+  the ability to code is not necessary. ## Beta Please join our beta program, suggest
+  your features, and report bugs: - [iOS Beta (TestFlight)](https://testflight.apple.com/join/lrKCl08I)
+  - [Android Beta (Firebase)](https://appdistribution.firebase.dev/i/f3e918f9abc40c9c)
+  ## Feedback - **Rate us on the [App Store](https://apps.apple.com/app/organic-ma'
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,67 @@
 layout: project
 name: Umlx5h Llplayer
 slug: umlx5h-LLPlayer
+category: Serv&Prod-Tools
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/umlx5h-LLPlayer/LLPlayer-screenshot.jpg
 repo_url: https://github.com/umlx5h/LLPlayer
+indexed_content: "LLPlayer The media player for language learning. A video player
+  focused on subtitle-related features such as dual subtitles, AI-generated subtitles,
+  real-time translation, word lookup, and more! Website · Releases --- ## \U0001F3AC
+  Demo https://github.com/user-attachments/assets/05a7b451-ee3b-489f-aac9-f1670ed76e71
+  [TED Talk - The mind behind Linux](https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux)
+  ## ✨ Features LLPlayer has many features for language learning that are not available
+  in normal video players. - **Dual Subtitles:** Two subtitles can be displayed simultaneously.
+  Both text subtitles and bitmap subtitles are supported. - **AI-generated subtitles
+  (ASR):** Real-time automatic subtitle generation from any video and audio, powered
+  by [OpenAI Whisper](https://github.com/openai/whisper). two engines [whisper.cpp](https://github.com/ggerganov/whisper.cpp)
+  and [faster-whisper](https://github.com/SYSTRAN/faster-whisper) are supported. -
+  **Real-time Translation:** Supports [many translation engines](https://github.com/umlx5h/LLPlayer/wiki/Translation-Engine),
+  such as Google, DeepL, Ollama, LM Studio, OpenAI. - **Context-aware Translation:**
+  Highly accurate translation by recognizing the context of subtitles using LLM. -
+  **Real-time OCR subtitles:** Can convert bitmap subtitles to text subtitles in real
+  time, powered by [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) and
+  Microsoft OCR. - **Subtitles Sidebar:** Both text and bitmap are supported. Seek
+  and word lookup available. Also supports incremental subtitle search. - **Instant
+  word lookup:** Word lookup and browser searches can be performed on subtitle text.
+  - **Customizable Browser Search:** Browser searches can be performed from the context
+  menu of a word, and the search site can be completely customized. - **Plays online
+  videos:** With [yt-dlp](https://github.com/yt-dlp/yt-dlp) integration, any online
+  video can be played back in real time, with AI subtitle generation, word lookups!
+  - **Flexible Subtitles Size/Placement Settings:** The size and position of the dual
+  subtitles can be adjusted very flexibly. - **Subtitles Seeking for any format:**
+  Any subtitle format can be used for subtitle seek. - **Built-in Subtitles Downloader:**
+  Supports opensubtitles.org - **Integrate with browser extensions:** Can work with
+  any browser extensions, such as [Yomitan](https://github.com/yomidevs/yomitan) and
+  [10ten](https://github.com/birchill/10ten-ja-reader). - **Customizable Dark Theme:**
+  The theme is based on black and can be customized. - **Fully Customizable Shortcuts:**
+  All keyboard shortcuts are fully customizable. The same action can be assigned to
+  multiple keys! - **Built-in Cheat Sheet:** You can find out how to use the application
+  in the application itself. - **Free, Open Source, Written in C#:** Written in C#/WPF,
+  not C, so customization is super easy! ## \U0001F5BC️ Screenshot [TED Talk - The
+  mind behind Linux](https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux)
+  ## ✅ Requirements [OS] * Windows 10 x64, Version 1903 later * Windows 11 x64 [Pre-requisites]
+  * [.NET Desktop Runtime 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+  * If not installed, a installer dialog will appear * [Microsoft Visual C++ Redistributable
+  Version >= 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version)
+  (for Whisper ASR, Tesseract OCR) * Note that if this is not installed, the app will
+  launch, but **will crash when ASR or OCR is enabled**! [For Nvidia User (RTX GPU)]
+  * Note: Having CUDA driver will make the rendering of subtitle faster [CUDA 12.8](https://developer.nvidia.com/cuda-downloads)
+  (please take note that this is the required driver if you're using Blackwell GPU's
+  and if you want to use CUDA (RTX 50xx)) ## \U0001F680 Getting Started 1. **Download
+  builds from [release](https://github.com/umlx5h/LLPlayer/releases)** 2. **Launch
+  LLPlayer** Please open `LLPlayer.exe`. 3. **Open Settings** Press `CTRL+.` or click
+  the settings icon on the seek bar to open the settings window. 4. **Download Whisper
+  Model for ASR** From `Subtitles > ASR` section, please download Whisper's models
+  for `whisper.cpp`. You can choose from a variety of models, the larger the size,
+  the higher the load and accuracy. Note that models with `En` endings are only available
+  in English. `Audio Language` allows you to manually set the language of the video
+  (audio). The default is auto-detection. If you want to use the `faster-whisper`
+  engine instead of `whisper.cpp`, please download the engine instead of models from
+  the settings. With `faster-whisper`, selected model is automatically downloaded
+  the first time, so no prior download is required. A description of each engine can
+  be found [here](https://github.com/umlx5h/LLPlayer/wiki/Whisper-Engine). 5. **Set
+  Translation Target Language** To use the translation function, please set your native
+  language. This is called the `target language`. The `source"
 ---
 {% raw %}
 <p align="center"><img height="96" src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/umlx5h-LLPlayer/LLPlayer.png"></p>

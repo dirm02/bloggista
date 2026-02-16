@@ -2,8 +2,70 @@
 layout: project
 name: Elizaos Eliza
 slug: elizaOS-eliza
+category: AI-automation-web2-3SmartC-Agent
 image: https://api.star-history.com/svg?repos=elizaos/eliza&type=Date
 repo_url: https://github.com/elizaOS/eliza
+indexed_content: "ElizaOS The Open-Source Framework for Multi-Agent AI Development
+  Build, deploy, and manage autonomous AI agents with a modern, extensible, and full-featured
+  platform. ## ✨ What is Eliza? ElizaOS is an all-in-one, extensible platform for
+  building and deploying AI-powered applications. Whether you're creating sophisticated
+  chatbots, autonomous agents for business process automation, or intelligent game
+  NPCs, Eliza provides the tools you need to get started quickly and scale effectively.
+  It combines a modular architecture, a powerful CLI, and a rich web interface to
+  give you full control over your agents' development, deployment, and management
+  lifecycle. For complete guides and API references, visit our official **[documentation](https://docs.elizaos.ai/)**.
+  ## \U0001F680 Key Features - \U0001F50C **Rich Connectivity**: Out-of-the-box connectors
+  for Discord, Telegram, Farcaster, and more. - \U0001F9E0 **Model Agnostic**: Supports
+  all major models, including OpenAI, Gemini, Anthropic, Llama, and Grok. - \U0001F5A5️
+  **Modern Web UI**: A professional dashboard for managing agents, groups, and conversations
+  in real-time. - \U0001F916 **Multi-Agent Architecture**: Designed from the ground
+  up for creating and orchestrating groups of specialized agents. - \U0001F4C4 **Document
+  Ingestion**: Easily ingest documents and allow agents to retrieve information and
+  answer questions from your data (RAG). - \U0001F6E0️ **Highly Extensible**: Build
+  your own functionality with a powerful plugin system. - \U0001F4E6 **It Just Works**:
+  A seamless setup and development experience from day one. ## \U0001F3C1 Getting
+  Started (5-Minute Quick Start) There are two recommended paths for using Eliza:
+  - **For Beginners & Standalone Projects (CLI):** If you want to create and deploy
+  agents without modifying Eliza's core code, the CLI is the fastest and simplest
+  method. The guide below is for you. - **For Power Users & Contributors (Monorepo):**
+  If you plan to contribute to Eliza, create complex custom plugins, or manage multiple
+  projects in one place, we recommend cloning the full monorepo. See the [How to Contribute](#-how-to-contribute)
+  section to get started. --- Get your first AI agent running in just a few commands.
+  **Prerequisites:** - [Node.js](https://nodejs.org/) (v23+) - [bun](https://bun.sh/docs/installation)
+  > **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual)
+  is required. ### 1. Install the CLI ```bash # Install the ElizaOS CLI globally bun
+  install -g @elizaos/cli # Verify installation elizaos --version ``` ### 2. Create
+  Your Project ```bash # Create a new project with an interactive setup elizaos create
+  my-first-agent # Follow the prompts. For beginners, we recommend: # - Database:
+  pglite (no setup required) # - Model Provider: openai # - Project Type: project
+  ``` ### 3. Configure Your API Key ```bash cd my-first-agent # Open the local environment
+  file elizaos env edit-local ``` Add your model provider's API key (e.g., for OpenAI):
+  ```env OPENAI_API_KEY=your_api_key_here ``` ### 4. Start Your Agent ```bash # Build
+  and start the agent server elizaos start ``` Your agent is now running! - **Web
+  Interface**: [http://localhost:3000](http://localhost:3000) - **API Endpoint**:
+  `http://localhost:3000/api` --- \U0001F4DA **Advanced CLI Commands & Usage** Eliza's
+  CLI is powerful. Here are some more commands for development and management. ####
+  Development Workflow ```bash # Make changes to your agent code, then rebuild and
+  restart bun run build elizaos start # Or, start in development mode with auto-rebuild
+  elizaos dev # Run tests to verify your changes elizaos test ``` #### Agent & Environment
+  Management ```bash # List all available agents elizaos agent list # Start a specific
+  agent by name elizaos agent start --name \"MyAgent\" # Show all environment variables
+  elizaos env list ``` #### Debugging ```bash # Start with detailed debug logging
+  LOG_LEVEL=debug elizaos start ``` For a full command reference, run `elizaos --help`
+  or `elizaos --help`. --- ## \U0001F527 Running ElizaOS Core Standalone Use ElizaOS
+  agents directly in your applications without the CLI or web interface. ```bash git
+  clone https://github.com/elizaos/eliza.git cd eliza/examples # Interactive chat
+  OPENAI_API_KEY=your_key bun run standalone-cli-chat.ts # Basic message processing
+  OPENAI_API_KEY=your_key bun run standalone.ts ``` ## \U0001F3DB️ Architecture Overview
+  Eliza is a monorepo that contains all the packages needed to run the entire platform.
+  ``` / ├── packages/ │ ├── server/ # Core backend server (Express.js) │ ├── client/
+  # Frontend web interface (React) │ ├── cli/ # Command-line tool for managing projects
+  │ ├── core/ # Shared utilities and functions │ ├── app/ # Cross-platform desktop
+  app (Tauri) │ ├── plugin-bootstrap/ # Core communication and event handling plugin
+  │ ├── plugin-sql/ # Database integration (Postgres, PGLite) │ └── ... # Other plugins
+  and project starters └── ... ``` - **`@elizaos/server`**: The Express.js backend
+  that runs your agents and exposes the API. - **`@elizaos/client`**: The React-based
+  web UI f"
 ---
 {% raw %}
 <div align="center">

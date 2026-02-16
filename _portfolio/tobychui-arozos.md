@@ -2,8 +2,69 @@
 layout: project
 name: Tobychui Arozos
 slug: tobychui-arozos
+category: WindowsTools- Linux
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tobychui-arozos/img/banner.png?raw=true
 repo_url: https://github.com/tobychui/arozos
+indexed_content: '## Features ### User Interface - Web Desktop Interface - Ubuntu
+  remix Windows style startup menu and task bars - Clean and easy to use File Manager
+  (Support drag drop, upload etc) - Simplistic System Setting Menu - No-bull-shit
+  module naming scheme ### Networking - Basic Realtime Network Statistic - Static
+  Web Server (with build in Web Editor!) - mDNS discovery + SSDP broadcast - UPnP
+  Port Forwarding - WiFi Management (Support wpa_supplicant for Rpi or nmcli for Armbian)
+  ### File / Disk Management - Mount Disk Utilities - Local File Systems (ext4, NTFS,
+  FAT etc) - Remote File Systems (WebDAV, SMB, SFTP etc) - Build in Network File Sharing
+  Servers - FTP, WebDAV, SFTP - Basic Auth based simple HTTP interface for legacy
+  devices with outdated browser - Virtual File System + Sandbox Architecture - File
+  Sharing (Similar to Google Drive) - Basic File Operations with Real-time Progress
+  (Copy / Cut / Paste / New File or Folder etc) ### Security - oAuth - LDAP - IP White
+  / Blacklist - Exponential login timeout ### Extensibility - ECMA5 (JavaScript like)
+  scripting interface - 3rd party Go / Python module development with sub-service
+  reverse proxy ### Others - Require as little as 512MB system memory and 1.5GB system
+  storage - Base on one of the most stable Linux distro - Debian - Support for Responsive
+  Web Design (RWD) for different screen size - Support use as Progress WebApp (PWA)
+  on mobile devices - Support desktop devices with touch screen ## Build from Source
+  Require GO 1.20 or above (See [Instllation tutorial](https://dev.to/tobychui/install-go-on-raspberry-pi-os-shortest-tutorial-4pb))
+  and ffmpeg (Optional: wpa_supplicant or nmcli) Run the following the command to
+  build the system ```bash git clone https://github.com/tobychui/arozos cd ./arozos/src/
+  go mod tidy go build ./arozos #sudo ./arozos for enabling hardware and WiFi management
+  features ``` (Yes, it is that simple) ## Install from Precompiled Binary ### Linux
+  (armv6 / v7, arm64 and amd64) *(e.g. Raspberry Pi 4B, Raspberry Pi Zero W, Orange
+  Pi, $5 tiny VPS on lightsail or ramnode, only tested with Debian based Linux)* Install
+  the latest version of Raspberry Pi OS / Armbian / Debian on an SD card / boot drive
+  and boot it up. After setup and initialization is done, connect to it via SSH or
+  use the Terminal App on your desktop to enter the following command ```bash wget
+  -O install.sh https://raw.githubusercontent.com/tobychui/arozos/master/installer/install.sh
+  && bash install.sh ``` and follow the on-screen instruction to setup your arozos
+  system. If you selected install to systemd service, you can check the status of
+  the service using ``` sudo systemctl status arozos ``` Otherwise, you will need
+  to manually start the arozos using the following command ``` cd ~/arozos sudo ./arozos
+  # or if you have launcher installed sudo ./launcher ``` After installation, depending
+  on the processing power and disk speed of your host, it will take some time for
+  arozos to unzip the required files. Wait around 3 - 5 minutes and visit the following
+  link to continue root admin account setups. ``` http://{ip_address_of_your_host}:8080/
+  ``` Note: If you are using some browsers that hides your user agents, you can manually
+  switch between mobile and desktop interface with the following links. - Mobile:
+  http://localhost:8080/mobile.system - Desktop: http://localhost:8080/desktop.system
+  To uninstall your ArozOS in case you screw something up, use the uninstall script
+  in the installer folder. ### Windows (amd64) If you are deploying on Windows, you
+  need to add ffmpeg to %PATH% environment variable and following the steps below.
+  #### Adding FFMPEG to %PATH% Visit https://www.ffmpeg.org/ to download the precompiled
+  binary to C:\ffmpeg\. After unzipping, you should be able to find the binary ffmpeg.exe
+  at C:\ffmpeg\bin\. Go to "System Properties" > "Environment Variables" > "System
+  Variables" > "Edit" and add "C:\ffmpeg\bin\" into the environment variable list.
+  Save and Exit the tool windows and restart your PC to apply the new settings. ####
+  Installing ArozOS 1. Create a folder a name that has no space and ASCII only 2.
+  Download the arozos_windows_amd64.exe from the [Release Page](https://github.com/tobychui/arozos/releases)
+  3. Download the web.tar.gz from the Release Page 4. Put both files into the same
+  folder you created in step 1 5. Double click the exe file to start ArozOS 6. Click
+  on "Allow Access" if your Windows Firewall blocked ArozOS from accessing your network
+  7. Visit ```http://localhost:8080/``` in your web browser to continue root admin
+  account setups. **Some features are not available for Windows build** **Windows
+  arm64 version are experimental and not tested** ### OpenWRT (mipsle) / Linux (riscv64)
+  OpenWRT build and Linux RSICV64 is experimental and might contains weird bugs. If
+  you are interested to test or maintain these builds, please contact me directly.
+  ``` wget -O arozos {binary_path_from_release} wget -O web.tar.gz {web.tar.gz_path_from_release}
+  chmod -x ./arozos su'
 ---
 {% raw %}
 ![Image](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/tobychui-arozos/img/banner.png?raw=true)

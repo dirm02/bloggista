@@ -2,8 +2,69 @@
 layout: project
 name: Do3rb Wirelessnetworktransceiver
 slug: DO3RB-WirelessNetworkTransceiver
+category: EE-kicad-3D-Robotic
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/markqvist/Reticulum
+indexed_content: "============================ Wireless Network Transceiver ============================
+  The name simply serves a descriptive function. Lacking an idea and desire for a
+  concise or catchy term; I just think of it as my radio or *das Funkgerät*. ------------------
+  What it looks like ------------------ .. image:: docs/device.jpg :width: 100% :alt:
+  Wireless Network Transceiver bundled into an enclosure with a RaspberryPi Zero -------------
+  Why it exists ------------- - There was no wireless network transceiver which can
+  connect through some hundred meters of dense woodland while reaching at least telephone
+  modem speeds. .. _driver: https://github.com/markqvist/Reticulum/discussions/421
+  - IEEE 802.11ah Wi-Fi HaLow under planning since 2017 could solve this and since
+  2024 there seem to be some devices available but the devices' stability and driver_
+  support look as bad as early WiFi on Linux. ------------ What it does ------------
+  **Reliable bidirectional transmission of regular network packets at 56kbit/s over
+  some hundreds of meters bundled as standard USB CDC ECM ethernet device.** *Bringing
+  WiFi back to the 90ies* Reliable meaning a rate of packetloss well below one percent,
+  because above this mark TCP tends to become unstable. Regular WiFi in a brickwalled
+  apartment for comparison experiences between five and ten percent of packetloss,
+  which gets covered by automatic retransmission. This radio device tested for 10000
+  pings spread over two hours loses 0.15% of handshakes and thus 0.075% of packets.
+  **Handling statistical errors** The radio spectrum as medium is inherently noisy
+  thanks to sources like the cosmic radiation background, the sun as thermal and particle
+  emitter, and human interferences. Combined with the imperfections of technology
+  this manifests as biterrors which can generally occur sparsely distributed called
+  random or densely packed as bursterrors. We counter this by checksumming and retransmitting
+  on mismatch or by the use of forward error correction derived from Coding Theory.
+  An additional interleaver makes this task easier for the decoder because it spreads
+  bursterrors out into sparse biterrors. **Preventing systematic errors** Modern radio
+  transceiver modules are inexpensive because they use intelligently designed circuits
+  to keep track of the signal and recover a useful interpretation. Most common are
+  continuously running control loops namely automatic frequency correction AFC tracking
+  the carrier, automatic gain control AGC steadying the amplitude, and bit clock recovery
+  BCR following the timing of the transmitted symbols. We encourage the control loops'
+  correct operation by ensuring enough transitions between symbols. This requirement
+  can be reduced to establishing a limitation on the runlength of consecutively equal
+  symbols. **Delimiting the problem** My observations using subGHz transceivers showed
+  me that the handling of statistical errors is of lesser importance compared to the
+  prevention of systematic errors. Receiving a long run of zeroes for example often
+  unlocks the control loop for bit clock recovery which then produces a substantial
+  run of falsely sampled bits. These bursterrors are hard to compensate and would
+  require computationally expensive error correction codes like Reed-Solomon or LDPC
+  which to my knowledge surpass the capabilities of simple MCUs for my target datarate
+  of one megabit per second. **Implementing the Math** Extended binary Golay codes
+  halve the bitrate, transforming 12bit messages into 24bit codewords, and are designed
+  to correct three sometimes four errors per codeword which suffices for the given
+  problem. Furthermore their construction and properties are well studied and understood.
+  This gives rise to the opportunity of adding runlength limitation into the encoder
+  itself, avoiding the generation of separate pseudo noise sequences, and eliminating
+  the error propagation of scramblers. The encoder equals the multiplication of message
+  vector and generator matrix which comprises the identity matrix and the complement
+  of the adjacency matrix of the great dodecahedron. The columns of the matrix were
+  permuted conforming to the constructive principle given in *Transcontrol Codes with
+  Run-Length Limitation* by Farkaš and Weinrichter. The constant modifier was selected
+  using computerised search. The decoder was implemented following the deduction in
+  *Error Control Coding* by Lin and Costello. The resulting encoded bitstream excludes
+  the problematic bytes 0b00000000 and 0b11111111 for binary FSK, as well as 0b01010101
+  and 0b10101010 for quaternary FSK. This can be regarded as bandwidth limited baseband
+  modulation providing the desired line coding. The decoder's sourcecode was optimised
+  using some vectorisation, and processes 3 Mbit/s on the ARM CortexM0 with the core
+  clocked at 48MHz and the flash at 24MHz. .. image:: docs/matrices.png :width: 100%
+  ------- Caveats ------- .. _SAMD21: https://www.seeedstudio.com/xiao-series-page
+  The project is bound to the SAMD21_ micr"
 ---
 {% raw %}
 ============================

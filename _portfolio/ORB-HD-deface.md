@@ -2,8 +2,68 @@
 layout: project
 name: Orb Hd Deface
 slug: ORB-HD-deface
+category: Uncategorized
 image: https://img.shields.io/pypi/v/deface
 repo_url: https://github.com/ORB-HD/deface
+indexed_content: '[](https://pypi.org/project/deface/) [](https://github.com/ORB-HD/deface/actions)
+  # `deface`: Video anonymization by face detection `deface` is a simple command-line
+  tool for automatic anonymization of faces in videos or photos. It works by first
+  detecting all human faces in each video frame and then applying an anonymization
+  filter (blurring or black boxes) on each detected face region. By default all audio
+  tracks are discarded as well. Original frame | `deface` output (using default options)
+  :--:|:--: | ## Installation `deface` supports all commonly used operating systems
+  (Linux, Windows, MacOS), but it requires using a command-line shell such as bash.
+  There are currently no plans of creating a graphical user interface. The recommended
+  way of installing `deface` is via the `pip` package manager. This requires that
+  you have Python 3.6 or later installed on your system. It is recommended to set
+  up and activate a new [virtual environment](https://realpython.com/python-virtual-environments-a-primer/)
+  first. Then you can install the latest release of `deface` and all necessary dependencies
+  by running: $ python3 -m pip install deface Alternatively, if you want to use the
+  latest (unreleased) revision directly from GitHub, you can run: $ python3 -m pip
+  install ''git+https://github.com/ORB-HD/deface'' This will only install the dependencies
+  that are strictly required for running the tool. If you want to speed up processing
+  by enabling hardware acceleration, you will need to manually install additional
+  packages, see [Hardware acceleration](#hardware-acceleration) ## Usage ### Quick
+  start If you want to try out anonymizing a video using the default settings, you
+  just need to supply the path to it. For example, if the path to your test video
+  is `myvideos/vid1.mp4`, run: $ deface myvideos/vid1.mp4 This will write the the
+  output to the new video file `myvideos/vid1_anonymized.mp4`. ### Live capture demo
+  If you have a camera (webcam) attached to your computer, you can run `deface` on
+  the live video input by calling it with the `cam` argument instead of an input path:
+  $ deface cam This is a shortcut for `$ deface --preview '' ''`, where `'' ''` (literal)
+  is a camera device identifier. If you have multiple cameras installed, you can try
+  `'' ''`, where `N` is the index of the camera (see [imageio-ffmpeg docs](https://imageio.readthedocs.io/en/stable/format_ffmpeg.html)).
+  ### CLI usage and options summary To get an overview of usage and available options,
+  run: $ deface -h The output may vary depending on your installed version, but it
+  should look similar to this: ``` usage: deface [--output O] [--thresh T] [--scale
+  WxH] [--preview] [--boxes] [--draw-scores] [--mask-scale M] [--replacewith {blur,solid,none,img,mosaic}]
+  [--replaceimg REPLACEIMG] [--mosaicsize width] [--keep-audio] [--ffmpeg-config FFMPEG_CONFIG]
+  [--backend {auto,onnxrt,opencv}] [--execution-provider EP] [--version] [--help]
+  [input ...] Video anonymization by face detection positional arguments: input File
+  path(s) or camera device name. It is possible to pass multiple paths by separating
+  them by spaces or by using shell expansion (e.g. `$ deface vids/*.mp4`). Alternatively,
+  you can pass a directory as an input, in which case all files in the directory will
+  be used as inputs. If a camera is installed, a live webcam demo can be started by
+  running `$ deface cam` (which is a shortcut for `$ deface -p '' ''`. optional arguments:
+  --output O, -o O Output file name. Defaults to input path + postfix "_anonymized".
+  --thresh T, -t T Detection threshold (tune this to trade off between false positive
+  and false negative rate). Default: 0.2. --scale WxH, -s WxH Downscale images for
+  network inference to this size (format: WxH, example: --scale 640x360). --preview,
+  -p Enable live preview GUI (can decrease performance). --boxes Use boxes instead
+  of ellipse masks. --draw-scores Draw detection scores onto outputs. --disable-progress-output
+  Disable video progress output to console. --mask-scale M Scale factor for face masks,
+  to make sure that masks cover the complete face. Default: 1.3. --replacewith {blur,solid,none,img,mosaic}
+  Anonymization filter mode for face regions. "blur" applies a strong gaussian blurring,
+  "solid" draws a solid black box, "none" does leaves the input unchanged, "img" replaces
+  the face with a custom image and "mosaic" replaces the face with mosaic. Default:
+  "blur". --replaceimg REPLACEIMG Anonymization image for face regions. Requires --replacewith
+  img option. --mosaicsize width Setting the mosaic size. Requires --replacewith mosaic
+  option. Default: 20. --keep-audio, -k Keep audio from video source file and copy
+  it over to the output (only applies to videos). --ffmpeg-config FFMPEG_CONFIG FFMPEG
+  config arguments for encoding output videos. This argument is expected in JSON notation.
+  For a list of possible options, refer to the ffmpeg-imageio docs. Default: ''{"codec":
+  "libx264"}''. --backend {auto,onnxrt,opencv} Backend for ONNX model execution. Default:
+  "auto" (prefer'
 ---
 {% raw %}
 [![PyPI](https://img.shields.io/pypi/v/deface)](https://pypi.org/project/deface/) [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ORB-HD/deface/python-publish.yml)](https://github.com/ORB-HD/deface/actions)

@@ -2,8 +2,73 @@
 layout: project
 name: Pompelmi Pompelmi
 slug: pompelmi-pompelmi
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/pompelmi-pompelmi/assets/malware-detection-node-demo.gif
 repo_url: https://github.com/sorrycc/awesome-javascript
+indexed_content: "Read this in other languages: \U0001F1EE\U0001F1F9 Italiano • \U0001F1EB\U0001F1F7
+  Français • \U0001F1EA\U0001F1F8 Español • \U0001F1E9\U0001F1EA Deutsch • \U0001F1EF\U0001F1F5
+  日本語 • \U0001F1E8\U0001F1F3 简体中文 • \U0001F1F0\U0001F1F7 한국어 • \U0001F1E7\U0001F1F7
+  Português • \U0001F1F7\U0001F1FA Русский • \U0001F1F9\U0001F1F7 Türkçe > \U0001F4A1
+  **Translation Note:** Help improve translations by opening a PR. The English README
+  is the source of truth. --- pompelmi Secure File Upload Scanning for Node.js Privacy-first
+  malware detection with YARA, ZIP bomb protection, and framework adapters Scan files
+  before they hit disk • Keep user data private • Zero cloud dependencies --- \U0001F4DA
+  Documentation • \U0001F4BE Install • ⚡ Quick Start • \U0001F9E9 Adapters • \U0001F9EC
+  YARA • \U0001F916 CI/CD Coverage badge reflects core library ( src/** ); adapters
+  are measured separately. --- ## \U0001F3AC Demo **Want to try it now?** Check out
+  our [live examples](./examples/) or install and run locally: ```bash npm i pompelmi
+  @pompelmi/express-middleware ``` --- ## ✨ Features **pompelmi** provides enterprise-grade
+  file scanning for Node.js applications: - **\U0001F512 Privacy-First Architecture**
+  — All scanning happens in-process. **No cloud calls, no data leaks.** Your files
+  never leave your infrastructure. - **⚡ Lightning Fast** — In-process scanning with
+  **zero network latency**. Configurable concurrency for high-throughput scenarios.
+  - **\U0001F9E9 Composable Scanners** — Mix heuristics + signatures; set `stopOn`
+  and timeouts. Bring your own YARA rules. - **\U0001F4E6 Deep ZIP Inspection** —
+  Traversal/bomb guards, polyglot & macro hints, nested archive scanning with configurable
+  depth limits. - **\U0001F50C Framework Adapters** — Drop-in middleware for Express,
+  Koa, Fastify, Next.js, Nuxt/Nitro, and **NestJS** with first-class TypeScript support.
+  - **\U0001F30A Stream-Based Processing** — Memory-efficient scanning with configurable
+  buffer limits. Scan large files without loading them entirely into memory. - **\U0001F50D
+  Polyglot Detection** — Advanced magic bytes analysis detects mixed-format files
+  and embedded scripts with **30+ file signatures**. - **⚙️ CLI for CI/CD** — Standalone
+  command-line tool for scanning files and directories with watch mode and multiple
+  output formats. - **\U0001F4D8 TypeScript-First** — Complete type definitions, modern
+  ESM/CJS builds, minimal surface, tree-shakeable. - **⚡ Zero Core Dependencies**
+  — Core library has minimal deps for fast installation and reduced supply chain risk.
+  --- ## ⚡ Quick Start Get secure file upload scanning running in **under 5 minutes**.
+  ### Express Integration ```ts import express from 'express'; import multer from
+  'multer'; import { createUploadGuard } from '@pompelmi/express-middleware'; import
+  { CommonHeuristicsScanner, createZipBombGuard, composeScanners } from 'pompelmi';
+  const app = express(); const upload = multer({ storage: multer.memoryStorage() });
+  // Configure your security policy const scanner = composeScanners( [ ['zipGuard',
+  createZipBombGuard({ maxEntries: 512, maxCompressionRatio: 12 })], ['heuristics',
+  CommonHeuristicsScanner], ], { parallel: false, stopOn: 'suspicious', timeoutMsPerScanner:
+  1500 } ); app.post('/upload', upload.single('file'), createUploadGuard({ includeExtensions:
+  ['pdf', 'zip', 'png', 'jpg'], allowedMimeTypes: ['application/pdf', 'application/zip',
+  'image/png', 'image/jpeg'], maxFileSizeBytes: 20 * 1024 * 1024, // 20MB scanner,
+  failClosed: true }), (req, res) => { // File is safe - proceed with your logic res.json({
+  success: true, message: 'File uploaded successfully' }); } ); app.listen(3000, ()
+  => console.log('\U0001F680 Server running on http://localhost:3000')); ``` **Test
+  it:** ```bash curl -X POST http://localhost:3000/upload -F \"file=@test.pdf\" ```
+  ✅ **Done!** Your app now blocks malicious uploads before they hit disk. \U0001F449
+  **[Explore full documentation →](https://pompelmi.github.io/pompelmi/)** | **[See
+  more examples →](./examples/)** --- ## Table of Contents - [Features](#features)
+  - [Quick Start](#quick-start) - [Why pompelmi](#why-pompelmi) - [Use Cases](#use-cases)
+  - [Installation](#installation) - [Getting Started](#getting-started) - [Code Examples](#code-examples)
+  - [Adapters](#adapters) - [GitHub Action](#github-action) - [Configuration](#configuration)
+  - [YARA Getting Started](#yara-getting-started) - [Security Notes](#security-notes)
+  - [Production Checklist](#production-checklist) - [Community & Recognition](#community--recognition)
+  - [FAQ](#faq) - [Contributing](#contributing) - [License](#license) --- ## \U0001F30D
+  Translations pompelmi documentation is available in multiple languages to help developers
+  worldwide: - \U0001F1EE\U0001F1F9 **[Italiano (Italian)](docs/i18n/README.it.md)**
+  — Documentazione completa in italiano - \U0001F1EB\U0001F1F7 **[Français (French)](docs/i18n/README.fr.md)**
+  — Documentation complète en français - \U0001F1EA\U0001F1F8 **[Español (Spanish)](docs/i18n/README.es.md)**
+  — Documentación completa en español - \U0001F1E9\U0001F1EA **[Deutsch (German)](docs/i18n/README.de.md)**
+  — Vollständige Dokumentation auf Deutsch - \U0001F1EF\U0001F1F5 **[日本語 (Japanese)](docs/i18n/README.ja.md)**
+  — 日本語による完全なドキュメント - \U0001F1E8\U0001F1F3 **[简体中文 (Simplified Chinese)](docs/i18n/README.zh-CN.md)**
+  — 完整的简体中文文档 - \U0001F1F0\U0001F1F7 **[한국어 (Korean)](docs/i18n/README.ko.md)** —
+  완전한 한국어 문서 - \U0001F1E7\U0001F1F7 **[Português (Brasil)](docs/i18n/README.pt-BR.md)**
+  — "
 ---
 {% raw %}
 <div align="center">

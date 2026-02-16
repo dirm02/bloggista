@@ -2,8 +2,68 @@
 layout: project
 name: Nao1215 Filesql
 slug: nao1215-filesql
+category: database-backend baas
 image: https://pkg.go.dev/badge/github.com/nao1215/filesql.svg
 repo_url: https://github.com/nao1215/filesql
+indexed_content: '# filesql [](https://pkg.go.dev/github.com/nao1215/filesql) [](https://goreportcard.com/report/github.com/nao1215/filesql)
+  [](https://github.com/nao1215/filesql/actions/workflows/unit_test.yml) [日本語](./doc/ja/README.md)
+  | [Русский](./doc/ru/README.md) | [中文](./doc/zh-cn/README.md) | [한국어](./doc/ko/README.md)
+  | [Español](./doc/es/README.md) | [Français](./doc/fr/README.md) **filesql** is
+  a Go SQL driver that enables you to query CSV, TSV, LTSV, Parquet, and Excel (XLSX)
+  files using SQLite3 SQL syntax. Query your data files directly without any imports
+  or transformations! **Want to try filesql''s capabilities?** Check out **[sqly](https://github.com/nao1215/sqly)**
+  - a command-line tool that uses filesql to easily execute SQL queries against CSV,
+  TSV, LTSV, and Excel files directly from your shell. It''s the perfect way to experience
+  the power of filesql in action! ## Why filesql? This library was born from the experience
+  of maintaining two separate CLI tools - [sqly](https://github.com/nao1215/sqly)
+  and [sqluv](https://github.com/nao1215/sqluv). Both tools shared a common feature:
+  executing SQL queries against CSV, TSV, and other file formats. Rather than maintaining
+  duplicate code across both projects, we extracted the core functionality into this
+  reusable SQL driver. Now, any Go developer can leverage this capability in their
+  own applications! ## Features - SQLite3 SQL Interface - Use SQLite3''s powerful
+  SQL dialect to query your files - Multiple File Formats - Support for CSV, TSV,
+  LTSV, Parquet, and Excel (XLSX) files - Compression Support - Automatically handles
+  .gz, .bz2, .xz, .zst, .z, .snappy, .s2, and .lz4 compressed files - Stream Processing
+  - Efficiently handles large files through streaming with configurable chunk sizes
+  - Flexible Input Sources - Support for file paths, directories, io.Reader, and embed.FS
+  - Zero Setup - No database server required, everything runs in-memory - Auto-Save
+  - Automatically persist changes back to files - Cross-Platform - Works seamlessly
+  on Linux, macOS, and Windows - SQLite3 Powered - Built on the robust SQLite3 engine
+  for reliable SQL processing ## Supported File Formats | Extension | Format | Description
+  | |-----------|--------|-------------| | `.csv` | CSV | Comma-separated values |
+  | `.tsv` | TSV | Tab-separated values | | `.ltsv` | LTSV | Labeled Tab-separated
+  Values | | `.parquet` | Parquet | Apache Parquet columnar format | | `.xlsx` | Excel
+  XLSX | Microsoft Excel workbook format | | `.json` | JSON | JSON format (use `json_extract()`
+  for field access) | | `.jsonl` | JSONL | JSON Lines format (one JSON object per
+  line) | | `.csv.gz`, `.tsv.gz`, `.ltsv.gz`, `.parquet.gz`, `.xlsx.gz`, `.json.gz`,
+  `.jsonl.gz` | Gzip compressed | Gzip compressed files | | `.csv.bz2`, `.tsv.bz2`,
+  `.ltsv.bz2`, `.parquet.bz2`, `.xlsx.bz2`, `.json.bz2`, `.jsonl.bz2` | Bzip2 compressed
+  | Bzip2 compressed files | | `.csv.xz`, `.tsv.xz`, `.ltsv.xz`, `.parquet.xz`, `.xlsx.xz`,
+  `.json.xz`, `.jsonl.xz` | XZ compressed | XZ compressed files | | `.csv.zst`, `.tsv.zst`,
+  `.ltsv.zst`, `.parquet.zst`, `.xlsx.zst`, `.json.zst`, `.jsonl.zst` | Zstandard
+  compressed | Zstandard compressed files | | `.csv.z`, `.tsv.z`, `.ltsv.z`, `.parquet.z`,
+  `.xlsx.z`, `.json.z`, `.jsonl.z` | Zlib compressed | Zlib compressed files | | `.csv.snappy`,
+  `.tsv.snappy`, `.ltsv.snappy`, `.parquet.snappy`, `.xlsx.snappy`, `.json.snappy`,
+  `.jsonl.snappy` | Snappy compressed | Snappy compressed files | | `.csv.s2`, `.tsv.s2`,
+  `.ltsv.s2`, `.parquet.s2`, `.xlsx.s2`, `.json.s2`, `.jsonl.s2` | S2 compressed |
+  S2 compressed files (Snappy compatible) | | `.csv.lz4`, `.tsv.lz4`, `.ltsv.lz4`,
+  `.parquet.lz4`, `.xlsx.lz4`, `.json.lz4`, `.jsonl.lz4` | LZ4 compressed | LZ4 compressed
+  files | | `.ach` | ACH (NACHA) | Automated Clearing House files (**Experimental**)
+  | | `.fed` | Fedwire | Legacy Fedwire message files (**Experimental**) | ## Installation
+  ```bash go get github.com/nao1215/filesql ``` ## Requirements - **Go Version**:
+  1.24 or later - **Operating Systems**: - Linux - macOS - Windows ## Quick Start
+  ### Simple Usage The recommended way to get started is with `OpenContext` for proper
+  timeout handling: ```go package main import ( "context" "fmt" "log" "time" "github.com/nao1215/filesql"
+  ) func main() { // Create context with timeout for large file operations ctx, cancel
+  := context.WithTimeout(context.Background(), 30*time.Second) defer cancel() // Open
+  a CSV file as a database db, err := filesql.OpenContext(ctx, "data.csv") if err
+  != nil { log.Fatal(err) } defer db.Close() // Query the data (table name = filename
+  without extension) rows, err := db.QueryContext(ctx, "SELECT * FROM data WHERE age
+  > 25") if err != nil { log.Fatal(err) } defer rows.Close() // Process results for
+  rows.Next() { var name string var age int if err := rows.Scan(&name, &age); err
+  != nil { log.Fatal(err) } fmt.Printf("Name: %s, Age: %d\n", name, age) } } ``` ###
+  Multiple Files and Formats ```go ctx, cancel := context.WithTimeout(context.Background(),
+  30*time.'
 ---
 {% raw %}
 # filesql

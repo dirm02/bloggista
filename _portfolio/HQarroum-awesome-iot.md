@@ -2,8 +2,61 @@
 layout: project
 name: Hqarroum Awesome Iot
 slug: HQarroum-awesome-iot
+category: Home automation-IoT
 image: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 repo_url: https://github.com/sindresorhus/awesome)
+indexed_content: "# Awesome IoT [](https://github.com/sindresorhus/awesome) [](https://travis-ci.org/HQarroum/awesome-iot)
+  > A curated list of awesome Internet of Things projects and resources. Inspired
+  by the [awesome](https://github.com/sindresorhus/awesome) list thing. ## Table of
+  Contents - [Hardware](#hardware) - [Software](#software) - [Operating systems](#operating-systems)
+  - [Programming Languages](#programming-languages) - [Frameworks](#frameworks) -
+  [Middlewares](#middlewares) - [Libraries and Tools](#libraries-and-tools) - [Miscellaneous](#miscellaneous)
+  - [Protocols and Networks](#protocols-and-networks) - [Technologies](#technologies)
+  - [Standards and Alliances](#standards-and-alliances) - [Resources](#resources)
+  - [Books](#books) - [Articles](#articles) - [Papers](#papers) ### Hardware - [Arduino](https://www.arduino.cc/)
+  - Arduino is an open-source electronics platform based on easy-to-use hardware and
+  software. It's intended for anyone making interactive projects. - [BeagleBoard](http://beagleboard.org/)
+  - The BeagleBoard is a low-power open-source hardware single-board computer produced
+  by Texas Instruments in association with Digi-Key and Newark element14. - [Dragonboard](https://developer.qualcomm.com/hardware/dragonboard-410c)
+  - The DragonBoard 410c, a product of Arrow Electronics, is the development board
+  based on the mid-tier Qualcomm® Snapdragon™ 410E processor. It features advanced
+  processing power, Wi-Fi, Bluetooth connectivity, and GPS, all packed into a board
+  the size of a credit card. - [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview)
+  - ESP32, the successor to the ESP8266. ESP32 is power packed with hardware features.
+  The high speed dual core processors along with the numerous built in peripherals
+  it is set to replace micro-controllers in connected products. - [HummingBoard](https://www.solid-run.com/freescale-imx6-family/hummingboard/)
+  - HummingBoard is a family of three Linux- and Android-ready, open source SBCs based
+  on 1GHz Freescale i.MX6 SoCs, with a Pi-like 26-pin I/O connector. - [Intel Galileo](https://www-ssl.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html)
+  - The Intel® Galileo Gen 2 board is the first in a family of Arduino*-certified
+  development and prototyping boards based on Intel® architecture and specifically
+  designed for makers, students, educators, and DIY electronics enthusiasts. - [Microduino](https://www.microduino.cc/)
+  - Microduino and mCookie bring powerful, small, stackable electronic hardware to
+  makers, designers, engineers, students and curious tinkerers of all ages. Build
+  open-source projects or create innovative new ones. - [Node MCU (ESP 8266)](http://www.nodemcu.com/index_en.html)
+  - NodeMCU is an open source IoT platform. It uses the Lua scripting language. It
+  is based on the eLua project, and built on the ESP8266 SDK 0.9.5. - [OLinuXino](https://www.olimex.com/Products/OLinuXino/open-source-hardware)
+  - OLinuXino is an Open Source Software and Open Source Hardware low cost (EUR 30)
+  Linux Industrial grade single board computer with GPIOs capable of operating from
+  -25°C to +85°C. - [Odroid](http://www.hardkernel.com/) - The ODROID means Open +
+  Droid. It is a development platform for the hardware as well as the software. -
+  [Particle](https://www.particle.io) - A suite of hardware and software tools to
+  help you prototype, scale, and manage your Internet of Things products. - [Pinoccio](https://www.open-electronics.org/pinoccio-wifi-mesh-networking-for-arduino-and-iot-available-now/)
+  - Pinoccio is a solution to add mesh networking capability and WiFi-Internet access
+  to all your IoT devices, and it is Arduino compatible. - [Raspberry Pi](https://www.raspberrypi.org/)
+  - The Raspberry Pi is a low cost, credit-card sized computer that plugs into a computer
+  monitor or TV, and uses a standard keyboard and mouse. It’s capable of doing everything
+  you’d expect a desktop computer to do, from browsing the internet and playing high-definition
+  video, to making spreadsheets, word-processing, and playing games. - [Tessel](https://tessel.io/)
+  - Tessel is a completely open source and community-driven IoT and robotics development
+  platform. It encompasses development boards, hardware module add-ons, and the software
+  that runs on them. - [UDOO](http://www.udoo.org) - UDOO is a single-board computer
+  with an integrated Arduino 2 compatible microcontroller, designed for computer science
+  education, the world of Makers and the Internet of Things. - [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/)
+  - Raspberry Pi Pico is a small, fast and versatile board that is equipped with the
+  RP2040 microcontroller chip developed by the Raspberry Pi Foundation. It also comes
+  with a 2.4GHz 802.11n wireless LAN variant, which makes it great for IoT. - [WisBlock](https://www.rakwireless.com/en-us/products/wisblock)
+  - WisBlock is a modular system that makes it easy to implement low power wide area
+  network (LPWAN) into IoT solutions. WisBlock"
 ---
 {% raw %}
 # Awesome IoT

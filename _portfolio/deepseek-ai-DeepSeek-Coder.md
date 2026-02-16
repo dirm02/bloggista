@@ -2,8 +2,67 @@
 layout: project
 name: Deepseek Ai Deepseek Coder
 slug: deepseek-ai-DeepSeek-Coder
+category: Uncategorized
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/deepseek-ai-DeepSeek-Coder/pictures/completion_demo.gif
 repo_url: https://github.com/guoday/assert
+indexed_content: "[ Homepage] | [\U0001F916 Chat with DeepSeek Coder] | [\U0001F917
+  Models Download] | [Discord] | [WeChat (微信)] Paper Link \U0001F441️ ### 1. Introduction
+  of DeepSeek Coder DeepSeek Coder is composed of a series of code language models,
+  each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural
+  language in both English and Chinese. We provide various sizes of the code model,
+  ranging from 1B to 33B versions. Each model is pre-trained on project-level code
+  corpus by employing a window size of 16K and an extra fill-in-the-blank task, to
+  support project-level code completion and infilling. For coding capabilities, DeepSeek
+  Coder achieves state-of-the-art performance among open-source code models on multiple
+  programming languages and various benchmarks. - **Massive Training Data**: Trained
+  from scratch on 2T tokens, including 87% code and 13% linguistic data in both English
+  and Chinese languages. - **Highly Flexible & Scalable**: Offered in model sizes
+  of 1B, 5.7B, 6.7B and 33B, enabling users to choose the setup most suitable for
+  their requirements. - **Superior Model Performance**: State-of-the-art performance
+  among publicly available code models on HumanEval, MultiPL-E, MBPP, DS-1000, and
+  APPS benchmarks. - **Advanced Code Completion Capabilities**: A window size of 16K
+  and a fill-in-the-blank task, supporting project-level code completion and infilling
+  tasks. #### Supported Programming Languages `['ada', 'agda', 'alloy', 'antlr', 'applescript',
+  'assembly', 'augeas', 'awk', 'batchfile', 'bluespec', 'c', 'c-sharp', 'clojure',
+  'cmake', 'coffeescript', 'common-lisp', 'cpp', 'css', 'cuda', 'dart', 'dockerfile',
+  'elixir', 'elm', 'emacs-lisp', 'erlang', 'f-sharp', 'fortran', 'glsl', 'go', 'groovy',
+  'haskell', 'html', 'idris', 'isabelle', 'java', 'java-server-pages', 'javascript',
+  'json', 'julia', 'jupyter-notebook', 'kotlin', 'lean', 'literate-agda', 'literate-coffeescript',
+  'literate-haskell', 'lua', 'makefile', 'maple', 'markdown', 'mathematica', 'matlab',
+  'ocaml', 'pascal', 'perl', 'php', 'powershell', 'prolog', 'protocol-buffer', 'python',
+  'r', 'racket', 'restructuredtext', 'rmarkdown', 'ruby', 'rust', 'sas', 'scala',
+  'scheme', 'shell', 'smalltalk', 'solidity', 'sparql', 'sql', 'stan', 'standard-ml',
+  'stata', 'systemverilog', 'tcl', 'tcsh', 'tex', 'thrift', 'typescript', 'verilog',
+  'vhdl', 'visual-basic', 'xslt', 'yacc', 'yaml', 'zig']` ### 2. Evaluation Results
+  We evaluate DeepSeek Coder on various coding-related benchmarks. Only `pass@1` results
+  on HumanEval (Python and Multilingual), MBPP, and DS-1000 are reported here: The
+  result shows that DeepSeek-Coder-Base-33B significantly outperforms existing open-source
+  code LLMs. Compared with CodeLlama-34B, it leads by 7.9%, 9.3%, 10.8% and 5.9% respectively
+  on HumanEval Python, HumanEval Multilingual, MBPP and DS-1000. Surprisingly, our
+  DeepSeek-Coder-Base-7B reaches the performance of CodeLlama-34B. The DeepSeek-Coder-Instruct-33B
+  model after instruction tuning outperforms GPT35-turbo on HumanEval and achieves
+  comparable results with GPT35-turbo on MBPP. More evaluation details can be found
+  in the [Detailed Evaluation](#6-detailed-evaluation-results). ### 3. Procedure of
+  Data Creation and Model Training #### Data Creation - Step 1: Collect code data
+  from GitHub and apply the same filtering rules as [StarCoder Data](https://github.com/bigcode-project/bigcode-dataset)
+  to filter data. - Step 2: Parsing the dependencies of files within the same repository
+  to rearrange the file positions based on their dependencies. - Step 3: Concatenating
+  dependent files to form a single example and employ repo-level minhash for deduplication.
+  - Step 4: Further filtering out low-quality code, such as codes with syntax errors
+  or poor readability. #### Model Training - Step 1: Initially pre-trained with a
+  dataset consisting of 87% code, 10% code-related language (Github Markdown and StackExchange),
+  and 3% non-code-related Chinese language. Models are pre-trained using 1.8T tokens
+  and a 4K window size in this step. - Step 2: Further Pre-training using an extended
+  16K window size on an additional 200B tokens, resulting in foundational models (**DeepSeek-Coder-Base**).
+  - Step 3: Instruction Fine-tuning on 2B tokens of instruction data, resulting in
+  instruction-tuned models (**DeepSeek-Coder-Instruct**). ### 4. How to Use Before
+  proceeding, you'll need to install the necessary dependencies. You can do this by
+  running the following command: ``` pip install -r requirements.txt ``` A demo is
+  also available on the [\U0001F917 Hugging Face Space](https://huggingface.co/spaces/deepseek-ai/deepseek-coder-33b-instruct),
+  and you can run the demo locally using `app.py` in the [demo](https://github.com/deepseek-ai/deepseek-coder/tree/main/demo)
+  folder. (Thanks to all the HF team for their support) Here are some examples of
+  how to use our model. #### 1) Code Completion ```python from transformers import
+  AutoTokenizer, AutoModelForCausalLM import torch tokenizer = AutoTokenizer.from_pretrained(\"deepseek-ai/deep"
 ---
 {% raw %}
 <p align="center">

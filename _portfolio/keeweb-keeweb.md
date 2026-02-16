@@ -2,8 +2,65 @@
 layout: project
 name: Keeweb Keeweb
 slug: keeweb-keeweb
+category: Very important!!!!
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/keeweb-keeweb/img/screenshot.png
 repo_url: https://github.com/keeweb/keeweb
+indexed_content: "Password Manager KeeWeb Password Manager\U0001F511 KeeWeb is a browser
+  and desktop password manager which is capable of opening up existing KeePass database
+  `kdbx` files, or creating new vaults to store your important credentials in. [![Version][github-version-img]][github-version-uri]
+  [![Tests][github-tests-img]][github-tests-uri] [![Downloads][github-downloads-img]][github-downloads-uri]
+  [![Size][github-size-img]][github-size-img] [![Last Commit][github-commit-img]][github-commit-img]
+  [![Contributors][contribs-all-img]](#contributors-) --- - [About](#about) - [Quick
+  Links](#quick-links) - [Self-hosting](#self-hosting) - [Docker](#docker) - [Images](#images)
+  - [Docker Run](#docker-run) - [Docker Compose](#docker-compose) - [Traefik Integration](#traefik-integration)
+  - [Labels](#labels) - [Dynamic.yml](#dynamicyml) - [Static.yml](#staticyml) - [Providers](#providers)
+  - [certificatesResolvers](#certificatesresolvers) - [entryPoints (Normal)](#entrypoints-normal)
+  - [entryPoints (Cloudflare)](#entrypoints-cloudflare) - [Authentik Integration](#authentik-integration)
+  - [Labels](#labels-1) - [Dynamic.yml](#dynamicyml-1) - [Env \\& Volumes](#env--volumes)
+  - [Env Variables](#env-variables) - [Volumes](#volumes) - [Dropbox Support](#dropbox-support)
+  - [Build From Source](#build-from-source) - [Platform: Windows](#platform-windows)
+  - [Using Grunt](#using-grunt) - [Using NPM](#using-npm) - [Platform: Linux](#platform-linux)
+  - [Using Grunt](#using-grunt-1) - [Using NPM](#using-npm-1) - [Platform: MacOS](#platform-macos)
+  - [Using Grunt](#using-grunt-2) - [Using NPM](#using-npm-2) - [Donations](#donations)
+  - [Contributors ✨](#contributors-) --- ## About **KeeWeb** is a password manager
+  which supports managing `kdbx` files created by other applications such as KeePass,
+  KeePassXC, etc. You choose the platform you wish to run; as KeeWeb supports being
+  installed and ran as either a Desktop application, or in your web-browser. With
+  support for Linux, Windows, and MacOS, we give you the tools to seamlessly manage
+  your most important credentials across multiple applications and platforms. Decide
+  how you want to save your credential vault, KeeWeb supports saving your database
+  as a local file, or you can store your password vault with some of the most popular
+  cloud services such as Dropbox, Google Drive, and Microsoft OneDrive. ### Quick
+  Links Review some of our most important links below to learn more about KeeWeb and
+  who we are: | Topic | Links | Description | | --- | --- | --- | | **Apps** | [Web](https://app.keeweb.info/),
+  [Desktop](https://github.com/keeweb/keeweb/releases/latest) | Try out our application
+  | | **Demos** | [Web](https://app.keeweb.info/), [Beta](https://beta.keeweb.info
+  ) | Test our stable and beta releases of Keeweb | | **Services** | [Favicon Grabber](https://services.keeweb.info/favicon)
+  | Services integrated within Keeweb | | **Branches** | [docker/alpine-base](https://github.com/keeweb/keeweb/tree/docker/alpine-base),
+  [docker/keeweb](https://github.com/keeweb/keeweb/tree/docker/keeweb) | Important
+  branches related to our project | | **Timeline** | [Release Notes](release-notes.md),
+  [TODO](https://github.com/keeweb/keeweb/wiki/TODO) | See what we're planning | |
+  **On one page** | [Features](https://keeweb.info/#features), [FAQ](https://github.com/keeweb/keeweb/wiki/FAQ)
+  | Information about Keeweb development | | **Website** | [keeweb.info](https://keeweb.info)
+  | Visit our official website | | **Social** | [kee_web](https://twitter.com/kee_web)
+  | Check us out on our social media | | **Donate** | [OpenCollective](https://opencollective.com/keeweb#support),
+  [GitHub](https://github.com/sponsors/antelle) | Help keep us going | --- ## Self-hosting
+  Want to self-host your copy of KeeWeb? Everything you need to host this app on your
+  server is provided within the package. KeeWeb itself is a single HTML file combined
+  with a service worker (optionally; for offline access). You can download the latest
+  distribution files from **[gh-pages](https://github.com/keeweb/keeweb/archive/gh-pages.zip)**
+  branch. ### Docker If you wish to host Keeweb within a Docker container, we provide
+  pre-built images that you can pull into your environment. This section explains
+  how to run Keeweb using `docker run`, or by setting up a `docker-compose.yml` file.
+  > [!NOTE] > For a full set of Docker instructions, visit our **[docker/keeweb readme](https://github.com/keeweb/keeweb/tree/docker/keeweb)**
+  #### Images Use any of the following images in your `\U0001F4C4 docker-compose.yml`
+  or `run` command: | Service | Version | Image Link | | --- | --- | --- | | `Docker
+  Hub` | [![Docker Version][dockerhub-version-ftb-img]][dockerhub-version-ftb-uri]
+  | `\U0001F516 keeweb/keeweb:latest` `\U0001F516 keeweb/keeweb:1.19.0` `\U0001F516
+  keeweb/keeweb:1.19.0-amd64` `\U0001F516 keeweb/keeweb:1.19.0-arm64` `\U0001F516
+  keeweb/keeweb:development` `\U0001F516 keeweb/keeweb:development-amd64` `\U0001F516
+  keeweb/keeweb:development-arm64` | | `Github` | [![Github Version][github-version-ftb-img]][github-version-ftb-uri]
+  | `\U0001F516 ghcr.io/keeweb/keew"
 ---
 {% raw %}
 <div align="center">

@@ -2,8 +2,41 @@
 layout: project
 name: Hitarth Gg Zenshin
 slug: hitarth-gg-zenshin
+category: Uncategorized
 image: https://github.com/user-attachments/assets/54a37351-b064-4749-a4b5-7fb19ce86ceb
 repo_url: https://github.com/user-attachments/assets
+indexed_content: "# zenshin. A poorly written web and electron based anime list manager
+  with media streaming capabilities. > [!NOTE] > If you can't access pahe even after
+  refreshing cookies, try using [Cloudflare DNS](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/download-warp/).
+  --> Screenshots \U0001F5BC️: --> ## Demo : (Click the images) [](https://youtu.be/cpMpWohodUc)
+  --- > [!NOTE] > The video player inside the browser/app currently does not support
+  subtitle rendering as extracting embedded subtitles from an mkv file is quite tricky
+  and is way out of my league. To play the video with subtitles open it in VLC/MPV
+  by clicking on the `Open VLC` or `Open in External Player` button when playing an
+  episode. --- ### Disclaimer : [disclaimer.md](https://github.com/hitarth-gg/zenshin/blob/main/disclaimer.md)
+  --- ### Building the Electron App Commands required to build the app on Windows,
+  Linux and macOS (untested) are `npm run build:win`, `npm run build:linux` and `npm
+  run build:mac` respectively. | Windows | Linux | MacOS | |---------------------|-----------------------|---------------------|
+  | `npm run build:win` | `npm run build:linux` | `npm run build:mac` | 1. Navigate
+  to `Electron\\zenshin-electron`. 2. Run `npm i` or `npm install` 3. Run `npm run
+  build:win` 4. Check the `dist` folder (`Electron\\zenshin-electron\\dist`), `zenshin-electron-x.x.x-setup.exe`
+  is the setup and the folder `win-unpacked` contains pre-installed / unpacked files.
+  5. `Zenshin.exe` inside the `win-unpacked` folder (`dist\\win-unpacked\\Zenshin.exe`)
+  can be used if you want to avoid installing the setup. 6. Example : [YouTube: Building
+  on Ubuntu](https://youtu.be/l13ogKtMbt0). Same process can be followed for other
+  Operating Systems with their respective build commands. [](https://youtu.be/l13ogKtMbt0)
+  ### How to use / build (WebApp): (outdated) - Web Version is no longer being worked
+  on upon. Use electron. [](https://www.youtube.com/watch?v=DiVczJ92sAU) [YouTube:
+  How to use / build](https://youtu.be/DiVczJ92sAU?si=NvqnDvXE_LW7EHW8) --- #### VLC
+  Media Player Support (in web version) Define the path to vlc.exe in BACKEND/server.js
+  : ```js const vlcPath = '\"C:\\\\Program Files (x86)\\\\VideoLAN\\\\VLC\\\\vlc.exe\"';
+  // Adjust this path as needed ``` --- ### Contributing : Forks are welcomed, but
+  contributions directly to this project and branch are not encouraged as of now.
+  You can still open issues for feature requests, bug reports or any other inquiries.
+  ### Tech Stack and dependencies used : - ReactJS - ElectronJS - WebTorrent - TanStack
+  React Query - Radix UI and Radix Icons - Video.js - axios - date-fns - ldrs - react-infinite-scroll-component
+  - TailwindCSS w/ tailwindcss-animated and line-clamp - ExpressJS - React Lenis -
+  Sonner - Plyr - Puppeteer"
 ---
 {% raw %}
 # zenshin. <img src="https://github.com/user-attachments/assets/6de78e3e-2c14-4044-b65f-cc5e81fc4e10" width="23">

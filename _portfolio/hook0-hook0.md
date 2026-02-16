@@ -2,8 +2,53 @@
 layout: project
 name: Hook0 Hook0
 slug: hook0-hook0
+category: Frontend Framework
 image: https://api.star-history.com/svg?repos=hook0/hook0&type=Date
 repo_url: https://github.com/hook0/hook0
+indexed_content: "Hook0 The open-source implementation of a webhooks server and UI.
+  Learn more » Discord · Website · Issues · Roadmap --> --> --> Welcome to Hook0!
+  Sign up to [hook0.com](https://www.hook0.com/) and start opening your SaaS to the
+  web! You should check our documentation website to know what Hook0 is and what is
+  our vision: https://documentation.hook0.com/docs/what-is-hook0 # \U0001F430 About
+  Hook0 Hook0 is a real-time API and App dashboard for managing webhooks. - **Free
+  & open-source** - **[JSON REST API](https://documentation.hook0.com/reference/)**
+  - **Fine-grained subscriptions**. Enable your users to subscribe to your events
+  by setting up a webhook. They can choose which event types they want to receive.
+  - **Auto request retry**. If Hook0 can't reach a webhook. - **Event scoping**. -
+  **Events & responses persistence**. Hook0 keep tracks of every event your application
+  sent it and of every webhook call. Best for debugging ! - **On-Prem or Cloud**.
+  Run locally, install on-premises, or use our self-service Cloud service (free tier
+  available). - **A modern dashboard**. Our dashboard app is safe and intuitive for
+  non-technical users, no training required. - **Project fully sustainable** since
+  day 1. Fork it, twist it and help us build the best open source webhook server for
+  applications [Learn more about Hook0](https://www.hook0.com/) # \U0001F680 Hook0
+  Cloud Hook0.com (Cloud) allows you to create free Hook0 projects in 90 seconds.
+  - **Free Community Cloud Tier**: Available (no credit card required) - **No Product
+  Limitations**: Unlimited users and applications, API requests, etc. - **Self-Service
+  Dashboard**: Create and monitor all your projects in one place. - **End-to-End Solution**:
+  Hook0, database, auto-scaling, storage, and a global CDN. - **Event-Based Pricing**:
+  Pay-as-you-go for our Standard Cloud. - **Quick Provisioning**: Select your desired
+  region and provision a new project in ~90 seconds. [Create your Free Project](https://www.hook0.com/)
+  - [Contact a human](mailto:sales@hook0.com) # \U0001F914 Community Help The [Hook0
+  Documentation](https://documentation.hook0.com/) is a great place to start, or explore
+  these other channels: - [Discord](https://www.hook0.com/community) (Live Discussions)
+  - [Gitlab Issues](https://gitlab.com/hook0/hook0/-/issues) (Report Bugs, Questions,
+  Feature Requests) - [Twitter](https://twitter.com/hook0_) (Latest News) - [Website](https://www.hook0.com/)
+  (Login, sign up) # \U0001F4CC Requirements Hook0 only requires Rust and supports
+  most operating systems and SQL database vendors. - **Rust**: Active LTS - **Supported
+  Databases**: - PostgreSQL 15+ (it might work with an earlier version) - **Supported
+  OS**: - Ubuntu LTS - CentOS / RHEL 8 - macOS Catalina or newer - Windows 10/11 -
+  Docker (DockerHub + Dockerfile) - Other operating systems may also work, but are
+  not officially supported. # Related [Hook0 Cloud Status Page](https://status.hook0.com/)
+  # ❤️ Contributing & Sponsoring Please read our [Contributing Guide](./contributing.md)
+  before submitting Pull Requests. All security vulnerabilities should be reported
+  in accordance with our Security Policy. # License Hook0 is a premium open-source
+  [Server Side Public License (SSPL) v1](./LICENSE.txt) project made possible with
+  support from our passionate core team, talented contributors, and amazing Sponsors.
+  Thank you all! The license allows the free right to use, modify, create derivative
+  works, and redistribute, with three simple limitations: - You may not provide the
+  products to others as a managed service - You may not circumvent the license key
+  functionality or remove/obscure features protect © Hook0 SAS [](https://www.star-history.com/#hook0/hook0&Date)"
 ---
 {% raw %}
 <!-- PROJECT LOGO -->

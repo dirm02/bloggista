@@ -2,8 +2,66 @@
 layout: project
 name: Chaitanyaharitash Game Hacking 1
 slug: ChaitanyaHaritash-game-hacking-1
+category: Game-arcade-emulator
 image: "/assets/images/portfolio-placeholder.svg"
 repo_url: https://github.com/dsasmblr/game-hacking
+indexed_content: "# [The Ultimate Game Hacking Resource](https://github.com/dsasmblr/game-hacking/)
+  ***A curated list of tools, tutorials, and much more for reverse engineering video
+  games!*** ## Introduction Welcome to the most comprehensive, unique list of game
+  hacking resources on the web! As you traverse this evergrowing behemoth, you may
+  be surprised to learn that many of the tools, libraries, frameworks, etc. featured
+  herein are not made with hacking games in mind whatsoever. Since game hacking is
+  a branch of reverse engineering in its own right, that means we have a wealth of
+  other types of reverse engineering tools at our disposal which we can repurpose
+  for game hacking. Beyond the tools, there is a wealth of knowledge to be gleaned
+  from a cornucopia of tutorials, presentations, books, and much more. I'll constantly
+  be updating this list, so be sure to Watch/Star it! If you'd like to share a resource
+  that isn't yet on the list, feel free to submit it for consideration via creating
+  an issue or pull request for this repository, or [email it to me](mailto:dsasmblr@gmail.com).
+  Finally, if **hacking online games** is a topic of interest for you, I'm also maintaining
+  an extensive curated repository for that subject alone: [The Ultimate Online Game
+  Hacking Resource](https://github.com/dsasmblr/hacking-online-games). You may note
+  a negligible amount of overlap between these two repositories, but by and large,
+  they are complementary to one another. And now, on with the game-hacking goodness!
+  # ### Game Hacking Tools (Disassemblers, Debuggers, Hex Editors, Unpackers, and
+  More) Tool Type | Tool/Link | Description ---- | ---- | ---- **All-In-One** | [Cheat
+  Engine](https://github.com/cheat-engine/cheat-engine) | [Open Source] *A powerful,
+  all-in-one game hacking tool with an extensive feature set. Varying versions for
+  Mac, Linux, and Android can be found [here](http://www.cheatengine.org/downloads.php).
+  CE video tutorials [here](https://www.youtube.com/playlist?list=PLNffuWEygffbbT9Vz-Y1NXQxv2m6mrmHr).*
+  **All-In-One** | [Squalr](https://github.com/Squalr/Squalr) | [Open Source] *A performant
+  game hacking tool developed in C# with features that both rival and complement Cheat
+  Engine.* **All-In-One** | [CrySearch](http://www.crysearch.nl/) | [Open Source]
+  *A memory scanner akin to Cheat Engine, but with different features and a cleaner
+  UI.* **All-In-One** | [PINCE](https://github.com/korcankaraokcu/PINCE) | [Open Source]
+  *A front-end/reverse engineering tool for the GNU Project Debugger ([GDB](https://www.gnu.org/software/gdb/)),
+  focused on games. It's essentially a work-in-progress Cheat Engine for Linux/MacOS.*
+  **All-In-One** | [Binary Ninja](https://binary.ninja/) | [Commercial] *A reverse
+  engineering platform, hex editor, and interactive graph based disassembler.* **Disassembler/Debugger**
+  | [x64dbg](https://x64dbg.com/) | [Open Source] *An x86 (32-bit)/x64 (64-bit) debugger
+  for windows. Spiritual successor to [OllyDbg](http://www.ollydbg.de/).* **Disassembler/Debugger**
+  | [WinDbg](https://developer.microsoft.com/en-us/windows/hardware/download-windbg)
+  | [Freeware] *Microsoft's official Windows debugger which allows for debugging of
+  both kernel and user mode code. There is also a new version of WinDbg being built
+  for Windows 10 ([WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-install-preview)),
+  featuring an updated UI, new features, and more.* **Disassembler/Debugger** | [Hopper](https://www.hopperapp.com/)
+  | [Commercial] *A powerful disassembler, decompiler, and debugger for macOS and
+  Linux.* **Disassembler/Debugger/Decompiler** | [IDA Pro](https://www.hex-rays.com/products/ida/)
+  | [Commercial] *A multi-processor disassembler and debugger that works on Windows,
+  Linux, and Mac. This is the crème de la crème of disassemblers/Decompilers in many
+  professional reverse engineer's toolkits. A limited freeware version of v7.0 can
+  be [obtained here](https://www.hex-rays.com/products/ida/support/download_freeware.shtml).*
+  **Graphics Debugger** | [RenderDoc](https://renderdoc.org/) | [Open Source] *A stand-alone
+  graphics debugging tool that allows quick and easy single-frame capture and detailed
+  introspection of any application using Vulkan, D3D11, OpenGL, and OpenGL ES or D3D12
+  across Windows 7-10, Linux, or Android. Overview video [here](https://www.youtube.com/watch?v=EMFG5wmng-M).*
+  **Graphics Debugger** | [PIX](https://blogs.msdn.microsoft.com/pix/download/) |
+  [Freeware] *Performance tuning and debugging for DirectX games on Windows and Xbox.
+  Blog [here](https://blogs.msdn.microsoft.com/pix/); video tutorial playlist [here](https://www.youtube.com/watch?v=thiF3xKT_Qg&index=2&list=PLeHvwXyqearWuPPxh6T03iwX-McPG5LkB&t=0s).*
+  **Graphics Tool** | [Ninja Ripper](https://gamebanana.com/tools/5638) | [Freeware]
+  *Utility to extract/rip 3D models (meshes), textures, and shaders directly from
+  the running game.* **Hex Editor** | [HxD Hex Editor](https://mh-nexus.de/en/hxd/)
+  | [Freeware] *A fast, basic h"
 ---
 {% raw %}
 # [The Ultimate Game Hacking Resource](https://github.com/dsasmblr/game-hacking/)

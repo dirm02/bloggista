@@ -2,8 +2,36 @@
 layout: project
 name: Diygod Rsshub
 slug: DIYgod-RSSHub
+category: Very important!!!!
 image: https://img.shields.io/badge/dynamic/json?url=https://rsshub-analytics.diygod.workers.dev/&query=requests&color=F38020&label=requests&logo=cloudflare&style=flat-square&suffix=/month
 repo_url: https://github.com/DIYgod/RSSHub
+indexed_content: "RSSHub > \U0001F9E1 Everything is RSSible [](https://rsshub.app)
+  [](https://hub.docker.com/r/diygod/rsshub) [](https://www.npmjs.com/package/rsshub)
+  [](https://github.com/DIYgod/RSSHub/actions/workflows/test.yml?query=event%3Apush+branch%3Amaster)
+  [](https://app.codecov.io/gh/DIYgod/RSSHub/branch/master) [](https://github.com/DIYgod/RSSHub)
+  [](https://t.me/rsshub) [](https://t.me/awesomeRSSHub) [](https://x.com/intent/follow?screen_name=_RSSHub)
+  ## Introduction RSSHub is the world's largest RSS network, consisting of over 5,000
+  global instances. RSSHub delivers millions of contents aggregated from all kinds
+  of sources, our vibrant open source community is ensuring the deliver of RSSHub's
+  new routes, new features and bug fixes. [Documentation](https://docs.rsshub.app)
+  | [Telegram Group](https://t.me/rsshub) | [Telegram Channel](https://t.me/awesomeRSSHub)
+  | [X (Twitter)](https://x.com/intent/follow?screen_name=_RSSHub) ## Related Projects
+  - [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) | A browser extension that
+  can help you quickly discover and subscribe to the RSS and RSSHub of current websites.
+  - [RSSBud](https://github.com/Cay-Zhang/RSSBud) | RSSHub Radar for iOS platform,
+  designed specifically for mobile ecosystem optimization. - [RSSAid](https://github.com/LeetaoGoooo/RSSAid)
+  | RSSHub Radar for Android platform built with Flutter. - [DocSearch](https://github.com/Fatpandac/DocSearch)
+  | Link RSSHub DocSearch into Raycast. - [Awesome RSSHub Routes](https://github.com/JackyST0/awesome-rsshub-routes)
+  | Curated list of RSS feeds and RSSHub routes. ## Contribute We welcome all pull
+  requests. Suggestions and feedback are also welcomed [here](https://github.com/DIYgod/RSSHub/issues).
+  Refer to [Quick Start](https://docs.rsshub.app/joinus/) ## Deployment Refer to [Deployment](https://docs.rsshub.app/deploy/)
+  ## Special Thanks [](https://github.com/DIYgod/RSSHub/graphs/contributors) Logo
+  designer [sheldonrrr](https://dribbble.com/sheldonrrr) [](https://github.com/DIYgod/sponsors)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  ## Author **RSSHub** © [DIYgod](https://github.com/DIYgod), Released under the [AGPL-3.0](./LICENSE)
+  License. Authored and maintained by DIYgod with help from contributors ([list](https://github.com/DIYgod/RSSHub/contributors)).
+  > Blog [@DIYgod](https://diygod.cc) · GitHub [@DIYgod](https://github.com/DIYgod)
+  · X (Twitter) [@DIYgod](https://x.com/DIYgod) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)"
 ---
 {% raw %}
 <p align="center">

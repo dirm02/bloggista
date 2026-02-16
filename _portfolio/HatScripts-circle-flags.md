@@ -2,8 +2,40 @@
 layout: project
 name: Hatscripts Circle Flags
 slug: HatScripts-circle-flags
+category: Let's try this- Personal prefere
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/HatScripts-circle-flags/logo.svg
 repo_url: https://github.com/HatScripts/circle-flags
+indexed_content: "# circle-flags A collection of circular SVG country flags. ## Usage
+  ```text https://hatscripts.github.io/circle-flags/flags/xx.svg ``` (Where `xx` is
+  the [ISO 3166-1 alpha-2 code](https://www.iso.org/obp/ui/#search/code/) of a country).
+  For example, the following code: ```html ``` ...produces this: To view all the available
+  flags, check [the gallery](https://hatscripts.github.io/circle-flags/gallery). ###
+  React If you're using [React](https://reactjs.org), you may want to try the [react-circle-flags](https://www.npmjs.com/package/react-circle-flags)
+  package. ### React Native / Expo If you're using [React Native / Expo](https://reactnative.dev/),
+  you may want to try the [react-native-circle-flags](https://www.npmjs.com/package/react-native-circle-flags)
+  package. ### SolidJS If you're using [SolidJS](https://www.solidjs.com/), you may
+  want to try the [solid-circle-flags](https://www.npmjs.com/package/solid-circle-flags)
+  package. ### NPM If you want to install this package as a dependency, you can install
+  it from this GitHub repository: ```sh npm install --save https://github.com/HatScripts/circle-flags
+  ``` ### \U0001F4DC Userscripts - [Google Translate: Filter & Flags](https://github.com/HatScripts/google-translate-filter-and-flags)
+  - Filters languages and shows country flags on Google Translate - [Wiktionary: Filter
+  & Flags](https://github.com/HatScripts/wiktionary-filter-and-flags) - Filters languages
+  and shows country flags on Wiktionary ## \U0001F680 Contributing To contribute,
+  you need to have the latest version of [svgo](https://github.com/svg/svgo) installed.
+  First, edit the relevant SVG files in the `flags/` directory. Then run `svgo` to
+  optimize the SVG files: ```sh svgo ./flags --recursive --config=svgo.config.js ```
+  Then commit the changes, and submit them as a pull request. ### \U0001F3A8 The color
+  palette Submitted flags should conform to the following color palette. Try to match
+  the flag's original colors with the nearest color from the palette. - `#eeeeee`:
+  white - `#acabb1`: gray - `#333333`: black - `#a2001d`: dark red - `#d80027`: red
+  - `#ff9811`: orange - `#ffda44`: yellow - `#6da544`: green - `#496e2d`: dark green
+  - `#338af3`: light blue - `#0052b4`: blue Special cases: - `#002266`: dark blue
+  (only two usages: [ Chad](https://github.com/HatScripts/circle-flags/blob/gh-pages/flags/td.svg),
+  to differentiate from [ Romania](https://github.com/HatScripts/circle-flags/blob/gh-pages/flags/ro.svg);
+  and [ True South (Antarctica)](https://github.com/HatScripts/circle-flags/blob/gh-pages/flags/aq-true_south.svg))
+  - `#4a1f63`: purple (only one usage: [ Balearic Islands](https://github.com/HatScripts/circle-flags/blob/gh-pages/flags/es-ib.svg))
+  - `#751a46`: dark pink (only one usage: [ Qatar](https://github.com/HatScripts/circle-flags/blob/gh-pages/flags/qa.svg))
+  ## \U0001F9FE License This project is released under the [MIT license](LICENSE.md)."
 ---
 {% raw %}
 # circle-flags <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/HatScripts-circle-flags/logo.svg" alt="circle-flags animated logo" align="right">

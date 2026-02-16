@@ -2,8 +2,68 @@
 layout: project
 name: Fccview Cronmaster
 slug: fccview-cronmaster
+category: Management- Engineering- SocialM
 image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/fccview-cronmaster/screenshots/home-dark.png
 repo_url: https://github.com/dirm02/mystars/tree/master/starred-readmes/fccview-cronmaster
+indexed_content: "## Quick links - [Features](#features) - [Quick Start](#quick-start)
+  - [Using Docker (Recommended)](#using-docker-recommended) - [API](#api) - [Single
+  Sign-On (SSO) with OIDC](#single-sign-on-sso-with-oidc) - [Localization](#localization)
+  - [Local Development](#local-development) - [Environment Variables](howto/ENV_VARIABLES.md)
+  - [Authentication](#authentication) - [Usage](#usage) - [Viewing System Information](#viewing-system-information)
+  - [Managing Cron Jobs](#managing-cron-jobs) - [Job Execution Logging](#job-execution-logging)
+  - [Managing Scripts](#managing-scripts) | Desktop | Mobile | |---------|--------|
+  | | | | | | ## Features - **Modern UI**: Beautiful, responsive interface with dark/light
+  mode. - **System Information**: Display uptime, memory, network, CPU, and GPU info.
+  - **Cron Job Management**: View, create, and delete cron jobs with comments. - **Script
+  management**: View, create, and delete bash scripts on the go to use within your
+  cron jobs. - **Job Execution Logging**: Optional logging for cronjobs with automatic
+  cleanup, capturing stdout, stderr, exit codes, and timestamps. - **Live Updates
+  (SSE)**: Real-time job status updates and live log streaming for long-running jobs
+  (when logging is enabled). - **Smart Job Execution**: Jobs with logging run in background
+  with live updates, jobs without logging run synchronously with 5-minute timeout.
+  - **Authentication**: Secure password-based and/or OIDC (SSO) authentication with
+  proper session management. - **REST API**: Full REST API with optional API key authentication
+  for external integrations. - **Docker Support**: Runs entirely from a Docker container.
+  - **Easy Setup**: Quick presets for common cron schedules. --- Join the discord
+  server for more info --- ## Quick Start ### Using Docker (Recommended) 1. Create
+  a `docker-compose.yml` file with this minimal configuration: ```yaml # For all configuration
+  options, see howto/DOCKER.md services: cronmaster: image: ghcr.io/fccview/cronmaster:latest
+  container_name: cronmaster user: \"root\" ports: - \"40123:3000\" environment: -
+  NODE_ENV=production - NEXT_PUBLIC_CLOCK_UPDATE_INTERVAL=30000 - AUTH_PASSWORD=very_strong_password
+  - HOST_CRONTAB_USER=root volumes: - /var/run/docker.sock:/var/run/docker.sock -
+  ./scripts:/app/scripts - ./data:/app/data - ./snippets:/app/snippets pid: \"host\"
+  privileged: true restart: always init: true ``` \U0001F4D6 **For all available configuration
+  options, see [`howto/DOCKER.md`](howto/DOCKER.md)** ## API `cr*nmaster` includes
+  a REST API for programmatic access to your cron jobs and system information. This
+  is perfect for integrations. \U0001F4D6 **For the complete API documentation, see
+  [howto/API.md](howto/API.md)** ## Single Sign-On (SSO) with OIDC `cr*nmaster` supports
+  any OIDC provider (Authentik, Auth0, Keycloak, Okta, Google, EntraID, etc.) \U0001F4D6
+  **For the complete SSO documentation, see [howto/SSO.md](howto/SSO.md)** ## Localization
+  `cr*nmaster` officially support [some languages](app/_translations) and allows you
+  to create your custom translations locally on your own machine. \U0001F4D6 **For
+  the complete Translations documentation, see [howto/TRANSLATIONS.md](howto/TRANSLATIONS.md)**
+  ### ARM64 Support The application supports both AMD64 and ARM64 architectures: **For
+  AMD64 users**: No changes needed - the default configuration works out of the box.
+  **For ARM64 users**: Uncomment the platform line in your `docker-compose.yml`: ```yaml
+  platform: linux/arm64 ``` **Note**: Multi-platform Docker images are automatically
+  built for both architectures. The image will automatically use the correct architecture
+  for your platform. 2. Build and run with Docker Compose: ```bash docker compose
+  up --build ``` 3. Open your browser and navigate to `http://localhost:40123` **Note**:
+  The Docker implementation uses direct file access to read and write crontab files,
+  ensuring real-time synchronization with the host system's cron jobs. This approach
+  bypasses the traditional `crontab` command limitations in containerized environments
+  ### Local Development 1. Install dependencies: ```bash yarn install ``` 2. Run the
+  development server: ```bash yarn dev ``` 3. Open your browser and navigate to `http://localhost:3000`
+  ### Environment Variables \U0001F4D6 **For the complete environment variables reference,
+  see [`howto/ENV_VARIABLES.md`](howto/ENV_VARIABLES.md)** This includes all configuration
+  options for: - Core application settings - Docker configuration - UI customization
+  - Logging settings - Authentication (password, SSO/OIDC, API keys) - Development
+  and debugging options ### Important Notes for Docker - Root user is required for
+  cron operations and direct file access. There is no way around this, if you don't
+  feel comfortable in running it as root feel free to run the app locally with `yarn
+  install`, `yarn build` and `yarn start` - The `DOCKER=true` environment variable
+  enables direct file access mode for crontab operations. This is REQUIRED when running
+  the application in docker mode. - The Docker socket and data volume mount"
 ---
 {% raw %}
 <p align="center">
