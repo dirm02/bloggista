@@ -1,0 +1,136 @@
+---
+layout: project
+name: Huluti Curtail
+slug: Huluti-Curtail
+category: Serv&Prod-Tools
+image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Huluti-Curtail/data/screenshots/screen1.png
+repo_url: https://github.com/Kilian/Trimage)
+indexed_content: "# Curtail ## Compress your images Curtail (previously ImCompressor)
+  is an useful image compressor, supporting PNG, JPEG, WebP and SVG file types. It
+  support both lossless and lossy compression modes with an option to whether keep
+  or not metadata of images. It is inspired by [Trimage](https://github.com/Kilian/Trimage)
+  and [Image-Optimizer](https://github.com/GijsGoudzwaard/Image-Optimizer). ### Supported
+  formats PNG, JPEG, WebP, SVG ## Screenshot ## Installation instructions ### Universal
+  package for Linux (recommended) Curtail is available as a Flatpak package. You can
+  also install it by using the following command-line: flatpak install flathub com.github.huluti.Curtail
+  ### Distro packages [](https://repology.org/project/curtail/versions) ### Unofficial
+  packages A [Snap](https://snapcraft.io/curtail) package is available: [](https://snapcraft.io/curtail)
+  A [PPA](https://launchpad.net/~apandada1/+archive/ubuntu/curtail) is available for
+  Ubuntu (18.04+) and derivatives: sudo add-apt-repository ppa:apandada1/curtail sudo
+  apt update sudo apt install curtail A [copr](https://copr.fedorainfracloud.org/coprs/0xmrtt/curtail)
+  package is available for Fedora (36+): sudo dnf copr enable 0xmrtt/curtail sudo
+  dnf install curtail ### Build from source (nightly) Build and install by running:
+  git clone https://github.com/Huluti/Curtail.git cd Curtail meson _build cd _build
+  ninja sudo ninja install The app can then be removed with: sudo ninja uninstall
+  ## Tech Curtail uses a number of open source projects to work properly: - [GTK 4](https://www.gtk.org)
+  - [Libadwaita](https://gitlab.gnome.org/GNOME/libadwaita) - [Python 3](https://www.python.org)
+  - [Oxipng](https://github.com/shssoichiro/oxipng) - [pngquant](https://pngquant.org)
+  - [Jpegoptim](https://github.com/tjko/jpegoptim) - [libwebp](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html)
+  - [Scour](https://gitlab.com/inkscape/extras/scour) ## Translations Translation
+  of this project takes place on the GNOME translation platform, [Damned Lies](https://l10n.gnome.org/module/Curtail).
+  For further information on how to join a language team, or even to create one, please
+  see [GNOME Translation Project wiki page](https://wiki.gnome.org/TranslationProject).
+  ## Donations Do you like the app? Would you like to support its development? Feel
+  free to donate. [](https://liberapay.com/hugoposnic) [](https://liberapay.com/hugoposnic)
+  ## License GNU GENERAL PUBLIC LICENSE (v3) **Free Software, Yeah!**"
+---
+{% raw %}
+# Curtail
+
+<a href="https://circle.gnome.org"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Huluti-Curtail/gnome-circle-badge.svg"></a>
+
+## Compress your images
+
+Curtail (previously ImCompressor) is an useful image compressor, supporting PNG, JPEG, WebP and SVG file types.
+It support both lossless and lossy compression modes with an option to whether keep or not metadata of images.
+It is inspired by [Trimage](https://github.com/Kilian/Trimage) and [Image-Optimizer](https://github.com/GijsGoudzwaard/Image-Optimizer).
+
+### Supported formats
+
+PNG, JPEG, WebP, SVG
+
+## Screenshot
+
+![Curtail](https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/Huluti-Curtail/data/screenshots/screen1.png)
+
+## Installation instructions
+
+### Universal package for Linux (recommended)
+
+Curtail is available as a Flatpak package.
+
+<a href='https://flathub.org/apps/details/com.github.huluti.Curtail'><img alt='Download on Flathub' src="https://flathub.org/api/badge?svg&locale=en"/></a>
+
+You can also install it by using the following command-line:
+
+    flatpak install flathub com.github.huluti.Curtail
+    
+### Distro packages
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/curtail.svg)](https://repology.org/project/curtail/versions)
+
+### Unofficial packages
+
+A [Snap](https://snapcraft.io/curtail) package is available:
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/curtail)
+
+A [PPA](https://launchpad.net/~apandada1/+archive/ubuntu/curtail) is available for Ubuntu (18.04+) and derivatives:
+
+    sudo add-apt-repository ppa:apandada1/curtail
+    sudo apt update
+    sudo apt install curtail
+
+A [copr](https://copr.fedorainfracloud.org/coprs/0xmrtt/curtail) package is available for Fedora (36+):
+
+    sudo dnf copr enable 0xmrtt/curtail
+    sudo dnf install curtail
+
+### Build from source (nightly)
+
+Build and install by running:
+
+    git clone https://github.com/Huluti/Curtail.git
+    cd Curtail
+    meson _build
+    cd _build
+    ninja
+    sudo ninja install
+
+The app can then be removed with:
+
+    sudo ninja uninstall
+
+## Tech
+
+Curtail uses a number of open source projects to work properly:
+
+- [GTK 4](https://www.gtk.org)
+- [Libadwaita](https://gitlab.gnome.org/GNOME/libadwaita)
+- [Python 3](https://www.python.org)
+- [Oxipng](https://github.com/shssoichiro/oxipng)
+- [pngquant](https://pngquant.org)
+- [Jpegoptim](https://github.com/tjko/jpegoptim)
+- [libwebp](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html)
+- [Scour](https://gitlab.com/inkscape/extras/scour)
+
+## Translations
+Translation of this project takes place on the GNOME translation platform,
+[Damned Lies](https://l10n.gnome.org/module/Curtail). For further
+information on how to join a language team, or even to create one, please see
+[GNOME Translation Project wiki page](https://wiki.gnome.org/TranslationProject).
+
+## Donations
+
+Do you like the app? Would you like to support its development? Feel free to donate.
+
+[![Liberapay receiving](https://img.shields.io/liberapay/receives/hugoposnic)](https://liberapay.com/hugoposnic)
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/hugoposnic)](https://liberapay.com/hugoposnic)
+
+## License
+
+GNU GENERAL PUBLIC LICENSE (v3)
+
+**Free Software, Yeah!**
+
+{% endraw %}

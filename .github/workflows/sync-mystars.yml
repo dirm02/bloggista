@@ -18,11 +18,27 @@ jobs:
 
       - name: Clone mystars
         run: |
-          git clone https://github.com/dirm02/mystars.git mystars 2>/dev/null || mkdir -p mystars
+          git clone https://github.com/dirm02/mystars.git mystars
+          
+      - name: Verify mystars clone
+        run: |
+          if [ ! -f "mystars/categories-mapping.json" ]; then
+            echo "Error: mystars clone failed or incomplete"
+            exit 1
+          fi
 
       - name: Run sync script
         run: |
           ruby scripts/sync_portfolio.rb "$(pwd)/mystars"
+          
+      - name: Verify sync output
+        run: |
+          portfolio_count=$(find _portfolio -name "*.md" 2>/dev/null | wc -l)
+          if [ "$portfolio_count" -lt 100 ]; then
+            echo "Error: Sync generated only $portfolio_count projects (expected 1500+)"
+            exit 1
+          fi
+          echo "Successfully synced $portfolio_count projects"
 
       - name: Commit and push if changed
         run: |

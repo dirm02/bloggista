@@ -1,0 +1,381 @@
+---
+layout: project
+name: 0xsojalsec Realtime Phone Agents Course
+slug: 0xSojalSec-realtime-phone-agents-course
+category: SDesk-Workflow- SaaS-PaaS-any!
+image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/main_gh_image.png
+repo_url: https://github.com/neural-maze/realtime-phone-agents-course
+indexed_content: "☎️ Phone Calling Agents Course ☎️ How to build an Agent Call Center
+  using FastRTC, Superlinked, Twilio, Opik & RunPod ## Table of Contents - [Table
+  of Contents](#table-of-contents) - [Course Overview](#course-overview) - [Who is
+  this course for?](#who-is-this-course-for) - [Course Breakdown: Week by Week](#course-breakdown-week-by-week)
+  - [Getting Started](#getting-started) - [Lesson 0: Project Overview and Architecture](#lesson-0-project-overview-and-architecture)
+  - [Lesson 1: Building Realtime Voice Agents with FastRTC](#lesson-1-building-realtime-voice-agents-with-fastrtc)
+  - [Lesson 2: The Missing Layer in Modern AI Retrieval](#lesson-2-the-missing-layer-in-modern-ai-retrieval)
+  - [The tech stack](#the-tech-stack) - [Contributors](#contributors) - [License](#license)
+  ## Course Overview This isn't your typical plug-and-play tutorial where you spin
+  up a demo in five minutes and call it a day. Instead, we're building a **real estate
+  company**, but with a twist … the employees will be **realtime voice agents**! By
+  the end of this course, you'll have a system capable of: * ☎️ Receive inbound calls
+  with Twilio * \U0001F4DE Make outbound calls through Twilio * \U0001F3E0 Search
+  live property data using Superlinked * ⚡ Run realtime conversations powered by FastRTC
+  * \U0001F5E3️ Transcribe speech instantly with Moonshine + Fast Whisper * \U0001F399️
+  Generate lifelike voices using Kokoro + Orpheus 3B * \U0001F680 Deploy open-source
+  models on Runpod for GPU acceleration Excited? Let's get started! --- \U0001F4EC
+  Stay Updated Join The Neural Maze and learn to build AI Systems that actually work,
+  from principles to production. Every Wednesday, directly to your inbox. Don't miss
+  out! \U0001F3A5 Watch More Content Join Jesús Copado on YouTube to explore how to
+  build real AI projects—from voice agents to creative tools. Weekly videos with code,
+  demos, and ideas that push what's possible with AI. Don't miss the next drop! ---
+  ## Who is this course for? This course is for Software Engineers, ML Engineers,
+  and AI Engineers who want to level up by building complex end-to-end apps. It's
+  not just a basic \"Hello World\" tutorial—it's a deep dive into making **production-ready
+  voice agents**. ## Course Breakdown: Week by Week Each week, you'll unlock **a new
+  chapter of the journey**. You'll get: * \U0001F9FE A Substack article that walks
+  through the concepts and code in detail * \U0001F4BB A new batch of code pushed
+  directly to this repo * \U0001F3A5 A Live Session where we explore everything together
+  Here’s what the upcoming weeks look like \U0001F447 | Lesson Number | Title | Article
+  | Code | Live Session | |:-------------:|:--------------:|:------------:|:------------:|:-----------:|
+  | 0 | Project overview and architecture | | Week 0 | | | 1 | Building Realtime Voice
+  Agents with FastRTC | | Week 1 | | | 2 | The Missing Layer in Modern AI Retrieval
+  | | Week 2 | November 30 | | 3 | Improving STT and TTS Systems | December 3 | December
+  3 | December 7 | | 4 | Deployment, monitoring and Twilio Integration | December
+  10 | December 10 | December 14 --- ## Getting Started Before diving into the lessons,
+  make sure you have everything set up properly: 1. \U0001F4CB **Initial Setup**:
+  Follow the instructions in [`docs/GETTINGS_STARTED.md`](docs/GETTINGS_STARTED.md)
+  to configure your environment and install dependencies. 2. \U0001F4DA **Learn Lesson
+  by Lesson**: Once setup is complete, come back here and follow the lessons in order.
+  Each lesson builds on the previous one, so it's important to follow them sequentially!
+  --- ## Lesson 0: Project Overview and Architecture **Goal**: Understand the big
+  picture and architecture of the realtime phone agent system. ### Steps: 1. \U0001F4D6
+  Read the [Substack article](https://theneuralmaze.substack.com/p/the-architecture-of-realtime-phone)
+  to understand the overall architecture 2. \U0001F3A5 Watch the [Live Session recording](https://theneuralmaze.substack.com/p/the-architecture-of-phone-calling)
+  for a deeper dive This lesson sets the foundation for everything that follows! ---
+  ## Lesson 1: Building Realtime Voice Agents with FastRTC **Goal**: Build your first
+  working voice agent using FastRTC and integrate it with Twilio. ### Steps: 1. \U0001F4D6
+  **Read the Article**: Start with the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with)
+  to understand FastRTC fundamentals 2. \U0001F4D3 **Work Through the Notebook**:
+  Open and run through [`notebooks/lesson_1_fastrtc_agents.ipynb`](notebooks/lesson_1_fastrtc_agents.ipynb)
+  to get hands-on experience 3. \U0001F4BB **Explore the Code**: Dive into the repository
+  code to see how everything is implemented 4. \U0001F680 **Run the Applications**:
+  Try both deployment options: #### Option A: Gradio Application (Quick Demo) Run
+  the Gradio interface (check out demo videos in the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with)):
+  ```bash make start-gradio-application ``` This starts an interactive web interface
+  where you can test the voice agent locally. > **_NOTE:_** If you get the error 'No
+  such file or directory: 'ffprobe', just install _ffmpeg_ i"
+---
+{% raw %}
+<div align="center">
+  <h1>☎️ Phone Calling Agents Course ☎️</h1>
+  <h3>How to build an Agent Call Center using FastRTC, Superlinked, Twilio, Opik & RunPod</h3>
+</div>
+
+</br>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/main_gh_image.png" alt="Architecture" width="600">
+</p>
+
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Course Overview](#course-overview)
+- [Who is this course for?](#who-is-this-course-for)
+- [Course Breakdown: Week by Week](#course-breakdown-week-by-week)
+- [Getting Started](#getting-started)
+- [Lesson 0: Project Overview and Architecture](#lesson-0-project-overview-and-architecture)
+- [Lesson 1: Building Realtime Voice Agents with FastRTC](#lesson-1-building-realtime-voice-agents-with-fastrtc)
+- [Lesson 2: The Missing Layer in Modern AI Retrieval](#lesson-2-the-missing-layer-in-modern-ai-retrieval)
+- [The tech stack](#the-tech-stack)
+- [Contributors](#contributors)
+- [License](#license)
+
+
+## Course Overview
+
+This isn't your typical plug-and-play tutorial where you spin up a demo in five minutes and call it a day. 
+
+Instead, we're building a **real estate company**, but with a twist … the employees will be **realtime voice agents**!
+
+By the end of this course, you'll have a system capable of:
+
+* ☎️ Receive inbound calls with Twilio
+* 📞 Make outbound calls through Twilio
+* 🏠 Search live property data using Superlinked
+* ⚡ Run realtime conversations powered by FastRTC
+* 🗣️ Transcribe speech instantly with Moonshine + Fast Whisper
+* 🎙️ Generate lifelike voices using Kokoro + Orpheus 3B
+* 🚀 Deploy open-source models on Runpod for GPU acceleration
+
+
+Excited? Let's get started! 
+
+---
+
+<table style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td width="20%" style="border: none;">
+      <a href="https://theneuralmaze.substack.com/" aria-label="The Neural Maze">
+        <img src="https://avatars.githubusercontent.com/u/151655127?s=400&u=2fff53e8c195ac155e5c8ee65c6ba683a72e655f&v=4" alt="The Neural Maze Logo" width="150"/>
+      </a>
+    </td>
+    <td width="80%" style="border: none;">
+      <div>
+        <h2>📬 Stay Updated</h2>
+        <p><b><a href="https://theneuralmaze.substack.com/">Join The Neural Maze</a></b> and learn to build AI Systems that actually work, from principles to production. Every Wednesday, directly to your inbox. Don't miss out!</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://theneuralmaze.substack.com/">
+    <img src="https://img.shields.io/static/v1?label&logo=substack&message=Subscribe%20Now&style=for-the-badge&color=black&scale=2" alt="Subscribe Now" height="40">
+  </a>
+</p>
+
+<table style="border-collapse: collapse; border: none;">
+  <tr style="border: none;">
+    <td width="20%" style="border: none;">
+      <a href="https://www.youtube.com/@jesuscopado-en" aria-label="Jesus Copado YouTube Channel">
+        <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/jesus_youtube_channel.png" alt="Jesus Copado YouTube Channel" width="150"/>
+      </a>
+    </td>
+    <td width="80%" style="border: none;">
+      <div>
+        <h2>🎥 Watch More Content</h2>
+        <p><b><a href="https://www.youtube.com/@jesuscopado-en">Join Jesús Copado on YouTube</a></b> to explore how to build real AI projects—from voice agents to creative tools. Weekly videos with code, demos, and ideas that push what's possible with AI. Don't miss the next drop!</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://www.youtube.com/@jesuscopado-en">
+    <img src="https://img.shields.io/static/v1?label&logo=youtube&message=Subscribe%20Now&style=for-the-badge&color=FF0000&scale=2" alt="Subscribe Now" height="40">
+  </a>
+</p>
+
+---
+
+## Who is this course for?
+
+This course is for Software Engineers, ML Engineers, and AI Engineers who want to level up by building complex end-to-end apps. It's not just a basic "Hello World" tutorial—it's a deep dive into making **production-ready voice agents**.
+
+
+## Course Breakdown: Week by Week
+
+Each week, you'll unlock **a new chapter of the journey**. You'll get:
+
+* 🧾 A Substack article that walks through the concepts and code in detail
+* 💻 A new batch of code pushed directly to this repo
+* 🎥 A Live Session where we explore everything together
+
+Here’s what the upcoming weeks look like 👇
+
+
+| Lesson Number | Title | Article | Code | Live Session |
+|:-------------:|:--------------:|:------------:|:------------:|:-----------:|
+| <div align="center">0</div> | <a href="https://theneuralmaze.substack.com/p/the-architecture-of-realtime-phone">Project overview and architecture</a> | <a href="https://theneuralmaze.substack.com/p/the-architecture-of-realtime-phone"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/diagrams/diagram_lesson_0.png" alt="Diagram 0" width="300"></a> | <a href="https://github.com/neural-maze/realtime-phone-agents-course/tree/week0">Week 0</a> | <a href="https://theneuralmaze.substack.com/p/the-architecture-of-phone-calling"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/thumbnails/live_session_0.png" alt="Thumbnail 0" width="400"></a> |
+| <div align="center">1</div> | <a href="https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with">Building Realtime Voice Agents with FastRTC</a> | <a href="https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/diagrams/diagram_lesson_1.png" alt="Diagram 1" width="300"></a> | <a href="https://github.com/neural-maze/realtime-phone-agents-course/tree/week1">Week 1</a> | <a href="https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with-52e"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/thumbnails/live_session_1.png" alt="Thumbnail 1" width="400"></a> |
+| <div align="center">2</div> | <a href="https://theneuralmaze.substack.com/p/the-missing-layer-in-modern-ai-retrieval">The Missing Layer in Modern AI Retrieval</a> | <a href="https://theneuralmaze.substack.com/p/the-missing-layer-in-modern-ai-retrieval"><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/diagrams/diagram_lesson_2.png" alt="Diagram 2" width="300"></a> | <a href="https://github.com/neural-maze/realtime-phone-agents-course/tree/week2">Week 2</a> | November 30 |
+| <div align="center">3</div> | Improving STT and TTS Systems | December 3 | December 3 | December 7 |
+| <div align="center">4</div> | Deployment, monitoring and Twilio Integration | December 10 | December 10 | December 14
+
+---
+
+## Getting Started
+
+Before diving into the lessons, make sure you have everything set up properly:
+
+1. 📋 **Initial Setup**: Follow the instructions in [`docs/GETTINGS_STARTED.md`](docs/GETTINGS_STARTED.md) to configure your environment and install dependencies.
+2. 📚 **Learn Lesson by Lesson**: Once setup is complete, come back here and follow the lessons in order.
+
+Each lesson builds on the previous one, so it's important to follow them sequentially!
+
+---
+
+## Lesson 0: Project Overview and Architecture
+
+**Goal**: Understand the big picture and architecture of the realtime phone agent system.
+
+### Steps:
+
+1. 📖 Read the [Substack article](https://theneuralmaze.substack.com/p/the-architecture-of-realtime-phone) to understand the overall architecture
+2. 🎥 Watch the [Live Session recording](https://theneuralmaze.substack.com/p/the-architecture-of-phone-calling) for a deeper dive
+
+This lesson sets the foundation for everything that follows!
+
+---
+
+## Lesson 1: Building Realtime Voice Agents with FastRTC
+
+**Goal**: Build your first working voice agent using FastRTC and integrate it with Twilio.
+
+### Steps:
+
+1. 📖 **Read the Article**: Start with the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with) to understand FastRTC fundamentals
+2. 📓 **Work Through the Notebook**: Open and run through [`notebooks/lesson_1_fastrtc_agents.ipynb`](notebooks/lesson_1_fastrtc_agents.ipynb) to get hands-on experience
+3. 💻 **Explore the Code**: Dive into the repository code to see how everything is implemented
+4. 🚀 **Run the Applications**: Try both deployment options:
+
+#### Option A: Gradio Application (Quick Demo)
+
+Run the Gradio interface (check out demo videos in the [Substack article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with)):
+
+```bash
+make start-gradio-application
+```
+
+This starts an interactive web interface where you can test the voice agent locally.
+
+> **_NOTE:_**  If you get the error 'No such file or directory: 'ffprobe', just install _ffmpeg_ in your system to solve it
+
+#### Option B: FastAPI Call Center (Production-Ready)
+
+For a production-ready setup that can receive real phone calls:
+
+**Step 1**: Start the call center application
+
+```bash
+make start-call-center
+```
+
+This starts a FastAPI application using Docker Compose on port 8000.
+
+**Step 2**: Expose your local server to the internet
+
+```bash
+make start-ngrok-tunnel
+```
+
+Or manually:
+
+```bash
+ngrok http 8000
+```
+
+**Step 3**: Connect to Twilio
+
+Follow the instructions in the [article](https://theneuralmaze.substack.com/p/building-realtime-voice-agents-with) to:
+- Configure your Twilio account
+- Connect your ngrok URL to Twilio
+- Start receiving real phone calls!
+
+🎥 **Join the Live Session**: [Join Premium](https://theneuralmaze.substack.com/subscribe), and you'll receive a notification when we are live on **Sunday, November 23rd at 5PM CET** for a complete walkthrough and Q&A!
+
+---
+
+## Lesson 2: The Missing Layer in Modern AI Retrieval
+
+**Goal**: Learn how to implement advanced search capabilities for realtime voice agents using Superlinked to handle complex, multi-attribute queries.
+
+### Steps:
+
+1. 📖 **Read the Article**: Start with the [Substack article](https://theneuralmaze.substack.com/p/the-missing-layer-in-modern-ai-retrieval) to understand:
+   - Why traditional vector search isn't enough for multi-attribute queries
+   - How Superlinked combines different data types (text, numbers, categories) into a unified search space
+   - The limitations of metadata filters, multiple searches, and re-ranking approaches
+
+2. 📓 **Work Through the Notebook**: Open and run through [`notebooks/lesson_2_superlinked_property_search.ipynb`](notebooks/lesson_2_superlinked_property_search.ipynb) to learn:
+   - How to define different Space types (TextSimilaritySpace, NumberSpace, CategoricalSimilaritySpace)
+   - How to combine spaces into a single searchable index
+   - How to dynamically adjust weights at query time
+
+3. 💻 **Explore the Code**: Dive into the repository to see how Superlinked integrates with our voice agent:
+   - Check out `src/realtime_phone_agents/infrastructure/superlinked/` for the implementation
+   - Review `src/realtime_phone_agents/agent/tools/property_search.py` to see how the search tool is exposed to the agent
+   
+   _We'll explore the code in detail during the Live Session!_
+
+4. 🚀 **Test the Complete System**: Now it's time to see everything work together!
+
+   **Step 1**: Start the call center application
+
+   ```bash
+   make start-call-center
+   ```
+
+   **Step 2**: Expose your local server (if not already running)
+
+   ```bash
+   make start-ngrok-tunnel
+   ```
+
+   **Step 3**: Call your Twilio number and test the property search
+
+   Try asking the agent:
+   
+   > _"Do you have apartments in Barrio de Salamanca of at most 900,000 euros?"_
+
+   Wait for the response. The agent should find and return information about the only apartment in the dataset ([`data/properties.csv`](data/properties.csv)) that meets these criteria!
+
+   This demonstrates how the voice agent can now handle complex queries combining location (Barrio de Salamanca) and price constraints (≤ €900,000) in real-time.
+
+🎥 **Join the Live Session**: [Join Premium](https://theneuralmaze.substack.com/subscribe) for the live walkthrough on **Saturday, November 30th** where we'll dive deep into the code and answer your questions!
+
+---
+
+## The tech stack
+
+<table>
+  <tr>
+    <th>Technology</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/fastrtc_logo.png" width="100" alt="FastRTC Logo"/></td>
+    <td>The python library for real-time communication.
+</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/superlinked_logo.png" width="100" alt="Superlinked Logo"/></td>
+    <td>SSuperlinked is a Python framework for AI Engineers building high-performance search & recommendation applications that combine structured and unstructured data.
+
+</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/runpod_logo.png" width="100" alt="Runpod Logo"/></td>
+    <td>The end-to-end AI cloud that simplifies building and deploying models.</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/opik_logo.svg" width="100" alt="Opik Logo"/></td>
+    <td>Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/0xSojalSec-realtime-phone-agents-course/static/twilio_logo.png" width="100" alt="Twilio Logo"/></td>
+    <td>Twilio is a cloud communications platform that enables developers to build, manage, and automate voice, text, video, and other communication services through APIs.</td>
+  </tr>
+</table>
+
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/MichaelisTrofficus.png" width="100" style="border-radius:50%;"/></td>
+    <td>
+      <strong>Miguel Otero Pedrido | Senior ML / AI Engineer </strong><br />
+      <i>Founder of The Neural Maze. Rick and Morty fan.</i><br /><br />
+      <a href="https://www.linkedin.com/in/migueloteropedrido/">LinkedIn</a><br />
+      <a href="https://www.youtube.com/@TheNeuralMaze">YouTube</a><br />
+      <a href="https://theneuralmaze.substack.com/">The Neural Maze Newsletter</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://github.com/jesuscopado.png" width="100" style="border-radius:50%;"/></td>
+    <td>
+      <strong>Jesús Copado | Senior ML / AI Engineer </strong><br />
+      <i>Equal parts cinema fan and AI enthusiast.</i><br /><br />
+      <a href="https://www.youtube.com/@jesuscopado-en">YouTube</a><br />
+      <a href="https://www.linkedin.com/in/copadojesus/">LinkedIn</a><br />
+    </td>
+  </tr>
+</table>
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+{% endraw %}

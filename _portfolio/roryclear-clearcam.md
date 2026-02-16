@@ -1,0 +1,132 @@
+---
+layout: project
+name: Roryclear Clearcam
+slug: roryclear-clearcam
+category: Video-audio-Imae-manga-TTS-Voice
+image: https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/logo.png
+repo_url: https://github.com/roryclear/clearcam.git
+indexed_content: "# clearcam: Turn your RTSP enabled camera or old iPhone into a state
+  of the art AI Security Camera ### Don't own an RTSP camera yet? Try it out with
+  this feed: https://webcam.elcat.kg/Too-Ashu_Tunnel_North/index.m3u8 (https://kg.camera)
+  ## (old) video demo: https://x.com/RoryClear/status/1959249250811785405 ## computer
+  requirements - Mac, Linux, or maybe Windows - ffmpeg - python3.11 or later ## run
+  NVR + inference in python from source 1. pip install -r requirements.txt 2. python3
+  clearcam.py 3. (optional) enter your Clearcam premium userID (viewable in iOS app)
+  to receive streams and notifications 4. open localhost:8080 in your browser - use
+  BEAM=2 python3 clearcam.py for extra performance (wait time on first run) ## install
+  iOS App from source 1. git clone https://github.com/roryclear/clearcam.git 2. open
+  ios/clearcam.xcodeproj ## iOS requirements - iOS 15 or newer - iPhone SE (1st gen)
+  or newer (older iPhones *might* work) - dependencies: NONE! # Signing Up for Clearcam
+  Premium ## Features - View your live camera feeds remotely. - Receive notifications
+  on events (objects/people detected). - View event clips remotely. - End-to-end encryption
+  on all data. ## How to Sign Up Visit [clearcam.org](https://www.clearcam.org) to
+  sign up, or upgrade to premium in the iOS app."
+---
+{% raw %}
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/logo.png" alt="logo" width="100" />
+</p>
+
+# clearcam: Turn your RTSP enabled camera or old iPhone into a state of the art AI Security Camera
+
+<table align="center" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+<tr valign="top">
+<td style="padding-right: 10px;">
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/server.PNG" alt="Server" width="400" /><br/>
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/det.jpg" alt="detection" width="400" />
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/zone.PNG" alt="Zone" width="400" />
+</td>
+</tr>
+
+<tr>
+  <td colspan="2" align="center">
+    <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/sonata.PNG" alt="Sonata" style="width:100%; max-width:1000px;" />
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2" align="center" style="padding: 20px 0;">
+    <img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/notif.jpg" alt="Notification" width="400" />
+  </td>
+</tr>
+
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/ios_live.PNG" alt="iOS Live" width="400" />
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/ios_events.PNG" alt="iOS Events" width="400" />
+</td>
+</tr>
+</table>
+
+### Don't own an RTSP camera yet?
+Try it out with this feed: https://webcam.elcat.kg/Too-Ashu_Tunnel_North/index.m3u8 (https://kg.camera)
+
+## (old) video demo:
+https://x.com/RoryClear/status/1959249250811785405
+
+## computer requirements
+- Mac, Linux, or maybe Windows
+- ffmpeg
+- python3.11 or later
+
+## run NVR + inference in python from source
+1. pip install -r requirements.txt
+2. python3 clearcam.py
+3. (optional) enter your Clearcam premium userID (viewable in iOS app) to receive streams and notifications
+4. open localhost:8080 in your browser
+- use BEAM=2 python3 clearcam.py for extra performance (wait time on first run)
+
+## install iOS App from source
+1. git clone https://github.com/roryclear/clearcam.git
+2. open ios/clearcam.xcodeproj
+
+## iOS requirements
+- iOS 15 or newer
+- iPhone SE (1st gen) or newer (older iPhones *might* work)
+- dependencies: NONE!
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <a href="https://apps.apple.com/gb/app/clearcam/id6743237694">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+             alt="Download on the App Store"
+             height="50"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://play.google.com/store/apps/details?id=com.rors.clearcam">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+             alt="Get it on Google Play"
+             height="50"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+</br>
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/recording.PNG" alt="Screenshot" width="300"/></td>
+    <td><img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/browser_events.PNG" alt="Screenshot" width="300"/></td>
+  </tr>
+</table>
+<img src="https://raw.githubusercontent.com/dirm02/mystars/master/starred-readmes/roryclear-clearcam/images/browser_playback.PNG" alt="Screenshot"/>
+
+# Signing Up for Clearcam Premium
+
+## Features
+- View your live camera feeds remotely.
+- Receive notifications on events (objects/people detected).
+- View event clips remotely.
+- End-to-end encryption on all data.
+
+## How to Sign Up
+
+Visit [clearcam.org](https://www.clearcam.org) to sign up, or upgrade to premium in the iOS app.
+
+{% endraw %}

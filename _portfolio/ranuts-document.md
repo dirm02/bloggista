@@ -1,0 +1,232 @@
+---
+layout: project
+name: Ranuts Document
+slug: ranuts-document
+category: Management- Engineering- SocialM
+image: "/assets/images/portfolio-placeholder.svg"
+repo_url: https://github.com/ranuts/document.git
+indexed_content: "# OnlyOffice Web \U0001F310 **Live Demo**: https://ranuts.github.io/document/
+  [English](readme.md) | [中文](readme.zh.md) A local web-based document editor based
+  on OnlyOffice, allowing you to edit documents directly in your browser without server-side
+  processing, ensuring your privacy and security. ## ✨ Key Features - \U0001F512 **Privacy-First**:
+  All document processing happens locally in your browser, with no uploads to any
+  server - \U0001F4DD **Multi-Format Support**: Supports DOCX, XLSX, PPTX, CSV, and
+  many other document formats - ⚡ **Real-Time Editing**: Provides smooth real-time
+  document editing experience - \U0001F680 **No Server Required**: Pure frontend implementation
+  with no server-side processing needed - \U0001F3AF **Ready to Use**: Start editing
+  documents immediately by opening the webpage - \U0001F310 **Open from URL**: Load
+  documents directly from remote URLs via URL parameters - \U0001F30D **Multi-Language**:
+  Supports multiple languages (English, Chinese) with easy switching ## \U0001F4D6
+  Usage ### Basic Usage 1. Visit the [Online Editor](https://ranuts.github.io/document/)
+  2. Upload your document files or open from URL 3. Edit directly in your browser
+  4. Download the edited documents ### URL Parameters | Parameter | Description |
+  Values/Type | Priority | | --------- | --------------------------------------------
+  | ----------- | -------- | | `locale` | Set interface language | `en`, `zh` | -
+  | | `src` | Open document from URL (recommended) | URL string | Low | | `file` |
+  Open document from URL (backward compatible) | URL string | High | **Examples:**
+  ```bash # Set language ?locale=zh # Open document from URL ?src=https://example.com/document.docx
+  # Combine parameters ?locale=zh&src=https://example.com/doc.docx ``` **Note**: When
+  both `file` and `src` are provided, `file` takes priority. Remote URLs must support
+  CORS. ### As a Component Library This project provides foundational services for
+  document preview components in the [@ranui/preview](https://www.npmjs.com/package/@ranui/preview)
+  WebComponent library. \U0001F4DA **Preview Component Documentation**: [https://chaxus.github.io/ran/src/ranui/preview/](https://chaxus.github.io/ran/src/ranui/preview/)
+  ## \U0001F6E0️ Technical Architecture - **OnlyOffice SDK**: Provides powerful document
+  editing capabilities - **WebAssembly**: Implements document format conversion through
+  x2t-wasm - **Pure Frontend Architecture**: All functionality runs in the browser
+  ## \U0001F680 Deployment ### Docker ```bash # docker run docker run -d --name document
+  -p 8080:80 ghcr.io/ranuts/document:latest # docker compose services: document: image:
+  ghcr.io/ranuts/document:latest container_name: document ports: - 8080:80 ``` ####
+  Advanced Configuration ```yaml name: document services: document: image: ghcr.io/ranuts/document:latest
+  container_name: document ports: - 8080:80 # Advanced Configuration volumes: # Add
+  certificates - certificate_path:/ssl environment: # Set account # Format username:password,
+  password must be encoded using BCrypt hash function. # To get BCrypt encryption
+  result, replace $ in the encrypted result with $$ for escaping. SERVER_BASIC_AUTH:
+  'username:BCrypt_encrypted_password' # Use certificate SERVER_HTTP2_TLS: true SERVER_HTTP2_TLS_CERT:
+  certificate_path SERVER_HTTP2_TLS_KEY: private_key_path ``` ### Important Notes
+  - **CORS**: Remote servers must support CORS when using `src` or `file` parameters
+  - **File Size**: Large files may take longer to load ## \U0001F527 Local Development
+  ```bash git clone https://github.com/ranuts/document.git cd document npm install
+  npm run dev ``` ## \U0001F524 Font Management ### Font Files in This Project This
+  project is designed as an open-source solution, and therefore does not include proprietary
+  font files such as **Arial**, **Times New Roman**, **Microsoft YaHei**, **SimSun**,
+  and other Windows system fonts that are subject to copyright restrictions. These
+  font references remain in the configuration files for compatibility with existing
+  documents, but the actual font files have been removed to ensure compliance with
+  open-source licensing requirements. ### Adding Fonts To add fonts that are already
+  configured in the project (such as Arial, Times New Roman, etc.), simply place the
+  font files in the `public/fonts/` directory and rename them to match their corresponding
+  index in the `__fonts_files` array in `public/sdkjs/common/AllFonts.js`. **Example:
+  Adding Arial Font** If you want to add the Arial font to the project: 1. Check `AllFonts.js`
+  and find that Arial regular font uses index `223` in the `__fonts_files` array 2.
+  Place your Arial font file in `public/fonts/` and rename it to `223` (no extension
+  needed) 3. The font file should be located at `public/fonts/223` 4. When the application
+  references index `223`, it will automatically load the font file from `public/fonts/223`
+  Similarly, for other Arial variants: - Arial Bold uses index `226` → place font
+  file as `public/fonts/226` - Arial Italic uses index `224` → place font file as
+  `public/fonts/224` - Arial Bold Italic uses index `225` → place font file as `public/fonts/225"
+---
+{% raw %}
+# OnlyOffice Web
+
+🌐 **Live Demo**: https://ranuts.github.io/document/
+
+[English](readme.md) | [中文](readme.zh.md)
+
+A local web-based document editor based on OnlyOffice, allowing you to edit documents directly in your browser without server-side processing, ensuring your privacy and security.
+
+## ✨ Key Features
+
+- 🔒 **Privacy-First**: All document processing happens locally in your browser, with no uploads to any server
+- 📝 **Multi-Format Support**: Supports DOCX, XLSX, PPTX, CSV, and many other document formats
+- ⚡ **Real-Time Editing**: Provides smooth real-time document editing experience
+- 🚀 **No Server Required**: Pure frontend implementation with no server-side processing needed
+- 🎯 **Ready to Use**: Start editing documents immediately by opening the webpage
+- 🌐 **Open from URL**: Load documents directly from remote URLs via URL parameters
+- 🌍 **Multi-Language**: Supports multiple languages (English, Chinese) with easy switching
+
+## 📖 Usage
+
+### Basic Usage
+
+1. Visit the [Online Editor](https://ranuts.github.io/document/)
+2. Upload your document files or open from URL
+3. Edit directly in your browser
+4. Download the edited documents
+
+### URL Parameters
+
+| Parameter | Description                                  | Values/Type | Priority |
+| --------- | -------------------------------------------- | ----------- | -------- |
+| `locale`  | Set interface language                       | `en`, `zh`  | -        |
+| `src`     | Open document from URL (recommended)         | URL string  | Low      |
+| `file`    | Open document from URL (backward compatible) | URL string  | High     |
+
+**Examples:**
+
+```bash
+# Set language
+?locale=zh
+
+# Open document from URL
+?src=https://example.com/document.docx
+
+# Combine parameters
+?locale=zh&src=https://example.com/doc.docx
+```
+
+**Note**: When both `file` and `src` are provided, `file` takes priority. Remote URLs must support CORS.
+
+### As a Component Library
+
+This project provides foundational services for document preview components in the [@ranui/preview](https://www.npmjs.com/package/@ranui/preview) WebComponent library.
+
+📚 **Preview Component Documentation**: [https://chaxus.github.io/ran/src/ranui/preview/](https://chaxus.github.io/ran/src/ranui/preview/)
+
+## 🛠️ Technical Architecture
+
+- **OnlyOffice SDK**: Provides powerful document editing capabilities
+- **WebAssembly**: Implements document format conversion through x2t-wasm
+- **Pure Frontend Architecture**: All functionality runs in the browser
+
+## 🚀 Deployment
+
+### Docker
+
+```bash
+# docker run
+docker run -d --name document -p 8080:80 ghcr.io/ranuts/document:latest
+
+# docker compose
+services:
+  document:
+    image: ghcr.io/ranuts/document:latest
+    container_name: document
+    ports:
+      - 8080:80
+```
+
+#### Advanced Configuration
+
+```yaml
+name: document
+services:
+  document:
+    image: ghcr.io/ranuts/document:latest
+    container_name: document
+    ports:
+      - 8080:80
+    # Advanced Configuration
+    volumes:
+      # Add certificates
+      - certificate_path:/ssl
+    environment:
+      # Set account
+      # Format username:password, password must be encoded using BCrypt hash function.
+      # To get BCrypt encryption result, replace $ in the encrypted result with $$ for escaping.
+      SERVER_BASIC_AUTH: 'username:BCrypt_encrypted_password'
+      # Use certificate
+      SERVER_HTTP2_TLS: true
+      SERVER_HTTP2_TLS_CERT: certificate_path
+      SERVER_HTTP2_TLS_KEY: private_key_path
+```
+
+### Important Notes
+
+- **CORS**: Remote servers must support CORS when using `src` or `file` parameters
+- **File Size**: Large files may take longer to load
+
+## 🔧 Local Development
+
+```bash
+git clone https://github.com/ranuts/document.git
+cd document
+npm install
+npm run dev
+```
+
+## 🔤 Font Management
+
+### Font Files in This Project
+
+This project is designed as an open-source solution, and therefore does not include proprietary font files such as **Arial**, **Times New Roman**, **Microsoft YaHei**, **SimSun**, and other Windows system fonts that are subject to copyright restrictions. These font references remain in the configuration files for compatibility with existing documents, but the actual font files have been removed to ensure compliance with open-source licensing requirements.
+
+### Adding Fonts
+
+To add fonts that are already configured in the project (such as Arial, Times New Roman, etc.), simply place the font files in the `public/fonts/` directory and rename them to match their corresponding index in the `__fonts_files` array in `public/sdkjs/common/AllFonts.js`.
+
+**Example: Adding Arial Font**
+
+If you want to add the Arial font to the project:
+
+1. Check `AllFonts.js` and find that Arial regular font uses index `223` in the `__fonts_files` array
+2. Place your Arial font file in `public/fonts/` and rename it to `223` (no extension needed)
+3. The font file should be located at `public/fonts/223`
+4. When the application references index `223`, it will automatically load the font file from `public/fonts/223`
+
+Similarly, for other Arial variants:
+
+- Arial Bold uses index `226` → place font file as `public/fonts/226`
+- Arial Italic uses index `224` → place font file as `public/fonts/224`
+- Arial Bold Italic uses index `225` → place font file as `public/fonts/225`
+
+You can find the index for any font by checking the `__fonts_infos` array in `AllFonts.js`, where each font entry specifies the indices for its regular, bold, italic, and bold-italic variants.
+
+**Note**: Only use open-source fonts or fonts for which you have proper licensing rights. Ensure compliance with font licensing terms before adding any font files.
+
+## 📚 References
+
+- [onlyoffice-x2t-wasm](https://github.com/cryptpad/onlyoffice-x2t-wasm) - WebAssembly-based document converter
+- [se-office](https://github.com/Qihoo360/se-office) - Secure document editor
+- [web-apps](https://github.com/ONLYOFFICE/web-apps) - OnlyOffice web applications
+- [sdkjs](https://github.com/ONLYOFFICE/sdkjs) - OnlyOffice JavaScript SDK
+- [onlyoffice-web-local](https://github.com/sweetwisdom/onlyoffice-web-local) - Local web-based OnlyOffice implementation
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome to help improve this project!
+
+## 📄 License
+
+See the [LICENSE](LICENSE) file for details.
+
+{% endraw %}
