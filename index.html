@@ -2,18 +2,32 @@
 layout: default
 ---
 
-<div class="archive">
-  {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %} {%
-  if currDate != date %}
-  <h1 class="archive-year">{{ currDate }}</h1>
-  {% assign date = currDate %} {% endif %}
-  <div class="archive-item">
-    <span class="post-date archive-date fs-4"
-      >{{ post.date | date: "%B %d, %Y" }}</span
-    >
-    <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
-      >{{ post.title }}</a
-    >
+<div class="page">
+  <h1 class="page-title">Recent Posts</h1>
+  
+  <div class="blog-grid row">
+    {% for post in site.posts limit:12 %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <a href="{{ post.url | relative_url }}" class="blog-card text-decoration-none">
+        <div class="blog-card-image">
+          <img src="{% if post.featured_image %}{{ post.featured_image | relative_url }}{% else %}{{ '/assets/images/portfolio-placeholder.svg' | relative_url }}{% endif %}" 
+               alt="{{ post.title }}" 
+               loading="lazy"
+               onerror="this.src='{{ '/assets/images/portfolio-placeholder.svg' | relative_url }}'"/>
+        </div>
+        <div class="blog-card-content">
+          <h3 class="blog-card-title">{{ post.title }}</h3>
+          <p class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
+  
+  {% if site.posts.size > 12 %}
+  <div class="text-center mt-4">
+    <a href="{{ '/archive/' | relative_url }}" class="btn btn-outline-primary">View All Posts</a>
+  </div>
+  {% endif %}
 </div>
