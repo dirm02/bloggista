@@ -17,6 +17,26 @@
     .then(function (projects) {
       window.PORTFOLIO_PROJECTS = projects;
       
+      // Initialize Fuse.js search index
+      if (typeof Fuse !== 'undefined') {
+        window.FUSE_INDEX = new Fuse(projects, {
+          keys: [
+            { name: 'name', weight: 0.4 },           // Highest priority
+            { name: 'categories', weight: 0.3 },     // Second priority
+            { name: 'indexed_content', weight: 0.3 } // README content
+          ],
+          threshold: 0.4,        // 0 = exact, 1 = match anything (0.4 = balanced)
+          distance: 100,         // Max character distance for fuzzy match
+          minMatchCharLength: 2, // Minimum query length
+          includeScore: true,    // For ranking
+          includeMatches: true,  // For highlighting (future use)
+          ignoreLocation: true,  // Search entire string, not just beginning
+          useExtendedSearch: false
+        });
+      } else {
+        console.warn('Fuse.js not loaded, search will use basic matching');
+      }
+      
       // Hide loading message
       if (loading) loading.style.display = 'none';
       if (filters) filters.style.display = '';

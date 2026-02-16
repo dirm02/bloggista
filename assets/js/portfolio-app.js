@@ -91,29 +91,82 @@
   // --- Filter + Search ---
 
   function filterProjects() {
-    var query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    var query = searchInput ? searchInput.value.trim() : '';
     var selectedCategory = categoryFilter ? categoryFilter.value : '';
 
+    // If no search query, use simple category filter
+    if (!query || query.length < 2) {
+      allCards.forEach(function (card) {
+        var categoriesStr = card.dataset.categories || '';
+        var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
+        var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+        
+        if (matchesCategory) {
+          card.classList.remove('filtered-out');
+          card.style.order = '0'; // Reset order
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+      showPage(1);
+      return;
+    }
+
+    // Use Fuse.js for search
+    if (!window.FUSE_INDEX) {
+      console.error('Search index not initialized, falling back to basic search');
+      // Fallback to basic search
+      allCards.forEach(function (card) {
+        var name = card.dataset.name || '';
+        var categoriesStr = card.dataset.categories || '';
+        var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
+        var searchContent = card.dataset.search || '';
+
+        var matchesSearch = name.indexOf(query.toLowerCase()) !== -1 ||
+          searchContent.indexOf(query.toLowerCase()) !== -1;
+        var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+
+        if (matchesSearch && matchesCategory) {
+          card.classList.remove('filtered-out');
+          card.style.order = '0';
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+      showPage(1);
+      return;
+    }
+
+    var results = window.FUSE_INDEX.search(query);
+    
+    // Create a map of matching project indices with their scores
+    var matchMap = {};
+    results.forEach(function(result, rank) {
+      var projectIndex = window.PORTFOLIO_PROJECTS.indexOf(result.item);
+      matchMap[projectIndex] = {
+        score: result.score,
+        rank: rank
+      };
+    });
+
+    // Filter and rank cards
     allCards.forEach(function (card) {
-      var name = card.dataset.name || '';
+      var projectIndex = parseInt(card.dataset.index, 10);
       var categoriesStr = card.dataset.categories || '';
       var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
-      var searchContent = card.dataset.search || '';
-
-      var matchesSearch = !query ||
-        name.indexOf(query) !== -1 ||
-        searchContent.indexOf(query) !== -1;
-
+      
+      var matchesSearch = matchMap.hasOwnProperty(projectIndex);
       var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
 
       if (matchesSearch && matchesCategory) {
         card.classList.remove('filtered-out');
+        // Set order based on search rank (lower is better)
+        card.style.order = matchMap[projectIndex].rank;
       } else {
         card.classList.add('filtered-out');
       }
     });
 
-    // Reset to page 1 after filtering
     showPage(1);
   }
 
@@ -224,10 +277,16 @@
 
     if (allCards.length === 0) return;
 
-    // Bind filter events
+    // Bind filter events with debouncing for search
+    var searchTimeout;
     if (searchInput) {
-      searchInput.addEventListener('input', filterProjects);
+      searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(filterProjects, 300); // 300ms delay
+      });
     }
+    
+    // Category filter remains immediate
     if (categoryFilter) {
       categoryFilter.addEventListener('change', filterProjects);
     }
