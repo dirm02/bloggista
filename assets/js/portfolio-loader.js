@@ -60,9 +60,9 @@
         grid.appendChild(wrapper);
       });
       
-      // Trigger initial pagination setup
-      if (window.initPagination) {
-        window.initPagination();
+      // Trigger portfolio init (pagination, filter, modal)
+      if (window.initPortfolio) {
+        window.initPortfolio();
       }
     })
     .catch(function (error) {

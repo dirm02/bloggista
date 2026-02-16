@@ -158,12 +158,23 @@ def extract_category_from_mapping(slug, categories_mapping)
   categories_mapping[repo_key] || 'Uncategorized'
 end
 
-def index_readme_content(content, max_length = 500)
+def index_readme_content(content, max_length = 1000)
   return '' if content.nil? || content.empty?
-  # Strip frontmatter, HTML tags, and excessive whitespace for indexing
+  # Strip frontmatter
   indexed = content.sub(/\A---\s*\n.*?\n---\s*\n/m, '')
-  indexed = indexed.gsub(/<[^>]+>/, ' ')  # Remove HTML tags
-  indexed = indexed.gsub(/!\[[^\]]*\]\([^)]+\)/, '')  # Remove images
+  # Remove HTML tags
+  indexed = indexed.gsub(/<[^>]+>/, ' ')
+  # Remove badge images: [![...](img)](link)
+  indexed = indexed.gsub(/\[!\[[^\]]*\]\([^)]+\)\]\([^)]+\)/, '')
+  # Remove images: ![alt](url)
+  indexed = indexed.gsub(/!\[[^\]]*\]\([^)]+\)/, '')
+  # Keep link text, remove URL: [text](url) -> text
+  indexed = indexed.gsub(/\[([^\]]+)\]\([^)]+\)/, '\1')
+  # Remove bare URLs
+  indexed = indexed.gsub(%r{https?://\S+}, '')
+  # Remove markdown formatting chars
+  indexed = indexed.gsub(/[#*_`~|>]/, ' ')
+  # Collapse whitespace
   indexed = indexed.gsub(/\s+/, ' ').strip
   indexed.length > max_length ? indexed[0...max_length] : indexed
 end
