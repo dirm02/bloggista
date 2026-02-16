@@ -359,3 +359,180 @@ pre.highlight {
     color: hsl(0, 0%, 70%);
   }
 }
+
+/* README Modal Styles */
+.project-readme {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #24292f;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.3rem;
+  }
+
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: 0.875rem; }
+  h6 { font-size: 0.85rem; color: #57606a; }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #0969da;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    background-color: rgba(175, 184, 193, 0.2);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-size: 85%;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+
+  pre {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+      font-size: 85%;
+      line-height: 1.45;
+    }
+  }
+
+  blockquote {
+    padding: 0 1em;
+    color: #57606a;
+    border-left: 0.25em solid #d0d7de;
+    margin: 0 0 1rem 0;
+  }
+
+  ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #d0d7de;
+    }
+
+    th {
+      font-weight: 600;
+      background-color: #f6f8fa;
+    }
+
+    tr {
+      background-color: #ffffff;
+      border-top: 1px solid #d0d7de;
+
+      &:nth-child(2n) {
+        background-color: #f6f8fa;
+      }
+    }
+  }
+
+  hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 1.5rem 0;
+    background-color: #d0d7de;
+    border: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-readme {
+    color: #c9d1d9;
+
+    h1, h2 {
+      border-bottom-color: #21262d;
+    }
+
+    h6 {
+      color: #8b949e;
+    }
+
+    a {
+      color: #58a6ff;
+    }
+
+    code {
+      background-color: rgba(110, 118, 129, 0.4);
+    }
+
+    pre {
+      background-color: #161b22;
+    }
+
+    blockquote {
+      color: #8b949e;
+      border-left-color: #3b434b;
+    }
+
+    table {
+      th, td {
+        border-color: #3b434b;
+      }
+
+      th {
+        background-color: #161b22;
+      }
+
+      tr {
+        background-color: #0d1117;
+        border-top-color: #21262d;
+
+        &:nth-child(2n) {
+          background-color: #161b22;
+        }
+      }
+    }
+
+    hr {
+      background-color: #21262d;
+    }
+  }
+}

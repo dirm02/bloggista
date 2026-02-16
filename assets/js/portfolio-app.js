@@ -191,62 +191,30 @@
   }
 
   function renderMarkdown(md) {
-    // Lightweight markdown-to-HTML
-    var html = md;
+    // Use marked.js for proper GitHub Flavored Markdown rendering
+    if (typeof marked === 'undefined') {
+      console.error('marked.js library not loaded');
+      return '<div class="alert alert-warning">Markdown library not loaded. Please refresh the page.</div>';
+    }
 
-    // Escape HTML entities
-    html = html.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-    // Code blocks (``` ... ```)
-    html = html.replace(/```(\w*)\n([\s\S]*?)```/g, function (m, lang, code) {
-      return '<pre class="highlight"><code>' + code.trim() + '</code></pre>';
+    // Configure marked for GitHub Flavored Markdown
+    marked.setOptions({
+      gfm: true,              // GitHub Flavored Markdown
+      breaks: true,           // Convert \n to <br> in paragraphs
+      headerIds: true,        // Add IDs to headers
+      mangle: false,          // Don't escape autolinked email addresses
+      sanitize: false,        // Allow HTML (GitHub READMEs often contain HTML)
+      smartLists: true,       // Use smarter list behavior
+      smartypants: false,     // Don't use smart typography
+      xhtml: false            // Don't use self-closing tags
     });
 
-    // Inline code
-    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
-
-    // Headers
-    html = html.replace(/^######\s+(.+)$/gm, '<h6>$1</h6>');
-    html = html.replace(/^#####\s+(.+)$/gm, '<h5>$1</h5>');
-    html = html.replace(/^####\s+(.+)$/gm, '<h4>$1</h4>');
-    html = html.replace(/^###\s+(.+)$/gm, '<h3>$1</h3>');
-    html = html.replace(/^##\s+(.+)$/gm, '<h2>$1</h2>');
-    html = html.replace(/^#\s+(.+)$/gm, '<h1>$1</h1>');
-
-    // Bold and italic
-    html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
-    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
-
-    // Images
-    html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width:100%;height:auto;" />');
-
-    // Links
-    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-
-    // Horizontal rules
-    html = html.replace(/^---+$/gm, '<hr />');
-
-    // Unordered lists
-    html = html.replace(/^[\-\*]\s+(.+)$/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
-
-    // Paragraphs (lines separated by blank lines)
-    html = html.replace(/\n\n+/g, '</p><p>');
-    html = '<p>' + html + '</p>';
-
-    // Clean up empty paragraphs and fix nesting
-    html = html.replace(/<p>\s*<\/p>/g, '');
-    html = html.replace(/<p>\s*(<h[1-6]>)/g, '$1');
-    html = html.replace(/(<\/h[1-6]>)\s*<\/p>/g, '$1');
-    html = html.replace(/<p>\s*(<pre)/g, '$1');
-    html = html.replace(/(<\/pre>)\s*<\/p>/g, '$1');
-    html = html.replace(/<p>\s*(<ul>)/g, '$1');
-    html = html.replace(/(<\/ul>)\s*<\/p>/g, '$1');
-    html = html.replace(/<p>\s*(<hr \/>)/g, '$1');
-    html = html.replace(/(<hr \/>)\s*<\/p>/g, '$1');
-
-    return html;
+    try {
+      return marked.parse(md);
+    } catch (e) {
+      console.error('Error parsing markdown:', e);
+      return '<div class="alert alert-danger">Error rendering README. <a href="#" class="alert-link">View on GitHub instead</a></div>';
+    }
   }
 
   // --- Public init (called by loader after cards are in DOM) ---
