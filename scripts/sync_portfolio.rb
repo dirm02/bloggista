@@ -158,7 +158,7 @@ def extract_category_from_mapping(slug, categories_mapping)
   categories_mapping[repo_key] || 'Uncategorized'
 end
 
-def index_readme_content(content, max_length = 5000)
+def index_readme_content(content, max_length = 500)
   return '' if content.nil? || content.empty?
   # Strip frontmatter, HTML tags, and excessive whitespace for indexing
   indexed = content.sub(/\A---\s*\n.*?\n---\s*\n/m, '')
@@ -254,14 +254,34 @@ def write_portfolio_collection(projects, output_dir)
   count
 end
 
+def write_portfolio_json(projects, output_file)
+  # Write lightweight JSON WITHOUT full README (too large - 31MB+)
+  # Full READMEs will be fetched on-demand from GitHub
+  data = projects.map do |p|
+    {
+      'name' => p['name'],
+      'slug' => p['slug'],
+      'category' => p['category'],
+      'image' => p['image'],
+      'repo_url' => p['repo_url'],
+      'indexed_content' => p['indexed_content']
+    }
+  end
+  File.write(output_file, JSON.pretty_generate(data))
+  data.size
+end
+
 def main
   mystars_path = ARGV[0] || raise('Usage: sync_portfolio.rb <mystars_path>')
   blog_root = File.expand_path(File.join(__dir__, '..'))
-  portfolio_dir = File.join(blog_root, '_portfolio')
+  assets_data_dir = File.join(blog_root, 'assets', 'data')
+  FileUtils.mkdir_p(assets_data_dir)
+  
+  output_file = File.join(assets_data_dir, 'portfolio.json')
 
   projects = process_mystars(mystars_path)
-  count = write_portfolio_collection(projects, portfolio_dir)
-  puts "Wrote #{count} projects to #{portfolio_dir}"
+  count = write_portfolio_json(projects, output_file)
+  puts "Wrote #{count} projects to #{output_file}"
 end
 
 main

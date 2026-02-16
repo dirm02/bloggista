@@ -81,6 +81,19 @@
     renderControls(1, visibleCards);
   };
 
-  showPage(1);
-  renderControls(1);
+  // Export init function for loader to call
+  window.initPagination = function() {
+    cards = grid.querySelectorAll('.portfolio-card-wrapper');
+    totalPages = Math.ceil(cards.length / PER_PAGE);
+    
+    if (totalPages <= 1) return;
+    
+    showPage(1);
+    renderControls(1);
+  };
+  
+  // Auto-init if cards already exist
+  if (cards.length > 0) {
+    window.initPagination();
+  }
 })();

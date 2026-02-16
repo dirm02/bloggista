@@ -42,8 +42,7 @@ permalink: /:year/:month/:day/:title/
 
 collections:
   portfolio:
-    output: true
-    permalink: /portfolio/:name/
+    output: false
 
 # Includes an icon in the footer for each username you enter
 footer-links:
