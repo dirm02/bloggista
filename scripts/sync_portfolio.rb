@@ -120,9 +120,8 @@ def process_mystars(mystars_path)
 
   puts "Found #{category_folders.size} category folders"
 
-  # Track projects by slug to avoid duplicates across categories
-  seen = {}
-  projects = []
+  # One entry per unique project (slug); each project has categories: [ ... ]
+  projects_by_slug = {}
 
   category_folders.each do |cat_info|
     cat_path = cat_info[:path]
@@ -136,9 +135,12 @@ def process_mystars(mystars_path)
       folder_path = File.join(cat_path, entry)
       next unless File.directory?(folder_path)
 
-      # Skip duplicates (same project in multiple categories - keep first)
-      next if seen[entry]
-      seen[entry] = true
+      if projects_by_slug.key?(entry)
+        # Already seen: just add this category
+        projects_by_slug[entry][:categories] << category unless projects_by_slug[entry][:categories].include?(category)
+        cat_count += 1
+        next
+      end
 
       readme_path = File.join(folder_path, 'README.md')
       readme_path = File.join(folder_path, 'readme.md') unless File.file?(readme_path)
@@ -161,18 +163,29 @@ def process_mystars(mystars_path)
       readme_content = read_readme_content(readme_path)
       indexed_content = index_readme_content(readme_content)
 
-      projects << {
-        'name' => entry.gsub(/[-_]/, ' ').split.map(&:capitalize).join(' '),
-        'slug' => entry,
-        'category' => category,
-        'image' => image,
-        'repo_url' => repo_url,
-        'indexed_content' => indexed_content
+      projects_by_slug[entry] = {
+        name: entry.gsub(/[-_]/, ' ').split.map(&:capitalize).join(' '),
+        slug: entry,
+        categories: [category],
+        image: image,
+        repo_url: repo_url,
+        indexed_content: indexed_content
       }
       cat_count += 1
     end
 
     puts "  #{category}: #{cat_count} projects"
+  end
+
+  projects = projects_by_slug.values.map do |p|
+    {
+      'name' => p[:name],
+      'slug' => p[:slug],
+      'categories' => p[:categories].sort,
+      'image' => p[:image],
+      'repo_url' => p[:repo_url],
+      'indexed_content' => p[:indexed_content]
+    }
   end
 
   projects.sort_by { |p| p['name'].downcase }
@@ -183,7 +196,7 @@ def write_portfolio_json(projects, output_file)
     {
       'name' => p['name'],
       'slug' => p['slug'],
-      'category' => p['category'],
+      'categories' => p['categories'],
       'image' => p['image'],
       'repo_url' => p['repo_url'],
       'indexed_content' => p['indexed_content']
@@ -203,10 +216,12 @@ def main
 
   projects = process_mystars(mystars_path)
 
-  # Print category summary
+  # Print category summary (project count per category)
   cats = {}
-  projects.each { |p| cats[p['category']] = (cats[p['category']] || 0) + 1 }
-  puts "\nCategory summary:"
+  projects.each do |p|
+    (p['categories'] || []).each { |c| cats[c] = (cats[c] || 0) + 1 }
+  end
+  puts "\nCategory summary (projects per category):"
   cats.sort_by { |k, _| k.downcase }.each { |k, v| puts "  #{k}: #{v}" }
   puts "  TOTAL: #{projects.size} unique projects"
 

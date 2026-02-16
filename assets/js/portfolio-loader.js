@@ -21,13 +21,15 @@
       if (loading) loading.style.display = 'none';
       if (filters) filters.style.display = '';
       
-      // Populate category dropdown
+      // Populate category dropdown (count = number of projects that have this category)
       var categories = {};
       projects.forEach(function (p) {
-        var cat = p.category || 'Uncategorized';
-        categories[cat] = (categories[cat] || 0) + 1;
+        var cats = p.categories && p.categories.length ? p.categories : ['Uncategorized'];
+        cats.forEach(function (cat) {
+          categories[cat] = (categories[cat] || 0) + 1;
+        });
       });
-      
+
       var catKeys = Object.keys(categories).sort();
       categoryFilter.innerHTML = '<option value="">All Categories (' + projects.length + ')</option>';
       catKeys.forEach(function (cat) {
@@ -37,13 +39,13 @@
         categoryFilter.appendChild(option);
       });
       
-      // Render project cards
+      // Render project cards (one card per project; categories stored for filtering)
       projects.forEach(function (project, index) {
         var wrapper = document.createElement('div');
         wrapper.className = 'portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4';
         wrapper.dataset.index = index;
         wrapper.dataset.name = (project.name || '').toLowerCase();
-        wrapper.dataset.category = project.category || 'Uncategorized';
+        wrapper.dataset.categories = (project.categories && project.categories.length) ? project.categories.join(',') : 'Uncategorized';
         wrapper.dataset.search = (project.indexed_content || '').toLowerCase();
         
         var placeholderImg = '/assets/images/portfolio-placeholder.svg';

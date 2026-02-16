@@ -96,14 +96,15 @@
 
     allCards.forEach(function (card) {
       var name = card.dataset.name || '';
-      var category = card.dataset.category || '';
+      var categoriesStr = card.dataset.categories || '';
+      var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
       var searchContent = card.dataset.search || '';
 
       var matchesSearch = !query ||
         name.indexOf(query) !== -1 ||
         searchContent.indexOf(query) !== -1;
 
-      var matchesCategory = !selectedCategory || category === selectedCategory;
+      var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
 
       if (matchesSearch && matchesCategory) {
         card.classList.remove('filtered-out');
