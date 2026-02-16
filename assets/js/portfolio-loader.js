@@ -43,11 +43,17 @@
       
       // Populate category dropdown (count = number of projects that have this category)
       var categories = {};
+      var languages = {};
       projects.forEach(function (p) {
         var cats = p.categories && p.categories.length ? p.categories : ['Uncategorized'];
         cats.forEach(function (cat) {
           categories[cat] = (categories[cat] || 0) + 1;
         });
+        
+        // Extract language from project data (if available)
+        if (p.language) {
+          languages[p.language] = (languages[p.language] || 0) + 1;
+        }
       });
 
       var catKeys = Object.keys(categories).sort();
@@ -59,6 +65,19 @@
         categoryFilter.appendChild(option);
       });
       
+      // Populate language filter
+      var languageFilter = document.getElementById('language-filter');
+      if (languageFilter && Object.keys(languages).length > 0) {
+        var langKeys = Object.keys(languages).sort();
+        languageFilter.innerHTML = '<option value="">All Languages (' + projects.length + ')</option>';
+        langKeys.forEach(function (lang) {
+          var option = document.createElement('option');
+          option.value = lang;
+          option.textContent = lang + ' (' + languages[lang] + ')';
+          languageFilter.appendChild(option);
+        });
+      }
+      
       // Render project cards (one card per project; categories stored for filtering)
       projects.forEach(function (project, index) {
         var wrapper = document.createElement('div');
@@ -67,6 +86,11 @@
         wrapper.dataset.name = (project.name || '').toLowerCase();
         wrapper.dataset.categories = (project.categories && project.categories.length) ? project.categories.join(',') : 'Uncategorized';
         wrapper.dataset.search = (project.indexed_content || '').toLowerCase();
+        
+        // Add advanced filter attributes
+        wrapper.dataset.language = project.language || '';
+        wrapper.dataset.stars = project.stars || 0;
+        wrapper.dataset.lastUpdated = project.last_updated || '';
         
         var placeholderImg = '/assets/images/portfolio-placeholder.svg';
         var imgSrc = project.image && project.image.startsWith('http') ? project.image : placeholderImg;

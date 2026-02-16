@@ -6,6 +6,9 @@
 require 'yaml'
 require 'fileutils'
 require 'json'
+require 'net/http'
+require 'uri'
+require 'time'
 
 PLACEHOLDER_IMAGE = '/assets/images/portfolio-placeholder.svg'
 
@@ -27,6 +30,45 @@ def extract_original_repo_from_readme(readme_path)
     return "https://github.com/#{owner}/#{repo}"
   end
   nil
+end
+
+def fetch_github_repo_metadata(repo_url)
+  # Extract owner/repo from URL
+  match = repo_url.match(%r{github\.com/([^/]+)/([^/\s#?]+)})
+  return {} unless match
+  
+  owner, repo = match[1], match[2]
+  api_url = "https://api.github.com/repos/#{owner}/#{repo}"
+  
+  begin
+    uri = URI(api_url)
+    request = Net::HTTP::Get.new(uri)
+    request['Accept'] = 'application/vnd.github.v3+json'
+    request['User-Agent'] = 'Portfolio-Sync-Script'
+    
+    # Add GitHub token if available (for higher rate limits)
+    github_token = ENV['GITHUB_TOKEN']
+    request['Authorization'] = "token #{github_token}" if github_token
+    
+    response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true, read_timeout: 5) do |http|
+      http.request(request)
+    end
+    
+    if response.code == '200'
+      data = JSON.parse(response.body)
+      return {
+        language: data['language'],
+        stars: data['stargazers_count'] || 0,
+        last_updated: data['pushed_at'] ? Time.parse(data['pushed_at']).iso8601 : nil
+      }
+    else
+      puts "  Warning: GitHub API returned #{response.code} for #{repo_url}"
+    end
+  rescue StandardError => e
+    puts "  Warning: Failed to fetch metadata for #{repo_url}: #{e.message}"
+  end
+  
+  {}
 end
 
 def extract_first_image_from_readme(readme_path, folder_name, raw_base)
@@ -162,6 +204,13 @@ def process_mystars(mystars_path)
 
       readme_content = read_readme_content(readme_path)
       indexed_content = index_readme_content(readme_content)
+      
+      # Fetch GitHub metadata (language, stars, last_updated)
+      metadata = {}
+      if repo_url && repo_url.include?('github.com') && !repo_url.include?('dirm02/mystars')
+        metadata = fetch_github_repo_metadata(repo_url)
+        sleep(0.1) # Rate limiting: 10 requests per second max
+      end
 
       projects_by_slug[entry] = {
         name: entry.gsub(/[-_]/, ' ').split.map(&:capitalize).join(' '),
@@ -169,7 +218,10 @@ def process_mystars(mystars_path)
         categories: [category],
         image: image,
         repo_url: repo_url,
-        indexed_content: indexed_content
+        indexed_content: indexed_content,
+        language: metadata[:language],
+        stars: metadata[:stars] || 0,
+        last_updated: metadata[:last_updated]
       }
       cat_count += 1
     end
@@ -184,7 +236,10 @@ def process_mystars(mystars_path)
       'categories' => p[:categories].sort,
       'image' => p[:image],
       'repo_url' => p[:repo_url],
-      'indexed_content' => p[:indexed_content]
+      'indexed_content' => p[:indexed_content],
+      'language' => p[:language],
+      'stars' => p[:stars],
+      'last_updated' => p[:last_updated]
     }
   end
 
@@ -199,7 +254,10 @@ def write_portfolio_json(projects, output_file)
       'categories' => p['categories'],
       'image' => p['image'],
       'repo_url' => p['repo_url'],
-      'indexed_content' => p['indexed_content']
+      'indexed_content' => p['indexed_content'],
+      'language' => p['language'],
+      'stars' => p['stars'],
+      'last_updated' => p['last_updated']
     }
   end
   File.write(output_file, JSON.pretty_generate(data))

@@ -6,11 +6,20 @@
   var controls = document.getElementById('pagination-controls');
   var searchInput = document.getElementById('search-input');
   var categoryFilter = document.getElementById('category-filter');
+  var languageFilter = document.getElementById('language-filter');
+  var starsFilter = document.getElementById('stars-filter');
+  var updatedFilter = document.getElementById('updated-filter');
+  var searchStatsEl = document.getElementById('search-stats');
+  var clearAllFiltersBtn = document.getElementById('clear-all-filters');
 
   if (!grid || !controls) return;
 
   var allCards = [];
   var currentPage = 1;
+  
+  // Search history management
+  var SEARCH_HISTORY_KEY = 'portfolio_search_history';
+  var MAX_HISTORY_ITEMS = 10;
 
   // --- Pagination ---
 
@@ -88,26 +97,129 @@
     });
   }
 
+  // --- Search History Functions ---
+  
+  function getSearchHistory() {
+    try {
+      var history = localStorage.getItem(SEARCH_HISTORY_KEY);
+      return history ? JSON.parse(history) : [];
+    } catch (e) {
+      console.error('Error reading search history:', e);
+      return [];
+    }
+  }
+  
+  function saveSearchHistory(query) {
+    if (!query || query.length < 2) return;
+    
+    try {
+      var history = getSearchHistory();
+      // Remove duplicate if exists
+      history = history.filter(function(item) { return item !== query; });
+      // Add to beginning
+      history.unshift(query);
+      // Keep only MAX_HISTORY_ITEMS
+      history = history.slice(0, MAX_HISTORY_ITEMS);
+      localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(history));
+      renderSearchHistory();
+    } catch (e) {
+      console.error('Error saving search history:', e);
+    }
+  }
+  
+  function clearSearchHistory() {
+    try {
+      localStorage.removeItem(SEARCH_HISTORY_KEY);
+      renderSearchHistory();
+    } catch (e) {
+      console.error('Error clearing search history:', e);
+    }
+  }
+  
+  function renderSearchHistory() {
+    var historyContainer = document.getElementById('search-history-container');
+    var historyList = document.getElementById('search-history-list');
+    if (!historyContainer || !historyList) return;
+    
+    var history = getSearchHistory();
+    
+    if (history.length === 0) {
+      historyContainer.style.display = 'none';
+      return;
+    }
+    
+    historyContainer.style.display = '';
+    historyList.innerHTML = '';
+    
+    history.forEach(function(query) {
+      var badge = document.createElement('button');
+      badge.className = 'btn btn-sm btn-outline-secondary';
+      badge.textContent = query;
+      badge.type = 'button';
+      badge.addEventListener('click', function() {
+        if (searchInput) {
+          searchInput.value = query;
+          filterProjects();
+        }
+      });
+      historyList.appendChild(badge);
+    });
+  }
+
   // --- Filter + Search ---
 
   function filterProjects() {
     var query = searchInput ? searchInput.value.trim() : '';
     var selectedCategory = categoryFilter ? categoryFilter.value : '';
+    var selectedLanguage = languageFilter ? languageFilter.value : '';
+    var minStars = starsFilter ? parseInt(starsFilter.value, 10) || 0 : 0;
+    var updatedDays = updatedFilter ? parseInt(updatedFilter.value, 10) || 0 : 0;
+    
+    // Save search query to history if it's a valid search
+    if (query && query.length >= 2) {
+      saveSearchHistory(query);
+    }
+    
+    // Show/hide clear all filters button
+    var hasFilters = selectedCategory || selectedLanguage || minStars > 0 || updatedDays > 0 || (query && query.length >= 2);
+    if (clearAllFiltersBtn) {
+      clearAllFiltersBtn.style.display = hasFilters ? '' : 'none';
+    }
+    
+    // Calculate date threshold for last updated filter
+    var dateThreshold = null;
+    if (updatedDays > 0) {
+      dateThreshold = new Date();
+      dateThreshold.setDate(dateThreshold.getDate() - updatedDays);
+    }
 
-    // If no search query, use simple category filter
+    // If no search query, use simple filtering
     if (!query || query.length < 2) {
       allCards.forEach(function (card) {
         var categoriesStr = card.dataset.categories || '';
         var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
-        var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+        var cardLanguage = card.dataset.language || '';
+        var cardStars = parseInt(card.dataset.stars, 10) || 0;
+        var cardLastUpdated = card.dataset.lastUpdated || '';
         
-        if (matchesCategory) {
+        var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+        var matchesLanguage = !selectedLanguage || cardLanguage === selectedLanguage;
+        var matchesStars = cardStars >= minStars;
+        var matchesUpdated = true;
+        
+        if (dateThreshold && cardLastUpdated) {
+          var cardDate = new Date(cardLastUpdated);
+          matchesUpdated = cardDate >= dateThreshold;
+        }
+        
+        if (matchesCategory && matchesLanguage && matchesStars && matchesUpdated) {
           card.classList.remove('filtered-out');
           card.style.order = '0'; // Reset order
         } else {
           card.classList.add('filtered-out');
         }
       });
+      updateSearchStats(query);
       showPage(1);
       return;
     }
@@ -121,18 +233,30 @@
         var categoriesStr = card.dataset.categories || '';
         var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
         var searchContent = card.dataset.search || '';
+        var cardLanguage = card.dataset.language || '';
+        var cardStars = parseInt(card.dataset.stars, 10) || 0;
+        var cardLastUpdated = card.dataset.lastUpdated || '';
 
         var matchesSearch = name.indexOf(query.toLowerCase()) !== -1 ||
           searchContent.indexOf(query.toLowerCase()) !== -1;
         var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+        var matchesLanguage = !selectedLanguage || cardLanguage === selectedLanguage;
+        var matchesStars = cardStars >= minStars;
+        var matchesUpdated = true;
+        
+        if (dateThreshold && cardLastUpdated) {
+          var cardDate = new Date(cardLastUpdated);
+          matchesUpdated = cardDate >= dateThreshold;
+        }
 
-        if (matchesSearch && matchesCategory) {
+        if (matchesSearch && matchesCategory && matchesLanguage && matchesStars && matchesUpdated) {
           card.classList.remove('filtered-out');
           card.style.order = '0';
         } else {
           card.classList.add('filtered-out');
         }
       });
+      updateSearchStats(query);
       showPage(1);
       return;
     }
@@ -154,11 +278,22 @@
       var projectIndex = parseInt(card.dataset.index, 10);
       var categoriesStr = card.dataset.categories || '';
       var cardCategories = categoriesStr ? categoriesStr.split(',') : [];
+      var cardLanguage = card.dataset.language || '';
+      var cardStars = parseInt(card.dataset.stars, 10) || 0;
+      var cardLastUpdated = card.dataset.lastUpdated || '';
       
       var matchesSearch = matchMap.hasOwnProperty(projectIndex);
       var matchesCategory = !selectedCategory || cardCategories.indexOf(selectedCategory) !== -1;
+      var matchesLanguage = !selectedLanguage || cardLanguage === selectedLanguage;
+      var matchesStars = cardStars >= minStars;
+      var matchesUpdated = true;
+      
+      if (dateThreshold && cardLastUpdated) {
+        var cardDate = new Date(cardLastUpdated);
+        matchesUpdated = cardDate >= dateThreshold;
+      }
 
-      if (matchesSearch && matchesCategory) {
+      if (matchesSearch && matchesCategory && matchesLanguage && matchesStars && matchesUpdated) {
         card.classList.remove('filtered-out');
         // Set order based on search rank (lower is better)
         card.style.order = matchMap[projectIndex].rank;
@@ -167,7 +302,19 @@
       }
     });
 
+    updateSearchStats(query);
     showPage(1);
+  }
+  
+  function updateSearchStats(query) {
+    if (!searchStatsEl) return;
+    
+    if (query && query.length >= 2) {
+      var visibleCount = getVisibleCards().length;
+      searchStatsEl.textContent = visibleCount + ' result' + (visibleCount !== 1 ? 's' : '');
+    } else {
+      searchStatsEl.textContent = '';
+    }
   }
 
   // --- Modal (README display) ---
@@ -290,6 +437,60 @@
     if (categoryFilter) {
       categoryFilter.addEventListener('change', filterProjects);
     }
+    
+    // Advanced filters
+    if (languageFilter) {
+      languageFilter.addEventListener('change', filterProjects);
+    }
+    
+    if (starsFilter) {
+      starsFilter.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(filterProjects, 300);
+      });
+    }
+    
+    if (updatedFilter) {
+      updatedFilter.addEventListener('change', filterProjects);
+    }
+    
+    // Toggle advanced filters panel
+    var toggleBtn = document.getElementById('toggle-advanced-filters');
+    var advancedPanel = document.getElementById('advanced-filters-panel');
+    var advancedIcon = document.getElementById('advanced-filter-icon');
+    
+    if (toggleBtn && advancedPanel) {
+      toggleBtn.addEventListener('click', function() {
+        var isVisible = advancedPanel.style.display !== 'none';
+        advancedPanel.style.display = isVisible ? 'none' : '';
+        if (advancedIcon) {
+          advancedIcon.textContent = isVisible ? '▶' : '▼';
+        }
+      });
+    }
+    
+    // Clear all filters button
+    if (clearAllFiltersBtn) {
+      clearAllFiltersBtn.addEventListener('click', function() {
+        if (searchInput) searchInput.value = '';
+        if (categoryFilter) categoryFilter.value = '';
+        if (languageFilter) languageFilter.value = '';
+        if (starsFilter) starsFilter.value = '';
+        if (updatedFilter) updatedFilter.value = '';
+        filterProjects();
+      });
+    }
+    
+    // Search history
+    var clearHistoryBtn = document.getElementById('clear-search-history');
+    if (clearHistoryBtn) {
+      clearHistoryBtn.addEventListener('click', function() {
+        clearSearchHistory();
+      });
+    }
+    
+    // Render initial search history
+    renderSearchHistory();
 
     // Show first page
     showPage(1);
