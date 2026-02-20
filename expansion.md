@@ -21,7 +21,7 @@ flowchart TB
 
     subgraph Private [Products Page - Auth Required]
         Products[Products Dashboard]
-        Chat[Chat]
+        AIChat[AI Chat Assistant]
         Billing[Billing]
         UserProfile[User Profile]
         RepoArchive[GitHub Archives]
@@ -30,6 +30,7 @@ flowchart TB
     subgraph Backend [Backend Services]
         Hanko[Hanko SSO]
         Parse[Parse Server]
+        PocketFlow[PocketFlow AI]
         BillionMail[BillionMail SMTP]
         Flowglad[Flowglad Billing]
         Bucket[Object Bucket]
@@ -39,7 +40,8 @@ flowchart TB
     Portfolio --> Parse
     Products --> Hanko
     Products --> Parse
-    Chat --> Parse
+    AIChat --> PocketFlow
+    PocketFlow --> Parse
     Billing --> Flowglad
     UserProfile --> Parse
     RepoArchive --> Bucket
@@ -96,7 +98,7 @@ The **Products page** requires login and contains all premium features.
 
 ### Features behind auth:
 - User dashboard
-- Chat with other users
+- AI Chat assistant (powered by PocketFlow)
 - Billing and subscriptions
 - Profile management
 - GitHub repo archives (full downloads)
@@ -105,7 +107,7 @@ The **Products page** requires login and contains all premium features.
 flowchart TB
     User[User] --> Login[Hanko Login]
     Login --> Products[Products Dashboard]
-    Products --> Chat[Chat]
+    Products --> AIChat[AI Chat Assistant]
     Products --> Billing[Billing]
     Products --> Profile[Profile]
     Products --> Archives[Repo Archives]
@@ -193,6 +195,86 @@ flowchart LR
 - Store full GitHub repo archives
 - File storage for user uploads
 
+### 3.7 PocketFlow AI Chat
+
+**Location:** `Automation/PocketFlow`
+
+**What is PocketFlow:**
+- 100-line minimalist LLM framework
+- Zero dependencies, zero vendor lock-in
+- Supports Agents, Workflows, RAG, and more
+- Python-based with FastAPI integration
+
+**Role:**
+- AI chat assistance for new users
+- Real-time streaming responses via WebSocket
+- Conversation memory and context
+- Guardrails for topic restrictions (optional)
+
+**Cookbook Examples:**
+
+| Example | Description |
+|---------|-------------|
+| `pocketflow-chat` | Basic chatbot with history |
+| `pocketflow-fastapi-websocket` | Real-time web chat with streaming |
+| `pocketflow-chat-memory` | Long-term memory with embeddings |
+| `pocketflow-chat-guardrail` | Topic-restricted chatbot |
+
+**Architecture:**
+
+```mermaid
+flowchart TB
+    User[User] --> WebSocket[WebSocket Connection]
+    WebSocket --> FastAPI[FastAPI Endpoint]
+    FastAPI --> PocketFlow[PocketFlow AsyncFlow]
+    PocketFlow --> LLM[OpenAI / LLM API]
+    PocketFlow --> Parse[Parse Server - Save Logs]
+```
+
+**Key Components:**
+
+1. **FastAPI Server** - WebSocket endpoint at `/ws`
+2. **StreamingChatNode** - AsyncNode for streaming LLM responses
+3. **AsyncFlow** - Manages conversation flow
+4. **LLM Integration** - OpenAI GPT-4 or other providers
+
+**Integration with Products Page:**
+
+```mermaid
+flowchart LR
+    Products[Products Page] --> ChatWidget[AI Chat Widget]
+    ChatWidget --> WS[WebSocket]
+    WS --> PocketFlow[PocketFlow Service]
+    PocketFlow --> OpenAI[OpenAI API]
+```
+
+**Files from Cookbook (`pocketflow-fastapi-websocket`):**
+
+```
+pocketflow-fastapi-websocket/
+├── main.py          # FastAPI + WebSocket endpoint
+├── nodes.py         # StreamingChatNode definition
+├── flow.py          # AsyncFlow creation
+├── utils/
+│   └── stream_llm.py  # OpenAI streaming utility
+├── static/
+│   └── index.html   # Chat UI
+└── requirements.txt # Dependencies
+```
+
+**Dependencies:**
+```
+pocketflow
+fastapi
+uvicorn
+openai
+```
+
+**Security:**
+- Protect `/ws` endpoint with Hanko JWT validation
+- Only authenticated users can access AI chat
+- Rate limiting to control API costs
+
 ---
 
 ## 4. User Profiles
@@ -270,7 +352,8 @@ flowchart TB
 
 | Task | Component | Location |
 |------|-----------|----------|
-| Chat with LiveQuery | Messaging | Parse + Frontend |
+| AI Chat assistant | PocketFlow | `Automation/PocketFlow` |
+| Deploy FastAPI WebSocket | Chat backend | New service |
 | GitHub repo sync to bucket | Pipeline | `mystars` evolution |
 | Email notifications | SMTP | BillionMail |
 
@@ -291,6 +374,7 @@ flowchart TB
 |-----------|----------|---------|
 | **Parse Server** | `Backends/parse-server` | Main API, data, realtime |
 | **Hanko** | `SSO/hanko` | Authentication, SSO |
+| **PocketFlow** | `Automation/PocketFlow` | AI chat assistant |
 | **BillionMail** | `Mail/BillionMail` | Email delivery |
 | **Flowglad** | `Payments/flowglad` | Billing SDK |
 | **TestPayment** | `Payments/testpayment` | Payment testing |
@@ -311,7 +395,7 @@ flowchart LR
 
     subgraph ProtectedAccess [Auth Required]
         Products[Products]
-        Chat[Chat]
+        AIChat[AI Chat]
         Billing[Billing]
         Profile[Profile]
     end
@@ -323,7 +407,9 @@ flowchart LR
 - Posts, About, Portfolio = **No authentication**
 - Products and all sub-features = **Hanko JWT required**
 - Parse API checks JWT for protected endpoints
+- PocketFlow WebSocket requires JWT validation
 - Billing operations require valid subscription
+- AI Chat rate limited to control LLM API costs
 
 ---
 
@@ -334,6 +420,7 @@ flowchart LR
 | Frontend | Jekyll (brutalist-blog) |
 | Auth | Hanko (passkeys, OAuth) |
 | Backend | Parse Server (Node.js) |
+| AI Chat | PocketFlow (Python/FastAPI) |
 | Database | MongoDB |
 | Storage | MinIO / S3 / R2 |
 | Email | BillionMail (Postfix, Dovecot) |
@@ -356,6 +443,9 @@ NewSaaS/
 │   └── parse-server/        # Main API
 ├── SSO/
 │   └── hanko/               # Authentication
+├── Automation/
+│   └── PocketFlow/          # AI chat framework
+│       └── cookbook/        # Example implementations
 ├── Mail/
 │   └── BillionMail/         # Email server
 ├── Payments/
@@ -375,11 +465,12 @@ NewSaaS/
 2. **Deploy Hanko** - Configure OAuth providers
 3. **Integrate Hanko with Parse** - JWT validation
 4. **Create Products page** - Protected route with auth
-5. **Add chat** - Parse LiveQuery + Message class
-6. **Integrate Flowglad** - Billing SDK in Products
-7. **Test with TestPayment** - Mock payment flows
-8. **Sync GitHub repos** - Full archives to bucket
+5. **Deploy PocketFlow AI Chat** - FastAPI WebSocket service
+6. **Add AI chat widget** - Connect to PocketFlow from Products page
+7. **Integrate Flowglad** - Billing SDK in Products
+8. **Test with TestPayment** - Mock payment flows
+9. **Sync GitHub repos** - Full archives to bucket
 
 ---
 
-*Document version: 2.0 | Last updated: 2026-02-16*
+*Document version: 2.1 | Last updated: 2026-02-16*
