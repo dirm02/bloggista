@@ -5,481 +5,381 @@
   mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
 </script>
 
-A comprehensive plan to evolve the platform from a static portfolio/blog into a full-stack SaaS with GitHub archive storage, user management, chat, and email capabilities.
+A plan to expand the blog into a full SaaS platform with public marketing pages and a private authenticated Products area.
 
 ---
 
-## Executive Summary
-
-| Component | Purpose | Location |
-|-----------|---------|----------|
-| **Parse Server** | Main BaaS: data, files, real-time | `Backends/parse-server` |
-| **Hanko** | SSO, passkeys, OAuth, MFA | `SSO/hanko` |
-| **BillionMail** | Email delivery, campaigns | `Mail/BillionMail` |
-| **Object Bucket** | GitHub repo archives (S3-compatible) | New |
-| **mystars + Sync** | Download full repos → bucket | Evolve `mystars` |
-
----
-
-## 1. High-Level Architecture
+## Architecture Overview
 
 ```mermaid
 flowchart TB
-    subgraph Frontend [Frontend Layer]
-        Blog[Blog / Portfolio]
-        WebApp[Web Application]
-        ChatUI[Chat UI]
+    subgraph Public [Public Pages - No Auth]
+        Posts[Posts/Blog]
+        About[About]
+        Portfolio[Portfolio]
     end
 
-    subgraph Auth [Authentication]
+    subgraph Private [Products Page - Auth Required]
+        Products[Products Dashboard]
+        Chat[Chat]
+        Billing[Billing]
+        UserProfile[User Profile]
+        RepoArchive[GitHub Archives]
+    end
+
+    subgraph Backend [Backend Services]
         Hanko[Hanko SSO]
-    end
-
-    subgraph Backend [Backend Layer]
         Parse[Parse Server]
+        BillionMail[BillionMail SMTP]
+        Flowglad[Flowglad Billing]
+        Bucket[Object Bucket]
     end
 
-    subgraph Data [Data & Storage]
-        MongoDB[(MongoDB)]
-        Bucket[(Object Bucket)]
-    end
-
-    subgraph Services [External Services]
-        GitHub[GitHub API]
-        BillionMail[BillionMail]
-    end
-
-    WebApp --> Hanko
-    ChatUI --> Parse
-    WebApp --> Parse
-    Parse --> Hanko
-    Parse --> MongoDB
-    Parse --> Bucket
+    Posts --> Parse
+    Portfolio --> Parse
+    Products --> Hanko
+    Products --> Parse
+    Chat --> Parse
+    Billing --> Flowglad
+    UserProfile --> Parse
+    RepoArchive --> Bucket
     Parse --> BillionMail
-    Blog --> Parse
-    mystars[Sync Pipeline] --> GitHub
-    mystars --> Bucket
-    mystars --> Parse
+    Parse --> Bucket
 ```
 
 ---
 
-## 2. Component Overview
+## Page Structure
 
-### 2.1 GitHub Repo Download → Object Bucket
+| Page | Access | Purpose |
+|------|--------|---------|
+| **Posts** | Public | Blog articles, SEO content |
+| **About** | Public | Company info, team, mission |
+| **Portfolio** | Public | GitHub starred projects showcase |
+| **Products** | Authenticated | Dashboard, billing, chat, profile |
 
-**Current state:** `mystars` fetches only READMEs; `sync_portfolio.rb` reads them and generates `portfolio.json`.
+---
 
-**Target state:** Download full repositories as tarballs/zip, store in an object bucket, and register metadata in Parse Server.
+## 1. Public Frontend (SEO and Attraction)
+
+These pages remain **public** to attract visitors and improve SEO.
+
+### Posts (Blog)
+- Articles, tutorials, news
+- SEO optimized
+- No login required
+
+### About
+- Company information
+- Team profiles
+- Contact info
+
+### Portfolio
+- GitHub starred projects (from mystars)
+- Categories, search, filters
+- Project details and READMEs
 
 ```mermaid
 flowchart LR
-    subgraph Source [Source]
-        GitHub[GitHub API]
-        mystars[mystars]
-    end
-
-    subgraph Pipeline [Pipeline]
-        Fetch[Fetch Repo Archive]
-        Extract[Extract & Validate]
-        Upload[Upload to Bucket]
-        Index[Index in Parse]
-    end
-
-    subgraph Storage [Storage]
-        Bucket[(S3-compatible Bucket)]
-        ParseDB[(Parse Server)]
-    end
-
-    mystars --> Fetch
-    GitHub --> Fetch
-    Fetch --> Extract
-    Extract --> Upload
-    Upload --> Bucket
-    Upload --> Index
-    Index --> ParseDB
+    Visitor[Visitor] --> Posts
+    Visitor --> About
+    Visitor --> Portfolio
+    Posts --> SEO[Search Engines]
+    Portfolio --> SEO
 ```
-
-**Key decisions:**
-- **Bucket:** MinIO (self-hosted), AWS S3, or Cloudflare R2
-- **Format:** Repo tarball (`archive/master.tar.gz`) or shallow clone zip
-- **Sync:** Extend mystars workflow or create a separate service that runs on schedule
 
 ---
 
-### 2.2 Parse Server Backend
+## 2. Private Products Area (Authenticated)
+
+The **Products page** requires login and contains all premium features.
+
+### Features behind auth:
+- User dashboard
+- Chat with other users
+- Billing and subscriptions
+- Profile management
+- GitHub repo archives (full downloads)
+
+```mermaid
+flowchart TB
+    User[User] --> Login[Hanko Login]
+    Login --> Products[Products Dashboard]
+    Products --> Chat[Chat]
+    Products --> Billing[Billing]
+    Products --> Profile[Profile]
+    Products --> Archives[Repo Archives]
+```
+
+---
+
+## 3. Backend Services
+
+### 3.1 Parse Server
 
 **Location:** `Backends/parse-server`
 
 **Role:**
-- Main API for app data, users (linked to Hanko), and file references
-- File storage adapter pointing to object bucket
-- LiveQuery for real-time chat
-- Cloud Code for business logic (sync triggers, notifications)
+- Main API for data storage
+- User data linked to Hanko
+- Chat messages via LiveQuery
+- File references to bucket
 
-```mermaid
-flowchart TB
-    subgraph ParseServer [Parse Server]
-        REST[REST API]
-        GraphQL[GraphQL]
-        LiveQuery[LiveQuery]
-        CloudCode[Cloud Code]
-        FileStorage[File Adapter]
-    end
-
-    REST --> MongoDB
-    GraphQL --> MongoDB
-    LiveQuery --> MongoDB
-    FileStorage --> Bucket
-    CloudCode --> Hanko
-    CloudCode --> BillionMail
-```
-
-**Use cases:**
-- User profiles (service provider vs general user)
-- Chat messages
-- GitHub repo metadata and bucket URLs
-- Notifications, preferences
-
----
-
-### 2.3 Hanko SSO
+### 3.2 Hanko SSO
 
 **Location:** `SSO/hanko`
 
 **Role:**
-- Single sign-on for WebApp, Blog, and future clients
-- Passkeys, passwords, OAuth (Google, GitHub, etc.)
-- SAML for enterprise (optional)
+- Single sign-on for Products page
+- Passkeys, passwords, OAuth
 - JWT for Parse Server validation
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant WebApp
-    participant Hanko
-    participant Parse
-
-    User->>WebApp: Access
-    WebApp->>Hanko: Login flow
-    Hanko->>User: Auth UI (passkeys/OAuth)
-    User->>Hanko: Authenticate
-    Hanko->>WebApp: JWT
-    WebApp->>Parse: Request + JWT
-    Parse->>Hanko: Validate JWT
-    Hanko->>Parse: Token valid
-    Parse->>WebApp: Data
-```
-
-**Integration with Parse:**
-- Use Parse auth adapter or custom auth middleware to validate Hanko JWT
-- Map Hanko user ID to Parse `_User` for ACLs and relations
-
----
-
-### 2.4 User Profiles: Service Provider vs General User
-
-| Profile Type | Capabilities |
-|--------------|--------------|
-| **General User** | View portfolio, use chat, subscribe to newsletters |
-| **Service Provider** | All of above + list services, manage bookings, access analytics |
+**Auth flow:**
 
 ```mermaid
-erDiagram
-    _User ||--o| Profile : has
-    Profile ||--o{ ServiceProvider : extends
-    Profile {
-        string userId
-        string type "general|service_provider"
-        string displayName
-        string avatarUrl
-    }
-    ServiceProvider {
-        string profileId
-        string[] services
-        json settings
-    }
+flowchart LR
+    User[User] --> Products[Products Page]
+    Products --> Hanko[Hanko Auth]
+    Hanko --> JWT[JWT Token]
+    JWT --> Parse[Parse Server]
 ```
 
----
-
-### 2.5 Chat Feature
-
-**Implementation options:**
-- **Parse LiveQuery + Message class:** Simple, real-time, fits existing stack
-- **Dedicated chat server (e.g. Matrix, Rocket.Chat):** More features, more complexity
-
-Recommended: Parse `Message` class + LiveQuery for MVP.
-
-```mermaid
-flowchart TB
-    subgraph Clients [Clients]
-        A[User A]
-        B[User B]
-    end
-
-    subgraph Parse [Parse Server]
-        REST2[REST/GraphQL]
-        LiveQuery2[LiveQuery]
-    end
-
-    subgraph Storage2 [Storage]
-        Messages[(Messages Collection)]
-    end
-
-    A --> REST2
-    B --> LiveQuery2
-    REST2 --> Messages
-    LiveQuery2 --> Messages
-    REST2 --> Notify[BillionMail / Push]
-```
-
----
-
-### 2.6 BillionMail Integration
+### 3.3 BillionMail SMTP
 
 **Location:** `Mail/BillionMail`
 
 **Role:**
-- Transactional email (welcome, reset, chat notifications)
-- Newsletter for portfolio/blog subscribers
-- SMTP relay for app emails
+- Welcome emails
+- Password reset
+- Chat notifications
+- Newsletter for subscribers
+
+### 3.4 Flowglad Billing
+
+**Location:** `Payments/flowglad`
+
+**Role:**
+- Subscription management
+- Usage meters and feature gates
+- Stateless billing (no webhooks)
+
+**Integration:**
 
 ```mermaid
 flowchart LR
-    subgraph Apps [Applications]
-        Parse3[Parse Server]
-        Blog2[Blog]
-    end
-
-    subgraph Mail [BillionMail]
-        SMTP[SMTP]
-        API[API if available]
-    end
-
-    Parse3 --> SMTP
-    Blog2 --> SMTP
+    User[User] --> Products[Products]
+    Products --> Flowglad[Flowglad SDK]
+    Flowglad --> Stripe[Stripe/Payment Provider]
+    Flowglad --> Parse[Parse - Store Status]
 ```
+
+### 3.5 TestPayment (Development)
+
+**Location:** `Payments/testpayment`
+
+**Role:**
+- Mock payment gateway for testing
+- Simulates payment flows
+- OTP verification
+- Webhook simulation
+
+**Use:** Development and testing only, not production.
+
+### 3.6 Object Bucket
+
+**Provider:** MinIO / S3 / R2
+
+**Role:**
+- Store full GitHub repo archives
+- File storage for user uploads
 
 ---
 
-## 3. Where to Start: Implementation Phases
+## 4. User Profiles
+
+Two user types in the Products area:
+
+| Type | Capabilities |
+|------|--------------|
+| **General User** | View products, chat, subscribe |
+| **Service Provider** | All above + list services, analytics |
 
 ```mermaid
 flowchart TB
-    A1[Object Bucket] --> A2[Parse Config]
-    A2 --> A3[Hanko Setup]
-    A3 --> B1[Hanko Parse Integration]
-    B1 --> B2[User Profiles]
-    B2 --> B3[Blog WebApp Auth]
-    B3 --> C1[Repo Download Service]
-    B3 --> D1[Chat MVP]
-    C1 --> C2[Bucket Upload Index]
-    C2 --> C3[mystars Evolution]
-    D1 --> D2[BillionMail Connection]
-    D2 --> D3[E2E Tests]
+    Hanko[Hanko Auth] --> Parse[Parse Server]
+    Parse --> Profile[Profile Class]
+    Profile --> General[General User]
+    Profile --> Provider[Service Provider]
+    Provider --> Services[Services List]
+    Provider --> Analytics[Analytics]
 ```
 
-### Phase 1: Foundation (Weeks 1–2)
-
-1. **Object bucket setup**
-   - Choose provider (MinIO / S3 / R2)
-   - Configure bucket, credentials, and CORS
-
-2. **Parse Server configuration**
-   - Configure file adapter to use bucket
-   - Create basic `_User` schema and optional custom auth
-   - Basic Cloud Code health check
-
-3. **Hanko setup**
-   - Deploy Hanko (Docker or Hanko Cloud)
-   - Configure OAuth providers if needed
-   - Obtain JWT validation endpoint/keys
-
 ---
 
-### Phase 2: Authentication & Profiles (Weeks 3–4)
-
-4. **Hanko ↔ Parse integration**
-   - Custom auth adapter: validate Hanko JWT and create/link Parse user
-   - Map `userId` from Hanko to Parse `_User`
-
-5. **User profiles**
-   - `Profile` class with `type` (general | service_provider)
-   - `ServiceProvider` class for extended fields
-   - Cloud Code hooks for profile creation on first login
-
-6. **Blog/WebApp auth**
-   - Integrate Hanko Elements in frontend
-   - Protect routes based on JWT
-   - Optional: Parse dashboard for profile management
-
----
-
-### Phase 3: GitHub Archive Pipeline (Weeks 5–6)
-
-7. **Repo download service**
-   - Script/service: fetch `archive/{ref}.tar.gz` per starred repo
-   - Optional: shallow clone instead of archive
-
-8. **Bucket upload & indexing**
-   - Upload archive to bucket (path: `repos/{owner}/{repo}/{ref}.tar.gz`)
-   - Create/update `GitHubRepo` (or equivalent) in Parse with metadata and bucket URL
-   - Evolve or replace `sync_portfolio.rb` to read from Parse instead of local JSON
-
-9. **mystars evolution**
-   - Add “full archive” mode to mystars or separate job
-   - Run on schedule (GitHub Actions, cron) with rate limiting
-
----
-
-### Phase 4: Chat & Email (Weeks 7–8)
-
-10. **Chat MVP**
-    - `Message` class: `sender`, `recipient`, `content`, `timestamp`
-    - REST API for send; LiveQuery for receive
-    - Simple chat UI (e.g. in WebApp)
-    - ACLs so only participants can read/write
-
-11. **BillionMail connection**
-    - Configure Parse to use BillionMail SMTP
-    - Implement welcome, password reset, and chat notification templates
-    - Optional: subscribe to BillionMail API for campaign management
-
-12. **End-to-end tests**
-    - Auth flow: Hanko → Parse
-    - Chat: send → LiveQuery → receive
-    - Email delivery via BillionMail
-
----
-
-## 4. Dependency Graph
+## 5. Data Flow
 
 ```mermaid
-flowchart TD
-    Bucket[Object Bucket] --> Parse
-    Hanko[Hanko] --> Parse
-    Parse --> Profiles[User Profiles]
-    Parse --> Chat[Chat]
-    Parse --> RepoIndex[Repo Index]
-    mystars[Repo Sync] --> Bucket
-    mystars --> Parse
-    Parse --> BillionMail
-```
+flowchart TB
+    subgraph PublicFlow [Public Flow]
+        V1[Visitor] --> Blog[Posts]
+        V1 --> Port[Portfolio]
+        Blog --> Parse1[Parse API]
+        Port --> Parse1
+    end
 
-**Critical path:** Bucket → Parse → Hanko integration → Profiles → Chat & Email
-
----
-
-## 5. Data Models (Parse Server)
-
-### GitHubRepo (evolved from portfolio.json)
-```
-GitHubRepo:
-  - repoUrl: String
-  - owner: String
-  - repo: String
-  - bucketKey: String       // path in bucket
-  - categories: Array<String>
-  - language: String
-  - stars: Number
-  - lastUpdated: Date
-  - indexedContent: String  // README excerpt for search
-```
-
-### Profile
-```
-Profile:
-  - userId: Pointer<_User>
-  - type: String            // "general" | "service_provider"
-  - displayName: String
-  - avatarUrl: String
-  - createdAt: Date
-  - updatedAt: Date
-```
-
-### ServiceProvider (extends Profile)
-```
-ServiceProvider:
-  - profileId: Pointer<Profile>
-  - services: Array<String>
-  - settings: Object
-```
-
-### Message
-```
-Message:
-  - sender: Pointer<_User>
-  - recipient: Pointer<_User>
-  - content: String
-  - readAt: Date (optional)
-  - createdAt: Date
+    subgraph AuthFlow [Authenticated Flow]
+        U1[User] --> Hanko[Hanko Login]
+        Hanko --> JWT[JWT]
+        JWT --> Prod[Products]
+        Prod --> Parse2[Parse API]
+        Prod --> Flow[Flowglad]
+        Parse2 --> Bucket[Bucket]
+        Parse2 --> Mail[BillionMail]
+    end
 ```
 
 ---
 
-## 6. Directory Structure (Proposed)
+## 6. Implementation Phases
 
+```mermaid
+flowchart TB
+    P1[Phase 1: Infrastructure] --> P2[Phase 2: Auth]
+    P2 --> P3[Phase 3: Features]
+    P3 --> P4[Phase 4: Billing]
 ```
-NewSaaS/
-├── Backends/
-│   └── parse-server/           # Main BaaS
-├── SSO/
-│   └── hanko/                  # Authentication
-├── Mail/
-│   └── BillionMail/            # Email server
-├── blog/
-│   └── brutalist-blog/         # Existing blog
-├── mystars/                    # Evolve: add full-repo sync
-├── services/
-│   ├── repo-sync/              # New: GitHub → Bucket → Parse
-│   └── email-relay/            # Optional: Parse → BillionMail bridge
-├── infrastructure/
-│   ├── docker-compose.yml      # Local stack
-│   ├── terraform/              # Cloud provisioning
-│   └── minio/                  # Or S3/R2 config
-└── docs/
-    └── api/                    # API documentation
-```
+
+### Phase 1: Infrastructure
+
+| Task | Component | Location |
+|------|-----------|----------|
+| Setup bucket | MinIO/S3/R2 | New |
+| Configure Parse | Parse Server | `Backends/parse-server` |
+| Deploy BillionMail | Email | `Mail/BillionMail` |
+
+### Phase 2: Authentication
+
+| Task | Component | Location |
+|------|-----------|----------|
+| Deploy Hanko | SSO | `SSO/hanko` |
+| Integrate Hanko with Parse | Auth adapter | Parse config |
+| Protect Products page | Frontend | Blog |
+| User profile classes | Data model | Parse |
+
+### Phase 3: Features
+
+| Task | Component | Location |
+|------|-----------|----------|
+| Chat with LiveQuery | Messaging | Parse + Frontend |
+| GitHub repo sync to bucket | Pipeline | `mystars` evolution |
+| Email notifications | SMTP | BillionMail |
+
+### Phase 4: Billing
+
+| Task | Component | Location |
+|------|-----------|----------|
+| Integrate Flowglad SDK | Billing | `Payments/flowglad` |
+| Setup test environment | Testing | `Payments/testpayment` |
+| Subscription plans | Products | Frontend + Flowglad |
+| Usage tracking | Metering | Flowglad |
 
 ---
 
-## 7. Technology Stack Summary
+## 7. Component Summary
+
+| Component | Location | Purpose |
+|-----------|----------|---------|
+| **Parse Server** | `Backends/parse-server` | Main API, data, realtime |
+| **Hanko** | `SSO/hanko` | Authentication, SSO |
+| **BillionMail** | `Mail/BillionMail` | Email delivery |
+| **Flowglad** | `Payments/flowglad` | Billing SDK |
+| **TestPayment** | `Payments/testpayment` | Payment testing |
+| **Object Bucket** | MinIO/S3/R2 | File storage |
+| **mystars** | `mystars/` | GitHub repo sync |
+
+---
+
+## 8. Security Model
+
+```mermaid
+flowchart LR
+    subgraph PublicAccess [No Auth Required]
+        Posts[Posts]
+        About[About]
+        Portfolio[Portfolio]
+    end
+
+    subgraph ProtectedAccess [Auth Required]
+        Products[Products]
+        Chat[Chat]
+        Billing[Billing]
+        Profile[Profile]
+    end
+
+    Hanko[Hanko SSO] --> ProtectedAccess
+```
+
+**Rules:**
+- Posts, About, Portfolio = **No authentication**
+- Products and all sub-features = **Hanko JWT required**
+- Parse API checks JWT for protected endpoints
+- Billing operations require valid subscription
+
+---
+
+## 9. Technology Stack
 
 | Layer | Technology |
 |-------|------------|
-| Auth | Hanko (Go + TS) |
+| Frontend | Jekyll (brutalist-blog) |
+| Auth | Hanko (passkeys, OAuth) |
 | Backend | Parse Server (Node.js) |
-| Database | MongoDB (or PostgreSQL) |
-| Object Storage | MinIO / S3 / R2 |
-| Email | BillionMail (Postfix, Dovecot, etc.) |
-| Repo Sync | Node.js or Go service |
-| Frontend | Existing blog + WebApp (TBD) |
+| Database | MongoDB |
+| Storage | MinIO / S3 / R2 |
+| Email | BillionMail (Postfix, Dovecot) |
+| Billing | Flowglad (TypeScript SDK) |
+| Testing | TestPayment (Python/FastAPI) |
 
 ---
 
-## 8. Risks & Mitigations
+## 10. Directory Structure
 
-| Risk | Mitigation |
-|------|------------|
-| GitHub rate limits | Use token, batch sync, respect 5k/hour |
-| Bucket costs | Use lifecycle rules, compress archives |
-| Hanko ↔ Parse token sync | Document flow, add integration tests |
-| Email deliverability | SPF/DKIM/DMARC, warm up domain |
+```
+NewSaaS/
+├── blog/
+│   └── brutalist-blog/      # Jekyll site
+│       ├── _posts/          # Blog posts (public)
+│       ├── about.md         # About page (public)
+│       ├── portfolio.md     # Portfolio (public)
+│       └── products.md      # Products (auth required)
+├── Backends/
+│   └── parse-server/        # Main API
+├── SSO/
+│   └── hanko/               # Authentication
+├── Mail/
+│   └── BillionMail/         # Email server
+├── Payments/
+│   ├── flowglad/            # Billing SDK
+│   └── testpayment/         # Mock gateway
+├── mystars/                 # GitHub sync
+└── infrastructure/
+    ├── docker-compose.yml
+    └── bucket/              # MinIO config
+```
 
 ---
 
-## 9. Next Actions
+## 11. Next Actions
 
-1. Confirm bucket provider (MinIO vs S3 vs R2).
-2. Stand up Parse Server with bucket file adapter.
-3. Deploy Hanko and configure at least one OAuth provider.
-4. Implement Hanko JWT validation in Parse.
-5. Add `Profile` and `ServiceProvider` classes.
-6. Build repo-sync service (GitHub → Bucket → Parse).
-7. Add `Message` class and minimal chat UI.
-8. Configure BillionMail SMTP in Parse.
+1. **Setup infrastructure** - Bucket, Parse, BillionMail
+2. **Deploy Hanko** - Configure OAuth providers
+3. **Integrate Hanko with Parse** - JWT validation
+4. **Create Products page** - Protected route with auth
+5. **Add chat** - Parse LiveQuery + Message class
+6. **Integrate Flowglad** - Billing SDK in Products
+7. **Test with TestPayment** - Mock payment flows
+8. **Sync GitHub repos** - Full archives to bucket
 
 ---
 
-*Document version: 1.0 | Last updated: 2026-02-16*
+*Document version: 2.0 | Last updated: 2026-02-16*
