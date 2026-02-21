@@ -29,27 +29,25 @@ flowchart TB
     end
 
     subgraph Backend [Backend Services]
-        Hanko[Hanko SSO]
-        Parse[Parse Server]
+        PocketBase[PocketBase API]
         PocketFlow[PocketFlow AI]
         BillionMail[BillionMail SMTP]
         Flowglad[Flowglad Billing]
         Bucket[Object Bucket]
     end
 
-    Posts --> Parse
-    Portfolio --> Parse
+    Posts --> PocketBase
+    Portfolio --> PocketBase
     AIChat --> PocketFlow
     AIChat -.->|reads| Portfolio
-    PocketFlow --> Parse
-    Products --> Hanko
-    Products --> Parse
-    UserChat --> Parse
+    PocketFlow --> PocketBase
+    Products --> PocketBase
+    UserChat --> PocketBase
     Billing --> Flowglad
-    UserProfile --> Parse
+    UserProfile --> PocketBase
     RepoArchive --> Bucket
-    Parse --> BillionMail
-    Parse --> Bucket
+    PocketBase --> BillionMail
+    PocketBase --> Bucket
 ```
 
 ---
@@ -111,8 +109,8 @@ flowchart TB
     AIChat --> Portfolio[Reads Portfolio Data]
     Portfolio --> Response[AI Suggests Projects]
     Response --> CTA[Prompt: Register for More]
-    CTA --> Hanko[Hanko Signup]
-    Hanko --> RegisteredUser[Registered User]
+    CTA --> PocketBase[PocketBase Signup]
+    PocketBase --> RegisteredUser[Registered User]
     RegisteredUser --> Products[Access Products]
 ```
 
@@ -135,7 +133,7 @@ The **Products page** requires login and contains all premium features.
 
 ### Features behind auth:
 - User dashboard
-- User-to-user chat (real-time messaging via Parse LiveQuery)
+- User-to-user chat (real-time messaging via PocketBase SSE subscriptions)
 - AI Chat with full history (enhanced version, no signup prompts)
 - Billing and subscriptions
 - Profile management (General User or Service Provider)
@@ -143,7 +141,7 @@ The **Products page** requires login and contains all premium features.
 
 ```mermaid
 flowchart TB
-    User[User] --> Login[Hanko Login]
+    User[User] --> Login[PocketBase Login]
     Login --> Products[Products Dashboard]
     Products --> UserChat[User-to-User Chat]
     Products --> Billing[Billing]
@@ -155,67 +153,49 @@ flowchart TB
 
 ## 3. Backend Services
 
-### 3.1 Parse Server
+### 3.1 PocketBase
 
-**Location:** `Backends/parse-server`
+**Location:** `Backends/pocketbase`
 
 **Role:**
-- Main API for all app data
-- User data linked to Hanko
-- User-to-user chat messages via LiveQuery (real-time WebSocket)
+- Main API for all app data (REST at `/api/*`)
+- Built-in users/auth with OAuth2 (Google, GitHub)
+- User-to-user chat messages via SSE subscriptions (realtime)
 - AI chat conversation logs
-- File references to bucket
-- Cloud Code for business logic
+- File storage (local or S3)
+- Embedded SQLite database (no separate DB service)
+- Admin UI at `/_/`
+- JS migrations and hooks for business logic
 
-**User-to-User Chat via Parse:**
-
-```mermaid
-flowchart LR
-    UserA[User A] --> REST[Parse REST API]
-    REST --> Messages[(Messages Collection)]
-    Messages --> LiveQuery[Parse LiveQuery]
-    LiveQuery --> UserB[User B]
-```
-
-Parse LiveQuery provides real-time push over WebSocket. When User A sends a message, User B receives it instantly without polling.
-
-**Data Models for Chat:**
-
-```
-Message:
-  - sender: Pointer<_User>
-  - recipient: Pointer<_User>
-  - content: String
-  - readAt: Date (nullable)
-  - createdAt: Date
-
-Conversation:
-  - participants: Array<Pointer<_User>>
-  - lastMessage: String
-  - updatedAt: Date
-```
-
-### 3.2 Hanko SSO
-
-**Location:** `SSO/hanko`
-
-**Role:**
-- Single sign-on for Products page
-- Passkeys, passwords, OAuth (Google, GitHub)
-- JWT for Parse Server validation
-- AI Chat detects JWT presence to switch between guest and registered behavior
-
-**Auth flow:**
+**User-to-User Chat via PocketBase:**
 
 ```mermaid
 flowchart LR
-    User[User] --> Products[Products Page]
-    Products --> Hanko[Hanko Auth]
-    Hanko --> JWT[JWT Token]
-    JWT --> Parse[Parse Server]
+    UserA[User A] --> REST[PocketBase REST API]
+    REST --> Messages[(messages collection)]
+    Messages --> SSE[PocketBase SSE]
+    SSE --> UserB[User B]
 ```
 
-### 3.3 BillionMail SMTP
+PocketBase provides real-time push via Server-Sent Events. When User A sends a message, User B receives it instantly through subscriptions.
+
+**Data Models for Chat (PocketBase collections):**
+
+```
+messages:
+  - sender: relation(users)
+  - recipient: relation(users)
+  - content: text
+  - readAt: date (nullable)
+  - created: datetime
+
+conversations:
+  - participants: json (array of user ids)
+  - lastMessage: text
+  - updated: datetime
+```
+
+### 3.2 BillionMail SMTP
 
 **Location:** `Mail/BillionMail`
 
@@ -225,7 +205,7 @@ flowchart LR
 - Chat notifications (new message alerts)
 - Newsletter for blog subscribers
 
-### 3.4 Flowglad Billing
+### 3.3 Flowglad Billing
 
 **Location:** `Payments/flowglad`
 
@@ -241,10 +221,10 @@ flowchart LR
     User[User] --> Products[Products]
     Products --> Flowglad[Flowglad SDK]
     Flowglad --> Stripe[Stripe/Payment Provider]
-    Flowglad --> Parse[Parse - Store Status]
+    Flowglad --> PocketBase[PocketBase - Store Status]
 ```
 
-### 3.5 TestPayment (Development Only)
+### 3.4 TestPayment (Development Only)
 
 **Location:** `Payments/testpayment`
 
@@ -256,7 +236,7 @@ flowchart LR
 
 **Use:** Development and testing only, never production.
 
-### 3.6 Object Bucket
+### 3.5 Object Bucket
 
 **Provider:** MinIO / S3 / R2
 
@@ -265,7 +245,7 @@ flowchart LR
 - File storage for user uploads
 - Chat file attachments (future)
 
-### 3.7 PocketFlow AI Chat (Public Service)
+### 3.6 PocketFlow AI Chat (Public Service)
 
 **Location:** `Automation/PocketFlow`
 
@@ -303,7 +283,7 @@ flowchart TB
 | Mode | Conversation Depth | History | Portfolio Access | Signup Prompts |
 |------|-------------------|---------|-----------------|----------------|
 | **Guest** | Limited (e.g. 10 messages per session) | Session only (anonymous) | Yes (read-only) | Yes, after a few exchanges |
-| **Registered** | Unlimited | Persistent (Parse) | Yes + personalized | No |
+| **Registered** | Unlimited | Persistent (PocketBase) | Yes + personalized | No |
 
 **Cookbook Examples:**
 
@@ -326,7 +306,7 @@ flowchart TB
     GuestFlow --> PocketFlow[PocketFlow AsyncFlow]
     RegFlow --> PocketFlow
     PocketFlow --> LLM[OpenAI / LLM API]
-    PocketFlow --> Parse[Parse Server - Save Logs]
+    PocketFlow --> PocketBase[PocketBase - Save Logs]
     PocketFlow --> PortfolioData[Portfolio Data - Projects]
 ```
 
@@ -367,7 +347,7 @@ openai
 - If JWT is present, PocketFlow detects it and switches to registered mode
 - Guest sessions: rate limit by IP (e.g. 10 messages/session, 50/day)
 - Registered sessions: rate limit by user ID (higher budget)
-- All conversations logged in Parse for analytics
+- All conversations logged in PocketBase for analytics
 
 ---
 
@@ -379,9 +359,9 @@ The platform has **two distinct chat systems** with different access levels and 
 |---------|-------------------|-------------------|
 | **Access** | Authenticated only (Products) | **Public** (all pages) |
 | **Purpose** | Messaging between users | AI help, project discovery, conversion |
-| **Backend** | Parse Server + LiveQuery | PocketFlow + FastAPI |
-| **Protocol** | Parse LiveQuery (WebSocket) | FastAPI WebSocket |
-| **Storage** | Parse Message class | Parse AIConversation class |
+| **Backend** | PocketBase + SSE subscriptions | PocketFlow + FastAPI |
+| **Protocol** | PocketBase SSE | FastAPI WebSocket |
+| **Storage** | PocketBase messages collection | PocketBase ai_conversations collection |
 | **Real-time** | Yes (LiveQuery push) | Yes (streaming tokens) |
 | **Cost** | Free (self-hosted) | Per token (LLM API) |
 | **Rate limit** | ACLs (participants only) | IP-based (guest) / user-based (registered) |
@@ -396,11 +376,11 @@ flowchart TB
     AIChat --> PocketFlow[PocketFlow Service]
     PocketFlow --> LLM[OpenAI API]
     PocketFlow --> PortData[Portfolio Data]
-    PocketFlow --> ParseLog[Parse - Save Logs]
+    PocketFlow --> PBLog[PocketBase - Save Logs]
 
-    UserChat --> Parse[Parse Server]
-    Parse --> LiveQuery[LiveQuery]
-    LiveQuery --> OtherUser[Other User]
+    UserChat --> PocketBase[PocketBase API]
+    PocketBase --> SSE[SSE Subscriptions]
+    SSE --> OtherUser[Other User]
 ```
 
 ---
@@ -417,8 +397,7 @@ Two user types in the Products area:
 
 ```mermaid
 flowchart TB
-    Hanko[Hanko Auth] --> Parse[Parse Server]
-    Parse --> Profile[Profile Class]
+    PocketBase[PocketBase Auth] --> Profile[profiles collection]
     Profile --> General[General User]
     Profile --> Provider[Service Provider]
     Provider --> Services[Services List]
@@ -435,23 +414,22 @@ flowchart TB
         V1[Visitor] --> Blog[Posts]
         V1 --> Port[Portfolio]
         V1 --> AIChat[AI Chat Widget]
-        Blog --> Parse1[Parse API]
-        Port --> Parse1
+        Blog --> PB1[PocketBase API]
+        Port --> PB1
         AIChat --> PFlow[PocketFlow]
         PFlow --> LLM[LLM API]
         PFlow -.->|reads| Port
     end
 
-    subgraph AuthFlow [Authenticated Flow - JWT Required]
-        U1[User] --> Hanko[Hanko Login]
-        Hanko --> JWT[JWT]
-        JWT --> Prod[Products]
-        Prod --> Parse2[Parse API]
+    subgraph AuthFlow [Authenticated Flow]
+        U1[User] --> PB[PocketBase Auth]
+        PB --> Prod[Products]
+        Prod --> PB2[PocketBase API]
         Prod --> UChat[User-to-User Chat]
         Prod --> FGlad[Flowglad]
-        UChat --> Parse2
-        Parse2 --> Bucket[Bucket]
-        Parse2 --> Mail[BillionMail]
+        UChat --> PB2
+        PB2 --> Bucket[Bucket]
+        PB2 --> Mail[BillionMail]
     end
 ```
 
@@ -473,18 +451,16 @@ flowchart TB
 | Task | Component | Location |
 |------|-----------|----------|
 | Setup object bucket | MinIO/S3/R2 | New |
-| Configure Parse Server | Backend API | `Backends/parse-server` |
+| Configure PocketBase | Backend API | `Backends/pocketbase` |
 | Deploy BillionMail | Email server | `Mail/BillionMail` |
-| Configure MongoDB | Database | Infrastructure |
 
 ### Phase 2: Authentication and Profiles (Weeks 3-4)
 
 | Task | Component | Location |
 |------|-----------|----------|
-| Deploy Hanko | SSO | `SSO/hanko` |
-| Integrate Hanko JWT with Parse | Auth adapter | Parse config |
-| Create Profile and ServiceProvider classes | Data model | Parse |
-| Protect Products page | Frontend auth | Blog |
+| Configure PocketBase OAuth2 | Auth | PocketBase Admin UI |
+| Create profiles collection | Data model | PocketBase |
+| Protect Products page | Frontend auth | Blog (PocketBase SDK) |
 | Welcome email on signup | Email | BillionMail |
 
 ### Phase 3: AI Chat - Public (Weeks 5-6)
@@ -502,8 +478,8 @@ flowchart TB
 
 | Task | Component | Location |
 |------|-----------|----------|
-| Create Message and Conversation classes | Data model | Parse |
-| Enable Parse LiveQuery | Real-time | Parse config |
+| Create messages and conversations collections | Data model | PocketBase |
+| Subscribe to collection via PocketBase SSE | Real-time | Frontend SDK |
 | Build user-to-user chat UI | Frontend | Products page |
 | Chat notification emails | Email | BillionMail |
 
@@ -522,7 +498,7 @@ flowchart TB
 |------|-----------|----------|
 | Repo download service | Pipeline | New service |
 | Upload archives to bucket | Storage | Bucket |
-| Index repos in Parse | Metadata | Parse |
+| Index repos in PocketBase | Metadata | PocketBase |
 | Evolve mystars or separate job | Sync | `mystars/` |
 | Repo browser in Products page | Frontend | Products page |
 
@@ -532,8 +508,7 @@ flowchart TB
 
 | Component | Location | Purpose |
 |-----------|----------|---------|
-| **Parse Server** | `Backends/parse-server` | Main API, data, user-to-user chat (LiveQuery) |
-| **Hanko** | `SSO/hanko` | Authentication, SSO |
+| **PocketBase** | `Backends/pocketbase` | Main API, SQLite, auth, user chat (SSE), file storage |
 | **PocketFlow** | `Automation/PocketFlow` | Public AI chat (guest + registered, with guardrails) |
 | **BillionMail** | `Mail/BillionMail` | Email delivery |
 | **Flowglad** | `Payments/flowglad` | Billing SDK |
@@ -561,14 +536,14 @@ flowchart LR
         Profile[Profile]
     end
 
-    Hanko[Hanko SSO] --> ProtectedAccess
-    AIChat -.->|optional JWT| Hanko
+    PocketBase[PocketBase Auth] --> ProtectedAccess
+    AIChat -.->|optional token| PocketBase
 ```
 
 **Rules:**
 - Posts, About, Portfolio, AI Chat = **No authentication required**
-- Products, User Chat, Billing, Profile = **Hanko JWT required**
-- Parse API checks JWT for all protected endpoints
+- Products, User Chat, Billing, Profile = **PocketBase auth required**
+- PocketBase API enforces auth for protected collections
 - User-to-user chat ACLs: only participants can read/write messages
 - AI Chat (guest): rate limited by IP, limited depth, signup prompts
 - AI Chat (registered): JWT detected automatically, full access, saved history
@@ -582,10 +557,10 @@ flowchart LR
 |-------|------------|--------|
 | Frontend | Jekyll (brutalist-blog) | Public |
 | AI Chat | PocketFlow (Python/FastAPI) | Public (with guardrails) |
-| Auth | Hanko (passkeys, OAuth) | Products gate |
-| Backend API | Parse Server (Node.js) | Mixed |
-| User Chat | Parse LiveQuery (WebSocket) | Authenticated |
-| Database | MongoDB | Backend |
+| Auth | PocketBase (email + OAuth2) | Products gate |
+| Backend API | PocketBase (Go) | Mixed |
+| User Chat | PocketBase SSE subscriptions | Authenticated |
+| Database | SQLite (embedded in PocketBase) | Backend |
 | Storage | MinIO / S3 / R2 | Backend |
 | Email | BillionMail (Postfix, Dovecot) | Backend |
 | Billing | Flowglad (TypeScript SDK) | Authenticated |
@@ -604,9 +579,7 @@ NewSaaS/
 │       ├── portfolio.md     # Portfolio (public)
 │       └── products.md      # Products (auth required)
 ├── Backends/
-│   └── parse-server/        # Main API + user chat
-├── SSO/
-│   └── hanko/               # Authentication
+│   └── pocketbase/          # Main API + auth + user chat
 ├── Automation/
 │   └── PocketFlow/          # AI chat framework
 │       └── cookbook/         # Example implementations
@@ -625,21 +598,20 @@ NewSaaS/
 
 ## 12. Next Actions
 
-1. **Setup infrastructure** - Bucket, Parse Server, MongoDB, BillionMail
-2. **Deploy Hanko** - Configure OAuth providers (Google, GitHub)
-3. **Integrate Hanko with Parse** - JWT validation adapter
-4. **Create user profile classes** - Profile, ServiceProvider in Parse
-5. **Protect Products page** - Hanko Elements login on frontend
-6. **Deploy PocketFlow AI Chat** - Public FastAPI WebSocket service
-7. **Build AI chat widget** - Floating widget on all public pages
-8. **Implement guardrails** - Guest vs registered mode, portfolio reader, conversion CTAs
-9. **Build user-to-user chat** - Message class, LiveQuery, chat UI in Products
-10. **Chat notification emails** - BillionMail alerts for new messages
-11. **Integrate Flowglad** - Billing SDK, subscription plans
-12. **Test with TestPayment** - Mock payment flows
-13. **Build GitHub archive pipeline** - Download repos to bucket
-14. **Index repos in Parse** - Metadata and search
+1. **Setup infrastructure** - Bucket, PocketBase, BillionMail
+2. **Configure PocketBase OAuth2** - Google, GitHub in Admin UI
+3. **Create profiles collection** - General User, Service Provider
+4. **Protect Products page** - PocketBase SDK login on frontend
+5. **Deploy PocketFlow AI Chat** - Public FastAPI WebSocket service
+6. **Build AI chat widget** - Floating widget on all public pages
+7. **Implement guardrails** - Guest vs registered mode, portfolio reader, conversion CTAs
+8. **Build user-to-user chat** - messages/conversations collections, SSE, chat UI in Products
+9. **Chat notification emails** - BillionMail alerts for new messages
+10. **Integrate Flowglad** - Billing SDK, subscription plans
+11. **Test with TestPayment** - Mock payment flows
+12. **Build GitHub archive pipeline** - Download repos to bucket
+13. **Index repos in PocketBase** - Metadata and search
 
 ---
 
-*Document version: 4.0 | Last updated: 2026-02-16*
+*Document version: 5.0 | Last updated: 2026-02-16*
