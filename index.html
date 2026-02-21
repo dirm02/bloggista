@@ -5,7 +5,7 @@ layout: default
 <div class="page">
   <h1 class="page-title">Recent Posts</h1>
   
-  <div class="blog-grid row">
+  <div id="pocketbase-posts" class="blog-grid row">
     {% for post in site.posts limit:12 %}
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
       <a href="{{ post.url | relative_url }}" class="blog-card text-decoration-none">
@@ -31,3 +31,51 @@ layout: default
   </div>
   {% endif %}
 </div>
+<!-- PocketBase SDK -->
+<script src="https://github.com/pocketbase/js-sdk/releases/download/v0.21.1/pocketbase.umd.js"></script>
+
+<!-- Your Custom Script -->
+<script>
+  // 1. Connect to your backend
+  const pb = new PocketBase('https://api.sur3.space');
+
+  // 2. Fetch the 'posts' collection
+  // (Make sure you created a collection named 'posts' in your Admin UI!)
+  pb.collection('posts').getList(1, 50, {
+    sort: '-created',
+  }).then((result) => {
+    const container = document.getElementById('pocketbase-posts');
+    
+    // Clear any static Jekyll posts if you want, or just append to them
+    // container.innerHTML = ''; 
+
+    // 3. Loop through each post and add it to the page
+    result.items.forEach((post) => {
+      // Create the HTML for one post
+      const postHTML = `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <a href="/posts/${post.slug}" class="blog-card text-decoration-none">
+            <div class="blog-card-image">
+               <!-- If you have an image field named 'featured_image' -->
+               <img src="${post.featured_image ? pb.files.getUrl(post, post.featured_image) : '/assets/images/portfolio-placeholder.svg'}" 
+                    alt="${post.title}" 
+                    loading="lazy" />
+            </div>
+            <div class="blog-card-content">
+              <h3 class="blog-card-title">${post.title}</h3>
+              <p class="blog-card-date">${new Date(post.created).toLocaleDateString()}</p>
+              <p class="blog-card-excerpt">
+                ${post.content ? post.content.replace(/<[^>]*>?/gm, '').substring(0, 100) + '...' : ''}
+              </p>
+            </div>
+          </a>
+        </div>
+      `;
+      
+      // Add it to the container
+      container.innerHTML += postHTML;
+    });
+  }).catch((error) => {
+    console.error("Error fetching posts:", error);
+  });
+</script>
