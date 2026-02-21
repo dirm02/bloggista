@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Who I am
 
-I’m MoMo, a builder obsessed with **giving people control over their own software** – not locking them into someone else’s platform.
+I’m MOMOSISI, a builder obsessed with **giving people control over their own software** – not locking them into someone else’s platform.
 
 I’ve spent years experimenting with stacks for **mobile apps, desktop tools, and web applications**, and turning that experience into ready‑to‑ship products and repeatable services.
 
