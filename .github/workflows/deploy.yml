@@ -1,42 +1,29 @@
-# CI/CD for bloggista - Netlify deployment
-# Netlify auto-deploys when you connect this repo at app.netlify.com
-# This workflow validates the Jekyll build (runs in parallel with Netlify)
-name: Build and Validate
+name: Deploy to VM
 
 on:
   push:
-    branches:
-      - main
-      - master
-  pull_request:
-    branches:
-      - main
-      - master
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Trigger deployment on VM
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Validate build output
-        run: |
-          if [ ! -d "_site" ]; then
-            echo "Error: _site directory not found after build"
-            exit 1
-          fi
-          echo "Build successful. Site size:"
-          du -sh _site
+          host: 34.130.37.178
+          username: mohamaddjamacorporation
+          key: ${{ secrets.VM_SSH_KEY }}
+          script: |
+            cd /home/mohamaddjamacorporation/Frontend/bloggista
+            git pull origin main
+            bundle install
+            bundle exec jekyll build
+            sudo rm -rf /var/www/bloggista/*
+            sudo cp -r _site/* /var/www/bloggista/
+            sudo chown -R www-data:www-data /var/www/bloggista
+            sudo chmod -R 755 /var/www/bloggista
+            sudo systemctl reload nginx
+            echo "✅ Deployment completed successfully!"
