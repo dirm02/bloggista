@@ -14,8 +14,8 @@
   
   const pb = new PocketBase('https://api.sur3.space');
 
-  // Fetch all portfolio items (up to 500 for now, increase if needed)
-  pb.collection('portfolio').getList(1, 500, {
+  // Fetch all portfolio items full list
+  pb.collection('portfolio').getFullList({
     sort: '-created',
   })
   .then(function (result) {
