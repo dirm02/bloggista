@@ -19,17 +19,21 @@
     sort: '-created',
   })
   .then(function (result) {
-    // Map PocketBase records to the format your app expects
-    const projects = result.items.map(record => ({
+    // OLD CODE (Wrong for getFullList):
+    // const projects = result.items.map(record => ({ ... }));
+
+    // NEW CODE (Correct for getFullList):
+    // 'result' IS the array of items directly
+    const projects = result.map(record => ({
       name: record.name,
       slug: record.slug,
-      categories: record.categories || [], // Expecting array from PB
-      image: record.image_url || '',       // We used 'image_url' in PB
+      categories: record.categories || [],
+      image: record.image_url || '',
       repo_url: record.repo_url,
       description: record.description,
       language: record.language,
       stars: record.stars,
-      // Add any other fields your app uses
+      indexed_content: record.content || '',
     }));
 
     return projects;
