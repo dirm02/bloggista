@@ -8,12 +8,34 @@
   
   if (!grid || !categoryFilter) return;
 
-  // Fetch portfolio data
-  fetch('/assets/data/portfolio.json')
-    .then(function (response) {
-      if (!response.ok) throw new Error('Failed to load portfolio');
-      return response.json();
-    })
+  // --- POCKETBASE INTEGRATION START ---
+  // Ensure the SDK is loaded in your HTML before this script!
+  // <script src="https://cdnjs.cloudflare.com/ajax/libs/pocketbase/0.21.1/pocketbase.umd.min.js"></script>
+  
+  const pb = new PocketBase('https://api.sur3.space');
+
+  // Fetch all portfolio items (up to 500 for now, increase if needed)
+  pb.collection('portfolio').getList(1, 500, {
+    sort: '-created',
+  })
+  .then(function (result) {
+    // Map PocketBase records to the format your app expects
+    const projects = result.items.map(record => ({
+      name: record.name,
+      slug: record.slug,
+      categories: record.categories || [], // Expecting array from PB
+      image: record.image_url || '',       // We used 'image_url' in PB
+      repo_url: record.repo_url,
+      description: record.description,
+      language: record.language,
+      stars: record.stars,
+      // Add any other fields your app uses
+    }));
+
+    return projects;
+  })
+  // --- POCKETBASE INTEGRATION END ---
+
     .then(function (projects) {
       window.PORTFOLIO_PROJECTS = projects;
       
@@ -21,16 +43,16 @@
       if (typeof Fuse !== 'undefined') {
         window.FUSE_INDEX = new Fuse(projects, {
           keys: [
-            { name: 'name', weight: 0.4 },           // Highest priority
-            { name: 'categories', weight: 0.3 },     // Second priority
-            { name: 'indexed_content', weight: 0.3 } // README content
+            { name: 'name', weight: 0.4 },
+            { name: 'categories', weight: 0.3 },
+            { name: 'description', weight: 0.3 } // Changed from indexed_content
           ],
-          threshold: 0.4,        // 0 = exact, 1 = match anything (0.4 = balanced)
-          distance: 100,         // Max character distance for fuzzy match
-          minMatchCharLength: 2, // Minimum query length
-          includeScore: true,    // For ranking
-          includeMatches: true,  // For highlighting (future use)
-          ignoreLocation: true,  // Search entire string, not just beginning
+          threshold: 0.4,
+          distance: 100,
+          minMatchCharLength: 2,
+          includeScore: true,
+          includeMatches: true,
+          ignoreLocation: true,
           useExtendedSearch: false
         });
       } else {
@@ -41,7 +63,7 @@
       if (loading) loading.style.display = 'none';
       if (filters) filters.style.display = '';
       
-      // Populate category dropdown (count = number of projects that have this category)
+      // Populate category dropdown
       var categories = {};
       var languages = {};
       projects.forEach(function (p) {
@@ -50,7 +72,6 @@
           categories[cat] = (categories[cat] || 0) + 1;
         });
         
-        // Extract language from project data (if available)
         if (p.language) {
           languages[p.language] = (languages[p.language] || 0) + 1;
         }
@@ -67,7 +88,7 @@
       
       // Populate language filter
       var languageFilter = document.getElementById('language-filter');
-      if (languageFilter && Object.keys(languages).length > 0) {
+      if (languageFilter) {
         var langKeys = Object.keys(languages).sort();
         languageFilter.innerHTML = '<option value="">All Languages (' + projects.length + ')</option>';
         langKeys.forEach(function (lang) {
@@ -78,21 +99,20 @@
         });
       }
       
-      // Render project cards (one card per project; categories stored for filtering)
+      // Render project cards
       projects.forEach(function (project, index) {
         var wrapper = document.createElement('div');
         wrapper.className = 'portfolio-card-wrapper col-6 col-md-4 col-lg-3 mb-4';
         wrapper.dataset.index = index;
         wrapper.dataset.name = (project.name || '').toLowerCase();
         wrapper.dataset.categories = (project.categories && project.categories.length) ? project.categories.join(',') : 'Uncategorized';
-        wrapper.dataset.search = (project.indexed_content || '').toLowerCase();
+        wrapper.dataset.search = (project.description || '').toLowerCase(); // Use description for search
         
-        // Add advanced filter attributes
         wrapper.dataset.language = project.language || '';
         wrapper.dataset.stars = project.stars || 0;
-        wrapper.dataset.lastUpdated = project.last_updated || '';
         
         var placeholderImg = '/assets/images/portfolio-placeholder.svg';
+        // Check if image is valid URL
         var imgSrc = project.image && project.image.startsWith('http') ? project.image : placeholderImg;
         
         wrapper.innerHTML = 
@@ -106,7 +126,7 @@
         grid.appendChild(wrapper);
       });
       
-      // Trigger portfolio init (pagination, filter, modal)
+      // Trigger portfolio init
       if (window.initPortfolio) {
         window.initPortfolio();
       }
