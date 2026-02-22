@@ -1,0 +1,53 @@
+---
+layout: default
+title: Loading...
+permalink: /view-post/
+---
+
+<div class="post-header">
+  <h1 id="post-title" class="post-title">Loading...</h1>
+  <div class="post-meta">
+    <span id="post-date"></span>
+  </div>
+</div>
+
+<div id="post-content" class="post-content">
+  <!-- Content will be injected here -->
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pocketbase/0.21.1/pocketbase.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  const pb = new PocketBase('https://api.sur3.space');
+  
+  // Get the slug from the URL query parameter ?slug=...
+  const urlParams = new URLSearchParams(window.location.search);
+  const slug = urlParams.get('slug');
+
+  if (slug) {
+    pb.collection('posts').getFirstListItem(`slug="${slug}"`)
+      .then((post) => {
+        document.title = post.title + " – Sur3 Space";
+        document.getElementById('post-title').innerText = post.title;
+        document.getElementById('post-date').innerText = new Date(post.created).toLocaleDateString();
+        
+        // Render Markdown content
+        document.getElementById('post-content').innerHTML = marked.parse(post.content);
+        
+        // Handle featured image if exists
+        if (post.featured_image) {
+           const imgUrl = pb.files.getUrl(post, post.featured_image);
+           const img = document.createElement('img');
+           img.src = imgUrl;
+           img.className = "featured-image mb-4";
+           document.querySelector('.post-header').appendChild(img);
+        }
+      })
+      .catch((err) => {
+        document.getElementById('post-content').innerHTML = "<p>Post not found.</p>";
+        console.error(err);
+      });
+  } else {
+    window.location.href = '/';
+  }
+</script>
