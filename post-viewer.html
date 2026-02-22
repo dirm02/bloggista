@@ -1,53 +1,120 @@
 ---
 layout: default
-title: Loading...
+title: Blog Post
 permalink: /view-post/
 ---
 
-<div class="post-header">
-  <h1 id="post-title" class="post-title">Loading...</h1>
-  <div class="post-meta">
-    <span id="post-date"></span>
+<div class="page post-viewer">
+  <!-- Loading State -->
+  <div id="loading-indicator" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <p class="mt-3 text-muted">Fetching post...</p>
   </div>
-</div>
 
-<div id="post-content" class="post-content">
-  <!-- Content will be injected here -->
+  <!-- Content Container (Hidden initially) -->
+  <div id="post-container" style="display: none;">
+    <header class="post-header mb-5">
+      <h1 id="post-title" class="post-title display-4 fw-bold mb-3"></h1>
+      <div class="post-meta text-muted border-bottom pb-3">
+        <span id="post-date"></span>
+      </div>
+    </header>
+
+    <div id="featured-image-container" class="mb-5 text-center">
+      <!-- Image injected here -->
+    </div>
+
+    <article id="post-content" class="post-content typography">
+      <!-- Markdown content injected here -->
+    </article>
+    
+    <div class="mt-5 pt-4 border-top">
+      <a href="/" class="btn btn-outline-primary">← Back to Home</a>
+    </div>
+  </div>
+  
+  <!-- Error State -->
+  <div id="error-container" class="text-center py-5" style="display: none;">
+    <h2 class="display-1 fw-bold">404</h2>
+    <p class="lead">Post not found.</p>
+    <a href="/" class="btn btn-primary mt-3">Go Home</a>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pocketbase/0.21.1/pocketbase.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
   const pb = new PocketBase('https://api.sur3.space');
-  
-  // Get the slug from the URL query parameter ?slug=...
   const urlParams = new URLSearchParams(window.location.search);
   const slug = urlParams.get('slug');
+
+  const loadingEl = document.getElementById('loading-indicator');
+  const contentEl = document.getElementById('post-container');
+  const errorEl = document.getElementById('error-container');
 
   if (slug) {
     pb.collection('posts').getFirstListItem(`slug="${slug}"`)
       .then((post) => {
+        // Update Title & Meta
         document.title = post.title + " – Sur3 Space";
         document.getElementById('post-title').innerText = post.title;
-        document.getElementById('post-date').innerText = new Date(post.created).toLocaleDateString();
+        document.getElementById('post-date').innerText = new Date(post.created).toLocaleDateString(undefined, { 
+          year: 'numeric', month: 'long', day: 'numeric' 
+        });
         
-        // Render Markdown content
-        document.getElementById('post-content').innerHTML = marked.parse(post.content);
-        
-        // Handle featured image if exists
+        // Handle Featured Image
         if (post.featured_image) {
            const imgUrl = pb.files.getUrl(post, post.featured_image);
            const img = document.createElement('img');
            img.src = imgUrl;
-           img.className = "featured-image mb-4";
-           document.querySelector('.post-header').appendChild(img);
+           img.className = "img-fluid rounded shadow-sm";
+           img.alt = post.title;
+           document.getElementById('featured-image-container').appendChild(img);
         }
+
+        // Render Markdown
+        document.getElementById('post-content').innerHTML = marked.parse(post.content);
+        
+        // Show Content
+        loadingEl.style.display = 'none';
+        contentEl.style.display = 'block';
       })
       .catch((err) => {
-        document.getElementById('post-content').innerHTML = "<p>Post not found.</p>";
         console.error(err);
+        loadingEl.style.display = 'none';
+        errorEl.style.display = 'block';
       });
   } else {
     window.location.href = '/';
   }
 </script>
+
+<style>
+  /* Extra styling for the dynamic content */
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  .post-content h2 { margin-top: 2rem; }
+  .post-content blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    color: #666;
+    font-style: italic;
+  }
+  .post-content pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .post-content pre { background: #2d2d2d; }
+    .post-content blockquote { border-left-color: #555; color: #aaa; }
+  }
+</style>
