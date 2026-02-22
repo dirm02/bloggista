@@ -46,13 +46,13 @@ collections:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: change this
-  facebook: none
+  email: your-email@example.com
+  facebook: your-facebook-username  # or leave as "none" to hide icon
   github: dirm02
-  instagram: none
-  linkedin: none
-  rss: 
-  twitter: none
+  instagram: your-instagram-handle
+  linkedin: your-linkedin-profile
+  rss: true # leave empty or true to show RSS icon
+  twitter: your-twitter-handle
 
 plugins:
   - jekyll-seo-tag
